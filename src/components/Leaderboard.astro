@@ -133,9 +133,9 @@ const { standings } = Astro.props;
     font-weight: 500;
   }
 
-  :global(.wp-high) { color: #10B981; }
-  :global(.wp-medium) { color: #F59E0B; }
-  :global(.wp-low) { color: #EF4444; }
+  .wp-high { color: #10B981; }
+  .wp-medium { color: #F59E0B; }
+  .wp-low { color: #EF4444; }
 
   .no-data {
     text-align: center;
@@ -248,9 +248,13 @@ const { standings } = Astro.props;
         const isTopThree = standing.Rank < 4;
         const rankClass = isTopThree ? `rank-${standing.Rank}` : '';
 
-        // Calculate match win percentage
+        // Calculate match win percentage with color treatment
         const totalMatches = standing.MatchWins + standing.MatchLosses + standing.MatchDraws;
         const mwPercent = totalMatches > 0 ? (standing.MatchWins / totalMatches * 100).toFixed(1) : '0.0';
+        const mwPercentNum = totalMatches > 0 ? (standing.MatchWins / totalMatches) : 0;
+        const isHighMWP = mwPercentNum > 0.59;
+        const isMediumMWP = mwPercentNum > 0.39;
+        const mwClass = isHighMWP ? 'wp-high' : (isMediumMWP ? 'wp-medium' : 'wp-low');
 
         // Calculate game win percentage with color treatment
         const gwPercent = (standing.TeamGameWinPercentage * 100).toFixed(1);
@@ -273,7 +277,7 @@ const { standings } = Astro.props;
             </div>
             <div class="stat">
               <div class="record">{standing.MatchRecord}</div>
-              <div class="percent-label">({mwPercent}%)</div>
+              <div class={`percent-label ${mwClass}`}>({mwPercent}%)</div>
             </div>
             <div class="stat">
               <div class="record">{standing.GameRecord}</div>
