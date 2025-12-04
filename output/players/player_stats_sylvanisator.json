@@ -2,13 +2,13 @@
   "username": "sylvanisator",
   "displayName": "sylvanisator",
   "overallStats": {
-    "totalTournaments": 8,
-    "totalPoints": 34,
-    "totalMatches": 24,
-    "matchRecord": "11-12-1",
-    "matchWinPercentage": 0.4583333333333333,
-    "gameRecord": "27-29-1",
-    "gameWinPercentage": 0.47368421052631576
+    "totalTournaments": 12,
+    "totalPoints": 47,
+    "totalMatches": 36,
+    "matchRecord": "15-19-2",
+    "matchWinPercentage": 0.4166666666666667,
+    "gameRecord": "36-44-2",
+    "gameWinPercentage": 0.43902439024390244
   },
   "leagueStats": [
     {
@@ -21,6 +21,15 @@
       "gameWinPercentage": 0.46938775510204084
     },
     {
+      "leagueName": "Q2 2025",
+      "events": 4,
+      "points": 13,
+      "matchRecord": "4-7-1",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameRecord": "9-15-1",
+      "gameWinPercentage": 0.36
+    },
+    {
       "leagueName": "Top 8s",
       "events": 1,
       "points": 3,
@@ -31,6 +40,26 @@
     }
   ],
   "headToHead": [
+    {
+      "opponentUsername": "JUDDERMANG",
+      "opponentDisplayName": "Chris Cruz",
+      "matchesPlayed": 5,
+      "matchWins": 2,
+      "matchLosses": 3,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.4,
+      "gameWins": 4,
+      "gameLosses": 6,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.4,
+      "lastFiveResults": [
+        "L",
+        "W",
+        "L",
+        "L",
+        "W"
+      ]
+    },
     {
       "opponentUsername": "itsCama",
       "opponentDisplayName": "Yosef Harari",
@@ -69,19 +98,19 @@
       ]
     },
     {
-      "opponentUsername": "JUDDERMANG",
-      "opponentDisplayName": "Chris Cruz",
+      "opponentUsername": "delofstrom",
+      "opponentDisplayName": "DEL .",
       "matchesPlayed": 3,
-      "matchWins": 2,
-      "matchLosses": 1,
+      "matchWins": 3,
+      "matchLosses": 0,
       "matchDraws": 0,
-      "matchWinPercentage": 0.6666666666666666,
-      "gameWins": 4,
+      "matchWinPercentage": 1,
+      "gameWins": 6,
       "gameLosses": 2,
       "gameDraws": 0,
-      "gameWinPercentage": 0.6666666666666666,
+      "gameWinPercentage": 0.75,
       "lastFiveResults": [
-        "L",
+        "W",
         "W",
         "W"
       ]
@@ -216,22 +245,6 @@
       ]
     },
     {
-      "opponentUsername": "delofstrom",
-      "opponentDisplayName": "DEL .",
-      "matchesPlayed": 1,
-      "matchWins": 1,
-      "matchLosses": 0,
-      "matchDraws": 0,
-      "matchWinPercentage": 1,
-      "gameWins": 2,
-      "gameLosses": 1,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.6666666666666666,
-      "lastFiveResults": [
-        "W"
-      ]
-    },
-    {
       "opponentUsername": "jeffmarkues",
       "opponentDisplayName": "Jeff Farris",
       "matchesPlayed": 1,
@@ -266,6 +279,134 @@
     {
       "opponentUsername": "peterk235",
       "opponentDisplayName": "peterk235",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "lastFiveResults": [
+        "L"
+      ]
+    },
+    {
+      "opponentUsername": "Tencteri",
+      "opponentDisplayName": "Tencteri",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 0,
+      "matchDraws": 1,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 1,
+      "gameDraws": 1,
+      "gameWinPercentage": 0.3333333333333333,
+      "lastFiveResults": [
+        "D"
+      ]
+    },
+    {
+      "opponentUsername": "RichBucey",
+      "opponentDisplayName": "RichBucey",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "lastFiveResults": [
+        "L"
+      ]
+    },
+    {
+      "opponentUsername": "drakedrakedrake",
+      "opponentDisplayName": "drakedrakedrake",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "lastFiveResults": [
+        "L"
+      ]
+    },
+    {
+      "opponentUsername": "justintomczyk",
+      "opponentDisplayName": "justintomczyk",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "lastFiveResults": [
+        "W"
+      ]
+    },
+    {
+      "opponentUsername": "jclara",
+      "opponentDisplayName": "John Clara",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "lastFiveResults": [
+        "L"
+      ]
+    },
+    {
+      "opponentUsername": "FTDave",
+      "opponentDisplayName": "FTDave",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "lastFiveResults": [
+        "W"
+      ]
+    },
+    {
+      "opponentUsername": "Ea212",
+      "opponentDisplayName": "Edward Arce",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "lastFiveResults": [
+        "L"
+      ]
+    },
+    {
+      "opponentUsername": "rpf5029",
+      "opponentDisplayName": "Ryan Fisher",
       "matchesPlayed": 1,
       "matchWins": 0,
       "matchLosses": 1,

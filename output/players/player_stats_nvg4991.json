@@ -2,13 +2,13 @@
   "username": "Nvg4991",
   "displayName": "Nick Belluscio",
   "overallStats": {
-    "totalTournaments": 2,
-    "totalPoints": 6,
-    "totalMatches": 5,
-    "matchRecord": "2-3-0",
-    "matchWinPercentage": 0.4,
-    "gameRecord": "6-7-0",
-    "gameWinPercentage": 0.46153846153846156
+    "totalTournaments": 3,
+    "totalPoints": 10,
+    "totalMatches": 8,
+    "matchRecord": "3-4-1",
+    "matchWinPercentage": 0.375,
+    "gameRecord": "9-11-0",
+    "gameWinPercentage": 0.45
   },
   "leagueStats": [
     {
@@ -19,9 +19,35 @@
       "matchWinPercentage": 0.4,
       "gameRecord": "6-7-0",
       "gameWinPercentage": 0.46153846153846156
+    },
+    {
+      "leagueName": "Q2 2025",
+      "events": 1,
+      "points": 4,
+      "matchRecord": "1-1-1",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameRecord": "3-4-0",
+      "gameWinPercentage": 0.42857142857142855
     }
   ],
   "headToHead": [
+    {
+      "opponentUsername": "madmanpoet",
+      "opponentDisplayName": "Michael Flores",
+      "matchesPlayed": 2,
+      "matchWins": 1,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.5,
+      "gameWins": 2,
+      "gameLosses": 3,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.4,
+      "lastFiveResults": [
+        "L",
+        "W"
+      ]
+    },
     {
       "opponentUsername": "swbmtg",
       "opponentDisplayName": "swb 👋",
@@ -71,22 +97,6 @@
       ]
     },
     {
-      "opponentUsername": "madmanpoet",
-      "opponentDisplayName": "Michael Flores",
-      "matchesPlayed": 1,
-      "matchWins": 0,
-      "matchLosses": 1,
-      "matchDraws": 0,
-      "matchWinPercentage": 0,
-      "gameWins": 0,
-      "gameLosses": 2,
-      "gameDraws": 0,
-      "gameWinPercentage": 0,
-      "lastFiveResults": [
-        "L"
-      ]
-    },
-    {
       "opponentUsername": "Tencteri",
       "opponentDisplayName": "Tencteri",
       "matchesPlayed": 1,
@@ -100,6 +110,38 @@
       "gameWinPercentage": 0.6666666666666666,
       "lastFiveResults": [
         "W"
+      ]
+    },
+    {
+      "opponentUsername": "rmcf",
+      "opponentDisplayName": "rmcf",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 0,
+      "matchDraws": 1,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5,
+      "lastFiveResults": [
+        "D"
+      ]
+    },
+    {
+      "opponentUsername": "jclara",
+      "opponentDisplayName": "John Clara",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "lastFiveResults": [
+        "L"
       ]
     }
   ]

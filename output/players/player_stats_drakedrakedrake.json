@@ -2,13 +2,13 @@
   "username": "drakedrakedrake",
   "displayName": "drakedrakedrake",
   "overallStats": {
-    "totalTournaments": 3,
-    "totalPoints": 21,
-    "totalMatches": 9,
-    "matchRecord": "7-2-0",
-    "matchWinPercentage": 0.7777777777777778,
-    "gameRecord": "13-7-2",
-    "gameWinPercentage": 0.5909090909090909
+    "totalTournaments": 5,
+    "totalPoints": 33,
+    "totalMatches": 15,
+    "matchRecord": "11-4-0",
+    "matchWinPercentage": 0.7333333333333333,
+    "gameRecord": "20-12-2",
+    "gameWinPercentage": 0.5882352941176471
   },
   "leagueStats": [
     {
@@ -28,6 +28,15 @@
       "matchWinPercentage": 0.8333333333333334,
       "gameRecord": "9-4-2",
       "gameWinPercentage": 0.6
+    },
+    {
+      "leagueName": "Q2 2025",
+      "events": 2,
+      "points": 12,
+      "matchRecord": "4-2-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameRecord": "7-5-0",
+      "gameWinPercentage": 0.5833333333333334
     }
   ],
   "headToHead": [
@@ -156,6 +165,102 @@
       "gameLosses": 0,
       "gameDraws": 1,
       "gameWinPercentage": 0.5,
+      "lastFiveResults": [
+        "W"
+      ]
+    },
+    {
+      "opponentUsername": "JusT10",
+      "opponentDisplayName": "JusT10",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "lastFiveResults": [
+        "L"
+      ]
+    },
+    {
+      "opponentUsername": "rmcf",
+      "opponentDisplayName": "rmcf",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6666666666666666,
+      "lastFiveResults": [
+        "W"
+      ]
+    },
+    {
+      "opponentUsername": "JUDDERMANG",
+      "opponentDisplayName": "Chris Cruz",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "lastFiveResults": [
+        "W"
+      ]
+    },
+    {
+      "opponentUsername": "jeffmarkues",
+      "opponentDisplayName": "Jeff Farris",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "lastFiveResults": [
+        "W"
+      ]
+    },
+    {
+      "opponentUsername": "jclara",
+      "opponentDisplayName": "John Clara",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "lastFiveResults": [
+        "L"
+      ]
+    },
+    {
+      "opponentUsername": "sylvanisator",
+      "opponentDisplayName": "sylvanisator",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 1,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
       "lastFiveResults": [
         "W"
       ]

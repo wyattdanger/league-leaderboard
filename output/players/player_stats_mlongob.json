@@ -2,13 +2,13 @@
   "username": "mlongob",
   "displayName": "Mario Longobardi",
   "overallStats": {
-    "totalTournaments": 1,
+    "totalTournaments": 2,
     "totalPoints": 2,
-    "totalMatches": 3,
-    "matchRecord": "0-1-2",
+    "totalMatches": 6,
+    "matchRecord": "0-4-2",
     "matchWinPercentage": 0,
-    "gameRecord": "2-4-1",
-    "gameWinPercentage": 0.2857142857142857
+    "gameRecord": "2-10-1",
+    "gameWinPercentage": 0.15384615384615385
   },
   "leagueStats": [
     {
@@ -19,6 +19,15 @@
       "matchWinPercentage": 0,
       "gameRecord": "2-4-1",
       "gameWinPercentage": 0.2857142857142857
+    },
+    {
+      "leagueName": "Q2 2025",
+      "events": 1,
+      "points": 0,
+      "matchRecord": "0-3-0",
+      "matchWinPercentage": 0,
+      "gameRecord": "0-6-0",
+      "gameWinPercentage": 0
     }
   ],
   "headToHead": [
@@ -57,6 +66,54 @@
     {
       "opponentUsername": "BryanGulotta",
       "opponentDisplayName": "BryanGulotta",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "lastFiveResults": [
+        "L"
+      ]
+    },
+    {
+      "opponentUsername": "itsCama",
+      "opponentDisplayName": "Yosef Harari",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "lastFiveResults": [
+        "L"
+      ]
+    },
+    {
+      "opponentUsername": "jclara",
+      "opponentDisplayName": "John Clara",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "lastFiveResults": [
+        "L"
+      ]
+    },
+    {
+      "opponentUsername": "jeffmarkues",
+      "opponentDisplayName": "Jeff Farris",
       "matchesPlayed": 1,
       "matchWins": 0,
       "matchLosses": 1,

@@ -2,13 +2,13 @@
   "username": "delofstrom",
   "displayName": "DEL .",
   "overallStats": {
-    "totalTournaments": 8,
-    "totalPoints": 25,
-    "totalMatches": 24,
-    "matchRecord": "7-13-4",
-    "matchWinPercentage": 0.2916666666666667,
-    "gameRecord": "23-33-2",
-    "gameWinPercentage": 0.39655172413793105
+    "totalTournaments": 11,
+    "totalPoints": 28,
+    "totalMatches": 33,
+    "matchRecord": "8-21-4",
+    "matchWinPercentage": 0.24242424242424243,
+    "gameRecord": "29-49-2",
+    "gameWinPercentage": 0.3625
   },
   "leagueStats": [
     {
@@ -28,24 +28,70 @@
       "matchWinPercentage": 0.3333333333333333,
       "gameRecord": "21-28-1",
       "gameWinPercentage": 0.42
+    },
+    {
+      "leagueName": "Q2 2025",
+      "events": 3,
+      "points": 3,
+      "matchRecord": "1-8-0",
+      "matchWinPercentage": 0.1111111111111111,
+      "gameRecord": "6-16-0",
+      "gameWinPercentage": 0.2727272727272727
     }
   ],
   "headToHead": [
     {
       "opponentUsername": "JUDDERMANG",
       "opponentDisplayName": "Chris Cruz",
-      "matchesPlayed": 3,
+      "matchesPlayed": 4,
       "matchWins": 0,
-      "matchLosses": 2,
+      "matchLosses": 3,
       "matchDraws": 1,
       "matchWinPercentage": 0,
-      "gameWins": 1,
-      "gameLosses": 5,
+      "gameWins": 2,
+      "gameLosses": 7,
       "gameDraws": 0,
-      "gameWinPercentage": 0.16666666666666666,
+      "gameWinPercentage": 0.2222222222222222,
       "lastFiveResults": [
         "L",
         "D",
+        "L",
+        "L"
+      ]
+    },
+    {
+      "opponentUsername": "BryanGulotta",
+      "opponentDisplayName": "BryanGulotta",
+      "matchesPlayed": 3,
+      "matchWins": 2,
+      "matchLosses": 0,
+      "matchDraws": 1,
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 5,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.7142857142857143,
+      "lastFiveResults": [
+        "D",
+        "W",
+        "W"
+      ]
+    },
+    {
+      "opponentUsername": "sylvanisator",
+      "opponentDisplayName": "sylvanisator",
+      "matchesPlayed": 3,
+      "matchWins": 0,
+      "matchLosses": 3,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 2,
+      "gameLosses": 6,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.25,
+      "lastFiveResults": [
+        "L",
+        "L",
         "L"
       ]
     },
@@ -67,20 +113,20 @@
       ]
     },
     {
-      "opponentUsername": "BryanGulotta",
-      "opponentDisplayName": "BryanGulotta",
+      "opponentUsername": "madmanpoet",
+      "opponentDisplayName": "Michael Flores",
       "matchesPlayed": 2,
-      "matchWins": 1,
-      "matchLosses": 0,
-      "matchDraws": 1,
-      "matchWinPercentage": 0.5,
-      "gameWins": 3,
-      "gameLosses": 2,
+      "matchWins": 0,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 4,
       "gameDraws": 0,
-      "gameWinPercentage": 0.6,
+      "gameWinPercentage": 0.2,
       "lastFiveResults": [
-        "D",
-        "W"
+        "L",
+        "L"
       ]
     },
     {
@@ -95,6 +141,23 @@
       "gameLosses": 4,
       "gameDraws": 0,
       "gameWinPercentage": 0.2,
+      "lastFiveResults": [
+        "L",
+        "L"
+      ]
+    },
+    {
+      "opponentUsername": "jeffmarkues",
+      "opponentDisplayName": "Jeff Farris",
+      "matchesPlayed": 2,
+      "matchWins": 0,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
       "lastFiveResults": [
         "L",
         "L"
@@ -149,22 +212,6 @@
       ]
     },
     {
-      "opponentUsername": "madmanpoet",
-      "opponentDisplayName": "Michael Flores",
-      "matchesPlayed": 1,
-      "matchWins": 0,
-      "matchLosses": 1,
-      "matchDraws": 0,
-      "matchWinPercentage": 0,
-      "gameWins": 0,
-      "gameLosses": 2,
-      "gameDraws": 0,
-      "gameWinPercentage": 0,
-      "lastFiveResults": [
-        "L"
-      ]
-    },
-    {
       "opponentUsername": "ForceofPhil",
       "opponentDisplayName": "ForceofPhil",
       "matchesPlayed": 1,
@@ -178,38 +225,6 @@
       "gameWinPercentage": 0.6666666666666666,
       "lastFiveResults": [
         "W"
-      ]
-    },
-    {
-      "opponentUsername": "sylvanisator",
-      "opponentDisplayName": "sylvanisator",
-      "matchesPlayed": 1,
-      "matchWins": 0,
-      "matchLosses": 1,
-      "matchDraws": 0,
-      "matchWinPercentage": 0,
-      "gameWins": 1,
-      "gameLosses": 2,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.3333333333333333,
-      "lastFiveResults": [
-        "L"
-      ]
-    },
-    {
-      "opponentUsername": "jeffmarkues",
-      "opponentDisplayName": "Jeff Farris",
-      "matchesPlayed": 1,
-      "matchWins": 0,
-      "matchLosses": 1,
-      "matchDraws": 0,
-      "matchWinPercentage": 0,
-      "gameWins": 0,
-      "gameLosses": 2,
-      "gameDraws": 0,
-      "gameWinPercentage": 0,
-      "lastFiveResults": [
-        "L"
       ]
     },
     {
@@ -322,6 +337,54 @@
       "gameWinPercentage": 1,
       "lastFiveResults": [
         "W"
+      ]
+    },
+    {
+      "opponentUsername": "gberlinrut",
+      "opponentDisplayName": "Gregory Berlinrut",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "lastFiveResults": [
+        "L"
+      ]
+    },
+    {
+      "opponentUsername": "Tencteri",
+      "opponentDisplayName": "Tencteri",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "lastFiveResults": [
+        "L"
+      ]
+    },
+    {
+      "opponentUsername": "landho",
+      "opponentDisplayName": "landho",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "lastFiveResults": [
+        "L"
       ]
     }
   ]

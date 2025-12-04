@@ -2,13 +2,13 @@
   "username": "gberlinrut",
   "displayName": "Gregory Berlinrut",
   "overallStats": {
-    "totalTournaments": 1,
-    "totalPoints": 0,
-    "totalMatches": 2,
-    "matchRecord": "0-2-0",
-    "matchWinPercentage": 0,
-    "gameRecord": "0-4-0",
-    "gameWinPercentage": 0
+    "totalTournaments": 4,
+    "totalPoints": 21,
+    "totalMatches": 11,
+    "matchRecord": "7-4-0",
+    "matchWinPercentage": 0.6363636363636364,
+    "gameRecord": "16-13-0",
+    "gameWinPercentage": 0.5517241379310345
   },
   "leagueStats": [
     {
@@ -19,23 +19,51 @@
       "matchWinPercentage": 0,
       "gameRecord": "0-4-0",
       "gameWinPercentage": 0
+    },
+    {
+      "leagueName": "Q2 2025",
+      "events": 3,
+      "points": 21,
+      "matchRecord": "7-2-0",
+      "matchWinPercentage": 0.7777777777777778,
+      "gameRecord": "16-9-0",
+      "gameWinPercentage": 0.64
     }
   ],
   "headToHead": [
     {
       "opponentUsername": "Tencteri",
       "opponentDisplayName": "Tencteri",
-      "matchesPlayed": 1,
-      "matchWins": 0,
-      "matchLosses": 1,
+      "matchesPlayed": 3,
+      "matchWins": 1,
+      "matchLosses": 2,
       "matchDraws": 0,
-      "matchWinPercentage": 0,
-      "gameWins": 0,
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 3,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.42857142857142855,
+      "lastFiveResults": [
+        "L",
+        "W",
+        "L"
+      ]
+    },
+    {
+      "opponentUsername": "madmanpoet",
+      "opponentDisplayName": "Michael Flores",
+      "matchesPlayed": 2,
+      "matchWins": 2,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 4,
       "gameLosses": 2,
       "gameDraws": 0,
-      "gameWinPercentage": 0,
+      "gameWinPercentage": 0.6666666666666666,
       "lastFiveResults": [
-        "L"
+        "W",
+        "W"
       ]
     },
     {
@@ -52,6 +80,86 @@
       "gameWinPercentage": 0,
       "lastFiveResults": [
         "L"
+      ]
+    },
+    {
+      "opponentUsername": "RichBucey",
+      "opponentDisplayName": "RichBucey",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "lastFiveResults": [
+        "W"
+      ]
+    },
+    {
+      "opponentUsername": "delofstrom",
+      "opponentDisplayName": "DEL .",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6666666666666666,
+      "lastFiveResults": [
+        "W"
+      ]
+    },
+    {
+      "opponentUsername": "methodless",
+      "opponentDisplayName": "Shane Echevarria",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "lastFiveResults": [
+        "L"
+      ]
+    },
+    {
+      "opponentUsername": "Gormatron",
+      "opponentDisplayName": "Gormatron",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6666666666666666,
+      "lastFiveResults": [
+        "W"
+      ]
+    },
+    {
+      "opponentUsername": "BryanGulotta",
+      "opponentDisplayName": "BryanGulotta",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6666666666666666,
+      "lastFiveResults": [
+        "W"
       ]
     }
   ]

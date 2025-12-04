@@ -2,13 +2,13 @@
   "username": "JUDDERMANG",
   "displayName": "Chris Cruz",
   "overallStats": {
-    "totalTournaments": 16,
-    "totalPoints": 51,
-    "totalMatches": 48,
-    "matchRecord": "16-29-3",
-    "matchWinPercentage": 0.3333333333333333,
-    "gameRecord": "45-65-1",
-    "gameWinPercentage": 0.40540540540540543
+    "totalTournaments": 23,
+    "totalPoints": 75,
+    "totalMatches": 69,
+    "matchRecord": "24-42-3",
+    "matchWinPercentage": 0.34782608695652173,
+    "gameRecord": "68-94-1",
+    "gameWinPercentage": 0.4171779141104294
   },
   "leagueStats": [
     {
@@ -30,6 +30,15 @@
       "gameWinPercentage": 0.4358974358974359
     },
     {
+      "leagueName": "Q2 2025",
+      "events": 7,
+      "points": 24,
+      "matchRecord": "8-13-0",
+      "matchWinPercentage": 0.38095238095238093,
+      "gameRecord": "23-29-0",
+      "gameWinPercentage": 0.4423076923076923
+    },
+    {
       "leagueName": "Top 8s",
       "events": 2,
       "points": 3,
@@ -40,6 +49,66 @@
     }
   ],
   "headToHead": [
+    {
+      "opponentUsername": "AndrewLevine",
+      "opponentDisplayName": "AndrewLevine",
+      "matchesPlayed": 5,
+      "matchWins": 1,
+      "matchLosses": 4,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.2,
+      "gameWins": 3,
+      "gameLosses": 9,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.25,
+      "lastFiveResults": [
+        "L",
+        "W",
+        "L",
+        "L",
+        "L"
+      ]
+    },
+    {
+      "opponentUsername": "madmanpoet",
+      "opponentDisplayName": "Michael Flores",
+      "matchesPlayed": 5,
+      "matchWins": 0,
+      "matchLosses": 5,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 3,
+      "gameLosses": 10,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.23076923076923078,
+      "lastFiveResults": [
+        "L",
+        "L",
+        "L",
+        "L",
+        "L"
+      ]
+    },
+    {
+      "opponentUsername": "sylvanisator",
+      "opponentDisplayName": "sylvanisator",
+      "matchesPlayed": 5,
+      "matchWins": 3,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.6,
+      "gameWins": 6,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6,
+      "lastFiveResults": [
+        "W",
+        "L",
+        "W",
+        "W",
+        "L"
+      ]
+    },
     {
       "opponentUsername": "BryanGulotta",
       "opponentDisplayName": "BryanGulotta",
@@ -55,44 +124,6 @@
       "lastFiveResults": [
         "L",
         "D",
-        "L",
-        "L"
-      ]
-    },
-    {
-      "opponentUsername": "AndrewLevine",
-      "opponentDisplayName": "AndrewLevine",
-      "matchesPlayed": 4,
-      "matchWins": 1,
-      "matchLosses": 3,
-      "matchDraws": 0,
-      "matchWinPercentage": 0.25,
-      "gameWins": 3,
-      "gameLosses": 7,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.3,
-      "lastFiveResults": [
-        "L",
-        "W",
-        "L",
-        "L"
-      ]
-    },
-    {
-      "opponentUsername": "madmanpoet",
-      "opponentDisplayName": "Michael Flores",
-      "matchesPlayed": 4,
-      "matchWins": 0,
-      "matchLosses": 4,
-      "matchDraws": 0,
-      "matchWinPercentage": 0,
-      "gameWins": 3,
-      "gameLosses": 8,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.2727272727272727,
-      "lastFiveResults": [
-        "L",
-        "L",
         "L",
         "L"
       ]
@@ -117,6 +148,62 @@
       ]
     },
     {
+      "opponentUsername": "delofstrom",
+      "opponentDisplayName": "DEL .",
+      "matchesPlayed": 4,
+      "matchWins": 3,
+      "matchLosses": 0,
+      "matchDraws": 1,
+      "matchWinPercentage": 0.75,
+      "gameWins": 7,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.7777777777777778,
+      "lastFiveResults": [
+        "W",
+        "D",
+        "W",
+        "W"
+      ]
+    },
+    {
+      "opponentUsername": "swbmtg",
+      "opponentDisplayName": "swb 👋",
+      "matchesPlayed": 4,
+      "matchWins": 1,
+      "matchLosses": 3,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.25,
+      "gameWins": 4,
+      "gameLosses": 7,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.36363636363636365,
+      "lastFiveResults": [
+        "L",
+        "L",
+        "W",
+        "L"
+      ]
+    },
+    {
+      "opponentUsername": "RichBucey",
+      "opponentDisplayName": "RichBucey",
+      "matchesPlayed": 3,
+      "matchWins": 1,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 2,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "lastFiveResults": [
+        "L",
+        "L",
+        "W"
+      ]
+    },
+    {
       "opponentUsername": "Mattmelach",
       "opponentDisplayName": "Matthew Melachrinos",
       "matchesPlayed": 3,
@@ -135,56 +222,72 @@
       ]
     },
     {
-      "opponentUsername": "sylvanisator",
-      "opponentDisplayName": "sylvanisator",
+      "opponentUsername": "rmcf",
+      "opponentDisplayName": "rmcf",
       "matchesPlayed": 3,
       "matchWins": 1,
       "matchLosses": 2,
       "matchDraws": 0,
       "matchWinPercentage": 0.3333333333333333,
-      "gameWins": 2,
+      "gameWins": 4,
       "gameLosses": 4,
       "gameDraws": 0,
-      "gameWinPercentage": 0.3333333333333333,
+      "gameWinPercentage": 0.5,
       "lastFiveResults": [
-        "W",
+        "L",
+        "L",
+        "W"
+      ]
+    },
+    {
+      "opponentUsername": "itsCama",
+      "opponentDisplayName": "Yosef Harari",
+      "matchesPlayed": 2,
+      "matchWins": 0,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.2,
+      "lastFiveResults": [
         "L",
         "L"
       ]
     },
     {
-      "opponentUsername": "delofstrom",
-      "opponentDisplayName": "DEL .",
-      "matchesPlayed": 3,
-      "matchWins": 2,
-      "matchLosses": 0,
-      "matchDraws": 1,
-      "matchWinPercentage": 0.6666666666666666,
-      "gameWins": 5,
-      "gameLosses": 1,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.8333333333333334,
-      "lastFiveResults": [
-        "W",
-        "D",
-        "W"
-      ]
-    },
-    {
-      "opponentUsername": "rmcf",
-      "opponentDisplayName": "rmcf",
+      "opponentUsername": "landho",
+      "opponentDisplayName": "landho",
       "matchesPlayed": 2,
       "matchWins": 1,
       "matchLosses": 1,
       "matchDraws": 0,
       "matchWinPercentage": 0.5,
-      "gameWins": 3,
+      "gameWins": 2,
       "gameLosses": 2,
       "gameDraws": 0,
-      "gameWinPercentage": 0.6,
+      "gameWinPercentage": 0.5,
       "lastFiveResults": [
         "L",
         "W"
+      ]
+    },
+    {
+      "opponentUsername": "FriendlyFerret",
+      "opponentDisplayName": "Bill Ellis!!",
+      "matchesPlayed": 2,
+      "matchWins": 0,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 2,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "lastFiveResults": [
+        "L",
+        "L"
       ]
     },
     {
@@ -222,22 +325,6 @@
     {
       "opponentUsername": "aprofaci",
       "opponentDisplayName": "Alex Profaci",
-      "matchesPlayed": 1,
-      "matchWins": 0,
-      "matchLosses": 1,
-      "matchDraws": 0,
-      "matchWinPercentage": 0,
-      "gameWins": 0,
-      "gameLosses": 2,
-      "gameDraws": 0,
-      "gameWinPercentage": 0,
-      "lastFiveResults": [
-        "L"
-      ]
-    },
-    {
-      "opponentUsername": "RichBucey",
-      "opponentDisplayName": "RichBucey",
       "matchesPlayed": 1,
       "matchWins": 0,
       "matchLosses": 1,
@@ -297,22 +384,6 @@
       "gameWinPercentage": 1,
       "lastFiveResults": [
         "W"
-      ]
-    },
-    {
-      "opponentUsername": "itsCama",
-      "opponentDisplayName": "Yosef Harari",
-      "matchesPlayed": 1,
-      "matchWins": 0,
-      "matchLosses": 1,
-      "matchDraws": 0,
-      "matchWinPercentage": 0,
-      "gameWins": 1,
-      "gameLosses": 2,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.3333333333333333,
-      "lastFiveResults": [
-        "L"
       ]
     },
     {
@@ -396,22 +467,6 @@
       ]
     },
     {
-      "opponentUsername": "swbmtg",
-      "opponentDisplayName": "swb 👋",
-      "matchesPlayed": 1,
-      "matchWins": 0,
-      "matchLosses": 1,
-      "matchDraws": 0,
-      "matchWinPercentage": 0,
-      "gameWins": 0,
-      "gameLosses": 2,
-      "gameDraws": 0,
-      "gameWinPercentage": 0,
-      "lastFiveResults": [
-        "L"
-      ]
-    },
-    {
       "opponentUsername": "WillReddy",
       "opponentDisplayName": "WillReddy",
       "matchesPlayed": 1,
@@ -471,6 +526,70 @@
       "gameLosses": 0,
       "gameDraws": 0,
       "gameWinPercentage": 1,
+      "lastFiveResults": [
+        "W"
+      ]
+    },
+    {
+      "opponentUsername": "RolandMTG",
+      "opponentDisplayName": "Roland Chang",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "lastFiveResults": [
+        "L"
+      ]
+    },
+    {
+      "opponentUsername": "drakedrakedrake",
+      "opponentDisplayName": "drakedrakedrake",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "lastFiveResults": [
+        "L"
+      ]
+    },
+    {
+      "opponentUsername": "rpf5029",
+      "opponentDisplayName": "Ryan Fisher",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "lastFiveResults": [
+        "L"
+      ]
+    },
+    {
+      "opponentUsername": "Alphataru",
+      "opponentDisplayName": "Andy Wu",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6666666666666666,
       "lastFiveResults": [
         "W"
       ]

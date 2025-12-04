@@ -1,0 +1,74 @@
+{
+  "username": "Gallo0",
+  "displayName": "Gallo0",
+  "overallStats": {
+    "totalTournaments": 1,
+    "totalPoints": 0,
+    "totalMatches": 3,
+    "matchRecord": "0-3-0",
+    "matchWinPercentage": 0,
+    "gameRecord": "1-6-0",
+    "gameWinPercentage": 0.14285714285714285
+  },
+  "leagueStats": [
+    {
+      "leagueName": "Q2 2025",
+      "events": 1,
+      "points": 0,
+      "matchRecord": "0-3-0",
+      "matchWinPercentage": 0,
+      "gameRecord": "1-6-0",
+      "gameWinPercentage": 0.14285714285714285
+    }
+  ],
+  "headToHead": [
+    {
+      "opponentUsername": "rmcf",
+      "opponentDisplayName": "rmcf",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "lastFiveResults": [
+        "L"
+      ]
+    },
+    {
+      "opponentUsername": "Mattmelach",
+      "opponentDisplayName": "Matthew Melachrinos",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "lastFiveResults": [
+        "L"
+      ]
+    },
+    {
+      "opponentUsername": "Ea212",
+      "opponentDisplayName": "Edward Arce",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "lastFiveResults": [
+        "L"
+      ]
+    }
+  ]
+}
