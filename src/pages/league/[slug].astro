@@ -2,6 +2,7 @@
 import * as fs from 'fs';
 import * as path from 'path';
 import * as yaml from 'js-yaml';
+import Leaderboard from '../../components/Leaderboard.astro';
 
 interface LeagueStanding {
   TeamId: number;
@@ -378,9 +379,9 @@ if (isOverall) {
         font-weight: 600;
       }
 
-      .gw-high { color: #10B981; }
-      .gw-medium { color: #F59E0B; }
-      .gw-low { color: #EF4444; }
+      .wp-high { color: #10B981; }
+      .wp-medium { color: #F59E0B; }
+      .wp-low { color: #EF4444; }
 
       .no-data {
         text-align: center;
@@ -525,66 +526,7 @@ if (isOverall) {
         </a>
       </nav>
 
-      <div class="leaderboard">
-        {standings ? (
-          <Fragment>
-            <div class="leaderboard-header">
-              <div>Rank</div>
-              <div>Player</div>
-              <div>Events</div>
-              <div>Points</div>
-              <div>Matches (MWP)</div>
-              <div>Games (GWP)</div>
-            </div>
-
-            {standings.map((standing) => {
-              const player = standing.Team.Players[0];
-              const isTopThree = standing.Rank < 4;
-              const rankClass = isTopThree ? `rank-${standing.Rank}` : '';
-
-              // Calculate match win percentage
-              const totalMatches = standing.MatchWins + standing.MatchLosses + standing.MatchDraws;
-              const mwPercent = totalMatches > 0 ? (standing.MatchWins / totalMatches * 100).toFixed(1) : '0.0';
-
-              // Calculate game win percentage
-              const gwPercent = (standing.TeamGameWinPercentage * 100).toFixed(1);
-              const isHighWinRate = standing.TeamGameWinPercentage > 0.59;
-              const isMediumWinRate = standing.TeamGameWinPercentage > 0.39;
-              const gwClass = isHighWinRate ? 'gw-high' : (isMediumWinRate ? 'gw-medium' : 'gw-low');
-
-              return (
-                <div class="leaderboard-row">
-                  <div class={`rank ${rankClass}`}>{standing.Rank}</div>
-                  <div>
-                    <div class="player-name">{player.DisplayName}</div>
-                    <div class="player-username">@{player.Username}</div>
-                  </div>
-                  <div class="stat">
-                    <div class="stat-value">{standing.TournamentCount || 0}</div>
-                  </div>
-                  <div class="stat">
-                    <div class="points">{standing.Points}</div>
-                  </div>
-                  <div class="stat">
-                    <div class="record">{standing.MatchRecord}</div>
-                    <div class="percent-label">({mwPercent}%)</div>
-                  </div>
-                  <div class="stat">
-                    <div class="record">{standing.GameRecord}</div>
-                    <div class={`percent-label ${gwClass}`}>({gwPercent}%)</div>
-                  </div>
-                </div>
-              );
-            })}
-          </Fragment>
-        ) : (
-          <div class="no-data">
-            <h2>No League Data Available</h2>
-            <p>Run the league aggregator to generate standings:</p>
-            <p><code>npm run league 384681 382756</code></p>
-          </div>
-        )}
-      </div>
+      <Leaderboard standings={standings} />
     </div>
   </body>
 </html>
