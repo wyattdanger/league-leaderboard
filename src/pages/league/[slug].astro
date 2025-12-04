@@ -1,57 +1,21 @@
 ---
-import * as fs from 'fs';
-import * as path from 'path';
-import * as yaml from 'js-yaml';
+import PageLayout from '../../components/PageLayout.astro';
 import LeagueHeader from '../../components/LeagueHeader.astro';
 import LeagueNav from '../../components/LeagueNav.astro';
 import Leaderboard from '../../components/Leaderboard.astro';
-import type { LeagueStanding, League, LeaguesConfig } from '../../types';
-
-function loadLeaguesConfig(): LeaguesConfig {
-  const configPath = path.join(process.cwd(), 'leagues.yml');
-  const fileContents = fs.readFileSync(configPath, 'utf8');
-  return yaml.load(fileContents) as LeaguesConfig;
-}
-
-function loadLeagueStandings(leagueName: string): LeagueStanding[] | null {
-  const leagueDir = path.join(process.cwd(), 'output', 'league');
-  if (!fs.existsSync(leagueDir)) {
-    return null;
-  }
-
-  const safeName = leagueName.toLowerCase().replace(/\s+/g, '_');
-  const files = fs.readdirSync(leagueDir)
-    .filter(f => f.startsWith(`league_standings_${safeName}_`) && f.endsWith('.json'))
-    .sort()
-    .reverse();
-
-  if (files.length === 0) {
-    return null;
-  }
-
-  const latestFile = path.join(leagueDir, files[0]);
-  return JSON.parse(fs.readFileSync(latestFile, 'utf-8'));
-}
+import { loadLeaguesConfig, loadLeagueStandings, aggregateOverallStandings } from '../../utils/data';
+import { leagueNameToSlug } from '../../utils/helpers';
+import type { League, LeagueStanding } from '../../types';
 
 export async function getStaticPaths() {
-  function _loadLeaguesConfig(): LeaguesConfig {
-    const configPath = path.join(process.cwd(), 'leagues.yml');
-    const fileContents = fs.readFileSync(configPath, 'utf8');
-    return yaml.load(fileContents) as LeaguesConfig;
-  }
-
-  function _leagueNameToSlug(name: string): string {
-    return name.toLowerCase().replace(/\s+/g, '-');
-  }
-
-  const config = _loadLeaguesConfig();
+  const config = loadLeaguesConfig();
   const allLeagues = config.leagues;
 
   const paths = [];
 
   // Add paths for each league
   for (const league of allLeagues) {
-    const slug = _leagueNameToSlug(league.name);
+    const slug = leagueNameToSlug(league.name);
     paths.push({
       params: { slug },
       props: { league, allLeagues, isOverall: false },
@@ -67,144 +31,20 @@ export async function getStaticPaths() {
   return paths;
 }
 
-const { slug } = Astro.params;
 const { league, allLeagues, isOverall } = Astro.props;
 
 let standings: LeagueStanding[] | null = null;
 let currentLeague: League | null = league;
 
 if (isOverall) {
-  // Load and combine standings from all leagues
-  const allStandings: LeagueStanding[] = [];
-  for (const l of allLeagues) {
-    const leagueStandings = loadLeagueStandings(l.name);
-    if (leagueStandings) {
-      allStandings.push(...leagueStandings);
-    }
-  }
-
-  // Aggregate by username across all leagues
-  const playerStats = new Map<string, {
-    username: string;
-    displayName: string;
-    teamId: number;
-    team: any;
-    points: number;
-    matchWins: number;
-    matchLosses: number;
-    matchDraws: number;
-    gameWins: number;
-    gameLosses: number;
-    gameDraws: number;
-    tournaments: Set<number>;
-  }>();
-
-  for (const standing of allStandings) {
-    const username = standing.Team.Players[0]?.Username || '';
-    if (!username) continue;
-
-    if (!playerStats.has(username)) {
-      playerStats.set(username, {
-        username,
-        displayName: standing.Team.Players[0]?.DisplayName || '',
-        teamId: standing.TeamId,
-        team: standing.Team,
-        points: 0,
-        matchWins: 0,
-        matchLosses: 0,
-        matchDraws: 0,
-        gameWins: 0,
-        gameLosses: 0,
-        gameDraws: 0,
-        tournaments: new Set(),
-      });
-    }
-
-    const stats = playerStats.get(username)!;
-    stats.points += standing.Points;
-    stats.matchWins += standing.MatchWins;
-    stats.matchLosses += standing.MatchLosses;
-    stats.matchDraws += standing.MatchDraws;
-    stats.gameWins += standing.GameWins;
-    stats.gameLosses += standing.GameLosses;
-    stats.gameDraws += standing.GameDraws;
-    if (standing.TournamentCount) {
-      stats.tournaments.add(standing.TeamId);
-    }
-  }
-
-  // Convert to standings format and sort by points
-  standings = Array.from(playerStats.values())
-    .map((stats, index) => ({
-      TeamId: stats.teamId,
-      Team: stats.team,
-      Rank: 0,
-      MatchWins: stats.matchWins,
-      MatchLosses: stats.matchLosses,
-      MatchDraws: stats.matchDraws,
-      GameWins: stats.gameWins,
-      GameLosses: stats.gameLosses,
-      GameDraws: stats.gameDraws,
-      Points: stats.points,
-      MatchRecord: `${stats.matchWins}-${stats.matchLosses}-${stats.matchDraws}`,
-      GameRecord: `${stats.gameWins}-${stats.gameLosses}-${stats.gameDraws}`,
-      OpponentMatchWinPercentage: 0,
-      TeamGameWinPercentage: stats.gameWins / (stats.gameWins + stats.gameLosses + stats.gameDraws),
-      OpponentGameWinPercentage: 0,
-      OpponentCount: 0,
-      TournamentCount: stats.tournaments.size,
-    }))
-    .sort((a, b) => b.Points - a.Points)
-    .map((s, i) => ({ ...s, Rank: i + 1 }));
+  standings = aggregateOverallStandings(allLeagues);
 } else {
   standings = loadLeagueStandings(league.name);
 }
 ---
 
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>NYC Premodern League Standings</title>
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-
-      body {
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-        min-height: 100vh;
-        padding: 4rem 2rem 2rem 2rem;
-        color: #333;
-      }
-
-      .container {
-        max-width: 1200px;
-        margin: 0 auto;
-      }
-
-      @media (max-width: 640px) {
-        body {
-          padding: 1rem 0.5rem;
-        }
-
-        .container {
-          padding: 0 0.5rem;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <LeagueHeader />
-      <LeagueNav currentLeague={currentLeague} allLeagues={allLeagues} isOverall={isOverall} />
-      <Leaderboard standings={standings} />
-    </div>
-  </body>
-</html>
+<PageLayout>
+  <LeagueHeader />
+  <LeagueNav currentLeague={currentLeague} allLeagues={allLeagues} isOverall={isOverall} />
+  <Leaderboard standings={standings} />
+</PageLayout>

@@ -1,5 +1,6 @@
 ---
 import type { League } from '../types';
+import { leagueNameToSlug } from '../utils/helpers';
 
 interface Props {
   currentLeague: League | null;
@@ -8,10 +9,6 @@ interface Props {
 }
 
 const { currentLeague, allLeagues, isOverall } = Astro.props;
-
-function leagueNameToSlug(name: string): string {
-  return name.toLowerCase().replace(/\s+/g, '-');
-}
 ---
 
 <nav class="league-nav">

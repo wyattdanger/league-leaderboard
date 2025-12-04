@@ -1,37 +1,9 @@
 ---
-import * as fs from 'fs';
-import * as path from 'path';
-import * as yaml from 'js-yaml';
+import PageLayout from '../components/PageLayout.astro';
 import LeagueHeader from '../components/LeagueHeader.astro';
 import LeagueNav from '../components/LeagueNav.astro';
 import Leaderboard from '../components/Leaderboard.astro';
-import type { LeagueStanding, League, LeaguesConfig } from '../types';
-
-function loadLeaguesConfig(): LeaguesConfig {
-  const configPath = path.join(process.cwd(), 'leagues.yml');
-  const fileContents = fs.readFileSync(configPath, 'utf8');
-  return yaml.load(fileContents) as LeaguesConfig;
-}
-
-function loadLeagueStandings(leagueName: string): LeagueStanding[] | null {
-  const leagueDir = path.join(process.cwd(), 'output', 'league');
-  if (!fs.existsSync(leagueDir)) {
-    return null;
-  }
-
-  const safeName = leagueName.toLowerCase().replace(/\s+/g, '_');
-  const files = fs.readdirSync(leagueDir)
-    .filter(f => f.startsWith(`league_standings_${safeName}_`) && f.endsWith('.json'))
-    .sort()
-    .reverse();
-
-  if (files.length === 0) {
-    return null;
-  }
-
-  const latestFile = path.join(leagueDir, files[0]);
-  return JSON.parse(fs.readFileSync(latestFile, 'utf-8'));
-}
+import { loadLeaguesConfig, loadLeagueStandings } from '../utils/data';
 
 const config = loadLeaguesConfig();
 const allLeagues = config.leagues;
@@ -42,50 +14,8 @@ const isOverall = false;
 const standings = loadLeagueStandings(currentLeague.name);
 ---
 
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>NYC Premodern League Standings</title>
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-
-      body {
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-        min-height: 100vh;
-        padding: 4rem 2rem 2rem 2rem;
-        color: #333;
-      }
-
-      .container {
-        max-width: 1200px;
-        margin: 0 auto;
-      }
-
-      @media (max-width: 640px) {
-        body {
-          padding: 1rem 0.5rem;
-        }
-
-        .container {
-          padding: 0 0.5rem;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <LeagueHeader />
-      <LeagueNav currentLeague={currentLeague} allLeagues={allLeagues} isOverall={isOverall} />
-      <Leaderboard standings={standings} />
-    </div>
-  </body>
-</html>
+<PageLayout>
+  <LeagueHeader />
+  <LeagueNav currentLeague={currentLeague} allLeagues={allLeagues} isOverall={isOverall} />
+  <Leaderboard standings={standings} />
+</PageLayout>
