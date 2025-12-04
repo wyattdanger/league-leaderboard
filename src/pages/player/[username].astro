@@ -57,46 +57,58 @@ const gwpClass = isHighGWP ? 'stat-high' : isMediumGWP ? 'stat-medium' : 'stat-l
   <LeagueHeader />
   <LeagueNav currentLeague={null} allLeagues={allLeagues} isOverall={false} />
 
-  <div class="player-header">
-    <h1>{playerData.displayName}</h1>
-    <div class="player-username">@{playerData.username}</div>
-  </div>
-
-  <div class="overall-stats">
-    <div class="stats-header">
-      <div>Tournaments</div>
-      <div>Points</div>
-      <div>Matches</div>
-      <div>Match Record (MWP)</div>
-      <div>Game Record (GWP)</div>
+  <div class="player-profile-container">
+    <div class="player-profile-header">
+      <h1>{playerData.displayName}</h1>
+      <div class="player-username">@{playerData.username}</div>
     </div>
-    <div class="stats-content">
-      <div class="stat-value">{playerData.overallStats.totalTournaments}</div>
-      <div class="stat-value">{playerData.overallStats.totalPoints}</div>
-      <div class="stat-value">{playerData.overallStats.totalMatches}</div>
-      <div class="stat-group">
-        <div class="stat-value">{playerData.overallStats.matchRecord}</div>
-        <div class={`stat-percent ${mwpClass}`}>{mwpPercent}%</div>
+
+    <div class="player-profile-content">
+      <div class="overall-stats">
+        <div class="stats-header">
+          <div>Tournaments</div>
+          <div>Points</div>
+          <div>Matches</div>
+          <div>Match Record (MWP)</div>
+          <div>Game Record (GWP)</div>
+        </div>
+        <div class="stats-content">
+          <div class="stat-value">{playerData.overallStats.totalTournaments}</div>
+          <div class="stat-value">{playerData.overallStats.totalPoints}</div>
+          <div class="stat-value">{playerData.overallStats.totalMatches}</div>
+          <div class="stat-group">
+            <div class="stat-value">{playerData.overallStats.matchRecord}</div>
+            <div class={`stat-percent ${mwpClass}`}>{mwpPercent}%</div>
+          </div>
+          <div class="stat-group">
+            <div class="stat-value">{playerData.overallStats.gameRecord}</div>
+            <div class={`stat-percent ${gwpClass}`}>{gwpPercent}%</div>
+          </div>
+        </div>
       </div>
-      <div class="stat-group">
-        <div class="stat-value">{playerData.overallStats.gameRecord}</div>
-        <div class={`stat-percent ${gwpClass}`}>{gwpPercent}%</div>
-      </div>
+
+      <PlayerLeagueStats leagueStats={playerData.leagueStats} />
+
+      <HeadToHead records={playerData.headToHead} />
     </div>
   </div>
-
-  <PlayerLeagueStats leagueStats={playerData.leagueStats} />
-
-  <HeadToHead records={playerData.headToHead} />
 </PageLayout>
 
 <style>
-  .player-header {
+  .player-profile-container {
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    margin-bottom: 2rem;
+  }
+
+  .player-profile-header {
     display: flex;
     align-items: baseline;
-    justify-content: center;
     gap: 1rem;
-    margin-bottom: 2rem;
+    padding: 1.5rem 2rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   }
 
   h1 {
@@ -104,7 +116,6 @@ const gwpClass = isHighGWP ? 'stat-high' : isMediumGWP ? 'stat-medium' : 'stat-l
     font-size: 2.5rem;
     font-weight: 700;
     margin: 0;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   }
 
   .player-username {
@@ -113,11 +124,14 @@ const gwpClass = isHighGWP ? 'stat-high' : isMediumGWP ? 'stat-medium' : 'stat-l
     font-weight: 500;
   }
 
+  .player-profile-content {
+    padding: 2rem;
+  }
+
   .overall-stats {
     margin-bottom: 2rem;
-    background: white;
-    border-radius: 16px;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
   }
 
@@ -125,25 +139,26 @@ const gwpClass = isHighGWP ? 'stat-high' : isMediumGWP ? 'stat-medium' : 'stat-l
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 1rem;
-    padding: 1.5rem 2rem;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
+    padding: 1rem 1.5rem;
+    color: #764ba2;
     font-weight: 600;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     text-align: center;
+    background: #f9fafb;
   }
 
   .stats-content {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 1rem;
-    padding: 2rem;
+    padding: 1.5rem;
     text-align: center;
     align-items: center;
+    background: white;
   }
 
   .stat-value {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     font-weight: 700;
     color: #1f2937;
     line-height: 1;
@@ -176,7 +191,6 @@ const gwpClass = isHighGWP ? 'stat-high' : isMediumGWP ? 'stat-medium' : 'stat-l
     .stats-content {
       grid-template-columns: repeat(3, 1fr);
       font-size: 0.85rem;
-      padding: 1.5rem;
     }
 
     .stats-header div:nth-child(3),
@@ -187,13 +201,18 @@ const gwpClass = isHighGWP ? 'stat-high' : isMediumGWP ? 'stat-medium' : 'stat-l
     .stat-value {
       font-size: 1.5rem;
     }
+
+    .player-profile-content {
+      padding: 1.5rem;
+    }
   }
 
   @media (max-width: 640px) {
-    .player-header {
+    .player-profile-header {
       flex-direction: column;
       align-items: flex-start;
       gap: 0.5rem;
+      padding: 1rem 1.5rem;
     }
 
     h1 {
@@ -204,11 +223,14 @@ const gwpClass = isHighGWP ? 'stat-high' : isMediumGWP ? 'stat-medium' : 'stat-l
       font-size: 1rem;
     }
 
+    .player-profile-content {
+      padding: 1rem;
+    }
+
     .stats-header,
     .stats-content {
       grid-template-columns: repeat(2, 1fr);
       font-size: 0.8rem;
-      padding: 1rem;
     }
 
     .stats-header div:nth-child(2),
