@@ -1,5 +1,6 @@
 ---
 import type { HeadToHeadRecord } from '../types';
+import { usernameToSlug } from '../utils/helpers';
 
 interface Props {
   records: HeadToHeadRecord[];
@@ -33,11 +34,15 @@ const { records } = Astro.props;
           const isMediumGWP = gwPercentNum > 0.39;
           const gwClass = isHighGWP ? 'wp-high' : isMediumGWP ? 'wp-medium' : 'wp-low';
 
+          const opponentSlug = usernameToSlug(record.opponentUsername);
+
           return (
             <div class="h2h-row">
               <div>
-                <div class="opponent-name">{record.opponentDisplayName}</div>
-                <div class="opponent-username">@{record.opponentUsername}</div>
+                <a href={`/player/${opponentSlug}`} class="opponent-link">
+                  <div class="opponent-name">{record.opponentDisplayName}</div>
+                  <div class="opponent-username">@{record.opponentUsername}</div>
+                </a>
               </div>
               <div class="stat-value">{record.matchesPlayed}</div>
               <div class="stat">
@@ -129,10 +134,24 @@ const { records } = Astro.props;
     text-align: left;
   }
 
+  .opponent-link {
+    text-decoration: none;
+    display: block;
+  }
+
+  .opponent-link:hover .opponent-name {
+    color: #764ba2;
+  }
+
+  .opponent-link:hover .opponent-username {
+    text-decoration: underline;
+  }
+
   .opponent-name {
     font-size: 1rem;
     font-weight: 600;
     color: #1f2937;
+    transition: color 0.2s ease;
   }
 
   .opponent-username {
