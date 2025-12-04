@@ -504,7 +504,9 @@ if (isOverall) {
   <body>
     <div class="container">
       <div class="logo-container">
-        <img src="/logo.png" alt="NYC Premodern" class="logo" />
+        <a href="/">
+          <img src="/logo.png" alt="Order of the Sacred Torch Weekly Premodern League Leaderboard" class="logo" />
+        </a>
       </div>
       <h1>League Standings</h1>
 
@@ -518,7 +520,7 @@ if (isOverall) {
             </a>
           );
         })}
-        <a href="/league/overall" class={isOverall ? 'active' : ''}>
+        <a href="/" class={isOverall ? 'active' : ''}>
           Overall
         </a>
       </nav>
