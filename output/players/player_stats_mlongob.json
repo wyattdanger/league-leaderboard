@@ -1,0 +1,74 @@
+{
+  "username": "mlongob",
+  "displayName": "Mario Longobardi",
+  "overallStats": {
+    "totalTournaments": 1,
+    "totalPoints": 2,
+    "totalMatches": 3,
+    "matchRecord": "0-1-2",
+    "matchWinPercentage": 0,
+    "gameRecord": "2-4-1",
+    "gameWinPercentage": 0.2857142857142857
+  },
+  "leagueStats": [
+    {
+      "leagueName": "Q3 2025",
+      "events": 1,
+      "points": 2,
+      "matchRecord": "0-1-2",
+      "matchWinPercentage": 0,
+      "gameRecord": "2-4-1",
+      "gameWinPercentage": 0.2857142857142857
+    }
+  ],
+  "headToHead": [
+    {
+      "opponentUsername": "JUDDERMANG",
+      "opponentDisplayName": "Chris Cruz",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 0,
+      "matchDraws": 1,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 1,
+      "gameDraws": 1,
+      "gameWinPercentage": 0.3333333333333333,
+      "lastFiveResults": [
+        "D"
+      ]
+    },
+    {
+      "opponentUsername": "Mattmelach",
+      "opponentDisplayName": "Matthew Melachrinos",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 0,
+      "matchDraws": 1,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5,
+      "lastFiveResults": [
+        "D"
+      ]
+    },
+    {
+      "opponentUsername": "BryanGulotta",
+      "opponentDisplayName": "BryanGulotta",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "lastFiveResults": [
+        "L"
+      ]
+    }
+  ]
+}

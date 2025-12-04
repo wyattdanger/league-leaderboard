@@ -1,0 +1,202 @@
+---
+import PageLayout from '../../components/PageLayout.astro';
+import LeagueHeader from '../../components/LeagueHeader.astro';
+import LeagueNav from '../../components/LeagueNav.astro';
+import PlayerLeagueStats from '../../components/PlayerLeagueStats.astro';
+import HeadToHead from '../../components/HeadToHead.astro';
+import { loadLeaguesConfig } from '../../utils/data';
+import { usernameToSlug } from '../../utils/helpers';
+import type { PlayerDetailData } from '../../types';
+import * as fs from 'fs';
+import * as path from 'path';
+
+export async function getStaticPaths() {
+  const playersDir = path.join(process.cwd(), 'output', 'players');
+
+  if (!fs.existsSync(playersDir)) {
+    console.warn('⚠️  Players directory not found. Run: npm run player-stats');
+    return [];
+  }
+
+  const files = fs.readdirSync(playersDir).filter((f) => f.startsWith('player_stats_'));
+
+  const paths = files.map((file) => {
+    const filePath = path.join(playersDir, file);
+    const playerData: PlayerDetailData = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
+    const slug = usernameToSlug(playerData.username);
+
+    return {
+      params: { username: slug },
+      props: { playerData },
+    };
+  });
+
+  return paths;
+}
+
+const { playerData } = Astro.props;
+const config = loadLeaguesConfig();
+const allLeagues = config.leagues;
+
+const mwpPercent = (playerData.overallStats.matchWinPercentage * 100).toFixed(1);
+const gwpPercent = (playerData.overallStats.gameWinPercentage * 100).toFixed(1);
+
+// Color classes for overall stats
+const mwpNum = playerData.overallStats.matchWinPercentage;
+const isHighMWP = mwpNum > 0.59;
+const isMediumMWP = mwpNum > 0.39;
+const mwpClass = isHighMWP ? 'stat-high' : isMediumMWP ? 'stat-medium' : 'stat-low';
+
+const gwpNum = playerData.overallStats.gameWinPercentage;
+const isHighGWP = gwpNum > 0.59;
+const isMediumGWP = gwpNum > 0.39;
+const gwpClass = isHighGWP ? 'stat-high' : isMediumGWP ? 'stat-medium' : 'stat-low';
+---
+
+<PageLayout>
+  <LeagueHeader />
+  <LeagueNav currentLeague={null} allLeagues={allLeagues} isOverall={false} />
+
+  <div class="player-header">
+    <h1>{playerData.displayName}</h1>
+    <div class="player-username">@{playerData.username}</div>
+  </div>
+
+  <div class="overall-stats">
+    <h2>Overall Stats</h2>
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-label">Total Tournaments</div>
+        <div class="stat-value">{playerData.overallStats.totalTournaments}</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Total Points</div>
+        <div class="stat-value">{playerData.overallStats.totalPoints}</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Total Matches</div>
+        <div class="stat-value">{playerData.overallStats.totalMatches}</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Match Record</div>
+        <div class="stat-value">{playerData.overallStats.matchRecord}</div>
+        <div class={`stat-percent ${mwpClass}`}>{mwpPercent}% MWP</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Game Record</div>
+        <div class="stat-value">{playerData.overallStats.gameRecord}</div>
+        <div class={`stat-percent ${gwpClass}`}>{gwpPercent}% GWP</div>
+      </div>
+    </div>
+  </div>
+
+  <PlayerLeagueStats leagueStats={playerData.leagueStats} />
+  <HeadToHead records={playerData.headToHead} />
+</PageLayout>
+
+<style>
+  .player-header {
+    text-align: center;
+    margin: 2rem 0;
+  }
+
+  h1 {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+
+  .player-username {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.25rem;
+    font-weight: 500;
+  }
+
+  .overall-stats {
+    margin-top: 2rem;
+  }
+
+  h2 {
+    color: white;
+    text-align: center;
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+  }
+
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .stat-card {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .stat-label {
+    font-size: 0.75rem;
+    color: #6b7280;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 0.5rem;
+  }
+
+  .stat-value {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1f2937;
+    line-height: 1;
+  }
+
+  .stat-percent {
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-top: 0.5rem;
+  }
+
+  .stat-high {
+    color: #10b981;
+  }
+  .stat-medium {
+    color: #f59e0b;
+  }
+  .stat-low {
+    color: #ef4444;
+  }
+
+  @media (max-width: 640px) {
+    h1 {
+      font-size: 1.75rem;
+    }
+
+    .player-username {
+      font-size: 1rem;
+    }
+
+    .stats-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+    }
+
+    .stat-card {
+      padding: 1rem;
+    }
+
+    .stat-value {
+      font-size: 1.5rem;
+    }
+
+    h2 {
+      font-size: 1.25rem;
+    }
+  }
+</style>

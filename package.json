@@ -9,6 +9,7 @@
     "astro": "astro",
     "scrape": "tsx src/scraper.ts",
     "league": "tsx src/league-aggregator.ts",
+    "player-stats": "tsx src/player-stats-generator.ts",
     "sync-league": "tsx src/sync-league.ts",
     "test": "jest",
     "format": "prettier --write .",

@@ -1,0 +1,74 @@
+{
+  "username": "AlanKe",
+  "displayName": "AlanKe",
+  "overallStats": {
+    "totalTournaments": 1,
+    "totalPoints": 0,
+    "totalMatches": 3,
+    "matchRecord": "0-3-0",
+    "matchWinPercentage": 0,
+    "gameRecord": "0-6-0",
+    "gameWinPercentage": 0
+  },
+  "leagueStats": [
+    {
+      "leagueName": "Q3 2025",
+      "events": 1,
+      "points": 0,
+      "matchRecord": "0-3-0",
+      "matchWinPercentage": 0,
+      "gameRecord": "0-6-0",
+      "gameWinPercentage": 0
+    }
+  ],
+  "headToHead": [
+    {
+      "opponentUsername": "jeffmarkues",
+      "opponentDisplayName": "Jeff Farris",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "lastFiveResults": [
+        "L"
+      ]
+    },
+    {
+      "opponentUsername": "JUDDERMANG",
+      "opponentDisplayName": "Chris Cruz",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "lastFiveResults": [
+        "L"
+      ]
+    },
+    {
+      "opponentUsername": "Mattmelach",
+      "opponentDisplayName": "Matthew Melachrinos",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "lastFiveResults": [
+        "L"
+      ]
+    }
+  ]
+}

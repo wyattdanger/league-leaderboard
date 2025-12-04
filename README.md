@@ -1,43 +1,166 @@
-# Astro Starter Kit: Minimal
+# NYC Premodern League Leaderboard
+
+A static site for tracking NYC Premodern League standings and player statistics, built with Astro.
+
+## 🏆 Features
+
+- **League Standings**: View standings for each league (Q4 2025, Q3 2025, Top 8s, Overall)
+- **Player Detail Pages**: Individual player pages with head-to-head matchup data
+- **Per-League Stats**: Track player performance across different leagues
+- **Match Win % & Game Win %**: Color-coded performance metrics
+- **Head-to-Head Records**: See how players fare against specific opponents
+- **Recent Form**: Last 5 results shown for each matchup
+
+## 📊 Data Generation Workflow
+
+Before deploying or previewing the site, you must generate all data files. Run these commands in order:
+
+### 1. Scrape Tournament Data
+
+Scrape match and standings data from a specific tournament:
 
 ```sh
-npm create astro@latest -- --template minimal
+npm run scrape <tournament-id>
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Example:
 
-## 🚀 Project Structure
+```sh
+npm run scrape 384681
+```
 
-Inside of your Astro project, you'll see the following folders and files:
+### 2. Generate League Standings
+
+Aggregate standings across tournaments for each league:
+
+```sh
+npm run league
+```
+
+This reads from `leagues.yml` and generates league standings files in `output/league/`.
+
+### 3. Generate Player Stats
+
+Calculate individual player statistics and head-to-head records:
+
+```sh
+npm run player-stats
+```
+
+This generates player stat files in `output/players/` with per-league breakdowns and head-to-head matchup data.
+
+### 4. Build the Site
+
+Build the static site with all generated data:
+
+```sh
+npm run build
+```
+
+### Full Workflow Example
+
+```sh
+# Scrape latest tournaments (if needed)
+npm run scrape 384681
+npm run scrape 382756
+
+# Generate all stats
+npm run league
+npm run player-stats
+
+# Build the site
+npm run build
+
+# Preview locally (optional)
+npm run preview
+```
+
+## 🚀 Commands
+
+| Command                | Action                                                        |
+| :--------------------- | :------------------------------------------------------------ |
+| `npm install`          | Install dependencies                                          |
+| `npm run dev`          | Start local dev server at `localhost:4321`                    |
+| `npm run build`        | Build production site to `./dist/`                            |
+| `npm run preview`      | Preview your build locally before deploying                   |
+| `npm run scrape <id>`  | Scrape tournament data by ID                                  |
+| `npm run league`       | Generate league standings from all tournaments                |
+| `npm run player-stats` | Generate individual player stats and head-to-head records     |
+| `npm run sync-league`  | Sync latest league data (scrape + league + player-stats)      |
+| `npm test`             | Run tests                                                     |
+| `npm run format`       | Format code with Prettier                                     |
+| `npm run format:check` | Check code formatting without modifying files                 |
+
+## 📁 Project Structure
 
 ```text
 /
-├── public/
+├── output/                   # Generated data (not in git)
+│   ├── tournament_*/         # Scraped tournament data
+│   ├── league/               # League standings JSON files
+│   └── players/              # Player stats JSON files
 ├── src/
-│   └── pages/
-│       └── index.astro
+│   ├── components/           # Reusable Astro components
+│   │   ├── Leaderboard.astro
+│   │   ├── HeadToHead.astro
+│   │   ├── PlayerLeagueStats.astro
+│   │   └── ...
+│   ├── pages/                # Routes
+│   │   ├── index.astro       # Homepage (newest league)
+│   │   ├── league/
+│   │   │   └── [slug].astro  # Dynamic league pages
+│   │   └── player/
+│   │       └── [username].astro  # Dynamic player pages
+│   ├── utils/                # Utility functions
+│   │   ├── data.ts           # Data loading utilities
+│   │   ├── playerData.ts     # Player stats calculations
+│   │   └── helpers.ts        # Helper functions
+│   ├── types.ts              # TypeScript type definitions
+│   ├── scraper.ts            # Tournament data scraper
+│   ├── league-aggregator.ts  # League standings generator
+│   └── player-stats-generator.ts  # Player stats generator
+├── tests/                    # Jest tests
+├── leagues.yml               # League configuration
 └── package.json
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## 🔧 Configuration
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+Edit `leagues.yml` to configure leagues and their tournaments:
 
-Any static assets, like images, can be placed in the `public/` directory.
+```yaml
+leagues:
+  - name: Q4 2025
+    tournaments:
+      - 384681
+      - 382756
+  - name: Q3 2025
+    tournaments:
+      - 380585
+      - 377629
+```
 
-## 🧞 Commands
+## 📱 Deployment
 
-All commands are run from the root of the project, from a terminal:
+The site is deployed on Vercel and automatically rebuilds when changes are pushed to GitHub.
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+Before deploying, ensure all data is up-to-date:
 
-## 👀 Want to learn more?
+```sh
+npm run league && npm run player-stats && npm run build
+```
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+## 🧪 Testing
+
+Run the test suite:
+
+```sh
+npm test
+```
+
+Tests include:
+
+- Player stats calculation
+- Head-to-head record generation
+- Match/game win percentage calculations
+- Edge cases (byes, draws, empty data)

@@ -1,0 +1,74 @@
+{
+  "username": "RebellSon",
+  "displayName": "Rebell Jai",
+  "overallStats": {
+    "totalTournaments": 1,
+    "totalPoints": 4,
+    "totalMatches": 3,
+    "matchRecord": "1-1-1",
+    "matchWinPercentage": 0.3333333333333333,
+    "gameRecord": "4-3-0",
+    "gameWinPercentage": 0.5714285714285714
+  },
+  "leagueStats": [
+    {
+      "leagueName": "Q3 2025",
+      "events": 1,
+      "points": 4,
+      "matchRecord": "1-1-1",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameRecord": "4-3-0",
+      "gameWinPercentage": 0.5714285714285714
+    }
+  ],
+  "headToHead": [
+    {
+      "opponentUsername": "RichBucey",
+      "opponentDisplayName": "RichBucey",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "lastFiveResults": [
+        "W"
+      ]
+    },
+    {
+      "opponentUsername": "ForceofPhil",
+      "opponentDisplayName": "ForceofPhil",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 0,
+      "matchDraws": 1,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5,
+      "lastFiveResults": [
+        "D"
+      ]
+    },
+    {
+      "opponentUsername": "sylvanisator",
+      "opponentDisplayName": "sylvanisator",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "lastFiveResults": [
+        "L"
+      ]
+    }
+  ]
+}

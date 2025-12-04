@@ -1,0 +1,74 @@
+{
+  "username": "sHaDes27",
+  "displayName": "Shawn Stroke",
+  "overallStats": {
+    "totalTournaments": 1,
+    "totalPoints": 1,
+    "totalMatches": 3,
+    "matchRecord": "0-2-1",
+    "matchWinPercentage": 0,
+    "gameRecord": "2-5-1",
+    "gameWinPercentage": 0.25
+  },
+  "leagueStats": [
+    {
+      "leagueName": "Q4 2025",
+      "events": 1,
+      "points": 1,
+      "matchRecord": "0-2-1",
+      "matchWinPercentage": 0,
+      "gameRecord": "2-5-1",
+      "gameWinPercentage": 0.25
+    }
+  ],
+  "headToHead": [
+    {
+      "opponentUsername": "delofstrom",
+      "opponentDisplayName": "DEL .",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 0,
+      "matchDraws": 1,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 1,
+      "gameDraws": 1,
+      "gameWinPercentage": 0.3333333333333333,
+      "lastFiveResults": [
+        "D"
+      ]
+    },
+    {
+      "opponentUsername": "RichBucey",
+      "opponentDisplayName": "RichBucey",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "lastFiveResults": [
+        "L"
+      ]
+    },
+    {
+      "opponentUsername": "Mattmelach",
+      "opponentDisplayName": "Matthew Melachrinos",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "lastFiveResults": [
+        "L"
+      ]
+    }
+  ]
+}

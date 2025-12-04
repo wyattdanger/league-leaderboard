@@ -1,0 +1,58 @@
+{
+  "username": "CassidyM",
+  "displayName": "CassidyM",
+  "overallStats": {
+    "totalTournaments": 1,
+    "totalPoints": 0,
+    "totalMatches": 2,
+    "matchRecord": "0-2-0",
+    "matchWinPercentage": 0,
+    "gameRecord": "2-4-0",
+    "gameWinPercentage": 0.3333333333333333
+  },
+  "leagueStats": [
+    {
+      "leagueName": "Q3 2025",
+      "events": 1,
+      "points": 0,
+      "matchRecord": "0-2-0",
+      "matchWinPercentage": 0,
+      "gameRecord": "2-4-0",
+      "gameWinPercentage": 0.3333333333333333
+    }
+  ],
+  "headToHead": [
+    {
+      "opponentUsername": "madmanpoet",
+      "opponentDisplayName": "Michael Flores",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "lastFiveResults": [
+        "L"
+      ]
+    },
+    {
+      "opponentUsername": "RolandMTG",
+      "opponentDisplayName": "Roland Chang",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "lastFiveResults": [
+        "L"
+      ]
+    }
+  ]
+}

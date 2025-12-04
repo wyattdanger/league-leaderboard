@@ -1,0 +1,254 @@
+---
+import type { HeadToHeadRecord } from '../types';
+
+interface Props {
+  records: HeadToHeadRecord[];
+}
+
+const { records } = Astro.props;
+---
+
+<div class="h2h-container">
+  <h2>Head-to-Head Records</h2>
+
+  {
+    records.length > 0 ? (
+      <div class="h2h-table">
+        <div class="h2h-header">
+          <div>Opponent</div>
+          <div>Matches</div>
+          <div>Match Record (MWP)</div>
+          <div>Game Record (GWP)</div>
+          <div>Form</div>
+        </div>
+
+        {records.map((record) => {
+          const mwPercentNum = record.matchWinPercentage;
+          const isHighMWP = mwPercentNum > 0.59;
+          const isMediumMWP = mwPercentNum > 0.39;
+          const mwClass = isHighMWP ? 'wp-high' : isMediumMWP ? 'wp-medium' : 'wp-low';
+
+          const gwPercentNum = record.gameWinPercentage;
+          const isHighGWP = gwPercentNum > 0.59;
+          const isMediumGWP = gwPercentNum > 0.39;
+          const gwClass = isHighGWP ? 'wp-high' : isMediumGWP ? 'wp-medium' : 'wp-low';
+
+          return (
+            <div class="h2h-row">
+              <div>
+                <div class="opponent-name">{record.opponentDisplayName}</div>
+                <div class="opponent-username">@{record.opponentUsername}</div>
+              </div>
+              <div class="stat-value">{record.matchesPlayed}</div>
+              <div class="stat">
+                <div class="record">
+                  {record.matchWins}-{record.matchLosses}-{record.matchDraws}
+                </div>
+                <div class={`percent-label ${mwClass}`}>
+                  ({(record.matchWinPercentage * 100).toFixed(1)}%)
+                </div>
+              </div>
+              <div class="stat">
+                <div class="record">
+                  {record.gameWins}-{record.gameLosses}-{record.gameDraws}
+                </div>
+                <div class={`percent-label ${gwClass}`}>
+                  ({(record.gameWinPercentage * 100).toFixed(1)}%)
+                </div>
+              </div>
+              <div class="form">
+                {record.lastFiveResults.map((result) => (
+                  <span class={`form-badge form-${result.toLowerCase()}`}>{result}</span>
+                ))}
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    ) : (
+      <p class="no-data">No head-to-head records available.</p>
+    )
+  }
+</div>
+
+<style>
+  .h2h-container {
+    margin-top: 3rem;
+  }
+
+  h2 {
+    color: white;
+    text-align: center;
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+  }
+
+  .h2h-table {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+
+  .h2h-header {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1.5fr 1.5fr 1fr;
+    gap: 1rem;
+    padding: 1rem 1.5rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+
+  .h2h-header > div:first-child {
+    text-align: left;
+  }
+
+  .h2h-row {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1.5fr 1.5fr 1fr;
+    gap: 1rem;
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid #e5e7eb;
+    align-items: center;
+    text-align: center;
+  }
+
+  .h2h-row:last-child {
+    border-bottom: none;
+  }
+
+  .h2h-row:hover {
+    background-color: #f9fafb;
+  }
+
+  .h2h-row > div:first-child {
+    text-align: left;
+  }
+
+  .opponent-name {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1f2937;
+  }
+
+  .opponent-username {
+    font-size: 0.85rem;
+    color: #6b7280;
+    margin-top: 0.15rem;
+  }
+
+  .stat-value {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #1f2937;
+  }
+
+  .stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+  }
+
+  .record {
+    font-size: 0.95rem;
+    color: #374151;
+    font-weight: 500;
+  }
+
+  .percent-label {
+    font-size: 0.85rem;
+    font-weight: 500;
+  }
+
+  .wp-high {
+    color: #10b981;
+  }
+  .wp-medium {
+    color: #f59e0b;
+  }
+  .wp-low {
+    color: #ef4444;
+  }
+
+  .form {
+    display: flex;
+    gap: 0.25rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .form-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: white;
+  }
+
+  .form-w {
+    background-color: #10b981;
+  }
+
+  .form-l {
+    background-color: #ef4444;
+  }
+
+  .form-d {
+    background-color: #6b7280;
+  }
+
+  .no-data {
+    text-align: center;
+    color: white;
+    font-size: 1.1rem;
+    padding: 2rem;
+  }
+
+  @media (max-width: 1024px) {
+    .h2h-header,
+    .h2h-row {
+      grid-template-columns: 2fr 1fr 1.5fr 1.5fr;
+      font-size: 0.85rem;
+    }
+
+    .h2h-header > div:last-child,
+    .h2h-row > div:last-child {
+      display: none;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .h2h-header,
+    .h2h-row {
+      grid-template-columns: 2fr 1fr 1.5fr;
+      font-size: 0.8rem;
+      padding: 0.75rem 1rem;
+    }
+
+    .h2h-header > div:nth-child(3),
+    .h2h-row > div:nth-child(3) {
+      display: none;
+    }
+
+    .opponent-name {
+      font-size: 0.9rem;
+    }
+
+    .opponent-username {
+      font-size: 0.75rem;
+    }
+
+    h2 {
+      font-size: 1.25rem;
+    }
+  }
+</style>

@@ -1,0 +1,74 @@
+{
+  "username": "JosR81",
+  "displayName": "JosR81",
+  "overallStats": {
+    "totalTournaments": 1,
+    "totalPoints": 3,
+    "totalMatches": 3,
+    "matchRecord": "1-2-0",
+    "matchWinPercentage": 0.3333333333333333,
+    "gameRecord": "5-4-0",
+    "gameWinPercentage": 0.5555555555555556
+  },
+  "leagueStats": [
+    {
+      "leagueName": "Q3 2025",
+      "events": 1,
+      "points": 3,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameRecord": "5-4-0",
+      "gameWinPercentage": 0.5555555555555556
+    }
+  ],
+  "headToHead": [
+    {
+      "opponentUsername": "FriendlyFerret",
+      "opponentDisplayName": "Bill Ellis!!",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "lastFiveResults": [
+        "L"
+      ]
+    },
+    {
+      "opponentUsername": "JUDDERMANG",
+      "opponentDisplayName": "Chris Cruz",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "lastFiveResults": [
+        "L"
+      ]
+    },
+    {
+      "opponentUsername": "Machopeas",
+      "opponentDisplayName": "Machopeas",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 3,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "lastFiveResults": [
+        "W"
+      ]
+    }
+  ]
+}

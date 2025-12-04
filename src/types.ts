@@ -31,3 +31,46 @@ export interface League {
 export interface LeaguesConfig {
   leagues: League[];
 }
+
+export interface HeadToHeadRecord {
+  opponentUsername: string;
+  opponentDisplayName: string;
+  matchesPlayed: number;
+  matchWins: number;
+  matchLosses: number;
+  matchDraws: number;
+  matchWinPercentage: number;
+  gameWins: number;
+  gameLosses: number;
+  gameDraws: number;
+  gameWinPercentage: number;
+  lastFiveResults: ('W' | 'L' | 'D')[];
+}
+
+export interface PlayerOverallStats {
+  totalTournaments: number;
+  totalPoints: number;
+  totalMatches: number;
+  matchRecord: string;
+  matchWinPercentage: number;
+  gameRecord: string;
+  gameWinPercentage: number;
+}
+
+export interface PlayerLeagueStats {
+  leagueName: string;
+  events: number;
+  points: number;
+  matchRecord: string;
+  matchWinPercentage: number;
+  gameRecord: string;
+  gameWinPercentage: number;
+}
+
+export interface PlayerDetailData {
+  username: string;
+  displayName: string;
+  overallStats: PlayerOverallStats;
+  leagueStats: PlayerLeagueStats[];
+  headToHead: HeadToHeadRecord[];
+}

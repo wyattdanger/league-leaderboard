@@ -1,5 +1,6 @@
 ---
 import type { LeagueStanding } from '../types';
+import { usernameToSlug } from '../utils/helpers';
 
 interface Props {
   standings: LeagueStanding[] | null;
@@ -71,10 +72,21 @@ const { standings } = Astro.props;
     font-size: 1.6rem;
   }
 
+  .player-link {
+    text-decoration: none;
+    display: block;
+  }
+
+  .player-link:hover .player-name {
+    color: #764ba2;
+    text-decoration: underline;
+  }
+
   .player-name {
     font-size: 1.1rem;
     font-weight: 600;
     color: #333;
+    transition: color 0.2s ease;
   }
 
   .player-username {
@@ -262,12 +274,16 @@ const { standings } = Astro.props;
           const isMediumGWP = standing.TeamGameWinPercentage > 0.39;
           const gwClass = isHighGWP ? 'wp-high' : isMediumGWP ? 'wp-medium' : 'wp-low';
 
+          const playerSlug = usernameToSlug(player.Username);
+
           return (
             <div class="leaderboard-row">
               <div class={`rank ${rankClass}`}>{standing.Rank}</div>
               <div>
-                <div class="player-name">{player.DisplayName}</div>
-                <div class="player-username">@{player.Username}</div>
+                <a href={`/player/${playerSlug}`} class="player-link">
+                  <div class="player-name">{player.DisplayName}</div>
+                  <div class="player-username">@{player.Username}</div>
+                </a>
               </div>
               <div class="stat">
                 <div class="stat-value">{standing.TournamentCount || 0}</div>

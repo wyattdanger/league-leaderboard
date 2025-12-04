@@ -1,0 +1,74 @@
+{
+  "username": "Tuxeb",
+  "displayName": "Rubens Campana",
+  "overallStats": {
+    "totalTournaments": 1,
+    "totalPoints": 6,
+    "totalMatches": 3,
+    "matchRecord": "2-1-0",
+    "matchWinPercentage": 0.6666666666666666,
+    "gameRecord": "4-2-0",
+    "gameWinPercentage": 0.6666666666666666
+  },
+  "leagueStats": [
+    {
+      "leagueName": "Q3 2025",
+      "events": 1,
+      "points": 6,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameRecord": "4-2-0",
+      "gameWinPercentage": 0.6666666666666666
+    }
+  ],
+  "headToHead": [
+    {
+      "opponentUsername": "SF45",
+      "opponentDisplayName": "SF45",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "lastFiveResults": [
+        "W"
+      ]
+    },
+    {
+      "opponentUsername": "RichBucey",
+      "opponentDisplayName": "RichBucey",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "lastFiveResults": [
+        "L"
+      ]
+    },
+    {
+      "opponentUsername": "zoidberg1003",
+      "opponentDisplayName": "Zoahr Bhagat",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "lastFiveResults": [
+        "W"
+      ]
+    }
+  ]
+}
