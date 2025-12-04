@@ -1,0 +1,194 @@
+[
+  {
+    "Competitors": [
+      {
+        "Team": {
+          "Players": [
+            {
+              "TeamId": 3465238,
+              "ID": 3450574,
+              "ScreenName": "N/A",
+              "ProfileImageVersion": 0,
+              "DisplayName": "Yosef Harari",
+              "DisplayNameLastFirst": "Harari, Yosef",
+              "Username": "itsCama",
+              "LanguageDescription": "Auto (English)",
+              "PronounsDescription": null
+            }
+          ],
+          "ID": 3465238,
+          "Name": null,
+          "StatusDescription": "Active",
+          "IsActive": true
+        },
+        "ID": 11632762,
+        "CheckedIn": null,
+        "ResultConfirmed": null,
+        "SortOrder": 0,
+        "GameByes": 0,
+        "GameWins": 2,
+        "TeamId": 3465238,
+        "GameWinsAndGameByes": 2,
+        "Decklists": []
+      },
+      {
+        "Team": {
+          "Players": [
+            {
+              "TeamId": 3465313,
+              "ID": 3450649,
+              "ScreenName": "N/A",
+              "ProfileImageVersion": 0,
+              "DisplayName": "DEL .",
+              "DisplayNameLastFirst": "., DEL",
+              "Username": "delofstrom",
+              "LanguageDescription": "Auto (English)",
+              "PronounsDescription": "He/Him"
+            }
+          ],
+          "ID": 3465313,
+          "Name": null,
+          "StatusDescription": "Active",
+          "IsActive": true
+        },
+        "ID": 11632763,
+        "CheckedIn": null,
+        "ResultConfirmed": "2025-08-22T01:51:36Z",
+        "SortOrder": 1,
+        "GameByes": 0,
+        "GameWins": 1,
+        "TeamId": 3465313,
+        "GameWinsAndGameByes": 1,
+        "Decklists": []
+      }
+    ],
+    "ByeReason": null,
+    "LossReason": null,
+    "RoundName": null,
+    "DateCreated": "2025-08-22T01:53:29Z",
+    "Type": 0,
+    "FeatureMatch": false,
+    "HasResult": true,
+    "TimeExtended": false,
+    "MatchesPublished": true,
+    "RoundNumber": 3,
+    "GameDraws": null,
+    "PodNumber": null,
+    "PhaseSortOrder": 1,
+    "SortOrder": null,
+    "TableNumber": 1,
+    "TimeExtensionMinutes": null,
+    "PhaseId": 354461,
+    "RoundId": 1241042,
+    "TournamentId": 354702,
+    "FormatId": "920ec64f-a02f-4176-a3d0-0c46eef003cb",
+    "Format": "Premodern",
+    "Guid": "aad27e8d-04f0-4667-8247-b3410013a5bf",
+    "TableLocation": null,
+    "TableSection": null,
+    "ByeReasonDescription": null,
+    "LossReasonDescription": null,
+    "ResultString": "Yosef Harari won 2-1-0",
+    "RoundDescription": "Round 3",
+    "TableNumberDescription": "1",
+    "TypeDescription": "Best of Three",
+    "FormatDescription": "Premodern",
+    "AcknowledgedDecklists": false
+  },
+  {
+    "Competitors": [
+      {
+        "Team": {
+          "Players": [
+            {
+              "TeamId": 3465320,
+              "ID": 3450656,
+              "ScreenName": "N/A",
+              "ProfileImageVersion": 0,
+              "DisplayName": "sylvanisator",
+              "DisplayNameLastFirst": "sylvanisator",
+              "Username": "sylvanisator",
+              "LanguageDescription": "Auto (English)",
+              "PronounsDescription": null
+            }
+          ],
+          "ID": 3465320,
+          "Name": null,
+          "StatusDescription": "Active",
+          "IsActive": true
+        },
+        "ID": 11632764,
+        "CheckedIn": null,
+        "ResultConfirmed": null,
+        "SortOrder": 0,
+        "GameByes": 0,
+        "GameWins": 2,
+        "TeamId": 3465320,
+        "GameWinsAndGameByes": 2,
+        "Decklists": []
+      },
+      {
+        "Team": {
+          "Players": [
+            {
+              "TeamId": 3465077,
+              "ID": 3450413,
+              "ScreenName": "N/A",
+              "ProfileImageVersion": 3,
+              "DisplayName": "Chris Cruz",
+              "DisplayNameLastFirst": "Cruz, Chris",
+              "Username": "JUDDERMANG",
+              "LanguageDescription": "English (English)",
+              "PronounsDescription": "He/They"
+            }
+          ],
+          "ID": 3465077,
+          "Name": null,
+          "StatusDescription": "Active",
+          "IsActive": true
+        },
+        "ID": 11632765,
+        "CheckedIn": null,
+        "ResultConfirmed": "2025-08-22T01:59:42Z",
+        "SortOrder": 1,
+        "GameByes": 0,
+        "GameWins": 0,
+        "TeamId": 3465077,
+        "GameWinsAndGameByes": 0,
+        "Decklists": []
+      }
+    ],
+    "ByeReason": null,
+    "LossReason": null,
+    "RoundName": null,
+    "DateCreated": "2025-08-22T01:59:42Z",
+    "Type": 0,
+    "FeatureMatch": false,
+    "HasResult": true,
+    "TimeExtended": false,
+    "MatchesPublished": true,
+    "RoundNumber": 3,
+    "GameDraws": 0,
+    "PodNumber": null,
+    "PhaseSortOrder": 1,
+    "SortOrder": null,
+    "TableNumber": 2,
+    "TimeExtensionMinutes": null,
+    "PhaseId": 354461,
+    "RoundId": 1241042,
+    "TournamentId": 354702,
+    "FormatId": "920ec64f-a02f-4176-a3d0-0c46eef003cb",
+    "Format": "Premodern",
+    "Guid": "8e8bc486-abaf-4a6b-a7b1-b3410013a5c4",
+    "TableLocation": null,
+    "TableSection": null,
+    "ByeReasonDescription": null,
+    "LossReasonDescription": null,
+    "ResultString": "sylvanisator won 2-0-0",
+    "RoundDescription": "Round 3",
+    "TableNumberDescription": "2",
+    "TypeDescription": "Best of Three",
+    "FormatDescription": "Premodern",
+    "AcknowledgedDecklists": false
+  }
+]

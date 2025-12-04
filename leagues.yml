@@ -1,0 +1,33 @@
+# League Configuration
+# Leagues are ordered from newest to oldest
+# The first league is considered the "current" league and will be displayed on /league
+
+leagues:
+  - name: Q4 2025
+    tournaments:
+      - 384681
+      - 382756
+      - 380585
+      - 377629
+      - 375338
+      - 373539
+      - 371711
+      - 369767
+  - name: Q3 2025
+    tournaments:
+      - 367531
+      - 365765
+      - 363663
+      - 361066
+      - 357267
+      - 354702
+      - 352572
+      - 350003
+      - 347610
+      - 343959
+      - 338898
+      - 335531
+  - name: Top 8s
+    tournaments:
+      - 369726
+      - 341527

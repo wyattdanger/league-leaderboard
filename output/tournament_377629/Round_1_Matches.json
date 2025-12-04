@@ -1,0 +1,644 @@
+[
+  {
+    "Competitors": [
+      {
+        "Team": {
+          "Players": [
+            {
+              "TeamId": 3638236,
+              "ID": 3623572,
+              "ScreenName": "N/A",
+              "ProfileImageVersion": 0,
+              "DisplayName": "swb 👋",
+              "DisplayNameLastFirst": "👋, swb",
+              "Username": "swbmtg",
+              "LanguageDescription": "Auto (English)",
+              "PronounsDescription": "He/Him"
+            }
+          ],
+          "ID": 3638236,
+          "Name": null,
+          "StatusDescription": "Active",
+          "IsActive": true
+        },
+        "ID": 12259288,
+        "CheckedIn": "2025-10-30T23:04:56Z",
+        "ResultConfirmed": "2025-10-30T23:04:56Z",
+        "SortOrder": 0,
+        "GameByes": 2,
+        "GameWins": null,
+        "TeamId": 3638236,
+        "GameWinsAndGameByes": 2,
+        "Decklists": []
+      }
+    ],
+    "ByeReason": 0,
+    "LossReason": null,
+    "RoundName": null,
+    "DateCreated": "2025-10-30T23:04:56Z",
+    "Type": 0,
+    "FeatureMatch": false,
+    "HasResult": true,
+    "TimeExtended": false,
+    "MatchesPublished": true,
+    "RoundNumber": 1,
+    "GameDraws": 0,
+    "PodNumber": null,
+    "PhaseSortOrder": 1,
+    "SortOrder": null,
+    "TableNumber": null,
+    "TimeExtensionMinutes": null,
+    "PhaseId": 377693,
+    "RoundId": 1325987,
+    "TournamentId": 377629,
+    "FormatId": "920ec64f-a02f-4176-a3d0-0c46eef003cb",
+    "Format": "Premodern",
+    "Guid": "f62b858b-d1c4-4228-8be9-b386017c6360",
+    "TableLocation": null,
+    "TableSection": null,
+    "ByeReasonDescription": "Algorithm Assigned",
+    "LossReasonDescription": null,
+    "ResultString": "swb 👋 was assigned a bye",
+    "RoundDescription": "Round 1",
+    "TableNumberDescription": null,
+    "TypeDescription": "Best of Three",
+    "FormatDescription": "Premodern",
+    "AcknowledgedDecklists": false
+  },
+  {
+    "Competitors": [
+      {
+        "Team": {
+          "Players": [
+            {
+              "TeamId": 3638389,
+              "ID": 3623725,
+              "ScreenName": "N/A",
+              "ProfileImageVersion": 2,
+              "DisplayName": "ForceofPhil",
+              "DisplayNameLastFirst": "ForceofPhil",
+              "Username": "ForceofPhil",
+              "LanguageDescription": "English (English)",
+              "PronounsDescription": "He/Him"
+            }
+          ],
+          "ID": 3638389,
+          "Name": null,
+          "StatusDescription": "Active",
+          "IsActive": true
+        },
+        "ID": 12259276,
+        "CheckedIn": null,
+        "ResultConfirmed": null,
+        "SortOrder": 0,
+        "GameByes": 0,
+        "GameWins": 1,
+        "TeamId": 3638389,
+        "GameWinsAndGameByes": 1,
+        "Decklists": []
+      },
+      {
+        "Team": {
+          "Players": [
+            {
+              "TeamId": 3638222,
+              "ID": 3623558,
+              "ScreenName": "N/A",
+              "ProfileImageVersion": 0,
+              "DisplayName": "Matthew Melachrinos",
+              "DisplayNameLastFirst": "Melachrinos, Matthew",
+              "Username": "Mattmelach",
+              "LanguageDescription": "Auto (English)",
+              "PronounsDescription": "He/Him"
+            }
+          ],
+          "ID": 3638222,
+          "Name": null,
+          "StatusDescription": "Active",
+          "IsActive": true
+        },
+        "ID": 12259277,
+        "CheckedIn": null,
+        "ResultConfirmed": "2025-10-30T23:58:10Z",
+        "SortOrder": 1,
+        "GameByes": 0,
+        "GameWins": 2,
+        "TeamId": 3638222,
+        "GameWinsAndGameByes": 2,
+        "Decklists": []
+      }
+    ],
+    "ByeReason": null,
+    "LossReason": null,
+    "RoundName": null,
+    "DateCreated": "2025-10-30T23:58:10Z",
+    "Type": 0,
+    "FeatureMatch": false,
+    "HasResult": true,
+    "TimeExtended": false,
+    "MatchesPublished": true,
+    "RoundNumber": 1,
+    "GameDraws": 0,
+    "PodNumber": null,
+    "PhaseSortOrder": 1,
+    "SortOrder": null,
+    "TableNumber": 1,
+    "TimeExtensionMinutes": null,
+    "PhaseId": 377693,
+    "RoundId": 1325987,
+    "TournamentId": 377629,
+    "FormatId": "920ec64f-a02f-4176-a3d0-0c46eef003cb",
+    "Format": "Premodern",
+    "Guid": "d9666c6b-6f64-46b9-99be-b386017c633a",
+    "TableLocation": null,
+    "TableSection": null,
+    "ByeReasonDescription": null,
+    "LossReasonDescription": null,
+    "ResultString": "Matthew Melachrinos won 2-1-0",
+    "RoundDescription": "Round 1",
+    "TableNumberDescription": "1",
+    "TypeDescription": "Best of Three",
+    "FormatDescription": "Premodern",
+    "AcknowledgedDecklists": false
+  },
+  {
+    "Competitors": [
+      {
+        "Team": {
+          "Players": [
+            {
+              "TeamId": 3638460,
+              "ID": 3623796,
+              "ScreenName": "N/A",
+              "ProfileImageVersion": 0,
+              "DisplayName": "Zoahr Bhagat",
+              "DisplayNameLastFirst": "Bhagat, Zoahr",
+              "Username": "zoidberg1003",
+              "LanguageDescription": "Auto (English)",
+              "PronounsDescription": null
+            }
+          ],
+          "ID": 3638460,
+          "Name": null,
+          "StatusDescription": "Active",
+          "IsActive": true
+        },
+        "ID": 12259278,
+        "CheckedIn": null,
+        "ResultConfirmed": "2025-10-30T23:43:07Z",
+        "SortOrder": 0,
+        "GameByes": 0,
+        "GameWins": 2,
+        "TeamId": 3638460,
+        "GameWinsAndGameByes": 2,
+        "Decklists": []
+      },
+      {
+        "Team": {
+          "Players": [
+            {
+              "TeamId": 3638211,
+              "ID": 3623547,
+              "ScreenName": "N/A",
+              "ProfileImageVersion": 0,
+              "DisplayName": "Andrea Tullis",
+              "DisplayNameLastFirst": "Tullis, Andrea",
+              "Username": "angu2111",
+              "LanguageDescription": "Auto (English)",
+              "PronounsDescription": null
+            }
+          ],
+          "ID": 3638211,
+          "Name": null,
+          "StatusDescription": "Active",
+          "IsActive": true
+        },
+        "ID": 12259279,
+        "CheckedIn": null,
+        "ResultConfirmed": "2025-10-30T23:43:09Z",
+        "SortOrder": 1,
+        "GameByes": 0,
+        "GameWins": 0,
+        "TeamId": 3638211,
+        "GameWinsAndGameByes": 0,
+        "Decklists": []
+      }
+    ],
+    "ByeReason": null,
+    "LossReason": null,
+    "RoundName": null,
+    "DateCreated": "2025-10-30T23:43:09Z",
+    "Type": 0,
+    "FeatureMatch": false,
+    "HasResult": true,
+    "TimeExtended": false,
+    "MatchesPublished": true,
+    "RoundNumber": 1,
+    "GameDraws": 0,
+    "PodNumber": null,
+    "PhaseSortOrder": 1,
+    "SortOrder": null,
+    "TableNumber": 2,
+    "TimeExtensionMinutes": null,
+    "PhaseId": 377693,
+    "RoundId": 1325987,
+    "TournamentId": 377629,
+    "FormatId": "920ec64f-a02f-4176-a3d0-0c46eef003cb",
+    "Format": "Premodern",
+    "Guid": "c2191cb1-e49d-49c1-963d-b386017c633f",
+    "TableLocation": null,
+    "TableSection": null,
+    "ByeReasonDescription": null,
+    "LossReasonDescription": null,
+    "ResultString": "Zoahr Bhagat won 2-0-0",
+    "RoundDescription": "Round 1",
+    "TableNumberDescription": "2",
+    "TypeDescription": "Best of Three",
+    "FormatDescription": "Premodern",
+    "AcknowledgedDecklists": false
+  },
+  {
+    "Competitors": [
+      {
+        "Team": {
+          "Players": [
+            {
+              "TeamId": 3638331,
+              "ID": 3623667,
+              "ScreenName": "N/A",
+              "ProfileImageVersion": 0,
+              "DisplayName": "BryanGulotta",
+              "DisplayNameLastFirst": "BryanGulotta",
+              "Username": "BryanGulotta",
+              "LanguageDescription": "English (English)",
+              "PronounsDescription": "He/Him"
+            }
+          ],
+          "ID": 3638331,
+          "Name": null,
+          "StatusDescription": "Active",
+          "IsActive": true
+        },
+        "ID": 12259280,
+        "CheckedIn": null,
+        "ResultConfirmed": null,
+        "SortOrder": 0,
+        "GameByes": 0,
+        "GameWins": 1,
+        "TeamId": 3638331,
+        "GameWinsAndGameByes": 1,
+        "Decklists": []
+      },
+      {
+        "Team": {
+          "Players": [
+            {
+              "TeamId": 3638346,
+              "ID": 3623682,
+              "ScreenName": "N/A",
+              "ProfileImageVersion": 0,
+              "DisplayName": "Taylorhol",
+              "DisplayNameLastFirst": "Taylorhol",
+              "Username": "Taylorhol",
+              "LanguageDescription": "Auto (English)",
+              "PronounsDescription": "He/Him"
+            }
+          ],
+          "ID": 3638346,
+          "Name": null,
+          "StatusDescription": "Active",
+          "IsActive": true
+        },
+        "ID": 12259281,
+        "CheckedIn": null,
+        "ResultConfirmed": null,
+        "SortOrder": 1,
+        "GameByes": 0,
+        "GameWins": 1,
+        "TeamId": 3638346,
+        "GameWinsAndGameByes": 1,
+        "Decklists": []
+      }
+    ],
+    "ByeReason": null,
+    "LossReason": null,
+    "RoundName": null,
+    "DateCreated": "2025-10-30T23:57:48Z",
+    "Type": 0,
+    "FeatureMatch": false,
+    "HasResult": true,
+    "TimeExtended": false,
+    "MatchesPublished": true,
+    "RoundNumber": 1,
+    "GameDraws": 1,
+    "PodNumber": null,
+    "PhaseSortOrder": 1,
+    "SortOrder": null,
+    "TableNumber": 3,
+    "TimeExtensionMinutes": null,
+    "PhaseId": 377693,
+    "RoundId": 1325987,
+    "TournamentId": 377629,
+    "FormatId": "920ec64f-a02f-4176-a3d0-0c46eef003cb",
+    "Format": "Premodern",
+    "Guid": "d957c844-813f-4ca0-9d92-b386017c6348",
+    "TableLocation": null,
+    "TableSection": null,
+    "ByeReasonDescription": null,
+    "LossReasonDescription": null,
+    "ResultString": "1-1-1 Draw",
+    "RoundDescription": "Round 1",
+    "TableNumberDescription": "3",
+    "TypeDescription": "Best of Three",
+    "FormatDescription": "Premodern",
+    "AcknowledgedDecklists": false
+  },
+  {
+    "Competitors": [
+      {
+        "Team": {
+          "Players": [
+            {
+              "TeamId": 3638469,
+              "ID": 3623805,
+              "ScreenName": "N/A",
+              "ProfileImageVersion": 0,
+              "DisplayName": "Apa",
+              "DisplayNameLastFirst": "Apa",
+              "Username": "Apa",
+              "LanguageDescription": "Auto (English)",
+              "PronounsDescription": null
+            }
+          ],
+          "ID": 3638469,
+          "Name": null,
+          "StatusDescription": "Active",
+          "IsActive": true
+        },
+        "ID": 12259282,
+        "CheckedIn": null,
+        "ResultConfirmed": "2025-10-30T23:37:08Z",
+        "SortOrder": 0,
+        "GameByes": 0,
+        "GameWins": 2,
+        "TeamId": 3638469,
+        "GameWinsAndGameByes": 2,
+        "Decklists": []
+      },
+      {
+        "Team": {
+          "Players": [
+            {
+              "TeamId": 3638284,
+              "ID": 3623620,
+              "ScreenName": "N/A",
+              "ProfileImageVersion": 0,
+              "DisplayName": "RichBucey",
+              "DisplayNameLastFirst": "RichBucey",
+              "Username": "RichBucey",
+              "LanguageDescription": "Auto (English)",
+              "PronounsDescription": null
+            }
+          ],
+          "ID": 3638284,
+          "Name": null,
+          "StatusDescription": "Active",
+          "IsActive": true
+        },
+        "ID": 12259283,
+        "CheckedIn": null,
+        "ResultConfirmed": null,
+        "SortOrder": 1,
+        "GameByes": 0,
+        "GameWins": 0,
+        "TeamId": 3638284,
+        "GameWinsAndGameByes": 0,
+        "Decklists": []
+      }
+    ],
+    "ByeReason": null,
+    "LossReason": null,
+    "RoundName": null,
+    "DateCreated": "2025-10-30T23:37:08Z",
+    "Type": 0,
+    "FeatureMatch": false,
+    "HasResult": true,
+    "TimeExtended": false,
+    "MatchesPublished": true,
+    "RoundNumber": 1,
+    "GameDraws": 0,
+    "PodNumber": null,
+    "PhaseSortOrder": 1,
+    "SortOrder": null,
+    "TableNumber": 4,
+    "TimeExtensionMinutes": null,
+    "PhaseId": 377693,
+    "RoundId": 1325987,
+    "TournamentId": 377629,
+    "FormatId": "920ec64f-a02f-4176-a3d0-0c46eef003cb",
+    "Format": "Premodern",
+    "Guid": "cc3c6110-2a14-481e-81a8-b386017c634d",
+    "TableLocation": null,
+    "TableSection": null,
+    "ByeReasonDescription": null,
+    "LossReasonDescription": null,
+    "ResultString": "Apa won 2-0-0",
+    "RoundDescription": "Round 1",
+    "TableNumberDescription": "4",
+    "TypeDescription": "Best of Three",
+    "FormatDescription": "Premodern",
+    "AcknowledgedDecklists": false
+  },
+  {
+    "Competitors": [
+      {
+        "Team": {
+          "Players": [
+            {
+              "TeamId": 3638279,
+              "ID": 3623615,
+              "ScreenName": "N/A",
+              "ProfileImageVersion": 0,
+              "DisplayName": "Michael Flores",
+              "DisplayNameLastFirst": "Flores, Michael",
+              "Username": "madmanpoet",
+              "LanguageDescription": "Auto (English)",
+              "PronounsDescription": "He/Him"
+            }
+          ],
+          "ID": 3638279,
+          "Name": null,
+          "StatusDescription": "Active",
+          "IsActive": true
+        },
+        "ID": 12259284,
+        "CheckedIn": null,
+        "ResultConfirmed": "2025-10-30T23:41:22Z",
+        "SortOrder": 0,
+        "GameByes": 0,
+        "GameWins": 2,
+        "TeamId": 3638279,
+        "GameWinsAndGameByes": 2,
+        "Decklists": []
+      },
+      {
+        "Team": {
+          "Players": [
+            {
+              "TeamId": 3638125,
+              "ID": 3623461,
+              "ScreenName": "N/A",
+              "ProfileImageVersion": 0,
+              "DisplayName": "Matt_W",
+              "DisplayNameLastFirst": "Matt_W",
+              "Username": "Matt_W",
+              "LanguageDescription": "Auto (English)",
+              "PronounsDescription": "He/Him"
+            }
+          ],
+          "ID": 3638125,
+          "Name": null,
+          "StatusDescription": "Active",
+          "IsActive": true
+        },
+        "ID": 12259285,
+        "CheckedIn": null,
+        "ResultConfirmed": null,
+        "SortOrder": 1,
+        "GameByes": 0,
+        "GameWins": 1,
+        "TeamId": 3638125,
+        "GameWinsAndGameByes": 1,
+        "Decklists": []
+      }
+    ],
+    "ByeReason": null,
+    "LossReason": null,
+    "RoundName": null,
+    "DateCreated": "2025-10-30T23:41:22Z",
+    "Type": 0,
+    "FeatureMatch": false,
+    "HasResult": true,
+    "TimeExtended": false,
+    "MatchesPublished": true,
+    "RoundNumber": 1,
+    "GameDraws": 0,
+    "PodNumber": null,
+    "PhaseSortOrder": 1,
+    "SortOrder": null,
+    "TableNumber": 5,
+    "TimeExtensionMinutes": null,
+    "PhaseId": 377693,
+    "RoundId": 1325987,
+    "TournamentId": 377629,
+    "FormatId": "920ec64f-a02f-4176-a3d0-0c46eef003cb",
+    "Format": "Premodern",
+    "Guid": "23950a12-03fd-4da3-bcfd-b386017c6352",
+    "TableLocation": null,
+    "TableSection": null,
+    "ByeReasonDescription": null,
+    "LossReasonDescription": null,
+    "ResultString": "Michael Flores won 2-1-0",
+    "RoundDescription": "Round 1",
+    "TableNumberDescription": "5",
+    "TypeDescription": "Best of Three",
+    "FormatDescription": "Premodern",
+    "AcknowledgedDecklists": false
+  },
+  {
+    "Competitors": [
+      {
+        "Team": {
+          "Players": [
+            {
+              "TeamId": 3638343,
+              "ID": 3623679,
+              "ScreenName": "N/A",
+              "ProfileImageVersion": 0,
+              "DisplayName": "J0Nh",
+              "DisplayNameLastFirst": "J0Nh",
+              "Username": "J0Nh",
+              "LanguageDescription": "Auto (English)",
+              "PronounsDescription": null
+            }
+          ],
+          "ID": 3638343,
+          "Name": null,
+          "StatusDescription": "Active",
+          "IsActive": true
+        },
+        "ID": 12259286,
+        "CheckedIn": null,
+        "ResultConfirmed": "2025-10-30T23:41:07Z",
+        "SortOrder": 0,
+        "GameByes": 0,
+        "GameWins": 1,
+        "TeamId": 3638343,
+        "GameWinsAndGameByes": 1,
+        "Decklists": []
+      },
+      {
+        "Team": {
+          "Players": [
+            {
+              "TeamId": 3638124,
+              "ID": 3623460,
+              "ScreenName": "N/A",
+              "ProfileImageVersion": 0,
+              "DisplayName": "Alex Profaci",
+              "DisplayNameLastFirst": "Profaci, Alex",
+              "Username": "aprofaci",
+              "LanguageDescription": "English (English)",
+              "PronounsDescription": "He/Him"
+            }
+          ],
+          "ID": 3638124,
+          "Name": null,
+          "StatusDescription": "Active",
+          "IsActive": true
+        },
+        "ID": 12259287,
+        "CheckedIn": null,
+        "ResultConfirmed": null,
+        "SortOrder": 1,
+        "GameByes": 0,
+        "GameWins": 2,
+        "TeamId": 3638124,
+        "GameWinsAndGameByes": 2,
+        "Decklists": []
+      }
+    ],
+    "ByeReason": null,
+    "LossReason": null,
+    "RoundName": null,
+    "DateCreated": "2025-10-30T23:41:07Z",
+    "Type": 0,
+    "FeatureMatch": false,
+    "HasResult": true,
+    "TimeExtended": false,
+    "MatchesPublished": true,
+    "RoundNumber": 1,
+    "GameDraws": 0,
+    "PodNumber": null,
+    "PhaseSortOrder": 1,
+    "SortOrder": null,
+    "TableNumber": 6,
+    "TimeExtensionMinutes": null,
+    "PhaseId": 377693,
+    "RoundId": 1325987,
+    "TournamentId": 377629,
+    "FormatId": "920ec64f-a02f-4176-a3d0-0c46eef003cb",
+    "Format": "Premodern",
+    "Guid": "102342b2-62b7-4755-b58c-b386017c635b",
+    "TableLocation": null,
+    "TableSection": null,
+    "ByeReasonDescription": null,
+    "LossReasonDescription": null,
+    "ResultString": "Alex Profaci won 2-1-0",
+    "RoundDescription": "Round 1",
+    "TableNumberDescription": "6",
+    "TypeDescription": "Best of Three",
+    "FormatDescription": "Premodern",
+    "AcknowledgedDecklists": false
+  }
+]

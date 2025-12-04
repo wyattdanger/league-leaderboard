@@ -1,0 +1,386 @@
+[
+  {
+    "Competitors": [
+      {
+        "Team": {
+          "Players": [
+            {
+              "TeamId": 3565229,
+              "ID": 3550565,
+              "ScreenName": "N/A",
+              "ProfileImageVersion": 0,
+              "DisplayName": "swb 👋",
+              "DisplayNameLastFirst": "👋, swb",
+              "Username": "swbmtg",
+              "LanguageDescription": "Auto (English)",
+              "PronounsDescription": "He/Him"
+            }
+          ],
+          "ID": 3565229,
+          "Name": null,
+          "StatusDescription": "Active",
+          "IsActive": true
+        },
+        "ID": 12003641,
+        "CheckedIn": null,
+        "ResultConfirmed": null,
+        "SortOrder": 0,
+        "GameByes": 0,
+        "GameWins": 2,
+        "TeamId": 3565229,
+        "GameWinsAndGameByes": 2,
+        "Decklists": []
+      },
+      {
+        "Team": {
+          "Players": [
+            {
+              "TeamId": 3565227,
+              "ID": 3550563,
+              "ScreenName": "N/A",
+              "ProfileImageVersion": 0,
+              "DisplayName": "Michael Flores",
+              "DisplayNameLastFirst": "Flores, Michael",
+              "Username": "madmanpoet",
+              "LanguageDescription": "Auto (English)",
+              "PronounsDescription": "He/Him"
+            }
+          ],
+          "ID": 3565227,
+          "Name": null,
+          "StatusDescription": "Active",
+          "IsActive": true
+        },
+        "ID": 12003642,
+        "CheckedIn": null,
+        "ResultConfirmed": null,
+        "SortOrder": 1,
+        "GameByes": 0,
+        "GameWins": 0,
+        "TeamId": 3565227,
+        "GameWinsAndGameByes": 0,
+        "Decklists": []
+      }
+    ],
+    "ByeReason": null,
+    "LossReason": null,
+    "RoundName": null,
+    "DateCreated": "2025-10-03T02:07:41Z",
+    "Type": 0,
+    "FeatureMatch": false,
+    "HasResult": true,
+    "TimeExtended": false,
+    "MatchesPublished": true,
+    "RoundNumber": 3,
+    "GameDraws": null,
+    "PodNumber": null,
+    "PhaseSortOrder": 1,
+    "SortOrder": null,
+    "TableNumber": 1,
+    "TimeExtensionMinutes": null,
+    "PhaseId": 369685,
+    "RoundId": 1298107,
+    "TournamentId": 369726,
+    "FormatId": "920ec64f-a02f-4176-a3d0-0c46eef003cb",
+    "Format": "Premodern",
+    "Guid": "2c15c2c7-59f7-49f1-ab75-b36b001df745",
+    "TableLocation": null,
+    "TableSection": null,
+    "ByeReasonDescription": null,
+    "LossReasonDescription": null,
+    "ResultString": "swb 👋 won 2-0-0",
+    "RoundDescription": "Round 3",
+    "TableNumberDescription": "1",
+    "TypeDescription": "Best of Three",
+    "FormatDescription": "Premodern",
+    "AcknowledgedDecklists": false
+  },
+  {
+    "Competitors": [
+      {
+        "Team": {
+          "Players": [
+            {
+              "TeamId": 3565240,
+              "ID": 3550576,
+              "ScreenName": "N/A",
+              "ProfileImageVersion": 0,
+              "DisplayName": "Yosef Harari",
+              "DisplayNameLastFirst": "Harari, Yosef",
+              "Username": "itsCama",
+              "LanguageDescription": "Auto (English)",
+              "PronounsDescription": null
+            }
+          ],
+          "ID": 3565240,
+          "Name": null,
+          "StatusDescription": "Active",
+          "IsActive": true
+        },
+        "ID": 12003659,
+        "CheckedIn": null,
+        "ResultConfirmed": null,
+        "SortOrder": 0,
+        "GameByes": 0,
+        "GameWins": 2,
+        "TeamId": 3565240,
+        "GameWinsAndGameByes": 2,
+        "Decklists": []
+      },
+      {
+        "Team": {
+          "Players": [
+            {
+              "TeamId": 3565355,
+              "ID": 3550691,
+              "ScreenName": "N/A",
+              "ProfileImageVersion": 0,
+              "DisplayName": "Matthew Melachrinos",
+              "DisplayNameLastFirst": "Melachrinos, Matthew",
+              "Username": "Mattmelach",
+              "LanguageDescription": "Auto (English)",
+              "PronounsDescription": "He/Him"
+            }
+          ],
+          "ID": 3565355,
+          "Name": null,
+          "StatusDescription": "Active",
+          "IsActive": true
+        },
+        "ID": 12003660,
+        "CheckedIn": null,
+        "ResultConfirmed": null,
+        "SortOrder": 1,
+        "GameByes": 0,
+        "GameWins": 1,
+        "TeamId": 3565355,
+        "GameWinsAndGameByes": 1,
+        "Decklists": []
+      }
+    ],
+    "ByeReason": null,
+    "LossReason": null,
+    "RoundName": null,
+    "DateCreated": "2025-10-03T02:58:14Z",
+    "Type": 0,
+    "FeatureMatch": false,
+    "HasResult": true,
+    "TimeExtended": false,
+    "MatchesPublished": true,
+    "RoundNumber": 3,
+    "GameDraws": null,
+    "PodNumber": null,
+    "PhaseSortOrder": 1,
+    "SortOrder": null,
+    "TableNumber": 2,
+    "TimeExtensionMinutes": null,
+    "PhaseId": 369685,
+    "RoundId": 1298107,
+    "TournamentId": 369726,
+    "FormatId": "920ec64f-a02f-4176-a3d0-0c46eef003cb",
+    "Format": "Premodern",
+    "Guid": "734d3bb4-b943-4b31-beee-b36b001ee79c",
+    "TableLocation": null,
+    "TableSection": null,
+    "ByeReasonDescription": null,
+    "LossReasonDescription": null,
+    "ResultString": "Yosef Harari won 2-1-0",
+    "RoundDescription": "Round 3",
+    "TableNumberDescription": "2",
+    "TypeDescription": "Best of Three",
+    "FormatDescription": "Premodern",
+    "AcknowledgedDecklists": false
+  },
+  {
+    "Competitors": [
+      {
+        "Team": {
+          "Players": [
+            {
+              "TeamId": 3565235,
+              "ID": 3550571,
+              "ScreenName": "N/A",
+              "ProfileImageVersion": 2,
+              "DisplayName": "Bill Ellis!!",
+              "DisplayNameLastFirst": "Ellis!!, Bill",
+              "Username": "FriendlyFerret",
+              "LanguageDescription": "Auto (English)",
+              "PronounsDescription": "He/Him"
+            }
+          ],
+          "ID": 3565235,
+          "Name": null,
+          "StatusDescription": "Active",
+          "IsActive": true
+        },
+        "ID": 12003657,
+        "CheckedIn": null,
+        "ResultConfirmed": "2025-10-03T02:03:35Z",
+        "SortOrder": 0,
+        "GameByes": 0,
+        "GameWins": 0,
+        "TeamId": 3565235,
+        "GameWinsAndGameByes": 0,
+        "Decklists": []
+      },
+      {
+        "Team": {
+          "Players": [
+            {
+              "TeamId": 3565237,
+              "ID": 3550573,
+              "ScreenName": "N/A",
+              "ProfileImageVersion": 0,
+              "DisplayName": "BryanGulotta",
+              "DisplayNameLastFirst": "BryanGulotta",
+              "Username": "BryanGulotta",
+              "LanguageDescription": "English (English)",
+              "PronounsDescription": "He/Him"
+            }
+          ],
+          "ID": 3565237,
+          "Name": null,
+          "StatusDescription": "Active",
+          "IsActive": true
+        },
+        "ID": 12003658,
+        "CheckedIn": null,
+        "ResultConfirmed": null,
+        "SortOrder": 1,
+        "GameByes": 0,
+        "GameWins": 2,
+        "TeamId": 3565237,
+        "GameWinsAndGameByes": 2,
+        "Decklists": []
+      }
+    ],
+    "ByeReason": null,
+    "LossReason": null,
+    "RoundName": null,
+    "DateCreated": "2025-10-03T02:03:35Z",
+    "Type": 0,
+    "FeatureMatch": false,
+    "HasResult": true,
+    "TimeExtended": false,
+    "MatchesPublished": true,
+    "RoundNumber": 3,
+    "GameDraws": 0,
+    "PodNumber": null,
+    "PhaseSortOrder": 1,
+    "SortOrder": null,
+    "TableNumber": 3,
+    "TimeExtensionMinutes": null,
+    "PhaseId": 369685,
+    "RoundId": 1298107,
+    "TournamentId": 369726,
+    "FormatId": "920ec64f-a02f-4176-a3d0-0c46eef003cb",
+    "Format": "Premodern",
+    "Guid": "9da38907-d440-40df-95bb-b36b001ee793",
+    "TableLocation": null,
+    "TableSection": null,
+    "ByeReasonDescription": null,
+    "LossReasonDescription": null,
+    "ResultString": "BryanGulotta won 2-0-0",
+    "RoundDescription": "Round 3",
+    "TableNumberDescription": "3",
+    "TypeDescription": "Best of Three",
+    "FormatDescription": "Premodern",
+    "AcknowledgedDecklists": false
+  },
+  {
+    "Competitors": [
+      {
+        "Team": {
+          "Players": [
+            {
+              "TeamId": 3565241,
+              "ID": 3550577,
+              "ScreenName": "N/A",
+              "ProfileImageVersion": 0,
+              "DisplayName": "sylvanisator",
+              "DisplayNameLastFirst": "sylvanisator",
+              "Username": "sylvanisator",
+              "LanguageDescription": "Auto (English)",
+              "PronounsDescription": null
+            }
+          ],
+          "ID": 3565241,
+          "Name": null,
+          "StatusDescription": "Active",
+          "IsActive": true
+        },
+        "ID": 12003647,
+        "CheckedIn": null,
+        "ResultConfirmed": null,
+        "SortOrder": 0,
+        "GameByes": 0,
+        "GameWins": 2,
+        "TeamId": 3565241,
+        "GameWinsAndGameByes": 2,
+        "Decklists": []
+      },
+      {
+        "Team": {
+          "Players": [
+            {
+              "TeamId": 3565239,
+              "ID": 3550575,
+              "ScreenName": "N/A",
+              "ProfileImageVersion": 3,
+              "DisplayName": "Chris Cruz",
+              "DisplayNameLastFirst": "Cruz, Chris",
+              "Username": "JUDDERMANG",
+              "LanguageDescription": "English (English)",
+              "PronounsDescription": "He/They"
+            }
+          ],
+          "ID": 3565239,
+          "Name": null,
+          "StatusDescription": "Active",
+          "IsActive": true
+        },
+        "ID": 12003648,
+        "CheckedIn": null,
+        "ResultConfirmed": "2025-10-03T02:46:31Z",
+        "SortOrder": 1,
+        "GameByes": 0,
+        "GameWins": 0,
+        "TeamId": 3565239,
+        "GameWinsAndGameByes": 0,
+        "Decklists": []
+      }
+    ],
+    "ByeReason": null,
+    "LossReason": null,
+    "RoundName": null,
+    "DateCreated": "2025-10-03T02:46:31Z",
+    "Type": 0,
+    "FeatureMatch": false,
+    "HasResult": true,
+    "TimeExtended": false,
+    "MatchesPublished": true,
+    "RoundNumber": 3,
+    "GameDraws": 0,
+    "PodNumber": null,
+    "PhaseSortOrder": 1,
+    "SortOrder": null,
+    "TableNumber": 4,
+    "TimeExtensionMinutes": null,
+    "PhaseId": 369685,
+    "RoundId": 1298107,
+    "TournamentId": 369726,
+    "FormatId": "920ec64f-a02f-4176-a3d0-0c46eef003cb",
+    "Format": "Premodern",
+    "Guid": "a57bbebe-903b-41ff-a81b-b36b001df753",
+    "TableLocation": null,
+    "TableSection": null,
+    "ByeReasonDescription": null,
+    "LossReasonDescription": null,
+    "ResultString": "sylvanisator won 2-0-0",
+    "RoundDescription": "Round 3",
+    "TableNumberDescription": "4",
+    "TypeDescription": "Best of Three",
+    "FormatDescription": "Premodern",
+    "AcknowledgedDecklists": false
+  }
+]

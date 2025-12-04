@@ -1,0 +1,570 @@
+---
+import * as fs from 'fs';
+import * as path from 'path';
+import * as yaml from 'js-yaml';
+
+interface LeagueStanding {
+  TeamId: number;
+  Team: {
+    Players: Array<{
+      DisplayName: string;
+      Username: string;
+    }>;
+  };
+  Rank: number;
+  MatchWins: number;
+  MatchLosses: number;
+  MatchDraws: number;
+  GameWins: number;
+  GameLosses: number;
+  GameDraws: number;
+  Points: number;
+  MatchRecord: string;
+  GameRecord: string;
+  OpponentMatchWinPercentage: number;
+  TeamGameWinPercentage: number;
+  OpponentGameWinPercentage: number;
+  OpponentCount: number;
+  TournamentCount?: number;
+}
+
+interface League {
+  name: string;
+  tournaments: number[];
+}
+
+interface LeaguesConfig {
+  leagues: League[];
+}
+
+function loadLeaguesConfig(): LeaguesConfig {
+  const configPath = path.join(process.cwd(), 'leagues.yml');
+  const fileContents = fs.readFileSync(configPath, 'utf8');
+  return yaml.load(fileContents) as LeaguesConfig;
+}
+
+function leagueNameToSlug(name: string): string {
+  return name.toLowerCase().replace(/\s+/g, '-');
+}
+
+function loadLeagueStandings(leagueName: string): LeagueStanding[] | null {
+  const leagueDir = path.join(process.cwd(), 'output', 'league');
+  if (!fs.existsSync(leagueDir)) {
+    return null;
+  }
+
+  const safeName = leagueName.toLowerCase().replace(/\s+/g, '_');
+  const files = fs.readdirSync(leagueDir)
+    .filter(f => f.startsWith(`league_standings_${safeName}_`) && f.endsWith('.json'))
+    .sort()
+    .reverse();
+
+  if (files.length === 0) {
+    return null;
+  }
+
+  const latestFile = path.join(leagueDir, files[0]);
+  return JSON.parse(fs.readFileSync(latestFile, 'utf-8'));
+}
+
+// Get query parameter for league selection
+const urlParams = Astro.url.searchParams;
+const selectedLeagueParam = urlParams.get('league');
+
+const config = loadLeaguesConfig();
+const allLeagues = config.leagues;
+
+// Determine which league to show
+let currentLeague: League | null;
+let isOverall = false;
+let standings: LeagueStanding[] | null = null;
+let leagueName: string;
+
+if (selectedLeagueParam === 'overall') {
+  isOverall = true;
+  currentLeague = null;
+  leagueName = 'Overall';
+
+  // Load and combine standings from all leagues
+  const allStandings: LeagueStanding[] = [];
+  for (const league of allLeagues) {
+    const leagueStandings = loadLeagueStandings(league.name);
+    if (leagueStandings) {
+      allStandings.push(...leagueStandings);
+    }
+  }
+
+  // Aggregate by username across all leagues
+  const playerStats = new Map<string, {
+    username: string;
+    displayName: string;
+    teamId: number;
+    team: any;
+    points: number;
+    matchWins: number;
+    matchLosses: number;
+    matchDraws: number;
+    gameWins: number;
+    gameLosses: number;
+    gameDraws: number;
+    tournaments: Set<number>;
+  }>();
+
+  for (const standing of allStandings) {
+    const username = standing.Team.Players[0]?.Username || '';
+    if (!username) continue;
+
+    if (!playerStats.has(username)) {
+      playerStats.set(username, {
+        username,
+        displayName: standing.Team.Players[0]?.DisplayName || '',
+        teamId: standing.TeamId,
+        team: standing.Team,
+        points: 0,
+        matchWins: 0,
+        matchLosses: 0,
+        matchDraws: 0,
+        gameWins: 0,
+        gameLosses: 0,
+        gameDraws: 0,
+        tournaments: new Set(),
+      });
+    }
+
+    const stats = playerStats.get(username)!;
+    stats.points += standing.Points;
+    stats.matchWins += standing.MatchWins;
+    stats.matchLosses += standing.MatchLosses;
+    stats.matchDraws += standing.MatchDraws;
+    stats.gameWins += standing.GameWins;
+    stats.gameLosses += standing.GameLosses;
+    stats.gameDraws += standing.GameDraws;
+    if (standing.TournamentCount) {
+      // This is approximate since we don't have individual tournament IDs
+      stats.tournaments.add(standing.TeamId); // Use as proxy
+    }
+  }
+
+  // Convert to standings format and sort by points
+  standings = Array.from(playerStats.values())
+    .map((stats, index) => ({
+      TeamId: stats.teamId,
+      Team: stats.team,
+      Rank: 0,
+      MatchWins: stats.matchWins,
+      MatchLosses: stats.matchLosses,
+      MatchDraws: stats.matchDraws,
+      GameWins: stats.gameWins,
+      GameLosses: stats.gameLosses,
+      GameDraws: stats.gameDraws,
+      Points: stats.points,
+      MatchRecord: `${stats.matchWins}-${stats.matchLosses}-${stats.matchDraws}`,
+      GameRecord: `${stats.gameWins}-${stats.gameLosses}-${stats.gameDraws}`,
+      OpponentMatchWinPercentage: 0,
+      TeamGameWinPercentage: stats.gameWins / (stats.gameWins + stats.gameLosses + stats.gameDraws),
+      OpponentGameWinPercentage: 0,
+      OpponentCount: 0,
+      TournamentCount: stats.tournaments.size,
+    }))
+    .sort((a, b) => b.Points - a.Points)
+    .map((s, i) => ({ ...s, Rank: i + 1 }));
+} else if (selectedLeagueParam) {
+  const foundLeague = allLeagues.find(l => leagueNameToSlug(l.name) === selectedLeagueParam);
+  currentLeague = foundLeague || allLeagues[0];
+  standings = loadLeagueStandings(currentLeague.name);
+  leagueName = currentLeague.name;
+} else {
+  currentLeague = allLeagues[0];
+  standings = loadLeagueStandings(currentLeague.name);
+  leagueName = currentLeague.name;
+}
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>NYC Premodern League Standings</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        min-height: 100vh;
+        padding: 4rem 2rem 2rem 2rem;
+        color: #333;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .logo-container {
+        text-align: center;
+        margin-top: 2rem;
+        margin-bottom: 0;
+      }
+
+      .logo {
+        max-width: 400px;
+        width: 90%;
+        height: auto;
+        filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.3));
+      }
+
+      h1 {
+        text-align: center;
+        color: white;
+        font-size: 1.75rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        font-weight: 500;
+      }
+
+      .league-nav {
+        text-align: center;
+        margin-top: 1.5rem;
+        margin-bottom: 2rem;
+      }
+
+      .league-nav a {
+        color: rgba(255, 255, 255, 0.6);
+        text-decoration: none;
+        font-size: 1.1rem;
+        margin: 0 1rem;
+        transition: color 0.2s ease;
+      }
+
+      .league-nav a:hover {
+        color: rgba(255, 255, 255, 0.9);
+      }
+
+      .league-nav a.active {
+        color: white;
+        font-weight: 700;
+      }
+
+      .leaderboard {
+        background: white;
+        border-radius: 16px;
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        overflow: hidden;
+      }
+
+      .leaderboard-header {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        padding: 1.5rem 2rem;
+        display: grid;
+        grid-template-columns: 60px 1fr 80px 100px 180px 180px;
+        gap: 1rem;
+        font-weight: 600;
+        font-size: 0.9rem;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+      }
+
+      .leaderboard-header > div {
+        text-align: left;
+      }
+
+      .leaderboard-row {
+        padding: 1.5rem 2rem;
+        display: grid;
+        grid-template-columns: 60px 1fr 80px 100px 180px 180px;
+        gap: 1rem;
+        align-items: center;
+        border-bottom: 1px solid #e0e0e0;
+        transition: background-color 0.2s ease;
+      }
+
+      .leaderboard-row:hover {
+        background-color: #f5f5f5;
+      }
+
+      .leaderboard-row:last-child {
+        border-bottom: none;
+      }
+
+      .rank {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #667eea;
+        text-align: left;
+      }
+
+      .rank-1 { color: #FFD700; font-size: 2rem; }
+      .rank-2 { color: #C0C0C0; font-size: 1.8rem; }
+      .rank-3 { color: #CD7F32; font-size: 1.6rem; }
+
+      .player-name {
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: #333;
+      }
+
+      .player-username {
+        font-size: 0.85rem;
+        color: #666;
+        margin-top: 0.25rem;
+      }
+
+      .stat {
+        text-align: left;
+        font-weight: 500;
+      }
+
+      .stat-value {
+        font-size: 1.1rem;
+        color: #333;
+      }
+
+      .stat-label {
+        font-size: 0.75rem;
+        color: #999;
+        text-transform: uppercase;
+        margin-top: 0.25rem;
+      }
+
+      .points {
+        font-size: 1.3rem;
+        font-weight: 700;
+        color: #667eea;
+      }
+
+      .record {
+        font-family: 'Courier New', monospace;
+        font-size: 0.95rem;
+        color: #555;
+      }
+
+      .percent-label {
+        font-size: 0.85rem;
+        color: #888;
+        margin-top: 0.25rem;
+        font-weight: 500;
+      }
+
+      .gw-percent {
+        font-size: 1rem;
+        font-weight: 600;
+      }
+
+      .gw-high { color: #10B981; }
+      .gw-medium { color: #F59E0B; }
+      .gw-low { color: #EF4444; }
+
+      .no-data {
+        text-align: center;
+        padding: 4rem 2rem;
+        color: #666;
+      }
+
+      .no-data h2 {
+        color: #333;
+        margin-bottom: 1rem;
+      }
+
+      .no-data p {
+        color: #666;
+        font-size: 1.1rem;
+      }
+
+      .no-data code {
+        background: #f0f0f0;
+        padding: 0.25rem 0.5rem;
+        border-radius: 4px;
+        font-family: 'Courier New', monospace;
+      }
+
+      @media (max-width: 1024px) {
+        .leaderboard-header,
+        .leaderboard-row {
+          grid-template-columns: 50px 1fr 60px 80px 140px;
+          gap: 0.5rem;
+          padding: 1rem;
+        }
+
+        /* Hide Matches column on medium screens */
+        .stat:nth-child(5) {
+          display: none;
+        }
+
+        h1 {
+          font-size: 2rem;
+        }
+      }
+
+      @media (max-width: 640px) {
+        body {
+          padding: 1rem 0.5rem;
+        }
+
+        .container {
+          padding: 0 0.5rem;
+        }
+
+        .leaderboard-header,
+        .leaderboard-row {
+          grid-template-columns: 35px 1fr 55px 90px;
+          padding: 1rem 0.75rem;
+          gap: 0.5rem;
+          font-size: 0.8rem;
+        }
+
+        .leaderboard-header {
+          font-size: 0.7rem;
+          line-height: 1.2;
+        }
+
+        .leaderboard-header > div {
+          white-space: normal;
+          word-break: break-word;
+        }
+
+        /* Hide Events and Matches columns on mobile */
+        .stat:nth-child(3),
+        .stat:nth-child(5) {
+          display: none;
+        }
+
+        /* Hide Events and Matches headers on mobile */
+        .leaderboard-header > div:nth-child(3),
+        .leaderboard-header > div:nth-child(5) {
+          display: none;
+        }
+
+        .rank {
+          font-size: 1.2rem;
+        }
+
+        .rank-1 { font-size: 1.4rem; }
+        .rank-2 { font-size: 1.3rem; }
+        .rank-3 { font-size: 1.25rem; }
+
+        .player-name {
+          font-size: 0.95rem;
+        }
+
+        .player-username {
+          font-size: 0.7rem;
+        }
+
+        .record {
+          font-size: 0.8rem;
+        }
+
+        .percent-label {
+          font-size: 0.65rem;
+        }
+
+        .logo {
+          max-width: 300px;
+        }
+
+        h1 {
+          font-size: 1.25rem;
+        }
+
+        .league-nav a {
+          font-size: 0.9rem;
+          margin: 0 0.5rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo-container">
+        <img src="/logo.png" alt="NYC Premodern" class="logo" />
+      </div>
+      <h1>League Standings</h1>
+
+      <nav class="league-nav">
+        {allLeagues.map((league) => {
+          const slug = leagueNameToSlug(league.name);
+          const isActive = currentLeague && league.name === currentLeague.name;
+          return (
+            <a href={`/league/${slug}`} class={isActive ? 'active' : ''}>
+              {league.name}
+            </a>
+          );
+        })}
+        <a href="/league/overall" class={isOverall ? 'active' : ''}>
+          Overall
+        </a>
+      </nav>
+
+      <div class="leaderboard">
+        {standings ? (
+          <Fragment>
+            <div class="leaderboard-header">
+              <div>Rank</div>
+              <div>Player</div>
+              <div>Events</div>
+              <div>Points</div>
+              <div>Matches (MWP)</div>
+              <div>Games (GWP)</div>
+            </div>
+
+            {standings.map((standing) => {
+              const player = standing.Team.Players[0];
+              const isTopThree = standing.Rank < 4;
+              const rankClass = isTopThree ? `rank-${standing.Rank}` : '';
+
+              // Calculate match win percentage
+              const totalMatches = standing.MatchWins + standing.MatchLosses + standing.MatchDraws;
+              const mwPercent = totalMatches > 0 ? (standing.MatchWins / totalMatches * 100).toFixed(1) : '0.0';
+
+              // Calculate game win percentage
+              const gwPercent = (standing.TeamGameWinPercentage * 100).toFixed(1);
+              const isHighWinRate = standing.TeamGameWinPercentage > 0.59;
+              const isMediumWinRate = standing.TeamGameWinPercentage > 0.39;
+              const gwClass = isHighWinRate ? 'gw-high' : (isMediumWinRate ? 'gw-medium' : 'gw-low');
+
+              return (
+                <div class="leaderboard-row">
+                  <div class={`rank ${rankClass}`}>{standing.Rank}</div>
+                  <div>
+                    <div class="player-name">{player.DisplayName}</div>
+                    <div class="player-username">@{player.Username}</div>
+                  </div>
+                  <div class="stat">
+                    <div class="stat-value">{standing.TournamentCount || 0}</div>
+                  </div>
+                  <div class="stat">
+                    <div class="points">{standing.Points}</div>
+                  </div>
+                  <div class="stat">
+                    <div class="record">{standing.MatchRecord}</div>
+                    <div class="percent-label">({mwPercent}%)</div>
+                  </div>
+                  <div class="stat">
+                    <div class="record">{standing.GameRecord}</div>
+                    <div class={`percent-label ${gwClass}`}>({gwPercent}%)</div>
+                  </div>
+                </div>
+              );
+            })}
+          </Fragment>
+        ) : (
+          <div class="no-data">
+            <h2>No League Data Available</h2>
+            <p>Run the league aggregator to generate standings:</p>
+            <p><code>npm run league 384681 382756</code></p>
+          </div>
+        )}
+      </div>
+    </div>
+  </body>
+</html>
