@@ -9,7 +9,7 @@ const { leagueStats } = Astro.props;
 ---
 
 <div class="league-stats-container">
-  <h2>League Performance</h2>
+  <div class="league-stats-header">League Performance</div>
 
   <div class="league-stats-grid">
     {
@@ -62,21 +62,27 @@ const { leagueStats } = Astro.props;
 
 <style>
   .league-stats-container {
-    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
   }
 
-  h2 {
-    color: #1f2937;
-    text-align: center;
-    font-size: 1.75rem;
-    margin-bottom: 1.5rem;
+  .league-stats-header {
+    padding: 1.5rem 2rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
     font-weight: 600;
+    font-size: 1.25rem;
+    text-align: center;
   }
 
   .league-stats-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 1.5rem;
+    padding: 2rem;
   }
 
   .league-card {
