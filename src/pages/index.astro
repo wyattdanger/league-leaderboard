@@ -5,40 +5,7 @@ import * as yaml from 'js-yaml';
 import LeagueHeader from '../components/LeagueHeader.astro';
 import LeagueNav from '../components/LeagueNav.astro';
 import Leaderboard from '../components/Leaderboard.astro';
-
-interface LeagueStanding {
-  TeamId: number;
-  Team: {
-    Players: Array<{
-      DisplayName: string;
-      Username: string;
-    }>;
-  };
-  Rank: number;
-  MatchWins: number;
-  MatchLosses: number;
-  MatchDraws: number;
-  GameWins: number;
-  GameLosses: number;
-  GameDraws: number;
-  Points: number;
-  MatchRecord: string;
-  GameRecord: string;
-  OpponentMatchWinPercentage: number;
-  TeamGameWinPercentage: number;
-  OpponentGameWinPercentage: number;
-  OpponentCount: number;
-  TournamentCount?: number;
-}
-
-interface League {
-  name: string;
-  tournaments: number[];
-}
-
-interface LeaguesConfig {
-  leagues: League[];
-}
+import type { LeagueStanding, League, LeaguesConfig } from '../types';
 
 function loadLeaguesConfig(): LeaguesConfig {
   const configPath = path.join(process.cwd(), 'leagues.yml');
