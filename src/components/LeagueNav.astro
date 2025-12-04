@@ -1,0 +1,65 @@
+---
+interface League {
+  name: string;
+  tournaments: number[];
+}
+
+interface Props {
+  currentLeague: League | null;
+  allLeagues: League[];
+  isOverall: boolean;
+}
+
+const { currentLeague, allLeagues, isOverall } = Astro.props;
+
+function leagueNameToSlug(name: string): string {
+  return name.toLowerCase().replace(/\s+/g, '-');
+}
+---
+
+<nav class="league-nav">
+  {allLeagues.map((league) => {
+    const slug = leagueNameToSlug(league.name);
+    const isActive = currentLeague && league.name === currentLeague.name;
+    return (
+      <a href={`/league/${slug}`} class={isActive ? 'active' : ''}>
+        {league.name}
+      </a>
+    );
+  })}
+  <a href="/league/overall" class={isOverall ? 'active' : ''}>
+    Overall
+  </a>
+</nav>
+
+<style>
+  .league-nav {
+    text-align: center;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .league-nav a {
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    font-size: 1.1rem;
+    margin: 0 1rem;
+    transition: color 0.2s ease;
+  }
+
+  .league-nav a:hover {
+    color: rgba(255, 255, 255, 0.9);
+  }
+
+  .league-nav a.active {
+    color: white;
+    font-weight: 700;
+  }
+
+  @media (max-width: 640px) {
+    .league-nav a {
+      font-size: 0.9rem;
+      margin: 0 0.5rem;
+    }
+  }
+</style>
