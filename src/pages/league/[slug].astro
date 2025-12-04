@@ -3,7 +3,11 @@ import PageLayout from '../../components/PageLayout.astro';
 import LeagueHeader from '../../components/LeagueHeader.astro';
 import LeagueNav from '../../components/LeagueNav.astro';
 import Leaderboard from '../../components/Leaderboard.astro';
-import { loadLeaguesConfig, loadLeagueStandings, aggregateOverallStandings } from '../../utils/data';
+import {
+  loadLeaguesConfig,
+  loadLeagueStandings,
+  aggregateOverallStandings,
+} from '../../utils/data';
 import { leagueNameToSlug } from '../../utils/helpers';
 import type { League, LeagueStanding } from '../../types';
 

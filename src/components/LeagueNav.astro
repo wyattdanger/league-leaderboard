@@ -12,18 +12,18 @@ const { currentLeague, allLeagues, isOverall } = Astro.props;
 ---
 
 <nav class="league-nav">
-  {allLeagues.map((league) => {
-    const slug = leagueNameToSlug(league.name);
-    const isActive = currentLeague && league.name === currentLeague.name;
-    return (
-      <a href={`/league/${slug}`} class={isActive ? 'active' : ''}>
-        {league.name}
-      </a>
-    );
-  })}
-  <a href="/league/overall" class={isOverall ? 'active' : ''}>
-    Overall
-  </a>
+  {
+    allLeagues.map((league) => {
+      const slug = leagueNameToSlug(league.name);
+      const isActive = currentLeague && league.name === currentLeague.name;
+      return (
+        <a href={`/league/${slug}`} class={isActive ? 'active' : ''}>
+          {league.name}
+        </a>
+      );
+    })
+  }
+  <a href="/league/overall" class={isOverall ? 'active' : ''}> Overall </a>
 </nav>
 
 <style>

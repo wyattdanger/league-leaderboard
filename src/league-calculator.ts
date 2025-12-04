@@ -65,7 +65,7 @@ export function calculateLeagueStandings(
           const stats = teamStats.get(teamId)!;
           stats.tournamentIds.add(tournamentId);
           stats.matchWins += 1;
-          stats.gameWins += (competitor.GameByes || 0);
+          stats.gameWins += competitor.GameByes || 0;
           continue;
         }
 
@@ -151,7 +151,8 @@ export function calculateLeagueStandings(
   standings.sort((a, b) => {
     if (b.TotalPoints !== a.TotalPoints) return b.TotalPoints - a.TotalPoints;
     if (b.TotalMatchWins !== a.TotalMatchWins) return b.TotalMatchWins - a.TotalMatchWins;
-    if (b.GameWinPercentage !== a.GameWinPercentage) return b.GameWinPercentage - a.GameWinPercentage;
+    if (b.GameWinPercentage !== a.GameWinPercentage)
+      return b.GameWinPercentage - a.GameWinPercentage;
     return a.TeamId - b.TeamId;
   });
 

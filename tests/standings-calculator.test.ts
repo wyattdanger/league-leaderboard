@@ -1,4 +1,9 @@
-import { calculateStandings, calculateStandingsByUsername, Match, Standing } from '../src/standings-calculator';
+import {
+  calculateStandings,
+  calculateStandingsByUsername,
+  Match,
+  Standing,
+} from '../src/standings-calculator';
 import * as fs from 'fs';
 import * as path from 'path';
 
@@ -27,7 +32,7 @@ describe('Standings Calculator', () => {
     // Check each standing
     for (let i = 0; i < calculatedStandings.length; i++) {
       const calculated = calculatedStandings[i];
-      const expected = expectedStandings.find(s => s.TeamId === calculated.TeamId);
+      const expected = expectedStandings.find((s) => s.TeamId === calculated.TeamId);
 
       expect(expected).toBeDefined();
       if (!expected) continue;
@@ -67,7 +72,7 @@ describe('Standings Calculator', () => {
 
     for (let i = 0; i < calculatedStandings.length; i++) {
       const calculated = calculatedStandings[i];
-      const expected = expectedStandings.find(s => s.TeamId === calculated.TeamId);
+      const expected = expectedStandings.find((s) => s.TeamId === calculated.TeamId);
 
       expect(expected).toBeDefined();
       if (!expected) continue;
@@ -81,9 +86,15 @@ describe('Standings Calculator', () => {
       expect(calculated.MatchRecord).toBe(expected.MatchRecord);
       expect(calculated.GameRecord).toBe(expected.GameRecord);
 
-      expect(calculated.OpponentMatchWinPercentage).toBeCloseTo(expected.OpponentMatchWinPercentage, 2);
+      expect(calculated.OpponentMatchWinPercentage).toBeCloseTo(
+        expected.OpponentMatchWinPercentage,
+        2
+      );
       expect(calculated.TeamGameWinPercentage).toBeCloseTo(expected.TeamGameWinPercentage, 2);
-      expect(calculated.OpponentGameWinPercentage).toBeCloseTo(expected.OpponentGameWinPercentage, 2);
+      expect(calculated.OpponentGameWinPercentage).toBeCloseTo(
+        expected.OpponentGameWinPercentage,
+        2
+      );
     }
   });
 
@@ -99,7 +110,7 @@ describe('Standings Calculator', () => {
 
     for (let i = 0; i < calculatedStandings.length; i++) {
       const calculated = calculatedStandings[i];
-      const expected = expectedStandings.find(s => s.TeamId === calculated.TeamId);
+      const expected = expectedStandings.find((s) => s.TeamId === calculated.TeamId);
 
       expect(expected).toBeDefined();
       if (!expected) continue;
@@ -113,25 +124,61 @@ describe('Standings Calculator', () => {
       expect(calculated.MatchRecord).toBe(expected.MatchRecord);
       expect(calculated.GameRecord).toBe(expected.GameRecord);
 
-      expect(calculated.OpponentMatchWinPercentage).toBeCloseTo(expected.OpponentMatchWinPercentage, 2);
+      expect(calculated.OpponentMatchWinPercentage).toBeCloseTo(
+        expected.OpponentMatchWinPercentage,
+        2
+      );
       expect(calculated.TeamGameWinPercentage).toBeCloseTo(expected.TeamGameWinPercentage, 2);
-      expect(calculated.OpponentGameWinPercentage).toBeCloseTo(expected.OpponentGameWinPercentage, 2);
+      expect(calculated.OpponentGameWinPercentage).toBeCloseTo(
+        expected.OpponentGameWinPercentage,
+        2
+      );
     }
   });
 
   test('Calculate standings by username - aggregates across different TeamIds', () => {
     // Load tournament 384681 (3 rounds)
     const tournament1Rounds: Match[][] = [
-      JSON.parse(fs.readFileSync(path.join(process.cwd(), 'output/tournament_384681/Round_1_Matches.json'), 'utf-8')),
-      JSON.parse(fs.readFileSync(path.join(process.cwd(), 'output/tournament_384681/Round_2_Matches.json'), 'utf-8')),
-      JSON.parse(fs.readFileSync(path.join(process.cwd(), 'output/tournament_384681/Round_3_Matches.json'), 'utf-8'))
+      JSON.parse(
+        fs.readFileSync(
+          path.join(process.cwd(), 'output/tournament_384681/Round_1_Matches.json'),
+          'utf-8'
+        )
+      ),
+      JSON.parse(
+        fs.readFileSync(
+          path.join(process.cwd(), 'output/tournament_384681/Round_2_Matches.json'),
+          'utf-8'
+        )
+      ),
+      JSON.parse(
+        fs.readFileSync(
+          path.join(process.cwd(), 'output/tournament_384681/Round_3_Matches.json'),
+          'utf-8'
+        )
+      ),
     ];
 
     // Load tournament 382756 (3 rounds)
     const tournament2Rounds: Match[][] = [
-      JSON.parse(fs.readFileSync(path.join(process.cwd(), 'output/tournament_382756/Round_1_Matches.json'), 'utf-8')),
-      JSON.parse(fs.readFileSync(path.join(process.cwd(), 'output/tournament_382756/Round_2_Matches.json'), 'utf-8')),
-      JSON.parse(fs.readFileSync(path.join(process.cwd(), 'output/tournament_382756/Round_3_Matches.json'), 'utf-8'))
+      JSON.parse(
+        fs.readFileSync(
+          path.join(process.cwd(), 'output/tournament_382756/Round_1_Matches.json'),
+          'utf-8'
+        )
+      ),
+      JSON.parse(
+        fs.readFileSync(
+          path.join(process.cwd(), 'output/tournament_382756/Round_2_Matches.json'),
+          'utf-8'
+        )
+      ),
+      JSON.parse(
+        fs.readFileSync(
+          path.join(process.cwd(), 'output/tournament_382756/Round_3_Matches.json'),
+          'utf-8'
+        )
+      ),
     ];
 
     // Combine all 6 rounds
@@ -141,7 +188,7 @@ describe('Standings Calculator', () => {
     const standings = calculateStandingsByUsername(allRounds);
 
     // Find swb's standing (who played in both tournaments)
-    const swbStanding = standings.find(s => s.Team.Players[0]?.Username === 'swbmtg');
+    const swbStanding = standings.find((s) => s.Team.Players[0]?.Username === 'swbmtg');
 
     expect(swbStanding).toBeDefined();
     if (swbStanding) {
@@ -160,7 +207,7 @@ describe('Standings Calculator', () => {
     }
 
     // Check that players are NOT duplicated
-    const usernames = standings.map(s => s.Team.Players[0]?.Username);
+    const usernames = standings.map((s) => s.Team.Players[0]?.Username);
     const uniqueUsernames = new Set(usernames);
     expect(usernames.length).toBe(uniqueUsernames.size); // No duplicates
 

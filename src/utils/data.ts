@@ -22,8 +22,9 @@ export function loadLeagueStandings(leagueName: string): LeagueStanding[] | null
   }
 
   const safeName = leagueName.toLowerCase().replace(/\s+/g, '_');
-  const files = fs.readdirSync(leagueDir)
-    .filter(f => f.startsWith(`league_standings_${safeName}_`) && f.endsWith('.json'))
+  const files = fs
+    .readdirSync(leagueDir)
+    .filter((f) => f.startsWith(`league_standings_${safeName}_`) && f.endsWith('.json'))
     .sort()
     .reverse();
 
@@ -38,9 +39,7 @@ export function loadLeagueStandings(leagueName: string): LeagueStanding[] | null
 /**
  * Aggregate standings across all leagues to create overall standings
  */
-export function aggregateOverallStandings(
-  allLeagues: LeaguesConfig['leagues']
-): LeagueStanding[] {
+export function aggregateOverallStandings(allLeagues: LeaguesConfig['leagues']): LeagueStanding[] {
   // Load and combine standings from all leagues
   const allStandings: LeagueStanding[] = [];
   for (const league of allLeagues) {
@@ -51,20 +50,23 @@ export function aggregateOverallStandings(
   }
 
   // Aggregate by username across all leagues
-  const playerStats = new Map<string, {
-    username: string;
-    displayName: string;
-    teamId: number;
-    team: any;
-    points: number;
-    matchWins: number;
-    matchLosses: number;
-    matchDraws: number;
-    gameWins: number;
-    gameLosses: number;
-    gameDraws: number;
-    tournaments: Set<number>;
-  }>();
+  const playerStats = new Map<
+    string,
+    {
+      username: string;
+      displayName: string;
+      teamId: number;
+      team: any;
+      points: number;
+      matchWins: number;
+      matchLosses: number;
+      matchDraws: number;
+      gameWins: number;
+      gameLosses: number;
+      gameDraws: number;
+      tournaments: Set<number>;
+    }
+  >();
 
   for (const standing of allStandings) {
     const username = standing.Team.Players[0]?.Username || '';

@@ -10,7 +10,9 @@
     "scrape": "tsx src/scraper.ts",
     "league": "tsx src/league-aggregator.ts",
     "sync-league": "tsx src/sync-league.ts",
-    "test": "jest"
+    "test": "jest",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
   },
   "dependencies": {
     "astro": "^5.16.4",
@@ -21,6 +23,8 @@
     "@types/jest": "^30.0.0",
     "@types/js-yaml": "^4.0.9",
     "jest": "^30.2.0",
+    "prettier": "^3.7.4",
+    "prettier-plugin-astro": "^0.14.1",
     "ts-jest": "^29.4.6",
     "tsx": "^4.21.0"
   }

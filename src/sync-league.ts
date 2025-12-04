@@ -26,8 +26,7 @@ function tournamentDataExists(tournamentId: number): boolean {
   }
 
   // Check if we have match files (at least one round)
-  const files = fs.readdirSync(tournamentDir)
-    .filter(f => f.endsWith('_Matches.json'));
+  const files = fs.readdirSync(tournamentDir).filter((f) => f.endsWith('_Matches.json'));
 
   return files.length > 0;
 }
@@ -53,11 +52,11 @@ async function syncLeague(leagueName?: string): Promise<void> {
   // Determine which league to sync
   let league: League;
   if (leagueName) {
-    const found = config.leagues.find(l => l.name === leagueName);
+    const found = config.leagues.find((l) => l.name === leagueName);
     if (!found) {
       console.error(`❌ League "${leagueName}" not found in leagues.yml`);
       console.error('Available leagues:');
-      config.leagues.forEach(l => console.error(`  - ${l.name}`));
+      config.leagues.forEach((l) => console.error(`  - ${l.name}`));
       process.exit(1);
     }
     league = found;
@@ -100,17 +99,15 @@ async function syncLeague(leagueName?: string): Promise<void> {
 const args = process.argv.slice(2);
 
 if (args.length === 0 || args[0] === '--current') {
-  syncLeague()
-    .catch(error => {
-      console.error('Error syncing league:', error.message);
-      process.exit(1);
-    });
+  syncLeague().catch((error) => {
+    console.error('Error syncing league:', error.message);
+    process.exit(1);
+  });
 } else if (args[0] === '--league' && args[1]) {
-  syncLeague(args[1])
-    .catch(error => {
-      console.error('Error syncing league:', error.message);
-      process.exit(1);
-    });
+  syncLeague(args[1]).catch((error) => {
+    console.error('Error syncing league:', error.message);
+    process.exit(1);
+  });
 } else {
   console.error('Usage:');
   console.error('  npm run sync-league              # Sync current league');

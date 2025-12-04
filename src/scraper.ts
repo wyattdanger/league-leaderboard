@@ -16,12 +16,14 @@ async function fetchTournamentPage(tournamentId: string): Promise<string> {
 
   const response = await fetch(url, {
     headers: {
-      'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36',
-      'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8',
+      'User-Agent':
+        'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36',
+      Accept:
+        'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8',
       'Accept-Language': 'en-US,en;q=0.9',
       'Accept-Encoding': 'gzip, deflate, br',
-      'Connection': 'keep-alive',
-    }
+      Connection: 'keep-alive',
+    },
   });
 
   if (!response.ok) {
@@ -56,7 +58,7 @@ async function fetchRoundMatches(roundId: string, tournamentId: string): Promise
 
   // DataTables format POST body
   const formData = new URLSearchParams({
-    'draw': '1',
+    draw: '1',
     'columns[0][data]': 'TableNumber',
     'columns[0][name]': 'TableNumber',
     'columns[0][searchable]': 'true',
@@ -89,20 +91,21 @@ async function fetchRoundMatches(roundId: string, tournamentId: string): Promise
     'columns[4][search][regex]': 'false',
     'order[0][column]': '0',
     'order[0][dir]': 'asc',
-    'start': '0',
-    'length': '1000', // Request more records to get all matches
+    start: '0',
+    length: '1000', // Request more records to get all matches
     'search[value]': '',
-    'search[regex]': 'false'
+    'search[regex]': 'false',
   });
 
   const headers = {
-    'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36',
-    'Accept': 'application/json, text/javascript, */*; q=0.01',
+    'User-Agent':
+      'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36',
+    Accept: 'application/json, text/javascript, */*; q=0.01',
     'Accept-Language': 'en-US,en;q=0.9',
     'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
-    'Referer': `https://melee.gg/Tournament/View/${tournamentId}`,
+    Referer: `https://melee.gg/Tournament/View/${tournamentId}`,
     'X-Requested-With': 'XMLHttpRequest',
-    'Origin': 'https://melee.gg',
+    Origin: 'https://melee.gg',
     'Sec-Fetch-Dest': 'empty',
     'Sec-Fetch-Mode': 'cors',
     'Sec-Fetch-Site': 'same-origin',
@@ -111,7 +114,7 @@ async function fetchRoundMatches(roundId: string, tournamentId: string): Promise
   const response = await fetch(url, {
     method: 'POST',
     headers,
-    body: formData.toString()
+    body: formData.toString(),
   });
 
   if (!response.ok) {
@@ -129,7 +132,9 @@ async function fetchRoundMatches(roundId: string, tournamentId: string): Promise
       fs.mkdirSync(errorDir, { recursive: true });
     }
     fs.writeFileSync(errorFile, text);
-    throw new Error(`Expected JSON response but got: ${contentType}. Response saved to ${errorFile}`);
+    throw new Error(
+      `Expected JSON response but got: ${contentType}. Response saved to ${errorFile}`
+    );
   }
 
   const jsonData = JSON.parse(text);
@@ -147,7 +152,7 @@ async function fetchRoundStandings(roundId: string, tournamentId: string): Promi
 
   // DataTables format POST body for standings
   const formData = new URLSearchParams({
-    'draw': '1',
+    draw: '1',
     'columns[0][data]': 'Rank',
     'columns[0][name]': 'Rank',
     'columns[0][searchable]': 'true',
@@ -216,21 +221,22 @@ async function fetchRoundStandings(roundId: string, tournamentId: string): Promi
     'columns[10][search][regex]': 'false',
     'order[0][column]': '0',
     'order[0][dir]': 'asc',
-    'start': '0',
-    'length': '1000',
+    start: '0',
+    length: '1000',
     'search[value]': '',
     'search[regex]': 'false',
-    'roundId': roundId
+    roundId: roundId,
   });
 
   const headers = {
-    'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36',
-    'Accept': 'application/json, text/javascript, */*; q=0.01',
+    'User-Agent':
+      'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36',
+    Accept: 'application/json, text/javascript, */*; q=0.01',
     'Accept-Language': 'en-US,en;q=0.9',
     'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
-    'Referer': `https://melee.gg/Tournament/View/${tournamentId}`,
+    Referer: `https://melee.gg/Tournament/View/${tournamentId}`,
     'X-Requested-With': 'XMLHttpRequest',
-    'Origin': 'https://melee.gg',
+    Origin: 'https://melee.gg',
     'Sec-Fetch-Dest': 'empty',
     'Sec-Fetch-Mode': 'cors',
     'Sec-Fetch-Site': 'same-origin',
@@ -239,7 +245,7 @@ async function fetchRoundStandings(roundId: string, tournamentId: string): Promi
   const response = await fetch(url, {
     method: 'POST',
     headers,
-    body: formData.toString()
+    body: formData.toString(),
   });
 
   if (!response.ok) {
@@ -256,7 +262,9 @@ async function fetchRoundStandings(roundId: string, tournamentId: string): Promi
       fs.mkdirSync(errorDir, { recursive: true });
     }
     fs.writeFileSync(errorFile, text);
-    throw new Error(`Expected JSON response but got: ${contentType}. Response saved to ${errorFile}`);
+    throw new Error(
+      `Expected JSON response but got: ${contentType}. Response saved to ${errorFile}`
+    );
   }
 
   const jsonData = JSON.parse(text);
@@ -268,7 +276,11 @@ async function fetchRoundStandings(roundId: string, tournamentId: string): Promi
   return [];
 }
 
-async function writeMatchesToJson(matches: MatchData[], roundName: string, outputDir: string): Promise<void> {
+async function writeMatchesToJson(
+  matches: MatchData[],
+  roundName: string,
+  outputDir: string
+): Promise<void> {
   if (matches.length === 0) {
     console.log(`No matches found for ${roundName}`);
     return;
@@ -281,7 +293,11 @@ async function writeMatchesToJson(matches: MatchData[], roundName: string, outpu
   console.log(`✓ Wrote ${matches.length} matches to ${fileName}`);
 }
 
-async function writeStandingsToJson(standings: MatchData[], roundName: string, outputDir: string): Promise<void> {
+async function writeStandingsToJson(
+  standings: MatchData[],
+  roundName: string,
+  outputDir: string
+): Promise<void> {
   if (standings.length === 0) {
     console.log(`No standings found for ${roundName}`);
     return;
@@ -304,7 +320,10 @@ async function scrapeTournament(tournamentId: string): Promise<void> {
   // Extract round IDs
   console.log('Extracting round information...');
   const rounds = extractRoundIds(html);
-  console.log(`Found ${rounds.length} rounds:`, rounds.map(r => `${r.name} (${r.id})`).join(', '));
+  console.log(
+    `Found ${rounds.length} rounds:`,
+    rounds.map((r) => `${r.name} (${r.id})`).join(', ')
+  );
 
   if (rounds.length === 0) {
     throw new Error('No rounds found in tournament page');
@@ -343,8 +362,7 @@ if (!tournamentId) {
   process.exit(1);
 }
 
-scrapeTournament(tournamentId)
-  .catch(error => {
-    console.error('Error scraping tournament:', error.message);
-    process.exit(1);
-  });
+scrapeTournament(tournamentId).catch((error) => {
+  console.error('Error scraping tournament:', error.message);
+  process.exit(1);
+});

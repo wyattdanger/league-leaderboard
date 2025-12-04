@@ -37,8 +37,9 @@ async function aggregateLeague(tournamentIds: string[], leagueName?: string): Pr
     }
 
     // Find all match files
-    const files = fs.readdirSync(tournamentDir)
-      .filter(f => f.endsWith('_Matches.json'))
+    const files = fs
+      .readdirSync(tournamentDir)
+      .filter((f) => f.endsWith('_Matches.json'))
       .sort();
 
     if (files.length === 0) {
@@ -113,13 +114,13 @@ async function aggregateLeague(tournamentIds: string[], leagueName?: string): Pr
   console.log('='.repeat(120));
   console.log(
     `${'Rank'.padEnd(6)} ` +
-    `${'Player'.padEnd(25)} ` +
-    `${'Events'.padEnd(8)} ` +
-    `${'Points'.padEnd(8)} ` +
-    `${'Match'.padEnd(12)} ` +
-    `${'Game'.padEnd(12)} ` +
-    `${'OMW%'.padEnd(8)} ` +
-    `${'GW%'.padEnd(8)}`
+      `${'Player'.padEnd(25)} ` +
+      `${'Events'.padEnd(8)} ` +
+      `${'Points'.padEnd(8)} ` +
+      `${'Match'.padEnd(12)} ` +
+      `${'Game'.padEnd(12)} ` +
+      `${'OMW%'.padEnd(8)} ` +
+      `${'GW%'.padEnd(8)}`
   );
   console.log('-'.repeat(120));
 
@@ -131,19 +132,21 @@ async function aggregateLeague(tournamentIds: string[], leagueName?: string): Pr
 
     console.log(
       `${standing.Rank.toString().padEnd(6)} ` +
-      `${playerName.substring(0, 24).padEnd(25)} ` +
-      `${tournamentCount.toString().padEnd(8)} ` +
-      `${standing.Points.toString().padEnd(8)} ` +
-      `${standing.MatchRecord.padEnd(12)} ` +
-      `${standing.GameRecord.padEnd(12)} ` +
-      `${omwPct.padEnd(8)} ` +
-      `${gwPct.padEnd(8)}`
+        `${playerName.substring(0, 24).padEnd(25)} ` +
+        `${tournamentCount.toString().padEnd(8)} ` +
+        `${standing.Points.toString().padEnd(8)} ` +
+        `${standing.MatchRecord.padEnd(12)} ` +
+        `${standing.GameRecord.padEnd(12)} ` +
+        `${omwPct.padEnd(8)} ` +
+        `${gwPct.padEnd(8)}`
     );
   }
 
   console.log('='.repeat(120));
   console.log(`\n✓ League standings saved to ${filePath}`);
-  console.log(`✓ ${standings.length} players across ${tournamentIds.length} tournaments (${totalRounds} total rounds)\n`);
+  console.log(
+    `✓ ${standings.length} players across ${tournamentIds.length} tournaments (${totalRounds} total rounds)\n`
+  );
 }
 
 function loadLeaguesConfig(): LeaguesConfig {
@@ -166,35 +169,32 @@ if (args.length === 0 || args[0] === '--current') {
   const currentLeague = config.leagues[0];
   const tournamentIds = currentLeague.tournaments.map(String);
 
-  aggregateLeague(tournamentIds, currentLeague.name)
-    .catch(error => {
-      console.error('Error aggregating league standings:', error.message);
-      process.exit(1);
-    });
+  aggregateLeague(tournamentIds, currentLeague.name).catch((error) => {
+    console.error('Error aggregating league standings:', error.message);
+    process.exit(1);
+  });
 } else if (args[0] === '--league' && args[1]) {
   // Load specific league by name from config
   const config = loadLeaguesConfig();
-  const league = config.leagues.find(l => l.name === args[1]);
+  const league = config.leagues.find((l) => l.name === args[1]);
 
   if (!league) {
     console.error(`❌ League "${args[1]}" not found in leagues.yml`);
     console.error('Available leagues:');
-    config.leagues.forEach(l => console.error(`  - ${l.name}`));
+    config.leagues.forEach((l) => console.error(`  - ${l.name}`));
     process.exit(1);
   }
 
   const tournamentIds = league.tournaments.map(String);
-  aggregateLeague(tournamentIds, league.name)
-    .catch(error => {
-      console.error('Error aggregating league standings:', error.message);
-      process.exit(1);
-    });
+  aggregateLeague(tournamentIds, league.name).catch((error) => {
+    console.error('Error aggregating league standings:', error.message);
+    process.exit(1);
+  });
 } else {
   // Legacy mode: use command-line tournament IDs
   const tournamentIds = args;
-  aggregateLeague(tournamentIds)
-    .catch(error => {
-      console.error('Error aggregating league standings:', error.message);
-      process.exit(1);
-    });
+  aggregateLeague(tournamentIds).catch((error) => {
+    console.error('Error aggregating league standings:', error.message);
+    process.exit(1);
+  });
 }

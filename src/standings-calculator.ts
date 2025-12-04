@@ -103,13 +103,13 @@ export function calculateStandings(matchesPerRound: Match[][]): Standing[] {
             gameLosses: 0,
             gameDraws: 0,
             opponents: new Set(),
-            opponentIds: []
+            opponentIds: [],
           });
         }
 
         const stats = teamStats.get(teamId)!;
         stats.matchWins += 1;
-        stats.gameWins += (competitor.GameByes || 0);
+        stats.gameWins += competitor.GameByes || 0;
         continue;
       }
 
@@ -132,7 +132,7 @@ export function calculateStandings(matchesPerRound: Match[][]): Standing[] {
               gameLosses: 0,
               gameDraws: 0,
               opponents: new Set(),
-              opponentIds: []
+              opponentIds: [],
             });
           }
         }
@@ -235,7 +235,7 @@ export function calculateStandings(matchesPerRound: Match[][]): Standing[] {
       OpponentMatchWinPercentage: omw,
       TeamGameWinPercentage: gw,
       OpponentGameWinPercentage: ogw,
-      OpponentCount: stats.opponents.size
+      OpponentCount: stats.opponents.size,
     });
   }
 
@@ -297,7 +297,7 @@ export function calculateStandingsByUsername(matchesPerRound: Match[][]): Standi
         stats.teamId = competitor.TeamId; // Update to most recent
         stats.team = competitor.Team; // Update to most recent
         stats.matchWins += 1;
-        stats.gameWins += (competitor.GameByes || 0);
+        stats.gameWins += competitor.GameByes || 0;
         continue;
       }
 
@@ -308,7 +308,10 @@ export function calculateStandingsByUsername(matchesPerRound: Match[][]): Standi
         const username2 = comp2.Team.Players[0]?.Username || '';
 
         // Initialize player stats if needed
-        for (const [comp, username] of [[comp1, username1], [comp2, username2]] as const) {
+        for (const [comp, username] of [
+          [comp1, username1],
+          [comp2, username2],
+        ] as const) {
           if (!playerStats.has(username)) {
             playerStats.set(username, {
               username,
@@ -418,7 +421,7 @@ export function calculateStandingsByUsername(matchesPerRound: Match[][]): Standi
       OpponentMatchWinPercentage: omw,
       TeamGameWinPercentage: gw,
       OpponentGameWinPercentage: ogw,
-      OpponentCount: stats.opponents.size
+      OpponentCount: stats.opponents.size,
     });
   }
 
