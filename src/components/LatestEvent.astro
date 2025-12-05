@@ -34,87 +34,99 @@ const segments = metagameBreakdown ? metagameBreakdown.map((item, index) => {
 }) : [];
 ---
 
-<div class="latest-event-callout">
+<a href={`/event/${tournament.tournamentId}`} class="latest-event-callout">
   <div class="callout-header">
-    <span class="latest-badge">Latest Event</span>
-    <h2>{tournament.dateDisplay}</h2>
+    <div class="header-left">
+      <span class="latest-badge">Latest Event</span>
+      <h2>{tournament.dateDisplay}</h2>
+    </div>
+    <div class="view-results">
+      View Results →
+    </div>
   </div>
 
   <div class="callout-content">
-    <a href={`/event/${tournament.tournamentId}`} class="event-link">
-      <div class="event-stats">
-        {metagameBreakdown && (
-          <div class="stat pie-stat">
-            <div class="pie-chart-container">
-              <svg viewBox="0 0 100 100" class="pie-chart">
-                {segments.map((segment) => {
-                  const startAngle = (segment.start / 100) * 360;
-                  const endAngle = (segment.end / 100) * 360;
-                  const largeArc = segment.percentage > 50 ? 1 : 0;
+    <div class="event-stats">
+      {metagameBreakdown && (
+        <div class="stat pie-stat">
+          <div class="pie-chart-container">
+            <svg viewBox="0 0 100 100" class="pie-chart">
+              {segments.map((segment) => {
+                const startAngle = (segment.start / 100) * 360;
+                const endAngle = (segment.end / 100) * 360;
+                const largeArc = segment.percentage > 50 ? 1 : 0;
 
-                  const startX = 50 + 40 * Math.cos((startAngle - 90) * Math.PI / 180);
-                  const startY = 50 + 40 * Math.sin((startAngle - 90) * Math.PI / 180);
-                  const endX = 50 + 40 * Math.cos((endAngle - 90) * Math.PI / 180);
-                  const endY = 50 + 40 * Math.sin((endAngle - 90) * Math.PI / 180);
+                const startX = 50 + 40 * Math.cos((startAngle - 90) * Math.PI / 180);
+                const startY = 50 + 40 * Math.sin((startAngle - 90) * Math.PI / 180);
+                const endX = 50 + 40 * Math.cos((endAngle - 90) * Math.PI / 180);
+                const endY = 50 + 40 * Math.sin((endAngle - 90) * Math.PI / 180);
 
-                  return (
-                    <path
-                      d={`M 50 50 L ${startX} ${startY} A 40 40 0 ${largeArc} 1 ${endX} ${endY} Z`}
-                      fill={segment.color}
-                      class="pie-segment"
-                    />
-                  );
-                })}
-              </svg>
-            </div>
-            <span class="stat-label">Metagame</span>
+                return (
+                  <path
+                    d={`M 50 50 L ${startX} ${startY} A 40 40 0 ${largeArc} 1 ${endX} ${endY} Z`}
+                    fill={segment.color}
+                    class="pie-segment"
+                  />
+                );
+              })}
+            </svg>
           </div>
-        )}
-        <div class="stat">
-          <span class="stat-icon">👤</span>
-          <span class="stat-value">{tournament.playerCount}</span>
-          <span class="stat-label">Players</span>
+          <span class="stat-label">Metagame</span>
         </div>
-        <div class="stat">
-          <span class="stat-icon">🏆</span>
-          <span class="stat-value">{tournament.trophyCount}</span>
-          <span class="stat-label">Trophies</span>
-        </div>
-        <div class="stat">
-          <span class="stat-icon">⚔️</span>
-          <span class="stat-value">{tournament.roundCount}</span>
-          <span class="stat-label">Rounds</span>
-        </div>
+      )}
+      <div class="stat">
+        <span class="stat-icon">👤</span>
+        <span class="stat-value">{tournament.playerCount}</span>
+        <span class="stat-label">Players</span>
       </div>
-      <div class="view-results">
-        View Results →
+      <div class="stat">
+        <span class="stat-icon">🏆</span>
+        <span class="stat-value">{tournament.trophyCount}</span>
+        <span class="stat-label">Trophies</span>
       </div>
-    </a>
+      <div class="stat">
+        <span class="stat-icon">⚔️</span>
+        <span class="stat-value">{tournament.roundCount}</span>
+        <span class="stat-label">Rounds</span>
+      </div>
+    </div>
   </div>
-</div>
+</a>
 
 <style>
   .latest-event-callout {
-    background: white;
+    display: block;
     border-radius: 16px;
     box-shadow: 0 8px 24px rgba(102, 126, 234, 0.15);
     overflow: hidden;
     margin-bottom: 2rem;
-    border: 2px solid transparent;
-    background-image: linear-gradient(white, white),
-                      linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    background-origin: border-box;
-    background-clip: padding-box, border-box;
+    border: var(--border-subtle);
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.2s ease;
+  }
+
+  .latest-event-callout:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 32px rgba(102, 126, 234, 0.2);
   }
 
   .callout-header {
     background: var(--gradient-primary);
     color: white;
-    padding: 1.5rem 2rem;
-    position: relative;
+    padding: 1rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+  }
+
+  .header-left {
     display: flex;
     align-items: center;
     gap: 1rem;
+    flex: 1;
+    min-width: 0;
   }
 
   .latest-badge {
@@ -131,25 +143,19 @@ const segments = metagameBreakdown ? metagameBreakdown.map((item, index) => {
 
   .callout-header h2 {
     margin: 0;
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     font-weight: 700;
   }
 
   .callout-content {
-    padding: 2rem;
-  }
-
-  .event-link {
-    text-decoration: none;
-    color: inherit;
-    display: block;
+    padding: 1.5rem;
+    background: white;
   }
 
   .event-stats {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     gap: 1.5rem;
-    margin-bottom: 1.5rem;
   }
 
   .stat {
@@ -205,19 +211,10 @@ const segments = metagameBreakdown ? metagameBreakdown.map((item, index) => {
   }
 
   .view-results {
-    text-align: center;
-    padding: 1rem;
-    background: var(--gradient-primary);
-    color: white;
-    border-radius: 8px;
     font-weight: 600;
-    font-size: 1rem;
-    transition: all 0.2s ease;
-  }
-
-  .event-link:hover .view-results {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+    font-size: 0.9375rem;
+    white-space: nowrap;
+    flex-shrink: 0;
   }
 
   /* Compact desktop layout */
