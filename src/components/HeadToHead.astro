@@ -34,7 +34,7 @@ const { records } = Astro.props;
           const gwClass = isHighGWP ? 'wp-high' : isMediumGWP ? 'wp-medium' : 'wp-low';
 
           const opponentSlug = usernameToSlug(record.opponentUsername);
-          const isHidden = index >= 16;
+          const isHidden = index >= 8;
 
           return (
             <div class={`h2h-row ${isHidden ? 'hidden' : ''}`}>
@@ -70,13 +70,13 @@ const { records } = Astro.props;
           );
         })}
 
-        {records.length > 16 && (
+        {records.length > 8 && (
           <div class="load-more-container" id="h2h-load-more-container">
             <div class="load-more-counter" id="h2h-load-more-counter">
-              Showing 16 of {records.length}
+              Showing 8 of {records.length}
             </div>
             <button class="load-more-btn" id="h2h-load-more-btn">
-              Load More
+              View More
             </button>
           </div>
         )}
@@ -91,29 +91,17 @@ const { records } = Astro.props;
   document.addEventListener('DOMContentLoaded', () => {
     const btn = document.getElementById('h2h-load-more-btn');
     const container = document.getElementById('h2h-load-more-container');
-    const counter = document.getElementById('h2h-load-more-counter');
 
-    if (btn && container && counter) {
+    if (btn && container) {
       btn.addEventListener('click', () => {
-        // Get all currently hidden rows
+        // Get all currently hidden rows and show them all
         const hiddenRows = document.querySelectorAll('.h2h-row.hidden');
-
-        // Show the next 16 rows (or however many are left)
-        const rowsToShow = Array.from(hiddenRows).slice(0, 16);
-        rowsToShow.forEach((row) => {
+        hiddenRows.forEach((row) => {
           row.classList.remove('hidden');
         });
 
-        // Update the counter
-        const allRows = document.querySelectorAll('.h2h-row');
-        const visibleRows = document.querySelectorAll('.h2h-row:not(.hidden)');
-        counter.textContent = `Showing ${visibleRows.length} of ${allRows.length}`;
-
-        // Hide the button if no more hidden rows remain
-        const remainingHidden = document.querySelectorAll('.h2h-row.hidden');
-        if (remainingHidden.length === 0) {
-          container.style.display = 'none';
-        }
+        // Hide the Load More container
+        container.style.display = 'none';
       });
     }
   });

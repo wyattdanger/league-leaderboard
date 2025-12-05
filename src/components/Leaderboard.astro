@@ -411,7 +411,7 @@ const { standings } = Astro.props;
               Showing 16 of {standings.length}
             </div>
             <button class="view-more-btn" id="view-more-btn">
-              View more
+              View More
             </button>
           </div>
         )}
@@ -432,29 +432,17 @@ const { standings } = Astro.props;
   document.addEventListener('DOMContentLoaded', () => {
     const viewMoreBtn = document.getElementById('view-more-btn');
     const viewMoreContainer = document.getElementById('view-more-container');
-    const viewMoreCounter = document.getElementById('view-more-counter');
 
-    if (viewMoreBtn && viewMoreContainer && viewMoreCounter) {
+    if (viewMoreBtn && viewMoreContainer) {
       viewMoreBtn.addEventListener('click', () => {
-        // Get all currently hidden rows
+        // Get all currently hidden rows and show them all
         const hiddenRows = document.querySelectorAll('.leaderboard-row.hidden');
-
-        // Show the next 16 rows (or however many are left)
-        const rowsToShow = Array.from(hiddenRows).slice(0, 16);
-        rowsToShow.forEach((row) => {
+        hiddenRows.forEach((row) => {
           row.classList.remove('hidden');
         });
 
-        // Update the counter
-        const allRows = document.querySelectorAll('.leaderboard-row');
-        const visibleRows = document.querySelectorAll('.leaderboard-row:not(.hidden)');
-        viewMoreCounter.textContent = `Showing ${visibleRows.length} of ${allRows.length}`;
-
-        // Hide the button if no more hidden rows remain
-        const remainingHidden = document.querySelectorAll('.leaderboard-row.hidden');
-        if (remainingHidden.length === 0) {
-          viewMoreContainer.classList.add('hidden');
-        }
+        // Hide the View More container
+        viewMoreContainer.classList.add('hidden');
       });
     }
   });
