@@ -1,5 +1,6 @@
 ---
 import type { PlayerTournamentPerformance } from '../types';
+import Tooltip from './Tooltip.astro';
 
 interface Props {
   performances: PlayerTournamentPerformance[];
@@ -47,9 +48,15 @@ const hasDeckData = performances.some((perf) => perf.deck);
                     <td class="event-record">{perf.matchRecord}</td>
                     <td class={`event-mwp ${mwpClass}`}>{(perf.matchWinPercentage * 100).toFixed(1)}%</td>
                     <td class="event-meta">
-                      <span class="player-pill">👤 {perf.playerCount}</span>
-                      <span class="trophy-pill">🏆 {perf.trophyCount}</span>
-                      <span class="round-pill">⚔️ {perf.roundCount}</span>
+                      <Tooltip content={`${perf.playerCount} ${perf.playerCount === 1 ? 'player' : 'players'}`}>
+                        <span class="player-pill">👤 {perf.playerCount}</span>
+                      </Tooltip>
+                      <Tooltip content={`${perf.trophyCount} ${perf.trophyCount === 1 ? 'player' : 'players'} went 3-0`}>
+                        <span class="trophy-pill">🏆 {perf.trophyCount}</span>
+                      </Tooltip>
+                      <Tooltip content={`${perf.roundCount} ${perf.roundCount === 1 ? 'round' : 'rounds'} of Swiss`}>
+                        <span class="round-pill">⚔️ {perf.roundCount}</span>
+                      </Tooltip>
                     </td>
                   </tr>
                 );
@@ -66,9 +73,15 @@ const hasDeckData = performances.some((perf) => perf.deck);
                     <td class="event-record">{perf.matchRecord}</td>
                     <td class={`event-mwp ${mwpClass}`}>{(perf.matchWinPercentage * 100).toFixed(1)}%</td>
                     <td class="event-meta">
-                      <span class="player-pill">👤 {perf.playerCount}</span>
-                      <span class="trophy-pill">🏆 {perf.trophyCount}</span>
-                      <span class="round-pill">⚔️ {perf.roundCount}</span>
+                      <Tooltip content={`${perf.playerCount} ${perf.playerCount === 1 ? 'player' : 'players'}`}>
+                        <span class="player-pill">👤 {perf.playerCount}</span>
+                      </Tooltip>
+                      <Tooltip content={`${perf.trophyCount} ${perf.trophyCount === 1 ? 'player' : 'players'} went 3-0`}>
+                        <span class="trophy-pill">🏆 {perf.trophyCount}</span>
+                      </Tooltip>
+                      <Tooltip content={`${perf.roundCount} ${perf.roundCount === 1 ? 'round' : 'rounds'} of Swiss`}>
+                        <span class="round-pill">⚔️ {perf.roundCount}</span>
+                      </Tooltip>
                     </td>
                   </tr>
                 );

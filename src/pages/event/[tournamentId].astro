@@ -1,11 +1,14 @@
 ---
 import PageLayout from '../../components/PageLayout.astro';
 import LeagueHeader from '../../components/LeagueHeader.astro';
+import LeagueNav from '../../components/LeagueNav.astro';
 import MetagameBreakdown from '../../components/MetagameBreakdown.astro';
 import Tooltip from '../../components/Tooltip.astro';
 import { getTournamentMetadata } from '../../utils/tournamentData';
 import { loadDeckData, calculateMetagameBreakdown, hasCompleteDeckData } from '../../utils/deckData';
 import { calculateMatchWinPercentage } from '../../utils/winPercentage';
+import { loadLeaguesConfig } from '../../utils/data';
+import type { League } from '../../types';
 import * as fs from 'fs';
 import * as path from 'path';
 
@@ -30,6 +33,13 @@ const metadata = getTournamentMetadata(tournamentId);
 if (!metadata) {
   return Astro.redirect('/league/overall');
 }
+
+// Load leagues config and find which league this tournament belongs to
+const config = loadLeaguesConfig();
+const allLeagues = config.leagues;
+const currentLeague = allLeagues.find((league) =>
+  league.tournaments.includes(tournamentId)
+) || null;
 
 // Load final standings
 const tournamentDir = path.join(process.cwd(), 'output', `tournament_${tournamentId}`);
@@ -70,6 +80,7 @@ const hasTrophies = trophyWinners.length > 0;
 
 <PageLayout>
   <LeagueHeader />
+  <LeagueNav currentLeague={currentLeague} allLeagues={allLeagues} isOverall={false} />
 
   <div class="card">
     <div class="event-profile-header">
@@ -621,8 +632,8 @@ const hasTrophies = trophyWinners.length > 0;
   }
 
   .trophy-winner-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 6px 12px rgba(255, 215, 0, 0.3);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(255, 215, 0, 0.3);
     border-color: #ffa500;
   }
 
@@ -643,6 +654,7 @@ const hasTrophies = trophyWinners.length > 0;
     color: #667eea;
     font-weight: 600;
     font-size: 0.95rem;
+    margin-top: -0.25rem;
   }
 
   .trophy-winner-record {
