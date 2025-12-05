@@ -32,7 +32,7 @@ const hasDeckData = performances.some((perf) => perf.deck);
                 <th>Rank</th>
                 <th>Record</th>
                 <th>MWP</th>
-                <th>Event</th>
+                <th class="hide-mobile">Event</th>
               </tr>
             </thead>
             <tbody>
@@ -47,7 +47,7 @@ const hasDeckData = performances.some((perf) => perf.deck);
                     <td class="event-rank">{isTrophy ? '🏆' : perf.rank}</td>
                     <td class="event-record">{perf.matchRecord}</td>
                     <td class={`event-mwp ${mwpClass}`}>{(perf.matchWinPercentage * 100).toFixed(1)}%</td>
-                    <td class="event-meta">
+                    <td class="event-meta hide-mobile">
                       <Tooltip content={`${perf.playerCount} ${perf.playerCount === 1 ? 'player' : 'players'}`}>
                         <span class="player-pill">👤 {perf.playerCount}</span>
                       </Tooltip>
@@ -72,7 +72,7 @@ const hasDeckData = performances.some((perf) => perf.deck);
                     <td class="event-rank">{isTrophy ? '🏆' : perf.rank}</td>
                     <td class="event-record">{perf.matchRecord}</td>
                     <td class={`event-mwp ${mwpClass}`}>{(perf.matchWinPercentage * 100).toFixed(1)}%</td>
-                    <td class="event-meta">
+                    <td class="event-meta hide-mobile">
                       <Tooltip content={`${perf.playerCount} ${perf.playerCount === 1 ? 'player' : 'players'}`}>
                         <span class="player-pill">👤 {perf.playerCount}</span>
                       </Tooltip>
@@ -294,6 +294,10 @@ const hasDeckData = performances.some((perf) => perf.deck);
   }
 
   @media (max-width: 768px) {
+    .hide-mobile {
+      display: none;
+    }
+
     .event-table th,
     .event-table td {
       padding: 1rem 1.5rem;
