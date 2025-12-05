@@ -1,9 +1,5 @@
 ---
-import PageLayout from '../components/PageLayout.astro';
-import LeagueHeader from '../components/LeagueHeader.astro';
-import LeagueNav from '../components/LeagueNav.astro';
-import Leaderboard from '../components/Leaderboard.astro';
-import EventList from '../components/EventList.astro';
+import LeaguePage from '../components/LeaguePage.astro';
 import { loadLeaguesConfig, loadLeagueStandings } from '../utils/data';
 import { getTournamentMetadata } from '../utils/tournamentData';
 import type { TournamentMetadata } from '../types';
@@ -21,9 +17,10 @@ const tournamentMetadata: TournamentMetadata[] = firstLeague.tournaments
   .filter((meta): meta is TournamentMetadata => meta !== null);
 ---
 
-<PageLayout>
-  <LeagueHeader />
-  <LeagueNav currentLeague={firstLeague} allLeagues={allLeagues} isOverall={false} />
-  <Leaderboard standings={standings} />
-  <EventList tournaments={tournamentMetadata} />
-</PageLayout>
+<LeaguePage
+  currentLeague={firstLeague}
+  allLeagues={allLeagues}
+  isOverall={false}
+  standings={standings}
+  tournaments={tournamentMetadata}
+/>

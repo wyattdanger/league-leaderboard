@@ -1,9 +1,5 @@
 ---
-import PageLayout from '../../components/PageLayout.astro';
-import LeagueHeader from '../../components/LeagueHeader.astro';
-import LeagueNav from '../../components/LeagueNav.astro';
-import Leaderboard from '../../components/Leaderboard.astro';
-import EventList from '../../components/EventList.astro';
+import LeaguePage from '../../components/LeaguePage.astro';
 import {
   loadLeaguesConfig,
   loadLeagueStandings,
@@ -64,9 +60,10 @@ if (isOverall) {
 }
 ---
 
-<PageLayout>
-  <LeagueHeader />
-  <LeagueNav currentLeague={currentLeague} allLeagues={allLeagues} isOverall={isOverall} />
-  <Leaderboard standings={standings} />
-  <EventList tournaments={tournamentMetadata} />
-</PageLayout>
+<LeaguePage
+  currentLeague={currentLeague}
+  allLeagues={allLeagues}
+  isOverall={isOverall}
+  standings={standings}
+  tournaments={tournamentMetadata}
+/>
