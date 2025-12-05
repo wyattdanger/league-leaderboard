@@ -8,7 +8,7 @@ import type {
   PlayerLeagueStats,
   PlayerTournamentPerformance,
 } from './types';
-import { calculateMatchWinPercentage } from './utils/winPercentage';
+import { calculateMatchWinPercentage, calculateGameWinPercentage } from './utils/winPercentage';
 import { calculatePlayerStats, calculateHeadToHeadRecords } from './utils/playerData';
 import { getTournamentMetadata } from './utils/tournamentData';
 
@@ -283,17 +283,14 @@ async function generatePlayerStats(): Promise<void> {
     // Convert league stats map to array
     const leagueStats: PlayerLeagueStats[] = Array.from(leagueStatsMap.entries()).map(
       ([leagueName, data]) => {
-        const totalMatches = data.matchWins + data.matchLosses + data.matchDraws;
-        const totalGames = data.gameWins + data.gameLosses + data.gameDraws;
-
         return {
           leagueName,
           events: data.events,
           points: data.points,
           matchRecord: `${data.matchWins}-${data.matchLosses}-${data.matchDraws}`,
-          matchWinPercentage: totalMatches > 0 ? data.matchWins / totalMatches : 0,
+          matchWinPercentage: calculateMatchWinPercentage(data.matchWins, data.matchLosses, data.matchDraws),
           gameRecord: `${data.gameWins}-${data.gameLosses}-${data.gameDraws}`,
-          gameWinPercentage: totalGames > 0 ? data.gameWins / totalGames : 0,
+          gameWinPercentage: calculateGameWinPercentage(data.gameWins, data.gameLosses, data.gameDraws),
         };
       }
     );
@@ -306,7 +303,7 @@ async function generatePlayerStats(): Promise<void> {
       totalPoints: playerPoints.get(username) || 0,
       totalMatches,
       matchRecord: `${totalMatchWins}-${totalMatchLosses}-${totalMatchDraws}`,
-      matchWinPercentage: totalMatches > 0 ? totalMatchWins / totalMatches : 0,
+      matchWinPercentage: calculateMatchWinPercentage(totalMatchWins, totalMatchLosses, totalMatchDraws),
       gameRecord: `${totalGameWins}-${totalGameLosses}-${totalGameDraws}`,
       gameWinPercentage: totalGames > 0 ? totalGameWins / totalGames : 0,
       trophies: playerTrophies.get(username) || 0,

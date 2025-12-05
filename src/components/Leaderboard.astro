@@ -1,6 +1,7 @@
 ---
 import type { LeagueStanding } from '../types';
 import { usernameToSlug } from '../utils/helpers';
+import { calculateMatchWinPercentage, calculateGameWinPercentage } from '../utils/winPercentage';
 import Tooltip from './Tooltip.astro';
 
 interface Props {
@@ -343,12 +344,10 @@ const { standings } = Astro.props;
           const isHidden = index >= 16;
 
           // Calculate match win percentage with color treatment
-          const totalMatches = standing.MatchWins + standing.MatchLosses + standing.MatchDraws;
-          const mwPercent =
-            totalMatches > 0 ? ((standing.MatchWins / totalMatches) * 100).toFixed(1) : '0.0';
-          const mwPercentNum = totalMatches > 0 ? standing.MatchWins / totalMatches : 0;
-          const isHighMWP = mwPercentNum > 0.59;
-          const isMediumMWP = mwPercentNum > 0.39;
+          const mwp = calculateMatchWinPercentage(standing);
+          const mwPercent = (mwp * 100).toFixed(1);
+          const isHighMWP = mwp > 0.59;
+          const isMediumMWP = mwp > 0.39;
           const mwClass = isHighMWP ? 'wp-high' : isMediumMWP ? 'wp-medium' : 'wp-low';
 
           // Calculate game win percentage with color treatment

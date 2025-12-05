@@ -1,3 +1,5 @@
+import { calculateGameWinPercentage } from './utils/winPercentage';
+
 export interface Match {
   Competitors: Competitor[];
   RoundNumber: number;
@@ -199,7 +201,7 @@ export function calculateStandings(matchesPerRound: Match[][]): Standing[] {
     const omw = oppMatchCount > 0 ? totalOppMw / oppMatchCount : 0;
 
     // Calculate team game win percentage (no floor for display)
-    const gw = totalGames > 0 ? stats.gameWins / totalGames : 0;
+    const gw = calculateGameWinPercentage(stats.gameWins, stats.gameLosses, stats.gameDraws);
 
     // Calculate opponent game win percentage
     // Average the GW% of all opponents (with 33% floor applied to each)
@@ -387,8 +389,7 @@ export function calculateStandingsByUsername(matchesPerRound: Match[][]): Standi
     const omw = oppCount > 0 ? totalOppMw / oppCount : 0;
 
     // Calculate GW% (no floor for player's own percentage)
-    const totalGames = stats.gameWins + stats.gameLosses + stats.gameDraws;
-    const gw = totalGames > 0 ? stats.gameWins / totalGames : 0;
+    const gw = calculateGameWinPercentage(stats.gameWins, stats.gameLosses, stats.gameDraws);
 
     // Calculate OGW%
     let totalOppGw = 0;

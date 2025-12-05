@@ -1,4 +1,5 @@
 import type { Match, Team } from './standings-calculator.js';
+import { calculateGameWinPercentage } from './utils/winPercentage';
 
 export interface LeagueStanding {
   TeamId: number;
@@ -126,8 +127,7 @@ export function calculateLeagueStandings(
   const standings: LeagueStanding[] = [];
 
   for (const stats of teamStats.values()) {
-    const totalGames = stats.gameWins + stats.gameLosses + stats.gameDraws;
-    const gameWinPct = totalGames > 0 ? stats.gameWins / totalGames : 0;
+    const gameWinPct = calculateGameWinPercentage(stats.gameWins, stats.gameLosses, stats.gameDraws);
 
     standings.push({
       TeamId: stats.teamId,

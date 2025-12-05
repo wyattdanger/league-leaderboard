@@ -2,6 +2,7 @@
 import * as fs from 'fs';
 import * as path from 'path';
 import * as yaml from 'js-yaml';
+import { calculateMatchWinPercentage, calculateGameWinPercentage } from '../utils/winPercentage';
 
 interface LeagueStanding {
   TeamId: number;
@@ -170,7 +171,7 @@ if (selectedLeagueParam === 'overall') {
       MatchRecord: `${stats.matchWins}-${stats.matchLosses}-${stats.matchDraws}`,
       GameRecord: `${stats.gameWins}-${stats.gameLosses}-${stats.gameDraws}`,
       OpponentMatchWinPercentage: 0,
-      TeamGameWinPercentage: stats.gameWins / (stats.gameWins + stats.gameLosses + stats.gameDraws),
+      TeamGameWinPercentage: calculateGameWinPercentage(stats.gameWins, stats.gameLosses, stats.gameDraws),
       OpponentGameWinPercentage: 0,
       OpponentCount: 0,
       TournamentCount: stats.tournaments.size,
@@ -555,18 +556,19 @@ if (selectedLeagueParam === 'overall') {
                 const rankClass = isTopThree ? `rank-${standing.Rank}` : '';
 
                 // Calculate match win percentage
-                const totalMatches =
-                  standing.MatchWins + standing.MatchLosses + standing.MatchDraws;
-                const mwPercent =
-                  totalMatches > 0 ? ((standing.MatchWins / totalMatches) * 100).toFixed(1) : '0.0';
+                const mwp = calculateMatchWinPercentage(standing);
+                const mwPercent = (mwp * 100).toFixed(1);
+                const isHighMWP = mwp > 0.59;
+                const isMediumMWP = mwp > 0.39;
+                const mwClass = isHighMWP ? 'gw-high' : isMediumMWP ? 'gw-medium' : 'gw-low';
 
                 // Calculate game win percentage
                 const gwPercent = (standing.TeamGameWinPercentage * 100).toFixed(1);
-                const isHighWinRate = standing.TeamGameWinPercentage > 0.59;
-                const isMediumWinRate = standing.TeamGameWinPercentage > 0.39;
-                const gwClass = isHighWinRate
+                const isHighGWP = standing.TeamGameWinPercentage > 0.59;
+                const isMediumGWP = standing.TeamGameWinPercentage > 0.39;
+                const gwClass = isHighGWP
                   ? 'gw-high'
-                  : isMediumWinRate
+                  : isMediumGWP
                     ? 'gw-medium'
                     : 'gw-low';
 
@@ -585,7 +587,7 @@ if (selectedLeagueParam === 'overall') {
                     </div>
                     <div class="stat">
                       <div class="record">{standing.MatchRecord}</div>
-                      <div class="percent-label">({mwPercent}%)</div>
+                      <div class={`percent-label ${mwClass}`}>({mwPercent}%)</div>
                     </div>
                     <div class="stat">
                       <div class="record">{standing.GameRecord}</div>
