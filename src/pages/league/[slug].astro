@@ -58,6 +58,9 @@ if (isOverall) {
     .map((id) => getTournamentMetadata(id))
     .filter((meta): meta is TournamentMetadata => meta !== null);
 }
+
+// Hide leaderboard for Top 8s page (each Top 8 is a standalone culminating event)
+const isTop8s = currentLeague?.name === 'Top 8s';
 ---
 
 <LeaguePage
@@ -66,4 +69,5 @@ if (isOverall) {
   isOverall={isOverall}
   standings={standings}
   tournaments={tournamentMetadata}
+  showLeaderboard={!isTop8s}
 />
