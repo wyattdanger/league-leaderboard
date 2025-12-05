@@ -1,0 +1,342 @@
+---
+import type { PlayerTournamentPerformance } from '../types';
+
+interface Props {
+  performances: PlayerTournamentPerformance[];
+}
+
+const { performances } = Astro.props;
+
+const recentPerformances = performances.slice(0, 8);
+const olderPerformances = performances.slice(8);
+const hasMore = olderPerformances.length > 0;
+---
+
+{
+  performances.length > 0 && (
+    <div class="player-event-list-section">
+      <div class="card player-event-list">
+        <div class="event-list-header">
+          <div>Tournament History</div>
+        </div>
+        <div class="events-container">
+          {recentPerformances.map((perf) => {
+            const mwpClass = perf.matchWinPercentage > 0.59 ? 'wp-high' : perf.matchWinPercentage > 0.39 ? 'wp-medium' : 'wp-low';
+            const gwpClass = perf.gameWinPercentage > 0.59 ? 'wp-high' : perf.gameWinPercentage > 0.39 ? 'wp-medium' : 'wp-low';
+
+            return (
+              <a href={`/event/${perf.tournamentId}`} class="event-item">
+                <div class="event-left">
+                  <div class="event-date">{perf.dateDisplay}</div>
+                  <div class="event-meta">
+                    <span class="player-pill">👤 {perf.playerCount}</span>
+                    <span class="trophy-pill">🏆 {perf.trophyCount}</span>
+                    <span class="round-pill">⚔️ {perf.roundCount}</span>
+                  </div>
+                </div>
+                <div class="event-right">
+                  <div class="event-performance">
+                    <div class="rank-badge">#{perf.rank}</div>
+                    <div class="performance-stats">
+                      <div class="stat-row">
+                        <span class="stat-label">Record:</span>
+                        <span class="stat-value">{perf.matchRecord}</span>
+                      </div>
+                      <div class="stat-row">
+                        <span class="stat-label">MWP:</span>
+                        <span class={`stat-value ${mwpClass}`}>{(perf.matchWinPercentage * 100).toFixed(1)}%</span>
+                      </div>
+                      <div class="stat-row">
+                        <span class="stat-label">Points:</span>
+                        <span class="stat-value">{perf.points}</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            );
+          })}
+          {hasMore && (
+            <div class="older-events" style="display: none;">
+              {olderPerformances.map((perf) => {
+                const mwpClass = perf.matchWinPercentage > 0.59 ? 'wp-high' : perf.matchWinPercentage > 0.39 ? 'wp-medium' : 'wp-low';
+                const gwpClass = perf.gameWinPercentage > 0.59 ? 'wp-high' : perf.gameWinPercentage > 0.39 ? 'wp-medium' : 'wp-low';
+
+                return (
+                  <a href={`/event/${perf.tournamentId}`} class="event-item">
+                    <div class="event-left">
+                      <div class="event-date">{perf.dateDisplay}</div>
+                      <div class="event-meta">
+                        <span class="player-pill">👤 {perf.playerCount}</span>
+                        <span class="trophy-pill">🏆 {perf.trophyCount}</span>
+                        <span class="round-pill">⚔️ {perf.roundCount}</span>
+                      </div>
+                    </div>
+                    <div class="event-right">
+                      <div class="event-performance">
+                        <div class="rank-badge">#{perf.rank}</div>
+                        <div class="performance-stats">
+                          <div class="stat-row">
+                            <span class="stat-label">Record:</span>
+                            <span class="stat-value">{perf.matchRecord}</span>
+                          </div>
+                          <div class="stat-row">
+                            <span class="stat-label">MWP:</span>
+                            <span class={`stat-value ${mwpClass}`}>{(perf.matchWinPercentage * 100).toFixed(1)}%</span>
+                          </div>
+                          <div class="stat-row">
+                            <span class="stat-label">Points:</span>
+                            <span class="stat-value">{perf.points}</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                );
+              })}
+            </div>
+          )}
+        </div>
+        {hasMore && (
+          <div class="load-more-container">
+            <div class="load-more-counter">
+              Showing {recentPerformances.length} of {performances.length} events
+            </div>
+            <button class="load-more-btn" id="load-more-player-events">
+              View More
+            </button>
+          </div>
+        )}
+      </div>
+    </div>
+  )
+}
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const btn = document.getElementById('load-more-player-events');
+    if (btn) {
+      btn.addEventListener('click', () => {
+        const olderEvents = document.querySelector('.older-events') as HTMLElement;
+        const loadMoreContainer = document.querySelector('.load-more-container') as HTMLElement;
+
+        if (olderEvents) {
+          olderEvents.style.display = 'block';
+        }
+        if (loadMoreContainer) {
+          loadMoreContainer.style.display = 'none';
+        }
+      });
+    }
+  });
+</script>
+
+<style>
+  .player-event-list-section {
+    margin-top: 2rem;
+  }
+
+  .player-event-list {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+
+  .event-list-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 1rem 1.5rem;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+
+  .event-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    border-bottom: 1px solid #e5e7eb;
+    transition: all 0.2s ease;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+  }
+
+  .event-item:hover {
+    background: linear-gradient(90deg, rgba(102, 126, 234, 0.05) 0%, rgba(118, 75, 162, 0.05) 100%);
+  }
+
+  .event-item:last-child {
+    border-bottom: none;
+  }
+
+  .event-left {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .event-date {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1f2937;
+  }
+
+  .event-meta {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .player-pill,
+  .round-pill,
+  .trophy-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 12px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+
+  .player-pill {
+    background: rgba(59, 130, 246, 0.15);
+    color: #1e40af;
+  }
+
+  .round-pill {
+    background: rgba(239, 68, 68, 0.15);
+    color: #991b1b;
+  }
+
+  .trophy-pill {
+    background: rgba(255, 215, 0, 0.15);
+    color: #b8860b;
+  }
+
+  .event-right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .event-performance {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .rank-badge {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #667eea;
+    min-width: 50px;
+    text-align: right;
+  }
+
+  .performance-stats {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .stat-row {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .stat-label {
+    font-size: 0.75rem;
+    color: #6b7280;
+    font-weight: 500;
+    min-width: 50px;
+  }
+
+  .stat-value {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #374151;
+  }
+
+  .wp-high {
+    color: #10b981;
+  }
+  .wp-medium {
+    color: #f59e0b;
+  }
+  .wp-low {
+    color: #ef4444;
+  }
+
+  .load-more-container {
+    padding: 1.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    border-top: 1px solid #e5e7eb;
+  }
+
+  .load-more-counter {
+    color: #666;
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+
+  .load-more-btn {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    padding: 0.75rem 2rem;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+
+  .load-more-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+  }
+
+  .load-more-btn:active {
+    transform: translateY(0);
+  }
+
+  @media (max-width: 768px) {
+    .event-item {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1rem;
+      padding: 1.25rem 1.5rem;
+    }
+
+    .event-right {
+      width: 100%;
+    }
+
+    .event-performance {
+      width: 100%;
+      justify-content: space-between;
+    }
+
+    .rank-badge {
+      font-size: 1.25rem;
+      min-width: 40px;
+    }
+
+    .event-date {
+      font-size: 0.95rem;
+    }
+
+    .event-meta {
+      flex-wrap: wrap;
+    }
+  }
+</style>

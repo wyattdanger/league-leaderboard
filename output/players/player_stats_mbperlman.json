@@ -120,5 +120,31 @@
         "L"
       ]
     }
+  ],
+  "tournamentPerformances": [
+    {
+      "tournamentId": 347610,
+      "dateDisplay": "July 31, 2025",
+      "playerCount": 10,
+      "trophyCount": 1,
+      "roundCount": 3,
+      "rank": 2,
+      "points": 6,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWinPercentage": 0.71428571
+    },
+    {
+      "tournamentId": 343959,
+      "dateDisplay": "July 24, 2025",
+      "playerCount": 12,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 11,
+      "points": 0,
+      "matchRecord": "0-3-0",
+      "matchWinPercentage": 0,
+      "gameWinPercentage": 0.25
+    }
   ]
 }

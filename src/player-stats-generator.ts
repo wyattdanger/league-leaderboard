@@ -2,8 +2,14 @@ import * as fs from 'fs';
 import * as path from 'path';
 import * as yaml from 'js-yaml';
 import type { Match } from './utils/playerData';
-import type { PlayerDetailData, PlayerOverallStats, PlayerLeagueStats } from './types';
+import type {
+  PlayerDetailData,
+  PlayerOverallStats,
+  PlayerLeagueStats,
+  PlayerTournamentPerformance,
+} from './types';
 import { calculatePlayerStats, calculateHeadToHeadRecords } from './utils/playerData';
+import { getTournamentMetadata } from './utils/tournamentData';
 
 interface League {
   name: string;
@@ -306,12 +312,58 @@ async function generatePlayerStats(): Promise<void> {
       belts: playerBelts.get(username) || 0,
     };
 
+    // Collect tournament performances
+    const tournamentPerformances: PlayerTournamentPerformance[] = [];
+    for (const tournamentId of playerTournaments.get(username) || []) {
+      const tournamentDir = path.join(process.cwd(), 'output', `tournament_${tournamentId}`);
+      const standingsFiles = fs
+        .readdirSync(tournamentDir)
+        .filter((f) => f.endsWith('_Standings.json'))
+        .sort()
+        .reverse();
+
+      if (standingsFiles.length > 0) {
+        const standingsPath = path.join(tournamentDir, standingsFiles[0]);
+        const standings = JSON.parse(fs.readFileSync(standingsPath, 'utf-8'));
+
+        for (const standing of standings) {
+          const standingUsername = standing.Team.Players[0]?.Username || '';
+          if (standingUsername === username) {
+            const metadata = getTournamentMetadata(parseInt(tournamentId));
+            if (metadata) {
+              const mwp =
+                standing.MatchWins / (standing.MatchWins + standing.MatchLosses + standing.MatchDraws) || 0;
+              const gwp = standing.TeamGameWinPercentage || 0;
+
+              tournamentPerformances.push({
+                tournamentId: parseInt(tournamentId),
+                dateDisplay: metadata.dateDisplay,
+                playerCount: metadata.playerCount,
+                trophyCount: metadata.trophyCount,
+                roundCount: metadata.roundCount,
+                rank: standing.Rank,
+                points: standing.Points || 0,
+                matchRecord: standing.MatchRecord,
+                matchWinPercentage: mwp,
+                gameWinPercentage: gwp,
+              });
+            }
+            break;
+          }
+        }
+      }
+    }
+
+    // Sort by date (newest first)
+    tournamentPerformances.sort((a, b) => b.tournamentId - a.tournamentId);
+
     const playerDetailData: PlayerDetailData = {
       username,
       displayName,
       overallStats,
       leagueStats,
       headToHead,
+      tournamentPerformances,
     };
 
     // Write to file

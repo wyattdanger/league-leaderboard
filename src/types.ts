@@ -70,12 +70,26 @@ export interface PlayerLeagueStats {
   gameWinPercentage: number;
 }
 
+export interface PlayerTournamentPerformance {
+  tournamentId: number;
+  dateDisplay: string;
+  playerCount: number;
+  trophyCount: number;
+  roundCount: number;
+  rank: number;
+  points: number;
+  matchRecord: string;
+  matchWinPercentage: number;
+  gameWinPercentage: number;
+}
+
 export interface PlayerDetailData {
   username: string;
   displayName: string;
   overallStats: PlayerOverallStats;
   leagueStats: PlayerLeagueStats[];
   headToHead: HeadToHeadRecord[];
+  tournamentPerformances: PlayerTournamentPerformance[];
 }
 
 export interface TournamentMetadata {

@@ -267,5 +267,67 @@
         "W"
       ]
     }
+  ],
+  "tournamentPerformances": [
+    {
+      "tournamentId": 380585,
+      "dateDisplay": "November 6, 2025",
+      "playerCount": 7,
+      "trophyCount": 1,
+      "roundCount": 3,
+      "rank": 4,
+      "points": 6,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWinPercentage": 0.57142857
+    },
+    {
+      "tournamentId": 363663,
+      "dateDisplay": "September 11, 2025",
+      "playerCount": 9,
+      "trophyCount": 1,
+      "roundCount": 3,
+      "rank": 4,
+      "points": 6,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWinPercentage": 0.54166667
+    },
+    {
+      "tournamentId": 338898,
+      "dateDisplay": "July 10, 2025",
+      "playerCount": 15,
+      "trophyCount": 1,
+      "roundCount": 3,
+      "rank": 1,
+      "points": 9,
+      "matchRecord": "3-0-0",
+      "matchWinPercentage": 1,
+      "gameWinPercentage": 0.76190476
+    },
+    {
+      "tournamentId": 325333,
+      "dateDisplay": "June 12, 2025",
+      "playerCount": 13,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 5,
+      "points": 6,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWinPercentage": 0.57142857
+    },
+    {
+      "tournamentId": 321687,
+      "dateDisplay": "June 5, 2025",
+      "playerCount": 23,
+      "trophyCount": 3,
+      "roundCount": 3,
+      "rank": 8,
+      "points": 6,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWinPercentage": 0.6
+    }
   ]
 }

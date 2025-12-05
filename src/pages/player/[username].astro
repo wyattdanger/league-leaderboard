@@ -4,6 +4,7 @@ import LeagueHeader from '../../components/LeagueHeader.astro';
 import LeagueNav from '../../components/LeagueNav.astro';
 import PlayerLeagueStats from '../../components/PlayerLeagueStats.astro';
 import HeadToHead from '../../components/HeadToHead.astro';
+import PlayerEventList from '../../components/PlayerEventList.astro';
 import Tooltip from '../../components/Tooltip.astro';
 import { loadLeaguesConfig } from '../../utils/data';
 import { usernameToSlug } from '../../utils/helpers';
@@ -115,6 +116,8 @@ const gwpClass = isHighGWP ? 'stat-high' : isMediumGWP ? 'stat-medium' : 'stat-l
       <PlayerLeagueStats leagueStats={playerData.leagueStats} />
 
       <HeadToHead records={playerData.headToHead} />
+
+      <PlayerEventList performances={playerData.tournamentPerformances} />
     </div>
   </div>
 </PageLayout>
