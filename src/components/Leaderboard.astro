@@ -239,6 +239,11 @@ const { standings } = Astro.props;
     font-family: 'Courier New', monospace;
   }
 
+  .leaderboard-container {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
   @media (max-width: 1024px) {
     .leaderboard-header,
     .leaderboard-row {
@@ -261,62 +266,21 @@ const { standings } = Astro.props;
   @media (max-width: 640px) {
     .leaderboard-header,
     .leaderboard-row {
-      grid-template-columns: 35px 1fr 55px 90px 90px;
-      padding: 1rem 0.75rem;
-      gap: 0.5rem;
-      font-size: 0.8rem;
-    }
-
-    .leaderboard-header {
-      font-size: 0.7rem;
-      line-height: 1.2;
+      min-width: 800px;
     }
 
     .leaderboard-header > div {
-      white-space: normal;
-      word-break: break-word;
+      white-space: nowrap;
     }
 
-    /* Hide Events and Trophies columns on mobile */
-    .stat:nth-child(3),
-    .stat:nth-child(7) {
-      display: none;
-    }
-
-    /* Hide Events and Trophies headers on mobile */
-    .leaderboard-header > div:nth-child(3),
-    .leaderboard-header > div:nth-child(7) {
-      display: none;
-    }
-
-    .rank {
-      font-size: 1.2rem;
-    }
-
-    .rank-1 {
-      font-size: 1.4rem;
-    }
-    .rank-2 {
-      font-size: 1.3rem;
-    }
-    .rank-3 {
-      font-size: 1.25rem;
-    }
-
-    .player-name {
-      font-size: 0.95rem;
-    }
-
+    .player-name,
     .player-username {
-      font-size: 0.7rem;
+      white-space: nowrap;
     }
 
-    .record {
-      font-size: 0.8rem;
-    }
-
-    .percent-label {
-      font-size: 0.65rem;
+    .stat,
+    .stat-value {
+      white-space: nowrap;
     }
   }
 </style>
@@ -325,6 +289,7 @@ const { standings } = Astro.props;
   {
     standings ? (
       <Fragment>
+        <div class="leaderboard-container">
         <div class="leaderboard-header">
           <div>Rank</div>
           <div>Player</div>
@@ -401,6 +366,7 @@ const { standings } = Astro.props;
             </div>
           );
         })}
+        </div>
 
         {standings.length > 16 && (
           <div class="view-more-container" id="view-more-container">

@@ -90,27 +90,37 @@ const gwpClass = isHighGWP ? 'stat-high' : isMediumGWP ? 'stat-medium' : 'stat-l
     </div>
 
     <div class="player-profile-content">
-      <div class="overall-stats">
-        <div class="stats-header">
-          <div>Tournaments</div>
-          <div>Points</div>
-          <div>Matches</div>
-          <div>Match Record (MWP)</div>
-          <div>Game Record (GWP)</div>
-        </div>
-        <div class="stats-content">
-          <div class="stat-value">{playerData.overallStats.totalTournaments}</div>
-          <div class="stat-value">{playerData.overallStats.totalPoints}</div>
-          <div class="stat-value">{playerData.overallStats.totalMatches}</div>
-          <div class="stat-group">
-            <div class="stat-value">{playerData.overallStats.matchRecord}</div>
-            <div class={`stat-percent ${mwpClass}`}>{mwpPercent}%</div>
-          </div>
-          <div class="stat-group">
-            <div class="stat-value">{playerData.overallStats.gameRecord}</div>
-            <div class={`stat-percent ${gwpClass}`}>{gwpPercent}%</div>
-          </div>
-        </div>
+      <div class="overall-stats-container">
+        <table class="overall-stats">
+          <thead>
+            <tr>
+              <th>Tournaments</th>
+              <th>Points</th>
+              <th class="hide-mobile">Matches</th>
+              <th>Match Record</th>
+              <th>Game Record</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>{playerData.overallStats.totalTournaments}</td>
+              <td>{playerData.overallStats.totalPoints}</td>
+              <td class="hide-mobile">{playerData.overallStats.totalMatches}</td>
+              <td>
+                <div class="stat-group">
+                  <div class="stat-value">{playerData.overallStats.matchRecord}</div>
+                  <div class={`stat-percent ${mwpClass}`}>{mwpPercent}%</div>
+                </div>
+              </td>
+              <td>
+                <div class="stat-group">
+                  <div class="stat-value">{playerData.overallStats.gameRecord}</div>
+                  <div class={`stat-percent ${gwpClass}`}>{gwpPercent}%</div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </div>
 
       <PlayerLeagueStats leagueStats={playerData.leagueStats} />
@@ -182,41 +192,41 @@ const gwpClass = isHighGWP ? 'stat-high' : isMediumGWP ? 'stat-medium' : 'stat-l
     padding: 2rem;
   }
 
-  .overall-stats {
+  .overall-stats-container {
     margin-bottom: 2rem;
     border-radius: 12px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
   }
 
-  .stats-header {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 1rem;
-    padding: 1rem 1.5rem;
+  .overall-stats {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+  }
+
+  .overall-stats thead {
     background: #f9fafb;
     color: #764ba2;
+  }
+
+  .overall-stats th {
+    padding: 1rem 1.5rem;
     font-weight: 600;
     font-size: 0.85rem;
     text-align: center;
     border-bottom: 1px solid #e5e7eb;
+    white-space: nowrap;
   }
 
-  .stats-content {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 1rem;
+  .overall-stats td {
     padding: 1.5rem;
     text-align: center;
-    align-items: center;
-    background: white;
-  }
-
-  .stat-value {
     font-size: 1.5rem;
     font-weight: 700;
     color: #1f2937;
-    line-height: 1;
+    white-space: nowrap;
   }
 
   .stat-group {
@@ -224,6 +234,12 @@ const gwpClass = isHighGWP ? 'stat-high' : isMediumGWP ? 'stat-medium' : 'stat-l
     flex-direction: column;
     gap: 0.5rem;
     align-items: center;
+  }
+
+  .stat-value {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #1f2937;
   }
 
   .stat-percent {
@@ -242,21 +258,6 @@ const gwpClass = isHighGWP ? 'stat-high' : isMediumGWP ? 'stat-medium' : 'stat-l
   }
 
   @media (max-width: 1024px) {
-    .stats-header,
-    .stats-content {
-      grid-template-columns: repeat(3, 1fr);
-      font-size: 0.85rem;
-    }
-
-    .stats-header div:nth-child(3),
-    .stats-content > div:nth-child(3) {
-      display: none;
-    }
-
-    .stat-value {
-      font-size: 1.5rem;
-    }
-
     .player-profile-content {
       padding: 1.5rem;
     }
@@ -282,19 +283,26 @@ const gwpClass = isHighGWP ? 'stat-high' : isMediumGWP ? 'stat-medium' : 'stat-l
       padding: 1rem;
     }
 
-    .stats-header,
-    .stats-content {
-      grid-template-columns: repeat(2, 1fr);
-      font-size: 0.8rem;
-    }
-
-    .stats-header div:nth-child(2),
-    .stats-content > div:nth-child(2) {
+    .hide-mobile {
       display: none;
     }
 
+    .overall-stats th {
+      padding: 0.75rem 0.5rem;
+      font-size: 0.75rem;
+    }
+
+    .overall-stats td {
+      padding: 1rem 0.5rem;
+      font-size: 1.1rem;
+    }
+
     .stat-value {
-      font-size: 1.25rem;
+      font-size: 0.9rem;
+    }
+
+    .stat-percent {
+      font-size: 0.75rem;
     }
   }
 </style>
