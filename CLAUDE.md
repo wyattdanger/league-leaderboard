@@ -353,7 +353,48 @@ if (standing.MatchWins === 3 && standing.MatchLosses === 0 && standing.MatchDraw
    npm run build
    ```
 
-6. (Optional) Add deck data in `output/tournament_{id}/Decks.yml`
+6. (Optional) Add deck data to `decks.yml`
+
+### Managing Deck Data
+
+**Deck Data Structure:**
+- Centralized in `decks.yml` at project root
+- Maps tournament IDs → usernames → deck names
+- Uses `_` (underscore) to indicate unfilled/unknown data
+- Only shows deck columns/metagame when ALL players have deck data
+
+**Adding Deck Data:**
+
+1. **Manual editing** - Edit `decks.yml` directly:
+   ```yaml
+   '388334':
+     username1: The Rock
+     username2: Domain
+     username3: _  # Not yet filled in
+   ```
+
+2. **Via CSV for crowdsourcing:**
+   ```bash
+   # Export to CSV
+   npm run decks-to-csv
+
+   # Upload decks.csv to Google Sheets
+   # Share with contributors to fill in deck names
+   # Download completed sheet as CSV
+
+   # Import back to YAML
+   npm run csv-to-decks
+   ```
+
+3. **Regenerate template** (preserves existing data):
+   ```bash
+   npm run generate-deck-template
+   ```
+
+**Deck Data Validation:**
+- Event pages use `hasCompleteDeckData()` to check if all players have deck info
+- Deck columns and metagame breakdown only display when data is complete
+- Prevents showing partial/misleading deck information
 
 ### Fixing a Calculation Bug
 
