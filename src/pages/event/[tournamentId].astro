@@ -76,6 +76,32 @@ const topFinishers = trophyWinners.length === 0 && standings.length > 0
 
 const celebrationWinners = trophyWinners.length > 0 ? trophyWinners : topFinishers;
 const hasTrophies = trophyWinners.length > 0;
+const isTop8Tournament = currentLeague?.name === 'Top 8s';
+
+// Compute celebration messaging
+const celebrationEmoji = hasTrophies
+  ? (isTop8Tournament ? '👑' : '🏆')
+  : '🌟';
+
+const celebrationTitle = hasTrophies
+  ? isTop8Tournament
+    ? celebrationWinners.length === 1 ? 'Belt Winner' : 'Belt Winners'
+    : celebrationWinners.length === 1 ? 'Trophy Winner' : 'Trophy Winners'
+  : celebrationWinners.length === 1 ? 'Top Finisher' : 'Top Finishers';
+
+const celebrationMessage = hasTrophies
+  ? isTop8Tournament
+    ? celebrationWinners.length === 1
+      ? 'Congratulations to our league champion!'
+      : 'Congratulations to our league champions!'
+    : celebrationWinners.length === 1
+      ? 'Congratulations to our undefeated champion!'
+      : `Congratulations to our ${celebrationWinners.length} undefeated champions!`
+  : celebrationWinners.length === 1
+    ? 'Congratulations to our top finisher!'
+    : 'Congratulations to our top finishers!';
+
+const celebrationCardEmoji = hasTrophies ? '👑' : '⭐';
 ---
 
 <PageLayout>
@@ -238,19 +264,11 @@ const hasTrophies = trophyWinners.length > 0;
         <div class="trophy-celebration" id="trophy-celebration">
           <canvas id="confetti-canvas"></canvas>
           <div class={hasTrophies ? "trophy-header" : "top-finisher-header"}>
-            {hasTrophies
-              ? `🏆 ${trophyWinners.length === 1 ? 'Trophy Winner' : 'Trophy Winners'}`
-              : `🌟 ${topFinishers.length === 1 ? 'Top Finisher' : 'Top Finishers'}`}
+            {celebrationEmoji} {celebrationTitle} {celebrationEmoji}
           </div>
           <div class="trophy-content">
             <div class="trophy-message">
-              {hasTrophies
-                ? (trophyWinners.length === 1
-                    ? 'Congratulations to our undefeated champion!'
-                    : `Congratulations to our ${trophyWinners.length} undefeated champions!`)
-                : (topFinishers.length === 1
-                    ? 'Congratulations to our top finisher!'
-                    : `Congratulations to our top finishers!`)}
+              {celebrationMessage}
             </div>
             <div class="trophy-winners-list">
               {celebrationWinners.map((winner: any) => {
@@ -262,7 +280,7 @@ const hasTrophies = trophyWinners.length > 0;
                 return (
                   <a href={playerUrl} class="trophy-winner-card">
                     <div class="trophy-winner-name">
-                      <span class="trophy-emoji">{hasTrophies ? '👑' : '⭐'}</span>
+                      <span class="trophy-emoji">{celebrationCardEmoji}</span>
                       {displayName}
                     </div>
                     {deck && (
