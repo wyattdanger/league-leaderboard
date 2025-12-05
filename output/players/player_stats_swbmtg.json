@@ -2,25 +2,25 @@
   "username": "swbmtg",
   "displayName": "swb 👋",
   "overallStats": {
-    "totalTournaments": 22,
-    "totalPoints": 148,
-    "totalMatches": 66,
-    "matchRecord": "48-14-4",
-    "matchWinPercentage": 0.7272727272727273,
-    "gameRecord": "106-50-2",
-    "gameWinPercentage": 0.6708860759493671,
+    "totalTournaments": 23,
+    "totalPoints": 151,
+    "totalMatches": 69,
+    "matchRecord": "49-16-4",
+    "matchWinPercentage": 0.7101449275362319,
+    "gameRecord": "109-55-2",
+    "gameWinPercentage": 0.6566265060240963,
     "trophies": 6,
     "belts": 1
   },
   "leagueStats": [
     {
       "leagueName": "Q4 2025",
-      "events": 5,
-      "points": 40,
-      "matchRecord": "13-1-1",
-      "matchWinPercentage": 0.8666666666666667,
-      "gameRecord": "27-6-1",
-      "gameWinPercentage": 0.7941176470588235
+      "events": 6,
+      "points": 43,
+      "matchRecord": "14-3-1",
+      "matchWinPercentage": 0.7777777777777778,
+      "gameRecord": "30-11-1",
+      "gameWinPercentage": 0.7142857142857143
     },
     {
       "leagueName": "Q3 2025",
@@ -92,6 +92,46 @@
       ]
     },
     {
+      "opponentUsername": "FriendlyFerret",
+      "opponentDisplayName": "Bill Ellis!!",
+      "matchesPlayed": 5,
+      "matchWins": 2,
+      "matchLosses": 2,
+      "matchDraws": 1,
+      "matchWinPercentage": 0.4,
+      "gameWins": 6,
+      "gameLosses": 6,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5,
+      "lastFiveResults": [
+        "L",
+        "W",
+        "D",
+        "L",
+        "W"
+      ]
+    },
+    {
+      "opponentUsername": "JUDDERMANG",
+      "opponentDisplayName": "Chris Cruz",
+      "matchesPlayed": 5,
+      "matchWins": 3,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.6,
+      "gameWins": 8,
+      "gameLosses": 6,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5714285714285714,
+      "lastFiveResults": [
+        "L",
+        "W",
+        "W",
+        "L",
+        "W"
+      ]
+    },
+    {
       "opponentUsername": "RichBucey",
       "opponentDisplayName": "RichBucey",
       "matchesPlayed": 4,
@@ -108,44 +148,6 @@
         "W",
         "L",
         "L"
-      ]
-    },
-    {
-      "opponentUsername": "JUDDERMANG",
-      "opponentDisplayName": "Chris Cruz",
-      "matchesPlayed": 4,
-      "matchWins": 3,
-      "matchLosses": 1,
-      "matchDraws": 0,
-      "matchWinPercentage": 0.75,
-      "gameWins": 7,
-      "gameLosses": 4,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.6363636363636364,
-      "lastFiveResults": [
-        "W",
-        "W",
-        "L",
-        "W"
-      ]
-    },
-    {
-      "opponentUsername": "FriendlyFerret",
-      "opponentDisplayName": "Bill Ellis!!",
-      "matchesPlayed": 4,
-      "matchWins": 2,
-      "matchLosses": 1,
-      "matchDraws": 1,
-      "matchWinPercentage": 0.5,
-      "gameWins": 6,
-      "gameLosses": 4,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.6,
-      "lastFiveResults": [
-        "W",
-        "D",
-        "L",
-        "W"
       ]
     },
     {
@@ -285,6 +287,22 @@
       "gameWinPercentage": 0.8,
       "lastFiveResults": [
         "W",
+        "W"
+      ]
+    },
+    {
+      "opponentUsername": "Taylorhol",
+      "opponentDisplayName": "Taylorhol",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6666666666666666,
+      "lastFiveResults": [
         "W"
       ]
     },

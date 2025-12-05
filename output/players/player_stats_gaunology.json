@@ -1,0 +1,60 @@
+{
+  "username": "Gaunology",
+  "displayName": "Gaunology",
+  "overallStats": {
+    "totalTournaments": 1,
+    "totalPoints": 7,
+    "totalMatches": 3,
+    "matchRecord": "2-0-1",
+    "matchWinPercentage": 0.6666666666666666,
+    "gameRecord": "5-1-0",
+    "gameWinPercentage": 0.8333333333333334,
+    "trophies": 0,
+    "belts": 0
+  },
+  "leagueStats": [
+    {
+      "leagueName": "Q4 2025",
+      "events": 1,
+      "points": 7,
+      "matchRecord": "2-0-1",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameRecord": "5-1-0",
+      "gameWinPercentage": 0.8333333333333334
+    }
+  ],
+  "headToHead": [
+    {
+      "opponentUsername": "FriendlyFerret",
+      "opponentDisplayName": "Bill Ellis!!",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "lastFiveResults": [
+        "W"
+      ]
+    },
+    {
+      "opponentUsername": "madmanpoet",
+      "opponentDisplayName": "Michael Flores",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 0,
+      "matchDraws": 1,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5,
+      "lastFiveResults": [
+        "D"
+      ]
+    }
+  ]
+}

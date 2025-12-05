@@ -2,25 +2,25 @@
   "username": "RichBucey",
   "displayName": "RichBucey",
   "overallStats": {
-    "totalTournaments": 18,
-    "totalPoints": 90,
-    "totalMatches": 54,
-    "matchRecord": "30-24-0",
-    "matchWinPercentage": 0.5555555555555556,
-    "gameRecord": "70-59-0",
-    "gameWinPercentage": 0.5426356589147286,
+    "totalTournaments": 19,
+    "totalPoints": 96,
+    "totalMatches": 57,
+    "matchRecord": "32-25-0",
+    "matchWinPercentage": 0.5614035087719298,
+    "gameRecord": "74-62-0",
+    "gameWinPercentage": 0.5441176470588235,
     "trophies": 3,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q4 2025",
-      "events": 5,
-      "points": 33,
-      "matchRecord": "11-4-0",
-      "matchWinPercentage": 0.7333333333333333,
-      "gameRecord": "23-10-0",
-      "gameWinPercentage": 0.696969696969697
+      "events": 6,
+      "points": 39,
+      "matchRecord": "13-5-0",
+      "matchWinPercentage": 0.7222222222222222,
+      "gameRecord": "27-13-0",
+      "gameWinPercentage": 0.675
     },
     {
       "leagueName": "Q3 2025",
@@ -110,6 +110,42 @@
       ]
     },
     {
+      "opponentUsername": "madmanpoet",
+      "opponentDisplayName": "Michael Flores",
+      "matchesPlayed": 3,
+      "matchWins": 0,
+      "matchLosses": 3,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 6,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "lastFiveResults": [
+        "L",
+        "L",
+        "L"
+      ]
+    },
+    {
+      "opponentUsername": "Taylorhol",
+      "opponentDisplayName": "Taylorhol",
+      "matchesPlayed": 3,
+      "matchWins": 2,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 4,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5,
+      "lastFiveResults": [
+        "W",
+        "W",
+        "L"
+      ]
+    },
+    {
       "opponentUsername": "JUDDERMANG",
       "opponentDisplayName": "Chris Cruz",
       "matchesPlayed": 3,
@@ -123,23 +159,6 @@
       "gameWinPercentage": 0.6666666666666666,
       "lastFiveResults": [
         "W",
-        "W",
-        "L"
-      ]
-    },
-    {
-      "opponentUsername": "Taylorhol",
-      "opponentDisplayName": "Taylorhol",
-      "matchesPlayed": 2,
-      "matchWins": 1,
-      "matchLosses": 1,
-      "matchDraws": 0,
-      "matchWinPercentage": 0.5,
-      "gameWins": 2,
-      "gameLosses": 3,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.4,
-      "lastFiveResults": [
         "W",
         "L"
       ]
@@ -159,23 +178,6 @@
       "lastFiveResults": [
         "W",
         "W"
-      ]
-    },
-    {
-      "opponentUsername": "madmanpoet",
-      "opponentDisplayName": "Michael Flores",
-      "matchesPlayed": 2,
-      "matchWins": 0,
-      "matchLosses": 2,
-      "matchDraws": 0,
-      "matchWinPercentage": 0,
-      "gameWins": 0,
-      "gameLosses": 4,
-      "gameDraws": 0,
-      "gameWinPercentage": 0,
-      "lastFiveResults": [
-        "L",
-        "L"
       ]
     },
     {
@@ -261,6 +263,22 @@
       "lastFiveResults": [
         "L",
         "L"
+      ]
+    },
+    {
+      "opponentUsername": "Tehmaty",
+      "opponentDisplayName": "Matthew Maurice",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "lastFiveResults": [
+        "W"
       ]
     },
     {

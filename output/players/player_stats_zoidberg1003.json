@@ -2,24 +2,24 @@
   "username": "zoidberg1003",
   "displayName": "Zoahr Bhagat",
   "overallStats": {
-    "totalTournaments": 4,
-    "totalPoints": 13,
-    "totalMatches": 12,
-    "matchRecord": "4-7-1",
-    "matchWinPercentage": 0.3333333333333333,
-    "gameRecord": "13-17-0",
-    "gameWinPercentage": 0.43333333333333335,
+    "totalTournaments": 5,
+    "totalPoints": 20,
+    "totalMatches": 15,
+    "matchRecord": "6-7-2",
+    "matchWinPercentage": 0.4,
+    "gameRecord": "18-19-1",
+    "gameWinPercentage": 0.47368421052631576,
     "trophies": 0,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q4 2025",
-      "events": 1,
-      "points": 6,
-      "matchRecord": "2-1-0",
+      "events": 2,
+      "points": 13,
+      "matchRecord": "4-1-1",
       "matchWinPercentage": 0.6666666666666666,
-      "gameRecord": "5-3-0",
+      "gameRecord": "10-5-1",
       "gameWinPercentage": 0.625
     },
     {
@@ -33,6 +33,23 @@
     }
   ],
   "headToHead": [
+    {
+      "opponentUsername": "FriendlyFerret",
+      "opponentDisplayName": "Bill Ellis!!",
+      "matchesPlayed": 2,
+      "matchWins": 2,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 4,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.8,
+      "lastFiveResults": [
+        "W",
+        "W"
+      ]
+    },
     {
       "opponentUsername": "Mattmelach",
       "opponentDisplayName": "Matthew Melachrinos",
@@ -65,6 +82,38 @@
       "lastFiveResults": [
         "D",
         "L"
+      ]
+    },
+    {
+      "opponentUsername": "Taylorhol",
+      "opponentDisplayName": "Taylorhol",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 0,
+      "matchDraws": 1,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 1,
+      "gameDraws": 1,
+      "gameWinPercentage": 0.3333333333333333,
+      "lastFiveResults": [
+        "D"
+      ]
+    },
+    {
+      "opponentUsername": "Tencteri",
+      "opponentDisplayName": "Tencteri",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6666666666666666,
+      "lastFiveResults": [
+        "W"
       ]
     },
     {
@@ -161,22 +210,6 @@
       "gameWinPercentage": 0.3333333333333333,
       "lastFiveResults": [
         "L"
-      ]
-    },
-    {
-      "opponentUsername": "FriendlyFerret",
-      "opponentDisplayName": "Bill Ellis!!",
-      "matchesPlayed": 1,
-      "matchWins": 1,
-      "matchLosses": 0,
-      "matchDraws": 0,
-      "matchWinPercentage": 1,
-      "gameWins": 2,
-      "gameLosses": 1,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.6666666666666666,
-      "lastFiveResults": [
-        "W"
       ]
     },
     {

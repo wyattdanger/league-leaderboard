@@ -140,6 +140,47 @@ leagues:
       - 377629
 ```
 
+### Adding a New Tournament to an Existing League
+
+When a new weekly tournament finishes, follow these steps:
+
+1. **Add the tournament ID to `leagues.yml`**:
+   ```yaml
+   leagues:
+     - name: Q4 2025
+       tournaments:
+         - 388334  # ← Add new tournament ID here
+         - 384681
+         - 382756
+   ```
+
+2. **Scrape the tournament data**:
+   ```sh
+   npm run scrape 388334
+   ```
+
+3. **Rebuild all data and the site**:
+   ```sh
+   npm run rebuild-all
+   ```
+
+   This command runs:
+   - `npm run league` - Regenerates all league standings
+   - `npm run player-stats` - Regenerates all player stats
+   - `npm run build` - Rebuilds the static site
+
+4. **Verify locally** (optional):
+   ```sh
+   npm run preview
+   ```
+
+5. **Commit and deploy**:
+   ```sh
+   git add .
+   git commit -m "Add tournament 388334 to Q4 2025"
+   git push
+   ```
+
 ## 📱 Deployment
 
 The site is deployed on Vercel and automatically rebuilds when changes are pushed to GitHub.

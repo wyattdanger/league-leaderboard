@@ -2,25 +2,25 @@
   "username": "JUDDERMANG",
   "displayName": "Chris Cruz",
   "overallStats": {
-    "totalTournaments": 23,
-    "totalPoints": 75,
-    "totalMatches": 69,
-    "matchRecord": "24-42-3",
-    "matchWinPercentage": 0.34782608695652173,
-    "gameRecord": "68-94-1",
-    "gameWinPercentage": 0.4171779141104294,
+    "totalTournaments": 24,
+    "totalPoints": 81,
+    "totalMatches": 72,
+    "matchRecord": "26-43-3",
+    "matchWinPercentage": 0.3611111111111111,
+    "gameRecord": "73-97-1",
+    "gameWinPercentage": 0.4269005847953216,
     "trophies": 0,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q4 2025",
-      "events": 3,
-      "points": 12,
-      "matchRecord": "4-5-0",
-      "matchWinPercentage": 0.4444444444444444,
-      "gameRecord": "8-12-0",
-      "gameWinPercentage": 0.4
+      "events": 4,
+      "points": 18,
+      "matchRecord": "6-6-0",
+      "matchWinPercentage": 0.5,
+      "gameRecord": "13-15-0",
+      "gameWinPercentage": 0.4642857142857143
     },
     {
       "leagueName": "Q3 2025",
@@ -51,6 +51,26 @@
     }
   ],
   "headToHead": [
+    {
+      "opponentUsername": "swbmtg",
+      "opponentDisplayName": "swb 👋",
+      "matchesPlayed": 5,
+      "matchWins": 2,
+      "matchLosses": 3,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.4,
+      "gameWins": 6,
+      "gameLosses": 8,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.42857142857142855,
+      "lastFiveResults": [
+        "W",
+        "L",
+        "L",
+        "W",
+        "L"
+      ]
+    },
     {
       "opponentUsername": "AndrewLevine",
       "opponentDisplayName": "AndrewLevine",
@@ -169,25 +189,6 @@
       ]
     },
     {
-      "opponentUsername": "swbmtg",
-      "opponentDisplayName": "swb 👋",
-      "matchesPlayed": 4,
-      "matchWins": 1,
-      "matchLosses": 3,
-      "matchDraws": 0,
-      "matchWinPercentage": 0.25,
-      "gameWins": 4,
-      "gameLosses": 7,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.36363636363636365,
-      "lastFiveResults": [
-        "L",
-        "L",
-        "W",
-        "L"
-      ]
-    },
-    {
       "opponentUsername": "RichBucey",
       "opponentDisplayName": "RichBucey",
       "matchesPlayed": 3,
@@ -289,6 +290,22 @@
       "gameWinPercentage": 0.3333333333333333,
       "lastFiveResults": [
         "L",
+        "L"
+      ]
+    },
+    {
+      "opponentUsername": "sHaDes27",
+      "opponentDisplayName": "Shawn Stroke",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "lastFiveResults": [
         "L"
       ]
     },

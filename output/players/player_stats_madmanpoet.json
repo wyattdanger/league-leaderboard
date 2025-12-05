@@ -2,25 +2,25 @@
   "username": "madmanpoet",
   "displayName": "Michael Flores",
   "overallStats": {
-    "totalTournaments": 21,
-    "totalPoints": 129,
-    "totalMatches": 63,
-    "matchRecord": "43-20-0",
-    "matchWinPercentage": 0.6825396825396826,
-    "gameRecord": "96-51-0",
-    "gameWinPercentage": 0.6530612244897959,
+    "totalTournaments": 22,
+    "totalPoints": 136,
+    "totalMatches": 66,
+    "matchRecord": "45-20-1",
+    "matchWinPercentage": 0.6818181818181818,
+    "gameRecord": "101-52-0",
+    "gameWinPercentage": 0.6601307189542484,
     "trophies": 4,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q4 2025",
-      "events": 4,
-      "points": 21,
-      "matchRecord": "7-5-0",
-      "matchWinPercentage": 0.5833333333333334,
-      "gameRecord": "16-11-0",
-      "gameWinPercentage": 0.5925925925925926
+      "events": 5,
+      "points": 28,
+      "matchRecord": "9-5-1",
+      "matchWinPercentage": 0.6,
+      "gameRecord": "21-12-0",
+      "gameWinPercentage": 0.6363636363636364
     },
     {
       "leagueName": "Q3 2025",
@@ -168,6 +168,24 @@
       ]
     },
     {
+      "opponentUsername": "RichBucey",
+      "opponentDisplayName": "RichBucey",
+      "matchesPlayed": 3,
+      "matchWins": 3,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 6,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "lastFiveResults": [
+        "W",
+        "W",
+        "W"
+      ]
+    },
+    {
       "opponentUsername": "Tencteri",
       "opponentDisplayName": "Tencteri",
       "matchesPlayed": 3,
@@ -182,23 +200,6 @@
       "lastFiveResults": [
         "L",
         "L",
-        "W"
-      ]
-    },
-    {
-      "opponentUsername": "RichBucey",
-      "opponentDisplayName": "RichBucey",
-      "matchesPlayed": 2,
-      "matchWins": 2,
-      "matchLosses": 0,
-      "matchDraws": 0,
-      "matchWinPercentage": 1,
-      "gameWins": 4,
-      "gameLosses": 0,
-      "gameDraws": 0,
-      "gameWinPercentage": 1,
-      "lastFiveResults": [
-        "W",
         "W"
       ]
     },
@@ -268,6 +269,38 @@
       "lastFiveResults": [
         "L",
         "L"
+      ]
+    },
+    {
+      "opponentUsername": "sHaDes27",
+      "opponentDisplayName": "Shawn Stroke",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "lastFiveResults": [
+        "W"
+      ]
+    },
+    {
+      "opponentUsername": "Gaunology",
+      "opponentDisplayName": "Gaunology",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 0,
+      "matchDraws": 1,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5,
+      "lastFiveResults": [
+        "D"
       ]
     },
     {

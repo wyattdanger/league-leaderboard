@@ -2,25 +2,25 @@
   "username": "Taylorhol",
   "displayName": "Taylorhol",
   "overallStats": {
-    "totalTournaments": 8,
-    "totalPoints": 37,
-    "totalMatches": 24,
-    "matchRecord": "12-11-1",
-    "matchWinPercentage": 0.5,
-    "gameRecord": "30-28-1",
-    "gameWinPercentage": 0.5084745762711864,
+    "totalTournaments": 9,
+    "totalPoints": 38,
+    "totalMatches": 27,
+    "matchRecord": "12-13-2",
+    "matchWinPercentage": 0.4444444444444444,
+    "gameRecord": "33-33-2",
+    "gameWinPercentage": 0.4852941176470588,
     "trophies": 0,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q4 2025",
-      "events": 6,
-      "points": 28,
-      "matchRecord": "9-8-1",
-      "matchWinPercentage": 0.5,
-      "gameRecord": "22-20-1",
-      "gameWinPercentage": 0.5116279069767442
+      "events": 7,
+      "points": 29,
+      "matchRecord": "9-10-2",
+      "matchWinPercentage": 0.42857142857142855,
+      "gameRecord": "25-25-2",
+      "gameWinPercentage": 0.4807692307692308
     },
     {
       "leagueName": "Q3 2025",
@@ -33,6 +33,24 @@
     }
   ],
   "headToHead": [
+    {
+      "opponentUsername": "RichBucey",
+      "opponentDisplayName": "RichBucey",
+      "matchesPlayed": 3,
+      "matchWins": 1,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 4,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5,
+      "lastFiveResults": [
+        "L",
+        "L",
+        "W"
+      ]
+    },
     {
       "opponentUsername": "SF45",
       "opponentDisplayName": "SF45",
@@ -102,23 +120,6 @@
       ]
     },
     {
-      "opponentUsername": "RichBucey",
-      "opponentDisplayName": "RichBucey",
-      "matchesPlayed": 2,
-      "matchWins": 1,
-      "matchLosses": 1,
-      "matchDraws": 0,
-      "matchWinPercentage": 0.5,
-      "gameWins": 3,
-      "gameLosses": 2,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.6,
-      "lastFiveResults": [
-        "L",
-        "W"
-      ]
-    },
-    {
       "opponentUsername": "Charlengels",
       "opponentDisplayName": "Charlengels",
       "matchesPlayed": 2,
@@ -149,6 +150,38 @@
       "gameWinPercentage": 0.2,
       "lastFiveResults": [
         "L",
+        "L"
+      ]
+    },
+    {
+      "opponentUsername": "zoidberg1003",
+      "opponentDisplayName": "Zoahr Bhagat",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 0,
+      "matchDraws": 1,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 1,
+      "gameDraws": 1,
+      "gameWinPercentage": 0.3333333333333333,
+      "lastFiveResults": [
+        "D"
+      ]
+    },
+    {
+      "opponentUsername": "swbmtg",
+      "opponentDisplayName": "swb 👋",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "lastFiveResults": [
         "L"
       ]
     },
