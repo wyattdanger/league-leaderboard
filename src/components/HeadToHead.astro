@@ -21,7 +21,8 @@ const { records } = Astro.props;
                 <th>Opponent</th>
                 <th>Matches</th>
                 <th class="hide-tablet">Match Record</th>
-                <th>Game Record</th>
+                <th class="hide-tablet">Game Record</th>
+                <th class="show-tablet">MWP</th>
                 <th class="hide-mobile">Form</th>
               </tr>
             </thead>
@@ -58,7 +59,7 @@ const { records } = Astro.props;
                         </div>
                       </div>
                     </td>
-                    <td>
+                    <td class="hide-tablet">
                       <div class="stat">
                         <div class="record">
                           {record.gameWins}-{record.gameLosses}-{record.gameDraws}
@@ -66,6 +67,11 @@ const { records } = Astro.props;
                         <div class={`percent-label ${gwClass}`}>
                           ({(record.gameWinPercentage * 100).toFixed(1)}%)
                         </div>
+                      </div>
+                    </td>
+                    <td class="show-tablet">
+                      <div class={`percent-label ${mwClass}`}>
+                        {(record.matchWinPercentage * 100).toFixed(1)}%
                       </div>
                     </td>
                     <td class="hide-mobile">
@@ -305,6 +311,10 @@ const { records } = Astro.props;
     padding: 2rem;
   }
 
+  .show-tablet {
+    display: none;
+  }
+
   @media (max-width: 1024px) {
     .hide-mobile {
       display: none;
@@ -314,6 +324,10 @@ const { records } = Astro.props;
   @media (max-width: 640px) {
     .hide-tablet {
       display: none;
+    }
+
+    .show-tablet {
+      display: table-cell;
     }
 
     .h2h-table th,
