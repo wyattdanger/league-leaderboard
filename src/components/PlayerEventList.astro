@@ -22,59 +22,59 @@ const hasDeckData = performances.some((perf) => perf.deck);
         <div class="event-list-header">
           <div>Tournament History</div>
         </div>
-        <div class={`event-table-header ${hasDeckData ? 'with-deck' : ''}`}>
-          <div>Date</div>
-          {hasDeckData && <div>Deck</div>}
-          <div>Rank</div>
-          <div>Record</div>
-          <div>MWP</div>
-          <div>Event</div>
-        </div>
-        <div class="events-container">
-          {recentPerformances.map((perf) => {
-            const mwpClass = perf.matchWinPercentage > 0.59 ? 'wp-high' : perf.matchWinPercentage > 0.39 ? 'wp-medium' : 'wp-low';
-            const gwpClass = perf.gameWinPercentage > 0.59 ? 'wp-high' : perf.gameWinPercentage > 0.39 ? 'wp-medium' : 'wp-low';
-            const isTrophy = perf.matchRecord === '3-0-0';
-
-            return (
-              <a href={`/event/${perf.tournamentId}`} class={`event-item ${hasDeckData ? 'with-deck' : ''}`}>
-                <div class="event-date">{perf.dateDisplay}</div>
-                {hasDeckData && <div class="event-deck">{perf.deck || '—'}</div>}
-                <div class="event-rank">{isTrophy ? '🏆' : perf.rank}</div>
-                <div class="event-record">{perf.matchRecord}</div>
-                <div class={`event-mwp ${mwpClass}`}>{(perf.matchWinPercentage * 100).toFixed(1)}%</div>
-                <div class="event-meta">
-                  <span class="player-pill">👤 {perf.playerCount}</span>
-                  <span class="trophy-pill">🏆 {perf.trophyCount}</span>
-                  <span class="round-pill">⚔️ {perf.roundCount}</span>
-                </div>
-              </a>
-            );
-          })}
-          {hasMore && (
-            <div class="older-events" style="display: none;">
-              {olderPerformances.map((perf) => {
+        <div class="event-table-container">
+          <table class="event-table">
+            <thead>
+              <tr>
+                <th>Date</th>
+                {hasDeckData && <th>Deck</th>}
+                <th>Rank</th>
+                <th>Record</th>
+                <th>MWP</th>
+                <th>Event</th>
+              </tr>
+            </thead>
+            <tbody>
+              {recentPerformances.map((perf) => {
                 const mwpClass = perf.matchWinPercentage > 0.59 ? 'wp-high' : perf.matchWinPercentage > 0.39 ? 'wp-medium' : 'wp-low';
-                const gwpClass = perf.gameWinPercentage > 0.59 ? 'wp-high' : perf.gameWinPercentage > 0.39 ? 'wp-medium' : 'wp-low';
                 const isTrophy = perf.matchRecord === '3-0-0';
 
                 return (
-                  <a href={`/event/${perf.tournamentId}`} class={`event-item ${hasDeckData ? 'with-deck' : ''}`}>
-                    <div class="event-date">{perf.dateDisplay}</div>
-                    {hasDeckData && <div class="event-deck">{perf.deck || '—'}</div>}
-                    <div class="event-rank">{isTrophy ? '🏆' : perf.rank}</div>
-                    <div class="event-record">{perf.matchRecord}</div>
-                    <div class={`event-mwp ${mwpClass}`}>{(perf.matchWinPercentage * 100).toFixed(1)}%</div>
-                    <div class="event-meta">
+                  <tr onclick={`window.location.href='/event/${perf.tournamentId}'`} style="cursor: pointer;">
+                    <td class="event-date">{perf.dateDisplay}</td>
+                    {hasDeckData && <td class="event-deck">{perf.deck || '—'}</td>}
+                    <td class="event-rank">{isTrophy ? '🏆' : perf.rank}</td>
+                    <td class="event-record">{perf.matchRecord}</td>
+                    <td class={`event-mwp ${mwpClass}`}>{(perf.matchWinPercentage * 100).toFixed(1)}%</td>
+                    <td class="event-meta">
                       <span class="player-pill">👤 {perf.playerCount}</span>
                       <span class="trophy-pill">🏆 {perf.trophyCount}</span>
                       <span class="round-pill">⚔️ {perf.roundCount}</span>
-                    </div>
-                  </a>
+                    </td>
+                  </tr>
                 );
               })}
-            </div>
-          )}
+              {hasMore && olderPerformances.map((perf) => {
+                const mwpClass = perf.matchWinPercentage > 0.59 ? 'wp-high' : perf.matchWinPercentage > 0.39 ? 'wp-medium' : 'wp-low';
+                const isTrophy = perf.matchRecord === '3-0-0';
+
+                return (
+                  <tr class="older-event" style="display: none; cursor: pointer;" onclick={`window.location.href='/event/${perf.tournamentId}'`}>
+                    <td class="event-date">{perf.dateDisplay}</td>
+                    {hasDeckData && <td class="event-deck">{perf.deck || '—'}</td>}
+                    <td class="event-rank">{isTrophy ? '🏆' : perf.rank}</td>
+                    <td class="event-record">{perf.matchRecord}</td>
+                    <td class={`event-mwp ${mwpClass}`}>{(perf.matchWinPercentage * 100).toFixed(1)}%</td>
+                    <td class="event-meta">
+                      <span class="player-pill">👤 {perf.playerCount}</span>
+                      <span class="trophy-pill">🏆 {perf.trophyCount}</span>
+                      <span class="round-pill">⚔️ {perf.roundCount}</span>
+                    </td>
+                  </tr>
+                );
+              })}
+            </tbody>
+          </table>
         </div>
         {hasMore && (
           <div class="load-more-container">
@@ -96,12 +96,13 @@ const hasDeckData = performances.some((perf) => perf.deck);
     const btn = document.getElementById('load-more-player-events');
     if (btn) {
       btn.addEventListener('click', () => {
-        const olderEvents = document.querySelector('.older-events') as HTMLElement;
-        const loadMoreContainer = document.querySelector('.load-more-container') as HTMLElement;
+        const olderEvents = document.querySelectorAll('.event-table .older-event');
+        const loadMoreContainer = btn.closest('.player-event-list')?.querySelector('.load-more-container') as HTMLElement;
 
-        if (olderEvents) {
-          olderEvents.style.display = 'block';
-        }
+        olderEvents.forEach((event) => {
+          (event as HTMLElement).style.display = 'table-row';
+        });
+
         if (loadMoreContainer) {
           loadMoreContainer.style.display = 'none';
         }
@@ -130,67 +131,59 @@ const hasDeckData = performances.some((perf) => perf.deck);
     font-size: 0.9rem;
   }
 
-  .event-table-header {
-    display: grid;
-    grid-template-columns: 2fr 0.8fr 1.2fr 1fr 2fr;
-    gap: 1rem;
-    padding: 1rem 2rem;
+  .event-table-container {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .event-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .event-table thead {
     background: #f9fafb;
     color: #764ba2;
+  }
+
+  .event-table th {
+    padding: 1rem 2rem;
     font-weight: 600;
     font-size: 0.85rem;
+    text-align: left;
     border-bottom: 1px solid #e5e7eb;
+    white-space: nowrap;
   }
 
-  .event-table-header.with-deck {
-    grid-template-columns: 2fr 1.5fr 0.8fr 1.2fr 1fr 2fr;
-  }
-
-  .event-table-header > div {
+  .event-table td {
+    padding: 1.5rem 2rem;
+    border-bottom: 1px solid #e5e7eb;
     text-align: left;
   }
 
-  .event-item {
-    display: grid;
-    grid-template-columns: 2fr 0.8fr 1.2fr 1fr 2fr;
-    gap: 1rem;
-    align-items: center;
-    padding: 1.5rem 2rem;
-    border-bottom: 1px solid #e5e7eb;
-    transition: all 0.2s ease;
-    text-decoration: none;
-    color: inherit;
-    cursor: pointer;
-  }
-
-  .event-item.with-deck {
-    grid-template-columns: 2fr 1.5fr 0.8fr 1.2fr 1fr 2fr;
-  }
-
-  .event-item:hover {
+  .event-table tbody tr:hover {
     background: linear-gradient(90deg, rgba(102, 126, 234, 0.05) 0%, rgba(118, 75, 162, 0.05) 100%);
-  }
-
-  .event-item:last-child {
-    border-bottom: none;
   }
 
   .event-date {
     font-size: 1rem;
     font-weight: 600;
     color: #1f2937;
+    white-space: nowrap;
   }
 
   .event-deck {
     font-size: 0.95rem;
     font-weight: 600;
     color: #667eea;
+    white-space: nowrap;
   }
 
   .event-meta {
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    white-space: nowrap;
   }
 
   .player-pill,
@@ -225,20 +218,20 @@ const hasDeckData = performances.some((perf) => perf.deck);
     font-size: 1rem;
     font-weight: 600;
     color: #6b7280;
-    text-align: left;
+    white-space: nowrap;
   }
 
   .event-record {
     font-size: 1rem;
     font-weight: 600;
     color: #374151;
-    text-align: left;
+    white-space: nowrap;
   }
 
   .event-mwp {
     font-size: 1rem;
     font-weight: 700;
-    text-align: left;
+    white-space: nowrap;
   }
 
   .wp-high {
@@ -288,25 +281,9 @@ const hasDeckData = performances.some((perf) => perf.deck);
   }
 
   @media (max-width: 768px) {
-    .event-item {
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 1rem;
-      padding: 1.25rem 1.5rem;
-    }
-
-    .event-right {
-      width: 100%;
-    }
-
-    .event-performance {
-      width: 100%;
-      justify-content: space-between;
-    }
-
-    .rank-badge {
-      font-size: 1.25rem;
-      min-width: 40px;
+    .event-table th,
+    .event-table td {
+      padding: 1rem 1.5rem;
     }
 
     .event-date {

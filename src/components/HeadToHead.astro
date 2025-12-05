@@ -12,62 +12,75 @@ const { records } = Astro.props;
 <div class="h2h-container">
   {
     records.length > 0 ? (
-      <div class="h2h-table">
+      <div class="h2h-table-wrapper">
         <div class="h2h-title">Head-to-Head Records</div>
-        <div class="h2h-header">
-          <div>Opponent</div>
-          <div>Matches</div>
-          <div>Match Record (MWP)</div>
-          <div>Game Record (GWP)</div>
-          <div>Form</div>
+        <div class="h2h-table-container">
+          <table class="h2h-table">
+            <thead>
+              <tr>
+                <th>Opponent</th>
+                <th>Matches</th>
+                <th class="hide-tablet">Match Record</th>
+                <th>Game Record</th>
+                <th class="hide-mobile">Form</th>
+              </tr>
+            </thead>
+            <tbody>
+              {records.map((record, index) => {
+                const mwPercentNum = record.matchWinPercentage;
+                const isHighMWP = mwPercentNum > 0.59;
+                const isMediumMWP = mwPercentNum > 0.39;
+                const mwClass = isHighMWP ? 'wp-high' : isMediumMWP ? 'wp-medium' : 'wp-low';
+
+                const gwPercentNum = record.gameWinPercentage;
+                const isHighGWP = gwPercentNum > 0.59;
+                const isMediumGWP = gwPercentNum > 0.39;
+                const gwClass = isHighGWP ? 'wp-high' : isMediumGWP ? 'wp-medium' : 'wp-low';
+
+                const opponentSlug = usernameToSlug(record.opponentUsername);
+                const opponentUrl = `/player/${opponentSlug}`;
+                const isHidden = index >= 8;
+
+                return (
+                  <tr class={isHidden ? 'hidden' : ''} onclick={`window.location.href='${opponentUrl}'`} style="cursor: pointer;">
+                    <td>
+                      <div class="opponent-name">{record.opponentDisplayName}</div>
+                      <div class="opponent-username">@{record.opponentUsername}</div>
+                    </td>
+                    <td class="stat-value">{record.matchesPlayed}</td>
+                    <td class="hide-tablet">
+                      <div class="stat">
+                        <div class="record">
+                          {record.matchWins}-{record.matchLosses}-{record.matchDraws}
+                        </div>
+                        <div class={`percent-label ${mwClass}`}>
+                          ({(record.matchWinPercentage * 100).toFixed(1)}%)
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="stat">
+                        <div class="record">
+                          {record.gameWins}-{record.gameLosses}-{record.gameDraws}
+                        </div>
+                        <div class={`percent-label ${gwClass}`}>
+                          ({(record.gameWinPercentage * 100).toFixed(1)}%)
+                        </div>
+                      </div>
+                    </td>
+                    <td class="hide-mobile">
+                      <div class="form">
+                        {record.lastFiveResults.map((result) => (
+                          <span class={`form-badge form-${result.toLowerCase()}`}>{result}</span>
+                        ))}
+                      </div>
+                    </td>
+                  </tr>
+                );
+              })}
+            </tbody>
+          </table>
         </div>
-
-        {records.map((record, index) => {
-          const mwPercentNum = record.matchWinPercentage;
-          const isHighMWP = mwPercentNum > 0.59;
-          const isMediumMWP = mwPercentNum > 0.39;
-          const mwClass = isHighMWP ? 'wp-high' : isMediumMWP ? 'wp-medium' : 'wp-low';
-
-          const gwPercentNum = record.gameWinPercentage;
-          const isHighGWP = gwPercentNum > 0.59;
-          const isMediumGWP = gwPercentNum > 0.39;
-          const gwClass = isHighGWP ? 'wp-high' : isMediumGWP ? 'wp-medium' : 'wp-low';
-
-          const opponentSlug = usernameToSlug(record.opponentUsername);
-          const opponentUrl = `/player/${opponentSlug}`;
-          const isHidden = index >= 8;
-
-          return (
-            <div class={`h2h-row ${isHidden ? 'hidden' : ''}`} onclick={`window.location.href='${opponentUrl}'`} style="cursor: pointer;">
-              <div>
-                <div class="opponent-name">{record.opponentDisplayName}</div>
-                <div class="opponent-username">@{record.opponentUsername}</div>
-              </div>
-              <div class="stat-value">{record.matchesPlayed}</div>
-              <div class="stat">
-                <div class="record">
-                  {record.matchWins}-{record.matchLosses}-{record.matchDraws}
-                </div>
-                <div class={`percent-label ${mwClass}`}>
-                  ({(record.matchWinPercentage * 100).toFixed(1)}%)
-                </div>
-              </div>
-              <div class="stat">
-                <div class="record">
-                  {record.gameWins}-{record.gameLosses}-{record.gameDraws}
-                </div>
-                <div class={`percent-label ${gwClass}`}>
-                  ({(record.gameWinPercentage * 100).toFixed(1)}%)
-                </div>
-              </div>
-              <div class="form">
-                {record.lastFiveResults.map((result) => (
-                  <span class={`form-badge form-${result.toLowerCase()}`}>{result}</span>
-                ))}
-              </div>
-            </div>
-          );
-        })}
 
         {records.length > 8 && (
           <div class="load-more-container" id="h2h-load-more-container">
@@ -94,7 +107,7 @@ const { records } = Astro.props;
     if (btn && container) {
       btn.addEventListener('click', () => {
         // Get all currently hidden rows and show them all
-        const hiddenRows = document.querySelectorAll('.h2h-row.hidden');
+        const hiddenRows = document.querySelectorAll('.h2h-table tbody tr.hidden');
         hiddenRows.forEach((row) => {
           row.classList.remove('hidden');
         });
@@ -111,7 +124,7 @@ const { records } = Astro.props;
     margin-top: 2rem;
   }
 
-  .h2h-table {
+  .h2h-table-wrapper {
     background: white;
     border-radius: 12px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -126,47 +139,50 @@ const { records } = Astro.props;
     font-size: 1rem;
   }
 
-  .h2h-header {
-    display: grid;
-    grid-template-columns: 2fr 1fr 1.5fr 1.5fr 1fr;
-    gap: 1rem;
-    padding: 1rem 1.5rem;
+  .h2h-table-container {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .h2h-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .h2h-table thead {
     background: #f9fafb;
     color: #764ba2;
+  }
+
+  .h2h-table th {
+    padding: 1rem 1.5rem;
     font-weight: 600;
     font-size: 0.85rem;
     text-align: center;
     border-bottom: 1px solid #e5e7eb;
+    white-space: nowrap;
   }
 
-  .h2h-header > div:first-child {
+  .h2h-table th:first-child {
     text-align: left;
   }
 
-  .h2h-row {
-    display: grid;
-    grid-template-columns: 2fr 1fr 1.5fr 1.5fr 1fr;
-    gap: 1rem;
+  .h2h-table td {
     padding: 1rem 1.5rem;
     border-bottom: 1px solid #e5e7eb;
-    align-items: center;
     text-align: center;
   }
 
-  .h2h-row:last-child {
-    border-bottom: none;
+  .h2h-table td:first-child {
+    text-align: left;
   }
 
-  .h2h-row:hover {
+  .h2h-table tbody tr:hover {
     background-color: #f9fafb;
   }
 
-  .h2h-row.hidden {
+  .h2h-table tbody tr.hidden {
     display: none;
-  }
-
-  .h2h-row > div:first-child {
-    text-align: left;
   }
 
   .load-more-container {
@@ -290,29 +306,20 @@ const { records } = Astro.props;
   }
 
   @media (max-width: 1024px) {
-    .h2h-header,
-    .h2h-row {
-      grid-template-columns: 2fr 1fr 1.5fr 1.5fr;
-      font-size: 0.85rem;
-    }
-
-    .h2h-header > div:last-child,
-    .h2h-row > div:last-child {
+    .hide-mobile {
       display: none;
     }
   }
 
   @media (max-width: 640px) {
-    .h2h-header,
-    .h2h-row {
-      grid-template-columns: 2fr 1fr 1.5fr;
-      font-size: 0.8rem;
-      padding: 0.75rem 1rem;
+    .hide-tablet {
+      display: none;
     }
 
-    .h2h-header > div:nth-child(3),
-    .h2h-row > div:nth-child(3) {
-      display: none;
+    .h2h-table th,
+    .h2h-table td {
+      padding: 0.75rem 1rem;
+      font-size: 0.85rem;
     }
 
     .opponent-name {
