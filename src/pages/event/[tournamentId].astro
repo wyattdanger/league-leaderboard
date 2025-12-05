@@ -935,11 +935,11 @@ const celebrationCardEmoji = hasTrophies ? '👑' : '⭐';
     // Check if trophy section is visible
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
-        if (entry.isIntersecting && entry.intersectionRatio > 0.2) {
+        if (entry.isIntersecting && entry.intersectionRatio > 0.5) {
           triggerConfetti();
         }
       });
-    }, { threshold: 0.2 });
+    }, { threshold: 0.5 });
 
     observer.observe(trophyCelebration);
   });
