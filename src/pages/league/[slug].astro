@@ -60,9 +60,6 @@ if (isOverall) {
     .filter((meta): meta is TournamentMetadata => meta !== null);
 }
 
-// Hide leaderboard for Top 8s page (each Top 8 is a standalone culminating event)
-const isTop8s = currentLeague?.name === 'Top 8s';
-
 // Determine if this is the current league (league with most recent event)
 const isCurrent = !isOverall && currentLeague ? isCurrentLeague(currentLeague, allLeagues) : false;
 
@@ -79,7 +76,6 @@ const top8Tournament = !isCurrent && currentLeague?.top8Tournament
   isOverall={isOverall}
   standings={standings}
   tournaments={tournamentMetadata}
-  showLeaderboard={!isTop8s}
   showLatestEvent={showLatestEvent}
   top8Tournament={top8Tournament}
 />

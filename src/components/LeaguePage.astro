@@ -15,17 +15,13 @@ interface Props {
   standings: LeagueStanding[] | null;
   tournaments: TournamentMetadata[];
   showLatestEvent?: boolean;
-  showLeaderboard?: boolean;
   top8Tournament?: TournamentMetadata | null;
 }
 
-const { currentLeague, allLeagues, isOverall, standings, tournaments, showLatestEvent = false, showLeaderboard = true, top8Tournament = null } = Astro.props;
+const { currentLeague, allLeagues, isOverall, standings, tournaments, showLatestEvent = false, top8Tournament = null } = Astro.props;
 
 // Get the latest tournament (first in the list, as they're sorted newest first)
 const latestTournament = showLatestEvent && tournaments.length > 0 ? tournaments[0] : null;
-
-// Check if this is the Top 8s page
-const isTop8s = currentLeague?.name === 'Top 8s';
 ---
 
 <PageLayout>
@@ -33,6 +29,6 @@ const isTop8s = currentLeague?.name === 'Top 8s';
   <LeagueNav currentLeague={currentLeague} allLeagues={allLeagues} isOverall={isOverall} />
   {latestTournament && <LatestEvent tournament={latestTournament} />}
   {top8Tournament && currentLeague && <Top8Callout tournament={top8Tournament} leagueName={currentLeague.name} />}
-  {showLeaderboard && <Leaderboard standings={standings} />}
-  <EventList tournaments={tournaments} isTop8s={isTop8s} />
+  <Leaderboard standings={standings} />
+  <EventList tournaments={tournaments} />
 </PageLayout>

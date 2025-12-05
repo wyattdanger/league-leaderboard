@@ -5,32 +5,29 @@ import { loadLeaguesConfig } from '../utils/data';
 
 interface Props {
   tournaments: TournamentMetadata[];
-  isTop8s?: boolean;
 }
 
-const { tournaments, isTop8s = false } = Astro.props;
+const { tournaments } = Astro.props;
 
 // Load leagues config to get league names for Top 8s
 const config = loadLeaguesConfig();
 const allLeagues = config.leagues;
 
-// Create a map of tournament ID -> league name for Top 8s
+// Create a map of tournament ID -> league name for Top 8 tournaments
 const top8LeagueMap = new Map();
-if (isTop8s) {
-  allLeagues.forEach((league) => {
-    if (league.top8Tournament) {
-      top8LeagueMap.set(league.top8Tournament, league.name);
-    }
-  });
-}
+allLeagues.forEach((league) => {
+  if (league.top8Tournament) {
+    top8LeagueMap.set(league.top8Tournament, league.name);
+  }
+});
+
+// Helper function to check if tournament is a Top 8
+const isTop8Tournament = (tournamentId: number) => top8LeagueMap.has(tournamentId);
 
 // Helper function to get display name for tournament
 const getTournamentDisplayName = (tournament: TournamentMetadata) => {
-  if (isTop8s) {
-    const leagueName = top8LeagueMap.get(tournament.tournamentId);
-    return leagueName ? `${leagueName} Top 8` : tournament.dateDisplay;
-  }
-  return tournament.dateDisplay;
+  const leagueName = top8LeagueMap.get(tournament.tournamentId);
+  return leagueName ? `${leagueName} Top 8` : tournament.dateDisplay;
 };
 
 // Sort tournaments by date, newest first
@@ -54,7 +51,7 @@ const hasMore = olderTournaments.length > 0;
           {recentTournaments.map((tournament) => (
             <a href={`/event/${tournament.tournamentId}`} class="event-item">
               <div class="event-date">{getTournamentDisplayName(tournament)}</div>
-              {isTop8s && tournament.winnerDisplayName ? (
+              {isTop8Tournament(tournament.tournamentId) && tournament.winnerDisplayName ? (
                 <div class="event-winner">
                   <div class="winner-info">
                     <span class="winner-label">👑 Winner</span>
@@ -87,7 +84,7 @@ const hasMore = olderTournaments.length > 0;
               {olderTournaments.map((tournament) => (
                 <a href={`/event/${tournament.tournamentId}`} class="event-item">
                   <div class="event-date">{getTournamentDisplayName(tournament)}</div>
-                  {isTop8s && tournament.winnerDisplayName ? (
+                  {isTop8Tournament(tournament.tournamentId) && tournament.winnerDisplayName ? (
                     <div class="event-winner">
                       <div class="winner-info">
                         <span class="winner-label">👑 Winner</span>
