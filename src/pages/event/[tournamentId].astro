@@ -50,6 +50,11 @@ for (let i = 1; i <= metadata.roundCount; i++) {
     rounds.push({ roundNumber: i, matches });
   }
 }
+
+// Find trophy winners (3-0 players)
+const trophyWinners = standings.filter((s: any) =>
+  (s.MatchWins || 0) === 3 && (s.MatchLosses || 0) === 0 && (s.MatchDraws || 0) === 0
+);
 ---
 
 <PageLayout>
@@ -206,6 +211,47 @@ for (let i = 1; i <= metadata.roundCount; i++) {
           </div>
         );
       })}
+
+      {trophyWinners.length > 0 && (
+        <div class="trophy-celebration" id="trophy-celebration">
+          <canvas id="confetti-canvas"></canvas>
+          <div class="trophy-header">
+            🏆 {trophyWinners.length === 1 ? 'Trophy Winner' : 'Trophy Winners'}
+          </div>
+          <div class="trophy-content">
+            <div class="trophy-message">
+              {trophyWinners.length === 1
+                ? 'Congratulations to our undefeated champion!'
+                : `Congratulations to our ${trophyWinners.length} undefeated champions!`}
+            </div>
+            <div class="trophy-winners-list">
+              {trophyWinners.map((winner: any) => {
+                const username = winner.Team.Players[0].Username;
+                const displayName = winner.Team.Players[0].DisplayName;
+                const playerUrl = `/player/${username.toLowerCase()}`;
+                const deck = showDeckData && deckData ? deckData[username] : null;
+
+                return (
+                  <a href={playerUrl} class="trophy-winner-card">
+                    <div class="trophy-winner-name">
+                      <span class="trophy-emoji">👑</span>
+                      {displayName}
+                    </div>
+                    {deck && (
+                      <div class="trophy-winner-deck">
+                        {deck}
+                      </div>
+                    )}
+                    <div class="trophy-winner-record">
+                      3-0 · {winner.GameRecord}
+                    </div>
+                  </a>
+                );
+              })}
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   </div>
 </PageLayout>
@@ -486,6 +532,98 @@ for (let i = 1; i <= metadata.roundCount; i++) {
     color: #333;
   }
 
+  .trophy-celebration {
+    margin-bottom: 2rem;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+
+  #confetti-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 10;
+  }
+
+  .trophy-header {
+    background: linear-gradient(135deg, #ffd700 0%, #ffa500 100%);
+    color: #fff;
+    padding: 1.25rem 1.5rem;
+    font-weight: 700;
+    font-size: 1.1rem;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  }
+
+  .trophy-content {
+    background: linear-gradient(135deg, #ffd70015 0%, #ffa50015 100%);
+    padding: 2rem;
+  }
+
+  .trophy-message {
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 1.5rem;
+  }
+
+  .trophy-winners-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+  }
+
+  .trophy-winner-card {
+    background: white;
+    border: 2px solid #ffd700;
+    border-radius: 12px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.2s ease;
+    text-decoration: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .trophy-winner-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 12px rgba(255, 215, 0, 0.3);
+    border-color: #ffa500;
+  }
+
+  .trophy-winner-name {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .trophy-emoji {
+    font-size: 1.5rem;
+  }
+
+  .trophy-winner-deck {
+    color: #667eea;
+    font-weight: 600;
+    font-size: 0.95rem;
+  }
+
+  .trophy-winner-record {
+    color: #666;
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+
   @media (max-width: 640px) {
     .event-profile-header {
       flex-direction: column;
@@ -545,5 +683,135 @@ for (let i = 1; i <= metadata.roundCount; i++) {
     .round-result-col {
       font-size: 0.8rem;
     }
+
+    .trophy-content {
+      padding: 1.5rem;
+    }
+
+    .trophy-message {
+      font-size: 1rem;
+    }
+
+    .trophy-winners-list {
+      grid-template-columns: 1fr;
+    }
+
+    .trophy-winner-card {
+      padding: 1.25rem;
+    }
+
+    .trophy-winner-name {
+      font-size: 1.1rem;
+    }
   }
 </style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const trophyCelebration = document.getElementById('trophy-celebration');
+    const canvas = document.getElementById('confetti-canvas');
+
+    if (!trophyCelebration || !canvas) return;
+
+    const ctx = canvas.getContext('2d');
+    if (!ctx) return;
+
+    let isAnimating = false;
+    const confettiParticles: any[] = [];
+    const colors = ['#ffd700', '#ffa500', '#ff6347', '#4169e1', '#32cd32', '#ff69b4'];
+
+    // Set canvas size
+    function resizeCanvas() {
+      canvas.width = trophyCelebration.offsetWidth;
+      canvas.height = trophyCelebration.offsetHeight;
+    }
+    resizeCanvas();
+    window.addEventListener('resize', resizeCanvas);
+
+    // Confetti particle class
+    class Confetti {
+      x: number;
+      y: number;
+      size: number;
+      speedY: number;
+      speedX: number;
+      color: string;
+      rotation: number;
+      rotationSpeed: number;
+
+      constructor() {
+        this.x = Math.random() * canvas.width;
+        this.y = -20;
+        this.size = Math.random() * 8 + 4;
+        this.speedY = Math.random() * 3 + 2;
+        this.speedX = Math.random() * 2 - 1;
+        this.color = colors[Math.floor(Math.random() * colors.length)];
+        this.rotation = Math.random() * 360;
+        this.rotationSpeed = Math.random() * 10 - 5;
+      }
+
+      update() {
+        this.y += this.speedY;
+        this.x += this.speedX;
+        this.rotation += this.rotationSpeed;
+
+        if (this.y > canvas.height) {
+          return false;
+        }
+        return true;
+      }
+
+      draw() {
+        ctx.save();
+        ctx.translate(this.x, this.y);
+        ctx.rotate((this.rotation * Math.PI) / 180);
+        ctx.fillStyle = this.color;
+        ctx.fillRect(-this.size / 2, -this.size / 2, this.size, this.size);
+        ctx.restore();
+      }
+    }
+
+    function createConfetti() {
+      for (let i = 0; i < 50; i++) {
+        confettiParticles.push(new Confetti());
+      }
+    }
+
+    function animateConfetti() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+      for (let i = confettiParticles.length - 1; i >= 0; i--) {
+        const particle = confettiParticles[i];
+        if (!particle.update()) {
+          confettiParticles.splice(i, 1);
+        } else {
+          particle.draw();
+        }
+      }
+
+      if (confettiParticles.length > 0) {
+        requestAnimationFrame(animateConfetti);
+      } else {
+        isAnimating = false;
+      }
+    }
+
+    function triggerConfetti() {
+      if (isAnimating) return; // Don't start a new animation if one is already running
+      isAnimating = true;
+      createConfetti();
+      animateConfetti();
+    }
+
+    // Check if trophy section is visible
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting && entry.intersectionRatio > 0.5) {
+          triggerConfetti();
+        }
+      });
+    }, { threshold: 0.5 });
+
+    observer.observe(trophyCelebration);
+  });
+</script>
