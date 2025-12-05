@@ -101,3 +101,13 @@ export interface TournamentMetadata {
   roundCount: number;
   trophyCount: number;
 }
+
+export interface DeckData {
+  [username: string]: string;
+}
+
+export interface MetagameBreakdown {
+  archetype: string;
+  count: number;
+  percentage: number;
+}

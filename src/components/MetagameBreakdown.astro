@@ -1,0 +1,260 @@
+---
+import type { MetagameBreakdown } from '../types';
+
+interface Props {
+  breakdown: MetagameBreakdown[];
+}
+
+const { breakdown } = Astro.props;
+
+// Generate colors for pie chart
+const colors = [
+  '#667eea', '#764ba2', '#f093fb', '#4facfe',
+  '#43e97b', '#fa709a', '#fee140', '#30cfd0',
+  '#a8edea', '#fed6e3', '#c471f5'
+];
+
+// Calculate cumulative percentages for pie chart segments
+let cumulative = 0;
+const segments = breakdown.map((item, index) => {
+  const start = cumulative;
+  cumulative += item.percentage;
+  return {
+    ...item,
+    start,
+    end: cumulative,
+    color: colors[index % colors.length]
+  };
+});
+---
+
+<div class="metagame-section">
+  <div class="metagame-header">Metagame Breakdown</div>
+
+  <div class="metagame-content">
+    <div class="pie-chart-container">
+      <svg viewBox="0 0 100 100" class="pie-chart">
+        {segments.map((segment, index) => {
+          const startAngle = (segment.start / 100) * 360;
+          const endAngle = (segment.end / 100) * 360;
+          const largeArc = segment.percentage > 50 ? 1 : 0;
+
+          const startX = 50 + 40 * Math.cos((startAngle - 90) * Math.PI / 180);
+          const startY = 50 + 40 * Math.sin((startAngle - 90) * Math.PI / 180);
+          const endX = 50 + 40 * Math.cos((endAngle - 90) * Math.PI / 180);
+          const endY = 50 + 40 * Math.sin((endAngle - 90) * Math.PI / 180);
+
+          return (
+            <g class="pie-segment-group">
+              <path
+                d={`M 50 50 L ${startX} ${startY} A 40 40 0 ${largeArc} 1 ${endX} ${endY} Z`}
+                fill={segment.color}
+                class="pie-segment"
+                data-tooltip={`${segment.archetype}: ${segment.count} (${segment.percentage.toFixed(1)}%)`}
+              />
+            </g>
+          );
+        })}
+      </svg>
+      <div class="pie-tooltip" id="pie-tooltip"></div>
+    </div>
+
+    <div class="metagame-list">
+      {breakdown.map((item, index) => (
+        <div class="metagame-item">
+          <div class="metagame-color" style={`background-color: ${colors[index % colors.length]}`}></div>
+          <div class="metagame-archetype">{item.archetype}</div>
+          <div class="metagame-count">{item.count}</div>
+          <div class="metagame-percentage">{item.percentage.toFixed(1)}%</div>
+        </div>
+      ))}
+    </div>
+  </div>
+</div>
+
+<style>
+  .metagame-section {
+    margin-bottom: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+
+  .metagame-header {
+    padding: 0.75rem 1.5rem;
+    background: var(--gradient-primary);
+    color: white;
+    font-weight: 600;
+    font-size: 0.95rem;
+  }
+
+  .metagame-content {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 2rem;
+    padding: 1.5rem;
+    background: white;
+  }
+
+  .pie-chart-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .pie-chart {
+    width: 240px;
+    height: 240px;
+  }
+
+  .pie-segment {
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+  }
+
+  .pie-segment:hover {
+    opacity: 0.8;
+  }
+
+  .pie-tooltip {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    padding: 0.5rem 0.75rem;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    white-space: nowrap;
+    z-index: 1000;
+  }
+
+  .pie-tooltip.visible {
+    opacity: 1;
+  }
+
+  .metagame-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .metagame-item {
+    display: grid;
+    grid-template-columns: 16px 1fr auto auto;
+    gap: 0.75rem;
+    align-items: center;
+    padding: 0.4rem 0.75rem;
+    background: white;
+    border-bottom: 1px solid #f3f4f6;
+    transition: background 0.2s ease;
+  }
+
+  .metagame-item:last-child {
+    border-bottom: none;
+  }
+
+  .metagame-item:hover {
+    background: #f9fafb;
+  }
+
+  .metagame-color {
+    width: 16px;
+    height: 16px;
+    border-radius: 3px;
+  }
+
+  .metagame-archetype {
+    font-weight: 600;
+    color: #1f2937;
+    font-size: 0.85rem;
+  }
+
+  .metagame-count {
+    font-weight: 600;
+    color: #6b7280;
+    font-size: 0.8rem;
+    min-width: 30px;
+    text-align: right;
+  }
+
+  .metagame-percentage {
+    font-weight: 700;
+    color: #667eea;
+    font-size: 0.85rem;
+    min-width: 50px;
+    text-align: right;
+  }
+
+  @media (max-width: 768px) {
+    .metagame-content {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+      padding: 1rem;
+    }
+
+    .pie-chart {
+      width: 160px;
+      height: 160px;
+    }
+
+    .metagame-item {
+      grid-template-columns: 18px 1fr auto;
+      gap: 0.6rem;
+      padding: 0.4rem 0.6rem;
+    }
+
+    .metagame-count {
+      display: none;
+    }
+
+    .metagame-archetype {
+      font-size: 0.85rem;
+    }
+
+    .metagame-percentage {
+      font-size: 0.85rem;
+    }
+
+    .metagame-color {
+      width: 18px;
+      height: 18px;
+    }
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const segments = document.querySelectorAll('.pie-segment');
+    const tooltip = document.getElementById('pie-tooltip');
+
+    if (!tooltip) return;
+
+    segments.forEach((segment) => {
+      segment.addEventListener('mouseenter', (e) => {
+        const target = e.target as SVGPathElement;
+        const tooltipText = target.getAttribute('data-tooltip');
+        if (tooltipText) {
+          tooltip.textContent = tooltipText;
+          tooltip.classList.add('visible');
+        }
+      });
+
+      segment.addEventListener('mousemove', (e) => {
+        const mouseEvent = e as MouseEvent;
+        tooltip.style.left = `${mouseEvent.offsetX + 15}px`;
+        tooltip.style.top = `${mouseEvent.offsetY + 15}px`;
+      });
+
+      segment.addEventListener('mouseleave', () => {
+        tooltip.classList.remove('visible');
+      });
+    });
+  });
+</script>
