@@ -1,11 +1,29 @@
 ---
-import { loadLeaguesConfig } from '../utils/data';
-import { leagueNameToSlug } from '../utils/helpers';
+import PageLayout from '../components/PageLayout.astro';
+import LeagueHeader from '../components/LeagueHeader.astro';
+import LeagueNav from '../components/LeagueNav.astro';
+import Leaderboard from '../components/Leaderboard.astro';
+import EventList from '../components/EventList.astro';
+import { loadLeaguesConfig, loadLeagueStandings } from '../utils/data';
+import { getTournamentMetadata } from '../utils/tournamentData';
+import type { TournamentMetadata } from '../types';
 
 const config = loadLeaguesConfig();
-const firstLeague = config.leagues[0];
-const firstLeagueSlug = leagueNameToSlug(firstLeague.name);
+const allLeagues = config.leagues;
+const firstLeague = allLeagues[0];
 
-// Redirect to the first league page
-return Astro.redirect(`/league/${firstLeagueSlug}`);
+// Load standings for the first league
+const standings = loadLeagueStandings(firstLeague.name);
+
+// Load tournament metadata for the first league
+const tournamentMetadata: TournamentMetadata[] = firstLeague.tournaments
+  .map((id) => getTournamentMetadata(id))
+  .filter((meta): meta is TournamentMetadata => meta !== null);
 ---
+
+<PageLayout>
+  <LeagueHeader />
+  <LeagueNav currentLeague={firstLeague} allLeagues={allLeagues} isOverall={false} />
+  <Leaderboard standings={standings} />
+  <EventList tournaments={tournamentMetadata} />
+</PageLayout>
