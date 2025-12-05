@@ -204,57 +204,62 @@ const celebrationCardEmoji = hasTrophies ? '👑' : '⭐';
         return (
           <div class="round-card">
             <div class="round-header">Round {round.roundNumber}</div>
-            <div class="round-table-container">
-              <table class="round-table">
-                <thead>
-                  <tr>
-                    <th class="round-player-col">Player 1</th>
-                    {showDeckData && <th class="round-deck-col"></th>}
-                    <th class="round-player-col">Player 2</th>
-                    {showDeckData && <th class="round-deck-col"></th>}
-                    <th class="round-result-col">Result</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {sortedMatches.map((match: any) => {
-                    const isBye = match.Competitors.length === 1 || match.Competitors[0]?.ByeReason;
-                    const player1 = match.Competitors[0]?.Team?.Players[0];
-                    const player2 = isBye ? null : match.Competitors[1]?.Team?.Players[0];
-                    const deck1 = showDeckData && deckData ? deckData[player1.Username] : null;
-                    const deck2 = showDeckData && deckData && player2 ? deckData[player2.Username] : null;
+            <div class="round-matches">
+              {sortedMatches.map((match: any) => {
+                const isBye = match.Competitors.length === 1 || match.Competitors[0]?.ByeReason;
+                const player1 = match.Competitors[0]?.Team?.Players[0];
+                const player2 = isBye ? null : match.Competitors[1]?.Team?.Players[0];
+                const deck1 = showDeckData && deckData ? deckData[player1.Username] : null;
+                const deck2 = showDeckData && deckData && player2 ? deckData[player2.Username] : null;
 
-                    return (
-                      <tr>
-                        <td class="round-player-col">
-                          <a href={`/player/${player1.Username.toLowerCase()}`} class="round-player-link">
-                            {player1.DisplayName}
+                // Determine winner and game counts
+                const gameWins1 = match.Competitors[0]?.GameWins || 0;
+                const gameWins2 = !isBye ? (match.Competitors[1]?.GameWins || 0) : 0;
+
+                // Put winner on left (or player 1 if draw/bye)
+                const leftWins = gameWins1 >= gameWins2;
+                const leftPlayer = leftWins ? player1 : player2;
+                const rightPlayer = leftWins ? player2 : player1;
+                const leftDeck = leftWins ? deck1 : deck2;
+                const rightDeck = leftWins ? deck2 : deck1;
+                const leftGameWins = leftWins ? gameWins1 : gameWins2;
+                const rightGameWins = leftWins ? gameWins2 : gameWins1;
+
+                return (
+                  <div class="match-card">
+                    <div class="match-content">
+                      <div class="match-side left">
+                        <a href={`/player/${leftPlayer.Username.toLowerCase()}`} class="match-player-name">
+                          {leftPlayer.DisplayName}
+                        </a>
+                        {showDeckData && leftDeck && (
+                          <div class="match-deck-name">{leftDeck}</div>
+                        )}
+                        <div class="match-game-wins">{leftGameWins}</div>
+                      </div>
+
+                      <div class="match-vs">
+                        <div class="swords">⚔️</div>
+                      </div>
+
+                      <div class="match-side right">
+                        {rightPlayer ? (
+                          <a href={`/player/${rightPlayer.Username.toLowerCase()}`} class="match-player-name">
+                            {rightPlayer.DisplayName}
                           </a>
-                        </td>
-                        {showDeckData && (
-                          <td class="round-deck-col">
-                            <span class="round-deck-name">{deck1 || '—'}</span>
-                          </td>
+                        ) : (
+                          <span class="match-bye-text">Bye</span>
                         )}
-                        <td class="round-player-col">
-                          {player2 ? (
-                            <a href={`/player/${player2.Username.toLowerCase()}`} class="round-player-link">
-                              {player2.DisplayName}
-                            </a>
-                          ) : (
-                            <span class="bye-text">Bye</span>
-                          )}
-                        </td>
                         {showDeckData && (
-                          <td class="round-deck-col">
-                            <span class="round-deck-name">{deck2 || '—'}</span>
-                          </td>
+                          <div class="match-deck-name">{rightDeck || (isBye ? '—' : '')}</div>
                         )}
-                        <td class="round-result-col">{match.ResultString}</td>
-                      </tr>
-                    );
-                  })}
-                </tbody>
-              </table>
+                        <div class="match-game-wins">{isBye ? '—' : rightGameWins}</div>
+                      </div>
+                    </div>
+                    <div class="match-result">{match.ResultString}</div>
+                  </div>
+                );
+              })}
             </div>
           </div>
         );
@@ -382,73 +387,102 @@ const celebrationCardEmoji = hasTrophies ? '👑' : '⭐';
     font-size: 0.9rem;
   }
 
-  .round-table-container {
+  .round-matches {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 1rem;
+    padding: 1.5rem;
     background: white;
-    overflow-x: auto;
   }
 
-  .round-table {
-    width: 100%;
-    border-collapse: collapse;
+  .match-card {
+    background: white;
+    border: 2px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 1.25rem;
+    transition: all 0.2s ease;
   }
 
-  .round-table thead {
-    background: #f9fafb;
-    border-bottom: 1px solid #e5e7eb;
+  .match-card:hover {
+    border-color: #667eea;
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.15);
   }
 
-  .round-table th {
-    padding: 1rem 1.5rem;
-    font-size: 0.85rem;
-    font-weight: 600;
-    color: #764ba2;
+  .match-content {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 1.5rem;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  .match-side {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+  }
+
+  .match-side.left {
+    align-items: flex-end;
+    text-align: right;
+  }
+
+  .match-side.right {
+    align-items: flex-start;
     text-align: left;
   }
 
-  .round-table tbody {
-    background: white;
-  }
-
-  .round-table td {
-    padding: 1rem 1.5rem;
-    border-bottom: 1px solid #e0e0e0;
-  }
-
-  .round-table tbody tr:last-child td {
-    border-bottom: none;
-  }
-
-  .round-table tbody tr:hover {
-    background: #f9fafb;
-  }
-
-  .round-deck-name {
-    color: #667eea;
-    font-weight: 600;
-    font-size: 0.9rem;
-  }
-
-  .round-result-col {
-    color: #374151;
-    font-size: 0.95rem;
-    font-weight: 500;
-  }
-
-  .round-player-link {
+  .match-player-name {
+    font-size: 1rem;
+    font-weight: 700;
     color: #1f2937;
     text-decoration: none;
+    transition: color 0.2s ease;
+  }
+
+  .match-player-name:hover {
+    color: #667eea;
+  }
+
+  .match-deck-name {
+    font-size: 0.85rem;
     font-weight: 600;
-    font-size: 1rem;
+    color: #667eea;
   }
 
-  .round-player-link:hover {
-    color: #764ba2;
+  .match-game-wins {
+    font-size: 1.75rem;
+    font-weight: 800;
+    color: #10b981;
+    line-height: 1;
   }
 
-  .bye-text {
+  .match-vs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0.5rem;
+  }
+
+  .swords {
+    font-size: 2rem;
+    opacity: 0.4;
+  }
+
+  .match-result {
+    text-align: center;
+    font-size: 0.8rem;
     color: #6b7280;
     font-style: italic;
-    font-weight: 500;
+    padding-top: 0.75rem;
+    border-top: 1px solid #f3f4f6;
+  }
+
+  .match-bye-text {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #9ca3af;
+    font-style: italic;
   }
 
   .standings-table {
@@ -726,19 +760,38 @@ const celebrationCardEmoji = hasTrophies ? '👑' : '⭐';
       font-size: 0.85rem;
     }
 
-    .round-table {
-      min-width: 600px;
+    .round-matches {
+      grid-template-columns: 1fr;
+      padding: 1rem;
+      gap: 0.75rem;
     }
 
-    .round-table th,
-    .round-table td {
-      padding: 0.75rem 1rem;
-      font-size: 0.85rem;
-      white-space: nowrap;
+    .match-card {
+      padding: 1rem;
     }
 
-    .round-result-col {
+    .match-content {
+      gap: 1rem;
+    }
+
+    .match-player-name {
+      font-size: 0.9rem;
+    }
+
+    .match-deck-name {
       font-size: 0.8rem;
+    }
+
+    .match-game-wins {
+      font-size: 1.5rem;
+    }
+
+    .swords {
+      font-size: 1.5rem;
+    }
+
+    .match-result {
+      font-size: 0.75rem;
     }
 
     .trophy-content {
