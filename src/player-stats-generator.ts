@@ -11,6 +11,7 @@ import type {
 import { calculateMatchWinPercentage, calculateGameWinPercentage } from './utils/winPercentage';
 import { calculatePlayerStats, calculateHeadToHeadRecords } from './utils/playerData';
 import { getTournamentMetadata } from './utils/tournamentData';
+import { loadDeckData } from './utils/deckData';
 
 interface League {
   name: string;
@@ -332,6 +333,10 @@ async function generatePlayerStats(): Promise<void> {
               const mwp = calculateMatchWinPercentage(standing);
               const gwp = standing.TeamGameWinPercentage || 0;
 
+              // Load deck data if available
+              const deckData = loadDeckData(parseInt(tournamentId));
+              const deck = deckData ? deckData[username] : undefined;
+
               tournamentPerformances.push({
                 tournamentId: parseInt(tournamentId),
                 dateDisplay: metadata.dateDisplay,
@@ -343,6 +348,7 @@ async function generatePlayerStats(): Promise<void> {
                 matchRecord: standing.MatchRecord,
                 matchWinPercentage: mwp,
                 gameWinPercentage: gwp,
+                deck,
               });
             }
             break;

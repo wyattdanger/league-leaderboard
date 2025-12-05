@@ -10,6 +10,9 @@ const { performances } = Astro.props;
 const recentPerformances = performances.slice(0, 8);
 const olderPerformances = performances.slice(8);
 const hasMore = olderPerformances.length > 0;
+
+// Check if any performance has deck data
+const hasDeckData = performances.some((perf) => perf.deck);
 ---
 
 {
@@ -19,8 +22,9 @@ const hasMore = olderPerformances.length > 0;
         <div class="event-list-header">
           <div>Tournament History</div>
         </div>
-        <div class="event-table-header">
+        <div class={`event-table-header ${hasDeckData ? 'with-deck' : ''}`}>
           <div>Date</div>
+          {hasDeckData && <div>Deck</div>}
           <div>Rank</div>
           <div>Record</div>
           <div>MWP</div>
@@ -33,8 +37,9 @@ const hasMore = olderPerformances.length > 0;
             const isTrophy = perf.matchRecord === '3-0-0';
 
             return (
-              <a href={`/event/${perf.tournamentId}`} class="event-item">
+              <a href={`/event/${perf.tournamentId}`} class={`event-item ${hasDeckData ? 'with-deck' : ''}`}>
                 <div class="event-date">{perf.dateDisplay}</div>
+                {hasDeckData && <div class="event-deck">{perf.deck || '—'}</div>}
                 <div class="event-rank">{isTrophy ? '🏆' : perf.rank}</div>
                 <div class="event-record">{perf.matchRecord}</div>
                 <div class={`event-mwp ${mwpClass}`}>{(perf.matchWinPercentage * 100).toFixed(1)}%</div>
@@ -54,8 +59,9 @@ const hasMore = olderPerformances.length > 0;
                 const isTrophy = perf.matchRecord === '3-0-0';
 
                 return (
-                  <a href={`/event/${perf.tournamentId}`} class="event-item">
+                  <a href={`/event/${perf.tournamentId}`} class={`event-item ${hasDeckData ? 'with-deck' : ''}`}>
                     <div class="event-date">{perf.dateDisplay}</div>
+                    {hasDeckData && <div class="event-deck">{perf.deck || '—'}</div>}
                     <div class="event-rank">{isTrophy ? '🏆' : perf.rank}</div>
                     <div class="event-record">{perf.matchRecord}</div>
                     <div class={`event-mwp ${mwpClass}`}>{(perf.matchWinPercentage * 100).toFixed(1)}%</div>
@@ -136,6 +142,10 @@ const hasMore = olderPerformances.length > 0;
     border-bottom: 1px solid #e5e7eb;
   }
 
+  .event-table-header.with-deck {
+    grid-template-columns: 2fr 1.5fr 0.8fr 1.2fr 1fr 2fr;
+  }
+
   .event-table-header > div {
     text-align: left;
   }
@@ -159,6 +169,10 @@ const hasMore = olderPerformances.length > 0;
     cursor: pointer;
   }
 
+  .event-item.with-deck {
+    grid-template-columns: 2fr 1.5fr 0.8fr 1.2fr 1fr 2fr;
+  }
+
   .event-item:hover {
     background: linear-gradient(90deg, rgba(102, 126, 234, 0.05) 0%, rgba(118, 75, 162, 0.05) 100%);
   }
@@ -171,6 +185,12 @@ const hasMore = olderPerformances.length > 0;
     font-size: 1rem;
     font-weight: 600;
     color: #1f2937;
+  }
+
+  .event-deck {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #667eea;
   }
 
   .event-meta {

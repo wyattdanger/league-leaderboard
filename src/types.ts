@@ -81,6 +81,7 @@ export interface PlayerTournamentPerformance {
   matchRecord: string;
   matchWinPercentage: number;
   gameWinPercentage: number;
+  deck?: string; // Optional deck archetype
 }
 
 export interface PlayerDetailData {
