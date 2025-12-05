@@ -77,3 +77,13 @@ export interface PlayerDetailData {
   leagueStats: PlayerLeagueStats[];
   headToHead: HeadToHeadRecord[];
 }
+
+export interface TournamentMetadata {
+  tournamentId: number;
+  name: string;
+  date: string;
+  dateDisplay: string;
+  playerCount: number;
+  roundCount: number;
+  trophyCount: number;
+}

@@ -3,13 +3,15 @@ import PageLayout from '../../components/PageLayout.astro';
 import LeagueHeader from '../../components/LeagueHeader.astro';
 import LeagueNav from '../../components/LeagueNav.astro';
 import Leaderboard from '../../components/Leaderboard.astro';
+import EventList from '../../components/EventList.astro';
 import {
   loadLeaguesConfig,
   loadLeagueStandings,
   aggregateOverallStandings,
 } from '../../utils/data';
 import { leagueNameToSlug } from '../../utils/helpers';
-import type { League, LeagueStanding } from '../../types';
+import { getTournamentMetadata } from '../../utils/tournamentData';
+import type { League, LeagueStanding, TournamentMetadata } from '../../types';
 
 export async function getStaticPaths() {
   const config = loadLeaguesConfig();
@@ -45,10 +47,26 @@ if (isOverall) {
 } else {
   standings = loadLeagueStandings(league.name);
 }
+
+// Load tournament metadata for event list
+let tournamentMetadata: TournamentMetadata[] = [];
+if (isOverall) {
+  // For Overall, show all tournaments from all leagues
+  const allTournamentIds = allLeagues.flatMap((l) => l.tournaments);
+  tournamentMetadata = allTournamentIds
+    .map((id) => getTournamentMetadata(id))
+    .filter((meta): meta is TournamentMetadata => meta !== null);
+} else if (currentLeague) {
+  // For individual league, show only that league's tournaments
+  tournamentMetadata = currentLeague.tournaments
+    .map((id) => getTournamentMetadata(id))
+    .filter((meta): meta is TournamentMetadata => meta !== null);
+}
 ---
 
 <PageLayout>
   <LeagueHeader />
   <LeagueNav currentLeague={currentLeague} allLeagues={allLeagues} isOverall={isOverall} />
   <Leaderboard standings={standings} />
+  <EventList tournaments={tournamentMetadata} />
 </PageLayout>

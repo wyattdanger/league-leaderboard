@@ -1,0 +1,74 @@
+import * as fs from 'fs';
+import * as path from 'path';
+import type { TournamentMetadata } from '../types';
+
+/**
+ * Get tournament metadata (ID, name, date) from tournament data
+ */
+export function getTournamentMetadata(tournamentId: number): TournamentMetadata | null {
+  const tournamentDir = path.join(process.cwd(), 'output', `tournament_${tournamentId}`);
+
+  if (!fs.existsSync(tournamentDir)) {
+    return null;
+  }
+
+  // Load first standings file to get metadata
+  const standingsPath = path.join(tournamentDir, 'Round_1_Standings.json');
+
+  if (!fs.existsSync(standingsPath)) {
+    return null;
+  }
+
+  try {
+    const standings = JSON.parse(fs.readFileSync(standingsPath, 'utf-8'));
+
+    if (!standings || standings.length === 0) {
+      return null;
+    }
+
+    // Extract metadata from first standing
+    const firstStanding: any = standings[0];
+    const name = firstStanding.PhaseName || `Tournament ${tournamentId}`;
+    const date = firstStanding.DateCreated || new Date().toISOString();
+
+    const dateObj = new Date(date);
+    const dateDisplay = dateObj.toLocaleDateString('en-US', {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric',
+    });
+
+    const playerCount = standings.length;
+
+    // Count rounds by looking for Round_X_Matches.json files
+    const files = fs.readdirSync(tournamentDir);
+    const roundFiles = files.filter((file) => /^Round_\d+_Matches\.json$/.test(file));
+    const roundCount = roundFiles.length;
+
+    // Calculate trophy count from final standings (players who went 3-0)
+    let trophyCount = 0;
+    if (roundCount > 0) {
+      const finalStandingsPath = path.join(tournamentDir, `Round_${roundCount}_Standings.json`);
+      if (fs.existsSync(finalStandingsPath)) {
+        const finalStandings = JSON.parse(fs.readFileSync(finalStandingsPath, 'utf-8'));
+        // Count players with 3 match wins and 0 match losses
+        trophyCount = finalStandings.filter((s: any) =>
+          (s.MatchWins || 0) === 3 && (s.MatchLosses || 0) === 0
+        ).length;
+      }
+    }
+
+    return {
+      tournamentId,
+      name,
+      date,
+      dateDisplay,
+      playerCount,
+      roundCount,
+      trophyCount,
+    };
+  } catch (error) {
+    console.error(`Error loading metadata for tournament ${tournamentId}:`, error);
+    return null;
+  }
+}

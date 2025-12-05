@@ -1,0 +1,249 @@
+---
+import PageLayout from '../../components/PageLayout.astro';
+import LeagueHeader from '../../components/LeagueHeader.astro';
+import { getTournamentMetadata } from '../../utils/tournamentData';
+import * as fs from 'fs';
+import * as path from 'path';
+
+export async function getStaticPaths() {
+  const outputDir = path.join(process.cwd(), 'output');
+  const tournamentDirs = fs.readdirSync(outputDir).filter((dir) =>
+    dir.startsWith('tournament_')
+  );
+
+  return tournamentDirs.map((dir) => {
+    const tournamentId = parseInt(dir.replace('tournament_', ''));
+    return {
+      params: { tournamentId: tournamentId.toString() },
+      props: { tournamentId },
+    };
+  });
+}
+
+const { tournamentId } = Astro.props;
+const metadata = getTournamentMetadata(tournamentId);
+
+if (!metadata) {
+  return Astro.redirect('/league/overall');
+}
+
+// Load final standings
+const tournamentDir = path.join(process.cwd(), 'output', `tournament_${tournamentId}`);
+const finalStandingsPath = path.join(tournamentDir, `Round_${metadata.roundCount}_Standings.json`);
+const standings = JSON.parse(fs.readFileSync(finalStandingsPath, 'utf-8'));
+---
+
+<PageLayout>
+  <LeagueHeader />
+
+  <div class="event-header">
+    <h1>{metadata.dateDisplay}</h1>
+    <div class="event-meta-pills">
+      <span class="player-pill">👤 {metadata.playerCount}</span>
+      <span class="trophy-pill">🏆 {metadata.trophyCount}</span>
+      <span class="round-pill">⚔️ {metadata.roundCount}</span>
+    </div>
+  </div>
+
+  <div class="card standings-card">
+    <div class="standings-header">
+      <div>Final Standings</div>
+    </div>
+    <div class="standings-table">
+      <table>
+        <thead>
+          <tr>
+            <th class="rank-col">Rank</th>
+            <th class="player-col">Player</th>
+            <th class="record-col">Record</th>
+            <th class="points-col">Points</th>
+          </tr>
+        </thead>
+        <tbody>
+          {standings.map((standing: any) => (
+            <tr>
+              <td class="rank-col">{standing.Rank}</td>
+              <td class="player-col">
+                <a href={`/player/${standing.Team.Players[0].Username.toLowerCase()}`}>
+                  {standing.Team.Players[0].DisplayName}
+                </a>
+              </td>
+              <td class="record-col">{standing.MatchRecord}</td>
+              <td class="points-col">{standing.Points}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</PageLayout>
+
+<style>
+  .event-header {
+    margin: 2rem 0;
+    text-align: center;
+  }
+
+  .event-header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 1rem;
+  }
+
+  .event-meta-pills {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .player-pill,
+  .round-pill,
+  .trophy-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 12px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    white-space: nowrap;
+    letter-spacing: 0.05em;
+  }
+
+  .player-pill {
+    background: rgba(59, 130, 246, 0.15);
+    color: #1e40af;
+  }
+
+  .round-pill {
+    background: rgba(239, 68, 68, 0.15);
+    color: #991b1b;
+  }
+
+  .trophy-pill {
+    background: rgba(255, 215, 0, 0.15);
+    color: #b8860b;
+  }
+
+  .card {
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    margin-bottom: 2rem;
+  }
+
+  .standings-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 1.5rem 2rem;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+  }
+
+  .standings-table {
+    overflow-x: auto;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  thead {
+    background: #f8f9fa;
+  }
+
+  th {
+    padding: 1rem;
+    text-align: left;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-bottom: 2px solid #e0e0e0;
+  }
+
+  td {
+    padding: 1rem;
+    border-bottom: 1px solid #e0e0e0;
+  }
+
+  tbody tr:last-child td {
+    border-bottom: none;
+  }
+
+  tbody tr:hover {
+    background: #f8f9fa;
+  }
+
+  .rank-col {
+    width: 80px;
+    text-align: center;
+    font-weight: 600;
+    color: #333;
+  }
+
+  .player-col {
+    min-width: 200px;
+  }
+
+  .player-col a {
+    color: #667eea;
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  .player-col a:hover {
+    text-decoration: underline;
+  }
+
+  .record-col {
+    width: 120px;
+    font-family: 'Monaco', 'Courier New', monospace;
+    font-size: 0.9rem;
+  }
+
+  .points-col {
+    width: 100px;
+    text-align: center;
+    font-weight: 600;
+    color: #333;
+  }
+
+  @media (max-width: 640px) {
+    .event-header h1 {
+      font-size: 1.5rem;
+    }
+
+    .event-meta-pills {
+      flex-wrap: wrap;
+    }
+
+    .player-pill,
+    .round-pill,
+    .trophy-pill {
+      font-size: 0.85rem;
+    }
+
+    th,
+    td {
+      padding: 0.75rem 0.5rem;
+      font-size: 0.85rem;
+    }
+
+    .rank-col {
+      width: 50px;
+    }
+
+    .player-col {
+      min-width: 150px;
+    }
+  }
+</style>
