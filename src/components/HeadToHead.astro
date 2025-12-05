@@ -22,7 +22,7 @@ const { records } = Astro.props;
           <div>Form</div>
         </div>
 
-        {records.map((record) => {
+        {records.map((record, index) => {
           const mwPercentNum = record.matchWinPercentage;
           const isHighMWP = mwPercentNum > 0.59;
           const isMediumMWP = mwPercentNum > 0.39;
@@ -34,9 +34,10 @@ const { records } = Astro.props;
           const gwClass = isHighGWP ? 'wp-high' : isMediumGWP ? 'wp-medium' : 'wp-low';
 
           const opponentSlug = usernameToSlug(record.opponentUsername);
+          const isHidden = index >= 16;
 
           return (
-            <div class="h2h-row">
+            <div class={`h2h-row ${isHidden ? 'hidden' : ''}`}>
               <div>
                 <a href={`/player/${opponentSlug}`} class="opponent-link">
                   <div class="opponent-name">{record.opponentDisplayName}</div>
@@ -68,12 +69,55 @@ const { records } = Astro.props;
             </div>
           );
         })}
+
+        {records.length > 16 && (
+          <div class="load-more-container" id="h2h-load-more-container">
+            <div class="load-more-counter" id="h2h-load-more-counter">
+              Showing 16 of {records.length}
+            </div>
+            <button class="load-more-btn" id="h2h-load-more-btn">
+              Load More
+            </button>
+          </div>
+        )}
       </div>
     ) : (
       <p class="no-data">No head-to-head records available.</p>
     )
   }
 </div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const btn = document.getElementById('h2h-load-more-btn');
+    const container = document.getElementById('h2h-load-more-container');
+    const counter = document.getElementById('h2h-load-more-counter');
+
+    if (btn && container && counter) {
+      btn.addEventListener('click', () => {
+        // Get all currently hidden rows
+        const hiddenRows = document.querySelectorAll('.h2h-row.hidden');
+
+        // Show the next 16 rows (or however many are left)
+        const rowsToShow = Array.from(hiddenRows).slice(0, 16);
+        rowsToShow.forEach((row) => {
+          row.classList.remove('hidden');
+        });
+
+        // Update the counter
+        const allRows = document.querySelectorAll('.h2h-row');
+        const visibleRows = document.querySelectorAll('.h2h-row:not(.hidden)');
+        counter.textContent = `Showing ${visibleRows.length} of ${allRows.length}`;
+
+        // Hide the button if no more hidden rows remain
+        const remainingHidden = document.querySelectorAll('.h2h-row.hidden');
+        if (remainingHidden.length === 0) {
+          container.style.display = 'none';
+        }
+      });
+    }
+  });
+</script>
 
 <style>
   .h2h-container {
@@ -131,8 +175,48 @@ const { records } = Astro.props;
     background-color: #f9fafb;
   }
 
+  .h2h-row.hidden {
+    display: none;
+  }
+
   .h2h-row > div:first-child {
     text-align: left;
+  }
+
+  .load-more-container {
+    padding: 1.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    border-top: 1px solid #e5e7eb;
+  }
+
+  .load-more-counter {
+    color: #666;
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+
+  .load-more-btn {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    padding: 0.75rem 2rem;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+
+  .load-more-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+  }
+
+  .load-more-btn:active {
+    transform: translateY(0);
   }
 
   .opponent-link {
