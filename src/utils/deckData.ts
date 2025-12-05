@@ -3,22 +3,40 @@ import * as path from 'path';
 import yaml from 'js-yaml';
 import type { DeckData, MetagameBreakdown } from '../types';
 
-export function loadDeckData(tournamentId: number): DeckData | null {
-  const tournamentDir = path.join(process.cwd(), 'output', `tournament_${tournamentId}`);
-  const decksPath = path.join(tournamentDir, 'Decks.yml');
+interface AllDecksData {
+  [tournamentId: string]: DeckData;
+}
+
+let cachedDecksData: AllDecksData | null = null;
+
+function loadAllDecksData(): AllDecksData {
+  if (cachedDecksData) {
+    return cachedDecksData;
+  }
+
+  const decksPath = path.join(process.cwd(), 'decks.yml');
 
   if (!fs.existsSync(decksPath)) {
-    return null;
+    cachedDecksData = {};
+    return cachedDecksData;
   }
 
   try {
     const fileContents = fs.readFileSync(decksPath, 'utf-8');
-    const decks = yaml.load(fileContents) as DeckData;
-    return decks;
+    cachedDecksData = yaml.load(fileContents) as AllDecksData;
+    return cachedDecksData || {};
   } catch (error) {
-    console.error(`Error loading deck data for tournament ${tournamentId}:`, error);
-    return null;
+    console.error('Error loading decks.yml:', error);
+    cachedDecksData = {};
+    return cachedDecksData;
   }
+}
+
+export function loadDeckData(tournamentId: number): DeckData | null {
+  const allDecks = loadAllDecksData();
+  const tournamentKey = tournamentId.toString();
+
+  return allDecks[tournamentKey] || null;
 }
 
 export function calculateMetagameBreakdown(deckData: DeckData): MetagameBreakdown[] {
