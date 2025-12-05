@@ -828,6 +828,7 @@ const celebrationCardEmoji = hasTrophies ? '👑' : '⭐';
     if (!ctx) return;
 
     let isAnimating = false;
+    let triggerCount = 0;
     const confettiParticles: any[] = [];
     const colors = ['#ffd700', '#ffa500', '#ff6347', '#4169e1', '#32cd32', '#ff69b4'];
 
@@ -850,11 +851,11 @@ const celebrationCardEmoji = hasTrophies ? '👑' : '⭐';
       rotation: number;
       rotationSpeed: number;
 
-      constructor() {
+      constructor(isSuper = false) {
         this.x = Math.random() * canvas.width;
         this.y = -20;
-        this.size = Math.random() * 8 + 4;
-        this.speedY = Math.random() * 3 + 2;
+        this.size = isSuper ? Math.random() * 16 + 8 : Math.random() * 8 + 4;
+        this.speedY = isSuper ? Math.random() * 5 + 3 : Math.random() * 3 + 2;
         this.speedX = Math.random() * 2 - 1;
         this.color = colors[Math.floor(Math.random() * colors.length)];
         this.rotation = Math.random() * 360;
@@ -888,6 +889,12 @@ const celebrationCardEmoji = hasTrophies ? '👑' : '⭐';
       }
     }
 
+    function createSuperConfetti() {
+      for (let i = 0; i < 150; i++) {
+        confettiParticles.push(new Confetti(true));
+      }
+    }
+
     function animateConfetti() {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
 
@@ -908,20 +915,26 @@ const celebrationCardEmoji = hasTrophies ? '👑' : '⭐';
     }
 
     function triggerConfetti() {
-      if (isAnimating) return; // Don't start a new animation if one is already running
-      isAnimating = true;
-      createConfetti();
-      animateConfetti();
+      triggerCount++;
+      if (triggerCount % 5 === 0) {
+        createSuperConfetti();
+      } else {
+        createConfetti();
+      }
+      if (!isAnimating) {
+        isAnimating = true;
+        animateConfetti();
+      }
     }
 
     // Check if trophy section is visible
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
-        if (entry.isIntersecting && entry.intersectionRatio > 0.5) {
+        if (entry.isIntersecting && entry.intersectionRatio > 0.2) {
           triggerConfetti();
         }
       });
-    }, { threshold: 0.5 });
+    }, { threshold: 0.2 });
 
     observer.observe(trophyCelebration);
   });
