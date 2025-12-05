@@ -39,12 +39,25 @@ export function loadDeckData(tournamentId: number): DeckData | null {
   return allDecks[tournamentKey] || null;
 }
 
+export function hasCompleteDeckData(deckData: DeckData | null): boolean {
+  if (!deckData) {
+    return false;
+  }
+
+  // Check if all players have non-empty deck values (not _ or null)
+  const allDecksKnown = Object.values(deckData).every(
+    (deck) => deck && deck !== '_' && deck !== 'null'
+  );
+
+  return allDecksKnown;
+}
+
 export function calculateMetagameBreakdown(deckData: DeckData): MetagameBreakdown[] {
   const archetypeCounts = new Map<string, number>();
 
-  // Count occurrences of each archetype
+  // Count occurrences of each archetype (excluding _ and null)
   Object.values(deckData).forEach((archetype) => {
-    if (archetype) {
+    if (archetype && archetype !== '_' && archetype !== 'null') {
       archetypeCounts.set(archetype, (archetypeCounts.get(archetype) || 0) + 1);
     }
   });

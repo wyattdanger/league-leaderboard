@@ -4,7 +4,7 @@ import LeagueHeader from '../../components/LeagueHeader.astro';
 import MetagameBreakdown from '../../components/MetagameBreakdown.astro';
 import Tooltip from '../../components/Tooltip.astro';
 import { getTournamentMetadata } from '../../utils/tournamentData';
-import { loadDeckData, calculateMetagameBreakdown } from '../../utils/deckData';
+import { loadDeckData, calculateMetagameBreakdown, hasCompleteDeckData } from '../../utils/deckData';
 import { calculateMatchWinPercentage } from '../../utils/winPercentage';
 import * as fs from 'fs';
 import * as path from 'path';
@@ -36,9 +36,10 @@ const tournamentDir = path.join(process.cwd(), 'output', `tournament_${tournamen
 const finalStandingsPath = path.join(tournamentDir, `Round_${metadata.roundCount}_Standings.json`);
 const standings = JSON.parse(fs.readFileSync(finalStandingsPath, 'utf-8'));
 
-// Load deck data if available
+// Load deck data if available and complete
 const deckData = loadDeckData(tournamentId);
-const metagameBreakdown = deckData ? calculateMetagameBreakdown(deckData) : null;
+const showDeckData = hasCompleteDeckData(deckData);
+const metagameBreakdown = showDeckData && deckData ? calculateMetagameBreakdown(deckData) : null;
 
 // Load match data for each round
 const rounds = [];
@@ -89,7 +90,7 @@ for (let i = 1; i <= metadata.roundCount; i++) {
               <tr>
                 <th class="rank-col">Rank</th>
                 <th class="player-col">Player</th>
-                {deckData && <th class="deck-col">Deck</th>}
+                {showDeckData && <th class="deck-col">Deck</th>}
                 <th class="record-col">Record</th>
                 <th class="mwp-col">MWP</th>
                 <th class="gwp-col">GWP</th>
@@ -108,7 +109,7 @@ for (let i = 1; i <= metadata.roundCount; i++) {
 
                 const username = standing.Team.Players[0].Username;
                 const playerUrl = `/player/${username.toLowerCase()}`;
-                const deck = deckData ? deckData[username] : null;
+                const deck = showDeckData && deckData ? deckData[username] : null;
 
                 return (
                   <tr class="clickable-row" onclick={`window.location.href='${playerUrl}'`}>
@@ -120,7 +121,7 @@ for (let i = 1; i <= metadata.roundCount; i++) {
                         {standing.Team.Players[0].DisplayName}
                       </div>
                     </td>
-                    {deckData && (
+                    {showDeckData && (
                       <td class="deck-col">
                         <div class="deck-name">{deck || '—'}</div>
                       </td>
@@ -155,9 +156,9 @@ for (let i = 1; i <= metadata.roundCount; i++) {
                 <thead>
                   <tr>
                     <th class="round-player-col">Player 1</th>
-                    {deckData && <th class="round-deck-col"></th>}
+                    {showDeckData && <th class="round-deck-col"></th>}
                     <th class="round-player-col">Player 2</th>
-                    {deckData && <th class="round-deck-col"></th>}
+                    {showDeckData && <th class="round-deck-col"></th>}
                     <th class="round-result-col">Result</th>
                   </tr>
                 </thead>
@@ -166,8 +167,8 @@ for (let i = 1; i <= metadata.roundCount; i++) {
                     const isBye = match.Competitors.length === 1 || match.Competitors[0]?.ByeReason;
                     const player1 = match.Competitors[0]?.Team?.Players[0];
                     const player2 = isBye ? null : match.Competitors[1]?.Team?.Players[0];
-                    const deck1 = deckData ? deckData[player1.Username] : null;
-                    const deck2 = deckData && player2 ? deckData[player2.Username] : null;
+                    const deck1 = showDeckData && deckData ? deckData[player1.Username] : null;
+                    const deck2 = showDeckData && deckData && player2 ? deckData[player2.Username] : null;
 
                     return (
                       <tr>
@@ -176,7 +177,7 @@ for (let i = 1; i <= metadata.roundCount; i++) {
                             {player1.DisplayName}
                           </a>
                         </td>
-                        {deckData && (
+                        {showDeckData && (
                           <td class="round-deck-col">
                             <span class="round-deck-name">{deck1 || '—'}</span>
                           </td>
@@ -190,7 +191,7 @@ for (let i = 1; i <= metadata.roundCount; i++) {
                             <span class="bye-text">Bye</span>
                           )}
                         </td>
-                        {deckData && (
+                        {showDeckData && (
                           <td class="round-deck-col">
                             <span class="round-deck-name">{deck2 || '—'}</span>
                           </td>
