@@ -73,6 +73,7 @@ for (let i = 1; i <= metadata.roundCount; i++) {
 
     <div class="event-content">
       <div class="standings-section">
+        <div class="standings-header">Final Standings</div>
         <div class="standings-table">
           <table>
             <thead>
@@ -241,6 +242,14 @@ for (let i = 1; i <= metadata.roundCount; i++) {
     overflow: hidden;
   }
 
+  .standings-header {
+    padding: 1rem 1.5rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+  }
+
   .round-header {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
@@ -260,14 +269,15 @@ for (let i = 1; i <= metadata.roundCount; i++) {
 
   .round-table thead {
     background: #f9fafb;
+    border-bottom: 1px solid #e5e7eb;
   }
 
   .round-table th {
     padding: 1rem 1.5rem;
-    text-align: left;
     font-size: 0.85rem;
     font-weight: 600;
     color: #764ba2;
+    text-align: left;
   }
 
   .round-table tbody {
@@ -326,14 +336,19 @@ for (let i = 1; i <= metadata.roundCount; i++) {
 
   thead {
     background: #f9fafb;
+    border-bottom: 1px solid #e5e7eb;
   }
 
   th {
     padding: 1rem 1.5rem;
-    text-align: left;
     font-size: 0.85rem;
     font-weight: 600;
     color: #764ba2;
+    text-align: center;
+  }
+
+  th:first-child {
+    text-align: left;
   }
 
   tbody {
@@ -371,6 +386,7 @@ for (let i = 1; i <= metadata.roundCount; i++) {
 
   .player-col {
     min-width: 200px;
+    text-align: left;
   }
 
   .player-display-name {
@@ -381,6 +397,10 @@ for (let i = 1; i <= metadata.roundCount; i++) {
 
   .record-col {
     width: 120px;
+    text-align: left;
+  }
+
+  td.record-col {
     font-family: 'Monaco', 'Courier New', monospace;
     font-size: 0.95rem;
     color: #666;
