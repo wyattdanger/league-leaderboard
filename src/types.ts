@@ -101,6 +101,7 @@ export interface TournamentMetadata {
   playerCount: number;
   roundCount: number;
   trophyCount: number;
+  winnerDisplayName?: string; // For Top 8s, the 3-0 winner's display name
 }
 
 export interface DeckData {

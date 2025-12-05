@@ -65,14 +65,21 @@ export function getTournamentMetadata(tournamentId: number): TournamentMetadata 
 
     // Calculate trophy count from final standings (players who went 3-0)
     let trophyCount = 0;
+    let winnerDisplayName: string | undefined;
     if (roundCount > 0) {
       const finalStandingsPath = path.join(tournamentDir, `Round_${roundCount}_Standings.json`);
       if (fs.existsSync(finalStandingsPath)) {
         const finalStandings = JSON.parse(fs.readFileSync(finalStandingsPath, 'utf-8'));
-        // Count players with 3 match wins and 0 match losses
-        trophyCount = finalStandings.filter((s: any) =>
+        // Find players with 3 match wins and 0 match losses
+        const winners = finalStandings.filter((s: any) =>
           (s.MatchWins || 0) === 3 && (s.MatchLosses || 0) === 0
-        ).length;
+        );
+        trophyCount = winners.length;
+
+        // If exactly 1 winner (Top 8 format), capture their display name
+        if (trophyCount === 1 && winners[0]?.Team?.Players?.[0]?.DisplayName) {
+          winnerDisplayName = winners[0].Team.Players[0].DisplayName;
+        }
       }
     }
 
@@ -84,6 +91,7 @@ export function getTournamentMetadata(tournamentId: number): TournamentMetadata 
       playerCount,
       roundCount,
       trophyCount,
+      winnerDisplayName,
     };
   } catch (error) {
     console.error(`Error loading metadata for tournament ${tournamentId}:`, error);

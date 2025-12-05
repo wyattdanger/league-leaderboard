@@ -21,6 +21,9 @@ const { currentLeague, allLeagues, isOverall, standings, tournaments, showLatest
 
 // Get the latest tournament (first in the list, as they're sorted newest first)
 const latestTournament = showLatestEvent && tournaments.length > 0 ? tournaments[0] : null;
+
+// Check if this is the Top 8s page
+const isTop8s = currentLeague?.name === 'Top 8s';
 ---
 
 <PageLayout>
@@ -28,5 +31,5 @@ const latestTournament = showLatestEvent && tournaments.length > 0 ? tournaments
   <LeagueNav currentLeague={currentLeague} allLeagues={allLeagues} isOverall={isOverall} />
   {latestTournament && <LatestEvent tournament={latestTournament} />}
   {showLeaderboard && <Leaderboard standings={standings} />}
-  <EventList tournaments={tournaments} />
+  <EventList tournaments={tournaments} isTop8s={isTop8s} />
 </PageLayout>
