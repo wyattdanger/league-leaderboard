@@ -290,6 +290,7 @@ for (let i = 1; i <= metadata.roundCount; i++) {
 
   .round-table-container {
     background: white;
+    overflow-x: auto;
   }
 
   .round-table {
@@ -528,10 +529,15 @@ for (let i = 1; i <= metadata.roundCount; i++) {
       font-size: 0.85rem;
     }
 
+    .round-table {
+      min-width: 600px;
+    }
+
     .round-table th,
     .round-table td {
       padding: 0.75rem 1rem;
       font-size: 0.85rem;
+      white-space: nowrap;
     }
 
     .round-result-col {
