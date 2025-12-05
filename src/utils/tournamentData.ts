@@ -1,6 +1,7 @@
 import * as fs from 'fs';
 import * as path from 'path';
 import type { TournamentMetadata } from '../types';
+import { loadDeckData } from './deckData';
 
 /**
  * Get tournament metadata (ID, name, date) from tournament data
@@ -66,6 +67,7 @@ export function getTournamentMetadata(tournamentId: number): TournamentMetadata 
     // Calculate trophy count from final standings (players who went 3-0)
     let trophyCount = 0;
     let winnerDisplayName: string | undefined;
+    let winnerDeck: string | undefined;
     if (roundCount > 0) {
       const finalStandingsPath = path.join(tournamentDir, `Round_${roundCount}_Standings.json`);
       if (fs.existsSync(finalStandingsPath)) {
@@ -76,9 +78,16 @@ export function getTournamentMetadata(tournamentId: number): TournamentMetadata 
         );
         trophyCount = winners.length;
 
-        // If exactly 1 winner (Top 8 format), capture their display name
+        // If exactly 1 winner (Top 8 format), capture their display name and deck
         if (trophyCount === 1 && winners[0]?.Team?.Players?.[0]?.DisplayName) {
           winnerDisplayName = winners[0].Team.Players[0].DisplayName;
+
+          // Load deck data to get winner's deck
+          const deckData = loadDeckData(tournamentId);
+          if (deckData) {
+            const winnerUsername = winners[0].Team.Players[0].Username;
+            winnerDeck = deckData[winnerUsername];
+          }
         }
       }
     }
@@ -92,6 +101,7 @@ export function getTournamentMetadata(tournamentId: number): TournamentMetadata 
       roundCount,
       trophyCount,
       winnerDisplayName,
+      winnerDeck,
     };
   } catch (error) {
     console.error(`Error loading metadata for tournament ${tournamentId}:`, error);

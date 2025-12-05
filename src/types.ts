@@ -27,6 +27,7 @@ export interface LeagueStanding {
 export interface League {
   name: string;
   tournaments: number[];
+  top8Tournament?: number;
 }
 
 export interface LeaguesConfig {
@@ -102,6 +103,7 @@ export interface TournamentMetadata {
   roundCount: number;
   trophyCount: number;
   winnerDisplayName?: string; // For Top 8s, the 3-0 winner's display name
+  winnerDeck?: string; // For Top 8s, the 3-0 winner's deck
 }
 
 export interface DeckData {
