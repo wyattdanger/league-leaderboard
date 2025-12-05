@@ -11,12 +11,6 @@ const { standings } = Astro.props;
 ---
 
 <style>
-  .leaderboard {
-    background: white;
-    border-radius: 16px;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-  }
-
   .leaderboard-header {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
@@ -52,6 +46,49 @@ const { standings } = Astro.props;
 
   .leaderboard-row:last-child {
     border-bottom: none;
+  }
+
+  .leaderboard-row.hidden {
+    display: none;
+  }
+
+  .view-more-container {
+    padding: 1.5rem 2rem;
+    text-align: center;
+    border-top: 1px solid #e0e0e0;
+  }
+
+  .view-more-counter {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+  }
+
+  .view-more-btn {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    padding: 0.75rem 2rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+  }
+
+  .view-more-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(102, 126, 234, 0.4);
+  }
+
+  .view-more-btn:active {
+    transform: translateY(0);
+  }
+
+  .view-more-container.hidden {
+    display: none;
   }
 
   .rank {
@@ -285,7 +322,7 @@ const { standings } = Astro.props;
   }
 </style>
 
-<div class="leaderboard">
+<div class="card">
   {
     standings ? (
       <Fragment>
@@ -301,10 +338,11 @@ const { standings } = Astro.props;
           </div>
         </div>
 
-        {standings.map((standing) => {
+        {standings.map((standing, index) => {
           const player = standing.Team.Players[0];
           const isTopThree = standing.Rank < 4;
           const rankClass = isTopThree ? `rank-${standing.Rank}` : '';
+          const isHidden = index >= 16;
 
           // Calculate match win percentage with color treatment
           const totalMatches = standing.MatchWins + standing.MatchLosses + standing.MatchDraws;
@@ -324,7 +362,7 @@ const { standings } = Astro.props;
           const playerSlug = usernameToSlug(player.Username);
 
           return (
-            <div class="leaderboard-row">
+            <div class={`leaderboard-row ${isHidden ? 'hidden' : ''}`}>
               <div class={`rank ${rankClass}`}>{standing.Rank}</div>
               <div>
                 <a href={`/player/${playerSlug}`} class="player-link">
@@ -367,6 +405,17 @@ const { standings } = Astro.props;
             </div>
           );
         })}
+
+        {standings.length > 16 && (
+          <div class="view-more-container" id="view-more-container">
+            <div class="view-more-counter" id="view-more-counter">
+              Showing 16 of {standings.length}
+            </div>
+            <button class="view-more-btn" id="view-more-btn">
+              View more
+            </button>
+          </div>
+        )}
       </Fragment>
     ) : (
       <div class="no-data">
@@ -379,3 +428,35 @@ const { standings } = Astro.props;
     )
   }
 </div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const viewMoreBtn = document.getElementById('view-more-btn');
+    const viewMoreContainer = document.getElementById('view-more-container');
+    const viewMoreCounter = document.getElementById('view-more-counter');
+
+    if (viewMoreBtn && viewMoreContainer && viewMoreCounter) {
+      viewMoreBtn.addEventListener('click', () => {
+        // Get all currently hidden rows
+        const hiddenRows = document.querySelectorAll('.leaderboard-row.hidden');
+
+        // Show the next 16 rows (or however many are left)
+        const rowsToShow = Array.from(hiddenRows).slice(0, 16);
+        rowsToShow.forEach((row) => {
+          row.classList.remove('hidden');
+        });
+
+        // Update the counter
+        const allRows = document.querySelectorAll('.leaderboard-row');
+        const visibleRows = document.querySelectorAll('.leaderboard-row:not(.hidden)');
+        viewMoreCounter.textContent = `Showing ${visibleRows.length} of ${allRows.length}`;
+
+        // Hide the button if no more hidden rows remain
+        const remainingHidden = document.querySelectorAll('.leaderboard-row.hidden');
+        if (remainingHidden.length === 0) {
+          viewMoreContainer.classList.add('hidden');
+        }
+      });
+    }
+  });
+</script>

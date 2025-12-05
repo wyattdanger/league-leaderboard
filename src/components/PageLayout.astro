@@ -14,7 +14,7 @@
     <meta name="robots" content="noindex, nofollow" />
     <meta name="generator" content={Astro.generator} />
     <title>NYC Premodern League Standings</title>
-    <style>
+    <style is:global>
       * {
         margin: 0;
         padding: 0;
@@ -36,6 +36,19 @@
         margin: 0 auto;
       }
 
+      /* Shared card styling for leaderboards and profile containers */
+      .card {
+        background: white;
+        border-radius: 16px;
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+      }
+
+      footer {
+        margin-top: 4rem;
+        padding: 3rem 0;
+        text-align: center;
+      }
+
       @media (max-width: 640px) {
         body {
           padding: 1rem 0.5rem;
@@ -50,6 +63,9 @@
   <body>
     <div class="container">
       <slot />
+      <footer>
+        <!-- Footer content will go here -->
+      </footer>
     </div>
   </body>
 </html>

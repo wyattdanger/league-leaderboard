@@ -58,7 +58,7 @@ const gwpClass = isHighGWP ? 'stat-high' : isMediumGWP ? 'stat-medium' : 'stat-l
   <LeagueHeader />
   <LeagueNav currentLeague={null} allLeagues={allLeagues} isOverall={false} />
 
-  <div class="player-profile-container">
+  <div class="card player-profile-container">
     <div class="player-profile-header">
       <div class="player-name-group">
         <h1>{playerData.displayName}</h1>
@@ -121,9 +121,6 @@ const gwpClass = isHighGWP ? 'stat-high' : isMediumGWP ? 'stat-medium' : 'stat-l
 
 <style>
   .player-profile-container {
-    background: white;
-    border-radius: 16px;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
     margin-bottom: 2rem;
   }
 
