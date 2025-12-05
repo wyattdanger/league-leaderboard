@@ -48,6 +48,16 @@ async function generatePlayerStats(): Promise<void> {
   const playerMatches = new Map<string, { matchesPerRound: Match[][]; displayName: string }>();
   const playerTournaments = new Map<string, Set<string>>();
   const playerPoints = new Map<string, number>();
+  const playerTrophies = new Map<string, number>();
+  const playerBelts = new Map<string, number>();
+
+  // Identify which tournaments are Top 8s
+  const top8Tournaments = new Set<string>();
+  for (const league of config.leagues) {
+    if (league.name === 'Top 8s') {
+      league.tournaments.forEach((tid) => top8Tournaments.add(tid.toString()));
+    }
+  }
 
   // Load all tournament data
   for (const tournamentId of allTournamentIds) {
@@ -109,7 +119,7 @@ async function generatePlayerStats(): Promise<void> {
       }
     }
 
-    // Load standings to get points
+    // Load standings to get points and check for 3-0 finishes (trophies/belts)
     const standingsFiles = fs
       .readdirSync(tournamentDir)
       .filter((f) => f.endsWith('_Standings.json'))
@@ -124,6 +134,21 @@ async function generatePlayerStats(): Promise<void> {
         const username = standing.Team.Players[0]?.Username || '';
         if (username) {
           playerPoints.set(username, (playerPoints.get(username) || 0) + (standing.Points || 0));
+
+          // Check for 3-0 finish
+          if (
+            standing.MatchWins === 3 &&
+            standing.MatchLosses === 0 &&
+            standing.MatchDraws === 0
+          ) {
+            if (top8Tournaments.has(tournamentId)) {
+              // Top 8 3-0s count as belts only
+              playerBelts.set(username, (playerBelts.get(username) || 0) + 1);
+            } else {
+              // Regular league 3-0s count as trophies only
+              playerTrophies.set(username, (playerTrophies.get(username) || 0) + 1);
+            }
+          }
         }
       }
     }
@@ -277,6 +302,8 @@ async function generatePlayerStats(): Promise<void> {
       matchWinPercentage: totalMatches > 0 ? totalMatchWins / totalMatches : 0,
       gameRecord: `${totalGameWins}-${totalGameLosses}-${totalGameDraws}`,
       gameWinPercentage: totalGames > 0 ? totalGameWins / totalGames : 0,
+      trophies: playerTrophies.get(username) || 0,
+      belts: playerBelts.get(username) || 0,
     };
 
     const playerDetailData: PlayerDetailData = {

@@ -26,6 +26,8 @@ async function aggregateLeague(tournamentIds: string[], leagueName?: string): Pr
 
   // Track which players participated in which tournaments
   const playerTournaments = new Map<string, Set<string>>();
+  // Track trophies (3-0 finishes) per player
+  const playerTrophies = new Map<string, number>();
 
   // Load all tournament data and combine all rounds
   for (const tournamentId of tournamentIds) {
@@ -69,6 +71,31 @@ async function aggregateLeague(tournamentIds: string[], leagueName?: string): Pr
 
       allRounds.push(matches);
     }
+
+    // Check final standings for 3-0 finishes (trophies)
+    const standingsFiles = fs
+      .readdirSync(tournamentDir)
+      .filter((f) => f.endsWith('_Standings.json'))
+      .sort()
+      .reverse(); // Get most recent standings first
+
+    if (standingsFiles.length > 0) {
+      const finalStandings = JSON.parse(
+        fs.readFileSync(path.join(tournamentDir, standingsFiles[0]), 'utf-8')
+      );
+
+      for (const standing of finalStandings) {
+        const username = standing.Team?.Players?.[0]?.Username || '';
+        if (
+          username &&
+          standing.MatchWins === 3 &&
+          standing.MatchLosses === 0 &&
+          standing.MatchDraws === 0
+        ) {
+          playerTrophies.set(username, (playerTrophies.get(username) || 0) + 1);
+        }
+      }
+    }
   }
 
   if (allRounds.length === 0) {
@@ -80,11 +107,13 @@ async function aggregateLeague(tournamentIds: string[], leagueName?: string): Pr
   console.log(`\nCalculating league standings from ${totalRounds} total rounds...`);
   const standings = calculateStandingsByUsername(allRounds);
 
-  // Add tournament count to each standing
+  // Add tournament count and trophies to each standing
   for (const standing of standings) {
     const username = standing.Team.Players[0]?.Username || '';
     const tournamentCount = playerTournaments.get(username)?.size || 0;
+    const trophies = playerTrophies.get(username) || 0;
     (standing as any).TournamentCount = tournamentCount;
+    (standing as any).Trophies = trophies;
   }
 
   // Output directory

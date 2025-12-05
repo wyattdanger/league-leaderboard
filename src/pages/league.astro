@@ -26,6 +26,8 @@ interface LeagueStanding {
   OpponentGameWinPercentage: number;
   OpponentCount: number;
   TournamentCount?: number;
+  Trophies?: number;
+  Belts?: number;
 }
 
 interface League {
@@ -111,6 +113,7 @@ if (selectedLeagueParam === 'overall') {
       gameLosses: number;
       gameDraws: number;
       tournaments: Set<number>;
+      trophies: number;
     }
   >();
 
@@ -132,6 +135,7 @@ if (selectedLeagueParam === 'overall') {
         gameLosses: 0,
         gameDraws: 0,
         tournaments: new Set(),
+        trophies: 0,
       });
     }
 
@@ -143,6 +147,7 @@ if (selectedLeagueParam === 'overall') {
     stats.gameWins += standing.GameWins;
     stats.gameLosses += standing.GameLosses;
     stats.gameDraws += standing.GameDraws;
+    stats.trophies += standing.Trophies || 0;
     if (standing.TournamentCount) {
       // This is approximate since we don't have individual tournament IDs
       stats.tournaments.add(standing.TeamId); // Use as proxy
@@ -169,6 +174,7 @@ if (selectedLeagueParam === 'overall') {
       OpponentGameWinPercentage: 0,
       OpponentCount: 0,
       TournamentCount: stats.tournaments.size,
+      Trophies: stats.trophies,
     }))
     .sort((a, b) => b.Points - a.Points)
     .map((s, i) => ({ ...s, Rank: i + 1 }));

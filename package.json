@@ -11,6 +11,7 @@
     "league": "tsx src/league-aggregator.ts",
     "player-stats": "tsx src/player-stats-generator.ts",
     "sync-league": "tsx src/sync-league.ts",
+    "rebuild-all": "npm run league && npm run league -- --league \"Q3 2025\" && npm run league -- --league \"Q2 2025\" && npm run league -- --league \"Top 8s\" && npm run player-stats && npm run build",
     "test": "jest",
     "format": "prettier --write .",
     "format:check": "prettier --check ."

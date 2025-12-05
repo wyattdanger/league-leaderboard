@@ -65,6 +65,8 @@ export function aggregateOverallStandings(allLeagues: LeaguesConfig['leagues']):
       gameLosses: number;
       gameDraws: number;
       tournaments: Set<number>;
+      trophies: number;
+      belts: number;
     }
   >();
 
@@ -86,6 +88,8 @@ export function aggregateOverallStandings(allLeagues: LeaguesConfig['leagues']):
         gameLosses: 0,
         gameDraws: 0,
         tournaments: new Set(),
+        trophies: 0,
+        belts: 0,
       });
     }
 
@@ -99,6 +103,19 @@ export function aggregateOverallStandings(allLeagues: LeaguesConfig['leagues']):
     stats.gameDraws += standing.GameDraws;
     if (standing.TournamentCount) {
       stats.tournaments.add(standing.TeamId);
+    }
+  }
+
+  // Load player stats to get trophy and belt counts (source of truth)
+  const playersDir = path.join(process.cwd(), 'output', 'players');
+  if (fs.existsSync(playersDir)) {
+    for (const [username, stats] of playerStats) {
+      const playerFile = path.join(playersDir, `player_stats_${username.toLowerCase()}.json`);
+      if (fs.existsSync(playerFile)) {
+        const playerData = JSON.parse(fs.readFileSync(playerFile, 'utf-8'));
+        stats.trophies = playerData.overallStats?.trophies || 0;
+        stats.belts = playerData.overallStats?.belts || 0;
+      }
     }
   }
 
@@ -122,6 +139,8 @@ export function aggregateOverallStandings(allLeagues: LeaguesConfig['leagues']):
       OpponentGameWinPercentage: 0,
       OpponentCount: 0,
       TournamentCount: stats.tournaments.size,
+      Trophies: stats.trophies,
+      Belts: stats.belts,
     }))
     .sort((a, b) => b.Points - a.Points)
     .map((s, i) => ({ ...s, Rank: i + 1 }));

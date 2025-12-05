@@ -21,6 +21,7 @@ export interface LeagueStanding {
   OpponentGameWinPercentage: number;
   OpponentCount: number;
   TournamentCount?: number;
+  Trophies?: number;
 }
 
 export interface League {
@@ -55,6 +56,8 @@ export interface PlayerOverallStats {
   matchWinPercentage: number;
   gameRecord: string;
   gameWinPercentage: number;
+  trophies: number;
+  belts: number;
 }
 
 export interface PlayerLeagueStats {

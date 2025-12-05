@@ -4,6 +4,7 @@ import LeagueHeader from '../../components/LeagueHeader.astro';
 import LeagueNav from '../../components/LeagueNav.astro';
 import PlayerLeagueStats from '../../components/PlayerLeagueStats.astro';
 import HeadToHead from '../../components/HeadToHead.astro';
+import Tooltip from '../../components/Tooltip.astro';
 import { loadLeaguesConfig } from '../../utils/data';
 import { usernameToSlug } from '../../utils/helpers';
 import type { PlayerDetailData } from '../../types';
@@ -59,8 +60,32 @@ const gwpClass = isHighGWP ? 'stat-high' : isMediumGWP ? 'stat-medium' : 'stat-l
 
   <div class="player-profile-container">
     <div class="player-profile-header">
-      <h1>{playerData.displayName}</h1>
-      <div class="player-username">@{playerData.username}</div>
+      <div class="player-name-group">
+        <h1>{playerData.displayName}</h1>
+        <div class="player-username">@{playerData.username}</div>
+      </div>
+      <div class="player-achievements">
+        {
+          playerData.overallStats.trophies > 0 && (
+            <Tooltip
+              content={`3-0 at ${playerData.overallStats.trophies} ${playerData.overallStats.trophies === 1 ? 'weekly' : 'weeklies'}`}
+            >
+              <div class="achievement-badge trophy-badge">
+                🏆 {playerData.overallStats.trophies}
+              </div>
+            </Tooltip>
+          )
+        }
+        {
+          playerData.overallStats.belts > 0 && (
+            <Tooltip content="League champion">
+              <div class="achievement-badge belt-badge">
+                👑 {playerData.overallStats.belts}
+              </div>
+            </Tooltip>
+          )
+        }
+      </div>
     </div>
 
     <div class="player-profile-content">
@@ -99,16 +124,25 @@ const gwpClass = isHighGWP ? 'stat-high' : isMediumGWP ? 'stat-medium' : 'stat-l
     background: white;
     border-radius: 16px;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-    overflow: hidden;
     margin-bottom: 2rem;
   }
 
   .player-profile-header {
     display: flex;
-    align-items: baseline;
-    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
     padding: 1.5rem 2rem;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+  }
+
+  .player-name-group {
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+    flex: 1;
+    justify-content: flex-start;
   }
 
   h1 {
@@ -122,6 +156,26 @@ const gwpClass = isHighGWP ? 'stat-high' : isMediumGWP ? 'stat-medium' : 'stat-l
     color: rgba(255, 255, 255, 0.8);
     font-size: 1.25rem;
     font-weight: 500;
+  }
+
+  .player-achievements {
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
+  }
+
+  .achievement-badge {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: 0.5rem 0.75rem;
+    border-radius: 8px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    backdrop-filter: blur(10px);
+    cursor: help;
   }
 
   .player-profile-content {
