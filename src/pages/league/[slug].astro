@@ -4,6 +4,7 @@ import {
   loadLeaguesConfig,
   loadLeagueStandings,
   aggregateOverallStandings,
+  isCurrentLeague,
 } from '../../utils/data';
 import { leagueNameToSlug } from '../../utils/helpers';
 import { getTournamentMetadata } from '../../utils/tournamentData';
@@ -61,6 +62,10 @@ if (isOverall) {
 
 // Hide leaderboard for Top 8s page (each Top 8 is a standalone culminating event)
 const isTop8s = currentLeague?.name === 'Top 8s';
+
+// Determine if this is the current league (league with most recent event)
+// The current league should show the latest event callout
+const showLatestEvent = !isOverall && currentLeague ? isCurrentLeague(currentLeague, allLeagues) : false;
 ---
 
 <LeaguePage
@@ -70,4 +75,5 @@ const isTop8s = currentLeague?.name === 'Top 8s';
   standings={standings}
   tournaments={tournamentMetadata}
   showLeaderboard={!isTop8s}
+  showLatestEvent={showLatestEvent}
 />

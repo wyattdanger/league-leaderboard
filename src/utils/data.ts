@@ -1,7 +1,8 @@
 import * as fs from 'fs';
 import * as path from 'path';
 import * as yaml from 'js-yaml';
-import type { LeaguesConfig, LeagueStanding } from '../types';
+import type { LeaguesConfig, LeagueStanding, League } from '../types';
+import { getTournamentMetadata } from './tournamentData';
 
 /**
  * Load the leagues configuration from leagues.yml
@@ -144,4 +145,24 @@ export function aggregateOverallStandings(allLeagues: LeaguesConfig['leagues']):
     }))
     .sort((a, b) => b.Points - a.Points)
     .map((s, i) => ({ ...s, Rank: i + 1 }));
+}
+
+/**
+ * Determine if a given league is the current league (has the most recent tournament)
+ */
+export function isCurrentLeague(league: League, allLeagues: LeaguesConfig['leagues']): boolean {
+  // Find the most recent tournament across all leagues
+  const allTournamentIds = allLeagues.flatMap((l) => l.tournaments);
+  const allMetadata = allTournamentIds
+    .map((id) => getTournamentMetadata(id))
+    .filter((meta) => meta !== null)
+    .sort((a, b) => new Date(b!.date).getTime() - new Date(a!.date).getTime());
+
+  if (allMetadata.length === 0) {
+    return false;
+  }
+
+  const mostRecentTournament = allMetadata[0];
+  // Check if this tournament belongs to the given league
+  return league.tournaments.includes(mostRecentTournament!.tournamentId);
 }
