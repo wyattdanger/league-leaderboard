@@ -360,15 +360,14 @@ const { standings } = Astro.props;
           const gwClass = isHighGWP ? 'wp-high' : isMediumGWP ? 'wp-medium' : 'wp-low';
 
           const playerSlug = usernameToSlug(player.Username);
+          const playerUrl = `/player/${playerSlug}`;
 
           return (
-            <div class={`leaderboard-row ${isHidden ? 'hidden' : ''}`}>
+            <div class={`leaderboard-row ${isHidden ? 'hidden' : ''}`} onclick={`window.location.href='${playerUrl}'`} style="cursor: pointer;">
               <div class={`rank ${rankClass}`}>{standing.Rank}</div>
               <div>
-                <a href={`/player/${playerSlug}`} class="player-link">
-                  <div class="player-name">{player.DisplayName}</div>
-                  <div class="player-username">@{player.Username}</div>
-                </a>
+                <div class="player-name">{player.DisplayName}</div>
+                <div class="player-username">@{player.Username}</div>
               </div>
               <div class="stat">
                 <div class="stat-value">{standing.TournamentCount || 0}</div>

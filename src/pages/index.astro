@@ -1,21 +1,11 @@
 ---
-import PageLayout from '../components/PageLayout.astro';
-import LeagueHeader from '../components/LeagueHeader.astro';
-import LeagueNav from '../components/LeagueNav.astro';
-import Leaderboard from '../components/Leaderboard.astro';
-import { loadLeaguesConfig, loadLeagueStandings } from '../utils/data';
+import { loadLeaguesConfig } from '../utils/data';
+import { leagueNameToSlug } from '../utils/helpers';
 
 const config = loadLeaguesConfig();
-const allLeagues = config.leagues;
+const firstLeague = config.leagues[0];
+const firstLeagueSlug = leagueNameToSlug(firstLeague.name);
 
-// Show the newest league (first in the list) on the index page
-const currentLeague = allLeagues[0];
-const isOverall = false;
-const standings = loadLeagueStandings(currentLeague.name);
+// Redirect to the first league page
+return Astro.redirect(`/league/${firstLeagueSlug}`);
 ---
-
-<PageLayout>
-  <LeagueHeader />
-  <LeagueNav currentLeague={currentLeague} allLeagues={allLeagues} isOverall={isOverall} />
-  <Leaderboard standings={standings} />
-</PageLayout>

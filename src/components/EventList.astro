@@ -6,6 +6,15 @@ interface Props {
 }
 
 const { tournaments } = Astro.props;
+
+// Sort tournaments by date, newest first
+const sortedTournaments = [...tournaments].sort((a, b) =>
+  new Date(b.date).getTime() - new Date(a.date).getTime()
+);
+
+const recentTournaments = sortedTournaments.slice(0, 8);
+const olderTournaments = sortedTournaments.slice(8);
+const hasMore = olderTournaments.length > 0;
 ---
 
 {
@@ -15,20 +24,65 @@ const { tournaments } = Astro.props;
         <div class="event-list-header">
           <div>Events</div>
         </div>
-        {tournaments.map((tournament) => (
-          <div class="event-item">
-            <div class="event-date">{tournament.dateDisplay}</div>
-            <div class="event-meta">
-              <span class="player-pill">👤 {tournament.playerCount}</span>
-              <span class="trophy-pill">🏆 {tournament.trophyCount}</span>
-              <span class="round-pill">⚔️ {tournament.roundCount}</span>
+        <div class="events-container">
+          {recentTournaments.map((tournament) => (
+            <a href={`/event/${tournament.tournamentId}`} class="event-item">
+              <div class="event-date">{tournament.dateDisplay}</div>
+              <div class="event-meta">
+                <span class="player-pill">👤 {tournament.playerCount}</span>
+                <span class="trophy-pill">🏆 {tournament.trophyCount}</span>
+                <span class="round-pill">⚔️ {tournament.roundCount}</span>
+              </div>
+            </a>
+          ))}
+          {hasMore && (
+            <div class="older-events" style="display: none;">
+              {olderTournaments.map((tournament) => (
+                <a href={`/event/${tournament.tournamentId}`} class="event-item">
+                  <div class="event-date">{tournament.dateDisplay}</div>
+                  <div class="event-meta">
+                    <span class="player-pill">👤 {tournament.playerCount}</span>
+                    <span class="trophy-pill">🏆 {tournament.trophyCount}</span>
+                    <span class="round-pill">⚔️ {tournament.roundCount}</span>
+                  </div>
+                </a>
+              ))}
             </div>
+          )}
+        </div>
+        {hasMore && (
+          <div class="load-more-container">
+            <div class="load-more-counter">
+              Showing {recentTournaments.length} of {tournaments.length} events
+            </div>
+            <button class="load-more-btn" id="load-more-events">
+              Load More
+            </button>
           </div>
-        ))}
+        )}
       </div>
     </div>
   )
 }
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const btn = document.getElementById('load-more-events');
+    if (btn) {
+      btn.addEventListener('click', () => {
+        const olderEvents = document.querySelector('.older-events') as HTMLElement;
+        const loadMoreContainer = document.querySelector('.load-more-container') as HTMLElement;
+
+        if (olderEvents) {
+          olderEvents.style.display = 'block';
+        }
+        if (loadMoreContainer) {
+          loadMoreContainer.style.display = 'none';
+        }
+      });
+    }
+  });
+</script>
 
 <style>
   .event-list-section {
@@ -60,6 +114,14 @@ const { tournaments } = Astro.props;
     padding: 1.5rem 2rem;
     border-bottom: 1px solid #e0e0e0;
     transition: all 0.2s ease;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+  }
+
+  .event-item:hover {
+    background: linear-gradient(90deg, rgba(102, 126, 234, 0.05) 0%, rgba(118, 75, 162, 0.05) 100%);
+    transform: translateX(4px);
   }
 
   .event-item:last-child {
@@ -105,6 +167,42 @@ const { tournaments } = Astro.props;
   .trophy-pill {
     background: rgba(255, 215, 0, 0.15);
     color: #b8860b;
+  }
+
+  .load-more-container {
+    padding: 1.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    border-top: 1px solid #e0e0e0;
+  }
+
+  .load-more-counter {
+    color: #666;
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+
+  .load-more-btn {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    padding: 0.75rem 2rem;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+
+  .load-more-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+  }
+
+  .load-more-btn:active {
+    transform: translateY(0);
   }
 
   @media (max-width: 640px) {

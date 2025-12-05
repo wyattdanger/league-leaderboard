@@ -1,6 +1,7 @@
 ---
 import PageLayout from '../../components/PageLayout.astro';
 import LeagueHeader from '../../components/LeagueHeader.astro';
+import Tooltip from '../../components/Tooltip.astro';
 import { getTournamentMetadata } from '../../utils/tournamentData';
 import * as fs from 'fs';
 import * as path from 'path';
@@ -31,17 +32,43 @@ if (!metadata) {
 const tournamentDir = path.join(process.cwd(), 'output', `tournament_${tournamentId}`);
 const finalStandingsPath = path.join(tournamentDir, `Round_${metadata.roundCount}_Standings.json`);
 const standings = JSON.parse(fs.readFileSync(finalStandingsPath, 'utf-8'));
+
+// Load match data for each round
+const rounds = [];
+for (let i = 1; i <= metadata.roundCount; i++) {
+  const matchesPath = path.join(tournamentDir, `Round_${i}_Matches.json`);
+  if (fs.existsSync(matchesPath)) {
+    const matches = JSON.parse(fs.readFileSync(matchesPath, 'utf-8'));
+    rounds.push({ roundNumber: i, matches });
+  }
+}
 ---
 
 <PageLayout>
   <LeagueHeader />
 
-  <div class="event-header">
-    <h1>{metadata.dateDisplay}</h1>
-    <div class="event-meta-pills">
-      <span class="player-pill">👤 {metadata.playerCount}</span>
-      <span class="trophy-pill">🏆 {metadata.trophyCount}</span>
-      <span class="round-pill">⚔️ {metadata.roundCount}</span>
+  <div class="card event-profile-container">
+    <div class="event-profile-header">
+      <div class="event-name-group">
+        <h1>{metadata.dateDisplay}</h1>
+      </div>
+      <div class="event-metadata">
+        <Tooltip content={`${metadata.playerCount} ${metadata.playerCount === 1 ? 'player' : 'players'} attended`}>
+          <div class="metadata-badge">
+            👤 {metadata.playerCount}
+          </div>
+        </Tooltip>
+        <Tooltip content={`${metadata.trophyCount} ${metadata.trophyCount === 1 ? 'player' : 'players'} went 3-0`}>
+          <div class="metadata-badge">
+            🏆 {metadata.trophyCount}
+          </div>
+        </Tooltip>
+        <Tooltip content={`${metadata.roundCount} ${metadata.roundCount === 1 ? 'round' : 'rounds'} of Swiss`}>
+          <div class="metadata-badge">
+            ⚔️ {metadata.roundCount}
+          </div>
+        </Tooltip>
+      </div>
     </div>
   </div>
 
@@ -56,75 +83,146 @@ const standings = JSON.parse(fs.readFileSync(finalStandingsPath, 'utf-8'));
             <th class="rank-col">Rank</th>
             <th class="player-col">Player</th>
             <th class="record-col">Record</th>
-            <th class="points-col">Points</th>
+            <th class="mwp-col">MWP</th>
+            <th class="gwp-col">GWP</th>
+            <th class="points-col">Pts</th>
           </tr>
         </thead>
         <tbody>
-          {standings.map((standing: any) => (
-            <tr>
-              <td class="rank-col">{standing.Rank}</td>
-              <td class="player-col">
-                <a href={`/player/${standing.Team.Players[0].Username.toLowerCase()}`}>
-                  {standing.Team.Players[0].DisplayName}
-                </a>
-              </td>
-              <td class="record-col">{standing.MatchRecord}</td>
-              <td class="points-col">{standing.Points}</td>
-            </tr>
-          ))}
+          {standings.map((standing: any) => {
+            const mwp = standing.MatchWins / (standing.MatchWins + standing.MatchLosses + standing.MatchDraws) || 0;
+            const gwp = standing.TeamGameWinPercentage || 0;
+            const mwpPercent = (mwp * 100).toFixed(1);
+            const gwpPercent = (gwp * 100).toFixed(1);
+
+            const mwpClass = mwp > 0.59 ? 'wp-high' : mwp > 0.39 ? 'wp-medium' : 'wp-low';
+            const gwpClass = gwp > 0.59 ? 'wp-high' : gwp > 0.39 ? 'wp-medium' : 'wp-low';
+
+            const playerUrl = `/player/${standing.Team.Players[0].Username.toLowerCase()}`;
+
+            return (
+              <tr class="clickable-row" onclick={`window.location.href='${playerUrl}'`}>
+                <td class="rank-col">
+                  <div class="rank-number">{standing.Rank}</div>
+                </td>
+                <td class="player-col">
+                  <div class="player-info-cell">
+                    <div class="player-display-name">
+                      {standing.Team.Players[0].DisplayName}
+                    </div>
+                    <div class="player-username">@{standing.Team.Players[0].Username}</div>
+                  </div>
+                </td>
+                <td class="record-col">{standing.MatchRecord}</td>
+                <td class={`mwp-col ${mwpClass}`}>{mwpPercent}%</td>
+                <td class={`gwp-col ${gwpClass}`}>{gwpPercent}%</td>
+                <td class="points-col">{standing.Points}</td>
+              </tr>
+            );
+          })}
         </tbody>
       </table>
     </div>
   </div>
+
+  {rounds.map((round) => (
+    <div class="card round-card">
+      <div class="round-header">
+        <div>Round {round.roundNumber}</div>
+      </div>
+      <div class="matches-container">
+        {round.matches.map((match: any) => {
+          const isBye = match.Competitors.length === 1 || match.Competitors[0]?.ByeReason;
+
+          if (isBye) {
+            const player = match.Competitors[0]?.Team?.Players[0];
+            return (
+              <div class="match-item bye-match">
+                <div class="player-info">
+                  <a href={`/player/${player.Username.toLowerCase()}`} class="player-name">
+                    {player.DisplayName}
+                  </a>
+                </div>
+                <div class="match-result">Bye</div>
+              </div>
+            );
+          }
+
+          const player1 = match.Competitors[0]?.Team?.Players[0];
+          const player2 = match.Competitors[1]?.Team?.Players[0];
+          const p1Wins = match.Competitors[0]?.GameWins || 0;
+          const p2Wins = match.Competitors[1]?.GameWins || 0;
+          const p1Draws = match.Competitors[0]?.GameDraws || 0;
+
+          return (
+            <div class="match-item">
+              <div class="player-info">
+                <a href={`/player/${player1.Username.toLowerCase()}`} class="player-name">
+                  {player1.DisplayName}
+                </a>
+                <span class="game-score">{p1Wins}{p1Draws > 0 && `-${p1Draws}-${p2Wins}` || ''}</span>
+              </div>
+              <div class="match-vs">vs</div>
+              <div class="player-info">
+                <a href={`/player/${player2.Username.toLowerCase()}`} class="player-name">
+                  {player2.DisplayName}
+                </a>
+                <span class="game-score">{p2Wins}{p1Draws > 0 && `-${p1Draws}-${p1Wins}` || ''}</span>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  ))}
 </PageLayout>
 
 <style>
-  .event-header {
-    margin: 2rem 0;
-    text-align: center;
+  .event-profile-container {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
   }
 
-  .event-header h1 {
+  .event-profile-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 16px;
+  }
+
+  .event-name-group h1 {
     font-size: 2rem;
     font-weight: 700;
-    color: #1a1a1a;
-    margin-bottom: 1rem;
+    margin: 0;
+    color: white;
   }
 
-  .event-meta-pills {
+  .event-metadata {
     display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  .metadata-badge {
+    display: flex;
+    align-items: center;
     gap: 0.5rem;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .player-pill,
-  .round-pill,
-  .trophy-pill {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.35rem;
-    padding: 0.25rem 0.5rem;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 0.5rem 1rem;
     border-radius: 12px;
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: 600;
-    white-space: nowrap;
-    letter-spacing: 0.05em;
+    backdrop-filter: blur(10px);
+    cursor: help;
+    transition: all 0.2s ease;
   }
 
-  .player-pill {
-    background: rgba(59, 130, 246, 0.15);
-    color: #1e40af;
-  }
-
-  .round-pill {
-    background: rgba(239, 68, 68, 0.15);
-    color: #991b1b;
-  }
-
-  .trophy-pill {
-    background: rgba(255, 215, 0, 0.15);
-    color: #b8860b;
+  .metadata-badge:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-2px);
   }
 
   .card {
@@ -134,7 +232,8 @@ const standings = JSON.parse(fs.readFileSync(finalStandingsPath, 'utf-8'));
     margin-bottom: 2rem;
   }
 
-  .standings-header {
+  .standings-header,
+  .round-header {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
     padding: 1.5rem 2rem;
@@ -144,6 +243,79 @@ const standings = JSON.parse(fs.readFileSync(finalStandingsPath, 'utf-8'));
     letter-spacing: 0.5px;
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
+  }
+
+  .round-card {
+    margin-bottom: 2rem;
+  }
+
+  .matches-container {
+    padding: 1rem;
+  }
+
+  .match-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    margin-bottom: 0.75rem;
+    background: white;
+    transition: all 0.2s ease;
+  }
+
+  .match-item:hover {
+    background: #f8f9fa;
+    border-color: #667eea;
+  }
+
+  .match-item:last-child {
+    margin-bottom: 0;
+  }
+
+  .bye-match {
+    background: #f8f9fa;
+    opacity: 0.7;
+  }
+
+  .player-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex: 1;
+  }
+
+  .player-name {
+    color: #667eea;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+  }
+
+  .player-name:hover {
+    text-decoration: underline;
+  }
+
+  .game-score {
+    font-family: 'Monaco', 'Courier New', monospace;
+    font-weight: 600;
+    color: #333;
+    min-width: 40px;
+    text-align: right;
+  }
+
+  .match-vs {
+    color: #999;
+    font-size: 0.85rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 0 1rem;
+  }
+
+  .match-result {
+    color: #999;
+    font-style: italic;
   }
 
   .standings-table {
@@ -179,14 +351,22 @@ const standings = JSON.parse(fs.readFileSync(finalStandingsPath, 'utf-8'));
     border-bottom: none;
   }
 
-  tbody tr:hover {
+  tbody tr.clickable-row {
+    cursor: pointer;
+  }
+
+  tbody tr.clickable-row:hover {
     background: #f8f9fa;
   }
 
   .rank-col {
     width: 80px;
     text-align: center;
-    font-weight: 600;
+  }
+
+  .rank-number {
+    font-weight: 700;
+    font-size: 1.1rem;
     color: #333;
   }
 
@@ -194,42 +374,78 @@ const standings = JSON.parse(fs.readFileSync(finalStandingsPath, 'utf-8'));
     min-width: 200px;
   }
 
-  .player-col a {
-    color: #667eea;
-    text-decoration: none;
-    font-weight: 500;
+  .player-info-cell {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
   }
 
-  .player-col a:hover {
-    text-decoration: underline;
+  .player-display-name {
+    color: #667eea;
+    font-weight: 600;
+    font-size: 1rem;
+  }
+
+  .player-username {
+    font-size: 0.85rem;
+    color: #999;
   }
 
   .record-col {
     width: 120px;
     font-family: 'Monaco', 'Courier New', monospace;
-    font-size: 0.9rem;
+    font-size: 0.95rem;
+    color: #666;
+  }
+
+  .mwp-col,
+  .gwp-col {
+    width: 90px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1rem;
+  }
+
+  .wp-high {
+    color: #16a34a;
+  }
+
+  .wp-medium {
+    color: #ea580c;
+  }
+
+  .wp-low {
+    color: #dc2626;
   }
 
   .points-col {
-    width: 100px;
+    width: 80px;
     text-align: center;
-    font-weight: 600;
+    font-weight: 700;
+    font-size: 1rem;
     color: #333;
   }
 
   @media (max-width: 640px) {
-    .event-header h1 {
+    .event-profile-header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1rem;
+      padding: 1.5rem;
+    }
+
+    .event-name-group h1 {
       font-size: 1.5rem;
     }
 
-    .event-meta-pills {
+    .event-metadata {
       flex-wrap: wrap;
+      gap: 0.5rem;
     }
 
-    .player-pill,
-    .round-pill,
-    .trophy-pill {
-      font-size: 0.85rem;
+    .metadata-badge {
+      font-size: 0.9rem;
+      padding: 0.4rem 0.8rem;
     }
 
     th,
@@ -244,6 +460,22 @@ const standings = JSON.parse(fs.readFileSync(finalStandingsPath, 'utf-8'));
 
     .player-col {
       min-width: 150px;
+    }
+
+    .match-item {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.5rem;
+    }
+
+    .player-info {
+      width: 100%;
+      justify-content: space-between;
+    }
+
+    .match-vs {
+      padding: 0.25rem 0;
+      align-self: center;
     }
   }
 </style>
