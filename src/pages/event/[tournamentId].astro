@@ -55,6 +55,17 @@ for (let i = 1; i <= metadata.roundCount; i++) {
 const trophyWinners = standings.filter((s: any) =>
   (s.MatchWins || 0) === 3 && (s.MatchLosses || 0) === 0 && (s.MatchDraws || 0) === 0
 );
+
+// If no trophies, find all players tied for best record (same points as rank 1)
+const topFinishers = trophyWinners.length === 0 && standings.length > 0
+  ? (() => {
+      const topPoints = standings[0].Points;
+      return standings.filter((s: any) => s.Points === topPoints);
+    })()
+  : [];
+
+const celebrationWinners = trophyWinners.length > 0 ? trophyWinners : topFinishers;
+const hasTrophies = trophyWinners.length > 0;
 ---
 
 <PageLayout>
@@ -212,20 +223,26 @@ const trophyWinners = standings.filter((s: any) =>
         );
       })}
 
-      {trophyWinners.length > 0 && (
+      {celebrationWinners.length > 0 && (
         <div class="trophy-celebration" id="trophy-celebration">
           <canvas id="confetti-canvas"></canvas>
-          <div class="trophy-header">
-            🏆 {trophyWinners.length === 1 ? 'Trophy Winner' : 'Trophy Winners'}
+          <div class={hasTrophies ? "trophy-header" : "top-finisher-header"}>
+            {hasTrophies
+              ? `🏆 ${trophyWinners.length === 1 ? 'Trophy Winner' : 'Trophy Winners'}`
+              : `🌟 ${topFinishers.length === 1 ? 'Top Finisher' : 'Top Finishers'}`}
           </div>
           <div class="trophy-content">
             <div class="trophy-message">
-              {trophyWinners.length === 1
-                ? 'Congratulations to our undefeated champion!'
-                : `Congratulations to our ${trophyWinners.length} undefeated champions!`}
+              {hasTrophies
+                ? (trophyWinners.length === 1
+                    ? 'Congratulations to our undefeated champion!'
+                    : `Congratulations to our ${trophyWinners.length} undefeated champions!`)
+                : (topFinishers.length === 1
+                    ? 'Congratulations to our top finisher!'
+                    : `Congratulations to our top finishers!`)}
             </div>
             <div class="trophy-winners-list">
-              {trophyWinners.map((winner: any) => {
+              {celebrationWinners.map((winner: any) => {
                 const username = winner.Team.Players[0].Username;
                 const displayName = winner.Team.Players[0].DisplayName;
                 const playerUrl = `/player/${username.toLowerCase()}`;
@@ -234,7 +251,7 @@ const trophyWinners = standings.filter((s: any) =>
                 return (
                   <a href={playerUrl} class="trophy-winner-card">
                     <div class="trophy-winner-name">
-                      <span class="trophy-emoji">👑</span>
+                      <span class="trophy-emoji">{hasTrophies ? '👑' : '⭐'}</span>
                       {displayName}
                     </div>
                     {deck && (
@@ -243,7 +260,7 @@ const trophyWinners = standings.filter((s: any) =>
                       </div>
                     )}
                     <div class="trophy-winner-record">
-                      3-0 · {winner.GameRecord}
+                      {winner.MatchRecord}
                     </div>
                   </a>
                 );
@@ -552,6 +569,16 @@ const trophyWinners = standings.filter((s: any) =>
 
   .trophy-header {
     background: linear-gradient(135deg, #ffd700 0%, #ffa500 100%);
+    color: #fff;
+    padding: 1.25rem 1.5rem;
+    font-weight: 700;
+    font-size: 1.1rem;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  }
+
+  .top-finisher-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: #fff;
     padding: 1.25rem 1.5rem;
     font-weight: 700;
