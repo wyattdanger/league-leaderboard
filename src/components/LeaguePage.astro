@@ -2,6 +2,7 @@
 import PageLayout from './PageLayout.astro';
 import LeagueHeader from './LeagueHeader.astro';
 import LeagueNav from './LeagueNav.astro';
+import LatestEvent from './LatestEvent.astro';
 import Leaderboard from './Leaderboard.astro';
 import EventList from './EventList.astro';
 import type { League, LeagueStanding, TournamentMetadata } from '../types';
@@ -12,14 +13,19 @@ interface Props {
   isOverall: boolean;
   standings: LeagueStanding[] | null;
   tournaments: TournamentMetadata[];
+  showLatestEvent?: boolean;
 }
 
-const { currentLeague, allLeagues, isOverall, standings, tournaments } = Astro.props;
+const { currentLeague, allLeagues, isOverall, standings, tournaments, showLatestEvent = false } = Astro.props;
+
+// Get the latest tournament (first in the list, as they're sorted newest first)
+const latestTournament = showLatestEvent && tournaments.length > 0 ? tournaments[0] : null;
 ---
 
 <PageLayout>
   <LeagueHeader />
   <LeagueNav currentLeague={currentLeague} allLeagues={allLeagues} isOverall={isOverall} />
+  {latestTournament && <LatestEvent tournament={latestTournament} />}
   <Leaderboard standings={standings} />
   <EventList tournaments={tournaments} />
 </PageLayout>

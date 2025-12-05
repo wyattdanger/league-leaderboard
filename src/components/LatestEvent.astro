@@ -1,0 +1,295 @@
+---
+import type { TournamentMetadata } from '../types';
+import { loadDeckData, calculateMetagameBreakdown, hasCompleteDeckData } from '../utils/deckData';
+
+interface Props {
+  tournament: TournamentMetadata;
+}
+
+const { tournament } = Astro.props;
+
+// Load deck data if available
+const deckData = loadDeckData(tournament.tournamentId);
+const showDeckData = hasCompleteDeckData(deckData);
+const metagameBreakdown = showDeckData && deckData ? calculateMetagameBreakdown(deckData) : null;
+
+// Generate colors for pie chart
+const colors = [
+  '#667eea', '#764ba2', '#f093fb', '#4facfe',
+  '#43e97b', '#fa709a', '#fee140', '#30cfd0',
+  '#a8edea', '#fed6e3', '#c471f5'
+];
+
+// Calculate cumulative percentages for pie chart segments
+let cumulative = 0;
+const segments = metagameBreakdown ? metagameBreakdown.map((item, index) => {
+  const start = cumulative;
+  cumulative += item.percentage;
+  return {
+    ...item,
+    start,
+    end: cumulative,
+    color: colors[index % colors.length]
+  };
+}) : [];
+---
+
+<div class="latest-event-callout">
+  <div class="callout-header">
+    <span class="latest-badge">Latest Event</span>
+    <h2>{tournament.dateDisplay}</h2>
+  </div>
+
+  <div class="callout-content">
+    <a href={`/event/${tournament.tournamentId}`} class="event-link">
+      <div class="event-stats">
+        {metagameBreakdown && (
+          <div class="stat pie-stat">
+            <div class="pie-chart-container">
+              <svg viewBox="0 0 100 100" class="pie-chart">
+                {segments.map((segment) => {
+                  const startAngle = (segment.start / 100) * 360;
+                  const endAngle = (segment.end / 100) * 360;
+                  const largeArc = segment.percentage > 50 ? 1 : 0;
+
+                  const startX = 50 + 40 * Math.cos((startAngle - 90) * Math.PI / 180);
+                  const startY = 50 + 40 * Math.sin((startAngle - 90) * Math.PI / 180);
+                  const endX = 50 + 40 * Math.cos((endAngle - 90) * Math.PI / 180);
+                  const endY = 50 + 40 * Math.sin((endAngle - 90) * Math.PI / 180);
+
+                  return (
+                    <path
+                      d={`M 50 50 L ${startX} ${startY} A 40 40 0 ${largeArc} 1 ${endX} ${endY} Z`}
+                      fill={segment.color}
+                      class="pie-segment"
+                    />
+                  );
+                })}
+              </svg>
+            </div>
+            <span class="stat-label">Metagame</span>
+          </div>
+        )}
+        <div class="stat">
+          <span class="stat-icon">👤</span>
+          <span class="stat-value">{tournament.playerCount}</span>
+          <span class="stat-label">Players</span>
+        </div>
+        <div class="stat">
+          <span class="stat-icon">🏆</span>
+          <span class="stat-value">{tournament.trophyCount}</span>
+          <span class="stat-label">Trophies</span>
+        </div>
+        <div class="stat">
+          <span class="stat-icon">⚔️</span>
+          <span class="stat-value">{tournament.roundCount}</span>
+          <span class="stat-label">Rounds</span>
+        </div>
+      </div>
+      <div class="view-results">
+        View Results →
+      </div>
+    </a>
+  </div>
+</div>
+
+<style>
+  .latest-event-callout {
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(102, 126, 234, 0.15);
+    overflow: hidden;
+    margin-bottom: 2rem;
+    border: 2px solid transparent;
+    background-image: linear-gradient(white, white),
+                      linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+  }
+
+  .callout-header {
+    background: var(--gradient-primary);
+    color: white;
+    padding: 1.5rem 2rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .latest-badge {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.25);
+    padding: 0.35rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    flex-shrink: 0;
+  }
+
+  .callout-header h2 {
+    margin: 0;
+    font-size: 1.75rem;
+    font-weight: 700;
+  }
+
+  .callout-content {
+    padding: 2rem;
+  }
+
+  .event-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+  }
+
+  .event-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    text-align: center;
+  }
+
+  .pie-stat {
+    gap: 0.5rem;
+  }
+
+  .pie-chart-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 64px;
+  }
+
+  .pie-chart {
+    width: 64px;
+    height: 64px;
+  }
+
+  .pie-segment {
+    transition: opacity 0.2s ease;
+  }
+
+  .pie-segment:hover {
+    opacity: 0.8;
+  }
+
+  .stat-icon {
+    font-size: 2rem;
+    line-height: 1;
+  }
+
+  .stat-value {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #667eea;
+    line-height: 1;
+  }
+
+  .stat-label {
+    font-size: 0.875rem;
+    color: #6b7280;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .view-results {
+    text-align: center;
+    padding: 1rem;
+    background: var(--gradient-primary);
+    color: white;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.2s ease;
+  }
+
+  .event-link:hover .view-results {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+  }
+
+  /* Compact desktop layout */
+  @media (min-width: 1024px) {
+    .callout-header {
+      padding: 0.875rem 1.5rem;
+    }
+
+    .callout-header h2 {
+      font-size: 1.375rem;
+    }
+
+    .callout-content {
+      padding: 1.25rem 1.5rem;
+    }
+
+    .event-stats {
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.25rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .pie-chart-container {
+      height: 56px;
+    }
+
+    .pie-chart {
+      width: 56px;
+      height: 56px;
+    }
+
+    .stat-icon {
+      font-size: 1.5rem;
+    }
+
+    .stat-value {
+      font-size: 1.5rem;
+    }
+
+    .view-results {
+      padding: 0.625rem 1rem;
+      font-size: 0.9375rem;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .callout-header {
+      padding: 1.25rem 1.5rem;
+    }
+
+    .callout-header h2 {
+      font-size: 1.5rem;
+    }
+
+    .callout-content {
+      padding: 1.5rem;
+    }
+
+    .event-stats {
+      gap: 1rem;
+    }
+
+    .stat-icon {
+      font-size: 1.5rem;
+    }
+
+    .stat-value {
+      font-size: 1.5rem;
+    }
+
+    .stat-label {
+      font-size: 0.75rem;
+    }
+  }
+</style>
