@@ -46,8 +46,47 @@ const { content } = Astro.props;
     border-top-color: hsl(0, 0%, 9%);
   }
 
-  .tooltip-container:hover .tooltip {
+  .tooltip-container:hover .tooltip,
+  .tooltip-container.active .tooltip {
     opacity: 1;
     transform: translateX(-50%) translateY(-4px);
   }
 </style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const tooltipContainers = document.querySelectorAll('.tooltip-container');
+    let activeTooltip: HTMLElement | null = null;
+
+    tooltipContainers.forEach((container) => {
+      const element = container as HTMLElement;
+
+      // Handle touch/click for mobile
+      element.addEventListener('click', (e) => {
+        e.stopPropagation();
+
+        // If this tooltip is already active, deactivate it
+        if (activeTooltip === element) {
+          element.classList.remove('active');
+          activeTooltip = null;
+        } else {
+          // Deactivate any other active tooltip
+          if (activeTooltip) {
+            activeTooltip.classList.remove('active');
+          }
+          // Activate this tooltip
+          element.classList.add('active');
+          activeTooltip = element;
+        }
+      });
+    });
+
+    // Close tooltip when clicking outside
+    document.addEventListener('click', () => {
+      if (activeTooltip) {
+        activeTooltip.classList.remove('active');
+        activeTooltip = null;
+      }
+    });
+  });
+</script>

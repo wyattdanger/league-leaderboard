@@ -237,7 +237,10 @@ const segments = breakdown.map((item, index) => {
 
     if (!tooltip) return;
 
+    let activeSegment: SVGPathElement | null = null;
+
     segments.forEach((segment) => {
+      // Mouse events for desktop
       segment.addEventListener('mouseenter', (e) => {
         const target = e.target as SVGPathElement;
         const tooltipText = target.getAttribute('data-tooltip');
@@ -256,6 +259,44 @@ const segments = breakdown.map((item, index) => {
       segment.addEventListener('mouseleave', () => {
         tooltip.classList.remove('visible');
       });
+
+      // Touch/click events for mobile
+      segment.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const target = e.target as SVGPathElement;
+        const tooltipText = target.getAttribute('data-tooltip');
+
+        if (activeSegment === target) {
+          // Toggle off if clicking the same segment
+          tooltip.classList.remove('visible');
+          activeSegment = null;
+        } else {
+          // Show tooltip for this segment
+          if (tooltipText) {
+            tooltip.textContent = tooltipText;
+            tooltip.classList.add('visible');
+
+            // Position tooltip in center of pie chart
+            const pieContainer = document.querySelector('.pie-chart-container') as HTMLElement;
+            if (pieContainer) {
+              const rect = pieContainer.getBoundingClientRect();
+              tooltip.style.left = '50%';
+              tooltip.style.top = '50%';
+              tooltip.style.transform = 'translate(-50%, -50%)';
+            }
+
+            activeSegment = target;
+          }
+        }
+      });
+    });
+
+    // Close tooltip when clicking outside
+    document.addEventListener('click', () => {
+      if (activeSegment) {
+        tooltip.classList.remove('visible');
+        activeSegment = null;
+      }
     });
   });
 </script>
