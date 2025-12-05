@@ -29,7 +29,30 @@ export function getTournamentMetadata(tournamentId: number): TournamentMetadata 
     // Extract metadata from first standing
     const firstStanding: any = standings[0];
     const name = firstStanding.PhaseName || `Tournament ${tournamentId}`;
-    const date = firstStanding.DateCreated || new Date().toISOString();
+
+    // Count rounds by looking for Round_X_Matches.json files
+    const files = fs.readdirSync(tournamentDir);
+    const roundFiles = files.filter((file) => /^Round_\d+_Matches\.json$/.test(file));
+    const roundCount = roundFiles.length;
+
+    // Get the actual tournament date from the earliest match timestamp
+    // (Standings DateCreated can be delayed if TO publishes results late)
+    let earliestMatchDate: string | null = null;
+
+    for (const roundFile of roundFiles) {
+      const matchesPath = path.join(tournamentDir, roundFile);
+      const matches = JSON.parse(fs.readFileSync(matchesPath, 'utf-8'));
+
+      for (const match of matches) {
+        if (match.DateCreated) {
+          if (!earliestMatchDate || match.DateCreated < earliestMatchDate) {
+            earliestMatchDate = match.DateCreated;
+          }
+        }
+      }
+    }
+
+    const date = earliestMatchDate || firstStanding.DateCreated || new Date().toISOString();
 
     const dateObj = new Date(date);
     const dateDisplay = dateObj.toLocaleDateString('en-US', {
@@ -39,11 +62,6 @@ export function getTournamentMetadata(tournamentId: number): TournamentMetadata 
     });
 
     const playerCount = standings.length;
-
-    // Count rounds by looking for Round_X_Matches.json files
-    const files = fs.readdirSync(tournamentDir);
-    const roundFiles = files.filter((file) => /^Round_\d+_Matches\.json$/.test(file));
-    const roundCount = roundFiles.length;
 
     // Calculate trophy count from final standings (players who went 3-0)
     let trophyCount = 0;
