@@ -24,8 +24,8 @@ async function decksToCSV(): Promise<void> {
   const fileContents = fs.readFileSync(decksPath, 'utf-8');
   const allDecks = yaml.load(fileContents) as AllDecksData;
 
-  // CSV header
-  const csvLines: string[] = ['Tournament ID,Tournament Date,Player Username,Deck'];
+  // CSV header (Freeze this row in Google Sheets before sorting!)
+  const csvLines: string[] = ['Tournament ID,Tournament Date,Player Username,Deck (leave empty if unknown)'];
 
   // Sort tournament IDs (newest first)
   const sortedTournamentIds = Object.keys(allDecks).sort((a, b) => parseInt(b) - parseInt(a));
@@ -55,8 +55,10 @@ async function decksToCSV(): Promise<void> {
   fs.writeFileSync(csvPath, csvLines.join('\n'));
 
   console.log(`✓ Generated CSV at ${csvPath}`);
-  console.log(`✓ Total rows: ${csvLines.length - 1} (plus 1 header row)`);
-  console.log(`✓ Total tournaments: ${sortedTournamentIds.length}\n`);
+  console.log(`✓ Total rows: ${csvLines.length - 1} data rows (plus 1 header)`);
+  console.log(`✓ Total tournaments: ${sortedTournamentIds.length}`);
+  console.log(`\n📝 TIP: In Google Sheets, select row 1 and use View → Freeze → 1 row`);
+  console.log(`    This keeps the header visible when sorting!\n`);
 }
 
 // Run the converter

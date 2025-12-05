@@ -24,7 +24,7 @@ async function csvToDecks(): Promise<void> {
   const fileContents = fs.readFileSync(csvPath, 'utf-8');
   const lines = fileContents.split('\n');
 
-  // Skip header
+  // Skip header row (first line)
   const dataLines = lines.slice(1).filter((line) => line.trim());
 
   const allDecks: AllDecksData = {};
