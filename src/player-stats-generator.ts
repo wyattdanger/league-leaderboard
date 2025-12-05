@@ -8,6 +8,7 @@ import type {
   PlayerLeagueStats,
   PlayerTournamentPerformance,
 } from './types';
+import { calculateMatchWinPercentage } from './utils/winPercentage';
 import { calculatePlayerStats, calculateHeadToHeadRecords } from './utils/playerData';
 import { getTournamentMetadata } from './utils/tournamentData';
 
@@ -331,8 +332,7 @@ async function generatePlayerStats(): Promise<void> {
           if (standingUsername === username) {
             const metadata = getTournamentMetadata(parseInt(tournamentId));
             if (metadata) {
-              const mwp =
-                standing.MatchWins / (standing.MatchWins + standing.MatchLosses + standing.MatchDraws) || 0;
+              const mwp = calculateMatchWinPercentage(standing);
               const gwp = standing.TeamGameWinPercentage || 0;
 
               tournamentPerformances.push({

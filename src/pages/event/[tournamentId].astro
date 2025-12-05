@@ -5,6 +5,7 @@ import MetagameBreakdown from '../../components/MetagameBreakdown.astro';
 import Tooltip from '../../components/Tooltip.astro';
 import { getTournamentMetadata } from '../../utils/tournamentData';
 import { loadDeckData, calculateMetagameBreakdown } from '../../utils/deckData';
+import { calculateMatchWinPercentage } from '../../utils/winPercentage';
 import * as fs from 'fs';
 import * as path from 'path';
 
@@ -97,7 +98,7 @@ for (let i = 1; i <= metadata.roundCount; i++) {
             </thead>
             <tbody>
               {standings.map((standing: any) => {
-                const mwp = standing.MatchWins / (standing.MatchWins + standing.MatchLosses + standing.MatchDraws) || 0;
+                const mwp = calculateMatchWinPercentage(standing);
                 const gwp = standing.TeamGameWinPercentage || 0;
                 const mwpPercent = (mwp * 100).toFixed(1);
                 const gwpPercent = (gwp * 100).toFixed(1);
