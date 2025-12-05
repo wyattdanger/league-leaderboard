@@ -35,258 +35,128 @@ const segments = metagameBreakdown ? metagameBreakdown.map((item, index) => {
 ---
 
 <a href={`/event/${tournament.tournamentId}`} class="latest-event-callout">
-  <div class="callout-header">
-    <div class="header-left">
-      <span class="latest-badge">Latest Event</span>
-      <h2>{tournament.dateDisplay}</h2>
-    </div>
-    <div class="view-results">
-      View Results →
-    </div>
-  </div>
+  {metagameBreakdown && (
+    <div class="pie-chart-container">
+      <svg viewBox="0 0 100 100" class="pie-chart">
+        {segments.map((segment) => {
+          const startAngle = (segment.start / 100) * 360;
+          const endAngle = (segment.end / 100) * 360;
+          const largeArc = segment.percentage > 50 ? 1 : 0;
 
-  <div class="callout-content">
-    <div class="event-stats">
-      {metagameBreakdown && (
-        <div class="stat pie-stat">
-          <div class="pie-chart-container">
-            <svg viewBox="0 0 100 100" class="pie-chart">
-              {segments.map((segment) => {
-                const startAngle = (segment.start / 100) * 360;
-                const endAngle = (segment.end / 100) * 360;
-                const largeArc = segment.percentage > 50 ? 1 : 0;
+          const startX = 50 + 40 * Math.cos((startAngle - 90) * Math.PI / 180);
+          const startY = 50 + 40 * Math.sin((startAngle - 90) * Math.PI / 180);
+          const endX = 50 + 40 * Math.cos((endAngle - 90) * Math.PI / 180);
+          const endY = 50 + 40 * Math.sin((endAngle - 90) * Math.PI / 180);
 
-                const startX = 50 + 40 * Math.cos((startAngle - 90) * Math.PI / 180);
-                const startY = 50 + 40 * Math.sin((startAngle - 90) * Math.PI / 180);
-                const endX = 50 + 40 * Math.cos((endAngle - 90) * Math.PI / 180);
-                const endY = 50 + 40 * Math.sin((endAngle - 90) * Math.PI / 180);
-
-                return (
-                  <path
-                    d={`M 50 50 L ${startX} ${startY} A 40 40 0 ${largeArc} 1 ${endX} ${endY} Z`}
-                    fill={segment.color}
-                    class="pie-segment"
-                  />
-                );
-              })}
-            </svg>
-          </div>
-          <span class="stat-label">Metagame</span>
-        </div>
-      )}
-      <div class="stat">
-        <span class="stat-icon">👤</span>
-        <span class="stat-value">{tournament.playerCount}</span>
-        <span class="stat-label">Players</span>
-      </div>
-      <div class="stat">
-        <span class="stat-icon">🏆</span>
-        <span class="stat-value">{tournament.trophyCount}</span>
-        <span class="stat-label">Trophies</span>
-      </div>
-      <div class="stat">
-        <span class="stat-icon">⚔️</span>
-        <span class="stat-value">{tournament.roundCount}</span>
-        <span class="stat-label">Rounds</span>
-      </div>
+          return (
+            <path
+              d={`M 50 50 L ${startX} ${startY} A 40 40 0 ${largeArc} 1 ${endX} ${endY} Z`}
+              fill={segment.color}
+              class="pie-segment"
+            />
+          );
+        })}
+      </svg>
     </div>
-  </div>
+  )}
+
+  <span class="event-description">
+    {tournament.playerCount} {tournament.playerCount === 1 ? 'player' : 'players'} gathered on {tournament.dateDisplay}
+  </span>
+
+  <span class="view-results">
+    View Results →
+  </span>
 </a>
 
 <style>
   .latest-event-callout {
-    display: block;
-    border-radius: 16px;
-    box-shadow: 0 8px 24px rgba(102, 126, 234, 0.15);
-    overflow: hidden;
-    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    background: var(--gradient-primary);
+    color: white;
+    padding: 1rem 1.5rem;
+    border-radius: 12px;
     border: var(--border-subtle);
     text-decoration: none;
-    color: inherit;
     transition: all 0.2s ease;
+    margin-bottom: 2rem;
   }
 
   .latest-event-callout:hover {
     transform: translateY(-2px);
-    box-shadow: 0 12px 32px rgba(102, 126, 234, 0.2);
-  }
-
-  .callout-header {
-    background: var(--gradient-primary);
-    color: white;
-    padding: 1rem 1.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1.5rem;
-  }
-
-  .header-left {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    flex: 1;
-    min-width: 0;
-  }
-
-  .latest-badge {
-    display: inline-block;
-    background: rgba(255, 255, 255, 0.25);
-    padding: 0.35rem 0.75rem;
-    border-radius: 20px;
-    font-size: 0.75rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    flex-shrink: 0;
-  }
-
-  .callout-header h2 {
-    margin: 0;
-    font-size: 1.5rem;
-    font-weight: 700;
-  }
-
-  .callout-content {
-    padding: 1.5rem;
-    background: white;
-  }
-
-  .event-stats {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    gap: 1.5rem;
-  }
-
-  .stat {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.5rem;
-    text-align: center;
-  }
-
-  .pie-stat {
-    gap: 0.5rem;
+    box-shadow: 0 8px 24px rgba(102, 126, 234, 0.3);
   }
 
   .pie-chart-container {
     display: flex;
-    justify-content: center;
     align-items: center;
-    height: 64px;
+    flex-shrink: 0;
   }
 
   .pie-chart {
-    width: 64px;
-    height: 64px;
+    width: 40px;
+    height: 40px;
   }
 
   .pie-segment {
     transition: opacity 0.2s ease;
   }
 
-  .pie-segment:hover {
-    opacity: 0.8;
-  }
-
-  .stat-icon {
-    font-size: 2rem;
-    line-height: 1;
-  }
-
-  .stat-value {
-    font-size: 2rem;
-    font-weight: 700;
-    color: #667eea;
-    line-height: 1;
-  }
-
-  .stat-label {
-    font-size: 0.875rem;
-    color: #6b7280;
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
+  .event-description {
+    font-size: 0.9375rem;
+    line-height: 1.5;
+    flex: 1;
+    min-width: 0;
   }
 
   .view-results {
-    font-weight: 600;
     font-size: 0.9375rem;
+    font-weight: 600;
     white-space: nowrap;
     flex-shrink: 0;
   }
 
   /* Compact desktop layout */
   @media (min-width: 1024px) {
-    .callout-header {
-      padding: 0.875rem 1.5rem;
-    }
-
-    .callout-header h2 {
-      font-size: 1.375rem;
-    }
-
-    .callout-content {
-      padding: 1.25rem 1.5rem;
-    }
-
-    .event-stats {
-      grid-template-columns: repeat(4, 1fr);
-      gap: 1.25rem;
-      margin-bottom: 1.25rem;
-    }
-
-    .pie-chart-container {
-      height: 56px;
+    .latest-event-callout {
+      padding: 0.75rem 1.25rem;
     }
 
     .pie-chart {
-      width: 56px;
-      height: 56px;
+      width: 36px;
+      height: 36px;
     }
 
-    .stat-icon {
-      font-size: 1.5rem;
-    }
-
-    .stat-value {
-      font-size: 1.5rem;
+    .event-description {
+      font-size: 0.875rem;
     }
 
     .view-results {
-      padding: 0.625rem 1rem;
-      font-size: 0.9375rem;
+      font-size: 0.875rem;
     }
   }
 
   @media (max-width: 640px) {
-    .callout-header {
-      padding: 1.25rem 1.5rem;
+    .latest-event-callout {
+      flex-wrap: wrap;
+      padding: 1rem 1.25rem;
+      gap: 0.75rem;
     }
 
-    .callout-header h2 {
-      font-size: 1.5rem;
+    .event-description {
+      font-size: 0.875rem;
+      flex: 1;
+      min-width: 0;
     }
 
-    .callout-content {
-      padding: 1.5rem;
-    }
-
-    .event-stats {
-      gap: 1rem;
-    }
-
-    .stat-icon {
-      font-size: 1.5rem;
-    }
-
-    .stat-value {
-      font-size: 1.5rem;
-    }
-
-    .stat-label {
-      font-size: 0.75rem;
+    .view-results {
+      width: 100%;
+      text-align: center;
+      padding-top: 0.5rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.2);
     }
   }
 </style>
