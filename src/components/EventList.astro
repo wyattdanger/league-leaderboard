@@ -2,6 +2,7 @@
 import type { TournamentMetadata } from '../types';
 import Tooltip from './Tooltip.astro';
 import { loadLeaguesConfig } from '../utils/data';
+import { sortTournamentsByIdDesc } from '../utils/tournamentSorting';
 
 interface Props {
   tournaments: TournamentMetadata[];
@@ -22,7 +23,7 @@ allLeagues.forEach((league) => {
 });
 
 // Helper function to check if tournament is a Top 8
-const isTop8Tournament = (tournamentId: number) => top8LeagueMap.has(tournamentId);
+const isTop8Tournament = (tournamentId: string) => top8LeagueMap.has(tournamentId);
 
 // Helper function to get display name for tournament
 const getTournamentDisplayName = (tournament: TournamentMetadata) => {
@@ -30,10 +31,8 @@ const getTournamentDisplayName = (tournament: TournamentMetadata) => {
   return leagueName ? `${leagueName} Top 8` : tournament.dateDisplay;
 };
 
-// Sort tournaments by date, newest first
-const sortedTournaments = [...tournaments].sort((a, b) =>
-  new Date(b.date).getTime() - new Date(a.date).getTime()
-);
+// Sort tournaments using ID-based sorting (newest first)
+const sortedTournaments = sortTournamentsByIdDesc(tournaments);
 
 const recentTournaments = sortedTournaments.slice(0, 8);
 const olderTournaments = sortedTournaments.slice(8);

@@ -32,6 +32,15 @@
       "gameWinPercentage": 0.7073170731707317
     },
     {
+      "leagueName": "Q3 2025 Top 8",
+      "events": 1,
+      "points": 3,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameRecord": "3-4-0",
+      "gameWinPercentage": 0.42857142857142855
+    },
+    {
       "leagueName": "Q2 2025",
       "events": 4,
       "points": 24,
@@ -39,15 +48,6 @@
       "matchWinPercentage": 0.6666666666666666,
       "gameRecord": "18-14-0",
       "gameWinPercentage": 0.5625
-    },
-    {
-      "leagueName": "Top 8s",
-      "events": 1,
-      "points": 3,
-      "matchRecord": "1-2-0",
-      "matchWinPercentage": 0.3333333333333333,
-      "gameRecord": "3-4-0",
-      "gameWinPercentage": 0.42857142857142855
     }
   ],
   "headToHead": [
@@ -67,8 +67,8 @@
         "W",
         "L",
         "D",
-        "W",
-        "L"
+        "L",
+        "W"
       ]
     },
     {
@@ -334,6 +334,22 @@
       ]
     },
     {
+      "opponentUsername": "BryanGulotta",
+      "opponentDisplayName": "BryanGulotta",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "lastFiveResults": [
+        "L"
+      ]
+    },
+    {
       "opponentUsername": "JusT10",
       "opponentDisplayName": "JusT10",
       "matchesPlayed": 1,
@@ -412,27 +428,11 @@
       "lastFiveResults": [
         "W"
       ]
-    },
-    {
-      "opponentUsername": "BryanGulotta",
-      "opponentDisplayName": "BryanGulotta",
-      "matchesPlayed": 1,
-      "matchWins": 0,
-      "matchLosses": 1,
-      "matchDraws": 0,
-      "matchWinPercentage": 0,
-      "gameWins": 0,
-      "gameLosses": 2,
-      "gameDraws": 0,
-      "gameWinPercentage": 0,
-      "lastFiveResults": [
-        "L"
-      ]
     }
   ],
   "tournamentPerformances": [
     {
-      "tournamentId": 388334,
+      "tournamentId": "388334",
       "dateDisplay": "December 4, 2025",
       "playerCount": 11,
       "trophyCount": 0,
@@ -445,7 +445,7 @@
       "deck": "Moneyball Black"
     },
     {
-      "tournamentId": 369726,
+      "tournamentId": "369726",
       "dateDisplay": "October 2, 2025",
       "playerCount": 9,
       "trophyCount": 1,
@@ -458,7 +458,7 @@
       "deck": "Dreadnought"
     },
     {
-      "tournamentId": 365765,
+      "tournamentId": "365765",
       "dateDisplay": "September 18, 2025",
       "playerCount": 19,
       "trophyCount": 3,
@@ -471,7 +471,7 @@
       "deck": "_"
     },
     {
-      "tournamentId": 363663,
+      "tournamentId": "363663",
       "dateDisplay": "September 11, 2025",
       "playerCount": 9,
       "trophyCount": 1,
@@ -484,7 +484,7 @@
       "deck": "_"
     },
     {
-      "tournamentId": 361066,
+      "tournamentId": "361066",
       "dateDisplay": "September 4, 2025",
       "playerCount": 13,
       "trophyCount": 2,
@@ -497,7 +497,7 @@
       "deck": "_"
     },
     {
-      "tournamentId": 352572,
+      "tournamentId": "352572",
       "dateDisplay": "August 14, 2025",
       "playerCount": 12,
       "trophyCount": 1,
@@ -510,7 +510,7 @@
       "deck": "_"
     },
     {
-      "tournamentId": 343959,
+      "tournamentId": "343959",
       "dateDisplay": "July 24, 2025",
       "playerCount": 12,
       "trophyCount": 2,
@@ -523,7 +523,7 @@
       "deck": "_"
     },
     {
-      "tournamentId": 338898,
+      "tournamentId": "338898",
       "dateDisplay": "July 10, 2025",
       "playerCount": 15,
       "trophyCount": 1,
@@ -536,7 +536,7 @@
       "deck": "_"
     },
     {
-      "tournamentId": 325333,
+      "tournamentId": "325333",
       "dateDisplay": "June 12, 2025",
       "playerCount": 13,
       "trophyCount": 2,
@@ -549,7 +549,7 @@
       "deck": "_"
     },
     {
-      "tournamentId": 312921,
+      "tournamentId": "312921",
       "dateDisplay": "May 22, 2025",
       "playerCount": 18,
       "trophyCount": 1,
@@ -562,7 +562,7 @@
       "deck": "_"
     },
     {
-      "tournamentId": 308700,
+      "tournamentId": "308700",
       "dateDisplay": "May 15, 2025",
       "playerCount": 13,
       "trophyCount": 2,
@@ -575,7 +575,7 @@
       "deck": "_"
     },
     {
-      "tournamentId": 305152,
+      "tournamentId": "305152",
       "dateDisplay": "May 8, 2025",
       "playerCount": 12,
       "trophyCount": 1,

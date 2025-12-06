@@ -1,0 +1,176 @@
+[
+  {
+    "Competitors": [
+      {
+        "Team": {
+          "Players": [
+            {
+              "TeamId": 9000001,
+              "ID": 9000001,
+              "ScreenName": "N/A",
+              "ProfileImageVersion": 0,
+              "DisplayName": "Chris",
+              "DisplayNameLastFirst": "Chris",
+              "Username": "JUDDERMANG",
+              "LanguageDescription": "Auto (English)",
+              "PronounsDescription": null
+            }
+          ],
+          "ID": 9000001,
+          "Name": null,
+          "StatusDescription": "Active",
+          "IsActive": true
+        },
+        "ID": 21600001,
+        "CheckedIn": null,
+        "ResultConfirmed": "2024-11-06T23:00:00Z",
+        "SortOrder": 0,
+        "GameByes": 0,
+        "GameWins": 2,
+        "TeamId": 9000001,
+        "GameWinsAndGameByes": 2,
+        "Decklists": []
+      },
+      {
+        "Team": {
+          "Players": [
+            {
+              "TeamId": 9000003,
+              "ID": 9000003,
+              "ScreenName": "N/A",
+              "ProfileImageVersion": 0,
+              "DisplayName": "Matt W",
+              "DisplayNameLastFirst": "Matt W",
+              "Username": "Matt_W",
+              "LanguageDescription": "Auto (English)",
+              "PronounsDescription": null
+            }
+          ],
+          "ID": 9000003,
+          "Name": null,
+          "StatusDescription": "Active",
+          "IsActive": true
+        },
+        "ID": 21600003,
+        "CheckedIn": null,
+        "ResultConfirmed": "2024-11-06T23:00:00Z",
+        "SortOrder": 1,
+        "GameByes": 0,
+        "GameWins": 1,
+        "TeamId": 9000003,
+        "GameWinsAndGameByes": 1,
+        "Decklists": []
+      }
+    ],
+    "ByeReason": null,
+    "LossReason": null,
+    "RoundName": null,
+    "DateCreated": "2024-11-06T23:00:00Z",
+    "Type": 0,
+    "FeatureMatch": false,
+    "HasResult": true,
+    "TimeExtended": false,
+    "MatchesPublished": true,
+    "RoundNumber": 1,
+    "GameDraws": 0,
+    "PodNumber": null,
+    "PhaseSortOrder": 1,
+    "SortOrder": null,
+    "TableNumber": 1,
+    "TimeExtensionMinutes": null,
+    "TournamentId": 900001,
+    "ID": 140000001,
+    "PhaseId": 900100,
+    "RoundId": 1360001,
+    "Round": "Round 1",
+    "TournamentName": "Brooklyn Brewery Premodern",
+    "PhaseName": "Brooklyn Brewery Premodern"
+  },
+  {
+    "Competitors": [
+      {
+        "Team": {
+          "Players": [
+            {
+              "TeamId": 9000002,
+              "ID": 9000002,
+              "ScreenName": "N/A",
+              "ProfileImageVersion": 0,
+              "DisplayName": "Simon",
+              "DisplayNameLastFirst": "Simon",
+              "Username": "sjpenzer",
+              "LanguageDescription": "Auto (English)",
+              "PronounsDescription": null
+            }
+          ],
+          "ID": 9000002,
+          "Name": null,
+          "StatusDescription": "Active",
+          "IsActive": true
+        },
+        "ID": 21600002,
+        "CheckedIn": null,
+        "ResultConfirmed": "2024-11-06T23:00:00Z",
+        "SortOrder": 0,
+        "GameByes": 0,
+        "GameWins": 2,
+        "TeamId": 9000002,
+        "GameWinsAndGameByes": 2,
+        "Decklists": []
+      },
+      {
+        "Team": {
+          "Players": [
+            {
+              "TeamId": 9000004,
+              "ID": 9000004,
+              "ScreenName": "N/A",
+              "ProfileImageVersion": 0,
+              "DisplayName": "Matt M",
+              "DisplayNameLastFirst": "Matt M",
+              "Username": "Mattmelach",
+              "LanguageDescription": "Auto (English)",
+              "PronounsDescription": null
+            }
+          ],
+          "ID": 9000004,
+          "Name": null,
+          "StatusDescription": "Active",
+          "IsActive": true
+        },
+        "ID": 21600004,
+        "CheckedIn": null,
+        "ResultConfirmed": "2024-11-06T23:00:00Z",
+        "SortOrder": 1,
+        "GameByes": 0,
+        "GameWins": 1,
+        "TeamId": 9000004,
+        "GameWinsAndGameByes": 1,
+        "Decklists": []
+      }
+    ],
+    "ByeReason": null,
+    "LossReason": null,
+    "RoundName": null,
+    "DateCreated": "2024-11-06T23:00:00Z",
+    "Type": 0,
+    "FeatureMatch": false,
+    "HasResult": true,
+    "TimeExtended": false,
+    "MatchesPublished": true,
+    "RoundNumber": 1,
+    "GameDraws": 0,
+    "PodNumber": null,
+    "PhaseSortOrder": 1,
+    "SortOrder": null,
+    "TableNumber": 2,
+    "TimeExtensionMinutes": null,
+    "TournamentId": 900001,
+    "ID": 140000002,
+    "PhaseId": 900100,
+    "RoundId": 1360001,
+    "Round": "Round 1",
+    "TournamentName": "Brooklyn Brewery Premodern",
+    "PhaseName": "Brooklyn Brewery Premodern"
+  }
+]

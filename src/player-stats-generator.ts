@@ -12,6 +12,7 @@ import { calculateMatchWinPercentage, calculateGameWinPercentage } from './utils
 import { calculatePlayerStats, calculateHeadToHeadRecords } from './utils/playerData';
 import { getTournamentMetadata } from './utils/tournamentData';
 import { loadDeckData } from './utils/deckData';
+import { sortTournamentPerformancesByIdDesc } from './utils/tournamentSorting';
 
 interface League {
   name: string;
@@ -46,6 +47,12 @@ async function generatePlayerStats(): Promise<void> {
       allTournamentIds.add(tidStr);
       tournamentToLeague[tidStr] = league.name;
     }
+    // Also include top8Tournament if present
+    if (league.top8Tournament) {
+      const tidStr = league.top8Tournament.toString();
+      allTournamentIds.add(tidStr);
+      tournamentToLeague[tidStr] = league.name + ' Top 8';
+    }
   }
 
   console.log(
@@ -62,8 +69,8 @@ async function generatePlayerStats(): Promise<void> {
   // Identify which tournaments are Top 8s
   const top8Tournaments = new Set<string>();
   for (const league of config.leagues) {
-    if (league.name === 'Top 8s') {
-      league.tournaments.forEach((tid) => top8Tournaments.add(tid.toString()));
+    if (league.top8Tournament) {
+      top8Tournaments.add(league.top8Tournament.toString());
     }
   }
 
@@ -215,7 +222,7 @@ async function generatePlayerStats(): Promise<void> {
       const stats = calculatePlayerStats(
         username,
         tournamentMatchesPerRound,
-        parseInt(tournamentId)
+        tournamentId
       );
       if (stats) {
         // Add to overall totals
@@ -328,17 +335,17 @@ async function generatePlayerStats(): Promise<void> {
         for (const standing of standings) {
           const standingUsername = standing.Team.Players[0]?.Username || '';
           if (standingUsername === username) {
-            const metadata = getTournamentMetadata(parseInt(tournamentId));
+            const metadata = getTournamentMetadata(tournamentId);
             if (metadata) {
               const mwp = calculateMatchWinPercentage(standing);
               const gwp = standing.TeamGameWinPercentage || 0;
 
               // Load deck data if available
-              const deckData = loadDeckData(parseInt(tournamentId));
+              const deckData = loadDeckData(tournamentId);
               const deck = deckData ? deckData[username] : undefined;
 
               tournamentPerformances.push({
-                tournamentId: parseInt(tournamentId),
+                tournamentId: tournamentId,
                 dateDisplay: metadata.dateDisplay,
                 playerCount: metadata.playerCount,
                 trophyCount: metadata.trophyCount,
@@ -357,8 +364,8 @@ async function generatePlayerStats(): Promise<void> {
       }
     }
 
-    // Sort by date (newest first)
-    tournamentPerformances.sort((a, b) => b.tournamentId - a.tournamentId);
+    // Sort using centralized sorting utility
+    const sortedPerformances = sortTournamentPerformancesByIdDesc(tournamentPerformances);
 
     const playerDetailData: PlayerDetailData = {
       username,
@@ -366,7 +373,7 @@ async function generatePlayerStats(): Promise<void> {
       overallStats,
       leagueStats,
       headToHead,
-      tournamentPerformances,
+      tournamentPerformances: sortedPerformances,
     };
 
     // Write to file

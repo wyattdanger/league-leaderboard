@@ -32,7 +32,7 @@ function loadAllDecksData(): AllDecksData {
   }
 }
 
-export function loadDeckData(tournamentId: number): DeckData | null {
+export function loadDeckData(tournamentId: string): DeckData | null {
   const allDecks = loadAllDecksData();
   const tournamentKey = tournamentId.toString();
 

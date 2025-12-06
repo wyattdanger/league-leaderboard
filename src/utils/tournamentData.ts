@@ -6,7 +6,7 @@ import { loadDeckData } from './deckData';
 /**
  * Get tournament metadata (ID, name, date) from tournament data
  */
-export function getTournamentMetadata(tournamentId: number): TournamentMetadata | null {
+export function getTournamentMetadata(tournamentId: string): TournamentMetadata | null {
   const tournamentDir = path.join(process.cwd(), 'output', `tournament_${tournamentId}`);
 
   if (!fs.existsSync(tournamentDir)) {

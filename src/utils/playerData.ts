@@ -43,7 +43,7 @@ interface MatchResult {
 export function calculatePlayerStats(
   username: string,
   matchesPerRound: Match[][],
-  tournamentId: number
+  tournamentId: string
 ): PlayerStats | null {
   let displayName = '';
   let matchWins = 0;

@@ -19,9 +19,9 @@ export async function getStaticPaths() {
   );
 
   return tournamentDirs.map((dir) => {
-    const tournamentId = parseInt(dir.replace('tournament_', ''));
+    const tournamentId = dir.replace('tournament_', '');
     return {
-      params: { tournamentId: tournamentId.toString() },
+      params: { tournamentId },
       props: { tournamentId },
     };
   });

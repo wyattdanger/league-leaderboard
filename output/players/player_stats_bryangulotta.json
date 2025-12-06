@@ -32,6 +32,15 @@
       "gameWinPercentage": 0.5
     },
     {
+      "leagueName": "Q3 2025 Top 8",
+      "events": 1,
+      "points": 6,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameRecord": "5-2-0",
+      "gameWinPercentage": 0.7142857142857143
+    },
+    {
       "leagueName": "Q2 2025",
       "events": 3,
       "points": 12,
@@ -39,15 +48,6 @@
       "matchWinPercentage": 0.4444444444444444,
       "gameRecord": "10-12-0",
       "gameWinPercentage": 0.45454545454545453
-    },
-    {
-      "leagueName": "Top 8s",
-      "events": 1,
-      "points": 6,
-      "matchRecord": "2-1-0",
-      "matchWinPercentage": 0.6666666666666666,
-      "gameRecord": "5-2-0",
-      "gameWinPercentage": 0.7142857142857143
     }
   ],
   "headToHead": [
@@ -464,22 +464,6 @@
       ]
     },
     {
-      "opponentUsername": "gberlinrut",
-      "opponentDisplayName": "Gregory Berlinrut",
-      "matchesPlayed": 1,
-      "matchWins": 0,
-      "matchLosses": 1,
-      "matchDraws": 0,
-      "matchWinPercentage": 0,
-      "gameWins": 1,
-      "gameLosses": 2,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.3333333333333333,
-      "lastFiveResults": [
-        "L"
-      ]
-    },
-    {
       "opponentUsername": "FriendlyFerret",
       "opponentDisplayName": "Bill Ellis!!",
       "matchesPlayed": 1,
@@ -494,11 +478,27 @@
       "lastFiveResults": [
         "W"
       ]
+    },
+    {
+      "opponentUsername": "gberlinrut",
+      "opponentDisplayName": "Gregory Berlinrut",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "lastFiveResults": [
+        "L"
+      ]
     }
   ],
   "tournamentPerformances": [
     {
-      "tournamentId": 384681,
+      "tournamentId": "384681",
       "dateDisplay": "November 20, 2025",
       "playerCount": 15,
       "trophyCount": 2,
@@ -511,7 +511,7 @@
       "deck": "_"
     },
     {
-      "tournamentId": 382756,
+      "tournamentId": "382756",
       "dateDisplay": "November 13, 2025",
       "playerCount": 12,
       "trophyCount": 2,
@@ -524,7 +524,7 @@
       "deck": "_"
     },
     {
-      "tournamentId": 377629,
+      "tournamentId": "377629",
       "dateDisplay": "October 30, 2025",
       "playerCount": 13,
       "trophyCount": 1,
@@ -537,7 +537,7 @@
       "deck": "_"
     },
     {
-      "tournamentId": 375338,
+      "tournamentId": "375338",
       "dateDisplay": "October 23, 2025",
       "playerCount": 17,
       "trophyCount": 2,
@@ -550,7 +550,7 @@
       "deck": "UB Tide"
     },
     {
-      "tournamentId": 373539,
+      "tournamentId": "373539",
       "dateDisplay": "October 16, 2025",
       "playerCount": 10,
       "trophyCount": 1,
@@ -563,7 +563,7 @@
       "deck": "_"
     },
     {
-      "tournamentId": 371711,
+      "tournamentId": "371711",
       "dateDisplay": "October 9, 2025",
       "playerCount": 9,
       "trophyCount": 2,
@@ -576,7 +576,7 @@
       "deck": "_"
     },
     {
-      "tournamentId": 369726,
+      "tournamentId": "369726",
       "dateDisplay": "October 2, 2025",
       "playerCount": 9,
       "trophyCount": 1,
@@ -589,7 +589,7 @@
       "deck": "Tide"
     },
     {
-      "tournamentId": 367531,
+      "tournamentId": "367531",
       "dateDisplay": "September 25, 2025",
       "playerCount": 13,
       "trophyCount": 1,
@@ -602,7 +602,7 @@
       "deck": "_"
     },
     {
-      "tournamentId": 365765,
+      "tournamentId": "365765",
       "dateDisplay": "September 18, 2025",
       "playerCount": 19,
       "trophyCount": 3,
@@ -615,7 +615,7 @@
       "deck": "_"
     },
     {
-      "tournamentId": 363663,
+      "tournamentId": "363663",
       "dateDisplay": "September 11, 2025",
       "playerCount": 9,
       "trophyCount": 1,
@@ -628,7 +628,7 @@
       "deck": "_"
     },
     {
-      "tournamentId": 361066,
+      "tournamentId": "361066",
       "dateDisplay": "September 4, 2025",
       "playerCount": 13,
       "trophyCount": 2,
@@ -641,7 +641,7 @@
       "deck": "_"
     },
     {
-      "tournamentId": 357267,
+      "tournamentId": "357267",
       "dateDisplay": "August 28, 2025",
       "playerCount": 14,
       "trophyCount": 1,
@@ -654,7 +654,7 @@
       "deck": "_"
     },
     {
-      "tournamentId": 352572,
+      "tournamentId": "352572",
       "dateDisplay": "August 14, 2025",
       "playerCount": 12,
       "trophyCount": 1,
@@ -667,7 +667,7 @@
       "deck": "_"
     },
     {
-      "tournamentId": 350003,
+      "tournamentId": "350003",
       "dateDisplay": "August 7, 2025",
       "playerCount": 13,
       "trophyCount": 1,
@@ -680,7 +680,7 @@
       "deck": "_"
     },
     {
-      "tournamentId": 343959,
+      "tournamentId": "343959",
       "dateDisplay": "July 24, 2025",
       "playerCount": 12,
       "trophyCount": 2,
@@ -693,7 +693,7 @@
       "deck": "_"
     },
     {
-      "tournamentId": 335531,
+      "tournamentId": "335531",
       "dateDisplay": "July 3, 2025",
       "playerCount": 13,
       "trophyCount": 1,
@@ -706,7 +706,7 @@
       "deck": "_"
     },
     {
-      "tournamentId": 328861,
+      "tournamentId": "328861",
       "dateDisplay": "June 19, 2025",
       "playerCount": 11,
       "trophyCount": 2,
@@ -719,7 +719,7 @@
       "deck": "_"
     },
     {
-      "tournamentId": 321687,
+      "tournamentId": "321687",
       "dateDisplay": "June 5, 2025",
       "playerCount": 23,
       "trophyCount": 3,
@@ -732,7 +732,7 @@
       "deck": "_"
     },
     {
-      "tournamentId": 316750,
+      "tournamentId": "316750",
       "dateDisplay": "May 29, 2025",
       "playerCount": 12,
       "trophyCount": 1,

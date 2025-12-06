@@ -26,8 +26,8 @@ export interface LeagueStanding {
 
 export interface League {
   name: string;
-  tournaments: number[];
-  top8Tournament?: number;
+  tournaments: string[];
+  top8Tournament?: string;
 }
 
 export interface LeaguesConfig {
@@ -72,7 +72,7 @@ export interface PlayerLeagueStats {
 }
 
 export interface PlayerTournamentPerformance {
-  tournamentId: number;
+  tournamentId: string;
   dateDisplay: string;
   playerCount: number;
   trophyCount: number;
@@ -95,7 +95,7 @@ export interface PlayerDetailData {
 }
 
 export interface TournamentMetadata {
-  tournamentId: number;
+  tournamentId: string;
   name: string;
   date: string;
   dateDisplay: string;
