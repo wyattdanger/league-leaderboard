@@ -340,7 +340,8 @@ if (standing.MatchWins === 3 && standing.MatchLosses === 0 && standing.MatchDraw
 
 3. Regenerate league standings:
    ```bash
-   npm run sync-league <league_name>
+   npm run sync-league                      # Sync current league
+   npm run sync-league -- --league "Q4 2025"  # Sync specific league
    ```
 
 4. Regenerate player stats:
@@ -409,8 +410,9 @@ if (standing.MatchWins === 3 && standing.MatchLosses === 0 && standing.MatchDraw
 
 4. Regenerate all affected data:
    ```bash
-   npm run player-stats  # If player stats affected
-   npm run sync-league   # If league standings affected
+   npm run player-stats                     # If player stats affected
+   npm run sync-league                      # If current league standings affected
+   npm run sync-league -- --league "Q3 2025"  # If specific league affected
    ```
 
 5. Rebuild site:
@@ -543,6 +545,29 @@ scraping-project/
 ## Git Workflow
 
 ### Committing Changes
+
+**Best Practice: Use Atomic Commits**
+
+Make small, focused commits that each do one thing. This makes the history easier to understand and revert if needed.
+
+```bash
+# Bad: One large commit with many changes
+git add -A
+git commit -m "Fix dates, remove files, update docs, regenerate data"
+
+# Good: Separate atomic commits
+git add output/tournament_380585/*.json
+git commit -m "Fix tournament dates to use correct year"
+
+git add output/tournament_380585/metadata.json
+git commit -m "Remove unused metadata files"
+
+git add CLAUDE.md
+git commit -m "Update documentation with correct sync-league syntax"
+
+git add output/players/*.json
+git commit -m "Regenerate player stats after date corrections"
+```
 
 **For code changes:**
 ```bash
