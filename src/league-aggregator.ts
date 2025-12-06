@@ -4,6 +4,7 @@ import * as yaml from 'js-yaml';
 import type { Match } from './standings-calculator.js';
 import { calculateStandingsByUsername } from './standings-calculator.js';
 import type { Standing } from './standings-calculator.js';
+import { cleanDisplayName } from './utils/helpers.js';
 
 interface League {
   name: string;
@@ -154,7 +155,8 @@ async function aggregateLeague(tournamentIds: string[], leagueName?: string): Pr
   console.log('-'.repeat(120));
 
   for (const standing of standings) {
-    const playerName = standing.Team.Players[0]?.DisplayName || 'Unknown';
+    const rawDisplayName = standing.Team.Players[0]?.DisplayName || 'Unknown';
+    const playerName = cleanDisplayName(rawDisplayName);
     const omwPct = (standing.OpponentMatchWinPercentage * 100).toFixed(1) + '%';
     const gwPct = (standing.TeamGameWinPercentage * 100).toFixed(1) + '%';
     const tournamentCount = (standing as any).TournamentCount || 0;

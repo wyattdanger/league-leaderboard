@@ -1,7 +1,7 @@
 import * as fs from 'fs';
 import * as path from 'path';
 import * as yaml from 'js-yaml';
-import type { Match } from './utils/playerData';
+import type { MeleeMatch, MeleeStanding } from './types/melee';
 import type {
   PlayerDetailData,
   PlayerOverallStats,
@@ -13,6 +13,7 @@ import { calculatePlayerStats, calculateHeadToHeadRecords } from './utils/player
 import { getTournamentMetadata } from './utils/tournamentData';
 import { loadDeckData } from './utils/deckData';
 import { sortTournamentPerformancesByIdDesc } from './utils/tournamentSorting';
+import { Player } from './models/Player';
 
 interface League {
   name: string;
@@ -60,7 +61,7 @@ async function generatePlayerStats(): Promise<void> {
   );
 
   // Collect all players and their matches
-  const playerMatches = new Map<string, { matchesPerRound: Match[][]; displayName: string }>();
+  const playerMatches = new Map<string, { matchesPerRound: MeleeMatch[][]; displayName: string }>();
   const playerTournaments = new Map<string, Set<string>>();
   const playerPoints = new Map<string, number>();
   const playerTrophies = new Map<string, number>();
@@ -96,29 +97,28 @@ async function generatePlayerStats(): Promise<void> {
 
     console.log(`Loading tournament ${tournamentId}: ${matchFiles.length} rounds`);
 
-    const tournamentMatches: Match[] = [];
+    const tournamentMatches: MeleeMatch[] = [];
 
     for (const file of matchFiles) {
       const filePath = path.join(tournamentDir, file);
-      const matches: Match[] = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
+      const matches: MeleeMatch[] = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
       tournamentMatches.push(...matches);
 
       // Track players in this tournament
       for (const match of matches) {
         for (const competitor of match.Competitors) {
-          const username = competitor.Team.Players[0]?.Username || '';
-          const displayName = competitor.Team.Players[0]?.DisplayName || username;
+          const player = Player.fromCompetitor(competitor);
 
-          if (username) {
-            if (!playerTournaments.has(username)) {
-              playerTournaments.set(username, new Set());
+          if (player && player.username) {
+            if (!playerTournaments.has(player.username)) {
+              playerTournaments.set(player.username, new Set());
             }
-            playerTournaments.get(username)!.add(tournamentId);
+            playerTournaments.get(player.username)!.add(tournamentId);
 
-            if (!playerMatches.has(username)) {
-              playerMatches.set(username, {
+            if (!playerMatches.has(player.username)) {
+              playerMatches.set(player.username, {
                 matchesPerRound: [],
-                displayName,
+                displayName: player.displayName,
               });
             }
           }
@@ -143,12 +143,12 @@ async function generatePlayerStats(): Promise<void> {
 
     if (standingsFiles.length > 0) {
       const standingsPath = path.join(tournamentDir, standingsFiles[0]);
-      const standings = JSON.parse(fs.readFileSync(standingsPath, 'utf-8'));
+      const standings: MeleeStanding[] = JSON.parse(fs.readFileSync(standingsPath, 'utf-8'));
 
       for (const standing of standings) {
-        const username = standing.Team.Players[0]?.Username || '';
-        if (username) {
-          playerPoints.set(username, (playerPoints.get(username) || 0) + (standing.Points || 0));
+        const player = Player.fromStanding(standing);
+        if (player && player.username) {
+          playerPoints.set(player.username, (playerPoints.get(player.username) || 0) + (standing.Points || 0));
 
           // Check for 3-0 finish
           if (
@@ -158,10 +158,10 @@ async function generatePlayerStats(): Promise<void> {
           ) {
             if (top8Tournaments.has(tournamentId)) {
               // Top 8 3-0s count as belts only
-              playerBelts.set(username, (playerBelts.get(username) || 0) + 1);
+              playerBelts.set(player.username, (playerBelts.get(player.username) || 0) + 1);
             } else {
               // Regular league 3-0s count as trophies only
-              playerTrophies.set(username, (playerTrophies.get(username) || 0) + 1);
+              playerTrophies.set(player.username, (playerTrophies.get(player.username) || 0) + 1);
             }
           }
         }

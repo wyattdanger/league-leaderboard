@@ -31,7 +31,7 @@ describe('Player Stats Calculation', () => {
       const stats = calculatePlayerStats('swbmtg', matchesPerRound, 371711);
 
       expect(stats.username).toBe('swbmtg');
-      expect(stats.displayName).toBe('swb 👋');
+      expect(stats.displayName).toBe('swb'); // Emoji cleaned by Player class
       expect(stats.matchWins).toBeGreaterThanOrEqual(0);
       expect(stats.matchLosses).toBeGreaterThanOrEqual(0);
       expect(stats.gameWins).toBeGreaterThanOrEqual(0);

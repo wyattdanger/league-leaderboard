@@ -8,6 +8,7 @@ import { getTournamentMetadata } from '../../utils/tournamentData';
 import { loadDeckData, calculateMetagameBreakdown, hasCompleteDeckData } from '../../utils/deckData';
 import { calculateMatchWinPercentage } from '../../utils/winPercentage';
 import { loadLeaguesConfig } from '../../utils/data';
+import { Player } from '../../models/Player';
 import type { League } from '../../types';
 import * as fs from 'fs';
 import * as path from 'path';
@@ -165,9 +166,9 @@ const celebrationCardEmoji = hasTrophies ? '👑' : '⭐';
                 const mwpClass = mwp > 0.59 ? 'wp-high' : mwp > 0.39 ? 'wp-medium' : 'wp-low';
                 const gwpClass = gwp > 0.59 ? 'wp-high' : gwp > 0.39 ? 'wp-medium' : 'wp-low';
 
-                const username = standing.Team.Players[0].Username;
-                const playerUrl = `/player/${username.toLowerCase()}`;
-                const deck = showDeckData && deckData ? deckData[username] : null;
+                const player = Player.fromStanding(standing);
+                const playerUrl = `/player/${player.username.toLowerCase()}`;
+                const deck = showDeckData && deckData ? deckData[player.username] : null;
 
                 return (
                   <tr class="clickable-row" onclick={`window.location.href='${playerUrl}'`}>
@@ -176,7 +177,7 @@ const celebrationCardEmoji = hasTrophies ? '👑' : '⭐';
                     </td>
                     <td class="player-col">
                       <div class="player-display-name">
-                        {standing.Team.Players[0].DisplayName}
+                        {player.displayName}
                       </div>
                     </td>
                     {showDeckData && (
@@ -212,19 +213,25 @@ const celebrationCardEmoji = hasTrophies ? '👑' : '⭐';
             <div class="round-matches">
               {sortedMatches.map((match: any) => {
                 const isBye = match.Competitors.length === 1 || match.Competitors[0]?.ByeReason;
-                const player1 = match.Competitors[0]?.Team?.Players[0];
-                const player2 = isBye ? null : match.Competitors[1]?.Team?.Players[0];
-                const deck1 = showDeckData && deckData ? deckData[player1.Username] : null;
-                const deck2 = showDeckData && deckData && player2 ? deckData[player2.Username] : null;
+                const competitor1 = match.Competitors[0];
+                const competitor2 = isBye ? null : match.Competitors[1];
+
+                const player1Data = Player.fromCompetitor(competitor1);
+                const player2Data = competitor2 ? Player.fromCompetitor(competitor2) : null;
+
+                const username1 = player1Data?.username || '';
+                const username2 = player2Data?.username || '';
+                const deck1 = showDeckData && deckData ? deckData[username1] : null;
+                const deck2 = showDeckData && deckData && username2 ? deckData[username2] : null;
 
                 // Determine winner and game counts
-                const gameWins1 = match.Competitors[0]?.GameWins || 0;
-                const gameWins2 = !isBye ? (match.Competitors[1]?.GameWins || 0) : 0;
+                const gameWins1 = competitor1?.GameWins || 0;
+                const gameWins2 = !isBye && competitor2 ? (competitor2.GameWins || 0) : 0;
 
                 // Put winner on left (or player 1 if draw/bye)
                 const leftWins = gameWins1 >= gameWins2;
-                const leftPlayer = leftWins ? player1 : player2;
-                const rightPlayer = leftWins ? player2 : player1;
+                const leftPlayerData = leftWins ? player1Data : player2Data;
+                const rightPlayerData = leftWins ? player2Data : player1Data;
                 const leftDeck = leftWins ? deck1 : deck2;
                 const rightDeck = leftWins ? deck2 : deck1;
                 const leftGameWins = leftWins ? gameWins1 : gameWins2;
@@ -234,8 +241,8 @@ const celebrationCardEmoji = hasTrophies ? '👑' : '⭐';
                   <div class="match-card">
                     <div class="match-content">
                       <div class="match-side left">
-                        <a href={`/player/${leftPlayer.Username.toLowerCase()}`} class="match-player-name">
-                          {leftPlayer.DisplayName}
+                        <a href={`/player/${leftPlayerData.username.toLowerCase()}`} class="match-player-name">
+                          {leftPlayerData.displayName}
                         </a>
                         {showDeckData && leftDeck && (
                           <div class="match-deck-name">{leftDeck}</div>
@@ -249,9 +256,9 @@ const celebrationCardEmoji = hasTrophies ? '👑' : '⭐';
                       </div>
 
                       <div class="match-side right">
-                        {rightPlayer ? (
-                          <a href={`/player/${rightPlayer.Username.toLowerCase()}`} class="match-player-name">
-                            {rightPlayer.DisplayName}
+                        {rightPlayerData ? (
+                          <a href={`/player/${rightPlayerData.username.toLowerCase()}`} class="match-player-name">
+                            {rightPlayerData.displayName}
                           </a>
                         ) : (
                           <span class="match-bye-text">Bye</span>
@@ -281,16 +288,15 @@ const celebrationCardEmoji = hasTrophies ? '👑' : '⭐';
             </div>
             <div class="trophy-winners-list">
               {celebrationWinners.map((winner: any) => {
-                const username = winner.Team.Players[0].Username;
-                const displayName = winner.Team.Players[0].DisplayName;
-                const playerUrl = `/player/${username.toLowerCase()}`;
-                const deck = showDeckData && deckData ? deckData[username] : null;
+                const player = Player.fromStanding(winner);
+                const playerUrl = `/player/${player.username.toLowerCase()}`;
+                const deck = showDeckData && deckData ? deckData[player.username] : null;
 
                 return (
                   <a href={playerUrl} class="trophy-winner-card">
                     <div class="trophy-winner-name">
                       <span class="trophy-emoji">{celebrationCardEmoji}</span>
-                      {displayName}
+                      {player.displayName}
                     </div>
                     {deck && (
                       <div class="trophy-winner-deck">

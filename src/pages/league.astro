@@ -3,6 +3,7 @@ import * as fs from 'fs';
 import * as path from 'path';
 import * as yaml from 'js-yaml';
 import { calculateMatchWinPercentage, calculateGameWinPercentage } from '../utils/winPercentage';
+import { Player } from '../models/Player';
 
 interface LeagueStanding {
   TeamId: number;
@@ -119,13 +120,12 @@ if (selectedLeagueParam === 'overall') {
   >();
 
   for (const standing of allStandings) {
-    const username = standing.Team.Players[0]?.Username || '';
-    if (!username) continue;
+    const player = Player.fromStanding(standing);
 
-    if (!playerStats.has(username)) {
-      playerStats.set(username, {
-        username,
-        displayName: standing.Team.Players[0]?.DisplayName || '',
+    if (!playerStats.has(player.username)) {
+      playerStats.set(player.username, {
+        username: player.username,
+        displayName: player.displayName,
         teamId: standing.TeamId,
         team: standing.Team,
         points: 0,
@@ -140,7 +140,7 @@ if (selectedLeagueParam === 'overall') {
       });
     }
 
-    const stats = playerStats.get(username)!;
+    const stats = playerStats.get(player.username)!;
     stats.points += standing.Points;
     stats.matchWins += standing.MatchWins;
     stats.matchLosses += standing.MatchLosses;
@@ -551,7 +551,7 @@ if (selectedLeagueParam === 'overall') {
               </div>
 
               {standings.map((standing) => {
-                const player = standing.Team.Players[0];
+                const playerData = Player.fromStanding(standing);
                 const isTopThree = standing.Rank < 4;
                 const rankClass = isTopThree ? `rank-${standing.Rank}` : '';
 
@@ -576,8 +576,8 @@ if (selectedLeagueParam === 'overall') {
                   <div class="leaderboard-row">
                     <div class={`rank ${rankClass}`}>{standing.Rank}</div>
                     <div>
-                      <div class="player-name">{player.DisplayName}</div>
-                      <div class="player-username">@{player.Username}</div>
+                      <div class="player-name">{playerData.displayName}</div>
+                      <div class="player-username">@{playerData.username}</div>
                     </div>
                     <div class="stat">
                       <div class="stat-value">{standing.TournamentCount || 0}</div>

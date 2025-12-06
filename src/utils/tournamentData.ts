@@ -2,6 +2,7 @@ import * as fs from 'fs';
 import * as path from 'path';
 import type { TournamentMetadata } from '../types';
 import { loadDeckData } from './deckData';
+import { Player } from '../models/Player';
 
 /**
  * Get tournament metadata (ID, name, date) from tournament data
@@ -79,14 +80,14 @@ export function getTournamentMetadata(tournamentId: string): TournamentMetadata 
         trophyCount = winners.length;
 
         // If exactly 1 winner (Top 8 format), capture their display name and deck
-        if (trophyCount === 1 && winners[0]?.Team?.Players?.[0]?.DisplayName) {
-          winnerDisplayName = winners[0].Team.Players[0].DisplayName;
+        if (trophyCount === 1 && winners[0]) {
+          const winnerPlayer = Player.fromStanding(winners[0]);
+          winnerDisplayName = winnerPlayer.displayName;
 
           // Load deck data to get winner's deck
           const deckData = loadDeckData(tournamentId);
           if (deckData) {
-            const winnerUsername = winners[0].Team.Players[0].Username;
-            winnerDeck = deckData[winnerUsername];
+            winnerDeck = deckData[winnerPlayer.username];
           }
         }
       }

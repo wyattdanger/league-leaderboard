@@ -1,23 +1,9 @@
 import type { HeadToHeadRecord } from '../types';
+import type { MeleeMatch } from '../types/melee';
+import { Player } from '../models/Player';
 
-export interface Match {
-  Competitors: Array<{
-    Team: {
-      Players: Array<{
-        Username: string;
-        DisplayName: string;
-        TeamId: number;
-      }>;
-    };
-    TeamId: number;
-    GameWins: number | null;
-    GameByes: number;
-  }>;
-  ByeReason: number | null;
-  GameDraws: number;
-  RoundNumber: number;
-  TournamentId: number;
-}
+// Re-export MeleeMatch as Match for backward compatibility
+export type Match = MeleeMatch;
 
 export interface PlayerStats {
   username: string;
@@ -62,10 +48,10 @@ export function calculatePlayerStats(
         // Check if this is the player with the bye
         if (match.Competitors.length === 1) {
           const competitor = match.Competitors[0];
-          const player = competitor.Team.Players[0];
-          if (player.Username === username) {
+          const player = Player.fromCompetitor(competitor);
+          if (player && player.username === username) {
             foundPlayer = true;
-            displayName = player.DisplayName;
+            displayName = player.displayName;
             // Bye counts as a match win with game byes
             matchWins++;
             gameWins += competitor.GameByes || 0;
@@ -79,20 +65,20 @@ export function calculatePlayerStats(
 
       const comp1 = match.Competitors[0];
       const comp2 = match.Competitors[1];
-      const player1 = comp1.Team.Players[0];
-      const player2 = comp2.Team.Players[0];
+      const player1 = Player.fromCompetitor(comp1);
+      const player2 = Player.fromCompetitor(comp2);
 
       let playerComp = null;
       let opponentComp = null;
 
-      if (player1.Username === username) {
+      if (player1 && player1.username === username) {
         foundPlayer = true;
-        displayName = player1.DisplayName;
+        displayName = player1.displayName;
         playerComp = comp1;
         opponentComp = comp2;
-      } else if (player2.Username === username) {
+      } else if (player2 && player2.username === username) {
         foundPlayer = true;
-        displayName = player2.DisplayName;
+        displayName = player2.displayName;
         playerComp = comp2;
         opponentComp = comp1;
       }
@@ -173,24 +159,24 @@ export function calculateHeadToHeadRecords(
 
       const comp1 = match.Competitors[0];
       const comp2 = match.Competitors[1];
-      const player1 = comp1.Team.Players[0];
-      const player2 = comp2.Team.Players[0];
+      const player1 = Player.fromCompetitor(comp1);
+      const player2 = Player.fromCompetitor(comp2);
 
       let playerComp = null;
       let opponentComp = null;
       let opponentUsername = '';
       let opponentDisplayName = '';
 
-      if (player1.Username === username) {
+      if (player1 && player1.username === username) {
         playerComp = comp1;
         opponentComp = comp2;
-        opponentUsername = player2.Username;
-        opponentDisplayName = player2.DisplayName;
-      } else if (player2.Username === username) {
+        opponentUsername = player2?.username || '';
+        opponentDisplayName = player2?.displayName || '';
+      } else if (player2 && player2.username === username) {
         playerComp = comp2;
         opponentComp = comp1;
-        opponentUsername = player1.Username;
-        opponentDisplayName = player1.DisplayName;
+        opponentUsername = player1?.username || '';
+        opponentDisplayName = player1?.displayName || '';
       }
 
       if (playerComp && opponentComp && opponentUsername) {

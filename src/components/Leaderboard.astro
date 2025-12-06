@@ -2,6 +2,7 @@
 import type { LeagueStanding } from '../types';
 import { usernameToSlug } from '../utils/helpers';
 import { calculateMatchWinPercentage, calculateGameWinPercentage } from '../utils/winPercentage';
+import { Player } from '../models/Player';
 import Tooltip from './Tooltip.astro';
 
 interface Props {
@@ -303,7 +304,6 @@ const { standings } = Astro.props;
         </div>
 
         {standings.map((standing, index) => {
-          const player = standing.Team.Players[0];
           const isTopThree = standing.Rank < 4;
           const rankClass = isTopThree ? `rank-${standing.Rank}` : '';
           const isHidden = index >= 16;
@@ -321,15 +321,16 @@ const { standings } = Astro.props;
           const isMediumGWP = standing.TeamGameWinPercentage > 0.39;
           const gwClass = isHighGWP ? 'wp-high' : isMediumGWP ? 'wp-medium' : 'wp-low';
 
-          const playerSlug = usernameToSlug(player.Username);
+          const playerData = Player.fromStanding(standing);
+          const playerSlug = usernameToSlug(playerData.username);
           const playerUrl = `/player/${playerSlug}`;
 
           return (
             <div class={`leaderboard-row ${isHidden ? 'hidden' : ''}`} onclick={`window.location.href='${playerUrl}'`} style="cursor: pointer;">
               <div class={`rank ${rankClass}`}>{standing.Rank}</div>
               <div>
-                <div class="player-name">{player.DisplayName}</div>
-                <div class="player-username">@{player.Username}</div>
+                <div class="player-name">{playerData.displayName}</div>
+                <div class="player-username">@{playerData.username}</div>
               </div>
               <div class="stat">
                 <div class="stat-value">{standing.TournamentCount || 0}</div>
