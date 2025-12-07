@@ -65,7 +65,6 @@ const segments = breakdown.map((item, index) => {
           <div class="metagame-color" style={`background-color: ${colors[index % colors.length]}`}></div>
           <div class="metagame-archetype">{item.archetype}</div>
           <div class="metagame-count">{item.count}</div>
-          <div class="metagame-percentage">{item.percentage.toFixed(1)}%</div>
         </div>
       ))}
     </div>
@@ -148,7 +147,7 @@ const segments = breakdown.map((item, index) => {
 
   .metagame-item {
     display: grid;
-    grid-template-columns: 16px 1fr auto auto;
+    grid-template-columns: 16px 1fr auto;
     gap: 0.75rem;
     align-items: center;
     padding: 0.4rem 0.75rem;
@@ -178,18 +177,10 @@ const segments = breakdown.map((item, index) => {
   }
 
   .metagame-count {
-    font-weight: 600;
-    color: #6b7280;
-    font-size: 0.8rem;
-    min-width: 30px;
-    text-align: right;
-  }
-
-  .metagame-percentage {
     font-weight: 700;
     color: #667eea;
-    font-size: 0.85rem;
-    min-width: 50px;
+    font-size: 0.95rem;
+    min-width: 30px;
     text-align: right;
   }
 
@@ -200,32 +191,30 @@ const segments = breakdown.map((item, index) => {
       padding: 1rem;
     }
 
-    .pie-chart {
-      width: 160px;
-      height: 160px;
+    .pie-chart-container {
+      display: none;
+    }
+
+    .metagame-list {
+      width: 100%;
     }
 
     .metagame-item {
-      grid-template-columns: 18px 1fr auto;
+      grid-template-columns: 1fr auto;
       gap: 0.6rem;
       padding: 0.4rem 0.6rem;
-    }
-
-    .metagame-count {
-      display: none;
     }
 
     .metagame-archetype {
       font-size: 0.85rem;
     }
 
-    .metagame-percentage {
-      font-size: 0.85rem;
+    .metagame-count {
+      font-size: 0.9rem;
     }
 
     .metagame-color {
-      width: 18px;
-      height: 18px;
+      display: none;
     }
   }
 </style>

@@ -1,80 +1,37 @@
 ---
 import type { TournamentMetadata } from '../types';
-import { loadDeckData, calculateMetagameBreakdown, hasCompleteDeckData } from '../utils/deckData';
 
 interface Props {
   tournament: TournamentMetadata;
 }
 
 const { tournament } = Astro.props;
-
-// Load deck data if available
-const deckData = loadDeckData(tournament.tournamentId);
-const showDeckData = hasCompleteDeckData(deckData);
-const metagameBreakdown = showDeckData && deckData ? calculateMetagameBreakdown(deckData) : null;
-
-// Generate colors for pie chart
-const colors = [
-  '#667eea', '#764ba2', '#f093fb', '#4facfe',
-  '#43e97b', '#fa709a', '#fee140', '#30cfd0',
-  '#a8edea', '#fed6e3', '#c471f5'
-];
-
-// Calculate cumulative percentages for pie chart segments
-let cumulative = 0;
-const segments = metagameBreakdown ? metagameBreakdown.map((item, index) => {
-  const start = cumulative;
-  cumulative += item.percentage;
-  return {
-    ...item,
-    start,
-    end: cumulative,
-    color: colors[index % colors.length]
-  };
-}) : [];
 ---
 
-<a href={`/event/${tournament.tournamentId}`} class="latest-event-callout">
-  {metagameBreakdown && (
-    <div class="pie-chart-container">
-      <svg viewBox="0 0 100 100" class="pie-chart">
-        {segments.map((segment) => {
-          const startAngle = (segment.start / 100) * 360;
-          const endAngle = (segment.end / 100) * 360;
-          const largeArc = segment.percentage > 50 ? 1 : 0;
-
-          const startX = 50 + 40 * Math.cos((startAngle - 90) * Math.PI / 180);
-          const startY = 50 + 40 * Math.sin((startAngle - 90) * Math.PI / 180);
-          const endX = 50 + 40 * Math.cos((endAngle - 90) * Math.PI / 180);
-          const endY = 50 + 40 * Math.sin((endAngle - 90) * Math.PI / 180);
-
-          return (
-            <path
-              d={`M 50 50 L ${startX} ${startY} A 40 40 0 ${largeArc} 1 ${endX} ${endY} Z`}
-              fill={segment.color}
-              class="pie-segment"
-            />
-          );
-        })}
-      </svg>
+<div class="latest-event-wrapper">
+  <a href={`/event/${tournament.tournamentId}`} class="latest-event-callout">
+    <div class="callout-left">
+      <span class="event-emoji">✨</span>
+      <span class="event-description">
+        {tournament.playerCount} {tournament.playerCount === 1 ? 'player' : 'players'} gathered on {tournament.dateDisplay}
+      </span>
     </div>
-  )}
-
-  <span class="event-description">
-    {tournament.playerCount} {tournament.playerCount === 1 ? 'player' : 'players'} gathered on {tournament.dateDisplay}
-  </span>
-
-  <span class="view-results">
-    View Results →
-  </span>
-</a>
+    <div class="callout-right">
+      <span class="view-results">View Event →</span>
+    </div>
+  </a>
+</div>
 
 <style>
+  .latest-event-wrapper {
+    margin-bottom: 2rem;
+  }
+
   .latest-event-callout {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 1rem;
+    gap: 1.5rem;
     background: var(--gradient-primary);
     color: white;
     padding: 1rem 1.5rem;
@@ -82,7 +39,6 @@ const segments = metagameBreakdown ? metagameBreakdown.map((item, index) => {
     border: var(--border-subtle);
     text-decoration: none;
     transition: all 0.2s ease;
-    margin-bottom: 2rem;
   }
 
   .latest-event-callout:hover {
@@ -90,33 +46,33 @@ const segments = metagameBreakdown ? metagameBreakdown.map((item, index) => {
     box-shadow: 0 8px 24px rgba(102, 126, 234, 0.3);
   }
 
-  .pie-chart-container {
+  .callout-left {
     display: flex;
     align-items: center;
+    gap: 0.75rem;
+    flex: 1;
+    min-width: 0;
+  }
+
+  .event-emoji {
+    font-size: 1.25rem;
     flex-shrink: 0;
-  }
-
-  .pie-chart {
-    width: 40px;
-    height: 40px;
-  }
-
-  .pie-segment {
-    transition: opacity 0.2s ease;
+    line-height: 1;
   }
 
   .event-description {
     font-size: 0.9375rem;
     line-height: 1.5;
-    flex: 1;
-    min-width: 0;
+  }
+
+  .callout-right {
+    flex-shrink: 0;
   }
 
   .view-results {
     font-size: 0.9375rem;
     font-weight: 600;
     white-space: nowrap;
-    flex-shrink: 0;
   }
 
   /* Compact desktop layout */
@@ -125,9 +81,8 @@ const segments = metagameBreakdown ? metagameBreakdown.map((item, index) => {
       padding: 0.75rem 1.25rem;
     }
 
-    .pie-chart {
-      width: 36px;
-      height: 36px;
+    .event-emoji {
+      font-size: 1.125rem;
     }
 
     .event-description {
@@ -141,19 +96,20 @@ const segments = metagameBreakdown ? metagameBreakdown.map((item, index) => {
 
   @media (max-width: 640px) {
     .latest-event-callout {
-      flex-wrap: wrap;
-      padding: 1rem 1.25rem;
+      flex-direction: column;
+      align-items: stretch;
       gap: 0.75rem;
+    }
+
+    .callout-left {
+      gap: 0.5rem;
     }
 
     .event-description {
       font-size: 0.875rem;
-      flex: 1;
-      min-width: 0;
     }
 
-    .view-results {
-      width: 100%;
+    .callout-right {
       text-align: center;
       padding-top: 0.5rem;
       border-top: 1px solid rgba(255, 255, 255, 0.2);

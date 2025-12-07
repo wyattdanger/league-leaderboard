@@ -139,8 +139,6 @@ const celebrationCardEmoji = hasTrophies ? '👑' : '⭐';
     </div>
 
     <div class="event-content">
-      {metagameBreakdown && <MetagameBreakdown breakdown={metagameBreakdown} />}
-
       <div class="standings-section">
         <div class="standings-header">Final Standings</div>
         <div class="standings-table">
@@ -196,6 +194,8 @@ const celebrationCardEmoji = hasTrophies ? '👑' : '⭐';
           </table>
         </div>
       </div>
+
+      {metagameBreakdown && <MetagameBreakdown breakdown={metagameBreakdown} />}
 
       {rounds.map((round) => {
         // Sort matches: regular matches first, byes last
