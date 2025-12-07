@@ -11,10 +11,9 @@ import {
   hasCompleteDeckData,
 } from '../../utils/deckData';
 import { loadLeaguesConfig } from '../../utils/data';
-import { Player } from '../../models/Player';
+import { Tournament } from '../../models/Tournament';
 import { Standing } from '../../models/Standing';
 import { Match } from '../../models/Match';
-import { Round } from '../../models/Round';
 import type { League } from '../../types';
 import * as fs from 'fs';
 import * as path from 'path';
@@ -33,9 +32,12 @@ export async function getStaticPaths() {
 }
 
 const { tournamentId } = Astro.props;
-const metadata = getTournamentMetadata(tournamentId);
 
-if (!metadata) {
+// Load tournament using Tournament model
+let tournament: Tournament;
+try {
+  tournament = Tournament.load(tournamentId);
+} catch (error) {
   return Astro.redirect('/league/overall');
 }
 
@@ -48,33 +50,14 @@ const currentLeague =
 // Check if this tournament is a Top 8 for any league
 const top8League = allLeagues.find((league) => league.top8Tournament === tournamentId);
 
-// Load final standings
-const tournamentDir = path.join(process.cwd(), 'output', `tournament_${tournamentId}`);
-const finalStandingsPath = path.join(tournamentDir, `Round_${metadata.roundCount}_Standings.json`);
-const rawStandings = JSON.parse(fs.readFileSync(finalStandingsPath, 'utf-8'));
-
-// Convert raw standings to Standing models
-const standings = rawStandings.map((s: any) => Standing.fromMeleeStanding(s));
-
 // Load deck data if available and complete
 const deckData = loadDeckData(tournamentId);
 const showDeckData = hasCompleteDeckData(deckData);
 const metagameBreakdown = showDeckData && deckData ? calculateMetagameBreakdown(deckData) : null;
 
-// Load match data for each round using Round model
-const rounds: Round[] = [];
-for (let i = 1; i <= metadata.roundCount; i++) {
-  const matchesPath = path.join(tournamentDir, `Round_${i}_Matches.json`);
-  if (fs.existsSync(matchesPath)) {
-    const rawMatches = JSON.parse(fs.readFileSync(matchesPath, 'utf-8'));
-    const round = Round.fromMeleeMatches(rawMatches);
-    rounds.push(round);
-  }
-}
-
-// Get celebration winners (trophy winners or top finishers) using Standing model
-const celebrationWinners = Standing.getCelebrationWinners(standings);
-const hasTrophies = Standing.hasTrophyWinners(standings);
+// Get celebration data from tournament
+const celebrationWinners = tournament.celebrationWinners;
+const hasTrophies = tournament.hasTrophyWinners;
 const isTop8Tournament = currentLeague?.name === 'Top 8s';
 
 // Compute celebration messaging
@@ -114,28 +97,28 @@ const celebrationCardEmoji = hasTrophies ? '👑' : '⭐';
   <div class="card">
     <div class="event-profile-header">
       <div class="event-name-group">
-        <h1>{top8League ? `${top8League.name} Top 8` : metadata.dateDisplay}</h1>
+        <h1>{top8League ? `${top8League.name} Top 8` : tournament.dateDisplay}</h1>
       </div>
       <div class="event-metadata">
         <Tooltip
-          content={`${metadata.playerCount} ${metadata.playerCount === 1 ? 'player' : 'players'} attended`}
+          content={`${tournament.playerCount} ${tournament.playerCount === 1 ? 'player' : 'players'} attended`}
         >
           <div class="metadata-badge">
-            👤 {metadata.playerCount}
+            👤 {tournament.playerCount}
           </div>
         </Tooltip>
         <Tooltip
-          content={`${metadata.trophyCount} ${metadata.trophyCount === 1 ? 'player' : 'players'} went 3-0`}
+          content={`${tournament.trophyCount} ${tournament.trophyCount === 1 ? 'player' : 'players'} went 3-0`}
         >
           <div class="metadata-badge">
-            🏆 {metadata.trophyCount}
+            🏆 {tournament.trophyCount}
           </div>
         </Tooltip>
         <Tooltip
-          content={`${metadata.roundCount} ${metadata.roundCount === 1 ? 'round' : 'rounds'} of Swiss`}
+          content={`${tournament.roundCount} ${tournament.roundCount === 1 ? 'round' : 'rounds'} of Swiss`}
         >
           <div class="metadata-badge">
-            ⚔️ {metadata.roundCount}
+            ⚔️ {tournament.roundCount}
           </div>
         </Tooltip>
       </div>
@@ -159,7 +142,7 @@ const celebrationCardEmoji = hasTrophies ? '👑' : '⭐';
             </thead>
             <tbody>
               {
-                standings.map((standing: Standing) => {
+                tournament.finalStandings.map((standing: Standing) => {
                   const deck = showDeckData && deckData ? deckData[standing.player.username] : null;
 
                   return (
@@ -198,7 +181,7 @@ const celebrationCardEmoji = hasTrophies ? '👑' : '⭐';
       {metagameBreakdown && <MetagameBreakdown breakdown={metagameBreakdown} />}
 
       {
-        rounds.map((round) => {
+        tournament.rounds.map((round) => {
           return (
             <div class="round-card">
               <div class="round-header">{round.displayLabel}</div>
