@@ -43,7 +43,11 @@ const { records } = Astro.props;
                 const isHidden = index >= 8;
 
                 return (
-                  <tr class={isHidden ? 'hidden' : ''} onclick={`window.location.href='${opponentUrl}'`} style="cursor: pointer;">
+                  <tr
+                    class={isHidden ? 'hidden' : ''}
+                    onclick={`window.location.href='${opponentUrl}'`}
+                    style="cursor: pointer;"
+                  >
                     <td>
                       <div class="opponent-name">{record.opponentDisplayName}</div>
                       <div class="opponent-username">@{record.opponentUsername}</div>

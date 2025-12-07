@@ -5,7 +5,11 @@ import LeagueNav from '../../components/LeagueNav.astro';
 import MetagameBreakdown from '../../components/MetagameBreakdown.astro';
 import Tooltip from '../../components/Tooltip.astro';
 import { getTournamentMetadata } from '../../utils/tournamentData';
-import { loadDeckData, calculateMetagameBreakdown, hasCompleteDeckData } from '../../utils/deckData';
+import {
+  loadDeckData,
+  calculateMetagameBreakdown,
+  hasCompleteDeckData,
+} from '../../utils/deckData';
 import { loadLeaguesConfig } from '../../utils/data';
 import { Player } from '../../models/Player';
 import { Standing } from '../../models/Standing';
@@ -17,9 +21,7 @@ import * as path from 'path';
 
 export async function getStaticPaths() {
   const outputDir = path.join(process.cwd(), 'output');
-  const tournamentDirs = fs.readdirSync(outputDir).filter((dir) =>
-    dir.startsWith('tournament_')
-  );
+  const tournamentDirs = fs.readdirSync(outputDir).filter((dir) => dir.startsWith('tournament_'));
 
   return tournamentDirs.map((dir) => {
     const tournamentId = dir.replace('tournament_', '');
@@ -40,14 +42,11 @@ if (!metadata) {
 // Load leagues config and find which league this tournament belongs to
 const config = loadLeaguesConfig();
 const allLeagues = config.leagues;
-const currentLeague = allLeagues.find((league) =>
-  league.tournaments.includes(tournamentId)
-) || null;
+const currentLeague =
+  allLeagues.find((league) => league.tournaments.includes(tournamentId)) || null;
 
 // Check if this tournament is a Top 8 for any league
-const top8League = allLeagues.find((league) =>
-  league.top8Tournament === tournamentId
-);
+const top8League = allLeagues.find((league) => league.top8Tournament === tournamentId);
 
 // Load final standings
 const tournamentDir = path.join(process.cwd(), 'output', `tournament_${tournamentId}`);
@@ -79,15 +78,19 @@ const hasTrophies = Standing.hasTrophyWinners(standings);
 const isTop8Tournament = currentLeague?.name === 'Top 8s';
 
 // Compute celebration messaging
-const celebrationEmoji = hasTrophies
-  ? (isTop8Tournament ? '👑' : '🏆')
-  : '🌟';
+const celebrationEmoji = hasTrophies ? (isTop8Tournament ? '👑' : '🏆') : '🌟';
 
 const celebrationTitle = hasTrophies
   ? isTop8Tournament
-    ? celebrationWinners.length === 1 ? 'Belt Winner' : 'Belt Winners'
-    : celebrationWinners.length === 1 ? 'Trophy Winner' : 'Trophy Winners'
-  : celebrationWinners.length === 1 ? 'Top Finisher' : 'Top Finishers';
+    ? celebrationWinners.length === 1
+      ? 'Belt Winner'
+      : 'Belt Winners'
+    : celebrationWinners.length === 1
+      ? 'Trophy Winner'
+      : 'Trophy Winners'
+  : celebrationWinners.length === 1
+    ? 'Top Finisher'
+    : 'Top Finishers';
 
 const celebrationMessage = hasTrophies
   ? isTop8Tournament
@@ -114,17 +117,23 @@ const celebrationCardEmoji = hasTrophies ? '👑' : '⭐';
         <h1>{top8League ? `${top8League.name} Top 8` : metadata.dateDisplay}</h1>
       </div>
       <div class="event-metadata">
-        <Tooltip content={`${metadata.playerCount} ${metadata.playerCount === 1 ? 'player' : 'players'} attended`}>
+        <Tooltip
+          content={`${metadata.playerCount} ${metadata.playerCount === 1 ? 'player' : 'players'} attended`}
+        >
           <div class="metadata-badge">
             👤 {metadata.playerCount}
           </div>
         </Tooltip>
-        <Tooltip content={`${metadata.trophyCount} ${metadata.trophyCount === 1 ? 'player' : 'players'} went 3-0`}>
+        <Tooltip
+          content={`${metadata.trophyCount} ${metadata.trophyCount === 1 ? 'player' : 'players'} went 3-0`}
+        >
           <div class="metadata-badge">
             🏆 {metadata.trophyCount}
           </div>
         </Tooltip>
-        <Tooltip content={`${metadata.roundCount} ${metadata.roundCount === 1 ? 'round' : 'rounds'} of Swiss`}>
+        <Tooltip
+          content={`${metadata.roundCount} ${metadata.roundCount === 1 ? 'round' : 'rounds'} of Swiss`}
+        >
           <div class="metadata-badge">
             ⚔️ {metadata.roundCount}
           </div>
@@ -149,31 +158,38 @@ const celebrationCardEmoji = hasTrophies ? '👑' : '⭐';
               </tr>
             </thead>
             <tbody>
-              {standings.map((standing: Standing) => {
-                const deck = showDeckData && deckData ? deckData[standing.player.username] : null;
+              {
+                standings.map((standing: Standing) => {
+                  const deck = showDeckData && deckData ? deckData[standing.player.username] : null;
 
-                return (
-                  <tr class="clickable-row" onclick={`window.location.href='${standing.player.profileUrl}'`}>
-                    <td class="rank-col">
-                      <div class="rank-number">{standing.rank}</div>
-                    </td>
-                    <td class="player-col">
-                      <div class="player-display-name">
-                        {standing.player.displayName}
-                      </div>
-                    </td>
-                    {showDeckData && (
-                      <td class="deck-col">
-                        <div class="deck-name">{deck || '—'}</div>
+                  return (
+                    <tr
+                      class="clickable-row"
+                      onclick={`window.location.href='${standing.player.profileUrl}'`}
+                    >
+                      <td class="rank-col">
+                        <div class="rank-number">{standing.rank}</div>
                       </td>
-                    )}
-                    <td class="record-col">{standing.matchRecord}</td>
-                    <td class={`mwp-col ${standing.matchWinPercentageClass}`}>{standing.matchWinPercentageDisplay}%</td>
-                    <td class={`gwp-col ${standing.gameWinPercentageClass}`}>{standing.gameWinPercentageDisplay}%</td>
-                    <td class="points-col">{standing.points}</td>
-                  </tr>
-                );
-              })}
+                      <td class="player-col">
+                        <div class="player-display-name">{standing.player.displayName}</div>
+                      </td>
+                      {showDeckData && (
+                        <td class="deck-col">
+                          <div class="deck-name">{deck || '—'}</div>
+                        </td>
+                      )}
+                      <td class="record-col">{standing.matchRecord}</td>
+                      <td class={`mwp-col ${standing.matchWinPercentageClass}`}>
+                        {standing.matchWinPercentageDisplay}%
+                      </td>
+                      <td class={`gwp-col ${standing.gameWinPercentageClass}`}>
+                        {standing.gameWinPercentageDisplay}%
+                      </td>
+                      <td class="points-col">{standing.points}</td>
+                    </tr>
+                  );
+                })
+              }
             </tbody>
           </table>
         </div>
@@ -181,93 +197,95 @@ const celebrationCardEmoji = hasTrophies ? '👑' : '⭐';
 
       {metagameBreakdown && <MetagameBreakdown breakdown={metagameBreakdown} />}
 
-      {rounds.map((round) => {
-        return (
-          <div class="round-card">
-            <div class="round-header">{round.displayLabel}</div>
-            <div class="round-matches">
-              {round.matches.map((match: Match) => {
-                const left = match.leftPlayer;
-                const right = match.rightPlayer;
-                const leftDeck = showDeckData && deckData && left.player ? deckData[left.player.username] : null;
-                const rightDeck = showDeckData && deckData && right.player ? deckData[right.player.username] : null;
+      {
+        rounds.map((round) => {
+          return (
+            <div class="round-card">
+              <div class="round-header">{round.displayLabel}</div>
+              <div class="round-matches">
+                {round.matches.map((match: Match) => {
+                  const left = match.leftPlayer;
+                  const right = match.rightPlayer;
+                  const leftDeck =
+                    showDeckData && deckData && left.player ? deckData[left.player.username] : null;
+                  const rightDeck =
+                    showDeckData && deckData && right.player
+                      ? deckData[right.player.username]
+                      : null;
 
-                return (
-                  <div class="match-card">
-                    <div class="match-content">
-                      <div class="match-side left">
-                        {left.player && (
-                          <a href={left.player.profileUrl} class="match-player-name">
-                            {left.player.displayName}
-                          </a>
-                        )}
-                        {showDeckData && leftDeck && (
-                          <div class="match-deck-name">{leftDeck}</div>
-                        )}
-                      </div>
+                  return (
+                    <div class="match-card">
+                      <div class="match-content">
+                        <div class="match-side left">
+                          {left.player && (
+                            <a href={left.player.profileUrl} class="match-player-name">
+                              {left.player.displayName}
+                            </a>
+                          )}
+                          {showDeckData && leftDeck && (
+                            <div class="match-deck-name">{leftDeck}</div>
+                          )}
+                        </div>
 
-                      <div class="match-vs">
-                        <div class="match-game-wins left-wins">{left.games}</div>
-                        <div class="swords">⚔️</div>
-                        <div class="match-game-wins right-wins">{match.isBye ? '—' : right.games}</div>
-                      </div>
+                        <div class="match-vs">
+                          <div class="match-game-wins left-wins">{left.games}</div>
+                          <div class="swords">⚔️</div>
+                          <div class="match-game-wins right-wins">
+                            {match.isBye ? '—' : right.games}
+                          </div>
+                        </div>
 
-                      <div class="match-side right">
-                        {right.player ? (
-                          <a href={right.player.profileUrl} class="match-player-name">
-                            {right.player.displayName}
-                          </a>
-                        ) : (
-                          <span class="match-bye-text">Bye</span>
-                        )}
-                        {showDeckData && rightDeck && (
-                          <div class="match-deck-name">{rightDeck}</div>
-                        )}
+                        <div class="match-side right">
+                          {right.player ? (
+                            <a href={right.player.profileUrl} class="match-player-name">
+                              {right.player.displayName}
+                            </a>
+                          ) : (
+                            <span class="match-bye-text">Bye</span>
+                          )}
+                          {showDeckData && rightDeck && (
+                            <div class="match-deck-name">{rightDeck}</div>
+                          )}
+                        </div>
                       </div>
                     </div>
-                  </div>
-                );
-              })}
+                  );
+                })}
+              </div>
             </div>
-          </div>
-        );
-      })}
+          );
+        })
+      }
 
-      {celebrationWinners.length > 0 && (
-        <div class="trophy-celebration" id="trophy-celebration">
-          <canvas id="confetti-canvas"></canvas>
-          <div class={hasTrophies ? "trophy-header" : "top-finisher-header"}>
-            {celebrationEmoji} {celebrationTitle} {celebrationEmoji}
-          </div>
-          <div class="trophy-content">
-            <div class="trophy-message">
-              {celebrationMessage}
+      {
+        celebrationWinners.length > 0 && (
+          <div class="trophy-celebration" id="trophy-celebration">
+            <canvas id="confetti-canvas" />
+            <div class={hasTrophies ? 'trophy-header' : 'top-finisher-header'}>
+              {celebrationEmoji} {celebrationTitle} {celebrationEmoji}
             </div>
-            <div class="trophy-winners-list">
-              {celebrationWinners.map((winner: Standing) => {
-                const deck = showDeckData && deckData ? deckData[winner.player.username] : null;
+            <div class="trophy-content">
+              <div class="trophy-message">{celebrationMessage}</div>
+              <div class="trophy-winners-list">
+                {celebrationWinners.map((winner: Standing) => {
+                  const deck = showDeckData && deckData ? deckData[winner.player.username] : null;
 
-                return (
-                  <a href={winner.player.profileUrl} class="trophy-winner-card">
-                    <div class="trophy-winner-name">
-                      <span class="trophy-emoji">{celebrationCardEmoji}</span>
-                      {winner.player.displayName}
-                    </div>
-                    {deck && (
-                      <div class="trophy-winner-deck">
-                        {deck}
+                  return (
+                    <a href={winner.player.profileUrl} class="trophy-winner-card">
+                      <div class="trophy-winner-name">
+                        <span class="trophy-emoji">{celebrationCardEmoji}</span>
+                        {winner.player.displayName}
                       </div>
-                    )}
-                    <div class="trophy-winner-record">
-                      {winner.matchRecord}
-                    </div>
-                  </a>
-                );
-              })}
+                      {deck && <div class="trophy-winner-deck">{deck}</div>}
+                      <div class="trophy-winner-record">{winner.matchRecord}</div>
+                    </a>
+                  );
+                })}
+              </div>
             </div>
           </div>
-        </div>
-      )}
+        )
+      }
     </div>
   </div>
 </PageLayout>
@@ -882,13 +900,16 @@ const celebrationCardEmoji = hasTrophies ? '👑' : '⭐';
     }
 
     // Check if trophy section is visible
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting && entry.intersectionRatio > 0.5) {
-          triggerConfetti();
-        }
-      });
-    }, { threshold: 0.5 });
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting && entry.intersectionRatio > 0.5) {
+            triggerConfetti();
+          }
+        });
+      },
+      { threshold: 0.5 }
+    );
 
     observer.observe(trophyCelebration);
   });

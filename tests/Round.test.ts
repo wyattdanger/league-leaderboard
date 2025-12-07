@@ -30,16 +30,20 @@ describe('Round Model', () => {
     });
 
     it('should throw error for empty matches array', () => {
-      expect(() => Round.fromMeleeMatches([])).toThrow('Cannot create Round from empty matches array');
+      expect(() => Round.fromMeleeMatches([])).toThrow(
+        'Cannot create Round from empty matches array'
+      );
     });
 
     it('should throw error for matches from different rounds', () => {
       const matches = [
         { ...mockRegularMatch, RoundNumber: 1 },
-        { ...mockSweepMatch, RoundNumber: 2 }
+        { ...mockSweepMatch, RoundNumber: 2 },
       ];
 
-      expect(() => Round.fromMeleeMatches(matches as any)).toThrow('All matches must be from the same round');
+      expect(() => Round.fromMeleeMatches(matches as any)).toThrow(
+        'All matches must be from the same round'
+      );
     });
   });
 
@@ -54,13 +58,13 @@ describe('Round Model', () => {
     it('should filter regular matches', () => {
       const regularMatches = round.regularMatches;
       expect(regularMatches).toHaveLength(3);
-      expect(regularMatches.every(m => m.isRegularMatch)).toBe(true);
+      expect(regularMatches.every((m) => m.isRegularMatch)).toBe(true);
     });
 
     it('should filter bye matches', () => {
       const byeMatches = round.byeMatches;
       expect(byeMatches).toHaveLength(1);
-      expect(byeMatches.every(m => m.isBye)).toBe(true);
+      expect(byeMatches.every((m) => m.isBye)).toBe(true);
     });
   });
 
@@ -110,8 +114,8 @@ describe('Round Model', () => {
         ...mockRegularMatch,
         Competitors: [
           { ...mockRegularMatch.Competitors[0], GameWins: 0 },
-          { ...mockRegularMatch.Competitors[1], GameWins: 0 }
-        ]
+          { ...mockRegularMatch.Competitors[1], GameWins: 0 },
+        ],
       };
       const matches = [incompleteMatch, mockSweepMatch];
       const round = Round.fromMeleeMatches(matches as any);

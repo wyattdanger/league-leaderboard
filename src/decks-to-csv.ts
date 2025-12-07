@@ -25,7 +25,9 @@ async function decksToCSV(): Promise<void> {
   const allDecks = yaml.load(fileContents) as AllDecksData;
 
   // CSV header (Freeze this row in Google Sheets before sorting!)
-  const csvLines: string[] = ['Tournament ID,Tournament Date,Player Username,Deck (leave empty if unknown)'];
+  const csvLines: string[] = [
+    'Tournament ID,Tournament Date,Player Username,Deck (leave empty if unknown)',
+  ];
 
   // Sort tournament IDs (newest first)
   const sortedTournamentIds = Object.keys(allDecks).sort((a, b) => parseInt(b) - parseInt(a));

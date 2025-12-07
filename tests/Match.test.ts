@@ -44,7 +44,7 @@ describe('Match Model', () => {
       const minimalData = {
         Competitors: [],
         ByeReason: null,
-        GameDraws: 0
+        GameDraws: 0,
       };
 
       const match = Match.fromMeleeMatch(minimalData as any);
@@ -107,7 +107,7 @@ describe('Match Model', () => {
 
       expect(winner).not.toBeNull();
       // Winner is the competitor with 2 game wins
-      const winnerComp = mockSweepMatch.Competitors.find(c => c.GameWins === 2);
+      const winnerComp = mockSweepMatch.Competitors.find((c) => c.GameWins === 2);
       expect(winner?.username).toBe(winnerComp.Team.Players[0].Username);
     });
   });
@@ -213,13 +213,13 @@ describe('Match Model', () => {
         Competitors: [
           {
             ...mockRegularMatch.Competitors[0],
-            GameWins: 1
+            GameWins: 1,
           },
           {
             ...mockRegularMatch.Competitors[1],
-            GameWins: 2
-          }
-        ]
+            GameWins: 2,
+          },
+        ],
       } as any);
 
       const left = match.leftPlayer;
@@ -255,7 +255,7 @@ describe('Match Model', () => {
         const matches = [
           Match.fromMeleeMatch(mockByeMatch),
           Match.fromMeleeMatch(mockRegularMatch),
-          Match.fromMeleeMatch(mockDrawMatch)
+          Match.fromMeleeMatch(mockDrawMatch),
         ];
 
         const sorted = Match.sortMatches(matches);
@@ -281,7 +281,7 @@ describe('Match Model', () => {
       it('should not mutate original array', () => {
         const matches = [
           Match.fromMeleeMatch(mockByeMatch),
-          Match.fromMeleeMatch(mockRegularMatch)
+          Match.fromMeleeMatch(mockRegularMatch),
         ];
 
         const originalFirst = matches[0];

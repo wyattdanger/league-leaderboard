@@ -37,7 +37,7 @@ export function calculateMatchWinPercentage(
   const totalMatches = wins + matchLosses + matchDraws;
   if (totalMatches === 0) return 0;
 
-  const effectiveWins = wins + (matchDraws * 0.5);
+  const effectiveWins = wins + matchDraws * 0.5;
   return effectiveWins / totalMatches;
 }
 
@@ -68,6 +68,6 @@ export function calculateGameWinPercentage(
   const totalGames = wins + gameLosses + gameDraws;
   if (totalGames === 0) return 0;
 
-  const effectiveWins = wins + (gameDraws * 0.5);
+  const effectiveWins = wins + gameDraws * 0.5;
   return effectiveWins / totalGames;
 }

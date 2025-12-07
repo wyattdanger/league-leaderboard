@@ -171,7 +171,11 @@ if (selectedLeagueParam === 'overall') {
       MatchRecord: `${stats.matchWins}-${stats.matchLosses}-${stats.matchDraws}`,
       GameRecord: `${stats.gameWins}-${stats.gameLosses}-${stats.gameDraws}`,
       OpponentMatchWinPercentage: 0,
-      TeamGameWinPercentage: calculateGameWinPercentage(stats.gameWins, stats.gameLosses, stats.gameDraws),
+      TeamGameWinPercentage: calculateGameWinPercentage(
+        stats.gameWins,
+        stats.gameLosses,
+        stats.gameDraws
+      ),
       OpponentGameWinPercentage: 0,
       OpponentCount: 0,
       TournamentCount: stats.tournaments.size,
@@ -566,11 +570,7 @@ if (selectedLeagueParam === 'overall') {
                 const gwPercent = (standing.TeamGameWinPercentage * 100).toFixed(1);
                 const isHighGWP = standing.TeamGameWinPercentage > 0.59;
                 const isMediumGWP = standing.TeamGameWinPercentage > 0.39;
-                const gwClass = isHighGWP
-                  ? 'gw-high'
-                  : isMediumGWP
-                    ? 'gw-medium'
-                    : 'gw-low';
+                const gwClass = isHighGWP ? 'gw-high' : isMediumGWP ? 'gw-medium' : 'gw-low';
 
                 return (
                   <div class="leaderboard-row">

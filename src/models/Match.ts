@@ -43,9 +43,10 @@ export class Match {
     const competitors = meleeMatch.Competitors || [];
 
     // Check if this is a bye (single competitor or ByeReason set)
-    const isBye = competitors.length === 1 ||
-                  meleeMatch.ByeReason !== null ||
-                  competitors[0]?.ByeReason !== undefined;
+    const isBye =
+      competitors.length === 1 ||
+      meleeMatch.ByeReason !== null ||
+      competitors[0]?.ByeReason !== undefined;
 
     // Extract players
     const competitor1 = competitors[0];
@@ -71,7 +72,7 @@ export class Match {
     const player2Games = competitor2?.GameWins || 0;
 
     // For byes, the player gets credited with GameByes (usually 2)
-    const byeGames = isBye ? (competitor1?.GameByes || 2) : 0;
+    const byeGames = isBye ? competitor1?.GameByes || 2 : 0;
 
     return new Match({
       round: meleeMatch.RoundNumber || 0,
@@ -81,7 +82,7 @@ export class Match {
       player2Games: isBye ? 0 : player2Games,
       gameDraws: meleeMatch.GameDraws || 0,
       isBye,
-      tableNumber: meleeMatch.TableNumber
+      tableNumber: meleeMatch.TableNumber,
     });
   }
 
@@ -140,7 +141,9 @@ export class Match {
     if (this.isBye) return true;
     // A match is complete if total games played equals 2 (best of 3) or has a winner at 2 games
     const totalGames = this.player1Games + this.player2Games + this.gameDraws;
-    return totalGames > 0 && (this.player1Games === 2 || this.player2Games === 2 || totalGames === 3);
+    return (
+      totalGames > 0 && (this.player1Games === 2 || this.player2Games === 2 || totalGames === 3)
+    );
   }
 
   /**
@@ -190,7 +193,6 @@ export class Match {
     // Default to player2
     return { player: this.player2, games: this.player2Games };
   }
-
 
   /**
    * Get table number if available (used for sorting)

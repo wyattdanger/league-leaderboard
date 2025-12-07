@@ -13,7 +13,8 @@ const { tournament } = Astro.props;
     <div class="callout-left">
       <span class="event-emoji">✨</span>
       <span class="event-description">
-        {tournament.playerCount} {tournament.playerCount === 1 ? 'player' : 'players'} gathered on {tournament.dateDisplay}
+        {tournament.playerCount}
+        {tournament.playerCount === 1 ? 'player' : 'players'} gathered on {tournament.dateDisplay}
       </span>
     </div>
     <div class="callout-right">

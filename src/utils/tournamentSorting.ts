@@ -17,7 +17,9 @@ export function sortTournamentsByIdDesc(tournaments: TournamentMetadata[]): Tour
 /**
  * Sorts tournament performances by tournament ID in reverse alphabetical order (newest first)
  */
-export function sortTournamentPerformancesByIdDesc(performances: PlayerTournamentPerformance[]): PlayerTournamentPerformance[] {
+export function sortTournamentPerformancesByIdDesc(
+  performances: PlayerTournamentPerformance[]
+): PlayerTournamentPerformance[] {
   return [...performances].sort((a, b) => {
     const aId = String(a.tournamentId);
     const bId = String(b.tournamentId);

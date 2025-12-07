@@ -1,5 +1,8 @@
 import { describe, it, expect } from '@jest/globals';
-import { calculateMatchWinPercentage, calculateGameWinPercentage } from '../src/utils/winPercentage';
+import {
+  calculateMatchWinPercentage,
+  calculateGameWinPercentage,
+} from '../src/utils/winPercentage';
 
 describe('calculateMatchWinPercentage', () => {
   it('should calculate MWP correctly with no draws', () => {

@@ -65,13 +65,19 @@ const hasMore = olderTournaments.length > 0;
                 </div>
               ) : (
                 <div class="event-meta">
-                  <Tooltip content={`${tournament.playerCount} ${tournament.playerCount === 1 ? 'player' : 'players'}`}>
+                  <Tooltip
+                    content={`${tournament.playerCount} ${tournament.playerCount === 1 ? 'player' : 'players'}`}
+                  >
                     <span class="player-pill">👤 {tournament.playerCount}</span>
                   </Tooltip>
-                  <Tooltip content={`${tournament.trophyCount} ${tournament.trophyCount === 1 ? 'player' : 'players'} went 3-0`}>
+                  <Tooltip
+                    content={`${tournament.trophyCount} ${tournament.trophyCount === 1 ? 'player' : 'players'} went 3-0`}
+                  >
                     <span class="trophy-pill">🏆 {tournament.trophyCount}</span>
                   </Tooltip>
-                  <Tooltip content={`${tournament.roundCount} ${tournament.roundCount === 1 ? 'round' : 'rounds'} of Swiss`}>
+                  <Tooltip
+                    content={`${tournament.roundCount} ${tournament.roundCount === 1 ? 'round' : 'rounds'} of Swiss`}
+                  >
                     <span class="round-pill">⚔️ {tournament.roundCount}</span>
                   </Tooltip>
                 </div>
@@ -98,13 +104,19 @@ const hasMore = olderTournaments.length > 0;
                     </div>
                   ) : (
                     <div class="event-meta">
-                      <Tooltip content={`${tournament.playerCount} ${tournament.playerCount === 1 ? 'player' : 'players'}`}>
+                      <Tooltip
+                        content={`${tournament.playerCount} ${tournament.playerCount === 1 ? 'player' : 'players'}`}
+                      >
                         <span class="player-pill">👤 {tournament.playerCount}</span>
                       </Tooltip>
-                      <Tooltip content={`${tournament.trophyCount} ${tournament.trophyCount === 1 ? 'player' : 'players'} went 3-0`}>
+                      <Tooltip
+                        content={`${tournament.trophyCount} ${tournament.trophyCount === 1 ? 'player' : 'players'} went 3-0`}
+                      >
                         <span class="trophy-pill">🏆 {tournament.trophyCount}</span>
                       </Tooltip>
-                      <Tooltip content={`${tournament.roundCount} ${tournament.roundCount === 1 ? 'round' : 'rounds'} of Swiss`}>
+                      <Tooltip
+                        content={`${tournament.roundCount} ${tournament.roundCount === 1 ? 'round' : 'rounds'} of Swiss`}
+                      >
                         <span class="round-pill">⚔️ {tournament.roundCount}</span>
                       </Tooltip>
                     </div>

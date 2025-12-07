@@ -77,19 +77,19 @@ npm run preview
 
 ## 🚀 Commands
 
-| Command                | Action                                                        |
-| :--------------------- | :------------------------------------------------------------ |
-| `npm install`          | Install dependencies                                          |
-| `npm run dev`          | Start local dev server at `localhost:4321`                    |
-| `npm run build`        | Build production site to `./dist/`                            |
-| `npm run preview`      | Preview your build locally before deploying                   |
-| `npm run scrape <id>`  | Scrape tournament data by ID                                  |
-| `npm run league`       | Generate league standings from all tournaments                |
-| `npm run player-stats` | Generate individual player stats and head-to-head records     |
-| `npm run sync-league`  | Sync latest league data (scrape + league + player-stats)      |
-| `npm test`             | Run tests                                                     |
-| `npm run format`       | Format code with Prettier                                     |
-| `npm run format:check` | Check code formatting without modifying files                 |
+| Command                | Action                                                    |
+| :--------------------- | :-------------------------------------------------------- |
+| `npm install`          | Install dependencies                                      |
+| `npm run dev`          | Start local dev server at `localhost:4321`                |
+| `npm run build`        | Build production site to `./dist/`                        |
+| `npm run preview`      | Preview your build locally before deploying               |
+| `npm run scrape <id>`  | Scrape tournament data by ID                              |
+| `npm run league`       | Generate league standings from all tournaments            |
+| `npm run player-stats` | Generate individual player stats and head-to-head records |
+| `npm run sync-league`  | Sync latest league data (scrape + league + player-stats)  |
+| `npm test`             | Run tests                                                 |
+| `npm run format`       | Format code with Prettier                                 |
+| `npm run format:check` | Check code formatting without modifying files             |
 
 ## 📁 Project Structure
 
@@ -145,21 +145,24 @@ leagues:
 When a new weekly tournament finishes, follow these steps:
 
 1. **Add the tournament ID to `leagues.yml`**:
+
    ```yaml
    leagues:
      - name: Q4 2025
        tournaments:
-         - 388334  # ← Add new tournament ID here
+         - 388334 # ← Add new tournament ID here
          - 384681
          - 382756
    ```
 
 2. **Scrape the tournament data**:
+
    ```sh
    npm run scrape 388334
    ```
 
 3. **Rebuild all data and the site**:
+
    ```sh
    npm run rebuild-all
    ```
@@ -170,6 +173,7 @@ When a new weekly tournament finishes, follow these steps:
    - `npm run build` - Rebuilds the static site
 
 4. **Verify locally** (optional):
+
    ```sh
    npm run preview
    ```

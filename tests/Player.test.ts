@@ -159,7 +159,9 @@ describe('Player', () => {
         Decklists: [],
       };
 
-      expect(() => Player.fromCompetitor(competitor)).toThrow('Competitor data is missing player information');
+      expect(() => Player.fromCompetitor(competitor)).toThrow(
+        'Competitor data is missing player information'
+      );
     });
 
     it('should clean emojis when creating from competitor', () => {
@@ -304,7 +306,9 @@ describe('Player', () => {
         GameRecord: '6-3-0',
       };
 
-      expect(() => Player.fromStanding(standing)).toThrow('Standing data is missing player information');
+      expect(() => Player.fromStanding(standing)).toThrow(
+        'Standing data is missing player information'
+      );
     });
 
     it('should clean emojis when creating from standing', () => {

@@ -127,7 +127,11 @@ export function calculateLeagueStandings(
   const standings: LeagueStanding[] = [];
 
   for (const stats of teamStats.values()) {
-    const gameWinPct = calculateGameWinPercentage(stats.gameWins, stats.gameLosses, stats.gameDraws);
+    const gameWinPct = calculateGameWinPercentage(
+      stats.gameWins,
+      stats.gameLosses,
+      stats.gameDraws
+    );
 
     standings.push({
       TeamId: stats.teamId,

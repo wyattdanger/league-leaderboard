@@ -37,55 +37,89 @@ const hasDeckData = performances.some((perf) => perf.deck);
             </thead>
             <tbody>
               {recentPerformances.map((perf) => {
-                const mwpClass = perf.matchWinPercentage > 0.59 ? 'wp-high' : perf.matchWinPercentage > 0.39 ? 'wp-medium' : 'wp-low';
+                const mwpClass =
+                  perf.matchWinPercentage > 0.59
+                    ? 'wp-high'
+                    : perf.matchWinPercentage > 0.39
+                      ? 'wp-medium'
+                      : 'wp-low';
                 const isTrophy = perf.matchRecord === '3-0-0';
 
                 return (
-                  <tr onclick={`window.location.href='/event/${perf.tournamentId}'`} style="cursor: pointer;">
+                  <tr
+                    onclick={`window.location.href='/event/${perf.tournamentId}'`}
+                    style="cursor: pointer;"
+                  >
                     <td class="event-date">{perf.dateDisplay}</td>
                     {hasDeckData && <td class="event-deck">{perf.deck || '—'}</td>}
                     <td class="event-rank">{isTrophy ? '🏆' : perf.rank}</td>
                     <td class="event-record">{perf.matchRecord}</td>
-                    <td class={`event-mwp ${mwpClass}`}>{(perf.matchWinPercentage * 100).toFixed(1)}%</td>
+                    <td class={`event-mwp ${mwpClass}`}>
+                      {(perf.matchWinPercentage * 100).toFixed(1)}%
+                    </td>
                     <td class="event-meta hide-mobile">
-                      <Tooltip content={`${perf.playerCount} ${perf.playerCount === 1 ? 'player' : 'players'}`}>
+                      <Tooltip
+                        content={`${perf.playerCount} ${perf.playerCount === 1 ? 'player' : 'players'}`}
+                      >
                         <span class="player-pill">👤 {perf.playerCount}</span>
                       </Tooltip>
-                      <Tooltip content={`${perf.trophyCount} ${perf.trophyCount === 1 ? 'player' : 'players'} went 3-0`}>
+                      <Tooltip
+                        content={`${perf.trophyCount} ${perf.trophyCount === 1 ? 'player' : 'players'} went 3-0`}
+                      >
                         <span class="trophy-pill">🏆 {perf.trophyCount}</span>
                       </Tooltip>
-                      <Tooltip content={`${perf.roundCount} ${perf.roundCount === 1 ? 'round' : 'rounds'} of Swiss`}>
+                      <Tooltip
+                        content={`${perf.roundCount} ${perf.roundCount === 1 ? 'round' : 'rounds'} of Swiss`}
+                      >
                         <span class="round-pill">⚔️ {perf.roundCount}</span>
                       </Tooltip>
                     </td>
                   </tr>
                 );
               })}
-              {hasMore && olderPerformances.map((perf) => {
-                const mwpClass = perf.matchWinPercentage > 0.59 ? 'wp-high' : perf.matchWinPercentage > 0.39 ? 'wp-medium' : 'wp-low';
-                const isTrophy = perf.matchRecord === '3-0-0';
+              {hasMore &&
+                olderPerformances.map((perf) => {
+                  const mwpClass =
+                    perf.matchWinPercentage > 0.59
+                      ? 'wp-high'
+                      : perf.matchWinPercentage > 0.39
+                        ? 'wp-medium'
+                        : 'wp-low';
+                  const isTrophy = perf.matchRecord === '3-0-0';
 
-                return (
-                  <tr class="older-event" style="display: none; cursor: pointer;" onclick={`window.location.href='/event/${perf.tournamentId}'`}>
-                    <td class="event-date">{perf.dateDisplay}</td>
-                    {hasDeckData && <td class="event-deck">{perf.deck || '—'}</td>}
-                    <td class="event-rank">{isTrophy ? '🏆' : perf.rank}</td>
-                    <td class="event-record">{perf.matchRecord}</td>
-                    <td class={`event-mwp ${mwpClass}`}>{(perf.matchWinPercentage * 100).toFixed(1)}%</td>
-                    <td class="event-meta hide-mobile">
-                      <Tooltip content={`${perf.playerCount} ${perf.playerCount === 1 ? 'player' : 'players'}`}>
-                        <span class="player-pill">👤 {perf.playerCount}</span>
-                      </Tooltip>
-                      <Tooltip content={`${perf.trophyCount} ${perf.trophyCount === 1 ? 'player' : 'players'} went 3-0`}>
-                        <span class="trophy-pill">🏆 {perf.trophyCount}</span>
-                      </Tooltip>
-                      <Tooltip content={`${perf.roundCount} ${perf.roundCount === 1 ? 'round' : 'rounds'} of Swiss`}>
-                        <span class="round-pill">⚔️ {perf.roundCount}</span>
-                      </Tooltip>
-                    </td>
-                  </tr>
-                );
-              })}
+                  return (
+                    <tr
+                      class="older-event"
+                      style="display: none; cursor: pointer;"
+                      onclick={`window.location.href='/event/${perf.tournamentId}'`}
+                    >
+                      <td class="event-date">{perf.dateDisplay}</td>
+                      {hasDeckData && <td class="event-deck">{perf.deck || '—'}</td>}
+                      <td class="event-rank">{isTrophy ? '🏆' : perf.rank}</td>
+                      <td class="event-record">{perf.matchRecord}</td>
+                      <td class={`event-mwp ${mwpClass}`}>
+                        {(perf.matchWinPercentage * 100).toFixed(1)}%
+                      </td>
+                      <td class="event-meta hide-mobile">
+                        <Tooltip
+                          content={`${perf.playerCount} ${perf.playerCount === 1 ? 'player' : 'players'}`}
+                        >
+                          <span class="player-pill">👤 {perf.playerCount}</span>
+                        </Tooltip>
+                        <Tooltip
+                          content={`${perf.trophyCount} ${perf.trophyCount === 1 ? 'player' : 'players'} went 3-0`}
+                        >
+                          <span class="trophy-pill">🏆 {perf.trophyCount}</span>
+                        </Tooltip>
+                        <Tooltip
+                          content={`${perf.roundCount} ${perf.roundCount === 1 ? 'round' : 'rounds'} of Swiss`}
+                        >
+                          <span class="round-pill">⚔️ {perf.roundCount}</span>
+                        </Tooltip>
+                      </td>
+                    </tr>
+                  );
+                })}
             </tbody>
           </table>
         </div>
@@ -110,7 +144,9 @@ const hasDeckData = performances.some((perf) => perf.deck);
     if (btn) {
       btn.addEventListener('click', () => {
         const olderEvents = document.querySelectorAll('.event-table .older-event');
-        const loadMoreContainer = btn.closest('.player-event-list')?.querySelector('.load-more-container') as HTMLElement;
+        const loadMoreContainer = btn
+          .closest('.player-event-list')
+          ?.querySelector('.load-more-container') as HTMLElement;
 
         olderEvents.forEach((event) => {
           (event as HTMLElement).style.display = 'table-row';

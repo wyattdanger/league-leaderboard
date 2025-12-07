@@ -4,9 +4,15 @@ import { join } from 'path';
 
 // Load fixtures from actual tournament data
 const fixturesDir = join(__dirname, 'fixtures');
-const mockPerfectStanding = JSON.parse(readFileSync(join(fixturesDir, 'standing-perfect-record.json'), 'utf-8'));
-const mockRecordWithDraw = JSON.parse(readFileSync(join(fixturesDir, 'standing-with-draw.json'), 'utf-8'));
-const mockLosingStanding = JSON.parse(readFileSync(join(fixturesDir, 'standing-losing-record.json'), 'utf-8'));
+const mockPerfectStanding = JSON.parse(
+  readFileSync(join(fixturesDir, 'standing-perfect-record.json'), 'utf-8')
+);
+const mockRecordWithDraw = JSON.parse(
+  readFileSync(join(fixturesDir, 'standing-with-draw.json'), 'utf-8')
+);
+const mockLosingStanding = JSON.parse(
+  readFileSync(join(fixturesDir, 'standing-losing-record.json'), 'utf-8')
+);
 
 describe('Standing Model', () => {
   describe('fromMeleeStanding', () => {
@@ -24,11 +30,13 @@ describe('Standing Model', () => {
     it('should handle missing data with defaults', () => {
       const minimalData = {
         Team: {
-          Players: [{
-            Username: 'test',
-            DisplayName: 'Test'
-          }]
-        }
+          Players: [
+            {
+              Username: 'test',
+              DisplayName: 'Test',
+            },
+          ],
+        },
       };
 
       const standing = Standing.fromMeleeStanding(minimalData as any);
@@ -60,8 +68,12 @@ describe('Standing Model', () => {
   describe('Win percentage calculations', () => {
     it('should calculate match win percentage correctly', () => {
       const standing = Standing.fromMeleeStanding(mockRecordWithDraw);
-      const totalMatches = mockRecordWithDraw.MatchWins + mockRecordWithDraw.MatchLosses + mockRecordWithDraw.MatchDraws;
-      const expected = (mockRecordWithDraw.MatchWins + 0.5 * mockRecordWithDraw.MatchDraws) / totalMatches;
+      const totalMatches =
+        mockRecordWithDraw.MatchWins +
+        mockRecordWithDraw.MatchLosses +
+        mockRecordWithDraw.MatchDraws;
+      const expected =
+        (mockRecordWithDraw.MatchWins + 0.5 * mockRecordWithDraw.MatchDraws) / totalMatches;
       expect(standing.matchWinPercentage).toBeCloseTo(expected, 4);
     });
 
@@ -72,8 +84,12 @@ describe('Standing Model', () => {
 
     it('should handle low win percentages', () => {
       const standing = Standing.fromMeleeStanding(mockLosingStanding);
-      const totalMatches = mockLosingStanding.MatchWins + mockLosingStanding.MatchLosses + mockLosingStanding.MatchDraws;
-      const expected = (mockLosingStanding.MatchWins + 0.5 * mockLosingStanding.MatchDraws) / totalMatches;
+      const totalMatches =
+        mockLosingStanding.MatchWins +
+        mockLosingStanding.MatchLosses +
+        mockLosingStanding.MatchDraws;
+      const expected =
+        (mockLosingStanding.MatchWins + 0.5 * mockLosingStanding.MatchDraws) / totalMatches;
       expect(standing.matchWinPercentage).toBeCloseTo(expected, 4);
     });
   });
@@ -88,7 +104,7 @@ describe('Standing Model', () => {
     it('should return correct class for medium win percentage', () => {
       const standing = Standing.fromMeleeStanding({
         ...mockRecordWithDraw,
-        TeamGameWinPercentage: 0.5000
+        TeamGameWinPercentage: 0.5,
       });
       expect(standing.gameWinPercentageClass).toBe('wp-medium');
     });
@@ -130,14 +146,16 @@ describe('Standing Model', () => {
         Standing.fromMeleeStanding({
           ...mockRecordWithDraw,
           Team: {
-            Players: [{
-              Username: 'player2',
-              DisplayName: 'Player 2'
-            }]
+            Players: [
+              {
+                Username: 'player2',
+                DisplayName: 'Player 2',
+              },
+            ],
           },
-          Rank: 2
+          Rank: 2,
         }),
-        Standing.fromMeleeStanding(mockLosingStanding)
+        Standing.fromMeleeStanding(mockLosingStanding),
       ];
     });
 
@@ -205,7 +223,9 @@ describe('Standing Model', () => {
   describe('Opponent percentages', () => {
     it('should expose opponent match win percentage', () => {
       const standing = Standing.fromMeleeStanding(mockRecordWithDraw);
-      expect(standing.opponentMatchWinPercentage).toBe(mockRecordWithDraw.OpponentMatchWinPercentage);
+      expect(standing.opponentMatchWinPercentage).toBe(
+        mockRecordWithDraw.OpponentMatchWinPercentage
+      );
     });
 
     it('should expose opponent game win percentage', () => {

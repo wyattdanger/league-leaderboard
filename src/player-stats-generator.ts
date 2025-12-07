@@ -148,14 +148,13 @@ async function generatePlayerStats(): Promise<void> {
       for (const standing of standings) {
         const player = Player.fromStanding(standing);
         if (player && player.username) {
-          playerPoints.set(player.username, (playerPoints.get(player.username) || 0) + (standing.Points || 0));
+          playerPoints.set(
+            player.username,
+            (playerPoints.get(player.username) || 0) + (standing.Points || 0)
+          );
 
           // Check for 3-0 finish
-          if (
-            standing.MatchWins === 3 &&
-            standing.MatchLosses === 0 &&
-            standing.MatchDraws === 0
-          ) {
+          if (standing.MatchWins === 3 && standing.MatchLosses === 0 && standing.MatchDraws === 0) {
             if (top8Tournaments.has(tournamentId)) {
               // Top 8 3-0s count as belts only
               playerBelts.set(player.username, (playerBelts.get(player.username) || 0) + 1);
@@ -219,11 +218,7 @@ async function generatePlayerStats(): Promise<void> {
         }
       }
 
-      const stats = calculatePlayerStats(
-        username,
-        tournamentMatchesPerRound,
-        tournamentId
-      );
+      const stats = calculatePlayerStats(username, tournamentMatchesPerRound, tournamentId);
       if (stats) {
         // Add to overall totals
         totalMatchWins += stats.matchWins;
@@ -296,9 +291,17 @@ async function generatePlayerStats(): Promise<void> {
           events: data.events,
           points: data.points,
           matchRecord: `${data.matchWins}-${data.matchLosses}-${data.matchDraws}`,
-          matchWinPercentage: calculateMatchWinPercentage(data.matchWins, data.matchLosses, data.matchDraws),
+          matchWinPercentage: calculateMatchWinPercentage(
+            data.matchWins,
+            data.matchLosses,
+            data.matchDraws
+          ),
           gameRecord: `${data.gameWins}-${data.gameLosses}-${data.gameDraws}`,
-          gameWinPercentage: calculateGameWinPercentage(data.gameWins, data.gameLosses, data.gameDraws),
+          gameWinPercentage: calculateGameWinPercentage(
+            data.gameWins,
+            data.gameLosses,
+            data.gameDraws
+          ),
         };
       }
     );
@@ -311,7 +314,11 @@ async function generatePlayerStats(): Promise<void> {
       totalPoints: playerPoints.get(username) || 0,
       totalMatches,
       matchRecord: `${totalMatchWins}-${totalMatchLosses}-${totalMatchDraws}`,
-      matchWinPercentage: calculateMatchWinPercentage(totalMatchWins, totalMatchLosses, totalMatchDraws),
+      matchWinPercentage: calculateMatchWinPercentage(
+        totalMatchWins,
+        totalMatchLosses,
+        totalMatchDraws
+      ),
       gameRecord: `${totalGameWins}-${totalGameLosses}-${totalGameDraws}`,
       gameWinPercentage: totalGames > 0 ? totalGameWins / totalGames : 0,
       trophies: playerTrophies.get(username) || 0,

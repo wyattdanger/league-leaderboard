@@ -67,7 +67,7 @@ export class Standing {
       points: meleeStanding.Points || 0,
       opponentMatchWinPercentage: meleeStanding.OpponentMatchWinPercentage || 0,
       opponentGameWinPercentage: meleeStanding.OpponentGameWinPercentage || 0,
-      gameWinPercentage: meleeStanding.TeamGameWinPercentage || 0
+      gameWinPercentage: meleeStanding.TeamGameWinPercentage || 0,
     });
   }
 
@@ -96,7 +96,7 @@ export class Standing {
     return calculateMatchWinPercentage({
       MatchWins: this.matchWins,
       MatchLosses: this.matchLosses,
-      MatchDraws: this.matchDraws
+      MatchDraws: this.matchDraws,
     });
   }
 
@@ -162,7 +162,7 @@ export class Standing {
    * Static method to filter trophy winners from a list of standings
    */
   static getTrophyWinners(standings: Standing[]): Standing[] {
-    return standings.filter(s => s.isTrophyWinner);
+    return standings.filter((s) => s.isTrophyWinner);
   }
 
   /**
@@ -172,7 +172,7 @@ export class Standing {
   static getTopFinishers(standings: Standing[]): Standing[] {
     if (standings.length === 0) return [];
     const topPoints = standings[0].points;
-    return standings.filter(s => s.points === topPoints);
+    return standings.filter((s) => s.points === topPoints);
   }
 
   /**

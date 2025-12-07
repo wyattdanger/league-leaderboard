@@ -74,8 +74,8 @@ export function getTournamentMetadata(tournamentId: string): TournamentMetadata 
       if (fs.existsSync(finalStandingsPath)) {
         const finalStandings = JSON.parse(fs.readFileSync(finalStandingsPath, 'utf-8'));
         // Find players with 3 match wins and 0 match losses
-        const winners = finalStandings.filter((s: any) =>
-          (s.MatchWins || 0) === 3 && (s.MatchLosses || 0) === 0
+        const winners = finalStandings.filter(
+          (s: any) => (s.MatchWins || 0) === 3 && (s.MatchLosses || 0) === 0
         );
         trophyCount = winners.length;
 

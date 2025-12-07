@@ -13,11 +13,15 @@ const { tournament, leagueName } = Astro.props;
   <a href={`/event/${tournament.tournamentId}`} class="top8-callout">
     <div class="callout-left">
       <span class="crown">👑</span>
-      {tournament.winnerDisplayName && (
-        <span class="championship-text">
-          <span class="winner-name">{tournament.winnerDisplayName}</span> won the <span class="league-name">{leagueName}</span> top 8 on <span class="date">{tournament.dateDisplay}</span>!
-        </span>
-      )}
+      {
+        tournament.winnerDisplayName && (
+          <span class="championship-text">
+            <span class="winner-name">{tournament.winnerDisplayName}</span> won the{' '}
+            <span class="league-name">{leagueName}</span> top 8 on{' '}
+            <span class="date">{tournament.dateDisplay}</span>!
+          </span>
+        )
+      }
     </div>
     <div class="callout-right">
       <span class="view-link">View Event →</span>

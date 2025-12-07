@@ -9,9 +9,17 @@ const { breakdown } = Astro.props;
 
 // Generate colors for pie chart
 const colors = [
-  '#667eea', '#764ba2', '#f093fb', '#4facfe',
-  '#43e97b', '#fa709a', '#fee140', '#30cfd0',
-  '#a8edea', '#fed6e3', '#c471f5'
+  '#667eea',
+  '#764ba2',
+  '#f093fb',
+  '#4facfe',
+  '#43e97b',
+  '#fa709a',
+  '#fee140',
+  '#30cfd0',
+  '#a8edea',
+  '#fed6e3',
+  '#c471f5',
 ];
 
 // Calculate cumulative percentages for pie chart segments
@@ -23,7 +31,7 @@ const segments = breakdown.map((item, index) => {
     ...item,
     start,
     end: cumulative,
-    color: colors[index % colors.length]
+    color: colors[index % colors.length],
   };
 });
 ---
@@ -34,39 +42,46 @@ const segments = breakdown.map((item, index) => {
   <div class="metagame-content">
     <div class="pie-chart-container">
       <svg viewBox="0 0 100 100" class="pie-chart">
-        {segments.map((segment, index) => {
-          const startAngle = (segment.start / 100) * 360;
-          const endAngle = (segment.end / 100) * 360;
-          const largeArc = segment.percentage > 50 ? 1 : 0;
+        {
+          segments.map((segment, index) => {
+            const startAngle = (segment.start / 100) * 360;
+            const endAngle = (segment.end / 100) * 360;
+            const largeArc = segment.percentage > 50 ? 1 : 0;
 
-          const startX = 50 + 40 * Math.cos((startAngle - 90) * Math.PI / 180);
-          const startY = 50 + 40 * Math.sin((startAngle - 90) * Math.PI / 180);
-          const endX = 50 + 40 * Math.cos((endAngle - 90) * Math.PI / 180);
-          const endY = 50 + 40 * Math.sin((endAngle - 90) * Math.PI / 180);
+            const startX = 50 + 40 * Math.cos(((startAngle - 90) * Math.PI) / 180);
+            const startY = 50 + 40 * Math.sin(((startAngle - 90) * Math.PI) / 180);
+            const endX = 50 + 40 * Math.cos(((endAngle - 90) * Math.PI) / 180);
+            const endY = 50 + 40 * Math.sin(((endAngle - 90) * Math.PI) / 180);
 
-          return (
-            <g class="pie-segment-group">
-              <path
-                d={`M 50 50 L ${startX} ${startY} A 40 40 0 ${largeArc} 1 ${endX} ${endY} Z`}
-                fill={segment.color}
-                class="pie-segment"
-                data-tooltip={`${segment.archetype}: ${segment.count} (${segment.percentage.toFixed(1)}%)`}
-              />
-            </g>
-          );
-        })}
+            return (
+              <g class="pie-segment-group">
+                <path
+                  d={`M 50 50 L ${startX} ${startY} A 40 40 0 ${largeArc} 1 ${endX} ${endY} Z`}
+                  fill={segment.color}
+                  class="pie-segment"
+                  data-tooltip={`${segment.archetype}: ${segment.count} (${segment.percentage.toFixed(1)}%)`}
+                />
+              </g>
+            );
+          })
+        }
       </svg>
       <div class="pie-tooltip" id="pie-tooltip"></div>
     </div>
 
     <div class="metagame-list">
-      {breakdown.map((item, index) => (
-        <div class="metagame-item">
-          <div class="metagame-color" style={`background-color: ${colors[index % colors.length]}`}></div>
-          <div class="metagame-archetype">{item.archetype}</div>
-          <div class="metagame-count">{item.count}</div>
-        </div>
-      ))}
+      {
+        breakdown.map((item, index) => (
+          <div class="metagame-item">
+            <div
+              class="metagame-color"
+              style={`background-color: ${colors[index % colors.length]}`}
+            />
+            <div class="metagame-archetype">{item.archetype}</div>
+            <div class="metagame-count">{item.count}</div>
+          </div>
+        ))
+      }
     </div>
   </div>
 </div>

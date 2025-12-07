@@ -17,7 +17,10 @@ export function usernameToSlug(username: string): string {
  */
 export function cleanDisplayName(displayName: string): string {
   // Remove emojis using Unicode ranges
-  const cleaned = displayName.replace(/[\u{1F300}-\u{1F9FF}]|[\u{2600}-\u{26FF}]|[\u{2700}-\u{27BF}]/gu, '');
+  const cleaned = displayName.replace(
+    /[\u{1F300}-\u{1F9FF}]|[\u{2600}-\u{26FF}]|[\u{2700}-\u{27BF}]/gu,
+    ''
+  );
   // Trim and normalize whitespace
   return cleaned.trim().replace(/\s+/g, ' ');
 }

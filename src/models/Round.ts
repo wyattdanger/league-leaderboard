@@ -9,10 +9,7 @@ export class Round {
   readonly number: number;
   readonly matches: Match[];
 
-  private constructor(data: {
-    number: number;
-    matches: Match[];
-  }) {
+  private constructor(data: { number: number; matches: Match[] }) {
     this.number = data.number;
     this.matches = data.matches;
   }
@@ -30,18 +27,20 @@ export class Round {
     const roundNumber = meleeMatches[0]?.RoundNumber || 0;
 
     // Verify all matches are from the same round
-    const allSameRound = meleeMatches.every(m => m.RoundNumber === roundNumber);
+    const allSameRound = meleeMatches.every((m) => m.RoundNumber === roundNumber);
     if (!allSameRound) {
-      throw new Error(`All matches must be from the same round. Found matches from multiple rounds.`);
+      throw new Error(
+        `All matches must be from the same round. Found matches from multiple rounds.`
+      );
     }
 
     // Convert to Match models and sort
-    const matches = meleeMatches.map(m => Match.fromMeleeMatch(m));
+    const matches = meleeMatches.map((m) => Match.fromMeleeMatch(m));
     const sortedMatches = Match.sortMatches(matches);
 
     return new Round({
       number: roundNumber,
-      matches: sortedMatches
+      matches: sortedMatches,
     });
   }
 
@@ -49,14 +48,14 @@ export class Round {
    * Get all regular (non-bye) matches
    */
   get regularMatches(): Match[] {
-    return this.matches.filter(m => m.isRegularMatch);
+    return this.matches.filter((m) => m.isRegularMatch);
   }
 
   /**
    * Get all bye matches
    */
   get byeMatches(): Match[] {
-    return this.matches.filter(m => m.isBye);
+    return this.matches.filter((m) => m.isBye);
   }
 
   /**
@@ -84,7 +83,7 @@ export class Round {
    * Check if all matches in the round are complete
    */
   get isComplete(): boolean {
-    return this.matches.every(m => m.isComplete);
+    return this.matches.every((m) => m.isComplete);
   }
 
   /**

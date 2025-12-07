@@ -7,6 +7,7 @@ This document provides essential context for AI agents working on this codebase.
 This is a **Premodern Magic: The Gathering league statistics website** that scrapes tournament data from Melee.gg, calculates standings and player statistics, and generates a static site using Astro.
 
 **Technology Stack:**
+
 - **Frontend**: Astro (SSG)
 - **Language**: TypeScript
 - **Styling**: CSS (inline in .astro components)
@@ -60,11 +61,13 @@ This is a **Premodern Magic: The Gathering league statistics website** that scra
 ### 1. Player Identity (CRITICAL!)
 
 **Username is the PRIMARY KEY across tournaments**
+
 - `Username`: Stable identifier (e.g., "swbmtg")
 - `DisplayName`: Human-readable name (e.g., "Scott")
 - `TeamId`: **CHANGES PER TOURNAMENT** - DO NOT use for cross-tournament tracking!
 
 **Always use `Username` when:**
+
 - Aggregating stats across tournaments
 - Linking to player profiles
 - Calculating head-to-head records
@@ -77,19 +80,21 @@ Located in: `output/tournament_{id}/Round_{N}_Matches.json`
 interface Match {
   Competitors: [
     {
-      TeamId: number;        // Changes per tournament!
+      TeamId: number; // Changes per tournament!
       Team: {
-        Players: [{
-          Username: string;    // PRIMARY KEY
-          DisplayName: string;
-        }]
+        Players: [
+          {
+            Username: string; // PRIMARY KEY
+            DisplayName: string;
+          },
+        ];
       };
-      GameWins: number;       // Games won in this match
-      GameByes: number;       // For byes
-    }
+      GameWins: number; // Games won in this match
+      GameByes: number; // For byes
+    },
   ];
-  GameDraws: number;          // Total game draws in match
-  ByeReason: number | null;   // null = regular match
+  GameDraws: number; // Total game draws in match
+  ByeReason: number | null; // null = regular match
   RoundNumber: number;
   TournamentId: number;
 }
@@ -108,6 +113,7 @@ GWP = (Game Wins + 0.5 × Game Draws) / (Game Wins + Game Losses + Game Draws)
 ```
 
 **Always use utility functions:**
+
 ```typescript
 import { calculateMatchWinPercentage, calculateGameWinPercentage } from './utils/winPercentage';
 
@@ -119,6 +125,7 @@ const mwp2 = calculateMatchWinPercentage(standing); // standing has MatchWins, M
 ### 4. Tiebreakers (Swiss System)
 
 Sorting priority for standings:
+
 1. **Points** (3 for win, 1 for draw, 0 for loss)
 2. **OMW%** (Opponent Match Win %, 33% floor per opponent)
 3. **GW%** (Game Win %)
@@ -135,6 +142,7 @@ npm run scrape -- <tournament_id>
 ```
 
 **What it does:**
+
 1. Fetches tournament data from Melee.gg API
 2. Saves raw JSON to `output/tournament_{id}/`
 3. Files created:
@@ -151,12 +159,14 @@ npm run league <tournament_id_1> <tournament_id_2> ...
 ```
 
 **What it does:**
+
 1. Loads matches from multiple tournaments
 2. Aggregates by username (NOT TeamId!)
 3. Calculates league-wide standings
 4. Saves to `output/league/league_standings_{league_name}_{timestamp}.json`
 
 **Key files:**
+
 - `src/league-calculator.ts` - Aggregation logic
 - `src/sync-league.ts` - Sync based on `leagues.yml` config
 
@@ -167,6 +177,7 @@ npm run player-stats
 ```
 
 **What it does:**
+
 1. Loads `leagues.yml` to get all tournament IDs
 2. For each player (by username):
    - Aggregates overall stats across all tournaments
@@ -176,6 +187,7 @@ npm run player-stats
 3. Saves to `output/players/player_stats_{username}.json`
 
 **Key files:**
+
 - `src/player-stats-generator.ts` - Main generator
 - `src/utils/playerData.ts` - Helper functions for stats calculation
 - `src/utils/winPercentage.ts` - Win % calculations
@@ -187,6 +199,7 @@ npm run build
 ```
 
 **What it does:**
+
 1. Astro reads JSON files from `output/`
 2. Generates static HTML pages for:
    - Event detail pages (`/event/{id}`)
@@ -216,6 +229,7 @@ leagues:
 ```
 
 **When to update:**
+
 - When starting a new league/season
 - When adding tournaments to existing leagues
 - When reorganizing league structure
@@ -233,6 +247,7 @@ username3: Frantic Storm
 ```
 
 **When deck data exists:**
+
 - Metagame pie chart shows on event pages
 - Deck columns appear in standings/pairings tables
 
@@ -255,11 +270,13 @@ import { foo } from './utils/bar';
 ### 2. Player Stats Must Be Regenerated
 
 **When to regenerate player stats:**
+
 - After adding new tournament data
 - After fixing calculation bugs
 - After changing leagues.yml
 
 **How to regenerate:**
+
 ```bash
 npm run player-stats  # Regenerates all player JSON files
 npm run build         # Rebuilds the website
@@ -286,6 +303,7 @@ export async function getStaticPaths() {
 ```
 
 **Why this matters:**
+
 - Pages are generated at BUILD TIME
 - No dynamic data loading at runtime
 - Must rebuild to see data changes
@@ -308,6 +326,7 @@ if (match.ByeReason !== null && match.Competitors.length === 1) {
 - A match can end 2-0, 2-1, or 1-1-1 (with a draw)
 
 **Standings track both:**
+
 - Match record: 5-1-0 (5 matches won, 1 lost, 0 drawn)
 - Game record: 10-4-1 (10 games won, 4 lost, 1 drawn)
 
@@ -317,6 +336,7 @@ if (match.ByeReason !== null && match.Competitors.length === 1) {
 **Belts**: 3-0 finishes in Top 8 tournaments
 
 Calculated in `src/player-stats-generator.ts`:
+
 ```typescript
 if (standing.MatchWins === 3 && standing.MatchLosses === 0 && standing.MatchDraws === 0) {
   if (top8Tournaments.has(tournamentId)) {
@@ -332,6 +352,7 @@ if (standing.MatchWins === 3 && standing.MatchLosses === 0 && standing.MatchDraw
 ### Adding a New Tournament
 
 1. Scrape the data:
+
    ```bash
    npm run scrape -- <tournament_id>
    ```
@@ -339,17 +360,20 @@ if (standing.MatchWins === 3 && standing.MatchLosses === 0 && standing.MatchDraw
 2. Update `leagues.yml` to add tournament to appropriate league
 
 3. Regenerate league standings:
+
    ```bash
    npm run sync-league                      # Sync current league
    npm run sync-league -- --league "Q4 2025"  # Sync specific league
    ```
 
 4. Regenerate player stats:
+
    ```bash
    npm run player-stats
    ```
 
 5. Rebuild site:
+
    ```bash
    npm run build
    ```
@@ -359,6 +383,7 @@ if (standing.MatchWins === 3 && standing.MatchLosses === 0 && standing.MatchDraw
 ### Managing Deck Data
 
 **Deck Data Structure:**
+
 - Centralized in `decks.yml` at project root
 - Maps tournament IDs → usernames → deck names
 - Uses `_` (underscore) to indicate unfilled/unknown data
@@ -367,14 +392,16 @@ if (standing.MatchWins === 3 && standing.MatchLosses === 0 && standing.MatchDraw
 **Adding Deck Data:**
 
 1. **Manual editing** - Edit `decks.yml` directly:
+
    ```yaml
    '388334':
      username1: The Rock
      username2: Domain
-     username3: _  # Not yet filled in
+     username3: _ # Not yet filled in
    ```
 
 2. **Via CSV for crowdsourcing:**
+
    ```bash
    # Export to CSV
    npm run decks-to-csv
@@ -393,6 +420,7 @@ if (standing.MatchWins === 3 && standing.MatchLosses === 0 && standing.MatchDraw
    ```
 
 **Deck Data Validation:**
+
 - Event pages use `hasCompleteDeckData()` to check if all players have deck info
 - Deck columns and metagame breakdown only display when data is complete
 - Prevents showing partial/misleading deck information
@@ -404,11 +432,13 @@ if (standing.MatchWins === 3 && standing.MatchLosses === 0 && standing.MatchDraw
 2. Write/update tests in `tests/`
 
 3. Run tests to verify:
+
    ```bash
    npm test
    ```
 
 4. Regenerate all affected data:
+
    ```bash
    npm run player-stats                     # If player stats affected
    npm run sync-league                      # If current league standings affected
@@ -438,17 +468,20 @@ if (standing.MatchWins === 3 && standing.MatchLosses === 0 && standing.MatchDraw
 ## Testing Strategy
 
 **Unit Tests** (`tests/*.test.ts`)
+
 - Win percentage calculations
 - Player data aggregation
 - Head-to-head record calculation
 - Standings calculation
 
 **Run tests:**
+
 ```bash
 npm test
 ```
 
 **Coverage:**
+
 - Core calculation logic is well-tested
 - UI components are NOT tested (manual QA only)
 
@@ -501,16 +534,19 @@ scraping-project/
 ## Performance Considerations
 
 ### Build Time
+
 - ~500ms to build 110 pages
 - Scales linearly with number of tournaments/players
 - No optimization needed yet
 
 ### Runtime Performance
+
 - Fully static site = instant loads
 - No backend API calls
 - No JavaScript needed for core functionality
 
 ### Data Size
+
 - Each tournament: ~50-200 KB of JSON
 - Player stats: ~5-15 KB per player
 - Total site size: ~5-10 MB (uncompressed)
@@ -518,26 +554,31 @@ scraping-project/
 ## Debugging Tips
 
 ### "Player not found" Issues
+
 - Check if you're using `Username` vs `TeamId`
 - Remember: TeamId changes per tournament!
 
 ### Win Percentage Seems Wrong
+
 - Verify draws are counted as 0.5 wins
 - Check if you're using utility functions
 - Test calculation manually with example
 
 ### Tournament Not Showing
+
 - Verify tournament ID in `leagues.yml`
 - Check if data exists in `output/tournament_{id}/`
 - Regenerate league standings
 - Rebuild site
 
 ### Styles Not Applying
+
 - Astro uses scoped CSS by default
 - Check if styles are in correct `<style>` block
 - Use browser dev tools to inspect classes
 
 ### TypeScript Errors
+
 - Run `npm run build` to see full error output
 - Check import paths (no `.js` extensions!)
 - Verify interface definitions in `src/types.ts`
@@ -570,6 +611,7 @@ git commit -m "Regenerate player stats after date corrections"
 ```
 
 **For code changes:**
+
 ```bash
 git add <files>
 git commit -m "Description of changes
@@ -580,6 +622,7 @@ Co-Authored-By: Claude <noreply@anthropic.com>"
 ```
 
 **For data regeneration:**
+
 ```bash
 # After regenerating player stats or league standings
 git add output/
@@ -593,12 +636,14 @@ Co-Authored-By: Claude <noreply@anthropic.com>"
 ### What to Commit
 
 **DO commit:**
+
 - Source code changes (`src/`)
 - Test files (`tests/`)
 - Configuration (`leagues.yml`)
 - Documentation (`.md` files)
 
 **DON'T commit (these should be gitignored):**
+
 - `output/` directory (generated data)
 - `dist/` directory (built site)
 - `node_modules/`
