@@ -6,9 +6,9 @@ import MetagameBreakdown from '../../components/MetagameBreakdown.astro';
 import Tooltip from '../../components/Tooltip.astro';
 import { getTournamentMetadata } from '../../utils/tournamentData';
 import { loadDeckData, calculateMetagameBreakdown, hasCompleteDeckData } from '../../utils/deckData';
-import { calculateMatchWinPercentage } from '../../utils/winPercentage';
 import { loadLeaguesConfig } from '../../utils/data';
 import { Player } from '../../models/Player';
+import { Standing } from '../../models/Standing';
 import type { League } from '../../types';
 import * as fs from 'fs';
 import * as path from 'path';
@@ -50,7 +50,10 @@ const top8League = allLeagues.find((league) =>
 // Load final standings
 const tournamentDir = path.join(process.cwd(), 'output', `tournament_${tournamentId}`);
 const finalStandingsPath = path.join(tournamentDir, `Round_${metadata.roundCount}_Standings.json`);
-const standings = JSON.parse(fs.readFileSync(finalStandingsPath, 'utf-8'));
+const rawStandings = JSON.parse(fs.readFileSync(finalStandingsPath, 'utf-8'));
+
+// Convert raw standings to Standing models
+const standings = rawStandings.map((s: any) => Standing.fromMeleeStanding(s));
 
 // Load deck data if available and complete
 const deckData = loadDeckData(tournamentId);
@@ -67,21 +70,9 @@ for (let i = 1; i <= metadata.roundCount; i++) {
   }
 }
 
-// Find trophy winners (3-0 players)
-const trophyWinners = standings.filter((s: any) =>
-  (s.MatchWins || 0) === 3 && (s.MatchLosses || 0) === 0 && (s.MatchDraws || 0) === 0
-);
-
-// If no trophies, find all players tied for best record (same points as rank 1)
-const topFinishers = trophyWinners.length === 0 && standings.length > 0
-  ? (() => {
-      const topPoints = standings[0].Points;
-      return standings.filter((s: any) => s.Points === topPoints);
-    })()
-  : [];
-
-const celebrationWinners = trophyWinners.length > 0 ? trophyWinners : topFinishers;
-const hasTrophies = trophyWinners.length > 0;
+// Get celebration winners (trophy winners or top finishers) using Standing model
+const celebrationWinners = Standing.getCelebrationWinners(standings);
+const hasTrophies = Standing.hasTrophyWinners(standings);
 const isTop8Tournament = currentLeague?.name === 'Top 8s';
 
 // Compute celebration messaging
@@ -155,27 +146,17 @@ const celebrationCardEmoji = hasTrophies ? '👑' : '⭐';
               </tr>
             </thead>
             <tbody>
-              {standings.map((standing: any) => {
-                const mwp = calculateMatchWinPercentage(standing);
-                const gwp = standing.TeamGameWinPercentage || 0;
-                const mwpPercent = (mwp * 100).toFixed(1);
-                const gwpPercent = (gwp * 100).toFixed(1);
-
-                const mwpClass = mwp > 0.59 ? 'wp-high' : mwp > 0.39 ? 'wp-medium' : 'wp-low';
-                const gwpClass = gwp > 0.59 ? 'wp-high' : gwp > 0.39 ? 'wp-medium' : 'wp-low';
-
-                const player = Player.fromStanding(standing);
-                const playerUrl = `/player/${player.username.toLowerCase()}`;
-                const deck = showDeckData && deckData ? deckData[player.username] : null;
+              {standings.map((standing: Standing) => {
+                const deck = showDeckData && deckData ? deckData[standing.player.username] : null;
 
                 return (
-                  <tr class="clickable-row" onclick={`window.location.href='${playerUrl}'`}>
+                  <tr class="clickable-row" onclick={`window.location.href='${standing.player.profileUrl}'`}>
                     <td class="rank-col">
-                      <div class="rank-number">{standing.Rank}</div>
+                      <div class="rank-number">{standing.rank}</div>
                     </td>
                     <td class="player-col">
                       <div class="player-display-name">
-                        {player.displayName}
+                        {standing.player.displayName}
                       </div>
                     </td>
                     {showDeckData && (
@@ -183,10 +164,10 @@ const celebrationCardEmoji = hasTrophies ? '👑' : '⭐';
                         <div class="deck-name">{deck || '—'}</div>
                       </td>
                     )}
-                    <td class="record-col">{standing.MatchRecord}</td>
-                    <td class={`mwp-col ${mwpClass}`}>{mwpPercent}%</td>
-                    <td class={`gwp-col ${gwpClass}`}>{gwpPercent}%</td>
-                    <td class="points-col">{standing.Points}</td>
+                    <td class="record-col">{standing.matchRecord}</td>
+                    <td class={`mwp-col ${standing.matchWinPercentageClass}`}>{standing.matchWinPercentageDisplay}%</td>
+                    <td class={`gwp-col ${standing.gameWinPercentageClass}`}>{standing.gameWinPercentageDisplay}%</td>
+                    <td class="points-col">{standing.points}</td>
                   </tr>
                 );
               })}
@@ -287,16 +268,14 @@ const celebrationCardEmoji = hasTrophies ? '👑' : '⭐';
               {celebrationMessage}
             </div>
             <div class="trophy-winners-list">
-              {celebrationWinners.map((winner: any) => {
-                const player = Player.fromStanding(winner);
-                const playerUrl = `/player/${player.username.toLowerCase()}`;
-                const deck = showDeckData && deckData ? deckData[player.username] : null;
+              {celebrationWinners.map((winner: Standing) => {
+                const deck = showDeckData && deckData ? deckData[winner.player.username] : null;
 
                 return (
-                  <a href={playerUrl} class="trophy-winner-card">
+                  <a href={winner.player.profileUrl} class="trophy-winner-card">
                     <div class="trophy-winner-name">
                       <span class="trophy-emoji">{celebrationCardEmoji}</span>
-                      {player.displayName}
+                      {winner.player.displayName}
                     </div>
                     {deck && (
                       <div class="trophy-winner-deck">
@@ -304,7 +283,7 @@ const celebrationCardEmoji = hasTrophies ? '👑' : '⭐';
                       </div>
                     )}
                     <div class="trophy-winner-record">
-                      {winner.MatchRecord}
+                      {winner.matchRecord}
                     </div>
                   </a>
                 );

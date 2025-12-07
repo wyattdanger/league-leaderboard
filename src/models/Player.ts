@@ -69,4 +69,11 @@ export class Player {
   matches(username: string): boolean {
     return this.username === username;
   }
+
+  /**
+   * Get the URL path for this player's profile page
+   */
+  get profileUrl(): string {
+    return `/player/${this.username.toLowerCase()}`;
+  }
 }
