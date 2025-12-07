@@ -10,6 +10,7 @@ import { loadLeaguesConfig } from '../../utils/data';
 import { Player } from '../../models/Player';
 import { Standing } from '../../models/Standing';
 import { Match } from '../../models/Match';
+import { Round } from '../../models/Round';
 import type { League } from '../../types';
 import * as fs from 'fs';
 import * as path from 'path';
@@ -61,15 +62,14 @@ const deckData = loadDeckData(tournamentId);
 const showDeckData = hasCompleteDeckData(deckData);
 const metagameBreakdown = showDeckData && deckData ? calculateMetagameBreakdown(deckData) : null;
 
-// Load match data for each round
-const rounds = [];
+// Load match data for each round using Round model
+const rounds: Round[] = [];
 for (let i = 1; i <= metadata.roundCount; i++) {
   const matchesPath = path.join(tournamentDir, `Round_${i}_Matches.json`);
   if (fs.existsSync(matchesPath)) {
     const rawMatches = JSON.parse(fs.readFileSync(matchesPath, 'utf-8'));
-    const matches = rawMatches.map((m: any) => Match.fromMeleeMatch(m));
-    const sortedMatches = Match.sortMatches(matches);
-    rounds.push({ roundNumber: i, matches: sortedMatches });
+    const round = Round.fromMeleeMatches(rawMatches);
+    rounds.push(round);
   }
 }
 
@@ -184,7 +184,7 @@ const celebrationCardEmoji = hasTrophies ? '👑' : '⭐';
       {rounds.map((round) => {
         return (
           <div class="round-card">
-            <div class="round-header">Round {round.roundNumber}</div>
+            <div class="round-header">{round.displayLabel}</div>
             <div class="round-matches">
               {round.matches.map((match: Match) => {
                 const left = match.leftPlayer;
