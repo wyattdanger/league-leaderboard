@@ -1,0 +1,96 @@
+{
+  "Competitors": [
+    {
+      "Team": {
+        "Players": [
+          {
+            "TeamId": 3668349,
+            "ID": 3653685,
+            "ScreenName": "N/A",
+            "ProfileImageVersion": 0,
+            "DisplayName": "cmwilson252",
+            "DisplayNameLastFirst": "cmwilson252",
+            "Username": "cmwilson252",
+            "LanguageDescription": "Auto (English)",
+            "PronounsDescription": null
+          }
+        ],
+        "ID": 3668349,
+        "Name": null,
+        "StatusDescription": "Active",
+        "IsActive": true
+      },
+      "ID": 12379615,
+      "CheckedIn": null,
+      "ResultConfirmed": null,
+      "SortOrder": 0,
+      "GameByes": 0,
+      "GameWins": 0,
+      "TeamId": 3668349,
+      "GameWinsAndGameByes": 0,
+      "Decklists": []
+    },
+    {
+      "Team": {
+        "Players": [
+          {
+            "TeamId": 3668327,
+            "ID": 3653663,
+            "ScreenName": "N/A",
+            "ProfileImageVersion": 0,
+            "DisplayName": "Tencteri",
+            "DisplayNameLastFirst": "Tencteri",
+            "Username": "Tencteri",
+            "LanguageDescription": "Auto (English)",
+            "PronounsDescription": null
+          }
+        ],
+        "ID": 3668327,
+        "Name": null,
+        "StatusDescription": "Active",
+        "IsActive": true
+      },
+      "ID": 12379616,
+      "CheckedIn": null,
+      "ResultConfirmed": null,
+      "SortOrder": 1,
+      "GameByes": 0,
+      "GameWins": 2,
+      "TeamId": 3668327,
+      "GameWinsAndGameByes": 2,
+      "Decklists": []
+    }
+  ],
+  "ByeReason": null,
+  "LossReason": null,
+  "RoundName": null,
+  "DateCreated": "2025-11-07T00:29:06Z",
+  "Type": 0,
+  "FeatureMatch": false,
+  "HasResult": true,
+  "TimeExtended": false,
+  "MatchesPublished": true,
+  "RoundNumber": 1,
+  "GameDraws": null,
+  "PodNumber": null,
+  "PhaseSortOrder": 1,
+  "SortOrder": null,
+  "TableNumber": 3,
+  "TimeExtensionMinutes": null,
+  "PhaseId": 380689,
+  "RoundId": 1336010,
+  "TournamentId": 380585,
+  "FormatId": "920ec64f-a02f-4176-a3d0-0c46eef003cb",
+  "Format": "Premodern",
+  "Guid": "0113783b-d9b5-40c2-a597-b38e0001cebe",
+  "TableLocation": null,
+  "TableSection": null,
+  "ByeReasonDescription": null,
+  "LossReasonDescription": null,
+  "ResultString": "Tencteri won 2-0-0",
+  "RoundDescription": "Round 1",
+  "TableNumberDescription": "3",
+  "TypeDescription": "Best of Three",
+  "FormatDescription": "Premodern",
+  "AcknowledgedDecklists": false
+}

@@ -1,0 +1,96 @@
+{
+  "Competitors": [
+    {
+      "Team": {
+        "Players": [
+          {
+            "TeamId": 3261792,
+            "ID": 3247128,
+            "ScreenName": "N/A",
+            "ProfileImageVersion": 0,
+            "DisplayName": "sylvanisator",
+            "DisplayNameLastFirst": "sylvanisator",
+            "Username": "sylvanisator",
+            "LanguageDescription": "Auto (English)",
+            "PronounsDescription": null
+          }
+        ],
+        "ID": 3261792,
+        "Name": null,
+        "StatusDescription": "Active",
+        "IsActive": true
+      },
+      "ID": 10876625,
+      "CheckedIn": null,
+      "ResultConfirmed": null,
+      "SortOrder": 0,
+      "GameByes": 0,
+      "GameWins": 1,
+      "TeamId": 3261792,
+      "GameWinsAndGameByes": 1,
+      "Decklists": []
+    },
+    {
+      "Team": {
+        "Players": [
+          {
+            "TeamId": 3261781,
+            "ID": 3247117,
+            "ScreenName": "N/A",
+            "ProfileImageVersion": 0,
+            "DisplayName": "Tencteri",
+            "DisplayNameLastFirst": "Tencteri",
+            "Username": "Tencteri",
+            "LanguageDescription": "Auto (English)",
+            "PronounsDescription": null
+          }
+        ],
+        "ID": 3261781,
+        "Name": null,
+        "StatusDescription": "Active",
+        "IsActive": true
+      },
+      "ID": 10876626,
+      "CheckedIn": null,
+      "ResultConfirmed": "2025-06-20T00:01:50Z",
+      "SortOrder": 1,
+      "GameByes": 0,
+      "GameWins": 1,
+      "TeamId": 3261781,
+      "GameWinsAndGameByes": 1,
+      "Decklists": []
+    }
+  ],
+  "ByeReason": null,
+  "LossReason": null,
+  "RoundName": null,
+  "DateCreated": "2025-06-20T00:01:50Z",
+  "Type": 0,
+  "FeatureMatch": false,
+  "HasResult": true,
+  "TimeExtended": false,
+  "MatchesPublished": true,
+  "RoundNumber": 1,
+  "GameDraws": 1,
+  "PodNumber": null,
+  "PhaseSortOrder": 1,
+  "SortOrder": null,
+  "TableNumber": 3,
+  "TimeExtensionMinutes": null,
+  "PhaseId": 328387,
+  "RoundId": 1151672,
+  "TournamentId": 328861,
+  "FormatId": "920ec64f-a02f-4176-a3d0-0c46eef003cb",
+  "Format": "Premodern",
+  "Guid": "0eeb2b96-6a54-441f-9bad-b301017cbaea",
+  "TableLocation": null,
+  "TableSection": null,
+  "ByeReasonDescription": null,
+  "LossReasonDescription": null,
+  "ResultString": "1-1-1 Draw",
+  "RoundDescription": "Round 1",
+  "TableNumberDescription": "3",
+  "TypeDescription": "Best of Three",
+  "FormatDescription": "Premodern",
+  "AcknowledgedDecklists": false
+}

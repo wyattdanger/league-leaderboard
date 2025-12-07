@@ -1,0 +1,66 @@
+{
+  "Competitors": [
+    {
+      "Team": {
+        "Players": [
+          {
+            "TeamId": 3668249,
+            "ID": 3653585,
+            "ScreenName": "N/A",
+            "ProfileImageVersion": 0,
+            "DisplayName": "zjr",
+            "DisplayNameLastFirst": "zjr",
+            "Username": "zjr",
+            "LanguageDescription": "Auto (English)",
+            "PronounsDescription": null
+          }
+        ],
+        "ID": 3668249,
+        "Name": null,
+        "StatusDescription": "Active",
+        "IsActive": true
+      },
+      "ID": 12379617,
+      "CheckedIn": "2025-11-07T00:06:34Z",
+      "ResultConfirmed": "2025-11-07T00:06:34Z",
+      "SortOrder": 0,
+      "GameByes": 2,
+      "GameWins": null,
+      "TeamId": 3668249,
+      "GameWinsAndGameByes": 2,
+      "Decklists": []
+    }
+  ],
+  "ByeReason": 0,
+  "LossReason": null,
+  "RoundName": null,
+  "DateCreated": "2025-11-07T00:06:34Z",
+  "Type": 0,
+  "FeatureMatch": false,
+  "HasResult": true,
+  "TimeExtended": false,
+  "MatchesPublished": true,
+  "RoundNumber": 1,
+  "GameDraws": 0,
+  "PodNumber": null,
+  "PhaseSortOrder": 1,
+  "SortOrder": null,
+  "TableNumber": null,
+  "TimeExtensionMinutes": null,
+  "PhaseId": 380689,
+  "RoundId": 1336010,
+  "TournamentId": 380585,
+  "FormatId": "920ec64f-a02f-4176-a3d0-0c46eef003cb",
+  "Format": "Premodern",
+  "Guid": "ab1cd55b-96e8-4f43-8d27-b38e0001cec7",
+  "TableLocation": null,
+  "TableSection": null,
+  "ByeReasonDescription": "Algorithm Assigned",
+  "LossReasonDescription": null,
+  "ResultString": "zjr was assigned a bye",
+  "RoundDescription": "Round 1",
+  "TableNumberDescription": null,
+  "TypeDescription": "Best of Three",
+  "FormatDescription": "Premodern",
+  "AcknowledgedDecklists": false
+}

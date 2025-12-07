@@ -1,0 +1,96 @@
+{
+  "Competitors": [
+    {
+      "Team": {
+        "Players": [
+          {
+            "TeamId": 3668239,
+            "ID": 3653575,
+            "ScreenName": "N/A",
+            "ProfileImageVersion": 0,
+            "DisplayName": "drakedrakedrake",
+            "DisplayNameLastFirst": "drakedrakedrake",
+            "Username": "drakedrakedrake",
+            "LanguageDescription": "Auto (English)",
+            "PronounsDescription": null
+          }
+        ],
+        "ID": 3668239,
+        "Name": null,
+        "StatusDescription": "Active",
+        "IsActive": true
+      },
+      "ID": 12379611,
+      "CheckedIn": null,
+      "ResultConfirmed": null,
+      "SortOrder": 0,
+      "GameByes": 0,
+      "GameWins": 2,
+      "TeamId": 3668239,
+      "GameWinsAndGameByes": 2,
+      "Decklists": []
+    },
+    {
+      "Team": {
+        "Players": [
+          {
+            "TeamId": 3668345,
+            "ID": 3653681,
+            "ScreenName": "N/A",
+            "ProfileImageVersion": 3,
+            "DisplayName": "Roland Chang",
+            "DisplayNameLastFirst": "Chang, Roland",
+            "Username": "RolandMTG",
+            "LanguageDescription": "English (English)",
+            "PronounsDescription": "He/Him"
+          }
+        ],
+        "ID": 3668345,
+        "Name": null,
+        "StatusDescription": "Active",
+        "IsActive": true
+      },
+      "ID": 12379612,
+      "CheckedIn": null,
+      "ResultConfirmed": null,
+      "SortOrder": 1,
+      "GameByes": 0,
+      "GameWins": 1,
+      "TeamId": 3668345,
+      "GameWinsAndGameByes": 1,
+      "Decklists": []
+    }
+  ],
+  "ByeReason": null,
+  "LossReason": null,
+  "RoundName": null,
+  "DateCreated": "2025-11-07T00:57:17Z",
+  "Type": 0,
+  "FeatureMatch": false,
+  "HasResult": true,
+  "TimeExtended": false,
+  "MatchesPublished": true,
+  "RoundNumber": 1,
+  "GameDraws": null,
+  "PodNumber": null,
+  "PhaseSortOrder": 1,
+  "SortOrder": null,
+  "TableNumber": 1,
+  "TimeExtensionMinutes": null,
+  "PhaseId": 380689,
+  "RoundId": 1336010,
+  "TournamentId": 380585,
+  "FormatId": "920ec64f-a02f-4176-a3d0-0c46eef003cb",
+  "Format": "Premodern",
+  "Guid": "d4742d28-3e24-44b1-8c3c-b38e0001ceb0",
+  "TableLocation": null,
+  "TableSection": null,
+  "ByeReasonDescription": null,
+  "LossReasonDescription": null,
+  "ResultString": "drakedrakedrake won 2-1-0",
+  "RoundDescription": "Round 1",
+  "TableNumberDescription": "1",
+  "TypeDescription": "Best of Three",
+  "FormatDescription": "Premodern",
+  "AcknowledgedDecklists": false
+}

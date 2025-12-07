@@ -9,6 +9,7 @@ import { loadDeckData, calculateMetagameBreakdown, hasCompleteDeckData } from '.
 import { loadLeaguesConfig } from '../../utils/data';
 import { Player } from '../../models/Player';
 import { Standing } from '../../models/Standing';
+import { Match } from '../../models/Match';
 import type { League } from '../../types';
 import * as fs from 'fs';
 import * as path from 'path';
@@ -65,8 +66,10 @@ const rounds = [];
 for (let i = 1; i <= metadata.roundCount; i++) {
   const matchesPath = path.join(tournamentDir, `Round_${i}_Matches.json`);
   if (fs.existsSync(matchesPath)) {
-    const matches = JSON.parse(fs.readFileSync(matchesPath, 'utf-8'));
-    rounds.push({ roundNumber: i, matches });
+    const rawMatches = JSON.parse(fs.readFileSync(matchesPath, 'utf-8'));
+    const matches = rawMatches.map((m: any) => Match.fromMeleeMatch(m));
+    const sortedMatches = Match.sortMatches(matches);
+    rounds.push({ roundNumber: i, matches: sortedMatches });
   }
 }
 
@@ -179,73 +182,46 @@ const celebrationCardEmoji = hasTrophies ? '👑' : '⭐';
       {metagameBreakdown && <MetagameBreakdown breakdown={metagameBreakdown} />}
 
       {rounds.map((round) => {
-        // Sort matches: regular matches first, byes last
-        const sortedMatches = [...round.matches].sort((a: any, b: any) => {
-          const aIsBye = a.Competitors.length === 1 || a.Competitors[0]?.ByeReason;
-          const bIsBye = b.Competitors.length === 1 || b.Competitors[0]?.ByeReason;
-          if (aIsBye && !bIsBye) return 1;
-          if (!aIsBye && bIsBye) return -1;
-          return 0;
-        });
-
         return (
           <div class="round-card">
             <div class="round-header">Round {round.roundNumber}</div>
             <div class="round-matches">
-              {sortedMatches.map((match: any) => {
-                const isBye = match.Competitors.length === 1 || match.Competitors[0]?.ByeReason;
-                const competitor1 = match.Competitors[0];
-                const competitor2 = isBye ? null : match.Competitors[1];
-
-                const player1Data = Player.fromCompetitor(competitor1);
-                const player2Data = competitor2 ? Player.fromCompetitor(competitor2) : null;
-
-                const username1 = player1Data?.username || '';
-                const username2 = player2Data?.username || '';
-                const deck1 = showDeckData && deckData ? deckData[username1] : null;
-                const deck2 = showDeckData && deckData && username2 ? deckData[username2] : null;
-
-                // Determine winner and game counts
-                const gameWins1 = competitor1?.GameWins || 0;
-                const gameWins2 = !isBye && competitor2 ? (competitor2.GameWins || 0) : 0;
-
-                // Put winner on left (or player 1 if draw/bye)
-                const leftWins = gameWins1 >= gameWins2;
-                const leftPlayerData = leftWins ? player1Data : player2Data;
-                const rightPlayerData = leftWins ? player2Data : player1Data;
-                const leftDeck = leftWins ? deck1 : deck2;
-                const rightDeck = leftWins ? deck2 : deck1;
-                const leftGameWins = leftWins ? gameWins1 : gameWins2;
-                const rightGameWins = leftWins ? gameWins2 : gameWins1;
+              {round.matches.map((match: Match) => {
+                const left = match.leftPlayer;
+                const right = match.rightPlayer;
+                const leftDeck = showDeckData && deckData && left.player ? deckData[left.player.username] : null;
+                const rightDeck = showDeckData && deckData && right.player ? deckData[right.player.username] : null;
 
                 return (
                   <div class="match-card">
                     <div class="match-content">
                       <div class="match-side left">
-                        <a href={`/player/${leftPlayerData.username.toLowerCase()}`} class="match-player-name">
-                          {leftPlayerData.displayName}
-                        </a>
+                        {left.player && (
+                          <a href={left.player.profileUrl} class="match-player-name">
+                            {left.player.displayName}
+                          </a>
+                        )}
                         {showDeckData && leftDeck && (
                           <div class="match-deck-name">{leftDeck}</div>
                         )}
                       </div>
 
                       <div class="match-vs">
-                        <div class="match-game-wins left-wins">{leftGameWins}</div>
+                        <div class="match-game-wins left-wins">{left.games}</div>
                         <div class="swords">⚔️</div>
-                        <div class="match-game-wins right-wins">{isBye ? '—' : rightGameWins}</div>
+                        <div class="match-game-wins right-wins">{match.isBye ? '—' : right.games}</div>
                       </div>
 
                       <div class="match-side right">
-                        {rightPlayerData ? (
-                          <a href={`/player/${rightPlayerData.username.toLowerCase()}`} class="match-player-name">
-                            {rightPlayerData.displayName}
+                        {right.player ? (
+                          <a href={right.player.profileUrl} class="match-player-name">
+                            {right.player.displayName}
                           </a>
                         ) : (
                           <span class="match-bye-text">Bye</span>
                         )}
-                        {showDeckData && (
-                          <div class="match-deck-name">{rightDeck || (isBye ? '—' : '')}</div>
+                        {showDeckData && rightDeck && (
+                          <div class="match-deck-name">{rightDeck}</div>
                         )}
                       </div>
                     </div>
