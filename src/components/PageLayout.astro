@@ -5,19 +5,20 @@ import Analytics from '@vercel/analytics/astro';
 interface Props {
   title?: string;
   description?: string;
+  ogTitle?: string;
+  ogDescription?: string;
   ogImage?: string;
-  url?: string;
+  ogUrl?: string;
 }
 
 const {
   title = 'NYC Premodern League Standings',
   description = 'NYC Premodern Magic: The Gathering league standings and statistics',
+  ogTitle,
+  ogDescription,
   ogImage,
-  url,
+  ogUrl,
 } = Astro.props;
-
-// Get the current URL for og:url
-const canonicalUrl = url || Astro.url.pathname;
 ---
 
 <!doctype html>
@@ -34,19 +35,25 @@ const canonicalUrl = url || Astro.url.pathname;
     <title>{title}</title>
     <meta name="description" content={description} />
 
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content={canonicalUrl} />
-    <meta property="og:title" content={title} />
-    <meta property="og:description" content={description} />
-    {ogImage && <meta property="og:image" content={ogImage} />}
+    {
+      ogTitle && ogDescription && ogUrl && (
+        <>
+          <!-- Open Graph / Facebook -->
+          <meta property="og:type" content="website" />
+          <meta property="og:url" content={ogUrl} />
+          <meta property="og:title" content={ogTitle} />
+          <meta property="og:description" content={ogDescription} />
+          {ogImage && <meta property="og:image" content={ogImage} />}
 
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content={canonicalUrl} />
-    <meta property="twitter:title" content={title} />
-    <meta property="twitter:description" content={description} />
-    {ogImage && <meta property="twitter:image" content={ogImage} />}
+          <!-- Twitter -->
+          <meta property="twitter:card" content={ogImage ? 'summary_large_image' : 'summary'} />
+          <meta property="twitter:url" content={ogUrl} />
+          <meta property="twitter:title" content={ogTitle} />
+          <meta property="twitter:description" content={ogDescription} />
+          {ogImage && <meta property="twitter:image" content={ogImage} />}
+        </>
+      )
+    }
     <style is:global>
       :root {
         --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);

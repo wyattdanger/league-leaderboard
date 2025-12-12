@@ -108,7 +108,13 @@ if (fs.existsSync(metadataFile)) {
 }
 ---
 
-<PageLayout title={pageTitle} description={pageDescription}>
+<PageLayout
+  title={pageTitle}
+  description={pageDescription}
+  ogTitle={pageTitle}
+  ogDescription={pageDescription}
+  ogUrl={`/event/${tournamentId}/`}
+>
   <LeagueHeader />
   <LeagueNav currentLeague={currentLeague} allLeagues={allLeagues} isOverall={false} />
 
