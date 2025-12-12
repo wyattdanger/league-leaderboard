@@ -2,25 +2,25 @@
   "username": "RichBucey",
   "displayName": "RichBucey",
   "overallStats": {
-    "totalTournaments": 19,
-    "totalPoints": 96,
-    "totalMatches": 57,
-    "matchRecord": "32-25-0",
-    "matchWinPercentage": 0.5614035087719298,
-    "gameRecord": "74-62-0",
-    "gameWinPercentage": 0.5441176470588235,
+    "totalTournaments": 20,
+    "totalPoints": 99,
+    "totalMatches": 60,
+    "matchRecord": "33-27-0",
+    "matchWinPercentage": 0.55,
+    "gameRecord": "78-66-0",
+    "gameWinPercentage": 0.5416666666666666,
     "trophies": 3,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q4 2025",
-      "events": 6,
-      "points": 39,
-      "matchRecord": "13-5-0",
-      "matchWinPercentage": 0.7222222222222222,
-      "gameRecord": "27-13-0",
-      "gameWinPercentage": 0.675
+      "events": 7,
+      "points": 42,
+      "matchRecord": "14-7-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameRecord": "31-17-0",
+      "gameWinPercentage": 0.6458333333333334
     },
     {
       "leagueName": "Q3 2025",
@@ -52,6 +52,26 @@
   ],
   "headToHead": [
     {
+      "opponentUsername": "Tencteri",
+      "opponentDisplayName": "Tencteri",
+      "matchesPlayed": 5,
+      "matchWins": 4,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.8,
+      "gameWins": 9,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.8181818181818182,
+      "lastFiveResults": [
+        "L",
+        "W",
+        "W",
+        "W",
+        "W"
+      ]
+    },
+    {
       "opponentUsername": "BryanGulotta",
       "opponentDisplayName": "BryanGulotta",
       "matchesPlayed": 5,
@@ -72,22 +92,22 @@
       ]
     },
     {
-      "opponentUsername": "Tencteri",
-      "opponentDisplayName": "Tencteri",
+      "opponentUsername": "JUDDERMANG",
+      "opponentDisplayName": "Chris Cruz",
       "matchesPlayed": 4,
-      "matchWins": 4,
-      "matchLosses": 0,
+      "matchWins": 3,
+      "matchLosses": 1,
       "matchDraws": 0,
-      "matchWinPercentage": 1,
-      "gameWins": 8,
-      "gameLosses": 0,
+      "matchWinPercentage": 0.75,
+      "gameWins": 6,
+      "gameLosses": 2,
       "gameDraws": 0,
-      "gameWinPercentage": 1,
+      "gameWinPercentage": 0.75,
       "lastFiveResults": [
         "W",
         "W",
         "W",
-        "W"
+        "L"
       ]
     },
     {
@@ -139,24 +159,6 @@
       "gameLosses": 4,
       "gameDraws": 0,
       "gameWinPercentage": 0.5,
-      "lastFiveResults": [
-        "W",
-        "W",
-        "L"
-      ]
-    },
-    {
-      "opponentUsername": "JUDDERMANG",
-      "opponentDisplayName": "Chris Cruz",
-      "matchesPlayed": 3,
-      "matchWins": 2,
-      "matchLosses": 1,
-      "matchDraws": 0,
-      "matchWinPercentage": 0.6666666666666666,
-      "gameWins": 4,
-      "gameLosses": 2,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.6666666666666666,
       "lastFiveResults": [
         "W",
         "W",
@@ -262,6 +264,22 @@
       "gameWinPercentage": 0.3333333333333333,
       "lastFiveResults": [
         "L",
+        "L"
+      ]
+    },
+    {
+      "opponentUsername": "angu2111",
+      "opponentDisplayName": "Andrea Tullis",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "lastFiveResults": [
         "L"
       ]
     },
@@ -571,6 +589,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "390154",
+      "dateDisplay": "December 11, 2025",
+      "playerCount": 16,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 13,
+      "points": 3,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWinPercentage": 0.5,
+      "deck": "Moneyball Black"
+    },
     {
       "tournamentId": "388334",
       "dateDisplay": "December 4, 2025",

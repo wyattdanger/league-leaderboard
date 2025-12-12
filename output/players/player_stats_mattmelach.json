@@ -2,25 +2,25 @@
   "username": "Mattmelach",
   "displayName": "Matthew Melachrinos",
   "overallStats": {
-    "totalTournaments": 17,
-    "totalPoints": 48,
-    "totalMatches": 48,
-    "matchRecord": "14-31-3",
-    "matchWinPercentage": 0.3229166666666667,
-    "gameRecord": "43-69-1",
-    "gameWinPercentage": 0.3805309734513274,
+    "totalTournaments": 18,
+    "totalPoints": 52,
+    "totalMatches": 51,
+    "matchRecord": "15-32-4",
+    "matchWinPercentage": 0.3333333333333333,
+    "gameRecord": "47-72-1",
+    "gameWinPercentage": 0.39166666666666666,
     "trophies": 0,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q4 2025",
-      "events": 6,
-      "points": 19,
-      "matchRecord": "5-12-1",
-      "matchWinPercentage": 0.3055555555555556,
-      "gameRecord": "14-25-1",
-      "gameWinPercentage": 0.3625
+      "events": 7,
+      "points": 23,
+      "matchRecord": "6-13-2",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameRecord": "18-28-1",
+      "gameWinPercentage": 0.39361702127659576
     },
     {
       "leagueName": "Q3 2025",
@@ -54,20 +54,60 @@
     {
       "opponentUsername": "AndrewLevine",
       "opponentDisplayName": "AndrewLevine",
-      "matchesPlayed": 4,
+      "matchesPlayed": 5,
       "matchWins": 1,
-      "matchLosses": 3,
+      "matchLosses": 4,
       "matchDraws": 0,
-      "matchWinPercentage": 0.25,
-      "gameWins": 3,
-      "gameLosses": 7,
+      "matchWinPercentage": 0.2,
+      "gameWins": 4,
+      "gameLosses": 9,
       "gameDraws": 0,
-      "gameWinPercentage": 0.3,
+      "gameWinPercentage": 0.3076923076923077,
       "lastFiveResults": [
+        "L",
         "L",
         "L",
         "W",
         "L"
+      ]
+    },
+    {
+      "opponentUsername": "JUDDERMANG",
+      "opponentDisplayName": "Chris Cruz",
+      "matchesPlayed": 5,
+      "matchWins": 4,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.8,
+      "gameWins": 9,
+      "gameLosses": 3,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.75,
+      "lastFiveResults": [
+        "W",
+        "L",
+        "W",
+        "W",
+        "W"
+      ]
+    },
+    {
+      "opponentUsername": "sjpenzer",
+      "opponentDisplayName": "sjpenzer",
+      "matchesPlayed": 4,
+      "matchWins": 0,
+      "matchLosses": 2,
+      "matchDraws": 2,
+      "matchWinPercentage": 0,
+      "gameWins": 3,
+      "gameLosses": 6,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "lastFiveResults": [
+        "D",
+        "L",
+        "L",
+        "D"
       ]
     },
     {
@@ -87,43 +127,6 @@
         "L",
         "L",
         "L"
-      ]
-    },
-    {
-      "opponentUsername": "JUDDERMANG",
-      "opponentDisplayName": "Chris",
-      "matchesPlayed": 4,
-      "matchWins": 3,
-      "matchLosses": 1,
-      "matchDraws": 0,
-      "matchWinPercentage": 0.75,
-      "gameWins": 7,
-      "gameLosses": 3,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.7,
-      "lastFiveResults": [
-        "L",
-        "W",
-        "W",
-        "W"
-      ]
-    },
-    {
-      "opponentUsername": "sjpenzer",
-      "opponentDisplayName": "Simon",
-      "matchesPlayed": 3,
-      "matchWins": 0,
-      "matchLosses": 2,
-      "matchDraws": 1,
-      "matchWinPercentage": 0,
-      "gameWins": 2,
-      "gameLosses": 5,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.2857142857142857,
-      "lastFiveResults": [
-        "L",
-        "L",
-        "D"
       ]
     },
     {
@@ -584,6 +587,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "390154",
+      "dateDisplay": "December 11, 2025",
+      "playerCount": 16,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 8,
+      "points": 4,
+      "matchRecord": "1-1-1",
+      "matchWinPercentage": 0.5,
+      "gameWinPercentage": 0.5714286,
+      "deck": "Oath Ponza"
+    },
     {
       "tournamentId": "384681",
       "dateDisplay": "November 20, 2025",

@@ -2,25 +2,25 @@
   "username": "BryanGulotta",
   "displayName": "BryanGulotta",
   "overallStats": {
-    "totalTournaments": 19,
-    "totalPoints": 89,
-    "totalMatches": 56,
-    "matchRecord": "28-23-5",
-    "matchWinPercentage": 0.5446428571428571,
-    "gameRecord": "71-64-2",
-    "gameWinPercentage": 0.5182481751824818,
+    "totalTournaments": 20,
+    "totalPoints": 95,
+    "totalMatches": 59,
+    "matchRecord": "30-24-5",
+    "matchWinPercentage": 0.5508474576271186,
+    "gameRecord": "75-67-2",
+    "gameWinPercentage": 0.5208333333333334,
     "trophies": 0,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q4 2025",
-      "events": 6,
-      "points": 32,
-      "matchRecord": "10-6-2",
-      "matchWinPercentage": 0.6111111111111112,
-      "gameRecord": "24-18-2",
-      "gameWinPercentage": 0.5681818181818182
+      "events": 7,
+      "points": 38,
+      "matchRecord": "12-7-2",
+      "matchWinPercentage": 0.6190476190476191,
+      "gameRecord": "28-21-2",
+      "gameWinPercentage": 0.5686274509803921
     },
     {
       "leagueName": "Q3 2025",
@@ -52,6 +52,26 @@
   ],
   "headToHead": [
     {
+      "opponentUsername": "Matt_W",
+      "opponentDisplayName": "Matt_W",
+      "matchesPlayed": 5,
+      "matchWins": 4,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.8,
+      "gameWins": 9,
+      "gameLosses": 3,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.75,
+      "lastFiveResults": [
+        "W",
+        "W",
+        "W",
+        "W",
+        "L"
+      ]
+    },
+    {
       "opponentUsername": "RichBucey",
       "opponentDisplayName": "RichBucey",
       "matchesPlayed": 5,
@@ -68,25 +88,6 @@
         "W",
         "W",
         "L",
-        "L"
-      ]
-    },
-    {
-      "opponentUsername": "Matt_W",
-      "opponentDisplayName": "Matt_W",
-      "matchesPlayed": 4,
-      "matchWins": 3,
-      "matchLosses": 1,
-      "matchDraws": 0,
-      "matchWinPercentage": 0.75,
-      "gameWins": 7,
-      "gameLosses": 3,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.7,
-      "lastFiveResults": [
-        "W",
-        "W",
-        "W",
         "L"
       ]
     },
@@ -239,6 +240,23 @@
       ]
     },
     {
+      "opponentUsername": "zoidberg1003",
+      "opponentDisplayName": "Zoahr Bhagat",
+      "matchesPlayed": 2,
+      "matchWins": 1,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.5,
+      "gameWins": 2,
+      "gameLosses": 3,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.4,
+      "lastFiveResults": [
+        "L",
+        "W"
+      ]
+    },
+    {
       "opponentUsername": "sjpenzer",
       "opponentDisplayName": "sjpenzer",
       "matchesPlayed": 2,
@@ -253,6 +271,22 @@
       "lastFiveResults": [
         "L",
         "L"
+      ]
+    },
+    {
+      "opponentUsername": "peterk235",
+      "opponentDisplayName": "peterk235",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6666666666666666,
+      "lastFiveResults": [
+        "W"
       ]
     },
     {
@@ -283,22 +317,6 @@
       "gameLosses": 0,
       "gameDraws": 0,
       "gameWinPercentage": 1,
-      "lastFiveResults": [
-        "W"
-      ]
-    },
-    {
-      "opponentUsername": "zoidberg1003",
-      "opponentDisplayName": "Zoahr Bhagat",
-      "matchesPlayed": 1,
-      "matchWins": 1,
-      "matchLosses": 0,
-      "matchDraws": 0,
-      "matchWinPercentage": 1,
-      "gameWins": 2,
-      "gameLosses": 1,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.6666666666666666,
       "lastFiveResults": [
         "W"
       ]
@@ -498,6 +516,19 @@
   ],
   "tournamentPerformances": [
     {
+      "tournamentId": "390154",
+      "dateDisplay": "December 11, 2025",
+      "playerCount": 16,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 4,
+      "points": 6,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWinPercentage": 0.5714286,
+      "deck": "Psychatog"
+    },
+    {
       "tournamentId": "384681",
       "dateDisplay": "November 20, 2025",
       "playerCount": 15,
@@ -547,7 +578,7 @@
       "matchRecord": "2-0-1",
       "matchWinPercentage": 0.8333333333333334,
       "gameWinPercentage": 0.76190476,
-      "deck": "UB Tide"
+      "deck": "Tide"
     },
     {
       "tournamentId": "373539",

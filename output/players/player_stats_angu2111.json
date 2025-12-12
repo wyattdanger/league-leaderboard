@@ -2,28 +2,77 @@
   "username": "angu2111",
   "displayName": "Andrea Tullis",
   "overallStats": {
-    "totalTournaments": 2,
-    "totalPoints": 6,
-    "totalMatches": 6,
-    "matchRecord": "2-4-0",
-    "matchWinPercentage": 0.3333333333333333,
-    "gameRecord": "7-9-0",
-    "gameWinPercentage": 0.4375,
+    "totalTournaments": 3,
+    "totalPoints": 12,
+    "totalMatches": 9,
+    "matchRecord": "4-5-0",
+    "matchWinPercentage": 0.4444444444444444,
+    "gameRecord": "11-13-0",
+    "gameWinPercentage": 0.4583333333333333,
     "trophies": 0,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q4 2025",
-      "events": 2,
-      "points": 6,
-      "matchRecord": "2-4-0",
-      "matchWinPercentage": 0.3333333333333333,
-      "gameRecord": "7-9-0",
-      "gameWinPercentage": 0.4375
+      "events": 3,
+      "points": 12,
+      "matchRecord": "4-5-0",
+      "matchWinPercentage": 0.4444444444444444,
+      "gameRecord": "11-13-0",
+      "gameWinPercentage": 0.4583333333333333
     }
   ],
   "headToHead": [
+    {
+      "opponentUsername": "zoidberg1003",
+      "opponentDisplayName": "Zoahr Bhagat",
+      "matchesPlayed": 2,
+      "matchWins": 0,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "lastFiveResults": [
+        "L",
+        "L"
+      ]
+    },
+    {
+      "opponentUsername": "avoellmer",
+      "opponentDisplayName": "avoellmer",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6666666666666666,
+      "lastFiveResults": [
+        "W"
+      ]
+    },
+    {
+      "opponentUsername": "RichBucey",
+      "opponentDisplayName": "RichBucey",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6666666666666666,
+      "lastFiveResults": [
+        "W"
+      ]
+    },
     {
       "opponentUsername": "Tencteri",
       "opponentDisplayName": "Tencteri",
@@ -73,22 +122,6 @@
       ]
     },
     {
-      "opponentUsername": "zoidberg1003",
-      "opponentDisplayName": "Zoahr Bhagat",
-      "matchesPlayed": 1,
-      "matchWins": 0,
-      "matchLosses": 1,
-      "matchDraws": 0,
-      "matchWinPercentage": 0,
-      "gameWins": 0,
-      "gameLosses": 2,
-      "gameDraws": 0,
-      "gameWinPercentage": 0,
-      "lastFiveResults": [
-        "L"
-      ]
-    },
-    {
       "opponentUsername": "Matt_W",
       "opponentDisplayName": "Matt_W",
       "matchesPlayed": 1,
@@ -122,6 +155,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "390154",
+      "dateDisplay": "December 11, 2025",
+      "playerCount": 16,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 5,
+      "points": 6,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWinPercentage": 0.5,
+      "deck": "Madness"
+    },
     {
       "tournamentId": "382756",
       "dateDisplay": "November 13, 2025",

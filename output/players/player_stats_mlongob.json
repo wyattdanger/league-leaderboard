@@ -2,17 +2,26 @@
   "username": "mlongob",
   "displayName": "Mario Longobardi",
   "overallStats": {
-    "totalTournaments": 2,
-    "totalPoints": 2,
-    "totalMatches": 6,
-    "matchRecord": "0-4-2",
-    "matchWinPercentage": 0.16666666666666666,
-    "gameRecord": "2-10-1",
-    "gameWinPercentage": 0.15384615384615385,
+    "totalTournaments": 3,
+    "totalPoints": 5,
+    "totalMatches": 9,
+    "matchRecord": "1-6-2",
+    "matchWinPercentage": 0.2222222222222222,
+    "gameRecord": "6-15-1",
+    "gameWinPercentage": 0.2727272727272727,
     "trophies": 0,
     "belts": 0
   },
   "leagueStats": [
+    {
+      "leagueName": "Q4 2025",
+      "events": 1,
+      "points": 3,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameRecord": "4-5-0",
+      "gameWinPercentage": 0.4444444444444444
+    },
     {
       "leagueName": "Q3 2025",
       "events": 1,
@@ -33,6 +42,54 @@
     }
   ],
   "headToHead": [
+    {
+      "opponentUsername": "swbmtg",
+      "opponentDisplayName": "swb",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "lastFiveResults": [
+        "L"
+      ]
+    },
+    {
+      "opponentUsername": "Tencteri",
+      "opponentDisplayName": "Tencteri",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "lastFiveResults": [
+        "L"
+      ]
+    },
+    {
+      "opponentUsername": "PetS22",
+      "opponentDisplayName": "PetS22",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6666666666666666,
+      "lastFiveResults": [
+        "W"
+      ]
+    },
     {
       "opponentUsername": "JUDDERMANG",
       "opponentDisplayName": "Chris Cruz",
@@ -131,6 +188,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "390154",
+      "dateDisplay": "December 11, 2025",
+      "playerCount": 16,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 10,
+      "points": 3,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWinPercentage": 0.4444444,
+      "deck": "Dreadnought"
+    },
     {
       "tournamentId": "350003",
       "dateDisplay": "August 7, 2025",

@@ -2,25 +2,25 @@
   "username": "zoidberg1003",
   "displayName": "Zoahr Bhagat",
   "overallStats": {
-    "totalTournaments": 5,
-    "totalPoints": 20,
-    "totalMatches": 15,
-    "matchRecord": "6-7-2",
-    "matchWinPercentage": 0.4666666666666667,
-    "gameRecord": "18-19-1",
-    "gameWinPercentage": 0.47368421052631576,
-    "trophies": 0,
+    "totalTournaments": 6,
+    "totalPoints": 29,
+    "totalMatches": 18,
+    "matchRecord": "9-7-2",
+    "matchWinPercentage": 0.5555555555555556,
+    "gameRecord": "24-19-1",
+    "gameWinPercentage": 0.5454545454545454,
+    "trophies": 1,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q4 2025",
-      "events": 2,
-      "points": 13,
-      "matchRecord": "4-1-1",
-      "matchWinPercentage": 0.75,
-      "gameRecord": "10-5-1",
-      "gameWinPercentage": 0.65625
+      "events": 3,
+      "points": 22,
+      "matchRecord": "7-1-1",
+      "matchWinPercentage": 0.8333333333333334,
+      "gameRecord": "16-5-1",
+      "gameWinPercentage": 0.75
     },
     {
       "leagueName": "Q3 2025",
@@ -33,6 +33,40 @@
     }
   ],
   "headToHead": [
+    {
+      "opponentUsername": "BryanGulotta",
+      "opponentDisplayName": "BryanGulotta",
+      "matchesPlayed": 2,
+      "matchWins": 1,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.5,
+      "gameWins": 3,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6,
+      "lastFiveResults": [
+        "W",
+        "L"
+      ]
+    },
+    {
+      "opponentUsername": "angu2111",
+      "opponentDisplayName": "Andrea Tullis",
+      "matchesPlayed": 2,
+      "matchWins": 2,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 4,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "lastFiveResults": [
+        "W",
+        "W"
+      ]
+    },
     {
       "opponentUsername": "FriendlyFerret",
       "opponentDisplayName": "Bill Ellis!!",
@@ -85,6 +119,22 @@
       ]
     },
     {
+      "opponentUsername": "PetS22",
+      "opponentDisplayName": "PetS22",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "lastFiveResults": [
+        "W"
+      ]
+    },
+    {
       "opponentUsername": "Taylorhol",
       "opponentDisplayName": "Taylorhol",
       "matchesPlayed": 1,
@@ -117,22 +167,6 @@
       ]
     },
     {
-      "opponentUsername": "angu2111",
-      "opponentDisplayName": "Andrea Tullis",
-      "matchesPlayed": 1,
-      "matchWins": 1,
-      "matchLosses": 0,
-      "matchDraws": 0,
-      "matchWinPercentage": 1,
-      "gameWins": 2,
-      "gameLosses": 0,
-      "gameDraws": 0,
-      "gameWinPercentage": 1,
-      "lastFiveResults": [
-        "W"
-      ]
-    },
-    {
       "opponentUsername": "Apa",
       "opponentDisplayName": "Apa",
       "matchesPlayed": 1,
@@ -146,22 +180,6 @@
       "gameWinPercentage": 0.6666666666666666,
       "lastFiveResults": [
         "W"
-      ]
-    },
-    {
-      "opponentUsername": "BryanGulotta",
-      "opponentDisplayName": "BryanGulotta",
-      "matchesPlayed": 1,
-      "matchWins": 0,
-      "matchLosses": 1,
-      "matchDraws": 0,
-      "matchWinPercentage": 0,
-      "gameWins": 1,
-      "gameLosses": 2,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.3333333333333333,
-      "lastFiveResults": [
-        "L"
       ]
     },
     {
@@ -230,6 +248,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "390154",
+      "dateDisplay": "December 11, 2025",
+      "playerCount": 16,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 1,
+      "points": 9,
+      "matchRecord": "3-0-0",
+      "matchWinPercentage": 1,
+      "gameWinPercentage": 1,
+      "deck": "RG Aggro"
+    },
     {
       "tournamentId": "388334",
       "dateDisplay": "December 4, 2025",

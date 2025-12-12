@@ -2,25 +2,25 @@
   "username": "Tencteri",
   "displayName": "Tencteri",
   "overallStats": {
-    "totalTournaments": 13,
-    "totalPoints": 58,
-    "totalMatches": 38,
-    "matchRecord": "19-18-1",
-    "matchWinPercentage": 0.5131578947368421,
-    "gameRecord": "44-46-1",
-    "gameWinPercentage": 0.4835164835164835,
+    "totalTournaments": 14,
+    "totalPoints": 64,
+    "totalMatches": 41,
+    "matchRecord": "21-19-1",
+    "matchWinPercentage": 0.524390243902439,
+    "gameRecord": "49-50-1",
+    "gameWinPercentage": 0.49,
     "trophies": 0,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q4 2025",
-      "events": 5,
-      "points": 24,
-      "matchRecord": "8-6-0",
-      "matchWinPercentage": 0.5714285714285714,
-      "gameRecord": "18-17-0",
-      "gameWinPercentage": 0.5142857142857142
+      "events": 6,
+      "points": 30,
+      "matchRecord": "10-7-0",
+      "matchWinPercentage": 0.5882352941176471,
+      "gameRecord": "23-21-0",
+      "gameWinPercentage": 0.5227272727272727
     },
     {
       "leagueName": "Q3 2025",
@@ -54,16 +54,17 @@
     {
       "opponentUsername": "RichBucey",
       "opponentDisplayName": "RichBucey",
-      "matchesPlayed": 4,
-      "matchWins": 0,
+      "matchesPlayed": 5,
+      "matchWins": 1,
       "matchLosses": 4,
       "matchDraws": 0,
-      "matchWinPercentage": 0,
-      "gameWins": 0,
-      "gameLosses": 8,
+      "matchWinPercentage": 0.2,
+      "gameWins": 2,
+      "gameLosses": 9,
       "gameDraws": 0,
-      "gameWinPercentage": 0,
+      "gameWinPercentage": 0.18181818181818182,
       "lastFiveResults": [
+        "W",
         "L",
         "L",
         "L",
@@ -137,6 +138,38 @@
       "gameWinPercentage": 0.5,
       "lastFiveResults": [
         "L",
+        "W"
+      ]
+    },
+    {
+      "opponentUsername": "AndrewLevine",
+      "opponentDisplayName": "AndrewLevine",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "lastFiveResults": [
+        "L"
+      ]
+    },
+    {
+      "opponentUsername": "mlongob",
+      "opponentDisplayName": "Mario Longobardi",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6666666666666666,
+      "lastFiveResults": [
         "W"
       ]
     },
@@ -494,6 +527,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "390154",
+      "dateDisplay": "December 11, 2025",
+      "playerCount": 16,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 7,
+      "points": 6,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWinPercentage": 0.5555556,
+      "deck": "Deadguy Ale"
+    },
     {
       "tournamentId": "388334",
       "dateDisplay": "December 4, 2025",

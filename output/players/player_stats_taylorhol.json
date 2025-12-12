@@ -2,25 +2,25 @@
   "username": "Taylorhol",
   "displayName": "Taylorhol",
   "overallStats": {
-    "totalTournaments": 9,
-    "totalPoints": 38,
-    "totalMatches": 27,
-    "matchRecord": "12-13-2",
-    "matchWinPercentage": 0.48148148148148145,
-    "gameRecord": "33-33-2",
-    "gameWinPercentage": 0.4852941176470588,
+    "totalTournaments": 10,
+    "totalPoints": 41,
+    "totalMatches": 30,
+    "matchRecord": "13-15-2",
+    "matchWinPercentage": 0.4666666666666667,
+    "gameRecord": "34-37-2",
+    "gameWinPercentage": 0.4657534246575342,
     "trophies": 0,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q4 2025",
-      "events": 7,
-      "points": 29,
-      "matchRecord": "9-10-2",
-      "matchWinPercentage": 0.47619047619047616,
-      "gameRecord": "25-25-2",
-      "gameWinPercentage": 0.5
+      "events": 8,
+      "points": 32,
+      "matchRecord": "10-12-2",
+      "matchWinPercentage": 0.4583333333333333,
+      "gameRecord": "26-29-2",
+      "gameWinPercentage": 0.47368421052631576
     },
     {
       "leagueName": "Q3 2025",
@@ -33,6 +33,24 @@
     }
   ],
   "headToHead": [
+    {
+      "opponentUsername": "sjpenzer",
+      "opponentDisplayName": "sjpenzer",
+      "matchesPlayed": 3,
+      "matchWins": 0,
+      "matchLosses": 3,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 6,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "lastFiveResults": [
+        "L",
+        "L",
+        "L"
+      ]
+    },
     {
       "opponentUsername": "RichBucey",
       "opponentDisplayName": "RichBucey",
@@ -49,6 +67,23 @@
         "L",
         "L",
         "W"
+      ]
+    },
+    {
+      "opponentUsername": "swbmtg",
+      "opponentDisplayName": "swb",
+      "matchesPlayed": 2,
+      "matchWins": 0,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.2,
+      "lastFiveResults": [
+        "L",
+        "L"
       ]
     },
     {
@@ -83,23 +118,6 @@
       "lastFiveResults": [
         "W",
         "W"
-      ]
-    },
-    {
-      "opponentUsername": "sjpenzer",
-      "opponentDisplayName": "sjpenzer",
-      "matchesPlayed": 2,
-      "matchWins": 0,
-      "matchLosses": 2,
-      "matchDraws": 0,
-      "matchWinPercentage": 0,
-      "gameWins": 0,
-      "gameLosses": 4,
-      "gameDraws": 0,
-      "gameWinPercentage": 0,
-      "lastFiveResults": [
-        "L",
-        "L"
       ]
     },
     {
@@ -154,6 +172,22 @@
       ]
     },
     {
+      "opponentUsername": "Matt_W",
+      "opponentDisplayName": "Matt_W",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 1,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "lastFiveResults": [
+        "W"
+      ]
+    },
+    {
       "opponentUsername": "zoidberg1003",
       "opponentDisplayName": "Zoahr Bhagat",
       "matchesPlayed": 1,
@@ -167,22 +201,6 @@
       "gameWinPercentage": 0.3333333333333333,
       "lastFiveResults": [
         "D"
-      ]
-    },
-    {
-      "opponentUsername": "swbmtg",
-      "opponentDisplayName": "swb",
-      "matchesPlayed": 1,
-      "matchWins": 0,
-      "matchLosses": 1,
-      "matchDraws": 0,
-      "matchWinPercentage": 0,
-      "gameWins": 1,
-      "gameLosses": 2,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.3333333333333333,
-      "lastFiveResults": [
-        "L"
       ]
     },
     {
@@ -299,6 +317,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "390154",
+      "dateDisplay": "December 11, 2025",
+      "playerCount": 16,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 12,
+      "points": 3,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWinPercentage": 0.3333333,
+      "deck": "Gush Tithe"
+    },
     {
       "tournamentId": "388334",
       "dateDisplay": "December 4, 2025",

@@ -2,25 +2,25 @@
   "username": "JUDDERMANG",
   "displayName": "Chris Cruz",
   "overallStats": {
-    "totalTournaments": 25,
+    "totalTournaments": 26,
     "totalPoints": 90,
-    "totalMatches": 72,
-    "matchRecord": "26-43-3",
-    "matchWinPercentage": 0.3819444444444444,
-    "gameRecord": "73-97-1",
-    "gameWinPercentage": 0.4269005847953216,
+    "totalMatches": 75,
+    "matchRecord": "26-46-3",
+    "matchWinPercentage": 0.36666666666666664,
+    "gameRecord": "73-103-1",
+    "gameWinPercentage": 0.4124293785310734,
     "trophies": 1,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q4 2025",
-      "events": 4,
+      "events": 5,
       "points": 27,
-      "matchRecord": "6-6-0",
-      "matchWinPercentage": 0.5,
-      "gameRecord": "13-15-0",
-      "gameWinPercentage": 0.4642857142857143
+      "matchRecord": "6-9-0",
+      "matchWinPercentage": 0.4,
+      "gameRecord": "13-21-0",
+      "gameWinPercentage": 0.38235294117647056
     },
     {
       "leagueName": "Q3 2025",
@@ -60,6 +60,26 @@
     }
   ],
   "headToHead": [
+    {
+      "opponentUsername": "Mattmelach",
+      "opponentDisplayName": "Matthew Melachrinos",
+      "matchesPlayed": 5,
+      "matchWins": 1,
+      "matchLosses": 4,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.2,
+      "gameWins": 3,
+      "gameLosses": 9,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.25,
+      "lastFiveResults": [
+        "L",
+        "W",
+        "L",
+        "L",
+        "L"
+      ]
+    },
     {
       "opponentUsername": "swbmtg",
       "opponentDisplayName": "swb",
@@ -141,6 +161,25 @@
       ]
     },
     {
+      "opponentUsername": "RichBucey",
+      "opponentDisplayName": "RichBucey",
+      "matchesPlayed": 4,
+      "matchWins": 1,
+      "matchLosses": 3,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.25,
+      "gameWins": 2,
+      "gameLosses": 6,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.25,
+      "lastFiveResults": [
+        "L",
+        "L",
+        "L",
+        "W"
+      ]
+    },
+    {
       "opponentUsername": "BryanGulotta",
       "opponentDisplayName": "BryanGulotta",
       "matchesPlayed": 4,
@@ -155,25 +194,6 @@
       "lastFiveResults": [
         "L",
         "D",
-        "L",
-        "L"
-      ]
-    },
-    {
-      "opponentUsername": "Mattmelach",
-      "opponentDisplayName": "Matt M",
-      "matchesPlayed": 4,
-      "matchWins": 1,
-      "matchLosses": 3,
-      "matchDraws": 0,
-      "matchWinPercentage": 0.25,
-      "gameWins": 3,
-      "gameLosses": 7,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.3,
-      "lastFiveResults": [
-        "W",
-        "L",
         "L",
         "L"
       ]
@@ -213,24 +233,6 @@
         "W",
         "D",
         "W",
-        "W"
-      ]
-    },
-    {
-      "opponentUsername": "RichBucey",
-      "opponentDisplayName": "RichBucey",
-      "matchesPlayed": 3,
-      "matchWins": 1,
-      "matchLosses": 2,
-      "matchDraws": 0,
-      "matchWinPercentage": 0.3333333333333333,
-      "gameWins": 2,
-      "gameLosses": 4,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.3333333333333333,
-      "lastFiveResults": [
-        "L",
-        "L",
         "W"
       ]
     },
@@ -317,6 +319,22 @@
       "gameWinPercentage": 0.3333333333333333,
       "lastFiveResults": [
         "L",
+        "L"
+      ]
+    },
+    {
+      "opponentUsername": "peterk235",
+      "opponentDisplayName": "peterk235",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "lastFiveResults": [
         "L"
       ]
     },
@@ -642,6 +660,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "390154",
+      "dateDisplay": "December 11, 2025",
+      "playerCount": 16,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 16,
+      "points": 0,
+      "matchRecord": "0-3-0",
+      "matchWinPercentage": 0,
+      "gameWinPercentage": 0.3333333,
+      "deck": "Dreadnought"
+    },
     {
       "tournamentId": "388334",
       "dateDisplay": "December 4, 2025",
