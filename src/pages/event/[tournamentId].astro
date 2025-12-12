@@ -88,9 +88,27 @@ const celebrationMessage = hasTrophies
     : 'Congratulations to our top finishers!';
 
 const celebrationCardEmoji = hasTrophies ? '👑' : '⭐';
+
+// Load pre-generated Open Graph metadata
+const metadataDir = path.join(process.cwd(), 'output', `tournament_${tournamentId}`);
+const metadataFile = path.join(metadataDir, 'page_metadata.json');
+
+let pageTitle = `NYC Premodern - ${tournament.dateDisplay} Meetup`;
+let pageDescription = `${tournament.playerCount} players gathered`;
+
+// Try to read pre-generated metadata if it exists
+if (fs.existsSync(metadataFile)) {
+  try {
+    const metadata = JSON.parse(fs.readFileSync(metadataFile, 'utf-8'));
+    pageTitle = metadata.title;
+    pageDescription = metadata.description;
+  } catch (error) {
+    console.warn(`Failed to read metadata for tournament ${tournamentId}, using defaults`);
+  }
+}
 ---
 
-<PageLayout>
+<PageLayout title={pageTitle} description={pageDescription}>
   <LeagueHeader />
   <LeagueNav currentLeague={currentLeague} allLeagues={allLeagues} isOverall={false} />
 

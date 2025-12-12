@@ -1,6 +1,23 @@
 ---
 // Common page layout wrapper with HTML structure and global styles
 import Analytics from '@vercel/analytics/astro';
+
+interface Props {
+  title?: string;
+  description?: string;
+  ogImage?: string;
+  url?: string;
+}
+
+const {
+  title = 'NYC Premodern League Standings',
+  description = 'NYC Premodern Magic: The Gathering league standings and statistics',
+  ogImage,
+  url,
+} = Astro.props;
+
+// Get the current URL for og:url
+const canonicalUrl = url || Astro.url.pathname;
 ---
 
 <!doctype html>
@@ -14,7 +31,22 @@ import Analytics from '@vercel/analytics/astro';
     <meta name="viewport" content="width=device-width" />
     <meta name="robots" content="noindex, nofollow" />
     <meta name="generator" content={Astro.generator} />
-    <title>NYC Premodern League Standings</title>
+    <title>{title}</title>
+    <meta name="description" content={description} />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    {ogImage && <meta property="og:image" content={ogImage} />}
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content={canonicalUrl} />
+    <meta property="twitter:title" content={title} />
+    <meta property="twitter:description" content={description} />
+    {ogImage && <meta property="twitter:image" content={ogImage} />}
     <style is:global>
       :root {
         --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
