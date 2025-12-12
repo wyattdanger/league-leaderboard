@@ -12,9 +12,12 @@
     "player-stats": "tsx src/player-stats-generator.ts",
     "sync-league": "tsx src/sync-league.ts",
     "generate-deck-template": "tsx src/generate-deck-template.ts",
+    "generate-metadata": "tsx src/generate-page-metadata.ts",
+    "generate-all-metadata": "tsx src/generate-all-metadata.ts",
+    "process-tournament": "tsx src/process-tournament.ts",
     "decks-to-csv": "tsx src/decks-to-csv.ts",
     "csv-to-decks": "tsx src/csv-to-decks.ts",
-    "rebuild-all": "npm run league && npm run league -- --league \"Q3 2025\" && npm run league -- --league \"Q2 2025\" && npm run league -- --league \"Top 8s\" && npm run player-stats && npm run build",
+    "rebuild-all": "npm run league && npm run league -- --league \"Q3 2025\" && npm run league -- --league \"Q2 2025\" && npm run league -- --league \"Top 8s\" && npm run player-stats && npm run generate-all-metadata && npm run build",
     "test": "jest",
     "format": "prettier --write .",
     "format:check": "prettier --check ."
