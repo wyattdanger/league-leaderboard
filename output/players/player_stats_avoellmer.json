@@ -240,5 +240,129 @@
       "gameWinPercentage": 0.5,
       "deck": "_"
     }
+  ],
+  "eloRating": 1520,
+  "peakEloRating": 1520,
+  "eloHistory": [
+    {
+      "tournamentId": "343959",
+      "tournamentDate": "2025-07-24",
+      "roundNumber": 1,
+      "opponent": "BryanGulotta",
+      "result": "W",
+      "ratingBefore": 1500,
+      "ratingAfter": 1515,
+      "ratingChange": 15
+    },
+    {
+      "tournamentId": "343959",
+      "tournamentDate": "2025-07-24",
+      "roundNumber": 2,
+      "opponent": "peterk235",
+      "result": "L",
+      "ratingBefore": 1515,
+      "ratingAfter": 1499,
+      "ratingChange": -16
+    },
+    {
+      "tournamentId": "343959",
+      "tournamentDate": "2025-07-24",
+      "roundNumber": 3,
+      "opponent": "WillReddy",
+      "result": "L",
+      "ratingBefore": 1499,
+      "ratingAfter": 1483,
+      "ratingChange": -16
+    },
+    {
+      "tournamentId": "347610",
+      "tournamentDate": "2025-07-31",
+      "roundNumber": 1,
+      "opponent": "jeffmarkues",
+      "result": "L",
+      "ratingBefore": 1483,
+      "ratingAfter": 1471,
+      "ratingChange": -12
+    },
+    {
+      "tournamentId": "347610",
+      "tournamentDate": "2025-07-31",
+      "roundNumber": 2,
+      "opponent": "delofstrom",
+      "result": "L",
+      "ratingBefore": 1471,
+      "ratingAfter": 1453,
+      "ratingChange": -18
+    },
+    {
+      "tournamentId": "347610",
+      "tournamentDate": "2025-07-31",
+      "roundNumber": 3,
+      "opponent": "Mattmelach",
+      "result": "L",
+      "ratingBefore": 1453,
+      "ratingAfter": 1434,
+      "ratingChange": -19
+    },
+    {
+      "tournamentId": "350003",
+      "tournamentDate": "2025-08-07",
+      "roundNumber": 1,
+      "opponent": "RichBucey",
+      "result": "W",
+      "ratingBefore": 1434,
+      "ratingAfter": 1453,
+      "ratingChange": 19
+    },
+    {
+      "tournamentId": "350003",
+      "tournamentDate": "2025-08-07",
+      "roundNumber": 2,
+      "opponent": "swbmtg",
+      "result": "W",
+      "ratingBefore": 1453,
+      "ratingAfter": 1476,
+      "ratingChange": 23
+    },
+    {
+      "tournamentId": "350003",
+      "tournamentDate": "2025-08-07",
+      "roundNumber": 3,
+      "opponent": "madmanpoet",
+      "result": "W",
+      "ratingBefore": 1476,
+      "ratingAfter": 1497,
+      "ratingChange": 21
+    },
+    {
+      "tournamentId": "352572",
+      "tournamentDate": "2025-08-14",
+      "roundNumber": 1,
+      "opponent": "RichBucey",
+      "result": "W",
+      "ratingBefore": 1497,
+      "ratingAfter": 1514,
+      "ratingChange": 17
+    },
+    {
+      "tournamentId": "352572",
+      "tournamentDate": "2025-08-14",
+      "roundNumber": 2,
+      "opponent": "jeffmarkues",
+      "result": "L",
+      "ratingBefore": 1514,
+      "ratingAfter": 1502,
+      "ratingChange": -12
+    },
+    {
+      "tournamentId": "352572",
+      "tournamentDate": "2025-08-14",
+      "roundNumber": 3,
+      "opponent": "RolandMTG",
+      "result": "W",
+      "ratingBefore": 1502,
+      "ratingAfter": 1520,
+      "ratingChange": 18
+    }
   ]
 }

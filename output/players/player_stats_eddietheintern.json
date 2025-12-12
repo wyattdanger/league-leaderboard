@@ -87,5 +87,39 @@
       "gameWinPercentage": 0.25,
       "deck": "_"
     }
+  ],
+  "eloRating": 1451,
+  "peakEloRating": 1500,
+  "eloHistory": [
+    {
+      "tournamentId": "357267",
+      "tournamentDate": "2025-08-29",
+      "roundNumber": 1,
+      "opponent": "BryanGulotta",
+      "result": "L",
+      "ratingBefore": 1500,
+      "ratingAfter": 1484,
+      "ratingChange": -16
+    },
+    {
+      "tournamentId": "357267",
+      "tournamentDate": "2025-08-29",
+      "roundNumber": 2,
+      "opponent": "Mdenny55",
+      "result": "L",
+      "ratingBefore": 1484,
+      "ratingAfter": 1468,
+      "ratingChange": -16
+    },
+    {
+      "tournamentId": "357267",
+      "tournamentDate": "2025-08-29",
+      "roundNumber": 3,
+      "opponent": "RichBucey",
+      "result": "L",
+      "ratingBefore": 1468,
+      "ratingAfter": 1451,
+      "ratingChange": -17
+    }
   ]
 }

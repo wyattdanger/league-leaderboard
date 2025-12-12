@@ -87,5 +87,39 @@
       "gameWinPercentage": 0.625,
       "deck": "_"
     }
+  ],
+  "eloRating": 1518,
+  "peakEloRating": 1518,
+  "eloHistory": [
+    {
+      "tournamentId": "365765",
+      "tournamentDate": "2025-09-18",
+      "roundNumber": 1,
+      "opponent": "Matt_W",
+      "result": "L",
+      "ratingBefore": 1500,
+      "ratingAfter": 1482,
+      "ratingChange": -18
+    },
+    {
+      "tournamentId": "365765",
+      "tournamentDate": "2025-09-18",
+      "roundNumber": 2,
+      "opponent": "sylvanisator",
+      "result": "W",
+      "ratingBefore": 1482,
+      "ratingAfter": 1497,
+      "ratingChange": 15
+    },
+    {
+      "tournamentId": "365765",
+      "tournamentDate": "2025-09-18",
+      "roundNumber": 3,
+      "opponent": "jeffmarkues",
+      "result": "W",
+      "ratingBefore": 1497,
+      "ratingAfter": 1518,
+      "ratingChange": 21
+    }
   ]
 }

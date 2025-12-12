@@ -87,5 +87,39 @@
       "gameWinPercentage": 0.33333333,
       "deck": "_"
     }
+  ],
+  "eloRating": 1485,
+  "peakEloRating": 1500,
+  "eloHistory": [
+    {
+      "tournamentId": "365765",
+      "tournamentDate": "2025-09-18",
+      "roundNumber": 1,
+      "opponent": "SF45",
+      "result": "L",
+      "ratingBefore": 1500,
+      "ratingAfter": 1484,
+      "ratingChange": -16
+    },
+    {
+      "tournamentId": "365765",
+      "tournamentDate": "2025-09-18",
+      "roundNumber": 2,
+      "opponent": "ForceofPhil",
+      "result": "W",
+      "ratingBefore": 1484,
+      "ratingAfter": 1497,
+      "ratingChange": 13
+    },
+    {
+      "tournamentId": "365765",
+      "tournamentDate": "2025-09-18",
+      "roundNumber": 3,
+      "opponent": "FriendlyFerret",
+      "result": "L",
+      "ratingBefore": 1497,
+      "ratingAfter": 1485,
+      "ratingChange": -12
+    }
   ]
 }

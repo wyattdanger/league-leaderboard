@@ -218,5 +218,99 @@
       "gameWinPercentage": 0.85714286,
       "deck": "_"
     }
+  ],
+  "eloRating": 1596,
+  "peakEloRating": 1596,
+  "eloHistory": [
+    {
+      "tournamentId": "343959",
+      "tournamentDate": "2025-07-24",
+      "roundNumber": 1,
+      "opponent": "RichBucey",
+      "result": "W",
+      "ratingBefore": 1500,
+      "ratingAfter": 1517,
+      "ratingChange": 17
+    },
+    {
+      "tournamentId": "343959",
+      "tournamentDate": "2025-07-24",
+      "roundNumber": 2,
+      "opponent": "avoellmer",
+      "result": "W",
+      "ratingBefore": 1517,
+      "ratingAfter": 1533,
+      "ratingChange": 16
+    },
+    {
+      "tournamentId": "343959",
+      "tournamentDate": "2025-07-24",
+      "roundNumber": 3,
+      "opponent": "sylvanisator",
+      "result": "W",
+      "ratingBefore": 1533,
+      "ratingAfter": 1546,
+      "ratingChange": 13
+    },
+    {
+      "tournamentId": "347610",
+      "tournamentDate": "2025-07-31",
+      "roundNumber": 1,
+      "opponent": "rmcf",
+      "result": "L",
+      "ratingBefore": 1546,
+      "ratingAfter": 1527,
+      "ratingChange": -19
+    },
+    {
+      "tournamentId": "347610",
+      "tournamentDate": "2025-07-31",
+      "roundNumber": 2,
+      "opponent": "Mattmelach",
+      "result": "W",
+      "ratingBefore": 1527,
+      "ratingAfter": 1537,
+      "ratingChange": 10
+    },
+    {
+      "tournamentId": "347610",
+      "tournamentDate": "2025-07-31",
+      "roundNumber": 3,
+      "opponent": "Matt_W",
+      "result": "W",
+      "ratingBefore": 1537,
+      "ratingAfter": 1550,
+      "ratingChange": 13
+    },
+    {
+      "tournamentId": "380585",
+      "tournamentDate": "2025-11-07",
+      "roundNumber": 1,
+      "opponent": "aprofaci",
+      "result": "W",
+      "ratingBefore": 1550,
+      "ratingAfter": 1566,
+      "ratingChange": 16
+    },
+    {
+      "tournamentId": "380585",
+      "tournamentDate": "2025-11-07",
+      "roundNumber": 2,
+      "opponent": "Tencteri",
+      "result": "W",
+      "ratingBefore": 1566,
+      "ratingAfter": 1579,
+      "ratingChange": 13
+    },
+    {
+      "tournamentId": "380585",
+      "tournamentDate": "2025-11-07",
+      "roundNumber": 3,
+      "opponent": "drakedrakedrake",
+      "result": "W",
+      "ratingBefore": 1579,
+      "ratingAfter": 1596,
+      "ratingChange": 17
+    }
   ]
 }

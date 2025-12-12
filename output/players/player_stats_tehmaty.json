@@ -71,5 +71,29 @@
       "gameWinPercentage": 0.3333333,
       "deck": "UG Madness"
     }
+  ],
+  "eloRating": 1470,
+  "peakEloRating": 1500,
+  "eloHistory": [
+    {
+      "tournamentId": "388334",
+      "tournamentDate": "2025-12-05",
+      "roundNumber": 1,
+      "opponent": "Tencteri",
+      "result": "L",
+      "ratingBefore": 1500,
+      "ratingAfter": 1484,
+      "ratingChange": -16
+    },
+    {
+      "tournamentId": "388334",
+      "tournamentDate": "2025-12-05",
+      "roundNumber": 2,
+      "opponent": "RichBucey",
+      "result": "L",
+      "ratingBefore": 1484,
+      "ratingAfter": 1470,
+      "ratingChange": -14
+    }
   ]
 }

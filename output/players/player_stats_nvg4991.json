@@ -187,5 +187,89 @@
       "gameWinPercentage": 0.42857143,
       "deck": "_"
     }
+  ],
+  "eloRating": 1488,
+  "peakEloRating": 1518,
+  "eloHistory": [
+    {
+      "tournamentId": "312921",
+      "tournamentDate": "2025-05-22",
+      "roundNumber": 1,
+      "opponent": "madmanpoet",
+      "result": "W",
+      "ratingBefore": 1500,
+      "ratingAfter": 1518,
+      "ratingChange": 18
+    },
+    {
+      "tournamentId": "312921",
+      "tournamentDate": "2025-05-22",
+      "roundNumber": 2,
+      "opponent": "rmcf",
+      "result": "D",
+      "ratingBefore": 1518,
+      "ratingAfter": 1517,
+      "ratingChange": -1
+    },
+    {
+      "tournamentId": "312921",
+      "tournamentDate": "2025-05-22",
+      "roundNumber": 3,
+      "opponent": "jclara",
+      "result": "L",
+      "ratingBefore": 1517,
+      "ratingAfter": 1503,
+      "ratingChange": -14
+    },
+    {
+      "tournamentId": "338898",
+      "tournamentDate": "2025-07-10",
+      "roundNumber": 1,
+      "opponent": "JUDDERMANG",
+      "result": "W",
+      "ratingBefore": 1503,
+      "ratingAfter": 1516,
+      "ratingChange": 13
+    },
+    {
+      "tournamentId": "338898",
+      "tournamentDate": "2025-07-10",
+      "roundNumber": 2,
+      "opponent": "madmanpoet",
+      "result": "L",
+      "ratingBefore": 1516,
+      "ratingAfter": 1502,
+      "ratingChange": -14
+    },
+    {
+      "tournamentId": "338898",
+      "tournamentDate": "2025-07-10",
+      "roundNumber": 3,
+      "opponent": "Tencteri",
+      "result": "W",
+      "ratingBefore": 1502,
+      "ratingAfter": 1517,
+      "ratingChange": 15
+    },
+    {
+      "tournamentId": "350003",
+      "tournamentDate": "2025-08-07",
+      "roundNumber": 1,
+      "opponent": "swbmtg",
+      "result": "L",
+      "ratingBefore": 1517,
+      "ratingAfter": 1505,
+      "ratingChange": -12
+    },
+    {
+      "tournamentId": "350003",
+      "tournamentDate": "2025-08-07",
+      "roundNumber": 2,
+      "opponent": "RichBucey",
+      "result": "L",
+      "ratingBefore": 1505,
+      "ratingAfter": 1488,
+      "ratingChange": -17
+    }
   ]
 }

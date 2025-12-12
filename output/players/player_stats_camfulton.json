@@ -87,5 +87,39 @@
       "gameWinPercentage": 0.57142857,
       "deck": "_"
     }
+  ],
+  "eloRating": 1517,
+  "peakEloRating": 1517,
+  "eloHistory": [
+    {
+      "tournamentId": "312921",
+      "tournamentDate": "2025-05-22",
+      "roundNumber": 1,
+      "opponent": "Ea212",
+      "result": "W",
+      "ratingBefore": 1500,
+      "ratingAfter": 1517,
+      "ratingChange": 17
+    },
+    {
+      "tournamentId": "312921",
+      "tournamentDate": "2025-05-22",
+      "roundNumber": 2,
+      "opponent": "FriendlyFerret",
+      "result": "L",
+      "ratingBefore": 1517,
+      "ratingAfter": 1502,
+      "ratingChange": -15
+    },
+    {
+      "tournamentId": "312921",
+      "tournamentDate": "2025-05-22",
+      "roundNumber": 3,
+      "opponent": "itsCama",
+      "result": "W",
+      "ratingBefore": 1502,
+      "ratingAfter": 1517,
+      "ratingChange": 15
+    }
   ]
 }

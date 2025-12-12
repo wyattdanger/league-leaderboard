@@ -132,5 +132,59 @@
       "gameWinPercentage": 0,
       "deck": "Stasis"
     }
+  ],
+  "eloRating": 1425,
+  "peakEloRating": 1500,
+  "eloHistory": [
+    {
+      "tournamentId": "375338",
+      "tournamentDate": "2025-10-23",
+      "roundNumber": 1,
+      "opponent": "Mattmelach",
+      "result": "L",
+      "ratingBefore": 1500,
+      "ratingAfter": 1480,
+      "ratingChange": -20
+    },
+    {
+      "tournamentId": "375338",
+      "tournamentDate": "2025-10-23",
+      "roundNumber": 2,
+      "opponent": "RichBucey",
+      "result": "L",
+      "ratingBefore": 1480,
+      "ratingAfter": 1463,
+      "ratingChange": -17
+    },
+    {
+      "tournamentId": "375338",
+      "tournamentDate": "2025-10-23",
+      "roundNumber": 3,
+      "opponent": "mkbgnr",
+      "result": "L",
+      "ratingBefore": 1463,
+      "ratingAfter": 1448,
+      "ratingChange": -15
+    },
+    {
+      "tournamentId": "380585",
+      "tournamentDate": "2025-11-07",
+      "roundNumber": 2,
+      "opponent": "drakedrakedrake",
+      "result": "L",
+      "ratingBefore": 1448,
+      "ratingAfter": 1438,
+      "ratingChange": -10
+    },
+    {
+      "tournamentId": "380585",
+      "tournamentDate": "2025-11-07",
+      "roundNumber": 3,
+      "opponent": "Tencteri",
+      "result": "L",
+      "ratingBefore": 1438,
+      "ratingAfter": 1425,
+      "ratingChange": -13
+    }
   ]
 }

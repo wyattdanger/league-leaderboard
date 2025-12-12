@@ -71,5 +71,29 @@
       "gameWinPercentage": 0.33333333,
       "deck": "_"
     }
+  ],
+  "eloRating": 1472,
+  "peakEloRating": 1500,
+  "eloHistory": [
+    {
+      "tournamentId": "338898",
+      "tournamentDate": "2025-07-10",
+      "roundNumber": 1,
+      "opponent": "madmanpoet",
+      "result": "L",
+      "ratingBefore": 1500,
+      "ratingAfter": 1486,
+      "ratingChange": -14
+    },
+    {
+      "tournamentId": "338898",
+      "tournamentDate": "2025-07-10",
+      "roundNumber": 2,
+      "opponent": "RolandMTG",
+      "result": "L",
+      "ratingBefore": 1486,
+      "ratingAfter": 1472,
+      "ratingChange": -14
+    }
   ]
 }

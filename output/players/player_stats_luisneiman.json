@@ -273,5 +273,129 @@
       "gameWinPercentage": 0.55555556,
       "deck": "_"
     }
+  ],
+  "eloRating": 1614,
+  "peakEloRating": 1614,
+  "eloHistory": [
+    {
+      "tournamentId": "308700",
+      "tournamentDate": "2025-05-15",
+      "roundNumber": 1,
+      "opponent": "swbmtg",
+      "result": "W",
+      "ratingBefore": 1500,
+      "ratingAfter": 1516,
+      "ratingChange": 16
+    },
+    {
+      "tournamentId": "308700",
+      "tournamentDate": "2025-05-15",
+      "roundNumber": 2,
+      "opponent": "FriendlyFerret",
+      "result": "L",
+      "ratingBefore": 1516,
+      "ratingAfter": 1501,
+      "ratingChange": -15
+    },
+    {
+      "tournamentId": "308700",
+      "tournamentDate": "2025-05-15",
+      "roundNumber": 3,
+      "opponent": "rmcf",
+      "result": "W",
+      "ratingBefore": 1501,
+      "ratingAfter": 1517,
+      "ratingChange": 16
+    },
+    {
+      "tournamentId": "321687",
+      "tournamentDate": "2025-06-05",
+      "roundNumber": 1,
+      "opponent": "Tencteri",
+      "result": "W",
+      "ratingBefore": 1517,
+      "ratingAfter": 1534,
+      "ratingChange": 17
+    },
+    {
+      "tournamentId": "321687",
+      "tournamentDate": "2025-06-05",
+      "roundNumber": 2,
+      "opponent": "madmanpoet",
+      "result": "W",
+      "ratingBefore": 1534,
+      "ratingAfter": 1551,
+      "ratingChange": 17
+    },
+    {
+      "tournamentId": "321687",
+      "tournamentDate": "2025-06-05",
+      "roundNumber": 3,
+      "opponent": "methodless",
+      "result": "W",
+      "ratingBefore": 1551,
+      "ratingAfter": 1566,
+      "ratingChange": 15
+    },
+    {
+      "tournamentId": "357267",
+      "tournamentDate": "2025-08-29",
+      "roundNumber": 1,
+      "opponent": "madmanpoet",
+      "result": "L",
+      "ratingBefore": 1566,
+      "ratingAfter": 1551,
+      "ratingChange": -15
+    },
+    {
+      "tournamentId": "357267",
+      "tournamentDate": "2025-08-29",
+      "roundNumber": 2,
+      "opponent": "RichBucey",
+      "result": "W",
+      "ratingBefore": 1551,
+      "ratingAfter": 1563,
+      "ratingChange": 12
+    },
+    {
+      "tournamentId": "357267",
+      "tournamentDate": "2025-08-29",
+      "roundNumber": 3,
+      "opponent": "Mdenny55",
+      "result": "W",
+      "ratingBefore": 1563,
+      "ratingAfter": 1576,
+      "ratingChange": 13
+    },
+    {
+      "tournamentId": "373539",
+      "tournamentDate": "2025-10-16",
+      "roundNumber": 1,
+      "opponent": "Charlengels",
+      "result": "W",
+      "ratingBefore": 1576,
+      "ratingAfter": 1588,
+      "ratingChange": 12
+    },
+    {
+      "tournamentId": "373539",
+      "tournamentDate": "2025-10-16",
+      "roundNumber": 2,
+      "opponent": "justintomczyk",
+      "result": "W",
+      "ratingBefore": 1588,
+      "ratingAfter": 1600,
+      "ratingChange": 12
+    },
+    {
+      "tournamentId": "373539",
+      "tournamentDate": "2025-10-16",
+      "roundNumber": 3,
+      "opponent": "RolandMTG",
+      "result": "W",
+      "ratingBefore": 1600,
+      "ratingAfter": 1614,
+      "ratingChange": 14
+    }
   ]
 }

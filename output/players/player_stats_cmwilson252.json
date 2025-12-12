@@ -116,5 +116,49 @@
       "gameWinPercentage": 0.33333333,
       "deck": "_"
     }
+  ],
+  "eloRating": 1441,
+  "peakEloRating": 1500,
+  "eloHistory": [
+    {
+      "tournamentId": "380585",
+      "tournamentDate": "2025-11-07",
+      "roundNumber": 1,
+      "opponent": "Tencteri",
+      "result": "L",
+      "ratingBefore": 1500,
+      "ratingAfter": 1484,
+      "ratingChange": -16
+    },
+    {
+      "tournamentId": "380585",
+      "tournamentDate": "2025-11-07",
+      "roundNumber": 2,
+      "opponent": "RolandMTG",
+      "result": "L",
+      "ratingBefore": 1484,
+      "ratingAfter": 1470,
+      "ratingChange": -14
+    },
+    {
+      "tournamentId": "382756",
+      "tournamentDate": "2025-11-14",
+      "roundNumber": 1,
+      "opponent": "madmanpoet",
+      "result": "L",
+      "ratingBefore": 1470,
+      "ratingAfter": 1461,
+      "ratingChange": -9
+    },
+    {
+      "tournamentId": "382756",
+      "tournamentDate": "2025-11-14",
+      "roundNumber": 2,
+      "opponent": "JUDDERMANG",
+      "result": "L",
+      "ratingBefore": 1461,
+      "ratingAfter": 1441,
+      "ratingChange": -20
+    }
   ]
 }

@@ -87,5 +87,39 @@
       "gameWinPercentage": 0,
       "deck": "_"
     }
+  ],
+  "eloRating": 1449,
+  "peakEloRating": 1500,
+  "eloHistory": [
+    {
+      "tournamentId": "350003",
+      "tournamentDate": "2025-08-07",
+      "roundNumber": 1,
+      "opponent": "jeffmarkues",
+      "result": "L",
+      "ratingBefore": 1500,
+      "ratingAfter": 1488,
+      "ratingChange": -12
+    },
+    {
+      "tournamentId": "350003",
+      "tournamentDate": "2025-08-07",
+      "roundNumber": 2,
+      "opponent": "JUDDERMANG",
+      "result": "L",
+      "ratingBefore": 1488,
+      "ratingAfter": 1468,
+      "ratingChange": -20
+    },
+    {
+      "tournamentId": "350003",
+      "tournamentDate": "2025-08-07",
+      "roundNumber": 3,
+      "opponent": "Mattmelach",
+      "result": "L",
+      "ratingBefore": 1468,
+      "ratingAfter": 1449,
+      "ratingChange": -19
+    }
   ]
 }

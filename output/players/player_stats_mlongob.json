@@ -157,5 +157,69 @@
       "gameWinPercentage": 0,
       "deck": "_"
     }
+  ],
+  "eloRating": 1435,
+  "peakEloRating": 1500,
+  "eloHistory": [
+    {
+      "tournamentId": "312921",
+      "tournamentDate": "2025-05-22",
+      "roundNumber": 1,
+      "opponent": "itsCama",
+      "result": "L",
+      "ratingBefore": 1500,
+      "ratingAfter": 1483,
+      "ratingChange": -17
+    },
+    {
+      "tournamentId": "312921",
+      "tournamentDate": "2025-05-22",
+      "roundNumber": 2,
+      "opponent": "jclara",
+      "result": "L",
+      "ratingBefore": 1483,
+      "ratingAfter": 1470,
+      "ratingChange": -13
+    },
+    {
+      "tournamentId": "312921",
+      "tournamentDate": "2025-05-22",
+      "roundNumber": 3,
+      "opponent": "jeffmarkues",
+      "result": "L",
+      "ratingBefore": 1470,
+      "ratingAfter": 1455,
+      "ratingChange": -15
+    },
+    {
+      "tournamentId": "350003",
+      "tournamentDate": "2025-08-07",
+      "roundNumber": 1,
+      "opponent": "JUDDERMANG",
+      "result": "D",
+      "ratingBefore": 1455,
+      "ratingAfter": 1452,
+      "ratingChange": -3
+    },
+    {
+      "tournamentId": "350003",
+      "tournamentDate": "2025-08-07",
+      "roundNumber": 2,
+      "opponent": "Mattmelach",
+      "result": "D",
+      "ratingBefore": 1452,
+      "ratingAfter": 1450,
+      "ratingChange": -2
+    },
+    {
+      "tournamentId": "350003",
+      "tournamentDate": "2025-08-07",
+      "roundNumber": 3,
+      "opponent": "BryanGulotta",
+      "result": "L",
+      "ratingBefore": 1450,
+      "ratingAfter": 1435,
+      "ratingChange": -15
+    }
   ]
 }

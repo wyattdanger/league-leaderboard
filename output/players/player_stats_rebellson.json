@@ -87,5 +87,39 @@
       "gameWinPercentage": 0.57142857,
       "deck": "_"
     }
+  ],
+  "eloRating": 1495,
+  "peakEloRating": 1514,
+  "eloHistory": [
+    {
+      "tournamentId": "357267",
+      "tournamentDate": "2025-08-29",
+      "roundNumber": 1,
+      "opponent": "RichBucey",
+      "result": "W",
+      "ratingBefore": 1500,
+      "ratingAfter": 1514,
+      "ratingChange": 14
+    },
+    {
+      "tournamentId": "357267",
+      "tournamentDate": "2025-08-29",
+      "roundNumber": 2,
+      "opponent": "ForceofPhil",
+      "result": "D",
+      "ratingBefore": 1514,
+      "ratingAfter": 1513,
+      "ratingChange": -1
+    },
+    {
+      "tournamentId": "357267",
+      "tournamentDate": "2025-08-29",
+      "roundNumber": 3,
+      "opponent": "sylvanisator",
+      "result": "L",
+      "ratingBefore": 1513,
+      "ratingAfter": 1495,
+      "ratingChange": -18
+    }
   ]
 }

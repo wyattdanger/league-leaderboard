@@ -87,5 +87,39 @@
       "gameWinPercentage": 0.14285714,
       "deck": "_"
     }
+  ],
+  "eloRating": 1452,
+  "peakEloRating": 1500,
+  "eloHistory": [
+    {
+      "tournamentId": "312921",
+      "tournamentDate": "2025-05-22",
+      "roundNumber": 1,
+      "opponent": "rmcf",
+      "result": "L",
+      "ratingBefore": 1500,
+      "ratingAfter": 1483,
+      "ratingChange": -17
+    },
+    {
+      "tournamentId": "312921",
+      "tournamentDate": "2025-05-22",
+      "roundNumber": 2,
+      "opponent": "Mattmelach",
+      "result": "L",
+      "ratingBefore": 1483,
+      "ratingAfter": 1467,
+      "ratingChange": -16
+    },
+    {
+      "tournamentId": "312921",
+      "tournamentDate": "2025-05-22",
+      "roundNumber": 3,
+      "opponent": "Ea212",
+      "result": "L",
+      "ratingBefore": 1467,
+      "ratingAfter": 1452,
+      "ratingChange": -15
+    }
   ]
 }

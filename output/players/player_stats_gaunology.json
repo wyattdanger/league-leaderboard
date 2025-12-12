@@ -71,5 +71,29 @@
       "gameWinPercentage": 0.8333333,
       "deck": "Domain"
     }
+  ],
+  "eloRating": 1527,
+  "peakEloRating": 1527,
+  "eloHistory": [
+    {
+      "tournamentId": "388334",
+      "tournamentDate": "2025-12-05",
+      "roundNumber": 2,
+      "opponent": "FriendlyFerret",
+      "result": "W",
+      "ratingBefore": 1500,
+      "ratingAfter": 1521,
+      "ratingChange": 21
+    },
+    {
+      "tournamentId": "388334",
+      "tournamentDate": "2025-12-05",
+      "roundNumber": 3,
+      "opponent": "madmanpoet",
+      "result": "D",
+      "ratingBefore": 1521,
+      "ratingAfter": 1527,
+      "ratingChange": 6
+    }
   ]
 }

@@ -256,5 +256,159 @@
       "gameWinPercentage": 0.83333333,
       "deck": "_"
     }
+  ],
+  "eloRating": 1575,
+  "peakEloRating": 1575,
+  "eloHistory": [
+    {
+      "tournamentId": "373539",
+      "tournamentDate": "2025-10-16",
+      "roundNumber": 1,
+      "opponent": "Mattmelach",
+      "result": "D",
+      "ratingBefore": 1500,
+      "ratingAfter": 1496,
+      "ratingChange": -4
+    },
+    {
+      "tournamentId": "373539",
+      "tournamentDate": "2025-10-16",
+      "roundNumber": 2,
+      "opponent": "AndrewLevine",
+      "result": "W",
+      "ratingBefore": 1496,
+      "ratingAfter": 1511,
+      "ratingChange": 15
+    },
+    {
+      "tournamentId": "373539",
+      "tournamentDate": "2025-10-16",
+      "roundNumber": 3,
+      "opponent": "justintomczyk",
+      "result": "W",
+      "ratingBefore": 1511,
+      "ratingAfter": 1526,
+      "ratingChange": 15
+    },
+    {
+      "tournamentId": "375338",
+      "tournamentDate": "2025-10-23",
+      "roundNumber": 1,
+      "opponent": "Taylorhol",
+      "result": "W",
+      "ratingBefore": 1526,
+      "ratingAfter": 1539,
+      "ratingChange": 13
+    },
+    {
+      "tournamentId": "375338",
+      "tournamentDate": "2025-10-23",
+      "roundNumber": 2,
+      "opponent": "Lannynyny",
+      "result": "L",
+      "ratingBefore": 1539,
+      "ratingAfter": 1519,
+      "ratingChange": -20
+    },
+    {
+      "tournamentId": "375338",
+      "tournamentDate": "2025-10-23",
+      "roundNumber": 3,
+      "opponent": "Mattmelach",
+      "result": "W",
+      "ratingBefore": 1519,
+      "ratingAfter": 1531,
+      "ratingChange": 12
+    },
+    {
+      "tournamentId": "380585b",
+      "tournamentDate": "2025-11-06",
+      "roundNumber": 1,
+      "opponent": "Mattmelach",
+      "result": "W",
+      "ratingBefore": 1531,
+      "ratingAfter": 1542,
+      "ratingChange": 11
+    },
+    {
+      "tournamentId": "380585b",
+      "tournamentDate": "2025-11-06",
+      "roundNumber": 2,
+      "opponent": "JUDDERMANG",
+      "result": "L",
+      "ratingBefore": 1542,
+      "ratingAfter": 1518,
+      "ratingChange": -24
+    },
+    {
+      "tournamentId": "380585b",
+      "tournamentDate": "2025-11-06",
+      "roundNumber": 3,
+      "opponent": "Matt_W",
+      "result": "W",
+      "ratingBefore": 1518,
+      "ratingAfter": 1528,
+      "ratingChange": 10
+    },
+    {
+      "tournamentId": "382756",
+      "tournamentDate": "2025-11-14",
+      "roundNumber": 1,
+      "opponent": "AndrewLevine",
+      "result": "W",
+      "ratingBefore": 1528,
+      "ratingAfter": 1541,
+      "ratingChange": 13
+    },
+    {
+      "tournamentId": "382756",
+      "tournamentDate": "2025-11-14",
+      "roundNumber": 2,
+      "opponent": "BryanGulotta",
+      "result": "W",
+      "ratingBefore": 1541,
+      "ratingAfter": 1558,
+      "ratingChange": 17
+    },
+    {
+      "tournamentId": "382756",
+      "tournamentDate": "2025-11-14",
+      "roundNumber": 3,
+      "opponent": "Taylorhol",
+      "result": "W",
+      "ratingBefore": 1558,
+      "ratingAfter": 1571,
+      "ratingChange": 13
+    },
+    {
+      "tournamentId": "384681",
+      "tournamentDate": "2025-11-21",
+      "roundNumber": 1,
+      "opponent": "Tencteri",
+      "result": "L",
+      "ratingBefore": 1571,
+      "ratingAfter": 1551,
+      "ratingChange": -20
+    },
+    {
+      "tournamentId": "384681",
+      "tournamentDate": "2025-11-21",
+      "roundNumber": 2,
+      "opponent": "delofstrom",
+      "result": "W",
+      "ratingBefore": 1551,
+      "ratingAfter": 1560,
+      "ratingChange": 9
+    },
+    {
+      "tournamentId": "384681",
+      "tournamentDate": "2025-11-21",
+      "roundNumber": 3,
+      "opponent": "BryanGulotta",
+      "result": "W",
+      "ratingBefore": 1560,
+      "ratingAfter": 1575,
+      "ratingChange": 15
+    }
   ]
 }

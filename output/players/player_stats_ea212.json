@@ -148,5 +148,69 @@
       "gameWinPercentage": 0.57142857,
       "deck": "_"
     }
+  ],
+  "eloRating": 1499,
+  "peakEloRating": 1516,
+  "eloHistory": [
+    {
+      "tournamentId": "305152",
+      "tournamentDate": "2025-05-09",
+      "roundNumber": 1,
+      "opponent": "sylvanisator",
+      "result": "W",
+      "ratingBefore": 1500,
+      "ratingAfter": 1516,
+      "ratingChange": 16
+    },
+    {
+      "tournamentId": "305152",
+      "tournamentDate": "2025-05-09",
+      "roundNumber": 2,
+      "opponent": "FriendlyFerret",
+      "result": "L",
+      "ratingBefore": 1516,
+      "ratingAfter": 1500,
+      "ratingChange": -16
+    },
+    {
+      "tournamentId": "305152",
+      "tournamentDate": "2025-05-09",
+      "roundNumber": 3,
+      "opponent": "madmanpoet",
+      "result": "W",
+      "ratingBefore": 1500,
+      "ratingAfter": 1516,
+      "ratingChange": 16
+    },
+    {
+      "tournamentId": "312921",
+      "tournamentDate": "2025-05-22",
+      "roundNumber": 1,
+      "opponent": "camfulton",
+      "result": "L",
+      "ratingBefore": 1516,
+      "ratingAfter": 1499,
+      "ratingChange": -17
+    },
+    {
+      "tournamentId": "312921",
+      "tournamentDate": "2025-05-22",
+      "roundNumber": 2,
+      "opponent": "landho",
+      "result": "L",
+      "ratingBefore": 1499,
+      "ratingAfter": 1484,
+      "ratingChange": -15
+    },
+    {
+      "tournamentId": "312921",
+      "tournamentDate": "2025-05-22",
+      "roundNumber": 3,
+      "opponent": "Gallo0",
+      "result": "W",
+      "ratingBefore": 1484,
+      "ratingAfter": 1499,
+      "ratingChange": 15
+    }
   ]
 }

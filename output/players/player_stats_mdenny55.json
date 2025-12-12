@@ -87,5 +87,39 @@
       "gameWinPercentage": 0.38095238,
       "deck": "_"
     }
+  ],
+  "eloRating": 1491,
+  "peakEloRating": 1504,
+  "eloHistory": [
+    {
+      "tournamentId": "357267",
+      "tournamentDate": "2025-08-29",
+      "roundNumber": 1,
+      "opponent": "jeffmarkues",
+      "result": "L",
+      "ratingBefore": 1500,
+      "ratingAfter": 1488,
+      "ratingChange": -12
+    },
+    {
+      "tournamentId": "357267",
+      "tournamentDate": "2025-08-29",
+      "roundNumber": 2,
+      "opponent": "eddietheintern",
+      "result": "W",
+      "ratingBefore": 1488,
+      "ratingAfter": 1504,
+      "ratingChange": 16
+    },
+    {
+      "tournamentId": "357267",
+      "tournamentDate": "2025-08-29",
+      "roundNumber": 3,
+      "opponent": "LuisNeiman",
+      "result": "L",
+      "ratingBefore": 1504,
+      "ratingAfter": 1491,
+      "ratingChange": -13
+    }
   ]
 }

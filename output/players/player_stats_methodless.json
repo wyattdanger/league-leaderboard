@@ -87,5 +87,39 @@
       "gameWinPercentage": 0.55555556,
       "deck": "_"
     }
+  ],
+  "eloRating": 1520,
+  "peakEloRating": 1535,
+  "eloHistory": [
+    {
+      "tournamentId": "321687",
+      "tournamentDate": "2025-06-05",
+      "roundNumber": 1,
+      "opponent": "RichBucey",
+      "result": "W",
+      "ratingBefore": 1500,
+      "ratingAfter": 1518,
+      "ratingChange": 18
+    },
+    {
+      "tournamentId": "321687",
+      "tournamentDate": "2025-06-05",
+      "roundNumber": 2,
+      "opponent": "gberlinrut",
+      "result": "W",
+      "ratingBefore": 1518,
+      "ratingAfter": 1535,
+      "ratingChange": 17
+    },
+    {
+      "tournamentId": "321687",
+      "tournamentDate": "2025-06-05",
+      "roundNumber": 3,
+      "opponent": "LuisNeiman",
+      "result": "L",
+      "ratingBefore": 1535,
+      "ratingAfter": 1520,
+      "ratingChange": -15
+    }
   ]
 }

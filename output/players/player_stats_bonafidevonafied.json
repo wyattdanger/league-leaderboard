@@ -87,5 +87,39 @@
       "gameWinPercentage": 0.57142857,
       "deck": "_"
     }
+  ],
+  "eloRating": 1513,
+  "peakEloRating": 1513,
+  "eloHistory": [
+    {
+      "tournamentId": "361066",
+      "tournamentDate": "2025-09-04",
+      "roundNumber": 1,
+      "opponent": "JUDDERMANG",
+      "result": "L",
+      "ratingBefore": 1500,
+      "ratingAfter": 1481,
+      "ratingChange": -19
+    },
+    {
+      "tournamentId": "361066",
+      "tournamentDate": "2025-09-04",
+      "roundNumber": 2,
+      "opponent": "mattie",
+      "result": "W",
+      "ratingBefore": 1481,
+      "ratingAfter": 1497,
+      "ratingChange": 16
+    },
+    {
+      "tournamentId": "361066",
+      "tournamentDate": "2025-09-04",
+      "roundNumber": 3,
+      "opponent": "zoidberg1003",
+      "result": "W",
+      "ratingBefore": 1497,
+      "ratingAfter": 1513,
+      "ratingChange": 16
+    }
   ]
 }

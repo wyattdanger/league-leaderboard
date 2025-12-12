@@ -87,5 +87,39 @@
       "gameWinPercentage": 0.125,
       "deck": "_"
     }
+  ],
+  "eloRating": 1449,
+  "peakEloRating": 1500,
+  "eloHistory": [
+    {
+      "tournamentId": "352572",
+      "tournamentDate": "2025-08-14",
+      "roundNumber": 1,
+      "opponent": "BryanGulotta",
+      "result": "L",
+      "ratingBefore": 1500,
+      "ratingAfter": 1483,
+      "ratingChange": -17
+    },
+    {
+      "tournamentId": "352572",
+      "tournamentDate": "2025-08-14",
+      "roundNumber": 2,
+      "opponent": "delofstrom",
+      "result": "L",
+      "ratingBefore": 1483,
+      "ratingAfter": 1465,
+      "ratingChange": -18
+    },
+    {
+      "tournamentId": "352572",
+      "tournamentDate": "2025-08-14",
+      "roundNumber": 3,
+      "opponent": "JosR81",
+      "result": "L",
+      "ratingBefore": 1465,
+      "ratingAfter": 1449,
+      "ratingChange": -16
+    }
   ]
 }

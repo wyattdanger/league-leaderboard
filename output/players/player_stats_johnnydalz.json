@@ -87,5 +87,39 @@
       "gameWinPercentage": 0.47619048,
       "deck": "_"
     }
+  ],
+  "eloRating": 1520,
+  "peakEloRating": 1520,
+  "eloHistory": [
+    {
+      "tournamentId": "384681",
+      "tournamentDate": "2025-11-21",
+      "roundNumber": 1,
+      "opponent": "swbmtg",
+      "result": "L",
+      "ratingBefore": 1500,
+      "ratingAfter": 1494,
+      "ratingChange": -6
+    },
+    {
+      "tournamentId": "384681",
+      "tournamentDate": "2025-11-21",
+      "roundNumber": 2,
+      "opponent": "Mattmelach",
+      "result": "W",
+      "ratingBefore": 1494,
+      "ratingAfter": 1504,
+      "ratingChange": 10
+    },
+    {
+      "tournamentId": "384681",
+      "tournamentDate": "2025-11-21",
+      "roundNumber": 3,
+      "opponent": "WillReddy",
+      "result": "W",
+      "ratingBefore": 1504,
+      "ratingAfter": 1520,
+      "ratingChange": 16
+    }
   ]
 }

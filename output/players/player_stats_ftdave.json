@@ -71,5 +71,29 @@
       "gameWinPercentage": 0.33333333,
       "deck": "_"
     }
+  ],
+  "eloRating": 1468,
+  "peakEloRating": 1500,
+  "eloHistory": [
+    {
+      "tournamentId": "308700",
+      "tournamentDate": "2025-05-15",
+      "roundNumber": 2,
+      "opponent": "madmanpoet",
+      "result": "L",
+      "ratingBefore": 1500,
+      "ratingAfter": 1484,
+      "ratingChange": -16
+    },
+    {
+      "tournamentId": "308700",
+      "tournamentDate": "2025-05-15",
+      "roundNumber": 3,
+      "opponent": "sylvanisator",
+      "result": "L",
+      "ratingBefore": 1484,
+      "ratingAfter": 1468,
+      "ratingChange": -16
+    }
   ]
 }

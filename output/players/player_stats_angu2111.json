@@ -148,5 +148,69 @@
       "gameWinPercentage": 0.375,
       "deck": "_"
     }
+  ],
+  "eloRating": 1462,
+  "peakEloRating": 1500,
+  "eloHistory": [
+    {
+      "tournamentId": "377629",
+      "tournamentDate": "2025-10-30",
+      "roundNumber": 1,
+      "opponent": "zoidberg1003",
+      "result": "L",
+      "ratingBefore": 1500,
+      "ratingAfter": 1482,
+      "ratingChange": -18
+    },
+    {
+      "tournamentId": "377629",
+      "tournamentDate": "2025-10-30",
+      "roundNumber": 2,
+      "opponent": "Matt_W",
+      "result": "W",
+      "ratingBefore": 1482,
+      "ratingAfter": 1496,
+      "ratingChange": 14
+    },
+    {
+      "tournamentId": "377629",
+      "tournamentDate": "2025-10-30",
+      "roundNumber": 3,
+      "opponent": "aprofaci",
+      "result": "L",
+      "ratingBefore": 1496,
+      "ratingAfter": 1482,
+      "ratingChange": -14
+    },
+    {
+      "tournamentId": "382756",
+      "tournamentDate": "2025-11-14",
+      "roundNumber": 1,
+      "opponent": "Tencteri",
+      "result": "W",
+      "ratingBefore": 1482,
+      "ratingAfter": 1499,
+      "ratingChange": 17
+    },
+    {
+      "tournamentId": "382756",
+      "tournamentDate": "2025-11-14",
+      "roundNumber": 2,
+      "opponent": "Taylorhol",
+      "result": "L",
+      "ratingBefore": 1499,
+      "ratingAfter": 1482,
+      "ratingChange": -17
+    },
+    {
+      "tournamentId": "382756",
+      "tournamentDate": "2025-11-14",
+      "roundNumber": 3,
+      "opponent": "JUDDERMANG",
+      "result": "L",
+      "ratingBefore": 1482,
+      "ratingAfter": 1462,
+      "ratingChange": -20
+    }
   ]
 }

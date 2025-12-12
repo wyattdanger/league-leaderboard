@@ -255,5 +255,129 @@
       "gameWinPercentage": 1,
       "deck": "_"
     }
+  ],
+  "eloRating": 1553,
+  "peakEloRating": 1599,
+  "eloHistory": [
+    {
+      "tournamentId": "308700",
+      "tournamentDate": "2025-05-15",
+      "roundNumber": 1,
+      "opponent": "rmcf",
+      "result": "W",
+      "ratingBefore": 1500,
+      "ratingAfter": 1516,
+      "ratingChange": 16
+    },
+    {
+      "tournamentId": "308700",
+      "tournamentDate": "2025-05-15",
+      "roundNumber": 2,
+      "opponent": "sylvanisator",
+      "result": "W",
+      "ratingBefore": 1516,
+      "ratingAfter": 1531,
+      "ratingChange": 15
+    },
+    {
+      "tournamentId": "308700",
+      "tournamentDate": "2025-05-15",
+      "roundNumber": 3,
+      "opponent": "FriendlyFerret",
+      "result": "W",
+      "ratingBefore": 1531,
+      "ratingAfter": 1548,
+      "ratingChange": 17
+    },
+    {
+      "tournamentId": "312921",
+      "tournamentDate": "2025-05-22",
+      "roundNumber": 1,
+      "opponent": "RolandMTG",
+      "result": "D",
+      "ratingBefore": 1548,
+      "ratingAfter": 1547,
+      "ratingChange": -1
+    },
+    {
+      "tournamentId": "312921",
+      "tournamentDate": "2025-05-22",
+      "roundNumber": 2,
+      "opponent": "mlongob",
+      "result": "W",
+      "ratingBefore": 1547,
+      "ratingAfter": 1560,
+      "ratingChange": 13
+    },
+    {
+      "tournamentId": "312921",
+      "tournamentDate": "2025-05-22",
+      "roundNumber": 3,
+      "opponent": "Nvg4991",
+      "result": "W",
+      "ratingBefore": 1560,
+      "ratingAfter": 1574,
+      "ratingChange": 14
+    },
+    {
+      "tournamentId": "321687",
+      "tournamentDate": "2025-06-05",
+      "roundNumber": 1,
+      "opponent": "Alphataru",
+      "result": "W",
+      "ratingBefore": 1574,
+      "ratingAfter": 1586,
+      "ratingChange": 12
+    },
+    {
+      "tournamentId": "321687",
+      "tournamentDate": "2025-06-05",
+      "roundNumber": 2,
+      "opponent": "drakedrakedrake",
+      "result": "W",
+      "ratingBefore": 1586,
+      "ratingAfter": 1599,
+      "ratingChange": 13
+    },
+    {
+      "tournamentId": "321687",
+      "tournamentDate": "2025-06-05",
+      "roundNumber": 3,
+      "opponent": "rmcf",
+      "result": "L",
+      "ratingBefore": 1599,
+      "ratingAfter": 1581,
+      "ratingChange": -18
+    },
+    {
+      "tournamentId": "325333",
+      "tournamentDate": "2025-06-12",
+      "roundNumber": 1,
+      "opponent": "jeffmarkues",
+      "result": "L",
+      "ratingBefore": 1581,
+      "ratingAfter": 1562,
+      "ratingChange": -19
+    },
+    {
+      "tournamentId": "325333",
+      "tournamentDate": "2025-06-12",
+      "roundNumber": 2,
+      "opponent": "itsCama",
+      "result": "W",
+      "ratingBefore": 1562,
+      "ratingAfter": 1572,
+      "ratingChange": 10
+    },
+    {
+      "tournamentId": "325333",
+      "tournamentDate": "2025-06-12",
+      "roundNumber": 3,
+      "opponent": "Tencteri",
+      "result": "L",
+      "ratingBefore": 1572,
+      "ratingAfter": 1553,
+      "ratingChange": -19
+    }
   ]
 }

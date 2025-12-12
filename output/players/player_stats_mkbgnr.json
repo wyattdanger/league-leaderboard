@@ -87,5 +87,39 @@
       "gameWinPercentage": 0.42857143,
       "deck": "Unknown"
     }
+  ],
+  "eloRating": 1489,
+  "peakEloRating": 1500,
+  "eloHistory": [
+    {
+      "tournamentId": "375338",
+      "tournamentDate": "2025-10-23",
+      "roundNumber": 1,
+      "opponent": "aprofaci",
+      "result": "L",
+      "ratingBefore": 1500,
+      "ratingAfter": 1484,
+      "ratingChange": -16
+    },
+    {
+      "tournamentId": "375338",
+      "tournamentDate": "2025-10-23",
+      "roundNumber": 2,
+      "opponent": "madmanpoet",
+      "result": "L",
+      "ratingBefore": 1484,
+      "ratingAfter": 1474,
+      "ratingChange": -10
+    },
+    {
+      "tournamentId": "375338",
+      "tournamentDate": "2025-10-23",
+      "roundNumber": 3,
+      "opponent": "zjr",
+      "result": "W",
+      "ratingBefore": 1474,
+      "ratingAfter": 1489,
+      "ratingChange": 15
+    }
   ]
 }

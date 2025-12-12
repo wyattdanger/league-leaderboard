@@ -148,5 +148,69 @@
       "gameWinPercentage": 0.33333333,
       "deck": "_"
     }
+  ],
+  "eloRating": 1449,
+  "peakEloRating": 1500,
+  "eloHistory": [
+    {
+      "tournamentId": "384681",
+      "tournamentDate": "2025-11-21",
+      "roundNumber": 1,
+      "opponent": "delofstrom",
+      "result": "D",
+      "ratingBefore": 1500,
+      "ratingAfter": 1495,
+      "ratingChange": -5
+    },
+    {
+      "tournamentId": "384681",
+      "tournamentDate": "2025-11-21",
+      "roundNumber": 2,
+      "opponent": "RichBucey",
+      "result": "L",
+      "ratingBefore": 1495,
+      "ratingAfter": 1480,
+      "ratingChange": -15
+    },
+    {
+      "tournamentId": "384681",
+      "tournamentDate": "2025-11-21",
+      "roundNumber": 3,
+      "opponent": "Mattmelach",
+      "result": "L",
+      "ratingBefore": 1480,
+      "ratingAfter": 1458,
+      "ratingChange": -22
+    },
+    {
+      "tournamentId": "388334",
+      "tournamentDate": "2025-12-05",
+      "roundNumber": 1,
+      "opponent": "JUDDERMANG",
+      "result": "W",
+      "ratingBefore": 1458,
+      "ratingAfter": 1472,
+      "ratingChange": 14
+    },
+    {
+      "tournamentId": "388334",
+      "tournamentDate": "2025-12-05",
+      "roundNumber": 2,
+      "opponent": "madmanpoet",
+      "result": "L",
+      "ratingBefore": 1472,
+      "ratingAfter": 1463,
+      "ratingChange": -9
+    },
+    {
+      "tournamentId": "388334",
+      "tournamentDate": "2025-12-05",
+      "roundNumber": 3,
+      "opponent": "Tencteri",
+      "result": "L",
+      "ratingBefore": 1463,
+      "ratingAfter": 1449,
+      "ratingChange": -14
+    }
   ]
 }

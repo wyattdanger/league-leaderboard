@@ -203,5 +203,99 @@
       "gameWinPercentage": 0.75,
       "deck": "_"
     }
+  ],
+  "eloRating": 1589,
+  "peakEloRating": 1589,
+  "eloHistory": [
+    {
+      "tournamentId": "365765",
+      "tournamentDate": "2025-09-18",
+      "roundNumber": 1,
+      "opponent": "Mondale",
+      "result": "W",
+      "ratingBefore": 1500,
+      "ratingAfter": 1516,
+      "ratingChange": 16
+    },
+    {
+      "tournamentId": "365765",
+      "tournamentDate": "2025-09-18",
+      "roundNumber": 2,
+      "opponent": "Taylorhol",
+      "result": "W",
+      "ratingBefore": 1516,
+      "ratingAfter": 1532,
+      "ratingChange": 16
+    },
+    {
+      "tournamentId": "365765",
+      "tournamentDate": "2025-09-18",
+      "roundNumber": 3,
+      "opponent": "rmcf",
+      "result": "W",
+      "ratingBefore": 1532,
+      "ratingAfter": 1548,
+      "ratingChange": 16
+    },
+    {
+      "tournamentId": "367531",
+      "tournamentDate": "2025-09-25",
+      "roundNumber": 1,
+      "opponent": "Tuxeb",
+      "result": "L",
+      "ratingBefore": 1548,
+      "ratingAfter": 1530,
+      "ratingChange": -18
+    },
+    {
+      "tournamentId": "367531",
+      "tournamentDate": "2025-09-25",
+      "roundNumber": 2,
+      "opponent": "BryanGulotta",
+      "result": "W",
+      "ratingBefore": 1530,
+      "ratingAfter": 1544,
+      "ratingChange": 14
+    },
+    {
+      "tournamentId": "367531",
+      "tournamentDate": "2025-09-25",
+      "roundNumber": 3,
+      "opponent": "JUDDERMANG",
+      "result": "W",
+      "ratingBefore": 1544,
+      "ratingAfter": 1555,
+      "ratingChange": 11
+    },
+    {
+      "tournamentId": "384681",
+      "tournamentDate": "2025-11-21",
+      "roundNumber": 1,
+      "opponent": "Mattmelach",
+      "result": "W",
+      "ratingBefore": 1555,
+      "ratingAfter": 1563,
+      "ratingChange": 8
+    },
+    {
+      "tournamentId": "384681",
+      "tournamentDate": "2025-11-21",
+      "roundNumber": 2,
+      "opponent": "remixmtg",
+      "result": "W",
+      "ratingBefore": 1563,
+      "ratingAfter": 1577,
+      "ratingChange": 14
+    },
+    {
+      "tournamentId": "384681",
+      "tournamentDate": "2025-11-21",
+      "roundNumber": 3,
+      "opponent": "Taylorhol",
+      "result": "W",
+      "ratingBefore": 1577,
+      "ratingAfter": 1589,
+      "ratingChange": 12
+    }
   ]
 }

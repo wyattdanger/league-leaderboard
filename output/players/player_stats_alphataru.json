@@ -132,5 +132,59 @@
       "gameWinPercentage": 0.375,
       "deck": "_"
     }
+  ],
+  "eloRating": 1458,
+  "peakEloRating": 1517,
+  "eloHistory": [
+    {
+      "tournamentId": "316750",
+      "tournamentDate": "2025-05-29",
+      "roundNumber": 1,
+      "opponent": "AndrewLevine",
+      "result": "W",
+      "ratingBefore": 1500,
+      "ratingAfter": 1517,
+      "ratingChange": 17
+    },
+    {
+      "tournamentId": "316750",
+      "tournamentDate": "2025-05-29",
+      "roundNumber": 2,
+      "opponent": "madmanpoet",
+      "result": "L",
+      "ratingBefore": 1517,
+      "ratingAfter": 1503,
+      "ratingChange": -14
+    },
+    {
+      "tournamentId": "316750",
+      "tournamentDate": "2025-05-29",
+      "roundNumber": 3,
+      "opponent": "JUDDERMANG",
+      "result": "L",
+      "ratingBefore": 1503,
+      "ratingAfter": 1485,
+      "ratingChange": -18
+    },
+    {
+      "tournamentId": "321687",
+      "tournamentDate": "2025-06-05",
+      "roundNumber": 1,
+      "opponent": "jclara",
+      "result": "L",
+      "ratingBefore": 1485,
+      "ratingAfter": 1473,
+      "ratingChange": -12
+    },
+    {
+      "tournamentId": "321687",
+      "tournamentDate": "2025-06-05",
+      "roundNumber": 3,
+      "opponent": "jeffmarkues",
+      "result": "L",
+      "ratingBefore": 1473,
+      "ratingAfter": 1458,
+      "ratingChange": -15
+    }
   ]
 }

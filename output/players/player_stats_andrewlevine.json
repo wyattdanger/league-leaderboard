@@ -475,5 +475,339 @@
       "gameWinPercentage": 0.5,
       "deck": "_"
     }
+  ],
+  "eloRating": 1459,
+  "peakEloRating": 1540,
+  "eloHistory": [
+    {
+      "tournamentId": "312921",
+      "tournamentDate": "2025-05-22",
+      "roundNumber": 1,
+      "opponent": "Mattmelach",
+      "result": "W",
+      "ratingBefore": 1500,
+      "ratingAfter": 1516,
+      "ratingChange": 16
+    },
+    {
+      "tournamentId": "312921",
+      "tournamentDate": "2025-05-22",
+      "roundNumber": 2,
+      "opponent": "itsCama",
+      "result": "W",
+      "ratingBefore": 1516,
+      "ratingAfter": 1531,
+      "ratingChange": 15
+    },
+    {
+      "tournamentId": "312921",
+      "tournamentDate": "2025-05-22",
+      "roundNumber": 3,
+      "opponent": "rmcf",
+      "result": "L",
+      "ratingBefore": 1531,
+      "ratingAfter": 1514,
+      "ratingChange": -17
+    },
+    {
+      "tournamentId": "316750",
+      "tournamentDate": "2025-05-29",
+      "roundNumber": 1,
+      "opponent": "Alphataru",
+      "result": "L",
+      "ratingBefore": 1514,
+      "ratingAfter": 1497,
+      "ratingChange": -17
+    },
+    {
+      "tournamentId": "316750",
+      "tournamentDate": "2025-05-29",
+      "roundNumber": 2,
+      "opponent": "BryanGulotta",
+      "result": "L",
+      "ratingBefore": 1497,
+      "ratingAfter": 1480,
+      "ratingChange": -17
+    },
+    {
+      "tournamentId": "316750",
+      "tournamentDate": "2025-05-29",
+      "roundNumber": 3,
+      "opponent": "itsCama",
+      "result": "W",
+      "ratingBefore": 1480,
+      "ratingAfter": 1495,
+      "ratingChange": 15
+    },
+    {
+      "tournamentId": "321687",
+      "tournamentDate": "2025-06-05",
+      "roundNumber": 1,
+      "opponent": "rpf5029",
+      "result": "W",
+      "ratingBefore": 1495,
+      "ratingAfter": 1511,
+      "ratingChange": 16
+    },
+    {
+      "tournamentId": "321687",
+      "tournamentDate": "2025-06-05",
+      "roundNumber": 2,
+      "opponent": "BryanGulotta",
+      "result": "W",
+      "ratingBefore": 1511,
+      "ratingAfter": 1526,
+      "ratingChange": 15
+    },
+    {
+      "tournamentId": "321687",
+      "tournamentDate": "2025-06-05",
+      "roundNumber": 3,
+      "opponent": "landho",
+      "result": "L",
+      "ratingBefore": 1526,
+      "ratingAfter": 1511,
+      "ratingChange": -15
+    },
+    {
+      "tournamentId": "328861",
+      "tournamentDate": "2025-06-19",
+      "roundNumber": 1,
+      "opponent": "JUDDERMANG",
+      "result": "W",
+      "ratingBefore": 1511,
+      "ratingAfter": 1524,
+      "ratingChange": 13
+    },
+    {
+      "tournamentId": "328861",
+      "tournamentDate": "2025-06-19",
+      "roundNumber": 2,
+      "opponent": "jeffmarkues",
+      "result": "L",
+      "ratingBefore": 1524,
+      "ratingAfter": 1508,
+      "ratingChange": -16
+    },
+    {
+      "tournamentId": "328861",
+      "tournamentDate": "2025-06-19",
+      "roundNumber": 3,
+      "opponent": "BryanGulotta",
+      "result": "L",
+      "ratingBefore": 1508,
+      "ratingAfter": 1489,
+      "ratingChange": -19
+    },
+    {
+      "tournamentId": "335531",
+      "tournamentDate": "2025-07-03",
+      "roundNumber": 1,
+      "opponent": "BryanGulotta",
+      "result": "L",
+      "ratingBefore": 1489,
+      "ratingAfter": 1472,
+      "ratingChange": -17
+    },
+    {
+      "tournamentId": "335531",
+      "tournamentDate": "2025-07-03",
+      "roundNumber": 2,
+      "opponent": "itsCama",
+      "result": "L",
+      "ratingBefore": 1472,
+      "ratingAfter": 1453,
+      "ratingChange": -19
+    },
+    {
+      "tournamentId": "335531",
+      "tournamentDate": "2025-07-03",
+      "roundNumber": 3,
+      "opponent": "RolandMTG",
+      "result": "W",
+      "ratingBefore": 1453,
+      "ratingAfter": 1472,
+      "ratingChange": 19
+    },
+    {
+      "tournamentId": "352572",
+      "tournamentDate": "2025-08-14",
+      "roundNumber": 1,
+      "opponent": "JUDDERMANG",
+      "result": "W",
+      "ratingBefore": 1472,
+      "ratingAfter": 1486,
+      "ratingChange": 14
+    },
+    {
+      "tournamentId": "352572",
+      "tournamentDate": "2025-08-14",
+      "roundNumber": 2,
+      "opponent": "FriendlyFerret",
+      "result": "W",
+      "ratingBefore": 1486,
+      "ratingAfter": 1507,
+      "ratingChange": 21
+    },
+    {
+      "tournamentId": "352572",
+      "tournamentDate": "2025-08-14",
+      "roundNumber": 3,
+      "opponent": "jeffmarkues",
+      "result": "W",
+      "ratingBefore": 1507,
+      "ratingAfter": 1528,
+      "ratingChange": 21
+    },
+    {
+      "tournamentId": "365765",
+      "tournamentDate": "2025-09-18",
+      "roundNumber": 1,
+      "opponent": "JUDDERMANG",
+      "result": "W",
+      "ratingBefore": 1528,
+      "ratingAfter": 1540,
+      "ratingChange": 12
+    },
+    {
+      "tournamentId": "365765",
+      "tournamentDate": "2025-09-18",
+      "roundNumber": 2,
+      "opponent": "swbmtg",
+      "result": "L",
+      "ratingBefore": 1540,
+      "ratingAfter": 1528,
+      "ratingChange": -12
+    },
+    {
+      "tournamentId": "365765",
+      "tournamentDate": "2025-09-18",
+      "roundNumber": 3,
+      "opponent": "Mattmelach",
+      "result": "L",
+      "ratingBefore": 1528,
+      "ratingAfter": 1509,
+      "ratingChange": -19
+    },
+    {
+      "tournamentId": "367531",
+      "tournamentDate": "2025-09-25",
+      "roundNumber": 1,
+      "opponent": "sylvanisator",
+      "result": "W",
+      "ratingBefore": 1509,
+      "ratingAfter": 1523,
+      "ratingChange": 14
+    },
+    {
+      "tournamentId": "367531",
+      "tournamentDate": "2025-09-25",
+      "roundNumber": 2,
+      "opponent": "JUDDERMANG",
+      "result": "L",
+      "ratingBefore": 1523,
+      "ratingAfter": 1502,
+      "ratingChange": -21
+    },
+    {
+      "tournamentId": "367531",
+      "tournamentDate": "2025-09-25",
+      "roundNumber": 3,
+      "opponent": "itsCama",
+      "result": "L",
+      "ratingBefore": 1502,
+      "ratingAfter": 1485,
+      "ratingChange": -17
+    },
+    {
+      "tournamentId": "373539",
+      "tournamentDate": "2025-10-16",
+      "roundNumber": 1,
+      "opponent": "Taylorhol",
+      "result": "L",
+      "ratingBefore": 1485,
+      "ratingAfter": 1469,
+      "ratingChange": -16
+    },
+    {
+      "tournamentId": "373539",
+      "tournamentDate": "2025-10-16",
+      "roundNumber": 2,
+      "opponent": "sjpenzer",
+      "result": "L",
+      "ratingBefore": 1469,
+      "ratingAfter": 1454,
+      "ratingChange": -15
+    },
+    {
+      "tournamentId": "373539",
+      "tournamentDate": "2025-10-16",
+      "roundNumber": 3,
+      "opponent": "Charlengels",
+      "result": "D",
+      "ratingBefore": 1454,
+      "ratingAfter": 1454,
+      "ratingChange": 0
+    },
+    {
+      "tournamentId": "375338",
+      "tournamentDate": "2025-10-23",
+      "roundNumber": 1,
+      "opponent": "JUDDERMANG",
+      "result": "W",
+      "ratingBefore": 1454,
+      "ratingAfter": 1465,
+      "ratingChange": 11
+    },
+    {
+      "tournamentId": "375338",
+      "tournamentDate": "2025-10-23",
+      "roundNumber": 2,
+      "opponent": "Mattmelach",
+      "result": "W",
+      "ratingBefore": 1465,
+      "ratingAfter": 1480,
+      "ratingChange": 15
+    },
+    {
+      "tournamentId": "375338",
+      "tournamentDate": "2025-10-23",
+      "roundNumber": 3,
+      "opponent": "Lannynyny",
+      "result": "L",
+      "ratingBefore": 1480,
+      "ratingAfter": 1464,
+      "ratingChange": -16
+    },
+    {
+      "tournamentId": "382756",
+      "tournamentDate": "2025-11-14",
+      "roundNumber": 1,
+      "opponent": "sjpenzer",
+      "result": "L",
+      "ratingBefore": 1464,
+      "ratingAfter": 1451,
+      "ratingChange": -13
+    },
+    {
+      "tournamentId": "382756",
+      "tournamentDate": "2025-11-14",
+      "roundNumber": 2,
+      "opponent": "Mattmelach",
+      "result": "W",
+      "ratingBefore": 1451,
+      "ratingAfter": 1464,
+      "ratingChange": 13
+    },
+    {
+      "tournamentId": "382756",
+      "tournamentDate": "2025-11-14",
+      "roundNumber": 3,
+      "opponent": "swbmtg",
+      "result": "L",
+      "ratingBefore": 1464,
+      "ratingAfter": 1459,
+      "ratingChange": -5
+    }
   ]
 }

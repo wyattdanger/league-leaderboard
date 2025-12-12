@@ -87,5 +87,39 @@
       "gameWinPercentage": 0.66666667,
       "deck": "_"
     }
+  ],
+  "eloRating": 1514,
+  "peakEloRating": 1518,
+  "eloHistory": [
+    {
+      "tournamentId": "367531",
+      "tournamentDate": "2025-09-25",
+      "roundNumber": 1,
+      "opponent": "SF45",
+      "result": "W",
+      "ratingBefore": 1500,
+      "ratingAfter": 1518,
+      "ratingChange": 18
+    },
+    {
+      "tournamentId": "367531",
+      "tournamentDate": "2025-09-25",
+      "roundNumber": 2,
+      "opponent": "RichBucey",
+      "result": "L",
+      "ratingBefore": 1518,
+      "ratingAfter": 1499,
+      "ratingChange": -19
+    },
+    {
+      "tournamentId": "367531",
+      "tournamentDate": "2025-09-25",
+      "roundNumber": 3,
+      "opponent": "zoidberg1003",
+      "result": "W",
+      "ratingBefore": 1499,
+      "ratingAfter": 1514,
+      "ratingChange": 15
+    }
   ]
 }

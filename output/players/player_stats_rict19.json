@@ -71,5 +71,29 @@
       "gameWinPercentage": 0.33333333,
       "deck": "_"
     }
+  ],
+  "eloRating": 1475,
+  "peakEloRating": 1500,
+  "eloHistory": [
+    {
+      "tournamentId": "335531",
+      "tournamentDate": "2025-07-03",
+      "roundNumber": 1,
+      "opponent": "landho",
+      "result": "L",
+      "ratingBefore": 1500,
+      "ratingAfter": 1489,
+      "ratingChange": -11
+    },
+    {
+      "tournamentId": "335531",
+      "tournamentDate": "2025-07-03",
+      "roundNumber": 2,
+      "opponent": "jeffmarkues",
+      "result": "L",
+      "ratingBefore": 1489,
+      "ratingAfter": 1475,
+      "ratingChange": -14
+    }
   ]
 }

@@ -148,5 +148,69 @@
       "gameWinPercentage": 0.42857143,
       "deck": "White Weenie"
     }
+  ],
+  "eloRating": 1465,
+  "peakEloRating": 1515,
+  "eloHistory": [
+    {
+      "tournamentId": "375338",
+      "tournamentDate": "2025-10-23",
+      "roundNumber": 1,
+      "opponent": "RichBucey",
+      "result": "W",
+      "ratingBefore": 1500,
+      "ratingAfter": 1515,
+      "ratingChange": 15
+    },
+    {
+      "tournamentId": "375338",
+      "tournamentDate": "2025-10-23",
+      "roundNumber": 2,
+      "opponent": "Tencteri",
+      "result": "L",
+      "ratingBefore": 1515,
+      "ratingAfter": 1498,
+      "ratingChange": -17
+    },
+    {
+      "tournamentId": "375338",
+      "tournamentDate": "2025-10-23",
+      "roundNumber": 3,
+      "opponent": "Taylorhol",
+      "result": "L",
+      "ratingBefore": 1498,
+      "ratingAfter": 1479,
+      "ratingChange": -19
+    },
+    {
+      "tournamentId": "377629",
+      "tournamentDate": "2025-10-30",
+      "roundNumber": 1,
+      "opponent": "aprofaci",
+      "result": "L",
+      "ratingBefore": 1479,
+      "ratingAfter": 1466,
+      "ratingChange": -13
+    },
+    {
+      "tournamentId": "377629",
+      "tournamentDate": "2025-10-30",
+      "roundNumber": 2,
+      "opponent": "BryanGulotta",
+      "result": "L",
+      "ratingBefore": 1466,
+      "ratingAfter": 1453,
+      "ratingChange": -13
+    },
+    {
+      "tournamentId": "377629",
+      "tournamentDate": "2025-10-30",
+      "roundNumber": 3,
+      "opponent": "ForceofPhil",
+      "result": "W",
+      "ratingBefore": 1453,
+      "ratingAfter": 1465,
+      "ratingChange": 12
+    }
   ]
 }

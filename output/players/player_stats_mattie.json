@@ -71,5 +71,29 @@
       "gameWinPercentage": 0.42857143,
       "deck": "_"
     }
+  ],
+  "eloRating": 1472,
+  "peakEloRating": 1500,
+  "eloHistory": [
+    {
+      "tournamentId": "361066",
+      "tournamentDate": "2025-09-04",
+      "roundNumber": 1,
+      "opponent": "swbmtg",
+      "result": "L",
+      "ratingBefore": 1500,
+      "ratingAfter": 1488,
+      "ratingChange": -12
+    },
+    {
+      "tournamentId": "361066",
+      "tournamentDate": "2025-09-04",
+      "roundNumber": 2,
+      "opponent": "BonafideVonafied",
+      "result": "L",
+      "ratingBefore": 1488,
+      "ratingAfter": 1472,
+      "ratingChange": -16
+    }
   ]
 }

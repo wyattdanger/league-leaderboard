@@ -71,5 +71,29 @@
       "gameWinPercentage": 0.42857143,
       "deck": "_"
     }
+  ],
+  "eloRating": 1469,
+  "peakEloRating": 1500,
+  "eloHistory": [
+    {
+      "tournamentId": "335531",
+      "tournamentDate": "2025-07-03",
+      "roundNumber": 1,
+      "opponent": "Mattmelach",
+      "result": "L",
+      "ratingBefore": 1500,
+      "ratingAfter": 1479,
+      "ratingChange": -21
+    },
+    {
+      "tournamentId": "335531",
+      "tournamentDate": "2025-07-03",
+      "roundNumber": 3,
+      "opponent": "landho",
+      "result": "L",
+      "ratingBefore": 1479,
+      "ratingAfter": 1469,
+      "ratingChange": -10
+    }
   ]
 }

@@ -87,5 +87,39 @@
       "gameWinPercentage": 0.57142857,
       "deck": "_"
     }
+  ],
+  "eloRating": 1520,
+  "peakEloRating": 1520,
+  "eloHistory": [
+    {
+      "tournamentId": "325333",
+      "tournamentDate": "2025-06-12",
+      "roundNumber": 1,
+      "opponent": "RolandMTG",
+      "result": "L",
+      "ratingBefore": 1500,
+      "ratingAfter": 1485,
+      "ratingChange": -15
+    },
+    {
+      "tournamentId": "325333",
+      "tournamentDate": "2025-06-12",
+      "roundNumber": 2,
+      "opponent": "swbmtg",
+      "result": "W",
+      "ratingBefore": 1485,
+      "ratingAfter": 1503,
+      "ratingChange": 18
+    },
+    {
+      "tournamentId": "325333",
+      "tournamentDate": "2025-06-12",
+      "roundNumber": 3,
+      "opponent": "jeffmarkues",
+      "result": "W",
+      "ratingBefore": 1503,
+      "ratingAfter": 1520,
+      "ratingChange": 17
+    }
   ]
 }

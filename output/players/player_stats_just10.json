@@ -87,5 +87,39 @@
       "gameWinPercentage": 0.85714286,
       "deck": "_"
     }
+  ],
+  "eloRating": 1552,
+  "peakEloRating": 1552,
+  "eloHistory": [
+    {
+      "tournamentId": "325333",
+      "tournamentDate": "2025-06-12",
+      "roundNumber": 1,
+      "opponent": "drakedrakedrake",
+      "result": "W",
+      "ratingBefore": 1500,
+      "ratingAfter": 1517,
+      "ratingChange": 17
+    },
+    {
+      "tournamentId": "325333",
+      "tournamentDate": "2025-06-12",
+      "roundNumber": 2,
+      "opponent": "jeffmarkues",
+      "result": "W",
+      "ratingBefore": 1517,
+      "ratingAfter": 1534,
+      "ratingChange": 17
+    },
+    {
+      "tournamentId": "325333",
+      "tournamentDate": "2025-06-12",
+      "roundNumber": 3,
+      "opponent": "FriendlyFerret",
+      "result": "W",
+      "ratingBefore": 1534,
+      "ratingAfter": 1552,
+      "ratingChange": 18
+    }
   ]
 }

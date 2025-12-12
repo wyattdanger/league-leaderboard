@@ -87,5 +87,39 @@
       "gameWinPercentage": 0.42857143,
       "deck": "_"
     }
+  ],
+  "eloRating": 1482,
+  "peakEloRating": 1500,
+  "eloHistory": [
+    {
+      "tournamentId": "316750",
+      "tournamentDate": "2025-05-29",
+      "roundNumber": 1,
+      "opponent": "gberlinrut",
+      "result": "L",
+      "ratingBefore": 1500,
+      "ratingAfter": 1484,
+      "ratingChange": -16
+    },
+    {
+      "tournamentId": "316750",
+      "tournamentDate": "2025-05-29",
+      "roundNumber": 2,
+      "opponent": "swbmtg",
+      "result": "L",
+      "ratingBefore": 1484,
+      "ratingAfter": 1467,
+      "ratingChange": -17
+    },
+    {
+      "tournamentId": "316750",
+      "tournamentDate": "2025-05-29",
+      "roundNumber": 3,
+      "opponent": "Mattmelach",
+      "result": "W",
+      "ratingBefore": 1467,
+      "ratingAfter": 1482,
+      "ratingChange": 15
+    }
   ]
 }

@@ -133,5 +133,69 @@
       "gameWinPercentage": 0.42857143,
       "deck": "_"
     }
+  ],
+  "eloRating": 1504,
+  "peakEloRating": 1504,
+  "eloHistory": [
+    {
+      "tournamentId": "305152",
+      "tournamentDate": "2025-05-09",
+      "roundNumber": 1,
+      "opponent": "RichBucey",
+      "result": "L",
+      "ratingBefore": 1500,
+      "ratingAfter": 1484,
+      "ratingChange": -16
+    },
+    {
+      "tournamentId": "305152",
+      "tournamentDate": "2025-05-09",
+      "roundNumber": 2,
+      "opponent": "itsCama",
+      "result": "L",
+      "ratingBefore": 1484,
+      "ratingAfter": 1468,
+      "ratingChange": -16
+    },
+    {
+      "tournamentId": "305152",
+      "tournamentDate": "2025-05-09",
+      "roundNumber": 3,
+      "opponent": "sylvanisator",
+      "result": "W",
+      "ratingBefore": 1468,
+      "ratingAfter": 1485,
+      "ratingChange": 17
+    },
+    {
+      "tournamentId": "321687",
+      "tournamentDate": "2025-06-05",
+      "roundNumber": 1,
+      "opponent": "AndrewLevine",
+      "result": "L",
+      "ratingBefore": 1485,
+      "ratingAfter": 1469,
+      "ratingChange": -16
+    },
+    {
+      "tournamentId": "321687",
+      "tournamentDate": "2025-06-05",
+      "roundNumber": 2,
+      "opponent": "RichBucey",
+      "result": "W",
+      "ratingBefore": 1469,
+      "ratingAfter": 1488,
+      "ratingChange": 19
+    },
+    {
+      "tournamentId": "321687",
+      "tournamentDate": "2025-06-05",
+      "roundNumber": 3,
+      "opponent": "JUDDERMANG",
+      "result": "W",
+      "ratingBefore": 1488,
+      "ratingAfter": 1504,
+      "ratingChange": 16
+    }
   ]
 }

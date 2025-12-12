@@ -187,5 +187,89 @@
       "gameWinPercentage": 0.33333333,
       "deck": "_"
     }
+  ],
+  "eloRating": 1478,
+  "peakEloRating": 1519,
+  "eloHistory": [
+    {
+      "tournamentId": "338898",
+      "tournamentDate": "2025-07-10",
+      "roundNumber": 1,
+      "opponent": "jeffmarkues",
+      "result": "W",
+      "ratingBefore": 1500,
+      "ratingAfter": 1519,
+      "ratingChange": 19
+    },
+    {
+      "tournamentId": "338898",
+      "tournamentDate": "2025-07-10",
+      "roundNumber": 2,
+      "opponent": "drakedrakedrake",
+      "result": "L",
+      "ratingBefore": 1519,
+      "ratingAfter": 1504,
+      "ratingChange": -15
+    },
+    {
+      "tournamentId": "338898",
+      "tournamentDate": "2025-07-10",
+      "roundNumber": 3,
+      "opponent": "FriendlyFerret",
+      "result": "L",
+      "ratingBefore": 1504,
+      "ratingAfter": 1491,
+      "ratingChange": -13
+    },
+    {
+      "tournamentId": "343959",
+      "tournamentDate": "2025-07-24",
+      "roundNumber": 1,
+      "opponent": "FriendlyFerret",
+      "result": "L",
+      "ratingBefore": 1491,
+      "ratingAfter": 1479,
+      "ratingChange": -12
+    },
+    {
+      "tournamentId": "343959",
+      "tournamentDate": "2025-07-24",
+      "roundNumber": 2,
+      "opponent": "JUDDERMANG",
+      "result": "W",
+      "ratingBefore": 1479,
+      "ratingAfter": 1492,
+      "ratingChange": 13
+    },
+    {
+      "tournamentId": "343959",
+      "tournamentDate": "2025-07-24",
+      "roundNumber": 3,
+      "opponent": "avoellmer",
+      "result": "W",
+      "ratingBefore": 1492,
+      "ratingAfter": 1508,
+      "ratingChange": 16
+    },
+    {
+      "tournamentId": "384681",
+      "tournamentDate": "2025-11-21",
+      "roundNumber": 1,
+      "opponent": "aprofaci",
+      "result": "L",
+      "ratingBefore": 1508,
+      "ratingAfter": 1494,
+      "ratingChange": -14
+    },
+    {
+      "tournamentId": "384681",
+      "tournamentDate": "2025-11-21",
+      "roundNumber": 3,
+      "opponent": "JohnnyDalz",
+      "result": "L",
+      "ratingBefore": 1494,
+      "ratingAfter": 1478,
+      "ratingChange": -16
+    }
   ]
 }

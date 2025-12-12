@@ -226,5 +226,109 @@
       "gameWinPercentage": 0.33333333,
       "deck": "_"
     }
+  ],
+  "eloRating": 1480,
+  "peakEloRating": 1507,
+  "eloHistory": [
+    {
+      "tournamentId": "308700",
+      "tournamentDate": "2025-05-15",
+      "roundNumber": 1,
+      "opponent": "sylvanisator",
+      "result": "L",
+      "ratingBefore": 1500,
+      "ratingAfter": 1483,
+      "ratingChange": -17
+    },
+    {
+      "tournamentId": "308700",
+      "tournamentDate": "2025-05-15",
+      "roundNumber": 2,
+      "opponent": "jeffmarkues",
+      "result": "L",
+      "ratingBefore": 1483,
+      "ratingAfter": 1469,
+      "ratingChange": -14
+    },
+    {
+      "tournamentId": "361066",
+      "tournamentDate": "2025-09-04",
+      "roundNumber": 1,
+      "opponent": "ForceofPhil",
+      "result": "W",
+      "ratingBefore": 1469,
+      "ratingAfter": 1485,
+      "ratingChange": 16
+    },
+    {
+      "tournamentId": "361066",
+      "tournamentDate": "2025-09-04",
+      "roundNumber": 2,
+      "opponent": "jeffmarkues",
+      "result": "L",
+      "ratingBefore": 1485,
+      "ratingAfter": 1475,
+      "ratingChange": -10
+    },
+    {
+      "tournamentId": "361066",
+      "tournamentDate": "2025-09-04",
+      "roundNumber": 3,
+      "opponent": "BryanGulotta",
+      "result": "W",
+      "ratingBefore": 1475,
+      "ratingAfter": 1492,
+      "ratingChange": 17
+    },
+    {
+      "tournamentId": "363663",
+      "tournamentDate": "2025-09-11",
+      "roundNumber": 1,
+      "opponent": "madmanpoet",
+      "result": "L",
+      "ratingBefore": 1492,
+      "ratingAfter": 1482,
+      "ratingChange": -10
+    },
+    {
+      "tournamentId": "363663",
+      "tournamentDate": "2025-09-11",
+      "roundNumber": 3,
+      "opponent": "JUDDERMANG",
+      "result": "W",
+      "ratingBefore": 1482,
+      "ratingAfter": 1496,
+      "ratingChange": 14
+    },
+    {
+      "tournamentId": "373539",
+      "tournamentDate": "2025-10-16",
+      "roundNumber": 1,
+      "opponent": "ForceofPhil",
+      "result": "W",
+      "ratingBefore": 1496,
+      "ratingAfter": 1507,
+      "ratingChange": 11
+    },
+    {
+      "tournamentId": "373539",
+      "tournamentDate": "2025-10-16",
+      "roundNumber": 2,
+      "opponent": "LuisNeiman",
+      "result": "L",
+      "ratingBefore": 1507,
+      "ratingAfter": 1495,
+      "ratingChange": -12
+    },
+    {
+      "tournamentId": "373539",
+      "tournamentDate": "2025-10-16",
+      "roundNumber": 3,
+      "opponent": "sjpenzer",
+      "result": "L",
+      "ratingBefore": 1495,
+      "ratingAfter": 1480,
+      "ratingChange": -15
+    }
   ]
 }

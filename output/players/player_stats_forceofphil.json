@@ -325,5 +325,179 @@
       "gameWinPercentage": 0.375,
       "deck": "_"
     }
+  ],
+  "eloRating": 1353,
+  "peakEloRating": 1500,
+  "eloHistory": [
+    {
+      "tournamentId": "357267",
+      "tournamentDate": "2025-08-29",
+      "roundNumber": 1,
+      "opponent": "swbmtg",
+      "result": "L",
+      "ratingBefore": 1500,
+      "ratingAfter": 1488,
+      "ratingChange": -12
+    },
+    {
+      "tournamentId": "357267",
+      "tournamentDate": "2025-08-29",
+      "roundNumber": 2,
+      "opponent": "RebellSon",
+      "result": "D",
+      "ratingBefore": 1488,
+      "ratingAfter": 1489,
+      "ratingChange": 1
+    },
+    {
+      "tournamentId": "357267",
+      "tournamentDate": "2025-08-29",
+      "roundNumber": 3,
+      "opponent": "delofstrom",
+      "result": "L",
+      "ratingBefore": 1489,
+      "ratingAfter": 1468,
+      "ratingChange": -21
+    },
+    {
+      "tournamentId": "361066",
+      "tournamentDate": "2025-09-04",
+      "roundNumber": 1,
+      "opponent": "justintomczyk",
+      "result": "L",
+      "ratingBefore": 1468,
+      "ratingAfter": 1452,
+      "ratingChange": -16
+    },
+    {
+      "tournamentId": "361066",
+      "tournamentDate": "2025-09-04",
+      "roundNumber": 2,
+      "opponent": "sylvanisator",
+      "result": "L",
+      "ratingBefore": 1452,
+      "ratingAfter": 1438,
+      "ratingChange": -14
+    },
+    {
+      "tournamentId": "361066",
+      "tournamentDate": "2025-09-04",
+      "roundNumber": 3,
+      "opponent": "RichBucey",
+      "result": "L",
+      "ratingBefore": 1438,
+      "ratingAfter": 1422,
+      "ratingChange": -16
+    },
+    {
+      "tournamentId": "365765",
+      "tournamentDate": "2025-09-18",
+      "roundNumber": 1,
+      "opponent": "madmanpoet",
+      "result": "L",
+      "ratingBefore": 1422,
+      "ratingAfter": 1414,
+      "ratingChange": -8
+    },
+    {
+      "tournamentId": "365765",
+      "tournamentDate": "2025-09-18",
+      "roundNumber": 2,
+      "opponent": "Mondale",
+      "result": "L",
+      "ratingBefore": 1414,
+      "ratingAfter": 1401,
+      "ratingChange": -13
+    },
+    {
+      "tournamentId": "365765",
+      "tournamentDate": "2025-09-18",
+      "roundNumber": 3,
+      "opponent": "sylvanisator",
+      "result": "L",
+      "ratingBefore": 1401,
+      "ratingAfter": 1387,
+      "ratingChange": -14
+    },
+    {
+      "tournamentId": "369767",
+      "tournamentDate": "2025-10-02",
+      "roundNumber": 2,
+      "opponent": "RichBucey",
+      "result": "L",
+      "ratingBefore": 1387,
+      "ratingAfter": 1375,
+      "ratingChange": -12
+    },
+    {
+      "tournamentId": "369767",
+      "tournamentDate": "2025-10-02",
+      "roundNumber": 3,
+      "opponent": "Matt_W",
+      "result": "W",
+      "ratingBefore": 1375,
+      "ratingAfter": 1394,
+      "ratingChange": 19
+    },
+    {
+      "tournamentId": "373539",
+      "tournamentDate": "2025-10-16",
+      "roundNumber": 1,
+      "opponent": "justintomczyk",
+      "result": "L",
+      "ratingBefore": 1394,
+      "ratingAfter": 1383,
+      "ratingChange": -11
+    },
+    {
+      "tournamentId": "373539",
+      "tournamentDate": "2025-10-16",
+      "roundNumber": 2,
+      "opponent": "BryanGulotta",
+      "result": "L",
+      "ratingBefore": 1383,
+      "ratingAfter": 1371,
+      "ratingChange": -12
+    },
+    {
+      "tournamentId": "373539",
+      "tournamentDate": "2025-10-16",
+      "roundNumber": 3,
+      "opponent": "Taylorhol",
+      "result": "W",
+      "ratingBefore": 1371,
+      "ratingAfter": 1392,
+      "ratingChange": 21
+    },
+    {
+      "tournamentId": "377629",
+      "tournamentDate": "2025-10-30",
+      "roundNumber": 1,
+      "opponent": "Mattmelach",
+      "result": "L",
+      "ratingBefore": 1392,
+      "ratingAfter": 1377,
+      "ratingChange": -15
+    },
+    {
+      "tournamentId": "377629",
+      "tournamentDate": "2025-10-30",
+      "roundNumber": 2,
+      "opponent": "Taylorhol",
+      "result": "L",
+      "ratingBefore": 1377,
+      "ratingAfter": 1365,
+      "ratingChange": -12
+    },
+    {
+      "tournamentId": "377629",
+      "tournamentDate": "2025-10-30",
+      "roundNumber": 3,
+      "opponent": "J0Nh",
+      "result": "L",
+      "ratingBefore": 1365,
+      "ratingAfter": 1353,
+      "ratingChange": -12
+    }
   ]
 }

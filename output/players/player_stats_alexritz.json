@@ -87,5 +87,39 @@
       "gameWinPercentage": 0.5,
       "deck": "_"
     }
+  ],
+  "eloRating": 1504,
+  "peakEloRating": 1504,
+  "eloHistory": [
+    {
+      "tournamentId": "365765",
+      "tournamentDate": "2025-09-18",
+      "roundNumber": 1,
+      "opponent": "swbmtg",
+      "result": "L",
+      "ratingBefore": 1500,
+      "ratingAfter": 1489,
+      "ratingChange": -11
+    },
+    {
+      "tournamentId": "365765",
+      "tournamentDate": "2025-09-18",
+      "roundNumber": 2,
+      "opponent": "zoidberg1003",
+      "result": "W",
+      "ratingBefore": 1489,
+      "ratingAfter": 1504,
+      "ratingChange": 15
+    },
+    {
+      "tournamentId": "365765",
+      "tournamentDate": "2025-09-18",
+      "roundNumber": 3,
+      "opponent": "BryanGulotta",
+      "result": "D",
+      "ratingBefore": 1504,
+      "ratingAfter": 1504,
+      "ratingChange": 0
+    }
   ]
 }

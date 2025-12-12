@@ -87,5 +87,39 @@
       "gameWinPercentage": 0.28571429,
       "deck": "_"
     }
+  ],
+  "eloRating": 1478,
+  "peakEloRating": 1500,
+  "eloHistory": [
+    {
+      "tournamentId": "338898",
+      "tournamentDate": "2025-07-10",
+      "roundNumber": 1,
+      "opponent": "drakedrakedrake",
+      "result": "L",
+      "ratingBefore": 1500,
+      "ratingAfter": 1486,
+      "ratingChange": -14
+    },
+    {
+      "tournamentId": "338898",
+      "tournamentDate": "2025-07-10",
+      "roundNumber": 2,
+      "opponent": "JUDDERMANG",
+      "result": "W",
+      "ratingBefore": 1486,
+      "ratingAfter": 1499,
+      "ratingChange": 13
+    },
+    {
+      "tournamentId": "338898",
+      "tournamentDate": "2025-07-10",
+      "roundNumber": 3,
+      "opponent": "delofstrom",
+      "result": "L",
+      "ratingBefore": 1499,
+      "ratingAfter": 1478,
+      "ratingChange": -21
+    }
   ]
 }

@@ -148,5 +148,69 @@
       "gameWinPercentage": 0.25,
       "deck": "_"
     }
+  ],
+  "eloRating": 1482,
+  "peakEloRating": 1500,
+  "eloHistory": [
+    {
+      "tournamentId": "343959",
+      "tournamentDate": "2025-07-24",
+      "roundNumber": 1,
+      "opponent": "madmanpoet",
+      "result": "L",
+      "ratingBefore": 1500,
+      "ratingAfter": 1487,
+      "ratingChange": -13
+    },
+    {
+      "tournamentId": "343959",
+      "tournamentDate": "2025-07-24",
+      "roundNumber": 2,
+      "opponent": "sylvanisator",
+      "result": "L",
+      "ratingBefore": 1487,
+      "ratingAfter": 1469,
+      "ratingChange": -18
+    },
+    {
+      "tournamentId": "343959",
+      "tournamentDate": "2025-07-24",
+      "roundNumber": 3,
+      "opponent": "FriendlyFerret",
+      "result": "L",
+      "ratingBefore": 1469,
+      "ratingAfter": 1458,
+      "ratingChange": -11
+    },
+    {
+      "tournamentId": "347610",
+      "tournamentDate": "2025-07-31",
+      "roundNumber": 1,
+      "opponent": "JUDDERMANG",
+      "result": "W",
+      "ratingBefore": 1458,
+      "ratingAfter": 1471,
+      "ratingChange": 13
+    },
+    {
+      "tournamentId": "347610",
+      "tournamentDate": "2025-07-31",
+      "roundNumber": 2,
+      "opponent": "swbmtg",
+      "result": "L",
+      "ratingBefore": 1471,
+      "ratingAfter": 1460,
+      "ratingChange": -11
+    },
+    {
+      "tournamentId": "347610",
+      "tournamentDate": "2025-07-31",
+      "roundNumber": 3,
+      "opponent": "jeffmarkues",
+      "result": "W",
+      "ratingBefore": 1460,
+      "ratingAfter": 1482,
+      "ratingChange": 22
+    }
   ]
 }

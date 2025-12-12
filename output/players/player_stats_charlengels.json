@@ -194,5 +194,99 @@
       "gameWinPercentage": 0.42857143,
       "deck": "_"
     }
+  ],
+  "eloRating": 1444,
+  "peakEloRating": 1515,
+  "eloHistory": [
+    {
+      "tournamentId": "371711",
+      "tournamentDate": "2025-10-09",
+      "roundNumber": 1,
+      "opponent": "Taylorhol",
+      "result": "W",
+      "ratingBefore": 1500,
+      "ratingAfter": 1515,
+      "ratingChange": 15
+    },
+    {
+      "tournamentId": "371711",
+      "tournamentDate": "2025-10-09",
+      "roundNumber": 2,
+      "opponent": "madmanpoet",
+      "result": "L",
+      "ratingBefore": 1515,
+      "ratingAfter": 1505,
+      "ratingChange": -10
+    },
+    {
+      "tournamentId": "371711",
+      "tournamentDate": "2025-10-09",
+      "roundNumber": 3,
+      "opponent": "Matt_W",
+      "result": "L",
+      "ratingBefore": 1505,
+      "ratingAfter": 1487,
+      "ratingChange": -18
+    },
+    {
+      "tournamentId": "373539",
+      "tournamentDate": "2025-10-16",
+      "roundNumber": 1,
+      "opponent": "LuisNeiman",
+      "result": "L",
+      "ratingBefore": 1487,
+      "ratingAfter": 1475,
+      "ratingChange": -12
+    },
+    {
+      "tournamentId": "373539",
+      "tournamentDate": "2025-10-16",
+      "roundNumber": 2,
+      "opponent": "Mattmelach",
+      "result": "L",
+      "ratingBefore": 1475,
+      "ratingAfter": 1456,
+      "ratingChange": -19
+    },
+    {
+      "tournamentId": "373539",
+      "tournamentDate": "2025-10-16",
+      "roundNumber": 3,
+      "opponent": "AndrewLevine",
+      "result": "D",
+      "ratingBefore": 1456,
+      "ratingAfter": 1456,
+      "ratingChange": 0
+    },
+    {
+      "tournamentId": "375338",
+      "tournamentDate": "2025-10-23",
+      "roundNumber": 1,
+      "opponent": "BryanGulotta",
+      "result": "L",
+      "ratingBefore": 1456,
+      "ratingAfter": 1442,
+      "ratingChange": -14
+    },
+    {
+      "tournamentId": "375338",
+      "tournamentDate": "2025-10-23",
+      "roundNumber": 2,
+      "opponent": "Taylorhol",
+      "result": "W",
+      "ratingBefore": 1442,
+      "ratingAfter": 1459,
+      "ratingChange": 17
+    },
+    {
+      "tournamentId": "375338",
+      "tournamentDate": "2025-10-23",
+      "roundNumber": 3,
+      "opponent": "RichBucey",
+      "result": "L",
+      "ratingBefore": 1459,
+      "ratingAfter": 1444,
+      "ratingChange": -15
+    }
   ]
 }

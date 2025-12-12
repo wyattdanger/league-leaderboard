@@ -87,5 +87,39 @@
       "gameWinPercentage": 0.55555556,
       "deck": "_"
     }
+  ],
+  "eloRating": 1485,
+  "peakEloRating": 1500,
+  "eloHistory": [
+    {
+      "tournamentId": "352572",
+      "tournamentDate": "2025-08-14",
+      "roundNumber": 1,
+      "opponent": "FriendlyFerret",
+      "result": "L",
+      "ratingBefore": 1500,
+      "ratingAfter": 1488,
+      "ratingChange": -12
+    },
+    {
+      "tournamentId": "352572",
+      "tournamentDate": "2025-08-14",
+      "roundNumber": 2,
+      "opponent": "JUDDERMANG",
+      "result": "L",
+      "ratingBefore": 1488,
+      "ratingAfter": 1469,
+      "ratingChange": -19
+    },
+    {
+      "tournamentId": "352572",
+      "tournamentDate": "2025-08-14",
+      "roundNumber": 3,
+      "opponent": "Machopeas",
+      "result": "W",
+      "ratingBefore": 1469,
+      "ratingAfter": 1485,
+      "ratingChange": 16
+    }
   ]
 }
