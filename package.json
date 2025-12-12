@@ -11,6 +11,7 @@
     "league": "tsx src/league-aggregator.ts",
     "player-stats": "tsx src/player-stats-generator.ts",
     "sync-league": "tsx src/sync-league.ts",
+    "elo-leaderboard": "tsx src/elo-leaderboard.ts",
     "generate-deck-template": "tsx src/generate-deck-template.ts",
     "decks-to-csv": "tsx src/decks-to-csv.ts",
     "csv-to-decks": "tsx src/csv-to-decks.ts",

@@ -14,6 +14,7 @@ import { getTournamentMetadata } from './utils/tournamentData';
 import { loadDeckData } from './utils/deckData';
 import { sortTournamentPerformancesByIdDesc } from './utils/tournamentSorting';
 import { Player } from './models/Player';
+import { calculateAllPlayerElos } from './utils/eloReplay';
 
 interface League {
   name: string;
@@ -169,6 +170,11 @@ async function generatePlayerStats(): Promise<void> {
   }
 
   console.log(`\nFound ${playerMatches.size} unique players\n`);
+
+  // Calculate ELO ratings for all players
+  console.log('📊 Calculating ELO ratings...\n');
+  const playerEloData = calculateAllPlayerElos(Array.from(allTournamentIds));
+  console.log(`✓ ELO calculation complete\n`);
 
   // Generate stats for each player
   const outputDir = path.join(process.cwd(), 'output', 'players');
@@ -374,6 +380,9 @@ async function generatePlayerStats(): Promise<void> {
     // Sort using centralized sorting utility
     const sortedPerformances = sortTournamentPerformancesByIdDesc(tournamentPerformances);
 
+    // Get ELO data for this player
+    const eloData = playerEloData.get(username);
+
     const playerDetailData: PlayerDetailData = {
       username,
       displayName,
@@ -381,6 +390,9 @@ async function generatePlayerStats(): Promise<void> {
       leagueStats,
       headToHead,
       tournamentPerformances: sortedPerformances,
+      eloRating: eloData?.currentRating,
+      peakEloRating: eloData?.peakRating,
+      eloHistory: eloData?.history,
     };
 
     // Write to file

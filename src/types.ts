@@ -85,6 +85,17 @@ export interface PlayerTournamentPerformance {
   deck?: string; // Optional deck archetype
 }
 
+export interface EloHistoryEntry {
+  tournamentId: string;
+  tournamentDate: string;
+  roundNumber: number;
+  opponent: string;
+  result: 'W' | 'L' | 'D';
+  ratingBefore: number;
+  ratingAfter: number;
+  ratingChange: number;
+}
+
 export interface PlayerDetailData {
   username: string;
   displayName: string;
@@ -92,6 +103,9 @@ export interface PlayerDetailData {
   leagueStats: PlayerLeagueStats[];
   headToHead: HeadToHeadRecord[];
   tournamentPerformances: PlayerTournamentPerformance[];
+  eloRating?: number;
+  peakEloRating?: number;
+  eloHistory?: EloHistoryEntry[];
 }
 
 export interface TournamentMetadata {
