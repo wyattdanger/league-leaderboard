@@ -6,6 +6,9 @@ interface Props {
 }
 
 const { leagueStats } = Astro.props;
+
+// Filter out Top 8 tournaments from league stats display
+const regularLeagueStats = leagueStats.filter((stats) => !stats.leagueName.endsWith(' Top 8'));
 ---
 
 <div class="league-stats-container">
@@ -13,7 +16,7 @@ const { leagueStats } = Astro.props;
 
   <div class="league-stats-grid">
     {
-      leagueStats.map((stats) => {
+      regularLeagueStats.map((stats) => {
         const mwPercentNum = stats.matchWinPercentage;
         const isHighMWP = mwPercentNum > 0.59;
         const isMediumMWP = mwPercentNum > 0.39;
