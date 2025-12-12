@@ -192,7 +192,30 @@ npm run player-stats
 - `src/utils/playerData.ts` - Helper functions for stats calculation
 - `src/utils/winPercentage.ts` - Win % calculations
 
-### Pattern 4: Building the Website
+### Pattern 4: Generating Page Metadata
+
+```bash
+npm run generate-metadata -- <tournament_id>  # Single tournament
+npm run generate-all-metadata                  # All tournaments
+```
+
+**What it does:**
+
+1. Loads tournament data and final standings
+2. Reads deck data from `decks.yml`
+3. Generates Open Graph metadata for social media previews:
+   - Title: "NYC Premodern - {Date} Meetup"
+   - Description: "{x} players gathered. {player} went {record} on {deck}"
+4. Saves to `output/tournament_{id}/page_metadata.json`
+
+**Key files:**
+
+- `src/generate-page-metadata.ts` - Single tournament metadata
+- `src/generate-all-metadata.ts` - Batch processing for all tournaments
+
+**Important:** This must be run BEFORE building the site. The event pages read this pre-generated metadata, they don't generate it during the build.
+
+### Pattern 5: Building the Website
 
 ```bash
 npm run build
@@ -200,9 +223,9 @@ npm run build
 
 **What it does:**
 
-1. Astro reads JSON files from `output/`
+1. Astro reads JSON files from `output/` (including page_metadata.json)
 2. Generates static HTML pages for:
-   - Event detail pages (`/event/{id}`)
+   - Event detail pages (`/event/{id}`) with Open Graph tags
    - Player profile pages (`/player/{username}`)
    - League standings pages (`/league/{slug}`)
 3. Outputs to `dist/`
@@ -351,34 +374,64 @@ if (standing.MatchWins === 3 && standing.MatchLosses === 0 && standing.MatchDraw
 
 ### Adding a New Tournament
 
-1. Scrape the data:
+**Quick Method (Automated):**
+
+```bash
+# Complete workflow - scrapes, generates templates, and rebuilds everything
+npm run process-tournament -- <tournament_id>
+
+# This will:
+# 1. Scrape tournament data from Melee.gg
+# 2. Generate deck template in decks.yml (if needed)
+# 3. Pause for you to fill in deck data (if template was generated)
+# 4. Sync league standings
+# 5. Regenerate player stats
+# 6. Generate page metadata for Open Graph previews
+# 7. Build the site
+```
+
+**Manual Method (Step-by-step):**
+
+1. Update `leagues.yml` to add tournament to appropriate league
+
+2. Scrape the data:
 
    ```bash
    npm run scrape -- <tournament_id>
    ```
 
-2. Update `leagues.yml` to add tournament to appropriate league
+3. Add deck data to `decks.yml` (see "Managing Deck Data" section below)
 
-3. Regenerate league standings:
+4. Generate page metadata for social media previews:
+
+   ```bash
+   npm run generate-metadata -- <tournament_id>
+   ```
+
+5. Regenerate league standings:
 
    ```bash
    npm run sync-league                      # Sync current league
    npm run sync-league -- --league "Q4 2025"  # Sync specific league
    ```
 
-4. Regenerate player stats:
+6. Regenerate player stats:
 
    ```bash
    npm run player-stats
    ```
 
-5. Rebuild site:
+7. Rebuild site:
 
    ```bash
    npm run build
    ```
 
-6. (Optional) Add deck data to `decks.yml`
+**Important Notes:**
+
+- Page metadata for Open Graph tags is generated BEFORE the build, not during it
+- Metadata files are stored in `output/tournament_{id}/page_metadata.json`
+- Always regenerate metadata after updating deck data to get updated descriptions
 
 ### Managing Deck Data
 
