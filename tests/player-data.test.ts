@@ -105,19 +105,72 @@ describe('Player Stats Calculation', () => {
       }
     });
 
-    it('should calculate correct match win percentage in head-to-head', () => {
-      const matchesPerRound = loadTestMatches();
-      const h2hRecords = calculateHeadToHeadRecords('swbmtg', matchesPerRound);
+    it('should calculate match win percentage with draws counting as 0.5 wins', () => {
+      // Test with hardcoded match data to ensure draws count as 0.5 wins
+      const match1: Match = {
+        Competitors: [
+          {
+            TeamId: 1,
+            Team: { Players: [{ Username: 'player1', DisplayName: 'Player 1' }] },
+            GameWins: 2,
+            GameLosses: 0,
+            GameByes: 0,
+          },
+          {
+            TeamId: 2,
+            Team: { Players: [{ Username: 'opponent1', DisplayName: 'Opponent 1' }] },
+            GameWins: 0,
+            GameLosses: 2,
+            GameByes: 0,
+          },
+        ],
+        GameDraws: 0,
+        ByeReason: null,
+        RoundNumber: 1,
+        TournamentId: 999999,
+      };
 
-      h2hRecords.forEach((record) => {
-        const totalMatches = record.matchWins + record.matchLosses + record.matchDraws;
-        expect(record.matchesPlayed).toBe(totalMatches);
+      const match2: Match = {
+        Competitors: [
+          {
+            TeamId: 1,
+            Team: { Players: [{ Username: 'player1', DisplayName: 'Player 1' }] },
+            GameWins: 0,
+            GameLosses: 0,
+            GameByes: 0,
+          },
+          {
+            TeamId: 3,
+            Team: { Players: [{ Username: 'opponent2', DisplayName: 'Opponent 2' }] },
+            GameWins: 0,
+            GameLosses: 0,
+            GameByes: 0,
+          },
+        ],
+        GameDraws: 3,
+        ByeReason: null,
+        RoundNumber: 2,
+        TournamentId: 999999,
+      };
 
-        if (totalMatches > 0) {
-          const expectedMWP = record.matchWins / totalMatches;
-          expect(record.matchWinPercentage).toBeCloseTo(expectedMWP, 4);
-        }
-      });
+      const matchesPerRound = [[match1, match2]];
+      const h2hRecords = calculateHeadToHeadRecords('player1', matchesPerRound);
+
+      expect(h2hRecords.length).toBe(2);
+
+      // Player went 1-0 vs opponent1, should be 100%
+      const vsOpponent1 = h2hRecords.find(r => r.opponentUsername === 'opponent1');
+      expect(vsOpponent1?.matchWins).toBe(1);
+      expect(vsOpponent1?.matchLosses).toBe(0);
+      expect(vsOpponent1?.matchDraws).toBe(0);
+      expect(vsOpponent1?.matchWinPercentage).toBe(1.0);
+
+      // Player went 0-0-1 vs opponent2, should be 50%
+      const vsOpponent2 = h2hRecords.find(r => r.opponentUsername === 'opponent2');
+      expect(vsOpponent2?.matchWins).toBe(0);
+      expect(vsOpponent2?.matchLosses).toBe(0);
+      expect(vsOpponent2?.matchDraws).toBe(1);
+      expect(vsOpponent2?.matchWinPercentage).toBe(0.5);
     });
 
     it('should calculate correct game win percentage in head-to-head', () => {
@@ -152,6 +205,46 @@ describe('Player Stats Calculation', () => {
           expect(['W', 'L', 'D']).toContain(result);
         });
       });
+    });
+
+    it('should calculate 50% win percentage for 0-0-1 record (draw only)', () => {
+      // Create a match with a draw result (0-0 game score, with 3 game draws)
+      const drawMatch: Match = {
+        Competitors: [
+          {
+            TeamId: 1,
+            Team: {
+              Players: [{ Username: 'player1', DisplayName: 'Player 1' }],
+            },
+            GameWins: 0,
+            GameLosses: 0,
+            GameByes: 0,
+          },
+          {
+            TeamId: 2,
+            Team: {
+              Players: [{ Username: 'player2', DisplayName: 'Player 2' }],
+            },
+            GameWins: 0,
+            GameLosses: 0,
+            GameByes: 0,
+          },
+        ],
+        GameDraws: 3,
+        ByeReason: null,
+        RoundNumber: 1,
+        TournamentId: 999999,
+      };
+
+      const matchesPerRound = [[drawMatch]];
+      const h2hRecords = calculateHeadToHeadRecords('player1', matchesPerRound);
+
+      expect(h2hRecords.length).toBe(1);
+      expect(h2hRecords[0].matchWins).toBe(0);
+      expect(h2hRecords[0].matchLosses).toBe(0);
+      expect(h2hRecords[0].matchDraws).toBe(1);
+      expect(h2hRecords[0].matchWinPercentage).toBe(0.5);
+      expect(h2hRecords[0].lastFiveResults).toEqual(['D']);
     });
 
     it('should not include bye matches in head-to-head records', () => {

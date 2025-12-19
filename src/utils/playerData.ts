@@ -239,7 +239,7 @@ export function calculateHeadToHeadRecords(
         matchWins: stats.matchWins,
         matchLosses: stats.matchLosses,
         matchDraws: stats.matchDraws,
-        matchWinPercentage: matchesPlayed > 0 ? stats.matchWins / matchesPlayed : 0,
+        matchWinPercentage: matchesPlayed > 0 ? (stats.matchWins + 0.5 * stats.matchDraws) / matchesPlayed : 0,
         gameWins: stats.gameWins,
         gameLosses: stats.gameLosses,
         gameDraws: stats.gameDraws,
