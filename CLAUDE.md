@@ -374,6 +374,58 @@ if (standing.MatchWins === 3 && standing.MatchLosses === 0 && standing.MatchDraw
 
 ### Adding a New Tournament
 
+**IMPORTANT: Correct Order of Operations**
+
+When adding a new tournament, follow this EXACT sequence to ensure deck data is included in all generated files:
+
+**Phase 1: Scraping and Preparation (BEFORE filling deck data)**
+
+1. Scrape tournament data:
+   ```bash
+   npm run scrape -- <tournament_id>
+   ```
+
+2. Add tournament to `leagues.yml` under appropriate league
+
+3. Generate deck template (prefills player usernames):
+   ```bash
+   npm run generate-deck-template
+   ```
+
+4. **PAUSE HERE** - Fill in deck data in `decks.yml` for the new tournament
+   - All player usernames will be prefilled with `_` placeholders
+   - Replace `_` with actual deck names
+   - DO NOT proceed until ALL deck data is filled in
+
+**Phase 2: Generation (AFTER deck data is complete)**
+
+5. Sync league standings:
+   ```bash
+   npm run sync-league                      # Sync current league
+   npm run sync-league -- --league "Q4 2025"  # Sync specific league
+   ```
+
+6. Regenerate player stats (this reads deck data from decks.yml):
+   ```bash
+   npm run player-stats
+   ```
+
+7. Generate page metadata for Open Graph previews:
+   ```bash
+   npm run generate-metadata -- <tournament_id>
+   ```
+
+8. Build the site:
+   ```bash
+   npm run build
+   ```
+
+**Why this order matters:**
+- Player stats generation reads deck data from `decks.yml` at runtime
+- If you generate player stats BEFORE filling in decks, player profiles will show `_` instead of deck names
+- You'll have to regenerate player stats again after filling in decks
+- Page metadata also uses deck data for event descriptions
+
 **Quick Method (Automated):**
 
 ```bash
@@ -389,37 +441,6 @@ npm run process-tournament -- <tournament_id>
 # 6. Generate page metadata for Open Graph previews
 # 7. Build the site
 ```
-
-**Manual Method (Step-by-step):**
-
-1. Update `leagues.yml` to add tournament to appropriate league
-
-2. Scrape the data:
-
-   ```bash
-   npm run scrape -- <tournament_id>
-   ```
-
-3. Add deck data to `decks.yml` (see "Managing Deck Data" section below)
-
-4. Generate page metadata for social media previews:
-
-   ```bash
-   npm run generate-metadata -- <tournament_id>
-   ```
-
-5. Regenerate league standings:
-
-   ```bash
-   npm run sync-league                      # Sync current league
-   npm run sync-league -- --league "Q4 2025"  # Sync specific league
-   ```
-
-6. Regenerate player stats:
-
-   ```bash
-   npm run player-stats
-   ```
 
 7. Rebuild site:
 
