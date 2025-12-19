@@ -1,0 +1,674 @@
+[
+  {
+    "Guid": "85769a52-0485-4b21-835a-b3b800101f15",
+    "Competitors": [
+      {
+        "ID": 12754257,
+        "CheckedIn": null,
+        "GameByes": 0,
+        "GameWins": 2,
+        "ResultConfirmed": "2025-12-19T01:48:33Z",
+        "SortOrder": 0,
+        "TeamId": 3754966,
+        "Team": {
+          "ID": 3754966,
+          "Name": null,
+          "Players": [
+            {
+              "ID": 3740302,
+              "DisplayName": "sjpenzer",
+              "DisplayNameLastFirst": "sjpenzer",
+              "ProfileImageVersion": 0,
+              "Username": "sjpenzer",
+              "ScreenName": "N/A",
+              "TeamId": 3754966,
+              "LanguageDescription": "Auto (English)",
+              "PronounsDescription": null
+            }
+          ],
+          "StatusDescription": "Active",
+          "IsActive": true
+        },
+        "GameWinsAndGameByes": 2,
+        "Decklists": []
+      },
+      {
+        "ID": 12754258,
+        "CheckedIn": null,
+        "GameByes": 0,
+        "GameWins": 1,
+        "ResultConfirmed": null,
+        "SortOrder": 1,
+        "TeamId": 3754963,
+        "Team": {
+          "ID": 3754963,
+          "Name": null,
+          "Players": [
+            {
+              "ID": 3740299,
+              "DisplayName": "JohnnyDalz",
+              "DisplayNameLastFirst": "JohnnyDalz",
+              "ProfileImageVersion": 0,
+              "Username": "JohnnyDalz",
+              "ScreenName": "N/A",
+              "TeamId": 3754963,
+              "LanguageDescription": "Auto (English)",
+              "PronounsDescription": null
+            }
+          ],
+          "StatusDescription": "Active",
+          "IsActive": true
+        },
+        "GameWinsAndGameByes": 1,
+        "Decklists": []
+      }
+    ],
+    "ByeReason": null,
+    "DateCreated": "2025-12-19T01:48:33Z",
+    "FeatureMatch": false,
+    "Format": "Premodern",
+    "FormatId": "920ec64f-a02f-4176-a3d0-0c46eef003cb",
+    "GameDraws": 0,
+    "HasResult": true,
+    "LossReason": null,
+    "MatchesPublished": true,
+    "PhaseId": 391951,
+    "PhaseSortOrder": 1,
+    "PodNumber": null,
+    "RoundId": 1375554,
+    "RoundName": null,
+    "RoundNumber": 2,
+    "SortOrder": null,
+    "TableLocation": null,
+    "TableNumber": 16,
+    "TableSection": null,
+    "TimeExtended": false,
+    "TimeExtensionMinutes": null,
+    "TournamentId": 391734,
+    "Type": 0,
+    "AcknowledgedDecklists": false,
+    "ByeReasonDescription": null,
+    "LossReasonDescription": null,
+    "ResultString": "sjpenzer won 2-1-0",
+    "RoundDescription": "Round 2",
+    "TableNumberDescription": "16",
+    "TypeDescription": "Best of Three",
+    "FormatDescription": "Premodern"
+  },
+  {
+    "Guid": "a249e4a3-e020-4799-8fc1-b3b800101f10",
+    "Competitors": [
+      {
+        "ID": 12754255,
+        "CheckedIn": null,
+        "GameByes": 0,
+        "GameWins": 1,
+        "ResultConfirmed": "2025-12-19T01:49:54Z",
+        "SortOrder": 0,
+        "TeamId": 3754965,
+        "Team": {
+          "ID": 3754965,
+          "Name": null,
+          "Players": [
+            {
+              "ID": 3740301,
+              "DisplayName": "Alex Profaci",
+              "DisplayNameLastFirst": "Profaci, Alex",
+              "ProfileImageVersion": 0,
+              "Username": "aprofaci",
+              "ScreenName": "N/A",
+              "TeamId": 3754965,
+              "LanguageDescription": "English (English)",
+              "PronounsDescription": "He/Him"
+            }
+          ],
+          "StatusDescription": "Active",
+          "IsActive": true
+        },
+        "GameWinsAndGameByes": 1,
+        "Decklists": []
+      },
+      {
+        "ID": 12754256,
+        "CheckedIn": null,
+        "GameByes": 0,
+        "GameWins": 2,
+        "ResultConfirmed": "2025-12-19T01:30:49Z",
+        "SortOrder": 1,
+        "TeamId": 3754980,
+        "Team": {
+          "ID": 3754980,
+          "Name": null,
+          "Players": [
+            {
+              "ID": 3740316,
+              "DisplayName": "Yosef Harari",
+              "DisplayNameLastFirst": "Harari, Yosef",
+              "ProfileImageVersion": 0,
+              "Username": "itsCama",
+              "ScreenName": "N/A",
+              "TeamId": 3754980,
+              "LanguageDescription": "Auto (English)",
+              "PronounsDescription": null
+            }
+          ],
+          "StatusDescription": "Active",
+          "IsActive": true
+        },
+        "GameWinsAndGameByes": 2,
+        "Decklists": []
+      }
+    ],
+    "ByeReason": null,
+    "DateCreated": "2025-12-19T01:49:54Z",
+    "FeatureMatch": false,
+    "Format": "Premodern",
+    "FormatId": "920ec64f-a02f-4176-a3d0-0c46eef003cb",
+    "GameDraws": 0,
+    "HasResult": true,
+    "LossReason": null,
+    "MatchesPublished": true,
+    "PhaseId": 391951,
+    "PhaseSortOrder": 1,
+    "PodNumber": null,
+    "RoundId": 1375554,
+    "RoundName": null,
+    "RoundNumber": 2,
+    "SortOrder": null,
+    "TableLocation": null,
+    "TableNumber": 17,
+    "TableSection": null,
+    "TimeExtended": false,
+    "TimeExtensionMinutes": null,
+    "TournamentId": 391734,
+    "Type": 0,
+    "AcknowledgedDecklists": false,
+    "ByeReasonDescription": null,
+    "LossReasonDescription": null,
+    "ResultString": "Yosef Harari won 2-1-0",
+    "RoundDescription": "Round 2",
+    "TableNumberDescription": "17",
+    "TypeDescription": "Best of Three",
+    "FormatDescription": "Premodern"
+  },
+  {
+    "Guid": "24facd3e-403a-45b2-8174-b3b800101f06",
+    "Competitors": [
+      {
+        "ID": 12754253,
+        "CheckedIn": null,
+        "GameByes": 0,
+        "GameWins": 2,
+        "ResultConfirmed": "2025-12-19T01:35:19Z",
+        "SortOrder": 0,
+        "TeamId": 3754986,
+        "Team": {
+          "ID": 3754986,
+          "Name": null,
+          "Players": [
+            {
+              "ID": 3740322,
+              "DisplayName": "Sean Fitzpatrick",
+              "DisplayNameLastFirst": "Fitzpatrick, Sean",
+              "ProfileImageVersion": 0,
+              "Username": "SeaF9",
+              "ScreenName": "N/A",
+              "TeamId": 3754986,
+              "LanguageDescription": "Auto (English)",
+              "PronounsDescription": null
+            }
+          ],
+          "StatusDescription": "Active",
+          "IsActive": true
+        },
+        "GameWinsAndGameByes": 2,
+        "Decklists": []
+      },
+      {
+        "ID": 12754254,
+        "CheckedIn": null,
+        "GameByes": 0,
+        "GameWins": 0,
+        "ResultConfirmed": "2025-12-19T01:29:21Z",
+        "SortOrder": 1,
+        "TeamId": 3754979,
+        "Team": {
+          "ID": 3754979,
+          "Name": null,
+          "Players": [
+            {
+              "ID": 3740315,
+              "DisplayName": "Chris Cruz",
+              "DisplayNameLastFirst": "Cruz, Chris",
+              "ProfileImageVersion": 3,
+              "Username": "JUDDERMANG",
+              "ScreenName": "N/A",
+              "TeamId": 3754979,
+              "LanguageDescription": "English (English)",
+              "PronounsDescription": "He/They"
+            }
+          ],
+          "StatusDescription": "Active",
+          "IsActive": true
+        },
+        "GameWinsAndGameByes": 0,
+        "Decklists": []
+      }
+    ],
+    "ByeReason": null,
+    "DateCreated": "2025-12-19T01:35:19Z",
+    "FeatureMatch": false,
+    "Format": "Premodern",
+    "FormatId": "920ec64f-a02f-4176-a3d0-0c46eef003cb",
+    "GameDraws": 0,
+    "HasResult": true,
+    "LossReason": null,
+    "MatchesPublished": true,
+    "PhaseId": 391951,
+    "PhaseSortOrder": 1,
+    "PodNumber": null,
+    "RoundId": 1375554,
+    "RoundName": null,
+    "RoundNumber": 2,
+    "SortOrder": null,
+    "TableLocation": null,
+    "TableNumber": 18,
+    "TableSection": null,
+    "TimeExtended": false,
+    "TimeExtensionMinutes": null,
+    "TournamentId": 391734,
+    "Type": 0,
+    "AcknowledgedDecklists": false,
+    "ByeReasonDescription": null,
+    "LossReasonDescription": null,
+    "ResultString": "Sean Fitzpatrick won 2-0-0",
+    "RoundDescription": "Round 2",
+    "TableNumberDescription": "18",
+    "TypeDescription": "Best of Three",
+    "FormatDescription": "Premodern"
+  },
+  {
+    "Guid": "4343f65b-c297-43a2-a4f6-b3b800101f02",
+    "Competitors": [
+      {
+        "ID": 12754251,
+        "CheckedIn": null,
+        "GameByes": 0,
+        "GameWins": 0,
+        "ResultConfirmed": null,
+        "SortOrder": 0,
+        "TeamId": 3754955,
+        "Team": {
+          "ID": 3754955,
+          "Name": null,
+          "Players": [
+            {
+              "ID": 3740291,
+              "DisplayName": "Shawn Stroke",
+              "DisplayNameLastFirst": "Stroke, Shawn",
+              "ProfileImageVersion": 0,
+              "Username": "sHaDes27",
+              "ScreenName": "N/A",
+              "TeamId": 3754955,
+              "LanguageDescription": "Auto (English)",
+              "PronounsDescription": null
+            }
+          ],
+          "StatusDescription": "Active",
+          "IsActive": true
+        },
+        "GameWinsAndGameByes": 0,
+        "Decklists": []
+      },
+      {
+        "ID": 12754252,
+        "CheckedIn": null,
+        "GameByes": 0,
+        "GameWins": 2,
+        "ResultConfirmed": null,
+        "SortOrder": 1,
+        "TeamId": 3754907,
+        "Team": {
+          "ID": 3754907,
+          "Name": null,
+          "Players": [
+            {
+              "ID": 3740243,
+              "DisplayName": "Taylorhol",
+              "DisplayNameLastFirst": "Taylorhol",
+              "ProfileImageVersion": 0,
+              "Username": "Taylorhol",
+              "ScreenName": "N/A",
+              "TeamId": 3754907,
+              "LanguageDescription": "Auto (English)",
+              "PronounsDescription": "He/Him"
+            }
+          ],
+          "StatusDescription": "Active",
+          "IsActive": true
+        },
+        "GameWinsAndGameByes": 2,
+        "Decklists": []
+      }
+    ],
+    "ByeReason": null,
+    "DateCreated": "2025-12-19T01:51:33Z",
+    "FeatureMatch": false,
+    "Format": "Premodern",
+    "FormatId": "920ec64f-a02f-4176-a3d0-0c46eef003cb",
+    "GameDraws": 0,
+    "HasResult": true,
+    "LossReason": null,
+    "MatchesPublished": true,
+    "PhaseId": 391951,
+    "PhaseSortOrder": 1,
+    "PodNumber": null,
+    "RoundId": 1375554,
+    "RoundName": null,
+    "RoundNumber": 2,
+    "SortOrder": null,
+    "TableLocation": null,
+    "TableNumber": 19,
+    "TableSection": null,
+    "TimeExtended": false,
+    "TimeExtensionMinutes": null,
+    "TournamentId": 391734,
+    "Type": 0,
+    "AcknowledgedDecklists": false,
+    "ByeReasonDescription": null,
+    "LossReasonDescription": null,
+    "ResultString": "Taylorhol won 2-0-0",
+    "RoundDescription": "Round 2",
+    "TableNumberDescription": "19",
+    "TypeDescription": "Best of Three",
+    "FormatDescription": "Premodern"
+  },
+  {
+    "Guid": "9765f96e-135c-407f-8582-b3b800101efd",
+    "Competitors": [
+      {
+        "ID": 12754249,
+        "CheckedIn": null,
+        "GameByes": 0,
+        "GameWins": 2,
+        "ResultConfirmed": "2025-12-19T01:43:33Z",
+        "SortOrder": 0,
+        "TeamId": 3754902,
+        "Team": {
+          "ID": 3754902,
+          "Name": null,
+          "Players": [
+            {
+              "ID": 3740238,
+              "DisplayName": "Ryan Mitchell",
+              "DisplayNameLastFirst": "Mitchell, Ryan",
+              "ProfileImageVersion": 3,
+              "Username": "Real_player_hidden",
+              "ScreenName": "N/A",
+              "TeamId": 3754902,
+              "LanguageDescription": "English (English)",
+              "PronounsDescription": "He/Him"
+            }
+          ],
+          "StatusDescription": "Active",
+          "IsActive": true
+        },
+        "GameWinsAndGameByes": 2,
+        "Decklists": []
+      },
+      {
+        "ID": 12754250,
+        "CheckedIn": null,
+        "GameByes": 0,
+        "GameWins": 1,
+        "ResultConfirmed": null,
+        "SortOrder": 1,
+        "TeamId": 3754969,
+        "Team": {
+          "ID": 3754969,
+          "Name": null,
+          "Players": [
+            {
+              "ID": 3740305,
+              "DisplayName": "Tencteri",
+              "DisplayNameLastFirst": "Tencteri",
+              "ProfileImageVersion": 0,
+              "Username": "Tencteri",
+              "ScreenName": "N/A",
+              "TeamId": 3754969,
+              "LanguageDescription": "Auto (English)",
+              "PronounsDescription": null
+            }
+          ],
+          "StatusDescription": "Active",
+          "IsActive": true
+        },
+        "GameWinsAndGameByes": 1,
+        "Decklists": []
+      }
+    ],
+    "ByeReason": null,
+    "DateCreated": "2025-12-19T01:43:33Z",
+    "FeatureMatch": false,
+    "Format": "Premodern",
+    "FormatId": "920ec64f-a02f-4176-a3d0-0c46eef003cb",
+    "GameDraws": 0,
+    "HasResult": true,
+    "LossReason": null,
+    "MatchesPublished": true,
+    "PhaseId": 391951,
+    "PhaseSortOrder": 1,
+    "PodNumber": null,
+    "RoundId": 1375554,
+    "RoundName": null,
+    "RoundNumber": 2,
+    "SortOrder": null,
+    "TableLocation": null,
+    "TableNumber": 20,
+    "TableSection": null,
+    "TimeExtended": false,
+    "TimeExtensionMinutes": null,
+    "TournamentId": 391734,
+    "Type": 0,
+    "AcknowledgedDecklists": false,
+    "ByeReasonDescription": null,
+    "LossReasonDescription": null,
+    "ResultString": "Ryan Mitchell won 2-1-0",
+    "RoundDescription": "Round 2",
+    "TableNumberDescription": "20",
+    "TypeDescription": "Best of Three",
+    "FormatDescription": "Premodern"
+  },
+  {
+    "Guid": "56e2c0c6-7484-47ca-8224-b3b800101ef3",
+    "Competitors": [
+      {
+        "ID": 12754247,
+        "CheckedIn": null,
+        "GameByes": 0,
+        "GameWins": 2,
+        "ResultConfirmed": "2025-12-19T01:45:02Z",
+        "SortOrder": 0,
+        "TeamId": 3754983,
+        "Team": {
+          "ID": 3754983,
+          "Name": null,
+          "Players": [
+            {
+              "ID": 3740319,
+              "DisplayName": "Jeremy Siegel",
+              "DisplayNameLastFirst": "Siegel, Jeremy",
+              "ProfileImageVersion": 0,
+              "Username": "remixmtg",
+              "ScreenName": "N/A",
+              "TeamId": 3754983,
+              "LanguageDescription": "Auto (English)",
+              "PronounsDescription": null
+            }
+          ],
+          "StatusDescription": "Active",
+          "IsActive": true
+        },
+        "GameWinsAndGameByes": 2,
+        "Decklists": []
+      },
+      {
+        "ID": 12754248,
+        "CheckedIn": null,
+        "GameByes": 0,
+        "GameWins": 0,
+        "ResultConfirmed": null,
+        "SortOrder": 1,
+        "TeamId": 3754936,
+        "Team": {
+          "ID": 3754936,
+          "Name": null,
+          "Players": [
+            {
+              "ID": 3740272,
+              "DisplayName": "BryanGulotta",
+              "DisplayNameLastFirst": "BryanGulotta",
+              "ProfileImageVersion": 0,
+              "Username": "BryanGulotta",
+              "ScreenName": "N/A",
+              "TeamId": 3754936,
+              "LanguageDescription": "English (English)",
+              "PronounsDescription": "He/Him"
+            }
+          ],
+          "StatusDescription": "Active",
+          "IsActive": true
+        },
+        "GameWinsAndGameByes": 0,
+        "Decklists": []
+      }
+    ],
+    "ByeReason": null,
+    "DateCreated": "2025-12-19T01:45:02Z",
+    "FeatureMatch": false,
+    "Format": "Premodern",
+    "FormatId": "920ec64f-a02f-4176-a3d0-0c46eef003cb",
+    "GameDraws": 0,
+    "HasResult": true,
+    "LossReason": null,
+    "MatchesPublished": true,
+    "PhaseId": 391951,
+    "PhaseSortOrder": 1,
+    "PodNumber": null,
+    "RoundId": 1375554,
+    "RoundName": null,
+    "RoundNumber": 2,
+    "SortOrder": null,
+    "TableLocation": null,
+    "TableNumber": 21,
+    "TableSection": null,
+    "TimeExtended": false,
+    "TimeExtensionMinutes": null,
+    "TournamentId": 391734,
+    "Type": 0,
+    "AcknowledgedDecklists": false,
+    "ByeReasonDescription": null,
+    "LossReasonDescription": null,
+    "ResultString": "Jeremy Siegel won 2-0-0",
+    "RoundDescription": "Round 2",
+    "TableNumberDescription": "21",
+    "TypeDescription": "Best of Three",
+    "FormatDescription": "Premodern"
+  },
+  {
+    "Guid": "862b4196-06a9-4ea3-b19f-b3b800101eef",
+    "Competitors": [
+      {
+        "ID": 12754245,
+        "CheckedIn": null,
+        "GameByes": 0,
+        "GameWins": 2,
+        "ResultConfirmed": null,
+        "SortOrder": 0,
+        "TeamId": 3754975,
+        "Team": {
+          "ID": 3754975,
+          "Name": null,
+          "Players": [
+            {
+              "ID": 3740311,
+              "DisplayName": "swb 👋",
+              "DisplayNameLastFirst": "👋, swb",
+              "ProfileImageVersion": 0,
+              "Username": "swbmtg",
+              "ScreenName": "N/A",
+              "TeamId": 3754975,
+              "LanguageDescription": "Auto (English)",
+              "PronounsDescription": "He/Him"
+            }
+          ],
+          "StatusDescription": "Active",
+          "IsActive": true
+        },
+        "GameWinsAndGameByes": 2,
+        "Decklists": []
+      },
+      {
+        "ID": 12754246,
+        "CheckedIn": null,
+        "GameByes": 0,
+        "GameWins": 1,
+        "ResultConfirmed": null,
+        "SortOrder": 1,
+        "TeamId": 3754874,
+        "Team": {
+          "ID": 3754874,
+          "Name": null,
+          "Players": [
+            {
+              "ID": 3740210,
+              "DisplayName": "PetS22",
+              "DisplayNameLastFirst": "PetS22",
+              "ProfileImageVersion": 0,
+              "Username": "PetS22",
+              "ScreenName": "N/A",
+              "TeamId": 3754874,
+              "LanguageDescription": "Auto (English)",
+              "PronounsDescription": null
+            }
+          ],
+          "StatusDescription": "Active",
+          "IsActive": true
+        },
+        "GameWinsAndGameByes": 1,
+        "Decklists": []
+      }
+    ],
+    "ByeReason": null,
+    "DateCreated": "2025-12-19T01:56:56Z",
+    "FeatureMatch": false,
+    "Format": "Premodern",
+    "FormatId": "920ec64f-a02f-4176-a3d0-0c46eef003cb",
+    "GameDraws": null,
+    "HasResult": true,
+    "LossReason": null,
+    "MatchesPublished": true,
+    "PhaseId": 391951,
+    "PhaseSortOrder": 1,
+    "PodNumber": null,
+    "RoundId": 1375554,
+    "RoundName": null,
+    "RoundNumber": 2,
+    "SortOrder": null,
+    "TableLocation": null,
+    "TableNumber": 22,
+    "TableSection": null,
+    "TimeExtended": false,
+    "TimeExtensionMinutes": null,
+    "TournamentId": 391734,
+    "Type": 0,
+    "AcknowledgedDecklists": false,
+    "ByeReasonDescription": null,
+    "LossReasonDescription": null,
+    "ResultString": "swb 👋 won 2-1-0",
+    "RoundDescription": "Round 2",
+    "TableNumberDescription": "22",
+    "TypeDescription": "Best of Three",
+    "FormatDescription": "Premodern"
+  }
+]
