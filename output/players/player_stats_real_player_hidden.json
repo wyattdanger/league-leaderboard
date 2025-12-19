@@ -1,0 +1,91 @@
+{
+  "username": "Real_player_hidden",
+  "displayName": "Ryan Mitchell",
+  "overallStats": {
+    "totalTournaments": 1,
+    "totalPoints": 7,
+    "totalMatches": 3,
+    "matchRecord": "2-0-1",
+    "matchWinPercentage": 0.8333333333333334,
+    "gameRecord": "4-1-3",
+    "gameWinPercentage": 0.5,
+    "trophies": 0,
+    "belts": 0
+  },
+  "leagueStats": [
+    {
+      "leagueName": "Q4 2025",
+      "events": 1,
+      "points": 7,
+      "matchRecord": "2-0-1",
+      "matchWinPercentage": 0.8333333333333334,
+      "gameRecord": "4-1-3",
+      "gameWinPercentage": 0.6875
+    }
+  ],
+  "headToHead": [
+    {
+      "opponentUsername": "PetS22",
+      "opponentDisplayName": "PetS22",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "lastFiveResults": [
+        "W"
+      ]
+    },
+    {
+      "opponentUsername": "Tencteri",
+      "opponentDisplayName": "Tencteri",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6666666666666666,
+      "lastFiveResults": [
+        "W"
+      ]
+    },
+    {
+      "opponentUsername": "remixmtg",
+      "opponentDisplayName": "Jeremy Siegel",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 0,
+      "matchDraws": 1,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 0,
+      "gameDraws": 3,
+      "gameWinPercentage": 0,
+      "lastFiveResults": [
+        "D"
+      ]
+    }
+  ],
+  "tournamentPerformances": [
+    {
+      "tournamentId": "391734",
+      "dateDisplay": "December 18, 2025",
+      "playerCount": 14,
+      "trophyCount": 1,
+      "roundCount": 3,
+      "rank": 2,
+      "points": 7,
+      "matchRecord": "2-0-1",
+      "matchWinPercentage": 0.8333333333333334,
+      "gameWinPercentage": 0.625,
+      "deck": "_"
+    }
+  ]
+}

@@ -2,28 +2,76 @@
   "username": "JohnnyDalz",
   "displayName": "JohnnyDalz",
   "overallStats": {
-    "totalTournaments": 1,
+    "totalTournaments": 2,
     "totalPoints": 6,
-    "totalMatches": 3,
-    "matchRecord": "2-1-0",
-    "matchWinPercentage": 0.6666666666666666,
-    "gameRecord": "3-3-1",
-    "gameWinPercentage": 0.42857142857142855,
+    "totalMatches": 6,
+    "matchRecord": "2-4-0",
+    "matchWinPercentage": 0.3333333333333333,
+    "gameRecord": "6-9-1",
+    "gameWinPercentage": 0.375,
     "trophies": 0,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q4 2025",
-      "events": 1,
+      "events": 2,
       "points": 6,
-      "matchRecord": "2-1-0",
-      "matchWinPercentage": 0.6666666666666666,
-      "gameRecord": "3-3-1",
-      "gameWinPercentage": 0.5
+      "matchRecord": "2-4-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameRecord": "6-9-1",
+      "gameWinPercentage": 0.40625
     }
   ],
   "headToHead": [
+    {
+      "opponentUsername": "remixmtg",
+      "opponentDisplayName": "Jeremy Siegel",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "lastFiveResults": [
+        "L"
+      ]
+    },
+    {
+      "opponentUsername": "sjpenzer",
+      "opponentDisplayName": "sjpenzer",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "lastFiveResults": [
+        "L"
+      ]
+    },
+    {
+      "opponentUsername": "JUDDERMANG",
+      "opponentDisplayName": "Chris Cruz",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "lastFiveResults": [
+        "L"
+      ]
+    },
     {
       "opponentUsername": "swbmtg",
       "opponentDisplayName": "swb",
@@ -74,6 +122,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "391734",
+      "dateDisplay": "December 18, 2025",
+      "playerCount": 14,
+      "trophyCount": 1,
+      "roundCount": 3,
+      "rank": 14,
+      "points": 0,
+      "matchRecord": "0-3-0",
+      "matchWinPercentage": 0,
+      "gameWinPercentage": 0.3333333,
+      "deck": "_"
+    },
     {
       "tournamentId": "384681",
       "dateDisplay": "November 20, 2025",

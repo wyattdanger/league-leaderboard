@@ -1,0 +1,91 @@
+{
+  "username": "SeaF9",
+  "displayName": "Sean Fitzpatrick",
+  "overallStats": {
+    "totalTournaments": 1,
+    "totalPoints": 3,
+    "totalMatches": 3,
+    "matchRecord": "1-2-0",
+    "matchWinPercentage": 0.3333333333333333,
+    "gameRecord": "2-4-0",
+    "gameWinPercentage": 0.3333333333333333,
+    "trophies": 0,
+    "belts": 0
+  },
+  "leagueStats": [
+    {
+      "leagueName": "Q4 2025",
+      "events": 1,
+      "points": 3,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameRecord": "2-4-0",
+      "gameWinPercentage": 0.3333333333333333
+    }
+  ],
+  "headToHead": [
+    {
+      "opponentUsername": "BryanGulotta",
+      "opponentDisplayName": "BryanGulotta",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "lastFiveResults": [
+        "L"
+      ]
+    },
+    {
+      "opponentUsername": "JUDDERMANG",
+      "opponentDisplayName": "Chris Cruz",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "lastFiveResults": [
+        "W"
+      ]
+    },
+    {
+      "opponentUsername": "Tencteri",
+      "opponentDisplayName": "Tencteri",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "lastFiveResults": [
+        "L"
+      ]
+    }
+  ],
+  "tournamentPerformances": [
+    {
+      "tournamentId": "391734",
+      "dateDisplay": "December 18, 2025",
+      "playerCount": 14,
+      "trophyCount": 1,
+      "roundCount": 3,
+      "rank": 9,
+      "points": 3,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWinPercentage": 0.3333333,
+      "deck": "_"
+    }
+  ]
+}

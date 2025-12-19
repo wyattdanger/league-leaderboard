@@ -2,28 +2,76 @@
   "username": "sHaDes27",
   "displayName": "Shawn Stroke",
   "overallStats": {
-    "totalTournaments": 2,
-    "totalPoints": 4,
-    "totalMatches": 6,
-    "matchRecord": "1-4-1",
-    "matchWinPercentage": 0.25,
-    "gameRecord": "5-10-1",
-    "gameWinPercentage": 0.3125,
+    "totalTournaments": 3,
+    "totalPoints": 7,
+    "totalMatches": 9,
+    "matchRecord": "2-6-1",
+    "matchWinPercentage": 0.2777777777777778,
+    "gameRecord": "8-15-1",
+    "gameWinPercentage": 0.3333333333333333,
     "trophies": 0,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q4 2025",
-      "events": 2,
-      "points": 4,
-      "matchRecord": "1-4-1",
-      "matchWinPercentage": 0.25,
-      "gameRecord": "5-10-1",
-      "gameWinPercentage": 0.34375
+      "events": 3,
+      "points": 7,
+      "matchRecord": "2-6-1",
+      "matchWinPercentage": 0.2777777777777778,
+      "gameRecord": "8-15-1",
+      "gameWinPercentage": 0.3541666666666667
     }
   ],
   "headToHead": [
+    {
+      "opponentUsername": "itsCama",
+      "opponentDisplayName": "Yosef Harari",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6666666666666666,
+      "lastFiveResults": [
+        "W"
+      ]
+    },
+    {
+      "opponentUsername": "Taylorhol",
+      "opponentDisplayName": "Taylorhol",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "lastFiveResults": [
+        "L"
+      ]
+    },
+    {
+      "opponentUsername": "sjpenzer",
+      "opponentDisplayName": "sjpenzer",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "lastFiveResults": [
+        "L"
+      ]
+    },
     {
       "opponentUsername": "JUDDERMANG",
       "opponentDisplayName": "Chris Cruz",
@@ -122,6 +170,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "391734",
+      "dateDisplay": "December 18, 2025",
+      "playerCount": 14,
+      "trophyCount": 1,
+      "roundCount": 3,
+      "rank": 8,
+      "points": 3,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWinPercentage": 0.375,
+      "deck": "_"
+    },
     {
       "tournamentId": "388334",
       "dateDisplay": "December 4, 2025",

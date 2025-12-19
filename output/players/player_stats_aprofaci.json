@@ -2,28 +2,77 @@
   "username": "aprofaci",
   "displayName": "Alex Profaci",
   "overallStats": {
-    "totalTournaments": 4,
-    "totalPoints": 27,
-    "totalMatches": 12,
-    "matchRecord": "9-3-0",
-    "matchWinPercentage": 0.75,
-    "gameRecord": "20-10-0",
-    "gameWinPercentage": 0.6666666666666666,
+    "totalTournaments": 5,
+    "totalPoints": 30,
+    "totalMatches": 15,
+    "matchRecord": "10-5-0",
+    "matchWinPercentage": 0.6666666666666666,
+    "gameRecord": "23-15-0",
+    "gameWinPercentage": 0.6052631578947368,
     "trophies": 1,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q4 2025",
-      "events": 4,
-      "points": 27,
-      "matchRecord": "9-3-0",
-      "matchWinPercentage": 0.75,
-      "gameRecord": "20-10-0",
-      "gameWinPercentage": 0.6666666666666666
+      "events": 5,
+      "points": 30,
+      "matchRecord": "10-5-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameRecord": "23-15-0",
+      "gameWinPercentage": 0.6052631578947368
     }
   ],
   "headToHead": [
+    {
+      "opponentUsername": "Tencteri",
+      "opponentDisplayName": "Tencteri",
+      "matchesPlayed": 2,
+      "matchWins": 1,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.5,
+      "gameWins": 2,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5,
+      "lastFiveResults": [
+        "L",
+        "W"
+      ]
+    },
+    {
+      "opponentUsername": "itsCama",
+      "opponentDisplayName": "Yosef Harari",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "lastFiveResults": [
+        "L"
+      ]
+    },
+    {
+      "opponentUsername": "PetS22",
+      "opponentDisplayName": "PetS22",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6666666666666666,
+      "lastFiveResults": [
+        "W"
+      ]
+    },
     {
       "opponentUsername": "WillReddy",
       "opponentDisplayName": "WillReddy",
@@ -183,25 +232,22 @@
       "lastFiveResults": [
         "W"
       ]
-    },
-    {
-      "opponentUsername": "Tencteri",
-      "opponentDisplayName": "Tencteri",
-      "matchesPlayed": 1,
-      "matchWins": 1,
-      "matchLosses": 0,
-      "matchDraws": 0,
-      "matchWinPercentage": 1,
-      "gameWins": 2,
-      "gameLosses": 0,
-      "gameDraws": 0,
-      "gameWinPercentage": 1,
-      "lastFiveResults": [
-        "W"
-      ]
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "391734",
+      "dateDisplay": "December 18, 2025",
+      "playerCount": 14,
+      "trophyCount": 1,
+      "roundCount": 3,
+      "rank": 12,
+      "points": 3,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWinPercentage": 0.375,
+      "deck": "_"
+    },
     {
       "tournamentId": "384681",
       "dateDisplay": "November 20, 2025",

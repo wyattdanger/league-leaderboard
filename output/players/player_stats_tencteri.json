@@ -2,25 +2,25 @@
   "username": "Tencteri",
   "displayName": "Tencteri",
   "overallStats": {
-    "totalTournaments": 14,
-    "totalPoints": 64,
-    "totalMatches": 41,
-    "matchRecord": "21-19-1",
-    "matchWinPercentage": 0.524390243902439,
-    "gameRecord": "49-50-1",
-    "gameWinPercentage": 0.49,
+    "totalTournaments": 15,
+    "totalPoints": 70,
+    "totalMatches": 44,
+    "matchRecord": "23-20-1",
+    "matchWinPercentage": 0.5340909090909091,
+    "gameRecord": "54-52-1",
+    "gameWinPercentage": 0.5046728971962616,
     "trophies": 0,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q4 2025",
-      "events": 6,
-      "points": 30,
-      "matchRecord": "10-7-0",
-      "matchWinPercentage": 0.5882352941176471,
-      "gameRecord": "23-21-0",
-      "gameWinPercentage": 0.5227272727272727
+      "events": 7,
+      "points": 36,
+      "matchRecord": "12-8-0",
+      "matchWinPercentage": 0.6,
+      "gameRecord": "28-23-0",
+      "gameWinPercentage": 0.5490196078431373
     },
     {
       "leagueName": "Q3 2025",
@@ -108,6 +108,23 @@
       ]
     },
     {
+      "opponentUsername": "aprofaci",
+      "opponentDisplayName": "Alex Profaci",
+      "matchesPlayed": 2,
+      "matchWins": 1,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.5,
+      "gameWins": 2,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5,
+      "lastFiveResults": [
+        "W",
+        "L"
+      ]
+    },
+    {
       "opponentUsername": "rmcf",
       "opponentDisplayName": "rmcf",
       "matchesPlayed": 2,
@@ -138,6 +155,38 @@
       "gameWinPercentage": 0.5,
       "lastFiveResults": [
         "L",
+        "W"
+      ]
+    },
+    {
+      "opponentUsername": "Real_player_hidden",
+      "opponentDisplayName": "Ryan Mitchell",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "lastFiveResults": [
+        "L"
+      ]
+    },
+    {
+      "opponentUsername": "SeaF9",
+      "opponentDisplayName": "Sean Fitzpatrick",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "lastFiveResults": [
         "W"
       ]
     },
@@ -350,22 +399,6 @@
       ]
     },
     {
-      "opponentUsername": "aprofaci",
-      "opponentDisplayName": "Alex Profaci",
-      "matchesPlayed": 1,
-      "matchWins": 0,
-      "matchLosses": 1,
-      "matchDraws": 0,
-      "matchWinPercentage": 0,
-      "gameWins": 0,
-      "gameLosses": 2,
-      "gameDraws": 0,
-      "gameWinPercentage": 0,
-      "lastFiveResults": [
-        "L"
-      ]
-    },
-    {
       "opponentUsername": "FriendlyFerret",
       "opponentDisplayName": "Bill Ellis!!",
       "matchesPlayed": 1,
@@ -528,6 +561,19 @@
   ],
   "tournamentPerformances": [
     {
+      "tournamentId": "391734",
+      "dateDisplay": "December 18, 2025",
+      "playerCount": 14,
+      "trophyCount": 1,
+      "roundCount": 3,
+      "rank": 5,
+      "points": 6,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWinPercentage": 0.7142857,
+      "deck": "_"
+    },
+    {
       "tournamentId": "390154",
       "dateDisplay": "December 11, 2025",
       "playerCount": 16,
@@ -615,8 +661,7 @@
       "points": 3,
       "matchRecord": "1-2-0",
       "matchWinPercentage": 0.3333333333333333,
-      "gameWinPercentage": 0.28571429,
-      "deck": "Burn"
+      "gameWinPercentage": 0.28571429
     },
     {
       "tournamentId": "338898",

@@ -2,25 +2,25 @@
   "username": "BryanGulotta",
   "displayName": "BryanGulotta",
   "overallStats": {
-    "totalTournaments": 20,
-    "totalPoints": 95,
-    "totalMatches": 59,
-    "matchRecord": "30-24-5",
-    "matchWinPercentage": 0.5508474576271186,
-    "gameRecord": "75-67-2",
-    "gameWinPercentage": 0.5208333333333334,
+    "totalTournaments": 21,
+    "totalPoints": 101,
+    "totalMatches": 62,
+    "matchRecord": "32-25-5",
+    "matchWinPercentage": 0.5564516129032258,
+    "gameRecord": "79-70-2",
+    "gameWinPercentage": 0.5231788079470199,
     "trophies": 0,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q4 2025",
-      "events": 7,
-      "points": 38,
-      "matchRecord": "12-7-2",
-      "matchWinPercentage": 0.6190476190476191,
-      "gameRecord": "28-21-2",
-      "gameWinPercentage": 0.5686274509803921
+      "events": 8,
+      "points": 44,
+      "matchRecord": "14-8-2",
+      "matchWinPercentage": 0.625,
+      "gameRecord": "32-24-2",
+      "gameWinPercentage": 0.5689655172413793
     },
     {
       "leagueName": "Q3 2025",
@@ -51,6 +51,26 @@
     }
   ],
   "headToHead": [
+    {
+      "opponentUsername": "itsCama",
+      "opponentDisplayName": "Yosef Harari",
+      "matchesPlayed": 5,
+      "matchWins": 4,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.8,
+      "gameWins": 8,
+      "gameLosses": 6,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5714285714285714,
+      "lastFiveResults": [
+        "W",
+        "W",
+        "W",
+        "L",
+        "W"
+      ]
+    },
     {
       "opponentUsername": "Matt_W",
       "opponentDisplayName": "Matt_W",
@@ -127,25 +147,6 @@
         "L",
         "L",
         "L"
-      ]
-    },
-    {
-      "opponentUsername": "itsCama",
-      "opponentDisplayName": "Yosef Harari",
-      "matchesPlayed": 4,
-      "matchWins": 3,
-      "matchLosses": 1,
-      "matchDraws": 0,
-      "matchWinPercentage": 0.75,
-      "gameWins": 6,
-      "gameLosses": 5,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.5454545454545454,
-      "lastFiveResults": [
-        "W",
-        "W",
-        "L",
-        "W"
       ]
     },
     {
@@ -270,6 +271,38 @@
       "gameWinPercentage": 0.2,
       "lastFiveResults": [
         "L",
+        "L"
+      ]
+    },
+    {
+      "opponentUsername": "SeaF9",
+      "opponentDisplayName": "Sean Fitzpatrick",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "lastFiveResults": [
+        "W"
+      ]
+    },
+    {
+      "opponentUsername": "remixmtg",
+      "opponentDisplayName": "Jeremy Siegel",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "lastFiveResults": [
         "L"
       ]
     },
@@ -516,6 +549,19 @@
   ],
   "tournamentPerformances": [
     {
+      "tournamentId": "391734",
+      "dateDisplay": "December 18, 2025",
+      "playerCount": 14,
+      "trophyCount": 1,
+      "roundCount": 3,
+      "rank": 6,
+      "points": 6,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWinPercentage": 0.5714286,
+      "deck": "_"
+    },
+    {
       "tournamentId": "390154",
       "dateDisplay": "December 11, 2025",
       "playerCount": 16,
@@ -616,8 +662,7 @@
       "points": 6,
       "matchRecord": "2-1-0",
       "matchWinPercentage": 0.6666666666666666,
-      "gameWinPercentage": 0.71428571,
-      "deck": "Tide"
+      "gameWinPercentage": 0.71428571
     },
     {
       "tournamentId": "367531",

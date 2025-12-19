@@ -2,17 +2,26 @@
   "username": "itsCama",
   "displayName": "Yosef Harari",
   "overallStats": {
-    "totalTournaments": 13,
-    "totalPoints": 57,
-    "totalMatches": 39,
-    "matchRecord": "19-20-0",
-    "matchWinPercentage": 0.48717948717948717,
-    "gameRecord": "49-49-0",
-    "gameWinPercentage": 0.5,
+    "totalTournaments": 14,
+    "totalPoints": 60,
+    "totalMatches": 42,
+    "matchRecord": "20-22-0",
+    "matchWinPercentage": 0.47619047619047616,
+    "gameRecord": "53-54-0",
+    "gameWinPercentage": 0.4953271028037383,
     "trophies": 1,
     "belts": 0
   },
   "leagueStats": [
+    {
+      "leagueName": "Q4 2025",
+      "events": 1,
+      "points": 3,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameRecord": "4-5-0",
+      "gameWinPercentage": 0.4444444444444444
+    },
     {
       "leagueName": "Q3 2025",
       "events": 6,
@@ -42,6 +51,26 @@
     }
   ],
   "headToHead": [
+    {
+      "opponentUsername": "BryanGulotta",
+      "opponentDisplayName": "BryanGulotta",
+      "matchesPlayed": 5,
+      "matchWins": 1,
+      "matchLosses": 4,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.2,
+      "gameWins": 6,
+      "gameLosses": 8,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.42857142857142855,
+      "lastFiveResults": [
+        "L",
+        "L",
+        "L",
+        "W",
+        "L"
+      ]
+    },
     {
       "opponentUsername": "madmanpoet",
       "opponentDisplayName": "Michael Flores",
@@ -77,25 +106,6 @@
         "W",
         "W",
         "L",
-        "L"
-      ]
-    },
-    {
-      "opponentUsername": "BryanGulotta",
-      "opponentDisplayName": "BryanGulotta",
-      "matchesPlayed": 4,
-      "matchWins": 1,
-      "matchLosses": 3,
-      "matchDraws": 0,
-      "matchWinPercentage": 0.25,
-      "gameWins": 5,
-      "gameLosses": 6,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.45454545454545453,
-      "lastFiveResults": [
-        "L",
-        "L",
-        "W",
         "L"
       ]
     },
@@ -238,6 +248,38 @@
       ]
     },
     {
+      "opponentUsername": "sHaDes27",
+      "opponentDisplayName": "Shawn Stroke",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "lastFiveResults": [
+        "L"
+      ]
+    },
+    {
+      "opponentUsername": "aprofaci",
+      "opponentDisplayName": "Alex Profaci",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6666666666666666,
+      "lastFiveResults": [
+        "W"
+      ]
+    },
+    {
       "opponentUsername": "drakedrakedrake",
       "opponentDisplayName": "drakedrakedrake",
       "matchesPlayed": 1,
@@ -368,6 +410,19 @@
   ],
   "tournamentPerformances": [
     {
+      "tournamentId": "391734",
+      "dateDisplay": "December 18, 2025",
+      "playerCount": 14,
+      "trophyCount": 1,
+      "roundCount": 3,
+      "rank": 11,
+      "points": 3,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWinPercentage": 0.4444444,
+      "deck": "_"
+    },
+    {
       "tournamentId": "369726",
       "dateDisplay": "October 2, 2025",
       "playerCount": 9,
@@ -377,8 +432,7 @@
       "points": 6,
       "matchRecord": "2-1-0",
       "matchWinPercentage": 0.6666666666666666,
-      "gameWinPercentage": 0.5,
-      "deck": "Tide"
+      "gameWinPercentage": 0.5
     },
     {
       "tournamentId": "367531",

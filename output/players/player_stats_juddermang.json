@@ -2,25 +2,25 @@
   "username": "JUDDERMANG",
   "displayName": "Chris Cruz",
   "overallStats": {
-    "totalTournaments": 26,
-    "totalPoints": 90,
-    "totalMatches": 75,
-    "matchRecord": "26-46-3",
-    "matchWinPercentage": 0.36666666666666664,
-    "gameRecord": "73-103-1",
-    "gameWinPercentage": 0.4124293785310734,
+    "totalTournaments": 27,
+    "totalPoints": 93,
+    "totalMatches": 78,
+    "matchRecord": "27-48-3",
+    "matchWinPercentage": 0.36538461538461536,
+    "gameRecord": "75-108-1",
+    "gameWinPercentage": 0.4076086956521739,
     "trophies": 1,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q4 2025",
-      "events": 5,
-      "points": 27,
-      "matchRecord": "6-9-0",
-      "matchWinPercentage": 0.4,
-      "gameRecord": "13-21-0",
-      "gameWinPercentage": 0.38235294117647056
+      "events": 6,
+      "points": 30,
+      "matchRecord": "7-11-0",
+      "matchWinPercentage": 0.3888888888888889,
+      "gameRecord": "15-26-0",
+      "gameWinPercentage": 0.36585365853658536
     },
     {
       "leagueName": "Q3 2025",
@@ -320,6 +320,54 @@
       "lastFiveResults": [
         "L",
         "L"
+      ]
+    },
+    {
+      "opponentUsername": "Taylorhol",
+      "opponentDisplayName": "Taylorhol",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "lastFiveResults": [
+        "L"
+      ]
+    },
+    {
+      "opponentUsername": "SeaF9",
+      "opponentDisplayName": "Sean Fitzpatrick",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "lastFiveResults": [
+        "L"
+      ]
+    },
+    {
+      "opponentUsername": "JohnnyDalz",
+      "opponentDisplayName": "JohnnyDalz",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6666666666666666,
+      "lastFiveResults": [
+        "W"
       ]
     },
     {
@@ -661,6 +709,19 @@
   ],
   "tournamentPerformances": [
     {
+      "tournamentId": "391734",
+      "dateDisplay": "December 18, 2025",
+      "playerCount": 14,
+      "trophyCount": 1,
+      "roundCount": 3,
+      "rank": 10,
+      "points": 3,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWinPercentage": 0.3333333,
+      "deck": "_"
+    },
+    {
       "tournamentId": "390154",
       "dateDisplay": "December 11, 2025",
       "playerCount": 16,
@@ -748,8 +809,7 @@
       "points": 0,
       "matchRecord": "0-3-0",
       "matchWinPercentage": 0,
-      "gameWinPercentage": 0,
-      "deck": "FEB"
+      "gameWinPercentage": 0
     },
     {
       "tournamentId": "367531",
@@ -891,8 +951,7 @@
       "points": 3,
       "matchRecord": "1-2-0",
       "matchWinPercentage": 0.3333333333333333,
-      "gameWinPercentage": 0.42857143,
-      "deck": "Burn"
+      "gameWinPercentage": 0.42857143
     },
     {
       "tournamentId": "338898",

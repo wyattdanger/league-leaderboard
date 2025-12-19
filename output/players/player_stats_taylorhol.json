@@ -2,25 +2,25 @@
   "username": "Taylorhol",
   "displayName": "Taylorhol",
   "overallStats": {
-    "totalTournaments": 10,
-    "totalPoints": 41,
-    "totalMatches": 30,
-    "matchRecord": "13-15-2",
-    "matchWinPercentage": 0.4666666666666667,
-    "gameRecord": "34-37-2",
-    "gameWinPercentage": 0.4657534246575342,
-    "trophies": 0,
+    "totalTournaments": 11,
+    "totalPoints": 50,
+    "totalMatches": 33,
+    "matchRecord": "16-15-2",
+    "matchWinPercentage": 0.5151515151515151,
+    "gameRecord": "40-38-2",
+    "gameWinPercentage": 0.5,
+    "trophies": 1,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q4 2025",
-      "events": 8,
-      "points": 32,
-      "matchRecord": "10-12-2",
-      "matchWinPercentage": 0.4583333333333333,
-      "gameRecord": "26-29-2",
-      "gameWinPercentage": 0.47368421052631576
+      "events": 9,
+      "points": 41,
+      "matchRecord": "13-12-2",
+      "matchWinPercentage": 0.5185185185185185,
+      "gameRecord": "32-30-2",
+      "gameWinPercentage": 0.515625
     },
     {
       "leagueName": "Q3 2025",
@@ -33,6 +33,24 @@
     }
   ],
   "headToHead": [
+    {
+      "opponentUsername": "swbmtg",
+      "opponentDisplayName": "swb",
+      "matchesPlayed": 3,
+      "matchWins": 1,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 3,
+      "gameLosses": 5,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.375,
+      "lastFiveResults": [
+        "W",
+        "L",
+        "L"
+      ]
+    },
     {
       "opponentUsername": "sjpenzer",
       "opponentDisplayName": "sjpenzer",
@@ -67,23 +85,6 @@
         "L",
         "L",
         "W"
-      ]
-    },
-    {
-      "opponentUsername": "swbmtg",
-      "opponentDisplayName": "swb",
-      "matchesPlayed": 2,
-      "matchWins": 0,
-      "matchLosses": 2,
-      "matchDraws": 0,
-      "matchWinPercentage": 0,
-      "gameWins": 1,
-      "gameLosses": 4,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.2,
-      "lastFiveResults": [
-        "L",
-        "L"
       ]
     },
     {
@@ -169,6 +170,38 @@
       "lastFiveResults": [
         "L",
         "L"
+      ]
+    },
+    {
+      "opponentUsername": "JUDDERMANG",
+      "opponentDisplayName": "Chris Cruz",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "lastFiveResults": [
+        "W"
+      ]
+    },
+    {
+      "opponentUsername": "sHaDes27",
+      "opponentDisplayName": "Shawn Stroke",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "lastFiveResults": [
+        "W"
       ]
     },
     {
@@ -317,6 +350,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "391734",
+      "dateDisplay": "December 18, 2025",
+      "playerCount": 14,
+      "trophyCount": 1,
+      "roundCount": 3,
+      "rank": 1,
+      "points": 9,
+      "matchRecord": "3-0-0",
+      "matchWinPercentage": 1,
+      "gameWinPercentage": 0.8571429,
+      "deck": "_"
+    },
     {
       "tournamentId": "390154",
       "dateDisplay": "December 11, 2025",
