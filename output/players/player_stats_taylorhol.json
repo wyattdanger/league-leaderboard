@@ -2,25 +2,25 @@
   "username": "Taylorhol",
   "displayName": "Taylorhol",
   "overallStats": {
-    "totalTournaments": 11,
-    "totalPoints": 50,
-    "totalMatches": 33,
-    "matchRecord": "16-15-2",
-    "matchWinPercentage": 0.5151515151515151,
-    "gameRecord": "40-38-2",
-    "gameWinPercentage": 0.5,
+    "totalTournaments": 12,
+    "totalPoints": 56,
+    "totalMatches": 36,
+    "matchRecord": "18-16-2",
+    "matchWinPercentage": 0.5277777777777778,
+    "gameRecord": "44-41-2",
+    "gameWinPercentage": 0.5057471264367817,
     "trophies": 1,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q4 2025",
-      "events": 9,
-      "points": 41,
-      "matchRecord": "13-12-2",
-      "matchWinPercentage": 0.5185185185185185,
-      "gameRecord": "32-30-2",
-      "gameWinPercentage": 0.515625
+      "events": 10,
+      "points": 47,
+      "matchRecord": "15-13-2",
+      "matchWinPercentage": 0.5333333333333333,
+      "gameRecord": "36-33-2",
+      "gameWinPercentage": 0.5211267605633803
     },
     {
       "leagueName": "Q3 2025",
@@ -169,6 +169,54 @@
       "gameWinPercentage": 0.2,
       "lastFiveResults": [
         "L",
+        "L"
+      ]
+    },
+    {
+      "opponentUsername": "mlongob",
+      "opponentDisplayName": "Mario Longobardi",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "lastFiveResults": [
+        "W"
+      ]
+    },
+    {
+      "opponentUsername": "Real_player_hidden",
+      "opponentDisplayName": "Ryan Mitchell",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6666666666666666,
+      "lastFiveResults": [
+        "W"
+      ]
+    },
+    {
+      "opponentUsername": "madmanpoet",
+      "opponentDisplayName": "Michael Flores",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "lastFiveResults": [
         "L"
       ]
     },
@@ -350,6 +398,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "393796",
+      "dateDisplay": "January 1, 2026",
+      "playerCount": 13,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 5,
+      "points": 6,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWinPercentage": 0.5714286,
+      "deck": "Snap Cradle Pop"
+    },
     {
       "tournamentId": "391734",
       "dateDisplay": "December 18, 2025",

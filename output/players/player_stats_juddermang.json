@@ -2,25 +2,25 @@
   "username": "JUDDERMANG",
   "displayName": "Chris Cruz",
   "overallStats": {
-    "totalTournaments": 27,
+    "totalTournaments": 28,
     "totalPoints": 93,
-    "totalMatches": 78,
-    "matchRecord": "27-48-3",
-    "matchWinPercentage": 0.36538461538461536,
-    "gameRecord": "75-108-1",
-    "gameWinPercentage": 0.4076086956521739,
+    "totalMatches": 81,
+    "matchRecord": "27-51-3",
+    "matchWinPercentage": 0.35185185185185186,
+    "gameRecord": "76-114-1",
+    "gameWinPercentage": 0.39790575916230364,
     "trophies": 1,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q4 2025",
-      "events": 6,
+      "events": 7,
       "points": 30,
-      "matchRecord": "7-11-0",
-      "matchWinPercentage": 0.3888888888888889,
-      "gameRecord": "15-26-0",
-      "gameWinPercentage": 0.36585365853658536
+      "matchRecord": "7-14-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameRecord": "16-32-0",
+      "gameWinPercentage": 0.3333333333333333
     },
     {
       "leagueName": "Q3 2025",
@@ -61,6 +61,26 @@
   ],
   "headToHead": [
     {
+      "opponentUsername": "AndrewLevine",
+      "opponentDisplayName": "AndrewLevine",
+      "matchesPlayed": 6,
+      "matchWins": 1,
+      "matchLosses": 5,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.16666666666666666,
+      "gameWins": 4,
+      "gameLosses": 11,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.26666666666666666,
+      "lastFiveResults": [
+        "L",
+        "W",
+        "L",
+        "L",
+        "L"
+      ]
+    },
+    {
       "opponentUsername": "Mattmelach",
       "opponentDisplayName": "Matthew Melachrinos",
       "matchesPlayed": 5,
@@ -97,26 +117,6 @@
         "L",
         "L",
         "W",
-        "L"
-      ]
-    },
-    {
-      "opponentUsername": "AndrewLevine",
-      "opponentDisplayName": "AndrewLevine",
-      "matchesPlayed": 5,
-      "matchWins": 1,
-      "matchLosses": 4,
-      "matchDraws": 0,
-      "matchWinPercentage": 0.2,
-      "gameWins": 3,
-      "gameLosses": 9,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.25,
-      "lastFiveResults": [
-        "L",
-        "W",
-        "L",
-        "L",
         "L"
       ]
     },
@@ -255,6 +255,23 @@
       ]
     },
     {
+      "opponentUsername": "mlongob",
+      "opponentDisplayName": "Mario Longobardi",
+      "matchesPlayed": 2,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 1,
+      "matchWinPercentage": 0.25,
+      "gameWins": 1,
+      "gameLosses": 3,
+      "gameDraws": 1,
+      "gameWinPercentage": 0.2,
+      "lastFiveResults": [
+        "L",
+        "D"
+      ]
+    },
+    {
       "opponentUsername": "Matt_W",
       "opponentDisplayName": "Matt W",
       "matchesPlayed": 2,
@@ -319,6 +336,22 @@
       "gameWinPercentage": 0.3333333333333333,
       "lastFiveResults": [
         "L",
+        "L"
+      ]
+    },
+    {
+      "opponentUsername": "Tencteri",
+      "opponentDisplayName": "Tencteri",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "lastFiveResults": [
         "L"
       ]
     },
@@ -531,22 +564,6 @@
       ]
     },
     {
-      "opponentUsername": "mlongob",
-      "opponentDisplayName": "Mario Longobardi",
-      "matchesPlayed": 1,
-      "matchWins": 0,
-      "matchLosses": 0,
-      "matchDraws": 1,
-      "matchWinPercentage": 0.5,
-      "gameWins": 1,
-      "gameLosses": 1,
-      "gameDraws": 1,
-      "gameWinPercentage": 0.3333333333333333,
-      "lastFiveResults": [
-        "D"
-      ]
-    },
-    {
       "opponentUsername": "AlanKe",
       "opponentDisplayName": "AlanKe",
       "matchesPlayed": 1,
@@ -708,6 +725,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "393796",
+      "dateDisplay": "January 1, 2026",
+      "playerCount": 13,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 13,
+      "points": 0,
+      "matchRecord": "0-3-0",
+      "matchWinPercentage": 0,
+      "gameWinPercentage": 0.3333333,
+      "deck": "Burn"
+    },
     {
       "tournamentId": "391734",
       "dateDisplay": "December 18, 2025",

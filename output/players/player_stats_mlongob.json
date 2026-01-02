@@ -2,25 +2,25 @@
   "username": "mlongob",
   "displayName": "Mario Longobardi",
   "overallStats": {
-    "totalTournaments": 3,
-    "totalPoints": 5,
-    "totalMatches": 9,
-    "matchRecord": "1-6-2",
-    "matchWinPercentage": 0.2222222222222222,
-    "gameRecord": "6-15-1",
-    "gameWinPercentage": 0.2727272727272727,
+    "totalTournaments": 4,
+    "totalPoints": 8,
+    "totalMatches": 12,
+    "matchRecord": "2-8-2",
+    "matchWinPercentage": 0.25,
+    "gameRecord": "8-19-1",
+    "gameWinPercentage": 0.2857142857142857,
     "trophies": 0,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q4 2025",
-      "events": 1,
-      "points": 3,
-      "matchRecord": "1-2-0",
+      "events": 2,
+      "points": 6,
+      "matchRecord": "2-4-0",
       "matchWinPercentage": 0.3333333333333333,
-      "gameRecord": "4-5-0",
-      "gameWinPercentage": 0.4444444444444444
+      "gameRecord": "6-9-0",
+      "gameWinPercentage": 0.4
     },
     {
       "leagueName": "Q3 2025",
@@ -42,6 +42,55 @@
     }
   ],
   "headToHead": [
+    {
+      "opponentUsername": "JUDDERMANG",
+      "opponentDisplayName": "Chris Cruz",
+      "matchesPlayed": 2,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 1,
+      "matchWinPercentage": 0.75,
+      "gameWins": 3,
+      "gameLosses": 1,
+      "gameDraws": 1,
+      "gameWinPercentage": 0.6,
+      "lastFiveResults": [
+        "W",
+        "D"
+      ]
+    },
+    {
+      "opponentUsername": "Taylorhol",
+      "opponentDisplayName": "Taylorhol",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "lastFiveResults": [
+        "L"
+      ]
+    },
+    {
+      "opponentUsername": "pcocozza",
+      "opponentDisplayName": "pcocozza",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "lastFiveResults": [
+        "L"
+      ]
+    },
     {
       "opponentUsername": "swbmtg",
       "opponentDisplayName": "swb",
@@ -88,22 +137,6 @@
       "gameWinPercentage": 0.6666666666666666,
       "lastFiveResults": [
         "W"
-      ]
-    },
-    {
-      "opponentUsername": "JUDDERMANG",
-      "opponentDisplayName": "Chris Cruz",
-      "matchesPlayed": 1,
-      "matchWins": 0,
-      "matchLosses": 0,
-      "matchDraws": 1,
-      "matchWinPercentage": 0.5,
-      "gameWins": 1,
-      "gameLosses": 1,
-      "gameDraws": 1,
-      "gameWinPercentage": 0.3333333333333333,
-      "lastFiveResults": [
-        "D"
       ]
     },
     {
@@ -188,6 +221,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "393796",
+      "dateDisplay": "January 1, 2026",
+      "playerCount": 13,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 12,
+      "points": 3,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWinPercentage": 0.3333333,
+      "deck": "Psychatog"
+    },
     {
       "tournamentId": "390154",
       "dateDisplay": "December 11, 2025",

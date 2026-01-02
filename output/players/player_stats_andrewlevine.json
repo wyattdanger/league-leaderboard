@@ -2,25 +2,25 @@
   "username": "AndrewLevine",
   "displayName": "AndrewLevine",
   "overallStats": {
-    "totalTournaments": 12,
-    "totalPoints": 52,
-    "totalMatches": 36,
-    "matchRecord": "17-18-1",
-    "matchWinPercentage": 0.4861111111111111,
-    "gameRecord": "44-43-0",
-    "gameWinPercentage": 0.5057471264367817,
+    "totalTournaments": 13,
+    "totalPoints": 58,
+    "totalMatches": 39,
+    "matchRecord": "19-19-1",
+    "matchWinPercentage": 0.5,
+    "gameRecord": "48-47-0",
+    "gameWinPercentage": 0.5052631578947369,
     "trophies": 1,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q4 2025",
-      "events": 4,
-      "points": 16,
-      "matchRecord": "5-6-1",
-      "matchWinPercentage": 0.4583333333333333,
-      "gameRecord": "13-14-0",
-      "gameWinPercentage": 0.48148148148148145
+      "events": 5,
+      "points": 22,
+      "matchRecord": "7-7-1",
+      "matchWinPercentage": 0.5,
+      "gameRecord": "17-18-0",
+      "gameWinPercentage": 0.4857142857142857
     },
     {
       "leagueName": "Q3 2025",
@@ -43,6 +43,26 @@
   ],
   "headToHead": [
     {
+      "opponentUsername": "JUDDERMANG",
+      "opponentDisplayName": "Chris Cruz",
+      "matchesPlayed": 6,
+      "matchWins": 5,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.8333333333333334,
+      "gameWins": 11,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.7333333333333333,
+      "lastFiveResults": [
+        "W",
+        "L",
+        "W",
+        "W",
+        "W"
+      ]
+    },
+    {
       "opponentUsername": "Mattmelach",
       "opponentDisplayName": "Matthew Melachrinos",
       "matchesPlayed": 5,
@@ -59,26 +79,6 @@
         "W",
         "W",
         "L",
-        "W"
-      ]
-    },
-    {
-      "opponentUsername": "JUDDERMANG",
-      "opponentDisplayName": "Chris Cruz",
-      "matchesPlayed": 5,
-      "matchWins": 4,
-      "matchLosses": 1,
-      "matchDraws": 0,
-      "matchWinPercentage": 0.8,
-      "gameWins": 9,
-      "gameLosses": 3,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.75,
-      "lastFiveResults": [
-        "W",
-        "L",
-        "W",
-        "W",
         "W"
       ]
     },
@@ -170,6 +170,38 @@
       "lastFiveResults": [
         "W",
         "L"
+      ]
+    },
+    {
+      "opponentUsername": "remixmtg",
+      "opponentDisplayName": "Jeremy Siegel",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "lastFiveResults": [
+        "L"
+      ]
+    },
+    {
+      "opponentUsername": "pcocozza",
+      "opponentDisplayName": "pcocozza",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6666666666666666,
+      "lastFiveResults": [
+        "W"
       ]
     },
     {
@@ -350,6 +382,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "393796",
+      "dateDisplay": "January 1, 2026",
+      "playerCount": 13,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 7,
+      "points": 6,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWinPercentage": 0.5,
+      "deck": "Gush Tithe"
+    },
     {
       "tournamentId": "390154",
       "dateDisplay": "December 11, 2025",

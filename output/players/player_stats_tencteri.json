@@ -2,25 +2,25 @@
   "username": "Tencteri",
   "displayName": "Tencteri",
   "overallStats": {
-    "totalTournaments": 15,
-    "totalPoints": 70,
-    "totalMatches": 44,
-    "matchRecord": "23-20-1",
-    "matchWinPercentage": 0.5340909090909091,
-    "gameRecord": "54-52-1",
-    "gameWinPercentage": 0.5046728971962616,
+    "totalTournaments": 16,
+    "totalPoints": 73,
+    "totalMatches": 47,
+    "matchRecord": "24-22-1",
+    "matchWinPercentage": 0.5212765957446809,
+    "gameRecord": "58-56-1",
+    "gameWinPercentage": 0.5043478260869565,
     "trophies": 0,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q4 2025",
-      "events": 7,
-      "points": 36,
-      "matchRecord": "12-8-0",
-      "matchWinPercentage": 0.6,
-      "gameRecord": "28-23-0",
-      "gameWinPercentage": 0.5490196078431373
+      "events": 8,
+      "points": 39,
+      "matchRecord": "13-10-0",
+      "matchWinPercentage": 0.5652173913043478,
+      "gameRecord": "32-27-0",
+      "gameWinPercentage": 0.5423728813559322
     },
     {
       "leagueName": "Q3 2025",
@@ -156,6 +156,54 @@
       "lastFiveResults": [
         "L",
         "W"
+      ]
+    },
+    {
+      "opponentUsername": "JUDDERMANG",
+      "opponentDisplayName": "Chris Cruz",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "lastFiveResults": [
+        "W"
+      ]
+    },
+    {
+      "opponentUsername": "Gallo0",
+      "opponentDisplayName": "Gallo0",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "lastFiveResults": [
+        "L"
+      ]
+    },
+    {
+      "opponentUsername": "davidthomastao",
+      "opponentDisplayName": "David Tao",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "lastFiveResults": [
+        "L"
       ]
     },
     {
@@ -560,6 +608,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "393796",
+      "dateDisplay": "January 1, 2026",
+      "playerCount": 13,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 11,
+      "points": 3,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWinPercentage": 0.5,
+      "deck": "White Weenie"
+    },
     {
       "tournamentId": "391734",
       "dateDisplay": "December 18, 2025",

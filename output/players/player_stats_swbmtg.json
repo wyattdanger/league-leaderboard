@@ -2,25 +2,25 @@
   "username": "swbmtg",
   "displayName": "swb",
   "overallStats": {
-    "totalTournaments": 25,
-    "totalPoints": 166,
-    "totalMatches": 75,
-    "matchRecord": "54-17-4",
-    "matchWinPercentage": 0.7466666666666667,
-    "gameRecord": "120-61-2",
-    "gameWinPercentage": 0.6557377049180327,
-    "trophies": 7,
+    "totalTournaments": 26,
+    "totalPoints": 175,
+    "totalMatches": 78,
+    "matchRecord": "57-17-4",
+    "matchWinPercentage": 0.7564102564102564,
+    "gameRecord": "126-63-2",
+    "gameWinPercentage": 0.6596858638743456,
+    "trophies": 8,
     "belts": 1
   },
   "leagueStats": [
     {
       "leagueName": "Q4 2025",
-      "events": 8,
-      "points": 58,
-      "matchRecord": "19-4-1",
-      "matchWinPercentage": 0.8125,
-      "gameRecord": "41-17-1",
-      "gameWinPercentage": 0.7033898305084746
+      "events": 9,
+      "points": 67,
+      "matchRecord": "22-4-1",
+      "matchWinPercentage": 0.8333333333333334,
+      "gameRecord": "47-19-1",
+      "gameWinPercentage": 0.7089552238805971
     },
     {
       "leagueName": "Q3 2025",
@@ -319,6 +319,38 @@
       ]
     },
     {
+      "opponentUsername": "remixmtg",
+      "opponentDisplayName": "Jeremy Siegel",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6666666666666666,
+      "lastFiveResults": [
+        "W"
+      ]
+    },
+    {
+      "opponentUsername": "Gallo0",
+      "opponentDisplayName": "Gallo0",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6666666666666666,
+      "lastFiveResults": [
+        "W"
+      ]
+    },
+    {
       "opponentUsername": "sjpenzer",
       "opponentDisplayName": "sjpenzer",
       "matchesPlayed": 1,
@@ -592,6 +624,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "393796",
+      "dateDisplay": "January 1, 2026",
+      "playerCount": 13,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 1,
+      "points": 9,
+      "matchRecord": "3-0-0",
+      "matchWinPercentage": 1,
+      "gameWinPercentage": 0.75,
+      "deck": "The Rock"
+    },
     {
       "tournamentId": "391734",
       "dateDisplay": "December 18, 2025",

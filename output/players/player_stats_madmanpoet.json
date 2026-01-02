@@ -2,25 +2,25 @@
   "username": "madmanpoet",
   "displayName": "Michael Flores",
   "overallStats": {
-    "totalTournaments": 22,
-    "totalPoints": 136,
-    "totalMatches": 66,
-    "matchRecord": "45-20-1",
-    "matchWinPercentage": 0.6893939393939394,
-    "gameRecord": "101-52-0",
-    "gameWinPercentage": 0.6601307189542484,
-    "trophies": 4,
+    "totalTournaments": 23,
+    "totalPoints": 145,
+    "totalMatches": 69,
+    "matchRecord": "48-20-1",
+    "matchWinPercentage": 0.7028985507246377,
+    "gameRecord": "107-52-0",
+    "gameWinPercentage": 0.6729559748427673,
+    "trophies": 5,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q4 2025",
-      "events": 5,
-      "points": 28,
-      "matchRecord": "9-5-1",
-      "matchWinPercentage": 0.6333333333333333,
-      "gameRecord": "21-12-0",
-      "gameWinPercentage": 0.6363636363636364
+      "events": 6,
+      "points": 37,
+      "matchRecord": "12-5-1",
+      "matchWinPercentage": 0.6944444444444444,
+      "gameRecord": "27-12-0",
+      "gameWinPercentage": 0.6923076923076923
     },
     {
       "leagueName": "Q3 2025",
@@ -213,6 +213,23 @@
       ]
     },
     {
+      "opponentUsername": "RolandMTG",
+      "opponentDisplayName": "Roland Chang",
+      "matchesPlayed": 2,
+      "matchWins": 2,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 4,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "lastFiveResults": [
+        "W",
+        "W"
+      ]
+    },
+    {
       "opponentUsername": "delofstrom",
       "opponentDisplayName": "DEL .",
       "matchesPlayed": 2,
@@ -278,6 +295,38 @@
       "lastFiveResults": [
         "L",
         "L"
+      ]
+    },
+    {
+      "opponentUsername": "davidthomastao",
+      "opponentDisplayName": "David Tao",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "lastFiveResults": [
+        "W"
+      ]
+    },
+    {
+      "opponentUsername": "Taylorhol",
+      "opponentDisplayName": "Taylorhol",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "lastFiveResults": [
+        "W"
       ]
     },
     {
@@ -505,22 +554,6 @@
       ]
     },
     {
-      "opponentUsername": "RolandMTG",
-      "opponentDisplayName": "Roland Chang",
-      "matchesPlayed": 1,
-      "matchWins": 1,
-      "matchLosses": 0,
-      "matchDraws": 0,
-      "matchWinPercentage": 1,
-      "gameWins": 2,
-      "gameLosses": 0,
-      "gameDraws": 0,
-      "gameWinPercentage": 1,
-      "lastFiveResults": [
-        "W"
-      ]
-    },
-    {
       "opponentUsername": "FTDave",
       "opponentDisplayName": "FTDave",
       "matchesPlayed": 1,
@@ -570,6 +603,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "393796",
+      "dateDisplay": "January 1, 2026",
+      "playerCount": 13,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 2,
+      "points": 9,
+      "matchRecord": "3-0-0",
+      "matchWinPercentage": 1,
+      "gameWinPercentage": 1,
+      "deck": "Dreadnought"
+    },
     {
       "tournamentId": "388334",
       "dateDisplay": "December 4, 2025",

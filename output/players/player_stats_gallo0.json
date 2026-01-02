@@ -2,17 +2,26 @@
   "username": "Gallo0",
   "displayName": "Gallo0",
   "overallStats": {
-    "totalTournaments": 1,
-    "totalPoints": 0,
-    "totalMatches": 3,
-    "matchRecord": "0-3-0",
-    "matchWinPercentage": 0,
-    "gameRecord": "1-6-0",
-    "gameWinPercentage": 0.14285714285714285,
+    "totalTournaments": 2,
+    "totalPoints": 6,
+    "totalMatches": 6,
+    "matchRecord": "2-4-0",
+    "matchWinPercentage": 0.3333333333333333,
+    "gameRecord": "6-10-0",
+    "gameWinPercentage": 0.375,
     "trophies": 0,
     "belts": 0
   },
   "leagueStats": [
+    {
+      "leagueName": "Q4 2025",
+      "events": 1,
+      "points": 6,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameRecord": "5-4-0",
+      "gameWinPercentage": 0.5555555555555556
+    },
     {
       "leagueName": "Q2 2025",
       "events": 1,
@@ -24,6 +33,54 @@
     }
   ],
   "headToHead": [
+    {
+      "opponentUsername": "pcocozza",
+      "opponentDisplayName": "pcocozza",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6666666666666666,
+      "lastFiveResults": [
+        "W"
+      ]
+    },
+    {
+      "opponentUsername": "Tencteri",
+      "opponentDisplayName": "Tencteri",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6666666666666666,
+      "lastFiveResults": [
+        "W"
+      ]
+    },
+    {
+      "opponentUsername": "swbmtg",
+      "opponentDisplayName": "swb",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "lastFiveResults": [
+        "L"
+      ]
+    },
     {
       "opponentUsername": "rmcf",
       "opponentDisplayName": "rmcf",
@@ -74,6 +131,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "393796",
+      "dateDisplay": "January 1, 2026",
+      "playerCount": 13,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 6,
+      "points": 6,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWinPercentage": 0.5555556,
+      "deck": "Dreadnought"
+    },
     {
       "tournamentId": "312921",
       "dateDisplay": "May 22, 2025",
