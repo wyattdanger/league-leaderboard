@@ -420,6 +420,21 @@ When adding a new tournament, follow this EXACT sequence to ensure deck data is 
    npm run build
    ```
 
+9. **IMPORTANT: Restart the dev server if it's running:**
+   ```bash
+   # Kill the old dev server (if running)
+   lsof -ti:4321 | xargs kill -9 2>/dev/null
+
+   # Start fresh dev server with new data
+   npm run dev
+   ```
+
+   **Why:** Astro's dev server caches static paths (from `getStaticPaths()`) at startup. After regenerating data files, the dev server will show stale/missing pages until restarted. This includes:
+   - New player profiles
+   - New event pages
+   - Updated league standings
+   - Any changes to JSON data files
+
 **Why this order matters:**
 - Player stats generation reads deck data from `decks.yml` at runtime
 - If you generate player stats BEFORE filling in decks, player profiles will show `_` instead of deck names
