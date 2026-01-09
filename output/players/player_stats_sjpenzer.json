@@ -4,23 +4,23 @@
   "overallStats": {
     "totalTournaments": 8,
     "totalPoints": 53,
-    "totalMatches": 21,
-    "matchRecord": "15-4-2",
-    "matchWinPercentage": 0.7619047619047619,
-    "gameRecord": "34-15-0",
-    "gameWinPercentage": 0.6938775510204082,
+    "totalMatches": 24,
+    "matchRecord": "17-5-2",
+    "matchWinPercentage": 0.75,
+    "gameRecord": "38-19-0",
+    "gameWinPercentage": 0.6666666666666666,
     "trophies": 2,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q4 2025",
-      "events": 7,
+      "events": 8,
       "points": 53,
-      "matchRecord": "15-4-2",
-      "matchWinPercentage": 0.7619047619047619,
-      "gameRecord": "34-15-0",
-      "gameWinPercentage": 0.6938775510204082
+      "matchRecord": "17-5-2",
+      "matchWinPercentage": 0.75,
+      "gameRecord": "38-19-0",
+      "gameWinPercentage": 0.6666666666666666
     }
   ],
   "deckStats": [
@@ -64,9 +64,11 @@
           "gameDraws": 0
         },
         {
-          "tournamentId": "900001",
-          "dateDisplay": "",
+          "tournamentId": "380585b",
+          "dateDisplay": "November 6, 2025",
           "result": "W",
+          "playerDeck": "Terrageddon",
+          "opponentDeck": "Pox",
           "playerGameWins": 2,
           "opponentGameWins": 1,
           "gameDraws": 0
@@ -162,9 +164,11 @@
           "gameDraws": 0
         },
         {
-          "tournamentId": "900001",
-          "dateDisplay": "",
+          "tournamentId": "380585b",
+          "dateDisplay": "November 6, 2025",
           "result": "W",
+          "playerDeck": "Terrageddon",
+          "opponentDeck": "Tribe",
           "playerGameWins": 2,
           "opponentGameWins": 1,
           "gameDraws": 0
@@ -455,9 +459,11 @@
       "gameWinPercentage": 0,
       "matches": [
         {
-          "tournamentId": "900001",
-          "dateDisplay": "",
+          "tournamentId": "380585b",
+          "dateDisplay": "November 6, 2025",
           "result": "L",
+          "playerDeck": "Terrageddon",
+          "opponentDeck": "Burn",
           "playerGameWins": 0,
           "opponentGameWins": 2,
           "gameDraws": 0

@@ -4,23 +4,23 @@
   "overallStats": {
     "totalTournaments": 11,
     "totalPoints": 37,
-    "totalMatches": 30,
-    "matchRecord": "12-17-1",
-    "matchWinPercentage": 0.4166666666666667,
-    "gameRecord": "29-38-0",
-    "gameWinPercentage": 0.43283582089552236,
+    "totalMatches": 33,
+    "matchRecord": "12-20-1",
+    "matchWinPercentage": 0.3787878787878788,
+    "gameRecord": "32-44-0",
+    "gameWinPercentage": 0.42105263157894735,
     "trophies": 1,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q4 2025",
-      "events": 8,
+      "events": 9,
       "points": 31,
-      "matchRecord": "10-13-1",
-      "matchWinPercentage": 0.4375,
-      "gameRecord": "25-28-0",
-      "gameWinPercentage": 0.4716981132075472
+      "matchRecord": "10-16-1",
+      "matchWinPercentage": 0.3888888888888889,
+      "gameRecord": "28-34-0",
+      "gameWinPercentage": 0.45161290322580644
     },
     {
       "leagueName": "Q3 2025",
@@ -236,9 +236,11 @@
           "gameDraws": 0
         },
         {
-          "tournamentId": "900001",
-          "dateDisplay": "",
+          "tournamentId": "380585b",
+          "dateDisplay": "November 6, 2025",
           "result": "L",
+          "playerDeck": "Tribe",
+          "opponentDeck": "Burn",
           "playerGameWins": 1,
           "opponentGameWins": 2,
           "gameDraws": 0
@@ -279,9 +281,11 @@
           "gameDraws": 0
         },
         {
-          "tournamentId": "900001",
-          "dateDisplay": "",
+          "tournamentId": "380585b",
+          "dateDisplay": "November 6, 2025",
           "result": "L",
+          "playerDeck": "Tribe",
+          "opponentDeck": "Terrageddon",
           "playerGameWins": 1,
           "opponentGameWins": 2,
           "gameDraws": 0
@@ -452,9 +456,11 @@
       "gameWinPercentage": 0.3333333333333333,
       "matches": [
         {
-          "tournamentId": "900001",
-          "dateDisplay": "",
+          "tournamentId": "380585b",
+          "dateDisplay": "November 6, 2025",
           "result": "L",
+          "playerDeck": "Tribe",
+          "opponentDeck": "Pox",
           "playerGameWins": 1,
           "opponentGameWins": 2,
           "gameDraws": 0

@@ -4,23 +4,23 @@
   "overallStats": {
     "totalTournaments": 29,
     "totalPoints": 99,
-    "totalMatches": 84,
-    "matchRecord": "29-52-3",
-    "matchWinPercentage": 0.3630952380952381,
-    "gameRecord": "80-117-1",
-    "gameWinPercentage": 0.40404040404040403,
+    "totalMatches": 87,
+    "matchRecord": "32-52-3",
+    "matchWinPercentage": 0.3850574712643678,
+    "gameRecord": "86-119-1",
+    "gameWinPercentage": 0.4174757281553398,
     "trophies": 1,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q4 2025",
-      "events": 8,
+      "events": 9,
       "points": 36,
-      "matchRecord": "9-15-0",
-      "matchWinPercentage": 0.375,
-      "gameRecord": "20-35-0",
-      "gameWinPercentage": 0.36363636363636365
+      "matchRecord": "12-15-0",
+      "matchWinPercentage": 0.4444444444444444,
+      "gameRecord": "26-37-0",
+      "gameWinPercentage": 0.4126984126984127
     },
     {
       "leagueName": "Q3 2025",
@@ -283,9 +283,11 @@
           "gameDraws": 0
         },
         {
-          "tournamentId": "900001",
-          "dateDisplay": "",
+          "tournamentId": "380585b",
+          "dateDisplay": "November 6, 2025",
           "result": "W",
+          "playerDeck": "Burn",
+          "opponentDeck": "Pox",
           "playerGameWins": 2,
           "opponentGameWins": 1,
           "gameDraws": 0
@@ -751,9 +753,11 @@
           "gameDraws": 0
         },
         {
-          "tournamentId": "900001",
-          "dateDisplay": "",
+          "tournamentId": "380585b",
+          "dateDisplay": "November 6, 2025",
           "result": "W",
+          "playerDeck": "Burn",
+          "opponentDeck": "Tribe",
           "playerGameWins": 2,
           "opponentGameWins": 1,
           "gameDraws": 0
@@ -1192,9 +1196,11 @@
       "gameWinPercentage": 1,
       "matches": [
         {
-          "tournamentId": "900001",
-          "dateDisplay": "",
+          "tournamentId": "380585b",
+          "dateDisplay": "November 6, 2025",
           "result": "W",
+          "playerDeck": "Burn",
+          "opponentDeck": "Terrageddon",
           "playerGameWins": 2,
           "opponentGameWins": 0,
           "gameDraws": 0

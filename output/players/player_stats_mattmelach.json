@@ -4,23 +4,23 @@
   "overallStats": {
     "totalTournaments": 19,
     "totalPoints": 55,
-    "totalMatches": 54,
-    "matchRecord": "16-34-4",
+    "totalMatches": 57,
+    "matchRecord": "17-36-4",
     "matchWinPercentage": 0.3333333333333333,
-    "gameRecord": "49-77-1",
-    "gameWinPercentage": 0.3858267716535433,
+    "gameRecord": "53-82-1",
+    "gameWinPercentage": 0.3897058823529412,
     "trophies": 0,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q4 2025",
-      "events": 8,
+      "events": 9,
       "points": 26,
-      "matchRecord": "7-15-2",
+      "matchRecord": "8-17-2",
       "matchWinPercentage": 0.3333333333333333,
-      "gameRecord": "20-33-1",
-      "gameWinPercentage": 0.37962962962962965
+      "gameRecord": "24-38-1",
+      "gameWinPercentage": 0.3888888888888889
     },
     {
       "leagueName": "Q3 2025",
@@ -226,9 +226,11 @@
           "gameDraws": 0
         },
         {
-          "tournamentId": "900001",
-          "dateDisplay": "",
+          "tournamentId": "380585b",
+          "dateDisplay": "November 6, 2025",
           "result": "L",
+          "playerDeck": "Pox",
+          "opponentDeck": "Burn",
           "playerGameWins": 1,
           "opponentGameWins": 2,
           "gameDraws": 0
@@ -342,9 +344,11 @@
           "gameDraws": 0
         },
         {
-          "tournamentId": "900001",
-          "dateDisplay": "",
+          "tournamentId": "380585b",
+          "dateDisplay": "November 6, 2025",
           "result": "L",
+          "playerDeck": "Pox",
+          "opponentDeck": "Terrageddon",
           "playerGameWins": 1,
           "opponentGameWins": 2,
           "gameDraws": 0
@@ -756,9 +760,11 @@
       "gameWinPercentage": 0.6666666666666666,
       "matches": [
         {
-          "tournamentId": "900001",
-          "dateDisplay": "",
+          "tournamentId": "380585b",
+          "dateDisplay": "November 6, 2025",
           "result": "W",
+          "playerDeck": "Pox",
+          "opponentDeck": "Tribe",
           "playerGameWins": 2,
           "opponentGameWins": 1,
           "gameDraws": 0
