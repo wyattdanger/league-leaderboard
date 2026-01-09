@@ -34,6 +34,17 @@ export interface LeaguesConfig {
   leagues: League[];
 }
 
+export interface HeadToHeadMatchDetail {
+  tournamentId: string;
+  dateDisplay: string;
+  result: 'W' | 'L' | 'D';
+  playerDeck?: string;
+  opponentDeck?: string;
+  playerGameWins: number;
+  opponentGameWins: number;
+  gameDraws: number;
+}
+
 export interface HeadToHeadRecord {
   opponentUsername: string;
   opponentDisplayName: string;
@@ -47,6 +58,7 @@ export interface HeadToHeadRecord {
   gameDraws: number;
   gameWinPercentage: number;
   lastFiveResults: ('W' | 'L' | 'D')[];
+  matches: HeadToHeadMatchDetail[];
 }
 
 export interface PlayerOverallStats {

@@ -131,7 +131,9 @@ export function calculatePlayerStats(
  */
 export function calculateHeadToHeadRecords(
   username: string,
-  matchesPerRound: Match[][]
+  matchesPerRound: Match[][],
+  tournamentMetadataMap?: Map<string, { dateDisplay: string }>,
+  deckDataMap?: Map<string, { [username: string]: string }>
 ): HeadToHeadRecord[] {
   const opponentStats = new Map<
     string,
@@ -144,6 +146,16 @@ export function calculateHeadToHeadRecords(
       gameLosses: number;
       gameDraws: number;
       results: MatchResult[];
+      matchDetails: Array<{
+        tournamentId: string;
+        dateDisplay: string;
+        result: 'W' | 'L' | 'D';
+        playerDeck?: string;
+        opponentDeck?: string;
+        playerGameWins: number;
+        opponentGameWins: number;
+        gameDraws: number;
+      }>;
     }
   >();
 
@@ -191,6 +203,7 @@ export function calculateHeadToHeadRecords(
             gameLosses: 0,
             gameDraws: 0,
             results: [],
+            matchDetails: [],
           });
         }
 
@@ -219,6 +232,24 @@ export function calculateHeadToHeadRecords(
 
         // Track result for last 5
         stats.results.push({ result, roundNumber: match.RoundNumber });
+
+        // Store detailed match information
+        const tournamentId = match.TournamentId?.toString() || '';
+        const dateDisplay = tournamentMetadataMap?.get(tournamentId)?.dateDisplay || '';
+        const deckData = deckDataMap?.get(tournamentId);
+        const playerDeck = deckData?.[username];
+        const opponentDeck = deckData?.[opponentUsername];
+
+        stats.matchDetails.push({
+          tournamentId,
+          dateDisplay,
+          result,
+          playerDeck,
+          opponentDeck,
+          playerGameWins,
+          opponentGameWins,
+          gameDraws: draws,
+        });
       }
     }
   }
@@ -245,6 +276,7 @@ export function calculateHeadToHeadRecords(
         gameDraws: stats.gameDraws,
         gameWinPercentage: totalGames > 0 ? stats.gameWins / totalGames : 0,
         lastFiveResults,
+        matches: stats.matchDetails,
       };
     }
   );

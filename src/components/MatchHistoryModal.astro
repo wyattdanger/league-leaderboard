@@ -1,0 +1,274 @@
+---
+import type { HeadToHeadMatchDetail } from '../types';
+import type { PlayerDetailData } from '../types';
+import * as fs from 'fs';
+import * as path from 'path';
+
+interface Props {
+  matches: HeadToHeadMatchDetail[];
+  opponentDisplayName: string;
+  playerUsername: string;
+}
+
+const { matches, opponentDisplayName, playerUsername } = Astro.props;
+
+// Load player data to get display name
+const playersDir = path.join(process.cwd(), 'output', 'players');
+const playerFile = path.join(playersDir, `player_stats_${playerUsername}.json`);
+const playerData: PlayerDetailData = JSON.parse(fs.readFileSync(playerFile, 'utf-8'));
+const playerDisplayName = playerData.displayName;
+
+// Sort matches by date (newest first)
+const sortedMatches = [...matches].sort((a, b) => {
+  // Extract tournament IDs as numbers for sorting
+  const aId = parseInt(a.tournamentId);
+  const bId = parseInt(b.tournamentId);
+  return bId - aId;
+});
+---
+
+<div class="modal-backdrop" id={`modal-${opponentDisplayName.replace(/\s+/g, '-')}`}>
+  <div class="modal-content">
+    <div class="modal-header">
+      <h2>Match History vs {opponentDisplayName}</h2>
+      <button class="modal-close" aria-label="Close">×</button>
+    </div>
+
+    <div class="modal-body">
+      <table class="match-history-table">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>{playerDisplayName}</th>
+            <th>{opponentDisplayName}</th>
+            <th>Score</th>
+          </tr>
+        </thead>
+        <tbody>
+          {sortedMatches.map((match) => {
+            const resultClass = match.result === 'W' ? 'result-win' : match.result === 'L' ? 'result-loss' : 'result-draw';
+            const playerDeckDisplay = (match.playerDeck && match.playerDeck !== '_') ? match.playerDeck : 'Unknown';
+            const opponentDeckDisplay = (match.opponentDeck && match.opponentDeck !== '_') ? match.opponentDeck : 'Unknown';
+
+            return (
+              <tr class={resultClass}>
+                <td class="match-date">
+                  <a href={`/event/${match.tournamentId}`} target="_blank">
+                    {match.dateDisplay}
+                  </a>
+                </td>
+                <td class="deck-name">{playerDeckDisplay}</td>
+                <td class="deck-name">{opponentDeckDisplay}</td>
+                <td class="match-score">
+                  {match.playerGameWins}-{match.opponentGameWins}
+                  {match.gameDraws > 0 && `-${match.gameDraws}`}
+                </td>
+              </tr>
+            );
+          })}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<style>
+  .modal-backdrop {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .modal-backdrop.active {
+    display: flex;
+  }
+
+  .modal-content {
+    background: white;
+    border-radius: 12px;
+    max-width: 800px;
+    width: 100%;
+    max-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  }
+
+  .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    background: var(--gradient-primary);
+    color: white;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+  }
+
+  .modal-header h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  .modal-close {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2.5rem;
+    line-height: 1;
+    cursor: pointer;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    transition: background 0.2s;
+  }
+
+  .modal-close:hover {
+    background: rgba(255, 255, 255, 0.2);
+  }
+
+  .modal-body {
+    padding: 0;
+    overflow-y: auto;
+  }
+
+  .match-history-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .match-history-table thead {
+    background: #f9fafb;
+    color: #764ba2;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+
+  .match-history-table th {
+    padding: 1rem;
+    font-weight: 600;
+    font-size: 0.85rem;
+    text-align: left;
+    border-bottom: 2px solid #e5e7eb;
+    white-space: nowrap;
+  }
+
+  .match-history-table td {
+    padding: 1rem;
+    border-bottom: 1px solid #e5e7eb;
+  }
+
+  .match-history-table tbody tr {
+    transition: background-color 0.2s;
+  }
+
+  .match-history-table tbody tr:hover {
+    opacity: 0.8;
+  }
+
+  .match-history-table tbody tr.result-win {
+    background-color: rgba(16, 185, 129, 0.08);
+  }
+
+  .match-history-table tbody tr.result-loss {
+    background-color: rgba(239, 68, 68, 0.08);
+  }
+
+  .match-history-table tbody tr.result-draw {
+    background-color: rgba(107, 114, 128, 0.08);
+  }
+
+  .match-date a {
+    color: #667eea;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  .match-date a:hover {
+    text-decoration: underline;
+  }
+
+  .deck-name {
+    font-weight: 500;
+    color: #374151;
+  }
+
+  .match-score {
+    font-family: monospace;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1f2937;
+  }
+
+  @media (max-width: 768px) {
+    .modal-content {
+      max-height: 95vh;
+    }
+
+    .modal-header {
+      padding: 1rem 1.5rem;
+    }
+
+    .modal-header h2 {
+      font-size: 1.25rem;
+    }
+
+    .modal-body {
+      padding: 0;
+    }
+
+    .match-history-table th,
+    .match-history-table td {
+      padding: 0.75rem 0.5rem;
+      font-size: 0.85rem;
+    }
+
+    .deck-name {
+      font-size: 0.8rem;
+    }
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const modals = document.querySelectorAll('.modal-backdrop');
+
+    modals.forEach((modal) => {
+      // Close button
+      const closeBtn = modal.querySelector('.modal-close');
+      if (closeBtn) {
+        closeBtn.addEventListener('click', () => {
+          modal.classList.remove('active');
+        });
+      }
+
+      // Click outside to close
+      modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+          modal.classList.remove('active');
+        }
+      });
+
+      // Escape key to close
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && modal.classList.contains('active')) {
+          modal.classList.remove('active');
+        }
+      });
+    });
+  });
+</script>

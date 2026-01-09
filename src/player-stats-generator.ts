@@ -68,6 +68,10 @@ async function generatePlayerStats(): Promise<void> {
   const playerTrophies = new Map<string, number>();
   const playerBelts = new Map<string, number>();
 
+  // Maps for head-to-head match details
+  const tournamentMetadataMap = new Map<string, { dateDisplay: string }>();
+  const deckDataMap = new Map<string, { [username: string]: string }>();
+
   // Identify which tournaments are Top 8s
   const top8Tournaments = new Set<string>();
   for (const league of config.leagues) {
@@ -135,6 +139,18 @@ async function generatePlayerStats(): Promise<void> {
       }
     }
 
+    // Load tournament metadata for date display
+    const metadata = getTournamentMetadata(tournamentId);
+    if (metadata) {
+      tournamentMetadataMap.set(tournamentId, { dateDisplay: metadata.dateDisplay });
+    }
+
+    // Load deck data for this tournament
+    const deckData = loadDeckData(tournamentId);
+    if (deckData) {
+      deckDataMap.set(tournamentId, deckData);
+    }
+
     // Load standings to get points and check for 3-0 finishes (trophies/belts)
     const standingsFiles = fs
       .readdirSync(tournamentDir)
@@ -183,7 +199,7 @@ async function generatePlayerStats(): Promise<void> {
     const { matchesPerRound, displayName } = data;
 
     // Calculate head-to-head records (across all tournaments)
-    const headToHead = calculateHeadToHeadRecords(username, matchesPerRound);
+    const headToHead = calculateHeadToHeadRecords(username, matchesPerRound, tournamentMetadataMap, deckDataMap);
 
     // Calculate overall stats and per-league stats
     let totalMatchWins = 0;

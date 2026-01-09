@@ -126,7 +126,7 @@ const gwpClass = isHighGWP ? 'stat-high' : isMediumGWP ? 'stat-medium' : 'stat-l
 
       <PlayerDecks deckStats={playerData.deckStats} />
 
-      <HeadToHead records={playerData.headToHead} />
+      <HeadToHead records={playerData.headToHead} playerUsername={playerData.username} />
 
       <PlayerEventList performances={playerData.tournamentPerformances} />
     </div>

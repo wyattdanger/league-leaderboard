@@ -1,12 +1,14 @@
 ---
 import type { HeadToHeadRecord } from '../types';
 import { usernameToSlug } from '../utils/helpers';
+import MatchHistoryModal from './MatchHistoryModal.astro';
 
 interface Props {
   records: HeadToHeadRecord[];
+  playerUsername: string;
 }
 
-const { records } = Astro.props;
+const { records, playerUsername } = Astro.props;
 ---
 
 <div class="h2h-container">
@@ -24,6 +26,7 @@ const { records } = Astro.props;
                 <th class="hide-tablet">Game Record</th>
                 <th class="show-tablet">MWP</th>
                 <th class="hide-mobile">Form</th>
+                <th></th>
               </tr>
             </thead>
             <tbody>
@@ -42,18 +45,21 @@ const { records } = Astro.props;
                 const opponentUrl = `/player/${opponentSlug}`;
                 const isHidden = index >= 8;
 
+                const modalId = `modal-${record.opponentDisplayName.replace(/\s+/g, '-')}`;
+
                 return (
                   <tr
                     class={isHidden ? 'hidden' : ''}
-                    onclick={`window.location.href='${opponentUrl}'`}
-                    style="cursor: pointer;"
                   >
-                    <td>
+                    <td
+                      onclick={`window.location.href='${opponentUrl}'`}
+                      style="cursor: pointer;"
+                    >
                       <div class="opponent-name">{record.opponentDisplayName}</div>
                       <div class="opponent-username">@{record.opponentUsername}</div>
                     </td>
-                    <td class="stat-value">{record.matchesPlayed}</td>
-                    <td class="hide-tablet">
+                    <td class="stat-value" onclick={`window.location.href='${opponentUrl}'`} style="cursor: pointer;">{record.matchesPlayed}</td>
+                    <td class="hide-tablet" onclick={`window.location.href='${opponentUrl}'`} style="cursor: pointer;">
                       <div class="stat">
                         <div class="record">
                           {record.matchWins}-{record.matchLosses}-{record.matchDraws}
@@ -63,7 +69,7 @@ const { records } = Astro.props;
                         </div>
                       </div>
                     </td>
-                    <td class="hide-tablet">
+                    <td class="hide-tablet" onclick={`window.location.href='${opponentUrl}'`} style="cursor: pointer;">
                       <div class="stat">
                         <div class="record">
                           {record.gameWins}-{record.gameLosses}-{record.gameDraws}
@@ -73,17 +79,26 @@ const { records } = Astro.props;
                         </div>
                       </div>
                     </td>
-                    <td class="show-tablet">
+                    <td class="show-tablet" onclick={`window.location.href='${opponentUrl}'`} style="cursor: pointer;">
                       <div class={`percent-label ${mwClass}`}>
                         {(record.matchWinPercentage * 100).toFixed(1)}%
                       </div>
                     </td>
-                    <td class="hide-mobile">
+                    <td class="hide-mobile" onclick={`window.location.href='${opponentUrl}'`} style="cursor: pointer;">
                       <div class="form">
                         {record.lastFiveResults.map((result) => (
                           <span class={`form-badge form-${result.toLowerCase()}`}>{result}</span>
                         ))}
                       </div>
+                    </td>
+                    <td class="details-cell">
+                      <button
+                        class="details-btn"
+                        onclick={`event.stopPropagation(); document.getElementById('${modalId}').classList.add('active');`}
+                        aria-label="View match details"
+                      >
+                        🔍
+                      </button>
                     </td>
                   </tr>
                 );
@@ -107,6 +122,14 @@ const { records } = Astro.props;
       <p class="no-data">No head-to-head records available.</p>
     )
   }
+
+  {records.map((record) => (
+    <MatchHistoryModal
+      matches={record.matches}
+      opponentDisplayName={record.opponentDisplayName}
+      playerUsername={playerUsername}
+    />
+  ))}
 </div>
 
 <script>
@@ -317,6 +340,31 @@ const { records } = Astro.props;
 
   .show-tablet {
     display: none;
+  }
+
+  .details-cell {
+    text-align: center;
+    width: 60px;
+  }
+
+  .details-btn {
+    background: rgba(102, 126, 234, 0.1);
+    border: 1px solid rgba(102, 126, 234, 0.3);
+    border-radius: 6px;
+    padding: 0.5rem 0.75rem;
+    font-size: 1.25rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    line-height: 1;
+  }
+
+  .details-btn:hover {
+    background: rgba(102, 126, 234, 0.2);
+    transform: scale(1.1);
+  }
+
+  .details-btn:active {
+    transform: scale(0.95);
   }
 
   @media (max-width: 1024px) {
