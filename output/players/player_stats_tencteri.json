@@ -53,30 +53,30 @@
   "deckStats": [
     {
       "deckName": "Unknown",
-      "events": 11,
-      "matchWins": 15,
-      "matchLosses": 16,
+      "events": 9,
+      "matchWins": 12,
+      "matchLosses": 13,
       "matchDraws": 1,
-      "matchRecord": "15-16-1",
-      "matchWinPercentage": 0.484375,
-      "gameWins": 42,
-      "gameLosses": 43,
+      "matchRecord": "12-13-1",
+      "matchWinPercentage": 0.4807692307692308,
+      "gameWins": 35,
+      "gameLosses": 34,
       "gameDraws": 0,
-      "gameWinPercentage": 0.49411764705882355,
+      "gameWinPercentage": 0.5072463768115942,
       "trophies": 0
     },
     {
       "deckName": "Deadguy Ale",
-      "events": 3,
-      "matchWins": 6,
-      "matchLosses": 3,
+      "events": 4,
+      "matchWins": 8,
+      "matchLosses": 4,
       "matchDraws": 0,
-      "matchRecord": "6-3-0",
+      "matchRecord": "8-4-0",
       "matchWinPercentage": 0.6666666666666666,
-      "gameWins": 13,
-      "gameLosses": 11,
+      "gameWins": 17,
+      "gameLosses": 15,
       "gameDraws": 0,
-      "gameWinPercentage": 0.5416666666666666,
+      "gameWinPercentage": 0.53125,
       "trophies": 0
     },
     {
@@ -91,6 +91,20 @@
       "gameLosses": 10,
       "gameDraws": 0,
       "gameWinPercentage": 0.5833333333333334,
+      "trophies": 0
+    },
+    {
+      "deckName": "Pox",
+      "events": 1,
+      "matchWins": 1,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 3,
+      "gameLosses": 5,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.375,
       "trophies": 0
     }
   ],
@@ -731,7 +745,7 @@
       "matchRecord": "2-1-0",
       "matchWinPercentage": 0.6666666666666666,
       "gameWinPercentage": 0.5,
-      "deck": "_"
+      "deck": "Deadguy Ale"
     },
     {
       "tournamentId": "382756",
@@ -795,7 +809,7 @@
       "matchRecord": "1-2-0",
       "matchWinPercentage": 0.3333333333333333,
       "gameWinPercentage": 0.42857143,
-      "deck": "_"
+      "deck": "Pox"
     },
     {
       "tournamentId": "335531",

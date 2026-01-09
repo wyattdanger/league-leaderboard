@@ -62,16 +62,16 @@
   "deckStats": [
     {
       "deckName": "Unknown",
-      "events": 11,
-      "matchWins": 22,
-      "matchLosses": 10,
-      "matchDraws": 1,
-      "matchRecord": "22-10-1",
-      "matchWinPercentage": 0.6818181818181818,
-      "gameWins": 56,
-      "gameLosses": 32,
+      "events": 9,
+      "matchWins": 18,
+      "matchLosses": 9,
+      "matchDraws": 0,
+      "matchRecord": "18-9-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 45,
+      "gameLosses": 27,
       "gameDraws": 0,
-      "gameWinPercentage": 0.6363636363636364,
+      "gameWinPercentage": 0.625,
       "trophies": 1
     },
     {
@@ -145,6 +145,20 @@
       "trophies": 1
     },
     {
+      "deckName": "Tidestill",
+      "events": 1,
+      "matchWins": 2,
+      "matchLosses": 0,
+      "matchDraws": 1,
+      "matchRecord": "2-0-1",
+      "matchWinPercentage": 0.8333333333333334,
+      "gameWins": 6,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.75,
+      "trophies": 0
+    },
+    {
       "deckName": "Tide",
       "events": 1,
       "matchWins": 2,
@@ -184,6 +198,20 @@
       "gameLosses": 2,
       "gameDraws": 0,
       "gameWinPercentage": 0.75,
+      "trophies": 0
+    },
+    {
+      "deckName": "Lan D Hoath",
+      "events": 1,
+      "matchWins": 2,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 5,
+      "gameLosses": 3,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.625,
       "trophies": 0
     },
     {
@@ -1054,7 +1082,7 @@
       "matchRecord": "2-0-1",
       "matchWinPercentage": 0.8333333333333334,
       "gameWinPercentage": 0.71428571,
-      "deck": "_"
+      "deck": "Tidestill"
     },
     {
       "tournamentId": "335531",
@@ -1132,7 +1160,7 @@
       "matchRecord": "2-1-0",
       "matchWinPercentage": 0.6666666666666666,
       "gameWinPercentage": 0.625,
-      "deck": "_"
+      "deck": "Lan D Hoath"
     },
     {
       "tournamentId": "308700",

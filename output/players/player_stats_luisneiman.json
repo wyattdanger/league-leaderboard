@@ -44,17 +44,31 @@
   "deckStats": [
     {
       "deckName": "Unknown",
-      "events": 4,
-      "matchWins": 10,
-      "matchLosses": 2,
+      "events": 3,
+      "matchWins": 8,
+      "matchLosses": 1,
       "matchDraws": 0,
-      "matchRecord": "10-2-0",
-      "matchWinPercentage": 0.8333333333333334,
-      "gameWins": 23,
-      "gameLosses": 9,
+      "matchRecord": "8-1-0",
+      "matchWinPercentage": 0.8888888888888888,
+      "gameWins": 19,
+      "gameLosses": 5,
       "gameDraws": 0,
-      "gameWinPercentage": 0.71875,
+      "gameWinPercentage": 0.7916666666666666,
       "trophies": 2
+    },
+    {
+      "deckName": "Oath Devourer",
+      "events": 1,
+      "matchWins": 2,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 4,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5,
+      "trophies": 0
     }
   ],
   "headToHead": [
@@ -287,7 +301,7 @@
       "matchRecord": "2-1-0",
       "matchWinPercentage": 0.6666666666666666,
       "gameWinPercentage": 0.55555556,
-      "deck": "_"
+      "deck": "Oath Devourer"
     }
   ]
 }

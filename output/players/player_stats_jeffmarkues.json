@@ -44,17 +44,31 @@
   "deckStats": [
     {
       "deckName": "Unknown",
-      "events": 15,
-      "matchWins": 28,
-      "matchLosses": 16,
+      "events": 14,
+      "matchWins": 27,
+      "matchLosses": 14,
       "matchDraws": 1,
-      "matchRecord": "28-16-1",
-      "matchWinPercentage": 0.6333333333333333,
-      "gameWins": 75,
-      "gameLosses": 45,
+      "matchRecord": "27-14-1",
+      "matchWinPercentage": 0.6547619047619048,
+      "gameWins": 71,
+      "gameLosses": 41,
       "gameDraws": 0,
-      "gameWinPercentage": 0.625,
+      "gameWinPercentage": 0.6339285714285714,
       "trophies": 3
+    },
+    {
+      "deckName": "Clerics",
+      "events": 1,
+      "matchWins": 1,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 4,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5,
+      "trophies": 0
     }
   ],
   "headToHead": [
@@ -535,7 +549,7 @@
       "matchRecord": "1-2-0",
       "matchWinPercentage": 0.3333333333333333,
       "gameWinPercentage": 0.44444444,
-      "deck": "_"
+      "deck": "Clerics"
     },
     {
       "tournamentId": "361066",

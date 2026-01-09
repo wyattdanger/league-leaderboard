@@ -53,16 +53,30 @@
   "deckStats": [
     {
       "deckName": "Unknown",
-      "events": 15,
-      "matchWins": 13,
-      "matchLosses": 29,
+      "events": 14,
+      "matchWins": 11,
+      "matchLosses": 28,
       "matchDraws": 3,
-      "matchRecord": "13-29-3",
-      "matchWinPercentage": 0.32222222222222224,
-      "gameWins": 47,
-      "gameLosses": 73,
+      "matchRecord": "11-28-3",
+      "matchWinPercentage": 0.2976190476190476,
+      "gameWins": 43,
+      "gameLosses": 69,
       "gameDraws": 0,
-      "gameWinPercentage": 0.39166666666666666,
+      "gameWinPercentage": 0.38392857142857145,
+      "trophies": 0
+    },
+    {
+      "deckName": "Goblins",
+      "events": 1,
+      "matchWins": 2,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 4,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5,
       "trophies": 0
     },
     {
@@ -830,7 +844,7 @@
       "matchRecord": "2-1-0",
       "matchWinPercentage": 0.6666666666666666,
       "gameWinPercentage": 0.5,
-      "deck": "_"
+      "deck": "Goblins"
     },
     {
       "tournamentId": "352572",

@@ -43,31 +43,45 @@
   ],
   "deckStats": [
     {
-      "deckName": "Unknown",
-      "events": 4,
-      "matchWins": 6,
-      "matchLosses": 6,
-      "matchDraws": 0,
-      "matchRecord": "6-6-0",
+      "deckName": "BW Control",
+      "events": 3,
+      "matchWins": 4,
+      "matchLosses": 4,
+      "matchDraws": 1,
+      "matchRecord": "4-4-1",
       "matchWinPercentage": 0.5,
-      "gameWins": 17,
-      "gameLosses": 15,
+      "gameWins": 12,
+      "gameLosses": 12,
       "gameDraws": 0,
-      "gameWinPercentage": 0.53125,
+      "gameWinPercentage": 0.5,
       "trophies": 0
     },
     {
-      "deckName": "BW Control",
+      "deckName": "BW Contorl",
+      "events": 1,
+      "matchWins": 2,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 6,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.75,
+      "trophies": 0
+    },
+    {
+      "deckName": "Deadguy Ale",
       "events": 1,
       "matchWins": 1,
-      "matchLosses": 1,
-      "matchDraws": 1,
-      "matchRecord": "1-1-1",
-      "matchWinPercentage": 0.5,
-      "gameWins": 4,
-      "gameLosses": 4,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 3,
+      "gameLosses": 5,
       "gameDraws": 0,
-      "gameWinPercentage": 0.5,
+      "gameWinPercentage": 0.375,
       "trophies": 0
     }
   ],
@@ -261,7 +275,7 @@
       "matchRecord": "1-2-0",
       "matchWinPercentage": 0.3333333333333333,
       "gameWinPercentage": 0.33333333,
-      "deck": "_"
+      "deck": "BW Control"
     },
     {
       "tournamentId": "363663",
@@ -274,7 +288,7 @@
       "matchRecord": "2-1-0",
       "matchWinPercentage": 0.6666666666666666,
       "gameWinPercentage": 0.66666667,
-      "deck": "_"
+      "deck": "BW Control"
     },
     {
       "tournamentId": "361066",
@@ -287,7 +301,7 @@
       "matchRecord": "2-1-0",
       "matchWinPercentage": 0.6666666666666666,
       "gameWinPercentage": 0.71428571,
-      "deck": "_"
+      "deck": "BW Contorl"
     },
     {
       "tournamentId": "308700",
@@ -300,7 +314,7 @@
       "matchRecord": "1-2-0",
       "matchWinPercentage": 0.3333333333333333,
       "gameWinPercentage": 0.33333333,
-      "deck": "_"
+      "deck": "Deadguy Ale"
     }
   ]
 }

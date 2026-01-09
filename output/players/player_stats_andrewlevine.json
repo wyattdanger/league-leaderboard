@@ -44,30 +44,30 @@
   "deckStats": [
     {
       "deckName": "Unknown",
-      "events": 10,
-      "matchWins": 13,
-      "matchLosses": 16,
-      "matchDraws": 1,
-      "matchRecord": "13-16-1",
-      "matchWinPercentage": 0.45,
-      "gameWins": 38,
-      "gameLosses": 42,
+      "events": 8,
+      "matchWins": 12,
+      "matchLosses": 12,
+      "matchDraws": 0,
+      "matchRecord": "12-12-0",
+      "matchWinPercentage": 0.5,
+      "gameWins": 33,
+      "gameLosses": 31,
       "gameDraws": 0,
-      "gameWinPercentage": 0.475,
+      "gameWinPercentage": 0.515625,
       "trophies": 1
     },
     {
       "deckName": "Tide",
-      "events": 2,
-      "matchWins": 4,
-      "matchLosses": 2,
+      "events": 3,
+      "matchWins": 5,
+      "matchLosses": 4,
       "matchDraws": 0,
-      "matchRecord": "4-2-0",
-      "matchWinPercentage": 0.6666666666666666,
-      "gameWins": 10,
-      "gameLosses": 6,
+      "matchRecord": "5-4-0",
+      "matchWinPercentage": 0.5555555555555556,
+      "gameWins": 13,
+      "gameLosses": 11,
       "gameDraws": 0,
-      "gameWinPercentage": 0.625,
+      "gameWinPercentage": 0.5416666666666666,
       "trophies": 0
     },
     {
@@ -82,6 +82,20 @@
       "gameLosses": 8,
       "gameDraws": 0,
       "gameWinPercentage": 0.5,
+      "trophies": 0
+    },
+    {
+      "deckName": "Rogue",
+      "events": 1,
+      "matchWins": 0,
+      "matchLosses": 2,
+      "matchDraws": 1,
+      "matchRecord": "0-2-1",
+      "matchWinPercentage": 0.16666666666666666,
+      "gameWins": 2,
+      "gameLosses": 6,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.25,
       "trophies": 0
     }
   ],
@@ -493,7 +507,7 @@
       "matchRecord": "1-2-0",
       "matchWinPercentage": 0.3333333333333333,
       "gameWinPercentage": 0.33333333,
-      "deck": "_"
+      "deck": "Tide"
     },
     {
       "tournamentId": "375338",
@@ -519,7 +533,7 @@
       "matchRecord": "0-2-1",
       "matchWinPercentage": 0.16666666666666666,
       "gameWinPercentage": 0.28571429,
-      "deck": "_"
+      "deck": "Rogue"
     },
     {
       "tournamentId": "367531",

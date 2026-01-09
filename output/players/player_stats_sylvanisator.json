@@ -44,16 +44,30 @@
   "deckStats": [
     {
       "deckName": "Unknown",
-      "events": 12,
-      "matchWins": 15,
-      "matchLosses": 19,
+      "events": 11,
+      "matchWins": 13,
+      "matchLosses": 18,
       "matchDraws": 2,
-      "matchRecord": "15-19-2",
-      "matchWinPercentage": 0.4444444444444444,
-      "gameWins": 42,
-      "gameLosses": 54,
+      "matchRecord": "13-18-2",
+      "matchWinPercentage": 0.42424242424242425,
+      "gameWins": 37,
+      "gameLosses": 51,
       "gameDraws": 0,
-      "gameWinPercentage": 0.4375,
+      "gameWinPercentage": 0.42045454545454547,
+      "trophies": 0
+    },
+    {
+      "deckName": "Broccoi Soup",
+      "events": 1,
+      "matchWins": 2,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 5,
+      "gameLosses": 3,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.625,
       "trophies": 0
     }
   ],
@@ -502,7 +516,7 @@
       "matchRecord": "2-1-0",
       "matchWinPercentage": 0.6666666666666666,
       "gameWinPercentage": 0.57142857,
-      "deck": "_"
+      "deck": "Broccoi Soup"
     },
     {
       "tournamentId": "357267",

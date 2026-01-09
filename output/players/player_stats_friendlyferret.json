@@ -52,35 +52,119 @@
   ],
   "deckStats": [
     {
-      "deckName": "Unknown",
-      "events": 11,
-      "matchWins": 22,
-      "matchLosses": 10,
-      "matchDraws": 1,
-      "matchRecord": "22-10-1",
-      "matchWinPercentage": 0.6818181818181818,
-      "gameWins": 57,
-      "gameLosses": 31,
+      "deckName": "Dreadnought",
+      "events": 2,
+      "matchWins": 6,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchRecord": "6-0-0",
+      "matchWinPercentage": 1,
+      "gameWins": 15,
+      "gameLosses": 1,
       "gameDraws": 0,
-      "gameWinPercentage": 0.6477272727272727,
-      "trophies": 3
+      "gameWinPercentage": 0.9375,
+      "trophies": 2
     },
     {
       "deckName": "Oath Ponza",
+      "events": 2,
+      "matchWins": 5,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchRecord": "5-1-0",
+      "matchWinPercentage": 0.8333333333333334,
+      "gameWins": 13,
+      "gameLosses": 3,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.8125,
+      "trophies": 1
+    },
+    {
+      "deckName": "Tidestill",
+      "events": 2,
+      "matchWins": 4,
+      "matchLosses": 1,
+      "matchDraws": 1,
+      "matchRecord": "4-1-1",
+      "matchWinPercentage": 0.75,
+      "gameWins": 12,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.75,
+      "trophies": 0
+    },
+    {
+      "deckName": "Burn",
+      "events": 2,
+      "matchWins": 3,
+      "matchLosses": 3,
+      "matchDraws": 0,
+      "matchRecord": "3-3-0",
+      "matchWinPercentage": 0.5,
+      "gameWins": 7,
+      "gameLosses": 9,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.4375,
+      "trophies": 0
+    },
+    {
+      "deckName": "UW Tide Control",
       "events": 1,
       "matchWins": 3,
       "matchLosses": 0,
       "matchDraws": 0,
       "matchRecord": "3-0-0",
       "matchWinPercentage": 1,
-      "gameWins": 8,
-      "gameLosses": 0,
+      "gameWins": 6,
+      "gameLosses": 2,
       "gameDraws": 0,
-      "gameWinPercentage": 1,
+      "gameWinPercentage": 0.75,
       "trophies": 1
     },
     {
+      "deckName": "Goblins",
+      "events": 1,
+      "matchWins": 2,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 5,
+      "gameLosses": 3,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.625,
+      "trophies": 0
+    },
+    {
       "deckName": "Moneyball Black",
+      "events": 1,
+      "matchWins": 1,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 3,
+      "gameLosses": 5,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.375,
+      "trophies": 0
+    },
+    {
+      "deckName": "Oath Spec",
+      "events": 1,
+      "matchWins": 1,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 4,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5,
+      "trophies": 0
+    },
+    {
+      "deckName": "Unknown",
       "events": 1,
       "matchWins": 1,
       "matchLosses": 2,
@@ -572,7 +656,7 @@
       "matchRecord": "3-0-0",
       "matchWinPercentage": 1,
       "gameWinPercentage": 1,
-      "deck": "_"
+      "deck": "Dreadnought"
     },
     {
       "tournamentId": "363663",
@@ -585,7 +669,7 @@
       "matchRecord": "3-0-0",
       "matchWinPercentage": 1,
       "gameWinPercentage": 0.85714286,
-      "deck": "_"
+      "deck": "Dreadnought"
     },
     {
       "tournamentId": "361066",
@@ -598,7 +682,7 @@
       "matchRecord": "1-2-0",
       "matchWinPercentage": 0.3333333333333333,
       "gameWinPercentage": 0.5,
-      "deck": "_"
+      "deck": "Oath Spec"
     },
     {
       "tournamentId": "352572",
@@ -611,7 +695,7 @@
       "matchRecord": "2-1-0",
       "matchWinPercentage": 0.6666666666666666,
       "gameWinPercentage": 0.57142857,
-      "deck": "_"
+      "deck": "Oath Ponza"
     },
     {
       "tournamentId": "343959",
@@ -624,7 +708,7 @@
       "matchRecord": "2-1-0",
       "matchWinPercentage": 0.6666666666666666,
       "gameWinPercentage": 0.57142857,
-      "deck": "_"
+      "deck": "Tidestill"
     },
     {
       "tournamentId": "338898",
@@ -637,7 +721,7 @@
       "matchRecord": "2-0-1",
       "matchWinPercentage": 0.8333333333333334,
       "gameWinPercentage": 0.83333333,
-      "deck": "_"
+      "deck": "Tidestill"
     },
     {
       "tournamentId": "325333",
@@ -650,7 +734,7 @@
       "matchRecord": "1-2-0",
       "matchWinPercentage": 0.3333333333333333,
       "gameWinPercentage": 0.375,
-      "deck": "_"
+      "deck": "Burn"
     },
     {
       "tournamentId": "312921",
@@ -663,7 +747,7 @@
       "matchRecord": "3-0-0",
       "matchWinPercentage": 1,
       "gameWinPercentage": 0.75,
-      "deck": "_"
+      "deck": "UW Tide Control"
     },
     {
       "tournamentId": "308700",
@@ -676,7 +760,7 @@
       "matchRecord": "2-1-0",
       "matchWinPercentage": 0.6666666666666666,
       "gameWinPercentage": 0.5,
-      "deck": "_"
+      "deck": "Burn"
     },
     {
       "tournamentId": "305152",
@@ -689,7 +773,7 @@
       "matchRecord": "2-1-0",
       "matchWinPercentage": 0.6666666666666666,
       "gameWinPercentage": 0.625,
-      "deck": "_"
+      "deck": "Goblins"
     }
   ]
 }

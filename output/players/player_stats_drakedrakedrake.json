@@ -44,17 +44,31 @@
   "deckStats": [
     {
       "deckName": "Unknown",
-      "events": 5,
-      "matchWins": 11,
-      "matchLosses": 4,
+      "events": 4,
+      "matchWins": 9,
+      "matchLosses": 3,
       "matchDraws": 0,
-      "matchRecord": "11-4-0",
-      "matchWinPercentage": 0.7333333333333333,
-      "gameWins": 25,
-      "gameLosses": 15,
+      "matchRecord": "9-3-0",
+      "matchWinPercentage": 0.75,
+      "gameWins": 21,
+      "gameLosses": 11,
       "gameDraws": 0,
-      "gameWinPercentage": 0.625,
+      "gameWinPercentage": 0.65625,
       "trophies": 1
+    },
+    {
+      "deckName": "Landstill",
+      "events": 1,
+      "matchWins": 2,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 4,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5,
+      "trophies": 0
     }
   ],
   "headToHead": [
@@ -309,7 +323,7 @@
       "matchRecord": "2-1-0",
       "matchWinPercentage": 0.6666666666666666,
       "gameWinPercentage": 0.54166667,
-      "deck": "_"
+      "deck": "Landstill"
     },
     {
       "tournamentId": "338898",

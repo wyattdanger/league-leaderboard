@@ -26,16 +26,30 @@
   "deckStats": [
     {
       "deckName": "Unknown",
-      "events": 4,
-      "matchWins": 8,
+      "events": 3,
+      "matchWins": 5,
       "matchLosses": 3,
       "matchDraws": 1,
-      "matchRecord": "8-3-1",
-      "matchWinPercentage": 0.7083333333333334,
-      "gameWins": 24,
+      "matchRecord": "5-3-1",
+      "matchWinPercentage": 0.6111111111111112,
+      "gameWins": 16,
       "gameLosses": 8,
       "gameDraws": 0,
-      "gameWinPercentage": 0.75,
+      "gameWinPercentage": 0.6666666666666666,
+      "trophies": 0
+    },
+    {
+      "deckName": "Terrageddon",
+      "events": 1,
+      "matchWins": 3,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchRecord": "3-0-0",
+      "matchWinPercentage": 1,
+      "gameWins": 8,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
       "trophies": 1
     }
   ],
@@ -269,7 +283,7 @@
       "matchRecord": "3-0-0",
       "matchWinPercentage": 1,
       "gameWinPercentage": 1,
-      "deck": "_"
+      "deck": "Terrageddon"
     }
   ]
 }

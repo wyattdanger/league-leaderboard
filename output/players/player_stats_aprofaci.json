@@ -39,17 +39,31 @@
       "trophies": 1
     },
     {
-      "deckName": "Unknown",
-      "events": 3,
-      "matchWins": 6,
-      "matchLosses": 3,
+      "deckName": "UG Madness",
+      "events": 2,
+      "matchWins": 4,
+      "matchLosses": 2,
       "matchDraws": 0,
-      "matchRecord": "6-3-0",
+      "matchRecord": "4-2-0",
       "matchWinPercentage": 0.6666666666666666,
-      "gameWins": 15,
-      "gameLosses": 9,
+      "gameWins": 11,
+      "gameLosses": 5,
       "gameDraws": 0,
-      "gameWinPercentage": 0.625,
+      "gameWinPercentage": 0.6875,
+      "trophies": 0
+    },
+    {
+      "deckName": "RG Goblins",
+      "events": 1,
+      "matchWins": 2,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 4,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5,
       "trophies": 0
     }
   ],
@@ -350,7 +364,7 @@
       "matchRecord": "2-1-0",
       "matchWinPercentage": 0.6666666666666666,
       "gameWinPercentage": 0.71428571,
-      "deck": "_"
+      "deck": "UG Madness"
     },
     {
       "tournamentId": "380585",
@@ -363,7 +377,7 @@
       "matchRecord": "2-1-0",
       "matchWinPercentage": 0.6666666666666666,
       "gameWinPercentage": 0.625,
-      "deck": "_"
+      "deck": "UG Madness"
     },
     {
       "tournamentId": "377629",
@@ -376,7 +390,7 @@
       "matchRecord": "2-1-0",
       "matchWinPercentage": 0.6666666666666666,
       "gameWinPercentage": 0.5,
-      "deck": "_"
+      "deck": "RG Goblins"
     },
     {
       "tournamentId": "375338",

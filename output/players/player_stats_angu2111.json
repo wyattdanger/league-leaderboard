@@ -25,20 +25,6 @@
   ],
   "deckStats": [
     {
-      "deckName": "Unknown",
-      "events": 2,
-      "matchWins": 2,
-      "matchLosses": 4,
-      "matchDraws": 0,
-      "matchRecord": "2-4-0",
-      "matchWinPercentage": 0.3333333333333333,
-      "gameWins": 7,
-      "gameLosses": 9,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.4375,
-      "trophies": 0
-    },
-    {
       "deckName": "Madness",
       "events": 1,
       "matchWins": 2,
@@ -50,6 +36,34 @@
       "gameLosses": 4,
       "gameDraws": 0,
       "gameWinPercentage": 0.5,
+      "trophies": 0
+    },
+    {
+      "deckName": "UG Madness",
+      "events": 1,
+      "matchWins": 1,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 4,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5,
+      "trophies": 0
+    },
+    {
+      "deckName": "UG madness",
+      "events": 1,
+      "matchWins": 1,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 3,
+      "gameLosses": 5,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.375,
       "trophies": 0
     }
   ],
@@ -209,7 +223,7 @@
       "matchRecord": "1-2-0",
       "matchWinPercentage": 0.3333333333333333,
       "gameWinPercentage": 0.5,
-      "deck": "_"
+      "deck": "UG Madness"
     },
     {
       "tournamentId": "377629",
@@ -222,7 +236,7 @@
       "matchRecord": "1-2-0",
       "matchWinPercentage": 0.3333333333333333,
       "gameWinPercentage": 0.375,
-      "deck": "_"
+      "deck": "UG madness"
     }
   ]
 }

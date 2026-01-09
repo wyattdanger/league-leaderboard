@@ -35,31 +35,17 @@
   "deckStats": [
     {
       "deckName": "Burn",
-      "events": 2,
-      "matchWins": 5,
+      "events": 3,
+      "matchWins": 8,
       "matchLosses": 1,
       "matchDraws": 0,
-      "matchRecord": "5-1-0",
-      "matchWinPercentage": 0.8333333333333334,
-      "gameWins": 10,
-      "gameLosses": 6,
+      "matchRecord": "8-1-0",
+      "matchWinPercentage": 0.8888888888888888,
+      "gameWins": 16,
+      "gameLosses": 8,
       "gameDraws": 0,
-      "gameWinPercentage": 0.625,
-      "trophies": 1
-    },
-    {
-      "deckName": "Unknown",
-      "events": 1,
-      "matchWins": 3,
-      "matchLosses": 0,
-      "matchDraws": 0,
-      "matchRecord": "3-0-0",
-      "matchWinPercentage": 1,
-      "gameWins": 6,
-      "gameLosses": 2,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.75,
-      "trophies": 1
+      "gameWinPercentage": 0.6666666666666666,
+      "trophies": 2
     }
   ],
   "headToHead": [
@@ -231,7 +217,7 @@
       "matchRecord": "3-0-0",
       "matchWinPercentage": 1,
       "gameWinPercentage": 0.75,
-      "deck": "_"
+      "deck": "Burn"
     }
   ]
 }

@@ -53,16 +53,16 @@
   "deckStats": [
     {
       "deckName": "Unknown",
-      "events": 18,
-      "matchWins": 26,
-      "matchLosses": 24,
+      "events": 15,
+      "matchWins": 22,
+      "matchLosses": 19,
       "matchDraws": 4,
-      "matchRecord": "26-24-4",
-      "matchWinPercentage": 0.5185185185185185,
-      "gameWins": 73,
-      "gameLosses": 71,
+      "matchRecord": "22-19-4",
+      "matchWinPercentage": 0.5333333333333333,
+      "gameWins": 61,
+      "gameLosses": 59,
       "gameDraws": 0,
-      "gameWinPercentage": 0.5069444444444444,
+      "gameWinPercentage": 0.5083333333333333,
       "trophies": 0
     },
     {
@@ -77,6 +77,20 @@
       "gameLosses": 6,
       "gameDraws": 0,
       "gameWinPercentage": 0.625,
+      "trophies": 0
+    },
+    {
+      "deckName": "UB Tide",
+      "events": 2,
+      "matchWins": 3,
+      "matchLosses": 3,
+      "matchDraws": 0,
+      "matchRecord": "3-3-0",
+      "matchWinPercentage": 0.5,
+      "gameWins": 8,
+      "gameLosses": 8,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5,
       "trophies": 0
     },
     {
@@ -101,6 +115,20 @@
       "matchDraws": 0,
       "matchRecord": "2-1-0",
       "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 4,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5,
+      "trophies": 0
+    },
+    {
+      "deckName": "Dreadnought",
+      "events": 1,
+      "matchWins": 1,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
       "gameWins": 4,
       "gameLosses": 4,
       "gameDraws": 0,
@@ -673,7 +701,7 @@
       "matchRecord": "1-2-0",
       "matchWinPercentage": 0.3333333333333333,
       "gameWinPercentage": 0.33333333,
-      "deck": "_"
+      "deck": "UB Tide"
     },
     {
       "tournamentId": "382756",
@@ -686,7 +714,7 @@
       "matchRecord": "2-1-0",
       "matchWinPercentage": 0.6666666666666666,
       "gameWinPercentage": 0.625,
-      "deck": "_"
+      "deck": "UB Tide"
     },
     {
       "tournamentId": "377629",
@@ -763,7 +791,7 @@
       "matchRecord": "1-2-0",
       "matchWinPercentage": 0.3333333333333333,
       "gameWinPercentage": 0.5,
-      "deck": "_"
+      "deck": "Dreadnought"
     },
     {
       "tournamentId": "365765",

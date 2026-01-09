@@ -25,29 +25,15 @@
   ],
   "deckStats": [
     {
-      "deckName": "Unknown",
-      "events": 1,
-      "matchWins": 1,
-      "matchLosses": 2,
-      "matchDraws": 0,
-      "matchRecord": "1-2-0",
-      "matchWinPercentage": 0.3333333333333333,
-      "gameWins": 3,
-      "gameLosses": 5,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.375,
-      "trophies": 0
-    },
-    {
       "deckName": "White Weenie",
-      "events": 1,
-      "matchWins": 1,
-      "matchLosses": 2,
+      "events": 2,
+      "matchWins": 2,
+      "matchLosses": 4,
       "matchDraws": 0,
-      "matchRecord": "1-2-0",
+      "matchRecord": "2-4-0",
       "matchWinPercentage": 0.3333333333333333,
-      "gameWins": 3,
-      "gameLosses": 5,
+      "gameWins": 6,
+      "gameLosses": 10,
       "gameDraws": 0,
       "gameWinPercentage": 0.375,
       "trophies": 0
@@ -163,7 +149,7 @@
       "matchRecord": "1-2-0",
       "matchWinPercentage": 0.3333333333333333,
       "gameWinPercentage": 0.42857143,
-      "deck": "_"
+      "deck": "White Weenie"
     },
     {
       "tournamentId": "375338",

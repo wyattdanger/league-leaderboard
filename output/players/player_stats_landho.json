@@ -44,17 +44,45 @@
   "deckStats": [
     {
       "deckName": "Unknown",
-      "events": 6,
-      "matchWins": 15,
-      "matchLosses": 2,
+      "events": 3,
+      "matchWins": 8,
+      "matchLosses": 0,
       "matchDraws": 1,
-      "matchRecord": "15-2-1",
-      "matchWinPercentage": 0.8611111111111112,
-      "gameWins": 32,
-      "gameLosses": 16,
+      "matchRecord": "8-0-1",
+      "matchWinPercentage": 0.9444444444444444,
+      "gameWins": 17,
+      "gameLosses": 7,
       "gameDraws": 0,
-      "gameWinPercentage": 0.6666666666666666,
-      "trophies": 4
+      "gameWinPercentage": 0.7083333333333334,
+      "trophies": 2
+    },
+    {
+      "deckName": "Stompy",
+      "events": 2,
+      "matchWins": 4,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchRecord": "4-2-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 9,
+      "gameLosses": 7,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5625,
+      "trophies": 1
+    },
+    {
+      "deckName": "Replenish",
+      "events": 1,
+      "matchWins": 3,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchRecord": "3-0-0",
+      "matchWinPercentage": 1,
+      "gameWins": 6,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.75,
+      "trophies": 1
     }
   ],
   "headToHead": [
@@ -324,7 +352,7 @@
       "matchRecord": "3-0-0",
       "matchWinPercentage": 1,
       "gameWinPercentage": 0.75,
-      "deck": "_"
+      "deck": "Replenish"
     },
     {
       "tournamentId": "321687",
@@ -350,7 +378,7 @@
       "matchRecord": "1-2-0",
       "matchWinPercentage": 0.3333333333333333,
       "gameWinPercentage": 0.375,
-      "deck": "_"
+      "deck": "Stompy"
     },
     {
       "tournamentId": "305152",
@@ -363,7 +391,7 @@
       "matchRecord": "3-0-0",
       "matchWinPercentage": 1,
       "gameWinPercentage": 0.75,
-      "deck": "_"
+      "deck": "Stompy"
     }
   ]
 }

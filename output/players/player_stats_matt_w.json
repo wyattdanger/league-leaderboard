@@ -34,17 +34,31 @@
   ],
   "deckStats": [
     {
-      "deckName": "Unknown",
-      "events": 7,
-      "matchWins": 9,
-      "matchLosses": 12,
+      "deckName": "Devourer",
+      "events": 4,
+      "matchWins": 5,
+      "matchLosses": 7,
       "matchDraws": 0,
-      "matchRecord": "9-12-0",
-      "matchWinPercentage": 0.42857142857142855,
-      "gameWins": 24,
-      "gameLosses": 32,
+      "matchRecord": "5-7-0",
+      "matchWinPercentage": 0.4166666666666667,
+      "gameWins": 14,
+      "gameLosses": 18,
       "gameDraws": 0,
-      "gameWinPercentage": 0.42857142857142855,
+      "gameWinPercentage": 0.4375,
+      "trophies": 0
+    },
+    {
+      "deckName": "Pit Rack",
+      "events": 1,
+      "matchWins": 3,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchRecord": "3-0-0",
+      "matchWinPercentage": 1,
+      "gameWins": 6,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.75,
       "trophies": 1
     },
     {
@@ -76,6 +90,20 @@
       "trophies": 0
     },
     {
+      "deckName": "Burn",
+      "events": 1,
+      "matchWins": 1,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 4,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5,
+      "trophies": 0
+    },
+    {
       "deckName": "Stompy",
       "events": 1,
       "matchWins": 1,
@@ -101,6 +129,20 @@
       "gameLosses": 5,
       "gameDraws": 0,
       "gameWinPercentage": 0.375,
+      "trophies": 0
+    },
+    {
+      "deckName": "Goblins",
+      "events": 1,
+      "matchWins": 0,
+      "matchLosses": 3,
+      "matchDraws": 0,
+      "matchRecord": "0-3-0",
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 8,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
       "trophies": 0
     }
   ],
@@ -487,7 +529,7 @@
       "matchRecord": "1-2-0",
       "matchWinPercentage": 0.3333333333333333,
       "gameWinPercentage": 0.33333333,
-      "deck": "_"
+      "deck": "Devourer"
     },
     {
       "tournamentId": "382756",
@@ -500,7 +542,7 @@
       "matchRecord": "1-2-0",
       "matchWinPercentage": 0.3333333333333333,
       "gameWinPercentage": 0.5,
-      "deck": "_"
+      "deck": "Devourer"
     },
     {
       "tournamentId": "380585b",
@@ -526,7 +568,7 @@
       "matchRecord": "1-2-0",
       "matchWinPercentage": 0.3333333333333333,
       "gameWinPercentage": 0.5,
-      "deck": "_"
+      "deck": "Burn"
     },
     {
       "tournamentId": "375338",
@@ -552,7 +594,7 @@
       "matchRecord": "3-0-0",
       "matchWinPercentage": 1,
       "gameWinPercentage": 0.75,
-      "deck": "_"
+      "deck": "Pit Rack"
     },
     {
       "tournamentId": "369767",
@@ -565,7 +607,7 @@
       "matchRecord": "1-2-0",
       "matchWinPercentage": 0.3333333333333333,
       "gameWinPercentage": 0.42857143,
-      "deck": "_"
+      "deck": "Devourer"
     },
     {
       "tournamentId": "365765",
@@ -578,7 +620,7 @@
       "matchRecord": "2-1-0",
       "matchWinPercentage": 0.6666666666666666,
       "gameWinPercentage": 0.5,
-      "deck": "_"
+      "deck": "Devourer"
     },
     {
       "tournamentId": "347610",
@@ -591,7 +633,7 @@
       "matchRecord": "0-3-0",
       "matchWinPercentage": 0,
       "gameWinPercentage": 0,
-      "deck": "_"
+      "deck": "Goblins"
     }
   ]
 }

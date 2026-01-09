@@ -53,28 +53,84 @@
   "deckStats": [
     {
       "deckName": "Unknown",
-      "events": 17,
-      "matchWins": 28,
-      "matchLosses": 23,
+      "events": 7,
+      "matchWins": 12,
+      "matchLosses": 9,
       "matchDraws": 0,
-      "matchRecord": "28-23-0",
-      "matchWinPercentage": 0.5490196078431373,
-      "gameWins": 73,
-      "gameLosses": 63,
+      "matchRecord": "12-9-0",
+      "matchWinPercentage": 0.5714285714285714,
+      "gameWins": 31,
+      "gameLosses": 25,
       "gameDraws": 0,
-      "gameWinPercentage": 0.5367647058823529,
-      "trophies": 3
+      "gameWinPercentage": 0.5535714285714286,
+      "trophies": 1
     },
     {
       "deckName": "Burn",
-      "events": 3,
-      "matchWins": 6,
+      "events": 5,
+      "matchWins": 11,
+      "matchLosses": 4,
+      "matchDraws": 0,
+      "matchRecord": "11-4-0",
+      "matchWinPercentage": 0.7333333333333333,
+      "gameWins": 27,
+      "gameLosses": 13,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.675,
+      "trophies": 1
+    },
+    {
+      "deckName": "Dreadnought",
+      "events": 2,
+      "matchWins": 3,
       "matchLosses": 3,
       "matchDraws": 0,
-      "matchRecord": "6-3-0",
+      "matchRecord": "3-3-0",
+      "matchWinPercentage": 0.5,
+      "gameWins": 8,
+      "gameLosses": 8,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5,
+      "trophies": 0
+    },
+    {
+      "deckName": "Enchantress",
+      "events": 2,
+      "matchWins": 2,
+      "matchLosses": 4,
+      "matchDraws": 0,
+      "matchRecord": "2-4-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 5,
+      "gameLosses": 11,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3125,
+      "trophies": 0
+    },
+    {
+      "deckName": "RG Ponza",
+      "events": 1,
+      "matchWins": 3,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchRecord": "3-0-0",
+      "matchWinPercentage": 1,
+      "gameWins": 8,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "trophies": 1
+    },
+    {
+      "deckName": "Oath Ponza",
+      "events": 1,
+      "matchWins": 2,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchRecord": "2-1-0",
       "matchWinPercentage": 0.6666666666666666,
-      "gameWins": 15,
-      "gameLosses": 9,
+      "gameWins": 5,
+      "gameLosses": 3,
       "gameDraws": 0,
       "gameWinPercentage": 0.625,
       "trophies": 0
@@ -91,6 +147,34 @@
       "gameLosses": 4,
       "gameDraws": 0,
       "gameWinPercentage": 0.5,
+      "trophies": 0
+    },
+    {
+      "deckName": "Stasis",
+      "events": 1,
+      "matchWins": 1,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 2,
+      "gameLosses": 6,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.25,
+      "trophies": 0
+    },
+    {
+      "deckName": "Tidestill",
+      "events": 1,
+      "matchWins": 0,
+      "matchLosses": 3,
+      "matchDraws": 0,
+      "matchRecord": "0-3-0",
+      "matchWinPercentage": 0,
+      "gameWins": 2,
+      "gameLosses": 6,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.25,
       "trophies": 0
     }
   ],
@@ -731,7 +815,7 @@
       "matchRecord": "3-0-0",
       "matchWinPercentage": 1,
       "gameWinPercentage": 0.85714286,
-      "deck": "_"
+      "deck": "Burn"
     },
     {
       "tournamentId": "377629",
@@ -744,7 +828,7 @@
       "matchRecord": "2-1-0",
       "matchWinPercentage": 0.6666666666666666,
       "gameWinPercentage": 0.57142857,
-      "deck": "_"
+      "deck": "Burn"
     },
     {
       "tournamentId": "375338",
@@ -770,7 +854,7 @@
       "matchRecord": "1-2-0",
       "matchWinPercentage": 0.3333333333333333,
       "gameWinPercentage": 0.42857143,
-      "deck": "_"
+      "deck": "Enchantress"
     },
     {
       "tournamentId": "369767",
@@ -783,7 +867,7 @@
       "matchRecord": "3-0-0",
       "matchWinPercentage": 1,
       "gameWinPercentage": 1,
-      "deck": "_"
+      "deck": "RG Ponza"
     },
     {
       "tournamentId": "367531",
@@ -796,7 +880,7 @@
       "matchRecord": "2-1-0",
       "matchWinPercentage": 0.6666666666666666,
       "gameWinPercentage": 0.66666667,
-      "deck": "_"
+      "deck": "Oath Ponza"
     },
     {
       "tournamentId": "361066",
@@ -809,7 +893,7 @@
       "matchRecord": "1-2-0",
       "matchWinPercentage": 0.3333333333333333,
       "gameWinPercentage": 0.28571429,
-      "deck": "_"
+      "deck": "Enchantress"
     },
     {
       "tournamentId": "357267",
@@ -822,7 +906,7 @@
       "matchRecord": "1-2-0",
       "matchWinPercentage": 0.3333333333333333,
       "gameWinPercentage": 0.375,
-      "deck": "_"
+      "deck": "Dreadnought"
     },
     {
       "tournamentId": "352572",
@@ -835,7 +919,7 @@
       "matchRecord": "0-3-0",
       "matchWinPercentage": 0,
       "gameWinPercentage": 0.25,
-      "deck": "_"
+      "deck": "Tidestill"
     },
     {
       "tournamentId": "350003",
@@ -848,7 +932,7 @@
       "matchRecord": "2-1-0",
       "matchWinPercentage": 0.6666666666666666,
       "gameWinPercentage": 0.57142857,
-      "deck": "_"
+      "deck": "Dreadnought"
     },
     {
       "tournamentId": "343959",
@@ -861,7 +945,7 @@
       "matchRecord": "1-2-0",
       "matchWinPercentage": 0.3333333333333333,
       "gameWinPercentage": 0.28571429,
-      "deck": "_"
+      "deck": "Stasis"
     },
     {
       "tournamentId": "341527",

@@ -26,14 +26,14 @@
   "deckStats": [
     {
       "deckName": "Merfolk",
-      "events": 2,
+      "events": 3,
       "matchWins": 2,
-      "matchLosses": 4,
-      "matchDraws": 0,
-      "matchRecord": "2-4-0",
-      "matchWinPercentage": 0.3333333333333333,
-      "gameWins": 6,
-      "gameLosses": 10,
+      "matchLosses": 6,
+      "matchDraws": 1,
+      "matchRecord": "2-6-1",
+      "matchWinPercentage": 0.2777777777777778,
+      "gameWins": 9,
+      "gameLosses": 15,
       "gameDraws": 0,
       "gameWinPercentage": 0.375,
       "trophies": 0
@@ -46,20 +46,6 @@
       "matchDraws": 0,
       "matchRecord": "1-2-0",
       "matchWinPercentage": 0.3333333333333333,
-      "gameWins": 3,
-      "gameLosses": 5,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.375,
-      "trophies": 0
-    },
-    {
-      "deckName": "Unknown",
-      "events": 1,
-      "matchWins": 0,
-      "matchLosses": 2,
-      "matchDraws": 1,
-      "matchRecord": "0-2-1",
-      "matchWinPercentage": 0.16666666666666666,
       "gameWins": 3,
       "gameLosses": 5,
       "gameDraws": 0,
@@ -312,7 +298,7 @@
       "matchRecord": "0-2-1",
       "matchWinPercentage": 0.16666666666666666,
       "gameWinPercentage": 0.33333333,
-      "deck": "_"
+      "deck": "Merfolk"
     }
   ]
 }
