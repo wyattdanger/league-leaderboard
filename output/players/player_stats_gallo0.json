@@ -32,6 +32,36 @@
       "gameWinPercentage": 0.14285714285714285
     }
   ],
+  "deckStats": [
+    {
+      "deckName": "Dreadnought",
+      "events": 1,
+      "matchWins": 2,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 4,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5,
+      "trophies": 0
+    },
+    {
+      "deckName": "Unknown",
+      "events": 1,
+      "matchWins": 0,
+      "matchLosses": 3,
+      "matchDraws": 0,
+      "matchRecord": "0-3-0",
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 7,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.125,
+      "trophies": 0
+    }
+  ],
   "headToHead": [
     {
       "opponentUsername": "pcocozza",

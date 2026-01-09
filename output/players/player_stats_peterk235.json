@@ -32,6 +32,36 @@
       "gameWinPercentage": 0.7857142857142857
     }
   ],
+  "deckStats": [
+    {
+      "deckName": "Unknown",
+      "events": 3,
+      "matchWins": 8,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchRecord": "8-1-0",
+      "matchWinPercentage": 0.8888888888888888,
+      "gameWins": 19,
+      "gameLosses": 5,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.7916666666666666,
+      "trophies": 2
+    },
+    {
+      "deckName": "White Weenie",
+      "events": 1,
+      "matchWins": 2,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 6,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.75,
+      "trophies": 0
+    }
+  ],
   "headToHead": [
     {
       "opponentUsername": "avoellmer",

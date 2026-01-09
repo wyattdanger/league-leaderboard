@@ -41,6 +41,22 @@
       "gameWinPercentage": 0.42857142857142855
     }
   ],
+  "deckStats": [
+    {
+      "deckName": "Unknown",
+      "events": 15,
+      "matchWins": 28,
+      "matchLosses": 16,
+      "matchDraws": 1,
+      "matchRecord": "28-16-1",
+      "matchWinPercentage": 0.6333333333333333,
+      "gameWins": 75,
+      "gameLosses": 45,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.625,
+      "trophies": 3
+    }
+  ],
   "headToHead": [
     {
       "opponentUsername": "swbmtg",

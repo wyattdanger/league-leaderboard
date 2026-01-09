@@ -50,6 +50,78 @@
       "gameWinPercentage": 0.23809523809523808
     }
   ],
+  "deckStats": [
+    {
+      "deckName": "Unknown",
+      "events": 15,
+      "matchWins": 13,
+      "matchLosses": 29,
+      "matchDraws": 3,
+      "matchRecord": "13-29-3",
+      "matchWinPercentage": 0.32222222222222224,
+      "gameWins": 47,
+      "gameLosses": 73,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.39166666666666666,
+      "trophies": 0
+    },
+    {
+      "deckName": "Reanimator",
+      "events": 1,
+      "matchWins": 1,
+      "matchLosses": 1,
+      "matchDraws": 1,
+      "matchRecord": "1-1-1",
+      "matchWinPercentage": 0.5,
+      "gameWins": 5,
+      "gameLosses": 3,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.625,
+      "trophies": 0
+    },
+    {
+      "deckName": "Machinehead",
+      "events": 1,
+      "matchWins": 1,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 3,
+      "gameLosses": 5,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.375,
+      "trophies": 0
+    },
+    {
+      "deckName": "Pox",
+      "events": 1,
+      "matchWins": 1,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 4,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5,
+      "trophies": 0
+    },
+    {
+      "deckName": "Stasis Oath",
+      "events": 1,
+      "matchWins": 1,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 3,
+      "gameLosses": 5,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.375,
+      "trophies": 0
+    }
+  ],
   "headToHead": [
     {
       "opponentUsername": "AndrewLevine",

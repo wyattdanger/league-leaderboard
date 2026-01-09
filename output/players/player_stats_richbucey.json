@@ -50,6 +50,50 @@
       "gameWinPercentage": 0.625
     }
   ],
+  "deckStats": [
+    {
+      "deckName": "Unknown",
+      "events": 17,
+      "matchWins": 28,
+      "matchLosses": 23,
+      "matchDraws": 0,
+      "matchRecord": "28-23-0",
+      "matchWinPercentage": 0.5490196078431373,
+      "gameWins": 73,
+      "gameLosses": 63,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5367647058823529,
+      "trophies": 3
+    },
+    {
+      "deckName": "Burn",
+      "events": 3,
+      "matchWins": 6,
+      "matchLosses": 3,
+      "matchDraws": 0,
+      "matchRecord": "6-3-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 15,
+      "gameLosses": 9,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.625,
+      "trophies": 0
+    },
+    {
+      "deckName": "Moneyball Black",
+      "events": 1,
+      "matchWins": 1,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 4,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5,
+      "trophies": 0
+    }
+  ],
   "headToHead": [
     {
       "opponentUsername": "Tencteri",

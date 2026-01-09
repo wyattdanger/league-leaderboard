@@ -32,6 +32,36 @@
       "gameWinPercentage": 0.5714285714285714
     }
   ],
+  "deckStats": [
+    {
+      "deckName": "Unknown",
+      "events": 4,
+      "matchWins": 6,
+      "matchLosses": 6,
+      "matchDraws": 0,
+      "matchRecord": "6-6-0",
+      "matchWinPercentage": 0.5,
+      "gameWins": 19,
+      "gameLosses": 13,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.59375,
+      "trophies": 1
+    },
+    {
+      "deckName": "Aluren",
+      "events": 1,
+      "matchWins": 1,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 3,
+      "gameLosses": 5,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.375,
+      "trophies": 0
+    }
+  ],
   "headToHead": [
     {
       "opponentUsername": "peterk235",

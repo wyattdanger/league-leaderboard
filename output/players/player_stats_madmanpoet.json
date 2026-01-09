@@ -59,6 +59,64 @@
       "gameWinPercentage": 0.625
     }
   ],
+  "deckStats": [
+    {
+      "deckName": "Unknown",
+      "events": 20,
+      "matchWins": 42,
+      "matchLosses": 18,
+      "matchDraws": 0,
+      "matchRecord": "42-18-0",
+      "matchWinPercentage": 0.7,
+      "gameWins": 107,
+      "gameLosses": 53,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.66875,
+      "trophies": 4
+    },
+    {
+      "deckName": "Dreadnought",
+      "events": 2,
+      "matchWins": 3,
+      "matchLosses": 3,
+      "matchDraws": 0,
+      "matchRecord": "3-3-0",
+      "matchWinPercentage": 0.5,
+      "gameWins": 11,
+      "gameLosses": 5,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6875,
+      "trophies": 1
+    },
+    {
+      "deckName": "The Rock",
+      "events": 1,
+      "matchWins": 2,
+      "matchLosses": 0,
+      "matchDraws": 1,
+      "matchRecord": "2-0-1",
+      "matchWinPercentage": 0.8333333333333334,
+      "gameWins": 7,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.875,
+      "trophies": 0
+    },
+    {
+      "deckName": "Enchantress",
+      "events": 1,
+      "matchWins": 1,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 4,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5,
+      "trophies": 0
+    }
+  ],
   "headToHead": [
     {
       "opponentUsername": "swbmtg",

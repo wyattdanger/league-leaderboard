@@ -23,6 +23,36 @@
       "gameWinPercentage": 0.6938775510204082
     }
   ],
+  "deckStats": [
+    {
+      "deckName": "Terrageddon",
+      "events": 5,
+      "matchWins": 10,
+      "matchLosses": 4,
+      "matchDraws": 1,
+      "matchRecord": "10-4-1",
+      "matchWinPercentage": 0.7,
+      "gameWins": 24,
+      "gameLosses": 16,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6,
+      "trophies": 1
+    },
+    {
+      "deckName": "Unknown",
+      "events": 3,
+      "matchWins": 7,
+      "matchLosses": 1,
+      "matchDraws": 1,
+      "matchRecord": "7-1-1",
+      "matchWinPercentage": 0.8333333333333334,
+      "gameWins": 19,
+      "gameLosses": 5,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.7916666666666666,
+      "trophies": 1
+    }
+  ],
   "headToHead": [
     {
       "opponentUsername": "Mattmelach",

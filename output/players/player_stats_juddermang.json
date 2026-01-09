@@ -59,6 +59,64 @@
       "gameWinPercentage": 0.42857142857142855
     }
   ],
+  "deckStats": [
+    {
+      "deckName": "Unknown",
+      "events": 22,
+      "matchWins": 23,
+      "matchLosses": 40,
+      "matchDraws": 3,
+      "matchRecord": "23-40-3",
+      "matchWinPercentage": 0.3712121212121212,
+      "gameWins": 72,
+      "gameLosses": 104,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.4090909090909091,
+      "trophies": 0
+    },
+    {
+      "deckName": "Dreadnought",
+      "events": 3,
+      "matchWins": 4,
+      "matchLosses": 5,
+      "matchDraws": 0,
+      "matchRecord": "4-5-0",
+      "matchWinPercentage": 0.4444444444444444,
+      "gameWins": 13,
+      "gameLosses": 11,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5416666666666666,
+      "trophies": 0
+    },
+    {
+      "deckName": "Burn",
+      "events": 3,
+      "matchWins": 4,
+      "matchLosses": 5,
+      "matchDraws": 0,
+      "matchRecord": "4-5-0",
+      "matchWinPercentage": 0.4444444444444444,
+      "gameWins": 12,
+      "gameLosses": 12,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5,
+      "trophies": 1
+    },
+    {
+      "deckName": "Elves",
+      "events": 1,
+      "matchWins": 1,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 3,
+      "gameLosses": 5,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.375,
+      "trophies": 0
+    }
+  ],
   "headToHead": [
     {
       "opponentUsername": "AndrewLevine",

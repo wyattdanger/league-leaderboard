@@ -50,6 +50,50 @@
       "gameWinPercentage": 0.4090909090909091
     }
   ],
+  "deckStats": [
+    {
+      "deckName": "Unknown",
+      "events": 13,
+      "matchWins": 19,
+      "matchLosses": 20,
+      "matchDraws": 0,
+      "matchRecord": "19-20-0",
+      "matchWinPercentage": 0.48717948717948717,
+      "gameWins": 52,
+      "gameLosses": 52,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5,
+      "trophies": 1
+    },
+    {
+      "deckName": "Tide",
+      "events": 1,
+      "matchWins": 3,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchRecord": "3-0-0",
+      "matchWinPercentage": 1,
+      "gameWins": 6,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.75,
+      "trophies": 1
+    },
+    {
+      "deckName": "Goblins",
+      "events": 1,
+      "matchWins": 1,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 4,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5,
+      "trophies": 0
+    }
+  ],
   "headToHead": [
     {
       "opponentUsername": "BryanGulotta",

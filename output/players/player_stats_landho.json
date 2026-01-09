@@ -41,6 +41,22 @@
       "gameWinPercentage": 0.75
     }
   ],
+  "deckStats": [
+    {
+      "deckName": "Unknown",
+      "events": 6,
+      "matchWins": 15,
+      "matchLosses": 2,
+      "matchDraws": 1,
+      "matchRecord": "15-2-1",
+      "matchWinPercentage": 0.8611111111111112,
+      "gameWins": 32,
+      "gameLosses": 16,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6666666666666666,
+      "trophies": 4
+    }
+  ],
   "headToHead": [
     {
       "opponentUsername": "FriendlyFerret",

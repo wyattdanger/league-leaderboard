@@ -50,6 +50,50 @@
       "gameWinPercentage": 0.5625
     }
   ],
+  "deckStats": [
+    {
+      "deckName": "Unknown",
+      "events": 11,
+      "matchWins": 22,
+      "matchLosses": 10,
+      "matchDraws": 1,
+      "matchRecord": "22-10-1",
+      "matchWinPercentage": 0.6818181818181818,
+      "gameWins": 57,
+      "gameLosses": 31,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6477272727272727,
+      "trophies": 3
+    },
+    {
+      "deckName": "Oath Ponza",
+      "events": 1,
+      "matchWins": 3,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchRecord": "3-0-0",
+      "matchWinPercentage": 1,
+      "gameWins": 8,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "trophies": 1
+    },
+    {
+      "deckName": "Moneyball Black",
+      "events": 1,
+      "matchWins": 1,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 3,
+      "gameLosses": 5,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.375,
+      "trophies": 0
+    }
+  ],
   "headToHead": [
     {
       "opponentUsername": "swbmtg",

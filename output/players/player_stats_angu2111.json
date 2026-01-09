@@ -23,6 +23,36 @@
       "gameWinPercentage": 0.4583333333333333
     }
   ],
+  "deckStats": [
+    {
+      "deckName": "Unknown",
+      "events": 2,
+      "matchWins": 2,
+      "matchLosses": 4,
+      "matchDraws": 0,
+      "matchRecord": "2-4-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 7,
+      "gameLosses": 9,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.4375,
+      "trophies": 0
+    },
+    {
+      "deckName": "Madness",
+      "events": 1,
+      "matchWins": 2,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 4,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5,
+      "trophies": 0
+    }
+  ],
   "headToHead": [
     {
       "opponentUsername": "zoidberg1003",

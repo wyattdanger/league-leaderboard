@@ -23,6 +23,50 @@
       "gameWinPercentage": 0.3387096774193548
     }
   ],
+  "deckStats": [
+    {
+      "deckName": "Merfolk",
+      "events": 2,
+      "matchWins": 2,
+      "matchLosses": 4,
+      "matchDraws": 0,
+      "matchRecord": "2-4-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 6,
+      "gameLosses": 10,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.375,
+      "trophies": 0
+    },
+    {
+      "deckName": "Dreadnought",
+      "events": 1,
+      "matchWins": 1,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 3,
+      "gameLosses": 5,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.375,
+      "trophies": 0
+    },
+    {
+      "deckName": "Unknown",
+      "events": 1,
+      "matchWins": 0,
+      "matchLosses": 2,
+      "matchDraws": 1,
+      "matchRecord": "0-2-1",
+      "matchWinPercentage": 0.16666666666666666,
+      "gameWins": 3,
+      "gameLosses": 5,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.375,
+      "trophies": 0
+    }
+  ],
   "headToHead": [
     {
       "opponentUsername": "FriendlyFerret",

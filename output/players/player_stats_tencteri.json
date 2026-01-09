@@ -50,6 +50,50 @@
       "gameWinPercentage": 0.2857142857142857
     }
   ],
+  "deckStats": [
+    {
+      "deckName": "Unknown",
+      "events": 11,
+      "matchWins": 15,
+      "matchLosses": 16,
+      "matchDraws": 1,
+      "matchRecord": "15-16-1",
+      "matchWinPercentage": 0.484375,
+      "gameWins": 42,
+      "gameLosses": 43,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.49411764705882355,
+      "trophies": 0
+    },
+    {
+      "deckName": "Deadguy Ale",
+      "events": 3,
+      "matchWins": 6,
+      "matchLosses": 3,
+      "matchDraws": 0,
+      "matchRecord": "6-3-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 13,
+      "gameLosses": 11,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5416666666666666,
+      "trophies": 0
+    },
+    {
+      "deckName": "White Weenie",
+      "events": 3,
+      "matchWins": 4,
+      "matchLosses": 5,
+      "matchDraws": 0,
+      "matchRecord": "4-5-0",
+      "matchWinPercentage": 0.4444444444444444,
+      "gameWins": 14,
+      "gameLosses": 10,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5833333333333334,
+      "trophies": 0
+    }
+  ],
   "headToHead": [
     {
       "opponentUsername": "RichBucey",

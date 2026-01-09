@@ -41,6 +41,36 @@
       "gameWinPercentage": 0.5806451612903226
     }
   ],
+  "deckStats": [
+    {
+      "deckName": "Unknown",
+      "events": 9,
+      "matchWins": 14,
+      "matchLosses": 11,
+      "matchDraws": 2,
+      "matchRecord": "14-11-2",
+      "matchWinPercentage": 0.5555555555555556,
+      "gameWins": 36,
+      "gameLosses": 36,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5,
+      "trophies": 0
+    },
+    {
+      "deckName": "Gro",
+      "events": 1,
+      "matchWins": 1,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 3,
+      "gameLosses": 5,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.375,
+      "trophies": 0
+    }
+  ],
   "headToHead": [
     {
       "opponentUsername": "BryanGulotta",

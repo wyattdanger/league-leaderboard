@@ -32,6 +32,36 @@
       "gameWinPercentage": 0.625
     }
   ],
+  "deckStats": [
+    {
+      "deckName": "Burn",
+      "events": 2,
+      "matchWins": 5,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchRecord": "5-1-0",
+      "matchWinPercentage": 0.8333333333333334,
+      "gameWins": 10,
+      "gameLosses": 6,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.625,
+      "trophies": 1
+    },
+    {
+      "deckName": "Unknown",
+      "events": 1,
+      "matchWins": 3,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchRecord": "3-0-0",
+      "matchWinPercentage": 1,
+      "gameWins": 6,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.75,
+      "trophies": 1
+    }
+  ],
   "headToHead": [
     {
       "opponentUsername": "Taylorhol",

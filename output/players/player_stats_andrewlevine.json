@@ -41,6 +41,50 @@
       "gameWinPercentage": 0.4827586206896552
     }
   ],
+  "deckStats": [
+    {
+      "deckName": "Unknown",
+      "events": 10,
+      "matchWins": 13,
+      "matchLosses": 16,
+      "matchDraws": 1,
+      "matchRecord": "13-16-1",
+      "matchWinPercentage": 0.45,
+      "gameWins": 38,
+      "gameLosses": 42,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.475,
+      "trophies": 1
+    },
+    {
+      "deckName": "Tide",
+      "events": 2,
+      "matchWins": 4,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchRecord": "4-2-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 10,
+      "gameLosses": 6,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.625,
+      "trophies": 0
+    },
+    {
+      "deckName": "Gush Tithe",
+      "events": 2,
+      "matchWins": 3,
+      "matchLosses": 3,
+      "matchDraws": 0,
+      "matchRecord": "3-3-0",
+      "matchWinPercentage": 0.5,
+      "gameWins": 8,
+      "gameLosses": 8,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5,
+      "trophies": 0
+    }
+  ],
   "headToHead": [
     {
       "opponentUsername": "JUDDERMANG",

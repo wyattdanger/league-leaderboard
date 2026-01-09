@@ -32,6 +32,64 @@
       "gameWinPercentage": 0.5
     }
   ],
+  "deckStats": [
+    {
+      "deckName": "Unknown",
+      "events": 7,
+      "matchWins": 11,
+      "matchLosses": 9,
+      "matchDraws": 1,
+      "matchRecord": "11-9-1",
+      "matchWinPercentage": 0.5476190476190477,
+      "gameWins": 30,
+      "gameLosses": 26,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5357142857142857,
+      "trophies": 0
+    },
+    {
+      "deckName": "Snap Cradle Pop",
+      "events": 2,
+      "matchWins": 5,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchRecord": "5-1-0",
+      "matchWinPercentage": 0.8333333333333334,
+      "gameWins": 12,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.75,
+      "trophies": 1
+    },
+    {
+      "deckName": "Replenish",
+      "events": 2,
+      "matchWins": 2,
+      "matchLosses": 4,
+      "matchDraws": 0,
+      "matchRecord": "2-4-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 6,
+      "gameLosses": 10,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.375,
+      "trophies": 0
+    },
+    {
+      "deckName": "Gush Tithe",
+      "events": 2,
+      "matchWins": 1,
+      "matchLosses": 4,
+      "matchDraws": 1,
+      "matchRecord": "1-4-1",
+      "matchWinPercentage": 0.25,
+      "gameWins": 6,
+      "gameLosses": 10,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.375,
+      "trophies": 0
+    }
+  ],
   "headToHead": [
     {
       "opponentUsername": "swbmtg",

@@ -23,6 +23,22 @@
       "gameWinPercentage": 0.5
     }
   ],
+  "deckStats": [
+    {
+      "deckName": "Unknown",
+      "events": 2,
+      "matchWins": 3,
+      "matchLosses": 3,
+      "matchDraws": 0,
+      "matchRecord": "3-3-0",
+      "matchWinPercentage": 0.5,
+      "gameWins": 7,
+      "gameLosses": 9,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.4375,
+      "trophies": 0
+    }
+  ],
   "headToHead": [
     {
       "opponentUsername": "RichBucey",

@@ -41,6 +41,50 @@
       "gameWinPercentage": 0
     }
   ],
+  "deckStats": [
+    {
+      "deckName": "Unknown",
+      "events": 2,
+      "matchWins": 0,
+      "matchLosses": 4,
+      "matchDraws": 2,
+      "matchRecord": "0-4-2",
+      "matchWinPercentage": 0.16666666666666666,
+      "gameWins": 3,
+      "gameLosses": 13,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.1875,
+      "trophies": 0
+    },
+    {
+      "deckName": "Psychatog",
+      "events": 1,
+      "matchWins": 1,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 3,
+      "gameLosses": 5,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.375,
+      "trophies": 0
+    },
+    {
+      "deckName": "Dreadnought",
+      "events": 1,
+      "matchWins": 1,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 4,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5,
+      "trophies": 0
+    }
+  ],
   "headToHead": [
     {
       "opponentUsername": "JUDDERMANG",

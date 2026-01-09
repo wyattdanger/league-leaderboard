@@ -41,6 +41,36 @@
       "gameWinPercentage": 0.3333333333333333
     }
   ],
+  "deckStats": [
+    {
+      "deckName": "Unknown",
+      "events": 4,
+      "matchWins": 6,
+      "matchLosses": 6,
+      "matchDraws": 0,
+      "matchRecord": "6-6-0",
+      "matchWinPercentage": 0.5,
+      "gameWins": 17,
+      "gameLosses": 15,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.53125,
+      "trophies": 0
+    },
+    {
+      "deckName": "BW Control",
+      "events": 1,
+      "matchWins": 1,
+      "matchLosses": 1,
+      "matchDraws": 1,
+      "matchRecord": "1-1-1",
+      "matchWinPercentage": 0.5,
+      "gameWins": 4,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5,
+      "trophies": 0
+    }
+  ],
   "headToHead": [
     {
       "opponentUsername": "madmanpoet",
