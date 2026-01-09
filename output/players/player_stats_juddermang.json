@@ -2,13 +2,13 @@
   "username": "JUDDERMANG",
   "displayName": "Chris Cruz",
   "overallStats": {
-    "totalTournaments": 29,
-    "totalPoints": 99,
-    "totalMatches": 87,
-    "matchRecord": "32-52-3",
-    "matchWinPercentage": 0.3850574712643678,
-    "gameRecord": "86-119-1",
-    "gameWinPercentage": 0.4174757281553398,
+    "totalTournaments": 30,
+    "totalPoints": 105,
+    "totalMatches": 90,
+    "matchRecord": "34-53-3",
+    "matchWinPercentage": 0.39444444444444443,
+    "gameRecord": "90-121-1",
+    "gameWinPercentage": 0.42452830188679247,
     "trophies": 1,
     "belts": 0
   },
@@ -42,12 +42,12 @@
     },
     {
       "leagueName": "Q2 2025",
-      "events": 7,
-      "points": 24,
-      "matchRecord": "8-13-0",
-      "matchWinPercentage": 0.38095238095238093,
-      "gameRecord": "23-29-0",
-      "gameWinPercentage": 0.4423076923076923
+      "events": 8,
+      "points": 30,
+      "matchRecord": "10-14-0",
+      "matchWinPercentage": 0.4166666666666667,
+      "gameRecord": "27-31-0",
+      "gameWinPercentage": 0.46551724137931033
     },
     {
       "leagueName": "Q2 2025 Top 8",
@@ -62,16 +62,16 @@
   "deckStats": [
     {
       "deckName": "Unknown",
-      "events": 13,
-      "matchWins": 14,
-      "matchLosses": 23,
+      "events": 14,
+      "matchWins": 16,
+      "matchLosses": 24,
       "matchDraws": 2,
-      "matchRecord": "14-23-2",
-      "matchWinPercentage": 0.38461538461538464,
-      "gameWins": 41,
-      "gameLosses": 63,
+      "matchRecord": "16-24-2",
+      "matchWinPercentage": 0.40476190476190477,
+      "gameWins": 46,
+      "gameLosses": 66,
       "gameDraws": 0,
-      "gameWinPercentage": 0.3942307692307692,
+      "gameWinPercentage": 0.4107142857142857,
       "trophies": 0
     },
     {
@@ -260,6 +260,79 @@
       ]
     },
     {
+      "opponentUsername": "madmanpoet",
+      "opponentDisplayName": "Michael Flores",
+      "matchesPlayed": 6,
+      "matchWins": 0,
+      "matchLosses": 6,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 3,
+      "gameLosses": 12,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.2,
+      "matches": [
+        {
+          "tournamentId": "367531",
+          "dateDisplay": "September 25, 2025",
+          "result": "L",
+          "playerDeck": "Oath Ponza",
+          "opponentDeck": "Dreadnought",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "361066",
+          "dateDisplay": "September 4, 2025",
+          "result": "L",
+          "playerDeck": "Psychatog",
+          "opponentDeck": "Psychatog",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "357267",
+          "dateDisplay": "August 28, 2025",
+          "result": "L",
+          "playerDeck": "Oath Ponza",
+          "opponentDeck": "Burn",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "332093",
+          "dateDisplay": "June 26, 2025",
+          "result": "L",
+          "playerDeck": "_",
+          "opponentDeck": "Replenish",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "305152",
+          "dateDisplay": "May 8, 2025",
+          "result": "L",
+          "playerDeck": "_",
+          "opponentDeck": "Goblins",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "341527",
+          "dateDisplay": "July 17, 2025",
+          "result": "L",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "Mattmelach",
       "opponentDisplayName": "Matthew Melachrinos",
       "matchesPlayed": 5,
@@ -381,69 +454,6 @@
           "result": "L",
           "playerDeck": "_",
           "opponentDeck": "Lan D Hoath",
-          "playerGameWins": 1,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "madmanpoet",
-      "opponentDisplayName": "Michael Flores",
-      "matchesPlayed": 5,
-      "matchWins": 0,
-      "matchLosses": 5,
-      "matchDraws": 0,
-      "matchWinPercentage": 0,
-      "gameWins": 3,
-      "gameLosses": 10,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.23076923076923078,
-      "matches": [
-        {
-          "tournamentId": "367531",
-          "dateDisplay": "September 25, 2025",
-          "result": "L",
-          "playerDeck": "Oath Ponza",
-          "opponentDeck": "Dreadnought",
-          "playerGameWins": 0,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "361066",
-          "dateDisplay": "September 4, 2025",
-          "result": "L",
-          "playerDeck": "Psychatog",
-          "opponentDeck": "Psychatog",
-          "playerGameWins": 1,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "357267",
-          "dateDisplay": "August 28, 2025",
-          "result": "L",
-          "playerDeck": "Oath Ponza",
-          "opponentDeck": "Burn",
-          "playerGameWins": 1,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "305152",
-          "dateDisplay": "May 8, 2025",
-          "result": "L",
-          "playerDeck": "_",
-          "opponentDeck": "Goblins",
-          "playerGameWins": 0,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "341527",
-          "dateDisplay": "July 17, 2025",
-          "result": "L",
           "playerGameWins": 1,
           "opponentGameWins": 2,
           "gameDraws": 0
@@ -818,6 +828,41 @@
       ]
     },
     {
+      "opponentUsername": "Tencteri",
+      "opponentDisplayName": "Tencteri",
+      "matchesPlayed": 2,
+      "matchWins": 1,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.5,
+      "gameWins": 2,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5,
+      "matches": [
+        {
+          "tournamentId": "393796",
+          "dateDisplay": "January 1, 2026",
+          "result": "L",
+          "playerDeck": "Burn",
+          "opponentDeck": "White Weenie",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "332093",
+          "dateDisplay": "June 26, 2025",
+          "result": "W",
+          "playerDeck": "_",
+          "opponentDeck": "_",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "mlongob",
       "opponentDisplayName": "Mario Longobardi",
       "matchesPlayed": 2,
@@ -978,31 +1023,6 @@
           "opponentDeck": "UG Madness",
           "playerGameWins": 2,
           "opponentGameWins": 0,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "Tencteri",
-      "opponentDisplayName": "Tencteri",
-      "matchesPlayed": 1,
-      "matchWins": 0,
-      "matchLosses": 1,
-      "matchDraws": 0,
-      "matchWinPercentage": 0,
-      "gameWins": 0,
-      "gameLosses": 2,
-      "gameDraws": 0,
-      "gameWinPercentage": 0,
-      "matches": [
-        {
-          "tournamentId": "393796",
-          "dateDisplay": "January 1, 2026",
-          "result": "L",
-          "playerDeck": "Burn",
-          "opponentDeck": "White Weenie",
-          "playerGameWins": 0,
-          "opponentGameWins": 2,
           "gameDraws": 0
         }
       ]
@@ -1483,6 +1503,31 @@
       ]
     },
     {
+      "opponentUsername": "tywilson",
+      "opponentDisplayName": "tywilson",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "matches": [
+        {
+          "tournamentId": "332093",
+          "dateDisplay": "June 26, 2025",
+          "result": "W",
+          "playerDeck": "_",
+          "opponentDeck": "_",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "RolandMTG",
       "opponentDisplayName": "Roland Chang",
       "matchesPlayed": 1,
@@ -1866,6 +1911,19 @@
       "matchRecord": "1-2-0",
       "matchWinPercentage": 0.3333333333333333,
       "gameWinPercentage": 0.42857143,
+      "deck": "_"
+    },
+    {
+      "tournamentId": "332093",
+      "dateDisplay": "June 26, 2025",
+      "playerCount": 8,
+      "trophyCount": 1,
+      "roundCount": 3,
+      "rank": 4,
+      "points": 6,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWinPercentage": 0.66666667,
       "deck": "_"
     },
     {
