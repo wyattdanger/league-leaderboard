@@ -7,6 +7,7 @@ import type {
   PlayerOverallStats,
   PlayerLeagueStats,
   PlayerTournamentPerformance,
+  PlayerDeckStats,
 } from './types';
 import { calculateMatchWinPercentage, calculateGameWinPercentage } from './utils/winPercentage';
 import { calculatePlayerStats, calculateHeadToHeadRecords } from './utils/playerData';
@@ -374,11 +375,88 @@ async function generatePlayerStats(): Promise<void> {
     // Sort using centralized sorting utility
     const sortedPerformances = sortTournamentPerformancesByIdDesc(tournamentPerformances);
 
+    // Aggregate stats by deck
+    const deckStatsMap = new Map<string, {
+      events: Set<string>;
+      matchWins: number;
+      matchLosses: number;
+      matchDraws: number;
+      gameWins: number;
+      gameLosses: number;
+      gameDraws: number;
+      trophies: number;
+    }>();
+
+    for (const perf of tournamentPerformances) {
+      // Normalize deck name: treat "_" and undefined/null as "Unknown"
+      const rawDeck = perf.deck;
+      const deckName = (!rawDeck || rawDeck === '_') ? 'Unknown' : rawDeck;
+
+      if (!deckStatsMap.has(deckName)) {
+        deckStatsMap.set(deckName, {
+          events: new Set(),
+          matchWins: 0,
+          matchLosses: 0,
+          matchDraws: 0,
+          gameWins: 0,
+          gameLosses: 0,
+          gameDraws: 0,
+          trophies: 0,
+        });
+      }
+
+      const stats = deckStatsMap.get(deckName)!;
+      stats.events.add(perf.tournamentId);
+
+      // Parse match record (e.g., "3-0-0")
+      const [wins, losses, draws] = perf.matchRecord.split('-').map(Number);
+      stats.matchWins += wins;
+      stats.matchLosses += losses;
+      stats.matchDraws += draws;
+
+      // Calculate game stats from win percentages and match counts
+      const totalMatches = wins + losses + draws;
+      const totalGames = Math.round(totalMatches * 2.5); // Rough estimate
+      const gameWins = Math.round(totalGames * perf.gameWinPercentage);
+      const gameLosses = totalGames - gameWins;
+
+      stats.gameWins += gameWins;
+      stats.gameLosses += gameLosses;
+
+      // Count trophies (3-0 finishes)
+      if (wins === 3 && losses === 0 && draws === 0) {
+        stats.trophies++;
+      }
+    }
+
+    // Convert deck stats map to array
+    const deckStats: PlayerDeckStats[] = Array.from(deckStatsMap.entries()).map(([deckName, stats]) => ({
+      deckName,
+      events: stats.events.size,
+      matchWins: stats.matchWins,
+      matchLosses: stats.matchLosses,
+      matchDraws: stats.matchDraws,
+      matchRecord: `${stats.matchWins}-${stats.matchLosses}-${stats.matchDraws}`,
+      matchWinPercentage: calculateMatchWinPercentage(stats.matchWins, stats.matchLosses, stats.matchDraws),
+      gameWins: stats.gameWins,
+      gameLosses: stats.gameLosses,
+      gameDraws: stats.gameDraws,
+      gameWinPercentage: calculateGameWinPercentage(stats.gameWins, stats.gameLosses, stats.gameDraws),
+      trophies: stats.trophies,
+    }));
+
+    // Sort by events (desc), then by match win percentage (desc)
+    deckStats.sort((a, b) => {
+      if (b.events !== a.events) return b.events - a.events;
+      return b.matchWinPercentage - a.matchWinPercentage;
+    });
+
     const playerDetailData: PlayerDetailData = {
       username,
       displayName,
       overallStats,
       leagueStats,
+      deckStats,
       headToHead,
       tournamentPerformances: sortedPerformances,
     };

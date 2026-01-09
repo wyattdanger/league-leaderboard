@@ -1,0 +1,229 @@
+---
+import type { PlayerDeckStats } from '../types';
+
+interface Props {
+  deckStats: PlayerDeckStats[];
+}
+
+const { deckStats } = Astro.props;
+
+// Display Unknown or _ as "Unknown"
+const displayDeckName = (name: string) => {
+  return (name === '_' || name === 'Unknown') ? 'Unknown' : name;
+};
+---
+
+{
+  deckStats.length > 0 && (
+    <div class="decks-section">
+      <div class="card decks-card">
+        <div class="decks-header">
+          <div>Decks Played</div>
+        </div>
+        <div class="decks-table-container">
+          <table class="decks-table">
+            <thead>
+              <tr>
+                <th>Deck</th>
+                <th>Events</th>
+                <th class="hide-tablet">Match Record</th>
+                <th class="hide-tablet">Game Record</th>
+                <th class="show-tablet">MWP</th>
+                <th class="hide-mobile">🏆</th>
+              </tr>
+            </thead>
+            <tbody>
+              {deckStats.map((deck) => {
+                const mwpClass =
+                  deck.matchWinPercentage > 0.59
+                    ? 'wp-high'
+                    : deck.matchWinPercentage > 0.39
+                      ? 'wp-medium'
+                      : 'wp-low';
+
+                const gwpClass =
+                  deck.gameWinPercentage > 0.59
+                    ? 'wp-high'
+                    : deck.gameWinPercentage > 0.39
+                      ? 'wp-medium'
+                      : 'wp-low';
+
+                return (
+                  <tr>
+                    <td class="deck-name">{displayDeckName(deck.deckName)}</td>
+                    <td class="deck-events">{deck.events}</td>
+                    <td class="hide-tablet deck-match-record">
+                      <span class="record">{deck.matchWins}-{deck.matchLosses}-{deck.matchDraws}</span>
+                      <span class={`percent ${mwpClass}`}>
+                        ({(deck.matchWinPercentage * 100).toFixed(1)}%)
+                      </span>
+                    </td>
+                    <td class="hide-tablet deck-game-record">
+                      <span class="record">{deck.gameWins}-{deck.gameLosses}-{deck.gameDraws}</span>
+                      <span class={`percent ${gwpClass}`}>
+                        ({(deck.gameWinPercentage * 100).toFixed(1)}%)
+                      </span>
+                    </td>
+                    <td class={`show-tablet deck-mwp ${mwpClass}`}>
+                      {(deck.matchWinPercentage * 100).toFixed(1)}%
+                    </td>
+                    <td class="hide-mobile deck-trophies">
+                      {deck.trophies > 0 ? deck.trophies : '—'}
+                    </td>
+                  </tr>
+                );
+              })}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+<style>
+  .decks-section {
+    margin-top: 2rem;
+  }
+
+  .decks-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+
+  .decks-header {
+    background: var(--gradient-primary);
+    color: white;
+    padding: 1rem 1.5rem;
+    font-weight: 600;
+    font-size: 0.9rem;
+  }
+
+  .decks-table-container {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .decks-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .decks-table thead {
+    background: #f9fafb;
+    color: #764ba2;
+  }
+
+  .decks-table th {
+    padding: 1rem 1.5rem;
+    font-weight: 600;
+    font-size: 0.85rem;
+    text-align: center;
+    border-bottom: 1px solid #e5e7eb;
+    white-space: nowrap;
+  }
+
+  .decks-table th:first-child {
+    text-align: left;
+  }
+
+  .decks-table td {
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid #e5e7eb;
+    text-align: center;
+  }
+
+  .decks-table td:first-child {
+    text-align: left;
+  }
+
+  .decks-table tbody tr:hover {
+    background-color: #f9fafb;
+  }
+
+  .deck-name {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #667eea;
+    white-space: nowrap;
+  }
+
+  .deck-events {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #6b7280;
+    white-space: nowrap;
+  }
+
+  .deck-match-record,
+  .deck-game-record {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #374151;
+    white-space: nowrap;
+  }
+
+  .deck-match-record .record,
+  .deck-game-record .record {
+    margin-right: 0.5rem;
+  }
+
+  .deck-match-record .percent,
+  .deck-game-record .percent {
+    font-weight: 700;
+  }
+
+  .deck-mwp {
+    font-size: 1rem;
+    font-weight: 700;
+    white-space: nowrap;
+  }
+
+  .deck-trophies {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #6b7280;
+    white-space: nowrap;
+  }
+
+  .wp-high {
+    color: #10b981;
+  }
+  .wp-medium {
+    color: #f59e0b;
+  }
+  .wp-low {
+    color: #ef4444;
+  }
+
+  .show-tablet {
+    display: none;
+  }
+
+  @media (max-width: 1024px) {
+    .hide-mobile {
+      display: none;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .hide-tablet {
+      display: none;
+    }
+
+    .show-tablet {
+      display: table-cell;
+    }
+
+    .decks-table th,
+    .decks-table td {
+      padding: 1rem 1.5rem;
+    }
+
+    .deck-name {
+      font-size: 0.95rem;
+    }
+  }
+</style>

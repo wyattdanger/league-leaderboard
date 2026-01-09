@@ -3,6 +3,7 @@ import PageLayout from '../../components/PageLayout.astro';
 import LeagueHeader from '../../components/LeagueHeader.astro';
 import LeagueNav from '../../components/LeagueNav.astro';
 import PlayerLeagueStats from '../../components/PlayerLeagueStats.astro';
+import PlayerDecks from '../../components/PlayerDecks.astro';
 import HeadToHead from '../../components/HeadToHead.astro';
 import PlayerEventList from '../../components/PlayerEventList.astro';
 import Tooltip from '../../components/Tooltip.astro';
@@ -122,6 +123,8 @@ const gwpClass = isHighGWP ? 'stat-high' : isMediumGWP ? 'stat-medium' : 'stat-l
       </div>
 
       <PlayerLeagueStats leagueStats={playerData.leagueStats} />
+
+      <PlayerDecks deckStats={playerData.deckStats} />
 
       <HeadToHead records={playerData.headToHead} />
 

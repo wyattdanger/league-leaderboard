@@ -85,11 +85,27 @@ export interface PlayerTournamentPerformance {
   deck?: string; // Optional deck archetype
 }
 
+export interface PlayerDeckStats {
+  deckName: string;
+  events: number;
+  matchWins: number;
+  matchLosses: number;
+  matchDraws: number;
+  matchRecord: string;
+  matchWinPercentage: number;
+  gameWins: number;
+  gameLosses: number;
+  gameDraws: number;
+  gameWinPercentage: number;
+  trophies: number;
+}
+
 export interface PlayerDetailData {
   username: string;
   displayName: string;
   overallStats: PlayerOverallStats;
   leagueStats: PlayerLeagueStats[];
+  deckStats: PlayerDeckStats[];
   headToHead: HeadToHeadRecord[];
   tournamentPerformances: PlayerTournamentPerformance[];
 }
