@@ -76,44 +76,6 @@
     "Trophies": 2
   },
   {
-    "TeamId": 3583531,
-    "Team": {
-      "Players": [
-        {
-          "TeamId": 3583531,
-          "ID": 3568867,
-          "ScreenName": "N/A",
-          "ProfileImageVersion": 0,
-          "DisplayName": "BryanGulotta",
-          "DisplayNameLastFirst": "BryanGulotta",
-          "Username": "BryanGulotta",
-          "LanguageDescription": "English (English)",
-          "PronounsDescription": "He/Him"
-        }
-      ],
-      "ID": 3583531,
-      "Name": null,
-      "StatusDescription": "Active",
-      "IsActive": true
-    },
-    "Rank": 3,
-    "MatchWins": 16,
-    "MatchLosses": 9,
-    "MatchDraws": 2,
-    "GameWins": 37,
-    "GameLosses": 28,
-    "GameDraws": 2,
-    "Points": 50,
-    "MatchRecord": "16-9-2",
-    "GameRecord": "37-28-2",
-    "OpponentMatchWinPercentage": 0.5423137459248571,
-    "TeamGameWinPercentage": 0.5671641791044776,
-    "OpponentGameWinPercentage": 0.5310297949914404,
-    "OpponentCount": 18,
-    "TournamentCount": 9,
-    "Trophies": 0
-  },
-  {
     "TeamId": 3583544,
     "Team": {
       "Players": [
@@ -134,7 +96,7 @@
       "StatusDescription": "Active",
       "IsActive": true
     },
-    "Rank": 4,
+    "Rank": 3,
     "MatchWins": 16,
     "MatchLosses": 15,
     "MatchDraws": 2,
@@ -150,6 +112,44 @@
     "OpponentCount": 21,
     "TournamentCount": 11,
     "Trophies": 1
+  },
+  {
+    "TeamId": 3583531,
+    "Team": {
+      "Players": [
+        {
+          "TeamId": 3583531,
+          "ID": 3568867,
+          "ScreenName": "N/A",
+          "ProfileImageVersion": 0,
+          "DisplayName": "BryanGulotta",
+          "DisplayNameLastFirst": "BryanGulotta",
+          "Username": "BryanGulotta",
+          "LanguageDescription": "English (English)",
+          "PronounsDescription": "He/Him"
+        }
+      ],
+      "ID": 3583531,
+      "Name": null,
+      "StatusDescription": "Active",
+      "IsActive": true
+    },
+    "Rank": 4,
+    "MatchWins": 16,
+    "MatchLosses": 9,
+    "MatchDraws": 2,
+    "GameWins": 37,
+    "GameLosses": 28,
+    "GameDraws": 2,
+    "Points": 50,
+    "MatchRecord": "16-9-2",
+    "GameRecord": "37-28-2",
+    "OpponentMatchWinPercentage": 0.5423137459248571,
+    "TeamGameWinPercentage": 0.5671641791044776,
+    "OpponentGameWinPercentage": 0.5310297949914404,
+    "OpponentCount": 18,
+    "TournamentCount": 9,
+    "Trophies": 0
   },
   {
     "TeamId": 3565592,
@@ -570,44 +570,6 @@
     "Trophies": 1
   },
   {
-    "TeamId": 3727192,
-    "Team": {
-      "Players": [
-        {
-          "TeamId": 3727192,
-          "ID": 3712528,
-          "ScreenName": "N/A",
-          "ProfileImageVersion": 2,
-          "DisplayName": "Bill Ellis!!",
-          "DisplayNameLastFirst": "Ellis!!, Bill",
-          "Username": "FriendlyFerret",
-          "LanguageDescription": "Auto (English)",
-          "PronounsDescription": "He/Him"
-        }
-      ],
-      "ID": 3727192,
-      "Name": null,
-      "StatusDescription": "Active",
-      "IsActive": true
-    },
-    "Rank": 16,
-    "MatchWins": 4,
-    "MatchLosses": 2,
-    "MatchDraws": 0,
-    "GameWins": 8,
-    "GameLosses": 4,
-    "GameDraws": 0,
-    "Points": 12,
-    "MatchRecord": "4-2-0",
-    "GameRecord": "8-4-0",
-    "OpponentMatchWinPercentage": 0.6235185185185185,
-    "TeamGameWinPercentage": 0.6666666666666666,
-    "OpponentGameWinPercentage": 0.607915992571165,
-    "OpponentCount": 6,
-    "TournamentCount": 2,
-    "Trophies": 1
-  },
-  {
     "TeamId": 3600416,
     "Team": {
       "Players": [
@@ -628,7 +590,7 @@
       "StatusDescription": "Active",
       "IsActive": true
     },
-    "Rank": 17,
+    "Rank": 16,
     "MatchWins": 4,
     "MatchLosses": 5,
     "MatchDraws": 0,
@@ -644,44 +606,6 @@
     "OpponentCount": 8,
     "TournamentCount": 3,
     "Trophies": 0
-  },
-  {
-    "TeamId": 3754980,
-    "Team": {
-      "ID": 3754980,
-      "Name": null,
-      "Players": [
-        {
-          "ID": 3740316,
-          "DisplayName": "Yosef Harari",
-          "DisplayNameLastFirst": "Harari, Yosef",
-          "ProfileImageVersion": 0,
-          "Username": "itsCama",
-          "ScreenName": "N/A",
-          "TeamId": 3754980,
-          "LanguageDescription": "Auto (English)",
-          "PronounsDescription": null
-        }
-      ],
-      "StatusDescription": "Active",
-      "IsActive": true
-    },
-    "Rank": 18,
-    "MatchWins": 4,
-    "MatchLosses": 2,
-    "MatchDraws": 0,
-    "GameWins": 10,
-    "GameLosses": 7,
-    "GameDraws": 0,
-    "Points": 12,
-    "MatchRecord": "4-2-0",
-    "GameRecord": "10-7-0",
-    "OpponentMatchWinPercentage": 0.5438518518518518,
-    "TeamGameWinPercentage": 0.5882352941176471,
-    "OpponentGameWinPercentage": 0.5057155744618431,
-    "OpponentCount": 5,
-    "TournamentCount": 2,
-    "Trophies": 1
   },
   {
     "TeamId": 3638211,
@@ -704,7 +628,7 @@
       "StatusDescription": "Active",
       "IsActive": true
     },
-    "Rank": 19,
+    "Rank": 17,
     "MatchWins": 4,
     "MatchLosses": 5,
     "MatchDraws": 0,
@@ -720,6 +644,82 @@
     "OpponentCount": 8,
     "TournamentCount": 3,
     "Trophies": 0
+  },
+  {
+    "TeamId": 3727192,
+    "Team": {
+      "Players": [
+        {
+          "TeamId": 3727192,
+          "ID": 3712528,
+          "ScreenName": "N/A",
+          "ProfileImageVersion": 2,
+          "DisplayName": "Bill Ellis!!",
+          "DisplayNameLastFirst": "Ellis!!, Bill",
+          "Username": "FriendlyFerret",
+          "LanguageDescription": "Auto (English)",
+          "PronounsDescription": "He/Him"
+        }
+      ],
+      "ID": 3727192,
+      "Name": null,
+      "StatusDescription": "Active",
+      "IsActive": true
+    },
+    "Rank": 18,
+    "MatchWins": 4,
+    "MatchLosses": 2,
+    "MatchDraws": 0,
+    "GameWins": 8,
+    "GameLosses": 4,
+    "GameDraws": 0,
+    "Points": 12,
+    "MatchRecord": "4-2-0",
+    "GameRecord": "8-4-0",
+    "OpponentMatchWinPercentage": 0.6235185185185185,
+    "TeamGameWinPercentage": 0.6666666666666666,
+    "OpponentGameWinPercentage": 0.607915992571165,
+    "OpponentCount": 6,
+    "TournamentCount": 2,
+    "Trophies": 1
+  },
+  {
+    "TeamId": 3754980,
+    "Team": {
+      "ID": 3754980,
+      "Name": null,
+      "Players": [
+        {
+          "ID": 3740316,
+          "DisplayName": "Yosef Harari",
+          "DisplayNameLastFirst": "Harari, Yosef",
+          "ProfileImageVersion": 0,
+          "Username": "itsCama",
+          "ScreenName": "N/A",
+          "TeamId": 3754980,
+          "LanguageDescription": "Auto (English)",
+          "PronounsDescription": null
+        }
+      ],
+      "StatusDescription": "Active",
+      "IsActive": true
+    },
+    "Rank": 19,
+    "MatchWins": 4,
+    "MatchLosses": 2,
+    "MatchDraws": 0,
+    "GameWins": 10,
+    "GameLosses": 7,
+    "GameDraws": 0,
+    "Points": 12,
+    "MatchRecord": "4-2-0",
+    "GameRecord": "10-7-0",
+    "OpponentMatchWinPercentage": 0.5438518518518518,
+    "TeamGameWinPercentage": 0.5882352941176471,
+    "OpponentGameWinPercentage": 0.5057155744618431,
+    "OpponentCount": 5,
+    "TournamentCount": 2,
+    "Trophies": 1
   },
   {
     "TeamId": 3697049,
@@ -798,44 +798,6 @@
     "Trophies": 0
   },
   {
-    "TeamId": 3754986,
-    "Team": {
-      "ID": 3754986,
-      "Name": null,
-      "Players": [
-        {
-          "ID": 3740322,
-          "DisplayName": "Sean Fitzpatrick",
-          "DisplayNameLastFirst": "Fitzpatrick, Sean",
-          "ProfileImageVersion": 0,
-          "Username": "SeaF9",
-          "ScreenName": "N/A",
-          "TeamId": 3754986,
-          "LanguageDescription": "Auto (English)",
-          "PronounsDescription": null
-        }
-      ],
-      "StatusDescription": "Active",
-      "IsActive": true
-    },
-    "Rank": 22,
-    "MatchWins": 3,
-    "MatchLosses": 3,
-    "MatchDraws": 0,
-    "GameWins": 6,
-    "GameLosses": 7,
-    "GameDraws": 0,
-    "Points": 9,
-    "MatchRecord": "3-3-0",
-    "GameRecord": "6-7-0",
-    "OpponentMatchWinPercentage": 0.5410997150997151,
-    "TeamGameWinPercentage": 0.46153846153846156,
-    "OpponentGameWinPercentage": 0.5171811470318933,
-    "OpponentCount": 5,
-    "TournamentCount": 2,
-    "Trophies": 0
-  },
-  {
     "TeamId": 3697074,
     "Team": {
       "Players": [
@@ -856,7 +818,7 @@
       "StatusDescription": "Active",
       "IsActive": true
     },
-    "Rank": 23,
+    "Rank": 22,
     "MatchWins": 3,
     "MatchLosses": 6,
     "MatchDraws": 0,
@@ -871,6 +833,82 @@
     "OpponentGameWinPercentage": 0.5059009193922986,
     "OpponentCount": 8,
     "TournamentCount": 3,
+    "Trophies": 0
+  },
+  {
+    "TeamId": 3565625,
+    "Team": {
+      "Players": [
+        {
+          "TeamId": 3565625,
+          "ID": 3550961,
+          "ScreenName": "N/A",
+          "ProfileImageVersion": 2,
+          "DisplayName": "ForceofPhil",
+          "DisplayNameLastFirst": "ForceofPhil",
+          "Username": "ForceofPhil",
+          "LanguageDescription": "English (English)",
+          "PronounsDescription": "He/Him"
+        }
+      ],
+      "ID": 3565625,
+      "Name": null,
+      "StatusDescription": "Active",
+      "IsActive": true
+    },
+    "Rank": 23,
+    "MatchWins": 3,
+    "MatchLosses": 6,
+    "MatchDraws": 0,
+    "GameWins": 7,
+    "GameLosses": 14,
+    "GameDraws": 0,
+    "Points": 9,
+    "MatchRecord": "3-6-0",
+    "GameRecord": "7-14-0",
+    "OpponentMatchWinPercentage": 0.44444925444925437,
+    "TeamGameWinPercentage": 0.3333333333333333,
+    "OpponentGameWinPercentage": 0.4809386020456463,
+    "OpponentCount": 7,
+    "TournamentCount": 3,
+    "Trophies": 0
+  },
+  {
+    "TeamId": 3754986,
+    "Team": {
+      "ID": 3754986,
+      "Name": null,
+      "Players": [
+        {
+          "ID": 3740322,
+          "DisplayName": "Sean Fitzpatrick",
+          "DisplayNameLastFirst": "Fitzpatrick, Sean",
+          "ProfileImageVersion": 0,
+          "Username": "SeaF9",
+          "ScreenName": "N/A",
+          "TeamId": 3754986,
+          "LanguageDescription": "Auto (English)",
+          "PronounsDescription": null
+        }
+      ],
+      "StatusDescription": "Active",
+      "IsActive": true
+    },
+    "Rank": 24,
+    "MatchWins": 3,
+    "MatchLosses": 3,
+    "MatchDraws": 0,
+    "GameWins": 6,
+    "GameLosses": 7,
+    "GameDraws": 0,
+    "Points": 9,
+    "MatchRecord": "3-3-0",
+    "GameRecord": "6-7-0",
+    "OpponentMatchWinPercentage": 0.5410997150997151,
+    "TeamGameWinPercentage": 0.46153846153846156,
+    "OpponentGameWinPercentage": 0.5171811470318933,
+    "OpponentCount": 5,
+    "TournamentCount": 2,
     "Trophies": 0
   },
   {
@@ -894,7 +932,7 @@
       "StatusDescription": "Active",
       "IsActive": true
     },
-    "Rank": 24,
+    "Rank": 25,
     "MatchWins": 3,
     "MatchLosses": 0,
     "MatchDraws": 0,
@@ -910,44 +948,6 @@
     "OpponentCount": 3,
     "TournamentCount": 1,
     "Trophies": 1
-  },
-  {
-    "TeamId": 3565625,
-    "Team": {
-      "Players": [
-        {
-          "TeamId": 3565625,
-          "ID": 3550961,
-          "ScreenName": "N/A",
-          "ProfileImageVersion": 2,
-          "DisplayName": "ForceofPhil",
-          "DisplayNameLastFirst": "ForceofPhil",
-          "Username": "ForceofPhil",
-          "LanguageDescription": "English (English)",
-          "PronounsDescription": "He/Him"
-        }
-      ],
-      "ID": 3565625,
-      "Name": null,
-      "StatusDescription": "Active",
-      "IsActive": true
-    },
-    "Rank": 25,
-    "MatchWins": 3,
-    "MatchLosses": 6,
-    "MatchDraws": 0,
-    "GameWins": 7,
-    "GameLosses": 14,
-    "GameDraws": 0,
-    "Points": 9,
-    "MatchRecord": "3-6-0",
-    "GameRecord": "7-14-0",
-    "OpponentMatchWinPercentage": 0.44444925444925437,
-    "TeamGameWinPercentage": 0.3333333333333333,
-    "OpponentGameWinPercentage": 0.4809386020456463,
-    "OpponentCount": 7,
-    "TournamentCount": 3,
-    "Trophies": 0
   },
   {
     "TeamId": 3697093,
@@ -1026,41 +1026,41 @@
     "Trophies": 1
   },
   {
-    "TeamId": 3727178,
+    "TeamId": 3583609,
     "Team": {
       "Players": [
         {
-          "TeamId": 3727178,
-          "ID": 3712514,
+          "TeamId": 3583609,
+          "ID": 3568945,
           "ScreenName": "N/A",
           "ProfileImageVersion": 0,
-          "DisplayName": "Gaunology",
-          "DisplayNameLastFirst": "Gaunology",
-          "Username": "Gaunology",
+          "DisplayName": "Charlengels",
+          "DisplayNameLastFirst": "Charlengels",
+          "Username": "Charlengels",
           "LanguageDescription": "Auto (English)",
-          "PronounsDescription": null
+          "PronounsDescription": "He/Him"
         }
       ],
-      "ID": 3727178,
+      "ID": 3583609,
       "Name": null,
       "StatusDescription": "Active",
       "IsActive": true
     },
     "Rank": 28,
     "MatchWins": 2,
-    "MatchLosses": 0,
+    "MatchLosses": 6,
     "MatchDraws": 1,
-    "GameWins": 5,
-    "GameLosses": 1,
+    "GameWins": 6,
+    "GameLosses": 13,
     "GameDraws": 0,
     "Points": 7,
-    "MatchRecord": "2-0-1",
-    "GameRecord": "5-1-0",
-    "OpponentMatchWinPercentage": 0.6190476190476191,
-    "TeamGameWinPercentage": 0.8333333333333334,
-    "OpponentGameWinPercentage": 0.6376811594202898,
-    "OpponentCount": 2,
-    "TournamentCount": 1,
+    "MatchRecord": "2-6-1",
+    "GameRecord": "6-13-0",
+    "OpponentMatchWinPercentage": 0.5575438912938913,
+    "TeamGameWinPercentage": 0.3157894736842105,
+    "OpponentGameWinPercentage": 0.5772999830348247,
+    "OpponentCount": 8,
+    "TournamentCount": 3,
     "Trophies": 0
   },
   {
@@ -1102,41 +1102,155 @@
     "Trophies": 0
   },
   {
-    "TeamId": 3583609,
+    "TeamId": 3727178,
     "Team": {
       "Players": [
         {
-          "TeamId": 3583609,
-          "ID": 3568945,
+          "TeamId": 3727178,
+          "ID": 3712514,
           "ScreenName": "N/A",
           "ProfileImageVersion": 0,
-          "DisplayName": "Charlengels",
-          "DisplayNameLastFirst": "Charlengels",
-          "Username": "Charlengels",
+          "DisplayName": "Gaunology",
+          "DisplayNameLastFirst": "Gaunology",
+          "Username": "Gaunology",
           "LanguageDescription": "Auto (English)",
-          "PronounsDescription": "He/Him"
+          "PronounsDescription": null
         }
       ],
-      "ID": 3583609,
+      "ID": 3727178,
       "Name": null,
       "StatusDescription": "Active",
       "IsActive": true
     },
     "Rank": 30,
     "MatchWins": 2,
-    "MatchLosses": 6,
+    "MatchLosses": 0,
     "MatchDraws": 1,
-    "GameWins": 6,
-    "GameLosses": 13,
+    "GameWins": 5,
+    "GameLosses": 1,
     "GameDraws": 0,
     "Points": 7,
-    "MatchRecord": "2-6-1",
-    "GameRecord": "6-13-0",
-    "OpponentMatchWinPercentage": 0.5575438912938913,
-    "TeamGameWinPercentage": 0.3157894736842105,
-    "OpponentGameWinPercentage": 0.5772999830348247,
-    "OpponentCount": 8,
-    "TournamentCount": 3,
+    "MatchRecord": "2-0-1",
+    "GameRecord": "5-1-0",
+    "OpponentMatchWinPercentage": 0.6190476190476191,
+    "TeamGameWinPercentage": 0.8333333333333334,
+    "OpponentGameWinPercentage": 0.6376811594202898,
+    "OpponentCount": 2,
+    "TournamentCount": 1,
+    "Trophies": 0
+  },
+  {
+    "TeamId": 3620545,
+    "Team": {
+      "Players": [
+        {
+          "TeamId": 3620545,
+          "ID": 3605881,
+          "ScreenName": "N/A",
+          "ProfileImageVersion": 0,
+          "DisplayName": "J0Nh",
+          "DisplayNameLastFirst": "J0Nh",
+          "Username": "J0Nh",
+          "LanguageDescription": "Auto (English)",
+          "PronounsDescription": null
+        }
+      ],
+      "ID": 3620545,
+      "Name": null,
+      "StatusDescription": "Active",
+      "IsActive": true
+    },
+    "Rank": 31,
+    "MatchWins": 2,
+    "MatchLosses": 4,
+    "MatchDraws": 0,
+    "GameWins": 6,
+    "GameLosses": 8,
+    "GameDraws": 0,
+    "Points": 6,
+    "MatchRecord": "2-4-0",
+    "GameRecord": "6-8-0",
+    "OpponentMatchWinPercentage": 0.5470948804282137,
+    "TeamGameWinPercentage": 0.42857142857142855,
+    "OpponentGameWinPercentage": 0.5288416607847933,
+    "OpponentCount": 6,
+    "TournamentCount": 2,
+    "Trophies": 0
+  },
+  {
+    "TeamId": 3668349,
+    "Team": {
+      "Players": [
+        {
+          "TeamId": 3668349,
+          "ID": 3653685,
+          "ScreenName": "N/A",
+          "ProfileImageVersion": 0,
+          "DisplayName": "cmwilson252",
+          "DisplayNameLastFirst": "cmwilson252",
+          "Username": "cmwilson252",
+          "LanguageDescription": "Auto (English)",
+          "PronounsDescription": null
+        }
+      ],
+      "ID": 3668349,
+      "Name": null,
+      "StatusDescription": "Active",
+      "IsActive": true
+    },
+    "Rank": 32,
+    "MatchWins": 2,
+    "MatchLosses": 4,
+    "MatchDraws": 0,
+    "GameWins": 5,
+    "GameLosses": 8,
+    "GameDraws": 0,
+    "Points": 6,
+    "MatchRecord": "2-4-0",
+    "GameRecord": "5-8-0",
+    "OpponentMatchWinPercentage": 0.49969474969474964,
+    "TeamGameWinPercentage": 0.38461538461538464,
+    "OpponentGameWinPercentage": 0.5146768744270367,
+    "OpponentCount": 4,
+    "TournamentCount": 2,
+    "Trophies": 0
+  },
+  {
+    "TeamId": 3742701,
+    "Team": {
+      "Players": [
+        {
+          "TeamId": 3742701,
+          "ID": 3728037,
+          "ScreenName": "N/A",
+          "ProfileImageVersion": 0,
+          "DisplayName": "Mario Longobardi",
+          "DisplayNameLastFirst": "Longobardi, Mario",
+          "Username": "mlongob",
+          "LanguageDescription": "Auto (English)",
+          "PronounsDescription": null
+        }
+      ],
+      "ID": 3742701,
+      "Name": null,
+      "StatusDescription": "Active",
+      "IsActive": true
+    },
+    "Rank": 33,
+    "MatchWins": 2,
+    "MatchLosses": 4,
+    "MatchDraws": 0,
+    "GameWins": 6,
+    "GameLosses": 9,
+    "GameDraws": 0,
+    "Points": 6,
+    "MatchRecord": "2-4-0",
+    "GameRecord": "6-9-0",
+    "OpponentMatchWinPercentage": 0.48851463351463353,
+    "TeamGameWinPercentage": 0.4,
+    "OpponentGameWinPercentage": 0.49606423905214764,
+    "OpponentCount": 6,
+    "TournamentCount": 2,
     "Trophies": 0
   },
   {
@@ -1160,7 +1274,7 @@
       "StatusDescription": "Active",
       "IsActive": true
     },
-    "Rank": 31,
+    "Rank": 34,
     "MatchWins": 2,
     "MatchLosses": 1,
     "MatchDraws": 0,
@@ -1198,7 +1312,7 @@
       "StatusDescription": "Active",
       "IsActive": true
     },
-    "Rank": 32,
+    "Rank": 35,
     "MatchWins": 2,
     "MatchLosses": 1,
     "MatchDraws": 0,
@@ -1213,44 +1327,6 @@
     "OpponentGameWinPercentage": 0.5800053785128413,
     "OpponentCount": 3,
     "TournamentCount": 1,
-    "Trophies": 0
-  },
-  {
-    "TeamId": 3620545,
-    "Team": {
-      "Players": [
-        {
-          "TeamId": 3620545,
-          "ID": 3605881,
-          "ScreenName": "N/A",
-          "ProfileImageVersion": 0,
-          "DisplayName": "J0Nh",
-          "DisplayNameLastFirst": "J0Nh",
-          "Username": "J0Nh",
-          "LanguageDescription": "Auto (English)",
-          "PronounsDescription": null
-        }
-      ],
-      "ID": 3620545,
-      "Name": null,
-      "StatusDescription": "Active",
-      "IsActive": true
-    },
-    "Rank": 33,
-    "MatchWins": 2,
-    "MatchLosses": 4,
-    "MatchDraws": 0,
-    "GameWins": 6,
-    "GameLosses": 8,
-    "GameDraws": 0,
-    "Points": 6,
-    "MatchRecord": "2-4-0",
-    "GameRecord": "6-8-0",
-    "OpponentMatchWinPercentage": 0.5470948804282137,
-    "TeamGameWinPercentage": 0.42857142857142855,
-    "OpponentGameWinPercentage": 0.5288416607847933,
-    "OpponentCount": 6,
-    "TournamentCount": 2,
     "Trophies": 0
   },
   {
@@ -1274,7 +1350,7 @@
       "StatusDescription": "Active",
       "IsActive": true
     },
-    "Rank": 34,
+    "Rank": 36,
     "MatchWins": 2,
     "MatchLosses": 1,
     "MatchDraws": 0,
@@ -1312,7 +1388,7 @@
       "StatusDescription": "Active",
       "IsActive": true
     },
-    "Rank": 35,
+    "Rank": 37,
     "MatchWins": 2,
     "MatchLosses": 1,
     "MatchDraws": 0,
@@ -1350,7 +1426,7 @@
       "StatusDescription": "Active",
       "IsActive": true
     },
-    "Rank": 36,
+    "Rank": 38,
     "MatchWins": 2,
     "MatchLosses": 1,
     "MatchDraws": 0,
@@ -1365,44 +1441,6 @@
     "OpponentGameWinPercentage": 0.5211111111111112,
     "OpponentCount": 3,
     "TournamentCount": 1,
-    "Trophies": 0
-  },
-  {
-    "TeamId": 3668349,
-    "Team": {
-      "Players": [
-        {
-          "TeamId": 3668349,
-          "ID": 3653685,
-          "ScreenName": "N/A",
-          "ProfileImageVersion": 0,
-          "DisplayName": "cmwilson252",
-          "DisplayNameLastFirst": "cmwilson252",
-          "Username": "cmwilson252",
-          "LanguageDescription": "Auto (English)",
-          "PronounsDescription": null
-        }
-      ],
-      "ID": 3668349,
-      "Name": null,
-      "StatusDescription": "Active",
-      "IsActive": true
-    },
-    "Rank": 37,
-    "MatchWins": 2,
-    "MatchLosses": 4,
-    "MatchDraws": 0,
-    "GameWins": 5,
-    "GameLosses": 8,
-    "GameDraws": 0,
-    "Points": 6,
-    "MatchRecord": "2-4-0",
-    "GameRecord": "5-8-0",
-    "OpponentMatchWinPercentage": 0.49969474969474964,
-    "TeamGameWinPercentage": 0.38461538461538464,
-    "OpponentGameWinPercentage": 0.5146768744270367,
-    "OpponentCount": 4,
-    "TournamentCount": 2,
     "Trophies": 0
   },
   {
@@ -1426,7 +1464,7 @@
       "StatusDescription": "Active",
       "IsActive": true
     },
-    "Rank": 38,
+    "Rank": 39,
     "MatchWins": 2,
     "MatchLosses": 1,
     "MatchDraws": 0,
@@ -1444,41 +1482,41 @@
     "Trophies": 0
   },
   {
-    "TeamId": 3742701,
+    "TeamId": 3620526,
     "Team": {
       "Players": [
         {
-          "TeamId": 3742701,
-          "ID": 3728037,
+          "TeamId": 3620526,
+          "ID": 3605862,
           "ScreenName": "N/A",
           "ProfileImageVersion": 0,
-          "DisplayName": "Mario Longobardi",
-          "DisplayNameLastFirst": "Longobardi, Mario",
-          "Username": "mlongob",
+          "DisplayName": "zjr",
+          "DisplayNameLastFirst": "zjr",
+          "Username": "zjr",
           "LanguageDescription": "Auto (English)",
           "PronounsDescription": null
         }
       ],
-      "ID": 3742701,
+      "ID": 3620526,
       "Name": null,
       "StatusDescription": "Active",
       "IsActive": true
     },
-    "Rank": 39,
-    "MatchWins": 2,
-    "MatchLosses": 4,
+    "Rank": 40,
+    "MatchWins": 1,
+    "MatchLosses": 8,
     "MatchDraws": 0,
-    "GameWins": 6,
-    "GameLosses": 9,
+    "GameWins": 3,
+    "GameLosses": 16,
     "GameDraws": 0,
-    "Points": 6,
-    "MatchRecord": "2-4-0",
-    "GameRecord": "6-9-0",
-    "OpponentMatchWinPercentage": 0.48851463351463353,
-    "TeamGameWinPercentage": 0.4,
-    "OpponentGameWinPercentage": 0.49606423905214764,
-    "OpponentCount": 6,
-    "TournamentCount": 2,
+    "Points": 3,
+    "MatchRecord": "1-8-0",
+    "GameRecord": "3-16-0",
+    "OpponentMatchWinPercentage": 0.4970299145299145,
+    "TeamGameWinPercentage": 0.15789473684210525,
+    "OpponentGameWinPercentage": 0.49596629297328093,
+    "OpponentCount": 8,
+    "TournamentCount": 3,
     "Trophies": 0
   },
   {
@@ -1502,7 +1540,7 @@
       "StatusDescription": "Active",
       "IsActive": true
     },
-    "Rank": 40,
+    "Rank": 41,
     "MatchWins": 1,
     "MatchLosses": 2,
     "MatchDraws": 0,
@@ -1540,7 +1578,7 @@
       "StatusDescription": "Active",
       "IsActive": true
     },
-    "Rank": 41,
+    "Rank": 42,
     "MatchWins": 1,
     "MatchLosses": 2,
     "MatchDraws": 0,
@@ -1578,7 +1616,7 @@
       "StatusDescription": "Active",
       "IsActive": true
     },
-    "Rank": 42,
+    "Rank": 43,
     "MatchWins": 1,
     "MatchLosses": 2,
     "MatchDraws": 0,
@@ -1616,7 +1654,7 @@
       "StatusDescription": "Active",
       "IsActive": true
     },
-    "Rank": 43,
+    "Rank": 44,
     "MatchWins": 1,
     "MatchLosses": 2,
     "MatchDraws": 0,
@@ -1631,44 +1669,6 @@
     "OpponentGameWinPercentage": 0.5151515151515151,
     "OpponentCount": 2,
     "TournamentCount": 1,
-    "Trophies": 0
-  },
-  {
-    "TeamId": 3620526,
-    "Team": {
-      "Players": [
-        {
-          "TeamId": 3620526,
-          "ID": 3605862,
-          "ScreenName": "N/A",
-          "ProfileImageVersion": 0,
-          "DisplayName": "zjr",
-          "DisplayNameLastFirst": "zjr",
-          "Username": "zjr",
-          "LanguageDescription": "Auto (English)",
-          "PronounsDescription": null
-        }
-      ],
-      "ID": 3620526,
-      "Name": null,
-      "StatusDescription": "Active",
-      "IsActive": true
-    },
-    "Rank": 44,
-    "MatchWins": 1,
-    "MatchLosses": 8,
-    "MatchDraws": 0,
-    "GameWins": 3,
-    "GameLosses": 16,
-    "GameDraws": 0,
-    "Points": 3,
-    "MatchRecord": "1-8-0",
-    "GameRecord": "3-16-0",
-    "OpponentMatchWinPercentage": 0.4970299145299145,
-    "TeamGameWinPercentage": 0.15789473684210525,
-    "OpponentGameWinPercentage": 0.49596629297328093,
-    "OpponentCount": 8,
-    "TournamentCount": 3,
     "Trophies": 0
   },
   {
