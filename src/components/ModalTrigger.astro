@@ -1,0 +1,40 @@
+---
+interface Props {
+  modalId: string;
+  label?: string;
+  ariaLabel: string;
+  class?: string;
+}
+
+const { modalId, label = '🔍', ariaLabel, class: className } = Astro.props;
+---
+
+<button
+  class={`modal-trigger ${className || ''}`}
+  onclick={`event.stopPropagation(); document.getElementById('${modalId}').classList.add('active');`}
+  aria-label={ariaLabel}
+>
+  {label}
+</button>
+
+<style>
+  .modal-trigger {
+    background: rgba(102, 126, 234, 0.1);
+    border: 1px solid rgba(102, 126, 234, 0.3);
+    border-radius: 6px;
+    padding: 0.5rem 0.75rem;
+    font-size: 1.25rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    line-height: 1;
+  }
+
+  .modal-trigger:hover {
+    background: rgba(102, 126, 234, 0.2);
+    transform: scale(1.1);
+  }
+
+  .modal-trigger:active {
+    transform: scale(0.95);
+  }
+</style>
