@@ -57,7 +57,6 @@ export interface HeadToHeadRecord {
   gameLosses: number;
   gameDraws: number;
   gameWinPercentage: number;
-  lastFiveResults: ('W' | 'L' | 'D')[];
   matches: HeadToHeadMatchDetail[];
 }
 

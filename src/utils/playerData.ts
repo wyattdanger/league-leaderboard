@@ -18,11 +18,6 @@ export interface PlayerStats {
   gameWinPercentage: number;
 }
 
-interface MatchResult {
-  result: 'W' | 'L' | 'D';
-  roundNumber: number;
-}
-
 /**
  * Calculate overall stats for a single player across all rounds in a tournament
  */
@@ -145,7 +140,6 @@ export function calculateHeadToHeadRecords(
       gameWins: number;
       gameLosses: number;
       gameDraws: number;
-      results: MatchResult[];
       matchDetails: Array<{
         tournamentId: string;
         dateDisplay: string;
@@ -202,7 +196,6 @@ export function calculateHeadToHeadRecords(
             gameWins: 0,
             gameLosses: 0,
             gameDraws: 0,
-            results: [],
             matchDetails: [],
           });
         }
@@ -229,9 +222,6 @@ export function calculateHeadToHeadRecords(
         stats.gameWins += playerGameWins;
         stats.gameLosses += opponentGameWins;
         stats.gameDraws += draws;
-
-        // Track result for last 5
-        stats.results.push({ result, roundNumber: match.RoundNumber });
 
         // Store detailed match information
         const tournamentId = match.TournamentId?.toString() || '';
@@ -260,9 +250,6 @@ export function calculateHeadToHeadRecords(
       const matchesPlayed = stats.matchWins + stats.matchLosses + stats.matchDraws;
       const totalGames = stats.gameWins + stats.gameLosses + stats.gameDraws;
 
-      // Get last 5 results
-      const lastFiveResults = stats.results.slice(-5).map((r) => r.result);
-
       return {
         opponentUsername,
         opponentDisplayName: stats.displayName,
@@ -275,7 +262,6 @@ export function calculateHeadToHeadRecords(
         gameLosses: stats.gameLosses,
         gameDraws: stats.gameDraws,
         gameWinPercentage: totalGames > 0 ? stats.gameWins / totalGames : 0,
-        lastFiveResults,
         matches: stats.matchDetails,
       };
     }

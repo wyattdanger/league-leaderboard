@@ -92,7 +92,7 @@ describe('Player Stats Calculation', () => {
         expect(record.matchesPlayed).toBeGreaterThan(0);
         expect(typeof record.matchWinPercentage).toBe('number');
         expect(typeof record.gameWinPercentage).toBe('number');
-        expect(Array.isArray(record.lastFiveResults)).toBe(true);
+        expect(Array.isArray(record.matches)).toBe(true);
       });
     });
 
@@ -186,27 +186,6 @@ describe('Player Stats Calculation', () => {
       });
     });
 
-    it('should limit lastFiveResults to maximum 5 results', () => {
-      const matchesPerRound = loadTestMatches();
-      const h2hRecords = calculateHeadToHeadRecords('swbmtg', matchesPerRound);
-
-      h2hRecords.forEach((record) => {
-        expect(record.lastFiveResults.length).toBeLessThanOrEqual(5);
-        expect(record.lastFiveResults.length).toBeLessThanOrEqual(record.matchesPlayed);
-      });
-    });
-
-    it('should only include W, L, or D in lastFiveResults', () => {
-      const matchesPerRound = loadTestMatches();
-      const h2hRecords = calculateHeadToHeadRecords('swbmtg', matchesPerRound);
-
-      h2hRecords.forEach((record) => {
-        record.lastFiveResults.forEach((result) => {
-          expect(['W', 'L', 'D']).toContain(result);
-        });
-      });
-    });
-
     it('should calculate 50% win percentage for 0-0-1 record (draw only)', () => {
       // Create a match with a draw result (0-0 game score, with 3 game draws)
       const drawMatch: Match = {
@@ -244,7 +223,6 @@ describe('Player Stats Calculation', () => {
       expect(h2hRecords[0].matchLosses).toBe(0);
       expect(h2hRecords[0].matchDraws).toBe(1);
       expect(h2hRecords[0].matchWinPercentage).toBe(0.5);
-      expect(h2hRecords[0].lastFiveResults).toEqual(['D']);
     });
 
     it('should not include bye matches in head-to-head records', () => {
