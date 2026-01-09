@@ -117,6 +117,30 @@ async function aggregateLeague(tournamentIds: string[], leagueName?: string): Pr
     (standing as any).Trophies = trophies;
   }
 
+  // Re-sort with tournament count as tiebreaker after points
+  // Sort by: Points (desc), Events Attended (desc), OMW% (desc), GW% (desc), OGW% (desc), TeamId (asc)
+  standings.sort((a, b) => {
+    if (b.Points !== a.Points) return b.Points - a.Points;
+    const aTournaments = (a as any).TournamentCount || 0;
+    const bTournaments = (b as any).TournamentCount || 0;
+    if (bTournaments !== aTournaments) return bTournaments - aTournaments;
+    if (b.OpponentMatchWinPercentage !== a.OpponentMatchWinPercentage) {
+      return b.OpponentMatchWinPercentage - a.OpponentMatchWinPercentage;
+    }
+    if (b.TeamGameWinPercentage !== a.TeamGameWinPercentage) {
+      return b.TeamGameWinPercentage - a.TeamGameWinPercentage;
+    }
+    if (b.OpponentGameWinPercentage !== a.OpponentGameWinPercentage) {
+      return b.OpponentGameWinPercentage - a.OpponentGameWinPercentage;
+    }
+    return a.TeamId - b.TeamId;
+  });
+
+  // Re-assign ranks after re-sorting
+  standings.forEach((standing, index) => {
+    standing.Rank = index + 1;
+  });
+
   // Output directory
   const outputDir = path.join(process.cwd(), 'output', 'league');
   if (!fs.existsSync(outputDir)) {
