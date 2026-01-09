@@ -44,17 +44,31 @@
   "deckStats": [
     {
       "deckName": "Unknown",
-      "events": 14,
-      "matchWins": 27,
+      "events": 13,
+      "matchWins": 24,
       "matchLosses": 14,
       "matchDraws": 1,
-      "matchRecord": "27-14-1",
-      "matchWinPercentage": 0.6547619047619048,
-      "gameWins": 71,
-      "gameLosses": 41,
+      "matchRecord": "24-14-1",
+      "matchWinPercentage": 0.6282051282051282,
+      "gameWins": 64,
+      "gameLosses": 40,
       "gameDraws": 0,
-      "gameWinPercentage": 0.6339285714285714,
-      "trophies": 3
+      "gameWinPercentage": 0.6153846153846154,
+      "trophies": 2
+    },
+    {
+      "deckName": "Spec Oath",
+      "events": 1,
+      "matchWins": 3,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchRecord": "3-0-0",
+      "matchWinPercentage": 1,
+      "gameWins": 7,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.875,
+      "trophies": 1
     },
     {
       "deckName": "Clerics",
@@ -109,7 +123,7 @@
           "tournamentId": "343959",
           "dateDisplay": "July 24, 2025",
           "result": "W",
-          "playerDeck": "_",
+          "playerDeck": "Spec Oath",
           "opponentDeck": "_",
           "playerGameWins": 2,
           "opponentGameWins": 0,
@@ -225,7 +239,7 @@
           "tournamentId": "343959",
           "dateDisplay": "July 24, 2025",
           "result": "W",
-          "playerDeck": "_",
+          "playerDeck": "Spec Oath",
           "opponentDeck": "Burn",
           "playerGameWins": 2,
           "opponentGameWins": 1,
@@ -605,7 +619,7 @@
           "tournamentId": "343959",
           "dateDisplay": "July 24, 2025",
           "result": "W",
-          "playerDeck": "_",
+          "playerDeck": "Spec Oath",
           "opponentDeck": "_",
           "playerGameWins": 2,
           "opponentGameWins": 0,
@@ -1027,7 +1041,7 @@
       "matchRecord": "3-0-0",
       "matchWinPercentage": 1,
       "gameWinPercentage": 0.85714286,
-      "deck": "_"
+      "deck": "Spec Oath"
     },
     {
       "tournamentId": "341527",

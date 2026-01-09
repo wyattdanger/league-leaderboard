@@ -35,31 +35,17 @@
   "deckStats": [
     {
       "deckName": "The Rock",
-      "events": 2,
-      "matchWins": 5,
+      "events": 3,
+      "matchWins": 8,
       "matchLosses": 1,
       "matchDraws": 0,
-      "matchRecord": "5-1-0",
-      "matchWinPercentage": 0.8333333333333334,
-      "gameWins": 12,
-      "gameLosses": 4,
+      "matchRecord": "8-1-0",
+      "matchWinPercentage": 0.8888888888888888,
+      "gameWins": 19,
+      "gameLosses": 5,
       "gameDraws": 0,
-      "gameWinPercentage": 0.75,
-      "trophies": 1
-    },
-    {
-      "deckName": "Unknown",
-      "events": 1,
-      "matchWins": 3,
-      "matchLosses": 0,
-      "matchDraws": 0,
-      "matchRecord": "3-0-0",
-      "matchWinPercentage": 1,
-      "gameWins": 7,
-      "gameLosses": 1,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.875,
-      "trophies": 1
+      "gameWinPercentage": 0.7916666666666666,
+      "trophies": 2
     },
     {
       "deckName": "White Weenie",
@@ -104,7 +90,7 @@
           "tournamentId": "343959",
           "dateDisplay": "July 24, 2025",
           "result": "W",
-          "playerDeck": "_",
+          "playerDeck": "The Rock",
           "opponentDeck": "_",
           "playerGameWins": 2,
           "opponentGameWins": 1,
@@ -329,7 +315,7 @@
           "tournamentId": "343959",
           "dateDisplay": "July 24, 2025",
           "result": "W",
-          "playerDeck": "_",
+          "playerDeck": "The Rock",
           "opponentDeck": "Stasis",
           "playerGameWins": 2,
           "opponentGameWins": 0,
@@ -354,7 +340,7 @@
           "tournamentId": "343959",
           "dateDisplay": "July 24, 2025",
           "result": "W",
-          "playerDeck": "_",
+          "playerDeck": "The Rock",
           "opponentDeck": "_",
           "playerGameWins": 2,
           "opponentGameWins": 0,
@@ -414,7 +400,7 @@
       "matchRecord": "3-0-0",
       "matchWinPercentage": 1,
       "gameWinPercentage": 0.85714286,
-      "deck": "_"
+      "deck": "The Rock"
     }
   ]
 }
