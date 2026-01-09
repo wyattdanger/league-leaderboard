@@ -53,16 +53,16 @@
   "deckStats": [
     {
       "deckName": "Dreadnought",
-      "events": 2,
-      "matchWins": 6,
-      "matchLosses": 0,
+      "events": 3,
+      "matchWins": 7,
+      "matchLosses": 2,
       "matchDraws": 0,
-      "matchRecord": "6-0-0",
-      "matchWinPercentage": 1,
-      "gameWins": 15,
-      "gameLosses": 1,
+      "matchRecord": "7-2-0",
+      "matchWinPercentage": 0.7777777777777778,
+      "gameWins": 18,
+      "gameLosses": 6,
       "gameDraws": 0,
-      "gameWinPercentage": 0.9375,
+      "gameWinPercentage": 0.75,
       "trophies": 2
     },
     {
@@ -162,20 +162,6 @@
       "gameDraws": 0,
       "gameWinPercentage": 0.5,
       "trophies": 0
-    },
-    {
-      "deckName": "Unknown",
-      "events": 1,
-      "matchWins": 1,
-      "matchLosses": 2,
-      "matchDraws": 0,
-      "matchRecord": "1-2-0",
-      "matchWinPercentage": 0.3333333333333333,
-      "gameWins": 3,
-      "gameLosses": 5,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.375,
-      "trophies": 0
     }
   ],
   "headToHead": [
@@ -226,6 +212,8 @@
           "tournamentId": "369726",
           "dateDisplay": "October 2, 2025",
           "result": "L",
+          "playerDeck": "Dreadnought",
+          "opponentDeck": "Oath Parfait",
           "playerGameWins": 1,
           "opponentGameWins": 2,
           "gameDraws": 0
@@ -374,6 +362,8 @@
           "tournamentId": "369726",
           "dateDisplay": "October 2, 2025",
           "result": "W",
+          "playerDeck": "Dreadnought",
+          "opponentDeck": "Tide",
           "playerGameWins": 2,
           "opponentGameWins": 0,
           "gameDraws": 0
@@ -792,6 +782,8 @@
           "tournamentId": "369726",
           "dateDisplay": "October 2, 2025",
           "result": "L",
+          "playerDeck": "Dreadnought",
+          "opponentDeck": "Tide",
           "playerGameWins": 0,
           "opponentGameWins": 2,
           "gameDraws": 0
@@ -961,7 +953,8 @@
       "points": 3,
       "matchRecord": "1-2-0",
       "matchWinPercentage": 0.3333333333333333,
-      "gameWinPercentage": 0.42857143
+      "gameWinPercentage": 0.42857143,
+      "deck": "Dreadnought"
     },
     {
       "tournamentId": "365765",

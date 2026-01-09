@@ -62,16 +62,16 @@
   "deckStats": [
     {
       "deckName": "Unknown",
-      "events": 14,
-      "matchWins": 16,
-      "matchLosses": 24,
+      "events": 12,
+      "matchWins": 15,
+      "matchLosses": 19,
       "matchDraws": 2,
-      "matchRecord": "16-24-2",
-      "matchWinPercentage": 0.40476190476190477,
-      "gameWins": 46,
-      "gameLosses": 66,
+      "matchRecord": "15-19-2",
+      "matchWinPercentage": 0.4444444444444444,
+      "gameWins": 43,
+      "gameLosses": 53,
       "gameDraws": 0,
-      "gameWinPercentage": 0.4107142857142857,
+      "gameWinPercentage": 0.4479166666666667,
       "trophies": 0
     },
     {
@@ -89,6 +89,20 @@
       "trophies": 0
     },
     {
+      "deckName": "Burn",
+      "events": 4,
+      "matchWins": 5,
+      "matchLosses": 7,
+      "matchDraws": 0,
+      "matchRecord": "5-7-0",
+      "matchWinPercentage": 0.4166666666666667,
+      "gameWins": 15,
+      "gameLosses": 17,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.46875,
+      "trophies": 1
+    },
+    {
       "deckName": "Oath Ponza",
       "events": 4,
       "matchWins": 4,
@@ -101,20 +115,6 @@
       "gameDraws": 0,
       "gameWinPercentage": 0.4375,
       "trophies": 0
-    },
-    {
-      "deckName": "Burn",
-      "events": 3,
-      "matchWins": 4,
-      "matchLosses": 5,
-      "matchDraws": 0,
-      "matchRecord": "4-5-0",
-      "matchWinPercentage": 0.4444444444444444,
-      "gameWins": 12,
-      "gameLosses": 12,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.5,
-      "trophies": 1
     },
     {
       "deckName": "Elves",
@@ -170,6 +170,20 @@
       "gameLosses": 5,
       "gameDraws": 0,
       "gameWinPercentage": 0.375,
+      "trophies": 0
+    },
+    {
+      "deckName": "FEB",
+      "events": 1,
+      "matchWins": 0,
+      "matchLosses": 3,
+      "matchDraws": 0,
+      "matchRecord": "0-3-0",
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 8,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
       "trophies": 0
     }
   ],
@@ -326,6 +340,8 @@
           "tournamentId": "341527",
           "dateDisplay": "July 17, 2025",
           "result": "L",
+          "playerDeck": "Burn",
+          "opponentDeck": "Burn",
           "playerGameWins": 1,
           "opponentGameWins": 2,
           "gameDraws": 0
@@ -389,6 +405,8 @@
           "tournamentId": "369726",
           "dateDisplay": "October 2, 2025",
           "result": "L",
+          "playerDeck": "FEB",
+          "opponentDeck": "Rack",
           "playerGameWins": 0,
           "opponentGameWins": 2,
           "gameDraws": 0
@@ -497,6 +515,8 @@
           "tournamentId": "369726",
           "dateDisplay": "October 2, 2025",
           "result": "L",
+          "playerDeck": "FEB",
+          "opponentDeck": "Dreadnought",
           "playerGameWins": 0,
           "opponentGameWins": 2,
           "gameDraws": 0
@@ -625,6 +645,8 @@
           "tournamentId": "369726",
           "dateDisplay": "October 2, 2025",
           "result": "L",
+          "playerDeck": "FEB",
+          "opponentDeck": "Tide",
           "playerGameWins": 0,
           "opponentGameWins": 2,
           "gameDraws": 0
@@ -678,6 +700,8 @@
           "tournamentId": "341527",
           "dateDisplay": "July 17, 2025",
           "result": "L",
+          "playerDeck": "Burn",
+          "opponentDeck": "WB Life",
           "playerGameWins": 0,
           "opponentGameWins": 2,
           "gameDraws": 0
@@ -821,6 +845,8 @@
           "tournamentId": "341527",
           "dateDisplay": "July 17, 2025",
           "result": "W",
+          "playerDeck": "Burn",
+          "opponentDeck": "Dreadnought",
           "playerGameWins": 2,
           "opponentGameWins": 0,
           "gameDraws": 0
@@ -1756,7 +1782,8 @@
       "points": 0,
       "matchRecord": "0-3-0",
       "matchWinPercentage": 0,
-      "gameWinPercentage": 0
+      "gameWinPercentage": 0,
+      "deck": "FEB"
     },
     {
       "tournamentId": "367531",
@@ -1898,7 +1925,8 @@
       "points": 3,
       "matchRecord": "1-2-0",
       "matchWinPercentage": 0.3333333333333333,
-      "gameWinPercentage": 0.42857143
+      "gameWinPercentage": 0.42857143,
+      "deck": "Burn"
     },
     {
       "tournamentId": "338898",

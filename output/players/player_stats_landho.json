@@ -44,17 +44,17 @@
   "deckStats": [
     {
       "deckName": "Unknown",
-      "events": 3,
-      "matchWins": 8,
+      "events": 2,
+      "matchWins": 5,
       "matchLosses": 0,
       "matchDraws": 1,
-      "matchRecord": "8-0-1",
-      "matchWinPercentage": 0.9444444444444444,
-      "gameWins": 17,
-      "gameLosses": 7,
+      "matchRecord": "5-0-1",
+      "matchWinPercentage": 0.9166666666666666,
+      "gameWins": 12,
+      "gameLosses": 4,
       "gameDraws": 0,
-      "gameWinPercentage": 0.7083333333333334,
-      "trophies": 2
+      "gameWinPercentage": 0.75,
+      "trophies": 1
     },
     {
       "deckName": "Stompy",
@@ -82,6 +82,20 @@
       "gameLosses": 2,
       "gameDraws": 0,
       "gameWinPercentage": 0.75,
+      "trophies": 1
+    },
+    {
+      "deckName": "Devourer",
+      "events": 1,
+      "matchWins": 3,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchRecord": "3-0-0",
+      "matchWinPercentage": 1,
+      "gameWins": 5,
+      "gameLosses": 3,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.625,
       "trophies": 1
     }
   ],
@@ -418,6 +432,8 @@
           "tournamentId": "341527",
           "dateDisplay": "July 17, 2025",
           "result": "W",
+          "playerDeck": "Devourer",
+          "opponentDeck": "Burn",
           "playerGameWins": 2,
           "opponentGameWins": 1,
           "gameDraws": 0
@@ -441,6 +457,8 @@
           "tournamentId": "341527",
           "dateDisplay": "July 17, 2025",
           "result": "W",
+          "playerDeck": "Devourer",
+          "opponentDeck": "WB Life",
           "playerGameWins": 2,
           "opponentGameWins": 0,
           "gameDraws": 0
@@ -464,6 +482,8 @@
           "tournamentId": "341527",
           "dateDisplay": "July 17, 2025",
           "result": "W",
+          "playerDeck": "Devourer",
+          "opponentDeck": "Oath Ponza",
           "playerGameWins": 2,
           "opponentGameWins": 1,
           "gameDraws": 0
@@ -482,7 +502,8 @@
       "points": 9,
       "matchRecord": "3-0-0",
       "matchWinPercentage": 1,
-      "gameWinPercentage": 0.66666667
+      "gameWinPercentage": 0.66666667,
+      "deck": "Devourer"
     },
     {
       "tournamentId": "335531",

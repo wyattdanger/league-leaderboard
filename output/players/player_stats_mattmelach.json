@@ -53,16 +53,16 @@
   "deckStats": [
     {
       "deckName": "Unknown",
-      "events": 14,
-      "matchWins": 11,
-      "matchLosses": 28,
+      "events": 13,
+      "matchWins": 10,
+      "matchLosses": 26,
       "matchDraws": 3,
-      "matchRecord": "11-28-3",
-      "matchWinPercentage": 0.2976190476190476,
-      "gameWins": 43,
-      "gameLosses": 69,
+      "matchRecord": "10-26-3",
+      "matchWinPercentage": 0.2948717948717949,
+      "gameWins": 39,
+      "gameLosses": 65,
       "gameDraws": 0,
-      "gameWinPercentage": 0.38392857142857145,
+      "gameWinPercentage": 0.375,
       "trophies": 0
     },
     {
@@ -133,6 +133,20 @@
       "gameLosses": 5,
       "gameDraws": 0,
       "gameWinPercentage": 0.375,
+      "trophies": 0
+    },
+    {
+      "deckName": "Rack",
+      "events": 1,
+      "matchWins": 1,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 4,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5,
       "trophies": 0
     }
   ],
@@ -259,6 +273,8 @@
           "tournamentId": "369726",
           "dateDisplay": "October 2, 2025",
           "result": "W",
+          "playerDeck": "Rack",
+          "opponentDeck": "FEB",
           "playerGameWins": 2,
           "opponentGameWins": 0,
           "gameDraws": 0
@@ -422,6 +438,8 @@
           "tournamentId": "369726",
           "dateDisplay": "October 2, 2025",
           "result": "L",
+          "playerDeck": "Rack",
+          "opponentDeck": "Burn",
           "playerGameWins": 1,
           "opponentGameWins": 2,
           "gameDraws": 0
@@ -630,6 +648,8 @@
           "tournamentId": "369726",
           "dateDisplay": "October 2, 2025",
           "result": "L",
+          "playerDeck": "Rack",
+          "opponentDeck": "Tide",
           "playerGameWins": 1,
           "opponentGameWins": 2,
           "gameDraws": 0
@@ -1325,7 +1345,8 @@
       "points": 3,
       "matchRecord": "1-2-0",
       "matchWinPercentage": 0.3333333333333333,
-      "gameWinPercentage": 0.5
+      "gameWinPercentage": 0.5,
+      "deck": "Rack"
     },
     {
       "tournamentId": "367531",

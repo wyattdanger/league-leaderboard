@@ -62,31 +62,17 @@
   "deckStats": [
     {
       "deckName": "Oath Parfait",
-      "events": 7,
-      "matchWins": 17,
+      "events": 8,
+      "matchWins": 20,
       "matchLosses": 2,
       "matchDraws": 2,
-      "matchRecord": "17-2-2",
-      "matchWinPercentage": 0.8571428571428571,
-      "gameWins": 44,
-      "gameLosses": 12,
+      "matchRecord": "20-2-2",
+      "matchWinPercentage": 0.875,
+      "gameWins": 50,
+      "gameLosses": 14,
       "gameDraws": 0,
-      "gameWinPercentage": 0.7857142857142857,
-      "trophies": 4
-    },
-    {
-      "deckName": "Unknown",
-      "events": 4,
-      "matchWins": 9,
-      "matchLosses": 3,
-      "matchDraws": 0,
-      "matchRecord": "9-3-0",
-      "matchWinPercentage": 0.75,
-      "gameWins": 21,
-      "gameLosses": 11,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.65625,
-      "trophies": 1
+      "gameWinPercentage": 0.78125,
+      "trophies": 5
     },
     {
       "deckName": "Elves",
@@ -114,6 +100,34 @@
       "gameLosses": 7,
       "gameDraws": 0,
       "gameWinPercentage": 0.7083333333333334,
+      "trophies": 0
+    },
+    {
+      "deckName": "Tidestill",
+      "events": 2,
+      "matchWins": 4,
+      "matchLosses": 1,
+      "matchDraws": 1,
+      "matchRecord": "4-1-1",
+      "matchWinPercentage": 0.75,
+      "gameWins": 11,
+      "gameLosses": 5,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6875,
+      "trophies": 0
+    },
+    {
+      "deckName": "Unknown",
+      "events": 2,
+      "matchWins": 4,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchRecord": "4-2-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 10,
+      "gameLosses": 6,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.625,
       "trophies": 0
     },
     {
@@ -157,20 +171,6 @@
       "gameDraws": 0,
       "gameWinPercentage": 0.75,
       "trophies": 1
-    },
-    {
-      "deckName": "Tidestill",
-      "events": 1,
-      "matchWins": 2,
-      "matchLosses": 0,
-      "matchDraws": 1,
-      "matchRecord": "2-0-1",
-      "matchWinPercentage": 0.8333333333333334,
-      "gameWins": 6,
-      "gameLosses": 2,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.75,
-      "trophies": 0
     },
     {
       "deckName": "Tide",
@@ -369,6 +369,8 @@
           "tournamentId": "369726",
           "dateDisplay": "October 2, 2025",
           "result": "W",
+          "playerDeck": "Oath Parfait",
+          "opponentDeck": "Burn",
           "playerGameWins": 2,
           "opponentGameWins": 0,
           "gameDraws": 0
@@ -472,6 +474,8 @@
           "tournamentId": "341527",
           "dateDisplay": "July 17, 2025",
           "result": "W",
+          "playerDeck": "Tidestill",
+          "opponentDeck": "WB Life",
           "playerGameWins": 2,
           "opponentGameWins": 1,
           "gameDraws": 0
@@ -525,6 +529,8 @@
           "tournamentId": "369726",
           "dateDisplay": "October 2, 2025",
           "result": "W",
+          "playerDeck": "Oath Parfait",
+          "opponentDeck": "Dreadnought",
           "playerGameWins": 2,
           "opponentGameWins": 1,
           "gameDraws": 0
@@ -708,6 +714,8 @@
           "tournamentId": "341527",
           "dateDisplay": "July 17, 2025",
           "result": "L",
+          "playerDeck": "Tidestill",
+          "opponentDeck": "Oath Ponza",
           "playerGameWins": 1,
           "opponentGameWins": 2,
           "gameDraws": 0
@@ -761,6 +769,8 @@
           "tournamentId": "341527",
           "dateDisplay": "July 17, 2025",
           "result": "W",
+          "playerDeck": "Tidestill",
+          "opponentDeck": "Dreadnought",
           "playerGameWins": 2,
           "opponentGameWins": 0,
           "gameDraws": 0
@@ -984,6 +994,8 @@
           "tournamentId": "369726",
           "dateDisplay": "October 2, 2025",
           "result": "W",
+          "playerDeck": "Oath Parfait",
+          "opponentDeck": "Dreadnought",
           "playerGameWins": 2,
           "opponentGameWins": 1,
           "gameDraws": 0
@@ -1702,7 +1714,8 @@
       "points": 9,
       "matchRecord": "3-0-0",
       "matchWinPercentage": 1,
-      "gameWinPercentage": 0.75
+      "gameWinPercentage": 0.75,
+      "deck": "Oath Parfait"
     },
     {
       "tournamentId": "367531",
@@ -1805,7 +1818,8 @@
       "points": 6,
       "matchRecord": "2-1-0",
       "matchWinPercentage": 0.6666666666666666,
-      "gameWinPercentage": 0.625
+      "gameWinPercentage": 0.625,
+      "deck": "Tidestill"
     },
     {
       "tournamentId": "338898",

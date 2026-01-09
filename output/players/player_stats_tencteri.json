@@ -53,16 +53,16 @@
   "deckStats": [
     {
       "deckName": "Unknown",
-      "events": 10,
-      "matchWins": 13,
-      "matchLosses": 15,
+      "events": 9,
+      "matchWins": 12,
+      "matchLosses": 13,
       "matchDraws": 1,
-      "matchRecord": "13-15-1",
-      "matchWinPercentage": 0.46551724137931033,
-      "gameWins": 38,
-      "gameLosses": 39,
+      "matchRecord": "12-13-1",
+      "matchWinPercentage": 0.4807692307692308,
+      "gameWins": 36,
+      "gameLosses": 33,
       "gameDraws": 0,
-      "gameWinPercentage": 0.4935064935064935,
+      "gameWinPercentage": 0.5217391304347826,
       "trophies": 0
     },
     {
@@ -105,6 +105,20 @@
       "gameLosses": 5,
       "gameDraws": 0,
       "gameWinPercentage": 0.375,
+      "trophies": 0
+    },
+    {
+      "deckName": "Burn",
+      "events": 1,
+      "matchWins": 1,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 2,
+      "gameLosses": 6,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.25,
       "trophies": 0
     }
   ],
@@ -166,6 +180,8 @@
           "tournamentId": "341527",
           "dateDisplay": "July 17, 2025",
           "result": "L",
+          "playerDeck": "Burn",
+          "opponentDeck": "Oath Ponza",
           "playerGameWins": 0,
           "opponentGameWins": 2,
           "gameDraws": 0
@@ -219,6 +235,8 @@
           "tournamentId": "341527",
           "dateDisplay": "July 17, 2025",
           "result": "L",
+          "playerDeck": "Burn",
+          "opponentDeck": "Burn",
           "playerGameWins": 0,
           "opponentGameWins": 2,
           "gameDraws": 0
@@ -437,6 +455,8 @@
           "tournamentId": "341527",
           "dateDisplay": "July 17, 2025",
           "result": "W",
+          "playerDeck": "Burn",
+          "opponentDeck": "Dreadnought",
           "playerGameWins": 2,
           "opponentGameWins": 1,
           "gameDraws": 0
@@ -1252,7 +1272,8 @@
       "points": 3,
       "matchRecord": "1-2-0",
       "matchWinPercentage": 0.3333333333333333,
-      "gameWinPercentage": 0.28571429
+      "gameWinPercentage": 0.28571429,
+      "deck": "Burn"
     },
     {
       "tournamentId": "338898",

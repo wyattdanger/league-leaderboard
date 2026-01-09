@@ -44,16 +44,30 @@
   "deckStats": [
     {
       "deckName": "Unknown",
-      "events": 7,
+      "events": 6,
       "matchWins": 9,
-      "matchLosses": 10,
+      "matchLosses": 7,
       "matchDraws": 2,
-      "matchRecord": "9-10-2",
-      "matchWinPercentage": 0.47619047619047616,
-      "gameWins": 27,
-      "gameLosses": 29,
+      "matchRecord": "9-7-2",
+      "matchWinPercentage": 0.5555555555555556,
+      "gameWins": 26,
+      "gameLosses": 22,
       "gameDraws": 0,
-      "gameWinPercentage": 0.48214285714285715,
+      "gameWinPercentage": 0.5416666666666666,
+      "trophies": 0
+    },
+    {
+      "deckName": "Dreadnought",
+      "events": 2,
+      "matchWins": 1,
+      "matchLosses": 5,
+      "matchDraws": 0,
+      "matchRecord": "1-5-0",
+      "matchWinPercentage": 0.16666666666666666,
+      "gameWins": 4,
+      "gameLosses": 12,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.25,
       "trophies": 0
     },
     {
@@ -69,20 +83,6 @@
       "gameDraws": 0,
       "gameWinPercentage": 0.75,
       "trophies": 1
-    },
-    {
-      "deckName": "Dreadnought",
-      "events": 1,
-      "matchWins": 1,
-      "matchLosses": 2,
-      "matchDraws": 0,
-      "matchRecord": "1-2-0",
-      "matchWinPercentage": 0.3333333333333333,
-      "gameWins": 3,
-      "gameLosses": 5,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.375,
-      "trophies": 0
     }
   ],
   "headToHead": [
@@ -133,6 +133,8 @@
           "tournamentId": "341527",
           "dateDisplay": "July 17, 2025",
           "result": "L",
+          "playerDeck": "Dreadnought",
+          "opponentDeck": "Tidestill",
           "playerGameWins": 0,
           "opponentGameWins": 2,
           "gameDraws": 0
@@ -176,6 +178,8 @@
           "tournamentId": "341527",
           "dateDisplay": "July 17, 2025",
           "result": "L",
+          "playerDeck": "Dreadnought",
+          "opponentDeck": "Burn",
           "playerGameWins": 0,
           "opponentGameWins": 2,
           "gameDraws": 0
@@ -244,6 +248,8 @@
           "tournamentId": "341527",
           "dateDisplay": "July 17, 2025",
           "result": "L",
+          "playerDeck": "Dreadnought",
+          "opponentDeck": "Burn",
           "playerGameWins": 1,
           "opponentGameWins": 2,
           "gameDraws": 0
@@ -633,7 +639,8 @@
       "points": 0,
       "matchRecord": "0-3-0",
       "matchWinPercentage": 0,
-      "gameWinPercentage": 0.14285714
+      "gameWinPercentage": 0.14285714,
+      "deck": "Dreadnought"
     },
     {
       "tournamentId": "335531",

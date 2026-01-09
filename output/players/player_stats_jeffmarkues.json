@@ -44,16 +44,16 @@
   "deckStats": [
     {
       "deckName": "Unknown",
-      "events": 13,
-      "matchWins": 24,
-      "matchLosses": 14,
+      "events": 12,
+      "matchWins": 23,
+      "matchLosses": 12,
       "matchDraws": 1,
-      "matchRecord": "24-14-1",
-      "matchWinPercentage": 0.6282051282051282,
-      "gameWins": 64,
-      "gameLosses": 40,
+      "matchRecord": "23-12-1",
+      "matchWinPercentage": 0.6527777777777778,
+      "gameWins": 60,
+      "gameLosses": 36,
       "gameDraws": 0,
-      "gameWinPercentage": 0.6153846153846154,
+      "gameWinPercentage": 0.625,
       "trophies": 2
     },
     {
@@ -86,6 +86,20 @@
     },
     {
       "deckName": "Clerics",
+      "events": 1,
+      "matchWins": 1,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 4,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5,
+      "trophies": 0
+    },
+    {
+      "deckName": "WB Life",
       "events": 1,
       "matchWins": 1,
       "matchLosses": 2,
@@ -177,6 +191,8 @@
           "tournamentId": "341527",
           "dateDisplay": "July 17, 2025",
           "result": "L",
+          "playerDeck": "WB Life",
+          "opponentDeck": "Tidestill",
           "playerGameWins": 1,
           "opponentGameWins": 2,
           "gameDraws": 0
@@ -230,6 +246,8 @@
           "tournamentId": "341527",
           "dateDisplay": "July 17, 2025",
           "result": "W",
+          "playerDeck": "WB Life",
+          "opponentDeck": "Burn",
           "playerGameWins": 2,
           "opponentGameWins": 0,
           "gameDraws": 0
@@ -1003,6 +1021,8 @@
           "tournamentId": "341527",
           "dateDisplay": "July 17, 2025",
           "result": "L",
+          "playerDeck": "WB Life",
+          "opponentDeck": "Devourer",
           "playerGameWins": 0,
           "opponentGameWins": 2,
           "gameDraws": 0
@@ -1112,7 +1132,8 @@
       "points": 3,
       "matchRecord": "1-2-0",
       "matchWinPercentage": 0.3333333333333333,
-      "gameWinPercentage": 0.5
+      "gameWinPercentage": 0.5,
+      "deck": "WB Life"
     },
     {
       "tournamentId": "338898",

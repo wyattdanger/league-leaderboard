@@ -53,16 +53,16 @@
   "deckStats": [
     {
       "deckName": "Unknown",
-      "events": 7,
-      "matchWins": 12,
-      "matchLosses": 9,
+      "events": 6,
+      "matchWins": 10,
+      "matchLosses": 8,
       "matchDraws": 0,
-      "matchRecord": "12-9-0",
-      "matchWinPercentage": 0.5714285714285714,
-      "gameWins": 31,
-      "gameLosses": 25,
+      "matchRecord": "10-8-0",
+      "matchWinPercentage": 0.5555555555555556,
+      "gameWins": 26,
+      "gameLosses": 22,
       "gameDraws": 0,
-      "gameWinPercentage": 0.5535714285714286,
+      "gameWinPercentage": 0.5416666666666666,
       "trophies": 1
     },
     {
@@ -78,6 +78,20 @@
       "gameDraws": 0,
       "gameWinPercentage": 0.675,
       "trophies": 1
+    },
+    {
+      "deckName": "Oath Ponza",
+      "events": 2,
+      "matchWins": 4,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchRecord": "4-2-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 10,
+      "gameLosses": 6,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.625,
+      "trophies": 0
     },
     {
       "deckName": "Dreadnought",
@@ -120,20 +134,6 @@
       "gameDraws": 0,
       "gameWinPercentage": 1,
       "trophies": 1
-    },
-    {
-      "deckName": "Oath Ponza",
-      "events": 1,
-      "matchWins": 2,
-      "matchLosses": 1,
-      "matchDraws": 0,
-      "matchRecord": "2-1-0",
-      "matchWinPercentage": 0.6666666666666666,
-      "gameWins": 5,
-      "gameLosses": 3,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.625,
-      "trophies": 0
     },
     {
       "deckName": "Moneyball Black",
@@ -236,6 +236,8 @@
           "tournamentId": "341527",
           "dateDisplay": "July 17, 2025",
           "result": "W",
+          "playerDeck": "Oath Ponza",
+          "opponentDeck": "Burn",
           "playerGameWins": 2,
           "opponentGameWins": 0,
           "gameDraws": 0
@@ -409,6 +411,8 @@
           "tournamentId": "341527",
           "dateDisplay": "July 17, 2025",
           "result": "W",
+          "playerDeck": "Oath Ponza",
+          "opponentDeck": "Tidestill",
           "playerGameWins": 2,
           "opponentGameWins": 1,
           "gameDraws": 0
@@ -1282,6 +1286,8 @@
           "tournamentId": "341527",
           "dateDisplay": "July 17, 2025",
           "result": "L",
+          "playerDeck": "Oath Ponza",
+          "opponentDeck": "Devourer",
           "playerGameWins": 1,
           "opponentGameWins": 2,
           "gameDraws": 0
@@ -1482,7 +1488,8 @@
       "points": 6,
       "matchRecord": "2-1-0",
       "matchWinPercentage": 0.6666666666666666,
-      "gameWinPercentage": 0.625
+      "gameWinPercentage": 0.625,
+      "deck": "Oath Ponza"
     },
     {
       "tournamentId": "328861",
