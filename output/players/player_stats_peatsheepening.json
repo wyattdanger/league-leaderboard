@@ -54,6 +54,18 @@
       "gameWinPercentage": 0.6666666666666666,
       "lastFiveResults": [
         "W"
+      ],
+      "matches": [
+        {
+          "tournamentId": "395699",
+          "dateDisplay": "January 8, 2026",
+          "result": "W",
+          "playerDeck": "Gro-a-Tog",
+          "opponentDeck": "Dreadnought",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
       ]
     },
     {
@@ -70,6 +82,18 @@
       "gameWinPercentage": 0,
       "lastFiveResults": [
         "L"
+      ],
+      "matches": [
+        {
+          "tournamentId": "395699",
+          "dateDisplay": "January 8, 2026",
+          "result": "L",
+          "playerDeck": "Gro-a-Tog",
+          "opponentDeck": "Terrageddon",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
       ]
     },
     {
@@ -86,6 +110,18 @@
       "gameWinPercentage": 1,
       "lastFiveResults": [
         "W"
+      ],
+      "matches": [
+        {
+          "tournamentId": "395699",
+          "dateDisplay": "January 8, 2026",
+          "result": "W",
+          "playerDeck": "Gro-a-Tog",
+          "opponentDeck": "BW Control",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
       ]
     }
   ],

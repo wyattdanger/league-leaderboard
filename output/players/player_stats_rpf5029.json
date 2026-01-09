@@ -55,6 +55,28 @@
       "lastFiveResults": [
         "W",
         "L"
+      ],
+      "matches": [
+        {
+          "tournamentId": "321687",
+          "dateDisplay": "June 5, 2025",
+          "result": "W",
+          "playerDeck": "_",
+          "opponentDeck": "_",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "305152",
+          "dateDisplay": "May 8, 2025",
+          "result": "L",
+          "playerDeck": "_",
+          "opponentDeck": "_",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
       ]
     },
     {
@@ -71,6 +93,18 @@
       "gameWinPercentage": 0.3333333333333333,
       "lastFiveResults": [
         "L"
+      ],
+      "matches": [
+        {
+          "tournamentId": "321687",
+          "dateDisplay": "June 5, 2025",
+          "result": "L",
+          "playerDeck": "_",
+          "opponentDeck": "_",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
       ]
     },
     {
@@ -87,6 +121,18 @@
       "gameWinPercentage": 0.6666666666666666,
       "lastFiveResults": [
         "W"
+      ],
+      "matches": [
+        {
+          "tournamentId": "321687",
+          "dateDisplay": "June 5, 2025",
+          "result": "W",
+          "playerDeck": "_",
+          "opponentDeck": "_",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
       ]
     },
     {
@@ -103,6 +149,18 @@
       "gameWinPercentage": 0,
       "lastFiveResults": [
         "L"
+      ],
+      "matches": [
+        {
+          "tournamentId": "305152",
+          "dateDisplay": "May 8, 2025",
+          "result": "L",
+          "playerDeck": "_",
+          "opponentDeck": "_",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
       ]
     },
     {
@@ -119,6 +177,18 @@
       "gameWinPercentage": 1,
       "lastFiveResults": [
         "W"
+      ],
+      "matches": [
+        {
+          "tournamentId": "305152",
+          "dateDisplay": "May 8, 2025",
+          "result": "W",
+          "playerDeck": "_",
+          "opponentDeck": "_",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
       ]
     }
   ],

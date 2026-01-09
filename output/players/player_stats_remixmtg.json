@@ -97,6 +97,28 @@
       "lastFiveResults": [
         "W",
         "W"
+      ],
+      "matches": [
+        {
+          "tournamentId": "395699",
+          "dateDisplay": "January 8, 2026",
+          "result": "W",
+          "playerDeck": "Elves",
+          "opponentDeck": "Replenish",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "391734",
+          "dateDisplay": "December 18, 2025",
+          "result": "W",
+          "playerDeck": "Oath Spec",
+          "opponentDeck": "Burn",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
       ]
     },
     {
@@ -113,6 +135,18 @@
       "gameWinPercentage": 0,
       "lastFiveResults": [
         "L"
+      ],
+      "matches": [
+        {
+          "tournamentId": "395699",
+          "dateDisplay": "January 8, 2026",
+          "result": "L",
+          "playerDeck": "Elves",
+          "opponentDeck": "Oath Ponza",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
       ]
     },
     {
@@ -129,6 +163,18 @@
       "gameWinPercentage": 0,
       "lastFiveResults": [
         "L"
+      ],
+      "matches": [
+        {
+          "tournamentId": "395699",
+          "dateDisplay": "January 8, 2026",
+          "result": "L",
+          "playerDeck": "Elves",
+          "opponentDeck": "Burn",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
       ]
     },
     {
@@ -145,6 +191,18 @@
       "gameWinPercentage": 1,
       "lastFiveResults": [
         "W"
+      ],
+      "matches": [
+        {
+          "tournamentId": "393796",
+          "dateDisplay": "January 1, 2026",
+          "result": "W",
+          "playerDeck": "Terrageddon",
+          "opponentDeck": "Gush Tithe",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
       ]
     },
     {
@@ -161,6 +219,18 @@
       "gameWinPercentage": 0.3333333333333333,
       "lastFiveResults": [
         "L"
+      ],
+      "matches": [
+        {
+          "tournamentId": "393796",
+          "dateDisplay": "January 1, 2026",
+          "result": "L",
+          "playerDeck": "Terrageddon",
+          "opponentDeck": "The Rock",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
       ]
     },
     {
@@ -177,6 +247,18 @@
       "gameWinPercentage": 1,
       "lastFiveResults": [
         "W"
+      ],
+      "matches": [
+        {
+          "tournamentId": "393796",
+          "dateDisplay": "January 1, 2026",
+          "result": "W",
+          "playerDeck": "Terrageddon",
+          "opponentDeck": "Gro",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
       ]
     },
     {
@@ -193,6 +275,18 @@
       "gameWinPercentage": 1,
       "lastFiveResults": [
         "W"
+      ],
+      "matches": [
+        {
+          "tournamentId": "391734",
+          "dateDisplay": "December 18, 2025",
+          "result": "W",
+          "playerDeck": "Oath Spec",
+          "opponentDeck": "Psychatog",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
       ]
     },
     {
@@ -209,6 +303,18 @@
       "gameWinPercentage": 0,
       "lastFiveResults": [
         "D"
+      ],
+      "matches": [
+        {
+          "tournamentId": "391734",
+          "dateDisplay": "December 18, 2025",
+          "result": "D",
+          "playerDeck": "Oath Spec",
+          "opponentDeck": "Tron",
+          "playerGameWins": 0,
+          "opponentGameWins": 0,
+          "gameDraws": 3
+        }
       ]
     },
     {
@@ -225,6 +331,18 @@
       "gameWinPercentage": 1,
       "lastFiveResults": [
         "W"
+      ],
+      "matches": [
+        {
+          "tournamentId": "384681",
+          "dateDisplay": "November 20, 2025",
+          "result": "W",
+          "playerDeck": "_",
+          "opponentDeck": "Devourer",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
       ]
     },
     {
@@ -241,6 +359,18 @@
       "gameWinPercentage": 0.3333333333333333,
       "lastFiveResults": [
         "L"
+      ],
+      "matches": [
+        {
+          "tournamentId": "384681",
+          "dateDisplay": "November 20, 2025",
+          "result": "L",
+          "playerDeck": "_",
+          "opponentDeck": "Burn",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
       ]
     },
     {
@@ -257,6 +387,18 @@
       "gameWinPercentage": 0,
       "lastFiveResults": [
         "L"
+      ],
+      "matches": [
+        {
+          "tournamentId": "384681",
+          "dateDisplay": "November 20, 2025",
+          "result": "L",
+          "playerDeck": "_",
+          "opponentDeck": "UG Madness",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
       ]
     }
   ],

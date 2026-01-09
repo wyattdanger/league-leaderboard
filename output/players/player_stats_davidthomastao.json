@@ -54,6 +54,18 @@
       "gameWinPercentage": 1,
       "lastFiveResults": [
         "W"
+      ],
+      "matches": [
+        {
+          "tournamentId": "393796",
+          "dateDisplay": "January 1, 2026",
+          "result": "W",
+          "playerDeck": "Elves",
+          "opponentDeck": "Tron",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
       ]
     },
     {
@@ -70,6 +82,18 @@
       "gameWinPercentage": 0,
       "lastFiveResults": [
         "L"
+      ],
+      "matches": [
+        {
+          "tournamentId": "393796",
+          "dateDisplay": "January 1, 2026",
+          "result": "L",
+          "playerDeck": "Elves",
+          "opponentDeck": "Dreadnought",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
       ]
     },
     {
@@ -86,6 +110,18 @@
       "gameWinPercentage": 0.6666666666666666,
       "lastFiveResults": [
         "W"
+      ],
+      "matches": [
+        {
+          "tournamentId": "393796",
+          "dateDisplay": "January 1, 2026",
+          "result": "W",
+          "playerDeck": "Elves",
+          "opponentDeck": "White Weenie",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
       ]
     }
   ],

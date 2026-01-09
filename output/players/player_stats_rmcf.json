@@ -74,6 +74,36 @@
         "W",
         "W",
         "L"
+      ],
+      "matches": [
+        {
+          "tournamentId": "347610",
+          "dateDisplay": "July 31, 2025",
+          "result": "W",
+          "playerDeck": "_",
+          "opponentDeck": "_",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "308700",
+          "dateDisplay": "May 15, 2025",
+          "result": "W",
+          "playerDeck": "_",
+          "opponentDeck": "Oath Ponza",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "341527",
+          "dateDisplay": "July 17, 2025",
+          "result": "L",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
       ]
     },
     {
@@ -92,6 +122,36 @@
         "L",
         "W",
         "L"
+      ],
+      "matches": [
+        {
+          "tournamentId": "325333",
+          "dateDisplay": "June 12, 2025",
+          "result": "L",
+          "playerDeck": "_",
+          "opponentDeck": "_",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "321687",
+          "dateDisplay": "June 5, 2025",
+          "result": "W",
+          "playerDeck": "_",
+          "opponentDeck": "_",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "341527",
+          "dateDisplay": "July 17, 2025",
+          "result": "L",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
       ]
     },
     {
@@ -109,6 +169,28 @@
       "lastFiveResults": [
         "L",
         "L"
+      ],
+      "matches": [
+        {
+          "tournamentId": "347610",
+          "dateDisplay": "July 31, 2025",
+          "result": "L",
+          "playerDeck": "_",
+          "opponentDeck": "_",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "335531",
+          "dateDisplay": "July 3, 2025",
+          "result": "L",
+          "playerDeck": "_",
+          "opponentDeck": "_",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
       ]
     },
     {
@@ -126,6 +208,26 @@
       "lastFiveResults": [
         "W",
         "L"
+      ],
+      "matches": [
+        {
+          "tournamentId": "335531",
+          "dateDisplay": "July 3, 2025",
+          "result": "W",
+          "playerDeck": "_",
+          "opponentDeck": "_",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "341527",
+          "dateDisplay": "July 17, 2025",
+          "result": "L",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
       ]
     },
     {
@@ -143,6 +245,28 @@
       "lastFiveResults": [
         "W",
         "L"
+      ],
+      "matches": [
+        {
+          "tournamentId": "321687",
+          "dateDisplay": "June 5, 2025",
+          "result": "W",
+          "playerDeck": "_",
+          "opponentDeck": "_",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "308700",
+          "dateDisplay": "May 15, 2025",
+          "result": "L",
+          "playerDeck": "_",
+          "opponentDeck": "Terrageddon",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
       ]
     },
     {
@@ -159,6 +283,18 @@
       "gameWinPercentage": 1,
       "lastFiveResults": [
         "W"
+      ],
+      "matches": [
+        {
+          "tournamentId": "365765",
+          "dateDisplay": "September 18, 2025",
+          "result": "W",
+          "playerDeck": "_",
+          "opponentDeck": "_",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
       ]
     },
     {
@@ -175,6 +311,18 @@
       "gameWinPercentage": 1,
       "lastFiveResults": [
         "W"
+      ],
+      "matches": [
+        {
+          "tournamentId": "365765",
+          "dateDisplay": "September 18, 2025",
+          "result": "W",
+          "playerDeck": "_",
+          "opponentDeck": "Devourer",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
       ]
     },
     {
@@ -191,6 +339,18 @@
       "gameWinPercentage": 0.3333333333333333,
       "lastFiveResults": [
         "L"
+      ],
+      "matches": [
+        {
+          "tournamentId": "365765",
+          "dateDisplay": "September 18, 2025",
+          "result": "L",
+          "playerDeck": "_",
+          "opponentDeck": "Burn",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
       ]
     },
     {
@@ -207,6 +367,18 @@
       "gameWinPercentage": 0.6666666666666666,
       "lastFiveResults": [
         "W"
+      ],
+      "matches": [
+        {
+          "tournamentId": "347610",
+          "dateDisplay": "July 31, 2025",
+          "result": "W",
+          "playerDeck": "_",
+          "opponentDeck": "The Rock",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
       ]
     },
     {
@@ -223,6 +395,18 @@
       "gameWinPercentage": 0.3333333333333333,
       "lastFiveResults": [
         "D"
+      ],
+      "matches": [
+        {
+          "tournamentId": "335531",
+          "dateDisplay": "July 3, 2025",
+          "result": "D",
+          "playerDeck": "_",
+          "opponentDeck": "_",
+          "playerGameWins": 1,
+          "opponentGameWins": 1,
+          "gameDraws": 1
+        }
       ]
     },
     {
@@ -239,6 +423,18 @@
       "gameWinPercentage": 0.3333333333333333,
       "lastFiveResults": [
         "L"
+      ],
+      "matches": [
+        {
+          "tournamentId": "325333",
+          "dateDisplay": "June 12, 2025",
+          "result": "L",
+          "playerDeck": "_",
+          "opponentDeck": "_",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
       ]
     },
     {
@@ -255,6 +451,18 @@
       "gameWinPercentage": 0.6666666666666666,
       "lastFiveResults": [
         "W"
+      ],
+      "matches": [
+        {
+          "tournamentId": "321687",
+          "dateDisplay": "June 5, 2025",
+          "result": "W",
+          "playerDeck": "_",
+          "opponentDeck": "_",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
       ]
     },
     {
@@ -271,6 +479,18 @@
       "gameWinPercentage": 0.6666666666666666,
       "lastFiveResults": [
         "W"
+      ],
+      "matches": [
+        {
+          "tournamentId": "312921",
+          "dateDisplay": "May 22, 2025",
+          "result": "W",
+          "playerDeck": "_",
+          "opponentDeck": "_",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
       ]
     },
     {
@@ -287,6 +507,18 @@
       "gameWinPercentage": 0.5,
       "lastFiveResults": [
         "D"
+      ],
+      "matches": [
+        {
+          "tournamentId": "312921",
+          "dateDisplay": "May 22, 2025",
+          "result": "D",
+          "playerDeck": "_",
+          "opponentDeck": "_",
+          "playerGameWins": 1,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
       ]
     },
     {
@@ -303,6 +535,18 @@
       "gameWinPercentage": 1,
       "lastFiveResults": [
         "W"
+      ],
+      "matches": [
+        {
+          "tournamentId": "312921",
+          "dateDisplay": "May 22, 2025",
+          "result": "W",
+          "playerDeck": "_",
+          "opponentDeck": "_",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
       ]
     },
     {
@@ -319,6 +563,18 @@
       "gameWinPercentage": 0.3333333333333333,
       "lastFiveResults": [
         "L"
+      ],
+      "matches": [
+        {
+          "tournamentId": "308700",
+          "dateDisplay": "May 15, 2025",
+          "result": "L",
+          "playerDeck": "_",
+          "opponentDeck": "Oath Devourer",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
       ]
     }
   ],

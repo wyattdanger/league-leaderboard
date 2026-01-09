@@ -54,6 +54,18 @@
       "gameWinPercentage": 1,
       "lastFiveResults": [
         "W"
+      ],
+      "matches": [
+        {
+          "tournamentId": "312921",
+          "dateDisplay": "May 22, 2025",
+          "result": "W",
+          "playerDeck": "Lan D Hoath",
+          "opponentDeck": "_",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
       ]
     },
     {
@@ -70,6 +82,18 @@
       "gameWinPercentage": 0,
       "lastFiveResults": [
         "L"
+      ],
+      "matches": [
+        {
+          "tournamentId": "312921",
+          "dateDisplay": "May 22, 2025",
+          "result": "L",
+          "playerDeck": "Lan D Hoath",
+          "opponentDeck": "UW Tide Control",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
       ]
     },
     {
@@ -86,6 +110,18 @@
       "gameWinPercentage": 0.6666666666666666,
       "lastFiveResults": [
         "W"
+      ],
+      "matches": [
+        {
+          "tournamentId": "312921",
+          "dateDisplay": "May 22, 2025",
+          "result": "W",
+          "playerDeck": "Lan D Hoath",
+          "opponentDeck": "_",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
       ]
     }
   ],
