@@ -52,6 +52,19 @@ export function hasCompleteDeckData(deckData: DeckData | null): boolean {
   return allDecksKnown;
 }
 
+export function hasSomeDeckData(deckData: DeckData | null): boolean {
+  if (!deckData) {
+    return false;
+  }
+
+  // Check if at least one player has a known deck (not _ or null or empty)
+  const someDecksKnown = Object.values(deckData).some(
+    (deck) => deck && deck !== '_' && deck !== 'null'
+  );
+
+  return someDecksKnown;
+}
+
 export function calculateMetagameBreakdown(deckData: DeckData): MetagameBreakdown[] {
   const archetypeCounts = new Map<string, number>();
 
@@ -62,14 +75,20 @@ export function calculateMetagameBreakdown(deckData: DeckData): MetagameBreakdow
     }
   });
 
-  const totalDecks = Object.keys(deckData).length;
+  // Calculate total based only on known decks
+  const totalKnownDecks = Array.from(archetypeCounts.values()).reduce((sum, count) => sum + count, 0);
 
-  // Convert to array and calculate percentages
+  // If no known decks, return empty array
+  if (totalKnownDecks === 0) {
+    return [];
+  }
+
+  // Convert to array and calculate percentages based on known decks only
   const breakdown: MetagameBreakdown[] = Array.from(archetypeCounts.entries())
     .map(([archetype, count]) => ({
       archetype,
       count,
-      percentage: (count / totalDecks) * 100,
+      percentage: (count / totalKnownDecks) * 100,
     }))
     .sort((a, b) => b.count - a.count); // Sort by count descending
 

@@ -8,7 +8,7 @@ import { getTournamentMetadata } from '../../utils/tournamentData';
 import {
   loadDeckData,
   calculateMetagameBreakdown,
-  hasCompleteDeckData,
+  hasSomeDeckData,
 } from '../../utils/deckData';
 import { loadLeaguesConfig } from '../../utils/data';
 import { Tournament } from '../../models/Tournament';
@@ -50,10 +50,17 @@ const currentLeague =
 // Check if this tournament is a Top 8 for any league
 const top8League = allLeagues.find((league) => league.top8Tournament === tournamentId);
 
-// Load deck data if available and complete
+// Load deck data if available (show partial data)
 const deckData = loadDeckData(tournamentId);
-const showDeckData = hasCompleteDeckData(deckData);
-const metagameBreakdown = showDeckData && deckData ? calculateMetagameBreakdown(deckData) : null;
+const showDeckData = hasSomeDeckData(deckData);
+
+// Only show metagame breakdown if we have at least 16 players and at most 1 unknown deck
+const playerCount = deckData ? Object.keys(deckData).length : 0;
+const unknownDeckCount = deckData
+  ? Object.values(deckData).filter((deck) => !deck || deck === '_' || deck === 'null').length
+  : 0;
+const showMetagameBreakdown = showDeckData && playerCount >= 16 && unknownDeckCount <= 1;
+const metagameBreakdown = showMetagameBreakdown && deckData ? calculateMetagameBreakdown(deckData) : null;
 
 // Get celebration data from tournament
 const celebrationWinners = tournament.celebrationWinners;
