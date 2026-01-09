@@ -1,0 +1,33 @@
+---
+interface Props {
+  icon: string;
+  title: string;
+}
+
+const { icon, title } = Astro.props;
+---
+
+<div class="section-header">
+  <span class="emoji-badge">{icon}</span> {title}
+</div>
+
+<style>
+  .section-header {
+    padding: 1rem 1.5rem;
+    background: var(--gradient-primary);
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+  }
+
+  .emoji-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 0.4rem;
+    border-radius: 8px;
+    margin-right: 0.5rem;
+    backdrop-filter: blur(10px);
+  }
+</style>

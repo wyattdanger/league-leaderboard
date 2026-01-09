@@ -1,6 +1,7 @@
 ---
 import type { PlayerTournamentPerformance } from '../types';
 import Tooltip from './Tooltip.astro';
+import SectionHeader from './SectionHeader.astro';
 
 interface Props {
   performances: PlayerTournamentPerformance[];
@@ -20,9 +21,7 @@ const hasDeckData = performances.some((perf) => perf.deck);
   performances.length > 0 && (
     <div class="player-event-list-section">
       <div class="card player-event-list">
-        <div class="event-list-header">
-          <div>Tournament History</div>
-        </div>
+        <SectionHeader icon="📅" title="Tournament History" />
         <div class="event-table-container">
           <table class="event-table">
             <thead>
@@ -170,14 +169,6 @@ const hasDeckData = performances.some((perf) => perf.deck);
     border-radius: 12px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-  }
-
-  .event-list-header {
-    background: var(--gradient-primary);
-    color: white;
-    padding: 1rem 1.5rem;
-    font-weight: 600;
-    font-size: 0.9rem;
   }
 
   .event-table-container {

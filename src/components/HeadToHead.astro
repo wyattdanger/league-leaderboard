@@ -2,6 +2,7 @@
 import type { HeadToHeadRecord } from '../types';
 import { usernameToSlug } from '../utils/helpers';
 import MatchHistoryModal from './MatchHistoryModal.astro';
+import SectionHeader from './SectionHeader.astro';
 
 interface Props {
   records: HeadToHeadRecord[];
@@ -15,7 +16,7 @@ const { records, playerUsername } = Astro.props;
   {
     records.length > 0 ? (
       <div class="h2h-table-wrapper">
-        <div class="h2h-title">Head-to-Head Records</div>
+        <SectionHeader icon="⚔️" title="Head-to-Head Records" />
         <div class="h2h-table-container">
           <table class="h2h-table">
             <thead>
@@ -154,14 +155,6 @@ const { records, playerUsername } = Astro.props;
     border-radius: 12px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-  }
-
-  .h2h-title {
-    padding: 1rem 1.5rem;
-    background: var(--gradient-primary);
-    color: white;
-    font-weight: 600;
-    font-size: 1rem;
   }
 
   .h2h-table-container {

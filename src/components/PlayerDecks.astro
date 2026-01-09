@@ -1,5 +1,6 @@
 ---
 import type { PlayerDeckStats } from '../types';
+import SectionHeader from './SectionHeader.astro';
 
 interface Props {
   deckStats: PlayerDeckStats[];
@@ -17,9 +18,7 @@ const displayDeckName = (name: string) => {
   deckStats.length > 0 && (
     <div class="decks-section">
       <div class="card decks-card">
-        <div class="decks-header">
-          <div>Decks Played</div>
-        </div>
+        <SectionHeader icon="🧰" title="Decks Played" />
         <div class="decks-table-container">
           <table class="decks-table">
             <thead>
@@ -91,14 +90,6 @@ const displayDeckName = (name: string) => {
     border-radius: 12px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-  }
-
-  .decks-header {
-    background: var(--gradient-primary);
-    color: white;
-    padding: 1rem 1.5rem;
-    font-weight: 600;
-    font-size: 0.9rem;
   }
 
   .decks-table-container {

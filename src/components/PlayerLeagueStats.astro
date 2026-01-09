@@ -1,5 +1,6 @@
 ---
 import type { PlayerLeagueStats } from '../types';
+import SectionHeader from './SectionHeader.astro';
 
 interface Props {
   leagueStats: PlayerLeagueStats[];
@@ -12,7 +13,7 @@ const regularLeagueStats = leagueStats.filter((stats) => !stats.leagueName.endsW
 ---
 
 <div class="league-stats-container">
-  <div class="league-stats-header">League Performance</div>
+  <SectionHeader icon="📈" title="League Performance" />
 
   <div class="league-stats-grid">
     {
@@ -70,14 +71,6 @@ const regularLeagueStats = leagueStats.filter((stats) => !stats.leagueName.endsW
     border-radius: 12px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-  }
-
-  .league-stats-header {
-    padding: 1rem 1.5rem;
-    background: var(--gradient-primary);
-    color: white;
-    font-weight: 600;
-    font-size: 1rem;
   }
 
   .league-stats-grid {
