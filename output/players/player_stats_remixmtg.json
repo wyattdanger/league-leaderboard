@@ -2,28 +2,77 @@
   "username": "remixmtg",
   "displayName": "Jeremy Siegel",
   "overallStats": {
-    "totalTournaments": 3,
-    "totalPoints": 16,
-    "totalMatches": 9,
-    "matchRecord": "5-3-1",
-    "matchWinPercentage": 0.6111111111111112,
-    "gameRecord": "12-7-3",
-    "gameWinPercentage": 0.5454545454545454,
+    "totalTournaments": 4,
+    "totalPoints": 19,
+    "totalMatches": 12,
+    "matchRecord": "6-5-1",
+    "matchWinPercentage": 0.5416666666666666,
+    "gameRecord": "14-12-3",
+    "gameWinPercentage": 0.4827586206896552,
     "trophies": 0,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q4 2025",
-      "events": 3,
-      "points": 16,
-      "matchRecord": "5-3-1",
-      "matchWinPercentage": 0.6111111111111112,
-      "gameRecord": "12-7-3",
-      "gameWinPercentage": 0.6136363636363636
+      "events": 4,
+      "points": 19,
+      "matchRecord": "6-5-1",
+      "matchWinPercentage": 0.5416666666666666,
+      "gameRecord": "14-12-3",
+      "gameWinPercentage": 0.5344827586206896
     }
   ],
   "headToHead": [
+    {
+      "opponentUsername": "JohnnyDalz",
+      "opponentDisplayName": "JohnnyDalz",
+      "matchesPlayed": 2,
+      "matchWins": 2,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 4,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6666666666666666,
+      "lastFiveResults": [
+        "W",
+        "W"
+      ]
+    },
+    {
+      "opponentUsername": "FriendlyFerret",
+      "opponentDisplayName": "Bill Ellis!!",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "lastFiveResults": [
+        "L"
+      ]
+    },
+    {
+      "opponentUsername": "RichBucey",
+      "opponentDisplayName": "RichBucey",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "lastFiveResults": [
+        "L"
+      ]
+    },
     {
       "opponentUsername": "AndrewLevine",
       "opponentDisplayName": "AndrewLevine",
@@ -68,22 +117,6 @@
       "gameLosses": 0,
       "gameDraws": 0,
       "gameWinPercentage": 1,
-      "lastFiveResults": [
-        "W"
-      ]
-    },
-    {
-      "opponentUsername": "JohnnyDalz",
-      "opponentDisplayName": "JohnnyDalz",
-      "matchesPlayed": 1,
-      "matchWins": 1,
-      "matchLosses": 0,
-      "matchDraws": 0,
-      "matchWinPercentage": 1,
-      "gameWins": 2,
-      "gameLosses": 1,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.6666666666666666,
       "lastFiveResults": [
         "W"
       ]
@@ -170,6 +203,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "395699",
+      "dateDisplay": "January 8, 2026",
+      "playerCount": 24,
+      "trophyCount": 3,
+      "roundCount": 3,
+      "rank": 14,
+      "points": 3,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWinPercentage": 0.3333333,
+      "deck": "Elves"
+    },
     {
       "tournamentId": "393796",
       "dateDisplay": "January 1, 2026",

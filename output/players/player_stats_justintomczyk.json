@@ -2,25 +2,25 @@
   "username": "justintomczyk",
   "displayName": "justintomczyk",
   "overallStats": {
-    "totalTournaments": 4,
-    "totalPoints": 18,
-    "totalMatches": 12,
-    "matchRecord": "6-6-0",
+    "totalTournaments": 5,
+    "totalPoints": 22,
+    "totalMatches": 15,
+    "matchRecord": "7-7-1",
     "matchWinPercentage": 0.5,
-    "gameRecord": "13-12-0",
-    "gameWinPercentage": 0.52,
+    "gameRecord": "16-15-0",
+    "gameWinPercentage": 0.5161290322580645,
     "trophies": 0,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q4 2025",
-      "events": 1,
-      "points": 3,
-      "matchRecord": "1-2-0",
-      "matchWinPercentage": 0.3333333333333333,
-      "gameRecord": "2-4-0",
-      "gameWinPercentage": 0.3333333333333333
+      "events": 2,
+      "points": 7,
+      "matchRecord": "2-3-1",
+      "matchWinPercentage": 0.4166666666666667,
+      "gameRecord": "5-7-0",
+      "gameWinPercentage": 0.4166666666666667
     },
     {
       "leagueName": "Q3 2025",
@@ -42,6 +42,23 @@
     }
   ],
   "headToHead": [
+    {
+      "opponentUsername": "madmanpoet",
+      "opponentDisplayName": "Michael Flores",
+      "matchesPlayed": 2,
+      "matchWins": 1,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.5,
+      "gameWins": 2,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5,
+      "lastFiveResults": [
+        "W",
+        "L"
+      ]
+    },
     {
       "opponentUsername": "ForceofPhil",
       "opponentDisplayName": "ForceofPhil",
@@ -77,6 +94,38 @@
       ]
     },
     {
+      "opponentUsername": "Matt_W",
+      "opponentDisplayName": "Matt_W",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 0,
+      "matchDraws": 1,
+      "matchWinPercentage": 0.5,
+      "gameWins": 1,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5,
+      "lastFiveResults": [
+        "D"
+      ]
+    },
+    {
+      "opponentUsername": "peatsheepening",
+      "opponentDisplayName": "peatsheepening",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "lastFiveResults": [
+        "L"
+      ]
+    },
+    {
       "opponentUsername": "LuisNeiman",
       "opponentDisplayName": "LuisNeiman",
       "matchesPlayed": 1,
@@ -95,22 +144,6 @@
     {
       "opponentUsername": "sjpenzer",
       "opponentDisplayName": "sjpenzer",
-      "matchesPlayed": 1,
-      "matchWins": 0,
-      "matchLosses": 1,
-      "matchDraws": 0,
-      "matchWinPercentage": 0,
-      "gameWins": 0,
-      "gameLosses": 2,
-      "gameDraws": 0,
-      "gameWinPercentage": 0,
-      "lastFiveResults": [
-        "L"
-      ]
-    },
-    {
-      "opponentUsername": "madmanpoet",
-      "opponentDisplayName": "Michael Flores",
       "matchesPlayed": 1,
       "matchWins": 0,
       "matchLosses": 1,
@@ -174,6 +207,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "395699",
+      "dateDisplay": "January 8, 2026",
+      "playerCount": 24,
+      "trophyCount": 3,
+      "roundCount": 3,
+      "rank": 13,
+      "points": 4,
+      "matchRecord": "1-1-1",
+      "matchWinPercentage": 0.5,
+      "gameWinPercentage": 0.5,
+      "deck": "BW Control"
+    },
     {
       "tournamentId": "373539",
       "dateDisplay": "October 16, 2025",

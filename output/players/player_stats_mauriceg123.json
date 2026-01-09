@@ -1,0 +1,91 @@
+{
+  "username": "mauriceg123",
+  "displayName": "mauriceg123",
+  "overallStats": {
+    "totalTournaments": 1,
+    "totalPoints": 0,
+    "totalMatches": 3,
+    "matchRecord": "0-3-0",
+    "matchWinPercentage": 0,
+    "gameRecord": "0-5-0",
+    "gameWinPercentage": 0,
+    "trophies": 0,
+    "belts": 0
+  },
+  "leagueStats": [
+    {
+      "leagueName": "Q4 2025",
+      "events": 1,
+      "points": 0,
+      "matchRecord": "0-3-0",
+      "matchWinPercentage": 0,
+      "gameRecord": "0-5-0",
+      "gameWinPercentage": 0
+    }
+  ],
+  "headToHead": [
+    {
+      "opponentUsername": "alexdeutch",
+      "opponentDisplayName": "alexdeutch",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "lastFiveResults": [
+        "L"
+      ]
+    },
+    {
+      "opponentUsername": "aprofaci",
+      "opponentDisplayName": "Alex Profaci",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "lastFiveResults": [
+        "L"
+      ]
+    },
+    {
+      "opponentUsername": "JohnnyDalz",
+      "opponentDisplayName": "JohnnyDalz",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "lastFiveResults": [
+        "L"
+      ]
+    }
+  ],
+  "tournamentPerformances": [
+    {
+      "tournamentId": "395699",
+      "dateDisplay": "January 8, 2026",
+      "playerCount": 24,
+      "trophyCount": 3,
+      "roundCount": 3,
+      "rank": 24,
+      "points": 0,
+      "matchRecord": "0-3-0",
+      "matchWinPercentage": 0,
+      "gameWinPercentage": 0.3333333,
+      "deck": "Stasis"
+    }
+  ]
+}

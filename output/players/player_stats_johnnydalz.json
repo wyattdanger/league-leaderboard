@@ -2,31 +2,48 @@
   "username": "JohnnyDalz",
   "displayName": "JohnnyDalz",
   "overallStats": {
-    "totalTournaments": 2,
-    "totalPoints": 6,
-    "totalMatches": 6,
-    "matchRecord": "2-4-0",
+    "totalTournaments": 3,
+    "totalPoints": 9,
+    "totalMatches": 9,
+    "matchRecord": "3-6-0",
     "matchWinPercentage": 0.3333333333333333,
-    "gameRecord": "6-9-1",
-    "gameWinPercentage": 0.375,
+    "gameRecord": "10-13-1",
+    "gameWinPercentage": 0.4166666666666667,
     "trophies": 0,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q4 2025",
-      "events": 2,
-      "points": 6,
-      "matchRecord": "2-4-0",
+      "events": 3,
+      "points": 9,
+      "matchRecord": "3-6-0",
       "matchWinPercentage": 0.3333333333333333,
-      "gameRecord": "6-9-1",
-      "gameWinPercentage": 0.40625
+      "gameRecord": "10-13-1",
+      "gameWinPercentage": 0.4375
     }
   ],
   "headToHead": [
     {
       "opponentUsername": "remixmtg",
       "opponentDisplayName": "Jeremy Siegel",
+      "matchesPlayed": 2,
+      "matchWins": 0,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 2,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "lastFiveResults": [
+        "L",
+        "L"
+      ]
+    },
+    {
+      "opponentUsername": "RichBucey",
+      "opponentDisplayName": "RichBucey",
       "matchesPlayed": 1,
       "matchWins": 0,
       "matchLosses": 1,
@@ -38,6 +55,22 @@
       "gameWinPercentage": 0.3333333333333333,
       "lastFiveResults": [
         "L"
+      ]
+    },
+    {
+      "opponentUsername": "mauriceg123",
+      "opponentDisplayName": "mauriceg123",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "lastFiveResults": [
+        "W"
       ]
     },
     {
@@ -122,6 +155,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "395699",
+      "dateDisplay": "January 8, 2026",
+      "playerCount": 24,
+      "trophyCount": 3,
+      "roundCount": 3,
+      "rank": 19,
+      "points": 3,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWinPercentage": 0.5,
+      "deck": "Unknown"
+    },
     {
       "tournamentId": "391734",
       "dateDisplay": "December 18, 2025",

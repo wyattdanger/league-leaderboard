@@ -2,25 +2,25 @@
   "username": "JUDDERMANG",
   "displayName": "Chris Cruz",
   "overallStats": {
-    "totalTournaments": 28,
-    "totalPoints": 93,
-    "totalMatches": 81,
-    "matchRecord": "27-51-3",
-    "matchWinPercentage": 0.35185185185185186,
-    "gameRecord": "76-114-1",
-    "gameWinPercentage": 0.39790575916230364,
+    "totalTournaments": 29,
+    "totalPoints": 99,
+    "totalMatches": 84,
+    "matchRecord": "29-52-3",
+    "matchWinPercentage": 0.3630952380952381,
+    "gameRecord": "80-117-1",
+    "gameWinPercentage": 0.40404040404040403,
     "trophies": 1,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q4 2025",
-      "events": 7,
-      "points": 30,
-      "matchRecord": "7-14-0",
-      "matchWinPercentage": 0.3333333333333333,
-      "gameRecord": "16-32-0",
-      "gameWinPercentage": 0.3333333333333333
+      "events": 8,
+      "points": 36,
+      "matchRecord": "9-15-0",
+      "matchWinPercentage": 0.375,
+      "gameRecord": "20-35-0",
+      "gameWinPercentage": 0.36363636363636365
     },
     {
       "leagueName": "Q3 2025",
@@ -63,15 +63,15 @@
     {
       "opponentUsername": "AndrewLevine",
       "opponentDisplayName": "AndrewLevine",
-      "matchesPlayed": 6,
-      "matchWins": 1,
+      "matchesPlayed": 7,
+      "matchWins": 2,
       "matchLosses": 5,
       "matchDraws": 0,
-      "matchWinPercentage": 0.16666666666666666,
-      "gameWins": 4,
-      "gameLosses": 11,
+      "matchWinPercentage": 0.2857142857142857,
+      "gameWins": 6,
+      "gameLosses": 12,
       "gameDraws": 0,
-      "gameWinPercentage": 0.26666666666666666,
+      "gameWinPercentage": 0.3333333333333333,
       "lastFiveResults": [
         "L",
         "W",
@@ -237,6 +237,24 @@
       ]
     },
     {
+      "opponentUsername": "Matt_W",
+      "opponentDisplayName": "Matt_W",
+      "matchesPlayed": 3,
+      "matchWins": 2,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 4,
+      "gameLosses": 3,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5714285714285714,
+      "lastFiveResults": [
+        "L",
+        "W",
+        "W"
+      ]
+    },
+    {
       "opponentUsername": "rmcf",
       "opponentDisplayName": "rmcf",
       "matchesPlayed": 3,
@@ -269,23 +287,6 @@
       "lastFiveResults": [
         "L",
         "D"
-      ]
-    },
-    {
-      "opponentUsername": "Matt_W",
-      "opponentDisplayName": "Matt W",
-      "matchesPlayed": 2,
-      "matchWins": 2,
-      "matchLosses": 0,
-      "matchDraws": 0,
-      "matchWinPercentage": 1,
-      "gameWins": 4,
-      "gameLosses": 1,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.8,
-      "lastFiveResults": [
-        "W",
-        "W"
       ]
     },
     {
@@ -337,6 +338,22 @@
       "lastFiveResults": [
         "L",
         "L"
+      ]
+    },
+    {
+      "opponentUsername": "alexdeutch",
+      "opponentDisplayName": "alexdeutch",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "lastFiveResults": [
+        "W"
       ]
     },
     {
@@ -725,6 +742,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "395699",
+      "dateDisplay": "January 8, 2026",
+      "playerCount": 24,
+      "trophyCount": 3,
+      "roundCount": 3,
+      "rank": 11,
+      "points": 6,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWinPercentage": 0.5714286,
+      "deck": "Dreadnought"
+    },
     {
       "tournamentId": "393796",
       "dateDisplay": "January 1, 2026",

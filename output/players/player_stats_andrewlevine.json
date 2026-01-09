@@ -2,25 +2,25 @@
   "username": "AndrewLevine",
   "displayName": "AndrewLevine",
   "overallStats": {
-    "totalTournaments": 13,
-    "totalPoints": 58,
-    "totalMatches": 39,
-    "matchRecord": "19-19-1",
-    "matchWinPercentage": 0.5,
-    "gameRecord": "48-47-0",
-    "gameWinPercentage": 0.5052631578947369,
+    "totalTournaments": 14,
+    "totalPoints": 61,
+    "totalMatches": 42,
+    "matchRecord": "20-21-1",
+    "matchWinPercentage": 0.4880952380952381,
+    "gameRecord": "52-51-0",
+    "gameWinPercentage": 0.5048543689320388,
     "trophies": 1,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q4 2025",
-      "events": 5,
-      "points": 22,
-      "matchRecord": "7-7-1",
-      "matchWinPercentage": 0.5,
-      "gameRecord": "17-18-0",
-      "gameWinPercentage": 0.4857142857142857
+      "events": 6,
+      "points": 25,
+      "matchRecord": "8-9-1",
+      "matchWinPercentage": 0.4722222222222222,
+      "gameRecord": "21-22-0",
+      "gameWinPercentage": 0.4883720930232558
     },
     {
       "leagueName": "Q3 2025",
@@ -45,15 +45,15 @@
     {
       "opponentUsername": "JUDDERMANG",
       "opponentDisplayName": "Chris Cruz",
-      "matchesPlayed": 6,
+      "matchesPlayed": 7,
       "matchWins": 5,
-      "matchLosses": 1,
+      "matchLosses": 2,
       "matchDraws": 0,
-      "matchWinPercentage": 0.8333333333333334,
-      "gameWins": 11,
-      "gameLosses": 4,
+      "matchWinPercentage": 0.7142857142857143,
+      "gameWins": 12,
+      "gameLosses": 6,
       "gameDraws": 0,
-      "gameWinPercentage": 0.7333333333333333,
+      "gameWinPercentage": 0.6666666666666666,
       "lastFiveResults": [
         "W",
         "L",
@@ -139,6 +139,23 @@
       ]
     },
     {
+      "opponentUsername": "Taylorhol",
+      "opponentDisplayName": "Taylorhol",
+      "matchesPlayed": 2,
+      "matchWins": 0,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 2,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "lastFiveResults": [
+        "L",
+        "L"
+      ]
+    },
+    {
       "opponentUsername": "sjpenzer",
       "opponentDisplayName": "sjpenzer",
       "matchesPlayed": 2,
@@ -170,6 +187,22 @@
       "lastFiveResults": [
         "W",
         "L"
+      ]
+    },
+    {
+      "opponentUsername": "zjr",
+      "opponentDisplayName": "zjr",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "lastFiveResults": [
+        "W"
       ]
     },
     {
@@ -232,22 +265,6 @@
       "gameLosses": 1,
       "gameDraws": 0,
       "gameWinPercentage": 0,
-      "lastFiveResults": [
-        "L"
-      ]
-    },
-    {
-      "opponentUsername": "Taylorhol",
-      "opponentDisplayName": "Taylorhol",
-      "matchesPlayed": 1,
-      "matchWins": 0,
-      "matchLosses": 1,
-      "matchDraws": 0,
-      "matchWinPercentage": 0,
-      "gameWins": 1,
-      "gameLosses": 2,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.3333333333333333,
       "lastFiveResults": [
         "L"
       ]
@@ -382,6 +399,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "395699",
+      "dateDisplay": "January 8, 2026",
+      "playerCount": 24,
+      "trophyCount": 3,
+      "roundCount": 3,
+      "rank": 20,
+      "points": 3,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWinPercentage": 0.5,
+      "deck": "Gush Tithe"
+    },
     {
       "tournamentId": "393796",
       "dateDisplay": "January 1, 2026",

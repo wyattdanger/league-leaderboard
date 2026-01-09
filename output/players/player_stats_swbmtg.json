@@ -2,25 +2,25 @@
   "username": "swbmtg",
   "displayName": "swb",
   "overallStats": {
-    "totalTournaments": 26,
-    "totalPoints": 175,
-    "totalMatches": 78,
-    "matchRecord": "57-17-4",
-    "matchWinPercentage": 0.7564102564102564,
-    "gameRecord": "126-63-2",
-    "gameWinPercentage": 0.6596858638743456,
+    "totalTournaments": 27,
+    "totalPoints": 181,
+    "totalMatches": 81,
+    "matchRecord": "59-18-4",
+    "matchWinPercentage": 0.7530864197530864,
+    "gameRecord": "131-65-2",
+    "gameWinPercentage": 0.6616161616161617,
     "trophies": 8,
     "belts": 1
   },
   "leagueStats": [
     {
       "leagueName": "Q4 2025",
-      "events": 9,
-      "points": 67,
-      "matchRecord": "22-4-1",
-      "matchWinPercentage": 0.8333333333333334,
-      "gameRecord": "47-19-1",
-      "gameWinPercentage": 0.7089552238805971
+      "events": 10,
+      "points": 73,
+      "matchRecord": "24-5-1",
+      "matchWinPercentage": 0.8166666666666667,
+      "gameRecord": "52-21-1",
+      "gameWinPercentage": 0.7094594594594594
     },
     {
       "leagueName": "Q3 2025",
@@ -141,6 +141,25 @@
       ]
     },
     {
+      "opponentUsername": "Mattmelach",
+      "opponentDisplayName": "Matthew Melachrinos",
+      "matchesPlayed": 4,
+      "matchWins": 4,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 8,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.8888888888888888,
+      "lastFiveResults": [
+        "W",
+        "W",
+        "W",
+        "W"
+      ]
+    },
+    {
       "opponentUsername": "RichBucey",
       "opponentDisplayName": "RichBucey",
       "matchesPlayed": 4,
@@ -157,6 +176,24 @@
         "W",
         "L",
         "L"
+      ]
+    },
+    {
+      "opponentUsername": "itsCama",
+      "opponentDisplayName": "Yosef Harari",
+      "matchesPlayed": 3,
+      "matchWins": 2,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 5,
+      "gameLosses": 3,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.625,
+      "lastFiveResults": [
+        "L",
+        "W",
+        "W"
       ]
     },
     {
@@ -209,24 +246,6 @@
       "gameWinPercentage": 0.625,
       "lastFiveResults": [
         "D",
-        "W",
-        "W"
-      ]
-    },
-    {
-      "opponentUsername": "Mattmelach",
-      "opponentDisplayName": "Matthew Melachrinos",
-      "matchesPlayed": 3,
-      "matchWins": 3,
-      "matchLosses": 0,
-      "matchDraws": 0,
-      "matchWinPercentage": 1,
-      "gameWins": 6,
-      "gameLosses": 1,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.8571428571428571,
-      "lastFiveResults": [
-        "W",
         "W",
         "W"
       ]
@@ -302,19 +321,18 @@
       ]
     },
     {
-      "opponentUsername": "itsCama",
-      "opponentDisplayName": "Yosef Harari",
-      "matchesPlayed": 2,
-      "matchWins": 2,
+      "opponentUsername": "SeaF9",
+      "opponentDisplayName": "Sean Fitzpatrick",
+      "matchesPlayed": 1,
+      "matchWins": 1,
       "matchLosses": 0,
       "matchDraws": 0,
       "matchWinPercentage": 1,
-      "gameWins": 4,
-      "gameLosses": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
       "gameDraws": 0,
-      "gameWinPercentage": 0.8,
+      "gameWinPercentage": 1,
       "lastFiveResults": [
-        "W",
         "W"
       ]
     },
@@ -624,6 +642,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "395699",
+      "dateDisplay": "January 8, 2026",
+      "playerCount": 24,
+      "trophyCount": 3,
+      "roundCount": 3,
+      "rank": 4,
+      "points": 6,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWinPercentage": 0.7142857,
+      "deck": "Tide"
+    },
     {
       "tournamentId": "393796",
       "dateDisplay": "January 1, 2026",

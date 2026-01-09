@@ -2,25 +2,25 @@
   "username": "FriendlyFerret",
   "displayName": "Bill Ellis!!",
   "overallStats": {
-    "totalTournaments": 12,
-    "totalPoints": 70,
-    "totalMatches": 36,
-    "matchRecord": "23-12-1",
-    "matchWinPercentage": 0.6527777777777778,
-    "gameRecord": "52-34-0",
-    "gameWinPercentage": 0.6046511627906976,
-    "trophies": 3,
+    "totalTournaments": 13,
+    "totalPoints": 79,
+    "totalMatches": 39,
+    "matchRecord": "26-12-1",
+    "matchWinPercentage": 0.6794871794871795,
+    "gameRecord": "58-34-0",
+    "gameWinPercentage": 0.6304347826086957,
+    "trophies": 4,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q4 2025",
-      "events": 1,
-      "points": 3,
-      "matchRecord": "1-2-0",
-      "matchWinPercentage": 0.3333333333333333,
-      "gameRecord": "2-4-0",
-      "gameWinPercentage": 0.3333333333333333
+      "events": 2,
+      "points": 12,
+      "matchRecord": "4-2-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameRecord": "8-4-0",
+      "gameWinPercentage": 0.6666666666666666
     },
     {
       "leagueName": "Q3 2025",
@@ -154,6 +154,54 @@
       "gameWinPercentage": 0.6666666666666666,
       "lastFiveResults": [
         "W",
+        "W"
+      ]
+    },
+    {
+      "opponentUsername": "sHaDes27",
+      "opponentDisplayName": "Shawn Stroke",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "lastFiveResults": [
+        "W"
+      ]
+    },
+    {
+      "opponentUsername": "remixmtg",
+      "opponentDisplayName": "Jeremy Siegel",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "lastFiveResults": [
+        "W"
+      ]
+    },
+    {
+      "opponentUsername": "ptscott",
+      "opponentDisplayName": "ptscott",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "lastFiveResults": [
         "W"
       ]
     },
@@ -431,6 +479,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "395699",
+      "dateDisplay": "January 8, 2026",
+      "playerCount": 24,
+      "trophyCount": 3,
+      "roundCount": 3,
+      "rank": 3,
+      "points": 9,
+      "matchRecord": "3-0-0",
+      "matchWinPercentage": 1,
+      "gameWinPercentage": 1,
+      "deck": "Oath Ponza"
+    },
     {
       "tournamentId": "388334",
       "dateDisplay": "December 4, 2025",

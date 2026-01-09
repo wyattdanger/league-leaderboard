@@ -2,25 +2,25 @@
   "username": "itsCama",
   "displayName": "Yosef Harari",
   "overallStats": {
-    "totalTournaments": 14,
-    "totalPoints": 60,
-    "totalMatches": 42,
-    "matchRecord": "20-22-0",
-    "matchWinPercentage": 0.47619047619047616,
-    "gameRecord": "53-54-0",
-    "gameWinPercentage": 0.4953271028037383,
-    "trophies": 1,
+    "totalTournaments": 15,
+    "totalPoints": 69,
+    "totalMatches": 45,
+    "matchRecord": "23-22-0",
+    "matchWinPercentage": 0.5111111111111111,
+    "gameRecord": "59-56-0",
+    "gameWinPercentage": 0.5130434782608696,
+    "trophies": 2,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q4 2025",
-      "events": 1,
-      "points": 3,
-      "matchRecord": "1-2-0",
-      "matchWinPercentage": 0.3333333333333333,
-      "gameRecord": "4-5-0",
-      "gameWinPercentage": 0.4444444444444444
+      "events": 2,
+      "points": 12,
+      "matchRecord": "4-2-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameRecord": "10-7-0",
+      "gameWinPercentage": 0.5882352941176471
     },
     {
       "leagueName": "Q3 2025",
@@ -54,15 +54,15 @@
     {
       "opponentUsername": "BryanGulotta",
       "opponentDisplayName": "BryanGulotta",
-      "matchesPlayed": 5,
-      "matchWins": 1,
+      "matchesPlayed": 6,
+      "matchWins": 2,
       "matchLosses": 4,
       "matchDraws": 0,
-      "matchWinPercentage": 0.2,
-      "gameWins": 6,
-      "gameLosses": 8,
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 8,
+      "gameLosses": 9,
       "gameDraws": 0,
-      "gameWinPercentage": 0.42857142857142855,
+      "gameWinPercentage": 0.47058823529411764,
       "lastFiveResults": [
         "L",
         "L",
@@ -126,6 +126,24 @@
         "L",
         "W",
         "W"
+      ]
+    },
+    {
+      "opponentUsername": "swbmtg",
+      "opponentDisplayName": "swb",
+      "matchesPlayed": 3,
+      "matchWins": 1,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 3,
+      "gameLosses": 5,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.375,
+      "lastFiveResults": [
+        "W",
+        "L",
+        "L"
       ]
     },
     {
@@ -231,20 +249,19 @@
       ]
     },
     {
-      "opponentUsername": "swbmtg",
-      "opponentDisplayName": "swb",
-      "matchesPlayed": 2,
-      "matchWins": 0,
-      "matchLosses": 2,
+      "opponentUsername": "zjr",
+      "opponentDisplayName": "zjr",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
       "matchDraws": 0,
-      "matchWinPercentage": 0,
-      "gameWins": 1,
-      "gameLosses": 4,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
       "gameDraws": 0,
-      "gameWinPercentage": 0.2,
+      "gameWinPercentage": 1,
       "lastFiveResults": [
-        "L",
-        "L"
+        "W"
       ]
     },
     {
@@ -409,6 +426,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "395699",
+      "dateDisplay": "January 8, 2026",
+      "playerCount": 24,
+      "trophyCount": 3,
+      "roundCount": 3,
+      "rank": 2,
+      "points": 9,
+      "matchRecord": "3-0-0",
+      "matchWinPercentage": 1,
+      "gameWinPercentage": 0.75,
+      "deck": "Tide"
+    },
     {
       "tournamentId": "391734",
       "dateDisplay": "December 18, 2025",

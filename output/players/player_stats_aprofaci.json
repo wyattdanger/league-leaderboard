@@ -2,25 +2,25 @@
   "username": "aprofaci",
   "displayName": "Alex Profaci",
   "overallStats": {
-    "totalTournaments": 5,
-    "totalPoints": 30,
-    "totalMatches": 15,
-    "matchRecord": "10-5-0",
+    "totalTournaments": 6,
+    "totalPoints": 36,
+    "totalMatches": 18,
+    "matchRecord": "12-6-0",
     "matchWinPercentage": 0.6666666666666666,
-    "gameRecord": "23-15-0",
-    "gameWinPercentage": 0.6052631578947368,
+    "gameRecord": "27-17-0",
+    "gameWinPercentage": 0.6136363636363636,
     "trophies": 1,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q4 2025",
-      "events": 5,
-      "points": 30,
-      "matchRecord": "10-5-0",
+      "events": 6,
+      "points": 36,
+      "matchRecord": "12-6-0",
       "matchWinPercentage": 0.6666666666666666,
-      "gameRecord": "23-15-0",
-      "gameWinPercentage": 0.6052631578947368
+      "gameRecord": "27-17-0",
+      "gameWinPercentage": 0.6136363636363636
     }
   ],
   "headToHead": [
@@ -38,6 +38,54 @@
       "gameWinPercentage": 0.5,
       "lastFiveResults": [
         "L",
+        "W"
+      ]
+    },
+    {
+      "opponentUsername": "BryanGulotta",
+      "opponentDisplayName": "BryanGulotta",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "lastFiveResults": [
+        "L"
+      ]
+    },
+    {
+      "opponentUsername": "mauriceg123",
+      "opponentDisplayName": "mauriceg123",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 1,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "lastFiveResults": [
+        "W"
+      ]
+    },
+    {
+      "opponentUsername": "sHaDes27",
+      "opponentDisplayName": "Shawn Stroke",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "lastFiveResults": [
         "W"
       ]
     },
@@ -235,6 +283,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "395699",
+      "dateDisplay": "January 8, 2026",
+      "playerCount": 24,
+      "trophyCount": 3,
+      "roundCount": 3,
+      "rank": 9,
+      "points": 6,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWinPercentage": 0.6666667,
+      "deck": "Goblins"
+    },
     {
       "tournamentId": "391734",
       "dateDisplay": "December 18, 2025",

@@ -2,25 +2,25 @@
   "username": "Taylorhol",
   "displayName": "Taylorhol",
   "overallStats": {
-    "totalTournaments": 12,
-    "totalPoints": 56,
-    "totalMatches": 36,
-    "matchRecord": "18-16-2",
-    "matchWinPercentage": 0.5277777777777778,
-    "gameRecord": "44-41-2",
-    "gameWinPercentage": 0.5057471264367817,
+    "totalTournaments": 13,
+    "totalPoints": 59,
+    "totalMatches": 39,
+    "matchRecord": "19-18-2",
+    "matchWinPercentage": 0.5128205128205128,
+    "gameRecord": "47-46-2",
+    "gameWinPercentage": 0.49473684210526314,
     "trophies": 1,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q4 2025",
-      "events": 10,
-      "points": 47,
-      "matchRecord": "15-13-2",
-      "matchWinPercentage": 0.5333333333333333,
-      "gameRecord": "36-33-2",
-      "gameWinPercentage": 0.5211267605633803
+      "events": 11,
+      "points": 50,
+      "matchRecord": "16-15-2",
+      "matchWinPercentage": 0.5151515151515151,
+      "gameRecord": "39-38-2",
+      "gameWinPercentage": 0.5063291139240507
     },
     {
       "leagueName": "Q3 2025",
@@ -85,6 +85,40 @@
         "L",
         "L",
         "W"
+      ]
+    },
+    {
+      "opponentUsername": "AndrewLevine",
+      "opponentDisplayName": "AndrewLevine",
+      "matchesPlayed": 2,
+      "matchWins": 2,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 4,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6666666666666666,
+      "lastFiveResults": [
+        "W",
+        "W"
+      ]
+    },
+    {
+      "opponentUsername": "BryanGulotta",
+      "opponentDisplayName": "BryanGulotta",
+      "matchesPlayed": 2,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 1,
+      "matchWinPercentage": 0.25,
+      "gameWins": 2,
+      "gameLosses": 3,
+      "gameDraws": 1,
+      "gameWinPercentage": 0.3333333333333333,
+      "lastFiveResults": [
+        "L",
+        "D"
       ]
     },
     {
@@ -169,6 +203,22 @@
       "gameWinPercentage": 0.2,
       "lastFiveResults": [
         "L",
+        "L"
+      ]
+    },
+    {
+      "opponentUsername": "ptscott",
+      "opponentDisplayName": "ptscott",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "lastFiveResults": [
         "L"
       ]
     },
@@ -317,22 +367,6 @@
       ]
     },
     {
-      "opponentUsername": "BryanGulotta",
-      "opponentDisplayName": "BryanGulotta",
-      "matchesPlayed": 1,
-      "matchWins": 0,
-      "matchLosses": 0,
-      "matchDraws": 1,
-      "matchWinPercentage": 0.5,
-      "gameWins": 1,
-      "gameLosses": 1,
-      "gameDraws": 1,
-      "gameWinPercentage": 0.3333333333333333,
-      "lastFiveResults": [
-        "D"
-      ]
-    },
-    {
       "opponentUsername": "J0Nh",
       "opponentDisplayName": "J0Nh",
       "matchesPlayed": 1,
@@ -344,22 +378,6 @@
       "gameLosses": 0,
       "gameDraws": 0,
       "gameWinPercentage": 1,
-      "lastFiveResults": [
-        "W"
-      ]
-    },
-    {
-      "opponentUsername": "AndrewLevine",
-      "opponentDisplayName": "AndrewLevine",
-      "matchesPlayed": 1,
-      "matchWins": 1,
-      "matchLosses": 0,
-      "matchDraws": 0,
-      "matchWinPercentage": 1,
-      "gameWins": 2,
-      "gameLosses": 1,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.6666666666666666,
       "lastFiveResults": [
         "W"
       ]
@@ -398,6 +416,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "395699",
+      "dateDisplay": "January 8, 2026",
+      "playerCount": 24,
+      "trophyCount": 3,
+      "roundCount": 3,
+      "rank": 16,
+      "points": 3,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWinPercentage": 0.375,
+      "deck": "Replenish"
+    },
     {
       "tournamentId": "393796",
       "dateDisplay": "January 1, 2026",

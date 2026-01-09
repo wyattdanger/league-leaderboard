@@ -2,25 +2,25 @@
   "username": "sjpenzer",
   "displayName": "sjpenzer",
   "overallStats": {
-    "totalTournaments": 7,
-    "totalPoints": 44,
-    "totalMatches": 18,
-    "matchRecord": "12-4-2",
-    "matchWinPercentage": 0.7222222222222222,
-    "gameRecord": "28-14-0",
-    "gameWinPercentage": 0.6666666666666666,
-    "trophies": 1,
+    "totalTournaments": 8,
+    "totalPoints": 53,
+    "totalMatches": 21,
+    "matchRecord": "15-4-2",
+    "matchWinPercentage": 0.7619047619047619,
+    "gameRecord": "34-15-0",
+    "gameWinPercentage": 0.6938775510204082,
+    "trophies": 2,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q4 2025",
-      "events": 6,
-      "points": 44,
-      "matchRecord": "12-4-2",
-      "matchWinPercentage": 0.7222222222222222,
-      "gameRecord": "28-14-0",
-      "gameWinPercentage": 0.6666666666666666
+      "events": 7,
+      "points": 53,
+      "matchRecord": "15-4-2",
+      "matchWinPercentage": 0.7619047619047619,
+      "gameRecord": "34-15-0",
+      "gameWinPercentage": 0.6938775510204082
     }
   ],
   "headToHead": [
@@ -62,6 +62,23 @@
       ]
     },
     {
+      "opponentUsername": "Matt_W",
+      "opponentDisplayName": "Matt_W",
+      "matchesPlayed": 2,
+      "matchWins": 2,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 4,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.8,
+      "lastFiveResults": [
+        "W",
+        "W"
+      ]
+    },
+    {
       "opponentUsername": "BryanGulotta",
       "opponentDisplayName": "BryanGulotta",
       "matchesPlayed": 2,
@@ -92,6 +109,38 @@
       "gameWinPercentage": 1,
       "lastFiveResults": [
         "W",
+        "W"
+      ]
+    },
+    {
+      "opponentUsername": "RichBucey",
+      "opponentDisplayName": "RichBucey",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6666666666666666,
+      "lastFiveResults": [
+        "W"
+      ]
+    },
+    {
+      "opponentUsername": "peatsheepening",
+      "opponentDisplayName": "peatsheepening",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "lastFiveResults": [
         "W"
       ]
     },
@@ -208,22 +257,6 @@
       ]
     },
     {
-      "opponentUsername": "Matt_W",
-      "opponentDisplayName": "Matt W",
-      "matchesPlayed": 1,
-      "matchWins": 1,
-      "matchLosses": 0,
-      "matchDraws": 0,
-      "matchWinPercentage": 1,
-      "gameWins": 2,
-      "gameLosses": 1,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.6666666666666666,
-      "lastFiveResults": [
-        "W"
-      ]
-    },
-    {
       "opponentUsername": "Lannynyny",
       "opponentDisplayName": "Lanny Huang",
       "matchesPlayed": 1,
@@ -257,6 +290,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "395699",
+      "dateDisplay": "January 8, 2026",
+      "playerCount": 24,
+      "trophyCount": 3,
+      "roundCount": 3,
+      "rank": 1,
+      "points": 9,
+      "matchRecord": "3-0-0",
+      "matchWinPercentage": 1,
+      "gameWinPercentage": 0.8571429,
+      "deck": "Terrageddon"
+    },
     {
       "tournamentId": "391734",
       "dateDisplay": "December 18, 2025",

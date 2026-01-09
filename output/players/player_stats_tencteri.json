@@ -2,25 +2,25 @@
   "username": "Tencteri",
   "displayName": "Tencteri",
   "overallStats": {
-    "totalTournaments": 16,
-    "totalPoints": 73,
-    "totalMatches": 47,
-    "matchRecord": "24-22-1",
-    "matchWinPercentage": 0.5212765957446809,
-    "gameRecord": "58-56-1",
-    "gameWinPercentage": 0.5043478260869565,
+    "totalTournaments": 17,
+    "totalPoints": 76,
+    "totalMatches": 50,
+    "matchRecord": "25-24-1",
+    "matchWinPercentage": 0.51,
+    "gameRecord": "62-60-1",
+    "gameWinPercentage": 0.5040650406504065,
     "trophies": 0,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q4 2025",
-      "events": 8,
-      "points": 39,
-      "matchRecord": "13-10-0",
-      "matchWinPercentage": 0.5652173913043478,
-      "gameRecord": "32-27-0",
-      "gameWinPercentage": 0.5423728813559322
+      "events": 9,
+      "points": 42,
+      "matchRecord": "14-12-0",
+      "matchWinPercentage": 0.5384615384615384,
+      "gameRecord": "36-31-0",
+      "gameWinPercentage": 0.5373134328358209
     },
     {
       "leagueName": "Q3 2025",
@@ -74,16 +74,17 @@
     {
       "opponentUsername": "madmanpoet",
       "opponentDisplayName": "Michael Flores",
-      "matchesPlayed": 3,
-      "matchWins": 2,
+      "matchesPlayed": 4,
+      "matchWins": 3,
       "matchLosses": 1,
       "matchDraws": 0,
-      "matchWinPercentage": 0.6666666666666666,
-      "gameWins": 4,
+      "matchWinPercentage": 0.75,
+      "gameWins": 6,
       "gameLosses": 4,
       "gameDraws": 0,
-      "gameWinPercentage": 0.5,
+      "gameWinPercentage": 0.6,
       "lastFiveResults": [
+        "W",
         "W",
         "W",
         "L"
@@ -103,6 +104,40 @@
       "gameWinPercentage": 0.5714285714285714,
       "lastFiveResults": [
         "W",
+        "L",
+        "W"
+      ]
+    },
+    {
+      "opponentUsername": "Mattmelach",
+      "opponentDisplayName": "Matthew Melachrinos",
+      "matchesPlayed": 2,
+      "matchWins": 1,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.5,
+      "gameWins": 3,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6,
+      "lastFiveResults": [
+        "L",
+        "W"
+      ]
+    },
+    {
+      "opponentUsername": "SeaF9",
+      "opponentDisplayName": "Sean Fitzpatrick",
+      "matchesPlayed": 2,
+      "matchWins": 1,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.5,
+      "gameWins": 3,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6,
+      "lastFiveResults": [
         "L",
         "W"
       ]
@@ -220,22 +255,6 @@
       "gameWinPercentage": 0.3333333333333333,
       "lastFiveResults": [
         "L"
-      ]
-    },
-    {
-      "opponentUsername": "SeaF9",
-      "opponentDisplayName": "Sean Fitzpatrick",
-      "matchesPlayed": 1,
-      "matchWins": 1,
-      "matchLosses": 0,
-      "matchDraws": 0,
-      "matchWinPercentage": 1,
-      "gameWins": 2,
-      "gameLosses": 0,
-      "gameDraws": 0,
-      "gameWinPercentage": 1,
-      "lastFiveResults": [
-        "W"
       ]
     },
     {
@@ -589,25 +608,22 @@
       "lastFiveResults": [
         "W"
       ]
-    },
-    {
-      "opponentUsername": "Mattmelach",
-      "opponentDisplayName": "Matthew Melachrinos",
-      "matchesPlayed": 1,
-      "matchWins": 1,
-      "matchLosses": 0,
-      "matchDraws": 0,
-      "matchWinPercentage": 1,
-      "gameWins": 2,
-      "gameLosses": 0,
-      "gameDraws": 0,
-      "gameWinPercentage": 1,
-      "lastFiveResults": [
-        "W"
-      ]
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "395699",
+      "dateDisplay": "January 8, 2026",
+      "playerCount": 24,
+      "trophyCount": 3,
+      "roundCount": 3,
+      "rank": 21,
+      "points": 3,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWinPercentage": 0.5,
+      "deck": "White Weenie"
+    },
     {
       "tournamentId": "393796",
       "dateDisplay": "January 1, 2026",
