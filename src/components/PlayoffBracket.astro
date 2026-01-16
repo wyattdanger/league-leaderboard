@@ -1,0 +1,371 @@
+---
+import type { Round } from '../models/Round';
+import type { Match } from '../models/Match';
+
+interface Props {
+  rounds: Round[];
+  deckData?: Record<string, string> | null;
+  showDeckData?: boolean;
+  playerSeeds?: Map<string, number>;
+}
+
+const { rounds, deckData, showDeckData, playerSeeds } = Astro.props;
+
+// For an 8-player Top 8:
+// Round 1 = Quarterfinals (4 matches)
+// Round 2 = Semifinals (2 matches) + 5th place matches (2 matches)
+// Round 3 = Finals (1 match) + 3rd place (1 match) + 5th place (1 match) + 7th place (1 match)
+
+const round1 = rounds[0]; // Quarterfinals
+const round2 = rounds[1]; // Semifinals
+const round3 = rounds[2]; // Finals
+
+// Sort QF matches by bracket order (1v8, 4v5, 3v6, 2v7)
+// Standard bracket has top seeds in order: 1, 4, 3, 2
+const unsortedQFMatches = round1?.matches || [];
+const bracketOrder = [1, 4, 3, 2];
+
+const quarterMatches = unsortedQFMatches.sort((a, b) => {
+  // Get all seeds in each match
+  const aSeeds = [
+    (a.player1 && playerSeeds ? playerSeeds.get(a.player1.username) : undefined),
+    (a.player2 && playerSeeds ? playerSeeds.get(a.player2.username) : undefined)
+  ].filter(s => s !== undefined) as number[];
+
+  const bSeeds = [
+    (b.player1 && playerSeeds ? playerSeeds.get(b.player1.username) : undefined),
+    (b.player2 && playerSeeds ? playerSeeds.get(b.player2.username) : undefined)
+  ].filter(s => s !== undefined) as number[];
+
+  // Find which bracket position each match belongs to (by checking if it contains seed 1, 4, 2, or 3)
+  const aPosition = bracketOrder.findIndex(seed => aSeeds.includes(seed));
+  const bPosition = bracketOrder.findIndex(seed => bSeeds.includes(seed));
+
+  return (aPosition === -1 ? 999 : aPosition) - (bPosition === -1 ? 999 : bPosition);
+});
+
+// Round 2 has both semifinals (winners continuing from QF) and consolation matches
+// Identify semifinals by finding matches where BOTH players won their QF match
+const round1Winners = new Set<string>();
+if (round1) {
+  round1.matches.forEach(match => {
+    const winner = match.winner;
+    if (winner && winner.username) {
+      round1Winners.add(winner.username);
+    }
+  });
+}
+
+// Semifinals are matches where both players won in Round 1
+// Sort by bracket position: top half (1/8 vs 4/5), bottom half (2/7 vs 3/6)
+const semiMatches = round2?.matches.filter(match => {
+  const p1 = match.player1?.username;
+  const p2 = match.player2?.username;
+  return p1 && p2 && round1Winners.has(p1) && round1Winners.has(p2);
+}).sort((a, b) => {
+  // Determine which half of the bracket each semifinal belongs to
+  const aSeeds = [
+    (a.player1 && playerSeeds ? playerSeeds.get(a.player1.username) : undefined),
+    (a.player2 && playerSeeds ? playerSeeds.get(a.player2.username) : undefined)
+  ].filter(s => s !== undefined) as number[];
+
+  const bSeeds = [
+    (b.player1 && playerSeeds ? playerSeeds.get(b.player1.username) : undefined),
+    (b.player2 && playerSeeds ? playerSeeds.get(b.player2.username) : undefined)
+  ].filter(s => s !== undefined) as number[];
+
+  // Top half contains seeds 1, 4, 5, 8; Bottom half contains 2, 3, 6, 7
+  const topHalfSeeds = [1, 4, 5, 8];
+  const aIsTopHalf = aSeeds.some(s => topHalfSeeds.includes(s));
+  const bIsTopHalf = bSeeds.some(s => topHalfSeeds.includes(s));
+
+  // Top half first
+  if (aIsTopHalf && !bIsTopHalf) return -1;
+  if (!aIsTopHalf && bIsTopHalf) return 1;
+  return 0;
+}) || [];
+
+const finalMatches = round3?.matches.sort((a, b) => (a.tableNumber || 0) - (b.tableNumber || 0)) || [];
+---
+
+<div class="bracket-container">
+  <div class="bracket-header">Top 8 Playoff Bracket</div>
+
+  <div class="bracket">
+    <!-- Quarterfinals -->
+    <div class="bracket-round">
+      <div class="round-label">Quarterfinals</div>
+      <div class="bracket-matches">
+        {quarterMatches.map((match: Match) => {
+          const winner = match.winner;
+          const left = match.leftPlayer;
+          const right = match.rightPlayer;
+          const leftDeck = showDeckData && deckData && left.player ? deckData[left.player.username] : null;
+          const rightDeck = showDeckData && deckData && right.player ? deckData[right.player.username] : null;
+
+          // Get seeds from the league standings
+          const leftSeed = left.player && playerSeeds ? playerSeeds.get(left.player.username) : undefined;
+          const rightSeed = right.player && playerSeeds ? playerSeeds.get(right.player.username) : undefined;
+
+          return (
+            <div class="bracket-match">
+              <div class={`bracket-player ${winner === left.player ? 'winner' : 'loser'}`}>
+                {leftSeed && <span class="seed">{leftSeed}</span>}
+                <a href={left.player?.profileUrl} class="player-name">
+                  {left.player?.displayName}
+                </a>
+                {showDeckData && leftDeck && <span class="deck-name">{leftDeck}</span>}
+                <span class="games">{left.games}</span>
+              </div>
+              <div class={`bracket-player ${winner === right.player ? 'winner' : 'loser'}`}>
+                {rightSeed && <span class="seed">{rightSeed}</span>}
+                <a href={right.player?.profileUrl} class="player-name">
+                  {right.player?.displayName}
+                </a>
+                {showDeckData && rightDeck && <span class="deck-name">{rightDeck}</span>}
+                <span class="games">{right.games}</span>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    </div>
+
+    <!-- Semifinals -->
+    <div class="bracket-round semis">
+      <div class="round-label">Semifinals</div>
+      <div class="bracket-matches">
+        {semiMatches.slice(0, 2).map((match: Match) => {
+          const winner = match.winner;
+          const left = match.leftPlayer;
+          const right = match.rightPlayer;
+          const leftDeck = showDeckData && deckData && left.player ? deckData[left.player.username] : null;
+          const rightDeck = showDeckData && deckData && right.player ? deckData[right.player.username] : null;
+
+          // Get seeds from the league standings
+          const leftSeed = left.player && playerSeeds ? playerSeeds.get(left.player.username) : undefined;
+          const rightSeed = right.player && playerSeeds ? playerSeeds.get(right.player.username) : undefined;
+
+          return (
+            <div class="bracket-match">
+              <div class={`bracket-player ${winner === left.player ? 'winner' : 'loser'}`}>
+                {leftSeed && <span class="seed">{leftSeed}</span>}
+                <a href={left.player?.profileUrl} class="player-name">
+                  {left.player?.displayName}
+                </a>
+                {showDeckData && leftDeck && <span class="deck-name">{leftDeck}</span>}
+                <span class="games">{left.games}</span>
+              </div>
+              <div class={`bracket-player ${winner === right.player ? 'winner' : 'loser'}`}>
+                {rightSeed && <span class="seed">{rightSeed}</span>}
+                <a href={right.player?.profileUrl} class="player-name">
+                  {right.player?.displayName}
+                </a>
+                {showDeckData && rightDeck && <span class="deck-name">{rightDeck}</span>}
+                <span class="games">{right.games}</span>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    </div>
+
+    <!-- Finals -->
+    <div class="bracket-round finals-round">
+      <div class="round-label">Finals</div>
+      <div class="bracket-matches">
+        {finalMatches.slice(0, 1).map((match: Match) => {
+          const winner = match.winner;
+          const left = match.leftPlayer;
+          const right = match.rightPlayer;
+          const leftDeck = showDeckData && deckData && left.player ? deckData[left.player.username] : null;
+          const rightDeck = showDeckData && deckData && right.player ? deckData[right.player.username] : null;
+
+          // Get seeds from the league standings
+          const leftSeed = left.player && playerSeeds ? playerSeeds.get(left.player.username) : undefined;
+          const rightSeed = right.player && playerSeeds ? playerSeeds.get(right.player.username) : undefined;
+
+          return (
+            <div class="bracket-match finals">
+              <div class={`bracket-player ${winner === left.player ? 'winner champion' : 'loser'}`}>
+                {leftSeed && <span class="seed">{leftSeed}</span>}
+                <a href={left.player?.profileUrl} class="player-name">
+                  {left.player?.displayName}
+                </a>
+                {showDeckData && leftDeck && <span class="deck-name">{leftDeck}</span>}
+                <span class="games">{left.games}</span>
+              </div>
+              <div class={`bracket-player ${winner === right.player ? 'winner champion' : 'loser'}`}>
+                {rightSeed && <span class="seed">{rightSeed}</span>}
+                <a href={right.player?.profileUrl} class="player-name">
+                  {right.player?.displayName}
+                </a>
+                {showDeckData && rightDeck && <span class="deck-name">{rightDeck}</span>}
+                <span class="games">{right.games}</span>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<style>
+  .bracket-container {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 2rem;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  }
+
+  .bracket-header {
+    background: var(--gradient-primary);
+    color: white;
+    padding: 1rem 1.5rem;
+    font-weight: 600;
+    font-size: 1rem;
+  }
+
+  .bracket {
+    display: flex;
+    gap: 3rem;
+    padding: 2rem;
+    overflow-x: auto;
+    align-items: center;
+  }
+
+  .bracket-round {
+    flex: 1;
+    min-width: 280px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .round-label {
+    text-align: center;
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: #667eea;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .bracket-matches {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    flex: 1;
+  }
+
+  .bracket-round.semis .bracket-matches {
+    gap: 4rem;
+  }
+
+  .bracket-round.finals-round .bracket-matches {
+    justify-content: center;
+  }
+
+  .bracket-match {
+    background: #f9fafb;
+    border: 2px solid #e5e7eb;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .bracket-match.finals {
+    border-color: #fbbf24;
+    box-shadow: 0 4px 12px rgba(251, 191, 36, 0.2);
+  }
+
+  .bracket-player {
+    display: flex;
+    align-items: center;
+    padding: 0.75rem 1rem;
+    gap: 0.75rem;
+    border-bottom: 1px solid #e5e7eb;
+    transition: all 0.2s ease;
+  }
+
+  .seed {
+    font-weight: 700;
+    font-size: 0.85rem;
+    color: #9ca3af;
+    min-width: 24px;
+    text-align: center;
+  }
+
+  .bracket-player.winner .seed {
+    color: #10b981;
+  }
+
+  .bracket-player.champion .seed {
+    color: #f59e0b;
+  }
+
+  .bracket-player:last-child {
+    border-bottom: none;
+  }
+
+  .bracket-player.winner {
+    background: #f0fdf4;
+    font-weight: 600;
+  }
+
+  .bracket-player.champion {
+    background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+    font-weight: 700;
+  }
+
+  .bracket-player.loser {
+    opacity: 0.6;
+  }
+
+  .player-name {
+    color: #1f2937;
+    text-decoration: none;
+    font-size: 0.95rem;
+    flex: 1;
+    transition: color 0.2s ease;
+  }
+
+  .player-name:hover {
+    color: #667eea;
+  }
+
+  .deck-name {
+    color: #667eea;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-align: right;
+    white-space: nowrap;
+  }
+
+  .games {
+    font-weight: 700;
+    font-size: 1rem;
+    color: #374151;
+    min-width: 24px;
+    text-align: right;
+  }
+
+
+  @media (max-width: 768px) {
+    .bracket {
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    .bracket-round {
+      min-width: 100%;
+    }
+
+    .bracket-matches {
+      gap: 1rem;
+    }
+  }
+</style>

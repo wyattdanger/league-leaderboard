@@ -4,6 +4,7 @@ import LeagueHeader from '../../components/LeagueHeader.astro';
 import LeagueNav from '../../components/LeagueNav.astro';
 import MetagameBreakdown from '../../components/MetagameBreakdown.astro';
 import Tooltip from '../../components/Tooltip.astro';
+import PlayoffBracket from '../../components/PlayoffBracket.astro';
 import { getTournamentMetadata } from '../../utils/tournamentData';
 import {
   loadDeckData,
@@ -50,6 +51,47 @@ const currentLeague =
 
 // Check if this tournament is a Top 8 for any league
 const top8League = allLeagues.find((league) => league.top8Tournament === tournamentIdNum);
+
+// If this is a Top 8, load the league standings to get player seeds
+let playerSeeds: Map<string, number> = new Map();
+if (top8League) {
+  const leagueDir = path.join(process.cwd(), 'output', 'league');
+  const safeName = top8League.name.toLowerCase().replace(/\s+/g, '_');
+  const leagueFiles = fs.readdirSync(leagueDir)
+    .filter(f => f.startsWith(`league_standings_${safeName}_`))
+    .sort()
+    .reverse(); // Most recent first
+
+  if (leagueFiles.length > 0) {
+    const standingsFile = path.join(leagueDir, leagueFiles[0]);
+    const standingsData = JSON.parse(fs.readFileSync(standingsFile, 'utf-8'));
+
+    // Get all players who participated in this Top 8 tournament
+    const top8Players = new Set<string>();
+    tournament.rounds.forEach(round => {
+      round.matches.forEach(match => {
+        if (match.player1) top8Players.add(match.player1.username);
+        if (match.player2) top8Players.add(match.player2.username);
+      });
+    });
+
+    // Get league ranks for players who actually played in the Top 8
+    const playersWithRanks: Array<{ username: string; leagueRank: number }> = [];
+    standingsData.forEach((standing: any) => {
+      const username = standing.Team?.Players?.[0]?.Username;
+      const rank = standing.Rank;
+      if (username && rank && top8Players.has(username)) {
+        playersWithRanks.push({ username, leagueRank: rank });
+      }
+    });
+
+    // Sort by league rank and assign Top 8 seeds (1-8)
+    playersWithRanks.sort((a, b) => a.leagueRank - b.leagueRank);
+    playersWithRanks.forEach((player, index) => {
+      playerSeeds.set(player.username, index + 1); // Seeds 1-8
+    });
+  }
+}
 
 // Calculate week number within the season if this is a regular tournament
 let weekNumber: number | null = null;
@@ -182,120 +224,137 @@ if (fs.existsSync(metadataFile)) {
     </div>
 
     <div class="event-content">
-      <div class="standings-section">
-        <div class="standings-header">Final Standings</div>
-        <div class="standings-table">
-          <table>
-            <thead>
-              <tr>
-                <th class="rank-col">Rank</th>
-                <th class="player-col">Player</th>
-                {showDeckData && <th class="deck-col">Deck</th>}
-                <th class="record-col">Record</th>
-                <th class="mwp-col">MWP</th>
-                <th class="gwp-col">GWP</th>
-                <th class="points-col">Pts</th>
-              </tr>
-            </thead>
-            <tbody>
-              {
-                tournament.finalStandings.map((standing: Standing) => {
-                  const deck = showDeckData && deckData ? deckData[standing.player.username] : null;
+      {top8League ? (
+        <>
+          {/* Top 8 Tournament - Show Bracket */}
+          <PlayoffBracket rounds={tournament.rounds} deckData={deckData} showDeckData={showDeckData} playerSeeds={playerSeeds} />
+          {metagameBreakdown && <MetagameBreakdown breakdown={metagameBreakdown} />}
+        </>
+      ) : (
+        <>
+          {/* Regular Weekly - Show Standings and Rounds */}
+          <div class="standings-section">
+            <div class="standings-header">Final Standings</div>
+            <div class="standings-table">
+              <table>
+                <thead>
+                  <tr>
+                    <th class="rank-col">Rank</th>
+                    <th class="player-col">Player</th>
+                    {showDeckData && <th class="deck-col">Deck</th>}
+                    <th class="record-col">Record</th>
+                    <th class="mwp-col">MWP</th>
+                    <th class="gwp-col">GWP</th>
+                    <th class="points-col">Pts</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {
+                    tournament.finalStandings.map((standing: Standing) => {
+                      const deck = showDeckData && deckData ? deckData[standing.player.username] : null;
 
-                  return (
-                    <tr
-                      class="clickable-row"
-                      onclick={`window.location.href='${standing.player.profileUrl}'`}
-                    >
-                      <td class="rank-col">
-                        <div class="rank-number">{standing.rank}</div>
-                      </td>
-                      <td class="player-col">
-                        <div class="player-display-name">{standing.player.displayName}</div>
-                      </td>
-                      {showDeckData && (
-                        <td class="deck-col">
-                          <div class="deck-name">{deck || '—'}</div>
-                        </td>
-                      )}
-                      <td class="record-col">{standing.matchRecord}</td>
-                      <td class={`mwp-col ${standing.matchWinPercentageClass}`}>
-                        {standing.matchWinPercentageDisplay}%
-                      </td>
-                      <td class={`gwp-col ${standing.gameWinPercentageClass}`}>
-                        {standing.gameWinPercentageDisplay}%
-                      </td>
-                      <td class="points-col">{standing.points}</td>
-                    </tr>
-                  );
-                })
-              }
-            </tbody>
-          </table>
-        </div>
-      </div>
+                      return (
+                        <tr
+                          class="clickable-row"
+                          onclick={`window.location.href='${standing.player.profileUrl}'`}
+                        >
+                          <td class="rank-col">
+                            <div class="rank-number">{standing.rank}</div>
+                          </td>
+                          <td class="player-col">
+                            <div class="player-display-name">{standing.player.displayName}</div>
+                          </td>
+                          {showDeckData && (
+                            <td class="deck-col">
+                              <div class="deck-name">{deck || '—'}</div>
+                            </td>
+                          )}
+                          <td class="record-col">{standing.matchRecord}</td>
+                          <td class={`mwp-col ${standing.matchWinPercentageClass}`}>
+                            {standing.matchWinPercentageDisplay}%
+                          </td>
+                          <td class={`gwp-col ${standing.gameWinPercentageClass}`}>
+                            {standing.gameWinPercentageDisplay}%
+                          </td>
+                          <td class="points-col">{standing.points}</td>
+                        </tr>
+                      );
+                    })
+                  }
+                </tbody>
+              </table>
+            </div>
+          </div>
 
-      {metagameBreakdown && <MetagameBreakdown breakdown={metagameBreakdown} />}
+          {metagameBreakdown && <MetagameBreakdown breakdown={metagameBreakdown} />}
 
-      {
-        tournament.rounds.map((round) => {
-          return (
-            <div class="round-card">
+          {tournament.rounds.map((round) => (
+            <div class="round-card" key={round.number}>
               <div class="round-header">{round.displayLabel}</div>
-              <div class="round-matches">
-                {round.matches.map((match: Match) => {
-                  const left = match.leftPlayer;
-                  const right = match.rightPlayer;
-                  const leftDeck =
-                    showDeckData && deckData && left.player ? deckData[left.player.username] : null;
-                  const rightDeck =
-                    showDeckData && deckData && right.player
-                      ? deckData[right.player.username]
-                      : null;
+              <div class="round-table-container">
+                <table class="round-table">
+                  <tbody>
+                    {round.matches.map((match: Match) => {
+                      const left = match.leftPlayer;
+                      const right = match.rightPlayer;
+                      const leftDeck =
+                        showDeckData && deckData && left.player ? deckData[left.player.username] : null;
+                      const rightDeck =
+                        showDeckData && deckData && right.player
+                          ? deckData[right.player.username]
+                          : null;
 
-                  return (
-                    <div class="match-card">
-                      <div class="match-content">
-                        <div class="match-side left">
-                          {left.player && (
-                            <a href={left.player.profileUrl} class="match-player-name">
-                              {left.player.displayName}
-                            </a>
-                          )}
-                          {showDeckData && leftDeck && (
-                            <div class="match-deck-name">{leftDeck}</div>
-                          )}
-                        </div>
+                      // Format result string for display
+                      let displayResult = match.resultString;
+                      if (!match.isBye && match.isComplete) {
+                        // For regular matches, show result from left player's perspective
+                        displayResult = `${left.games}-${right.games}`;
+                        if (match.gameDraws > 0) {
+                          displayResult += `-${match.gameDraws}`;
+                        }
+                      }
 
-                        <div class="match-vs">
-                          <div class="match-game-wins left-wins">{left.games}</div>
-                          <div class="swords">⚔️</div>
-                          <div class="match-game-wins right-wins">
-                            {match.isBye ? '—' : right.games}
-                          </div>
-                        </div>
-
-                        <div class="match-side right">
-                          {right.player ? (
-                            <a href={right.player.profileUrl} class="match-player-name">
-                              {right.player.displayName}
-                            </a>
-                          ) : (
-                            <span class="match-bye-text">Bye</span>
-                          )}
-                          {showDeckData && rightDeck && (
-                            <div class="match-deck-name">{rightDeck}</div>
-                          )}
-                        </div>
-                      </div>
-                    </div>
-                  );
-                })}
+                      return (
+                        <tr class={match.isDraw ? 'draw-row' : ''}>
+                          <td class="player-col player-left">
+                            {left.player && (
+                              <>
+                                <a href={left.player.profileUrl} class="player-link">
+                                  {left.player.displayName}
+                                </a>
+                                {showDeckData && leftDeck && (
+                                  <div class="deck-name">{leftDeck}</div>
+                                )}
+                              </>
+                            )}
+                          </td>
+                          <td class="result-col">
+                            <span class="result-badge">{displayResult}</span>
+                          </td>
+                          <td class="player-col player-right">
+                            {right.player ? (
+                              <>
+                                <a href={right.player.profileUrl} class="player-link">
+                                  {right.player.displayName}
+                                </a>
+                                {showDeckData && rightDeck && (
+                                  <div class="deck-name">{rightDeck}</div>
+                                )}
+                              </>
+                            ) : (
+                              <span class="bye-text">Bye</span>
+                            )}
+                          </td>
+                        </tr>
+                      );
+                    })}
+                  </tbody>
+                </table>
               </div>
             </div>
-          );
-        })
-      }
+          ))}
+        </>
+      )}
 
       {
         celebrationWinners.length > 0 && (
@@ -417,96 +476,110 @@ if (fs.existsSync(metadataFile)) {
     font-size: 0.9rem;
   }
 
-  .round-matches {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 1rem;
-    padding: 1.5rem;
+  .round-table-container {
+    overflow-x: auto;
     background: white;
+    border-radius: 0 0 12px 12px;
   }
 
-  .match-card {
-    background: white;
-    border: 2px solid #e5e7eb;
-    border-radius: 12px;
-    padding: 1rem;
-    transition: all 0.2s ease;
-    display: flex;
-    align-items: center;
-  }
-
-  .match-card:hover {
-    border-color: #667eea;
-    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.15);
-  }
-
-  .match-content {
-    display: grid;
-    grid-template-columns: 1fr auto 1fr;
-    gap: 0.75rem;
-    align-items: center;
+  .round-table {
     width: 100%;
+    border-collapse: collapse;
   }
 
-  .match-side {
-    display: flex;
-    flex-direction: column;
-    gap: 0.35rem;
+  .round-table thead {
+    background: #f9fafb;
+    border-bottom: 1px solid #e5e7eb;
   }
 
-  .match-side.left {
-    align-items: flex-end;
-    text-align: right;
-  }
-
-  .match-side.right {
-    align-items: flex-start;
+  .round-table th {
+    padding: 0.75rem 1rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #764ba2;
     text-align: left;
   }
 
-  .match-player-name {
-    font-size: 1rem;
-    font-weight: 700;
+  .round-table tbody {
+    background: white;
+  }
+
+  .round-table td {
+    padding: 1.25rem 1rem;
+    border-bottom: 1px solid #e5e7eb;
+    text-align: left;
+    vertical-align: middle;
+  }
+
+  .round-table tbody tr:last-child td {
+    border-bottom: none;
+  }
+
+  .round-table tbody tr:hover {
+    background: #f9fafb;
+    transition: background 0.2s ease;
+  }
+
+  .round-table tbody tr.draw-row {
+    background: #fef3c7;
+  }
+
+  .round-table tbody tr.draw-row:hover {
+    background: #fde68a;
+  }
+
+  .round-table .player-col {
+    min-width: 150px;
+  }
+
+  .round-table .player-right {
+    text-align: right;
+  }
+
+  .round-table .result-col {
+    text-align: center;
+    width: 120px;
+  }
+
+  .round-table .player-link {
     color: #1f2937;
+    font-weight: 600;
+    font-size: 1.05rem;
     text-decoration: none;
-    transition: color 0.2s ease;
+    transition: all 0.2s ease;
+    display: block;
   }
 
-  .match-player-name:hover {
+  .round-table .player-link:hover {
     color: #667eea;
+    transform: translateX(2px);
   }
 
-  .match-deck-name {
+  .round-table .player-right .player-link:hover {
+    transform: translateX(-2px);
+  }
+
+  .round-table .deck-name {
+    color: #667eea;
+    font-weight: 600;
     font-size: 0.85rem;
-    font-weight: 600;
-    color: #667eea;
+    margin-top: 0.25rem;
   }
 
-  .match-game-wins {
-    font-size: 1.75rem;
-    font-weight: 800;
-    color: #10b981;
-    line-height: 1;
+  .round-table .result-badge {
+    display: inline-block;
+    padding: 0.375rem 0.875rem;
+    background: #f3f4f6;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 0.95rem;
+    color: #374151;
   }
 
-  .match-vs {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0 0.5rem;
-  }
-
-  .swords {
-    font-size: 2rem;
-    opacity: 0.4;
-    padding: 0 0.25rem;
-  }
-
-  .match-bye-text {
-    font-size: 1rem;
-    font-weight: 600;
+  .round-table .bye-text {
     color: #9ca3af;
     font-style: italic;
+    font-weight: 500;
   }
 
   .standings-table {
@@ -780,38 +853,34 @@ if (fs.existsSync(metadataFile)) {
     }
 
     .round-header {
-      padding: 1rem 1.5rem;
+      padding: 1rem;
       font-size: 0.85rem;
     }
 
-    .round-matches {
-      grid-template-columns: 1fr;
-      padding: 1rem;
-      gap: 0.75rem;
+    .round-table td {
+      padding: 0.75rem 0.5rem;
+      font-size: 0.85rem;
     }
 
-    .match-card {
-      padding: 1rem;
+    .round-table .result-badge {
+      font-size: 0.85rem;
+      padding: 0.3rem 0.6rem;
     }
 
-    .match-content {
-      gap: 1rem;
+    .round-table .player-col {
+      min-width: 120px;
     }
 
-    .match-player-name {
+    .round-table .result-col {
+      width: 90px;
+    }
+
+    .round-table .player-link {
       font-size: 0.9rem;
     }
 
-    .match-deck-name {
+    .round-table .deck-name {
       font-size: 0.8rem;
-    }
-
-    .match-game-wins {
-      font-size: 1.5rem;
-    }
-
-    .swords {
-      font-size: 1.5rem;
     }
 
     .trophy-content {
