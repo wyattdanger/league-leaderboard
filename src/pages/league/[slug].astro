@@ -63,12 +63,11 @@ if (isOverall) {
 // Determine if this is the current league (league with most recent event)
 const isCurrent = !isOverall && currentLeague ? isCurrentLeague(currentLeague, allLeagues) : false;
 
-// Current league shows latest event, non-current leagues show their Top 8 if they have one
-const showLatestEvent = isCurrent;
-const top8Tournament =
-  !isCurrent && currentLeague?.top8Tournament
-    ? getTournamentMetadata(currentLeague.top8Tournament)
-    : null;
+// Show Top 8 if league has one, otherwise show latest event for current league
+const top8Tournament = currentLeague?.top8Tournament
+  ? getTournamentMetadata(currentLeague.top8Tournament)
+  : null;
+const showLatestEvent = isCurrent && !top8Tournament;
 ---
 
 <LeaguePage
