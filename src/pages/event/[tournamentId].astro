@@ -118,13 +118,12 @@ const metagameBreakdown = showMetagameBreakdown && deckData ? calculateMetagameB
 // Get celebration data from tournament
 const celebrationWinners = tournament.celebrationWinners;
 const hasTrophies = tournament.hasTrophyWinners;
-const isTop8Tournament = currentLeague?.name === 'Top 8s';
 
 // Compute celebration messaging
-const celebrationEmoji = hasTrophies ? (isTop8Tournament ? '👑' : '🏆') : '🌟';
+const celebrationEmoji = hasTrophies ? (top8League ? '👑' : '🏆') : '🌟';
 
 const celebrationTitle = hasTrophies
-  ? isTop8Tournament
+  ? top8League
     ? celebrationWinners.length === 1
       ? 'Belt Winner'
       : 'Belt Winners'
@@ -136,7 +135,7 @@ const celebrationTitle = hasTrophies
     : 'Top Finishers';
 
 const celebrationMessage = hasTrophies
-  ? isTop8Tournament
+  ? top8League
     ? celebrationWinners.length === 1
       ? 'Congratulations to our league champion!'
       : 'Congratulations to our league champions!'
@@ -198,29 +197,31 @@ if (fs.existsSync(metadataFile)) {
           </>
         )}
       </div>
-      <div class="event-metadata">
-        <Tooltip
-          content={`${tournament.playerCount} ${tournament.playerCount === 1 ? 'player' : 'players'} attended`}
-        >
-          <div class="metadata-badge">
-            👤 {tournament.playerCount}
-          </div>
-        </Tooltip>
-        <Tooltip
-          content={`${tournament.trophyCount} ${tournament.trophyCount === 1 ? 'player' : 'players'} went 3-0`}
-        >
-          <div class="metadata-badge">
-            🏆 {tournament.trophyCount}
-          </div>
-        </Tooltip>
-        <Tooltip
-          content={`${tournament.roundCount} ${tournament.roundCount === 1 ? 'round' : 'rounds'} of Swiss`}
-        >
-          <div class="metadata-badge">
+      {!top8League && (
+        <div class="event-metadata">
+          <Tooltip
+            content={`${tournament.playerCount} ${tournament.playerCount === 1 ? 'player' : 'players'} attended`}
+          >
+            <div class="metadata-badge">
+              👤 {tournament.playerCount}
+            </div>
+          </Tooltip>
+          <Tooltip
+            content={`${tournament.trophyCount} ${tournament.trophyCount === 1 ? 'player' : 'players'} went 3-0`}
+          >
+            <div class="metadata-badge">
+              🏆 {tournament.trophyCount}
+            </div>
+          </Tooltip>
+          <Tooltip
+            content={`${tournament.roundCount} ${tournament.roundCount === 1 ? 'round' : 'rounds'} of Swiss`}
+          >
+            <div class="metadata-badge">
             ⚔️ {tournament.roundCount}
           </div>
         </Tooltip>
-      </div>
+        </div>
+      )}
     </div>
 
     <div class="event-content">
