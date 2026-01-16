@@ -17,6 +17,16 @@ interface PageMetadata {
   }[];
 }
 
+function getDeckName(
+  username: string,
+  deckData: Record<string, string> | null,
+  showDeckData: boolean
+): string | null {
+  if (!showDeckData || !deckData) return null;
+  const deck = deckData[username];
+  return deck && deck !== '_' ? deck : null;
+}
+
 function generateEventPageMetadata(tournamentId: string): void {
   const metadataDir = path.join(process.cwd(), 'output', `tournament_${tournamentId}`);
 
@@ -25,6 +35,24 @@ function generateEventPageMetadata(tournamentId: string): void {
   }
 
   const tournament = Tournament.load(tournamentId);
+
+  // Check if this is a Top 8 tournament and get the league name
+  const leaguesPath = path.join(process.cwd(), 'leagues.yml');
+  let isTop8Tournament = false;
+  let leagueName: string | null = null;
+  if (fs.existsSync(leaguesPath)) {
+    const leaguesYaml = fs.readFileSync(leaguesPath, 'utf-8');
+    const config = yaml.load(leaguesYaml) as {
+      leagues: Array<{ name: string; tournaments: number[]; top8Tournament?: number }>;
+    };
+    const matchingLeague = config.leagues.find(
+      (league) => league.top8Tournament?.toString() === tournamentId
+    );
+    if (matchingLeague) {
+      isTop8Tournament = true;
+      leagueName = matchingLeague.name;
+    }
+  }
 
   // Load deck data
   const decksPath = path.join(process.cwd(), 'decks.yml');
@@ -65,31 +93,44 @@ function generateEventPageMetadata(tournamentId: string): void {
     : [];
 
   // Build description text
-  let descriptionText = `${tournament.playerCount} ${tournament.playerCount === 1 ? 'player' : 'players'} gathered.`;
+  let descriptionText: string;
 
-  if (topFinishers.length > 0 && bestRecord) {
-    const recordText = `${bestRecord.matchWins}-${bestRecord.matchLosses}${bestRecord.matchDraws > 0 ? `-${bestRecord.matchDraws}` : ''}`;
+  if (isTop8Tournament && leagueName) {
+    // Special description for Top 8 tournaments - highlight the champion
+    const champion = topFinishers.find(
+      (s) => s.matchWins === 3 && s.matchLosses === 0 && s.matchDraws === 0
+    );
 
-    const finisherTexts = topFinishers.map((standing) => {
-      const playerName = standing.player.displayName;
-      const deck = showDeckData && deckData ? deckData[standing.player.username] : null;
-
-      if (deck && deck !== '_') {
-        return `${playerName} went ${recordText} on ${deck}`;
-      } else {
-        return `${playerName} went ${recordText}`;
-      }
-    });
-
-    // Join with commas and "and" before the last one
-    if (finisherTexts.length === 1) {
-      descriptionText += ` ${finisherTexts[0]}`;
-    } else if (finisherTexts.length === 2) {
-      descriptionText += ` ${finisherTexts[0]} and ${finisherTexts[1]}`;
+    if (champion) {
+      const championDeck = getDeckName(champion.player.username, deckData, showDeckData);
+      const deckText = championDeck ? ` playing ${championDeck}` : '';
+      descriptionText = `${champion.player.displayName} won the ${leagueName} Top 8${deckText} 👑`;
     } else {
-      const allButLast = finisherTexts.slice(0, -1).join(', ');
-      const last = finisherTexts[finisherTexts.length - 1];
-      descriptionText += ` ${allButLast}, and ${last}`;
+      descriptionText = `${leagueName} Top 8 playoff tournament.`;
+    }
+  } else {
+    // Regular tournament description
+    descriptionText = `${tournament.playerCount} ${tournament.playerCount === 1 ? 'player' : 'players'} gathered.`;
+
+    if (topFinishers.length > 0 && bestRecord) {
+      const recordText = `${bestRecord.matchWins}-${bestRecord.matchLosses}${bestRecord.matchDraws > 0 ? `-${bestRecord.matchDraws}` : ''}`;
+
+      const finisherTexts = topFinishers.map((standing) => {
+        const playerName = standing.player.displayName;
+        const deck = getDeckName(standing.player.username, deckData, showDeckData);
+        return deck ? `${playerName} went ${recordText} on ${deck}` : `${playerName} went ${recordText}`;
+      });
+
+      // Join with commas and "and" before the last one
+      if (finisherTexts.length === 1) {
+        descriptionText += ` ${finisherTexts[0]}`;
+      } else if (finisherTexts.length === 2) {
+        descriptionText += ` ${finisherTexts[0]} and ${finisherTexts[1]}`;
+      } else {
+        const allButLast = finisherTexts.slice(0, -1).join(', ');
+        const last = finisherTexts[finisherTexts.length - 1];
+        descriptionText += ` ${allButLast}, and ${last}`;
+      }
     }
   }
 
@@ -104,7 +145,7 @@ function generateEventPageMetadata(tournamentId: string): void {
       username: s.player.username,
       displayName: s.player.displayName,
       record: `${s.matchWins}-${s.matchLosses}${s.matchDraws > 0 ? `-${s.matchDraws}` : ''}`,
-      deck: showDeckData && deckData ? deckData[s.player.username] : null,
+      deck: getDeckName(s.player.username, deckData, showDeckData),
     })),
   };
 
