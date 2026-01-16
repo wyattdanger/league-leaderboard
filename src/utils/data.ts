@@ -102,18 +102,18 @@ export function aggregateOverallStandings(allLeagues: LeaguesConfig['leagues']):
     stats.gameWins += standing.GameWins;
     stats.gameLosses += standing.GameLosses;
     stats.gameDraws += standing.GameDraws;
-    if (standing.TournamentCount) {
-      stats.tournaments.add(standing.TeamId);
-    }
+    // Tournament count will be loaded from player stats files below
   }
 
-  // Load player stats to get trophy and belt counts (source of truth)
+  // Load player stats to get tournament count, trophy, and belt counts (source of truth)
   const playersDir = path.join(process.cwd(), 'output', 'players');
   if (fs.existsSync(playersDir)) {
     for (const [username, stats] of playerStats) {
       const playerFile = path.join(playersDir, `player_stats_${username.toLowerCase()}.json`);
       if (fs.existsSync(playerFile)) {
         const playerData = JSON.parse(fs.readFileSync(playerFile, 'utf-8'));
+        const tournamentCount = playerData.overallStats?.totalTournaments || 0;
+        stats.tournaments = new Set(Array.from({ length: tournamentCount }, (_, i) => i));
         stats.trophies = playerData.overallStats?.trophies || 0;
         stats.belts = playerData.overallStats?.belts || 0;
       }
