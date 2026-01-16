@@ -322,8 +322,8 @@ if (fs.existsSync(metadataFile)) {
                                 <a href={left.player.profileUrl} class="player-link">
                                   {left.player.displayName}
                                 </a>
-                                {showDeckData && leftDeck && (
-                                  <div class="deck-name">{leftDeck}</div>
+                                {showDeckData && (
+                                  <div class="deck-name">{leftDeck || '\u00A0'}</div>
                                 )}
                               </>
                             )}
@@ -337,8 +337,8 @@ if (fs.existsSync(metadataFile)) {
                                 <a href={right.player.profileUrl} class="player-link">
                                   {right.player.displayName}
                                 </a>
-                                {showDeckData && rightDeck && (
-                                  <div class="deck-name">{rightDeck}</div>
+                                {showDeckData && (
+                                  <div class="deck-name">{rightDeck || '\u00A0'}</div>
                                 )}
                               </>
                             ) : (
@@ -504,8 +504,12 @@ if (fs.existsSync(metadataFile)) {
     background: white;
   }
 
+  .round-table tbody tr {
+    height: 5rem;
+  }
+
   .round-table td {
-    padding: 1.25rem 1rem;
+    padding: 1rem;
     border-bottom: 1px solid #e5e7eb;
     text-align: left;
     vertical-align: middle;
@@ -529,7 +533,7 @@ if (fs.existsSync(metadataFile)) {
   }
 
   .round-table .player-col {
-    min-width: 150px;
+    width: 40%;
   }
 
   .round-table .player-right {
@@ -564,6 +568,8 @@ if (fs.existsSync(metadataFile)) {
     font-weight: 600;
     font-size: 0.85rem;
     margin-top: 0.25rem;
+    display: block;
+    min-height: 1.2em;
   }
 
   .round-table .result-badge {
