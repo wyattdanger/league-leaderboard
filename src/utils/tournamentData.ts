@@ -1,8 +1,43 @@
 import * as fs from 'fs';
 import * as path from 'path';
+import * as yaml from 'js-yaml';
 import type { TournamentMetadata } from '../types';
 import { loadDeckData } from './deckData';
 import { Player } from '../models/Player';
+
+/**
+ * Check if a tournament is a Top 8 playoff tournament
+ * @param tournamentId Tournament ID (string or number)
+ * @returns Object with { isTop8: boolean, leagueName: string | null }
+ */
+export function isTop8Tournament(tournamentId: string | number): { isTop8: boolean; leagueName: string | null } {
+  const leaguesPath = path.join(process.cwd(), 'leagues.yml');
+
+  if (!fs.existsSync(leaguesPath)) {
+    return { isTop8: false, leagueName: null };
+  }
+
+  try {
+    const leaguesYaml = fs.readFileSync(leaguesPath, 'utf-8');
+    const config = yaml.load(leaguesYaml) as {
+      leagues: Array<{ name: string; tournaments: number[]; top8Tournament?: number }>;
+    };
+
+    const tournamentIdStr = tournamentId.toString();
+    const matchingLeague = config.leagues.find(
+      (league) => league.top8Tournament?.toString() === tournamentIdStr
+    );
+
+    if (matchingLeague) {
+      return { isTop8: true, leagueName: matchingLeague.name };
+    }
+
+    return { isTop8: false, leagueName: null };
+  } catch (error) {
+    console.error('Error loading leagues.yml:', error);
+    return { isTop8: false, leagueName: null };
+  }
+}
 
 /**
  * Get tournament metadata (ID, name, date) from tournament data

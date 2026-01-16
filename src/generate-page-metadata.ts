@@ -2,6 +2,7 @@ import * as fs from 'fs';
 import * as path from 'path';
 import * as yaml from 'js-yaml';
 import { Tournament } from './models/Tournament';
+import { isTop8Tournament } from './utils/tournamentData';
 
 interface PageMetadata {
   title: string;
@@ -37,22 +38,9 @@ function generateEventPageMetadata(tournamentId: string): void {
   const tournament = Tournament.load(tournamentId);
 
   // Check if this is a Top 8 tournament and get the league name
-  const leaguesPath = path.join(process.cwd(), 'leagues.yml');
-  let isTop8Tournament = false;
-  let leagueName: string | null = null;
-  if (fs.existsSync(leaguesPath)) {
-    const leaguesYaml = fs.readFileSync(leaguesPath, 'utf-8');
-    const config = yaml.load(leaguesYaml) as {
-      leagues: Array<{ name: string; tournaments: number[]; top8Tournament?: number }>;
-    };
-    const matchingLeague = config.leagues.find(
-      (league) => league.top8Tournament?.toString() === tournamentId
-    );
-    if (matchingLeague) {
-      isTop8Tournament = true;
-      leagueName = matchingLeague.name;
-    }
-  }
+  const top8Info = isTop8Tournament(tournamentId);
+  const isTop8 = top8Info.isTop8;
+  const leagueName = top8Info.leagueName;
 
   // Load deck data
   const decksPath = path.join(process.cwd(), 'decks.yml');
@@ -65,12 +53,14 @@ function generateEventPageMetadata(tournamentId: string): void {
   }
 
   // Check if we have complete deck data
-  const showDeckData =
-    deckData !== null &&
-    tournament.finalStandings.every((standing) => {
-      const deck = deckData![standing.player.username];
-      return deck && deck !== '_';
-    });
+  // For Top 8 tournaments, we only care about the champion's deck
+  const showDeckData = isTop8
+    ? deckData !== null
+    : deckData !== null &&
+      tournament.finalStandings.every((standing) => {
+        const deck = deckData![standing.player.username];
+        return deck && deck !== '_';
+      });
 
   // Generate title
   const pageTitle = `NYC Premodern - ${tournament.dateDisplay} Meetup`;
@@ -95,7 +85,7 @@ function generateEventPageMetadata(tournamentId: string): void {
   // Build description text
   let descriptionText: string;
 
-  if (isTop8Tournament && leagueName) {
+  if (isTop8 && leagueName) {
     // Special description for Top 8 tournaments - highlight the champion
     const champion = topFinishers.find(
       (s) => s.matchWins === 3 && s.matchLosses === 0 && s.matchDraws === 0
