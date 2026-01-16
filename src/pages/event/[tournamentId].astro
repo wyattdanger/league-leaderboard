@@ -44,11 +44,22 @@ try {
 // Load leagues config and find which league this tournament belongs to
 const config = loadLeaguesConfig();
 const allLeagues = config.leagues;
+const tournamentIdNum = parseInt(tournamentId, 10);
 const currentLeague =
-  allLeagues.find((league) => league.tournaments.includes(tournamentId)) || null;
+  allLeagues.find((league) => league.tournaments.includes(tournamentIdNum)) || null;
 
 // Check if this tournament is a Top 8 for any league
-const top8League = allLeagues.find((league) => league.top8Tournament === tournamentId);
+const top8League = allLeagues.find((league) => league.top8Tournament === tournamentIdNum);
+
+// Calculate week number within the season if this is a regular tournament
+let weekNumber: number | null = null;
+if (currentLeague && !top8League) {
+  const tournamentIndex = currentLeague.tournaments.indexOf(tournamentIdNum);
+  if (tournamentIndex !== -1) {
+    // Tournaments are listed newest first, so reverse the index
+    weekNumber = currentLeague.tournaments.length - tournamentIndex;
+  }
+}
 
 // Load deck data if available (show partial data)
 const deckData = loadDeckData(tournamentId);
@@ -128,7 +139,22 @@ if (fs.existsSync(metadataFile)) {
   <div class="card">
     <div class="event-profile-header">
       <div class="event-name-group">
-        <h1>{top8League ? `${top8League.name} Top 8` : tournament.dateDisplay}</h1>
+        {top8League ? (
+          <>
+            <h1>{top8League.name} Top 8</h1>
+            <div class="event-subheading">{tournament.dateDisplay}</div>
+          </>
+        ) : currentLeague && weekNumber ? (
+          <>
+            <h1>{currentLeague.name} Week {weekNumber}</h1>
+            <div class="event-subheading">{tournament.dateDisplay}</div>
+          </>
+        ) : (
+          <>
+            <h1>Weekly</h1>
+            <div class="event-subheading">{tournament.dateDisplay}</div>
+          </>
+        )}
       </div>
       <div class="event-metadata">
         <Tooltip
@@ -329,6 +355,13 @@ if (fs.existsSync(metadataFile)) {
     font-weight: 700;
     margin: 0;
     color: white;
+  }
+
+  .event-subheading {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.85);
+    margin-top: 0.25rem;
   }
 
   .event-metadata {
