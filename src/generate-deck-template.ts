@@ -6,6 +6,7 @@ import { getTournamentMetadata } from './utils/tournamentData';
 interface League {
   name: string;
   tournaments: number[];
+  top8Tournament?: number;
 }
 
 interface LeaguesConfig {
@@ -67,10 +68,13 @@ async function generateDeckTemplate(): Promise<void> {
   const config = loadLeaguesConfig();
   const allTournamentIds = new Set<number>();
 
-  // Collect all tournament IDs
+  // Collect all tournament IDs (including Top 8 tournaments)
   for (const league of config.leagues) {
     for (const tournamentId of league.tournaments) {
       allTournamentIds.add(tournamentId);
+    }
+    if (league.top8Tournament) {
+      allTournamentIds.add(league.top8Tournament);
     }
   }
 
