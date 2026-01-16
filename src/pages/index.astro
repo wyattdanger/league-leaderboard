@@ -15,6 +15,12 @@ const standings = loadLeagueStandings(firstLeague.name);
 const tournamentMetadata: TournamentMetadata[] = firstLeague.tournaments
   .map((id) => getTournamentMetadata(id))
   .filter((meta): meta is TournamentMetadata => meta !== null);
+
+// Show Top 8 if league has one, otherwise show latest event
+const top8Tournament = firstLeague.top8Tournament
+  ? getTournamentMetadata(firstLeague.top8Tournament)
+  : null;
+const showLatestEvent = !top8Tournament;
 ---
 
 <LeaguePage
@@ -23,5 +29,6 @@ const tournamentMetadata: TournamentMetadata[] = firstLeague.tournaments
   isOverall={false}
   standings={standings}
   tournaments={tournamentMetadata}
-  showLatestEvent={true}
+  showLatestEvent={showLatestEvent}
+  top8Tournament={top8Tournament}
 />
