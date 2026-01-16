@@ -2,13 +2,13 @@
   "username": "swbmtg",
   "displayName": "swb",
   "overallStats": {
-    "totalTournaments": 28,
-    "totalPoints": 187,
-    "totalMatches": 84,
-    "matchRecord": "61-19-4",
-    "matchWinPercentage": 0.75,
-    "gameRecord": "136-67-2",
-    "gameWinPercentage": 0.6634146341463415,
+    "totalTournaments": 29,
+    "totalPoints": 193,
+    "totalMatches": 87,
+    "matchRecord": "63-20-4",
+    "matchWinPercentage": 0.7471264367816092,
+    "gameRecord": "140-71-2",
+    "gameWinPercentage": 0.6572769953051644,
     "trophies": 8,
     "belts": 1
   },
@@ -21,6 +21,15 @@
       "matchWinPercentage": 0.8166666666666667,
       "gameRecord": "52-21-1",
       "gameWinPercentage": 0.7094594594594594
+    },
+    {
+      "leagueName": "Q4 2025 Top 8",
+      "events": 1,
+      "points": 6,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameRecord": "4-4-0",
+      "gameWinPercentage": 0.5
     },
     {
       "leagueName": "Q3 2025",
@@ -117,6 +126,20 @@
       "trophies": 0
     },
     {
+      "deckName": "Tide",
+      "events": 2,
+      "matchWins": 4,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchRecord": "4-2-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 10,
+      "gameLosses": 6,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.625,
+      "trophies": 0
+    },
+    {
       "deckName": "Unknown",
       "events": 2,
       "matchWins": 4,
@@ -171,20 +194,6 @@
       "gameDraws": 0,
       "gameWinPercentage": 0.75,
       "trophies": 1
-    },
-    {
-      "deckName": "Tide",
-      "events": 1,
-      "matchWins": 2,
-      "matchLosses": 1,
-      "matchDraws": 0,
-      "matchRecord": "2-1-0",
-      "matchWinPercentage": 0.6666666666666666,
-      "gameWins": 6,
-      "gameLosses": 2,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.75,
-      "trophies": 0
     },
     {
       "deckName": "Cradle Control",
@@ -275,15 +284,15 @@
     {
       "opponentUsername": "madmanpoet",
       "opponentDisplayName": "Michael Flores",
-      "matchesPlayed": 11,
+      "matchesPlayed": 12,
       "matchWins": 10,
-      "matchLosses": 1,
+      "matchLosses": 2,
       "matchDraws": 0,
-      "matchWinPercentage": 0.9090909090909091,
+      "matchWinPercentage": 0.8333333333333334,
       "gameWins": 19,
-      "gameLosses": 5,
+      "gameLosses": 7,
       "gameDraws": 0,
-      "gameWinPercentage": 0.7916666666666666,
+      "gameWinPercentage": 0.7307692307692307,
       "matches": [
         {
           "tournamentId": "382756",
@@ -323,6 +332,16 @@
           "opponentDeck": "Enchantress",
           "playerGameWins": 2,
           "opponentGameWins": 0,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "397227",
+          "dateDisplay": "January 15, 2026",
+          "result": "L",
+          "playerDeck": "Tide",
+          "opponentDeck": "Elves",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
           "gameDraws": 0
         },
         {
@@ -483,6 +502,81 @@
       ]
     },
     {
+      "opponentUsername": "JUDDERMANG",
+      "opponentDisplayName": "Chris Cruz",
+      "matchesPlayed": 6,
+      "matchWins": 4,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 10,
+      "gameLosses": 7,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5882352941176471,
+      "matches": [
+        {
+          "tournamentId": "388334",
+          "dateDisplay": "December 4, 2025",
+          "result": "L",
+          "playerDeck": "Oath Parfait",
+          "opponentDeck": "Dreadnought",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "397227",
+          "dateDisplay": "January 15, 2026",
+          "result": "W",
+          "playerDeck": "Tide",
+          "opponentDeck": "Dreadnought",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "343959",
+          "dateDisplay": "July 24, 2025",
+          "result": "W",
+          "playerDeck": "_",
+          "opponentDeck": "_",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "328861",
+          "dateDisplay": "June 19, 2025",
+          "result": "W",
+          "playerDeck": "_",
+          "opponentDeck": "_",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "316750",
+          "dateDisplay": "May 29, 2025",
+          "result": "L",
+          "playerDeck": "Elves",
+          "opponentDeck": "_",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "312921",
+          "dateDisplay": "May 22, 2025",
+          "result": "W",
+          "playerDeck": "Lan D Hoath",
+          "opponentDeck": "_",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "FriendlyFerret",
       "opponentDisplayName": "Bill Ellis!!",
       "matchesPlayed": 5,
@@ -548,8 +642,8 @@
       ]
     },
     {
-      "opponentUsername": "JUDDERMANG",
-      "opponentDisplayName": "Chris Cruz",
+      "opponentUsername": "RichBucey",
+      "opponentDisplayName": "RichBucey",
       "matchesPlayed": 5,
       "matchWins": 3,
       "matchLosses": 2,
@@ -561,23 +655,23 @@
       "gameWinPercentage": 0.5714285714285714,
       "matches": [
         {
-          "tournamentId": "388334",
-          "dateDisplay": "December 4, 2025",
-          "result": "L",
+          "tournamentId": "371711",
+          "dateDisplay": "October 9, 2025",
+          "result": "W",
           "playerDeck": "Oath Parfait",
-          "opponentDeck": "Dreadnought",
-          "playerGameWins": 1,
-          "opponentGameWins": 2,
+          "opponentDeck": "Enchantress",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
           "gameDraws": 0
         },
         {
-          "tournamentId": "343959",
-          "dateDisplay": "July 24, 2025",
+          "tournamentId": "397227",
+          "dateDisplay": "January 15, 2026",
           "result": "W",
-          "playerDeck": "_",
-          "opponentDeck": "_",
+          "playerDeck": "Tide",
+          "opponentDeck": "Moneyball Black",
           "playerGameWins": 2,
-          "opponentGameWins": 0,
+          "opponentGameWins": 1,
           "gameDraws": 0
         },
         {
@@ -587,27 +681,27 @@
           "playerDeck": "_",
           "opponentDeck": "_",
           "playerGameWins": 2,
-          "opponentGameWins": 1,
+          "opponentGameWins": 0,
           "gameDraws": 0
         },
         {
-          "tournamentId": "316750",
-          "dateDisplay": "May 29, 2025",
+          "tournamentId": "308700",
+          "dateDisplay": "May 15, 2025",
           "result": "L",
-          "playerDeck": "Elves",
+          "playerDeck": "Storm",
           "opponentDeck": "_",
           "playerGameWins": 1,
           "opponentGameWins": 2,
           "gameDraws": 0
         },
         {
-          "tournamentId": "312921",
-          "dateDisplay": "May 22, 2025",
-          "result": "W",
-          "playerDeck": "Lan D Hoath",
-          "opponentDeck": "_",
-          "playerGameWins": 2,
-          "opponentGameWins": 1,
+          "tournamentId": "341527",
+          "dateDisplay": "July 17, 2025",
+          "result": "L",
+          "playerDeck": "Tidestill",
+          "opponentDeck": "Oath Ponza",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
           "gameDraws": 0
         }
       ]
@@ -663,61 +757,6 @@
           "opponentDeck": "_",
           "playerGameWins": 2,
           "opponentGameWins": 1,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "RichBucey",
-      "opponentDisplayName": "RichBucey",
-      "matchesPlayed": 4,
-      "matchWins": 2,
-      "matchLosses": 2,
-      "matchDraws": 0,
-      "matchWinPercentage": 0.5,
-      "gameWins": 6,
-      "gameLosses": 5,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.5454545454545454,
-      "matches": [
-        {
-          "tournamentId": "371711",
-          "dateDisplay": "October 9, 2025",
-          "result": "W",
-          "playerDeck": "Oath Parfait",
-          "opponentDeck": "Enchantress",
-          "playerGameWins": 2,
-          "opponentGameWins": 1,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "328861",
-          "dateDisplay": "June 19, 2025",
-          "result": "W",
-          "playerDeck": "_",
-          "opponentDeck": "_",
-          "playerGameWins": 2,
-          "opponentGameWins": 0,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "308700",
-          "dateDisplay": "May 15, 2025",
-          "result": "L",
-          "playerDeck": "Storm",
-          "opponentDeck": "_",
-          "playerGameWins": 1,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "341527",
-          "dateDisplay": "July 17, 2025",
-          "result": "L",
-          "playerDeck": "Tidestill",
-          "opponentDeck": "Oath Ponza",
-          "playerGameWins": 1,
-          "opponentGameWins": 2,
           "gameDraws": 0
         }
       ]
@@ -1574,6 +1613,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "397227",
+      "dateDisplay": "January 15, 2026",
+      "playerCount": 8,
+      "trophyCount": 1,
+      "roundCount": 3,
+      "rank": 3,
+      "points": 6,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWinPercentage": 0.5,
+      "deck": "Tide"
+    },
     {
       "tournamentId": "395699",
       "dateDisplay": "January 8, 2026",

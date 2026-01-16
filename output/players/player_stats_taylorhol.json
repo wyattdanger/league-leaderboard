@@ -2,13 +2,13 @@
   "username": "Taylorhol",
   "displayName": "Taylorhol",
   "overallStats": {
-    "totalTournaments": 13,
-    "totalPoints": 59,
-    "totalMatches": 39,
-    "matchRecord": "19-18-2",
-    "matchWinPercentage": 0.5128205128205128,
-    "gameRecord": "47-46-2",
-    "gameWinPercentage": 0.49473684210526314,
+    "totalTournaments": 14,
+    "totalPoints": 62,
+    "totalMatches": 42,
+    "matchRecord": "20-20-2",
+    "matchWinPercentage": 0.5,
+    "gameRecord": "50-50-2",
+    "gameWinPercentage": 0.49019607843137253,
     "trophies": 1,
     "belts": 0
   },
@@ -21,6 +21,15 @@
       "matchWinPercentage": 0.5151515151515151,
       "gameRecord": "39-38-2",
       "gameWinPercentage": 0.5063291139240507
+    },
+    {
+      "leagueName": "Q4 2025 Top 8",
+      "events": 1,
+      "points": 3,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameRecord": "3-4-0",
+      "gameWinPercentage": 0.42857142857142855
     },
     {
       "leagueName": "Q3 2025",
@@ -118,6 +127,20 @@
       "trophies": 0
     },
     {
+      "deckName": "Enchantress",
+      "events": 1,
+      "matchWins": 1,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 3,
+      "gameLosses": 5,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.375,
+      "trophies": 0
+    },
+    {
       "deckName": "Elves",
       "events": 1,
       "matchWins": 1,
@@ -133,6 +156,61 @@
     }
   ],
   "headToHead": [
+    {
+      "opponentUsername": "sjpenzer",
+      "opponentDisplayName": "sjpenzer",
+      "matchesPlayed": 4,
+      "matchWins": 0,
+      "matchLosses": 4,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 8,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.1111111111111111,
+      "matches": [
+        {
+          "tournamentId": "390154",
+          "dateDisplay": "December 11, 2025",
+          "result": "L",
+          "playerDeck": "Gush Tithe",
+          "opponentDeck": "Terrageddon",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "382756",
+          "dateDisplay": "November 13, 2025",
+          "result": "L",
+          "playerDeck": "Terrageddon",
+          "opponentDeck": "Terrageddon",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "375338",
+          "dateDisplay": "October 23, 2025",
+          "result": "L",
+          "playerDeck": "Replenish",
+          "opponentDeck": "Terrageddon",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "397227",
+          "dateDisplay": "January 15, 2026",
+          "result": "L",
+          "playerDeck": "Enchantress",
+          "opponentDeck": "Terrageddon",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
     {
       "opponentUsername": "swbmtg",
       "opponentDisplayName": "swb",
@@ -173,51 +251,6 @@
           "playerDeck": "Gush Tithe",
           "opponentDeck": "Oath Parfait",
           "playerGameWins": 1,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "sjpenzer",
-      "opponentDisplayName": "sjpenzer",
-      "matchesPlayed": 3,
-      "matchWins": 0,
-      "matchLosses": 3,
-      "matchDraws": 0,
-      "matchWinPercentage": 0,
-      "gameWins": 0,
-      "gameLosses": 6,
-      "gameDraws": 0,
-      "gameWinPercentage": 0,
-      "matches": [
-        {
-          "tournamentId": "390154",
-          "dateDisplay": "December 11, 2025",
-          "result": "L",
-          "playerDeck": "Gush Tithe",
-          "opponentDeck": "Terrageddon",
-          "playerGameWins": 0,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "382756",
-          "dateDisplay": "November 13, 2025",
-          "result": "L",
-          "playerDeck": "Terrageddon",
-          "opponentDeck": "Terrageddon",
-          "playerGameWins": 0,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "375338",
-          "dateDisplay": "October 23, 2025",
-          "result": "L",
-          "playerDeck": "Replenish",
-          "opponentDeck": "Terrageddon",
-          "playerGameWins": 0,
           "opponentGameWins": 2,
           "gameDraws": 0
         }
@@ -335,6 +368,41 @@
           "playerGameWins": 1,
           "opponentGameWins": 1,
           "gameDraws": 1
+        }
+      ]
+    },
+    {
+      "opponentUsername": "JUDDERMANG",
+      "opponentDisplayName": "Chris Cruz",
+      "matchesPlayed": 2,
+      "matchWins": 2,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 4,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "matches": [
+        {
+          "tournamentId": "391734",
+          "dateDisplay": "December 18, 2025",
+          "result": "W",
+          "playerDeck": "Snap Cradle Pop",
+          "opponentDeck": "Burn",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "397227",
+          "dateDisplay": "January 15, 2026",
+          "result": "W",
+          "playerDeck": "Enchantress",
+          "opponentDeck": "Dreadnought",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
         }
       ]
     },
@@ -614,31 +682,6 @@
       ]
     },
     {
-      "opponentUsername": "JUDDERMANG",
-      "opponentDisplayName": "Chris Cruz",
-      "matchesPlayed": 1,
-      "matchWins": 1,
-      "matchLosses": 0,
-      "matchDraws": 0,
-      "matchWinPercentage": 1,
-      "gameWins": 2,
-      "gameLosses": 0,
-      "gameDraws": 0,
-      "gameWinPercentage": 1,
-      "matches": [
-        {
-          "tournamentId": "391734",
-          "dateDisplay": "December 18, 2025",
-          "result": "W",
-          "playerDeck": "Snap Cradle Pop",
-          "opponentDeck": "Burn",
-          "playerGameWins": 2,
-          "opponentGameWins": 0,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
       "opponentUsername": "sHaDes27",
       "opponentDisplayName": "Shawn Stroke",
       "matchesPlayed": 1,
@@ -814,6 +857,31 @@
       ]
     },
     {
+      "opponentUsername": "Tencteri",
+      "opponentDisplayName": "Tencteri",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "matches": [
+        {
+          "tournamentId": "397227",
+          "dateDisplay": "January 15, 2026",
+          "result": "L",
+          "playerDeck": "Enchantress",
+          "opponentDeck": "Tinker",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "jeffmarkues",
       "opponentDisplayName": "Jeff Farris",
       "matchesPlayed": 1,
@@ -840,6 +908,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "397227",
+      "dateDisplay": "January 15, 2026",
+      "playerCount": 8,
+      "trophyCount": 1,
+      "roundCount": 3,
+      "rank": 7,
+      "points": 3,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWinPercentage": 0.4285714,
+      "deck": "Enchantress"
+    },
     {
       "tournamentId": "395699",
       "dateDisplay": "January 8, 2026",

@@ -2,13 +2,13 @@
   "username": "Tencteri",
   "displayName": "Tencteri",
   "overallStats": {
-    "totalTournaments": 18,
-    "totalPoints": 79,
-    "totalMatches": 53,
-    "matchRecord": "26-26-1",
-    "matchWinPercentage": 0.5,
-    "gameRecord": "65-65-1",
-    "gameWinPercentage": 0.4961832061068702,
+    "totalTournaments": 19,
+    "totalPoints": 82,
+    "totalMatches": 56,
+    "matchRecord": "27-28-1",
+    "matchWinPercentage": 0.49107142857142855,
+    "gameRecord": "68-69-1",
+    "gameWinPercentage": 0.4927536231884058,
     "trophies": 0,
     "belts": 0
   },
@@ -21,6 +21,15 @@
       "matchWinPercentage": 0.5384615384615384,
       "gameRecord": "36-31-0",
       "gameWinPercentage": 0.5373134328358209
+    },
+    {
+      "leagueName": "Q4 2025 Top 8",
+      "events": 1,
+      "points": 3,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameRecord": "3-4-0",
+      "gameWinPercentage": 0.42857142857142855
     },
     {
       "leagueName": "Q3 2025",
@@ -94,6 +103,20 @@
       "trophies": 0
     },
     {
+      "deckName": "Tinker",
+      "events": 1,
+      "matchWins": 1,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 3,
+      "gameLosses": 5,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.375,
+      "trophies": 0
+    },
+    {
       "deckName": "Pox",
       "events": 1,
       "matchWins": 1,
@@ -123,6 +146,71 @@
     }
   ],
   "headToHead": [
+    {
+      "opponentUsername": "madmanpoet",
+      "opponentDisplayName": "Michael Flores",
+      "matchesPlayed": 5,
+      "matchWins": 3,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.6,
+      "gameWins": 6,
+      "gameLosses": 6,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5,
+      "matches": [
+        {
+          "tournamentId": "395699",
+          "dateDisplay": "January 8, 2026",
+          "result": "W",
+          "playerDeck": "White Weenie",
+          "opponentDeck": "Dreadnought",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "375338",
+          "dateDisplay": "October 23, 2025",
+          "result": "W",
+          "playerDeck": "Deadguy Ale",
+          "opponentDeck": "Enchantress",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "397227",
+          "dateDisplay": "January 15, 2026",
+          "result": "L",
+          "playerDeck": "Tinker",
+          "opponentDeck": "Elves",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "305152",
+          "dateDisplay": "May 8, 2025",
+          "result": "W",
+          "playerDeck": "_",
+          "opponentDeck": "Goblins",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "341527",
+          "dateDisplay": "July 17, 2025",
+          "result": "L",
+          "playerDeck": "Burn",
+          "opponentDeck": "Burn",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
     {
       "opponentUsername": "RichBucey",
       "opponentDisplayName": "RichBucey",
@@ -182,61 +270,6 @@
           "result": "L",
           "playerDeck": "Burn",
           "opponentDeck": "Oath Ponza",
-          "playerGameWins": 0,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "madmanpoet",
-      "opponentDisplayName": "Michael Flores",
-      "matchesPlayed": 4,
-      "matchWins": 3,
-      "matchLosses": 1,
-      "matchDraws": 0,
-      "matchWinPercentage": 0.75,
-      "gameWins": 6,
-      "gameLosses": 4,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.6,
-      "matches": [
-        {
-          "tournamentId": "395699",
-          "dateDisplay": "January 8, 2026",
-          "result": "W",
-          "playerDeck": "White Weenie",
-          "opponentDeck": "Dreadnought",
-          "playerGameWins": 2,
-          "opponentGameWins": 0,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "375338",
-          "dateDisplay": "October 23, 2025",
-          "result": "W",
-          "playerDeck": "Deadguy Ale",
-          "opponentDeck": "Enchantress",
-          "playerGameWins": 2,
-          "opponentGameWins": 1,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "305152",
-          "dateDisplay": "May 8, 2025",
-          "result": "W",
-          "playerDeck": "_",
-          "opponentDeck": "Goblins",
-          "playerGameWins": 2,
-          "opponentGameWins": 1,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "341527",
-          "dateDisplay": "July 17, 2025",
-          "result": "L",
-          "playerDeck": "Burn",
-          "opponentDeck": "Burn",
           "playerGameWins": 0,
           "opponentGameWins": 2,
           "gameDraws": 0
@@ -969,6 +1002,56 @@
       ]
     },
     {
+      "opponentUsername": "Taylorhol",
+      "opponentDisplayName": "Taylorhol",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "matches": [
+        {
+          "tournamentId": "397227",
+          "dateDisplay": "January 15, 2026",
+          "result": "W",
+          "playerDeck": "Tinker",
+          "opponentDeck": "Enchantress",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "BryanGulotta",
+      "opponentDisplayName": "BryanGulotta",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "matches": [
+        {
+          "tournamentId": "397227",
+          "dateDisplay": "January 15, 2026",
+          "result": "L",
+          "playerDeck": "Tinker",
+          "opponentDeck": "Angry Ghoul",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "FriendlyFerret",
       "opponentDisplayName": "Bill Ellis!!",
       "matchesPlayed": 1,
@@ -1145,6 +1228,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "397227",
+      "dateDisplay": "January 15, 2026",
+      "playerCount": 8,
+      "trophyCount": 1,
+      "roundCount": 3,
+      "rank": 5,
+      "points": 3,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWinPercentage": 0.4285714,
+      "deck": "Tinker"
+    },
     {
       "tournamentId": "395699",
       "dateDisplay": "January 8, 2026",

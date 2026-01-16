@@ -2,15 +2,15 @@
   "username": "madmanpoet",
   "displayName": "Michael Flores",
   "overallStats": {
-    "totalTournaments": 25,
-    "totalPoints": 151,
-    "totalMatches": 75,
-    "matchRecord": "50-24-1",
-    "matchWinPercentage": 0.6733333333333333,
-    "gameRecord": "112-61-0",
-    "gameWinPercentage": 0.6473988439306358,
+    "totalTournaments": 26,
+    "totalPoints": 160,
+    "totalMatches": 78,
+    "matchRecord": "53-24-1",
+    "matchWinPercentage": 0.6858974358974359,
+    "gameRecord": "118-62-0",
+    "gameWinPercentage": 0.6555555555555556,
     "trophies": 5,
-    "belts": 0
+    "belts": 1
   },
   "leagueStats": [
     {
@@ -21,6 +21,15 @@
       "matchWinPercentage": 0.5952380952380952,
       "gameRecord": "28-18-0",
       "gameWinPercentage": 0.6086956521739131
+    },
+    {
+      "leagueName": "Q4 2025 Top 8",
+      "events": 1,
+      "points": 9,
+      "matchRecord": "3-0-0",
+      "matchWinPercentage": 1,
+      "gameRecord": "6-1-0",
+      "gameWinPercentage": 0.8571428571428571
     },
     {
       "leagueName": "Q3 2025",
@@ -159,6 +168,20 @@
       "trophies": 0
     },
     {
+      "deckName": "Elves",
+      "events": 1,
+      "matchWins": 3,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchRecord": "3-0-0",
+      "matchWinPercentage": 1,
+      "gameWins": 7,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.875,
+      "trophies": 1
+    },
+    {
       "deckName": "Psychatog",
       "events": 1,
       "matchWins": 2,
@@ -205,15 +228,15 @@
     {
       "opponentUsername": "swbmtg",
       "opponentDisplayName": "swb",
-      "matchesPlayed": 11,
-      "matchWins": 1,
+      "matchesPlayed": 12,
+      "matchWins": 2,
       "matchLosses": 10,
       "matchDraws": 0,
-      "matchWinPercentage": 0.09090909090909091,
-      "gameWins": 5,
+      "matchWinPercentage": 0.16666666666666666,
+      "gameWins": 7,
       "gameLosses": 19,
       "gameDraws": 0,
-      "gameWinPercentage": 0.20833333333333334,
+      "gameWinPercentage": 0.2692307692307692,
       "matches": [
         {
           "tournamentId": "382756",
@@ -253,6 +276,16 @@
           "opponentDeck": "Oath Parfait",
           "playerGameWins": 0,
           "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "397227",
+          "dateDisplay": "January 15, 2026",
+          "result": "W",
+          "playerDeck": "Elves",
+          "opponentDeck": "Tide",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
           "gameDraws": 0
         },
         {
@@ -405,15 +438,15 @@
     {
       "opponentUsername": "Tencteri",
       "opponentDisplayName": "Tencteri",
-      "matchesPlayed": 4,
-      "matchWins": 1,
+      "matchesPlayed": 5,
+      "matchWins": 2,
       "matchLosses": 3,
       "matchDraws": 0,
-      "matchWinPercentage": 0.25,
-      "gameWins": 4,
+      "matchWinPercentage": 0.4,
+      "gameWins": 6,
       "gameLosses": 6,
       "gameDraws": 0,
-      "gameWinPercentage": 0.4,
+      "gameWinPercentage": 0.5,
       "matches": [
         {
           "tournamentId": "395699",
@@ -433,6 +466,16 @@
           "opponentDeck": "Deadguy Ale",
           "playerGameWins": 1,
           "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "397227",
+          "dateDisplay": "January 15, 2026",
+          "result": "W",
+          "playerDeck": "Elves",
+          "opponentDeck": "Tinker",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
           "gameDraws": 0
         },
         {
@@ -1168,6 +1211,31 @@
       ]
     },
     {
+      "opponentUsername": "sjpenzer",
+      "opponentDisplayName": "sjpenzer",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6666666666666666,
+      "matches": [
+        {
+          "tournamentId": "397227",
+          "dateDisplay": "January 15, 2026",
+          "result": "W",
+          "playerDeck": "Elves",
+          "opponentDeck": "Terrageddon",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "ForceofPhil",
       "opponentDisplayName": "ForceofPhil",
       "matchesPlayed": 1,
@@ -1419,6 +1487,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "397227",
+      "dateDisplay": "January 15, 2026",
+      "playerCount": 8,
+      "trophyCount": 1,
+      "roundCount": 3,
+      "rank": 1,
+      "points": 9,
+      "matchRecord": "3-0-0",
+      "matchWinPercentage": 1,
+      "gameWinPercentage": 0.8571429,
+      "deck": "Elves"
+    },
     {
       "tournamentId": "395699",
       "dateDisplay": "January 8, 2026",
