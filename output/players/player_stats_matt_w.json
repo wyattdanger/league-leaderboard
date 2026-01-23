@@ -2,17 +2,26 @@
   "username": "Matt_W",
   "displayName": "Matt_W",
   "overallStats": {
-    "totalTournaments": 11,
-    "totalPoints": 37,
-    "totalMatches": 33,
-    "matchRecord": "12-20-1",
-    "matchWinPercentage": 0.3787878787878788,
-    "gameRecord": "32-44-0",
-    "gameWinPercentage": 0.42105263157894735,
+    "totalTournaments": 12,
+    "totalPoints": 43,
+    "totalMatches": 36,
+    "matchRecord": "14-21-1",
+    "matchWinPercentage": 0.4027777777777778,
+    "gameRecord": "37-47-0",
+    "gameWinPercentage": 0.44047619047619047,
     "trophies": 1,
     "belts": 0
   },
   "leagueStats": [
+    {
+      "leagueName": "Q1 2026",
+      "events": 1,
+      "points": 6,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameRecord": "5-3-0",
+      "gameWinPercentage": 0.625
+    },
     {
       "leagueName": "Q4 2025",
       "events": 9,
@@ -35,16 +44,16 @@
   "deckStats": [
     {
       "deckName": "Devourer",
-      "events": 4,
-      "matchWins": 5,
-      "matchLosses": 7,
+      "events": 5,
+      "matchWins": 7,
+      "matchLosses": 8,
       "matchDraws": 0,
-      "matchRecord": "5-7-0",
-      "matchWinPercentage": 0.4166666666666667,
-      "gameWins": 14,
-      "gameLosses": 18,
+      "matchRecord": "7-8-0",
+      "matchWinPercentage": 0.4666666666666667,
+      "gameWins": 19,
+      "gameLosses": 21,
       "gameDraws": 0,
-      "gameWinPercentage": 0.4375,
+      "gameWinPercentage": 0.475,
       "trophies": 0
     },
     {
@@ -150,16 +159,26 @@
     {
       "opponentUsername": "BryanGulotta",
       "opponentDisplayName": "BryanGulotta",
-      "matchesPlayed": 5,
-      "matchWins": 1,
+      "matchesPlayed": 6,
+      "matchWins": 2,
       "matchLosses": 4,
       "matchDraws": 0,
-      "matchWinPercentage": 0.2,
-      "gameWins": 3,
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 5,
       "gameLosses": 9,
       "gameDraws": 0,
-      "gameWinPercentage": 0.25,
+      "gameWinPercentage": 0.35714285714285715,
       "matches": [
+        {
+          "tournamentId": "398837",
+          "dateDisplay": "January 22, 2026",
+          "result": "W",
+          "playerDeck": "Devourer",
+          "opponentDeck": "Psychatog",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        },
         {
           "tournamentId": "390154",
           "dateDisplay": "December 11, 2025",
@@ -286,6 +305,56 @@
           "result": "L",
           "playerDeck": "Tribe",
           "opponentDeck": "Terrageddon",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "pcocozza",
+      "opponentDisplayName": "pcocozza",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6666666666666666,
+      "matches": [
+        {
+          "tournamentId": "398837",
+          "dateDisplay": "January 22, 2026",
+          "result": "W",
+          "playerDeck": "Devourer",
+          "opponentDeck": "Moneyball",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "Paul_Scott",
+      "opponentDisplayName": "Paul_Scott",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "matches": [
+        {
+          "tournamentId": "398837",
+          "dateDisplay": "January 22, 2026",
+          "result": "L",
+          "playerDeck": "Devourer",
+          "opponentDeck": "Burn",
           "playerGameWins": 1,
           "opponentGameWins": 2,
           "gameDraws": 0
@@ -744,6 +813,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "398837",
+      "dateDisplay": "January 22, 2026",
+      "playerCount": 20,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 5,
+      "points": 6,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWinPercentage": 0.625,
+      "deck": "Devourer"
+    },
     {
       "tournamentId": "395699",
       "dateDisplay": "January 8, 2026",

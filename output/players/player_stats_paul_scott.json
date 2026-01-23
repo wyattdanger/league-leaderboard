@@ -1,0 +1,134 @@
+{
+  "username": "Paul_Scott",
+  "displayName": "Paul_Scott",
+  "overallStats": {
+    "totalTournaments": 1,
+    "totalPoints": 9,
+    "totalMatches": 3,
+    "matchRecord": "3-0-0",
+    "matchWinPercentage": 1,
+    "gameRecord": "6-2-0",
+    "gameWinPercentage": 0.75,
+    "trophies": 1,
+    "belts": 0
+  },
+  "leagueStats": [
+    {
+      "leagueName": "Q1 2026",
+      "events": 1,
+      "points": 9,
+      "matchRecord": "3-0-0",
+      "matchWinPercentage": 1,
+      "gameRecord": "6-2-0",
+      "gameWinPercentage": 0.75
+    }
+  ],
+  "deckStats": [
+    {
+      "deckName": "Burn",
+      "events": 1,
+      "matchWins": 3,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchRecord": "3-0-0",
+      "matchWinPercentage": 1,
+      "gameWins": 6,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.75,
+      "trophies": 1
+    }
+  ],
+  "headToHead": [
+    {
+      "opponentUsername": "minimiz",
+      "opponentDisplayName": "Eli Mizock",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6666666666666666,
+      "matches": [
+        {
+          "tournamentId": "398837",
+          "dateDisplay": "January 22, 2026",
+          "result": "W",
+          "playerDeck": "Burn",
+          "opponentDeck": "Goblins",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "RichBucey",
+      "opponentDisplayName": "RichBucey",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "matches": [
+        {
+          "tournamentId": "398837",
+          "dateDisplay": "January 22, 2026",
+          "result": "W",
+          "playerDeck": "Burn",
+          "opponentDeck": "Stasis",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "Matt_W",
+      "opponentDisplayName": "Matt_W",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6666666666666666,
+      "matches": [
+        {
+          "tournamentId": "398837",
+          "dateDisplay": "January 22, 2026",
+          "result": "W",
+          "playerDeck": "Burn",
+          "opponentDeck": "Devourer",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    }
+  ],
+  "tournamentPerformances": [
+    {
+      "tournamentId": "398837",
+      "dateDisplay": "January 22, 2026",
+      "playerCount": 20,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 1,
+      "points": 9,
+      "matchRecord": "3-0-0",
+      "matchWinPercentage": 1,
+      "gameWinPercentage": 0.75,
+      "deck": "Burn"
+    }
+  ]
+}

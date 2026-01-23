@@ -2,17 +2,26 @@
   "username": "madmanpoet",
   "displayName": "Michael Flores",
   "overallStats": {
-    "totalTournaments": 26,
-    "totalPoints": 160,
-    "totalMatches": 78,
-    "matchRecord": "53-24-1",
-    "matchWinPercentage": 0.6858974358974359,
-    "gameRecord": "118-62-0",
-    "gameWinPercentage": 0.6555555555555556,
-    "trophies": 5,
+    "totalTournaments": 27,
+    "totalPoints": 169,
+    "totalMatches": 81,
+    "matchRecord": "56-24-1",
+    "matchWinPercentage": 0.6975308641975309,
+    "gameRecord": "124-63-0",
+    "gameWinPercentage": 0.6631016042780749,
+    "trophies": 6,
     "belts": 1
   },
   "leagueStats": [
+    {
+      "leagueName": "Q1 2026",
+      "events": 1,
+      "points": 9,
+      "matchRecord": "3-0-0",
+      "matchWinPercentage": 1,
+      "gameRecord": "6-1-0",
+      "gameWinPercentage": 0.8571428571428571
+    },
     {
       "leagueName": "Q4 2025",
       "events": 7,
@@ -166,6 +175,20 @@
       "gameDraws": 0,
       "gameWinPercentage": 0.5625,
       "trophies": 0
+    },
+    {
+      "deckName": "Terrageddon",
+      "events": 1,
+      "matchWins": 3,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchRecord": "3-0-0",
+      "matchWinPercentage": 1,
+      "gameWins": 7,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.875,
+      "trophies": 1
     },
     {
       "deckName": "Elves",
@@ -811,6 +834,76 @@
       ]
     },
     {
+      "opponentUsername": "Gaunology",
+      "opponentDisplayName": "Gaunology",
+      "matchesPlayed": 2,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 1,
+      "matchWinPercentage": 0.75,
+      "gameWins": 3,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.75,
+      "matches": [
+        {
+          "tournamentId": "398837",
+          "dateDisplay": "January 22, 2026",
+          "result": "W",
+          "playerDeck": "Terrageddon",
+          "opponentDeck": "Domain",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "388334",
+          "dateDisplay": "December 4, 2025",
+          "result": "D",
+          "playerDeck": "The Rock",
+          "opponentDeck": "Domain",
+          "playerGameWins": 1,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "landho",
+      "opponentDisplayName": "landho",
+      "matchesPlayed": 2,
+      "matchWins": 1,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.5,
+      "gameWins": 3,
+      "gameLosses": 3,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5,
+      "matches": [
+        {
+          "tournamentId": "398837",
+          "dateDisplay": "January 22, 2026",
+          "result": "W",
+          "playerDeck": "Terrageddon",
+          "opponentDeck": "Devourer",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "341527",
+          "dateDisplay": "July 17, 2025",
+          "result": "L",
+          "playerDeck": "Burn",
+          "opponentDeck": "Devourer",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "justintomczyk",
       "opponentDisplayName": "justintomczyk",
       "matchesPlayed": 2,
@@ -986,6 +1079,31 @@
       ]
     },
     {
+      "opponentUsername": "remixmtg",
+      "opponentDisplayName": "Jeremy Siegel",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "matches": [
+        {
+          "tournamentId": "398837",
+          "dateDisplay": "January 22, 2026",
+          "result": "W",
+          "playerDeck": "Terrageddon",
+          "opponentDeck": "Terrageddon",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "peatsheepening",
       "opponentDisplayName": "peatsheepening",
       "matchesPlayed": 1,
@@ -1081,31 +1199,6 @@
           "opponentDeck": "Merfolk",
           "playerGameWins": 2,
           "opponentGameWins": 0,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "Gaunology",
-      "opponentDisplayName": "Gaunology",
-      "matchesPlayed": 1,
-      "matchWins": 0,
-      "matchLosses": 0,
-      "matchDraws": 1,
-      "matchWinPercentage": 0.5,
-      "gameWins": 1,
-      "gameLosses": 1,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.5,
-      "matches": [
-        {
-          "tournamentId": "388334",
-          "dateDisplay": "December 4, 2025",
-          "result": "D",
-          "playerDeck": "The Rock",
-          "opponentDeck": "Domain",
-          "playerGameWins": 1,
-          "opponentGameWins": 1,
           "gameDraws": 0
         }
       ]
@@ -1459,34 +1552,22 @@
           "gameDraws": 0
         }
       ]
-    },
-    {
-      "opponentUsername": "landho",
-      "opponentDisplayName": "landho",
-      "matchesPlayed": 1,
-      "matchWins": 0,
-      "matchLosses": 1,
-      "matchDraws": 0,
-      "matchWinPercentage": 0,
-      "gameWins": 1,
-      "gameLosses": 2,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.3333333333333333,
-      "matches": [
-        {
-          "tournamentId": "341527",
-          "dateDisplay": "July 17, 2025",
-          "result": "L",
-          "playerDeck": "Burn",
-          "opponentDeck": "Devourer",
-          "playerGameWins": 1,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        }
-      ]
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "398837",
+      "dateDisplay": "January 22, 2026",
+      "playerCount": 20,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 2,
+      "points": 9,
+      "matchRecord": "3-0-0",
+      "matchWinPercentage": 1,
+      "gameWinPercentage": 0.8571429,
+      "deck": "Terrageddon"
+    },
     {
       "tournamentId": "397227",
       "dateDisplay": "January 15, 2026",

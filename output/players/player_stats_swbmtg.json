@@ -2,17 +2,26 @@
   "username": "swbmtg",
   "displayName": "swb",
   "overallStats": {
-    "totalTournaments": 29,
-    "totalPoints": 193,
-    "totalMatches": 87,
-    "matchRecord": "63-20-4",
-    "matchWinPercentage": 0.7471264367816092,
-    "gameRecord": "140-71-2",
-    "gameWinPercentage": 0.6572769953051644,
+    "totalTournaments": 30,
+    "totalPoints": 197,
+    "totalMatches": 90,
+    "matchRecord": "64-21-5",
+    "matchWinPercentage": 0.7388888888888889,
+    "gameRecord": "143-75-2",
+    "gameWinPercentage": 0.65,
     "trophies": 8,
     "belts": 1
   },
   "leagueStats": [
+    {
+      "leagueName": "Q1 2026",
+      "events": 1,
+      "points": 4,
+      "matchRecord": "1-1-1",
+      "matchWinPercentage": 0.5,
+      "gameRecord": "3-4-0",
+      "gameWinPercentage": 0.42857142857142855
+    },
     {
       "leagueName": "Q4 2025",
       "events": 10,
@@ -71,16 +80,16 @@
   "deckStats": [
     {
       "deckName": "Oath Parfait",
-      "events": 8,
-      "matchWins": 20,
-      "matchLosses": 2,
-      "matchDraws": 2,
-      "matchRecord": "20-2-2",
-      "matchWinPercentage": 0.875,
-      "gameWins": 50,
-      "gameLosses": 14,
+      "events": 9,
+      "matchWins": 21,
+      "matchLosses": 3,
+      "matchDraws": 3,
+      "matchRecord": "21-3-3",
+      "matchWinPercentage": 0.8333333333333334,
+      "gameWins": 53,
+      "gameLosses": 19,
       "gameDraws": 0,
-      "gameWinPercentage": 0.78125,
+      "gameWinPercentage": 0.7361111111111112,
       "trophies": 5
     },
     {
@@ -1042,6 +1051,41 @@
       ]
     },
     {
+      "opponentUsername": "sjpenzer",
+      "opponentDisplayName": "sjpenzer",
+      "matchesPlayed": 2,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 1,
+      "matchWinPercentage": 0.75,
+      "gameWins": 3,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6,
+      "matches": [
+        {
+          "tournamentId": "398837",
+          "dateDisplay": "January 22, 2026",
+          "result": "D",
+          "playerDeck": "Oath Parfait",
+          "opponentDeck": "Terrageddon",
+          "playerGameWins": 1,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "391734",
+          "dateDisplay": "December 18, 2025",
+          "result": "W",
+          "playerDeck": "Cradle Control",
+          "opponentDeck": "Terrageddon",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "delofstrom",
       "opponentDisplayName": "DEL .",
       "matchesPlayed": 2,
@@ -1107,6 +1151,56 @@
           "opponentDeck": "_",
           "playerGameWins": 2,
           "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "Jballin4",
+      "opponentDisplayName": "Jballin4",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6666666666666666,
+      "matches": [
+        {
+          "tournamentId": "398837",
+          "dateDisplay": "January 22, 2026",
+          "result": "W",
+          "playerDeck": "Oath Parfait",
+          "opponentDeck": "Burn",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "Ea212",
+      "opponentDisplayName": "Edward Arce",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "matches": [
+        {
+          "tournamentId": "398837",
+          "dateDisplay": "January 22, 2026",
+          "result": "L",
+          "playerDeck": "Oath Parfait",
+          "opponentDeck": "Moneyball Black",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
           "gameDraws": 0
         }
       ]
@@ -1180,31 +1274,6 @@
           "result": "W",
           "playerDeck": "The Rock",
           "opponentDeck": "Dreadnought",
-          "playerGameWins": 2,
-          "opponentGameWins": 1,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "sjpenzer",
-      "opponentDisplayName": "sjpenzer",
-      "matchesPlayed": 1,
-      "matchWins": 1,
-      "matchLosses": 0,
-      "matchDraws": 0,
-      "matchWinPercentage": 1,
-      "gameWins": 2,
-      "gameLosses": 1,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.6666666666666666,
-      "matches": [
-        {
-          "tournamentId": "391734",
-          "dateDisplay": "December 18, 2025",
-          "result": "W",
-          "playerDeck": "Cradle Control",
-          "opponentDeck": "Terrageddon",
           "playerGameWins": 2,
           "opponentGameWins": 1,
           "gameDraws": 0
@@ -1613,6 +1682,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "398837",
+      "dateDisplay": "January 22, 2026",
+      "playerCount": 20,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 11,
+      "points": 4,
+      "matchRecord": "1-1-1",
+      "matchWinPercentage": 0.5,
+      "gameWinPercentage": 0.4285714,
+      "deck": "Oath Parfait"
+    },
     {
       "tournamentId": "397227",
       "dateDisplay": "January 15, 2026",

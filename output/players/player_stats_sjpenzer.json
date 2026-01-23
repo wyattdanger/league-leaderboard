@@ -2,17 +2,26 @@
   "username": "sjpenzer",
   "displayName": "sjpenzer",
   "overallStats": {
-    "totalTournaments": 9,
-    "totalPoints": 59,
-    "totalMatches": 27,
-    "matchRecord": "19-6-2",
-    "matchWinPercentage": 0.7407407407407407,
-    "gameRecord": "43-22-0",
-    "gameWinPercentage": 0.6615384615384615,
+    "totalTournaments": 10,
+    "totalPoints": 64,
+    "totalMatches": 30,
+    "matchRecord": "20-6-4",
+    "matchWinPercentage": 0.7333333333333333,
+    "gameRecord": "47-24-0",
+    "gameWinPercentage": 0.6619718309859155,
     "trophies": 2,
     "belts": 0
   },
   "leagueStats": [
+    {
+      "leagueName": "Q1 2026",
+      "events": 1,
+      "points": 5,
+      "matchRecord": "1-0-2",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameRecord": "4-2-0",
+      "gameWinPercentage": 0.6666666666666666
+    },
     {
       "leagueName": "Q4 2025",
       "events": 8,
@@ -35,16 +44,16 @@
   "deckStats": [
     {
       "deckName": "Terrageddon",
-      "events": 9,
-      "matchWins": 19,
+      "events": 10,
+      "matchWins": 20,
       "matchLosses": 6,
-      "matchDraws": 2,
-      "matchRecord": "19-6-2",
-      "matchWinPercentage": 0.7407407407407407,
-      "gameWins": 48,
-      "gameLosses": 24,
+      "matchDraws": 4,
+      "matchRecord": "20-6-4",
+      "matchWinPercentage": 0.7333333333333333,
+      "gameWins": 53,
+      "gameLosses": 27,
       "gameDraws": 0,
-      "gameWinPercentage": 0.6666666666666666,
+      "gameWinPercentage": 0.6625,
       "trophies": 2
     }
   ],
@@ -155,6 +164,41 @@
           "opponentDeck": "Enchantress",
           "playerGameWins": 2,
           "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "swbmtg",
+      "opponentDisplayName": "swb",
+      "matchesPlayed": 2,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 1,
+      "matchWinPercentage": 0.25,
+      "gameWins": 2,
+      "gameLosses": 3,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.4,
+      "matches": [
+        {
+          "tournamentId": "398837",
+          "dateDisplay": "January 22, 2026",
+          "result": "D",
+          "playerDeck": "Terrageddon",
+          "opponentDeck": "Oath Parfait",
+          "playerGameWins": 1,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "391734",
+          "dateDisplay": "December 18, 2025",
+          "result": "L",
+          "playerDeck": "Terrageddon",
+          "opponentDeck": "Cradle Control",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
           "gameDraws": 0
         }
       ]
@@ -300,6 +344,56 @@
       ]
     },
     {
+      "opponentUsername": "peatsheep",
+      "opponentDisplayName": "Will Neville",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "matches": [
+        {
+          "tournamentId": "398837",
+          "dateDisplay": "January 22, 2026",
+          "result": "W",
+          "playerDeck": "Terrageddon",
+          "opponentDeck": "Gro",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "itsCama",
+      "opponentDisplayName": "Yosef Harari",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 0,
+      "matchDraws": 1,
+      "matchWinPercentage": 0.5,
+      "gameWins": 1,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5,
+      "matches": [
+        {
+          "tournamentId": "398837",
+          "dateDisplay": "January 22, 2026",
+          "result": "D",
+          "playerDeck": "Terrageddon",
+          "opponentDeck": "Welder",
+          "playerGameWins": 1,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "peatsheepening",
       "opponentDisplayName": "peatsheepening",
       "matchesPlayed": 1,
@@ -320,31 +414,6 @@
           "opponentDeck": "Gro-a-Tog",
           "playerGameWins": 2,
           "opponentGameWins": 0,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "swbmtg",
-      "opponentDisplayName": "swb",
-      "matchesPlayed": 1,
-      "matchWins": 0,
-      "matchLosses": 1,
-      "matchDraws": 0,
-      "matchWinPercentage": 0,
-      "gameWins": 1,
-      "gameLosses": 2,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.3333333333333333,
-      "matches": [
-        {
-          "tournamentId": "391734",
-          "dateDisplay": "December 18, 2025",
-          "result": "L",
-          "playerDeck": "Terrageddon",
-          "opponentDeck": "Cradle Control",
-          "playerGameWins": 1,
-          "opponentGameWins": 2,
           "gameDraws": 0
         }
       ]
@@ -576,6 +645,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "398837",
+      "dateDisplay": "January 22, 2026",
+      "playerCount": 20,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 8,
+      "points": 5,
+      "matchRecord": "1-0-2",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWinPercentage": 0.6666667,
+      "deck": "Terrageddon"
+    },
     {
       "tournamentId": "397227",
       "dateDisplay": "January 15, 2026",

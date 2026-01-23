@@ -2,17 +2,26 @@
   "username": "Taylorhol",
   "displayName": "Taylorhol",
   "overallStats": {
-    "totalTournaments": 14,
-    "totalPoints": 62,
-    "totalMatches": 42,
-    "matchRecord": "20-20-2",
-    "matchWinPercentage": 0.5,
-    "gameRecord": "50-50-2",
-    "gameWinPercentage": 0.49019607843137253,
+    "totalTournaments": 15,
+    "totalPoints": 68,
+    "totalMatches": 45,
+    "matchRecord": "22-21-2",
+    "matchWinPercentage": 0.5111111111111111,
+    "gameRecord": "54-53-2",
+    "gameWinPercentage": 0.4954128440366973,
     "trophies": 1,
     "belts": 0
   },
   "leagueStats": [
+    {
+      "leagueName": "Q1 2026",
+      "events": 1,
+      "points": 6,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameRecord": "4-3-0",
+      "gameWinPercentage": 0.5714285714285714
+    },
     {
       "leagueName": "Q4 2025",
       "events": 11,
@@ -85,6 +94,20 @@
       "trophies": 1
     },
     {
+      "deckName": "Enchantress",
+      "events": 2,
+      "matchWins": 3,
+      "matchLosses": 3,
+      "matchDraws": 0,
+      "matchRecord": "3-3-0",
+      "matchWinPercentage": 0.5,
+      "gameWins": 8,
+      "gameLosses": 8,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5,
+      "trophies": 0
+    },
+    {
       "deckName": "Gush Tithe",
       "events": 2,
       "matchWins": 1,
@@ -114,20 +137,6 @@
     },
     {
       "deckName": "HFEB",
-      "events": 1,
-      "matchWins": 1,
-      "matchLosses": 2,
-      "matchDraws": 0,
-      "matchRecord": "1-2-0",
-      "matchWinPercentage": 0.3333333333333333,
-      "gameWins": 3,
-      "gameLosses": 5,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.375,
-      "trophies": 0
-    },
-    {
-      "deckName": "Enchantress",
       "events": 1,
       "matchWins": 1,
       "matchLosses": 2,
@@ -582,6 +591,81 @@
       ]
     },
     {
+      "opponentUsername": "Gallo0",
+      "opponentDisplayName": "Gallo0",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "matches": [
+        {
+          "tournamentId": "398837",
+          "dateDisplay": "January 22, 2026",
+          "result": "W",
+          "playerDeck": "Enchantress",
+          "opponentDeck": "Unknown",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "landho",
+      "opponentDisplayName": "landho",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "matches": [
+        {
+          "tournamentId": "398837",
+          "dateDisplay": "January 22, 2026",
+          "result": "L",
+          "playerDeck": "Enchantress",
+          "opponentDeck": "Devourer",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "Lannynyny",
+      "opponentDisplayName": "Lanny Huang",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6666666666666666,
+      "matches": [
+        {
+          "tournamentId": "398837",
+          "dateDisplay": "January 22, 2026",
+          "result": "W",
+          "playerDeck": "Enchantress",
+          "opponentDeck": "Bant Bobs",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "ptscott",
       "opponentDisplayName": "ptscott",
       "matchesPlayed": 1,
@@ -908,6 +992,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "398837",
+      "dateDisplay": "January 22, 2026",
+      "playerCount": 20,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 7,
+      "points": 6,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWinPercentage": 0.5714286,
+      "deck": "Enchantress"
+    },
     {
       "tournamentId": "397227",
       "dateDisplay": "January 15, 2026",

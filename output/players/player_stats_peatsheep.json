@@ -1,0 +1,134 @@
+{
+  "username": "peatsheep",
+  "displayName": "Will Neville",
+  "overallStats": {
+    "totalTournaments": 1,
+    "totalPoints": 4,
+    "totalMatches": 3,
+    "matchRecord": "1-1-1",
+    "matchWinPercentage": 0.5,
+    "gameRecord": "3-4-0",
+    "gameWinPercentage": 0.42857142857142855,
+    "trophies": 0,
+    "belts": 0
+  },
+  "leagueStats": [
+    {
+      "leagueName": "Q1 2026",
+      "events": 1,
+      "points": 4,
+      "matchRecord": "1-1-1",
+      "matchWinPercentage": 0.5,
+      "gameRecord": "3-4-0",
+      "gameWinPercentage": 0.42857142857142855
+    }
+  ],
+  "deckStats": [
+    {
+      "deckName": "Gro",
+      "events": 1,
+      "matchWins": 1,
+      "matchLosses": 1,
+      "matchDraws": 1,
+      "matchRecord": "1-1-1",
+      "matchWinPercentage": 0.5,
+      "gameWins": 3,
+      "gameLosses": 5,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.375,
+      "trophies": 0
+    }
+  ],
+  "headToHead": [
+    {
+      "opponentUsername": "sjpenzer",
+      "opponentDisplayName": "sjpenzer",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "matches": [
+        {
+          "tournamentId": "398837",
+          "dateDisplay": "January 22, 2026",
+          "result": "L",
+          "playerDeck": "Gro",
+          "opponentDeck": "Terrageddon",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "Superhans",
+      "opponentDisplayName": "Superhans",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6666666666666666,
+      "matches": [
+        {
+          "tournamentId": "398837",
+          "dateDisplay": "January 22, 2026",
+          "result": "W",
+          "playerDeck": "Gro",
+          "opponentDeck": "Goblin Sligh",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "Gaunology",
+      "opponentDisplayName": "Gaunology",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 0,
+      "matchDraws": 1,
+      "matchWinPercentage": 0.5,
+      "gameWins": 1,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5,
+      "matches": [
+        {
+          "tournamentId": "398837",
+          "dateDisplay": "January 22, 2026",
+          "result": "D",
+          "playerDeck": "Gro",
+          "opponentDeck": "Domain",
+          "playerGameWins": 1,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    }
+  ],
+  "tournamentPerformances": [
+    {
+      "tournamentId": "398837",
+      "dateDisplay": "January 22, 2026",
+      "playerCount": 20,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 12,
+      "points": 4,
+      "matchRecord": "1-1-1",
+      "matchWinPercentage": 0.5,
+      "gameWinPercentage": 0.4285714,
+      "deck": "Gro"
+    }
+  ]
+}

@@ -2,17 +2,26 @@
   "username": "Gallo0",
   "displayName": "Gallo0",
   "overallStats": {
-    "totalTournaments": 2,
+    "totalTournaments": 3,
     "totalPoints": 6,
-    "totalMatches": 6,
-    "matchRecord": "2-4-0",
-    "matchWinPercentage": 0.3333333333333333,
-    "gameRecord": "6-10-0",
-    "gameWinPercentage": 0.375,
+    "totalMatches": 9,
+    "matchRecord": "2-7-0",
+    "matchWinPercentage": 0.2222222222222222,
+    "gameRecord": "8-16-0",
+    "gameWinPercentage": 0.3333333333333333,
     "trophies": 0,
     "belts": 0
   },
   "leagueStats": [
+    {
+      "leagueName": "Q1 2026",
+      "events": 1,
+      "points": 0,
+      "matchRecord": "0-3-0",
+      "matchWinPercentage": 0,
+      "gameRecord": "2-6-0",
+      "gameWinPercentage": 0.25
+    },
     {
       "leagueName": "Q4 2025",
       "events": 1,
@@ -34,6 +43,20 @@
   ],
   "deckStats": [
     {
+      "deckName": "Unknown",
+      "events": 2,
+      "matchWins": 0,
+      "matchLosses": 6,
+      "matchDraws": 0,
+      "matchRecord": "0-6-0",
+      "matchWinPercentage": 0,
+      "gameWins": 4,
+      "gameLosses": 12,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.25,
+      "trophies": 0
+    },
+    {
       "deckName": "Dreadnought",
       "events": 1,
       "matchWins": 2,
@@ -46,23 +69,84 @@
       "gameDraws": 0,
       "gameWinPercentage": 0.5,
       "trophies": 0
-    },
-    {
-      "deckName": "Unknown",
-      "events": 1,
-      "matchWins": 0,
-      "matchLosses": 3,
-      "matchDraws": 0,
-      "matchRecord": "0-3-0",
-      "matchWinPercentage": 0,
-      "gameWins": 1,
-      "gameLosses": 7,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.125,
-      "trophies": 0
     }
   ],
   "headToHead": [
+    {
+      "opponentUsername": "Taylorhol",
+      "opponentDisplayName": "Taylorhol",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "matches": [
+        {
+          "tournamentId": "398837",
+          "dateDisplay": "January 22, 2026",
+          "result": "L",
+          "playerDeck": "Unknown",
+          "opponentDeck": "Enchantress",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "itsCama",
+      "opponentDisplayName": "Yosef Harari",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "matches": [
+        {
+          "tournamentId": "398837",
+          "dateDisplay": "January 22, 2026",
+          "result": "L",
+          "playerDeck": "Unknown",
+          "opponentDeck": "Welder",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "Superhans",
+      "opponentDisplayName": "Superhans",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "matches": [
+        {
+          "tournamentId": "398837",
+          "dateDisplay": "January 22, 2026",
+          "result": "L",
+          "playerDeck": "Unknown",
+          "opponentDeck": "Goblin Sligh",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
     {
       "opponentUsername": "pcocozza",
       "opponentDisplayName": "pcocozza",
@@ -215,6 +299,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "398837",
+      "dateDisplay": "January 22, 2026",
+      "playerCount": 20,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 20,
+      "points": 0,
+      "matchRecord": "0-3-0",
+      "matchWinPercentage": 0,
+      "gameWinPercentage": 0.3333333,
+      "deck": "Unknown"
+    },
     {
       "tournamentId": "393796",
       "dateDisplay": "January 1, 2026",

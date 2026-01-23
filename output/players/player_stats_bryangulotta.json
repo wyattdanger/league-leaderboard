@@ -2,17 +2,26 @@
   "username": "BryanGulotta",
   "displayName": "BryanGulotta",
   "overallStats": {
-    "totalTournaments": 23,
+    "totalTournaments": 24,
     "totalPoints": 113,
-    "totalMatches": 68,
-    "matchRecord": "36-27-5",
-    "matchWinPercentage": 0.5661764705882353,
-    "gameRecord": "89-77-2",
-    "gameWinPercentage": 0.5297619047619048,
+    "totalMatches": 71,
+    "matchRecord": "36-30-5",
+    "matchWinPercentage": 0.5422535211267606,
+    "gameRecord": "90-83-2",
+    "gameWinPercentage": 0.5142857142857142,
     "trophies": 0,
     "belts": 0
   },
   "leagueStats": [
+    {
+      "leagueName": "Q1 2026",
+      "events": 1,
+      "points": 0,
+      "matchRecord": "0-3-0",
+      "matchWinPercentage": 0,
+      "gameRecord": "1-6-0",
+      "gameWinPercentage": 0.14285714285714285
+    },
     {
       "leagueName": "Q4 2025",
       "events": 9,
@@ -75,6 +84,20 @@
       "trophies": 0
     },
     {
+      "deckName": "Psychatog",
+      "events": 3,
+      "matchWins": 4,
+      "matchLosses": 5,
+      "matchDraws": 0,
+      "matchRecord": "4-5-0",
+      "matchWinPercentage": 0.4444444444444444,
+      "gameWins": 13,
+      "gameLosses": 11,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5416666666666666,
+      "trophies": 0
+    },
+    {
       "deckName": "Tide",
       "events": 2,
       "matchWins": 4,
@@ -86,20 +109,6 @@
       "gameLosses": 4,
       "gameDraws": 0,
       "gameWinPercentage": 0.75,
-      "trophies": 0
-    },
-    {
-      "deckName": "Psychatog",
-      "events": 2,
-      "matchWins": 4,
-      "matchLosses": 2,
-      "matchDraws": 0,
-      "matchRecord": "4-2-0",
-      "matchWinPercentage": 0.6666666666666666,
-      "gameWins": 10,
-      "gameLosses": 6,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.625,
       "trophies": 0
     },
     {
@@ -160,6 +169,81 @@
     }
   ],
   "headToHead": [
+    {
+      "opponentUsername": "Matt_W",
+      "opponentDisplayName": "Matt_W",
+      "matchesPlayed": 6,
+      "matchWins": 4,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 9,
+      "gameLosses": 5,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6428571428571429,
+      "matches": [
+        {
+          "tournamentId": "398837",
+          "dateDisplay": "January 22, 2026",
+          "result": "L",
+          "playerDeck": "Psychatog",
+          "opponentDeck": "Devourer",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "390154",
+          "dateDisplay": "December 11, 2025",
+          "result": "W",
+          "playerDeck": "Psychatog",
+          "opponentDeck": "Terra Oath",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "384681",
+          "dateDisplay": "November 20, 2025",
+          "result": "W",
+          "playerDeck": "UB Tide",
+          "opponentDeck": "Devourer",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "382756",
+          "dateDisplay": "November 13, 2025",
+          "result": "W",
+          "playerDeck": "UB Tide",
+          "opponentDeck": "Devourer",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "375338",
+          "dateDisplay": "October 23, 2025",
+          "result": "W",
+          "playerDeck": "Tide",
+          "opponentDeck": "Stompy",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "371711",
+          "dateDisplay": "October 9, 2025",
+          "result": "L",
+          "playerDeck": "_",
+          "opponentDeck": "Pit Rack",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
     {
       "opponentUsername": "itsCama",
       "opponentDisplayName": "Yosef Harari",
@@ -304,71 +388,6 @@
           "result": "L",
           "playerDeck": "_",
           "opponentDeck": "_",
-          "playerGameWins": 1,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "Matt_W",
-      "opponentDisplayName": "Matt_W",
-      "matchesPlayed": 5,
-      "matchWins": 4,
-      "matchLosses": 1,
-      "matchDraws": 0,
-      "matchWinPercentage": 0.8,
-      "gameWins": 9,
-      "gameLosses": 3,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.75,
-      "matches": [
-        {
-          "tournamentId": "390154",
-          "dateDisplay": "December 11, 2025",
-          "result": "W",
-          "playerDeck": "Psychatog",
-          "opponentDeck": "Terra Oath",
-          "playerGameWins": 2,
-          "opponentGameWins": 0,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "384681",
-          "dateDisplay": "November 20, 2025",
-          "result": "W",
-          "playerDeck": "UB Tide",
-          "opponentDeck": "Devourer",
-          "playerGameWins": 2,
-          "opponentGameWins": 0,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "382756",
-          "dateDisplay": "November 13, 2025",
-          "result": "W",
-          "playerDeck": "UB Tide",
-          "opponentDeck": "Devourer",
-          "playerGameWins": 2,
-          "opponentGameWins": 1,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "375338",
-          "dateDisplay": "October 23, 2025",
-          "result": "W",
-          "playerDeck": "Tide",
-          "opponentDeck": "Stompy",
-          "playerGameWins": 2,
-          "opponentGameWins": 0,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "371711",
-          "dateDisplay": "October 9, 2025",
-          "result": "L",
-          "playerDeck": "_",
-          "opponentDeck": "Pit Rack",
           "playerGameWins": 1,
           "opponentGameWins": 2,
           "gameDraws": 0
@@ -731,6 +750,41 @@
       ]
     },
     {
+      "opponentUsername": "remixmtg",
+      "opponentDisplayName": "Jeremy Siegel",
+      "matchesPlayed": 2,
+      "matchWins": 0,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.2,
+      "matches": [
+        {
+          "tournamentId": "398837",
+          "dateDisplay": "January 22, 2026",
+          "result": "L",
+          "playerDeck": "Psychatog",
+          "opponentDeck": "Terrageddon",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "391734",
+          "dateDisplay": "December 18, 2025",
+          "result": "L",
+          "playerDeck": "Psychatog",
+          "opponentDeck": "Oath Spec",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "Taylorhol",
       "opponentDisplayName": "Taylorhol",
       "matchesPlayed": 2,
@@ -836,6 +890,31 @@
       ]
     },
     {
+      "opponentUsername": "Ea212",
+      "opponentDisplayName": "Edward Arce",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "matches": [
+        {
+          "tournamentId": "398837",
+          "dateDisplay": "January 22, 2026",
+          "result": "L",
+          "playerDeck": "Psychatog",
+          "opponentDeck": "Moneyball Black",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "aprofaci",
       "opponentDisplayName": "Alex Profaci",
       "matchesPlayed": 1,
@@ -881,31 +960,6 @@
           "opponentDeck": "Dreadnought",
           "playerGameWins": 2,
           "opponentGameWins": 0,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "remixmtg",
-      "opponentDisplayName": "Jeremy Siegel",
-      "matchesPlayed": 1,
-      "matchWins": 0,
-      "matchLosses": 1,
-      "matchDraws": 0,
-      "matchWinPercentage": 0,
-      "gameWins": 0,
-      "gameLosses": 2,
-      "gameDraws": 0,
-      "gameWinPercentage": 0,
-      "matches": [
-        {
-          "tournamentId": "391734",
-          "dateDisplay": "December 18, 2025",
-          "result": "L",
-          "playerDeck": "Psychatog",
-          "opponentDeck": "Oath Spec",
-          "playerGameWins": 0,
-          "opponentGameWins": 2,
           "gameDraws": 0
         }
       ]
@@ -1287,6 +1341,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "398837",
+      "dateDisplay": "January 22, 2026",
+      "playerCount": 20,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 19,
+      "points": 0,
+      "matchRecord": "0-3-0",
+      "matchWinPercentage": 0,
+      "gameWinPercentage": 0.3333333,
+      "deck": "Psychatog"
+    },
     {
       "tournamentId": "397227",
       "dateDisplay": "January 15, 2026",

@@ -2,17 +2,26 @@
   "username": "remixmtg",
   "displayName": "Jeremy Siegel",
   "overallStats": {
-    "totalTournaments": 4,
-    "totalPoints": 19,
-    "totalMatches": 12,
-    "matchRecord": "6-5-1",
-    "matchWinPercentage": 0.5416666666666666,
-    "gameRecord": "14-12-3",
-    "gameWinPercentage": 0.4827586206896552,
+    "totalTournaments": 5,
+    "totalPoints": 22,
+    "totalMatches": 15,
+    "matchRecord": "7-7-1",
+    "matchWinPercentage": 0.5,
+    "gameRecord": "17-17-3",
+    "gameWinPercentage": 0.4594594594594595,
     "trophies": 0,
     "belts": 0
   },
   "leagueStats": [
+    {
+      "leagueName": "Q1 2026",
+      "events": 1,
+      "points": 3,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameRecord": "3-5-0",
+      "gameWinPercentage": 0.375
+    },
     {
       "leagueName": "Q4 2025",
       "events": 4,
@@ -25,6 +34,20 @@
   ],
   "deckStats": [
     {
+      "deckName": "Terrageddon",
+      "events": 2,
+      "matchWins": 3,
+      "matchLosses": 3,
+      "matchDraws": 0,
+      "matchRecord": "3-3-0",
+      "matchWinPercentage": 0.5,
+      "gameWins": 9,
+      "gameLosses": 7,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5625,
+      "trophies": 0
+    },
+    {
       "deckName": "Oath Spec",
       "events": 1,
       "matchWins": 2,
@@ -36,20 +59,6 @@
       "gameLosses": 3,
       "gameDraws": 0,
       "gameWinPercentage": 0.625,
-      "trophies": 0
-    },
-    {
-      "deckName": "Terrageddon",
-      "events": 1,
-      "matchWins": 2,
-      "matchLosses": 1,
-      "matchDraws": 0,
-      "matchRecord": "2-1-0",
-      "matchWinPercentage": 0.6666666666666666,
-      "gameWins": 6,
-      "gameLosses": 2,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.75,
       "trophies": 0
     },
     {
@@ -83,6 +92,41 @@
   ],
   "headToHead": [
     {
+      "opponentUsername": "BryanGulotta",
+      "opponentDisplayName": "BryanGulotta",
+      "matchesPlayed": 2,
+      "matchWins": 2,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 4,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.8,
+      "matches": [
+        {
+          "tournamentId": "398837",
+          "dateDisplay": "January 22, 2026",
+          "result": "W",
+          "playerDeck": "Terrageddon",
+          "opponentDeck": "Psychatog",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "391734",
+          "dateDisplay": "December 18, 2025",
+          "result": "W",
+          "playerDeck": "Oath Spec",
+          "opponentDeck": "Psychatog",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "JohnnyDalz",
       "opponentDisplayName": "JohnnyDalz",
       "matchesPlayed": 2,
@@ -113,6 +157,56 @@
           "opponentDeck": "Burn",
           "playerGameWins": 2,
           "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "madmanpoet",
+      "opponentDisplayName": "Michael Flores",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "matches": [
+        {
+          "tournamentId": "398837",
+          "dateDisplay": "January 22, 2026",
+          "result": "L",
+          "playerDeck": "Terrageddon",
+          "opponentDeck": "Terrageddon",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "minimiz",
+      "opponentDisplayName": "Eli Mizock",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "matches": [
+        {
+          "tournamentId": "398837",
+          "dateDisplay": "January 22, 2026",
+          "result": "L",
+          "playerDeck": "Terrageddon",
+          "opponentDeck": "Goblins",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
           "gameDraws": 0
         }
       ]
@@ -243,31 +337,6 @@
       ]
     },
     {
-      "opponentUsername": "BryanGulotta",
-      "opponentDisplayName": "BryanGulotta",
-      "matchesPlayed": 1,
-      "matchWins": 1,
-      "matchLosses": 0,
-      "matchDraws": 0,
-      "matchWinPercentage": 1,
-      "gameWins": 2,
-      "gameLosses": 0,
-      "gameDraws": 0,
-      "gameWinPercentage": 1,
-      "matches": [
-        {
-          "tournamentId": "391734",
-          "dateDisplay": "December 18, 2025",
-          "result": "W",
-          "playerDeck": "Oath Spec",
-          "opponentDeck": "Psychatog",
-          "playerGameWins": 2,
-          "opponentGameWins": 0,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
       "opponentUsername": "Real_player_hidden",
       "opponentDisplayName": "Ryan Mitchell",
       "matchesPlayed": 1,
@@ -369,6 +438,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "398837",
+      "dateDisplay": "January 22, 2026",
+      "playerCount": 20,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 15,
+      "points": 3,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWinPercentage": 0.375,
+      "deck": "Terrageddon"
+    },
     {
       "tournamentId": "395699",
       "dateDisplay": "January 8, 2026",

@@ -2,17 +2,26 @@
   "username": "RichBucey",
   "displayName": "RichBucey",
   "overallStats": {
-    "totalTournaments": 22,
-    "totalPoints": 108,
-    "totalMatches": 66,
-    "matchRecord": "36-30-0",
-    "matchWinPercentage": 0.5454545454545454,
-    "gameRecord": "86-74-0",
-    "gameWinPercentage": 0.5375,
+    "totalTournaments": 23,
+    "totalPoints": 114,
+    "totalMatches": 69,
+    "matchRecord": "38-31-0",
+    "matchWinPercentage": 0.5507246376811594,
+    "gameRecord": "90-78-0",
+    "gameWinPercentage": 0.5357142857142857,
     "trophies": 3,
     "belts": 0
   },
   "leagueStats": [
+    {
+      "leagueName": "Q1 2026",
+      "events": 1,
+      "points": 6,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameRecord": "4-4-0",
+      "gameWinPercentage": 0.5
+    },
     {
       "leagueName": "Q4 2025",
       "events": 8,
@@ -103,6 +112,20 @@
       "trophies": 0
     },
     {
+      "deckName": "Stasis",
+      "events": 2,
+      "matchWins": 3,
+      "matchLosses": 3,
+      "matchDraws": 0,
+      "matchRecord": "3-3-0",
+      "matchWinPercentage": 0.5,
+      "gameWins": 6,
+      "gameLosses": 10,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.375,
+      "trophies": 0
+    },
+    {
       "deckName": "Dreadnought",
       "events": 2,
       "matchWins": 3,
@@ -157,20 +180,6 @@
       "gameDraws": 0,
       "gameWinPercentage": 1,
       "trophies": 1
-    },
-    {
-      "deckName": "Stasis",
-      "events": 1,
-      "matchWins": 1,
-      "matchLosses": 2,
-      "matchDraws": 0,
-      "matchRecord": "1-2-0",
-      "matchWinPercentage": 0.3333333333333333,
-      "gameWins": 2,
-      "gameLosses": 6,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.25,
-      "trophies": 0
     },
     {
       "deckName": "Tidestill",
@@ -784,6 +793,81 @@
       ]
     },
     {
+      "opponentUsername": "Ea212",
+      "opponentDisplayName": "Edward Arce",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6666666666666666,
+      "matches": [
+        {
+          "tournamentId": "398837",
+          "dateDisplay": "January 22, 2026",
+          "result": "W",
+          "playerDeck": "Stasis",
+          "opponentDeck": "Moneyball Black",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "Paul_Scott",
+      "opponentDisplayName": "Paul_Scott",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "matches": [
+        {
+          "tournamentId": "398837",
+          "dateDisplay": "January 22, 2026",
+          "result": "L",
+          "playerDeck": "Stasis",
+          "opponentDeck": "Burn",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "pcocozza",
+      "opponentDisplayName": "pcocozza",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6666666666666666,
+      "matches": [
+        {
+          "tournamentId": "398837",
+          "dateDisplay": "January 22, 2026",
+          "result": "W",
+          "playerDeck": "Stasis",
+          "opponentDeck": "Moneyball",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "JohnnyDalz",
       "opponentDisplayName": "JohnnyDalz",
       "matchesPlayed": 1,
@@ -1335,6 +1419,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "398837",
+      "dateDisplay": "January 22, 2026",
+      "playerCount": 20,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 4,
+      "points": 6,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWinPercentage": 0.5,
+      "deck": "Stasis"
+    },
     {
       "tournamentId": "397227",
       "dateDisplay": "January 15, 2026",

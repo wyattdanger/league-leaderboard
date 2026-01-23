@@ -2,17 +2,26 @@
   "username": "itsCama",
   "displayName": "Yosef Harari",
   "overallStats": {
-    "totalTournaments": 15,
-    "totalPoints": 69,
-    "totalMatches": 45,
-    "matchRecord": "23-22-0",
-    "matchWinPercentage": 0.5111111111111111,
-    "gameRecord": "59-56-0",
-    "gameWinPercentage": 0.5130434782608696,
+    "totalTournaments": 16,
+    "totalPoints": 73,
+    "totalMatches": 48,
+    "matchRecord": "24-23-1",
+    "matchWinPercentage": 0.5104166666666666,
+    "gameRecord": "63-60-0",
+    "gameWinPercentage": 0.5121951219512195,
     "trophies": 2,
     "belts": 0
   },
   "leagueStats": [
+    {
+      "leagueName": "Q1 2026",
+      "events": 1,
+      "points": 4,
+      "matchRecord": "1-1-1",
+      "matchWinPercentage": 0.5,
+      "gameRecord": "4-4-0",
+      "gameWinPercentage": 0.5
+    },
     {
       "leagueName": "Q4 2025",
       "events": 2,
@@ -78,6 +87,20 @@
       "gameDraws": 0,
       "gameWinPercentage": 0.625,
       "trophies": 1
+    },
+    {
+      "deckName": "Welder",
+      "events": 1,
+      "matchWins": 1,
+      "matchLosses": 1,
+      "matchDraws": 1,
+      "matchRecord": "1-1-1",
+      "matchWinPercentage": 0.5,
+      "gameWins": 4,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5,
+      "trophies": 0
     },
     {
       "deckName": "Goblins",
@@ -591,6 +614,81 @@
       ]
     },
     {
+      "opponentUsername": "landho",
+      "opponentDisplayName": "landho",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "matches": [
+        {
+          "tournamentId": "398837",
+          "dateDisplay": "January 22, 2026",
+          "result": "L",
+          "playerDeck": "Welder",
+          "opponentDeck": "Devourer",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "Gallo0",
+      "opponentDisplayName": "Gallo0",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6666666666666666,
+      "matches": [
+        {
+          "tournamentId": "398837",
+          "dateDisplay": "January 22, 2026",
+          "result": "W",
+          "playerDeck": "Welder",
+          "opponentDeck": "Unknown",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "sjpenzer",
+      "opponentDisplayName": "sjpenzer",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 0,
+      "matchDraws": 1,
+      "matchWinPercentage": 0.5,
+      "gameWins": 1,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5,
+      "matches": [
+        {
+          "tournamentId": "398837",
+          "dateDisplay": "January 22, 2026",
+          "result": "D",
+          "playerDeck": "Welder",
+          "opponentDeck": "Terrageddon",
+          "playerGameWins": 1,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "zjr",
       "opponentDisplayName": "zjr",
       "matchesPlayed": 1,
@@ -867,6 +965,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "398837",
+      "dateDisplay": "January 22, 2026",
+      "playerCount": 20,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 10,
+      "points": 4,
+      "matchRecord": "1-1-1",
+      "matchWinPercentage": 0.5,
+      "gameWinPercentage": 0.5,
+      "deck": "Welder"
+    },
     {
       "tournamentId": "395699",
       "dateDisplay": "January 8, 2026",

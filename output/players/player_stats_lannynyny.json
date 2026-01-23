@@ -2,17 +2,26 @@
   "username": "Lannynyny",
   "displayName": "Lanny Huang",
   "overallStats": {
-    "totalTournaments": 4,
-    "totalPoints": 18,
-    "totalMatches": 12,
-    "matchRecord": "6-6-0",
-    "matchWinPercentage": 0.5,
-    "gameRecord": "13-12-0",
-    "gameWinPercentage": 0.52,
+    "totalTournaments": 5,
+    "totalPoints": 21,
+    "totalMatches": 15,
+    "matchRecord": "7-8-0",
+    "matchWinPercentage": 0.4666666666666667,
+    "gameRecord": "17-17-0",
+    "gameWinPercentage": 0.5,
     "trophies": 1,
     "belts": 0
   },
   "leagueStats": [
+    {
+      "leagueName": "Q1 2026",
+      "events": 1,
+      "points": 3,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameRecord": "4-5-0",
+      "gameWinPercentage": 0.4444444444444444
+    },
     {
       "leagueName": "Q4 2025",
       "events": 1,
@@ -69,9 +78,98 @@
       "gameDraws": 0,
       "gameWinPercentage": 1,
       "trophies": 1
+    },
+    {
+      "deckName": "Bant Bobs",
+      "events": 1,
+      "matchWins": 1,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 4,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5,
+      "trophies": 0
     }
   ],
   "headToHead": [
+    {
+      "opponentUsername": "pcocozza",
+      "opponentDisplayName": "pcocozza",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "matches": [
+        {
+          "tournamentId": "398837",
+          "dateDisplay": "January 22, 2026",
+          "result": "L",
+          "playerDeck": "Bant Bobs",
+          "opponentDeck": "Moneyball",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "Jballin4",
+      "opponentDisplayName": "Jballin4",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6666666666666666,
+      "matches": [
+        {
+          "tournamentId": "398837",
+          "dateDisplay": "January 22, 2026",
+          "result": "W",
+          "playerDeck": "Bant Bobs",
+          "opponentDeck": "Burn",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "Taylorhol",
+      "opponentDisplayName": "Taylorhol",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "matches": [
+        {
+          "tournamentId": "398837",
+          "dateDisplay": "January 22, 2026",
+          "result": "L",
+          "playerDeck": "Bant Bobs",
+          "opponentDeck": "Enchantress",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
     {
       "opponentUsername": "Matt_W",
       "opponentDisplayName": "Matt_W",
@@ -349,6 +447,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "398837",
+      "dateDisplay": "January 22, 2026",
+      "playerCount": 20,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 16,
+      "points": 3,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWinPercentage": 0.4444444,
+      "deck": "Bant Bobs"
+    },
     {
       "tournamentId": "375338",
       "dateDisplay": "October 23, 2025",
