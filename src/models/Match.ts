@@ -136,14 +136,10 @@ export class Match {
 
   /**
    * Check if the match is complete (has a result)
+   * Always returns true since we only scrape completed tournaments
    */
   get isComplete(): boolean {
-    if (this.isBye) return true;
-    // A match is complete if total games played equals 2 (best of 3) or has a winner at 2 games
-    const totalGames = this.player1Games + this.player2Games + this.gameDraws;
-    return (
-      totalGames > 0 && (this.player1Games === 2 || this.player2Games === 2 || totalGames === 3)
-    );
+    return true;
   }
 
   /**
@@ -209,12 +205,20 @@ export class Match {
   }
 
   /**
-   * Static method to sort matches (regular matches first, byes last)
+   * Static method to sort matches (regular matches first, draws second, byes last)
    */
   static sortMatches(matches: Match[]): Match[] {
     return [...matches].sort((a, b) => {
+      // Byes always go last
       if (a.isBye && !b.isBye) return 1;
       if (!a.isBye && b.isBye) return -1;
+
+      // Draws go after regular matches but before byes
+      if (!a.isBye && !b.isBye) {
+        if (a.isDraw && !b.isDraw) return 1;
+        if (!a.isDraw && b.isDraw) return -1;
+      }
+
       // Secondary sort by table number if available
       if (a.tableNumber !== null && b.tableNumber !== null) {
         return a.tableNumber - b.tableNumber;
