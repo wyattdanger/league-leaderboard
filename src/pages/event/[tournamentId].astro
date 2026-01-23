@@ -509,6 +509,19 @@ if (fs.existsSync(metadataFile)) {
     height: 5rem;
   }
 
+  .round-table tbody tr .player-left {
+    background: linear-gradient(to right, rgba(16, 185, 129, 0.08) 0%, transparent 100%);
+  }
+
+  .round-table tbody tr .player-right {
+    background: linear-gradient(to left, rgba(239, 68, 68, 0.08) 0%, transparent 100%);
+  }
+
+  .round-table tbody tr.draw-row .player-left,
+  .round-table tbody tr.draw-row .player-right {
+    background: none;
+  }
+
   .round-table td {
     padding: 1rem;
     border-bottom: 1px solid #e5e7eb;
