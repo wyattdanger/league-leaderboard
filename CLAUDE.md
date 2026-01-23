@@ -728,12 +728,12 @@ Co-Authored-By: Claude <noreply@anthropic.com>"
 
 - Source code changes (`src/`)
 - Test files (`tests/`)
-- Configuration (`leagues.yml`)
+- Configuration (`leagues.yml`, `decks.yml`)
 - Documentation (`.md` files)
+- Generated data (`output/` directory)
 
 **DON'T commit (these should be gitignored):**
 
-- `output/` directory (generated data)
 - `dist/` directory (built site)
 - `node_modules/`
 
