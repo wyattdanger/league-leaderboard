@@ -2,24 +2,24 @@
   "username": "Matt_W",
   "displayName": "Matt_W",
   "overallStats": {
-    "totalTournaments": 12,
-    "totalPoints": 43,
-    "totalMatches": 36,
-    "matchRecord": "14-21-1",
-    "matchWinPercentage": 0.4027777777777778,
-    "gameRecord": "37-47-0",
-    "gameWinPercentage": 0.44047619047619047,
+    "totalTournaments": 13,
+    "totalPoints": 49,
+    "totalMatches": 39,
+    "matchRecord": "16-22-1",
+    "matchWinPercentage": 0.4230769230769231,
+    "gameRecord": "42-50-0",
+    "gameWinPercentage": 0.45652173913043476,
     "trophies": 1,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q1 2026",
-      "events": 1,
-      "points": 6,
-      "matchRecord": "2-1-0",
+      "events": 2,
+      "points": 12,
+      "matchRecord": "4-2-0",
       "matchWinPercentage": 0.6666666666666666,
-      "gameRecord": "5-3-0",
+      "gameRecord": "10-6-0",
       "gameWinPercentage": 0.625
     },
     {
@@ -44,16 +44,16 @@
   "deckStats": [
     {
       "deckName": "Devourer",
-      "events": 5,
-      "matchWins": 7,
-      "matchLosses": 8,
+      "events": 6,
+      "matchWins": 9,
+      "matchLosses": 9,
       "matchDraws": 0,
-      "matchRecord": "7-8-0",
-      "matchWinPercentage": 0.4666666666666667,
-      "gameWins": 19,
-      "gameLosses": 21,
+      "matchRecord": "9-9-0",
+      "matchWinPercentage": 0.5,
+      "gameWins": 24,
+      "gameLosses": 24,
       "gameDraws": 0,
-      "gameWinPercentage": 0.475,
+      "gameWinPercentage": 0.5,
       "trophies": 0
     },
     {
@@ -277,6 +277,76 @@
       ]
     },
     {
+      "opponentUsername": "delofstrom",
+      "opponentDisplayName": "DEL .",
+      "matchesPlayed": 2,
+      "matchWins": 1,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.5,
+      "gameWins": 2,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5,
+      "matches": [
+        {
+          "tournamentId": "400729",
+          "dateDisplay": "January 29, 2026",
+          "result": "W",
+          "playerDeck": "Devourer",
+          "opponentDeck": "Survival Welder",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "347610",
+          "dateDisplay": "July 31, 2025",
+          "result": "L",
+          "playerDeck": "Goblins",
+          "opponentDeck": "_",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "madmanpoet",
+      "opponentDisplayName": "Michael Flores",
+      "matchesPlayed": 2,
+      "matchWins": 1,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.5,
+      "gameWins": 3,
+      "gameLosses": 3,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5,
+      "matches": [
+        {
+          "tournamentId": "400729",
+          "dateDisplay": "January 29, 2026",
+          "result": "W",
+          "playerDeck": "Devourer",
+          "opponentDeck": "UW Landstill",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "377629",
+          "dateDisplay": "October 30, 2025",
+          "result": "L",
+          "playerDeck": "Burn",
+          "opponentDeck": "Stompy",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "sjpenzer",
       "opponentDisplayName": "sjpenzer",
       "matchesPlayed": 2,
@@ -305,6 +375,31 @@
           "result": "L",
           "playerDeck": "Tribe",
           "opponentDeck": "Terrageddon",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "minimiz",
+      "opponentDisplayName": "Eli Mizock",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "matches": [
+        {
+          "tournamentId": "400729",
+          "dateDisplay": "January 29, 2026",
+          "result": "L",
+          "playerDeck": "Devourer",
+          "opponentDeck": "Goblins",
           "playerGameWins": 1,
           "opponentGameWins": 2,
           "gameDraws": 0
@@ -537,31 +632,6 @@
       ]
     },
     {
-      "opponentUsername": "madmanpoet",
-      "opponentDisplayName": "Michael Flores",
-      "matchesPlayed": 1,
-      "matchWins": 0,
-      "matchLosses": 1,
-      "matchDraws": 0,
-      "matchWinPercentage": 0,
-      "gameWins": 1,
-      "gameLosses": 2,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.3333333333333333,
-      "matches": [
-        {
-          "tournamentId": "377629",
-          "dateDisplay": "October 30, 2025",
-          "result": "L",
-          "playerDeck": "Burn",
-          "opponentDeck": "Stompy",
-          "playerGameWins": 1,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
       "opponentUsername": "angu2111",
       "opponentDisplayName": "Andrea Tullis",
       "matchesPlayed": 1,
@@ -762,31 +832,6 @@
       ]
     },
     {
-      "opponentUsername": "delofstrom",
-      "opponentDisplayName": "DEL .",
-      "matchesPlayed": 1,
-      "matchWins": 0,
-      "matchLosses": 1,
-      "matchDraws": 0,
-      "matchWinPercentage": 0,
-      "gameWins": 0,
-      "gameLosses": 2,
-      "gameDraws": 0,
-      "gameWinPercentage": 0,
-      "matches": [
-        {
-          "tournamentId": "347610",
-          "dateDisplay": "July 31, 2025",
-          "result": "L",
-          "playerDeck": "Goblins",
-          "opponentDeck": "_",
-          "playerGameWins": 0,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
       "opponentUsername": "peterk235",
       "opponentDisplayName": "peterk235",
       "matchesPlayed": 1,
@@ -813,6 +858,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "400729",
+      "dateDisplay": "January 29, 2026",
+      "playerCount": 17,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 5,
+      "points": 6,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWinPercentage": 0.625,
+      "deck": "Devourer"
+    },
     {
       "tournamentId": "398837",
       "dateDisplay": "January 22, 2026",

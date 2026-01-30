@@ -2,25 +2,25 @@
   "username": "Taylorhol",
   "displayName": "Taylorhol",
   "overallStats": {
-    "totalTournaments": 15,
-    "totalPoints": 68,
-    "totalMatches": 45,
-    "matchRecord": "22-21-2",
-    "matchWinPercentage": 0.5111111111111111,
-    "gameRecord": "54-53-2",
-    "gameWinPercentage": 0.4954128440366973,
+    "totalTournaments": 16,
+    "totalPoints": 71,
+    "totalMatches": 48,
+    "matchRecord": "23-23-2",
+    "matchWinPercentage": 0.5,
+    "gameRecord": "58-58-2",
+    "gameWinPercentage": 0.4915254237288136,
     "trophies": 1,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q1 2026",
-      "events": 1,
-      "points": 6,
-      "matchRecord": "2-1-0",
-      "matchWinPercentage": 0.6666666666666666,
-      "gameRecord": "4-3-0",
-      "gameWinPercentage": 0.5714285714285714
+      "events": 2,
+      "points": 9,
+      "matchRecord": "3-3-0",
+      "matchWinPercentage": 0.5,
+      "gameRecord": "8-8-0",
+      "gameWinPercentage": 0.5
     },
     {
       "leagueName": "Q4 2025",
@@ -66,6 +66,20 @@
       "trophies": 0
     },
     {
+      "deckName": "Enchantress",
+      "events": 3,
+      "matchWins": 4,
+      "matchLosses": 5,
+      "matchDraws": 0,
+      "matchRecord": "4-5-0",
+      "matchWinPercentage": 0.4444444444444444,
+      "gameWins": 12,
+      "gameLosses": 12,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5,
+      "trophies": 0
+    },
+    {
       "deckName": "Replenish",
       "events": 3,
       "matchWins": 4,
@@ -92,20 +106,6 @@
       "gameDraws": 0,
       "gameWinPercentage": 0.75,
       "trophies": 1
-    },
-    {
-      "deckName": "Enchantress",
-      "events": 2,
-      "matchWins": 3,
-      "matchLosses": 3,
-      "matchDraws": 0,
-      "matchRecord": "3-3-0",
-      "matchWinPercentage": 0.5,
-      "gameWins": 8,
-      "gameLosses": 8,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.5,
-      "trophies": 0
     },
     {
       "deckName": "Gush Tithe",
@@ -306,6 +306,41 @@
           "opponentDeck": "Enchantress",
           "playerGameWins": 2,
           "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "Real_player_hidden",
+      "opponentDisplayName": "Ryan Mitchell",
+      "matchesPlayed": 2,
+      "matchWins": 2,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 4,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6666666666666666,
+      "matches": [
+        {
+          "tournamentId": "400729",
+          "dateDisplay": "January 29, 2026",
+          "result": "W",
+          "playerDeck": "Enchantress",
+          "opponentDeck": "UW Tron",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "393796",
+          "dateDisplay": "January 1, 2026",
+          "result": "W",
+          "playerDeck": "Snap Cradle Pop",
+          "opponentDeck": "Tron",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
           "gameDraws": 0
         }
       ]
@@ -591,6 +626,56 @@
       ]
     },
     {
+      "opponentUsername": "remixmtg",
+      "opponentDisplayName": "Jeremy Siegel",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "matches": [
+        {
+          "tournamentId": "400729",
+          "dateDisplay": "January 29, 2026",
+          "result": "L",
+          "playerDeck": "Enchantress",
+          "opponentDeck": "Terrageddon",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "leyawn",
+      "opponentDisplayName": "leyawn",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "matches": [
+        {
+          "tournamentId": "400729",
+          "dateDisplay": "January 29, 2026",
+          "result": "L",
+          "playerDeck": "Enchantress",
+          "opponentDeck": "Goblins",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "Gallo0",
       "opponentDisplayName": "Gallo0",
       "matchesPlayed": 1,
@@ -711,31 +796,6 @@
           "opponentDeck": "Psychatog",
           "playerGameWins": 2,
           "opponentGameWins": 0,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "Real_player_hidden",
-      "opponentDisplayName": "Ryan Mitchell",
-      "matchesPlayed": 1,
-      "matchWins": 1,
-      "matchLosses": 0,
-      "matchDraws": 0,
-      "matchWinPercentage": 1,
-      "gameWins": 2,
-      "gameLosses": 1,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.6666666666666666,
-      "matches": [
-        {
-          "tournamentId": "393796",
-          "dateDisplay": "January 1, 2026",
-          "result": "W",
-          "playerDeck": "Snap Cradle Pop",
-          "opponentDeck": "Tron",
-          "playerGameWins": 2,
-          "opponentGameWins": 1,
           "gameDraws": 0
         }
       ]
@@ -992,6 +1052,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "400729",
+      "dateDisplay": "January 29, 2026",
+      "playerCount": 17,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 15,
+      "points": 3,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWinPercentage": 0.4444444,
+      "deck": "Enchantress"
+    },
     {
       "tournamentId": "398837",
       "dateDisplay": "January 22, 2026",

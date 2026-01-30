@@ -2,25 +2,25 @@
   "username": "RichBucey",
   "displayName": "RichBucey",
   "overallStats": {
-    "totalTournaments": 23,
-    "totalPoints": 114,
-    "totalMatches": 69,
-    "matchRecord": "38-31-0",
-    "matchWinPercentage": 0.5507246376811594,
-    "gameRecord": "90-78-0",
-    "gameWinPercentage": 0.5357142857142857,
+    "totalTournaments": 24,
+    "totalPoints": 117,
+    "totalMatches": 72,
+    "matchRecord": "39-33-0",
+    "matchWinPercentage": 0.5416666666666666,
+    "gameRecord": "93-82-0",
+    "gameWinPercentage": 0.5314285714285715,
     "trophies": 3,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q1 2026",
-      "events": 1,
-      "points": 6,
-      "matchRecord": "2-1-0",
-      "matchWinPercentage": 0.6666666666666666,
-      "gameRecord": "4-4-0",
-      "gameWinPercentage": 0.5
+      "events": 2,
+      "points": 9,
+      "matchRecord": "3-3-0",
+      "matchWinPercentage": 0.5,
+      "gameRecord": "7-8-0",
+      "gameWinPercentage": 0.4666666666666667
     },
     {
       "leagueName": "Q4 2025",
@@ -98,6 +98,20 @@
       "trophies": 1
     },
     {
+      "deckName": "Stasis",
+      "events": 3,
+      "matchWins": 4,
+      "matchLosses": 5,
+      "matchDraws": 0,
+      "matchRecord": "4-5-0",
+      "matchWinPercentage": 0.4444444444444444,
+      "gameWins": 9,
+      "gameLosses": 15,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.375,
+      "trophies": 0
+    },
+    {
       "deckName": "Oath Ponza",
       "events": 2,
       "matchWins": 4,
@@ -109,20 +123,6 @@
       "gameLosses": 6,
       "gameDraws": 0,
       "gameWinPercentage": 0.625,
-      "trophies": 0
-    },
-    {
-      "deckName": "Stasis",
-      "events": 2,
-      "matchWins": 3,
-      "matchLosses": 3,
-      "matchDraws": 0,
-      "matchRecord": "3-3-0",
-      "matchWinPercentage": 0.5,
-      "gameWins": 6,
-      "gameLosses": 10,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.375,
       "trophies": 0
     },
     {
@@ -458,6 +458,51 @@
       ]
     },
     {
+      "opponentUsername": "sjpenzer",
+      "opponentDisplayName": "sjpenzer",
+      "matchesPlayed": 3,
+      "matchWins": 0,
+      "matchLosses": 3,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 2,
+      "gameLosses": 6,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.25,
+      "matches": [
+        {
+          "tournamentId": "400729",
+          "dateDisplay": "January 29, 2026",
+          "result": "L",
+          "playerDeck": "Stasis",
+          "opponentDeck": "Terrageddon",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "395699",
+          "dateDisplay": "January 8, 2026",
+          "result": "L",
+          "playerDeck": "Burn",
+          "opponentDeck": "Terrageddon",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "397227",
+          "dateDisplay": "January 15, 2026",
+          "result": "L",
+          "playerDeck": "Moneyball Black",
+          "opponentDeck": "Terrageddon",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "madmanpoet",
       "opponentDisplayName": "Michael Flores",
       "matchesPlayed": 3,
@@ -541,41 +586,6 @@
           "result": "L",
           "playerDeck": "Enchantress",
           "opponentDeck": "Replenish",
-          "playerGameWins": 0,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "sjpenzer",
-      "opponentDisplayName": "sjpenzer",
-      "matchesPlayed": 2,
-      "matchWins": 0,
-      "matchLosses": 2,
-      "matchDraws": 0,
-      "matchWinPercentage": 0,
-      "gameWins": 1,
-      "gameLosses": 4,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.2,
-      "matches": [
-        {
-          "tournamentId": "395699",
-          "dateDisplay": "January 8, 2026",
-          "result": "L",
-          "playerDeck": "Burn",
-          "opponentDeck": "Terrageddon",
-          "playerGameWins": 1,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "397227",
-          "dateDisplay": "January 15, 2026",
-          "result": "L",
-          "playerDeck": "Moneyball Black",
-          "opponentDeck": "Terrageddon",
           "playerGameWins": 0,
           "opponentGameWins": 2,
           "gameDraws": 0
@@ -788,6 +798,56 @@
           "opponentDeck": "_",
           "playerGameWins": 1,
           "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "leyawn",
+      "opponentDisplayName": "leyawn",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "matches": [
+        {
+          "tournamentId": "400729",
+          "dateDisplay": "January 29, 2026",
+          "result": "L",
+          "playerDeck": "Stasis",
+          "opponentDeck": "Goblins",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "delofstrom",
+      "opponentDisplayName": "DEL .",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "matches": [
+        {
+          "tournamentId": "400729",
+          "dateDisplay": "January 29, 2026",
+          "result": "W",
+          "playerDeck": "Stasis",
+          "opponentDeck": "Survival Welder",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
           "gameDraws": 0
         }
       ]
@@ -1419,6 +1479,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "400729",
+      "dateDisplay": "January 29, 2026",
+      "playerCount": 17,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 14,
+      "points": 3,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWinPercentage": 0.4285714,
+      "deck": "Stasis"
+    },
     {
       "tournamentId": "398837",
       "dateDisplay": "January 22, 2026",

@@ -2,25 +2,25 @@
   "username": "BryanGulotta",
   "displayName": "BryanGulotta",
   "overallStats": {
-    "totalTournaments": 24,
-    "totalPoints": 113,
-    "totalMatches": 71,
-    "matchRecord": "36-30-5",
-    "matchWinPercentage": 0.5422535211267606,
-    "gameRecord": "90-83-2",
-    "gameWinPercentage": 0.5142857142857142,
+    "totalTournaments": 25,
+    "totalPoints": 116,
+    "totalMatches": 74,
+    "matchRecord": "37-32-5",
+    "matchWinPercentage": 0.5337837837837838,
+    "gameRecord": "94-87-2",
+    "gameWinPercentage": 0.5136612021857924,
     "trophies": 0,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q1 2026",
-      "events": 1,
-      "points": 0,
-      "matchRecord": "0-3-0",
-      "matchWinPercentage": 0,
-      "gameRecord": "1-6-0",
-      "gameWinPercentage": 0.14285714285714285
+      "events": 2,
+      "points": 3,
+      "matchRecord": "1-5-0",
+      "matchWinPercentage": 0.16666666666666666,
+      "gameRecord": "5-10-0",
+      "gameWinPercentage": 0.3333333333333333
     },
     {
       "leagueName": "Q4 2025",
@@ -151,6 +151,20 @@
       "gameLosses": 3,
       "gameDraws": 0,
       "gameWinPercentage": 0.625,
+      "trophies": 0
+    },
+    {
+      "deckName": "Turbolands",
+      "events": 1,
+      "matchWins": 1,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 4,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5,
       "trophies": 0
     },
     {
@@ -890,6 +904,56 @@
       ]
     },
     {
+      "opponentUsername": "minimiz",
+      "opponentDisplayName": "Eli Mizock",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "matches": [
+        {
+          "tournamentId": "400729",
+          "dateDisplay": "January 29, 2026",
+          "result": "L",
+          "playerDeck": "Turbolands",
+          "opponentDeck": "Goblins",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "maxshiau",
+      "opponentDisplayName": "maxshiau",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "matches": [
+        {
+          "tournamentId": "400729",
+          "dateDisplay": "January 29, 2026",
+          "result": "L",
+          "playerDeck": "Turbolands",
+          "opponentDeck": "Sligh",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "Ea212",
       "opponentDisplayName": "Edward Arce",
       "matchesPlayed": 1,
@@ -1341,6 +1405,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "400729",
+      "dateDisplay": "January 29, 2026",
+      "playerCount": 17,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 12,
+      "points": 3,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWinPercentage": 0.5,
+      "deck": "Turbolands"
+    },
     {
       "tournamentId": "398837",
       "dateDisplay": "January 22, 2026",

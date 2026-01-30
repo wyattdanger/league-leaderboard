@@ -2,25 +2,25 @@
   "username": "swbmtg",
   "displayName": "swb",
   "overallStats": {
-    "totalTournaments": 30,
-    "totalPoints": 197,
-    "totalMatches": 90,
-    "matchRecord": "64-21-5",
-    "matchWinPercentage": 0.7388888888888889,
-    "gameRecord": "143-75-2",
-    "gameWinPercentage": 0.65,
+    "totalTournaments": 31,
+    "totalPoints": 203,
+    "totalMatches": 93,
+    "matchRecord": "66-22-5",
+    "matchWinPercentage": 0.7365591397849462,
+    "gameRecord": "148-78-2",
+    "gameWinPercentage": 0.6491228070175439,
     "trophies": 8,
     "belts": 1
   },
   "leagueStats": [
     {
       "leagueName": "Q1 2026",
-      "events": 1,
-      "points": 4,
-      "matchRecord": "1-1-1",
-      "matchWinPercentage": 0.5,
-      "gameRecord": "3-4-0",
-      "gameWinPercentage": 0.42857142857142855
+      "events": 2,
+      "points": 10,
+      "matchRecord": "3-2-1",
+      "matchWinPercentage": 0.5833333333333334,
+      "gameRecord": "8-7-0",
+      "gameWinPercentage": 0.5333333333333333
     },
     {
       "leagueName": "Q4 2025",
@@ -203,6 +203,20 @@
       "gameDraws": 0,
       "gameWinPercentage": 0.75,
       "trophies": 1
+    },
+    {
+      "deckName": "Trix",
+      "events": 1,
+      "matchWins": 2,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 5,
+      "gameLosses": 3,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.625,
+      "trophies": 0
     },
     {
       "deckName": "Cradle Control",
@@ -826,6 +840,51 @@
       ]
     },
     {
+      "opponentUsername": "delofstrom",
+      "opponentDisplayName": "DEL .",
+      "matchesPlayed": 3,
+      "matchWins": 3,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 6,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.75,
+      "matches": [
+        {
+          "tournamentId": "400729",
+          "dateDisplay": "January 29, 2026",
+          "result": "W",
+          "playerDeck": "Trix",
+          "opponentDeck": "Survival Welder",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "384681",
+          "dateDisplay": "November 20, 2025",
+          "result": "W",
+          "playerDeck": "Enchantress",
+          "opponentDeck": "_",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "347610",
+          "dateDisplay": "July 31, 2025",
+          "result": "W",
+          "playerDeck": "Oath Spec",
+          "opponentDeck": "_",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "itsCama",
       "opponentDisplayName": "Yosef Harari",
       "matchesPlayed": 3,
@@ -1051,6 +1110,41 @@
       ]
     },
     {
+      "opponentUsername": "Tencteri",
+      "opponentDisplayName": "Tencteri",
+      "matchesPlayed": 2,
+      "matchWins": 0,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 2,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "matches": [
+        {
+          "tournamentId": "400729",
+          "dateDisplay": "January 29, 2026",
+          "result": "L",
+          "playerDeck": "Trix",
+          "opponentDeck": "Zombies",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "384681",
+          "dateDisplay": "November 20, 2025",
+          "result": "L",
+          "playerDeck": "Enchantress",
+          "opponentDeck": "Deadguy Ale",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "sjpenzer",
       "opponentDisplayName": "sjpenzer",
       "matchesPlayed": 2,
@@ -1086,41 +1180,6 @@
       ]
     },
     {
-      "opponentUsername": "delofstrom",
-      "opponentDisplayName": "DEL .",
-      "matchesPlayed": 2,
-      "matchWins": 2,
-      "matchLosses": 0,
-      "matchDraws": 0,
-      "matchWinPercentage": 1,
-      "gameWins": 4,
-      "gameLosses": 1,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.8,
-      "matches": [
-        {
-          "tournamentId": "384681",
-          "dateDisplay": "November 20, 2025",
-          "result": "W",
-          "playerDeck": "Enchantress",
-          "opponentDeck": "_",
-          "playerGameWins": 2,
-          "opponentGameWins": 0,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "347610",
-          "dateDisplay": "July 31, 2025",
-          "result": "W",
-          "playerDeck": "Oath Spec",
-          "opponentDeck": "_",
-          "playerGameWins": 2,
-          "opponentGameWins": 1,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
       "opponentUsername": "zoidberg1003",
       "opponentDisplayName": "Zoahr Bhagat",
       "matchesPlayed": 2,
@@ -1149,6 +1208,31 @@
           "result": "W",
           "playerDeck": "Oath Parfait",
           "opponentDeck": "_",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "Real_player_hidden",
+      "opponentDisplayName": "Ryan Mitchell",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "matches": [
+        {
+          "tournamentId": "400729",
+          "dateDisplay": "January 29, 2026",
+          "result": "W",
+          "playerDeck": "Trix",
+          "opponentDeck": "UW Tron",
           "playerGameWins": 2,
           "opponentGameWins": 0,
           "gameDraws": 0
@@ -1351,31 +1435,6 @@
           "opponentDeck": "_",
           "playerGameWins": 2,
           "opponentGameWins": 0,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "Tencteri",
-      "opponentDisplayName": "Tencteri",
-      "matchesPlayed": 1,
-      "matchWins": 0,
-      "matchLosses": 1,
-      "matchDraws": 0,
-      "matchWinPercentage": 0,
-      "gameWins": 1,
-      "gameLosses": 2,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.3333333333333333,
-      "matches": [
-        {
-          "tournamentId": "384681",
-          "dateDisplay": "November 20, 2025",
-          "result": "L",
-          "playerDeck": "Enchantress",
-          "opponentDeck": "Deadguy Ale",
-          "playerGameWins": 1,
-          "opponentGameWins": 2,
           "gameDraws": 0
         }
       ]
@@ -1682,6 +1741,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "400729",
+      "dateDisplay": "January 29, 2026",
+      "playerCount": 17,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 7,
+      "points": 6,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWinPercentage": 0.625,
+      "deck": "Trix"
+    },
     {
       "tournamentId": "398837",
       "dateDisplay": "January 22, 2026",

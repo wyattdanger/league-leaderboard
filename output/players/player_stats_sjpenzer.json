@@ -2,25 +2,25 @@
   "username": "sjpenzer",
   "displayName": "sjpenzer",
   "overallStats": {
-    "totalTournaments": 10,
-    "totalPoints": 64,
-    "totalMatches": 30,
-    "matchRecord": "20-6-4",
-    "matchWinPercentage": 0.7333333333333333,
-    "gameRecord": "47-24-0",
-    "gameWinPercentage": 0.6619718309859155,
-    "trophies": 2,
+    "totalTournaments": 11,
+    "totalPoints": 73,
+    "totalMatches": 33,
+    "matchRecord": "23-6-4",
+    "matchWinPercentage": 0.7575757575757576,
+    "gameRecord": "53-25-0",
+    "gameWinPercentage": 0.6794871794871795,
+    "trophies": 3,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q1 2026",
-      "events": 1,
-      "points": 5,
-      "matchRecord": "1-0-2",
-      "matchWinPercentage": 0.6666666666666666,
-      "gameRecord": "4-2-0",
-      "gameWinPercentage": 0.6666666666666666
+      "events": 2,
+      "points": 14,
+      "matchRecord": "4-0-2",
+      "matchWinPercentage": 0.8333333333333334,
+      "gameRecord": "10-3-0",
+      "gameWinPercentage": 0.7692307692307693
     },
     {
       "leagueName": "Q4 2025",
@@ -44,17 +44,17 @@
   "deckStats": [
     {
       "deckName": "Terrageddon",
-      "events": 10,
-      "matchWins": 20,
+      "events": 11,
+      "matchWins": 23,
       "matchLosses": 6,
       "matchDraws": 4,
-      "matchRecord": "20-6-4",
-      "matchWinPercentage": 0.7333333333333333,
-      "gameWins": 53,
-      "gameLosses": 27,
+      "matchRecord": "23-6-4",
+      "matchWinPercentage": 0.7575757575757576,
+      "gameWins": 60,
+      "gameLosses": 28,
       "gameDraws": 0,
-      "gameWinPercentage": 0.6625,
-      "trophies": 2
+      "gameWinPercentage": 0.6818181818181818,
+      "trophies": 3
     }
   ],
   "headToHead": [
@@ -169,6 +169,86 @@
       ]
     },
     {
+      "opponentUsername": "RichBucey",
+      "opponentDisplayName": "RichBucey",
+      "matchesPlayed": 3,
+      "matchWins": 3,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 6,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.75,
+      "matches": [
+        {
+          "tournamentId": "400729",
+          "dateDisplay": "January 29, 2026",
+          "result": "W",
+          "playerDeck": "Terrageddon",
+          "opponentDeck": "Stasis",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "395699",
+          "dateDisplay": "January 8, 2026",
+          "result": "W",
+          "playerDeck": "Terrageddon",
+          "opponentDeck": "Burn",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "397227",
+          "dateDisplay": "January 15, 2026",
+          "result": "W",
+          "playerDeck": "Terrageddon",
+          "opponentDeck": "Moneyball Black",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "itsCama",
+      "opponentDisplayName": "Yosef Harari",
+      "matchesPlayed": 2,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 1,
+      "matchWinPercentage": 0.75,
+      "gameWins": 3,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.75,
+      "matches": [
+        {
+          "tournamentId": "400729",
+          "dateDisplay": "January 29, 2026",
+          "result": "W",
+          "playerDeck": "Terrageddon",
+          "opponentDeck": "Tinker Welder",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "398837",
+          "dateDisplay": "January 22, 2026",
+          "result": "D",
+          "playerDeck": "Terrageddon",
+          "opponentDeck": "Welder",
+          "playerGameWins": 1,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "swbmtg",
       "opponentDisplayName": "swb",
       "matchesPlayed": 2,
@@ -199,41 +279,6 @@
           "opponentDeck": "Cradle Control",
           "playerGameWins": 1,
           "opponentGameWins": 2,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "RichBucey",
-      "opponentDisplayName": "RichBucey",
-      "matchesPlayed": 2,
-      "matchWins": 2,
-      "matchLosses": 0,
-      "matchDraws": 0,
-      "matchWinPercentage": 1,
-      "gameWins": 4,
-      "gameLosses": 1,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.8,
-      "matches": [
-        {
-          "tournamentId": "395699",
-          "dateDisplay": "January 8, 2026",
-          "result": "W",
-          "playerDeck": "Terrageddon",
-          "opponentDeck": "Burn",
-          "playerGameWins": 2,
-          "opponentGameWins": 1,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "397227",
-          "dateDisplay": "January 15, 2026",
-          "result": "W",
-          "playerDeck": "Terrageddon",
-          "opponentDeck": "Moneyball Black",
-          "playerGameWins": 2,
-          "opponentGameWins": 0,
           "gameDraws": 0
         }
       ]
@@ -344,6 +389,31 @@
       ]
     },
     {
+      "opponentUsername": "remixmtg",
+      "opponentDisplayName": "Jeremy Siegel",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "matches": [
+        {
+          "tournamentId": "400729",
+          "dateDisplay": "January 29, 2026",
+          "result": "W",
+          "playerDeck": "Terrageddon",
+          "opponentDeck": "Terrageddon",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "peatsheep",
       "opponentDisplayName": "Will Neville",
       "matchesPlayed": 1,
@@ -364,31 +434,6 @@
           "opponentDeck": "Gro",
           "playerGameWins": 2,
           "opponentGameWins": 0,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "itsCama",
-      "opponentDisplayName": "Yosef Harari",
-      "matchesPlayed": 1,
-      "matchWins": 0,
-      "matchLosses": 0,
-      "matchDraws": 1,
-      "matchWinPercentage": 0.5,
-      "gameWins": 1,
-      "gameLosses": 1,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.5,
-      "matches": [
-        {
-          "tournamentId": "398837",
-          "dateDisplay": "January 22, 2026",
-          "result": "D",
-          "playerDeck": "Terrageddon",
-          "opponentDeck": "Welder",
-          "playerGameWins": 1,
-          "opponentGameWins": 1,
           "gameDraws": 0
         }
       ]
@@ -645,6 +690,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "400729",
+      "dateDisplay": "January 29, 2026",
+      "playerCount": 17,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 2,
+      "points": 9,
+      "matchRecord": "3-0-0",
+      "matchWinPercentage": 1,
+      "gameWinPercentage": 0.8571429,
+      "deck": "Terrageddon"
+    },
     {
       "tournamentId": "398837",
       "dateDisplay": "January 22, 2026",
