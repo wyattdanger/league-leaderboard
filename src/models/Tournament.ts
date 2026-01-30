@@ -112,6 +112,7 @@ export class Tournament {
       year: 'numeric',
       month: 'long',
       day: 'numeric',
+      timeZone: 'America/New_York',
     });
   }
 
