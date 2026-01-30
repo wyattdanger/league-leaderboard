@@ -96,6 +96,7 @@ export function getTournamentMetadata(tournamentId: string): TournamentMetadata 
       year: 'numeric',
       month: 'long',
       day: 'numeric',
+      timeZone: 'America/New_York',
     });
 
     const playerCount = standings.length;
