@@ -17,8 +17,11 @@ const { tournament, leagueName } = Astro.props;
         tournament.winnerDisplayName && (
           <span class="championship-text">
             <span class="winner-name">{tournament.winnerDisplayName}</span> won the{' '}
-            <span class="league-name">{leagueName}</span> top 8 on{' '}
-            <span class="date">{tournament.dateDisplay}</span>!
+            <span class="league-name">{leagueName}</span> top 8
+            {tournament.winnerDeck && (
+              <span> with <span class="deck-name">{tournament.winnerDeck}</span></span>
+            )}{' '}
+            on <span class="date">{tournament.dateDisplay}</span>
           </span>
         )
       }
@@ -68,7 +71,7 @@ const { tournament, leagueName } = Astro.props;
   }
 
   .championship-text {
-    font-size: 0.9375rem;
+    font-size: 1rem;
     line-height: 1.5;
   }
 
@@ -77,6 +80,10 @@ const { tournament, leagueName } = Astro.props;
   }
 
   .league-name {
+    font-weight: 600;
+  }
+
+  .deck-name {
     font-weight: 600;
   }
 
@@ -106,7 +113,7 @@ const { tournament, leagueName } = Astro.props;
     }
 
     .championship-text {
-      font-size: 0.875rem;
+      font-size: 0.9375rem;
     }
 
     .view-link {
@@ -126,7 +133,7 @@ const { tournament, leagueName } = Astro.props;
     }
 
     .championship-text {
-      font-size: 0.875rem;
+      font-size: 0.9375rem;
     }
 
     .callout-right {

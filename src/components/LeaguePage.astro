@@ -4,6 +4,7 @@ import LeagueHeader from './LeagueHeader.astro';
 import LeagueNav from './LeagueNav.astro';
 import LatestEvent from './LatestEvent.astro';
 import Top8Callout from './Top8Callout.astro';
+import OverallInfo from './OverallInfo.astro';
 import Leaderboard from './Leaderboard.astro';
 import EventList from './EventList.astro';
 import type { League, LeagueStanding, TournamentMetadata } from '../types';
@@ -41,6 +42,7 @@ const latestTournament = showLatestEvent && tournaments.length > 0 ? tournaments
       <Top8Callout tournament={top8Tournament} leagueName={currentLeague.name} />
     )
   }
+  {isOverall && <OverallInfo />}
   <Leaderboard standings={standings} />
   <EventList tournaments={tournaments} />
 </PageLayout>
