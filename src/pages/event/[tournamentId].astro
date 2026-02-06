@@ -213,13 +213,6 @@ if (fs.existsSync(metadataFile)) {
               🏆 {tournament.trophyCount}
             </div>
           </Tooltip>
-          <Tooltip
-            content={`${tournament.roundCount} ${tournament.roundCount === 1 ? 'round' : 'rounds'} of Swiss`}
-          >
-            <div class="metadata-badge">
-            ⚔️ {tournament.roundCount}
-          </div>
-        </Tooltip>
         </div>
       )}
     </div>
