@@ -148,7 +148,7 @@ const { standings } = Astro.props;
   }
 
   .stat-zero {
-    opacity: 0.3;
+    color: #ccc;
   }
 
   .trophy-pills {
@@ -248,19 +248,9 @@ const { standings } = Astro.props;
   @media (max-width: 1024px) {
     .leaderboard-header,
     .leaderboard-row {
-      grid-template-columns: 50px 1fr 60px 80px 140px 140px;
+      grid-template-columns: 50px 1fr 60px 80px 140px 140px 90px;
       gap: 0.5rem;
       padding: 1rem;
-    }
-
-    /* Hide Trophies column on medium screens */
-    .stat:nth-child(7) {
-      display: none;
-    }
-
-    /* Hide Trophies header on medium screens */
-    .leaderboard-header > div:nth-child(7) {
-      display: none;
     }
   }
 

@@ -28,7 +28,7 @@ const displayDeckName = (name: string) => {
                 <th class="hide-tablet">Match Record</th>
                 <th class="hide-tablet">Game Record</th>
                 <th class="show-tablet">MWP</th>
-                <th class="hide-mobile">🏆</th>
+                <th>🏆</th>
               </tr>
             </thead>
             <tbody>
@@ -66,7 +66,7 @@ const displayDeckName = (name: string) => {
                     <td class={`show-tablet deck-mwp ${mwpClass}`}>
                       {(deck.matchWinPercentage * 100).toFixed(1)}%
                     </td>
-                    <td class="hide-mobile deck-trophies">
+                    <td class={`deck-trophies ${deck.trophies === 0 ? 'trophy-zero' : ''}`}>
                       {deck.trophies > 0 ? deck.trophies : '—'}
                     </td>
                   </tr>
@@ -177,6 +177,10 @@ const displayDeckName = (name: string) => {
     font-weight: 600;
     color: #6b7280;
     white-space: nowrap;
+  }
+
+  .deck-trophies.trophy-zero {
+    color: #ccc;
   }
 
   .wp-high {
