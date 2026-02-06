@@ -20,10 +20,9 @@ interface PageMetadata {
 
 function getDeckName(
   username: string,
-  deckData: Record<string, string> | null,
-  showDeckData: boolean
+  deckData: Record<string, string> | null
 ): string | null {
-  if (!showDeckData || !deckData) return null;
+  if (!deckData) return null;
   const deck = deckData[username];
   return deck && deck !== '_' ? deck : null;
 }
@@ -92,7 +91,7 @@ function generateEventPageMetadata(tournamentId: string): void {
     );
 
     if (champion) {
-      const championDeck = getDeckName(champion.player.username, deckData, showDeckData);
+      const championDeck = getDeckName(champion.player.username, deckData);
       const deckText = championDeck ? ` playing ${championDeck}` : '';
       descriptionText = `${champion.player.displayName} won the ${leagueName} Top 8${deckText} 👑`;
     } else {
@@ -107,7 +106,7 @@ function generateEventPageMetadata(tournamentId: string): void {
 
       const finisherTexts = topFinishers.map((standing) => {
         const playerName = standing.player.displayName;
-        const deck = getDeckName(standing.player.username, deckData, showDeckData);
+        const deck = getDeckName(standing.player.username, deckData);
         return deck ? `${playerName} went ${recordText} on ${deck}` : `${playerName} went ${recordText}`;
       });
 
@@ -135,7 +134,7 @@ function generateEventPageMetadata(tournamentId: string): void {
       username: s.player.username,
       displayName: s.player.displayName,
       record: `${s.matchWins}-${s.matchLosses}${s.matchDraws > 0 ? `-${s.matchDraws}` : ''}`,
-      deck: getDeckName(s.player.username, deckData, showDeckData),
+      deck: getDeckName(s.player.username, deckData),
     })),
   };
 
