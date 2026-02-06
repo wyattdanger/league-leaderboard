@@ -23,6 +23,9 @@ const { currentLeague, allLeagues, isOverall } = Astro.props;
       );
     })
   }
+  <a href="/league/overall" class={isOverall ? 'active overall-link' : 'overall-link'} title="Overall Rankings">
+    📊
+  </a>
 </nav>
 
 <style>
@@ -49,10 +52,21 @@ const { currentLeague, allLeagues, isOverall } = Astro.props;
     font-weight: 700;
   }
 
+  .league-nav a.overall-link {
+    font-size: 1.4rem;
+    margin-left: 0.5rem;
+    vertical-align: middle;
+  }
+
   @media (max-width: 640px) {
     .league-nav a {
       font-size: 0.9rem;
       margin: 0 0.5rem;
+    }
+
+    .league-nav a.overall-link {
+      font-size: 1.2rem;
+      margin-left: 0.25rem;
     }
   }
 </style>

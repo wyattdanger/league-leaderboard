@@ -2,25 +2,25 @@
   "username": "Lannynyny",
   "displayName": "Lanny Huang",
   "overallStats": {
-    "totalTournaments": 5,
-    "totalPoints": 21,
-    "totalMatches": 15,
-    "matchRecord": "7-8-0",
-    "matchWinPercentage": 0.4666666666666667,
-    "gameRecord": "17-17-0",
-    "gameWinPercentage": 0.5,
+    "totalTournaments": 6,
+    "totalPoints": 27,
+    "totalMatches": 18,
+    "matchRecord": "9-9-0",
+    "matchWinPercentage": 0.5,
+    "gameRecord": "21-20-0",
+    "gameWinPercentage": 0.5121951219512195,
     "trophies": 1,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q1 2026",
-      "events": 1,
-      "points": 3,
-      "matchRecord": "1-2-0",
-      "matchWinPercentage": 0.3333333333333333,
-      "gameRecord": "4-5-0",
-      "gameWinPercentage": 0.4444444444444444
+      "events": 2,
+      "points": 9,
+      "matchRecord": "3-3-0",
+      "matchWinPercentage": 0.5,
+      "gameRecord": "8-8-0",
+      "gameWinPercentage": 0.5
     },
     {
       "leagueName": "Q4 2025",
@@ -80,6 +80,20 @@
       "trophies": 1
     },
     {
+      "deckName": "Gro",
+      "events": 1,
+      "matchWins": 2,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 5,
+      "gameLosses": 3,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.625,
+      "trophies": 0
+    },
+    {
       "deckName": "Bant Bobs",
       "events": 1,
       "matchWins": 1,
@@ -95,6 +109,81 @@
     }
   ],
   "headToHead": [
+    {
+      "opponentUsername": "madmanpoet",
+      "opponentDisplayName": "Michael Flores",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "matches": [
+        {
+          "tournamentId": "402789",
+          "dateDisplay": "February 5, 2026",
+          "result": "L",
+          "playerDeck": "Gro",
+          "opponentDeck": "Enchantress",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "angu2111",
+      "opponentDisplayName": "Andrea Tullis",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "matches": [
+        {
+          "tournamentId": "402789",
+          "dateDisplay": "February 5, 2026",
+          "result": "W",
+          "playerDeck": "Gro",
+          "opponentDeck": "_",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "mattmanw2",
+      "opponentDisplayName": "mattmanw2",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6666666666666666,
+      "matches": [
+        {
+          "tournamentId": "402789",
+          "dateDisplay": "February 5, 2026",
+          "result": "W",
+          "playerDeck": "Gro",
+          "opponentDeck": "_",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
     {
       "opponentUsername": "pcocozza",
       "opponentDisplayName": "pcocozza",
@@ -447,6 +536,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "402789",
+      "dateDisplay": "February 5, 2026",
+      "playerCount": 25,
+      "trophyCount": 3,
+      "roundCount": 3,
+      "rank": 11,
+      "points": 6,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWinPercentage": 0.5714286,
+      "deck": "Gro"
+    },
     {
       "tournamentId": "398837",
       "dateDisplay": "January 22, 2026",

@@ -2,17 +2,26 @@
   "username": "angu2111",
   "displayName": "Andrea Tullis",
   "overallStats": {
-    "totalTournaments": 3,
+    "totalTournaments": 4,
     "totalPoints": 12,
-    "totalMatches": 9,
-    "matchRecord": "4-5-0",
-    "matchWinPercentage": 0.4444444444444444,
-    "gameRecord": "11-13-0",
-    "gameWinPercentage": 0.4583333333333333,
+    "totalMatches": 11,
+    "matchRecord": "4-7-0",
+    "matchWinPercentage": 0.36363636363636365,
+    "gameRecord": "11-17-0",
+    "gameWinPercentage": 0.39285714285714285,
     "trophies": 0,
     "belts": 0
   },
   "leagueStats": [
+    {
+      "leagueName": "Q1 2026",
+      "events": 1,
+      "points": 0,
+      "matchRecord": "0-2-0",
+      "matchWinPercentage": 0,
+      "gameRecord": "0-4-0",
+      "gameWinPercentage": 0
+    },
     {
       "leagueName": "Q4 2025",
       "events": 3,
@@ -65,6 +74,20 @@
       "gameDraws": 0,
       "gameWinPercentage": 0.375,
       "trophies": 0
+    },
+    {
+      "deckName": "Unknown",
+      "events": 1,
+      "matchWins": 0,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchRecord": "0-2-0",
+      "matchWinPercentage": 0,
+      "gameWins": 2,
+      "gameLosses": 3,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.4,
+      "trophies": 0
     }
   ],
   "headToHead": [
@@ -97,6 +120,56 @@
           "result": "L",
           "playerDeck": "UG madness",
           "opponentDeck": "_",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "landho",
+      "opponentDisplayName": "landho",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "matches": [
+        {
+          "tournamentId": "402789",
+          "dateDisplay": "February 5, 2026",
+          "result": "L",
+          "playerDeck": "_",
+          "opponentDeck": "Stompy",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "Lannynyny",
+      "opponentDisplayName": "Lanny Huang",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "matches": [
+        {
+          "tournamentId": "402789",
+          "dateDisplay": "February 5, 2026",
+          "result": "L",
+          "playerDeck": "_",
+          "opponentDeck": "Gro",
           "playerGameWins": 0,
           "opponentGameWins": 2,
           "gameDraws": 0
@@ -280,6 +353,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "402789",
+      "dateDisplay": "February 5, 2026",
+      "playerCount": 25,
+      "trophyCount": 3,
+      "roundCount": 3,
+      "rank": 22,
+      "points": 0,
+      "matchRecord": "0-2-0",
+      "matchWinPercentage": 0,
+      "gameWinPercentage": 0.3333333,
+      "deck": "_"
+    },
     {
       "tournamentId": "390154",
       "dateDisplay": "December 11, 2025",

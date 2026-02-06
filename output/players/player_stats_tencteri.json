@@ -2,25 +2,25 @@
   "username": "Tencteri",
   "displayName": "Tencteri",
   "overallStats": {
-    "totalTournaments": 20,
+    "totalTournaments": 21,
     "totalPoints": 88,
-    "totalMatches": 59,
-    "matchRecord": "29-29-1",
-    "matchWinPercentage": 0.5,
-    "gameRecord": "73-73-1",
-    "gameWinPercentage": 0.4965986394557823,
+    "totalMatches": 62,
+    "matchRecord": "29-32-1",
+    "matchWinPercentage": 0.47580645161290325,
+    "gameRecord": "75-79-1",
+    "gameWinPercentage": 0.4838709677419355,
     "trophies": 0,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q1 2026",
-      "events": 1,
+      "events": 2,
       "points": 6,
-      "matchRecord": "2-1-0",
-      "matchWinPercentage": 0.6666666666666666,
-      "gameRecord": "5-4-0",
-      "gameWinPercentage": 0.5555555555555556
+      "matchRecord": "2-4-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameRecord": "7-10-0",
+      "gameWinPercentage": 0.4117647058823529
     },
     {
       "leagueName": "Q4 2025",
@@ -71,16 +71,16 @@
   "deckStats": [
     {
       "deckName": "Unknown",
-      "events": 9,
+      "events": 10,
       "matchWins": 12,
-      "matchLosses": 13,
+      "matchLosses": 16,
       "matchDraws": 1,
-      "matchRecord": "12-13-1",
-      "matchWinPercentage": 0.4807692307692308,
-      "gameWins": 36,
-      "gameLosses": 33,
+      "matchRecord": "12-16-1",
+      "matchWinPercentage": 0.43103448275862066,
+      "gameWins": 39,
+      "gameLosses": 38,
       "gameDraws": 0,
-      "gameWinPercentage": 0.5217391304347826,
+      "gameWinPercentage": 0.5064935064935064,
       "trophies": 0
     },
     {
@@ -650,6 +650,81 @@
         {
           "tournamentId": "321687",
           "dateDisplay": "June 5, 2025",
+          "result": "L",
+          "playerDeck": "_",
+          "opponentDeck": "_",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "PCavalcanti",
+      "opponentDisplayName": "PCavalcanti",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "matches": [
+        {
+          "tournamentId": "402789",
+          "dateDisplay": "February 5, 2026",
+          "result": "L",
+          "playerDeck": "_",
+          "opponentDeck": "_",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "MarW59",
+      "opponentDisplayName": "MarW59",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "matches": [
+        {
+          "tournamentId": "402789",
+          "dateDisplay": "February 5, 2026",
+          "result": "L",
+          "playerDeck": "_",
+          "opponentDeck": "_",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "Mookyspulder",
+      "opponentDisplayName": "Mookyspulder",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "matches": [
+        {
+          "tournamentId": "402789",
+          "dateDisplay": "February 5, 2026",
           "result": "L",
           "playerDeck": "_",
           "opponentDeck": "_",
@@ -1311,6 +1386,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "402789",
+      "dateDisplay": "February 5, 2026",
+      "playerCount": 25,
+      "trophyCount": 3,
+      "roundCount": 3,
+      "rank": 24,
+      "points": 0,
+      "matchRecord": "0-3-0",
+      "matchWinPercentage": 0,
+      "gameWinPercentage": 0.3333333,
+      "deck": "_"
+    },
     {
       "tournamentId": "400729",
       "dateDisplay": "January 29, 2026",

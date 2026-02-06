@@ -2,25 +2,25 @@
   "username": "RichBucey",
   "displayName": "RichBucey",
   "overallStats": {
-    "totalTournaments": 24,
-    "totalPoints": 117,
-    "totalMatches": 72,
-    "matchRecord": "39-33-0",
-    "matchWinPercentage": 0.5416666666666666,
-    "gameRecord": "93-82-0",
-    "gameWinPercentage": 0.5314285714285715,
+    "totalTournaments": 25,
+    "totalPoints": 120,
+    "totalMatches": 75,
+    "matchRecord": "40-35-0",
+    "matchWinPercentage": 0.5333333333333333,
+    "gameRecord": "96-86-0",
+    "gameWinPercentage": 0.5274725274725275,
     "trophies": 3,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q1 2026",
-      "events": 2,
-      "points": 9,
-      "matchRecord": "3-3-0",
-      "matchWinPercentage": 0.5,
-      "gameRecord": "7-8-0",
-      "gameWinPercentage": 0.4666666666666667
+      "events": 3,
+      "points": 12,
+      "matchRecord": "4-5-0",
+      "matchWinPercentage": 0.4444444444444444,
+      "gameRecord": "10-12-0",
+      "gameWinPercentage": 0.45454545454545453
     },
     {
       "leagueName": "Q4 2025",
@@ -71,16 +71,16 @@
   "deckStats": [
     {
       "deckName": "Unknown",
-      "events": 6,
-      "matchWins": 10,
-      "matchLosses": 8,
+      "events": 7,
+      "matchWins": 11,
+      "matchLosses": 10,
       "matchDraws": 0,
-      "matchRecord": "10-8-0",
-      "matchWinPercentage": 0.5555555555555556,
-      "gameWins": 26,
-      "gameLosses": 22,
+      "matchRecord": "11-10-0",
+      "matchWinPercentage": 0.5238095238095238,
+      "gameWins": 29,
+      "gameLosses": 27,
       "gameDraws": 0,
-      "gameWinPercentage": 0.5416666666666666,
+      "gameWinPercentage": 0.5178571428571429,
       "trophies": 1
     },
     {
@@ -803,6 +803,56 @@
       ]
     },
     {
+      "opponentUsername": "4dominicv",
+      "opponentDisplayName": "Dominic Vernazza",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "matches": [
+        {
+          "tournamentId": "402789",
+          "dateDisplay": "February 5, 2026",
+          "result": "L",
+          "playerDeck": "_",
+          "opponentDeck": "Psychatog",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "minimiz",
+      "opponentDisplayName": "Eli Mizock",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "matches": [
+        {
+          "tournamentId": "402789",
+          "dateDisplay": "February 5, 2026",
+          "result": "L",
+          "playerDeck": "_",
+          "opponentDeck": "Goblins",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "leyawn",
       "opponentDisplayName": "leyawn",
       "matchesPlayed": 1,
@@ -1479,6 +1529,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "402789",
+      "dateDisplay": "February 5, 2026",
+      "playerCount": 25,
+      "trophyCount": 3,
+      "roundCount": 3,
+      "rank": 20,
+      "points": 3,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWinPercentage": 0.4285714,
+      "deck": "_"
+    },
     {
       "tournamentId": "400729",
       "dateDisplay": "January 29, 2026",

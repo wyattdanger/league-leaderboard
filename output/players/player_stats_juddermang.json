@@ -2,17 +2,26 @@
   "username": "JUDDERMANG",
   "displayName": "Chris Cruz",
   "overallStats": {
-    "totalTournaments": 31,
-    "totalPoints": 105,
-    "totalMatches": 93,
-    "matchRecord": "34-56-3",
-    "matchWinPercentage": 0.3817204301075269,
-    "gameRecord": "91-127-1",
-    "gameWinPercentage": 0.4155251141552511,
+    "totalTournaments": 32,
+    "totalPoints": 111,
+    "totalMatches": 96,
+    "matchRecord": "36-57-3",
+    "matchWinPercentage": 0.390625,
+    "gameRecord": "95-130-1",
+    "gameWinPercentage": 0.42035398230088494,
     "trophies": 1,
     "belts": 0
   },
   "leagueStats": [
+    {
+      "leagueName": "Q1 2026",
+      "events": 1,
+      "points": 6,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameRecord": "4-3-0",
+      "gameWinPercentage": 0.5714285714285714
+    },
     {
       "leagueName": "Q4 2025",
       "events": 9,
@@ -71,16 +80,16 @@
   "deckStats": [
     {
       "deckName": "Unknown",
-      "events": 12,
-      "matchWins": 15,
-      "matchLosses": 19,
+      "events": 13,
+      "matchWins": 17,
+      "matchLosses": 20,
       "matchDraws": 2,
-      "matchRecord": "15-19-2",
-      "matchWinPercentage": 0.4444444444444444,
-      "gameWins": 43,
-      "gameLosses": 53,
+      "matchRecord": "17-20-2",
+      "matchWinPercentage": 0.46153846153846156,
+      "gameWins": 48,
+      "gameLosses": 56,
       "gameDraws": 0,
-      "gameWinPercentage": 0.4479166666666667,
+      "gameWinPercentage": 0.46153846153846156,
       "trophies": 0
     },
     {
@@ -793,6 +802,51 @@
       ]
     },
     {
+      "opponentUsername": "landho",
+      "opponentDisplayName": "landho",
+      "matchesPlayed": 3,
+      "matchWins": 1,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 2,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "matches": [
+        {
+          "tournamentId": "402789",
+          "dateDisplay": "February 5, 2026",
+          "result": "L",
+          "playerDeck": "_",
+          "opponentDeck": "Stompy",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "321687",
+          "dateDisplay": "June 5, 2025",
+          "result": "L",
+          "playerDeck": "_",
+          "opponentDeck": "_",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "312921",
+          "dateDisplay": "May 22, 2025",
+          "result": "W",
+          "playerDeck": "_",
+          "opponentDeck": "Stompy",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "Matt_W",
       "opponentDisplayName": "Matt_W",
       "matchesPlayed": 3,
@@ -1023,41 +1077,6 @@
       ]
     },
     {
-      "opponentUsername": "landho",
-      "opponentDisplayName": "landho",
-      "matchesPlayed": 2,
-      "matchWins": 1,
-      "matchLosses": 1,
-      "matchDraws": 0,
-      "matchWinPercentage": 0.5,
-      "gameWins": 2,
-      "gameLosses": 2,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.5,
-      "matches": [
-        {
-          "tournamentId": "321687",
-          "dateDisplay": "June 5, 2025",
-          "result": "L",
-          "playerDeck": "_",
-          "opponentDeck": "_",
-          "playerGameWins": 0,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "312921",
-          "dateDisplay": "May 22, 2025",
-          "result": "W",
-          "playerDeck": "_",
-          "opponentDeck": "Stompy",
-          "playerGameWins": 2,
-          "opponentGameWins": 0,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
       "opponentUsername": "FriendlyFerret",
       "opponentDisplayName": "Bill Ellis!!",
       "matchesPlayed": 2,
@@ -1088,6 +1107,56 @@
           "opponentDeck": "Goblins",
           "playerGameWins": 1,
           "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "Gaunology",
+      "opponentDisplayName": "Gaunology",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6666666666666666,
+      "matches": [
+        {
+          "tournamentId": "402789",
+          "dateDisplay": "February 5, 2026",
+          "result": "W",
+          "playerDeck": "_",
+          "opponentDeck": "_",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "Real_player_hidden",
+      "opponentDisplayName": "Ryan Mitchell",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "matches": [
+        {
+          "tournamentId": "402789",
+          "dateDisplay": "February 5, 2026",
+          "result": "W",
+          "playerDeck": "_",
+          "opponentDeck": "_",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
           "gameDraws": 0
         }
       ]
@@ -1694,6 +1763,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "402789",
+      "dateDisplay": "February 5, 2026",
+      "playerCount": 25,
+      "trophyCount": 3,
+      "roundCount": 3,
+      "rank": 13,
+      "points": 6,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWinPercentage": 0.5714286,
+      "deck": "_"
+    },
     {
       "tournamentId": "397227",
       "dateDisplay": "January 15, 2026",

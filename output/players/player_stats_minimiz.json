@@ -2,44 +2,119 @@
   "username": "minimiz",
   "displayName": "Eli Mizock",
   "overallStats": {
-    "totalTournaments": 2,
-    "totalPoints": 12,
-    "totalMatches": 6,
-    "matchRecord": "4-2-0",
+    "totalTournaments": 3,
+    "totalPoints": 18,
+    "totalMatches": 9,
+    "matchRecord": "6-3-0",
     "matchWinPercentage": 0.6666666666666666,
-    "gameRecord": "10-7-0",
-    "gameWinPercentage": 0.5882352941176471,
+    "gameRecord": "15-10-0",
+    "gameWinPercentage": 0.6,
     "trophies": 1,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q1 2026",
-      "events": 2,
-      "points": 12,
-      "matchRecord": "4-2-0",
+      "events": 3,
+      "points": 18,
+      "matchRecord": "6-3-0",
       "matchWinPercentage": 0.6666666666666666,
-      "gameRecord": "10-7-0",
-      "gameWinPercentage": 0.5882352941176471
+      "gameRecord": "15-10-0",
+      "gameWinPercentage": 0.6
     }
   ],
   "deckStats": [
     {
       "deckName": "Goblins",
-      "events": 2,
-      "matchWins": 4,
-      "matchLosses": 2,
+      "events": 3,
+      "matchWins": 6,
+      "matchLosses": 3,
       "matchDraws": 0,
-      "matchRecord": "4-2-0",
+      "matchRecord": "6-3-0",
       "matchWinPercentage": 0.6666666666666666,
-      "gameWins": 10,
-      "gameLosses": 6,
+      "gameWins": 15,
+      "gameLosses": 9,
       "gameDraws": 0,
       "gameWinPercentage": 0.625,
       "trophies": 1
     }
   ],
   "headToHead": [
+    {
+      "opponentUsername": "mattmanw2",
+      "opponentDisplayName": "mattmanw2",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "matches": [
+        {
+          "tournamentId": "402789",
+          "dateDisplay": "February 5, 2026",
+          "result": "W",
+          "playerDeck": "Goblins",
+          "opponentDeck": "_",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "madmanpoet",
+      "opponentDisplayName": "Michael Flores",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "matches": [
+        {
+          "tournamentId": "402789",
+          "dateDisplay": "February 5, 2026",
+          "result": "L",
+          "playerDeck": "Goblins",
+          "opponentDeck": "Enchantress",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "RichBucey",
+      "opponentDisplayName": "RichBucey",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6666666666666666,
+      "matches": [
+        {
+          "tournamentId": "402789",
+          "dateDisplay": "February 5, 2026",
+          "result": "W",
+          "playerDeck": "Goblins",
+          "opponentDeck": "_",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
     {
       "opponentUsername": "BryanGulotta",
       "opponentDisplayName": "BryanGulotta",
@@ -192,6 +267,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "402789",
+      "dateDisplay": "February 5, 2026",
+      "playerCount": 25,
+      "trophyCount": 3,
+      "roundCount": 3,
+      "rank": 7,
+      "points": 6,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWinPercentage": 0.625,
+      "deck": "Goblins"
+    },
     {
       "tournamentId": "400729",
       "dateDisplay": "January 29, 2026",

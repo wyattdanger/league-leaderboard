@@ -2,25 +2,25 @@
   "username": "swbmtg",
   "displayName": "swb",
   "overallStats": {
-    "totalTournaments": 31,
-    "totalPoints": 203,
-    "totalMatches": 93,
-    "matchRecord": "66-22-5",
-    "matchWinPercentage": 0.7365591397849462,
-    "gameRecord": "148-78-2",
-    "gameWinPercentage": 0.6491228070175439,
-    "trophies": 8,
+    "totalTournaments": 32,
+    "totalPoints": 212,
+    "totalMatches": 96,
+    "matchRecord": "69-22-5",
+    "matchWinPercentage": 0.7447916666666666,
+    "gameRecord": "154-78-2",
+    "gameWinPercentage": 0.6581196581196581,
+    "trophies": 9,
     "belts": 1
   },
   "leagueStats": [
     {
       "leagueName": "Q1 2026",
-      "events": 2,
-      "points": 10,
-      "matchRecord": "3-2-1",
-      "matchWinPercentage": 0.5833333333333334,
-      "gameRecord": "8-7-0",
-      "gameWinPercentage": 0.5333333333333333
+      "events": 3,
+      "points": 19,
+      "matchRecord": "6-2-1",
+      "matchWinPercentage": 0.7222222222222222,
+      "gameRecord": "14-7-0",
+      "gameWinPercentage": 0.6666666666666666
     },
     {
       "leagueName": "Q4 2025",
@@ -94,17 +94,17 @@
     },
     {
       "deckName": "Elves",
-      "events": 3,
-      "matchWins": 7,
+      "events": 4,
+      "matchWins": 10,
       "matchLosses": 2,
       "matchDraws": 0,
-      "matchRecord": "7-2-0",
-      "matchWinPercentage": 0.7777777777777778,
-      "gameWins": 17,
+      "matchRecord": "10-2-0",
+      "matchWinPercentage": 0.8333333333333334,
+      "gameWins": 25,
       "gameLosses": 7,
       "gameDraws": 0,
-      "gameWinPercentage": 0.7083333333333334,
-      "trophies": 1
+      "gameWinPercentage": 0.78125,
+      "trophies": 2
     },
     {
       "deckName": "Enchantress",
@@ -730,6 +730,116 @@
       ]
     },
     {
+      "opponentUsername": "delofstrom",
+      "opponentDisplayName": "DEL .",
+      "matchesPlayed": 4,
+      "matchWins": 4,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 8,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.8,
+      "matches": [
+        {
+          "tournamentId": "402789",
+          "dateDisplay": "February 5, 2026",
+          "result": "W",
+          "playerDeck": "Elves",
+          "opponentDeck": "Survival Welder",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "400729",
+          "dateDisplay": "January 29, 2026",
+          "result": "W",
+          "playerDeck": "Trix",
+          "opponentDeck": "Survival Welder",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "384681",
+          "dateDisplay": "November 20, 2025",
+          "result": "W",
+          "playerDeck": "Enchantress",
+          "opponentDeck": "_",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "347610",
+          "dateDisplay": "July 31, 2025",
+          "result": "W",
+          "playerDeck": "Oath Spec",
+          "opponentDeck": "_",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "itsCama",
+      "opponentDisplayName": "Yosef Harari",
+      "matchesPlayed": 4,
+      "matchWins": 3,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.75,
+      "gameWins": 7,
+      "gameLosses": 3,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.7,
+      "matches": [
+        {
+          "tournamentId": "402789",
+          "dateDisplay": "February 5, 2026",
+          "result": "W",
+          "playerDeck": "Elves",
+          "opponentDeck": "Welder Prison",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "395699",
+          "dateDisplay": "January 8, 2026",
+          "result": "L",
+          "playerDeck": "Tide",
+          "opponentDeck": "Tide",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "325333",
+          "dateDisplay": "June 12, 2025",
+          "result": "W",
+          "playerDeck": "Elves",
+          "opponentDeck": "_",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "321687",
+          "dateDisplay": "June 5, 2025",
+          "result": "W",
+          "playerDeck": "Tribe",
+          "opponentDeck": "_",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "Mattmelach",
       "opponentDisplayName": "Matthew Melachrinos",
       "matchesPlayed": 4,
@@ -835,96 +945,6 @@
           "opponentDeck": "Dreadnought",
           "playerGameWins": 2,
           "opponentGameWins": 0,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "delofstrom",
-      "opponentDisplayName": "DEL .",
-      "matchesPlayed": 3,
-      "matchWins": 3,
-      "matchLosses": 0,
-      "matchDraws": 0,
-      "matchWinPercentage": 1,
-      "gameWins": 6,
-      "gameLosses": 2,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.75,
-      "matches": [
-        {
-          "tournamentId": "400729",
-          "dateDisplay": "January 29, 2026",
-          "result": "W",
-          "playerDeck": "Trix",
-          "opponentDeck": "Survival Welder",
-          "playerGameWins": 2,
-          "opponentGameWins": 1,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "384681",
-          "dateDisplay": "November 20, 2025",
-          "result": "W",
-          "playerDeck": "Enchantress",
-          "opponentDeck": "_",
-          "playerGameWins": 2,
-          "opponentGameWins": 0,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "347610",
-          "dateDisplay": "July 31, 2025",
-          "result": "W",
-          "playerDeck": "Oath Spec",
-          "opponentDeck": "_",
-          "playerGameWins": 2,
-          "opponentGameWins": 1,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "itsCama",
-      "opponentDisplayName": "Yosef Harari",
-      "matchesPlayed": 3,
-      "matchWins": 2,
-      "matchLosses": 1,
-      "matchDraws": 0,
-      "matchWinPercentage": 0.6666666666666666,
-      "gameWins": 5,
-      "gameLosses": 3,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.625,
-      "matches": [
-        {
-          "tournamentId": "395699",
-          "dateDisplay": "January 8, 2026",
-          "result": "L",
-          "playerDeck": "Tide",
-          "opponentDeck": "Tide",
-          "playerGameWins": 1,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "325333",
-          "dateDisplay": "June 12, 2025",
-          "result": "W",
-          "playerDeck": "Elves",
-          "opponentDeck": "_",
-          "playerGameWins": 2,
-          "opponentGameWins": 0,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "321687",
-          "dateDisplay": "June 5, 2025",
-          "result": "W",
-          "playerDeck": "Tribe",
-          "opponentDeck": "_",
-          "playerGameWins": 2,
-          "opponentGameWins": 1,
           "gameDraws": 0
         }
       ]
@@ -1208,6 +1228,31 @@
           "result": "W",
           "playerDeck": "Oath Parfait",
           "opponentDeck": "_",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "Sperling",
+      "opponentDisplayName": "Matt Sperling",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "matches": [
+        {
+          "tournamentId": "402789",
+          "dateDisplay": "February 5, 2026",
+          "result": "W",
+          "playerDeck": "Elves",
+          "opponentDeck": "Dreadnought",
           "playerGameWins": 2,
           "opponentGameWins": 0,
           "gameDraws": 0
@@ -1741,6 +1786,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "402789",
+      "dateDisplay": "February 5, 2026",
+      "playerCount": 25,
+      "trophyCount": 3,
+      "roundCount": 3,
+      "rank": 1,
+      "points": 9,
+      "matchRecord": "3-0-0",
+      "matchWinPercentage": 1,
+      "gameWinPercentage": 1,
+      "deck": "Elves"
+    },
     {
       "tournamentId": "400729",
       "dateDisplay": "January 29, 2026",
