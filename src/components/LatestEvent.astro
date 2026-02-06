@@ -1,4 +1,5 @@
 ---
+import InfoCallout from './InfoCallout.astro';
 import type { TournamentMetadata } from '../types';
 
 interface Props {
@@ -8,120 +9,10 @@ interface Props {
 const { tournament } = Astro.props;
 ---
 
-<div class="latest-event-wrapper">
-  <a href={`/event/${tournament.tournamentId}`} class="latest-event-callout">
-    <div class="callout-left">
-      <span class="event-emoji">✨</span>
-      <span class="event-description">
-        {tournament.playerCount}
-        {tournament.playerCount === 1 ? 'player' : 'players'} gathered on {tournament.dateDisplay}
-      </span>
-    </div>
-    <div class="callout-right">
-      <span class="view-results">View Event →</span>
-    </div>
-  </a>
-</div>
-
-<style>
-  .latest-event-wrapper {
-    margin-bottom: 2rem;
-  }
-
-  .latest-event-callout {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1.5rem;
-    background: var(--gradient-primary);
-    color: white;
-    padding: 1rem 1.5rem;
-    border-radius: 12px;
-    border: var(--border-subtle);
-    text-decoration: none;
-    transition: all 0.2s ease;
-  }
-
-  .latest-event-callout:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 24px rgba(102, 126, 234, 0.3);
-  }
-
-  .callout-left {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-    flex: 1;
-    min-width: 0;
-  }
-
-  .event-emoji {
-    font-size: 1.25rem;
-    flex-shrink: 0;
-    line-height: 1;
-  }
-
-  .event-description {
-    font-size: 1rem;
-    line-height: 1.5;
-  }
-
-  .winner-name {
-    font-weight: 600;
-  }
-
-  .deck-name {
-    font-weight: 600;
-  }
-
-  .callout-right {
-    flex-shrink: 0;
-  }
-
-  .view-results {
-    font-size: 0.9375rem;
-    font-weight: 600;
-    white-space: nowrap;
-  }
-
-  /* Compact desktop layout */
-  @media (min-width: 1024px) {
-    .latest-event-callout {
-      padding: 0.75rem 1.25rem;
-    }
-
-    .event-emoji {
-      font-size: 1.125rem;
-    }
-
-    .event-description {
-      font-size: 0.9375rem;
-    }
-
-    .view-results {
-      font-size: 0.875rem;
-    }
-  }
-
-  @media (max-width: 640px) {
-    .latest-event-callout {
-      flex-direction: column;
-      align-items: stretch;
-      gap: 0.75rem;
-    }
-
-    .callout-left {
-      gap: 0.5rem;
-    }
-
-    .event-description {
-      font-size: 0.9375rem;
-    }
-
-    .callout-right {
-      text-align: center;
-      padding-top: 0.5rem;
-      border-top: 1px solid rgba(255, 255, 255, 0.2);
-    }
-  }
-</style>
+<InfoCallout
+  emoji="✨"
+  href={`/event/${tournament.tournamentId}`}
+  linkText="View Event →"
+>
+  {`${tournament.playerCount} ${tournament.playerCount === 1 ? 'player' : 'players'} gathered on ${tournament.dateDisplay}`}
+</InfoCallout>

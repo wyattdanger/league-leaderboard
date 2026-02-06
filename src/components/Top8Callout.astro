@@ -1,4 +1,5 @@
 ---
+import InfoCallout from './InfoCallout.astro';
 import type { TournamentMetadata } from '../types';
 
 interface Props {
@@ -9,137 +10,19 @@ interface Props {
 const { tournament, leagueName } = Astro.props;
 ---
 
-<div class="top8-callout-wrapper">
-  <a href={`/event/${tournament.tournamentId}`} class="top8-callout">
-    <div class="callout-left">
-      <span class="crown">👑</span>
-      {
-        tournament.winnerDisplayName && (
-          <span class="championship-text">
-            <span class="winner-name">{tournament.winnerDisplayName}</span> won the{' '}
-            <span class="league-name">{leagueName}</span> top 8
-            {tournament.winnerDeck && (
-              <span> with <span class="deck-name">{tournament.winnerDeck}</span></span>
-            )}{' '}
-            on <span class="date">{tournament.dateDisplay}</span>
+<InfoCallout emoji="👑" href={`/event/${tournament.tournamentId}`} linkText="View Event →">
+  {
+    tournament.winnerDisplayName && (
+      <span>
+        <span class="winner-name">{tournament.winnerDisplayName}</span> won the{' '}
+        <span class="league-name">{leagueName}</span> top 8
+        {tournament.winnerDeck && (
+          <span>
+            {' '}with <span class="deck-name">{tournament.winnerDeck}</span>
           </span>
-        )
-      }
-    </div>
-    <div class="callout-right">
-      <span class="view-link">View Event →</span>
-    </div>
-  </a>
-</div>
-
-<style>
-  .top8-callout-wrapper {
-    margin-bottom: 2rem;
+        )}{' '}
+        on <span class="date">{tournament.dateDisplay}</span>
+      </span>
+    )
   }
-
-  .top8-callout {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1.5rem;
-    background: var(--gradient-primary);
-    color: white;
-    padding: 1rem 1.5rem;
-    border-radius: 12px;
-    border: var(--border-subtle);
-    text-decoration: none;
-    transition: all 0.2s ease;
-  }
-
-  .top8-callout:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 24px rgba(102, 126, 234, 0.3);
-  }
-
-  .callout-left {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-    flex: 1;
-    min-width: 0;
-  }
-
-  .crown {
-    font-size: 1.25rem;
-    flex-shrink: 0;
-    line-height: 1;
-  }
-
-  .championship-text {
-    font-size: 1rem;
-    line-height: 1.5;
-  }
-
-  .winner-name {
-    font-weight: 600;
-  }
-
-  .league-name {
-    font-weight: 600;
-  }
-
-  .deck-name {
-    font-weight: 600;
-  }
-
-  .date {
-    font-weight: 500;
-    opacity: 0.95;
-  }
-
-  .callout-right {
-    flex-shrink: 0;
-  }
-
-  .view-link {
-    font-size: 0.9375rem;
-    font-weight: 600;
-    white-space: nowrap;
-  }
-
-  /* Compact desktop layout */
-  @media (min-width: 1024px) {
-    .top8-callout {
-      padding: 0.75rem 1.25rem;
-    }
-
-    .crown {
-      font-size: 1.125rem;
-    }
-
-    .championship-text {
-      font-size: 0.9375rem;
-    }
-
-    .view-link {
-      font-size: 0.875rem;
-    }
-  }
-
-  @media (max-width: 640px) {
-    .top8-callout {
-      flex-direction: column;
-      align-items: stretch;
-      gap: 0.75rem;
-    }
-
-    .callout-left {
-      gap: 0.5rem;
-    }
-
-    .championship-text {
-      font-size: 0.9375rem;
-    }
-
-    .callout-right {
-      text-align: center;
-      padding-top: 0.5rem;
-      border-top: 1px solid rgba(255, 255, 255, 0.2);
-    }
-  }
-</style>
+</InfoCallout>

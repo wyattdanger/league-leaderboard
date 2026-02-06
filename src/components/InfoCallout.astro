@@ -1,0 +1,148 @@
+---
+// Shared presentational component for informational callouts
+interface Props {
+  emoji: string;
+  href?: string;
+  linkText?: string;
+}
+
+const { emoji, href, linkText } = Astro.props;
+---
+
+<div class="info-callout-wrapper">
+  {
+    href ? (
+      <a href={href} class="info-callout">
+        <div class="callout-left">
+          <span class="callout-emoji">{emoji}</span>
+          <span class="callout-text">
+            <slot />
+          </span>
+        </div>
+        {
+          linkText && (
+            <div class="callout-right">
+              <span class="callout-link">{linkText}</span>
+            </div>
+          )
+        }
+      </a>
+    ) : (
+      <div class="info-callout">
+        <div class="callout-left">
+          <span class="callout-emoji">{emoji}</span>
+          <span class="callout-text">
+            <slot />
+          </span>
+        </div>
+      </div>
+    )
+  }
+</div>
+
+<style>
+  .info-callout-wrapper {
+    margin-bottom: 2rem;
+  }
+
+  .info-callout {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    background: var(--gradient-primary);
+    color: white;
+    padding: 1rem 1.5rem;
+    border-radius: 12px;
+    border: var(--border-subtle);
+    text-decoration: none;
+    transition: all 0.2s ease;
+  }
+
+  a.info-callout:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(102, 126, 234, 0.3);
+  }
+
+  .callout-left {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    flex: 1;
+    min-width: 0;
+  }
+
+  .callout-emoji {
+    font-size: 1.25rem;
+    flex-shrink: 0;
+    line-height: 1;
+  }
+
+  .callout-text {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  /* Styles for slotted content */
+  .callout-text :global(.winner-name),
+  .callout-text :global(.league-name),
+  .callout-text :global(.deck-name) {
+    font-weight: 600;
+  }
+
+  .callout-text :global(.date) {
+    font-weight: 500;
+    opacity: 0.95;
+  }
+
+  .callout-right {
+    flex-shrink: 0;
+  }
+
+  .callout-link {
+    font-size: 0.9375rem;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+
+  /* Compact desktop layout */
+  @media (min-width: 1024px) {
+    .info-callout {
+      padding: 0.75rem 1.25rem;
+    }
+
+    .callout-emoji {
+      font-size: 1.125rem;
+    }
+
+    .callout-text {
+      font-size: 0.9375rem;
+    }
+
+    .callout-link {
+      font-size: 0.875rem;
+    }
+  }
+
+  @media (max-width: 640px) {
+    a.info-callout {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0.75rem;
+    }
+
+    .callout-left {
+      gap: 0.5rem;
+    }
+
+    .callout-text {
+      font-size: 0.9375rem;
+    }
+
+    a.info-callout .callout-right {
+      text-align: center;
+      padding-top: 0.5rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.2);
+    }
+  }
+</style>
