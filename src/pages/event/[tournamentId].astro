@@ -246,6 +246,7 @@ if (fs.existsSync(metadataFile)) {
                     <th class="record-col">Record</th>
                     <th class="mwp-col">MWP</th>
                     <th class="gwp-col">GWP</th>
+                    <th class="omw-col">OMW</th>
                     <th class="points-col">Pts</th>
                   </tr>
                 </thead>
@@ -276,6 +277,9 @@ if (fs.existsSync(metadataFile)) {
                           </td>
                           <td class={`gwp-col ${standing.gameWinPercentageClass}`}>
                             {standing.gameWinPercentageDisplay}%
+                          </td>
+                          <td class={`omw-col ${standing.opponentMatchWinPercentageClass}`}>
+                            {standing.opponentMatchWinPercentageDisplay}%
                           </td>
                           <td class="points-col">{standing.points}</td>
                         </tr>
@@ -687,13 +691,15 @@ if (fs.existsSync(metadataFile)) {
   }
 
   .mwp-col,
-  .gwp-col {
+  .gwp-col,
+  .omw-col {
     width: 90px;
     text-align: center;
   }
 
   td.mwp-col,
-  td.gwp-col {
+  td.gwp-col,
+  td.omw-col {
     font-weight: 700;
     font-size: 1rem;
   }
@@ -708,6 +714,10 @@ if (fs.existsSync(metadataFile)) {
 
   .wp-low {
     color: #dc2626;
+  }
+
+  .omw-neutral {
+    color: #666;
   }
 
   .points-col {

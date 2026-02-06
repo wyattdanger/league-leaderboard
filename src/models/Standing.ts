@@ -193,10 +193,24 @@ export class Standing {
 
   /**
    * Get opponent match win percentage
-   * Note: Currently not displayed in UI but used for tiebreaker calculations
    */
   get opponentMatchWinPercentage(): number {
     return this._opponentMatchWinPercentage;
+  }
+
+  /**
+   * Get opponent match win percentage formatted for display
+   */
+  get opponentMatchWinPercentageDisplay(): string {
+    return (this._opponentMatchWinPercentage * 100).toFixed(1);
+  }
+
+  /**
+   * Get CSS class for opponent match win percentage styling
+   */
+  get opponentMatchWinPercentageClass(): string {
+    // OMW uses neutral gray styling
+    return 'omw-neutral';
   }
 
   /**
