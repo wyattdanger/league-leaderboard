@@ -2,25 +2,25 @@
   "username": "delofstrom",
   "displayName": "DEL .",
   "overallStats": {
-    "totalTournaments": 13,
-    "totalPoints": 34,
-    "totalMatches": 39,
-    "matchRecord": "10-25-4",
-    "matchWinPercentage": 0.3076923076923077,
-    "gameRecord": "34-59-2",
-    "gameWinPercentage": 0.35789473684210527,
+    "totalTournaments": 14,
+    "totalPoints": 40,
+    "totalMatches": 42,
+    "matchRecord": "12-26-4",
+    "matchWinPercentage": 0.3333333333333333,
+    "gameRecord": "38-61-2",
+    "gameWinPercentage": 0.37623762376237624,
     "trophies": 0,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q1 2026",
-      "events": 2,
-      "points": 6,
-      "matchRecord": "2-4-0",
-      "matchWinPercentage": 0.3333333333333333,
-      "gameRecord": "5-10-0",
-      "gameWinPercentage": 0.3333333333333333
+      "events": 3,
+      "points": 12,
+      "matchRecord": "4-5-0",
+      "matchWinPercentage": 0.4444444444444444,
+      "gameRecord": "9-12-0",
+      "gameWinPercentage": 0.42857142857142855
     },
     {
       "leagueName": "Q4 2025",
@@ -67,16 +67,16 @@
     },
     {
       "deckName": "Survival Welder",
-      "events": 2,
-      "matchWins": 2,
-      "matchLosses": 4,
+      "events": 3,
+      "matchWins": 4,
+      "matchLosses": 5,
       "matchDraws": 0,
-      "matchRecord": "2-4-0",
-      "matchWinPercentage": 0.3333333333333333,
-      "gameWins": 7,
-      "gameLosses": 9,
+      "matchRecord": "4-5-0",
+      "matchWinPercentage": 0.4444444444444444,
+      "gameWins": 12,
+      "gameLosses": 12,
       "gameDraws": 0,
-      "gameWinPercentage": 0.4375,
+      "gameWinPercentage": 0.5,
       "trophies": 0
     }
   ],
@@ -209,7 +209,7 @@
           "dateDisplay": "February 5, 2026",
           "result": "W",
           "playerDeck": "Survival Welder",
-          "opponentDeck": "_",
+          "opponentDeck": "Devourer",
           "playerGameWins": 2,
           "opponentGameWins": 1,
           "gameDraws": 0
@@ -327,6 +327,41 @@
       ]
     },
     {
+      "opponentUsername": "Tencteri",
+      "opponentDisplayName": "Tencteri",
+      "matchesPlayed": 2,
+      "matchWins": 1,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.5,
+      "gameWins": 2,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5,
+      "matches": [
+        {
+          "tournamentId": "404622",
+          "dateDisplay": "February 12, 2026",
+          "result": "W",
+          "playerDeck": "Survival Welder",
+          "opponentDeck": "White Weenie",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "321687",
+          "dateDisplay": "June 5, 2025",
+          "result": "L",
+          "playerDeck": "_",
+          "opponentDeck": "_",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "madmanpoet",
       "opponentDisplayName": "Michael Flores",
       "matchesPlayed": 2,
@@ -432,6 +467,56 @@
       ]
     },
     {
+      "opponentUsername": "CalR15",
+      "opponentDisplayName": "CalR15",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "matches": [
+        {
+          "tournamentId": "404622",
+          "dateDisplay": "February 12, 2026",
+          "result": "W",
+          "playerDeck": "Survival Welder",
+          "opponentDeck": "Survival Infestation",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "Gaunology",
+      "opponentDisplayName": "Gaunology",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "matches": [
+        {
+          "tournamentId": "404622",
+          "dateDisplay": "February 12, 2026",
+          "result": "L",
+          "playerDeck": "Survival Welder",
+          "opponentDeck": "Terra Oath",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "MarW59",
       "opponentDisplayName": "MarW59",
       "matchesPlayed": 1,
@@ -449,7 +534,7 @@
           "dateDisplay": "February 5, 2026",
           "result": "W",
           "playerDeck": "Survival Welder",
-          "opponentDeck": "_",
+          "opponentDeck": "Burn",
           "playerGameWins": 2,
           "opponentGameWins": 1,
           "gameDraws": 0
@@ -757,31 +842,6 @@
       ]
     },
     {
-      "opponentUsername": "Tencteri",
-      "opponentDisplayName": "Tencteri",
-      "matchesPlayed": 1,
-      "matchWins": 0,
-      "matchLosses": 1,
-      "matchDraws": 0,
-      "matchWinPercentage": 0,
-      "gameWins": 0,
-      "gameLosses": 2,
-      "gameDraws": 0,
-      "gameWinPercentage": 0,
-      "matches": [
-        {
-          "tournamentId": "321687",
-          "dateDisplay": "June 5, 2025",
-          "result": "L",
-          "playerDeck": "_",
-          "opponentDeck": "_",
-          "playerGameWins": 0,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
       "opponentUsername": "landho",
       "opponentDisplayName": "landho",
       "matchesPlayed": 1,
@@ -808,6 +868,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "404622",
+      "dateDisplay": "February 12, 2026",
+      "playerCount": 18,
+      "trophyCount": 3,
+      "roundCount": 3,
+      "rank": 6,
+      "points": 6,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWinPercentage": 0.6666667,
+      "deck": "Survival Welder"
+    },
     {
       "tournamentId": "402789",
       "dateDisplay": "February 5, 2026",

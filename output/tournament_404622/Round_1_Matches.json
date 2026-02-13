@@ -1,0 +1,875 @@
+[
+  {
+    "Competitors": [
+      {
+        "Team": {
+          "Players": [
+            {
+              "TeamId": 3856354,
+              "ID": 3841690,
+              "ScreenName": "N/A",
+              "ProfileImageVersion": 0,
+              "DisplayName": "CalR15",
+              "DisplayNameLastFirst": "CalR15",
+              "Username": "CalR15",
+              "LanguageDescription": "Auto (English)",
+              "PronounsDescription": null
+            }
+          ],
+          "ID": 3856354,
+          "Name": null,
+          "StatusDescription": "Active",
+          "IsActive": true
+        },
+        "ID": 13134598,
+        "CheckedIn": null,
+        "ResultConfirmed": null,
+        "SortOrder": 0,
+        "GameByes": 0,
+        "GameWins": 0,
+        "TeamId": 3856354,
+        "GameWinsAndGameByes": 0,
+        "Decklists": []
+      },
+      {
+        "Team": {
+          "Players": [
+            {
+              "TeamId": 3856304,
+              "ID": 3841640,
+              "ScreenName": "N/A",
+              "ProfileImageVersion": 0,
+              "DisplayName": "DEL .",
+              "DisplayNameLastFirst": "., DEL",
+              "Username": "delofstrom",
+              "LanguageDescription": "Auto (English)",
+              "PronounsDescription": "He/Him"
+            }
+          ],
+          "ID": 3856304,
+          "Name": null,
+          "StatusDescription": "Active",
+          "IsActive": true
+        },
+        "ID": 13134599,
+        "CheckedIn": null,
+        "ResultConfirmed": "2026-02-13T00:31:17Z",
+        "SortOrder": 1,
+        "GameByes": 0,
+        "GameWins": 2,
+        "TeamId": 3856304,
+        "GameWinsAndGameByes": 2,
+        "Decklists": []
+      }
+    ],
+    "ByeReason": null,
+    "LossReason": null,
+    "RoundName": null,
+    "DateCreated": "2026-02-13T00:31:17Z",
+    "Type": 0,
+    "FeatureMatch": false,
+    "HasResult": true,
+    "TimeExtended": false,
+    "MatchesPublished": true,
+    "RoundNumber": 1,
+    "GameDraws": 0,
+    "PodNumber": null,
+    "PhaseSortOrder": 1,
+    "SortOrder": null,
+    "TableNumber": 24,
+    "TimeExtensionMinutes": null,
+    "PhaseId": 405472,
+    "RoundId": 1421576,
+    "TournamentId": 404622,
+    "FormatId": "920ec64f-a02f-4176-a3d0-0c46eef003cb",
+    "Format": "Premodern",
+    "Guid": "0bc407a0-36e1-4055-91f3-b3f00000bd0e",
+    "TableLocation": null,
+    "TableSection": null,
+    "ByeReasonDescription": null,
+    "LossReasonDescription": null,
+    "ResultString": "DEL . won 2-0-0",
+    "RoundDescription": "Round 1",
+    "TableNumberDescription": "24",
+    "TypeDescription": "Best of Three",
+    "FormatDescription": "Premodern",
+    "AcknowledgedDecklists": false,
+    "GhostMatch": false
+  },
+  {
+    "Competitors": [
+      {
+        "Team": {
+          "Players": [
+            {
+              "TeamId": 3856173,
+              "ID": 3841509,
+              "ScreenName": "N/A",
+              "ProfileImageVersion": 3,
+              "DisplayName": "Roland Chang",
+              "DisplayNameLastFirst": "Chang, Roland",
+              "Username": "RolandMTG",
+              "LanguageDescription": "English (English)",
+              "PronounsDescription": "He/Him"
+            }
+          ],
+          "ID": 3856173,
+          "Name": null,
+          "StatusDescription": "Active",
+          "IsActive": true
+        },
+        "ID": 13134596,
+        "CheckedIn": null,
+        "ResultConfirmed": null,
+        "SortOrder": 0,
+        "GameByes": 0,
+        "GameWins": 2,
+        "TeamId": 3856173,
+        "GameWinsAndGameByes": 2,
+        "Decklists": []
+      },
+      {
+        "Team": {
+          "Players": [
+            {
+              "TeamId": 3856313,
+              "ID": 3841649,
+              "ScreenName": "N/A",
+              "ProfileImageVersion": 0,
+              "DisplayName": "leyawn",
+              "DisplayNameLastFirst": "leyawn",
+              "Username": "leyawn",
+              "LanguageDescription": "Auto (English)",
+              "PronounsDescription": null
+            }
+          ],
+          "ID": 3856313,
+          "Name": null,
+          "StatusDescription": "Active",
+          "IsActive": true
+        },
+        "ID": 13134597,
+        "CheckedIn": null,
+        "ResultConfirmed": "2026-02-13T00:49:54Z",
+        "SortOrder": 1,
+        "GameByes": 0,
+        "GameWins": 1,
+        "TeamId": 3856313,
+        "GameWinsAndGameByes": 1,
+        "Decklists": []
+      }
+    ],
+    "ByeReason": null,
+    "LossReason": null,
+    "RoundName": null,
+    "DateCreated": "2026-02-13T00:49:54Z",
+    "Type": 0,
+    "FeatureMatch": false,
+    "HasResult": true,
+    "TimeExtended": false,
+    "MatchesPublished": true,
+    "RoundNumber": 1,
+    "GameDraws": 0,
+    "PodNumber": null,
+    "PhaseSortOrder": 1,
+    "SortOrder": null,
+    "TableNumber": 25,
+    "TimeExtensionMinutes": null,
+    "PhaseId": 405472,
+    "RoundId": 1421576,
+    "TournamentId": 404622,
+    "FormatId": "920ec64f-a02f-4176-a3d0-0c46eef003cb",
+    "Format": "Premodern",
+    "Guid": "69d4b9d5-bd20-4620-9e95-b3f00000bd09",
+    "TableLocation": null,
+    "TableSection": null,
+    "ByeReasonDescription": null,
+    "LossReasonDescription": null,
+    "ResultString": "Roland Chang won 2-1-0",
+    "RoundDescription": "Round 1",
+    "TableNumberDescription": "25",
+    "TypeDescription": "Best of Three",
+    "FormatDescription": "Premodern",
+    "AcknowledgedDecklists": false,
+    "GhostMatch": false
+  },
+  {
+    "Competitors": [
+      {
+        "Team": {
+          "Players": [
+            {
+              "TeamId": 3856271,
+              "ID": 3841607,
+              "ScreenName": "N/A",
+              "ProfileImageVersion": 0,
+              "DisplayName": "AndrewLevine",
+              "DisplayNameLastFirst": "AndrewLevine",
+              "Username": "AndrewLevine",
+              "LanguageDescription": "English (English)",
+              "PronounsDescription": "He/Him"
+            }
+          ],
+          "ID": 3856271,
+          "Name": null,
+          "StatusDescription": "Active",
+          "IsActive": true
+        },
+        "ID": 13134594,
+        "CheckedIn": null,
+        "ResultConfirmed": "2026-02-13T00:25:49Z",
+        "SortOrder": 0,
+        "GameByes": 0,
+        "GameWins": 0,
+        "TeamId": 3856271,
+        "GameWinsAndGameByes": 0,
+        "Decklists": []
+      },
+      {
+        "Team": {
+          "Players": [
+            {
+              "TeamId": 3856325,
+              "ID": 3841661,
+              "ScreenName": "N/A",
+              "ProfileImageVersion": 0,
+              "DisplayName": "Dan Schiano",
+              "DisplayNameLastFirst": "Schiano, Dan",
+              "Username": "Mookyspulder",
+              "LanguageDescription": "Auto (English)",
+              "PronounsDescription": null
+            }
+          ],
+          "ID": 3856325,
+          "Name": null,
+          "StatusDescription": "Active",
+          "IsActive": true
+        },
+        "ID": 13134595,
+        "CheckedIn": null,
+        "ResultConfirmed": null,
+        "SortOrder": 1,
+        "GameByes": 0,
+        "GameWins": 1,
+        "TeamId": 3856325,
+        "GameWinsAndGameByes": 1,
+        "Decklists": []
+      }
+    ],
+    "ByeReason": null,
+    "LossReason": null,
+    "RoundName": null,
+    "DateCreated": "2026-02-13T00:25:49Z",
+    "Type": 0,
+    "FeatureMatch": false,
+    "HasResult": true,
+    "TimeExtended": false,
+    "MatchesPublished": true,
+    "RoundNumber": 1,
+    "GameDraws": 0,
+    "PodNumber": null,
+    "PhaseSortOrder": 1,
+    "SortOrder": null,
+    "TableNumber": 26,
+    "TimeExtensionMinutes": null,
+    "PhaseId": 405472,
+    "RoundId": 1421576,
+    "TournamentId": 404622,
+    "FormatId": "920ec64f-a02f-4176-a3d0-0c46eef003cb",
+    "Format": "Premodern",
+    "Guid": "28b801c4-7433-4040-87fd-b3f00000bd05",
+    "TableLocation": null,
+    "TableSection": null,
+    "ByeReasonDescription": null,
+    "LossReasonDescription": null,
+    "ResultString": "Dan Schiano won 1-0-0",
+    "RoundDescription": "Round 1",
+    "TableNumberDescription": "26",
+    "TypeDescription": "Best of Three",
+    "FormatDescription": "Premodern",
+    "AcknowledgedDecklists": false,
+    "GhostMatch": false
+  },
+  {
+    "Competitors": [
+      {
+        "Team": {
+          "Players": [
+            {
+              "TeamId": 3856256,
+              "ID": 3841592,
+              "ScreenName": "N/A",
+              "ProfileImageVersion": 0,
+              "DisplayName": "Matt_W",
+              "DisplayNameLastFirst": "Matt_W",
+              "Username": "Matt_W",
+              "LanguageDescription": "Auto (English)",
+              "PronounsDescription": "He/Him"
+            }
+          ],
+          "ID": 3856256,
+          "Name": null,
+          "StatusDescription": "Active",
+          "IsActive": true
+        },
+        "ID": 13134592,
+        "CheckedIn": null,
+        "ResultConfirmed": "2026-02-13T00:36:15Z",
+        "SortOrder": 0,
+        "GameByes": 0,
+        "GameWins": 2,
+        "TeamId": 3856256,
+        "GameWinsAndGameByes": 2,
+        "Decklists": []
+      },
+      {
+        "Team": {
+          "Players": [
+            {
+              "TeamId": 3856238,
+              "ID": 3841574,
+              "ScreenName": "N/A",
+              "ProfileImageVersion": 0,
+              "DisplayName": "J0Nh",
+              "DisplayNameLastFirst": "J0Nh",
+              "Username": "J0Nh",
+              "LanguageDescription": "Auto (English)",
+              "PronounsDescription": null
+            }
+          ],
+          "ID": 3856238,
+          "Name": null,
+          "StatusDescription": "Active",
+          "IsActive": true
+        },
+        "ID": 13134593,
+        "CheckedIn": null,
+        "ResultConfirmed": null,
+        "SortOrder": 1,
+        "GameByes": 0,
+        "GameWins": 0,
+        "TeamId": 3856238,
+        "GameWinsAndGameByes": 0,
+        "Decklists": []
+      }
+    ],
+    "ByeReason": null,
+    "LossReason": null,
+    "RoundName": null,
+    "DateCreated": "2026-02-13T00:36:15Z",
+    "Type": 0,
+    "FeatureMatch": false,
+    "HasResult": true,
+    "TimeExtended": false,
+    "MatchesPublished": true,
+    "RoundNumber": 1,
+    "GameDraws": 0,
+    "PodNumber": null,
+    "PhaseSortOrder": 1,
+    "SortOrder": null,
+    "TableNumber": 27,
+    "TimeExtensionMinutes": null,
+    "PhaseId": 405472,
+    "RoundId": 1421576,
+    "TournamentId": 404622,
+    "FormatId": "920ec64f-a02f-4176-a3d0-0c46eef003cb",
+    "Format": "Premodern",
+    "Guid": "8b547055-8429-45cb-b4bc-b3f00000bd03",
+    "TableLocation": null,
+    "TableSection": null,
+    "ByeReasonDescription": null,
+    "LossReasonDescription": null,
+    "ResultString": "Matt_W won 2-0-0",
+    "RoundDescription": "Round 1",
+    "TableNumberDescription": "27",
+    "TypeDescription": "Best of Three",
+    "FormatDescription": "Premodern",
+    "AcknowledgedDecklists": false,
+    "GhostMatch": false
+  },
+  {
+    "Competitors": [
+      {
+        "Team": {
+          "Players": [
+            {
+              "TeamId": 3856317,
+              "ID": 3841653,
+              "ScreenName": "N/A",
+              "ProfileImageVersion": 0,
+              "DisplayName": "sjpenzer",
+              "DisplayNameLastFirst": "sjpenzer",
+              "Username": "sjpenzer",
+              "LanguageDescription": "Auto (English)",
+              "PronounsDescription": null
+            }
+          ],
+          "ID": 3856317,
+          "Name": null,
+          "StatusDescription": "Active",
+          "IsActive": true
+        },
+        "ID": 13134590,
+        "CheckedIn": null,
+        "ResultConfirmed": "2026-02-13T00:41:32Z",
+        "SortOrder": 0,
+        "GameByes": 0,
+        "GameWins": 0,
+        "TeamId": 3856317,
+        "GameWinsAndGameByes": 0,
+        "Decklists": []
+      },
+      {
+        "Team": {
+          "Players": [
+            {
+              "TeamId": 3856288,
+              "ID": 3841624,
+              "ScreenName": "N/A",
+              "ProfileImageVersion": 0,
+              "DisplayName": "RichBucey",
+              "DisplayNameLastFirst": "RichBucey",
+              "Username": "RichBucey",
+              "LanguageDescription": "Auto (English)",
+              "PronounsDescription": null
+            }
+          ],
+          "ID": 3856288,
+          "Name": null,
+          "StatusDescription": "Active",
+          "IsActive": true
+        },
+        "ID": 13134591,
+        "CheckedIn": null,
+        "ResultConfirmed": null,
+        "SortOrder": 1,
+        "GameByes": 0,
+        "GameWins": 2,
+        "TeamId": 3856288,
+        "GameWinsAndGameByes": 2,
+        "Decklists": []
+      }
+    ],
+    "ByeReason": null,
+    "LossReason": null,
+    "RoundName": null,
+    "DateCreated": "2026-02-13T00:41:32Z",
+    "Type": 0,
+    "FeatureMatch": false,
+    "HasResult": true,
+    "TimeExtended": false,
+    "MatchesPublished": true,
+    "RoundNumber": 1,
+    "GameDraws": 0,
+    "PodNumber": null,
+    "PhaseSortOrder": 1,
+    "SortOrder": null,
+    "TableNumber": 28,
+    "TimeExtensionMinutes": null,
+    "PhaseId": 405472,
+    "RoundId": 1421576,
+    "TournamentId": 404622,
+    "FormatId": "920ec64f-a02f-4176-a3d0-0c46eef003cb",
+    "Format": "Premodern",
+    "Guid": "db3ca421-84ec-4f09-a983-b3f00000bcfb",
+    "TableLocation": null,
+    "TableSection": null,
+    "ByeReasonDescription": null,
+    "LossReasonDescription": null,
+    "ResultString": "RichBucey won 2-0-0",
+    "RoundDescription": "Round 1",
+    "TableNumberDescription": "28",
+    "TypeDescription": "Best of Three",
+    "FormatDescription": "Premodern",
+    "AcknowledgedDecklists": false,
+    "GhostMatch": false
+  },
+  {
+    "Competitors": [
+      {
+        "Team": {
+          "Players": [
+            {
+              "TeamId": 3856201,
+              "ID": 3841537,
+              "ScreenName": "N/A",
+              "ProfileImageVersion": 0,
+              "DisplayName": "Gaunology",
+              "DisplayNameLastFirst": "Gaunology",
+              "Username": "Gaunology",
+              "LanguageDescription": "Auto (English)",
+              "PronounsDescription": null
+            }
+          ],
+          "ID": 3856201,
+          "Name": null,
+          "StatusDescription": "Active",
+          "IsActive": true
+        },
+        "ID": 13134588,
+        "CheckedIn": null,
+        "ResultConfirmed": "2026-02-13T00:37:15Z",
+        "SortOrder": 0,
+        "GameByes": 0,
+        "GameWins": 2,
+        "TeamId": 3856201,
+        "GameWinsAndGameByes": 2,
+        "Decklists": []
+      },
+      {
+        "Team": {
+          "Players": [
+            {
+              "TeamId": 3856200,
+              "ID": 3841536,
+              "ScreenName": "N/A",
+              "ProfileImageVersion": 0,
+              "DisplayName": "Matthew Melachrinos",
+              "DisplayNameLastFirst": "Melachrinos, Matthew",
+              "Username": "Mattmelach",
+              "LanguageDescription": "Auto (English)",
+              "PronounsDescription": "He/Him"
+            }
+          ],
+          "ID": 3856200,
+          "Name": null,
+          "StatusDescription": "Active",
+          "IsActive": true
+        },
+        "ID": 13134589,
+        "CheckedIn": null,
+        "ResultConfirmed": null,
+        "SortOrder": 1,
+        "GameByes": 0,
+        "GameWins": 0,
+        "TeamId": 3856200,
+        "GameWinsAndGameByes": 0,
+        "Decklists": []
+      }
+    ],
+    "ByeReason": null,
+    "LossReason": null,
+    "RoundName": null,
+    "DateCreated": "2026-02-13T00:37:15Z",
+    "Type": 0,
+    "FeatureMatch": false,
+    "HasResult": true,
+    "TimeExtended": false,
+    "MatchesPublished": true,
+    "RoundNumber": 1,
+    "GameDraws": 0,
+    "PodNumber": null,
+    "PhaseSortOrder": 1,
+    "SortOrder": null,
+    "TableNumber": 29,
+    "TimeExtensionMinutes": null,
+    "PhaseId": 405472,
+    "RoundId": 1421576,
+    "TournamentId": 404622,
+    "FormatId": "920ec64f-a02f-4176-a3d0-0c46eef003cb",
+    "Format": "Premodern",
+    "Guid": "9bbd143b-8fa8-43ae-be47-b3f00000bcfb",
+    "TableLocation": null,
+    "TableSection": null,
+    "ByeReasonDescription": null,
+    "LossReasonDescription": null,
+    "ResultString": "Gaunology won 2-0-0",
+    "RoundDescription": "Round 1",
+    "TableNumberDescription": "29",
+    "TypeDescription": "Best of Three",
+    "FormatDescription": "Premodern",
+    "AcknowledgedDecklists": false,
+    "GhostMatch": false
+  },
+  {
+    "Competitors": [
+      {
+        "Team": {
+          "Players": [
+            {
+              "TeamId": 3856187,
+              "ID": 3841523,
+              "ScreenName": "N/A",
+              "ProfileImageVersion": 0,
+              "DisplayName": "LuisNeiman",
+              "DisplayNameLastFirst": "LuisNeiman",
+              "Username": "LuisNeiman",
+              "LanguageDescription": "Auto (English)",
+              "PronounsDescription": null
+            }
+          ],
+          "ID": 3856187,
+          "Name": null,
+          "StatusDescription": "Active",
+          "IsActive": true
+        },
+        "ID": 13134586,
+        "CheckedIn": null,
+        "ResultConfirmed": "2026-02-13T00:32:55Z",
+        "SortOrder": 0,
+        "GameByes": 0,
+        "GameWins": 1,
+        "TeamId": 3856187,
+        "GameWinsAndGameByes": 1,
+        "Decklists": []
+      },
+      {
+        "Team": {
+          "Players": [
+            {
+              "TeamId": 3856291,
+              "ID": 3841627,
+              "ScreenName": "N/A",
+              "ProfileImageVersion": 0,
+              "DisplayName": "Michael Flores",
+              "DisplayNameLastFirst": "Flores, Michael",
+              "Username": "madmanpoet",
+              "LanguageDescription": "Auto (English)",
+              "PronounsDescription": "He/Him"
+            }
+          ],
+          "ID": 3856291,
+          "Name": null,
+          "StatusDescription": "Active",
+          "IsActive": true
+        },
+        "ID": 13134587,
+        "CheckedIn": null,
+        "ResultConfirmed": null,
+        "SortOrder": 1,
+        "GameByes": 0,
+        "GameWins": 2,
+        "TeamId": 3856291,
+        "GameWinsAndGameByes": 2,
+        "Decklists": []
+      }
+    ],
+    "ByeReason": null,
+    "LossReason": null,
+    "RoundName": null,
+    "DateCreated": "2026-02-13T00:32:55Z",
+    "Type": 0,
+    "FeatureMatch": false,
+    "HasResult": true,
+    "TimeExtended": false,
+    "MatchesPublished": true,
+    "RoundNumber": 1,
+    "GameDraws": 0,
+    "PodNumber": null,
+    "PhaseSortOrder": 1,
+    "SortOrder": null,
+    "TableNumber": 30,
+    "TimeExtensionMinutes": null,
+    "PhaseId": 405472,
+    "RoundId": 1421576,
+    "TournamentId": 404622,
+    "FormatId": "920ec64f-a02f-4176-a3d0-0c46eef003cb",
+    "Format": "Premodern",
+    "Guid": "9dfd50af-4841-4eb8-8119-b3f00000bcf6",
+    "TableLocation": null,
+    "TableSection": null,
+    "ByeReasonDescription": null,
+    "LossReasonDescription": null,
+    "ResultString": "Michael Flores won 2-1-0",
+    "RoundDescription": "Round 1",
+    "TableNumberDescription": "30",
+    "TypeDescription": "Best of Three",
+    "FormatDescription": "Premodern",
+    "AcknowledgedDecklists": false,
+    "GhostMatch": false
+  },
+  {
+    "Competitors": [
+      {
+        "Team": {
+          "Players": [
+            {
+              "TeamId": 3856290,
+              "ID": 3841626,
+              "ScreenName": "N/A",
+              "ProfileImageVersion": 0,
+              "DisplayName": "Tencteri",
+              "DisplayNameLastFirst": "Tencteri",
+              "Username": "Tencteri",
+              "LanguageDescription": "Auto (English)",
+              "PronounsDescription": null
+            }
+          ],
+          "ID": 3856290,
+          "Name": null,
+          "StatusDescription": "Active",
+          "IsActive": true
+        },
+        "ID": 13134584,
+        "CheckedIn": null,
+        "ResultConfirmed": null,
+        "SortOrder": 0,
+        "GameByes": 0,
+        "GameWins": 0,
+        "TeamId": 3856290,
+        "GameWinsAndGameByes": 0,
+        "Decklists": []
+      },
+      {
+        "Team": {
+          "Players": [
+            {
+              "TeamId": 3856286,
+              "ID": 3841622,
+              "ScreenName": "N/A",
+              "ProfileImageVersion": 0,
+              "DisplayName": "Taylorhol",
+              "DisplayNameLastFirst": "Taylorhol",
+              "Username": "Taylorhol",
+              "LanguageDescription": "Auto (English)",
+              "PronounsDescription": "He/Him"
+            }
+          ],
+          "ID": 3856286,
+          "Name": null,
+          "StatusDescription": "Active",
+          "IsActive": true
+        },
+        "ID": 13134585,
+        "CheckedIn": null,
+        "ResultConfirmed": "2026-02-13T00:36:00Z",
+        "SortOrder": 1,
+        "GameByes": 0,
+        "GameWins": 2,
+        "TeamId": 3856286,
+        "GameWinsAndGameByes": 2,
+        "Decklists": []
+      }
+    ],
+    "ByeReason": null,
+    "LossReason": null,
+    "RoundName": null,
+    "DateCreated": "2026-02-13T00:36:00Z",
+    "Type": 0,
+    "FeatureMatch": false,
+    "HasResult": true,
+    "TimeExtended": false,
+    "MatchesPublished": true,
+    "RoundNumber": 1,
+    "GameDraws": 0,
+    "PodNumber": null,
+    "PhaseSortOrder": 1,
+    "SortOrder": null,
+    "TableNumber": 31,
+    "TimeExtensionMinutes": null,
+    "PhaseId": 405472,
+    "RoundId": 1421576,
+    "TournamentId": 404622,
+    "FormatId": "920ec64f-a02f-4176-a3d0-0c46eef003cb",
+    "Format": "Premodern",
+    "Guid": "cb89fa96-53a6-453a-814a-b3f00000bcf2",
+    "TableLocation": null,
+    "TableSection": null,
+    "ByeReasonDescription": null,
+    "LossReasonDescription": null,
+    "ResultString": "Taylorhol won 2-0-0",
+    "RoundDescription": "Round 1",
+    "TableNumberDescription": "31",
+    "TypeDescription": "Best of Three",
+    "FormatDescription": "Premodern",
+    "AcknowledgedDecklists": false,
+    "GhostMatch": false
+  },
+  {
+    "Competitors": [
+      {
+        "Team": {
+          "Players": [
+            {
+              "TeamId": 3856260,
+              "ID": 3841596,
+              "ScreenName": "N/A",
+              "ProfileImageVersion": 0,
+              "DisplayName": "PCavalcanti",
+              "DisplayNameLastFirst": "PCavalcanti",
+              "Username": "PCavalcanti",
+              "LanguageDescription": "Auto (English)",
+              "PronounsDescription": null
+            }
+          ],
+          "ID": 3856260,
+          "Name": null,
+          "StatusDescription": "Active",
+          "IsActive": true
+        },
+        "ID": 13134582,
+        "CheckedIn": null,
+        "ResultConfirmed": "2026-02-13T00:40:47Z",
+        "SortOrder": 0,
+        "GameByes": 0,
+        "GameWins": 1,
+        "TeamId": 3856260,
+        "GameWinsAndGameByes": 1,
+        "Decklists": []
+      },
+      {
+        "Team": {
+          "Players": [
+            {
+              "TeamId": 3856213,
+              "ID": 3841549,
+              "ScreenName": "N/A",
+              "ProfileImageVersion": 0,
+              "DisplayName": "swb 👋",
+              "DisplayNameLastFirst": "👋, swb",
+              "Username": "swbmtg",
+              "LanguageDescription": "Auto (English)",
+              "PronounsDescription": "He/Him"
+            }
+          ],
+          "ID": 3856213,
+          "Name": null,
+          "StatusDescription": "Active",
+          "IsActive": true
+        },
+        "ID": 13134583,
+        "CheckedIn": null,
+        "ResultConfirmed": null,
+        "SortOrder": 1,
+        "GameByes": 0,
+        "GameWins": 2,
+        "TeamId": 3856213,
+        "GameWinsAndGameByes": 2,
+        "Decklists": []
+      }
+    ],
+    "ByeReason": null,
+    "LossReason": null,
+    "RoundName": null,
+    "DateCreated": "2026-02-13T00:43:39Z",
+    "Type": 0,
+    "FeatureMatch": false,
+    "HasResult": true,
+    "TimeExtended": false,
+    "MatchesPublished": true,
+    "RoundNumber": 1,
+    "GameDraws": null,
+    "PodNumber": null,
+    "PhaseSortOrder": 1,
+    "SortOrder": null,
+    "TableNumber": 32,
+    "TimeExtensionMinutes": null,
+    "PhaseId": 405472,
+    "RoundId": 1421576,
+    "TournamentId": 404622,
+    "FormatId": "920ec64f-a02f-4176-a3d0-0c46eef003cb",
+    "Format": "Premodern",
+    "Guid": "445bbae1-5a79-40a7-9c6a-b3f00000bced",
+    "TableLocation": null,
+    "TableSection": null,
+    "ByeReasonDescription": null,
+    "LossReasonDescription": null,
+    "ResultString": "swb 👋 won 2-1-0",
+    "RoundDescription": "Round 1",
+    "TableNumberDescription": "32",
+    "TypeDescription": "Best of Three",
+    "FormatDescription": "Premodern",
+    "AcknowledgedDecklists": false,
+    "GhostMatch": false
+  }
+]

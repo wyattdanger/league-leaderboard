@@ -25,7 +25,7 @@
   ],
   "deckStats": [
     {
-      "deckName": "Unknown",
+      "deckName": "Burn",
       "events": 1,
       "matchWins": 1,
       "matchLosses": 1,
@@ -57,8 +57,8 @@
           "tournamentId": "402789",
           "dateDisplay": "February 5, 2026",
           "result": "W",
-          "playerDeck": "_",
-          "opponentDeck": "_",
+          "playerDeck": "Burn",
+          "opponentDeck": "RG Tron",
           "playerGameWins": 2,
           "opponentGameWins": 0,
           "gameDraws": 0
@@ -82,7 +82,7 @@
           "tournamentId": "402789",
           "dateDisplay": "February 5, 2026",
           "result": "L",
-          "playerDeck": "_",
+          "playerDeck": "Burn",
           "opponentDeck": "Survival Welder",
           "playerGameWins": 1,
           "opponentGameWins": 2,
@@ -103,7 +103,7 @@
       "matchRecord": "1-1-0",
       "matchWinPercentage": 0.5,
       "gameWinPercentage": 0.6,
-      "deck": "_"
+      "deck": "Burn"
     }
   ]
 }

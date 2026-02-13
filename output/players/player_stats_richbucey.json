@@ -2,25 +2,25 @@
   "username": "RichBucey",
   "displayName": "RichBucey",
   "overallStats": {
-    "totalTournaments": 25,
-    "totalPoints": 120,
-    "totalMatches": 75,
-    "matchRecord": "40-35-0",
-    "matchWinPercentage": 0.5333333333333333,
-    "gameRecord": "96-86-0",
-    "gameWinPercentage": 0.5274725274725275,
-    "trophies": 3,
+    "totalTournaments": 26,
+    "totalPoints": 129,
+    "totalMatches": 78,
+    "matchRecord": "43-35-0",
+    "matchWinPercentage": 0.5512820512820513,
+    "gameRecord": "102-86-0",
+    "gameWinPercentage": 0.5425531914893617,
+    "trophies": 4,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q1 2026",
-      "events": 3,
-      "points": 12,
-      "matchRecord": "4-5-0",
-      "matchWinPercentage": 0.4444444444444444,
-      "gameRecord": "10-12-0",
-      "gameWinPercentage": 0.45454545454545453
+      "events": 4,
+      "points": 21,
+      "matchRecord": "7-5-0",
+      "matchWinPercentage": 0.5833333333333334,
+      "gameRecord": "16-12-0",
+      "gameWinPercentage": 0.5714285714285714
     },
     {
       "leagueName": "Q4 2025",
@@ -98,6 +98,20 @@
       "trophies": 1
     },
     {
+      "deckName": "Oath Ponza",
+      "events": 3,
+      "matchWins": 7,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchRecord": "7-2-0",
+      "matchWinPercentage": 0.7777777777777778,
+      "gameWins": 18,
+      "gameLosses": 6,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.75,
+      "trophies": 1
+    },
+    {
       "deckName": "Stasis",
       "events": 3,
       "matchWins": 4,
@@ -109,20 +123,6 @@
       "gameLosses": 15,
       "gameDraws": 0,
       "gameWinPercentage": 0.375,
-      "trophies": 0
-    },
-    {
-      "deckName": "Oath Ponza",
-      "events": 2,
-      "matchWins": 4,
-      "matchLosses": 2,
-      "matchDraws": 0,
-      "matchRecord": "4-2-0",
-      "matchWinPercentage": 0.6666666666666666,
-      "gameWins": 10,
-      "gameLosses": 6,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.625,
       "trophies": 0
     },
     {
@@ -403,6 +403,61 @@
       ]
     },
     {
+      "opponentUsername": "sjpenzer",
+      "opponentDisplayName": "sjpenzer",
+      "matchesPlayed": 4,
+      "matchWins": 1,
+      "matchLosses": 3,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.25,
+      "gameWins": 4,
+      "gameLosses": 6,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.4,
+      "matches": [
+        {
+          "tournamentId": "404622",
+          "dateDisplay": "February 12, 2026",
+          "result": "W",
+          "playerDeck": "Oath Ponza",
+          "opponentDeck": "Terrageddon",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "400729",
+          "dateDisplay": "January 29, 2026",
+          "result": "L",
+          "playerDeck": "Stasis",
+          "opponentDeck": "Terrageddon",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "395699",
+          "dateDisplay": "January 8, 2026",
+          "result": "L",
+          "playerDeck": "Burn",
+          "opponentDeck": "Terrageddon",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "397227",
+          "dateDisplay": "January 15, 2026",
+          "result": "L",
+          "playerDeck": "Moneyball Black",
+          "opponentDeck": "Terrageddon",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "JUDDERMANG",
       "opponentDisplayName": "Chris Cruz",
       "matchesPlayed": 4,
@@ -451,51 +506,6 @@
           "result": "L",
           "playerDeck": "_",
           "opponentDeck": "_",
-          "playerGameWins": 0,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "sjpenzer",
-      "opponentDisplayName": "sjpenzer",
-      "matchesPlayed": 3,
-      "matchWins": 0,
-      "matchLosses": 3,
-      "matchDraws": 0,
-      "matchWinPercentage": 0,
-      "gameWins": 2,
-      "gameLosses": 6,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.25,
-      "matches": [
-        {
-          "tournamentId": "400729",
-          "dateDisplay": "January 29, 2026",
-          "result": "L",
-          "playerDeck": "Stasis",
-          "opponentDeck": "Terrageddon",
-          "playerGameWins": 1,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "395699",
-          "dateDisplay": "January 8, 2026",
-          "result": "L",
-          "playerDeck": "Burn",
-          "opponentDeck": "Terrageddon",
-          "playerGameWins": 1,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "397227",
-          "dateDisplay": "January 15, 2026",
-          "result": "L",
-          "playerDeck": "Moneyball Black",
-          "opponentDeck": "Terrageddon",
           "playerGameWins": 0,
           "opponentGameWins": 2,
           "gameDraws": 0
@@ -586,6 +596,41 @@
           "result": "L",
           "playerDeck": "Enchantress",
           "opponentDeck": "Replenish",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "leyawn",
+      "opponentDisplayName": "leyawn",
+      "matchesPlayed": 2,
+      "matchWins": 1,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.5,
+      "gameWins": 2,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5,
+      "matches": [
+        {
+          "tournamentId": "404622",
+          "dateDisplay": "February 12, 2026",
+          "result": "W",
+          "playerDeck": "Oath Ponza",
+          "opponentDeck": "Survival Madness",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "400729",
+          "dateDisplay": "January 29, 2026",
+          "result": "L",
+          "playerDeck": "Stasis",
+          "opponentDeck": "Goblins",
           "playerGameWins": 0,
           "opponentGameWins": 2,
           "gameDraws": 0
@@ -803,6 +848,31 @@
       ]
     },
     {
+      "opponentUsername": "AndrewLevine",
+      "opponentDisplayName": "AndrewLevine",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "matches": [
+        {
+          "tournamentId": "404622",
+          "dateDisplay": "February 12, 2026",
+          "result": "W",
+          "playerDeck": "Oath Ponza",
+          "opponentDeck": "Gush Tithe",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "4dominicv",
       "opponentDisplayName": "Dominic Vernazza",
       "matchesPlayed": 1,
@@ -847,31 +917,6 @@
           "playerDeck": "_",
           "opponentDeck": "Goblins",
           "playerGameWins": 1,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "leyawn",
-      "opponentDisplayName": "leyawn",
-      "matchesPlayed": 1,
-      "matchWins": 0,
-      "matchLosses": 1,
-      "matchDraws": 0,
-      "matchWinPercentage": 0,
-      "gameWins": 0,
-      "gameLosses": 2,
-      "gameDraws": 0,
-      "gameWinPercentage": 0,
-      "matches": [
-        {
-          "tournamentId": "400729",
-          "dateDisplay": "January 29, 2026",
-          "result": "L",
-          "playerDeck": "Stasis",
-          "opponentDeck": "Goblins",
-          "playerGameWins": 0,
           "opponentGameWins": 2,
           "gameDraws": 0
         }
@@ -1529,6 +1574,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "404622",
+      "dateDisplay": "February 12, 2026",
+      "playerCount": 18,
+      "trophyCount": 3,
+      "roundCount": 3,
+      "rank": 2,
+      "points": 9,
+      "matchRecord": "3-0-0",
+      "matchWinPercentage": 1,
+      "gameWinPercentage": 1,
+      "deck": "Oath Ponza"
+    },
     {
       "tournamentId": "402789",
       "dateDisplay": "February 5, 2026",

@@ -2,25 +2,25 @@
   "username": "PCavalcanti",
   "displayName": "PCavalcanti",
   "overallStats": {
-    "totalTournaments": 1,
-    "totalPoints": 6,
-    "totalMatches": 3,
-    "matchRecord": "2-1-0",
-    "matchWinPercentage": 0.6666666666666666,
-    "gameRecord": "4-3-0",
-    "gameWinPercentage": 0.5714285714285714,
+    "totalTournaments": 2,
+    "totalPoints": 9,
+    "totalMatches": 6,
+    "matchRecord": "3-3-0",
+    "matchWinPercentage": 0.5,
+    "gameRecord": "8-8-0",
+    "gameWinPercentage": 0.5,
     "trophies": 0,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q1 2026",
-      "events": 1,
-      "points": 6,
-      "matchRecord": "2-1-0",
-      "matchWinPercentage": 0.6666666666666666,
-      "gameRecord": "4-3-0",
-      "gameWinPercentage": 0.5714285714285714
+      "events": 2,
+      "points": 9,
+      "matchRecord": "3-3-0",
+      "matchWinPercentage": 0.5,
+      "gameRecord": "8-8-0",
+      "gameWinPercentage": 0.5
     }
   ],
   "deckStats": [
@@ -37,9 +37,98 @@
       "gameDraws": 0,
       "gameWinPercentage": 0.625,
       "trophies": 0
+    },
+    {
+      "deckName": "Burn",
+      "events": 1,
+      "matchWins": 1,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 4,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5,
+      "trophies": 0
     }
   ],
   "headToHead": [
+    {
+      "opponentUsername": "swbmtg",
+      "opponentDisplayName": "swb",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "matches": [
+        {
+          "tournamentId": "404622",
+          "dateDisplay": "February 12, 2026",
+          "result": "L",
+          "playerDeck": "Burn",
+          "opponentDeck": "Terrageddon",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "LuisNeiman",
+      "opponentDisplayName": "LuisNeiman",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6666666666666666,
+      "matches": [
+        {
+          "tournamentId": "404622",
+          "dateDisplay": "February 12, 2026",
+          "result": "W",
+          "playerDeck": "Burn",
+          "opponentDeck": "Cradle Control",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "Taylorhol",
+      "opponentDisplayName": "Taylorhol",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "matches": [
+        {
+          "tournamentId": "404622",
+          "dateDisplay": "February 12, 2026",
+          "result": "L",
+          "playerDeck": "Burn",
+          "opponentDeck": "Hermit FEB",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
     {
       "opponentUsername": "Tencteri",
       "opponentDisplayName": "Tencteri",
@@ -58,7 +147,7 @@
           "dateDisplay": "February 5, 2026",
           "result": "W",
           "playerDeck": "_",
-          "opponentDeck": "_",
+          "opponentDeck": "RG Tron",
           "playerGameWins": 2,
           "opponentGameWins": 1,
           "gameDraws": 0
@@ -108,7 +197,7 @@
           "dateDisplay": "February 5, 2026",
           "result": "W",
           "playerDeck": "_",
-          "opponentDeck": "_",
+          "opponentDeck": "White Stompy",
           "playerGameWins": 2,
           "opponentGameWins": 0,
           "gameDraws": 0
@@ -117,6 +206,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "404622",
+      "dateDisplay": "February 12, 2026",
+      "playerCount": 18,
+      "trophyCount": 3,
+      "roundCount": 3,
+      "rank": 10,
+      "points": 3,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWinPercentage": 0.4444444,
+      "deck": "Burn"
+    },
     {
       "tournamentId": "402789",
       "dateDisplay": "February 5, 2026",

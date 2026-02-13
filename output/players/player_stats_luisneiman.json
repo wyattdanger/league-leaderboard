@@ -2,17 +2,26 @@
   "username": "LuisNeiman",
   "displayName": "LuisNeiman",
   "overallStats": {
-    "totalTournaments": 4,
-    "totalPoints": 30,
-    "totalMatches": 12,
-    "matchRecord": "10-2-0",
-    "matchWinPercentage": 0.8333333333333334,
-    "gameRecord": "20-7-2",
-    "gameWinPercentage": 0.6896551724137931,
+    "totalTournaments": 5,
+    "totalPoints": 33,
+    "totalMatches": 15,
+    "matchRecord": "11-4-0",
+    "matchWinPercentage": 0.7333333333333333,
+    "gameRecord": "24-12-2",
+    "gameWinPercentage": 0.631578947368421,
     "trophies": 2,
     "belts": 0
   },
   "leagueStats": [
+    {
+      "leagueName": "Q1 2026",
+      "events": 1,
+      "points": 3,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameRecord": "4-5-0",
+      "gameWinPercentage": 0.4444444444444444
+    },
     {
       "leagueName": "Q4 2025",
       "events": 1,
@@ -69,22 +78,46 @@
       "gameDraws": 0,
       "gameWinPercentage": 0.5,
       "trophies": 0
+    },
+    {
+      "deckName": "Cradle Control",
+      "events": 1,
+      "matchWins": 1,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 4,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5,
+      "trophies": 0
     }
   ],
   "headToHead": [
     {
       "opponentUsername": "madmanpoet",
       "opponentDisplayName": "Michael Flores",
-      "matchesPlayed": 2,
+      "matchesPlayed": 3,
       "matchWins": 1,
-      "matchLosses": 1,
+      "matchLosses": 2,
       "matchDraws": 0,
-      "matchWinPercentage": 0.5,
-      "gameWins": 2,
-      "gameLosses": 1,
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 3,
+      "gameLosses": 3,
       "gameDraws": 0,
-      "gameWinPercentage": 0.6666666666666666,
+      "gameWinPercentage": 0.5,
       "matches": [
+        {
+          "tournamentId": "404622",
+          "dateDisplay": "February 12, 2026",
+          "result": "L",
+          "playerDeck": "Cradle Control",
+          "opponentDeck": "Burn",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
         {
           "tournamentId": "357267",
           "dateDisplay": "August 28, 2025",
@@ -103,6 +136,56 @@
           "opponentDeck": "Burn",
           "playerGameWins": 2,
           "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "PCavalcanti",
+      "opponentDisplayName": "PCavalcanti",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "matches": [
+        {
+          "tournamentId": "404622",
+          "dateDisplay": "February 12, 2026",
+          "result": "L",
+          "playerDeck": "Cradle Control",
+          "opponentDeck": "Burn",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "J0Nh",
+      "opponentDisplayName": "J0Nh",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6666666666666666,
+      "matches": [
+        {
+          "tournamentId": "404622",
+          "dateDisplay": "February 12, 2026",
+          "result": "W",
+          "playerDeck": "Cradle Control",
+          "opponentDeck": "Dreadnought",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
           "gameDraws": 0
         }
       ]
@@ -359,6 +442,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "404622",
+      "dateDisplay": "February 12, 2026",
+      "playerCount": 18,
+      "trophyCount": 3,
+      "roundCount": 3,
+      "rank": 15,
+      "points": 3,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWinPercentage": 0.4444444,
+      "deck": "Cradle Control"
+    },
     {
       "tournamentId": "373539",
       "dateDisplay": "October 16, 2025",

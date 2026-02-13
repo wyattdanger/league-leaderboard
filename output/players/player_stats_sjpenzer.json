@@ -2,25 +2,25 @@
   "username": "sjpenzer",
   "displayName": "sjpenzer",
   "overallStats": {
-    "totalTournaments": 12,
-    "totalPoints": 79,
-    "totalMatches": 36,
-    "matchRecord": "25-7-4",
-    "matchWinPercentage": 0.75,
-    "gameRecord": "57-28-0",
-    "gameWinPercentage": 0.6705882352941176,
+    "totalTournaments": 13,
+    "totalPoints": 85,
+    "totalMatches": 39,
+    "matchRecord": "27-8-4",
+    "matchWinPercentage": 0.7435897435897436,
+    "gameRecord": "61-31-0",
+    "gameWinPercentage": 0.6630434782608695,
     "trophies": 3,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q1 2026",
-      "events": 3,
-      "points": 20,
-      "matchRecord": "6-1-2",
-      "matchWinPercentage": 0.7777777777777778,
-      "gameRecord": "14-6-0",
-      "gameWinPercentage": 0.7
+      "events": 4,
+      "points": 26,
+      "matchRecord": "8-2-2",
+      "matchWinPercentage": 0.75,
+      "gameRecord": "18-9-0",
+      "gameWinPercentage": 0.6666666666666666
     },
     {
       "leagueName": "Q4 2025",
@@ -44,16 +44,16 @@
   "deckStats": [
     {
       "deckName": "Terrageddon",
-      "events": 11,
-      "matchWins": 23,
-      "matchLosses": 6,
+      "events": 12,
+      "matchWins": 25,
+      "matchLosses": 7,
       "matchDraws": 4,
-      "matchRecord": "23-6-4",
-      "matchWinPercentage": 0.7575757575757576,
-      "gameWins": 60,
-      "gameLosses": 28,
+      "matchRecord": "25-7-4",
+      "matchWinPercentage": 0.75,
+      "gameWins": 65,
+      "gameLosses": 31,
       "gameDraws": 0,
-      "gameWinPercentage": 0.6818181818181818,
+      "gameWinPercentage": 0.6770833333333334,
       "trophies": 3
     },
     {
@@ -72,6 +72,61 @@
     }
   ],
   "headToHead": [
+    {
+      "opponentUsername": "RichBucey",
+      "opponentDisplayName": "RichBucey",
+      "matchesPlayed": 4,
+      "matchWins": 3,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.75,
+      "gameWins": 6,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6,
+      "matches": [
+        {
+          "tournamentId": "404622",
+          "dateDisplay": "February 12, 2026",
+          "result": "L",
+          "playerDeck": "Terrageddon",
+          "opponentDeck": "Oath Ponza",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "400729",
+          "dateDisplay": "January 29, 2026",
+          "result": "W",
+          "playerDeck": "Terrageddon",
+          "opponentDeck": "Stasis",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "395699",
+          "dateDisplay": "January 8, 2026",
+          "result": "W",
+          "playerDeck": "Terrageddon",
+          "opponentDeck": "Burn",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "397227",
+          "dateDisplay": "January 15, 2026",
+          "result": "W",
+          "playerDeck": "Terrageddon",
+          "opponentDeck": "Moneyball Black",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
     {
       "opponentUsername": "Mattmelach",
       "opponentDisplayName": "Matthew Melachrinos",
@@ -183,6 +238,51 @@
       ]
     },
     {
+      "opponentUsername": "Matt_W",
+      "opponentDisplayName": "Matt_W",
+      "matchesPlayed": 3,
+      "matchWins": 3,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 6,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.75,
+      "matches": [
+        {
+          "tournamentId": "404622",
+          "dateDisplay": "February 12, 2026",
+          "result": "W",
+          "playerDeck": "Terrageddon",
+          "opponentDeck": "Moneyball Black",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "395699",
+          "dateDisplay": "January 8, 2026",
+          "result": "W",
+          "playerDeck": "Terrageddon",
+          "opponentDeck": "Moneyball Black",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "380585b",
+          "dateDisplay": "November 6, 2025",
+          "result": "W",
+          "playerDeck": "Terrageddon",
+          "opponentDeck": "Tribe",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "AndrewLevine",
       "opponentDisplayName": "AndrewLevine",
       "matchesPlayed": 3,
@@ -200,7 +300,7 @@
           "dateDisplay": "February 5, 2026",
           "result": "W",
           "playerDeck": "Junk",
-          "opponentDeck": "Contamination",
+          "opponentDeck": "Pattern Rector",
           "playerGameWins": 2,
           "opponentGameWins": 1,
           "gameDraws": 0
@@ -221,51 +321,6 @@
           "result": "W",
           "playerDeck": "Terrageddon",
           "opponentDeck": "Rogue",
-          "playerGameWins": 2,
-          "opponentGameWins": 0,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "RichBucey",
-      "opponentDisplayName": "RichBucey",
-      "matchesPlayed": 3,
-      "matchWins": 3,
-      "matchLosses": 0,
-      "matchDraws": 0,
-      "matchWinPercentage": 1,
-      "gameWins": 6,
-      "gameLosses": 2,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.75,
-      "matches": [
-        {
-          "tournamentId": "400729",
-          "dateDisplay": "January 29, 2026",
-          "result": "W",
-          "playerDeck": "Terrageddon",
-          "opponentDeck": "Stasis",
-          "playerGameWins": 2,
-          "opponentGameWins": 1,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "395699",
-          "dateDisplay": "January 8, 2026",
-          "result": "W",
-          "playerDeck": "Terrageddon",
-          "opponentDeck": "Burn",
-          "playerGameWins": 2,
-          "opponentGameWins": 1,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "397227",
-          "dateDisplay": "January 15, 2026",
-          "result": "W",
-          "playerDeck": "Terrageddon",
-          "opponentDeck": "Moneyball Black",
           "playerGameWins": 2,
           "opponentGameWins": 0,
           "gameDraws": 0
@@ -343,41 +398,6 @@
       ]
     },
     {
-      "opponentUsername": "Matt_W",
-      "opponentDisplayName": "Matt_W",
-      "matchesPlayed": 2,
-      "matchWins": 2,
-      "matchLosses": 0,
-      "matchDraws": 0,
-      "matchWinPercentage": 1,
-      "gameWins": 4,
-      "gameLosses": 1,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.8,
-      "matches": [
-        {
-          "tournamentId": "395699",
-          "dateDisplay": "January 8, 2026",
-          "result": "W",
-          "playerDeck": "Terrageddon",
-          "opponentDeck": "Moneyball Black",
-          "playerGameWins": 2,
-          "opponentGameWins": 0,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "380585b",
-          "dateDisplay": "November 6, 2025",
-          "result": "W",
-          "playerDeck": "Terrageddon",
-          "opponentDeck": "Tribe",
-          "playerGameWins": 2,
-          "opponentGameWins": 1,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
       "opponentUsername": "BryanGulotta",
       "opponentDisplayName": "BryanGulotta",
       "matchesPlayed": 2,
@@ -413,6 +433,31 @@
       ]
     },
     {
+      "opponentUsername": "CalR15",
+      "opponentDisplayName": "CalR15",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "matches": [
+        {
+          "tournamentId": "404622",
+          "dateDisplay": "February 12, 2026",
+          "result": "W",
+          "playerDeck": "Terrageddon",
+          "opponentDeck": "Survival Infestation",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "J0Nh",
       "opponentDisplayName": "J0Nh",
       "matchesPlayed": 1,
@@ -430,7 +475,7 @@
           "dateDisplay": "February 5, 2026",
           "result": "W",
           "playerDeck": "Junk",
-          "opponentDeck": "_",
+          "opponentDeck": "White Stompy",
           "playerGameWins": 2,
           "opponentGameWins": 0,
           "gameDraws": 0
@@ -764,6 +809,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "404622",
+      "dateDisplay": "February 12, 2026",
+      "playerCount": 18,
+      "trophyCount": 3,
+      "roundCount": 3,
+      "rank": 7,
+      "points": 6,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWinPercentage": 0.5714286,
+      "deck": "Terrageddon"
+    },
     {
       "tournamentId": "402789",
       "dateDisplay": "February 5, 2026",

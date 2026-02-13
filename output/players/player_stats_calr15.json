@@ -1,0 +1,134 @@
+{
+  "username": "CalR15",
+  "displayName": "CalR15",
+  "overallStats": {
+    "totalTournaments": 1,
+    "totalPoints": 3,
+    "totalMatches": 3,
+    "matchRecord": "1-2-0",
+    "matchWinPercentage": 0.3333333333333333,
+    "gameRecord": "2-4-0",
+    "gameWinPercentage": 0.3333333333333333,
+    "trophies": 0,
+    "belts": 0
+  },
+  "leagueStats": [
+    {
+      "leagueName": "Q1 2026",
+      "events": 1,
+      "points": 3,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameRecord": "2-4-0",
+      "gameWinPercentage": 0.3333333333333333
+    }
+  ],
+  "deckStats": [
+    {
+      "deckName": "Survival Infestation",
+      "events": 1,
+      "matchWins": 1,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 3,
+      "gameLosses": 5,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.375,
+      "trophies": 0
+    }
+  ],
+  "headToHead": [
+    {
+      "opponentUsername": "delofstrom",
+      "opponentDisplayName": "DEL .",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "matches": [
+        {
+          "tournamentId": "404622",
+          "dateDisplay": "February 12, 2026",
+          "result": "L",
+          "playerDeck": "Survival Infestation",
+          "opponentDeck": "Survival Welder",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "sjpenzer",
+      "opponentDisplayName": "sjpenzer",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "matches": [
+        {
+          "tournamentId": "404622",
+          "dateDisplay": "February 12, 2026",
+          "result": "L",
+          "playerDeck": "Survival Infestation",
+          "opponentDeck": "Terrageddon",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "AndrewLevine",
+      "opponentDisplayName": "AndrewLevine",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "matches": [
+        {
+          "tournamentId": "404622",
+          "dateDisplay": "February 12, 2026",
+          "result": "W",
+          "playerDeck": "Survival Infestation",
+          "opponentDeck": "Gush Tithe",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    }
+  ],
+  "tournamentPerformances": [
+    {
+      "tournamentId": "404622",
+      "dateDisplay": "February 12, 2026",
+      "playerCount": 18,
+      "trophyCount": 3,
+      "roundCount": 3,
+      "rank": 14,
+      "points": 3,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWinPercentage": 0.3333333,
+      "deck": "Survival Infestation"
+    }
+  ]
+}
