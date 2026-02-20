@@ -2,25 +2,25 @@
   "username": "Mattmelach",
   "displayName": "Matthew Melachrinos",
   "overallStats": {
-    "totalTournaments": 20,
-    "totalPoints": 55,
-    "totalMatches": 60,
-    "matchRecord": "17-39-4",
-    "matchWinPercentage": 0.31666666666666665,
-    "gameRecord": "54-88-1",
-    "gameWinPercentage": 0.3776223776223776,
+    "totalTournaments": 21,
+    "totalPoints": 58,
+    "totalMatches": 63,
+    "matchRecord": "18-41-4",
+    "matchWinPercentage": 0.31746031746031744,
+    "gameRecord": "58-92-1",
+    "gameWinPercentage": 0.3841059602649007,
     "trophies": 0,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q1 2026",
-      "events": 1,
-      "points": 0,
-      "matchRecord": "0-3-0",
-      "matchWinPercentage": 0,
-      "gameRecord": "1-6-0",
-      "gameWinPercentage": 0.14285714285714285
+      "events": 2,
+      "points": 3,
+      "matchRecord": "1-5-0",
+      "matchWinPercentage": 0.16666666666666666,
+      "gameRecord": "5-10-0",
+      "gameWinPercentage": 0.3333333333333333
     },
     {
       "leagueName": "Q4 2025",
@@ -72,6 +72,20 @@
       "gameLosses": 65,
       "gameDraws": 0,
       "gameWinPercentage": 0.375,
+      "trophies": 0
+    },
+    {
+      "deckName": "Survival Infestation",
+      "events": 2,
+      "matchWins": 1,
+      "matchLosses": 5,
+      "matchDraws": 0,
+      "matchRecord": "1-5-0",
+      "matchWinPercentage": 0.16666666666666666,
+      "gameWins": 7,
+      "gameLosses": 9,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.4375,
       "trophies": 0
     },
     {
@@ -157,23 +171,74 @@
       "gameDraws": 0,
       "gameWinPercentage": 0.5,
       "trophies": 0
-    },
-    {
-      "deckName": "Survival Infestation",
-      "events": 1,
-      "matchWins": 0,
-      "matchLosses": 3,
-      "matchDraws": 0,
-      "matchRecord": "0-3-0",
-      "matchWinPercentage": 0,
-      "gameWins": 3,
-      "gameLosses": 5,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.375,
-      "trophies": 0
     }
   ],
   "headToHead": [
+    {
+      "opponentUsername": "madmanpoet",
+      "opponentDisplayName": "Michael Flores",
+      "matchesPlayed": 5,
+      "matchWins": 0,
+      "matchLosses": 5,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 4,
+      "gameLosses": 10,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.2857142857142857,
+      "matches": [
+        {
+          "tournamentId": "406432",
+          "dateDisplay": "February 19, 2026",
+          "result": "L",
+          "playerDeck": "Survival Infestation",
+          "opponentDeck": "Dreadnought",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "382756",
+          "dateDisplay": "November 13, 2025",
+          "result": "L",
+          "playerDeck": "_",
+          "opponentDeck": "The Rock",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "377629",
+          "dateDisplay": "October 30, 2025",
+          "result": "L",
+          "playerDeck": "_",
+          "opponentDeck": "Stompy",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "335531",
+          "dateDisplay": "July 3, 2025",
+          "result": "L",
+          "playerDeck": "_",
+          "opponentDeck": "Stompy",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "369726",
+          "dateDisplay": "October 2, 2025",
+          "result": "L",
+          "playerDeck": "Rack",
+          "opponentDeck": "Burn",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
     {
       "opponentUsername": "AndrewLevine",
       "opponentDisplayName": "AndrewLevine",
@@ -415,61 +480,6 @@
       ]
     },
     {
-      "opponentUsername": "madmanpoet",
-      "opponentDisplayName": "Michael Flores",
-      "matchesPlayed": 4,
-      "matchWins": 0,
-      "matchLosses": 4,
-      "matchDraws": 0,
-      "matchWinPercentage": 0,
-      "gameWins": 3,
-      "gameLosses": 8,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.2727272727272727,
-      "matches": [
-        {
-          "tournamentId": "382756",
-          "dateDisplay": "November 13, 2025",
-          "result": "L",
-          "playerDeck": "_",
-          "opponentDeck": "The Rock",
-          "playerGameWins": 0,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "377629",
-          "dateDisplay": "October 30, 2025",
-          "result": "L",
-          "playerDeck": "_",
-          "opponentDeck": "Stompy",
-          "playerGameWins": 1,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "335531",
-          "dateDisplay": "July 3, 2025",
-          "result": "L",
-          "playerDeck": "_",
-          "opponentDeck": "Stompy",
-          "playerGameWins": 1,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "369726",
-          "dateDisplay": "October 2, 2025",
-          "result": "L",
-          "playerDeck": "Rack",
-          "opponentDeck": "Burn",
-          "playerGameWins": 1,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
       "opponentUsername": "Tencteri",
       "opponentDisplayName": "Tencteri",
       "matchesPlayed": 3,
@@ -554,6 +564,41 @@
           "playerDeck": "_",
           "opponentDeck": "_",
           "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "peterk235",
+      "opponentDisplayName": "peterk235",
+      "matchesPlayed": 2,
+      "matchWins": 0,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.2,
+      "matches": [
+        {
+          "tournamentId": "406432",
+          "dateDisplay": "February 19, 2026",
+          "result": "L",
+          "playerDeck": "Survival Infestation",
+          "opponentDeck": "GW Little Kid",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "347610",
+          "dateDisplay": "July 31, 2025",
+          "result": "L",
+          "playerDeck": "_",
+          "opponentDeck": "The Rock",
+          "playerGameWins": 0,
           "opponentGameWins": 2,
           "gameDraws": 0
         }
@@ -730,6 +775,31 @@
           "opponentDeck": "_",
           "playerGameWins": 1,
           "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "Paul_Scott",
+      "opponentDisplayName": "Paul_Scott",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "matches": [
+        {
+          "tournamentId": "406432",
+          "dateDisplay": "February 19, 2026",
+          "result": "W",
+          "playerDeck": "Survival Infestation",
+          "opponentDeck": "_",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
           "gameDraws": 0
         }
       ]
@@ -1110,31 +1180,6 @@
       ]
     },
     {
-      "opponentUsername": "peterk235",
-      "opponentDisplayName": "peterk235",
-      "matchesPlayed": 1,
-      "matchWins": 0,
-      "matchLosses": 1,
-      "matchDraws": 0,
-      "matchWinPercentage": 0,
-      "gameWins": 0,
-      "gameLosses": 2,
-      "gameDraws": 0,
-      "gameWinPercentage": 0,
-      "matches": [
-        {
-          "tournamentId": "347610",
-          "dateDisplay": "July 31, 2025",
-          "result": "L",
-          "playerDeck": "_",
-          "opponentDeck": "The Rock",
-          "playerGameWins": 0,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
       "opponentUsername": "avoellmer",
       "opponentDisplayName": "avoellmer",
       "matchesPlayed": 1,
@@ -1286,6 +1331,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "406432",
+      "dateDisplay": "February 19, 2026",
+      "playerCount": 22,
+      "trophyCount": 3,
+      "roundCount": 3,
+      "rank": 15,
+      "points": 3,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWinPercentage": 0.5,
+      "deck": "Survival Infestation"
+    },
     {
       "tournamentId": "404622",
       "dateDisplay": "February 12, 2026",

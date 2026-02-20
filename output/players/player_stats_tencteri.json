@@ -2,25 +2,25 @@
   "username": "Tencteri",
   "displayName": "Tencteri",
   "overallStats": {
-    "totalTournaments": 22,
-    "totalPoints": 91,
-    "totalMatches": 65,
-    "matchRecord": "30-34-1",
-    "matchWinPercentage": 0.46923076923076923,
-    "gameRecord": "77-83-1",
-    "gameWinPercentage": 0.4782608695652174,
-    "trophies": 0,
+    "totalTournaments": 23,
+    "totalPoints": 100,
+    "totalMatches": 68,
+    "matchRecord": "33-34-1",
+    "matchWinPercentage": 0.49264705882352944,
+    "gameRecord": "83-84-1",
+    "gameWinPercentage": 0.49404761904761907,
+    "trophies": 1,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q1 2026",
-      "events": 3,
-      "points": 9,
-      "matchRecord": "3-6-0",
-      "matchWinPercentage": 0.3333333333333333,
-      "gameRecord": "9-14-0",
-      "gameWinPercentage": 0.391304347826087
+      "events": 4,
+      "points": 18,
+      "matchRecord": "6-6-0",
+      "matchWinPercentage": 0.5,
+      "gameRecord": "15-15-0",
+      "gameWinPercentage": 0.5
     },
     {
       "leagueName": "Q4 2025",
@@ -84,6 +84,20 @@
       "trophies": 0
     },
     {
+      "deckName": "White Weenie",
+      "events": 5,
+      "matchWins": 8,
+      "matchLosses": 7,
+      "matchDraws": 0,
+      "matchRecord": "8-7-0",
+      "matchWinPercentage": 0.5333333333333333,
+      "gameWins": 24,
+      "gameLosses": 16,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6,
+      "trophies": 1
+    },
+    {
       "deckName": "Deadguy Ale",
       "events": 4,
       "matchWins": 8,
@@ -91,20 +105,6 @@
       "matchDraws": 0,
       "matchRecord": "8-4-0",
       "matchWinPercentage": 0.6666666666666666,
-      "gameWins": 17,
-      "gameLosses": 15,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.53125,
-      "trophies": 0
-    },
-    {
-      "deckName": "White Weenie",
-      "events": 4,
-      "matchWins": 5,
-      "matchLosses": 7,
-      "matchDraws": 0,
-      "matchRecord": "5-7-0",
-      "matchWinPercentage": 0.4166666666666667,
       "gameWins": 17,
       "gameLosses": 15,
       "gameDraws": 0,
@@ -314,6 +314,51 @@
       ]
     },
     {
+      "opponentUsername": "Taylorhol",
+      "opponentDisplayName": "Taylorhol",
+      "matchesPlayed": 3,
+      "matchWins": 2,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 4,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6666666666666666,
+      "matches": [
+        {
+          "tournamentId": "406432",
+          "dateDisplay": "February 19, 2026",
+          "result": "W",
+          "playerDeck": "White Weenie",
+          "opponentDeck": "Hermit FEB",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "404622",
+          "dateDisplay": "February 12, 2026",
+          "result": "L",
+          "playerDeck": "White Weenie",
+          "opponentDeck": "Hermit FEB",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "397227",
+          "dateDisplay": "January 15, 2026",
+          "result": "W",
+          "playerDeck": "Tinker",
+          "opponentDeck": "Enchantress",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "Mattmelach",
       "opponentDisplayName": "Matthew Melachrinos",
       "matchesPlayed": 3,
@@ -399,41 +444,6 @@
           "opponentDeck": "_",
           "playerGameWins": 2,
           "opponentGameWins": 1,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "Taylorhol",
-      "opponentDisplayName": "Taylorhol",
-      "matchesPlayed": 2,
-      "matchWins": 1,
-      "matchLosses": 1,
-      "matchDraws": 0,
-      "matchWinPercentage": 0.5,
-      "gameWins": 2,
-      "gameLosses": 2,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.5,
-      "matches": [
-        {
-          "tournamentId": "404622",
-          "dateDisplay": "February 12, 2026",
-          "result": "L",
-          "playerDeck": "White Weenie",
-          "opponentDeck": "Hermit FEB",
-          "playerGameWins": 0,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "397227",
-          "dateDisplay": "January 15, 2026",
-          "result": "W",
-          "playerDeck": "Tinker",
-          "opponentDeck": "Enchantress",
-          "playerGameWins": 2,
-          "opponentGameWins": 0,
           "gameDraws": 0
         }
       ]
@@ -749,6 +759,56 @@
           "opponentDeck": "_",
           "playerGameWins": 1,
           "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "leyawn",
+      "opponentDisplayName": "leyawn",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6666666666666666,
+      "matches": [
+        {
+          "tournamentId": "406432",
+          "dateDisplay": "February 19, 2026",
+          "result": "W",
+          "playerDeck": "White Weenie",
+          "opponentDeck": "UG Madness",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "minimiz",
+      "opponentDisplayName": "Eli Mizock",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "matches": [
+        {
+          "tournamentId": "406432",
+          "dateDisplay": "February 19, 2026",
+          "result": "W",
+          "playerDeck": "White Weenie",
+          "opponentDeck": "Goblins",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
           "gameDraws": 0
         }
       ]
@@ -1430,6 +1490,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "406432",
+      "dateDisplay": "February 19, 2026",
+      "playerCount": 22,
+      "trophyCount": 3,
+      "roundCount": 3,
+      "rank": 1,
+      "points": 9,
+      "matchRecord": "3-0-0",
+      "matchWinPercentage": 1,
+      "gameWinPercentage": 0.8571429,
+      "deck": "White Weenie"
+    },
     {
       "tournamentId": "404622",
       "dateDisplay": "February 12, 2026",

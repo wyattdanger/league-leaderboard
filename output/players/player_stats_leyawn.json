@@ -2,25 +2,25 @@
   "username": "leyawn",
   "displayName": "leyawn",
   "overallStats": {
-    "totalTournaments": 2,
-    "totalPoints": 9,
-    "totalMatches": 6,
-    "matchRecord": "3-3-0",
-    "matchWinPercentage": 0.5,
-    "gameRecord": "8-7-0",
-    "gameWinPercentage": 0.5333333333333333,
+    "totalTournaments": 3,
+    "totalPoints": 12,
+    "totalMatches": 9,
+    "matchRecord": "4-5-0",
+    "matchWinPercentage": 0.4444444444444444,
+    "gameRecord": "12-11-0",
+    "gameWinPercentage": 0.5217391304347826,
     "trophies": 0,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q1 2026",
-      "events": 2,
-      "points": 9,
-      "matchRecord": "3-3-0",
-      "matchWinPercentage": 0.5,
-      "gameRecord": "8-7-0",
-      "gameWinPercentage": 0.5333333333333333
+      "events": 3,
+      "points": 12,
+      "matchRecord": "4-5-0",
+      "matchWinPercentage": 0.4444444444444444,
+      "gameRecord": "12-11-0",
+      "gameWinPercentage": 0.5217391304347826
     }
   ],
   "deckStats": [
@@ -36,6 +36,20 @@
       "gameLosses": 3,
       "gameDraws": 0,
       "gameWinPercentage": 0.625,
+      "trophies": 0
+    },
+    {
+      "deckName": "UG Madness",
+      "events": 1,
+      "matchWins": 1,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 4,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5,
       "trophies": 0
     },
     {
@@ -83,6 +97,81 @@
           "result": "W",
           "playerDeck": "Goblins",
           "opponentDeck": "Stasis",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "Tencteri",
+      "opponentDisplayName": "Tencteri",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "matches": [
+        {
+          "tournamentId": "406432",
+          "dateDisplay": "February 19, 2026",
+          "result": "L",
+          "playerDeck": "UG Madness",
+          "opponentDeck": "White Weenie",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "swbmtg",
+      "opponentDisplayName": "swb",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "matches": [
+        {
+          "tournamentId": "406432",
+          "dateDisplay": "February 19, 2026",
+          "result": "L",
+          "playerDeck": "UG Madness",
+          "opponentDeck": "Terrageddon",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "Paul_Scott",
+      "opponentDisplayName": "Paul_Scott",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "matches": [
+        {
+          "tournamentId": "406432",
+          "dateDisplay": "February 19, 2026",
+          "result": "W",
+          "playerDeck": "UG Madness",
+          "opponentDeck": "_",
           "playerGameWins": 2,
           "opponentGameWins": 0,
           "gameDraws": 0
@@ -191,6 +280,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "406432",
+      "dateDisplay": "February 19, 2026",
+      "playerCount": 22,
+      "trophyCount": 3,
+      "roundCount": 3,
+      "rank": 13,
+      "points": 3,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWinPercentage": 0.5,
+      "deck": "UG Madness"
+    },
     {
       "tournamentId": "404622",
       "dateDisplay": "February 12, 2026",

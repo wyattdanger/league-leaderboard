@@ -2,25 +2,25 @@
   "username": "swbmtg",
   "displayName": "swb",
   "overallStats": {
-    "totalTournaments": 33,
-    "totalPoints": 221,
-    "totalMatches": 99,
-    "matchRecord": "72-22-5",
-    "matchWinPercentage": 0.7525252525252525,
-    "gameRecord": "160-79-2",
-    "gameWinPercentage": 0.6639004149377593,
+    "totalTournaments": 34,
+    "totalPoints": 227,
+    "totalMatches": 102,
+    "matchRecord": "74-23-5",
+    "matchWinPercentage": 0.75,
+    "gameRecord": "164-82-2",
+    "gameWinPercentage": 0.6612903225806451,
     "trophies": 10,
     "belts": 1
   },
   "leagueStats": [
     {
       "leagueName": "Q1 2026",
-      "events": 4,
-      "points": 28,
-      "matchRecord": "9-2-1",
-      "matchWinPercentage": 0.7916666666666666,
-      "gameRecord": "20-8-0",
-      "gameWinPercentage": 0.7142857142857143
+      "events": 5,
+      "points": 34,
+      "matchRecord": "11-3-1",
+      "matchWinPercentage": 0.7666666666666667,
+      "gameRecord": "24-11-0",
+      "gameWinPercentage": 0.6857142857142857
     },
     {
       "leagueName": "Q4 2025",
@@ -121,6 +121,20 @@
       "trophies": 0
     },
     {
+      "deckName": "Terrageddon",
+      "events": 2,
+      "matchWins": 5,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchRecord": "5-1-0",
+      "matchWinPercentage": 0.8333333333333334,
+      "gameWins": 12,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.75,
+      "trophies": 1
+    },
+    {
       "deckName": "Tidestill",
       "events": 2,
       "matchWins": 4,
@@ -161,20 +175,6 @@
       "gameDraws": 0,
       "gameWinPercentage": 0.625,
       "trophies": 0
-    },
-    {
-      "deckName": "Terrageddon",
-      "events": 1,
-      "matchWins": 3,
-      "matchLosses": 0,
-      "matchDraws": 0,
-      "matchRecord": "3-0-0",
-      "matchWinPercentage": 1,
-      "gameWins": 7,
-      "gameLosses": 1,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.875,
-      "trophies": 1
     },
     {
       "deckName": "The Rock",
@@ -1144,6 +1144,41 @@
       ]
     },
     {
+      "opponentUsername": "remixmtg",
+      "opponentDisplayName": "Jeremy Siegel",
+      "matchesPlayed": 2,
+      "matchWins": 1,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.5,
+      "gameWins": 2,
+      "gameLosses": 3,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.4,
+      "matches": [
+        {
+          "tournamentId": "406432",
+          "dateDisplay": "February 19, 2026",
+          "result": "L",
+          "playerDeck": "Terrageddon",
+          "opponentDeck": "Elves",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "393796",
+          "dateDisplay": "January 1, 2026",
+          "result": "W",
+          "playerDeck": "The Rock",
+          "opponentDeck": "Terrageddon",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "Matt_W",
       "opponentDisplayName": "Matt_W",
       "matchesPlayed": 2,
@@ -1279,6 +1314,56 @@
           "opponentDeck": "_",
           "playerGameWins": 2,
           "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "J0Nh",
+      "opponentDisplayName": "J0Nh",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "matches": [
+        {
+          "tournamentId": "406432",
+          "dateDisplay": "February 19, 2026",
+          "result": "W",
+          "playerDeck": "Terrageddon",
+          "opponentDeck": "Dreadnought",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "leyawn",
+      "opponentDisplayName": "leyawn",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6666666666666666,
+      "matches": [
+        {
+          "tournamentId": "406432",
+          "dateDisplay": "February 19, 2026",
+          "result": "W",
+          "playerDeck": "Terrageddon",
+          "opponentDeck": "UG Madness",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
           "gameDraws": 0
         }
       ]
@@ -1454,31 +1539,6 @@
           "opponentDeck": "Dreadnought",
           "playerGameWins": 2,
           "opponentGameWins": 0,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "remixmtg",
-      "opponentDisplayName": "Jeremy Siegel",
-      "matchesPlayed": 1,
-      "matchWins": 1,
-      "matchLosses": 0,
-      "matchDraws": 0,
-      "matchWinPercentage": 1,
-      "gameWins": 2,
-      "gameLosses": 1,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.6666666666666666,
-      "matches": [
-        {
-          "tournamentId": "393796",
-          "dateDisplay": "January 1, 2026",
-          "result": "W",
-          "playerDeck": "The Rock",
-          "opponentDeck": "Terrageddon",
-          "playerGameWins": 2,
-          "opponentGameWins": 1,
           "gameDraws": 0
         }
       ]
@@ -1860,6 +1920,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "406432",
+      "dateDisplay": "February 19, 2026",
+      "playerCount": 22,
+      "trophyCount": 3,
+      "roundCount": 3,
+      "rank": 8,
+      "points": 6,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWinPercentage": 0.5714286,
+      "deck": "Terrageddon"
+    },
     {
       "tournamentId": "404622",
       "dateDisplay": "February 12, 2026",

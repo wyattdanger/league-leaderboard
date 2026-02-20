@@ -2,25 +2,25 @@
   "username": "Gaunology",
   "displayName": "Gaunology",
   "overallStats": {
-    "totalTournaments": 4,
+    "totalTournaments": 5,
     "totalPoints": 20,
-    "totalMatches": 12,
-    "matchRecord": "6-4-2",
-    "matchWinPercentage": 0.5833333333333334,
-    "gameRecord": "14-11-0",
-    "gameWinPercentage": 0.56,
+    "totalMatches": 15,
+    "matchRecord": "6-7-2",
+    "matchWinPercentage": 0.4666666666666667,
+    "gameRecord": "15-17-0",
+    "gameWinPercentage": 0.46875,
     "trophies": 1,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q1 2026",
-      "events": 3,
+      "events": 4,
       "points": 13,
-      "matchRecord": "4-4-1",
-      "matchWinPercentage": 0.5,
-      "gameRecord": "9-10-0",
-      "gameWinPercentage": 0.47368421052631576
+      "matchRecord": "4-7-1",
+      "matchWinPercentage": 0.375,
+      "gameRecord": "10-16-0",
+      "gameWinPercentage": 0.38461538461538464
     },
     {
       "leagueName": "Q4 2025",
@@ -49,16 +49,16 @@
     },
     {
       "deckName": "Terra Oath",
-      "events": 1,
+      "events": 2,
       "matchWins": 3,
-      "matchLosses": 0,
+      "matchLosses": 3,
       "matchDraws": 0,
-      "matchRecord": "3-0-0",
-      "matchWinPercentage": 1,
-      "gameWins": 7,
-      "gameLosses": 1,
+      "matchRecord": "3-3-0",
+      "matchWinPercentage": 0.5,
+      "gameWins": 10,
+      "gameLosses": 6,
       "gameDraws": 0,
-      "gameWinPercentage": 0.875,
+      "gameWinPercentage": 0.625,
       "trophies": 1
     },
     {
@@ -123,6 +123,91 @@
       ]
     },
     {
+      "opponentUsername": "JUDDERMANG",
+      "opponentDisplayName": "Chris Cruz",
+      "matchesPlayed": 2,
+      "matchWins": 0,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 2,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "matches": [
+        {
+          "tournamentId": "406432",
+          "dateDisplay": "February 19, 2026",
+          "result": "L",
+          "playerDeck": "Terra Oath",
+          "opponentDeck": "Dreadnought",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "402789",
+          "dateDisplay": "February 5, 2026",
+          "result": "L",
+          "playerDeck": "UB Dream Halls",
+          "opponentDeck": "Dreadnought",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "teridax",
+      "opponentDisplayName": "teridax",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "matches": [
+        {
+          "tournamentId": "406432",
+          "dateDisplay": "February 19, 2026",
+          "result": "L",
+          "playerDeck": "Terra Oath",
+          "opponentDeck": "Moneyball Black",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "mattmanw2",
+      "opponentDisplayName": "mattmanw2",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "matches": [
+        {
+          "tournamentId": "406432",
+          "dateDisplay": "February 19, 2026",
+          "result": "L",
+          "playerDeck": "Terra Oath",
+          "opponentDeck": "Pit Rack",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "Mattmelach",
       "opponentDisplayName": "Matthew Melachrinos",
       "matchesPlayed": 1,
@@ -168,31 +253,6 @@
           "opponentDeck": "Survival Welder",
           "playerGameWins": 2,
           "opponentGameWins": 0,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "JUDDERMANG",
-      "opponentDisplayName": "Chris Cruz",
-      "matchesPlayed": 1,
-      "matchWins": 0,
-      "matchLosses": 1,
-      "matchDraws": 0,
-      "matchWinPercentage": 0,
-      "gameWins": 1,
-      "gameLosses": 2,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.3333333333333333,
-      "matches": [
-        {
-          "tournamentId": "402789",
-          "dateDisplay": "February 5, 2026",
-          "result": "L",
-          "playerDeck": "UB Dream Halls",
-          "opponentDeck": "Dreadnought",
-          "playerGameWins": 1,
-          "opponentGameWins": 2,
           "gameDraws": 0
         }
       ]
@@ -324,6 +384,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "406432",
+      "dateDisplay": "February 19, 2026",
+      "playerCount": 22,
+      "trophyCount": 3,
+      "roundCount": 3,
+      "rank": 22,
+      "points": 0,
+      "matchRecord": "0-3-0",
+      "matchWinPercentage": 0,
+      "gameWinPercentage": 0.3333333,
+      "deck": "Terra Oath"
+    },
     {
       "tournamentId": "404622",
       "dateDisplay": "February 12, 2026",

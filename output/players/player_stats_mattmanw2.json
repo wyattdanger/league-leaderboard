@@ -2,28 +2,42 @@
   "username": "mattmanw2",
   "displayName": "mattmanw2",
   "overallStats": {
-    "totalTournaments": 1,
-    "totalPoints": 3,
-    "totalMatches": 3,
-    "matchRecord": "1-2-0",
+    "totalTournaments": 2,
+    "totalPoints": 6,
+    "totalMatches": 6,
+    "matchRecord": "2-4-0",
     "matchWinPercentage": 0.3333333333333333,
-    "gameRecord": "3-5-0",
-    "gameWinPercentage": 0.375,
+    "gameRecord": "6-9-0",
+    "gameWinPercentage": 0.4,
     "trophies": 0,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q1 2026",
-      "events": 1,
-      "points": 3,
-      "matchRecord": "1-2-0",
+      "events": 2,
+      "points": 6,
+      "matchRecord": "2-4-0",
       "matchWinPercentage": 0.3333333333333333,
-      "gameRecord": "3-5-0",
-      "gameWinPercentage": 0.375
+      "gameRecord": "6-9-0",
+      "gameWinPercentage": 0.4
     }
   ],
   "deckStats": [
+    {
+      "deckName": "Pit Rack",
+      "events": 1,
+      "matchWins": 1,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 3,
+      "gameLosses": 5,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.375,
+      "trophies": 0
+    },
     {
       "deckName": "Mono Black Aggro",
       "events": 1,
@@ -43,16 +57,26 @@
     {
       "opponentUsername": "minimiz",
       "opponentDisplayName": "Eli Mizock",
-      "matchesPlayed": 1,
+      "matchesPlayed": 2,
       "matchWins": 0,
-      "matchLosses": 1,
+      "matchLosses": 2,
       "matchDraws": 0,
       "matchWinPercentage": 0,
       "gameWins": 0,
-      "gameLosses": 2,
+      "gameLosses": 4,
       "gameDraws": 0,
       "gameWinPercentage": 0,
       "matches": [
+        {
+          "tournamentId": "406432",
+          "dateDisplay": "February 19, 2026",
+          "result": "L",
+          "playerDeck": "Pit Rack",
+          "opponentDeck": "Goblins",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
         {
           "tournamentId": "402789",
           "dateDisplay": "February 5, 2026",
@@ -61,6 +85,56 @@
           "opponentDeck": "Goblins",
           "playerGameWins": 0,
           "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "njmickel",
+      "opponentDisplayName": "Noah Mickel",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "matches": [
+        {
+          "tournamentId": "406432",
+          "dateDisplay": "February 19, 2026",
+          "result": "L",
+          "playerDeck": "Pit Rack",
+          "opponentDeck": "Dreadnought",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "Gaunology",
+      "opponentDisplayName": "Gaunology",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "matches": [
+        {
+          "tournamentId": "406432",
+          "dateDisplay": "February 19, 2026",
+          "result": "W",
+          "playerDeck": "Pit Rack",
+          "opponentDeck": "Terra Oath",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
           "gameDraws": 0
         }
       ]
@@ -117,6 +191,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "406432",
+      "dateDisplay": "February 19, 2026",
+      "playerCount": 22,
+      "trophyCount": 3,
+      "roundCount": 3,
+      "rank": 16,
+      "points": 3,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWinPercentage": 0.4285714,
+      "deck": "Pit Rack"
+    },
     {
       "tournamentId": "402789",
       "dateDisplay": "February 5, 2026",

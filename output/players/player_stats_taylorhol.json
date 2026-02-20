@@ -2,25 +2,25 @@
   "username": "Taylorhol",
   "displayName": "Taylorhol",
   "overallStats": {
-    "totalTournaments": 18,
-    "totalPoints": 80,
-    "totalMatches": 54,
-    "matchRecord": "26-26-2",
-    "matchWinPercentage": 0.5,
-    "gameRecord": "64-65-2",
-    "gameWinPercentage": 0.48854961832061067,
+    "totalTournaments": 19,
+    "totalPoints": 86,
+    "totalMatches": 57,
+    "matchRecord": "28-27-2",
+    "matchWinPercentage": 0.5087719298245614,
+    "gameRecord": "68-67-2",
+    "gameWinPercentage": 0.49635036496350365,
     "trophies": 1,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q1 2026",
-      "events": 4,
-      "points": 18,
-      "matchRecord": "6-6-0",
-      "matchWinPercentage": 0.5,
-      "gameRecord": "14-15-0",
-      "gameWinPercentage": 0.4827586206896552
+      "events": 5,
+      "points": 24,
+      "matchRecord": "8-7-0",
+      "matchWinPercentage": 0.5333333333333333,
+      "gameRecord": "18-17-0",
+      "gameWinPercentage": 0.5142857142857142
     },
     {
       "leagueName": "Q4 2025",
@@ -66,6 +66,20 @@
       "trophies": 0
     },
     {
+      "deckName": "Hermit FEB",
+      "events": 3,
+      "matchWins": 5,
+      "matchLosses": 4,
+      "matchDraws": 0,
+      "matchRecord": "5-4-0",
+      "matchWinPercentage": 0.5555555555555556,
+      "gameWins": 13,
+      "gameLosses": 11,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5416666666666666,
+      "trophies": 0
+    },
+    {
       "deckName": "Enchantress",
       "events": 3,
       "matchWins": 4,
@@ -106,20 +120,6 @@
       "gameDraws": 0,
       "gameWinPercentage": 0.75,
       "trophies": 1
-    },
-    {
-      "deckName": "Hermit FEB",
-      "events": 2,
-      "matchWins": 3,
-      "matchLosses": 3,
-      "matchDraws": 0,
-      "matchRecord": "3-3-0",
-      "matchWinPercentage": 0.5,
-      "gameWins": 8,
-      "gameLosses": 8,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.5,
-      "trophies": 0
     },
     {
       "deckName": "Gush Tithe",
@@ -229,6 +229,96 @@
           "playerDeck": "Enchantress",
           "opponentDeck": "Terrageddon",
           "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "madmanpoet",
+      "opponentDisplayName": "Michael Flores",
+      "matchesPlayed": 3,
+      "matchWins": 1,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 2,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "matches": [
+        {
+          "tournamentId": "406432",
+          "dateDisplay": "February 19, 2026",
+          "result": "W",
+          "playerDeck": "Hermit FEB",
+          "opponentDeck": "Dreadnought",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "404622",
+          "dateDisplay": "February 12, 2026",
+          "result": "L",
+          "playerDeck": "Hermit FEB",
+          "opponentDeck": "Burn",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "393796",
+          "dateDisplay": "January 1, 2026",
+          "result": "L",
+          "playerDeck": "Snap Cradle Pop",
+          "opponentDeck": "Dreadnought",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "Tencteri",
+      "opponentDisplayName": "Tencteri",
+      "matchesPlayed": 3,
+      "matchWins": 1,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 2,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "matches": [
+        {
+          "tournamentId": "406432",
+          "dateDisplay": "February 19, 2026",
+          "result": "L",
+          "playerDeck": "Hermit FEB",
+          "opponentDeck": "White Weenie",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "404622",
+          "dateDisplay": "February 12, 2026",
+          "result": "W",
+          "playerDeck": "Hermit FEB",
+          "opponentDeck": "White Weenie",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "397227",
+          "dateDisplay": "January 15, 2026",
+          "result": "L",
+          "playerDeck": "Enchantress",
+          "opponentDeck": "Tinker",
+          "playerGameWins": 0,
           "opponentGameWins": 2,
           "gameDraws": 0
         }
@@ -460,76 +550,6 @@
       ]
     },
     {
-      "opponentUsername": "Tencteri",
-      "opponentDisplayName": "Tencteri",
-      "matchesPlayed": 2,
-      "matchWins": 1,
-      "matchLosses": 1,
-      "matchDraws": 0,
-      "matchWinPercentage": 0.5,
-      "gameWins": 2,
-      "gameLosses": 2,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.5,
-      "matches": [
-        {
-          "tournamentId": "404622",
-          "dateDisplay": "February 12, 2026",
-          "result": "W",
-          "playerDeck": "Hermit FEB",
-          "opponentDeck": "White Weenie",
-          "playerGameWins": 2,
-          "opponentGameWins": 0,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "397227",
-          "dateDisplay": "January 15, 2026",
-          "result": "L",
-          "playerDeck": "Enchantress",
-          "opponentDeck": "Tinker",
-          "playerGameWins": 0,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "madmanpoet",
-      "opponentDisplayName": "Michael Flores",
-      "matchesPlayed": 2,
-      "matchWins": 0,
-      "matchLosses": 2,
-      "matchDraws": 0,
-      "matchWinPercentage": 0,
-      "gameWins": 0,
-      "gameLosses": 4,
-      "gameDraws": 0,
-      "gameWinPercentage": 0,
-      "matches": [
-        {
-          "tournamentId": "404622",
-          "dateDisplay": "February 12, 2026",
-          "result": "L",
-          "playerDeck": "Hermit FEB",
-          "opponentDeck": "Burn",
-          "playerGameWins": 0,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "393796",
-          "dateDisplay": "January 1, 2026",
-          "result": "L",
-          "playerDeck": "Snap Cradle Pop",
-          "opponentDeck": "Dreadnought",
-          "playerGameWins": 0,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
       "opponentUsername": "BryanGulotta",
       "opponentDisplayName": "BryanGulotta",
       "matchesPlayed": 2,
@@ -735,6 +755,31 @@
           "opponentDeck": "_",
           "playerGameWins": 0,
           "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "LuisNeiman",
+      "opponentDisplayName": "LuisNeiman",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "matches": [
+        {
+          "tournamentId": "406432",
+          "dateDisplay": "February 19, 2026",
+          "result": "W",
+          "playerDeck": "Hermit FEB",
+          "opponentDeck": "Oath Spec",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
           "gameDraws": 0
         }
       ]
@@ -1141,6 +1186,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "406432",
+      "dateDisplay": "February 19, 2026",
+      "playerCount": 22,
+      "trophyCount": 3,
+      "roundCount": 3,
+      "rank": 4,
+      "points": 6,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWinPercentage": 0.6666667,
+      "deck": "Hermit FEB"
+    },
     {
       "tournamentId": "404622",
       "dateDisplay": "February 12, 2026",

@@ -2,25 +2,25 @@
   "username": "Paul_Scott",
   "displayName": "Paul_Scott",
   "overallStats": {
-    "totalTournaments": 1,
+    "totalTournaments": 2,
     "totalPoints": 9,
-    "totalMatches": 3,
-    "matchRecord": "3-0-0",
-    "matchWinPercentage": 1,
-    "gameRecord": "6-2-0",
-    "gameWinPercentage": 0.75,
+    "totalMatches": 6,
+    "matchRecord": "3-3-0",
+    "matchWinPercentage": 0.5,
+    "gameRecord": "6-8-0",
+    "gameWinPercentage": 0.42857142857142855,
     "trophies": 1,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q1 2026",
-      "events": 1,
+      "events": 2,
       "points": 9,
-      "matchRecord": "3-0-0",
-      "matchWinPercentage": 1,
-      "gameRecord": "6-2-0",
-      "gameWinPercentage": 0.75
+      "matchRecord": "3-3-0",
+      "matchWinPercentage": 0.5,
+      "gameRecord": "6-8-0",
+      "gameWinPercentage": 0.42857142857142855
     }
   ],
   "deckStats": [
@@ -37,22 +37,46 @@
       "gameDraws": 0,
       "gameWinPercentage": 0.75,
       "trophies": 1
+    },
+    {
+      "deckName": "Unknown",
+      "events": 1,
+      "matchWins": 0,
+      "matchLosses": 3,
+      "matchDraws": 0,
+      "matchRecord": "0-3-0",
+      "matchWinPercentage": 0,
+      "gameWins": 3,
+      "gameLosses": 5,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.375,
+      "trophies": 0
     }
   ],
   "headToHead": [
     {
       "opponentUsername": "minimiz",
       "opponentDisplayName": "Eli Mizock",
-      "matchesPlayed": 1,
+      "matchesPlayed": 2,
       "matchWins": 1,
-      "matchLosses": 0,
+      "matchLosses": 1,
       "matchDraws": 0,
-      "matchWinPercentage": 1,
+      "matchWinPercentage": 0.5,
       "gameWins": 2,
-      "gameLosses": 1,
+      "gameLosses": 3,
       "gameDraws": 0,
-      "gameWinPercentage": 0.6666666666666666,
+      "gameWinPercentage": 0.4,
       "matches": [
+        {
+          "tournamentId": "406432",
+          "dateDisplay": "February 19, 2026",
+          "result": "L",
+          "playerDeck": "_",
+          "opponentDeck": "Goblins",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
         {
           "tournamentId": "398837",
           "dateDisplay": "January 22, 2026",
@@ -61,6 +85,56 @@
           "opponentDeck": "Goblins",
           "playerGameWins": 2,
           "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "Mattmelach",
+      "opponentDisplayName": "Matthew Melachrinos",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "matches": [
+        {
+          "tournamentId": "406432",
+          "dateDisplay": "February 19, 2026",
+          "result": "L",
+          "playerDeck": "_",
+          "opponentDeck": "Survival Infestation",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "leyawn",
+      "opponentDisplayName": "leyawn",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "matches": [
+        {
+          "tournamentId": "406432",
+          "dateDisplay": "February 19, 2026",
+          "result": "L",
+          "playerDeck": "_",
+          "opponentDeck": "UG Madness",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
           "gameDraws": 0
         }
       ]
@@ -117,6 +191,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "406432",
+      "dateDisplay": "February 19, 2026",
+      "playerCount": 22,
+      "trophyCount": 3,
+      "roundCount": 3,
+      "rank": 20,
+      "points": 0,
+      "matchRecord": "0-3-0",
+      "matchWinPercentage": 0,
+      "gameWinPercentage": 0.3333333,
+      "deck": "_"
+    },
     {
       "tournamentId": "398837",
       "dateDisplay": "January 22, 2026",

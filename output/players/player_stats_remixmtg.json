@@ -2,25 +2,25 @@
   "username": "remixmtg",
   "displayName": "Jeremy Siegel",
   "overallStats": {
-    "totalTournaments": 6,
-    "totalPoints": 28,
-    "totalMatches": 18,
-    "matchRecord": "9-8-1",
-    "matchWinPercentage": 0.5277777777777778,
-    "gameRecord": "21-20-3",
-    "gameWinPercentage": 0.4772727272727273,
-    "trophies": 0,
+    "totalTournaments": 7,
+    "totalPoints": 37,
+    "totalMatches": 21,
+    "matchRecord": "12-8-1",
+    "matchWinPercentage": 0.5952380952380952,
+    "gameRecord": "27-21-3",
+    "gameWinPercentage": 0.5294117647058824,
+    "trophies": 1,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q1 2026",
-      "events": 2,
-      "points": 9,
-      "matchRecord": "3-3-0",
-      "matchWinPercentage": 0.5,
-      "gameRecord": "7-8-0",
-      "gameWinPercentage": 0.4666666666666667
+      "events": 3,
+      "points": 18,
+      "matchRecord": "6-3-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameRecord": "13-9-0",
+      "gameWinPercentage": 0.5909090909090909
     },
     {
       "leagueName": "Q4 2025",
@@ -48,6 +48,20 @@
       "trophies": 0
     },
     {
+      "deckName": "Elves",
+      "events": 2,
+      "matchWins": 4,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchRecord": "4-2-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 10,
+      "gameLosses": 6,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.625,
+      "trophies": 1
+    },
+    {
       "deckName": "Oath Spec",
       "events": 1,
       "matchWins": 2,
@@ -59,20 +73,6 @@
       "gameLosses": 3,
       "gameDraws": 0,
       "gameWinPercentage": 0.625,
-      "trophies": 0
-    },
-    {
-      "deckName": "Elves",
-      "events": 1,
-      "matchWins": 1,
-      "matchLosses": 2,
-      "matchDraws": 0,
-      "matchRecord": "1-2-0",
-      "matchWinPercentage": 0.3333333333333333,
-      "gameWins": 3,
-      "gameLosses": 5,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.375,
       "trophies": 0
     },
     {
@@ -91,6 +91,41 @@
     }
   ],
   "headToHead": [
+    {
+      "opponentUsername": "swbmtg",
+      "opponentDisplayName": "swb",
+      "matchesPlayed": 2,
+      "matchWins": 1,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.5,
+      "gameWins": 3,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6,
+      "matches": [
+        {
+          "tournamentId": "406432",
+          "dateDisplay": "February 19, 2026",
+          "result": "W",
+          "playerDeck": "Elves",
+          "opponentDeck": "Terrageddon",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "393796",
+          "dateDisplay": "January 1, 2026",
+          "result": "L",
+          "playerDeck": "Terrageddon",
+          "opponentDeck": "The Rock",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
     {
       "opponentUsername": "BryanGulotta",
       "opponentDisplayName": "BryanGulotta",
@@ -155,6 +190,56 @@
           "result": "W",
           "playerDeck": "Oath Spec",
           "opponentDeck": "Burn",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "JUDDERMANG",
+      "opponentDisplayName": "Chris Cruz",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "matches": [
+        {
+          "tournamentId": "406432",
+          "dateDisplay": "February 19, 2026",
+          "result": "W",
+          "playerDeck": "Elves",
+          "opponentDeck": "Dreadnought",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "njmickel",
+      "opponentDisplayName": "Noah Mickel",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6666666666666666,
+      "matches": [
+        {
+          "tournamentId": "406432",
+          "dateDisplay": "February 19, 2026",
+          "result": "W",
+          "playerDeck": "Elves",
+          "opponentDeck": "Dreadnought",
           "playerGameWins": 2,
           "opponentGameWins": 1,
           "gameDraws": 0
@@ -337,31 +422,6 @@
       ]
     },
     {
-      "opponentUsername": "swbmtg",
-      "opponentDisplayName": "swb",
-      "matchesPlayed": 1,
-      "matchWins": 0,
-      "matchLosses": 1,
-      "matchDraws": 0,
-      "matchWinPercentage": 0,
-      "gameWins": 1,
-      "gameLosses": 2,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.3333333333333333,
-      "matches": [
-        {
-          "tournamentId": "393796",
-          "dateDisplay": "January 1, 2026",
-          "result": "L",
-          "playerDeck": "Terrageddon",
-          "opponentDeck": "The Rock",
-          "playerGameWins": 1,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
       "opponentUsername": "RolandMTG",
       "opponentDisplayName": "Roland Chang",
       "matchesPlayed": 1,
@@ -488,6 +548,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "406432",
+      "dateDisplay": "February 19, 2026",
+      "playerCount": 22,
+      "trophyCount": 3,
+      "roundCount": 3,
+      "rank": 2,
+      "points": 9,
+      "matchRecord": "3-0-0",
+      "matchWinPercentage": 1,
+      "gameWinPercentage": 0.8571429,
+      "deck": "Elves"
+    },
     {
       "tournamentId": "400729",
       "dateDisplay": "January 29, 2026",
