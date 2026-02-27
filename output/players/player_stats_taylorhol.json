@@ -2,25 +2,25 @@
   "username": "Taylorhol",
   "displayName": "Taylorhol",
   "overallStats": {
-    "totalTournaments": 19,
-    "totalPoints": 86,
-    "totalMatches": 57,
-    "matchRecord": "28-27-2",
-    "matchWinPercentage": 0.5087719298245614,
-    "gameRecord": "68-67-2",
-    "gameWinPercentage": 0.49635036496350365,
+    "totalTournaments": 20,
+    "totalPoints": 89,
+    "totalMatches": 60,
+    "matchRecord": "29-29-2",
+    "matchWinPercentage": 0.5,
+    "gameRecord": "70-71-2",
+    "gameWinPercentage": 0.48951048951048953,
     "trophies": 1,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q1 2026",
-      "events": 5,
-      "points": 24,
-      "matchRecord": "8-7-0",
-      "matchWinPercentage": 0.5333333333333333,
-      "gameRecord": "18-17-0",
-      "gameWinPercentage": 0.5142857142857142
+      "events": 6,
+      "points": 27,
+      "matchRecord": "9-9-0",
+      "matchWinPercentage": 0.5,
+      "gameRecord": "20-21-0",
+      "gameWinPercentage": 0.4878048780487805
     },
     {
       "leagueName": "Q4 2025",
@@ -52,6 +52,20 @@
   ],
   "deckStats": [
     {
+      "deckName": "HFEB",
+      "events": 5,
+      "matchWins": 7,
+      "matchLosses": 8,
+      "matchDraws": 0,
+      "matchRecord": "7-8-0",
+      "matchWinPercentage": 0.4666666666666667,
+      "gameWins": 19,
+      "gameLosses": 21,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.475,
+      "trophies": 0
+    },
+    {
       "deckName": "Terrageddon",
       "events": 3,
       "matchWins": 5,
@@ -63,20 +77,6 @@
       "gameLosses": 10,
       "gameDraws": 0,
       "gameWinPercentage": 0.5833333333333334,
-      "trophies": 0
-    },
-    {
-      "deckName": "Hermit FEB",
-      "events": 3,
-      "matchWins": 5,
-      "matchLosses": 4,
-      "matchDraws": 0,
-      "matchRecord": "5-4-0",
-      "matchWinPercentage": 0.5555555555555556,
-      "gameWins": 13,
-      "gameLosses": 11,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.5416666666666666,
       "trophies": 0
     },
     {
@@ -150,20 +150,6 @@
       "trophies": 0
     },
     {
-      "deckName": "HFEB",
-      "events": 1,
-      "matchWins": 1,
-      "matchLosses": 2,
-      "matchDraws": 0,
-      "matchRecord": "1-2-0",
-      "matchWinPercentage": 0.3333333333333333,
-      "gameWins": 3,
-      "gameLosses": 5,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.375,
-      "trophies": 0
-    },
-    {
       "deckName": "Elves",
       "events": 1,
       "matchWins": 1,
@@ -179,6 +165,61 @@
     }
   ],
   "headToHead": [
+    {
+      "opponentUsername": "itsCama",
+      "opponentDisplayName": "Yosef Harari",
+      "matchesPlayed": 4,
+      "matchWins": 0,
+      "matchLosses": 4,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 8,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.1111111111111111,
+      "matches": [
+        {
+          "tournamentId": "408436",
+          "dateDisplay": "February 26, 2026",
+          "result": "L",
+          "playerDeck": "HFEB",
+          "opponentDeck": "UW Control",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "402789",
+          "dateDisplay": "February 5, 2026",
+          "result": "L",
+          "playerDeck": "HFEB",
+          "opponentDeck": "Welder Prison",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "367531",
+          "dateDisplay": "September 25, 2025",
+          "result": "L",
+          "playerDeck": "Tinker Prison",
+          "opponentDeck": "_",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "365765",
+          "dateDisplay": "September 18, 2025",
+          "result": "L",
+          "playerDeck": "Elves",
+          "opponentDeck": "_",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
     {
       "opponentUsername": "sjpenzer",
       "opponentDisplayName": "sjpenzer",
@@ -251,7 +292,7 @@
           "tournamentId": "406432",
           "dateDisplay": "February 19, 2026",
           "result": "W",
-          "playerDeck": "Hermit FEB",
+          "playerDeck": "HFEB",
           "opponentDeck": "Dreadnought",
           "playerGameWins": 2,
           "opponentGameWins": 0,
@@ -261,7 +302,7 @@
           "tournamentId": "404622",
           "dateDisplay": "February 12, 2026",
           "result": "L",
-          "playerDeck": "Hermit FEB",
+          "playerDeck": "HFEB",
           "opponentDeck": "Burn",
           "playerGameWins": 0,
           "opponentGameWins": 2,
@@ -296,7 +337,7 @@
           "tournamentId": "406432",
           "dateDisplay": "February 19, 2026",
           "result": "L",
-          "playerDeck": "Hermit FEB",
+          "playerDeck": "HFEB",
           "opponentDeck": "White Weenie",
           "playerGameWins": 0,
           "opponentGameWins": 2,
@@ -306,7 +347,7 @@
           "tournamentId": "404622",
           "dateDisplay": "February 12, 2026",
           "result": "W",
-          "playerDeck": "Hermit FEB",
+          "playerDeck": "HFEB",
           "opponentDeck": "White Weenie",
           "playerGameWins": 2,
           "opponentGameWins": 0,
@@ -318,51 +359,6 @@
           "result": "L",
           "playerDeck": "Enchantress",
           "opponentDeck": "Tinker",
-          "playerGameWins": 0,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "itsCama",
-      "opponentDisplayName": "Yosef Harari",
-      "matchesPlayed": 3,
-      "matchWins": 0,
-      "matchLosses": 3,
-      "matchDraws": 0,
-      "matchWinPercentage": 0,
-      "gameWins": 1,
-      "gameLosses": 6,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.14285714285714285,
-      "matches": [
-        {
-          "tournamentId": "402789",
-          "dateDisplay": "February 5, 2026",
-          "result": "L",
-          "playerDeck": "Hermit FEB",
-          "opponentDeck": "Welder Prison",
-          "playerGameWins": 0,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "367531",
-          "dateDisplay": "September 25, 2025",
-          "result": "L",
-          "playerDeck": "Tinker Prison",
-          "opponentDeck": "_",
-          "playerGameWins": 1,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "365765",
-          "dateDisplay": "September 18, 2025",
-          "result": "L",
-          "playerDeck": "Elves",
-          "opponentDeck": "_",
           "playerGameWins": 0,
           "opponentGameWins": 2,
           "gameDraws": 0
@@ -386,7 +382,7 @@
           "tournamentId": "402789",
           "dateDisplay": "February 5, 2026",
           "result": "W",
-          "playerDeck": "Hermit FEB",
+          "playerDeck": "HFEB",
           "opponentDeck": "Landstill",
           "playerGameWins": 2,
           "opponentGameWins": 0,
@@ -431,7 +427,7 @@
           "tournamentId": "402789",
           "dateDisplay": "February 5, 2026",
           "result": "L",
-          "playerDeck": "Hermit FEB",
+          "playerDeck": "HFEB",
           "opponentDeck": "Pattern Rector",
           "playerGameWins": 0,
           "opponentGameWins": 2,
@@ -760,6 +756,56 @@
       ]
     },
     {
+      "opponentUsername": "DaveKaplan",
+      "opponentDisplayName": "Dave Kaplan",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "matches": [
+        {
+          "tournamentId": "408436",
+          "dateDisplay": "February 26, 2026",
+          "result": "L",
+          "playerDeck": "HFEB",
+          "opponentDeck": "Angry Hermit",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "Mdg2238",
+      "opponentDisplayName": "Mdg2238",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "matches": [
+        {
+          "tournamentId": "408436",
+          "dateDisplay": "February 26, 2026",
+          "result": "W",
+          "playerDeck": "HFEB",
+          "opponentDeck": "Burn",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "LuisNeiman",
       "opponentDisplayName": "LuisNeiman",
       "matchesPlayed": 1,
@@ -776,7 +822,7 @@
           "tournamentId": "406432",
           "dateDisplay": "February 19, 2026",
           "result": "W",
-          "playerDeck": "Hermit FEB",
+          "playerDeck": "HFEB",
           "opponentDeck": "Oath Spec",
           "playerGameWins": 2,
           "opponentGameWins": 0,
@@ -801,7 +847,7 @@
           "tournamentId": "404622",
           "dateDisplay": "February 12, 2026",
           "result": "W",
-          "playerDeck": "Hermit FEB",
+          "playerDeck": "HFEB",
           "opponentDeck": "Burn",
           "playerGameWins": 2,
           "opponentGameWins": 1,
@@ -1187,6 +1233,19 @@
   ],
   "tournamentPerformances": [
     {
+      "tournamentId": "408436",
+      "dateDisplay": "February 26, 2026",
+      "playerCount": 19,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 13,
+      "points": 3,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWinPercentage": 0.3333333,
+      "deck": "HFEB"
+    },
+    {
       "tournamentId": "406432",
       "dateDisplay": "February 19, 2026",
       "playerCount": 22,
@@ -1197,7 +1256,7 @@
       "matchRecord": "2-1-0",
       "matchWinPercentage": 0.6666666666666666,
       "gameWinPercentage": 0.6666667,
-      "deck": "Hermit FEB"
+      "deck": "HFEB"
     },
     {
       "tournamentId": "404622",
@@ -1210,7 +1269,7 @@
       "matchRecord": "2-1-0",
       "matchWinPercentage": 0.6666666666666666,
       "gameWinPercentage": 0.5714286,
-      "deck": "Hermit FEB"
+      "deck": "HFEB"
     },
     {
       "tournamentId": "402789",
@@ -1223,7 +1282,7 @@
       "matchRecord": "1-2-0",
       "matchWinPercentage": 0.3333333333333333,
       "gameWinPercentage": 0.3333333,
-      "deck": "Hermit FEB"
+      "deck": "HFEB"
     },
     {
       "tournamentId": "400729",

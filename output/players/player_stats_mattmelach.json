@@ -2,25 +2,25 @@
   "username": "Mattmelach",
   "displayName": "Matthew Melachrinos",
   "overallStats": {
-    "totalTournaments": 21,
-    "totalPoints": 58,
-    "totalMatches": 63,
-    "matchRecord": "18-41-4",
-    "matchWinPercentage": 0.31746031746031744,
-    "gameRecord": "58-92-1",
-    "gameWinPercentage": 0.3841059602649007,
+    "totalTournaments": 22,
+    "totalPoints": 61,
+    "totalMatches": 66,
+    "matchRecord": "19-43-4",
+    "matchWinPercentage": 0.3181818181818182,
+    "gameRecord": "61-96-1",
+    "gameWinPercentage": 0.3860759493670886,
     "trophies": 0,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q1 2026",
-      "events": 2,
-      "points": 3,
-      "matchRecord": "1-5-0",
-      "matchWinPercentage": 0.16666666666666666,
-      "gameRecord": "5-10-0",
-      "gameWinPercentage": 0.3333333333333333
+      "events": 3,
+      "points": 6,
+      "matchRecord": "2-7-0",
+      "matchWinPercentage": 0.2222222222222222,
+      "gameRecord": "8-14-0",
+      "gameWinPercentage": 0.36363636363636365
     },
     {
       "leagueName": "Q4 2025",
@@ -117,6 +117,20 @@
       "trophies": 0
     },
     {
+      "deckName": "White Lightning",
+      "events": 1,
+      "matchWins": 1,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 3,
+      "gameLosses": 5,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.375,
+      "trophies": 0
+    },
+    {
       "deckName": "Machinehead",
       "events": 1,
       "matchWins": 1,
@@ -174,6 +188,81 @@
     }
   ],
   "headToHead": [
+    {
+      "opponentUsername": "JUDDERMANG",
+      "opponentDisplayName": "Chris Cruz",
+      "matchesPlayed": 6,
+      "matchWins": 4,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 10,
+      "gameLosses": 5,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6666666666666666,
+      "matches": [
+        {
+          "tournamentId": "408436",
+          "dateDisplay": "February 26, 2026",
+          "result": "L",
+          "playerDeck": "White Lightning",
+          "opponentDeck": "Dreadnought",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "390154",
+          "dateDisplay": "December 11, 2025",
+          "result": "W",
+          "playerDeck": "Reanimator",
+          "opponentDeck": "Dreadnought",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "380585b",
+          "dateDisplay": "November 6, 2025",
+          "result": "L",
+          "playerDeck": "Pox",
+          "opponentDeck": "Burn",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "371711",
+          "dateDisplay": "October 9, 2025",
+          "result": "W",
+          "playerDeck": "_",
+          "opponentDeck": "Elves",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "352572",
+          "dateDisplay": "August 14, 2025",
+          "result": "W",
+          "playerDeck": "_",
+          "opponentDeck": "Oath Ponza",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "369726",
+          "dateDisplay": "October 2, 2025",
+          "result": "W",
+          "playerDeck": "Rack",
+          "opponentDeck": "FEB",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
     {
       "opponentUsername": "madmanpoet",
       "opponentDisplayName": "Michael Flores",
@@ -300,71 +389,6 @@
           "opponentDeck": "_",
           "playerGameWins": 1,
           "opponentGameWins": 2,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "JUDDERMANG",
-      "opponentDisplayName": "Chris Cruz",
-      "matchesPlayed": 5,
-      "matchWins": 4,
-      "matchLosses": 1,
-      "matchDraws": 0,
-      "matchWinPercentage": 0.8,
-      "gameWins": 9,
-      "gameLosses": 3,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.75,
-      "matches": [
-        {
-          "tournamentId": "390154",
-          "dateDisplay": "December 11, 2025",
-          "result": "W",
-          "playerDeck": "Reanimator",
-          "opponentDeck": "Dreadnought",
-          "playerGameWins": 2,
-          "opponentGameWins": 0,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "380585b",
-          "dateDisplay": "November 6, 2025",
-          "result": "L",
-          "playerDeck": "Pox",
-          "opponentDeck": "Burn",
-          "playerGameWins": 1,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "371711",
-          "dateDisplay": "October 9, 2025",
-          "result": "W",
-          "playerDeck": "_",
-          "opponentDeck": "Elves",
-          "playerGameWins": 2,
-          "opponentGameWins": 0,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "352572",
-          "dateDisplay": "August 14, 2025",
-          "result": "W",
-          "playerDeck": "_",
-          "opponentDeck": "Oath Ponza",
-          "playerGameWins": 2,
-          "opponentGameWins": 1,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "369726",
-          "dateDisplay": "October 2, 2025",
-          "result": "W",
-          "playerDeck": "Rack",
-          "opponentDeck": "FEB",
-          "playerGameWins": 2,
-          "opponentGameWins": 0,
           "gameDraws": 0
         }
       ]
@@ -774,6 +798,31 @@
           "playerDeck": "_",
           "opponentDeck": "_",
           "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "mattmanw2",
+      "opponentDisplayName": "mattmanw2",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "matches": [
+        {
+          "tournamentId": "408436",
+          "dateDisplay": "February 26, 2026",
+          "result": "L",
+          "playerDeck": "White Lightning",
+          "opponentDeck": "Moneyball Black",
+          "playerGameWins": 0,
           "opponentGameWins": 2,
           "gameDraws": 0
         }
@@ -1331,6 +1380,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "408436",
+      "dateDisplay": "February 26, 2026",
+      "playerCount": 19,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 15,
+      "points": 3,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWinPercentage": 0.4285714,
+      "deck": "White Lightning"
+    },
     {
       "tournamentId": "406432",
       "dateDisplay": "February 19, 2026",

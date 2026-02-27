@@ -2,28 +2,42 @@
   "username": "maxshiau",
   "displayName": "maxshiau",
   "overallStats": {
-    "totalTournaments": 1,
-    "totalPoints": 6,
-    "totalMatches": 3,
-    "matchRecord": "2-1-0",
+    "totalTournaments": 2,
+    "totalPoints": 12,
+    "totalMatches": 6,
+    "matchRecord": "4-2-0",
     "matchWinPercentage": 0.6666666666666666,
-    "gameRecord": "4-3-0",
-    "gameWinPercentage": 0.5714285714285714,
+    "gameRecord": "8-5-0",
+    "gameWinPercentage": 0.6153846153846154,
     "trophies": 0,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q1 2026",
-      "events": 1,
-      "points": 6,
-      "matchRecord": "2-1-0",
+      "events": 2,
+      "points": 12,
+      "matchRecord": "4-2-0",
       "matchWinPercentage": 0.6666666666666666,
-      "gameRecord": "4-3-0",
-      "gameWinPercentage": 0.5714285714285714
+      "gameRecord": "8-5-0",
+      "gameWinPercentage": 0.6153846153846154
     }
   ],
   "deckStats": [
+    {
+      "deckName": "Burn",
+      "events": 1,
+      "matchWins": 2,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 5,
+      "gameLosses": 3,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.625,
+      "trophies": 0
+    },
     {
       "deckName": "Sligh",
       "events": 1,
@@ -40,6 +54,56 @@
     }
   ],
   "headToHead": [
+    {
+      "opponentUsername": "Tencteri",
+      "opponentDisplayName": "Tencteri",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "matches": [
+        {
+          "tournamentId": "408436",
+          "dateDisplay": "February 26, 2026",
+          "result": "W",
+          "playerDeck": "Burn",
+          "opponentDeck": "Esper Pile",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "remixmtg",
+      "opponentDisplayName": "Jeremy Siegel",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "matches": [
+        {
+          "tournamentId": "408436",
+          "dateDisplay": "February 26, 2026",
+          "result": "L",
+          "playerDeck": "Burn",
+          "opponentDeck": "Terrageddon",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
     {
       "opponentUsername": "hankzhong",
       "opponentDisplayName": "Hank Zhong",
@@ -117,6 +181,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "408436",
+      "dateDisplay": "February 26, 2026",
+      "playerCount": 19,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 5,
+      "points": 6,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWinPercentage": 0.6666667,
+      "deck": "Burn"
+    },
     {
       "tournamentId": "400729",
       "dateDisplay": "January 29, 2026",
