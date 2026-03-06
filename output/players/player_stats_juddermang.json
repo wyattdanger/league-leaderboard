@@ -2,25 +2,25 @@
   "username": "JUDDERMANG",
   "displayName": "Chris Cruz",
   "overallStats": {
-    "totalTournaments": 34,
+    "totalTournaments": 35,
     "totalPoints": 117,
-    "totalMatches": 102,
-    "matchRecord": "38-61-3",
-    "matchWinPercentage": 0.3872549019607843,
-    "gameRecord": "99-140-1",
-    "gameWinPercentage": 0.4125,
+    "totalMatches": 105,
+    "matchRecord": "38-64-3",
+    "matchWinPercentage": 0.3761904761904762,
+    "gameRecord": "101-146-1",
+    "gameWinPercentage": 0.40725806451612906,
     "trophies": 1,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q1 2026",
-      "events": 3,
+      "events": 4,
       "points": 12,
-      "matchRecord": "4-5-0",
-      "matchWinPercentage": 0.4444444444444444,
-      "gameRecord": "8-13-0",
-      "gameWinPercentage": 0.38095238095238093
+      "matchRecord": "4-8-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameRecord": "10-19-0",
+      "gameWinPercentage": 0.3448275862068966
     },
     {
       "leagueName": "Q4 2025",
@@ -191,6 +191,20 @@
       "trophies": 0
     },
     {
+      "deckName": "StifleNought",
+      "events": 1,
+      "matchWins": 0,
+      "matchLosses": 3,
+      "matchDraws": 0,
+      "matchRecord": "0-3-0",
+      "matchWinPercentage": 0,
+      "gameWins": 3,
+      "gameLosses": 5,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.375,
+      "trophies": 0
+    },
+    {
       "deckName": "FEB",
       "events": 1,
       "matchWins": 0,
@@ -206,6 +220,91 @@
     }
   ],
   "headToHead": [
+    {
+      "opponentUsername": "madmanpoet",
+      "opponentDisplayName": "Michael Flores",
+      "matchesPlayed": 7,
+      "matchWins": 0,
+      "matchLosses": 7,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 4,
+      "gameLosses": 14,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.2222222222222222,
+      "matches": [
+        {
+          "tournamentId": "410832",
+          "dateDisplay": "March 5, 2026",
+          "result": "L",
+          "playerDeck": "StifleNought",
+          "opponentDeck": "Gamekeeper Rock",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "367531",
+          "dateDisplay": "September 25, 2025",
+          "result": "L",
+          "playerDeck": "Oath Ponza",
+          "opponentDeck": "Dreadnought",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "361066",
+          "dateDisplay": "September 4, 2025",
+          "result": "L",
+          "playerDeck": "Psychatog",
+          "opponentDeck": "Psychatog",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "357267",
+          "dateDisplay": "August 28, 2025",
+          "result": "L",
+          "playerDeck": "Oath Ponza",
+          "opponentDeck": "Burn",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "332093",
+          "dateDisplay": "June 26, 2025",
+          "result": "L",
+          "playerDeck": "_",
+          "opponentDeck": "Replenish",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "305152",
+          "dateDisplay": "May 8, 2025",
+          "result": "L",
+          "playerDeck": "_",
+          "opponentDeck": "Goblins",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "341527",
+          "dateDisplay": "July 17, 2025",
+          "result": "L",
+          "playerDeck": "Burn",
+          "opponentDeck": "Burn",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
     {
       "opponentUsername": "AndrewLevine",
       "opponentDisplayName": "AndrewLevine",
@@ -435,81 +534,6 @@
           "result": "L",
           "playerDeck": "_",
           "opponentDeck": "Lan D Hoath",
-          "playerGameWins": 1,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "madmanpoet",
-      "opponentDisplayName": "Michael Flores",
-      "matchesPlayed": 6,
-      "matchWins": 0,
-      "matchLosses": 6,
-      "matchDraws": 0,
-      "matchWinPercentage": 0,
-      "gameWins": 3,
-      "gameLosses": 12,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.2,
-      "matches": [
-        {
-          "tournamentId": "367531",
-          "dateDisplay": "September 25, 2025",
-          "result": "L",
-          "playerDeck": "Oath Ponza",
-          "opponentDeck": "Dreadnought",
-          "playerGameWins": 0,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "361066",
-          "dateDisplay": "September 4, 2025",
-          "result": "L",
-          "playerDeck": "Psychatog",
-          "opponentDeck": "Psychatog",
-          "playerGameWins": 1,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "357267",
-          "dateDisplay": "August 28, 2025",
-          "result": "L",
-          "playerDeck": "Oath Ponza",
-          "opponentDeck": "Burn",
-          "playerGameWins": 1,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "332093",
-          "dateDisplay": "June 26, 2025",
-          "result": "L",
-          "playerDeck": "_",
-          "opponentDeck": "Replenish",
-          "playerGameWins": 0,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "305152",
-          "dateDisplay": "May 8, 2025",
-          "result": "L",
-          "playerDeck": "_",
-          "opponentDeck": "Goblins",
-          "playerGameWins": 0,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "341527",
-          "dateDisplay": "July 17, 2025",
-          "result": "L",
-          "playerDeck": "Burn",
-          "opponentDeck": "Burn",
           "playerGameWins": 1,
           "opponentGameWins": 2,
           "gameDraws": 0
@@ -1037,6 +1061,41 @@
       ]
     },
     {
+      "opponentUsername": "remixmtg",
+      "opponentDisplayName": "Jeremy Siegel",
+      "matchesPlayed": 2,
+      "matchWins": 0,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.2,
+      "matches": [
+        {
+          "tournamentId": "410832",
+          "dateDisplay": "March 5, 2026",
+          "result": "L",
+          "playerDeck": "StifleNought",
+          "opponentDeck": "Terrageddon",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "406432",
+          "dateDisplay": "February 19, 2026",
+          "result": "L",
+          "playerDeck": "Dreadnought",
+          "opponentDeck": "Elves",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "Gaunology",
       "opponentDisplayName": "Gaunology",
       "matchesPlayed": 2,
@@ -1177,6 +1236,31 @@
       ]
     },
     {
+      "opponentUsername": "CalebR",
+      "opponentDisplayName": "CalebR",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "matches": [
+        {
+          "tournamentId": "410832",
+          "dateDisplay": "March 5, 2026",
+          "result": "L",
+          "playerDeck": "StifleNought",
+          "opponentDeck": "Enchantress",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "Mdg2238",
       "opponentDisplayName": "Mdg2238",
       "matchesPlayed": 1,
@@ -1195,31 +1279,6 @@
           "result": "L",
           "playerDeck": "Dreadnought",
           "opponentDeck": "Burn",
-          "playerGameWins": 0,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "remixmtg",
-      "opponentDisplayName": "Jeremy Siegel",
-      "matchesPlayed": 1,
-      "matchWins": 0,
-      "matchLosses": 1,
-      "matchDraws": 0,
-      "matchWinPercentage": 0,
-      "gameWins": 0,
-      "gameLosses": 2,
-      "gameDraws": 0,
-      "gameWinPercentage": 0,
-      "matches": [
-        {
-          "tournamentId": "406432",
-          "dateDisplay": "February 19, 2026",
-          "result": "L",
-          "playerDeck": "Dreadnought",
-          "opponentDeck": "Elves",
           "playerGameWins": 0,
           "opponentGameWins": 2,
           "gameDraws": 0
@@ -1853,6 +1912,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "410832",
+      "dateDisplay": "March 5, 2026",
+      "playerCount": 21,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 21,
+      "points": 0,
+      "matchRecord": "0-3-0",
+      "matchWinPercentage": 0,
+      "gameWinPercentage": 0.3333333,
+      "deck": "StifleNought"
+    },
     {
       "tournamentId": "408436",
       "dateDisplay": "February 26, 2026",

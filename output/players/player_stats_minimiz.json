@@ -2,44 +2,124 @@
   "username": "minimiz",
   "displayName": "Eli Mizock",
   "overallStats": {
-    "totalTournaments": 5,
-    "totalPoints": 27,
-    "totalMatches": 15,
-    "matchRecord": "9-6-0",
-    "matchWinPercentage": 0.6,
-    "gameRecord": "23-17-0",
-    "gameWinPercentage": 0.575,
+    "totalTournaments": 6,
+    "totalPoints": 33,
+    "totalMatches": 18,
+    "matchRecord": "11-7-0",
+    "matchWinPercentage": 0.6111111111111112,
+    "gameRecord": "28-20-0",
+    "gameWinPercentage": 0.5833333333333334,
     "trophies": 1,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q1 2026",
-      "events": 5,
-      "points": 27,
-      "matchRecord": "9-6-0",
-      "matchWinPercentage": 0.6,
-      "gameRecord": "23-17-0",
-      "gameWinPercentage": 0.575
+      "events": 6,
+      "points": 33,
+      "matchRecord": "11-7-0",
+      "matchWinPercentage": 0.6111111111111112,
+      "gameRecord": "28-20-0",
+      "gameWinPercentage": 0.5833333333333334
     }
   ],
   "deckStats": [
     {
       "deckName": "Goblins",
-      "events": 5,
-      "matchWins": 9,
-      "matchLosses": 6,
+      "events": 6,
+      "matchWins": 11,
+      "matchLosses": 7,
       "matchDraws": 0,
-      "matchRecord": "9-6-0",
-      "matchWinPercentage": 0.6,
-      "gameWins": 24,
-      "gameLosses": 16,
+      "matchRecord": "11-7-0",
+      "matchWinPercentage": 0.6111111111111112,
+      "gameWins": 29,
+      "gameLosses": 19,
       "gameDraws": 0,
-      "gameWinPercentage": 0.6,
+      "gameWinPercentage": 0.6041666666666666,
       "trophies": 1
     }
   ],
   "headToHead": [
+    {
+      "opponentUsername": "mattmanw2",
+      "opponentDisplayName": "mattmanw2",
+      "matchesPlayed": 3,
+      "matchWins": 2,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 5,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.7142857142857143,
+      "matches": [
+        {
+          "tournamentId": "410832",
+          "dateDisplay": "March 5, 2026",
+          "result": "L",
+          "playerDeck": "Goblins",
+          "opponentDeck": "Moneyball Black",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "406432",
+          "dateDisplay": "February 19, 2026",
+          "result": "W",
+          "playerDeck": "Goblins",
+          "opponentDeck": "Pit Rack",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "402789",
+          "dateDisplay": "February 5, 2026",
+          "result": "W",
+          "playerDeck": "Goblins",
+          "opponentDeck": "Mono Black Aggro",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "remixmtg",
+      "opponentDisplayName": "Jeremy Siegel",
+      "matchesPlayed": 2,
+      "matchWins": 2,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 4,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6666666666666666,
+      "matches": [
+        {
+          "tournamentId": "410832",
+          "dateDisplay": "March 5, 2026",
+          "result": "W",
+          "playerDeck": "Goblins",
+          "opponentDeck": "Terrageddon",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "398837",
+          "dateDisplay": "January 22, 2026",
+          "result": "W",
+          "playerDeck": "Goblins",
+          "opponentDeck": "Terrageddon",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
     {
       "opponentUsername": "Paul_Scott",
       "opponentDisplayName": "Paul_Scott",
@@ -76,34 +156,24 @@
       ]
     },
     {
-      "opponentUsername": "mattmanw2",
-      "opponentDisplayName": "mattmanw2",
-      "matchesPlayed": 2,
-      "matchWins": 2,
+      "opponentUsername": "Gaunology",
+      "opponentDisplayName": "Gaunology",
+      "matchesPlayed": 1,
+      "matchWins": 1,
       "matchLosses": 0,
       "matchDraws": 0,
       "matchWinPercentage": 1,
-      "gameWins": 4,
+      "gameWins": 2,
       "gameLosses": 0,
       "gameDraws": 0,
       "gameWinPercentage": 1,
       "matches": [
         {
-          "tournamentId": "406432",
-          "dateDisplay": "February 19, 2026",
+          "tournamentId": "410832",
+          "dateDisplay": "March 5, 2026",
           "result": "W",
           "playerDeck": "Goblins",
-          "opponentDeck": "Pit Rack",
-          "playerGameWins": 2,
-          "opponentGameWins": 0,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "402789",
-          "dateDisplay": "February 5, 2026",
-          "result": "W",
-          "playerDeck": "Goblins",
-          "opponentDeck": "Mono Black Aggro",
+          "opponentDeck": "Terraclysm",
           "playerGameWins": 2,
           "opponentGameWins": 0,
           "gameDraws": 0
@@ -336,31 +406,6 @@
       ]
     },
     {
-      "opponentUsername": "remixmtg",
-      "opponentDisplayName": "Jeremy Siegel",
-      "matchesPlayed": 1,
-      "matchWins": 1,
-      "matchLosses": 0,
-      "matchDraws": 0,
-      "matchWinPercentage": 1,
-      "gameWins": 2,
-      "gameLosses": 1,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.6666666666666666,
-      "matches": [
-        {
-          "tournamentId": "398837",
-          "dateDisplay": "January 22, 2026",
-          "result": "W",
-          "playerDeck": "Goblins",
-          "opponentDeck": "Terrageddon",
-          "playerGameWins": 2,
-          "opponentGameWins": 1,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
       "opponentUsername": "Jballin4",
       "opponentDisplayName": "Jballin4",
       "matchesPlayed": 1,
@@ -387,6 +432,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "410832",
+      "dateDisplay": "March 5, 2026",
+      "playerCount": 21,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 9,
+      "points": 6,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWinPercentage": 0.625,
+      "deck": "Goblins"
+    },
     {
       "tournamentId": "408436",
       "dateDisplay": "February 26, 2026",

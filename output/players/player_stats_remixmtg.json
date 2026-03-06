@@ -2,25 +2,25 @@
   "username": "remixmtg",
   "displayName": "Jeremy Siegel",
   "overallStats": {
-    "totalTournaments": 8,
-    "totalPoints": 46,
-    "totalMatches": 24,
-    "matchRecord": "15-8-1",
-    "matchWinPercentage": 0.6458333333333334,
-    "gameRecord": "33-21-3",
-    "gameWinPercentage": 0.5789473684210527,
+    "totalTournaments": 9,
+    "totalPoints": 49,
+    "totalMatches": 27,
+    "matchRecord": "16-10-1",
+    "matchWinPercentage": 0.6111111111111112,
+    "gameRecord": "36-26-3",
+    "gameWinPercentage": 0.5538461538461539,
     "trophies": 2,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q1 2026",
-      "events": 4,
-      "points": 27,
-      "matchRecord": "9-3-0",
-      "matchWinPercentage": 0.75,
-      "gameRecord": "19-9-0",
-      "gameWinPercentage": 0.6785714285714286
+      "events": 5,
+      "points": 30,
+      "matchRecord": "10-5-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameRecord": "22-14-0",
+      "gameWinPercentage": 0.6111111111111112
     },
     {
       "leagueName": "Q4 2025",
@@ -35,16 +35,16 @@
   "deckStats": [
     {
       "deckName": "Terrageddon",
-      "events": 4,
-      "matchWins": 8,
-      "matchLosses": 4,
+      "events": 5,
+      "matchWins": 9,
+      "matchLosses": 6,
       "matchDraws": 0,
-      "matchRecord": "8-4-0",
-      "matchWinPercentage": 0.6666666666666666,
-      "gameWins": 22,
-      "gameLosses": 10,
+      "matchRecord": "9-6-0",
+      "matchWinPercentage": 0.6,
+      "gameWins": 25,
+      "gameLosses": 15,
       "gameDraws": 0,
-      "gameWinPercentage": 0.6875,
+      "gameWinPercentage": 0.625,
       "trophies": 1
     },
     {
@@ -91,6 +91,76 @@
     }
   ],
   "headToHead": [
+    {
+      "opponentUsername": "minimiz",
+      "opponentDisplayName": "Eli Mizock",
+      "matchesPlayed": 2,
+      "matchWins": 0,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 2,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "matches": [
+        {
+          "tournamentId": "410832",
+          "dateDisplay": "March 5, 2026",
+          "result": "L",
+          "playerDeck": "Terrageddon",
+          "opponentDeck": "Goblins",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "398837",
+          "dateDisplay": "January 22, 2026",
+          "result": "L",
+          "playerDeck": "Terrageddon",
+          "opponentDeck": "Goblins",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "JUDDERMANG",
+      "opponentDisplayName": "Chris Cruz",
+      "matchesPlayed": 2,
+      "matchWins": 2,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 4,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.8,
+      "matches": [
+        {
+          "tournamentId": "410832",
+          "dateDisplay": "March 5, 2026",
+          "result": "W",
+          "playerDeck": "Terrageddon",
+          "opponentDeck": "StifleNought",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "406432",
+          "dateDisplay": "February 19, 2026",
+          "result": "W",
+          "playerDeck": "Elves",
+          "opponentDeck": "Dreadnought",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
     {
       "opponentUsername": "swbmtg",
       "opponentDisplayName": "swb",
@@ -197,6 +267,31 @@
       ]
     },
     {
+      "opponentUsername": "LuisNeiman",
+      "opponentDisplayName": "LuisNeiman",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "matches": [
+        {
+          "tournamentId": "410832",
+          "dateDisplay": "March 5, 2026",
+          "result": "L",
+          "playerDeck": "Terrageddon",
+          "opponentDeck": "UZI",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "DaveKaplan",
       "opponentDisplayName": "Dave Kaplan",
       "matchesPlayed": 1,
@@ -265,31 +360,6 @@
           "result": "W",
           "playerDeck": "Terrageddon",
           "opponentDeck": "Burn",
-          "playerGameWins": 2,
-          "opponentGameWins": 0,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "JUDDERMANG",
-      "opponentDisplayName": "Chris Cruz",
-      "matchesPlayed": 1,
-      "matchWins": 1,
-      "matchLosses": 0,
-      "matchDraws": 0,
-      "matchWinPercentage": 1,
-      "gameWins": 2,
-      "gameLosses": 0,
-      "gameDraws": 0,
-      "gameWinPercentage": 1,
-      "matches": [
-        {
-          "tournamentId": "406432",
-          "dateDisplay": "February 19, 2026",
-          "result": "W",
-          "playerDeck": "Elves",
-          "opponentDeck": "Dreadnought",
           "playerGameWins": 2,
           "opponentGameWins": 0,
           "gameDraws": 0
@@ -391,31 +461,6 @@
           "playerDeck": "Terrageddon",
           "opponentDeck": "Terrageddon",
           "playerGameWins": 0,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "minimiz",
-      "opponentDisplayName": "Eli Mizock",
-      "matchesPlayed": 1,
-      "matchWins": 0,
-      "matchLosses": 1,
-      "matchDraws": 0,
-      "matchWinPercentage": 0,
-      "gameWins": 1,
-      "gameLosses": 2,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.3333333333333333,
-      "matches": [
-        {
-          "tournamentId": "398837",
-          "dateDisplay": "January 22, 2026",
-          "result": "L",
-          "playerDeck": "Terrageddon",
-          "opponentDeck": "Goblins",
-          "playerGameWins": 1,
           "opponentGameWins": 2,
           "gameDraws": 0
         }
@@ -623,6 +668,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "410832",
+      "dateDisplay": "March 5, 2026",
+      "playerCount": 21,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 16,
+      "points": 3,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWinPercentage": 0.375,
+      "deck": "Terrageddon"
+    },
     {
       "tournamentId": "408436",
       "dateDisplay": "February 26, 2026",
