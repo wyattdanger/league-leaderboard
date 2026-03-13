@@ -25,7 +25,7 @@
   ],
   "deckStats": [
     {
-      "deckName": "Unknown",
+      "deckName": "Reanimator",
       "events": 1,
       "matchWins": 1,
       "matchLosses": 2,
@@ -57,7 +57,7 @@
           "tournamentId": "413370",
           "dateDisplay": "March 12, 2026",
           "result": "L",
-          "playerDeck": "_",
+          "playerDeck": "Reanimator",
           "opponentDeck": "Dreadnought",
           "playerGameWins": 1,
           "opponentGameWins": 2,
@@ -82,8 +82,8 @@
           "tournamentId": "413370",
           "dateDisplay": "March 12, 2026",
           "result": "L",
-          "playerDeck": "_",
-          "opponentDeck": "_",
+          "playerDeck": "Reanimator",
+          "opponentDeck": "Contamination",
           "playerGameWins": 1,
           "opponentGameWins": 2,
           "gameDraws": 0
@@ -107,8 +107,8 @@
           "tournamentId": "413370",
           "dateDisplay": "March 12, 2026",
           "result": "W",
-          "playerDeck": "_",
-          "opponentDeck": "Reanimator",
+          "playerDeck": "Reanimator",
+          "opponentDeck": "PandeBurst",
           "playerGameWins": 2,
           "opponentGameWins": 0,
           "gameDraws": 0
@@ -128,7 +128,7 @@
       "matchRecord": "1-2-0",
       "matchWinPercentage": 0.3333333333333333,
       "gameWinPercentage": 0.5,
-      "deck": "_"
+      "deck": "Reanimator"
     }
   ]
 }
