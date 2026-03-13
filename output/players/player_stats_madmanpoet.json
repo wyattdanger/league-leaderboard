@@ -2,25 +2,25 @@
   "username": "madmanpoet",
   "displayName": "Michael Flores",
   "overallStats": {
-    "totalTournaments": 33,
-    "totalPoints": 206,
-    "totalMatches": 99,
-    "matchRecord": "68-29-2",
-    "matchWinPercentage": 0.696969696969697,
-    "gameRecord": "151-79-0",
-    "gameWinPercentage": 0.6565217391304348,
+    "totalTournaments": 34,
+    "totalPoints": 209,
+    "totalMatches": 102,
+    "matchRecord": "69-31-2",
+    "matchWinPercentage": 0.6862745098039216,
+    "gameRecord": "154-83-0",
+    "gameWinPercentage": 0.6497890295358649,
     "trophies": 8,
     "belts": 1
   },
   "leagueStats": [
     {
       "leagueName": "Q1 2026",
-      "events": 7,
-      "points": 46,
-      "matchRecord": "15-5-1",
-      "matchWinPercentage": 0.7380952380952381,
-      "gameRecord": "33-17-0",
-      "gameWinPercentage": 0.66
+      "events": 8,
+      "points": 49,
+      "matchRecord": "16-7-1",
+      "matchWinPercentage": 0.6875,
+      "gameRecord": "36-21-0",
+      "gameWinPercentage": 0.631578947368421
     },
     {
       "leagueName": "Q4 2025",
@@ -80,16 +80,16 @@
   "deckStats": [
     {
       "deckName": "Burn",
-      "events": 7,
-      "matchWins": 15,
-      "matchLosses": 6,
+      "events": 8,
+      "matchWins": 16,
+      "matchLosses": 8,
       "matchDraws": 0,
-      "matchRecord": "15-6-0",
-      "matchWinPercentage": 0.7142857142857143,
-      "gameWins": 36,
-      "gameLosses": 20,
+      "matchRecord": "16-8-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 39,
+      "gameLosses": 25,
       "gameDraws": 0,
-      "gameWinPercentage": 0.6428571428571429,
+      "gameWinPercentage": 0.609375,
       "trophies": 2
     },
     {
@@ -412,6 +412,91 @@
       ]
     },
     {
+      "opponentUsername": "itsCama",
+      "opponentDisplayName": "Yosef Harari",
+      "matchesPlayed": 7,
+      "matchWins": 5,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.7142857142857143,
+      "gameWins": 11,
+      "gameLosses": 5,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6875,
+      "matches": [
+        {
+          "tournamentId": "413370",
+          "dateDisplay": "March 12, 2026",
+          "result": "L",
+          "playerDeck": "Burn",
+          "opponentDeck": "UW Control",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "408436",
+          "dateDisplay": "February 26, 2026",
+          "result": "L",
+          "playerDeck": "The Rock",
+          "opponentDeck": "UW Control",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "400729",
+          "dateDisplay": "January 29, 2026",
+          "result": "W",
+          "playerDeck": "UW Landstill",
+          "opponentDeck": "Tinker Welder",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "367531",
+          "dateDisplay": "September 25, 2025",
+          "result": "W",
+          "playerDeck": "Dreadnought",
+          "opponentDeck": "_",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "335531",
+          "dateDisplay": "July 3, 2025",
+          "result": "W",
+          "playerDeck": "Stompy",
+          "opponentDeck": "_",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "316750",
+          "dateDisplay": "May 29, 2025",
+          "result": "W",
+          "playerDeck": "Stasis",
+          "opponentDeck": "_",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "308700",
+          "dateDisplay": "May 15, 2025",
+          "result": "W",
+          "playerDeck": "Burn",
+          "opponentDeck": "_",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "JUDDERMANG",
       "opponentDisplayName": "Chris Cruz",
       "matchesPlayed": 7,
@@ -490,81 +575,6 @@
           "result": "W",
           "playerDeck": "Burn",
           "opponentDeck": "Burn",
-          "playerGameWins": 2,
-          "opponentGameWins": 1,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "itsCama",
-      "opponentDisplayName": "Yosef Harari",
-      "matchesPlayed": 6,
-      "matchWins": 5,
-      "matchLosses": 1,
-      "matchDraws": 0,
-      "matchWinPercentage": 0.8333333333333334,
-      "gameWins": 10,
-      "gameLosses": 3,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.7692307692307693,
-      "matches": [
-        {
-          "tournamentId": "408436",
-          "dateDisplay": "February 26, 2026",
-          "result": "L",
-          "playerDeck": "The Rock",
-          "opponentDeck": "UW Control",
-          "playerGameWins": 0,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "400729",
-          "dateDisplay": "January 29, 2026",
-          "result": "W",
-          "playerDeck": "UW Landstill",
-          "opponentDeck": "Tinker Welder",
-          "playerGameWins": 2,
-          "opponentGameWins": 0,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "367531",
-          "dateDisplay": "September 25, 2025",
-          "result": "W",
-          "playerDeck": "Dreadnought",
-          "opponentDeck": "_",
-          "playerGameWins": 2,
-          "opponentGameWins": 0,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "335531",
-          "dateDisplay": "July 3, 2025",
-          "result": "W",
-          "playerDeck": "Stompy",
-          "opponentDeck": "_",
-          "playerGameWins": 2,
-          "opponentGameWins": 0,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "316750",
-          "dateDisplay": "May 29, 2025",
-          "result": "W",
-          "playerDeck": "Stasis",
-          "opponentDeck": "_",
-          "playerGameWins": 2,
-          "opponentGameWins": 0,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "308700",
-          "dateDisplay": "May 15, 2025",
-          "result": "W",
-          "playerDeck": "Burn",
-          "opponentDeck": "_",
           "playerGameWins": 2,
           "opponentGameWins": 1,
           "gameDraws": 0
@@ -1277,6 +1287,31 @@
       ]
     },
     {
+      "opponentUsername": "ByerBeware",
+      "opponentDisplayName": "ByerBeware",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "matches": [
+        {
+          "tournamentId": "413370",
+          "dateDisplay": "March 12, 2026",
+          "result": "L",
+          "playerDeck": "Burn",
+          "opponentDeck": "Reanimator",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "PCavalcanti",
       "opponentDisplayName": "PCavalcanti",
       "matchesPlayed": 1,
@@ -1853,6 +1888,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "413370",
+      "dateDisplay": "March 12, 2026",
+      "playerCount": 17,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 15,
+      "points": 3,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWinPercentage": 0.4285714,
+      "deck": "Burn"
+    },
     {
       "tournamentId": "410832",
       "dateDisplay": "March 5, 2026",

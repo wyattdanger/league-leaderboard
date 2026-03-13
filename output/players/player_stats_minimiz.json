@@ -2,40 +2,40 @@
   "username": "minimiz",
   "displayName": "Eli Mizock",
   "overallStats": {
-    "totalTournaments": 6,
-    "totalPoints": 33,
-    "totalMatches": 18,
-    "matchRecord": "11-7-0",
-    "matchWinPercentage": 0.6111111111111112,
-    "gameRecord": "28-20-0",
-    "gameWinPercentage": 0.5833333333333334,
+    "totalTournaments": 7,
+    "totalPoints": 39,
+    "totalMatches": 21,
+    "matchRecord": "13-8-0",
+    "matchWinPercentage": 0.6190476190476191,
+    "gameRecord": "33-22-0",
+    "gameWinPercentage": 0.6,
     "trophies": 1,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q1 2026",
-      "events": 6,
-      "points": 33,
-      "matchRecord": "11-7-0",
-      "matchWinPercentage": 0.6111111111111112,
-      "gameRecord": "28-20-0",
-      "gameWinPercentage": 0.5833333333333334
+      "events": 7,
+      "points": 39,
+      "matchRecord": "13-8-0",
+      "matchWinPercentage": 0.6190476190476191,
+      "gameRecord": "33-22-0",
+      "gameWinPercentage": 0.6
     }
   ],
   "deckStats": [
     {
       "deckName": "Goblins",
-      "events": 6,
-      "matchWins": 11,
-      "matchLosses": 7,
+      "events": 7,
+      "matchWins": 13,
+      "matchLosses": 8,
       "matchDraws": 0,
-      "matchRecord": "11-7-0",
-      "matchWinPercentage": 0.6111111111111112,
-      "gameWins": 29,
-      "gameLosses": 19,
+      "matchRecord": "13-8-0",
+      "matchWinPercentage": 0.6190476190476191,
+      "gameWins": 35,
+      "gameLosses": 21,
       "gameDraws": 0,
-      "gameWinPercentage": 0.6041666666666666,
+      "gameWinPercentage": 0.625,
       "trophies": 1
     }
   ],
@@ -151,6 +151,81 @@
           "opponentDeck": "Burn",
           "playerGameWins": 1,
           "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "leyawn",
+      "opponentDisplayName": "Leon Chang",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "matches": [
+        {
+          "tournamentId": "413370",
+          "dateDisplay": "March 12, 2026",
+          "result": "W",
+          "playerDeck": "Goblins",
+          "opponentDeck": "UZI",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "Gallo0",
+      "opponentDisplayName": "Gallo0",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "matches": [
+        {
+          "tournamentId": "413370",
+          "dateDisplay": "March 12, 2026",
+          "result": "L",
+          "playerDeck": "Goblins",
+          "opponentDeck": "Landstill",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "Taylorhol",
+      "opponentDisplayName": "Taylorhol",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "matches": [
+        {
+          "tournamentId": "413370",
+          "dateDisplay": "March 12, 2026",
+          "result": "W",
+          "playerDeck": "Goblins",
+          "opponentDeck": "Aluren",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
           "gameDraws": 0
         }
       ]
@@ -432,6 +507,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "413370",
+      "dateDisplay": "March 12, 2026",
+      "playerCount": 17,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 5,
+      "points": 6,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWinPercentage": 0.7142857,
+      "deck": "Goblins"
+    },
     {
       "tournamentId": "410832",
       "dateDisplay": "March 5, 2026",

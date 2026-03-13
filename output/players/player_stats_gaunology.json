@@ -2,25 +2,25 @@
   "username": "Gaunology",
   "displayName": "Gaunology",
   "overallStats": {
-    "totalTournaments": 6,
-    "totalPoints": 23,
-    "totalMatches": 18,
-    "matchRecord": "7-9-2",
-    "matchWinPercentage": 0.4444444444444444,
-    "gameRecord": "18-22-0",
-    "gameWinPercentage": 0.45,
+    "totalTournaments": 7,
+    "totalPoints": 27,
+    "totalMatches": 21,
+    "matchRecord": "8-10-3",
+    "matchWinPercentage": 0.4523809523809524,
+    "gameRecord": "21-25-1",
+    "gameWinPercentage": 0.44680851063829785,
     "trophies": 1,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q1 2026",
-      "events": 5,
-      "points": 16,
-      "matchRecord": "5-9-1",
-      "matchWinPercentage": 0.36666666666666664,
-      "gameRecord": "13-21-0",
-      "gameWinPercentage": 0.38235294117647056
+      "events": 6,
+      "points": 20,
+      "matchRecord": "6-10-2",
+      "matchWinPercentage": 0.3888888888888889,
+      "gameRecord": "16-24-1",
+      "gameWinPercentage": 0.4024390243902439
     },
     {
       "leagueName": "Q4 2025",
@@ -60,6 +60,20 @@
       "gameDraws": 0,
       "gameWinPercentage": 0.625,
       "trophies": 1
+    },
+    {
+      "deckName": "Stasis",
+      "events": 1,
+      "matchWins": 1,
+      "matchLosses": 1,
+      "matchDraws": 1,
+      "matchRecord": "1-1-1",
+      "matchWinPercentage": 0.5,
+      "gameWins": 4,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5,
+      "trophies": 0
     },
     {
       "deckName": "Terraclysm",
@@ -166,6 +180,81 @@
           "playerDeck": "UB Dream Halls",
           "opponentDeck": "Dreadnought",
           "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "twoexplores",
+      "opponentDisplayName": "Sunny Seelamsetty",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "matches": [
+        {
+          "tournamentId": "413370",
+          "dateDisplay": "March 12, 2026",
+          "result": "W",
+          "playerDeck": "Stasis",
+          "opponentDeck": "Balancing Tings",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "swbmtg",
+      "opponentDisplayName": "swb",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 0,
+      "matchDraws": 1,
+      "matchWinPercentage": 0.5,
+      "gameWins": 1,
+      "gameLosses": 1,
+      "gameDraws": 1,
+      "gameWinPercentage": 0.3333333333333333,
+      "matches": [
+        {
+          "tournamentId": "413370",
+          "dateDisplay": "March 12, 2026",
+          "result": "D",
+          "playerDeck": "Stasis",
+          "opponentDeck": "Angry Hermit",
+          "playerGameWins": 1,
+          "opponentGameWins": 1,
+          "gameDraws": 1
+        }
+      ]
+    },
+    {
+      "opponentUsername": "leyawn",
+      "opponentDisplayName": "Leon Chang",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "matches": [
+        {
+          "tournamentId": "413370",
+          "dateDisplay": "March 12, 2026",
+          "result": "L",
+          "playerDeck": "Stasis",
+          "opponentDeck": "UZI",
+          "playerGameWins": 0,
           "opponentGameWins": 2,
           "gameDraws": 0
         }
@@ -473,6 +562,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "413370",
+      "dateDisplay": "March 12, 2026",
+      "playerCount": 17,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 10,
+      "points": 4,
+      "matchRecord": "1-1-1",
+      "matchWinPercentage": 0.5,
+      "gameWinPercentage": 0.4761905,
+      "deck": "Stasis"
+    },
     {
       "tournamentId": "410832",
       "dateDisplay": "March 5, 2026",
