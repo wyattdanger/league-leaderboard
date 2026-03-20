@@ -86,14 +86,15 @@ function generateEventPageMetadata(tournamentId: string): void {
 
   if (isTop8 && leagueName) {
     // Special description for Top 8 tournaments - highlight the champion
-    const champion = topFinishers.find(
-      (s) => s.matchWins === 3 && s.matchLosses === 0 && s.matchDraws === 0
-    );
+    // Champion is the winner of the Finals match (Round 3, first match)
+    const finalsRound = tournament.rounds.find((r) => r.number === 3);
+    const finalsMatch = finalsRound?.matches[0];
+    const champion = finalsMatch?.winner;
 
     if (champion) {
-      const championDeck = getDeckName(champion.player.username, deckData);
+      const championDeck = getDeckName(champion.username, deckData);
       const deckText = championDeck ? ` playing ${championDeck}` : '';
-      descriptionText = `${champion.player.displayName} won the ${leagueName} Top 8${deckText} 👑`;
+      descriptionText = `${champion.displayName} won the ${leagueName} Top 8${deckText} 👑`;
     } else {
       descriptionText = `${leagueName} Top 8 playoff tournament.`;
     }
