@@ -2,13 +2,11 @@
 import PageLayout from '../../components/PageLayout.astro';
 import LeagueHeader from '../../components/LeagueHeader.astro';
 import LeagueNav from '../../components/LeagueNav.astro';
-import MetagameBreakdown from '../../components/MetagameBreakdown.astro';
 import Tooltip from '../../components/Tooltip.astro';
 import PlayoffBracket from '../../components/PlayoffBracket.astro';
 import { getTournamentMetadata } from '../../utils/tournamentData';
 import {
   loadDeckData,
-  calculateMetagameBreakdown,
   hasSomeDeckData,
 } from '../../utils/deckData';
 import { loadLeaguesConfig } from '../../utils/data';
@@ -112,8 +110,6 @@ const playerCount = deckData ? Object.keys(deckData).length : 0;
 const unknownDeckCount = deckData
   ? Object.values(deckData).filter((deck) => !deck || deck === '_' || deck === 'null').length
   : 0;
-const showMetagameBreakdown = showDeckData && playerCount >= 16 && unknownDeckCount <= 1;
-const metagameBreakdown = showMetagameBreakdown && deckData ? calculateMetagameBreakdown(deckData) : null;
 
 // Get celebration data from tournament
 const celebrationWinners = tournament.celebrationWinners;
@@ -222,7 +218,6 @@ if (fs.existsSync(metadataFile)) {
         <>
           {/* Top 8 Tournament - Show Bracket */}
           <PlayoffBracket rounds={tournament.rounds} deckData={deckData} showDeckData={showDeckData} playerSeeds={playerSeeds} />
-          {metagameBreakdown && <MetagameBreakdown breakdown={metagameBreakdown} />}
         </>
       ) : (
         <>
@@ -237,10 +232,6 @@ if (fs.existsSync(metadataFile)) {
                     <th class="player-col">Player</th>
                     {showDeckData && <th class="deck-col">Deck</th>}
                     <th class="record-col">Record</th>
-                    <th class="mwp-col">MWP</th>
-                    <th class="gwp-col">GWP</th>
-                    <th class="omw-col">OMW</th>
-                    <th class="points-col">Pts</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -265,16 +256,6 @@ if (fs.existsSync(metadataFile)) {
                             </td>
                           )}
                           <td class="record-col">{standing.matchRecord}</td>
-                          <td class={`mwp-col ${standing.matchWinPercentageClass}`}>
-                            {standing.matchWinPercentageDisplay}%
-                          </td>
-                          <td class={`gwp-col ${standing.gameWinPercentageClass}`}>
-                            {standing.gameWinPercentageDisplay}%
-                          </td>
-                          <td class={`omw-col ${standing.opponentMatchWinPercentageClass}`}>
-                            {standing.opponentMatchWinPercentageDisplay}%
-                          </td>
-                          <td class="points-col">{standing.points}</td>
                         </tr>
                       );
                     })
@@ -283,8 +264,6 @@ if (fs.existsSync(metadataFile)) {
               </table>
             </div>
           </div>
-
-          {metagameBreakdown && <MetagameBreakdown breakdown={metagameBreakdown} />}
 
           {tournament.rounds.map((round) => (
             <div class="round-card" key={round.number}>
@@ -617,13 +596,13 @@ if (fs.existsSync(metadataFile)) {
   }
 
   .rank-col {
-    width: 80px;
+    width: 100px;
     text-align: center;
   }
 
   .rank-number {
     font-weight: 700;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     color: #333;
   }
 
@@ -635,11 +614,11 @@ if (fs.existsSync(metadataFile)) {
   .player-display-name {
     color: #1f2937;
     font-weight: 600;
-    font-size: 1rem;
+    font-size: 1.05rem;
   }
 
   .deck-col {
-    min-width: 150px;
+    min-width: 180px;
     text-align: left;
   }
 
@@ -650,54 +629,14 @@ if (fs.existsSync(metadataFile)) {
   }
 
   .record-col {
-    width: 120px;
+    width: 140px;
     text-align: left;
   }
 
   td.record-col {
     font-family: 'Monaco', 'Courier New', monospace;
-    font-size: 0.95rem;
-    color: #666;
-  }
-
-  .mwp-col,
-  .gwp-col,
-  .omw-col {
-    width: 90px;
-    text-align: center;
-  }
-
-  td.mwp-col,
-  td.gwp-col,
-  td.omw-col {
-    font-weight: 700;
     font-size: 1rem;
-  }
-
-  .wp-high {
-    color: #16a34a;
-  }
-
-  .wp-medium {
-    color: #f59e0b;
-  }
-
-  .wp-low {
-    color: #dc2626;
-  }
-
-  .omw-neutral {
-    color: #666;
-  }
-
-  .points-col {
-    width: 80px;
-    text-align: center;
-  }
-
-  td.points-col {
-    font-weight: 700;
-    font-size: 1rem;
+    font-weight: 600;
     color: #333;
   }
 

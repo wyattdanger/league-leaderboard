@@ -18,8 +18,8 @@ const { standings } = Astro.props;
     color: white;
     padding: 1.5rem 2rem;
     display: grid;
-    grid-template-columns: 60px 1fr 80px 100px 180px 180px 100px;
-    gap: 1rem;
+    grid-template-columns: 80px 1fr 120px 120px;
+    gap: 1.5rem;
     font-weight: 600;
     font-size: 0.9rem;
     border-top-left-radius: 16px;
@@ -33,8 +33,8 @@ const { standings } = Astro.props;
   .leaderboard-row {
     padding: 1.5rem 2rem;
     display: grid;
-    grid-template-columns: 60px 1fr 80px 100px 180px 180px 100px;
-    gap: 1rem;
+    grid-template-columns: 80px 1fr 120px 120px;
+    gap: 1.5rem;
     align-items: center;
     border-bottom: 1px solid #e0e0e0;
     transition: background-color 0.2s ease;
@@ -245,33 +245,26 @@ const { standings } = Astro.props;
     -webkit-overflow-scrolling: touch;
   }
 
-  @media (max-width: 1024px) {
-    .leaderboard-header,
-    .leaderboard-row {
-      grid-template-columns: 50px 1fr 60px 80px 140px 140px 90px;
-      gap: 0.5rem;
-      padding: 1rem;
-    }
-  }
-
   @media (max-width: 640px) {
     .leaderboard-header,
     .leaderboard-row {
-      min-width: 800px;
+      grid-template-columns: 50px 1fr 80px 90px;
+      gap: 0.75rem;
+      padding: 1rem;
     }
 
-    .leaderboard-header > div {
-      white-space: nowrap;
+    .rank {
+      font-size: 1.2rem;
     }
 
-    .player-name,
-    .player-username {
-      white-space: nowrap;
+    .rank-1 {
+      font-size: 1.5rem;
     }
-
-    .stat,
-    .stat-value {
-      white-space: nowrap;
+    .rank-2 {
+      font-size: 1.4rem;
+    }
+    .rank-3 {
+      font-size: 1.3rem;
     }
   }
 </style>
@@ -284,10 +277,7 @@ const { standings } = Astro.props;
           <div class="leaderboard-header">
             <div>Rank</div>
             <div>Player</div>
-            <div>Events</div>
             <div>Points</div>
-            <div>Matches</div>
-            <div>Games</div>
             <div>
               <Tooltip content="3-0 finishes">Trophies</Tooltip>
             </div>
@@ -297,19 +287,6 @@ const { standings } = Astro.props;
             const isTopThree = standing.Rank < 4;
             const rankClass = isTopThree ? `rank-${standing.Rank}` : '';
             const isHidden = index >= 16;
-
-            // Calculate match win percentage with color treatment
-            const mwp = calculateMatchWinPercentage(standing);
-            const mwPercent = (mwp * 100).toFixed(1);
-            const isHighMWP = mwp > 0.59;
-            const isMediumMWP = mwp > 0.39;
-            const mwClass = isHighMWP ? 'wp-high' : isMediumMWP ? 'wp-medium' : 'wp-low';
-
-            // Calculate game win percentage with color treatment
-            const gwPercent = (standing.TeamGameWinPercentage * 100).toFixed(1);
-            const isHighGWP = standing.TeamGameWinPercentage > 0.59;
-            const isMediumGWP = standing.TeamGameWinPercentage > 0.39;
-            const gwClass = isHighGWP ? 'wp-high' : isMediumGWP ? 'wp-medium' : 'wp-low';
 
             const playerData = Player.fromStanding(standing);
             const playerSlug = usernameToSlug(playerData.username);
@@ -327,18 +304,7 @@ const { standings } = Astro.props;
                   <div class="player-username">@{playerData.username}</div>
                 </div>
                 <div class="stat">
-                  <div class="stat-value">{standing.TournamentCount || 0}</div>
-                </div>
-                <div class="stat">
                   <div class="points">{standing.Points}</div>
-                </div>
-                <div class="stat">
-                  <div class="record">{standing.MatchRecord}</div>
-                  <div class={`percent-label ${mwClass}`}>({mwPercent}%)</div>
-                </div>
-                <div class="stat">
-                  <div class="record">{standing.GameRecord}</div>
-                  <div class={`percent-label ${gwClass}`}>({gwPercent}%)</div>
                 </div>
                 <div class="stat">
                   <div
