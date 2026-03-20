@@ -1,5 +1,6 @@
 ---
-import InfoCallout from './InfoCallout.astro';
+import * as fs from 'fs';
+import * as path from 'path';
 import type { TournamentMetadata } from '../types';
 
 interface Props {
@@ -7,12 +8,151 @@ interface Props {
 }
 
 const { tournament } = Astro.props;
+
+// Load page metadata to get top finishers
+const metadataPath = path.join(
+  process.cwd(),
+  'output',
+  `tournament_${tournament.tournamentId}`,
+  'page_metadata.json'
+);
+
+let topFinishers: Array<{
+  username: string;
+  displayName: string;
+  record: string;
+  deck: string | null;
+}> = [];
+
+if (fs.existsSync(metadataPath)) {
+  const metadata = JSON.parse(fs.readFileSync(metadataPath, 'utf-8'));
+  topFinishers = (metadata.topFinishers || []).slice(0, 3); // Top 3 only
+}
 ---
 
-<InfoCallout
-  emoji="✨"
-  href={`/event/${tournament.tournamentId}`}
-  linkText="View Event →"
->
-  {`${tournament.playerCount} ${tournament.playerCount === 1 ? 'player' : 'players'} gathered on ${tournament.dateDisplay}`}
-</InfoCallout>
+<a href={`/event/${tournament.tournamentId}`} class="latest-event-card">
+  <div class="latest-event-header">
+    <span class="emoji">✨</span>
+    <span class="event-title">Latest Event — {tournament.playerCount} {tournament.playerCount === 1 ? 'player' : 'players'} on {tournament.dateDisplay}</span>
+    <span class="arrow">→</span>
+  </div>
+  <div class="event-details">
+    {topFinishers.length > 0 && (
+      <div class="top-finishers">
+        {topFinishers.map((finisher, index) => (
+          <div class="finisher">
+            <span class="rank">#{index + 1}</span>
+            <span class="name">{finisher.displayName}</span>
+            <span class="record">{finisher.record}</span>
+            {finisher.deck && <span class="deck">{finisher.deck}</span>}
+          </div>
+        ))}
+      </div>
+    )}
+  </div>
+</a>
+
+<style>
+  .latest-event-card {
+    display: block;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 32px;
+    color: white;
+    text-decoration: none;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .latest-event-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  .latest-event-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+
+  .emoji {
+    font-size: 1.5rem;
+  }
+
+  .event-title {
+    flex: 1;
+  }
+
+  .arrow {
+    font-size: 1.3rem;
+    opacity: 0.8;
+  }
+
+  .event-details {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .top-finishers {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 12px;
+  }
+
+  .finisher {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 0.95rem;
+  }
+
+  .rank {
+    font-weight: 700;
+    min-width: 32px;
+    opacity: 0.8;
+  }
+
+  .name {
+    font-weight: 600;
+    min-width: 140px;
+  }
+
+  .record {
+    font-family: 'Monaco', 'Courier New', monospace;
+    font-weight: 700;
+    min-width: 50px;
+  }
+
+  .deck {
+    opacity: 0.9;
+    font-style: italic;
+  }
+
+  @media (max-width: 768px) {
+    .latest-event-card {
+      padding: 20px;
+    }
+
+    .finisher {
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .name {
+      min-width: auto;
+    }
+
+    .deck {
+      flex-basis: 100%;
+      margin-left: 44px;
+    }
+  }
+</style>
