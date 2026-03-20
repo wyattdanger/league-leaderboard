@@ -261,7 +261,7 @@ export function calculateHeadToHeadRecords(
         gameWins: stats.gameWins,
         gameLosses: stats.gameLosses,
         gameDraws: stats.gameDraws,
-        gameWinPercentage: totalGames > 0 ? stats.gameWins / totalGames : 0,
+        gameWinPercentage: totalGames > 0 ? (stats.gameWins + 0.5 * stats.gameDraws) / totalGames : 0,
         matches: stats.matchDetails,
       };
     }
