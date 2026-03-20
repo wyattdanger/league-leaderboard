@@ -2,25 +2,25 @@
   "username": "remixmtg",
   "displayName": "Jeremy Siegel",
   "overallStats": {
-    "totalTournaments": 9,
-    "totalPoints": 49,
-    "totalMatches": 27,
-    "matchRecord": "16-10-1",
-    "matchWinPercentage": 0.6111111111111112,
-    "gameRecord": "36-26-3",
-    "gameWinPercentage": 0.5538461538461539,
+    "totalTournaments": 10,
+    "totalPoints": 52,
+    "totalMatches": 30,
+    "matchRecord": "17-12-1",
+    "matchWinPercentage": 0.5833333333333334,
+    "gameRecord": "38-30-3",
+    "gameWinPercentage": 0.5352112676056338,
     "trophies": 2,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q1 2026",
-      "events": 5,
-      "points": 30,
-      "matchRecord": "10-5-0",
-      "matchWinPercentage": 0.6666666666666666,
-      "gameRecord": "22-14-0",
-      "gameWinPercentage": 0.6111111111111112
+      "events": 6,
+      "points": 33,
+      "matchRecord": "11-7-0",
+      "matchWinPercentage": 0.6111111111111112,
+      "gameRecord": "24-18-0",
+      "gameWinPercentage": 0.5714285714285714
     },
     {
       "leagueName": "Q4 2025",
@@ -76,6 +76,20 @@
       "trophies": 0
     },
     {
+      "deckName": "RecSur NO Bombardment",
+      "events": 1,
+      "matchWins": 1,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 3,
+      "gameLosses": 5,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.375,
+      "trophies": 0
+    },
+    {
       "deckName": "Unknown",
       "events": 1,
       "matchWins": 1,
@@ -91,6 +105,41 @@
     }
   ],
   "headToHead": [
+    {
+      "opponentUsername": "Matt_W",
+      "opponentDisplayName": "Matt_W",
+      "matchesPlayed": 2,
+      "matchWins": 1,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.5,
+      "gameWins": 2,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5,
+      "matches": [
+        {
+          "tournamentId": "415118",
+          "dateDisplay": "March 19, 2026",
+          "result": "L",
+          "playerDeck": "RecSur NO Bombardment",
+          "opponentDeck": "Devourer",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "384681",
+          "dateDisplay": "November 20, 2025",
+          "result": "W",
+          "playerDeck": "_",
+          "opponentDeck": "Devourer",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
     {
       "opponentUsername": "minimiz",
       "opponentDisplayName": "Eli Mizock",
@@ -262,6 +311,56 @@
           "opponentDeck": "Burn",
           "playerGameWins": 2,
           "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "weidnent",
+      "opponentDisplayName": "weidnent",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "matches": [
+        {
+          "tournamentId": "415118",
+          "dateDisplay": "March 19, 2026",
+          "result": "W",
+          "playerDeck": "RecSur NO Bombardment",
+          "opponentDeck": "GW Mad Dogs",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "ByerBeware",
+      "opponentDisplayName": "ByerBeware",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "matches": [
+        {
+          "tournamentId": "415118",
+          "dateDisplay": "March 19, 2026",
+          "result": "L",
+          "playerDeck": "RecSur NO Bombardment",
+          "opponentDeck": "PandeBurst",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
           "gameDraws": 0
         }
       ]
@@ -592,31 +691,6 @@
       ]
     },
     {
-      "opponentUsername": "Matt_W",
-      "opponentDisplayName": "Matt_W",
-      "matchesPlayed": 1,
-      "matchWins": 1,
-      "matchLosses": 0,
-      "matchDraws": 0,
-      "matchWinPercentage": 1,
-      "gameWins": 2,
-      "gameLosses": 0,
-      "gameDraws": 0,
-      "gameWinPercentage": 1,
-      "matches": [
-        {
-          "tournamentId": "384681",
-          "dateDisplay": "November 20, 2025",
-          "result": "W",
-          "playerDeck": "_",
-          "opponentDeck": "Devourer",
-          "playerGameWins": 2,
-          "opponentGameWins": 0,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
       "opponentUsername": "SF45",
       "opponentDisplayName": "SF45",
       "matchesPlayed": 1,
@@ -668,6 +742,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "415118",
+      "dateDisplay": "March 19, 2026",
+      "playerCount": 18,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 12,
+      "points": 3,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWinPercentage": 0.3333333,
+      "deck": "RecSur NO Bombardment"
+    },
     {
       "tournamentId": "410832",
       "dateDisplay": "March 5, 2026",

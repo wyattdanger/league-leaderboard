@@ -2,17 +2,26 @@
   "username": "PetS22",
   "displayName": "PetS22",
   "overallStats": {
-    "totalTournaments": 2,
-    "totalPoints": 0,
-    "totalMatches": 6,
-    "matchRecord": "0-6-0",
-    "matchWinPercentage": 0,
-    "gameRecord": "3-11-0",
-    "gameWinPercentage": 0.21428571428571427,
+    "totalTournaments": 3,
+    "totalPoints": 3,
+    "totalMatches": 9,
+    "matchRecord": "1-8-0",
+    "matchWinPercentage": 0.1111111111111111,
+    "gameRecord": "5-15-0",
+    "gameWinPercentage": 0.25,
     "trophies": 0,
     "belts": 0
   },
   "leagueStats": [
+    {
+      "leagueName": "Q1 2026",
+      "events": 1,
+      "points": 3,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameRecord": "2-4-0",
+      "gameWinPercentage": 0.3333333333333333
+    },
     {
       "leagueName": "Q4 2025",
       "events": 2,
@@ -37,9 +46,98 @@
       "gameDraws": 0,
       "gameWinPercentage": 0.375,
       "trophies": 0
+    },
+    {
+      "deckName": "Mono Black Aggro",
+      "events": 1,
+      "matchWins": 1,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 3,
+      "gameLosses": 5,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.375,
+      "trophies": 0
     }
   ],
   "headToHead": [
+    {
+      "opponentUsername": "StevenRiseNYC",
+      "opponentDisplayName": "StevenRiseNYC",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "matches": [
+        {
+          "tournamentId": "415118",
+          "dateDisplay": "March 19, 2026",
+          "result": "L",
+          "playerDeck": "Mono Black Aggro",
+          "opponentDeck": "Moneyball Black",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "PCavalcanti",
+      "opponentDisplayName": "PCavalcanti",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "matches": [
+        {
+          "tournamentId": "415118",
+          "dateDisplay": "March 19, 2026",
+          "result": "L",
+          "playerDeck": "Mono Black Aggro",
+          "opponentDeck": "Burn",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "SF45",
+      "opponentDisplayName": "SF45",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "matches": [
+        {
+          "tournamentId": "415118",
+          "dateDisplay": "March 19, 2026",
+          "result": "W",
+          "playerDeck": "Mono Black Aggro",
+          "opponentDeck": "Tainted Pact Control",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
     {
       "opponentUsername": "Real_player_hidden",
       "opponentDisplayName": "Ryan Mitchell",
@@ -192,6 +290,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "415118",
+      "dateDisplay": "March 19, 2026",
+      "playerCount": 18,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 15,
+      "points": 3,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWinPercentage": 0.3333333,
+      "deck": "Mono Black Aggro"
+    },
     {
       "tournamentId": "391734",
       "dateDisplay": "December 18, 2025",
