@@ -2,44 +2,129 @@
   "username": "StevenRiseNYC",
   "displayName": "StevenRiseNYC",
   "overallStats": {
-    "totalTournaments": 1,
-    "totalPoints": 9,
-    "totalMatches": 3,
-    "matchRecord": "3-0-0",
-    "matchWinPercentage": 1,
-    "gameRecord": "6-2-0",
-    "gameWinPercentage": 0.75,
+    "totalTournaments": 2,
+    "totalPoints": 12,
+    "totalMatches": 6,
+    "matchRecord": "4-2-0",
+    "matchWinPercentage": 0.6666666666666666,
+    "gameRecord": "8-7-0",
+    "gameWinPercentage": 0.5333333333333333,
     "trophies": 1,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q1 2026",
-      "events": 1,
-      "points": 9,
-      "matchRecord": "3-0-0",
-      "matchWinPercentage": 1,
-      "gameRecord": "6-2-0",
-      "gameWinPercentage": 0.75
+      "events": 2,
+      "points": 12,
+      "matchRecord": "4-2-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameRecord": "8-7-0",
+      "gameWinPercentage": 0.5333333333333333
     }
   ],
   "deckStats": [
     {
       "deckName": "Moneyball Black",
-      "events": 1,
-      "matchWins": 3,
-      "matchLosses": 0,
+      "events": 2,
+      "matchWins": 4,
+      "matchLosses": 2,
       "matchDraws": 0,
-      "matchRecord": "3-0-0",
-      "matchWinPercentage": 1,
-      "gameWins": 6,
-      "gameLosses": 2,
+      "matchRecord": "4-2-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 9,
+      "gameLosses": 7,
       "gameDraws": 0,
-      "gameWinPercentage": 0.75,
+      "gameWinPercentage": 0.5625,
       "trophies": 1
     }
   ],
   "headToHead": [
+    {
+      "opponentUsername": "swbmtg",
+      "opponentDisplayName": "swb",
+      "matchesPlayed": 2,
+      "matchWins": 1,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.5,
+      "gameWins": 2,
+      "gameLosses": 3,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.4,
+      "matches": [
+        {
+          "tournamentId": "417122",
+          "dateDisplay": "March 26, 2026",
+          "result": "L",
+          "playerDeck": "Moneyball Black",
+          "opponentDeck": "Cradle Control",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "415118",
+          "dateDisplay": "March 19, 2026",
+          "result": "W",
+          "playerDeck": "Moneyball Black",
+          "opponentDeck": "Cradle Control",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "AndrewLevine",
+      "opponentDisplayName": "AndrewLevine",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6666666666666666,
+      "matches": [
+        {
+          "tournamentId": "417122",
+          "dateDisplay": "March 26, 2026",
+          "result": "W",
+          "playerDeck": "Moneyball Black",
+          "opponentDeck": "Cephalid Breakfast",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "maxshiau",
+      "opponentDisplayName": "maxshiau",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "matches": [
+        {
+          "tournamentId": "417122",
+          "dateDisplay": "March 26, 2026",
+          "result": "L",
+          "playerDeck": "Moneyball Black",
+          "opponentDeck": "Burn",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
     {
       "opponentUsername": "PetS22",
       "opponentDisplayName": "PetS22",
@@ -61,31 +146,6 @@
           "opponentDeck": "Mono Black Aggro",
           "playerGameWins": 2,
           "opponentGameWins": 0,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "swbmtg",
-      "opponentDisplayName": "swb",
-      "matchesPlayed": 1,
-      "matchWins": 1,
-      "matchLosses": 0,
-      "matchDraws": 0,
-      "matchWinPercentage": 1,
-      "gameWins": 2,
-      "gameLosses": 1,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.6666666666666666,
-      "matches": [
-        {
-          "tournamentId": "415118",
-          "dateDisplay": "March 19, 2026",
-          "result": "W",
-          "playerDeck": "Moneyball Black",
-          "opponentDeck": "Cradle Control",
-          "playerGameWins": 2,
-          "opponentGameWins": 1,
           "gameDraws": 0
         }
       ]
@@ -117,6 +177,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "417122",
+      "dateDisplay": "March 26, 2026",
+      "playerCount": 29,
+      "trophyCount": 4,
+      "roundCount": 3,
+      "rank": 18,
+      "points": 3,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWinPercentage": 0.3333333,
+      "deck": "Moneyball Black"
+    },
     {
       "tournamentId": "415118",
       "dateDisplay": "March 19, 2026",

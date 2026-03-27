@@ -2,25 +2,25 @@
   "username": "madmanpoet",
   "displayName": "Michael Flores",
   "overallStats": {
-    "totalTournaments": 34,
-    "totalPoints": 209,
-    "totalMatches": 102,
-    "matchRecord": "69-31-2",
-    "matchWinPercentage": 0.6862745098039216,
-    "gameRecord": "154-83-0",
-    "gameWinPercentage": 0.6497890295358649,
+    "totalTournaments": 35,
+    "totalPoints": 215,
+    "totalMatches": 105,
+    "matchRecord": "71-32-2",
+    "matchWinPercentage": 0.6857142857142857,
+    "gameRecord": "158-85-0",
+    "gameWinPercentage": 0.6502057613168725,
     "trophies": 8,
     "belts": 1
   },
   "leagueStats": [
     {
       "leagueName": "Q1 2026",
-      "events": 8,
-      "points": 49,
-      "matchRecord": "16-7-1",
-      "matchWinPercentage": 0.6875,
-      "gameRecord": "36-21-0",
-      "gameWinPercentage": 0.631578947368421
+      "events": 9,
+      "points": 55,
+      "matchRecord": "18-8-1",
+      "matchWinPercentage": 0.6851851851851852,
+      "gameRecord": "40-23-0",
+      "gameWinPercentage": 0.6349206349206349
     },
     {
       "leagueName": "Q4 2025",
@@ -217,6 +217,20 @@
       "gameDraws": 0,
       "gameWinPercentage": 0.875,
       "trophies": 1
+    },
+    {
+      "deckName": "Aluren",
+      "events": 1,
+      "matchWins": 2,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 5,
+      "gameLosses": 3,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.625,
+      "trophies": 0
     },
     {
       "deckName": "Psychatog",
@@ -1287,6 +1301,81 @@
       ]
     },
     {
+      "opponentUsername": "leyawn",
+      "opponentDisplayName": "Leon Chang",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "matches": [
+        {
+          "tournamentId": "417122",
+          "dateDisplay": "March 26, 2026",
+          "result": "W",
+          "playerDeck": "Aluren",
+          "opponentDeck": "UZI",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "Goosegrease",
+      "opponentDisplayName": "Ryan Mielbye",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "matches": [
+        {
+          "tournamentId": "417122",
+          "dateDisplay": "March 26, 2026",
+          "result": "W",
+          "playerDeck": "Aluren",
+          "opponentDeck": "Elves",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "MaltBeverage",
+      "opponentDisplayName": "Ryan Alexander",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "matches": [
+        {
+          "tournamentId": "417122",
+          "dateDisplay": "March 26, 2026",
+          "result": "L",
+          "playerDeck": "Aluren",
+          "opponentDeck": "_",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "ByerBeware",
       "opponentDisplayName": "ByerBeware",
       "matchesPlayed": 1,
@@ -1888,6 +1977,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "417122",
+      "dateDisplay": "March 26, 2026",
+      "playerCount": 29,
+      "trophyCount": 4,
+      "roundCount": 3,
+      "rank": 9,
+      "points": 6,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWinPercentage": 0.6666667,
+      "deck": "Aluren"
+    },
     {
       "tournamentId": "413370",
       "dateDisplay": "March 12, 2026",

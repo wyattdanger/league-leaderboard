@@ -2,41 +2,41 @@
   "username": "minimiz",
   "displayName": "Eli Mizock",
   "overallStats": {
-    "totalTournaments": 7,
-    "totalPoints": 39,
-    "totalMatches": 21,
-    "matchRecord": "13-8-0",
-    "matchWinPercentage": 0.6190476190476191,
-    "gameRecord": "33-22-0",
-    "gameWinPercentage": 0.6,
-    "trophies": 1,
+    "totalTournaments": 8,
+    "totalPoints": 48,
+    "totalMatches": 24,
+    "matchRecord": "16-8-0",
+    "matchWinPercentage": 0.6666666666666666,
+    "gameRecord": "39-24-0",
+    "gameWinPercentage": 0.6190476190476191,
+    "trophies": 2,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q1 2026",
-      "events": 7,
-      "points": 39,
-      "matchRecord": "13-8-0",
-      "matchWinPercentage": 0.6190476190476191,
-      "gameRecord": "33-22-0",
-      "gameWinPercentage": 0.6
+      "events": 8,
+      "points": 48,
+      "matchRecord": "16-8-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameRecord": "39-24-0",
+      "gameWinPercentage": 0.6190476190476191
     }
   ],
   "deckStats": [
     {
       "deckName": "Goblins",
-      "events": 7,
-      "matchWins": 13,
+      "events": 8,
+      "matchWins": 16,
       "matchLosses": 8,
       "matchDraws": 0,
-      "matchRecord": "13-8-0",
-      "matchWinPercentage": 0.6190476190476191,
-      "gameWins": 35,
-      "gameLosses": 21,
+      "matchRecord": "16-8-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 41,
+      "gameLosses": 23,
       "gameDraws": 0,
-      "gameWinPercentage": 0.625,
-      "trophies": 1
+      "gameWinPercentage": 0.640625,
+      "trophies": 2
     }
   ],
   "headToHead": [
@@ -81,6 +81,76 @@
           "opponentDeck": "Mono Black Aggro",
           "playerGameWins": 2,
           "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "RichBucey",
+      "opponentDisplayName": "RichBucey",
+      "matchesPlayed": 2,
+      "matchWins": 2,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 4,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6666666666666666,
+      "matches": [
+        {
+          "tournamentId": "417122",
+          "dateDisplay": "March 26, 2026",
+          "result": "W",
+          "playerDeck": "Goblins",
+          "opponentDeck": "Burn",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "402789",
+          "dateDisplay": "February 5, 2026",
+          "result": "W",
+          "playerDeck": "Goblins",
+          "opponentDeck": "_",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "Matt_W",
+      "opponentDisplayName": "Matt_W",
+      "matchesPlayed": 2,
+      "matchWins": 2,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 4,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6666666666666666,
+      "matches": [
+        {
+          "tournamentId": "417122",
+          "dateDisplay": "March 26, 2026",
+          "result": "W",
+          "playerDeck": "Goblins",
+          "opponentDeck": "Tinker Oath Fling",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "400729",
+          "dateDisplay": "January 29, 2026",
+          "result": "W",
+          "playerDeck": "Goblins",
+          "opponentDeck": "Devourer",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
           "gameDraws": 0
         }
       ]
@@ -151,6 +221,31 @@
           "opponentDeck": "Burn",
           "playerGameWins": 1,
           "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "Mattmelach",
+      "opponentDisplayName": "Matthew Melachrinos",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "matches": [
+        {
+          "tournamentId": "417122",
+          "dateDisplay": "March 26, 2026",
+          "result": "W",
+          "playerDeck": "Goblins",
+          "opponentDeck": "Stasis",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
           "gameDraws": 0
         }
       ]
@@ -381,31 +476,6 @@
       ]
     },
     {
-      "opponentUsername": "RichBucey",
-      "opponentDisplayName": "RichBucey",
-      "matchesPlayed": 1,
-      "matchWins": 1,
-      "matchLosses": 0,
-      "matchDraws": 0,
-      "matchWinPercentage": 1,
-      "gameWins": 2,
-      "gameLosses": 1,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.6666666666666666,
-      "matches": [
-        {
-          "tournamentId": "402789",
-          "dateDisplay": "February 5, 2026",
-          "result": "W",
-          "playerDeck": "Goblins",
-          "opponentDeck": "_",
-          "playerGameWins": 2,
-          "opponentGameWins": 1,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
       "opponentUsername": "BryanGulotta",
       "opponentDisplayName": "BryanGulotta",
       "matchesPlayed": 1,
@@ -424,31 +494,6 @@
           "result": "W",
           "playerDeck": "Goblins",
           "opponentDeck": "Turbolands",
-          "playerGameWins": 2,
-          "opponentGameWins": 1,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "Matt_W",
-      "opponentDisplayName": "Matt_W",
-      "matchesPlayed": 1,
-      "matchWins": 1,
-      "matchLosses": 0,
-      "matchDraws": 0,
-      "matchWinPercentage": 1,
-      "gameWins": 2,
-      "gameLosses": 1,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.6666666666666666,
-      "matches": [
-        {
-          "tournamentId": "400729",
-          "dateDisplay": "January 29, 2026",
-          "result": "W",
-          "playerDeck": "Goblins",
-          "opponentDeck": "Devourer",
           "playerGameWins": 2,
           "opponentGameWins": 1,
           "gameDraws": 0
@@ -507,6 +552,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "417122",
+      "dateDisplay": "March 26, 2026",
+      "playerCount": 29,
+      "trophyCount": 4,
+      "roundCount": 3,
+      "rank": 2,
+      "points": 9,
+      "matchRecord": "3-0-0",
+      "matchWinPercentage": 1,
+      "gameWinPercentage": 0.75,
+      "deck": "Goblins"
+    },
     {
       "tournamentId": "413370",
       "dateDisplay": "March 12, 2026",

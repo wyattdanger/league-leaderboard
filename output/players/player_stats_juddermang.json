@@ -2,25 +2,25 @@
   "username": "JUDDERMANG",
   "displayName": "Chris Cruz",
   "overallStats": {
-    "totalTournaments": 37,
-    "totalPoints": 129,
-    "totalMatches": 111,
-    "matchRecord": "42-66-3",
-    "matchWinPercentage": 0.3918918918918919,
-    "gameRecord": "110-153-1",
-    "gameWinPercentage": 0.4166666666666667,
+    "totalTournaments": 38,
+    "totalPoints": 130,
+    "totalMatches": 114,
+    "matchRecord": "42-68-4",
+    "matchWinPercentage": 0.38596491228070173,
+    "gameRecord": "111-158-1",
+    "gameWinPercentage": 0.4111111111111111,
     "trophies": 2,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q1 2026",
-      "events": 6,
-      "points": 24,
-      "matchRecord": "8-10-0",
-      "matchWinPercentage": 0.4444444444444444,
-      "gameRecord": "19-26-0",
-      "gameWinPercentage": 0.4222222222222222
+      "events": 7,
+      "points": 25,
+      "matchRecord": "8-12-1",
+      "matchWinPercentage": 0.40476190476190477,
+      "gameRecord": "20-31-0",
+      "gameWinPercentage": 0.39215686274509803
     },
     {
       "leagueName": "Q4 2025",
@@ -170,6 +170,20 @@
       "matchDraws": 0,
       "matchRecord": "1-2-0",
       "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 3,
+      "gameLosses": 5,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.375,
+      "trophies": 0
+    },
+    {
+      "deckName": "Stiflenought",
+      "events": 1,
+      "matchWins": 0,
+      "matchLosses": 2,
+      "matchDraws": 1,
+      "matchRecord": "0-2-1",
+      "matchWinPercentage": 0.16666666666666666,
       "gameWins": 3,
       "gameLosses": 5,
       "gameDraws": 0,
@@ -901,6 +915,96 @@
       ]
     },
     {
+      "opponentUsername": "WillReddy",
+      "opponentDisplayName": "WillReddy",
+      "matchesPlayed": 3,
+      "matchWins": 1,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 2,
+      "gameLosses": 5,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.2857142857142857,
+      "matches": [
+        {
+          "tournamentId": "417122",
+          "dateDisplay": "March 26, 2026",
+          "result": "L",
+          "playerDeck": "Stiflenought",
+          "opponentDeck": "GW terraoath",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "413370",
+          "dateDisplay": "March 12, 2026",
+          "result": "W",
+          "playerDeck": "Dreadnought",
+          "opponentDeck": "GW Oath Ponza",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "343959",
+          "dateDisplay": "July 24, 2025",
+          "result": "L",
+          "playerDeck": "_",
+          "opponentDeck": "_",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "Gaunology",
+      "opponentDisplayName": "Gaunology",
+      "matchesPlayed": 3,
+      "matchWins": 2,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 4,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5,
+      "matches": [
+        {
+          "tournamentId": "417122",
+          "dateDisplay": "March 26, 2026",
+          "result": "L",
+          "playerDeck": "Stiflenought",
+          "opponentDeck": "Sam Black Enchantress",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "406432",
+          "dateDisplay": "February 19, 2026",
+          "result": "W",
+          "playerDeck": "Dreadnought",
+          "opponentDeck": "Terra Oath",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "402789",
+          "dateDisplay": "February 5, 2026",
+          "result": "W",
+          "playerDeck": "Dreadnought",
+          "opponentDeck": "UB Dream Halls",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "itsCama",
       "opponentDisplayName": "Yosef Harari",
       "matchesPlayed": 3,
@@ -1081,41 +1185,6 @@
       ]
     },
     {
-      "opponentUsername": "WillReddy",
-      "opponentDisplayName": "WillReddy",
-      "matchesPlayed": 2,
-      "matchWins": 1,
-      "matchLosses": 1,
-      "matchDraws": 0,
-      "matchWinPercentage": 0.5,
-      "gameWins": 2,
-      "gameLosses": 3,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.4,
-      "matches": [
-        {
-          "tournamentId": "413370",
-          "dateDisplay": "March 12, 2026",
-          "result": "W",
-          "playerDeck": "Dreadnought",
-          "opponentDeck": "GW Oath Ponza",
-          "playerGameWins": 2,
-          "opponentGameWins": 1,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "343959",
-          "dateDisplay": "July 24, 2025",
-          "result": "L",
-          "playerDeck": "_",
-          "opponentDeck": "_",
-          "playerGameWins": 0,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
       "opponentUsername": "remixmtg",
       "opponentDisplayName": "Jeremy Siegel",
       "matchesPlayed": 2,
@@ -1146,41 +1215,6 @@
           "opponentDeck": "Elves",
           "playerGameWins": 0,
           "opponentGameWins": 2,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "Gaunology",
-      "opponentDisplayName": "Gaunology",
-      "matchesPlayed": 2,
-      "matchWins": 2,
-      "matchLosses": 0,
-      "matchDraws": 0,
-      "matchWinPercentage": 1,
-      "gameWins": 4,
-      "gameLosses": 2,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.6666666666666666,
-      "matches": [
-        {
-          "tournamentId": "406432",
-          "dateDisplay": "February 19, 2026",
-          "result": "W",
-          "playerDeck": "Dreadnought",
-          "opponentDeck": "Terra Oath",
-          "playerGameWins": 2,
-          "opponentGameWins": 1,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "402789",
-          "dateDisplay": "February 5, 2026",
-          "result": "W",
-          "playerDeck": "Dreadnought",
-          "opponentDeck": "UB Dream Halls",
-          "playerGameWins": 2,
-          "opponentGameWins": 1,
           "gameDraws": 0
         }
       ]
@@ -1286,6 +1320,31 @@
           "opponentDeck": "Goblins",
           "playerGameWins": 1,
           "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "leyawn",
+      "opponentDisplayName": "Leon Chang",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 0,
+      "matchDraws": 1,
+      "matchWinPercentage": 0.5,
+      "gameWins": 1,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5,
+      "matches": [
+        {
+          "tournamentId": "417122",
+          "dateDisplay": "March 26, 2026",
+          "result": "D",
+          "playerDeck": "Stiflenought",
+          "opponentDeck": "UZI",
+          "playerGameWins": 1,
+          "opponentGameWins": 1,
           "gameDraws": 0
         }
       ]
@@ -2017,6 +2076,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "417122",
+      "dateDisplay": "March 26, 2026",
+      "playerCount": 29,
+      "trophyCount": 4,
+      "roundCount": 3,
+      "rank": 27,
+      "points": 1,
+      "matchRecord": "0-2-1",
+      "matchWinPercentage": 0.16666666666666666,
+      "gameWinPercentage": 0.3333333,
+      "deck": "Stiflenought"
+    },
     {
       "tournamentId": "415118",
       "dateDisplay": "March 19, 2026",

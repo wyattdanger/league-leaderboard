@@ -2,25 +2,25 @@
   "username": "Goosegrease",
   "displayName": "Ryan Mielbye",
   "overallStats": {
-    "totalTournaments": 2,
-    "totalPoints": 13,
-    "totalMatches": 6,
-    "matchRecord": "4-1-1",
-    "matchWinPercentage": 0.75,
-    "gameRecord": "10-5-0",
-    "gameWinPercentage": 0.6666666666666666,
+    "totalTournaments": 3,
+    "totalPoints": 16,
+    "totalMatches": 9,
+    "matchRecord": "5-3-1",
+    "matchWinPercentage": 0.6111111111111112,
+    "gameRecord": "12-9-0",
+    "gameWinPercentage": 0.5714285714285714,
     "trophies": 1,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q1 2026",
-      "events": 2,
-      "points": 13,
-      "matchRecord": "4-1-1",
-      "matchWinPercentage": 0.75,
-      "gameRecord": "10-5-0",
-      "gameWinPercentage": 0.6666666666666666
+      "events": 3,
+      "points": 16,
+      "matchRecord": "5-3-1",
+      "matchWinPercentage": 0.6111111111111112,
+      "gameRecord": "12-9-0",
+      "gameWinPercentage": 0.5714285714285714
     }
   ],
   "deckStats": [
@@ -50,6 +50,20 @@
       "gameLosses": 3,
       "gameDraws": 0,
       "gameWinPercentage": 0.625,
+      "trophies": 0
+    },
+    {
+      "deckName": "Elves",
+      "events": 1,
+      "matchWins": 1,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 3,
+      "gameLosses": 5,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.375,
       "trophies": 0
     }
   ],
@@ -84,6 +98,81 @@
           "playerDeck": "The Rock",
           "opponentDeck": "Cephalid Breakfast",
           "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "itsCama",
+      "opponentDisplayName": "Yosef Harari",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "matches": [
+        {
+          "tournamentId": "417122",
+          "dateDisplay": "March 26, 2026",
+          "result": "W",
+          "playerDeck": "Elves",
+          "opponentDeck": "UW Control",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "madmanpoet",
+      "opponentDisplayName": "Michael Flores",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "matches": [
+        {
+          "tournamentId": "417122",
+          "dateDisplay": "March 26, 2026",
+          "result": "L",
+          "playerDeck": "Elves",
+          "opponentDeck": "Aluren",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "peterk235",
+      "opponentDisplayName": "peterk235",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "matches": [
+        {
+          "tournamentId": "417122",
+          "dateDisplay": "March 26, 2026",
+          "result": "L",
+          "playerDeck": "Elves",
+          "opponentDeck": "The Rock",
+          "playerGameWins": 0,
           "opponentGameWins": 2,
           "gameDraws": 0
         }
@@ -191,6 +280,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "417122",
+      "dateDisplay": "March 26, 2026",
+      "playerCount": 29,
+      "trophyCount": 4,
+      "roundCount": 3,
+      "rank": 22,
+      "points": 3,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWinPercentage": 0.3333333,
+      "deck": "Elves"
+    },
     {
       "tournamentId": "415118",
       "dateDisplay": "March 19, 2026",

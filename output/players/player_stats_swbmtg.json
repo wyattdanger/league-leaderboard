@@ -2,25 +2,25 @@
   "username": "swbmtg",
   "displayName": "swb",
   "overallStats": {
-    "totalTournaments": 37,
-    "totalPoints": 244,
-    "totalMatches": 111,
-    "matchRecord": "79-25-7",
-    "matchWinPercentage": 0.7432432432432432,
-    "gameRecord": "178-90-3",
-    "gameWinPercentage": 0.6568265682656826,
-    "trophies": 10,
+    "totalTournaments": 38,
+    "totalPoints": 253,
+    "totalMatches": 114,
+    "matchRecord": "82-25-7",
+    "matchWinPercentage": 0.75,
+    "gameRecord": "184-92-3",
+    "gameWinPercentage": 0.6594982078853047,
+    "trophies": 11,
     "belts": 1
   },
   "leagueStats": [
     {
       "leagueName": "Q1 2026",
-      "events": 8,
-      "points": 51,
-      "matchRecord": "16-5-3",
-      "matchWinPercentage": 0.7291666666666666,
-      "gameRecord": "38-19-1",
-      "gameWinPercentage": 0.6637931034482759
+      "events": 9,
+      "points": 60,
+      "matchRecord": "19-5-3",
+      "matchWinPercentage": 0.7592592592592593,
+      "gameRecord": "44-21-1",
+      "gameWinPercentage": 0.6742424242424242
     },
     {
       "leagueName": "Q4 2025",
@@ -121,6 +121,20 @@
       "trophies": 1
     },
     {
+      "deckName": "Cradle Control",
+      "events": 3,
+      "matchWins": 7,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchRecord": "7-2-0",
+      "matchWinPercentage": 0.7777777777777778,
+      "gameWins": 16,
+      "gameLosses": 8,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6666666666666666,
+      "trophies": 1
+    },
+    {
       "deckName": "Enchantress",
       "events": 3,
       "matchWins": 6,
@@ -146,20 +160,6 @@
       "gameLosses": 5,
       "gameDraws": 0,
       "gameWinPercentage": 0.6875,
-      "trophies": 0
-    },
-    {
-      "deckName": "Cradle Control",
-      "events": 2,
-      "matchWins": 4,
-      "matchLosses": 2,
-      "matchDraws": 0,
-      "matchRecord": "4-2-0",
-      "matchWinPercentage": 0.6666666666666666,
-      "gameWins": 10,
-      "gameLosses": 6,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.625,
       "trophies": 0
     },
     {
@@ -638,6 +638,71 @@
       ]
     },
     {
+      "opponentUsername": "Taylorhol",
+      "opponentDisplayName": "Taylorhol",
+      "matchesPlayed": 5,
+      "matchWins": 4,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.8,
+      "gameWins": 9,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6923076923076923,
+      "matches": [
+        {
+          "tournamentId": "417122",
+          "dateDisplay": "March 26, 2026",
+          "result": "W",
+          "playerDeck": "Cradle Control",
+          "opponentDeck": "HFEB",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "413370",
+          "dateDisplay": "March 12, 2026",
+          "result": "W",
+          "playerDeck": "Angry Hermit",
+          "opponentDeck": "Aluren",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "391734",
+          "dateDisplay": "December 18, 2025",
+          "result": "L",
+          "playerDeck": "Cradle Control",
+          "opponentDeck": "Snap Cradle Pop",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "390154",
+          "dateDisplay": "December 11, 2025",
+          "result": "W",
+          "playerDeck": "Goblins",
+          "opponentDeck": "Gush Tithe",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "388334",
+          "dateDisplay": "December 4, 2025",
+          "result": "W",
+          "playerDeck": "Oath Parfait",
+          "opponentDeck": "Gush Tithe",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "delofstrom",
       "opponentDisplayName": "DEL .",
       "matchesPlayed": 5,
@@ -828,61 +893,6 @@
           "opponentDeck": "Oath Ponza",
           "playerGameWins": 1,
           "opponentGameWins": 2,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "Taylorhol",
-      "opponentDisplayName": "Taylorhol",
-      "matchesPlayed": 4,
-      "matchWins": 3,
-      "matchLosses": 1,
-      "matchDraws": 0,
-      "matchWinPercentage": 0.75,
-      "gameWins": 7,
-      "gameLosses": 3,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.7,
-      "matches": [
-        {
-          "tournamentId": "413370",
-          "dateDisplay": "March 12, 2026",
-          "result": "W",
-          "playerDeck": "Angry Hermit",
-          "opponentDeck": "Aluren",
-          "playerGameWins": 2,
-          "opponentGameWins": 0,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "391734",
-          "dateDisplay": "December 18, 2025",
-          "result": "L",
-          "playerDeck": "Cradle Control",
-          "opponentDeck": "Snap Cradle Pop",
-          "playerGameWins": 1,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "390154",
-          "dateDisplay": "December 11, 2025",
-          "result": "W",
-          "playerDeck": "Goblins",
-          "opponentDeck": "Gush Tithe",
-          "playerGameWins": 2,
-          "opponentGameWins": 0,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "388334",
-          "dateDisplay": "December 4, 2025",
-          "result": "W",
-          "playerDeck": "Oath Parfait",
-          "opponentDeck": "Gush Tithe",
-          "playerGameWins": 2,
-          "opponentGameWins": 1,
           "gameDraws": 0
         }
       ]
@@ -1243,6 +1253,76 @@
       ]
     },
     {
+      "opponentUsername": "StevenRiseNYC",
+      "opponentDisplayName": "StevenRiseNYC",
+      "matchesPlayed": 2,
+      "matchWins": 1,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.5,
+      "gameWins": 3,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6,
+      "matches": [
+        {
+          "tournamentId": "417122",
+          "dateDisplay": "March 26, 2026",
+          "result": "W",
+          "playerDeck": "Cradle Control",
+          "opponentDeck": "Moneyball Black",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "415118",
+          "dateDisplay": "March 19, 2026",
+          "result": "L",
+          "playerDeck": "Cradle Control",
+          "opponentDeck": "Moneyball Black",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "LuisNeiman",
+      "opponentDisplayName": "LuisNeiman",
+      "matchesPlayed": 2,
+      "matchWins": 1,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.5,
+      "gameWins": 3,
+      "gameLosses": 3,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5,
+      "matches": [
+        {
+          "tournamentId": "417122",
+          "dateDisplay": "March 26, 2026",
+          "result": "W",
+          "playerDeck": "Cradle Control",
+          "opponentDeck": "Goblins",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "308700",
+          "dateDisplay": "May 15, 2025",
+          "result": "L",
+          "playerDeck": "Storm",
+          "opponentDeck": "Oath Devourer",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "mattmanw2",
       "opponentDisplayName": "mattmanw2",
       "matchesPlayed": 2,
@@ -1413,31 +1493,6 @@
           "opponentDeck": "_",
           "playerGameWins": 2,
           "opponentGameWins": 0,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "StevenRiseNYC",
-      "opponentDisplayName": "StevenRiseNYC",
-      "matchesPlayed": 1,
-      "matchWins": 0,
-      "matchLosses": 1,
-      "matchDraws": 0,
-      "matchWinPercentage": 0,
-      "gameWins": 1,
-      "gameLosses": 2,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.3333333333333333,
-      "matches": [
-        {
-          "tournamentId": "415118",
-          "dateDisplay": "March 19, 2026",
-          "result": "L",
-          "playerDeck": "Cradle Control",
-          "opponentDeck": "Moneyball Black",
-          "playerGameWins": 1,
-          "opponentGameWins": 2,
           "gameDraws": 0
         }
       ]
@@ -2041,34 +2096,22 @@
           "gameDraws": 0
         }
       ]
-    },
-    {
-      "opponentUsername": "LuisNeiman",
-      "opponentDisplayName": "LuisNeiman",
-      "matchesPlayed": 1,
-      "matchWins": 0,
-      "matchLosses": 1,
-      "matchDraws": 0,
-      "matchWinPercentage": 0,
-      "gameWins": 1,
-      "gameLosses": 2,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.3333333333333333,
-      "matches": [
-        {
-          "tournamentId": "308700",
-          "dateDisplay": "May 15, 2025",
-          "result": "L",
-          "playerDeck": "Storm",
-          "opponentDeck": "Oath Devourer",
-          "playerGameWins": 1,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        }
-      ]
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "417122",
+      "dateDisplay": "March 26, 2026",
+      "playerCount": 29,
+      "trophyCount": 4,
+      "roundCount": 3,
+      "rank": 3,
+      "points": 9,
+      "matchRecord": "3-0-0",
+      "matchWinPercentage": 1,
+      "gameWinPercentage": 0.75,
+      "deck": "Cradle Control"
+    },
     {
       "tournamentId": "415118",
       "dateDisplay": "March 19, 2026",

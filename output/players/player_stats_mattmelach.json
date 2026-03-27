@@ -2,25 +2,25 @@
   "username": "Mattmelach",
   "displayName": "Matthew Melachrinos",
   "overallStats": {
-    "totalTournaments": 25,
-    "totalPoints": 70,
-    "totalMatches": 75,
-    "matchRecord": "22-49-4",
-    "matchWinPercentage": 0.32,
-    "gameRecord": "68-109-2",
-    "gameWinPercentage": 0.37988826815642457,
+    "totalTournaments": 26,
+    "totalPoints": 73,
+    "totalMatches": 78,
+    "matchRecord": "23-51-4",
+    "matchWinPercentage": 0.32051282051282054,
+    "gameRecord": "70-113-2",
+    "gameWinPercentage": 0.3783783783783784,
     "trophies": 0,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q1 2026",
-      "events": 6,
-      "points": 15,
-      "matchRecord": "5-13-0",
-      "matchWinPercentage": 0.2777777777777778,
-      "gameRecord": "15-27-1",
-      "gameWinPercentage": 0.36046511627906974
+      "events": 7,
+      "points": 18,
+      "matchRecord": "6-15-0",
+      "matchWinPercentage": 0.2857142857142857,
+      "gameRecord": "17-31-1",
+      "gameWinPercentage": 0.35714285714285715
     },
     {
       "leagueName": "Q4 2025",
@@ -128,6 +128,20 @@
       "gameLosses": 3,
       "gameDraws": 0,
       "gameWinPercentage": 0.625,
+      "trophies": 0
+    },
+    {
+      "deckName": "Stasis",
+      "events": 1,
+      "matchWins": 1,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 3,
+      "gameLosses": 5,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.375,
       "trophies": 0
     },
     {
@@ -743,6 +757,41 @@
       ]
     },
     {
+      "opponentUsername": "weidnent",
+      "opponentDisplayName": "weidnent",
+      "matchesPlayed": 2,
+      "matchWins": 1,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.5,
+      "gameWins": 2,
+      "gameLosses": 3,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.4,
+      "matches": [
+        {
+          "tournamentId": "417122",
+          "dateDisplay": "March 26, 2026",
+          "result": "L",
+          "playerDeck": "Stasis",
+          "opponentDeck": "Goblins",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "413370",
+          "dateDisplay": "March 12, 2026",
+          "result": "W",
+          "playerDeck": "Contamination",
+          "opponentDeck": "Reanimator",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "SF45",
       "opponentDisplayName": "SF45",
       "matchesPlayed": 2,
@@ -953,6 +1002,31 @@
       ]
     },
     {
+      "opponentUsername": "minimiz",
+      "opponentDisplayName": "Eli Mizock",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "matches": [
+        {
+          "tournamentId": "417122",
+          "dateDisplay": "March 26, 2026",
+          "result": "L",
+          "playerDeck": "Stasis",
+          "opponentDeck": "Goblins",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "Mookyspulder",
       "opponentDisplayName": "Dan S",
       "matchesPlayed": 1,
@@ -973,31 +1047,6 @@
           "opponentDeck": "Clerics",
           "playerGameWins": 0,
           "opponentGameWins": 2,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "weidnent",
-      "opponentDisplayName": "weidnent",
-      "matchesPlayed": 1,
-      "matchWins": 1,
-      "matchLosses": 0,
-      "matchDraws": 0,
-      "matchWinPercentage": 1,
-      "gameWins": 2,
-      "gameLosses": 1,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.6666666666666666,
-      "matches": [
-        {
-          "tournamentId": "413370",
-          "dateDisplay": "March 12, 2026",
-          "result": "W",
-          "playerDeck": "Contamination",
-          "opponentDeck": "Reanimator",
-          "playerGameWins": 2,
-          "opponentGameWins": 1,
           "gameDraws": 0
         }
       ]
@@ -1504,6 +1553,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "417122",
+      "dateDisplay": "March 26, 2026",
+      "playerCount": 29,
+      "trophyCount": 4,
+      "roundCount": 3,
+      "rank": 21,
+      "points": 3,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWinPercentage": 0.3333333,
+      "deck": "Stasis"
+    },
     {
       "tournamentId": "415118",
       "dateDisplay": "March 19, 2026",

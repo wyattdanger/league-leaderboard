@@ -2,25 +2,25 @@
   "username": "Gaunology",
   "displayName": "Gaunology",
   "overallStats": {
-    "totalTournaments": 7,
-    "totalPoints": 27,
-    "totalMatches": 21,
-    "matchRecord": "8-10-3",
-    "matchWinPercentage": 0.4523809523809524,
-    "gameRecord": "21-25-1",
-    "gameWinPercentage": 0.44680851063829785,
+    "totalTournaments": 8,
+    "totalPoints": 30,
+    "totalMatches": 24,
+    "matchRecord": "9-12-3",
+    "matchWinPercentage": 0.4375,
+    "gameRecord": "23-29-1",
+    "gameWinPercentage": 0.4339622641509434,
     "trophies": 1,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q1 2026",
-      "events": 6,
-      "points": 20,
-      "matchRecord": "6-10-2",
-      "matchWinPercentage": 0.3888888888888889,
-      "gameRecord": "16-24-1",
-      "gameWinPercentage": 0.4024390243902439
+      "events": 7,
+      "points": 23,
+      "matchRecord": "7-12-2",
+      "matchWinPercentage": 0.38095238095238093,
+      "gameRecord": "18-28-1",
+      "gameWinPercentage": 0.39361702127659576
     },
     {
       "leagueName": "Q4 2025",
@@ -76,6 +76,20 @@
       "trophies": 0
     },
     {
+      "deckName": "Sam Black Enchantress",
+      "events": 1,
+      "matchWins": 1,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 3,
+      "gameLosses": 5,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.375,
+      "trophies": 0
+    },
+    {
       "deckName": "Terraclysm",
       "events": 1,
       "matchWins": 1,
@@ -105,6 +119,51 @@
     }
   ],
   "headToHead": [
+    {
+      "opponentUsername": "JUDDERMANG",
+      "opponentDisplayName": "Chris Cruz",
+      "matchesPlayed": 3,
+      "matchWins": 1,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 4,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5,
+      "matches": [
+        {
+          "tournamentId": "417122",
+          "dateDisplay": "March 26, 2026",
+          "result": "W",
+          "playerDeck": "Sam Black Enchantress",
+          "opponentDeck": "Stiflenought",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "406432",
+          "dateDisplay": "February 19, 2026",
+          "result": "L",
+          "playerDeck": "Terra Oath",
+          "opponentDeck": "Dreadnought",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "402789",
+          "dateDisplay": "February 5, 2026",
+          "result": "L",
+          "playerDeck": "UB Dream Halls",
+          "opponentDeck": "Dreadnought",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
     {
       "opponentUsername": "madmanpoet",
       "opponentDisplayName": "Michael Flores",
@@ -151,35 +210,50 @@
       ]
     },
     {
-      "opponentUsername": "JUDDERMANG",
-      "opponentDisplayName": "Chris Cruz",
-      "matchesPlayed": 2,
+      "opponentUsername": "RichBucey",
+      "opponentDisplayName": "RichBucey",
+      "matchesPlayed": 1,
       "matchWins": 0,
-      "matchLosses": 2,
+      "matchLosses": 1,
       "matchDraws": 0,
       "matchWinPercentage": 0,
-      "gameWins": 2,
-      "gameLosses": 4,
+      "gameWins": 0,
+      "gameLosses": 2,
       "gameDraws": 0,
-      "gameWinPercentage": 0.3333333333333333,
+      "gameWinPercentage": 0,
       "matches": [
         {
-          "tournamentId": "406432",
-          "dateDisplay": "February 19, 2026",
+          "tournamentId": "417122",
+          "dateDisplay": "March 26, 2026",
           "result": "L",
-          "playerDeck": "Terra Oath",
-          "opponentDeck": "Dreadnought",
-          "playerGameWins": 1,
+          "playerDeck": "Sam Black Enchantress",
+          "opponentDeck": "Burn",
+          "playerGameWins": 0,
           "opponentGameWins": 2,
           "gameDraws": 0
-        },
+        }
+      ]
+    },
+    {
+      "opponentUsername": "AndrewLevine",
+      "opponentDisplayName": "AndrewLevine",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "matches": [
         {
-          "tournamentId": "402789",
-          "dateDisplay": "February 5, 2026",
+          "tournamentId": "417122",
+          "dateDisplay": "March 26, 2026",
           "result": "L",
-          "playerDeck": "UB Dream Halls",
-          "opponentDeck": "Dreadnought",
-          "playerGameWins": 1,
+          "playerDeck": "Sam Black Enchantress",
+          "opponentDeck": "Cephalid Breakfast",
+          "playerGameWins": 0,
           "opponentGameWins": 2,
           "gameDraws": 0
         }
@@ -562,6 +636,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "417122",
+      "dateDisplay": "March 26, 2026",
+      "playerCount": 29,
+      "trophyCount": 4,
+      "roundCount": 3,
+      "rank": 23,
+      "points": 3,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWinPercentage": 0.3333333,
+      "deck": "Sam Black Enchantress"
+    },
     {
       "tournamentId": "413370",
       "dateDisplay": "March 12, 2026",

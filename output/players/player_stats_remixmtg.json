@@ -2,25 +2,25 @@
   "username": "remixmtg",
   "displayName": "Jeremy Siegel",
   "overallStats": {
-    "totalTournaments": 10,
-    "totalPoints": 52,
-    "totalMatches": 30,
-    "matchRecord": "17-12-1",
-    "matchWinPercentage": 0.5833333333333334,
-    "gameRecord": "38-30-3",
-    "gameWinPercentage": 0.5352112676056338,
+    "totalTournaments": 11,
+    "totalPoints": 55,
+    "totalMatches": 33,
+    "matchRecord": "18-14-1",
+    "matchWinPercentage": 0.5606060606060606,
+    "gameRecord": "40-35-3",
+    "gameWinPercentage": 0.5128205128205128,
     "trophies": 2,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q1 2026",
-      "events": 6,
-      "points": 33,
-      "matchRecord": "11-7-0",
-      "matchWinPercentage": 0.6111111111111112,
-      "gameRecord": "24-18-0",
-      "gameWinPercentage": 0.5714285714285714
+      "events": 7,
+      "points": 36,
+      "matchRecord": "12-9-0",
+      "matchWinPercentage": 0.5714285714285714,
+      "gameRecord": "26-23-0",
+      "gameWinPercentage": 0.5306122448979592
     },
     {
       "leagueName": "Q4 2025",
@@ -35,16 +35,16 @@
   "deckStats": [
     {
       "deckName": "Terrageddon",
-      "events": 5,
-      "matchWins": 9,
-      "matchLosses": 6,
+      "events": 6,
+      "matchWins": 10,
+      "matchLosses": 8,
       "matchDraws": 0,
-      "matchRecord": "9-6-0",
-      "matchWinPercentage": 0.6,
-      "gameWins": 25,
-      "gameLosses": 15,
+      "matchRecord": "10-8-0",
+      "matchWinPercentage": 0.5555555555555556,
+      "gameWins": 28,
+      "gameLosses": 20,
       "gameDraws": 0,
-      "gameWinPercentage": 0.625,
+      "gameWinPercentage": 0.5833333333333334,
       "trophies": 1
     },
     {
@@ -108,16 +108,26 @@
     {
       "opponentUsername": "Matt_W",
       "opponentDisplayName": "Matt_W",
-      "matchesPlayed": 2,
+      "matchesPlayed": 3,
       "matchWins": 1,
-      "matchLosses": 1,
+      "matchLosses": 2,
       "matchDraws": 0,
-      "matchWinPercentage": 0.5,
+      "matchWinPercentage": 0.3333333333333333,
       "gameWins": 2,
-      "gameLosses": 2,
+      "gameLosses": 4,
       "gameDraws": 0,
-      "gameWinPercentage": 0.5,
+      "gameWinPercentage": 0.3333333333333333,
       "matches": [
+        {
+          "tournamentId": "417122",
+          "dateDisplay": "March 26, 2026",
+          "result": "L",
+          "playerDeck": "Terrageddon",
+          "opponentDeck": "Tinker Oath Fling",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
         {
           "tournamentId": "415118",
           "dateDisplay": "March 19, 2026",
@@ -309,6 +319,56 @@
           "result": "W",
           "playerDeck": "Oath Spec",
           "opponentDeck": "Burn",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "itsCama",
+      "opponentDisplayName": "Yosef Harari",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "matches": [
+        {
+          "tournamentId": "417122",
+          "dateDisplay": "March 26, 2026",
+          "result": "L",
+          "playerDeck": "Terrageddon",
+          "opponentDeck": "UW Control",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "mattmanw2",
+      "opponentDisplayName": "mattmanw2",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6666666666666666,
+      "matches": [
+        {
+          "tournamentId": "417122",
+          "dateDisplay": "March 26, 2026",
+          "result": "W",
+          "playerDeck": "Terrageddon",
+          "opponentDeck": "Moneyball Black",
           "playerGameWins": 2,
           "opponentGameWins": 1,
           "gameDraws": 0
@@ -742,6 +802,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "417122",
+      "dateDisplay": "March 26, 2026",
+      "playerCount": 29,
+      "trophyCount": 4,
+      "roundCount": 3,
+      "rank": 25,
+      "points": 3,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWinPercentage": 0.3333333,
+      "deck": "Terrageddon"
+    },
     {
       "tournamentId": "415118",
       "dateDisplay": "March 19, 2026",

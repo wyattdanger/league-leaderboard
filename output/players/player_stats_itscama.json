@@ -2,25 +2,25 @@
   "username": "itsCama",
   "displayName": "Yosef Harari",
   "overallStats": {
-    "totalTournaments": 22,
-    "totalPoints": 110,
-    "totalMatches": 66,
-    "matchRecord": "36-28-2",
-    "matchWinPercentage": 0.5606060606060606,
-    "gameRecord": "88-76-0",
-    "gameWinPercentage": 0.5365853658536586,
+    "totalTournaments": 23,
+    "totalPoints": 114,
+    "totalMatches": 69,
+    "matchRecord": "37-29-3",
+    "matchWinPercentage": 0.5579710144927537,
+    "gameRecord": "91-79-0",
+    "gameWinPercentage": 0.5352941176470588,
     "trophies": 3,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q1 2026",
-      "events": 7,
-      "points": 41,
-      "matchRecord": "13-6-2",
-      "matchWinPercentage": 0.6666666666666666,
-      "gameRecord": "29-20-0",
-      "gameWinPercentage": 0.5918367346938775
+      "events": 8,
+      "points": 45,
+      "matchRecord": "14-7-3",
+      "matchWinPercentage": 0.6458333333333334,
+      "gameRecord": "32-23-0",
+      "gameWinPercentage": 0.5818181818181818
     },
     {
       "leagueName": "Q4 2025",
@@ -76,16 +76,16 @@
     },
     {
       "deckName": "UW Control",
-      "events": 4,
-      "matchWins": 9,
-      "matchLosses": 2,
-      "matchDraws": 1,
-      "matchRecord": "9-2-1",
-      "matchWinPercentage": 0.7916666666666666,
-      "gameWins": 22,
-      "gameLosses": 10,
+      "events": 5,
+      "matchWins": 10,
+      "matchLosses": 3,
+      "matchDraws": 2,
+      "matchRecord": "10-3-2",
+      "matchWinPercentage": 0.7333333333333333,
+      "gameWins": 26,
+      "gameLosses": 14,
       "gameDraws": 0,
-      "gameWinPercentage": 0.6875,
+      "gameWinPercentage": 0.65,
       "trophies": 1
     },
     {
@@ -791,6 +791,81 @@
       ]
     },
     {
+      "opponentUsername": "Goosegrease",
+      "opponentDisplayName": "Ryan Mielbye",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "matches": [
+        {
+          "tournamentId": "417122",
+          "dateDisplay": "March 26, 2026",
+          "result": "L",
+          "playerDeck": "UW Control",
+          "opponentDeck": "Elves",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "remixmtg",
+      "opponentDisplayName": "Jeremy Siegel",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "matches": [
+        {
+          "tournamentId": "417122",
+          "dateDisplay": "March 26, 2026",
+          "result": "W",
+          "playerDeck": "UW Control",
+          "opponentDeck": "Terrageddon",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "PCavalcanti",
+      "opponentDisplayName": "PCavalcanti",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 0,
+      "matchDraws": 1,
+      "matchWinPercentage": 0.5,
+      "gameWins": 1,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5,
+      "matches": [
+        {
+          "tournamentId": "417122",
+          "dateDisplay": "March 26, 2026",
+          "result": "D",
+          "playerDeck": "UW Control",
+          "opponentDeck": "_",
+          "playerGameWins": 1,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "Mookyspulder",
       "opponentDisplayName": "Dan S",
       "matchesPlayed": 1,
@@ -1267,6 +1342,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "417122",
+      "dateDisplay": "March 26, 2026",
+      "playerCount": 29,
+      "trophyCount": 4,
+      "roundCount": 3,
+      "rank": 16,
+      "points": 4,
+      "matchRecord": "1-1-1",
+      "matchWinPercentage": 0.5,
+      "gameWinPercentage": 0.5,
+      "deck": "UW Control"
+    },
     {
       "tournamentId": "413370",
       "dateDisplay": "March 12, 2026",
