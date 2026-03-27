@@ -26,7 +26,7 @@ let topFinishers: Array<{
 
 if (fs.existsSync(metadataPath)) {
   const metadata = JSON.parse(fs.readFileSync(metadataPath, 'utf-8'));
-  topFinishers = (metadata.topFinishers || []).slice(0, 3); // Top 3 only
+  topFinishers = metadata.topFinishers || []; // All players with best record
 }
 ---
 
