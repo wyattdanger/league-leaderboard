@@ -25,7 +25,7 @@
   ],
   "deckStats": [
     {
-      "deckName": "Unknown",
+      "deckName": "UG Madness",
       "events": 1,
       "matchWins": 1,
       "matchLosses": 2,
@@ -57,8 +57,8 @@
           "tournamentId": "417122",
           "dateDisplay": "March 26, 2026",
           "result": "L",
-          "playerDeck": "_",
-          "opponentDeck": "_",
+          "playerDeck": "UG Madness",
+          "opponentDeck": "UW Landstill",
           "playerGameWins": 0,
           "opponentGameWins": 2,
           "gameDraws": 0
@@ -82,8 +82,8 @@
           "tournamentId": "417122",
           "dateDisplay": "March 26, 2026",
           "result": "L",
-          "playerDeck": "_",
-          "opponentDeck": "_",
+          "playerDeck": "UG Madness",
+          "opponentDeck": "UG Madness",
           "playerGameWins": 1,
           "opponentGameWins": 2,
           "gameDraws": 0
@@ -103,7 +103,7 @@
       "matchRecord": "1-2-0",
       "matchWinPercentage": 0.3333333333333333,
       "gameWinPercentage": 0.4285714,
-      "deck": "_"
+      "deck": "UG Madness"
     }
   ]
 }
