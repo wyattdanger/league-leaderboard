@@ -1,7 +1,8 @@
 ---
 import PageLayout from '../components/PageLayout.astro';
 
-const top8Players = [
+// Scenario 1: Without Mike Flores (#2 seed, 55 points - unable to attend)
+const withoutFlores = [
   { seed: 1, name: 'swb', username: 'swbmtg', points: 60 },
   { seed: 2, name: 'Eli Mizock', username: 'minimiz', points: 48 },
   { seed: 3, name: 'Yosef Harari', username: 'itsCama', points: 45 },
@@ -11,143 +12,155 @@ const top8Players = [
   { seed: 7, name: 'RichBucey', username: 'RichBucey', points: 39 },
   { seed: 8, name: 'Jeremy Siegel', username: 'remixmtg', points: 36 },
 ];
+
+// Scenario 2: With Mike Flores (if he can attend)
+const withFlores = [
+  { seed: 1, name: 'swb', username: 'swbmtg', points: 60 },
+  { seed: 2, name: 'Michael Flores', username: 'madmanpoet', points: 55 },
+  { seed: 3, name: 'Eli Mizock', username: 'minimiz', points: 48 },
+  { seed: 4, name: 'Yosef Harari', username: 'itsCama', points: 45 },
+  { seed: 5, name: 'Tencteri', username: 'Tencteri', points: 40 },
+  { seed: 6, name: 'Taylorhol', username: 'Taylorhol', points: 39 },
+  { seed: 7, name: 'Matt_W', username: 'Matt_W', points: 39 },
+  { seed: 8, name: 'RichBucey', username: 'RichBucey', points: 39 },
+];
 ---
 
 <PageLayout>
   <div class="card">
     <header class="page-header">
       <h1>Q1 2026 League Championship</h1>
-      <p class="subtitle">Top 8 Playoff Bracket - TBD</p>
-      <p class="note">* Michael Flores (Rank 2, 55 points) unable to attend - Jeremy Siegel (Rank 9, 36 points) moves up</p>
+      <p class="subtitle">Top 8 Playoff Bracket Scenarios</p>
     </header>
 
-    <div class="bracket-container">
-      <div class="bracket">
-        <!-- Quarterfinals -->
-        <div class="round quarterfinals">
-          <div class="round-title">Quarterfinals</div>
+    <div class="scenarios-container">
+      <!-- Scenario 1: Without Mike Flores -->
+      <div class="scenario">
+        <h2 class="scenario-title">Scenario 1: Without Mike Flores</h2>
+        <p class="scenario-note">Michael Flores (Rank 2, 55 points) unable to attend<br/>Jeremy Siegel (Rank 9, 36 points) moves up</p>
 
-          <div class="match">
-            <div class="player seed-1">
-              <span class="seed">#1</span>
-              <span class="name">{top8Players[0].name}</span>
-              <span class="points">{top8Players[0].points} pts</span>
-              <span class="result">—</span>
-            </div>
-            <div class="player seed-8">
-              <span class="seed">#8</span>
-              <span class="name">{top8Players[7].name}</span>
-              <span class="points">{top8Players[7].points} pts</span>
-              <span class="result">—</span>
-            </div>
-          </div>
+        <div class="bracket">
+          <div class="round quarterfinals">
+            <div class="round-title">Quarterfinals</div>
 
-          <div class="match">
-            <div class="player seed-4">
-              <span class="seed">#4</span>
-              <span class="name">{top8Players[3].name}</span>
-              <span class="points">{top8Players[3].points} pts</span>
-              <span class="result">—</span>
+            <div class="match">
+              <div class="player seed-1">
+                <span class="seed">#1</span>
+                <span class="name">{withoutFlores[0].name}</span>
+                <span class="points">{withoutFlores[0].points} pts</span>
+              </div>
+              <div class="player seed-8">
+                <span class="seed">#8</span>
+                <span class="name">{withoutFlores[7].name}</span>
+                <span class="points">{withoutFlores[7].points} pts</span>
+              </div>
             </div>
-            <div class="player seed-5">
-              <span class="seed">#5</span>
-              <span class="name">{top8Players[4].name}</span>
-              <span class="points">{top8Players[4].points} pts</span>
-              <span class="result">—</span>
-            </div>
-          </div>
 
-          <div class="match">
-            <div class="player seed-2">
-              <span class="seed">#2</span>
-              <span class="name">{top8Players[1].name}</span>
-              <span class="points">{top8Players[1].points} pts</span>
-              <span class="result">—</span>
+            <div class="match">
+              <div class="player seed-4">
+                <span class="seed">#4</span>
+                <span class="name">{withoutFlores[3].name}</span>
+                <span class="points">{withoutFlores[3].points} pts</span>
+              </div>
+              <div class="player seed-5">
+                <span class="seed">#5</span>
+                <span class="name">{withoutFlores[4].name}</span>
+                <span class="points">{withoutFlores[4].points} pts</span>
+              </div>
             </div>
-            <div class="player seed-7">
-              <span class="seed">#7</span>
-              <span class="name">{top8Players[6].name}</span>
-              <span class="points">{top8Players[6].points} pts</span>
-              <span class="result">—</span>
-            </div>
-          </div>
 
-          <div class="match">
-            <div class="player seed-3">
-              <span class="seed">#3</span>
-              <span class="name">{top8Players[2].name}</span>
-              <span class="points">{top8Players[2].points} pts</span>
-              <span class="result">—</span>
+            <div class="match">
+              <div class="player seed-2">
+                <span class="seed">#2</span>
+                <span class="name">{withoutFlores[1].name}</span>
+                <span class="points">{withoutFlores[1].points} pts</span>
+              </div>
+              <div class="player seed-7">
+                <span class="seed">#7</span>
+                <span class="name">{withoutFlores[6].name}</span>
+                <span class="points">{withoutFlores[6].points} pts</span>
+              </div>
             </div>
-            <div class="player seed-6">
-              <span class="seed">#6</span>
-              <span class="name">{top8Players[5].name}</span>
-              <span class="points">{top8Players[5].points} pts</span>
-              <span class="result">—</span>
-            </div>
-          </div>
-        </div>
 
-        <!-- Semifinals -->
-        <div class="round semifinals">
-          <div class="round-title">Semifinals</div>
-
-          <div class="match">
-            <div class="player tbd">
-              <span class="seed">—</span>
-              <span class="name">TBD (QF1 Winner)</span>
-              <span class="result">—</span>
-            </div>
-            <div class="player tbd">
-              <span class="seed">—</span>
-              <span class="name">TBD (QF2 Winner)</span>
-              <span class="result">—</span>
-            </div>
-          </div>
-
-          <div class="match">
-            <div class="player tbd">
-              <span class="seed">—</span>
-              <span class="name">TBD (QF3 Winner)</span>
-              <span class="result">—</span>
-            </div>
-            <div class="player tbd">
-              <span class="seed">—</span>
-              <span class="name">TBD (QF4 Winner)</span>
-              <span class="result">—</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Finals -->
-        <div class="round finals">
-          <div class="round-title">Finals</div>
-
-          <div class="match">
-            <div class="player tbd">
-              <span class="seed">—</span>
-              <span class="name">TBD (SF1 Winner)</span>
-              <span class="result">—</span>
-            </div>
-            <div class="player tbd">
-              <span class="seed">—</span>
-              <span class="name">TBD (SF2 Winner)</span>
-              <span class="result">—</span>
+            <div class="match">
+              <div class="player seed-3">
+                <span class="seed">#3</span>
+                <span class="name">{withoutFlores[2].name}</span>
+                <span class="points">{withoutFlores[2].points} pts</span>
+              </div>
+              <div class="player seed-6">
+                <span class="seed">#6</span>
+                <span class="name">{withoutFlores[5].name}</span>
+                <span class="points">{withoutFlores[5].points} pts</span>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="seeding-info">
-      <h2>Seeding (Q1 2026 Final Standings)</h2>
-      <ol class="seed-list">
-        {top8Players.map((player) => (
-          <li>
-            <strong>{player.name}</strong> — {player.points} points
-          </li>
-        ))}
-      </ol>
+      <!-- Scenario 2: With Mike Flores -->
+      <div class="scenario">
+        <h2 class="scenario-title">Scenario 2: With Mike Flores</h2>
+        <p class="scenario-note">Michael Flores (Rank 2, 55 points) able to attend<br/>Standard bracket seeding</p>
+
+        <div class="bracket">
+          <div class="round quarterfinals">
+            <div class="round-title">Quarterfinals</div>
+
+            <div class="match">
+              <div class="player seed-1">
+                <span class="seed">#1</span>
+                <span class="name">{withFlores[0].name}</span>
+                <span class="points">{withFlores[0].points} pts</span>
+              </div>
+              <div class="player seed-8">
+                <span class="seed">#8</span>
+                <span class="name">{withFlores[7].name}</span>
+                <span class="points">{withFlores[7].points} pts</span>
+              </div>
+            </div>
+
+            <div class="match">
+              <div class="player seed-4">
+                <span class="seed">#4</span>
+                <span class="name">{withFlores[3].name}</span>
+                <span class="points">{withFlores[3].points} pts</span>
+              </div>
+              <div class="player seed-5">
+                <span class="seed">#5</span>
+                <span class="name">{withFlores[4].name}</span>
+                <span class="points">{withFlores[4].points} pts</span>
+              </div>
+            </div>
+
+            <div class="match">
+              <div class="player seed-2">
+                <span class="seed">#2</span>
+                <span class="name">{withFlores[1].name}</span>
+                <span class="points">{withFlores[1].points} pts</span>
+              </div>
+              <div class="player seed-7">
+                <span class="seed">#7</span>
+                <span class="name">{withFlores[6].name}</span>
+                <span class="points">{withFlores[6].points} pts</span>
+              </div>
+            </div>
+
+            <div class="match">
+              <div class="player seed-3">
+                <span class="seed">#3</span>
+                <span class="name">{withFlores[2].name}</span>
+                <span class="points">{withFlores[2].points} pts</span>
+              </div>
+              <div class="player seed-6">
+                <span class="seed">#6</span>
+                <span class="name">{withFlores[5].name}</span>
+                <span class="points">{withFlores[5].points} pts</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </PageLayout>
@@ -159,7 +172,7 @@ const top8Players = [
 
   .page-header {
     text-align: center;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
   }
 
   .page-header h1 {
@@ -170,32 +183,48 @@ const top8Players = [
   .subtitle {
     font-size: 1rem;
     color: #666;
-    margin-bottom: 0.25rem;
   }
 
-  .note {
-    font-size: 0.8rem;
-    color: #888;
-    font-style: italic;
-  }
-
-  .bracket-container {
-    overflow-x: auto;
+  .scenarios-container {
+    display: flex;
+    gap: 2rem;
     margin-bottom: 2rem;
+    justify-content: center;
+  }
+
+  .scenario {
+    flex: 0 0 auto;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    padding: 1.5rem;
+    background: #f8f9fa;
+  }
+
+  .scenario-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    color: #333;
+  }
+
+  .scenario-note {
+    font-size: 0.8rem;
+    color: #666;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    line-height: 1.4;
   }
 
   .bracket {
     display: flex;
-    gap: 1.5rem;
-    min-width: 800px;
-    padding: 1rem;
+    justify-content: center;
   }
 
   .round {
-    flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 1.5rem;
   }
 
   .round-title {
@@ -207,30 +236,9 @@ const top8Players = [
   }
 
   .match {
-    flex: 1;
     display: flex;
     flex-direction: column;
     gap: 0.25rem;
-  }
-
-  .quarterfinals .match {
-    flex: 1;
-  }
-
-  .semifinals .match {
-    flex: 2;
-  }
-
-  .finals .match {
-    flex: 4;
-  }
-
-  .match-header {
-    font-size: 0.75rem;
-    font-weight: 700;
-    color: #6c757d;
-    text-align: center;
-    margin-bottom: 0.25rem;
   }
 
   .player {
@@ -242,10 +250,6 @@ const top8Players = [
     border: 1px solid #dee2e6;
     border-radius: 3px;
     font-size: 0.85rem;
-  }
-
-  .player.tbd {
-    opacity: 0.5;
   }
 
   .seed {
@@ -265,46 +269,9 @@ const top8Players = [
     color: #6c757d;
   }
 
-  .result {
-    font-weight: 700;
-    min-width: 16px;
-    text-align: center;
-    font-size: 0.85rem;
-  }
-
-  .seeding-info {
-    max-width: 500px;
-    margin: 0 auto;
-  }
-
-  .seeding-info h2 {
-    font-size: 1.2rem;
-    margin-bottom: 0.75rem;
-  }
-
-  .seed-list {
-    list-style: none;
-    padding: 0;
-  }
-
-  .seed-list li {
-    padding: 0.5rem;
-    border-bottom: 1px solid #dee2e6;
-    font-size: 0.9rem;
-  }
-
-  .seed-list li:last-child {
-    border-bottom: none;
-  }
-
-  @media (max-width: 768px) {
-    .bracket {
-      min-width: 100%;
-      flex-direction: column;
-    }
-
-    .round {
-      gap: 0.5rem;
+  @media (max-width: 968px) {
+    .scenarios-container {
+      grid-template-columns: 1fr;
     }
   }
 </style>
