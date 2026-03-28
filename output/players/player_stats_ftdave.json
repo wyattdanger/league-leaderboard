@@ -25,7 +25,7 @@
   ],
   "deckStats": [
     {
-      "deckName": "Unknown",
+      "deckName": "Replenish",
       "events": 1,
       "matchWins": 1,
       "matchLosses": 2,
@@ -57,7 +57,7 @@
           "tournamentId": "308700",
           "dateDisplay": "May 15, 2025",
           "result": "L",
-          "playerDeck": "_",
+          "playerDeck": "Replenish",
           "opponentDeck": "Burn",
           "playerGameWins": 0,
           "opponentGameWins": 2,
@@ -82,7 +82,7 @@
           "tournamentId": "308700",
           "dateDisplay": "May 15, 2025",
           "result": "L",
-          "playerDeck": "_",
+          "playerDeck": "Replenish",
           "opponentDeck": "_",
           "playerGameWins": 0,
           "opponentGameWins": 2,
@@ -103,7 +103,7 @@
       "matchRecord": "1-2-0",
       "matchWinPercentage": 0.3333333333333333,
       "gameWinPercentage": 0.33333333,
-      "deck": "_"
+      "deck": "Replenish"
     }
   ]
 }

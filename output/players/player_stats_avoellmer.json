@@ -35,16 +35,30 @@
   "deckStats": [
     {
       "deckName": "Unknown",
-      "events": 4,
-      "matchWins": 6,
+      "events": 3,
+      "matchWins": 3,
       "matchLosses": 6,
       "matchDraws": 0,
-      "matchRecord": "6-6-0",
-      "matchWinPercentage": 0.5,
-      "gameWins": 19,
+      "matchRecord": "3-6-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 11,
       "gameLosses": 13,
       "gameDraws": 0,
-      "gameWinPercentage": 0.59375,
+      "gameWinPercentage": 0.4583333333333333,
+      "trophies": 0
+    },
+    {
+      "deckName": "UG Madness",
+      "events": 1,
+      "matchWins": 3,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchRecord": "3-0-0",
+      "matchWinPercentage": 1,
+      "gameWins": 8,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
       "trophies": 1
     },
     {
@@ -125,7 +139,7 @@
           "tournamentId": "350003",
           "dateDisplay": "August 7, 2025",
           "result": "W",
-          "playerDeck": "_",
+          "playerDeck": "UG Madness",
           "opponentDeck": "Dreadnought",
           "playerGameWins": 2,
           "opponentGameWins": 0,
@@ -260,7 +274,7 @@
           "tournamentId": "350003",
           "dateDisplay": "August 7, 2025",
           "result": "W",
-          "playerDeck": "_",
+          "playerDeck": "UG Madness",
           "opponentDeck": "Stompy",
           "playerGameWins": 2,
           "opponentGameWins": 0,
@@ -285,7 +299,7 @@
           "tournamentId": "350003",
           "dateDisplay": "August 7, 2025",
           "result": "W",
-          "playerDeck": "_",
+          "playerDeck": "UG Madness",
           "opponentDeck": "Replenish",
           "playerGameWins": 2,
           "opponentGameWins": 0,
@@ -432,7 +446,7 @@
       "matchRecord": "3-0-0",
       "matchWinPercentage": 1,
       "gameWinPercentage": 1,
-      "deck": "_"
+      "deck": "UG Madness"
     },
     {
       "tournamentId": "347610",

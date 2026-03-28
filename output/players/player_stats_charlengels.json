@@ -25,31 +25,31 @@
   ],
   "deckStats": [
     {
-      "deckName": "Unknown",
+      "deckName": "Oath Parfait",
       "events": 2,
-      "matchWins": 1,
+      "matchWins": 2,
       "matchLosses": 4,
-      "matchDraws": 1,
-      "matchRecord": "1-4-1",
-      "matchWinPercentage": 0.25,
-      "gameWins": 4,
-      "gameLosses": 12,
+      "matchDraws": 0,
+      "matchRecord": "2-4-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 6,
+      "gameLosses": 10,
       "gameDraws": 0,
-      "gameWinPercentage": 0.25,
+      "gameWinPercentage": 0.375,
       "trophies": 0
     },
     {
-      "deckName": "Oath Parfait",
+      "deckName": "Unknown",
       "events": 1,
-      "matchWins": 1,
+      "matchWins": 0,
       "matchLosses": 2,
-      "matchDraws": 0,
-      "matchRecord": "1-2-0",
-      "matchWinPercentage": 0.3333333333333333,
-      "gameWins": 3,
-      "gameLosses": 5,
+      "matchDraws": 1,
+      "matchRecord": "0-2-1",
+      "matchWinPercentage": 0.16666666666666666,
+      "gameWins": 1,
+      "gameLosses": 7,
       "gameDraws": 0,
-      "gameWinPercentage": 0.375,
+      "gameWinPercentage": 0.125,
       "trophies": 0
     }
   ],
@@ -81,7 +81,7 @@
           "tournamentId": "371711",
           "dateDisplay": "October 9, 2025",
           "result": "W",
-          "playerDeck": "_",
+          "playerDeck": "Oath Parfait",
           "opponentDeck": "Replenish",
           "playerGameWins": 2,
           "opponentGameWins": 0,
@@ -231,7 +231,7 @@
           "tournamentId": "371711",
           "dateDisplay": "October 9, 2025",
           "result": "L",
-          "playerDeck": "_",
+          "playerDeck": "Oath Parfait",
           "opponentDeck": "Enchantress",
           "playerGameWins": 0,
           "opponentGameWins": 2,
@@ -256,7 +256,7 @@
           "tournamentId": "371711",
           "dateDisplay": "October 9, 2025",
           "result": "L",
-          "playerDeck": "_",
+          "playerDeck": "Oath Parfait",
           "opponentDeck": "Pit Rack",
           "playerGameWins": 1,
           "opponentGameWins": 2,
@@ -303,7 +303,7 @@
       "matchRecord": "1-2-0",
       "matchWinPercentage": 0.3333333333333333,
       "gameWinPercentage": 0.42857143,
-      "deck": "_"
+      "deck": "Oath Parfait"
     }
   ]
 }

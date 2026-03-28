@@ -1,0 +1,310 @@
+---
+import PageLayout from '../components/PageLayout.astro';
+
+const top8Players = [
+  { seed: 1, name: 'swb', username: 'swbmtg', points: 60 },
+  { seed: 2, name: 'Eli Mizock', username: 'minimiz', points: 48 },
+  { seed: 3, name: 'Yosef Harari', username: 'itsCama', points: 45 },
+  { seed: 4, name: 'Tencteri', username: 'Tencteri', points: 40 },
+  { seed: 5, name: 'Taylorhol', username: 'Taylorhol', points: 39 },
+  { seed: 6, name: 'Matt_W', username: 'Matt_W', points: 39 },
+  { seed: 7, name: 'RichBucey', username: 'RichBucey', points: 39 },
+  { seed: 8, name: 'Jeremy Siegel', username: 'remixmtg', points: 36 },
+];
+---
+
+<PageLayout>
+  <div class="card">
+    <header class="page-header">
+      <h1>Q1 2026 League Championship</h1>
+      <p class="subtitle">Top 8 Playoff Bracket - TBD</p>
+      <p class="note">* Michael Flores (Rank 2, 55 points) unable to attend - Jeremy Siegel (Rank 9, 36 points) moves up</p>
+    </header>
+
+    <div class="bracket-container">
+      <div class="bracket">
+        <!-- Quarterfinals -->
+        <div class="round quarterfinals">
+          <div class="round-title">Quarterfinals</div>
+
+          <div class="match">
+            <div class="player seed-1">
+              <span class="seed">#1</span>
+              <span class="name">{top8Players[0].name}</span>
+              <span class="points">{top8Players[0].points} pts</span>
+              <span class="result">—</span>
+            </div>
+            <div class="player seed-8">
+              <span class="seed">#8</span>
+              <span class="name">{top8Players[7].name}</span>
+              <span class="points">{top8Players[7].points} pts</span>
+              <span class="result">—</span>
+            </div>
+          </div>
+
+          <div class="match">
+            <div class="player seed-4">
+              <span class="seed">#4</span>
+              <span class="name">{top8Players[3].name}</span>
+              <span class="points">{top8Players[3].points} pts</span>
+              <span class="result">—</span>
+            </div>
+            <div class="player seed-5">
+              <span class="seed">#5</span>
+              <span class="name">{top8Players[4].name}</span>
+              <span class="points">{top8Players[4].points} pts</span>
+              <span class="result">—</span>
+            </div>
+          </div>
+
+          <div class="match">
+            <div class="player seed-2">
+              <span class="seed">#2</span>
+              <span class="name">{top8Players[1].name}</span>
+              <span class="points">{top8Players[1].points} pts</span>
+              <span class="result">—</span>
+            </div>
+            <div class="player seed-7">
+              <span class="seed">#7</span>
+              <span class="name">{top8Players[6].name}</span>
+              <span class="points">{top8Players[6].points} pts</span>
+              <span class="result">—</span>
+            </div>
+          </div>
+
+          <div class="match">
+            <div class="player seed-3">
+              <span class="seed">#3</span>
+              <span class="name">{top8Players[2].name}</span>
+              <span class="points">{top8Players[2].points} pts</span>
+              <span class="result">—</span>
+            </div>
+            <div class="player seed-6">
+              <span class="seed">#6</span>
+              <span class="name">{top8Players[5].name}</span>
+              <span class="points">{top8Players[5].points} pts</span>
+              <span class="result">—</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Semifinals -->
+        <div class="round semifinals">
+          <div class="round-title">Semifinals</div>
+
+          <div class="match">
+            <div class="player tbd">
+              <span class="seed">—</span>
+              <span class="name">TBD (QF1 Winner)</span>
+              <span class="result">—</span>
+            </div>
+            <div class="player tbd">
+              <span class="seed">—</span>
+              <span class="name">TBD (QF2 Winner)</span>
+              <span class="result">—</span>
+            </div>
+          </div>
+
+          <div class="match">
+            <div class="player tbd">
+              <span class="seed">—</span>
+              <span class="name">TBD (QF3 Winner)</span>
+              <span class="result">—</span>
+            </div>
+            <div class="player tbd">
+              <span class="seed">—</span>
+              <span class="name">TBD (QF4 Winner)</span>
+              <span class="result">—</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Finals -->
+        <div class="round finals">
+          <div class="round-title">Finals</div>
+
+          <div class="match">
+            <div class="player tbd">
+              <span class="seed">—</span>
+              <span class="name">TBD (SF1 Winner)</span>
+              <span class="result">—</span>
+            </div>
+            <div class="player tbd">
+              <span class="seed">—</span>
+              <span class="name">TBD (SF2 Winner)</span>
+              <span class="result">—</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="seeding-info">
+      <h2>Seeding (Q1 2026 Final Standings)</h2>
+      <ol class="seed-list">
+        {top8Players.map((player) => (
+          <li>
+            <strong>{player.name}</strong> — {player.points} points
+          </li>
+        ))}
+      </ol>
+    </div>
+  </div>
+</PageLayout>
+
+<style>
+  .card {
+    padding: 1.5rem;
+  }
+
+  .page-header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .page-header h1 {
+    font-size: 1.8rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 0.25rem;
+  }
+
+  .note {
+    font-size: 0.8rem;
+    color: #888;
+    font-style: italic;
+  }
+
+  .bracket-container {
+    overflow-x: auto;
+    margin-bottom: 2rem;
+  }
+
+  .bracket {
+    display: flex;
+    gap: 1.5rem;
+    min-width: 800px;
+    padding: 1rem;
+  }
+
+  .round {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .round-title {
+    font-size: 0.95rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    color: #333;
+  }
+
+  .match {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .quarterfinals .match {
+    flex: 1;
+  }
+
+  .semifinals .match {
+    flex: 2;
+  }
+
+  .finals .match {
+    flex: 4;
+  }
+
+  .match-header {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #6c757d;
+    text-align: center;
+    margin-bottom: 0.25rem;
+  }
+
+  .player {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.4rem 0.5rem;
+    background: white;
+    border: 1px solid #dee2e6;
+    border-radius: 3px;
+    font-size: 0.85rem;
+  }
+
+  .player.tbd {
+    opacity: 0.5;
+  }
+
+  .seed {
+    font-weight: 700;
+    color: #6c757d;
+    min-width: 24px;
+    font-size: 0.8rem;
+  }
+
+  .name {
+    flex: 1;
+    font-weight: 600;
+  }
+
+  .points {
+    font-size: 0.75rem;
+    color: #6c757d;
+  }
+
+  .result {
+    font-weight: 700;
+    min-width: 16px;
+    text-align: center;
+    font-size: 0.85rem;
+  }
+
+  .seeding-info {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .seeding-info h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .seed-list {
+    list-style: none;
+    padding: 0;
+  }
+
+  .seed-list li {
+    padding: 0.5rem;
+    border-bottom: 1px solid #dee2e6;
+    font-size: 0.9rem;
+  }
+
+  .seed-list li:last-child {
+    border-bottom: none;
+  }
+
+  @media (max-width: 768px) {
+    .bracket {
+      min-width: 100%;
+      flex-direction: column;
+    }
+
+    .round {
+      gap: 0.5rem;
+    }
+  }
+</style>

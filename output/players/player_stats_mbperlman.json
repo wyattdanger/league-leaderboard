@@ -26,16 +26,30 @@
   "deckStats": [
     {
       "deckName": "Unknown",
-      "events": 2,
+      "events": 1,
       "matchWins": 2,
-      "matchLosses": 4,
+      "matchLosses": 1,
       "matchDraws": 0,
-      "matchRecord": "2-4-0",
-      "matchWinPercentage": 0.3333333333333333,
-      "gameWins": 8,
-      "gameLosses": 8,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 6,
+      "gameLosses": 2,
       "gameDraws": 0,
-      "gameWinPercentage": 0.5,
+      "gameWinPercentage": 0.75,
+      "trophies": 0
+    },
+    {
+      "deckName": "Slivers",
+      "events": 1,
+      "matchWins": 0,
+      "matchLosses": 3,
+      "matchDraws": 0,
+      "matchRecord": "0-3-0",
+      "matchWinPercentage": 0,
+      "gameWins": 2,
+      "gameLosses": 6,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.25,
       "trophies": 0
     }
   ],
@@ -132,7 +146,7 @@
           "tournamentId": "343959",
           "dateDisplay": "July 24, 2025",
           "result": "L",
-          "playerDeck": "_",
+          "playerDeck": "Slivers",
           "opponentDeck": "Burn",
           "playerGameWins": 0,
           "opponentGameWins": 2,
@@ -157,7 +171,7 @@
           "tournamentId": "343959",
           "dateDisplay": "July 24, 2025",
           "result": "L",
-          "playerDeck": "_",
+          "playerDeck": "Slivers",
           "opponentDeck": "_",
           "playerGameWins": 1,
           "opponentGameWins": 2,
@@ -182,7 +196,7 @@
           "tournamentId": "343959",
           "dateDisplay": "July 24, 2025",
           "result": "L",
-          "playerDeck": "_",
+          "playerDeck": "Slivers",
           "opponentDeck": "Tidestill",
           "playerGameWins": 1,
           "opponentGameWins": 2,
@@ -216,7 +230,7 @@
       "matchRecord": "0-3-0",
       "matchWinPercentage": 0,
       "gameWinPercentage": 0.25,
-      "deck": "_"
+      "deck": "Slivers"
     }
   ]
 }
