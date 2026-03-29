@@ -29,6 +29,8 @@ async function aggregateLeague(tournamentIds: string[], leagueName?: string): Pr
   const playerTournaments = new Map<string, Set<string>>();
   // Track trophies (3-0 finishes) per player
   const playerTrophies = new Map<string, number>();
+  // Track 2-0-1 finishes per player
+  const player201s = new Map<string, number>();
 
   // Load all tournament data and combine all rounds
   for (const tournamentId of tournamentIds) {
@@ -73,7 +75,7 @@ async function aggregateLeague(tournamentIds: string[], leagueName?: string): Pr
       allRounds.push(matches);
     }
 
-    // Check final standings for 3-0 finishes (trophies)
+    // Check final standings for 3-0 finishes (trophies) and 2-0-1 finishes
     const standingsFiles = fs
       .readdirSync(tournamentDir)
       .filter((f) => f.endsWith('_Standings.json'))
@@ -87,13 +89,23 @@ async function aggregateLeague(tournamentIds: string[], leagueName?: string): Pr
 
       for (const standing of finalStandings) {
         const username = standing.Team?.Players?.[0]?.Username || '';
-        if (
-          username &&
-          standing.MatchWins === 3 &&
-          standing.MatchLosses === 0 &&
-          standing.MatchDraws === 0
-        ) {
-          playerTrophies.set(username, (playerTrophies.get(username) || 0) + 1);
+        if (username) {
+          // Track 3-0 finishes (trophies)
+          if (
+            standing.MatchWins === 3 &&
+            standing.MatchLosses === 0 &&
+            standing.MatchDraws === 0
+          ) {
+            playerTrophies.set(username, (playerTrophies.get(username) || 0) + 1);
+          }
+          // Track 2-0-1 finishes
+          if (
+            standing.MatchWins === 2 &&
+            standing.MatchLosses === 0 &&
+            standing.MatchDraws === 1
+          ) {
+            player201s.set(username, (player201s.get(username) || 0) + 1);
+          }
         }
       }
     }
@@ -108,17 +120,19 @@ async function aggregateLeague(tournamentIds: string[], leagueName?: string): Pr
   console.log(`\nCalculating league standings from ${totalRounds} total rounds...`);
   const standings = calculateStandingsByUsername(allRounds);
 
-  // Add tournament count and trophies to each standing
+  // Add tournament count, trophies, and 2-0-1s to each standing
   for (const standing of standings) {
     const username = standing.Team.Players[0]?.Username || '';
     const tournamentCount = playerTournaments.get(username)?.size || 0;
     const trophies = playerTrophies.get(username) || 0;
+    const count201s = player201s.get(username) || 0;
     (standing as any).TournamentCount = tournamentCount;
     (standing as any).Trophies = trophies;
+    (standing as any).TwoOhOnes = count201s;
   }
 
-  // Re-sort with tournament count as tiebreaker after points
-  // Sort by: Points (desc), Events Attended (desc), OMW% (desc), GW% (desc), OGW% (desc), TeamId (asc)
+  // Re-sort with new tiebreaker order
+  // Sort by: Points (desc), Events Attended (desc), OMW% (desc), Trophies (desc), 2-0-1s (desc), GW% (desc), OGW% (desc), TeamId (asc)
   standings.sort((a, b) => {
     if (b.Points !== a.Points) return b.Points - a.Points;
     const aTournaments = (a as any).TournamentCount || 0;
@@ -127,6 +141,12 @@ async function aggregateLeague(tournamentIds: string[], leagueName?: string): Pr
     if (b.OpponentMatchWinPercentage !== a.OpponentMatchWinPercentage) {
       return b.OpponentMatchWinPercentage - a.OpponentMatchWinPercentage;
     }
+    const aTrophies = (a as any).Trophies || 0;
+    const bTrophies = (b as any).Trophies || 0;
+    if (bTrophies !== aTrophies) return bTrophies - aTrophies;
+    const a201s = (a as any).TwoOhOnes || 0;
+    const b201s = (b as any).TwoOhOnes || 0;
+    if (b201s !== a201s) return b201s - a201s;
     if (b.TeamGameWinPercentage !== a.TeamGameWinPercentage) {
       return b.TeamGameWinPercentage - a.TeamGameWinPercentage;
     }
