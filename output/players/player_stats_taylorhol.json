@@ -53,16 +53,16 @@
   "deckStats": [
     {
       "deckName": "HFEB",
-      "events": 6,
-      "matchWins": 8,
-      "matchLosses": 10,
+      "events": 7,
+      "matchWins": 10,
+      "matchLosses": 11,
       "matchDraws": 0,
-      "matchRecord": "8-10-0",
-      "matchWinPercentage": 0.4444444444444444,
-      "gameWins": 22,
-      "gameLosses": 26,
+      "matchRecord": "10-11-0",
+      "matchWinPercentage": 0.47619047619047616,
+      "gameWins": 27,
+      "gameLosses": 29,
       "gameDraws": 0,
-      "gameWinPercentage": 0.4583333333333333,
+      "gameWinPercentage": 0.48214285714285715,
       "trophies": 0
     },
     {
@@ -133,20 +133,6 @@
       "gameLosses": 10,
       "gameDraws": 0,
       "gameWinPercentage": 0.375,
-      "trophies": 0
-    },
-    {
-      "deckName": "Hermit FEB",
-      "events": 1,
-      "matchWins": 2,
-      "matchLosses": 1,
-      "matchDraws": 0,
-      "matchRecord": "2-1-0",
-      "matchWinPercentage": 0.6666666666666666,
-      "gameWins": 5,
-      "gameLosses": 3,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.625,
       "trophies": 0
     },
     {
@@ -275,7 +261,7 @@
           "tournamentId": "410832",
           "dateDisplay": "March 5, 2026",
           "result": "L",
-          "playerDeck": "Hermit FEB",
+          "playerDeck": "HFEB",
           "opponentDeck": "UW Control",
           "playerGameWins": 0,
           "opponentGameWins": 2,
@@ -395,7 +381,7 @@
           "tournamentId": "410832",
           "dateDisplay": "March 5, 2026",
           "result": "W",
-          "playerDeck": "Hermit FEB",
+          "playerDeck": "HFEB",
           "opponentDeck": "The Bauble 2 Electric Boogaloo",
           "playerGameWins": 2,
           "opponentGameWins": 1,
@@ -1382,7 +1368,7 @@
       "matchRecord": "2-1-0",
       "matchWinPercentage": 0.6666666666666666,
       "gameWinPercentage": 0.5714286,
-      "deck": "Hermit FEB"
+      "deck": "HFEB"
     },
     {
       "tournamentId": "408436",
