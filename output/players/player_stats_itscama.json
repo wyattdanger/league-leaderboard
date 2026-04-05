@@ -2,13 +2,13 @@
   "username": "itsCama",
   "displayName": "Yosef Harari",
   "overallStats": {
-    "totalTournaments": 23,
+    "totalTournaments": 24,
     "totalPoints": 114,
-    "totalMatches": 69,
-    "matchRecord": "37-29-3",
-    "matchWinPercentage": 0.5579710144927537,
-    "gameRecord": "91-79-0",
-    "gameWinPercentage": 0.5352941176470588,
+    "totalMatches": 70,
+    "matchRecord": "37-30-3",
+    "matchWinPercentage": 0.55,
+    "gameRecord": "92-81-0",
+    "gameWinPercentage": 0.5317919075144508,
     "trophies": 3,
     "belts": 0
   },
@@ -21,6 +21,15 @@
       "matchWinPercentage": 0.6458333333333334,
       "gameRecord": "32-23-0",
       "gameWinPercentage": 0.5818181818181818
+    },
+    {
+      "leagueName": "Q1 2026 Top 8",
+      "events": 1,
+      "points": 0,
+      "matchRecord": "0-1-0",
+      "matchWinPercentage": 0,
+      "gameRecord": "1-2-0",
+      "gameWinPercentage": 0.3333333333333333
     },
     {
       "leagueName": "Q4 2025",
@@ -76,16 +85,16 @@
     },
     {
       "deckName": "UW Control",
-      "events": 5,
+      "events": 6,
       "matchWins": 10,
-      "matchLosses": 3,
+      "matchLosses": 4,
       "matchDraws": 2,
-      "matchRecord": "10-3-2",
-      "matchWinPercentage": 0.7333333333333333,
-      "gameWins": 26,
-      "gameLosses": 14,
+      "matchRecord": "10-4-2",
+      "matchWinPercentage": 0.6875,
+      "gameWins": 27,
+      "gameLosses": 16,
       "gameDraws": 0,
-      "gameWinPercentage": 0.65,
+      "gameWinPercentage": 0.627906976744186,
       "trophies": 1
     },
     {
@@ -159,7 +168,7 @@
       "trophies": 0
     },
     {
-      "deckName": "UR Tinker Fling",
+      "deckName": "Devourer",
       "events": 1,
       "matchWins": 1,
       "matchLosses": 2,
@@ -251,7 +260,7 @@
           "tournamentId": "308700",
           "dateDisplay": "May 15, 2025",
           "result": "L",
-          "playerDeck": "UR Tinker Fling",
+          "playerDeck": "Devourer",
           "opponentDeck": "Burn",
           "playerGameWins": 1,
           "opponentGameWins": 2,
@@ -691,7 +700,7 @@
           "tournamentId": "308700",
           "dateDisplay": "May 15, 2025",
           "result": "W",
-          "playerDeck": "UR Tinker Fling",
+          "playerDeck": "Devourer",
           "opponentDeck": "Oath Ponza",
           "playerGameWins": 2,
           "opponentGameWins": 0,
@@ -1080,6 +1089,31 @@
       ]
     },
     {
+      "opponentUsername": "Matt_W",
+      "opponentDisplayName": "Matt_W",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "matches": [
+        {
+          "tournamentId": "419238",
+          "dateDisplay": "April 2, 2026",
+          "result": "L",
+          "playerDeck": "UW Control",
+          "opponentDeck": "Devourer",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "zjr",
       "opponentDisplayName": "zjr",
       "matchesPlayed": 1,
@@ -1296,7 +1330,7 @@
           "tournamentId": "308700",
           "dateDisplay": "May 15, 2025",
           "result": "L",
-          "playerDeck": "UR Tinker Fling",
+          "playerDeck": "Devourer",
           "opponentDeck": "_",
           "playerGameWins": 1,
           "opponentGameWins": 2,
@@ -1356,6 +1390,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "419238",
+      "dateDisplay": "April 2, 2026",
+      "playerCount": 8,
+      "trophyCount": 1,
+      "roundCount": 3,
+      "rank": 7,
+      "points": 0,
+      "matchRecord": "0-1-0",
+      "matchWinPercentage": 0,
+      "gameWinPercentage": 0.3333333,
+      "deck": "UW Control"
+    },
     {
       "tournamentId": "417122",
       "dateDisplay": "March 26, 2026",
@@ -1640,7 +1687,7 @@
       "matchRecord": "1-2-0",
       "matchWinPercentage": 0.3333333333333333,
       "gameWinPercentage": 0.5,
-      "deck": "UR Tinker Fling"
+      "deck": "Devourer"
     },
     {
       "tournamentId": "305152",

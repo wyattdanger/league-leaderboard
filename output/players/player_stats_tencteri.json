@@ -2,13 +2,13 @@
   "username": "Tencteri",
   "displayName": "Tencteri",
   "overallStats": {
-    "totalTournaments": 28,
+    "totalTournaments": 29,
     "totalPoints": 122,
-    "totalMatches": 83,
-    "matchRecord": "40-41-2",
-    "matchWinPercentage": 0.4939759036144578,
-    "gameRecord": "100-100-1",
-    "gameWinPercentage": 0.4975124378109453,
+    "totalMatches": 84,
+    "matchRecord": "40-42-2",
+    "matchWinPercentage": 0.4880952380952381,
+    "gameRecord": "101-102-1",
+    "gameWinPercentage": 0.4950980392156863,
     "trophies": 1,
     "belts": 0
   },
@@ -21,6 +21,15 @@
       "matchWinPercentage": 0.5,
       "gameRecord": "32-31-0",
       "gameWinPercentage": 0.5079365079365079
+    },
+    {
+      "leagueName": "Q1 2026 Top 8",
+      "events": 1,
+      "points": 0,
+      "matchRecord": "0-1-0",
+      "matchWinPercentage": 0,
+      "gameRecord": "1-2-0",
+      "gameWinPercentage": 0.3333333333333333
     },
     {
       "leagueName": "Q4 2025",
@@ -85,16 +94,16 @@
     },
     {
       "deckName": "White Weenie",
-      "events": 7,
+      "events": 8,
       "matchWins": 12,
-      "matchLosses": 9,
+      "matchLosses": 10,
       "matchDraws": 0,
-      "matchRecord": "12-9-0",
-      "matchWinPercentage": 0.5714285714285714,
-      "gameWins": 34,
-      "gameLosses": 22,
+      "matchRecord": "12-10-0",
+      "matchWinPercentage": 0.5454545454545454,
+      "gameWins": 35,
+      "gameLosses": 24,
       "gameDraws": 0,
-      "gameWinPercentage": 0.6071428571428571,
+      "gameWinPercentage": 0.5932203389830508,
       "trophies": 1
     },
     {
@@ -468,15 +477,15 @@
     {
       "opponentUsername": "Taylorhol",
       "opponentDisplayName": "Taylorhol",
-      "matchesPlayed": 3,
+      "matchesPlayed": 4,
       "matchWins": 2,
-      "matchLosses": 1,
+      "matchLosses": 2,
       "matchDraws": 0,
-      "matchWinPercentage": 0.6666666666666666,
-      "gameWins": 4,
-      "gameLosses": 2,
+      "matchWinPercentage": 0.5,
+      "gameWins": 5,
+      "gameLosses": 4,
       "gameDraws": 0,
-      "gameWinPercentage": 0.6666666666666666,
+      "gameWinPercentage": 0.5555555555555556,
       "matches": [
         {
           "tournamentId": "406432",
@@ -495,6 +504,16 @@
           "playerDeck": "White Weenie",
           "opponentDeck": "HFEB",
           "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "419238",
+          "dateDisplay": "April 2, 2026",
+          "result": "L",
+          "playerDeck": "White Weenie",
+          "opponentDeck": "Oath Ponza",
+          "playerGameWins": 1,
           "opponentGameWins": 2,
           "gameDraws": 0
         },
@@ -1772,6 +1791,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "419238",
+      "dateDisplay": "April 2, 2026",
+      "playerCount": 8,
+      "trophyCount": 1,
+      "roundCount": 3,
+      "rank": 8,
+      "points": 0,
+      "matchRecord": "0-1-0",
+      "matchWinPercentage": 0,
+      "gameWinPercentage": 0.3333333,
+      "deck": "White Weenie"
+    },
     {
       "tournamentId": "417122",
       "dateDisplay": "March 26, 2026",

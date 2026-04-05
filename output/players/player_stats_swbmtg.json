@@ -2,13 +2,13 @@
   "username": "swbmtg",
   "displayName": "swb",
   "overallStats": {
-    "totalTournaments": 38,
-    "totalPoints": 253,
-    "totalMatches": 114,
-    "matchRecord": "82-25-7",
-    "matchWinPercentage": 0.75,
-    "gameRecord": "184-92-3",
-    "gameWinPercentage": 0.6594982078853047,
+    "totalTournaments": 39,
+    "totalPoints": 259,
+    "totalMatches": 117,
+    "matchRecord": "84-26-7",
+    "matchWinPercentage": 0.7478632478632479,
+    "gameRecord": "189-94-3",
+    "gameWinPercentage": 0.6608391608391608,
     "trophies": 11,
     "belts": 1
   },
@@ -21,6 +21,15 @@
       "matchWinPercentage": 0.7592592592592593,
       "gameRecord": "44-21-1",
       "gameWinPercentage": 0.6742424242424242
+    },
+    {
+      "leagueName": "Q1 2026 Top 8",
+      "events": 1,
+      "points": 6,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameRecord": "5-2-0",
+      "gameWinPercentage": 0.7142857142857143
     },
     {
       "leagueName": "Q4 2025",
@@ -244,6 +253,20 @@
       "gameLosses": 3,
       "gameDraws": 0,
       "gameWinPercentage": 0.625,
+      "trophies": 0
+    },
+    {
+      "deckName": "Burn",
+      "events": 1,
+      "matchWins": 2,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 6,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.75,
       "trophies": 0
     },
     {
@@ -640,15 +663,15 @@
     {
       "opponentUsername": "Taylorhol",
       "opponentDisplayName": "Taylorhol",
-      "matchesPlayed": 5,
-      "matchWins": 4,
+      "matchesPlayed": 6,
+      "matchWins": 5,
       "matchLosses": 1,
       "matchDraws": 0,
-      "matchWinPercentage": 0.8,
-      "gameWins": 9,
+      "matchWinPercentage": 0.8333333333333334,
+      "gameWins": 11,
       "gameLosses": 4,
       "gameDraws": 0,
-      "gameWinPercentage": 0.6923076923076923,
+      "gameWinPercentage": 0.7333333333333333,
       "matches": [
         {
           "tournamentId": "417122",
@@ -666,6 +689,16 @@
           "result": "W",
           "playerDeck": "Angry Hermit",
           "opponentDeck": "Aluren",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "419238",
+          "dateDisplay": "April 2, 2026",
+          "result": "W",
+          "playerDeck": "Burn",
+          "opponentDeck": "Oath Ponza",
           "playerGameWins": 2,
           "opponentGameWins": 0,
           "gameDraws": 0
@@ -698,6 +731,81 @@
           "opponentDeck": "Gush Tithe",
           "playerGameWins": 2,
           "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "RichBucey",
+      "opponentDisplayName": "RichBucey",
+      "matchesPlayed": 6,
+      "matchWins": 3,
+      "matchLosses": 3,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.5,
+      "gameWins": 9,
+      "gameLosses": 8,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5294117647058824,
+      "matches": [
+        {
+          "tournamentId": "419238",
+          "dateDisplay": "April 2, 2026",
+          "result": "L",
+          "playerDeck": "Burn",
+          "opponentDeck": "Enchantress",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "371711",
+          "dateDisplay": "October 9, 2025",
+          "result": "W",
+          "playerDeck": "Oath Parfait",
+          "opponentDeck": "Enchantress",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "397227",
+          "dateDisplay": "January 15, 2026",
+          "result": "W",
+          "playerDeck": "Tide",
+          "opponentDeck": "Moneyball Black",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "328861",
+          "dateDisplay": "June 19, 2025",
+          "result": "W",
+          "playerDeck": "_",
+          "opponentDeck": "_",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "308700",
+          "dateDisplay": "May 15, 2025",
+          "result": "L",
+          "playerDeck": "Storm",
+          "opponentDeck": "_",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "341527",
+          "dateDisplay": "July 17, 2025",
+          "result": "L",
+          "playerDeck": "Tidestill",
+          "opponentDeck": "Oath Ponza",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
           "gameDraws": 0
         }
       ]
@@ -826,71 +934,6 @@
           "result": "L",
           "playerDeck": "Lan D Hoath",
           "opponentDeck": "UW Tide Control",
-          "playerGameWins": 1,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "RichBucey",
-      "opponentDisplayName": "RichBucey",
-      "matchesPlayed": 5,
-      "matchWins": 3,
-      "matchLosses": 2,
-      "matchDraws": 0,
-      "matchWinPercentage": 0.6,
-      "gameWins": 8,
-      "gameLosses": 6,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.5714285714285714,
-      "matches": [
-        {
-          "tournamentId": "371711",
-          "dateDisplay": "October 9, 2025",
-          "result": "W",
-          "playerDeck": "Oath Parfait",
-          "opponentDeck": "Enchantress",
-          "playerGameWins": 2,
-          "opponentGameWins": 1,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "397227",
-          "dateDisplay": "January 15, 2026",
-          "result": "W",
-          "playerDeck": "Tide",
-          "opponentDeck": "Moneyball Black",
-          "playerGameWins": 2,
-          "opponentGameWins": 1,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "328861",
-          "dateDisplay": "June 19, 2025",
-          "result": "W",
-          "playerDeck": "_",
-          "opponentDeck": "_",
-          "playerGameWins": 2,
-          "opponentGameWins": 0,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "308700",
-          "dateDisplay": "May 15, 2025",
-          "result": "L",
-          "playerDeck": "Storm",
-          "opponentDeck": "_",
-          "playerGameWins": 1,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "341527",
-          "dateDisplay": "July 17, 2025",
-          "result": "L",
-          "playerDeck": "Tidestill",
-          "opponentDeck": "Oath Ponza",
           "playerGameWins": 1,
           "opponentGameWins": 2,
           "gameDraws": 0
@@ -1163,6 +1206,51 @@
       ]
     },
     {
+      "opponentUsername": "remixmtg",
+      "opponentDisplayName": "Jeremy Siegel",
+      "matchesPlayed": 3,
+      "matchWins": 2,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 4,
+      "gameLosses": 3,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5714285714285714,
+      "matches": [
+        {
+          "tournamentId": "406432",
+          "dateDisplay": "February 19, 2026",
+          "result": "L",
+          "playerDeck": "Terrageddon",
+          "opponentDeck": "Elves",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "419238",
+          "dateDisplay": "April 2, 2026",
+          "result": "W",
+          "playerDeck": "Burn",
+          "opponentDeck": "Terrageddon",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "393796",
+          "dateDisplay": "January 1, 2026",
+          "result": "W",
+          "playerDeck": "The Rock",
+          "opponentDeck": "Terrageddon",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "BryanGulotta",
       "opponentDisplayName": "BryanGulotta",
       "matchesPlayed": 3,
@@ -1353,41 +1441,6 @@
           "opponentDeck": "Moneyball Black",
           "playerGameWins": 1,
           "opponentGameWins": 2,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "remixmtg",
-      "opponentDisplayName": "Jeremy Siegel",
-      "matchesPlayed": 2,
-      "matchWins": 1,
-      "matchLosses": 1,
-      "matchDraws": 0,
-      "matchWinPercentage": 0.5,
-      "gameWins": 2,
-      "gameLosses": 3,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.4,
-      "matches": [
-        {
-          "tournamentId": "406432",
-          "dateDisplay": "February 19, 2026",
-          "result": "L",
-          "playerDeck": "Terrageddon",
-          "opponentDeck": "Elves",
-          "playerGameWins": 0,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "393796",
-          "dateDisplay": "January 1, 2026",
-          "result": "W",
-          "playerDeck": "The Rock",
-          "opponentDeck": "Terrageddon",
-          "playerGameWins": 2,
-          "opponentGameWins": 1,
           "gameDraws": 0
         }
       ]
@@ -2099,6 +2152,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "419238",
+      "dateDisplay": "April 2, 2026",
+      "playerCount": 8,
+      "trophyCount": 1,
+      "roundCount": 3,
+      "rank": 2,
+      "points": 6,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWinPercentage": 0.7142857,
+      "deck": "Burn"
+    },
     {
       "tournamentId": "417122",
       "dateDisplay": "March 26, 2026",
