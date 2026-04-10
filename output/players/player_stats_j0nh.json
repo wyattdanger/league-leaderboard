@@ -44,16 +44,16 @@
   "deckStats": [
     {
       "deckName": "Dreadnought",
-      "events": 3,
-      "matchWins": 3,
-      "matchLosses": 6,
+      "events": 4,
+      "matchWins": 4,
+      "matchLosses": 8,
       "matchDraws": 0,
-      "matchRecord": "3-6-0",
+      "matchRecord": "4-8-0",
       "matchWinPercentage": 0.3333333333333333,
-      "gameWins": 11,
-      "gameLosses": 13,
+      "gameWins": 14,
+      "gameLosses": 18,
       "gameDraws": 0,
-      "gameWinPercentage": 0.4583333333333333,
+      "gameWinPercentage": 0.4375,
       "trophies": 0
     },
     {
@@ -66,20 +66,6 @@
       "matchWinPercentage": 0.3333333333333333,
       "gameWins": 6,
       "gameLosses": 10,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.375,
-      "trophies": 0
-    },
-    {
-      "deckName": "Unknown",
-      "events": 1,
-      "matchWins": 1,
-      "matchLosses": 2,
-      "matchDraws": 0,
-      "matchRecord": "1-2-0",
-      "matchWinPercentage": 0.3333333333333333,
-      "gameWins": 3,
-      "gameLosses": 5,
       "gameDraws": 0,
       "gameWinPercentage": 0.375,
       "trophies": 0
@@ -117,7 +103,7 @@
           "tournamentId": "420854",
           "dateDisplay": "April 9, 2026",
           "result": "L",
-          "playerDeck": "_",
+          "playerDeck": "Dreadnought",
           "opponentDeck": "Burn",
           "playerGameWins": 0,
           "opponentGameWins": 2,
@@ -187,7 +173,7 @@
           "tournamentId": "420854",
           "dateDisplay": "April 9, 2026",
           "result": "L",
-          "playerDeck": "_",
+          "playerDeck": "Dreadnought",
           "opponentDeck": "UW Stiflenought",
           "playerGameWins": 0,
           "opponentGameWins": 2,
@@ -212,8 +198,8 @@
           "tournamentId": "420854",
           "dateDisplay": "April 9, 2026",
           "result": "W",
-          "playerDeck": "_",
-          "opponentDeck": "_",
+          "playerDeck": "Dreadnought",
+          "opponentDeck": "Reanimator",
           "playerGameWins": 2,
           "opponentGameWins": 1,
           "gameDraws": 0
@@ -608,7 +594,7 @@
       "matchRecord": "1-2-0",
       "matchWinPercentage": 0.3333333333333333,
       "gameWinPercentage": 0.3333333,
-      "deck": "_"
+      "deck": "Dreadnought"
     },
     {
       "tournamentId": "408436",
