@@ -3,6 +3,9 @@
 # The first league is considered the "current" league and will be displayed on /league
 
 leagues:
+  - name: Q2 2026
+    tournaments:
+      - 420854
   - name: Q1 2026
     tournaments:
       - 417122

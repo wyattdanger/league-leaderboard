@@ -2,17 +2,26 @@
   "username": "JUDDERMANG",
   "displayName": "Chris Cruz",
   "overallStats": {
-    "totalTournaments": 38,
-    "totalPoints": 130,
-    "totalMatches": 114,
-    "matchRecord": "42-68-4",
-    "matchWinPercentage": 0.38596491228070173,
-    "gameRecord": "111-158-1",
-    "gameWinPercentage": 0.4111111111111111,
+    "totalTournaments": 39,
+    "totalPoints": 133,
+    "totalMatches": 117,
+    "matchRecord": "43-70-4",
+    "matchWinPercentage": 0.38461538461538464,
+    "gameRecord": "115-163-1",
+    "gameWinPercentage": 0.4121863799283154,
     "trophies": 2,
     "belts": 0
   },
   "leagueStats": [
+    {
+      "leagueName": "Q2 2026",
+      "events": 1,
+      "points": 3,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameRecord": "4-5-0",
+      "gameWinPercentage": 0.4444444444444444
+    },
     {
       "leagueName": "Q1 2026",
       "events": 7,
@@ -79,6 +88,20 @@
   ],
   "deckStats": [
     {
+      "deckName": "Dreadnought",
+      "events": 13,
+      "matchWins": 15,
+      "matchLosses": 23,
+      "matchDraws": 1,
+      "matchRecord": "15-23-1",
+      "matchWinPercentage": 0.3974358974358974,
+      "gameWins": 49,
+      "gameLosses": 55,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.47115384615384615,
+      "trophies": 1
+    },
+    {
       "deckName": "Unknown",
       "events": 12,
       "matchWins": 15,
@@ -91,20 +114,6 @@
       "gameDraws": 0,
       "gameWinPercentage": 0.4479166666666667,
       "trophies": 0
-    },
-    {
-      "deckName": "Dreadnought",
-      "events": 12,
-      "matchWins": 14,
-      "matchLosses": 21,
-      "matchDraws": 1,
-      "matchRecord": "14-21-1",
-      "matchWinPercentage": 0.4027777777777778,
-      "gameWins": 45,
-      "gameLosses": 51,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.46875,
-      "trophies": 1
     },
     {
       "deckName": "Burn",
@@ -1157,6 +1166,41 @@
       ]
     },
     {
+      "opponentUsername": "peterk235",
+      "opponentDisplayName": "peterk235",
+      "matchesPlayed": 2,
+      "matchWins": 0,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.2,
+      "matches": [
+        {
+          "tournamentId": "420854",
+          "dateDisplay": "April 9, 2026",
+          "result": "L",
+          "playerDeck": "Dreadnought",
+          "opponentDeck": "Sligh",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "390154",
+          "dateDisplay": "December 11, 2025",
+          "result": "L",
+          "playerDeck": "Dreadnought",
+          "opponentDeck": "White Weenie",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "remixmtg",
       "opponentDisplayName": "Jeremy Siegel",
       "matchesPlayed": 2,
@@ -1290,6 +1334,56 @@
           "result": "L",
           "playerDeck": "_",
           "opponentDeck": "Goblins",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "jhealy",
+      "opponentDisplayName": "jhealy",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6666666666666666,
+      "matches": [
+        {
+          "tournamentId": "420854",
+          "dateDisplay": "April 9, 2026",
+          "result": "W",
+          "playerDeck": "Dreadnought",
+          "opponentDeck": "RG Goblins",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "LuisNeiman",
+      "opponentDisplayName": "LuisNeiman",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "matches": [
+        {
+          "tournamentId": "420854",
+          "dateDisplay": "April 9, 2026",
+          "result": "L",
+          "playerDeck": "Dreadnought",
+          "opponentDeck": "GW Oath Ponza",
           "playerGameWins": 1,
           "opponentGameWins": 2,
           "gameDraws": 0
@@ -1542,31 +1636,6 @@
           "opponentDeck": "Burn",
           "playerGameWins": 2,
           "opponentGameWins": 1,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "peterk235",
-      "opponentDisplayName": "peterk235",
-      "matchesPlayed": 1,
-      "matchWins": 0,
-      "matchLosses": 1,
-      "matchDraws": 0,
-      "matchWinPercentage": 0,
-      "gameWins": 0,
-      "gameLosses": 2,
-      "gameDraws": 0,
-      "gameWinPercentage": 0,
-      "matches": [
-        {
-          "tournamentId": "390154",
-          "dateDisplay": "December 11, 2025",
-          "result": "L",
-          "playerDeck": "Dreadnought",
-          "opponentDeck": "White Weenie",
-          "playerGameWins": 0,
-          "opponentGameWins": 2,
           "gameDraws": 0
         }
       ]
@@ -2048,6 +2117,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "420854",
+      "dateDisplay": "April 9, 2026",
+      "playerCount": 28,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 19,
+      "points": 3,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWinPercentage": 0.4444444,
+      "deck": "Dreadnought"
+    },
     {
       "tournamentId": "417122",
       "dateDisplay": "March 26, 2026",
