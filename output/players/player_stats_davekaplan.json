@@ -2,25 +2,25 @@
   "username": "DaveKaplan",
   "displayName": "Dave Kaplan",
   "overallStats": {
-    "totalTournaments": 3,
-    "totalPoints": 16,
-    "totalMatches": 9,
-    "matchRecord": "5-3-1",
-    "matchWinPercentage": 0.6111111111111112,
-    "gameRecord": "13-9-0",
-    "gameWinPercentage": 0.5909090909090909,
+    "totalTournaments": 4,
+    "totalPoints": 22,
+    "totalMatches": 12,
+    "matchRecord": "7-4-1",
+    "matchWinPercentage": 0.625,
+    "gameRecord": "18-11-0",
+    "gameWinPercentage": 0.6206896551724138,
     "trophies": 0,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q2 2026",
-      "events": 1,
-      "points": 6,
-      "matchRecord": "2-1-0",
+      "events": 2,
+      "points": 12,
+      "matchRecord": "4-2-0",
       "matchWinPercentage": 0.6666666666666666,
-      "gameRecord": "5-3-0",
-      "gameWinPercentage": 0.625
+      "gameRecord": "10-5-0",
+      "gameWinPercentage": 0.6666666666666666
     },
     {
       "leagueName": "Q1 2026",
@@ -35,16 +35,16 @@
   "deckStats": [
     {
       "deckName": "Dreadnought",
-      "events": 2,
-      "matchWins": 3,
-      "matchLosses": 2,
+      "events": 3,
+      "matchWins": 5,
+      "matchLosses": 3,
       "matchDraws": 1,
-      "matchRecord": "3-2-1",
-      "matchWinPercentage": 0.5833333333333334,
-      "gameWins": 9,
-      "gameLosses": 7,
+      "matchRecord": "5-3-1",
+      "matchWinPercentage": 0.6111111111111112,
+      "gameWins": 15,
+      "gameLosses": 9,
       "gameDraws": 0,
-      "gameWinPercentage": 0.5625,
+      "gameWinPercentage": 0.625,
       "trophies": 0
     },
     {
@@ -63,6 +63,81 @@
     }
   ],
   "headToHead": [
+    {
+      "opponentUsername": "mattmanw2",
+      "opponentDisplayName": "mattmanw2",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "matches": [
+        {
+          "tournamentId": "422555",
+          "dateDisplay": "April 16, 2026",
+          "result": "W",
+          "playerDeck": "Dreadnought",
+          "opponentDeck": "Moneyball",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "landho",
+      "opponentDisplayName": "landho",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "matches": [
+        {
+          "tournamentId": "422555",
+          "dateDisplay": "April 16, 2026",
+          "result": "W",
+          "playerDeck": "Dreadnought",
+          "opponentDeck": "Moneyball Black",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "sjpenzer",
+      "opponentDisplayName": "sjpenzer",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "matches": [
+        {
+          "tournamentId": "422555",
+          "dateDisplay": "April 16, 2026",
+          "result": "L",
+          "playerDeck": "Dreadnought",
+          "opponentDeck": "Terrageddon",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
     {
       "opponentUsername": "Jakopf",
       "opponentDisplayName": "Jakopf",
@@ -290,6 +365,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "422555",
+      "dateDisplay": "April 16, 2026",
+      "playerCount": 29,
+      "trophyCount": 3,
+      "roundCount": 3,
+      "rank": 5,
+      "points": 6,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWinPercentage": 0.7142857,
+      "deck": "Dreadnought"
+    },
     {
       "tournamentId": "420854",
       "dateDisplay": "April 9, 2026",
