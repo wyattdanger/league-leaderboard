@@ -2,17 +2,26 @@
   "username": "hankzhong",
   "displayName": "Hank Zhong",
   "overallStats": {
-    "totalTournaments": 1,
-    "totalPoints": 6,
-    "totalMatches": 3,
-    "matchRecord": "2-1-0",
+    "totalTournaments": 2,
+    "totalPoints": 12,
+    "totalMatches": 6,
+    "matchRecord": "4-2-0",
     "matchWinPercentage": 0.6666666666666666,
-    "gameRecord": "4-3-0",
+    "gameRecord": "8-6-0",
     "gameWinPercentage": 0.5714285714285714,
     "trophies": 0,
     "belts": 0
   },
   "leagueStats": [
+    {
+      "leagueName": "Q2 2026",
+      "events": 1,
+      "points": 6,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameRecord": "4-3-0",
+      "gameWinPercentage": 0.5714285714285714
+    },
     {
       "leagueName": "Q1 2026",
       "events": 1,
@@ -24,6 +33,20 @@
     }
   ],
   "deckStats": [
+    {
+      "deckName": "Stiflenought",
+      "events": 1,
+      "matchWins": 2,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 5,
+      "gameLosses": 3,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.625,
+      "trophies": 0
+    },
     {
       "deckName": "Dreadnought",
       "events": 1,
@@ -40,6 +63,81 @@
     }
   ],
   "headToHead": [
+    {
+      "opponentUsername": "JUDDERMANG",
+      "opponentDisplayName": "Chris Cruz",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "matches": [
+        {
+          "tournamentId": "424009",
+          "dateDisplay": "April 23, 2026",
+          "result": "L",
+          "playerDeck": "Stiflenought",
+          "opponentDeck": "Dreadnought",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "Matt_W",
+      "opponentDisplayName": "Matt_W",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6666666666666666,
+      "matches": [
+        {
+          "tournamentId": "424009",
+          "dateDisplay": "April 23, 2026",
+          "result": "W",
+          "playerDeck": "Stiflenought",
+          "opponentDeck": "Devourer",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "ThunderDragon",
+      "opponentDisplayName": "ThunderDragon",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "matches": [
+        {
+          "tournamentId": "424009",
+          "dateDisplay": "April 23, 2026",
+          "result": "W",
+          "playerDeck": "Stiflenought",
+          "opponentDeck": "Landstill",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
     {
       "opponentUsername": "maxshiau",
       "opponentDisplayName": "maxshiau",
@@ -117,6 +215,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "424009",
+      "dateDisplay": "April 23, 2026",
+      "playerCount": 31,
+      "trophyCount": 4,
+      "roundCount": 3,
+      "rank": 11,
+      "points": 6,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWinPercentage": 0.5714286,
+      "deck": "Stiflenought"
+    },
     {
       "tournamentId": "400729",
       "dateDisplay": "January 29, 2026",

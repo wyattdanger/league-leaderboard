@@ -2,25 +2,25 @@
   "username": "DaveKaplan",
   "displayName": "Dave Kaplan",
   "overallStats": {
-    "totalTournaments": 4,
-    "totalPoints": 22,
-    "totalMatches": 12,
-    "matchRecord": "7-4-1",
-    "matchWinPercentage": 0.625,
-    "gameRecord": "18-11-0",
-    "gameWinPercentage": 0.6206896551724138,
-    "trophies": 0,
+    "totalTournaments": 5,
+    "totalPoints": 31,
+    "totalMatches": 15,
+    "matchRecord": "10-4-1",
+    "matchWinPercentage": 0.7,
+    "gameRecord": "24-13-0",
+    "gameWinPercentage": 0.6486486486486487,
+    "trophies": 1,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q2 2026",
-      "events": 2,
-      "points": 12,
-      "matchRecord": "4-2-0",
-      "matchWinPercentage": 0.6666666666666666,
-      "gameRecord": "10-5-0",
-      "gameWinPercentage": 0.6666666666666666
+      "events": 3,
+      "points": 21,
+      "matchRecord": "7-2-0",
+      "matchWinPercentage": 0.7777777777777778,
+      "gameRecord": "16-7-0",
+      "gameWinPercentage": 0.6956521739130435
     },
     {
       "leagueName": "Q1 2026",
@@ -35,17 +35,17 @@
   "deckStats": [
     {
       "deckName": "Dreadnought",
-      "events": 3,
-      "matchWins": 5,
+      "events": 4,
+      "matchWins": 8,
       "matchLosses": 3,
       "matchDraws": 1,
-      "matchRecord": "5-3-1",
-      "matchWinPercentage": 0.6111111111111112,
-      "gameWins": 15,
-      "gameLosses": 9,
+      "matchRecord": "8-3-1",
+      "matchWinPercentage": 0.7083333333333334,
+      "gameWins": 21,
+      "gameLosses": 11,
       "gameDraws": 0,
-      "gameWinPercentage": 0.625,
-      "trophies": 0
+      "gameWinPercentage": 0.65625,
+      "trophies": 1
     },
     {
       "deckName": "Angry Hermit",
@@ -63,6 +63,91 @@
     }
   ],
   "headToHead": [
+    {
+      "opponentUsername": "Tencteri",
+      "opponentDisplayName": "Tencteri",
+      "matchesPlayed": 2,
+      "matchWins": 1,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.5,
+      "gameWins": 3,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6,
+      "matches": [
+        {
+          "tournamentId": "424009",
+          "dateDisplay": "April 23, 2026",
+          "result": "W",
+          "playerDeck": "Dreadnought",
+          "opponentDeck": "_",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "400729",
+          "dateDisplay": "January 29, 2026",
+          "result": "L",
+          "playerDeck": "Dreadnought",
+          "opponentDeck": "Zombies",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "J0Nh",
+      "opponentDisplayName": "J0Nh",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6666666666666666,
+      "matches": [
+        {
+          "tournamentId": "424009",
+          "dateDisplay": "April 23, 2026",
+          "result": "W",
+          "playerDeck": "Dreadnought",
+          "opponentDeck": "Dreadnought",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "PCavalcanti",
+      "opponentDisplayName": "PCavalcanti",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6666666666666666,
+      "matches": [
+        {
+          "tournamentId": "424009",
+          "dateDisplay": "April 23, 2026",
+          "result": "W",
+          "playerDeck": "Dreadnought",
+          "opponentDeck": "Goblins",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
     {
       "opponentUsername": "mattmanw2",
       "opponentDisplayName": "mattmanw2",
@@ -337,34 +422,22 @@
           "gameDraws": 0
         }
       ]
-    },
-    {
-      "opponentUsername": "Tencteri",
-      "opponentDisplayName": "Tencteri",
-      "matchesPlayed": 1,
-      "matchWins": 0,
-      "matchLosses": 1,
-      "matchDraws": 0,
-      "matchWinPercentage": 0,
-      "gameWins": 1,
-      "gameLosses": 2,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.3333333333333333,
-      "matches": [
-        {
-          "tournamentId": "400729",
-          "dateDisplay": "January 29, 2026",
-          "result": "L",
-          "playerDeck": "Dreadnought",
-          "opponentDeck": "Zombies",
-          "playerGameWins": 1,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        }
-      ]
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "424009",
+      "dateDisplay": "April 23, 2026",
+      "playerCount": 31,
+      "trophyCount": 4,
+      "roundCount": 3,
+      "rank": 4,
+      "points": 9,
+      "matchRecord": "3-0-0",
+      "matchWinPercentage": 1,
+      "gameWinPercentage": 0.75,
+      "deck": "Dreadnought"
+    },
     {
       "tournamentId": "422555",
       "dateDisplay": "April 16, 2026",

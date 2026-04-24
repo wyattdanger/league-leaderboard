@@ -2,25 +2,25 @@
   "username": "LuisNeiman",
   "displayName": "LuisNeiman",
   "overallStats": {
-    "totalTournaments": 9,
-    "totalPoints": 51,
-    "totalMatches": 27,
-    "matchRecord": "17-10-0",
-    "matchWinPercentage": 0.6296296296296297,
-    "gameRecord": "39-28-2",
-    "gameWinPercentage": 0.5652173913043478,
+    "totalTournaments": 10,
+    "totalPoints": 54,
+    "totalMatches": 30,
+    "matchRecord": "18-12-0",
+    "matchWinPercentage": 0.6,
+    "gameRecord": "42-32-2",
+    "gameWinPercentage": 0.5526315789473685,
     "trophies": 2,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q2 2026",
-      "events": 1,
-      "points": 6,
-      "matchRecord": "2-1-0",
-      "matchWinPercentage": 0.6666666666666666,
-      "gameRecord": "5-4-0",
-      "gameWinPercentage": 0.5555555555555556
+      "events": 2,
+      "points": 9,
+      "matchRecord": "3-3-0",
+      "matchWinPercentage": 0.5,
+      "gameRecord": "8-8-0",
+      "gameWinPercentage": 0.5
     },
     {
       "leagueName": "Q1 2026",
@@ -145,6 +145,20 @@
       "trophies": 0
     },
     {
+      "deckName": "4C Terra Oath",
+      "events": 1,
+      "matchWins": 1,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 3,
+      "gameLosses": 5,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.375,
+      "trophies": 0
+    },
+    {
       "deckName": "Cradle Control",
       "events": 1,
       "matchWins": 1,
@@ -225,6 +239,76 @@
           "opponentDeck": "Burn",
           "playerGameWins": 2,
           "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "JUDDERMANG",
+      "opponentDisplayName": "Chris Cruz",
+      "matchesPlayed": 2,
+      "matchWins": 1,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.5,
+      "gameWins": 2,
+      "gameLosses": 3,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.4,
+      "matches": [
+        {
+          "tournamentId": "424009",
+          "dateDisplay": "April 23, 2026",
+          "result": "L",
+          "playerDeck": "4C Terra Oath",
+          "opponentDeck": "Dreadnought",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "420854",
+          "dateDisplay": "April 9, 2026",
+          "result": "W",
+          "playerDeck": "GW Oath Ponza",
+          "opponentDeck": "Dreadnought",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "FriendlyFerret",
+      "opponentDisplayName": "Bill Ellis!!",
+      "matchesPlayed": 2,
+      "matchWins": 0,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 2,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "matches": [
+        {
+          "tournamentId": "424009",
+          "dateDisplay": "April 23, 2026",
+          "result": "L",
+          "playerDeck": "4C Terra Oath",
+          "opponentDeck": "Moneyball Black",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "308700",
+          "dateDisplay": "May 15, 2025",
+          "result": "L",
+          "playerDeck": "Oath Devourer",
+          "opponentDeck": "Burn",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
           "gameDraws": 0
         }
       ]
@@ -388,31 +472,6 @@
           "result": "W",
           "playerDeck": "GW Oath Ponza",
           "opponentDeck": "Survival Welder",
-          "playerGameWins": 2,
-          "opponentGameWins": 1,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "JUDDERMANG",
-      "opponentDisplayName": "Chris Cruz",
-      "matchesPlayed": 1,
-      "matchWins": 1,
-      "matchLosses": 0,
-      "matchDraws": 0,
-      "matchWinPercentage": 1,
-      "gameWins": 2,
-      "gameLosses": 1,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.6666666666666666,
-      "matches": [
-        {
-          "tournamentId": "420854",
-          "dateDisplay": "April 9, 2026",
-          "result": "W",
-          "playerDeck": "GW Oath Ponza",
-          "opponentDeck": "Dreadnought",
           "playerGameWins": 2,
           "opponentGameWins": 1,
           "gameDraws": 0
@@ -695,31 +754,6 @@
       ]
     },
     {
-      "opponentUsername": "FriendlyFerret",
-      "opponentDisplayName": "Bill Ellis!!",
-      "matchesPlayed": 1,
-      "matchWins": 0,
-      "matchLosses": 1,
-      "matchDraws": 0,
-      "matchWinPercentage": 0,
-      "gameWins": 1,
-      "gameLosses": 2,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.3333333333333333,
-      "matches": [
-        {
-          "tournamentId": "308700",
-          "dateDisplay": "May 15, 2025",
-          "result": "L",
-          "playerDeck": "Oath Devourer",
-          "opponentDeck": "Burn",
-          "playerGameWins": 1,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
       "opponentUsername": "rmcf",
       "opponentDisplayName": "rmcf",
       "matchesPlayed": 1,
@@ -746,6 +780,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "424009",
+      "dateDisplay": "April 23, 2026",
+      "playerCount": 31,
+      "trophyCount": 4,
+      "roundCount": 3,
+      "rank": 17,
+      "points": 3,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWinPercentage": 0.4285714,
+      "deck": "4C Terra Oath"
+    },
     {
       "tournamentId": "420854",
       "dateDisplay": "April 9, 2026",
