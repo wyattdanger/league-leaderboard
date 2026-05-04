@@ -2,25 +2,25 @@
   "username": "Mookyspulder",
   "displayName": "Dan S",
   "overallStats": {
-    "totalTournaments": 8,
-    "totalPoints": 43,
-    "totalMatches": 24,
-    "matchRecord": "14-9-1",
-    "matchWinPercentage": 0.6041666666666666,
-    "gameRecord": "32-24-0",
-    "gameWinPercentage": 0.5714285714285714,
-    "trophies": 2,
+    "totalTournaments": 9,
+    "totalPoints": 52,
+    "totalMatches": 27,
+    "matchRecord": "17-9-1",
+    "matchWinPercentage": 0.6481481481481481,
+    "gameRecord": "38-25-0",
+    "gameWinPercentage": 0.6031746031746031,
+    "trophies": 3,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q2 2026",
-      "events": 3,
-      "points": 15,
-      "matchRecord": "5-4-0",
-      "matchWinPercentage": 0.5555555555555556,
-      "gameRecord": "13-9-0",
-      "gameWinPercentage": 0.5909090909090909
+      "events": 4,
+      "points": 24,
+      "matchRecord": "8-4-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameRecord": "19-10-0",
+      "gameWinPercentage": 0.6551724137931034
     },
     {
       "leagueName": "Q1 2026",
@@ -76,6 +76,20 @@
       "trophies": 0
     },
     {
+      "deckName": "Mono black clerics",
+      "events": 1,
+      "matchWins": 3,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchRecord": "3-0-0",
+      "matchWinPercentage": 1,
+      "gameWins": 7,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.875,
+      "trophies": 1
+    },
+    {
       "deckName": "Goblins",
       "events": 1,
       "matchWins": 2,
@@ -91,6 +105,51 @@
     }
   ],
   "headToHead": [
+    {
+      "opponentUsername": "Tencteri",
+      "opponentDisplayName": "Tencteri",
+      "matchesPlayed": 3,
+      "matchWins": 2,
+      "matchLosses": 0,
+      "matchDraws": 1,
+      "matchWinPercentage": 0.8333333333333334,
+      "gameWins": 5,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.7142857142857143,
+      "matches": [
+        {
+          "tournamentId": "425821",
+          "dateDisplay": "April 30, 2026",
+          "result": "W",
+          "playerDeck": "Mono black clerics",
+          "opponentDeck": "Mono R Welder",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "410832",
+          "dateDisplay": "March 5, 2026",
+          "result": "D",
+          "playerDeck": "Clerics",
+          "opponentDeck": "Esper Midrange",
+          "playerGameWins": 1,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "402789",
+          "dateDisplay": "February 5, 2026",
+          "result": "W",
+          "playerDeck": "Moneyball Black",
+          "opponentDeck": "RG Tron",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
     {
       "opponentUsername": "Goosegrease",
       "opponentDisplayName": "Ryan Mielbye",
@@ -207,41 +266,6 @@
       ]
     },
     {
-      "opponentUsername": "Tencteri",
-      "opponentDisplayName": "Tencteri",
-      "matchesPlayed": 2,
-      "matchWins": 1,
-      "matchLosses": 0,
-      "matchDraws": 1,
-      "matchWinPercentage": 0.75,
-      "gameWins": 3,
-      "gameLosses": 2,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.6,
-      "matches": [
-        {
-          "tournamentId": "410832",
-          "dateDisplay": "March 5, 2026",
-          "result": "D",
-          "playerDeck": "Clerics",
-          "opponentDeck": "Esper Midrange",
-          "playerGameWins": 1,
-          "opponentGameWins": 1,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "402789",
-          "dateDisplay": "February 5, 2026",
-          "result": "W",
-          "playerDeck": "Moneyball Black",
-          "opponentDeck": "RG Tron",
-          "playerGameWins": 2,
-          "opponentGameWins": 1,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
       "opponentUsername": "AndrewLevine",
       "opponentDisplayName": "AndrewLevine",
       "matchesPlayed": 2,
@@ -272,6 +296,56 @@
           "opponentDeck": "Pattern Rector",
           "playerGameWins": 0,
           "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "weidnent",
+      "opponentDisplayName": "Nicholas Weidner",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "matches": [
+        {
+          "tournamentId": "425821",
+          "dateDisplay": "April 30, 2026",
+          "result": "W",
+          "playerDeck": "Mono black clerics",
+          "opponentDeck": "Reanimator",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "XVW988697",
+      "opponentDisplayName": "XVW988697",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6666666666666666,
+      "matches": [
+        {
+          "tournamentId": "425821",
+          "dateDisplay": "April 30, 2026",
+          "result": "W",
+          "playerDeck": "Mono black clerics",
+          "opponentDeck": "U/R Welder",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
           "gameDraws": 0
         }
       ]
@@ -603,6 +677,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "425821",
+      "dateDisplay": "April 30, 2026",
+      "playerCount": 11,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 1,
+      "points": 9,
+      "matchRecord": "3-0-0",
+      "matchWinPercentage": 1,
+      "gameWinPercentage": 0.8571429,
+      "deck": "Mono black clerics"
+    },
     {
       "tournamentId": "424009",
       "dateDisplay": "April 23, 2026",
