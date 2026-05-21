@@ -2,25 +2,25 @@
   "username": "remixmtg",
   "displayName": "Jeremy Siegel",
   "overallStats": {
-    "totalTournaments": 16,
+    "totalTournaments": 17,
     "totalPoints": 76,
-    "totalMatches": 46,
-    "matchRecord": "25-20-1",
-    "matchWinPercentage": 0.5543478260869565,
-    "gameRecord": "55-50-3",
-    "gameWinPercentage": 0.5092592592592593,
+    "totalMatches": 49,
+    "matchRecord": "25-23-1",
+    "matchWinPercentage": 0.5204081632653061,
+    "gameRecord": "55-56-3",
+    "gameWinPercentage": 0.4824561403508772,
     "trophies": 2,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q2 2026",
-      "events": 4,
+      "events": 5,
       "points": 21,
-      "matchRecord": "7-5-0",
-      "matchWinPercentage": 0.5833333333333334,
-      "gameRecord": "15-13-0",
-      "gameWinPercentage": 0.5357142857142857
+      "matchRecord": "7-8-0",
+      "matchWinPercentage": 0.4666666666666667,
+      "gameRecord": "15-19-0",
+      "gameWinPercentage": 0.4411764705882353
     },
     {
       "leagueName": "Q1 2026",
@@ -171,6 +171,20 @@
       "matchDraws": 0,
       "matchRecord": "1-2-0",
       "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 3,
+      "gameLosses": 5,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.375,
+      "trophies": 0
+    },
+    {
+      "deckName": "Didgeridoo",
+      "events": 1,
+      "matchWins": 0,
+      "matchLosses": 3,
+      "matchDraws": 0,
+      "matchRecord": "0-3-0",
+      "matchWinPercentage": 0,
       "gameWins": 3,
       "gameLosses": 5,
       "gameDraws": 0,
@@ -575,6 +589,81 @@
           "opponentDeck": "Burn",
           "playerGameWins": 2,
           "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "Arubinstein",
+      "opponentDisplayName": "Aaron Rubinstein",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "matches": [
+        {
+          "tournamentId": "429084",
+          "dateDisplay": "May 14, 2026",
+          "result": "L",
+          "playerDeck": "Didgeridoo",
+          "opponentDeck": "Enchantress",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "LonelyWustl",
+      "opponentDisplayName": "Evan Kerr",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "matches": [
+        {
+          "tournamentId": "429084",
+          "dateDisplay": "May 14, 2026",
+          "result": "L",
+          "playerDeck": "Didgeridoo",
+          "opponentDeck": "Landstill",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "PCavalcanti",
+      "opponentDisplayName": "PCavalcanti",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "matches": [
+        {
+          "tournamentId": "429084",
+          "dateDisplay": "May 14, 2026",
+          "result": "L",
+          "playerDeck": "Didgeridoo",
+          "opponentDeck": "Goblins",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
           "gameDraws": 0
         }
       ]
@@ -1056,6 +1145,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "429084",
+      "dateDisplay": "May 14, 2026",
+      "playerCount": 24,
+      "trophyCount": 3,
+      "roundCount": 3,
+      "rank": 24,
+      "points": 0,
+      "matchRecord": "0-3-0",
+      "matchWinPercentage": 0,
+      "gameWinPercentage": 0.3333333,
+      "deck": "Didgeridoo"
+    },
     {
       "tournamentId": "425821",
       "dateDisplay": "April 30, 2026",
