@@ -2,25 +2,25 @@
   "username": "JUDDERMANG",
   "displayName": "Chris Cruz",
   "overallStats": {
-    "totalTournaments": 42,
-    "totalPoints": 145,
-    "totalMatches": 126,
-    "matchRecord": "47-75-4",
-    "matchWinPercentage": 0.3888888888888889,
-    "gameRecord": "125-172-1",
-    "gameWinPercentage": 0.41946308724832215,
+    "totalTournaments": 43,
+    "totalPoints": 148,
+    "totalMatches": 129,
+    "matchRecord": "48-77-4",
+    "matchWinPercentage": 0.3875968992248062,
+    "gameRecord": "128-177-1",
+    "gameWinPercentage": 0.41830065359477125,
     "trophies": 3,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q2 2026",
-      "events": 4,
-      "points": 15,
-      "matchRecord": "5-7-0",
-      "matchWinPercentage": 0.4166666666666667,
-      "gameRecord": "14-14-0",
-      "gameWinPercentage": 0.5
+      "events": 5,
+      "points": 18,
+      "matchRecord": "6-9-0",
+      "matchWinPercentage": 0.4,
+      "gameRecord": "17-19-0",
+      "gameWinPercentage": 0.4722222222222222
     },
     {
       "leagueName": "Q1 2026",
@@ -153,6 +153,20 @@
       "matchWinPercentage": 0.3333333333333333,
       "gameWins": 6,
       "gameLosses": 10,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.375,
+      "trophies": 0
+    },
+    {
+      "deckName": "4C Oath Ponza",
+      "events": 1,
+      "matchWins": 1,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 3,
+      "gameLosses": 5,
       "gameDraws": 0,
       "gameWinPercentage": 0.375,
       "trophies": 0
@@ -485,6 +499,81 @@
       ]
     },
     {
+      "opponentUsername": "RichBucey",
+      "opponentDisplayName": "RichBucey",
+      "matchesPlayed": 6,
+      "matchWins": 1,
+      "matchLosses": 5,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.16666666666666666,
+      "gameWins": 3,
+      "gameLosses": 10,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.23076923076923078,
+      "matches": [
+        {
+          "tournamentId": "430556",
+          "dateDisplay": "May 21, 2026",
+          "result": "L",
+          "playerDeck": "4C Oath Ponza",
+          "opponentDeck": "Pit Rack",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "422555",
+          "dateDisplay": "April 16, 2026",
+          "result": "L",
+          "playerDeck": "Dreadnought",
+          "opponentDeck": "Enchantress",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "390154",
+          "dateDisplay": "December 11, 2025",
+          "result": "L",
+          "playerDeck": "Dreadnought",
+          "opponentDeck": "Moneyball Black",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "371711",
+          "dateDisplay": "October 9, 2025",
+          "result": "L",
+          "playerDeck": "Elves",
+          "opponentDeck": "Enchantress",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "316750",
+          "dateDisplay": "May 29, 2025",
+          "result": "L",
+          "playerDeck": "_",
+          "opponentDeck": "_",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "312921",
+          "dateDisplay": "May 22, 2025",
+          "result": "W",
+          "playerDeck": "_",
+          "opponentDeck": "_",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "Mattmelach",
       "opponentDisplayName": "Matthew Melachrinos",
       "matchesPlayed": 6,
@@ -560,61 +649,61 @@
       ]
     },
     {
-      "opponentUsername": "RichBucey",
-      "opponentDisplayName": "RichBucey",
+      "opponentUsername": "Tencteri",
+      "opponentDisplayName": "Tencteri",
       "matchesPlayed": 5,
-      "matchWins": 1,
-      "matchLosses": 4,
+      "matchWins": 2,
+      "matchLosses": 3,
       "matchDraws": 0,
-      "matchWinPercentage": 0.2,
-      "gameWins": 2,
-      "gameLosses": 8,
+      "matchWinPercentage": 0.4,
+      "gameWins": 5,
+      "gameLosses": 7,
       "gameDraws": 0,
-      "gameWinPercentage": 0.2,
+      "gameWinPercentage": 0.4166666666666667,
       "matches": [
         {
-          "tournamentId": "422555",
-          "dateDisplay": "April 16, 2026",
+          "tournamentId": "430556",
+          "dateDisplay": "May 21, 2026",
+          "result": "W",
+          "playerDeck": "4C Oath Ponza",
+          "opponentDeck": "WW",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "415118",
+          "dateDisplay": "March 19, 2026",
           "result": "L",
           "playerDeck": "Dreadnought",
-          "opponentDeck": "Enchantress",
-          "playerGameWins": 0,
+          "opponentDeck": "White Weenie",
+          "playerGameWins": 1,
           "opponentGameWins": 2,
           "gameDraws": 0
         },
         {
-          "tournamentId": "390154",
-          "dateDisplay": "December 11, 2025",
+          "tournamentId": "408436",
+          "dateDisplay": "February 26, 2026",
           "result": "L",
           "playerDeck": "Dreadnought",
-          "opponentDeck": "Moneyball Black",
+          "opponentDeck": "Esper Pile",
           "playerGameWins": 0,
           "opponentGameWins": 2,
           "gameDraws": 0
         },
         {
-          "tournamentId": "371711",
-          "dateDisplay": "October 9, 2025",
+          "tournamentId": "393796",
+          "dateDisplay": "January 1, 2026",
           "result": "L",
-          "playerDeck": "Elves",
-          "opponentDeck": "Enchantress",
+          "playerDeck": "Burn",
+          "opponentDeck": "White Weenie",
           "playerGameWins": 0,
           "opponentGameWins": 2,
           "gameDraws": 0
         },
         {
-          "tournamentId": "316750",
-          "dateDisplay": "May 29, 2025",
-          "result": "L",
-          "playerDeck": "_",
-          "opponentDeck": "_",
-          "playerGameWins": 0,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "312921",
-          "dateDisplay": "May 22, 2025",
+          "tournamentId": "332093",
+          "dateDisplay": "June 26, 2025",
           "result": "W",
           "playerDeck": "_",
           "opponentDeck": "_",
@@ -860,61 +949,6 @@
           "opponentDeck": "Devourer",
           "playerGameWins": 0,
           "opponentGameWins": 2,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "Tencteri",
-      "opponentDisplayName": "Tencteri",
-      "matchesPlayed": 4,
-      "matchWins": 1,
-      "matchLosses": 3,
-      "matchDraws": 0,
-      "matchWinPercentage": 0.25,
-      "gameWins": 3,
-      "gameLosses": 6,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.3333333333333333,
-      "matches": [
-        {
-          "tournamentId": "415118",
-          "dateDisplay": "March 19, 2026",
-          "result": "L",
-          "playerDeck": "Dreadnought",
-          "opponentDeck": "White Weenie",
-          "playerGameWins": 1,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "408436",
-          "dateDisplay": "February 26, 2026",
-          "result": "L",
-          "playerDeck": "Dreadnought",
-          "opponentDeck": "Esper Pile",
-          "playerGameWins": 0,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "393796",
-          "dateDisplay": "January 1, 2026",
-          "result": "L",
-          "playerDeck": "Burn",
-          "opponentDeck": "White Weenie",
-          "playerGameWins": 0,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "332093",
-          "dateDisplay": "June 26, 2025",
-          "result": "W",
-          "playerDeck": "_",
-          "opponentDeck": "_",
-          "playerGameWins": 2,
-          "opponentGameWins": 0,
           "gameDraws": 0
         }
       ]
@@ -1484,6 +1518,31 @@
           "playerDeck": "_",
           "opponentDeck": "Goblins",
           "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "tintintintin",
+      "opponentDisplayName": "tintintintin",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "matches": [
+        {
+          "tournamentId": "430556",
+          "dateDisplay": "May 21, 2026",
+          "result": "L",
+          "playerDeck": "4C Oath Ponza",
+          "opponentDeck": "RW Rifter",
+          "playerGameWins": 0,
           "opponentGameWins": 2,
           "gameDraws": 0
         }
@@ -2266,6 +2325,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "430556",
+      "dateDisplay": "May 21, 2026",
+      "playerCount": 25,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 21,
+      "points": 3,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWinPercentage": 0.375,
+      "deck": "4C Oath Ponza"
+    },
     {
       "tournamentId": "429084",
       "dateDisplay": "May 14, 2026",

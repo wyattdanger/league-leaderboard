@@ -2,25 +2,25 @@
   "username": "Gaunology",
   "displayName": "Gaunology",
   "overallStats": {
-    "totalTournaments": 13,
-    "totalPoints": 49,
-    "totalMatches": 39,
-    "matchRecord": "14-18-7",
-    "matchWinPercentage": 0.44871794871794873,
-    "gameRecord": "37-45-3",
-    "gameWinPercentage": 0.43529411764705883,
+    "totalTournaments": 14,
+    "totalPoints": 54,
+    "totalMatches": 42,
+    "matchRecord": "15-18-9",
+    "matchWinPercentage": 0.4642857142857143,
+    "gameRecord": "41-48-4",
+    "gameWinPercentage": 0.44086021505376344,
     "trophies": 1,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q2 2026",
-      "events": 5,
-      "points": 19,
-      "matchRecord": "5-6-4",
-      "matchWinPercentage": 0.4666666666666667,
-      "gameRecord": "14-16-2",
-      "gameWinPercentage": 0.46875
+      "events": 6,
+      "points": 24,
+      "matchRecord": "6-6-6",
+      "matchWinPercentage": 0.5,
+      "gameRecord": "18-19-3",
+      "gameWinPercentage": 0.4875
     },
     {
       "leagueName": "Q1 2026",
@@ -71,6 +71,20 @@
       "trophies": 0
     },
     {
+      "deckName": "GW Tusker Oath",
+      "events": 2,
+      "matchWins": 2,
+      "matchLosses": 2,
+      "matchDraws": 2,
+      "matchRecord": "2-2-2",
+      "matchWinPercentage": 0.5,
+      "gameWins": 7,
+      "gameLosses": 9,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.4375,
+      "trophies": 0
+    },
+    {
       "deckName": "Terra Oath",
       "events": 2,
       "matchWins": 3,
@@ -110,20 +124,6 @@
       "gameLosses": 4,
       "gameDraws": 0,
       "gameWinPercentage": 0.5,
-      "trophies": 0
-    },
-    {
-      "deckName": "GW Tusker Oath",
-      "events": 1,
-      "matchWins": 1,
-      "matchLosses": 2,
-      "matchDraws": 0,
-      "matchRecord": "1-2-0",
-      "matchWinPercentage": 0.3333333333333333,
-      "gameWins": 3,
-      "gameLosses": 5,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.375,
       "trophies": 0
     },
     {
@@ -184,6 +184,61 @@
     }
   ],
   "headToHead": [
+    {
+      "opponentUsername": "J0Nh",
+      "opponentDisplayName": "J0Nh",
+      "matchesPlayed": 4,
+      "matchWins": 0,
+      "matchLosses": 2,
+      "matchDraws": 2,
+      "matchWinPercentage": 0.25,
+      "gameWins": 2,
+      "gameLosses": 5,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.2857142857142857,
+      "matches": [
+        {
+          "tournamentId": "430556",
+          "dateDisplay": "May 21, 2026",
+          "result": "D",
+          "playerDeck": "GW Tusker Oath",
+          "opponentDeck": "Dreadnought",
+          "playerGameWins": 1,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "425821",
+          "dateDisplay": "April 30, 2026",
+          "result": "D",
+          "playerDeck": "Bant Control",
+          "opponentDeck": "Dreadnought",
+          "playerGameWins": 1,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "424009",
+          "dateDisplay": "April 23, 2026",
+          "result": "L",
+          "playerDeck": "Bant Oath Control",
+          "opponentDeck": "Dreadnought",
+          "playerGameWins": 0,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "402789",
+          "dateDisplay": "February 5, 2026",
+          "result": "L",
+          "playerDeck": "UB Dream Halls",
+          "opponentDeck": "White Stompy",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
     {
       "opponentUsername": "JUDDERMANG",
       "opponentDisplayName": "Chris Cruz",
@@ -295,51 +350,6 @@
       ]
     },
     {
-      "opponentUsername": "J0Nh",
-      "opponentDisplayName": "J0Nh",
-      "matchesPlayed": 3,
-      "matchWins": 0,
-      "matchLosses": 2,
-      "matchDraws": 1,
-      "matchWinPercentage": 0.16666666666666666,
-      "gameWins": 1,
-      "gameLosses": 4,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.2,
-      "matches": [
-        {
-          "tournamentId": "425821",
-          "dateDisplay": "April 30, 2026",
-          "result": "D",
-          "playerDeck": "Bant Control",
-          "opponentDeck": "Dreadnought",
-          "playerGameWins": 1,
-          "opponentGameWins": 1,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "424009",
-          "dateDisplay": "April 23, 2026",
-          "result": "L",
-          "playerDeck": "Bant Oath Control",
-          "opponentDeck": "Dreadnought",
-          "playerGameWins": 0,
-          "opponentGameWins": 1,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "402789",
-          "dateDisplay": "February 5, 2026",
-          "result": "L",
-          "playerDeck": "UB Dream Halls",
-          "opponentDeck": "White Stompy",
-          "playerGameWins": 0,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
       "opponentUsername": "mattmanw2",
       "opponentDisplayName": "mattmanw2",
       "matchesPlayed": 2,
@@ -440,6 +450,56 @@
           "opponentDeck": "Devourer",
           "playerGameWins": 0,
           "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "Taylorhol",
+      "opponentDisplayName": "Taylorhol",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 0,
+      "matchDraws": 1,
+      "matchWinPercentage": 0.5,
+      "gameWins": 1,
+      "gameLosses": 1,
+      "gameDraws": 1,
+      "gameWinPercentage": 0.5,
+      "matches": [
+        {
+          "tournamentId": "430556",
+          "dateDisplay": "May 21, 2026",
+          "result": "D",
+          "playerDeck": "GW Tusker Oath",
+          "opponentDeck": "4c oath ponza",
+          "playerGameWins": 1,
+          "opponentGameWins": 1,
+          "gameDraws": 1
+        }
+      ]
+    },
+    {
+      "opponentUsername": "truthcult",
+      "opponentDisplayName": "klint 🫘",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6666666666666666,
+      "matches": [
+        {
+          "tournamentId": "430556",
+          "dateDisplay": "May 21, 2026",
+          "result": "W",
+          "playerDeck": "GW Tusker Oath",
+          "opponentDeck": "Tinker Welder",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
           "gameDraws": 0
         }
       ]
@@ -946,6 +1006,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "430556",
+      "dateDisplay": "May 21, 2026",
+      "playerCount": 25,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 12,
+      "points": 5,
+      "matchRecord": "1-0-2",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWinPercentage": 0.5416667,
+      "deck": "GW Tusker Oath"
+    },
     {
       "tournamentId": "429084",
       "dateDisplay": "May 14, 2026",
