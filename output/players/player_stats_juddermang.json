@@ -2,25 +2,25 @@
   "username": "JUDDERMANG",
   "displayName": "Chris Cruz",
   "overallStats": {
-    "totalTournaments": 43,
-    "totalPoints": 148,
-    "totalMatches": 129,
-    "matchRecord": "48-77-4",
-    "matchWinPercentage": 0.3875968992248062,
-    "gameRecord": "128-177-1",
-    "gameWinPercentage": 0.41830065359477125,
+    "totalTournaments": 44,
+    "totalPoints": 151,
+    "totalMatches": 132,
+    "matchRecord": "49-79-4",
+    "matchWinPercentage": 0.38636363636363635,
+    "gameRecord": "131-181-1",
+    "gameWinPercentage": 0.4185303514376997,
     "trophies": 3,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q2 2026",
-      "events": 5,
-      "points": 18,
-      "matchRecord": "6-9-0",
-      "matchWinPercentage": 0.4,
-      "gameRecord": "17-19-0",
-      "gameWinPercentage": 0.4722222222222222
+      "events": 6,
+      "points": 21,
+      "matchRecord": "7-11-0",
+      "matchWinPercentage": 0.3888888888888889,
+      "gameRecord": "20-23-0",
+      "gameWinPercentage": 0.46511627906976744
     },
     {
       "leagueName": "Q1 2026",
@@ -153,6 +153,20 @@
       "matchWinPercentage": 0.3333333333333333,
       "gameWins": 6,
       "gameLosses": 10,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.375,
+      "trophies": 0
+    },
+    {
+      "deckName": "Stasis",
+      "events": 1,
+      "matchWins": 1,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 3,
+      "gameLosses": 5,
       "gameDraws": 0,
       "gameWinPercentage": 0.375,
       "trophies": 0
@@ -1064,6 +1078,51 @@
       ]
     },
     {
+      "opponentUsername": "remixmtg",
+      "opponentDisplayName": "Jeremy Siegel",
+      "matchesPlayed": 3,
+      "matchWins": 0,
+      "matchLosses": 3,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 2,
+      "gameLosses": 6,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.25,
+      "matches": [
+        {
+          "tournamentId": "432258",
+          "dateDisplay": "May 28, 2026",
+          "result": "L",
+          "playerDeck": "Stasis",
+          "opponentDeck": "Moneyball",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "410832",
+          "dateDisplay": "March 5, 2026",
+          "result": "L",
+          "playerDeck": "Dreadnought",
+          "opponentDeck": "Terrageddon",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "406432",
+          "dateDisplay": "February 19, 2026",
+          "result": "L",
+          "playerDeck": "Dreadnought",
+          "opponentDeck": "Elves",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "WillReddy",
       "opponentDisplayName": "WillReddy",
       "matchesPlayed": 3,
@@ -1244,6 +1303,41 @@
       ]
     },
     {
+      "opponentUsername": "aprofaci",
+      "opponentDisplayName": "Alex Profaci",
+      "matchesPlayed": 2,
+      "matchWins": 1,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.5,
+      "gameWins": 2,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5,
+      "matches": [
+        {
+          "tournamentId": "432258",
+          "dateDisplay": "May 28, 2026",
+          "result": "W",
+          "playerDeck": "Stasis",
+          "opponentDeck": "RB Goblins",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "375338",
+          "dateDisplay": "October 23, 2025",
+          "result": "L",
+          "playerDeck": "Elves",
+          "opponentDeck": "Goblins",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "LuisNeiman",
       "opponentDisplayName": "LuisNeiman",
       "matchesPlayed": 2,
@@ -1384,41 +1478,6 @@
       ]
     },
     {
-      "opponentUsername": "remixmtg",
-      "opponentDisplayName": "Jeremy Siegel",
-      "matchesPlayed": 2,
-      "matchWins": 0,
-      "matchLosses": 2,
-      "matchDraws": 0,
-      "matchWinPercentage": 0,
-      "gameWins": 1,
-      "gameLosses": 4,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.2,
-      "matches": [
-        {
-          "tournamentId": "410832",
-          "dateDisplay": "March 5, 2026",
-          "result": "L",
-          "playerDeck": "Dreadnought",
-          "opponentDeck": "Terrageddon",
-          "playerGameWins": 1,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "406432",
-          "dateDisplay": "February 19, 2026",
-          "result": "L",
-          "playerDeck": "Dreadnought",
-          "opponentDeck": "Elves",
-          "playerGameWins": 0,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
       "opponentUsername": "mlongob",
       "opponentDisplayName": "Mario Longobardi",
       "matchesPlayed": 2,
@@ -1518,6 +1577,31 @@
           "playerDeck": "_",
           "opponentDeck": "Goblins",
           "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "MaltBeverage",
+      "opponentDisplayName": "Ryan Alexander",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "matches": [
+        {
+          "tournamentId": "432258",
+          "dateDisplay": "May 28, 2026",
+          "result": "L",
+          "playerDeck": "Stasis",
+          "opponentDeck": "_",
+          "playerGameWins": 0,
           "opponentGameWins": 2,
           "gameDraws": 0
         }
@@ -1949,31 +2033,6 @@
       ]
     },
     {
-      "opponentUsername": "aprofaci",
-      "opponentDisplayName": "Alex Profaci",
-      "matchesPlayed": 1,
-      "matchWins": 0,
-      "matchLosses": 1,
-      "matchDraws": 0,
-      "matchWinPercentage": 0,
-      "gameWins": 0,
-      "gameLosses": 2,
-      "gameDraws": 0,
-      "gameWinPercentage": 0,
-      "matches": [
-        {
-          "tournamentId": "375338",
-          "dateDisplay": "October 23, 2025",
-          "result": "L",
-          "playerDeck": "Elves",
-          "opponentDeck": "Goblins",
-          "playerGameWins": 0,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
       "opponentUsername": "SF45",
       "opponentDisplayName": "SF45",
       "matchesPlayed": 1,
@@ -2325,6 +2384,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "432258",
+      "dateDisplay": "May 28, 2026",
+      "playerCount": 24,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 17,
+      "points": 3,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWinPercentage": 0.4285714,
+      "deck": "Stasis"
+    },
     {
       "tournamentId": "430556",
       "dateDisplay": "May 21, 2026",

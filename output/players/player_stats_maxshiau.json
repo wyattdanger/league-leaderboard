@@ -2,17 +2,26 @@
   "username": "maxshiau",
   "displayName": "maxshiau",
   "overallStats": {
-    "totalTournaments": 3,
-    "totalPoints": 18,
-    "totalMatches": 9,
-    "matchRecord": "6-3-0",
+    "totalTournaments": 4,
+    "totalPoints": 24,
+    "totalMatches": 12,
+    "matchRecord": "8-4-0",
     "matchWinPercentage": 0.6666666666666666,
-    "gameRecord": "12-7-0",
-    "gameWinPercentage": 0.631578947368421,
+    "gameRecord": "17-10-0",
+    "gameWinPercentage": 0.6296296296296297,
     "trophies": 0,
     "belts": 0
   },
   "leagueStats": [
+    {
+      "leagueName": "Q2 2026",
+      "events": 1,
+      "points": 6,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameRecord": "5-3-0",
+      "gameWinPercentage": 0.625
+    },
     {
       "leagueName": "Q1 2026",
       "events": 3,
@@ -39,6 +48,20 @@
       "trophies": 0
     },
     {
+      "deckName": "R/g Goblins",
+      "events": 1,
+      "matchWins": 2,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 5,
+      "gameLosses": 3,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.625,
+      "trophies": 0
+    },
+    {
       "deckName": "Sligh",
       "events": 1,
       "matchWins": 2,
@@ -57,16 +80,26 @@
     {
       "opponentUsername": "LuisNeiman",
       "opponentDisplayName": "LuisNeiman",
-      "matchesPlayed": 1,
-      "matchWins": 0,
+      "matchesPlayed": 2,
+      "matchWins": 1,
       "matchLosses": 1,
       "matchDraws": 0,
-      "matchWinPercentage": 0,
-      "gameWins": 0,
-      "gameLosses": 2,
+      "matchWinPercentage": 0.5,
+      "gameWins": 2,
+      "gameLosses": 3,
       "gameDraws": 0,
-      "gameWinPercentage": 0,
+      "gameWinPercentage": 0.4,
       "matches": [
+        {
+          "tournamentId": "432258",
+          "dateDisplay": "May 28, 2026",
+          "result": "W",
+          "playerDeck": "R/g Goblins",
+          "opponentDeck": "GW Oath Ponza",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
         {
           "tournamentId": "417122",
           "dateDisplay": "March 26, 2026",
@@ -75,6 +108,56 @@
           "opponentDeck": "Goblins",
           "playerGameWins": 0,
           "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "minimiz",
+      "opponentDisplayName": "Eli Mizock",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "matches": [
+        {
+          "tournamentId": "432258",
+          "dateDisplay": "May 28, 2026",
+          "result": "L",
+          "playerDeck": "R/g Goblins",
+          "opponentDeck": "Esper Tog",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "Mattmelach",
+      "opponentDisplayName": "Matthew Melachrinos",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "matches": [
+        {
+          "tournamentId": "432258",
+          "dateDisplay": "May 28, 2026",
+          "result": "W",
+          "playerDeck": "R/g Goblins",
+          "opponentDeck": "Gro",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
           "gameDraws": 0
         }
       ]
@@ -256,6 +339,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "432258",
+      "dateDisplay": "May 28, 2026",
+      "playerCount": 24,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 11,
+      "points": 6,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWinPercentage": 0.625,
+      "deck": "R/g Goblins"
+    },
     {
       "tournamentId": "417122",
       "dateDisplay": "March 26, 2026",

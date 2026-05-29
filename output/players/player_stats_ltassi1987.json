@@ -2,25 +2,25 @@
   "username": "Ltassi1987",
   "displayName": "Luiz Tassi",
   "overallStats": {
-    "totalTournaments": 1,
+    "totalTournaments": 2,
     "totalPoints": 7,
-    "totalMatches": 3,
-    "matchRecord": "2-0-1",
-    "matchWinPercentage": 0.8333333333333334,
-    "gameRecord": "5-1-0",
-    "gameWinPercentage": 0.8333333333333334,
+    "totalMatches": 5,
+    "matchRecord": "2-2-1",
+    "matchWinPercentage": 0.5,
+    "gameRecord": "6-5-0",
+    "gameWinPercentage": 0.5454545454545454,
     "trophies": 0,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q2 2026",
-      "events": 1,
+      "events": 2,
       "points": 7,
-      "matchRecord": "2-0-1",
-      "matchWinPercentage": 0.8333333333333334,
-      "gameRecord": "5-1-0",
-      "gameWinPercentage": 0.8333333333333334
+      "matchRecord": "2-2-1",
+      "matchWinPercentage": 0.5,
+      "gameRecord": "6-5-0",
+      "gameWinPercentage": 0.5454545454545454
     }
   ],
   "deckStats": [
@@ -37,9 +37,73 @@
       "gameDraws": 0,
       "gameWinPercentage": 0.875,
       "trophies": 0
+    },
+    {
+      "deckName": "Unknown",
+      "events": 1,
+      "matchWins": 0,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchRecord": "0-2-0",
+      "matchWinPercentage": 0,
+      "gameWins": 2,
+      "gameLosses": 3,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.4,
+      "trophies": 0
     }
   ],
   "headToHead": [
+    {
+      "opponentUsername": "landho",
+      "opponentDisplayName": "landho",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "matches": [
+        {
+          "tournamentId": "432258",
+          "dateDisplay": "May 28, 2026",
+          "result": "L",
+          "playerDeck": "_",
+          "opponentDeck": "Oath Ponza",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "LuisNeiman",
+      "opponentDisplayName": "LuisNeiman",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "matches": [
+        {
+          "tournamentId": "432258",
+          "dateDisplay": "May 28, 2026",
+          "result": "L",
+          "playerDeck": "_",
+          "opponentDeck": "GW Oath Ponza",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
     {
       "opponentUsername": "sylvanisator",
       "opponentDisplayName": "sylvanisator",
@@ -117,6 +181,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "432258",
+      "dateDisplay": "May 28, 2026",
+      "playerCount": 24,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 24,
+      "points": 0,
+      "matchRecord": "0-2-0",
+      "matchWinPercentage": 0,
+      "gameWinPercentage": 0.3333333,
+      "deck": "_"
+    },
     {
       "tournamentId": "430556",
       "dateDisplay": "May 21, 2026",
