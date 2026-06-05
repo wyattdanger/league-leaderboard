@@ -2,25 +2,25 @@
   "username": "aprofaci",
   "displayName": "Alex Profaci",
   "overallStats": {
-    "totalTournaments": 7,
-    "totalPoints": 39,
-    "totalMatches": 21,
-    "matchRecord": "13-8-0",
-    "matchWinPercentage": 0.6190476190476191,
-    "gameRecord": "29-21-0",
-    "gameWinPercentage": 0.58,
+    "totalTournaments": 8,
+    "totalPoints": 42,
+    "totalMatches": 24,
+    "matchRecord": "14-10-0",
+    "matchWinPercentage": 0.5833333333333334,
+    "gameRecord": "32-26-0",
+    "gameWinPercentage": 0.5517241379310345,
     "trophies": 1,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q2 2026",
-      "events": 1,
-      "points": 3,
-      "matchRecord": "1-2-0",
+      "events": 2,
+      "points": 6,
+      "matchRecord": "2-4-0",
       "matchWinPercentage": 0.3333333333333333,
-      "gameRecord": "2-4-0",
-      "gameWinPercentage": 0.3333333333333333
+      "gameRecord": "5-9-0",
+      "gameWinPercentage": 0.35714285714285715
     },
     {
       "leagueName": "Q4 2025",
@@ -35,16 +35,16 @@
   "deckStats": [
     {
       "deckName": "Goblins",
-      "events": 3,
-      "matchWins": 6,
-      "matchLosses": 3,
+      "events": 4,
+      "matchWins": 7,
+      "matchLosses": 5,
       "matchDraws": 0,
-      "matchRecord": "6-3-0",
-      "matchWinPercentage": 0.6666666666666666,
-      "gameWins": 15,
-      "gameLosses": 9,
+      "matchRecord": "7-5-0",
+      "matchWinPercentage": 0.5833333333333334,
+      "gameWins": 18,
+      "gameLosses": 14,
       "gameDraws": 0,
-      "gameWinPercentage": 0.625,
+      "gameWinPercentage": 0.5625,
       "trophies": 1
     },
     {
@@ -91,6 +91,41 @@
     }
   ],
   "headToHead": [
+    {
+      "opponentUsername": "swbmtg",
+      "opponentDisplayName": "swb",
+      "matchesPlayed": 2,
+      "matchWins": 0,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "matches": [
+        {
+          "tournamentId": "434267",
+          "dateDisplay": "June 4, 2026",
+          "result": "L",
+          "playerDeck": "Goblins",
+          "opponentDeck": "Stasis",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "377629",
+          "dateDisplay": "October 30, 2025",
+          "result": "L",
+          "playerDeck": "RG Goblins",
+          "opponentDeck": "Oath Parfait",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
     {
       "opponentUsername": "WillReddy",
       "opponentDisplayName": "WillReddy",
@@ -192,6 +227,56 @@
           "opponentDeck": "Deadguy Ale",
           "playerGameWins": 2,
           "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "AlldoAurelis",
+      "opponentDisplayName": "AlldoAurelis",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6666666666666666,
+      "matches": [
+        {
+          "tournamentId": "434267",
+          "dateDisplay": "June 4, 2026",
+          "result": "W",
+          "playerDeck": "Goblins",
+          "opponentDeck": "WG Madness",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "CalebR",
+      "opponentDisplayName": "CalebR",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "matches": [
+        {
+          "tournamentId": "434267",
+          "dateDisplay": "June 4, 2026",
+          "result": "L",
+          "playerDeck": "Goblins",
+          "opponentDeck": "TinkUR Welder",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
           "gameDraws": 0
         }
       ]
@@ -447,31 +532,6 @@
       ]
     },
     {
-      "opponentUsername": "swbmtg",
-      "opponentDisplayName": "swb",
-      "matchesPlayed": 1,
-      "matchWins": 0,
-      "matchLosses": 1,
-      "matchDraws": 0,
-      "matchWinPercentage": 0,
-      "gameWins": 0,
-      "gameLosses": 2,
-      "gameDraws": 0,
-      "gameWinPercentage": 0,
-      "matches": [
-        {
-          "tournamentId": "377629",
-          "dateDisplay": "October 30, 2025",
-          "result": "L",
-          "playerDeck": "RG Goblins",
-          "opponentDeck": "Oath Parfait",
-          "playerGameWins": 0,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
       "opponentUsername": "angu2111",
       "opponentDisplayName": "Andrea Tullis",
       "matchesPlayed": 1,
@@ -523,6 +583,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "434267",
+      "dateDisplay": "June 4, 2026",
+      "playerCount": 28,
+      "trophyCount": 3,
+      "roundCount": 3,
+      "rank": 17,
+      "points": 3,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWinPercentage": 0.375,
+      "deck": "Goblins"
+    },
     {
       "tournamentId": "432258",
       "dateDisplay": "May 28, 2026",

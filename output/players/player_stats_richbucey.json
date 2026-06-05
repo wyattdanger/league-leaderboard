@@ -2,25 +2,25 @@
   "username": "RichBucey",
   "displayName": "RichBucey",
   "overallStats": {
-    "totalTournaments": 33,
-    "totalPoints": 163,
-    "totalMatches": 99,
-    "matchRecord": "54-44-1",
-    "matchWinPercentage": 0.5505050505050505,
-    "gameRecord": "130-110-1",
-    "gameWinPercentage": 0.5394190871369294,
-    "trophies": 4,
+    "totalTournaments": 34,
+    "totalPoints": 172,
+    "totalMatches": 102,
+    "matchRecord": "57-44-1",
+    "matchWinPercentage": 0.5637254901960784,
+    "gameRecord": "136-110-1",
+    "gameWinPercentage": 0.5506072874493927,
+    "trophies": 5,
     "belts": 1
   },
   "leagueStats": [
     {
       "leagueName": "Q2 2026",
-      "events": 2,
-      "points": 7,
-      "matchRecord": "2-3-1",
-      "matchWinPercentage": 0.4166666666666667,
-      "gameRecord": "7-8-1",
-      "gameWinPercentage": 0.46875
+      "events": 3,
+      "points": 16,
+      "matchRecord": "5-3-1",
+      "matchWinPercentage": 0.6111111111111112,
+      "gameRecord": "13-8-1",
+      "gameWinPercentage": 0.6136363636363636
     },
     {
       "leagueName": "Q1 2026",
@@ -88,6 +88,20 @@
   ],
   "deckStats": [
     {
+      "deckName": "Burn",
+      "events": 7,
+      "matchWins": 16,
+      "matchLosses": 5,
+      "matchDraws": 0,
+      "matchRecord": "16-5-0",
+      "matchWinPercentage": 0.7619047619047619,
+      "gameWins": 41,
+      "gameLosses": 15,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.7321428571428571,
+      "trophies": 2
+    },
+    {
       "deckName": "Unknown",
       "events": 7,
       "matchWins": 11,
@@ -99,20 +113,6 @@
       "gameLosses": 27,
       "gameDraws": 0,
       "gameWinPercentage": 0.5178571428571429,
-      "trophies": 1
-    },
-    {
-      "deckName": "Burn",
-      "events": 6,
-      "matchWins": 13,
-      "matchLosses": 5,
-      "matchDraws": 0,
-      "matchRecord": "13-5-0",
-      "matchWinPercentage": 0.7222222222222222,
-      "gameWins": 33,
-      "gameLosses": 15,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.6875,
       "trophies": 1
     },
     {
@@ -844,6 +844,76 @@
       ]
     },
     {
+      "opponentUsername": "Gaunology",
+      "opponentDisplayName": "Gaunology",
+      "matchesPlayed": 2,
+      "matchWins": 2,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 4,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "matches": [
+        {
+          "tournamentId": "434267",
+          "dateDisplay": "June 4, 2026",
+          "result": "W",
+          "playerDeck": "Burn",
+          "opponentDeck": "Abzan Rock",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "417122",
+          "dateDisplay": "March 26, 2026",
+          "result": "W",
+          "playerDeck": "Burn",
+          "opponentDeck": "Sam Black Enchantress",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "weidnent",
+      "opponentDisplayName": "Nicholas Weidner",
+      "matchesPlayed": 2,
+      "matchWins": 2,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 4,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "matches": [
+        {
+          "tournamentId": "434267",
+          "dateDisplay": "June 4, 2026",
+          "result": "W",
+          "playerDeck": "Burn",
+          "opponentDeck": "Balancing Tings",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "415118",
+          "dateDisplay": "March 19, 2026",
+          "result": "W",
+          "playerDeck": "UG Aluren",
+          "opponentDeck": "GW Mad Dogs",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "remixmtg",
       "opponentDisplayName": "Jeremy Siegel",
       "matchesPlayed": 2,
@@ -1159,6 +1229,31 @@
       ]
     },
     {
+      "opponentUsername": "fluxusfrequency",
+      "opponentDisplayName": "Ben Lewis",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "matches": [
+        {
+          "tournamentId": "434267",
+          "dateDisplay": "June 4, 2026",
+          "result": "W",
+          "playerDeck": "Burn",
+          "opponentDeck": "Goblins",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "mlongob",
       "opponentDisplayName": "Mario Longobardi",
       "matchesPlayed": 1,
@@ -1179,56 +1274,6 @@
           "opponentDeck": "hFEB",
           "playerGameWins": 1,
           "opponentGameWins": 2,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "Gaunology",
-      "opponentDisplayName": "Gaunology",
-      "matchesPlayed": 1,
-      "matchWins": 1,
-      "matchLosses": 0,
-      "matchDraws": 0,
-      "matchWinPercentage": 1,
-      "gameWins": 2,
-      "gameLosses": 0,
-      "gameDraws": 0,
-      "gameWinPercentage": 1,
-      "matches": [
-        {
-          "tournamentId": "417122",
-          "dateDisplay": "March 26, 2026",
-          "result": "W",
-          "playerDeck": "Burn",
-          "opponentDeck": "Sam Black Enchantress",
-          "playerGameWins": 2,
-          "opponentGameWins": 0,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "weidnent",
-      "opponentDisplayName": "weidnent",
-      "matchesPlayed": 1,
-      "matchWins": 1,
-      "matchLosses": 0,
-      "matchDraws": 0,
-      "matchWinPercentage": 1,
-      "gameWins": 2,
-      "gameLosses": 0,
-      "gameDraws": 0,
-      "gameWinPercentage": 1,
-      "matches": [
-        {
-          "tournamentId": "415118",
-          "dateDisplay": "March 19, 2026",
-          "result": "W",
-          "playerDeck": "UG Aluren",
-          "opponentDeck": "GW Mad Dogs",
-          "playerGameWins": 2,
-          "opponentGameWins": 0,
           "gameDraws": 0
         }
       ]
@@ -1935,6 +1980,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "434267",
+      "dateDisplay": "June 4, 2026",
+      "playerCount": 28,
+      "trophyCount": 3,
+      "roundCount": 3,
+      "rank": 1,
+      "points": 9,
+      "matchRecord": "3-0-0",
+      "matchWinPercentage": 1,
+      "gameWinPercentage": 1,
+      "deck": "Burn"
+    },
     {
       "tournamentId": "430556",
       "dateDisplay": "May 21, 2026",

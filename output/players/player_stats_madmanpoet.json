@@ -2,25 +2,25 @@
   "username": "madmanpoet",
   "displayName": "Michael Flores",
   "overallStats": {
-    "totalTournaments": 39,
-    "totalPoints": 240,
-    "totalMatches": 117,
-    "matchRecord": "79-35-3",
-    "matchWinPercentage": 0.688034188034188,
-    "gameRecord": "177-96-1",
-    "gameWinPercentage": 0.6459854014598541,
-    "trophies": 9,
+    "totalTournaments": 40,
+    "totalPoints": 249,
+    "totalMatches": 120,
+    "matchRecord": "82-35-3",
+    "matchWinPercentage": 0.6958333333333333,
+    "gameRecord": "183-97-1",
+    "gameWinPercentage": 0.6512455516014235,
+    "trophies": 10,
     "belts": 1
   },
   "leagueStats": [
     {
       "leagueName": "Q2 2026",
-      "events": 4,
-      "points": 25,
-      "matchRecord": "8-3-1",
-      "matchWinPercentage": 0.7083333333333334,
-      "gameRecord": "19-11-1",
-      "gameWinPercentage": 0.6290322580645161
+      "events": 5,
+      "points": 34,
+      "matchRecord": "11-3-1",
+      "matchWinPercentage": 0.7666666666666667,
+      "gameRecord": "25-12-1",
+      "gameWinPercentage": 0.6710526315789473
     },
     {
       "leagueName": "Q1 2026",
@@ -116,6 +116,20 @@
       "trophies": 2
     },
     {
+      "deckName": "Terrageddon",
+      "events": 3,
+      "matchWins": 7,
+      "matchLosses": 1,
+      "matchDraws": 1,
+      "matchRecord": "7-1-1",
+      "matchWinPercentage": 0.8333333333333334,
+      "gameWins": 17,
+      "gameLosses": 7,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.7083333333333334,
+      "trophies": 2
+    },
+    {
       "deckName": "Stompy",
       "events": 3,
       "matchWins": 7,
@@ -170,20 +184,6 @@
       "gameDraws": 0,
       "gameWinPercentage": 0.6666666666666666,
       "trophies": 0
-    },
-    {
-      "deckName": "Terrageddon",
-      "events": 2,
-      "matchWins": 4,
-      "matchLosses": 1,
-      "matchDraws": 1,
-      "matchRecord": "4-1-1",
-      "matchWinPercentage": 0.75,
-      "gameWins": 10,
-      "gameLosses": 6,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.625,
-      "trophies": 1
     },
     {
       "deckName": "Stasis",
@@ -449,6 +449,101 @@
       ]
     },
     {
+      "opponentUsername": "JUDDERMANG",
+      "opponentDisplayName": "Chris Cruz",
+      "matchesPlayed": 8,
+      "matchWins": 8,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 16,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.8,
+      "matches": [
+        {
+          "tournamentId": "434267",
+          "dateDisplay": "June 4, 2026",
+          "result": "W",
+          "playerDeck": "Terrageddon",
+          "opponentDeck": "Esper Tog",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "410832",
+          "dateDisplay": "March 5, 2026",
+          "result": "W",
+          "playerDeck": "Gamekeeper Rock",
+          "opponentDeck": "Dreadnought",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "367531",
+          "dateDisplay": "September 25, 2025",
+          "result": "W",
+          "playerDeck": "Dreadnought",
+          "opponentDeck": "Oath Ponza",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "361066",
+          "dateDisplay": "September 4, 2025",
+          "result": "W",
+          "playerDeck": "Psychatog",
+          "opponentDeck": "Psychatog",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "357267",
+          "dateDisplay": "August 28, 2025",
+          "result": "W",
+          "playerDeck": "Burn",
+          "opponentDeck": "Oath Ponza",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "332093",
+          "dateDisplay": "June 26, 2025",
+          "result": "W",
+          "playerDeck": "Replenish",
+          "opponentDeck": "_",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "305152",
+          "dateDisplay": "May 8, 2025",
+          "result": "W",
+          "playerDeck": "Goblins",
+          "opponentDeck": "_",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "341527",
+          "dateDisplay": "July 17, 2025",
+          "result": "W",
+          "playerDeck": "Burn",
+          "opponentDeck": "Burn",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "itsCama",
       "opponentDisplayName": "Yosef Harari",
       "matchesPlayed": 7,
@@ -527,91 +622,6 @@
           "result": "W",
           "playerDeck": "Burn",
           "opponentDeck": "Devourer",
-          "playerGameWins": 2,
-          "opponentGameWins": 1,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "JUDDERMANG",
-      "opponentDisplayName": "Chris Cruz",
-      "matchesPlayed": 7,
-      "matchWins": 7,
-      "matchLosses": 0,
-      "matchDraws": 0,
-      "matchWinPercentage": 1,
-      "gameWins": 14,
-      "gameLosses": 4,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.7777777777777778,
-      "matches": [
-        {
-          "tournamentId": "410832",
-          "dateDisplay": "March 5, 2026",
-          "result": "W",
-          "playerDeck": "Gamekeeper Rock",
-          "opponentDeck": "Dreadnought",
-          "playerGameWins": 2,
-          "opponentGameWins": 1,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "367531",
-          "dateDisplay": "September 25, 2025",
-          "result": "W",
-          "playerDeck": "Dreadnought",
-          "opponentDeck": "Oath Ponza",
-          "playerGameWins": 2,
-          "opponentGameWins": 0,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "361066",
-          "dateDisplay": "September 4, 2025",
-          "result": "W",
-          "playerDeck": "Psychatog",
-          "opponentDeck": "Psychatog",
-          "playerGameWins": 2,
-          "opponentGameWins": 1,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "357267",
-          "dateDisplay": "August 28, 2025",
-          "result": "W",
-          "playerDeck": "Burn",
-          "opponentDeck": "Oath Ponza",
-          "playerGameWins": 2,
-          "opponentGameWins": 1,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "332093",
-          "dateDisplay": "June 26, 2025",
-          "result": "W",
-          "playerDeck": "Replenish",
-          "opponentDeck": "_",
-          "playerGameWins": 2,
-          "opponentGameWins": 0,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "305152",
-          "dateDisplay": "May 8, 2025",
-          "result": "W",
-          "playerDeck": "Goblins",
-          "opponentDeck": "_",
-          "playerGameWins": 2,
-          "opponentGameWins": 0,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "341527",
-          "dateDisplay": "July 17, 2025",
-          "result": "W",
-          "playerDeck": "Burn",
-          "opponentDeck": "Burn",
           "playerGameWins": 2,
           "opponentGameWins": 1,
           "gameDraws": 0
@@ -1159,6 +1169,41 @@
       ]
     },
     {
+      "opponentUsername": "WillReddy",
+      "opponentDisplayName": "WillReddy",
+      "matchesPlayed": 2,
+      "matchWins": 2,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 4,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6666666666666666,
+      "matches": [
+        {
+          "tournamentId": "434267",
+          "dateDisplay": "June 4, 2026",
+          "result": "W",
+          "playerDeck": "Terrageddon",
+          "opponentDeck": "_",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "429084",
+          "dateDisplay": "May 14, 2026",
+          "result": "W",
+          "playerDeck": "Moxless GAT",
+          "opponentDeck": "UG Tradewind Survival",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "MaltBeverage",
       "opponentDisplayName": "Ryan Alexander",
       "matchesPlayed": 2,
@@ -1474,6 +1519,31 @@
       ]
     },
     {
+      "opponentUsername": "SamFeldman",
+      "opponentDisplayName": "Samuel Feldman",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "matches": [
+        {
+          "tournamentId": "434267",
+          "dateDisplay": "June 4, 2026",
+          "result": "W",
+          "playerDeck": "Terrageddon",
+          "opponentDeck": "_",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "Gallo0",
       "opponentDisplayName": "Gallo0",
       "matchesPlayed": 1,
@@ -1492,31 +1562,6 @@
           "result": "W",
           "playerDeck": "Moxless GAT",
           "opponentDeck": "Dreadnought",
-          "playerGameWins": 2,
-          "opponentGameWins": 1,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "WillReddy",
-      "opponentDisplayName": "WillReddy",
-      "matchesPlayed": 1,
-      "matchWins": 1,
-      "matchLosses": 0,
-      "matchDraws": 0,
-      "matchWinPercentage": 1,
-      "gameWins": 2,
-      "gameLosses": 1,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.6666666666666666,
-      "matches": [
-        {
-          "tournamentId": "429084",
-          "dateDisplay": "May 14, 2026",
-          "result": "W",
-          "playerDeck": "Moxless GAT",
-          "opponentDeck": "UG Tradewind Survival",
           "playerGameWins": 2,
           "opponentGameWins": 1,
           "gameDraws": 0
@@ -2225,6 +2270,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "434267",
+      "dateDisplay": "June 4, 2026",
+      "playerCount": 28,
+      "trophyCount": 3,
+      "roundCount": 3,
+      "rank": 3,
+      "points": 9,
+      "matchRecord": "3-0-0",
+      "matchWinPercentage": 1,
+      "gameWinPercentage": 0.8571429,
+      "deck": "Terrageddon"
+    },
     {
       "tournamentId": "429084",
       "dateDisplay": "May 14, 2026",

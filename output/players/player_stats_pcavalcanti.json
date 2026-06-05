@@ -2,25 +2,25 @@
   "username": "PCavalcanti",
   "displayName": "PCavalcanti",
   "overallStats": {
-    "totalTournaments": 10,
-    "totalPoints": 52,
-    "totalMatches": 30,
-    "matchRecord": "17-12-1",
-    "matchWinPercentage": 0.5833333333333334,
-    "gameRecord": "42-32-0",
-    "gameWinPercentage": 0.5675675675675675,
+    "totalTournaments": 11,
+    "totalPoints": 55,
+    "totalMatches": 33,
+    "matchRecord": "18-14-1",
+    "matchWinPercentage": 0.5606060606060606,
+    "gameRecord": "45-37-0",
+    "gameWinPercentage": 0.5487804878048781,
     "trophies": 1,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q2 2026",
-      "events": 5,
-      "points": 30,
-      "matchRecord": "10-5-0",
-      "matchWinPercentage": 0.6666666666666666,
-      "gameRecord": "23-13-0",
-      "gameWinPercentage": 0.6388888888888888
+      "events": 6,
+      "points": 33,
+      "matchRecord": "11-7-0",
+      "matchWinPercentage": 0.6111111111111112,
+      "gameRecord": "26-18-0",
+      "gameWinPercentage": 0.5909090909090909
     },
     {
       "leagueName": "Q1 2026",
@@ -35,16 +35,16 @@
   "deckStats": [
     {
       "deckName": "Burn",
-      "events": 5,
-      "matchWins": 7,
-      "matchLosses": 7,
+      "events": 6,
+      "matchWins": 8,
+      "matchLosses": 9,
       "matchDraws": 1,
-      "matchRecord": "7-7-1",
-      "matchWinPercentage": 0.5,
-      "gameWins": 23,
-      "gameLosses": 17,
+      "matchRecord": "8-9-1",
+      "matchWinPercentage": 0.4722222222222222,
+      "gameWins": 26,
+      "gameLosses": 22,
       "gameDraws": 0,
-      "gameWinPercentage": 0.575,
+      "gameWinPercentage": 0.5416666666666666,
       "trophies": 0
     },
     {
@@ -91,6 +91,51 @@
     }
   ],
   "headToHead": [
+    {
+      "opponentUsername": "PetS22",
+      "opponentDisplayName": "PetS22",
+      "matchesPlayed": 3,
+      "matchWins": 3,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 6,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.8571428571428571,
+      "matches": [
+        {
+          "tournamentId": "434267",
+          "dateDisplay": "June 4, 2026",
+          "result": "W",
+          "playerDeck": "Burn",
+          "opponentDeck": "_",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "417122",
+          "dateDisplay": "March 26, 2026",
+          "result": "W",
+          "playerDeck": "Burn",
+          "opponentDeck": "Mono Black",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "415118",
+          "dateDisplay": "March 19, 2026",
+          "result": "W",
+          "playerDeck": "Burn",
+          "opponentDeck": "Mono Black Aggro",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
     {
       "opponentUsername": "Tencteri",
       "opponentDisplayName": "Tencteri",
@@ -177,6 +222,41 @@
           "opponentDeck": "Dreadnought",
           "playerGameWins": 0,
           "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "itsCama",
+      "opponentDisplayName": "Yosef Harari",
+      "matchesPlayed": 2,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 1,
+      "matchWinPercentage": 0.25,
+      "gameWins": 2,
+      "gameLosses": 3,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.4,
+      "matches": [
+        {
+          "tournamentId": "434267",
+          "dateDisplay": "June 4, 2026",
+          "result": "L",
+          "playerDeck": "Burn",
+          "opponentDeck": "UW Control",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "417122",
+          "dateDisplay": "March 26, 2026",
+          "result": "D",
+          "playerDeck": "Burn",
+          "opponentDeck": "UW Control",
+          "playerGameWins": 1,
+          "opponentGameWins": 1,
           "gameDraws": 0
         }
       ]
@@ -322,36 +402,26 @@
       ]
     },
     {
-      "opponentUsername": "PetS22",
-      "opponentDisplayName": "PetS22",
-      "matchesPlayed": 2,
-      "matchWins": 2,
-      "matchLosses": 0,
+      "opponentUsername": "RolandMTG",
+      "opponentDisplayName": "Roland Chang",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
       "matchDraws": 0,
-      "matchWinPercentage": 1,
-      "gameWins": 4,
-      "gameLosses": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
       "gameDraws": 0,
-      "gameWinPercentage": 1,
+      "gameWinPercentage": 0,
       "matches": [
         {
-          "tournamentId": "417122",
-          "dateDisplay": "March 26, 2026",
-          "result": "W",
+          "tournamentId": "434267",
+          "dateDisplay": "June 4, 2026",
+          "result": "L",
           "playerDeck": "Burn",
-          "opponentDeck": "Mono Black",
-          "playerGameWins": 2,
-          "opponentGameWins": 0,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "415118",
-          "dateDisplay": "March 19, 2026",
-          "result": "W",
-          "playerDeck": "Burn",
-          "opponentDeck": "Mono Black Aggro",
-          "playerGameWins": 2,
-          "opponentGameWins": 0,
+          "opponentDeck": "Stiflenought",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
           "gameDraws": 0
         }
       ]
@@ -532,31 +602,6 @@
       ]
     },
     {
-      "opponentUsername": "itsCama",
-      "opponentDisplayName": "Yosef Harari",
-      "matchesPlayed": 1,
-      "matchWins": 0,
-      "matchLosses": 0,
-      "matchDraws": 1,
-      "matchWinPercentage": 0.5,
-      "gameWins": 1,
-      "gameLosses": 1,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.5,
-      "matches": [
-        {
-          "tournamentId": "417122",
-          "dateDisplay": "March 26, 2026",
-          "result": "D",
-          "playerDeck": "Burn",
-          "opponentDeck": "UW Control",
-          "playerGameWins": 1,
-          "opponentGameWins": 1,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
       "opponentUsername": "JUDDERMANG",
       "opponentDisplayName": "Chris Cruz",
       "matchesPlayed": 1,
@@ -708,6 +753,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "434267",
+      "dateDisplay": "June 4, 2026",
+      "playerCount": 28,
+      "trophyCount": 3,
+      "roundCount": 3,
+      "rank": 21,
+      "points": 3,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWinPercentage": 0.375,
+      "deck": "Burn"
+    },
     {
       "tournamentId": "432258",
       "dateDisplay": "May 28, 2026",
