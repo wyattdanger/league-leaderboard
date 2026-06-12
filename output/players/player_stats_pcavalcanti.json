@@ -2,25 +2,25 @@
   "username": "PCavalcanti",
   "displayName": "PCavalcanti",
   "overallStats": {
-    "totalTournaments": 11,
-    "totalPoints": 55,
-    "totalMatches": 33,
-    "matchRecord": "18-14-1",
-    "matchWinPercentage": 0.5606060606060606,
-    "gameRecord": "45-37-0",
-    "gameWinPercentage": 0.5487804878048781,
+    "totalTournaments": 12,
+    "totalPoints": 58,
+    "totalMatches": 36,
+    "matchRecord": "19-16-1",
+    "matchWinPercentage": 0.5416666666666666,
+    "gameRecord": "49-41-0",
+    "gameWinPercentage": 0.5444444444444444,
     "trophies": 1,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q2 2026",
-      "events": 6,
-      "points": 33,
-      "matchRecord": "11-7-0",
-      "matchWinPercentage": 0.6111111111111112,
-      "gameRecord": "26-18-0",
-      "gameWinPercentage": 0.5909090909090909
+      "events": 7,
+      "points": 36,
+      "matchRecord": "12-9-0",
+      "matchWinPercentage": 0.5714285714285714,
+      "gameRecord": "30-22-0",
+      "gameWinPercentage": 0.5769230769230769
     },
     {
       "leagueName": "Q1 2026",
@@ -83,6 +83,20 @@
       "matchDraws": 0,
       "matchRecord": "2-1-0",
       "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 4,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5,
+      "trophies": 0
+    },
+    {
+      "deckName": "RG Madness Burn",
+      "events": 1,
+      "matchWins": 1,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
       "gameWins": 4,
       "gameLosses": 4,
       "gameDraws": 0,
@@ -222,6 +236,41 @@
           "opponentDeck": "Dreadnought",
           "playerGameWins": 0,
           "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "remixmtg",
+      "opponentDisplayName": "Jeremy Siegel",
+      "matchesPlayed": 2,
+      "matchWins": 1,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.5,
+      "gameWins": 3,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6,
+      "matches": [
+        {
+          "tournamentId": "436155",
+          "dateDisplay": "June 11, 2026",
+          "result": "L",
+          "playerDeck": "RG Madness Burn",
+          "opponentDeck": "Moneyball",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "429084",
+          "dateDisplay": "May 14, 2026",
+          "result": "W",
+          "playerDeck": "Goblins",
+          "opponentDeck": "Didgeridoo",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
           "gameDraws": 0
         }
       ]
@@ -402,6 +451,56 @@
       ]
     },
     {
+      "opponentUsername": "ByerBeware",
+      "opponentDisplayName": "ByerBeware",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "matches": [
+        {
+          "tournamentId": "436155",
+          "dateDisplay": "June 11, 2026",
+          "result": "L",
+          "playerDeck": "RG Madness Burn",
+          "opponentDeck": "4C Devastating Oath",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "truthcult",
+      "opponentDisplayName": "klint",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "matches": [
+        {
+          "tournamentId": "436155",
+          "dateDisplay": "June 11, 2026",
+          "result": "W",
+          "playerDeck": "RG Madness Burn",
+          "opponentDeck": "Tinker Welder",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "RolandMTG",
       "opponentDisplayName": "Roland Chang",
       "matchesPlayed": 1,
@@ -520,31 +619,6 @@
           "result": "W",
           "playerDeck": "_",
           "opponentDeck": "RG Goblins",
-          "playerGameWins": 2,
-          "opponentGameWins": 0,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "remixmtg",
-      "opponentDisplayName": "Jeremy Siegel",
-      "matchesPlayed": 1,
-      "matchWins": 1,
-      "matchLosses": 0,
-      "matchDraws": 0,
-      "matchWinPercentage": 1,
-      "gameWins": 2,
-      "gameLosses": 0,
-      "gameDraws": 0,
-      "gameWinPercentage": 1,
-      "matches": [
-        {
-          "tournamentId": "429084",
-          "dateDisplay": "May 14, 2026",
-          "result": "W",
-          "playerDeck": "Goblins",
-          "opponentDeck": "Didgeridoo",
           "playerGameWins": 2,
           "opponentGameWins": 0,
           "gameDraws": 0
@@ -753,6 +827,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "436155",
+      "dateDisplay": "June 11, 2026",
+      "playerCount": 23,
+      "trophyCount": 3,
+      "roundCount": 3,
+      "rank": 19,
+      "points": 3,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWinPercentage": 0.5,
+      "deck": "RG Madness Burn"
+    },
     {
       "tournamentId": "434267",
       "dateDisplay": "June 4, 2026",

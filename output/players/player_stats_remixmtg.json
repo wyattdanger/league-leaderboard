@@ -2,25 +2,25 @@
   "username": "remixmtg",
   "displayName": "Jeremy Siegel",
   "overallStats": {
-    "totalTournaments": 19,
-    "totalPoints": 88,
-    "totalMatches": 55,
-    "matchRecord": "29-25-1",
-    "matchWinPercentage": 0.5363636363636364,
-    "gameRecord": "63-64-3",
-    "gameWinPercentage": 0.4846153846153846,
+    "totalTournaments": 20,
+    "totalPoints": 91,
+    "totalMatches": 58,
+    "matchRecord": "30-27-1",
+    "matchWinPercentage": 0.5258620689655172,
+    "gameRecord": "66-68-3",
+    "gameWinPercentage": 0.48175182481751827,
     "trophies": 2,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q2 2026",
-      "events": 7,
-      "points": 33,
-      "matchRecord": "11-10-0",
-      "matchWinPercentage": 0.5238095238095238,
-      "gameRecord": "23-27-0",
-      "gameWinPercentage": 0.46
+      "events": 8,
+      "points": 36,
+      "matchRecord": "12-12-0",
+      "matchWinPercentage": 0.5,
+      "gameRecord": "26-31-0",
+      "gameWinPercentage": 0.45614035087719296
     },
     {
       "leagueName": "Q1 2026",
@@ -80,6 +80,20 @@
       "trophies": 1
     },
     {
+      "deckName": "Moneyball",
+      "events": 2,
+      "matchWins": 3,
+      "matchLosses": 3,
+      "matchDraws": 0,
+      "matchRecord": "3-3-0",
+      "matchWinPercentage": 0.5,
+      "gameWins": 7,
+      "gameLosses": 9,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.4375,
+      "trophies": 0
+    },
+    {
       "deckName": "Oath Spec",
       "events": 1,
       "matchWins": 2,
@@ -91,20 +105,6 @@
       "gameLosses": 3,
       "gameDraws": 0,
       "gameWinPercentage": 0.625,
-      "trophies": 0
-    },
-    {
-      "deckName": "Moneyball",
-      "events": 1,
-      "matchWins": 2,
-      "matchLosses": 1,
-      "matchDraws": 0,
-      "matchRecord": "2-1-0",
-      "matchWinPercentage": 0.6666666666666666,
-      "gameWins": 4,
-      "gameLosses": 4,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.5,
       "trophies": 0
     },
     {
@@ -221,6 +221,61 @@
     }
   ],
   "headToHead": [
+    {
+      "opponentUsername": "Matt_W",
+      "opponentDisplayName": "Matt_W",
+      "matchesPlayed": 4,
+      "matchWins": 1,
+      "matchLosses": 3,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.25,
+      "gameWins": 2,
+      "gameLosses": 5,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.2857142857142857,
+      "matches": [
+        {
+          "tournamentId": "436155",
+          "dateDisplay": "June 11, 2026",
+          "result": "L",
+          "playerDeck": "Moneyball",
+          "opponentDeck": "Squirrel Opposition",
+          "playerGameWins": 0,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "417122",
+          "dateDisplay": "March 26, 2026",
+          "result": "L",
+          "playerDeck": "Terrageddon",
+          "opponentDeck": "Tinker Oath Fling",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "415118",
+          "dateDisplay": "March 19, 2026",
+          "result": "L",
+          "playerDeck": "RecSur NO Bombardment",
+          "opponentDeck": "Devourer",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "384681",
+          "dateDisplay": "November 20, 2025",
+          "result": "W",
+          "playerDeck": "_",
+          "opponentDeck": "Devourer",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
     {
       "opponentUsername": "swbmtg",
       "opponentDisplayName": "swb",
@@ -422,46 +477,36 @@
       ]
     },
     {
-      "opponentUsername": "Matt_W",
-      "opponentDisplayName": "Matt_W",
-      "matchesPlayed": 3,
+      "opponentUsername": "PCavalcanti",
+      "opponentDisplayName": "PCavalcanti",
+      "matchesPlayed": 2,
       "matchWins": 1,
-      "matchLosses": 2,
+      "matchLosses": 1,
       "matchDraws": 0,
-      "matchWinPercentage": 0.3333333333333333,
+      "matchWinPercentage": 0.5,
       "gameWins": 2,
-      "gameLosses": 4,
+      "gameLosses": 3,
       "gameDraws": 0,
-      "gameWinPercentage": 0.3333333333333333,
+      "gameWinPercentage": 0.4,
       "matches": [
         {
-          "tournamentId": "417122",
-          "dateDisplay": "March 26, 2026",
-          "result": "L",
-          "playerDeck": "Terrageddon",
-          "opponentDeck": "Tinker Oath Fling",
-          "playerGameWins": 0,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "415118",
-          "dateDisplay": "March 19, 2026",
-          "result": "L",
-          "playerDeck": "RecSur NO Bombardment",
-          "opponentDeck": "Devourer",
-          "playerGameWins": 0,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "384681",
-          "dateDisplay": "November 20, 2025",
+          "tournamentId": "436155",
+          "dateDisplay": "June 11, 2026",
           "result": "W",
-          "playerDeck": "_",
-          "opponentDeck": "Devourer",
+          "playerDeck": "Moneyball",
+          "opponentDeck": "RG Madness Burn",
           "playerGameWins": 2,
-          "opponentGameWins": 0,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "429084",
+          "dateDisplay": "May 14, 2026",
+          "result": "L",
+          "playerDeck": "Didgeridoo",
+          "opponentDeck": "Goblins",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
           "gameDraws": 0
         }
       ]
@@ -712,6 +757,31 @@
       ]
     },
     {
+      "opponentUsername": "WillReddy",
+      "opponentDisplayName": "WillReddy",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "matches": [
+        {
+          "tournamentId": "436155",
+          "dateDisplay": "June 11, 2026",
+          "result": "L",
+          "playerDeck": "Moneyball",
+          "opponentDeck": "Mono Red Ponza",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "Trout5882",
       "opponentDisplayName": "Trout5882",
       "matchesPlayed": 1,
@@ -805,31 +875,6 @@
           "result": "L",
           "playerDeck": "Didgeridoo",
           "opponentDeck": "Landstill",
-          "playerGameWins": 0,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "PCavalcanti",
-      "opponentDisplayName": "PCavalcanti",
-      "matchesPlayed": 1,
-      "matchWins": 0,
-      "matchLosses": 1,
-      "matchDraws": 0,
-      "matchWinPercentage": 0,
-      "gameWins": 0,
-      "gameLosses": 2,
-      "gameDraws": 0,
-      "gameWinPercentage": 0,
-      "matches": [
-        {
-          "tournamentId": "429084",
-          "dateDisplay": "May 14, 2026",
-          "result": "L",
-          "playerDeck": "Didgeridoo",
-          "opponentDeck": "Goblins",
           "playerGameWins": 0,
           "opponentGameWins": 2,
           "gameDraws": 0
@@ -1263,6 +1308,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "436155",
+      "dateDisplay": "June 11, 2026",
+      "playerCount": 23,
+      "trophyCount": 3,
+      "roundCount": 3,
+      "rank": 15,
+      "points": 3,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWinPercentage": 0.4285714,
+      "deck": "Moneyball"
+    },
     {
       "tournamentId": "432258",
       "dateDisplay": "May 28, 2026",

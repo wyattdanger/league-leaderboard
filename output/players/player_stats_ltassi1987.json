@@ -2,28 +2,42 @@
   "username": "Ltassi1987",
   "displayName": "Luiz Tassi",
   "overallStats": {
-    "totalTournaments": 2,
+    "totalTournaments": 3,
     "totalPoints": 7,
-    "totalMatches": 5,
-    "matchRecord": "2-2-1",
-    "matchWinPercentage": 0.5,
-    "gameRecord": "6-5-0",
-    "gameWinPercentage": 0.5454545454545454,
+    "totalMatches": 7,
+    "matchRecord": "2-4-1",
+    "matchWinPercentage": 0.35714285714285715,
+    "gameRecord": "7-9-0",
+    "gameWinPercentage": 0.4375,
     "trophies": 0,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q2 2026",
-      "events": 2,
+      "events": 3,
       "points": 7,
-      "matchRecord": "2-2-1",
-      "matchWinPercentage": 0.5,
-      "gameRecord": "6-5-0",
-      "gameWinPercentage": 0.5454545454545454
+      "matchRecord": "2-4-1",
+      "matchWinPercentage": 0.35714285714285715,
+      "gameRecord": "7-9-0",
+      "gameWinPercentage": 0.4375
     }
   ],
   "deckStats": [
+    {
+      "deckName": "Unknown",
+      "events": 2,
+      "matchWins": 0,
+      "matchLosses": 4,
+      "matchDraws": 0,
+      "matchRecord": "0-4-0",
+      "matchWinPercentage": 0,
+      "gameWins": 4,
+      "gameLosses": 6,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.4,
+      "trophies": 0
+    },
     {
       "deckName": "GAT w/angel",
       "events": 1,
@@ -37,23 +51,59 @@
       "gameDraws": 0,
       "gameWinPercentage": 0.875,
       "trophies": 0
-    },
-    {
-      "deckName": "Unknown",
-      "events": 1,
-      "matchWins": 0,
-      "matchLosses": 2,
-      "matchDraws": 0,
-      "matchRecord": "0-2-0",
-      "matchWinPercentage": 0,
-      "gameWins": 2,
-      "gameLosses": 3,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.4,
-      "trophies": 0
     }
   ],
   "headToHead": [
+    {
+      "opponentUsername": "itsCama",
+      "opponentDisplayName": "Yosef Harari",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "matches": [
+        {
+          "tournamentId": "436155",
+          "dateDisplay": "June 11, 2026",
+          "result": "L",
+          "playerDeck": "_",
+          "opponentDeck": "UW Control",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "MaltBeverage",
+      "opponentDisplayName": "Ryan Alexander",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "matches": [
+        {
+          "tournamentId": "436155",
+          "dateDisplay": "June 11, 2026",
+          "result": "L",
+          "playerDeck": "_",
+          "opponentDeck": "UW Landstill",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
     {
       "opponentUsername": "landho",
       "opponentDisplayName": "landho",
@@ -181,6 +231,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "436155",
+      "dateDisplay": "June 11, 2026",
+      "playerCount": 23,
+      "trophyCount": 3,
+      "roundCount": 3,
+      "rank": 22,
+      "points": 0,
+      "matchRecord": "0-2-0",
+      "matchWinPercentage": 0,
+      "gameWinPercentage": 0.3333333,
+      "deck": "_"
+    },
     {
       "tournamentId": "432258",
       "dateDisplay": "May 28, 2026",

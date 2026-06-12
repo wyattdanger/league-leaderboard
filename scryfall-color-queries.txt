@@ -1,0 +1,23 @@
+Scryfall Queries - By Color (≤$50 USD)
+Sets: Unlimited, Revised, Arabian Nights, Antiquities, Legends, The Dark, Fallen Empires, Ice Age, Homelands, Alliances, Chronicles, Fourth Edition
+
+Colorless Only (Artifacts + Lands):
+https://scryfall.com/search?q=%28set%3A2ed+or+set%3A3ed+or+set%3Aarn+or+set%3Aatq+or+set%3Aleg+or+set%3Adrk+or+set%3Afem+or+set%3Aice+or+set%3Ahml+or+set%3Aall+or+set%3Achr+or+set%3A4ed%29+c%3Dc+usd%3C%3D50&order=color&unique=prints
+
+White Only:
+https://scryfall.com/search?q=%28set%3A2ed+or+set%3A3ed+or+set%3Aarn+or+set%3Aatq+or+set%3Aleg+or+set%3Adrk+or+set%3Afem+or+set%3Aice+or+set%3Ahml+or+set%3Aall+or+set%3Achr+or+set%3A4ed%29+c%3Dw+usd%3C%3D50&order=color&unique=prints
+
+Blue Only:
+https://scryfall.com/search?q=%28set%3A2ed+or+set%3A3ed+or+set%3Aarn+or+set%3Aatq+or+set%3Aleg+or+set%3Adrk+or+set%3Afem+or+set%3Aice+or+set%3Ahml+or+set%3Aall+or+set%3Achr+or+set%3A4ed%29+c%3Du+usd%3C%3D50&order=color&unique=prints
+
+Black Only:
+https://scryfall.com/search?q=%28set%3A2ed+or+set%3A3ed+or+set%3Aarn+or+set%3Aatq+or+set%3Aleg+or+set%3Adrk+or+set%3Afem+or+set%3Aice+or+set%3Ahml+or+set%3Aall+or+set%3Achr+or+set%3A4ed%29+c%3Db+usd%3C%3D50&order=color&unique=prints
+
+Red Only:
+https://scryfall.com/search?q=%28set%3A2ed+or+set%3A3ed+or+set%3Aarn+or+set%3Aatq+or+set%3Aleg+or+set%3Adrk+or+set%3Afem+or+set%3Aice+or+set%3Ahml+or+set%3Aall+or+set%3Achr+or+set%3A4ed%29+c%3Dr+usd%3C%3D50&order=color&unique=prints
+
+Green Only:
+https://scryfall.com/search?q=%28set%3A2ed+or+set%3A3ed+or+set%3Aarn+or+set%3Aatq+or+set%3Aleg+or+set%3Adrk+or+set%3Afem+or+set%3Aice+or+set%3Ahml+or+set%3Aall+or+set%3Achr+or+set%3A4ed%29+c%3Dg+usd%3C%3D50&order=color&unique=prints
+
+Multicolor (Gold):
+https://scryfall.com/search?q=%28set%3A2ed+or+set%3A3ed+or+set%3Aarn+or+set%3Aatq+or+set%3Aleg+or+set%3Adrk+or+set%3Afem+or+set%3Aice+or+set%3Ahml+or+set%3Aall+or+set%3Achr+or+set%3A4ed%29+c%3Dm+usd%3C%3D50&order=color&unique=prints
