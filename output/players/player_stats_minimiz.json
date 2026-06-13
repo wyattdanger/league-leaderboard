@@ -57,20 +57,6 @@
       "trophies": 2
     },
     {
-      "deckName": "Unknown",
-      "events": 2,
-      "matchWins": 4,
-      "matchLosses": 2,
-      "matchDraws": 0,
-      "matchRecord": "4-2-0",
-      "matchWinPercentage": 0.6666666666666666,
-      "gameWins": 8,
-      "gameLosses": 8,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.5,
-      "trophies": 1
-    },
-    {
       "deckName": "Esper Tog",
       "events": 2,
       "matchWins": 3,
@@ -82,6 +68,34 @@
       "gameLosses": 8,
       "gameDraws": 0,
       "gameWinPercentage": 0.5,
+      "trophies": 0
+    },
+    {
+      "deckName": "RG Goblins",
+      "events": 1,
+      "matchWins": 3,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchRecord": "3-0-0",
+      "matchWinPercentage": 1,
+      "gameWins": 5,
+      "gameLosses": 3,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.625,
+      "trophies": 1
+    },
+    {
+      "deckName": "Unknown",
+      "events": 1,
+      "matchWins": 1,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 3,
+      "gameLosses": 5,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.375,
       "trophies": 0
     }
   ],
@@ -158,7 +172,7 @@
           "tournamentId": "436155",
           "dateDisplay": "June 11, 2026",
           "result": "W",
-          "playerDeck": "_",
+          "playerDeck": "RG Goblins",
           "opponentDeck": "10 Land Stompy",
           "playerGameWins": 2,
           "opponentGameWins": 1,
@@ -478,7 +492,7 @@
           "tournamentId": "436155",
           "dateDisplay": "June 11, 2026",
           "result": "W",
-          "playerDeck": "_",
+          "playerDeck": "RG Goblins",
           "opponentDeck": "Rifter",
           "playerGameWins": 2,
           "opponentGameWins": 1,
@@ -503,7 +517,7 @@
           "tournamentId": "436155",
           "dateDisplay": "June 11, 2026",
           "result": "W",
-          "playerDeck": "_",
+          "playerDeck": "RG Goblins",
           "opponentDeck": "GW Oath Ponza",
           "playerGameWins": 2,
           "opponentGameWins": 1,
@@ -874,7 +888,7 @@
       "matchRecord": "3-0-0",
       "matchWinPercentage": 1,
       "gameWinPercentage": 0.6666667,
-      "deck": "_"
+      "deck": "RG Goblins"
     },
     {
       "tournamentId": "434267",
