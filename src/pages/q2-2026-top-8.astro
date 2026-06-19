@@ -1,0 +1,166 @@
+---
+import PageLayout from '../components/PageLayout.astro';
+
+// Q2 2026 Top 8 Bracket
+const top8 = [
+  { seed: 1, name: 'Yosef Harari', username: 'itsCama', points: 50 },
+  { seed: 2, name: 'Michael Flores', username: 'madmanpoet', points: 49 },
+  { seed: 3, name: 'Dan S', username: 'Mookyspulder', points: 46 },
+  { seed: 4, name: 'sjpenzer', username: 'sjpenzer', points: 46 },
+  { seed: 5, name: 'swb', username: 'swbmtg', points: 43 },
+  { seed: 6, name: 'Jeremy Siegel', username: 'remixmtg', points: 42 },
+  { seed: 7, name: 'PCavalcanti', username: 'PCavalcanti', points: 42 },
+  { seed: 8, name: 'Matt_W', username: 'Matt_W', points: 40 },
+];
+---
+
+<PageLayout>
+  <div class="card">
+    <header class="page-header">
+      <h1>Q2 2026 League Championship</h1>
+      <p class="subtitle">Top 8 Playoff Bracket</p>
+    </header>
+
+    <div class="bracket-container">
+      <div class="bracket">
+        <div class="round quarterfinals">
+          <div class="round-title">Quarterfinals</div>
+
+          <div class="match">
+            <div class="player seed-1">
+              <span class="seed">#1</span>
+              <span class="name">{top8[0].name}</span>
+              <span class="points">{top8[0].points} pts</span>
+            </div>
+            <div class="player seed-8">
+              <span class="seed">#8</span>
+              <span class="name">{top8[7].name}</span>
+              <span class="points">{top8[7].points} pts</span>
+            </div>
+          </div>
+
+          <div class="match">
+            <div class="player seed-4">
+              <span class="seed">#4</span>
+              <span class="name">{top8[3].name}</span>
+              <span class="points">{top8[3].points} pts</span>
+            </div>
+            <div class="player seed-5">
+              <span class="seed">#5</span>
+              <span class="name">{top8[4].name}</span>
+              <span class="points">{top8[4].points} pts</span>
+            </div>
+          </div>
+
+          <div class="match">
+            <div class="player seed-2">
+              <span class="seed">#2</span>
+              <span class="name">{top8[1].name}</span>
+              <span class="points">{top8[1].points} pts</span>
+            </div>
+            <div class="player seed-7">
+              <span class="seed">#7</span>
+              <span class="name">{top8[6].name}</span>
+              <span class="points">{top8[6].points} pts</span>
+            </div>
+          </div>
+
+          <div class="match">
+            <div class="player seed-3">
+              <span class="seed">#3</span>
+              <span class="name">{top8[2].name}</span>
+              <span class="points">{top8[2].points} pts</span>
+            </div>
+            <div class="player seed-6">
+              <span class="seed">#6</span>
+              <span class="name">{top8[5].name}</span>
+              <span class="points">{top8[5].points} pts</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</PageLayout>
+
+<style>
+  .card {
+    padding: 1.5rem;
+  }
+
+  .page-header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .page-header h1 {
+    font-size: 1.8rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+    color: #666;
+  }
+
+  .bracket-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+
+  .bracket {
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    padding: 1.5rem;
+    background: #f8f9fa;
+  }
+
+  .round {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .round-title {
+    font-size: 0.95rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    color: #333;
+  }
+
+  .match {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .player {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.4rem 0.5rem;
+    background: white;
+    border: 1px solid #dee2e6;
+    border-radius: 3px;
+    font-size: 0.85rem;
+  }
+
+  .seed {
+    font-weight: 700;
+    color: #6c757d;
+    min-width: 24px;
+    font-size: 0.8rem;
+  }
+
+  .name {
+    flex: 1;
+    font-weight: 600;
+  }
+
+  .points {
+    font-size: 0.75rem;
+    color: #6c757d;
+  }
+</style>
