@@ -2,25 +2,25 @@
   "username": "itsCama",
   "displayName": "Yosef Harari",
   "overallStats": {
-    "totalTournaments": 31,
-    "totalPoints": 161,
-    "totalMatches": 91,
-    "matchRecord": "52-34-5",
-    "matchWinPercentage": 0.5989010989010989,
-    "gameRecord": "125-97-0",
-    "gameWinPercentage": 0.5630630630630631,
+    "totalTournaments": 32,
+    "totalPoints": 164,
+    "totalMatches": 93,
+    "matchRecord": "53-35-5",
+    "matchWinPercentage": 0.5967741935483871,
+    "gameRecord": "127-99-0",
+    "gameWinPercentage": 0.5619469026548672,
     "trophies": 4,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q2 2026",
-      "events": 7,
-      "points": 47,
-      "matchRecord": "15-4-2",
-      "matchWinPercentage": 0.7619047619047619,
-      "gameRecord": "33-16-0",
-      "gameWinPercentage": 0.673469387755102
+      "events": 8,
+      "points": 50,
+      "matchRecord": "16-5-2",
+      "matchWinPercentage": 0.7391304347826086,
+      "gameRecord": "35-18-0",
+      "gameWinPercentage": 0.660377358490566
     },
     {
       "leagueName": "Q1 2026",
@@ -79,6 +79,20 @@
   ],
   "deckStats": [
     {
+      "deckName": "UW Control",
+      "events": 11,
+      "matchWins": 19,
+      "matchLosses": 7,
+      "matchDraws": 4,
+      "matchRecord": "19-7-4",
+      "matchWinPercentage": 0.7,
+      "gameWins": 52,
+      "gameLosses": 28,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.65,
+      "trophies": 1
+    },
+    {
       "deckName": "Unknown",
       "events": 11,
       "matchWins": 16,
@@ -90,20 +104,6 @@
       "gameLosses": 44,
       "gameDraws": 0,
       "gameWinPercentage": 0.5,
-      "trophies": 1
-    },
-    {
-      "deckName": "UW Control",
-      "events": 10,
-      "matchWins": 18,
-      "matchLosses": 6,
-      "matchDraws": 4,
-      "matchRecord": "18-6-4",
-      "matchWinPercentage": 0.7142857142857143,
-      "gameWins": 49,
-      "gameLosses": 26,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.6533333333333333,
       "trophies": 1
     },
     {
@@ -209,16 +209,26 @@
     {
       "opponentUsername": "swbmtg",
       "opponentDisplayName": "swb",
-      "matchesPlayed": 7,
+      "matchesPlayed": 8,
       "matchWins": 2,
-      "matchLosses": 4,
+      "matchLosses": 5,
       "matchDraws": 1,
-      "matchWinPercentage": 0.35714285714285715,
+      "matchWinPercentage": 0.3125,
       "gameWins": 6,
-      "gameLosses": 11,
+      "gameLosses": 13,
       "gameDraws": 0,
-      "gameWinPercentage": 0.35294117647058826,
+      "gameWinPercentage": 0.3157894736842105,
       "matches": [
+        {
+          "tournamentId": "436157",
+          "dateDisplay": "June 18, 2026",
+          "result": "L",
+          "playerDeck": "UW Control",
+          "opponentDeck": "Terraclysm",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
         {
           "tournamentId": "436155",
           "dateDisplay": "June 11, 2026",
@@ -1137,6 +1147,31 @@
       ]
     },
     {
+      "opponentUsername": "WillReddy",
+      "opponentDisplayName": "WillReddy",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "matches": [
+        {
+          "tournamentId": "436157",
+          "dateDisplay": "June 18, 2026",
+          "result": "W",
+          "playerDeck": "UW Control",
+          "opponentDeck": "_",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "Ltassi1987",
       "opponentDisplayName": "Luiz Tassi",
       "matchesPlayed": 1,
@@ -1713,6 +1748,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "436157",
+      "dateDisplay": "June 18, 2026",
+      "playerCount": 17,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 10,
+      "points": 3,
+      "matchRecord": "1-1-0",
+      "matchWinPercentage": 0.5,
+      "gameWinPercentage": 0.5,
+      "deck": "UW Control"
+    },
     {
       "tournamentId": "436155",
       "dateDisplay": "June 11, 2026",

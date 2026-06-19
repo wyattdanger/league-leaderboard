@@ -2,25 +2,25 @@
   "username": "swbmtg",
   "displayName": "swb",
   "overallStats": {
-    "totalTournaments": 45,
-    "totalPoints": 293,
-    "totalMatches": 135,
-    "matchRecord": "95-32-8",
-    "matchWinPercentage": 0.7333333333333333,
-    "gameRecord": "214-111-3",
-    "gameWinPercentage": 0.6524390243902439,
-    "trophies": 13,
+    "totalTournaments": 46,
+    "totalPoints": 302,
+    "totalMatches": 138,
+    "matchRecord": "98-32-8",
+    "matchWinPercentage": 0.7391304347826086,
+    "gameRecord": "220-111-3",
+    "gameWinPercentage": 0.6586826347305389,
+    "trophies": 14,
     "belts": 1
   },
   "leagueStats": [
     {
       "leagueName": "Q2 2026",
-      "events": 6,
-      "points": 34,
-      "matchRecord": "11-6-1",
-      "matchWinPercentage": 0.6388888888888888,
-      "gameRecord": "25-17-0",
-      "gameWinPercentage": 0.5952380952380952
+      "events": 7,
+      "points": 43,
+      "matchRecord": "14-6-1",
+      "matchWinPercentage": 0.6904761904761905,
+      "gameRecord": "31-17-0",
+      "gameWinPercentage": 0.6458333333333334
     },
     {
       "leagueName": "Q1 2026",
@@ -221,6 +221,20 @@
       "gameDraws": 0,
       "gameWinPercentage": 0.625,
       "trophies": 0
+    },
+    {
+      "deckName": "Terraclysm",
+      "events": 1,
+      "matchWins": 3,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchRecord": "3-0-0",
+      "matchWinPercentage": 1,
+      "gameWins": 8,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "trophies": 1
     },
     {
       "deckName": "Stasis",
@@ -437,16 +451,26 @@
     {
       "opponentUsername": "madmanpoet",
       "opponentDisplayName": "Michael Flores",
-      "matchesPlayed": 12,
-      "matchWins": 10,
+      "matchesPlayed": 13,
+      "matchWins": 11,
       "matchLosses": 2,
       "matchDraws": 0,
-      "matchWinPercentage": 0.8333333333333334,
-      "gameWins": 19,
+      "matchWinPercentage": 0.8461538461538461,
+      "gameWins": 21,
       "gameLosses": 7,
       "gameDraws": 0,
-      "gameWinPercentage": 0.7307692307692307,
+      "gameWinPercentage": 0.75,
       "matches": [
+        {
+          "tournamentId": "436157",
+          "dateDisplay": "June 18, 2026",
+          "result": "W",
+          "playerDeck": "Terraclysm",
+          "opponentDeck": "The Rock",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        },
         {
           "tournamentId": "382756",
           "dateDisplay": "November 13, 2025",
@@ -572,16 +596,26 @@
     {
       "opponentUsername": "itsCama",
       "opponentDisplayName": "Yosef Harari",
-      "matchesPlayed": 7,
-      "matchWins": 4,
+      "matchesPlayed": 8,
+      "matchWins": 5,
       "matchLosses": 2,
       "matchDraws": 1,
-      "matchWinPercentage": 0.6428571428571429,
-      "gameWins": 11,
+      "matchWinPercentage": 0.6875,
+      "gameWins": 13,
       "gameLosses": 6,
       "gameDraws": 0,
-      "gameWinPercentage": 0.6470588235294118,
+      "gameWinPercentage": 0.6842105263157895,
       "matches": [
+        {
+          "tournamentId": "436157",
+          "dateDisplay": "June 18, 2026",
+          "result": "W",
+          "playerDeck": "Terraclysm",
+          "opponentDeck": "UW Control",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        },
         {
           "tournamentId": "436155",
           "dateDisplay": "June 11, 2026",
@@ -1880,6 +1914,31 @@
       ]
     },
     {
+      "opponentUsername": "AlldoAurelis",
+      "opponentDisplayName": "AlldoAurelis",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "matches": [
+        {
+          "tournamentId": "436157",
+          "dateDisplay": "June 18, 2026",
+          "result": "W",
+          "playerDeck": "Terraclysm",
+          "opponentDeck": "Mad Dogs",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "WillReddy",
       "opponentDisplayName": "WillReddy",
       "matchesPlayed": 1,
@@ -2456,6 +2515,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "436157",
+      "dateDisplay": "June 18, 2026",
+      "playerCount": 17,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 1,
+      "points": 9,
+      "matchRecord": "3-0-0",
+      "matchWinPercentage": 1,
+      "gameWinPercentage": 1,
+      "deck": "Terraclysm"
+    },
     {
       "tournamentId": "436155",
       "dateDisplay": "June 11, 2026",

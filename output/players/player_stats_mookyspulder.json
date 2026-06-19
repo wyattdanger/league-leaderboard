@@ -2,25 +2,25 @@
   "username": "Mookyspulder",
   "displayName": "Dan S",
   "overallStats": {
-    "totalTournaments": 12,
-    "totalPoints": 70,
-    "totalMatches": 36,
-    "matchRecord": "23-12-1",
-    "matchWinPercentage": 0.6527777777777778,
-    "gameRecord": "52-33-0",
-    "gameWinPercentage": 0.611764705882353,
+    "totalTournaments": 13,
+    "totalPoints": 74,
+    "totalMatches": 39,
+    "matchRecord": "24-13-2",
+    "matchWinPercentage": 0.6410256410256411,
+    "gameRecord": "55-37-0",
+    "gameWinPercentage": 0.5978260869565217,
     "trophies": 3,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q2 2026",
-      "events": 7,
-      "points": 42,
-      "matchRecord": "14-7-0",
-      "matchWinPercentage": 0.6666666666666666,
-      "gameRecord": "33-18-0",
-      "gameWinPercentage": 0.6470588235294118
+      "events": 8,
+      "points": 46,
+      "matchRecord": "15-8-1",
+      "matchWinPercentage": 0.6458333333333334,
+      "gameRecord": "36-22-0",
+      "gameWinPercentage": 0.6206896551724138
     },
     {
       "leagueName": "Q1 2026",
@@ -130,9 +130,78 @@
       "gameDraws": 0,
       "gameWinPercentage": 0.625,
       "trophies": 0
+    },
+    {
+      "deckName": "Psychatog",
+      "events": 1,
+      "matchWins": 1,
+      "matchLosses": 1,
+      "matchDraws": 1,
+      "matchRecord": "1-1-1",
+      "matchWinPercentage": 0.5,
+      "gameWins": 3,
+      "gameLosses": 5,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.375,
+      "trophies": 0
     }
   ],
   "headToHead": [
+    {
+      "opponentUsername": "Mattmelach",
+      "opponentDisplayName": "Matthew Melachrinos",
+      "matchesPlayed": 4,
+      "matchWins": 4,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 8,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.8,
+      "matches": [
+        {
+          "tournamentId": "436157",
+          "dateDisplay": "June 18, 2026",
+          "result": "W",
+          "playerDeck": "Psychatog",
+          "opponentDeck": "_",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "429084",
+          "dateDisplay": "May 14, 2026",
+          "result": "W",
+          "playerDeck": "Moneyball Black",
+          "opponentDeck": "Greater Good",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "424009",
+          "dateDisplay": "April 23, 2026",
+          "result": "W",
+          "playerDeck": "Goblins",
+          "opponentDeck": "UR Stasis",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "413370",
+          "dateDisplay": "March 12, 2026",
+          "result": "W",
+          "playerDeck": "Clerics",
+          "opponentDeck": "Contamination",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
     {
       "opponentUsername": "Tencteri",
       "opponentDisplayName": "Tencteri",
@@ -189,51 +258,6 @@
       ]
     },
     {
-      "opponentUsername": "Mattmelach",
-      "opponentDisplayName": "Matthew Melachrinos",
-      "matchesPlayed": 3,
-      "matchWins": 3,
-      "matchLosses": 0,
-      "matchDraws": 0,
-      "matchWinPercentage": 1,
-      "gameWins": 6,
-      "gameLosses": 1,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.8571428571428571,
-      "matches": [
-        {
-          "tournamentId": "429084",
-          "dateDisplay": "May 14, 2026",
-          "result": "W",
-          "playerDeck": "Moneyball Black",
-          "opponentDeck": "Greater Good",
-          "playerGameWins": 2,
-          "opponentGameWins": 0,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "424009",
-          "dateDisplay": "April 23, 2026",
-          "result": "W",
-          "playerDeck": "Goblins",
-          "opponentDeck": "UR Stasis",
-          "playerGameWins": 2,
-          "opponentGameWins": 1,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "413370",
-          "dateDisplay": "March 12, 2026",
-          "result": "W",
-          "playerDeck": "Clerics",
-          "opponentDeck": "Contamination",
-          "playerGameWins": 2,
-          "opponentGameWins": 0,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
       "opponentUsername": "Goosegrease",
       "opponentDisplayName": "Ryan Mielbye",
       "matchesPlayed": 3,
@@ -274,6 +298,41 @@
           "opponentDeck": "The Rock",
           "playerGameWins": 0,
           "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "AlfredG",
+      "opponentDisplayName": "AlfredG",
+      "matchesPlayed": 2,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 1,
+      "matchWinPercentage": 0.75,
+      "gameWins": 3,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6,
+      "matches": [
+        {
+          "tournamentId": "436157",
+          "dateDisplay": "June 18, 2026",
+          "result": "D",
+          "playerDeck": "Psychatog",
+          "opponentDeck": "BW Control",
+          "playerGameWins": 1,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "436155",
+          "dateDisplay": "June 11, 2026",
+          "result": "W",
+          "playerDeck": "Life Clerics",
+          "opponentDeck": "BW Control",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
           "gameDraws": 0
         }
       ]
@@ -384,26 +443,26 @@
       ]
     },
     {
-      "opponentUsername": "AlfredG",
-      "opponentDisplayName": "AlfredG",
+      "opponentUsername": "truthcult",
+      "opponentDisplayName": "klint",
       "matchesPlayed": 1,
-      "matchWins": 1,
-      "matchLosses": 0,
+      "matchWins": 0,
+      "matchLosses": 1,
       "matchDraws": 0,
-      "matchWinPercentage": 1,
-      "gameWins": 2,
-      "gameLosses": 1,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
       "gameDraws": 0,
-      "gameWinPercentage": 0.6666666666666666,
+      "gameWinPercentage": 0,
       "matches": [
         {
-          "tournamentId": "436155",
-          "dateDisplay": "June 11, 2026",
-          "result": "W",
-          "playerDeck": "Life Clerics",
-          "opponentDeck": "BW Control",
-          "playerGameWins": 2,
-          "opponentGameWins": 1,
+          "tournamentId": "436157",
+          "dateDisplay": "June 18, 2026",
+          "result": "L",
+          "playerDeck": "Psychatog",
+          "opponentDeck": "Tinker Welder",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
           "gameDraws": 0
         }
       ]
@@ -885,6 +944,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "436157",
+      "dateDisplay": "June 18, 2026",
+      "playerCount": 17,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 9,
+      "points": 4,
+      "matchRecord": "1-1-1",
+      "matchWinPercentage": 0.5,
+      "gameWinPercentage": 0.4285714,
+      "deck": "Psychatog"
+    },
     {
       "tournamentId": "436155",
       "dateDisplay": "June 11, 2026",

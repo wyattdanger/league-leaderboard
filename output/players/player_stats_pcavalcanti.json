@@ -2,25 +2,25 @@
   "username": "PCavalcanti",
   "displayName": "PCavalcanti",
   "overallStats": {
-    "totalTournaments": 12,
-    "totalPoints": 58,
-    "totalMatches": 36,
-    "matchRecord": "19-16-1",
-    "matchWinPercentage": 0.5416666666666666,
-    "gameRecord": "49-41-0",
-    "gameWinPercentage": 0.5444444444444444,
+    "totalTournaments": 13,
+    "totalPoints": 64,
+    "totalMatches": 39,
+    "matchRecord": "21-17-1",
+    "matchWinPercentage": 0.5512820512820513,
+    "gameRecord": "54-45-0",
+    "gameWinPercentage": 0.5454545454545454,
     "trophies": 1,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q2 2026",
-      "events": 7,
-      "points": 36,
-      "matchRecord": "12-9-0",
-      "matchWinPercentage": 0.5714285714285714,
-      "gameRecord": "30-22-0",
-      "gameWinPercentage": 0.5769230769230769
+      "events": 8,
+      "points": 42,
+      "matchRecord": "14-10-0",
+      "matchWinPercentage": 0.5833333333333334,
+      "gameRecord": "35-26-0",
+      "gameWinPercentage": 0.5737704918032787
     },
     {
       "leagueName": "Q1 2026",
@@ -62,6 +62,20 @@
       "trophies": 1
     },
     {
+      "deckName": "RG Madness Burn",
+      "events": 2,
+      "matchWins": 3,
+      "matchLosses": 3,
+      "matchDraws": 0,
+      "matchRecord": "3-3-0",
+      "matchWinPercentage": 0.5,
+      "gameWins": 8,
+      "gameLosses": 8,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5,
+      "trophies": 0
+    },
+    {
       "deckName": "Goblins",
       "events": 2,
       "matchWins": 3,
@@ -83,20 +97,6 @@
       "matchDraws": 0,
       "matchRecord": "2-1-0",
       "matchWinPercentage": 0.6666666666666666,
-      "gameWins": 4,
-      "gameLosses": 4,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.5,
-      "trophies": 0
-    },
-    {
-      "deckName": "RG Madness Burn",
-      "events": 1,
-      "matchWins": 1,
-      "matchLosses": 2,
-      "matchDraws": 0,
-      "matchRecord": "1-2-0",
-      "matchWinPercentage": 0.3333333333333333,
       "gameWins": 4,
       "gameLosses": 4,
       "gameDraws": 0,
@@ -235,6 +235,41 @@
           "playerDeck": "_",
           "opponentDeck": "Dreadnought",
           "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "madmanpoet",
+      "opponentDisplayName": "Michael Flores",
+      "matchesPlayed": 2,
+      "matchWins": 0,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 2,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "matches": [
+        {
+          "tournamentId": "436157",
+          "dateDisplay": "June 18, 2026",
+          "result": "L",
+          "playerDeck": "RG Madness Burn",
+          "opponentDeck": "The Rock",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "410832",
+          "dateDisplay": "March 5, 2026",
+          "result": "L",
+          "playerDeck": "Medvedev Burn",
+          "opponentDeck": "Gamekeeper Rock",
+          "playerGameWins": 1,
           "opponentGameWins": 2,
           "gameDraws": 0
         }
@@ -446,6 +481,56 @@
           "opponentDeck": "White Stompy",
           "playerGameWins": 2,
           "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "AlldoAurelis",
+      "opponentDisplayName": "AlldoAurelis",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6666666666666666,
+      "matches": [
+        {
+          "tournamentId": "436157",
+          "dateDisplay": "June 18, 2026",
+          "result": "W",
+          "playerDeck": "RG Madness Burn",
+          "opponentDeck": "Mad Dogs",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "AlfredG",
+      "opponentDisplayName": "AlfredG",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6666666666666666,
+      "matches": [
+        {
+          "tournamentId": "436157",
+          "dateDisplay": "June 18, 2026",
+          "result": "W",
+          "playerDeck": "RG Madness Burn",
+          "opponentDeck": "BW Control",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
           "gameDraws": 0
         }
       ]
@@ -776,31 +861,6 @@
       ]
     },
     {
-      "opponentUsername": "madmanpoet",
-      "opponentDisplayName": "Michael Flores",
-      "matchesPlayed": 1,
-      "matchWins": 0,
-      "matchLosses": 1,
-      "matchDraws": 0,
-      "matchWinPercentage": 0,
-      "gameWins": 1,
-      "gameLosses": 2,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.3333333333333333,
-      "matches": [
-        {
-          "tournamentId": "410832",
-          "dateDisplay": "March 5, 2026",
-          "result": "L",
-          "playerDeck": "Medvedev Burn",
-          "opponentDeck": "Gamekeeper Rock",
-          "playerGameWins": 1,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
       "opponentUsername": "LuisNeiman",
       "opponentDisplayName": "LuisNeiman",
       "matchesPlayed": 1,
@@ -827,6 +887,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "436157",
+      "dateDisplay": "June 18, 2026",
+      "playerCount": 17,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 7,
+      "points": 6,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWinPercentage": 0.5555556,
+      "deck": "RG Madness Burn"
+    },
     {
       "tournamentId": "436155",
       "dateDisplay": "June 11, 2026",
