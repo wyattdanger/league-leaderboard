@@ -1,8 +1,20 @@
 ---
 import PageLayout from '../components/PageLayout.astro';
 
-// Q2 2026 Top 8 Bracket
-const top8 = [
+// Scenario 1: Without sjpenzer (#4 seed, 46 points - unable to attend)
+const withoutSjpenzer = [
+  { seed: 1, name: 'Yosef Harari', username: 'itsCama', points: 50 },
+  { seed: 2, name: 'Michael Flores', username: 'madmanpoet', points: 49 },
+  { seed: 3, name: 'Dan S', username: 'Mookyspulder', points: 46 },
+  { seed: 4, name: 'swb', username: 'swbmtg', points: 43 },
+  { seed: 5, name: 'Jeremy Siegel', username: 'remixmtg', points: 42 },
+  { seed: 6, name: 'PCavalcanti', username: 'PCavalcanti', points: 42 },
+  { seed: 7, name: 'Matt_W', username: 'Matt_W', points: 40 },
+  { seed: 8, name: 'Taylorhol', username: 'Taylorhol', points: 34 },
+];
+
+// Scenario 2: With sjpenzer (if he can attend)
+const withSjpenzer = [
   { seed: 1, name: 'Yosef Harari', username: 'itsCama', points: 50 },
   { seed: 2, name: 'Michael Flores', username: 'madmanpoet', points: 49 },
   { seed: 3, name: 'Dan S', username: 'Mookyspulder', points: 46 },
@@ -18,63 +30,133 @@ const top8 = [
   <div class="card">
     <header class="page-header">
       <h1>Q2 2026 League Championship</h1>
-      <p class="subtitle">Top 8 Playoff Bracket</p>
+      <p class="subtitle">Top 8 Playoff Bracket Scenarios</p>
     </header>
 
-    <div class="bracket-container">
-      <div class="bracket">
-        <div class="round quarterfinals">
-          <div class="round-title">Quarterfinals</div>
+    <div class="scenarios-container">
+      <!-- Scenario 1: Without sjpenzer -->
+      <div class="scenario">
+        <h2 class="scenario-title">Scenario 1: Without sjpenzer</h2>
+        <p class="scenario-note">sjpenzer (Rank 4, 46 points) unable to attend<br/>Taylorhol (Rank 9, 34 points) moves up</p>
 
-          <div class="match">
-            <div class="player seed-1">
-              <span class="seed">#1</span>
-              <span class="name">{top8[0].name}</span>
-              <span class="points">{top8[0].points} pts</span>
+        <div class="bracket">
+          <div class="round quarterfinals">
+            <div class="round-title">Quarterfinals</div>
+
+            <div class="match">
+              <div class="player seed-1">
+                <span class="seed">#1</span>
+                <span class="name">{withoutSjpenzer[0].name}</span>
+                <span class="points">{withoutSjpenzer[0].points} pts</span>
+              </div>
+              <div class="player seed-8">
+                <span class="seed">#8</span>
+                <span class="name">{withoutSjpenzer[7].name}</span>
+                <span class="points">{withoutSjpenzer[7].points} pts</span>
+              </div>
             </div>
-            <div class="player seed-8">
-              <span class="seed">#8</span>
-              <span class="name">{top8[7].name}</span>
-              <span class="points">{top8[7].points} pts</span>
+
+            <div class="match">
+              <div class="player seed-4">
+                <span class="seed">#4</span>
+                <span class="name">{withoutSjpenzer[3].name}</span>
+                <span class="points">{withoutSjpenzer[3].points} pts</span>
+              </div>
+              <div class="player seed-5">
+                <span class="seed">#5</span>
+                <span class="name">{withoutSjpenzer[4].name}</span>
+                <span class="points">{withoutSjpenzer[4].points} pts</span>
+              </div>
+            </div>
+
+            <div class="match">
+              <div class="player seed-2">
+                <span class="seed">#2</span>
+                <span class="name">{withoutSjpenzer[1].name}</span>
+                <span class="points">{withoutSjpenzer[1].points} pts</span>
+              </div>
+              <div class="player seed-7">
+                <span class="seed">#7</span>
+                <span class="name">{withoutSjpenzer[6].name}</span>
+                <span class="points">{withoutSjpenzer[6].points} pts</span>
+              </div>
+            </div>
+
+            <div class="match">
+              <div class="player seed-3">
+                <span class="seed">#3</span>
+                <span class="name">{withoutSjpenzer[2].name}</span>
+                <span class="points">{withoutSjpenzer[2].points} pts</span>
+              </div>
+              <div class="player seed-6">
+                <span class="seed">#6</span>
+                <span class="name">{withoutSjpenzer[5].name}</span>
+                <span class="points">{withoutSjpenzer[5].points} pts</span>
+              </div>
             </div>
           </div>
+        </div>
+      </div>
 
-          <div class="match">
-            <div class="player seed-4">
-              <span class="seed">#4</span>
-              <span class="name">{top8[3].name}</span>
-              <span class="points">{top8[3].points} pts</span>
-            </div>
-            <div class="player seed-5">
-              <span class="seed">#5</span>
-              <span class="name">{top8[4].name}</span>
-              <span class="points">{top8[4].points} pts</span>
-            </div>
-          </div>
+      <!-- Scenario 2: With sjpenzer -->
+      <div class="scenario">
+        <h2 class="scenario-title">Scenario 2: With sjpenzer</h2>
+        <p class="scenario-note">sjpenzer (Rank 4, 46 points) able to attend<br/>Standard bracket seeding</p>
 
-          <div class="match">
-            <div class="player seed-2">
-              <span class="seed">#2</span>
-              <span class="name">{top8[1].name}</span>
-              <span class="points">{top8[1].points} pts</span>
-            </div>
-            <div class="player seed-7">
-              <span class="seed">#7</span>
-              <span class="name">{top8[6].name}</span>
-              <span class="points">{top8[6].points} pts</span>
-            </div>
-          </div>
+        <div class="bracket">
+          <div class="round quarterfinals">
+            <div class="round-title">Quarterfinals</div>
 
-          <div class="match">
-            <div class="player seed-3">
-              <span class="seed">#3</span>
-              <span class="name">{top8[2].name}</span>
-              <span class="points">{top8[2].points} pts</span>
+            <div class="match">
+              <div class="player seed-1">
+                <span class="seed">#1</span>
+                <span class="name">{withSjpenzer[0].name}</span>
+                <span class="points">{withSjpenzer[0].points} pts</span>
+              </div>
+              <div class="player seed-8">
+                <span class="seed">#8</span>
+                <span class="name">{withSjpenzer[7].name}</span>
+                <span class="points">{withSjpenzer[7].points} pts</span>
+              </div>
             </div>
-            <div class="player seed-6">
-              <span class="seed">#6</span>
-              <span class="name">{top8[5].name}</span>
-              <span class="points">{top8[5].points} pts</span>
+
+            <div class="match">
+              <div class="player seed-4">
+                <span class="seed">#4</span>
+                <span class="name">{withSjpenzer[3].name}</span>
+                <span class="points">{withSjpenzer[3].points} pts</span>
+              </div>
+              <div class="player seed-5">
+                <span class="seed">#5</span>
+                <span class="name">{withSjpenzer[4].name}</span>
+                <span class="points">{withSjpenzer[4].points} pts</span>
+              </div>
+            </div>
+
+            <div class="match">
+              <div class="player seed-2">
+                <span class="seed">#2</span>
+                <span class="name">{withSjpenzer[1].name}</span>
+                <span class="points">{withSjpenzer[1].points} pts</span>
+              </div>
+              <div class="player seed-7">
+                <span class="seed">#7</span>
+                <span class="name">{withSjpenzer[6].name}</span>
+                <span class="points">{withSjpenzer[6].points} pts</span>
+              </div>
+            </div>
+
+            <div class="match">
+              <div class="player seed-3">
+                <span class="seed">#3</span>
+                <span class="name">{withSjpenzer[2].name}</span>
+                <span class="points">{withSjpenzer[2].points} pts</span>
+              </div>
+              <div class="player seed-6">
+                <span class="seed">#6</span>
+                <span class="name">{withSjpenzer[5].name}</span>
+                <span class="points">{withSjpenzer[5].points} pts</span>
+              </div>
             </div>
           </div>
         </div>
@@ -103,17 +185,40 @@ const top8 = [
     color: #666;
   }
 
-  .bracket-container {
+  .scenarios-container {
     display: flex;
-    justify-content: center;
+    gap: 2rem;
     margin-bottom: 2rem;
+    justify-content: center;
   }
 
-  .bracket {
+  .scenario {
+    flex: 0 0 auto;
     border: 1px solid #dee2e6;
     border-radius: 8px;
     padding: 1.5rem;
     background: #f8f9fa;
+  }
+
+  .scenario-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    color: #333;
+  }
+
+  .scenario-note {
+    font-size: 0.8rem;
+    color: #666;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    line-height: 1.4;
+  }
+
+  .bracket {
+    display: flex;
+    justify-content: center;
   }
 
   .round {
@@ -162,5 +267,11 @@ const top8 = [
   .points {
     font-size: 0.75rem;
     color: #6c757d;
+  }
+
+  @media (max-width: 968px) {
+    .scenarios-container {
+      flex-direction: column;
+    }
   }
 </style>
