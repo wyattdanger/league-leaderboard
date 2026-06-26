@@ -2,13 +2,13 @@
   "username": "Mookyspulder",
   "displayName": "Dan S",
   "overallStats": {
-    "totalTournaments": 13,
-    "totalPoints": 74,
-    "totalMatches": 39,
-    "matchRecord": "24-13-2",
-    "matchWinPercentage": 0.6410256410256411,
-    "gameRecord": "55-37-0",
-    "gameWinPercentage": 0.5978260869565217,
+    "totalTournaments": 14,
+    "totalPoints": 80,
+    "totalMatches": 42,
+    "matchRecord": "26-14-2",
+    "matchWinPercentage": 0.6428571428571429,
+    "gameRecord": "60-40-0",
+    "gameWinPercentage": 0.6,
     "trophies": 3,
     "belts": 0
   },
@@ -21,6 +21,15 @@
       "matchWinPercentage": 0.6458333333333334,
       "gameRecord": "36-22-0",
       "gameWinPercentage": 0.6206896551724138
+    },
+    {
+      "leagueName": "Q2 2026 Top 8",
+      "events": 1,
+      "points": 6,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameRecord": "5-3-0",
+      "gameWinPercentage": 0.625
     },
     {
       "leagueName": "Q1 2026",
@@ -119,6 +128,20 @@
     },
     {
       "deckName": "Goblins",
+      "events": 1,
+      "matchWins": 2,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 5,
+      "gameLosses": 3,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.625,
+      "trophies": 0
+    },
+    {
+      "deckName": "RB Goblins",
       "events": 1,
       "matchWins": 2,
       "matchLosses": 1,
@@ -373,6 +396,41 @@
       ]
     },
     {
+      "opponentUsername": "PCavalcanti",
+      "opponentDisplayName": "PCavalcanti",
+      "matchesPlayed": 2,
+      "matchWins": 1,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.5,
+      "gameWins": 2,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5,
+      "matches": [
+        {
+          "tournamentId": "432258",
+          "dateDisplay": "May 28, 2026",
+          "result": "L",
+          "playerDeck": "_",
+          "opponentDeck": "Burn",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "439325",
+          "dateDisplay": "June 25, 2026",
+          "result": "W",
+          "playerDeck": "RB Goblins",
+          "opponentDeck": "RG Goblins",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "delofstrom",
       "opponentDisplayName": "DEL .",
       "matchesPlayed": 2,
@@ -403,6 +461,41 @@
           "opponentDeck": "Survival Welder",
           "playerGameWins": 2,
           "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "remixmtg",
+      "opponentDisplayName": "Jeremy Siegel",
+      "matchesPlayed": 2,
+      "matchWins": 0,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 2,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "matches": [
+        {
+          "tournamentId": "420854",
+          "dateDisplay": "April 9, 2026",
+          "result": "L",
+          "playerDeck": "Life",
+          "opponentDeck": "Psychatog",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "439325",
+          "dateDisplay": "June 25, 2026",
+          "result": "L",
+          "playerDeck": "RB Goblins",
+          "opponentDeck": "Terrageddon",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
           "gameDraws": 0
         }
       ]
@@ -461,31 +554,6 @@
           "result": "L",
           "playerDeck": "Psychatog",
           "opponentDeck": "Tinker Welder",
-          "playerGameWins": 0,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "PCavalcanti",
-      "opponentDisplayName": "PCavalcanti",
-      "matchesPlayed": 1,
-      "matchWins": 0,
-      "matchLosses": 1,
-      "matchDraws": 0,
-      "matchWinPercentage": 0,
-      "gameWins": 0,
-      "gameLosses": 2,
-      "gameDraws": 0,
-      "gameWinPercentage": 0,
-      "matches": [
-        {
-          "tournamentId": "432258",
-          "dateDisplay": "May 28, 2026",
-          "result": "L",
-          "playerDeck": "_",
-          "opponentDeck": "Burn",
           "playerGameWins": 0,
           "opponentGameWins": 2,
           "gameDraws": 0
@@ -718,26 +786,26 @@
       ]
     },
     {
-      "opponentUsername": "remixmtg",
-      "opponentDisplayName": "Jeremy Siegel",
+      "opponentUsername": "madmanpoet",
+      "opponentDisplayName": "Michael Flores",
       "matchesPlayed": 1,
-      "matchWins": 0,
-      "matchLosses": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
       "matchDraws": 0,
-      "matchWinPercentage": 0,
-      "gameWins": 1,
-      "gameLosses": 2,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 1,
       "gameDraws": 0,
-      "gameWinPercentage": 0.3333333333333333,
+      "gameWinPercentage": 0.6666666666666666,
       "matches": [
         {
-          "tournamentId": "420854",
-          "dateDisplay": "April 9, 2026",
-          "result": "L",
-          "playerDeck": "Life",
-          "opponentDeck": "Psychatog",
-          "playerGameWins": 1,
-          "opponentGameWins": 2,
+          "tournamentId": "439325",
+          "dateDisplay": "June 25, 2026",
+          "result": "W",
+          "playerDeck": "RB Goblins",
+          "opponentDeck": "Dreadnought",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
           "gameDraws": 0
         }
       ]
@@ -944,6 +1012,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "439325",
+      "dateDisplay": "June 25, 2026",
+      "playerCount": 8,
+      "trophyCount": 1,
+      "roundCount": 3,
+      "rank": 2,
+      "points": 6,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWinPercentage": 0.625,
+      "deck": "RB Goblins"
+    },
     {
       "tournamentId": "436157",
       "dateDisplay": "June 18, 2026",

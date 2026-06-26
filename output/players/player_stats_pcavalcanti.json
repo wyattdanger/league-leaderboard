@@ -2,13 +2,13 @@
   "username": "PCavalcanti",
   "displayName": "PCavalcanti",
   "overallStats": {
-    "totalTournaments": 13,
-    "totalPoints": 64,
-    "totalMatches": 39,
-    "matchRecord": "21-17-1",
-    "matchWinPercentage": 0.5512820512820513,
-    "gameRecord": "54-45-0",
-    "gameWinPercentage": 0.5454545454545454,
+    "totalTournaments": 14,
+    "totalPoints": 67,
+    "totalMatches": 42,
+    "matchRecord": "22-19-1",
+    "matchWinPercentage": 0.5357142857142857,
+    "gameRecord": "57-50-0",
+    "gameWinPercentage": 0.5327102803738317,
     "trophies": 1,
     "belts": 0
   },
@@ -21,6 +21,15 @@
       "matchWinPercentage": 0.5833333333333334,
       "gameRecord": "35-26-0",
       "gameWinPercentage": 0.5737704918032787
+    },
+    {
+      "leagueName": "Q2 2026 Top 8",
+      "events": 1,
+      "points": 3,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameRecord": "3-5-0",
+      "gameWinPercentage": 0.375
     },
     {
       "leagueName": "Q1 2026",
@@ -102,6 +111,20 @@
       "gameDraws": 0,
       "gameWinPercentage": 0.5,
       "trophies": 0
+    },
+    {
+      "deckName": "RG Goblins",
+      "events": 1,
+      "matchWins": 1,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 3,
+      "gameLosses": 5,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.375,
+      "trophies": 0
     }
   ],
   "headToHead": [
@@ -146,6 +169,51 @@
           "opponentDeck": "Mono Black Aggro",
           "playerGameWins": 2,
           "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "itsCama",
+      "opponentDisplayName": "Yosef Harari",
+      "matchesPlayed": 3,
+      "matchWins": 1,
+      "matchLosses": 1,
+      "matchDraws": 1,
+      "matchWinPercentage": 0.5,
+      "gameWins": 4,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5,
+      "matches": [
+        {
+          "tournamentId": "434267",
+          "dateDisplay": "June 4, 2026",
+          "result": "L",
+          "playerDeck": "Burn",
+          "opponentDeck": "UW Control",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "439325",
+          "dateDisplay": "June 25, 2026",
+          "result": "W",
+          "playerDeck": "RG Goblins",
+          "opponentDeck": "UW Control",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "417122",
+          "dateDisplay": "March 26, 2026",
+          "result": "D",
+          "playerDeck": "Burn",
+          "opponentDeck": "UW Control",
+          "playerGameWins": 1,
+          "opponentGameWins": 1,
           "gameDraws": 0
         }
       ]
@@ -311,36 +379,36 @@
       ]
     },
     {
-      "opponentUsername": "itsCama",
-      "opponentDisplayName": "Yosef Harari",
+      "opponentUsername": "Mookyspulder",
+      "opponentDisplayName": "Dan S",
       "matchesPlayed": 2,
-      "matchWins": 0,
+      "matchWins": 1,
       "matchLosses": 1,
-      "matchDraws": 1,
-      "matchWinPercentage": 0.25,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.5,
       "gameWins": 2,
-      "gameLosses": 3,
+      "gameLosses": 2,
       "gameDraws": 0,
-      "gameWinPercentage": 0.4,
+      "gameWinPercentage": 0.5,
       "matches": [
         {
-          "tournamentId": "434267",
-          "dateDisplay": "June 4, 2026",
-          "result": "L",
+          "tournamentId": "432258",
+          "dateDisplay": "May 28, 2026",
+          "result": "W",
           "playerDeck": "Burn",
-          "opponentDeck": "UW Control",
-          "playerGameWins": 1,
-          "opponentGameWins": 2,
+          "opponentDeck": "_",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
           "gameDraws": 0
         },
         {
-          "tournamentId": "417122",
-          "dateDisplay": "March 26, 2026",
-          "result": "D",
-          "playerDeck": "Burn",
-          "opponentDeck": "UW Control",
-          "playerGameWins": 1,
-          "opponentGameWins": 1,
+          "tournamentId": "439325",
+          "dateDisplay": "June 25, 2026",
+          "result": "L",
+          "playerDeck": "RG Goblins",
+          "opponentDeck": "RB Goblins",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
           "gameDraws": 0
         }
       ]
@@ -611,31 +679,6 @@
       ]
     },
     {
-      "opponentUsername": "Mookyspulder",
-      "opponentDisplayName": "Dan S",
-      "matchesPlayed": 1,
-      "matchWins": 1,
-      "matchLosses": 0,
-      "matchDraws": 0,
-      "matchWinPercentage": 1,
-      "gameWins": 2,
-      "gameLosses": 0,
-      "gameDraws": 0,
-      "gameWinPercentage": 1,
-      "matches": [
-        {
-          "tournamentId": "432258",
-          "dateDisplay": "May 28, 2026",
-          "result": "W",
-          "playerDeck": "Burn",
-          "opponentDeck": "_",
-          "playerGameWins": 2,
-          "opponentGameWins": 0,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
       "opponentUsername": "AndrewLevine",
       "opponentDisplayName": "AndrewLevine",
       "matchesPlayed": 1,
@@ -729,6 +772,31 @@
           "result": "L",
           "playerDeck": "Goblins",
           "opponentDeck": "Dreadnought",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "Matt_W",
+      "opponentDisplayName": "Matt_W",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "matches": [
+        {
+          "tournamentId": "439325",
+          "dateDisplay": "June 25, 2026",
+          "result": "L",
+          "playerDeck": "RG Goblins",
+          "opponentDeck": "Burn",
           "playerGameWins": 1,
           "opponentGameWins": 2,
           "gameDraws": 0
@@ -887,6 +955,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "439325",
+      "dateDisplay": "June 25, 2026",
+      "playerCount": 8,
+      "trophyCount": 1,
+      "roundCount": 3,
+      "rank": 7,
+      "points": 3,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWinPercentage": 0.375,
+      "deck": "RG Goblins"
+    },
     {
       "tournamentId": "436157",
       "dateDisplay": "June 18, 2026",

@@ -2,13 +2,13 @@
   "username": "itsCama",
   "displayName": "Yosef Harari",
   "overallStats": {
-    "totalTournaments": 32,
+    "totalTournaments": 33,
     "totalPoints": 164,
-    "totalMatches": 93,
-    "matchRecord": "53-35-5",
-    "matchWinPercentage": 0.5967741935483871,
-    "gameRecord": "127-99-0",
-    "gameWinPercentage": 0.5619469026548672,
+    "totalMatches": 96,
+    "matchRecord": "53-38-5",
+    "matchWinPercentage": 0.578125,
+    "gameRecord": "129-105-0",
+    "gameWinPercentage": 0.5512820512820513,
     "trophies": 4,
     "belts": 0
   },
@@ -21,6 +21,15 @@
       "matchWinPercentage": 0.7391304347826086,
       "gameRecord": "35-18-0",
       "gameWinPercentage": 0.660377358490566
+    },
+    {
+      "leagueName": "Q2 2026 Top 8",
+      "events": 1,
+      "points": 0,
+      "matchRecord": "0-3-0",
+      "matchWinPercentage": 0,
+      "gameRecord": "2-6-0",
+      "gameWinPercentage": 0.25
     },
     {
       "leagueName": "Q1 2026",
@@ -80,16 +89,16 @@
   "deckStats": [
     {
       "deckName": "UW Control",
-      "events": 11,
+      "events": 12,
       "matchWins": 19,
-      "matchLosses": 7,
+      "matchLosses": 10,
       "matchDraws": 4,
-      "matchRecord": "19-7-4",
-      "matchWinPercentage": 0.7,
-      "gameWins": 52,
-      "gameLosses": 28,
+      "matchRecord": "19-10-4",
+      "matchWinPercentage": 0.6363636363636364,
+      "gameWins": 55,
+      "gameLosses": 33,
       "gameDraws": 0,
-      "gameWinPercentage": 0.65,
+      "gameWinPercentage": 0.625,
       "trophies": 1
     },
     {
@@ -209,15 +218,15 @@
     {
       "opponentUsername": "swbmtg",
       "opponentDisplayName": "swb",
-      "matchesPlayed": 8,
+      "matchesPlayed": 9,
       "matchWins": 2,
-      "matchLosses": 5,
+      "matchLosses": 6,
       "matchDraws": 1,
-      "matchWinPercentage": 0.3125,
+      "matchWinPercentage": 0.2777777777777778,
       "gameWins": 6,
-      "gameLosses": 13,
+      "gameLosses": 15,
       "gameDraws": 0,
-      "gameWinPercentage": 0.3157894736842105,
+      "gameWinPercentage": 0.2857142857142857,
       "matches": [
         {
           "tournamentId": "436157",
@@ -260,6 +269,16 @@
           "gameDraws": 0
         },
         {
+          "tournamentId": "439325",
+          "dateDisplay": "June 25, 2026",
+          "result": "L",
+          "playerDeck": "UW Control",
+          "opponentDeck": "Elves",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
           "tournamentId": "402789",
           "dateDisplay": "February 5, 2026",
           "result": "L",
@@ -297,6 +316,91 @@
           "opponentDeck": "Tribe",
           "playerGameWins": 1,
           "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "Taylorhol",
+      "opponentDisplayName": "Taylorhol",
+      "matchesPlayed": 7,
+      "matchWins": 6,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.8571428571428571,
+      "gameWins": 13,
+      "gameLosses": 3,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.8125,
+      "matches": [
+        {
+          "tournamentId": "430556",
+          "dateDisplay": "May 21, 2026",
+          "result": "W",
+          "playerDeck": "UW Control",
+          "opponentDeck": "4c oath ponza",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "439325",
+          "dateDisplay": "June 25, 2026",
+          "result": "L",
+          "playerDeck": "UW Control",
+          "opponentDeck": "Burn",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "410832",
+          "dateDisplay": "March 5, 2026",
+          "result": "W",
+          "playerDeck": "UW Control",
+          "opponentDeck": "HFEB",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "408436",
+          "dateDisplay": "February 26, 2026",
+          "result": "W",
+          "playerDeck": "UW Control",
+          "opponentDeck": "HFEB",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "402789",
+          "dateDisplay": "February 5, 2026",
+          "result": "W",
+          "playerDeck": "Welder Prison",
+          "opponentDeck": "HFEB",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "367531",
+          "dateDisplay": "September 25, 2025",
+          "result": "W",
+          "playerDeck": "_",
+          "opponentDeck": "Tinker Prison",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "365765",
+          "dateDisplay": "September 18, 2025",
+          "result": "W",
+          "playerDeck": "_",
+          "opponentDeck": "Elves",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
           "gameDraws": 0
         }
       ]
@@ -457,81 +561,6 @@
           "opponentDeck": "Dreadnought",
           "playerGameWins": 2,
           "opponentGameWins": 1,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "Taylorhol",
-      "opponentDisplayName": "Taylorhol",
-      "matchesPlayed": 6,
-      "matchWins": 6,
-      "matchLosses": 0,
-      "matchDraws": 0,
-      "matchWinPercentage": 1,
-      "gameWins": 12,
-      "gameLosses": 1,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.9230769230769231,
-      "matches": [
-        {
-          "tournamentId": "430556",
-          "dateDisplay": "May 21, 2026",
-          "result": "W",
-          "playerDeck": "UW Control",
-          "opponentDeck": "4c oath ponza",
-          "playerGameWins": 2,
-          "opponentGameWins": 0,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "410832",
-          "dateDisplay": "March 5, 2026",
-          "result": "W",
-          "playerDeck": "UW Control",
-          "opponentDeck": "HFEB",
-          "playerGameWins": 2,
-          "opponentGameWins": 0,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "408436",
-          "dateDisplay": "February 26, 2026",
-          "result": "W",
-          "playerDeck": "UW Control",
-          "opponentDeck": "HFEB",
-          "playerGameWins": 2,
-          "opponentGameWins": 0,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "402789",
-          "dateDisplay": "February 5, 2026",
-          "result": "W",
-          "playerDeck": "Welder Prison",
-          "opponentDeck": "HFEB",
-          "playerGameWins": 2,
-          "opponentGameWins": 0,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "367531",
-          "dateDisplay": "September 25, 2025",
-          "result": "W",
-          "playerDeck": "_",
-          "opponentDeck": "Tinker Prison",
-          "playerGameWins": 2,
-          "opponentGameWins": 1,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "365765",
-          "dateDisplay": "September 18, 2025",
-          "result": "W",
-          "playerDeck": "_",
-          "opponentDeck": "Elves",
-          "playerGameWins": 2,
-          "opponentGameWins": 0,
           "gameDraws": 0
         }
       ]
@@ -787,6 +816,51 @@
       ]
     },
     {
+      "opponentUsername": "PCavalcanti",
+      "opponentDisplayName": "PCavalcanti",
+      "matchesPlayed": 3,
+      "matchWins": 1,
+      "matchLosses": 1,
+      "matchDraws": 1,
+      "matchWinPercentage": 0.5,
+      "gameWins": 4,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5,
+      "matches": [
+        {
+          "tournamentId": "434267",
+          "dateDisplay": "June 4, 2026",
+          "result": "W",
+          "playerDeck": "UW Control",
+          "opponentDeck": "Burn",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "439325",
+          "dateDisplay": "June 25, 2026",
+          "result": "L",
+          "playerDeck": "UW Control",
+          "opponentDeck": "RG Goblins",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "417122",
+          "dateDisplay": "March 26, 2026",
+          "result": "D",
+          "playerDeck": "UW Control",
+          "opponentDeck": "Burn",
+          "playerGameWins": 1,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "Mattmelach",
       "opponentDisplayName": "Matthew Melachrinos",
       "matchesPlayed": 3,
@@ -862,41 +936,6 @@
           "opponentDeck": "GW Madness",
           "playerGameWins": 2,
           "opponentGameWins": 0,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "PCavalcanti",
-      "opponentDisplayName": "PCavalcanti",
-      "matchesPlayed": 2,
-      "matchWins": 1,
-      "matchLosses": 0,
-      "matchDraws": 1,
-      "matchWinPercentage": 0.75,
-      "gameWins": 3,
-      "gameLosses": 2,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.6,
-      "matches": [
-        {
-          "tournamentId": "434267",
-          "dateDisplay": "June 4, 2026",
-          "result": "W",
-          "playerDeck": "UW Control",
-          "opponentDeck": "Burn",
-          "playerGameWins": 2,
-          "opponentGameWins": 1,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "417122",
-          "dateDisplay": "March 26, 2026",
-          "result": "D",
-          "playerDeck": "UW Control",
-          "opponentDeck": "Burn",
-          "playerGameWins": 1,
-          "opponentGameWins": 1,
           "gameDraws": 0
         }
       ]
@@ -1748,6 +1787,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "439325",
+      "dateDisplay": "June 25, 2026",
+      "playerCount": 8,
+      "trophyCount": 1,
+      "roundCount": 3,
+      "rank": 8,
+      "points": 0,
+      "matchRecord": "0-3-0",
+      "matchWinPercentage": 0,
+      "gameWinPercentage": 0.3333333,
+      "deck": "UW Control"
+    },
     {
       "tournamentId": "436157",
       "dateDisplay": "June 18, 2026",
