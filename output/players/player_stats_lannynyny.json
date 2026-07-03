@@ -2,17 +2,26 @@
   "username": "Lannynyny",
   "displayName": "Lanny Huang",
   "overallStats": {
-    "totalTournaments": 6,
-    "totalPoints": 27,
-    "totalMatches": 18,
-    "matchRecord": "9-9-0",
-    "matchWinPercentage": 0.5,
-    "gameRecord": "21-20-0",
-    "gameWinPercentage": 0.5121951219512195,
+    "totalTournaments": 7,
+    "totalPoints": 33,
+    "totalMatches": 21,
+    "matchRecord": "11-10-0",
+    "matchWinPercentage": 0.5238095238095238,
+    "gameRecord": "26-22-0",
+    "gameWinPercentage": 0.5416666666666666,
     "trophies": 1,
     "belts": 0
   },
   "leagueStats": [
+    {
+      "leagueName": "Q3 2026",
+      "events": 1,
+      "points": 6,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameRecord": "5-2-0",
+      "gameWinPercentage": 0.7142857142857143
+    },
     {
       "leagueName": "Q1 2026",
       "events": 2,
@@ -80,6 +89,20 @@
       "trophies": 1
     },
     {
+      "deckName": "GAT",
+      "events": 1,
+      "matchWins": 2,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 6,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.75,
+      "trophies": 0
+    },
+    {
       "deckName": "Gro",
       "events": 1,
       "matchWins": 2,
@@ -109,6 +132,101 @@
     }
   ],
   "headToHead": [
+    {
+      "opponentUsername": "RichBucey",
+      "opponentDisplayName": "RichBucey",
+      "matchesPlayed": 2,
+      "matchWins": 0,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.2,
+      "matches": [
+        {
+          "tournamentId": "436159",
+          "dateDisplay": "July 2, 2026",
+          "result": "L",
+          "playerDeck": "GAT",
+          "opponentDeck": "Burn",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "350003",
+          "dateDisplay": "August 7, 2025",
+          "result": "L",
+          "playerDeck": "_",
+          "opponentDeck": "Dreadnought",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "Mattmelach",
+      "opponentDisplayName": "Matthew Melachrinos",
+      "matchesPlayed": 2,
+      "matchWins": 2,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 4,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "matches": [
+        {
+          "tournamentId": "436159",
+          "dateDisplay": "July 2, 2026",
+          "result": "W",
+          "playerDeck": "GAT",
+          "opponentDeck": "Dreadnought",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "321687",
+          "dateDisplay": "June 5, 2025",
+          "result": "W",
+          "playerDeck": "_",
+          "opponentDeck": "_",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "PetS22",
+      "opponentDisplayName": "PetS22",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "matches": [
+        {
+          "tournamentId": "436159",
+          "dateDisplay": "July 2, 2026",
+          "result": "W",
+          "playerDeck": "GAT",
+          "opponentDeck": "Moneyball Black",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
     {
       "opponentUsername": "madmanpoet",
       "opponentDisplayName": "Michael Flores",
@@ -360,31 +478,6 @@
       ]
     },
     {
-      "opponentUsername": "RichBucey",
-      "opponentDisplayName": "RichBucey",
-      "matchesPlayed": 1,
-      "matchWins": 0,
-      "matchLosses": 1,
-      "matchDraws": 0,
-      "matchWinPercentage": 0,
-      "gameWins": 0,
-      "gameLosses": 2,
-      "gameDraws": 0,
-      "gameWinPercentage": 0,
-      "matches": [
-        {
-          "tournamentId": "350003",
-          "dateDisplay": "August 7, 2025",
-          "result": "L",
-          "playerDeck": "_",
-          "opponentDeck": "Dreadnought",
-          "playerGameWins": 0,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
       "opponentUsername": "swbmtg",
       "opponentDisplayName": "swb",
       "matchesPlayed": 1,
@@ -508,34 +601,22 @@
           "gameDraws": 0
         }
       ]
-    },
-    {
-      "opponentUsername": "Mattmelach",
-      "opponentDisplayName": "Matthew Melachrinos",
-      "matchesPlayed": 1,
-      "matchWins": 1,
-      "matchLosses": 0,
-      "matchDraws": 0,
-      "matchWinPercentage": 1,
-      "gameWins": 2,
-      "gameLosses": 0,
-      "gameDraws": 0,
-      "gameWinPercentage": 1,
-      "matches": [
-        {
-          "tournamentId": "321687",
-          "dateDisplay": "June 5, 2025",
-          "result": "W",
-          "playerDeck": "_",
-          "opponentDeck": "_",
-          "playerGameWins": 2,
-          "opponentGameWins": 0,
-          "gameDraws": 0
-        }
-      ]
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "436159",
+      "dateDisplay": "July 2, 2026",
+      "playerCount": 19,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 3,
+      "points": 6,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWinPercentage": 0.7142857,
+      "deck": "GAT"
+    },
     {
       "tournamentId": "402789",
       "dateDisplay": "February 5, 2026",

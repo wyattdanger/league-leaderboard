@@ -2,17 +2,26 @@
   "username": "madmanpoet",
   "displayName": "Michael Flores",
   "overallStats": {
-    "totalTournaments": 43,
-    "totalPoints": 270,
-    "totalMatches": 129,
-    "matchRecord": "89-37-3",
-    "matchWinPercentage": 0.7015503875968992,
-    "gameRecord": "198-105-1",
-    "gameWinPercentage": 0.6513157894736842,
+    "totalTournaments": 44,
+    "totalPoints": 276,
+    "totalMatches": 132,
+    "matchRecord": "91-38-3",
+    "matchWinPercentage": 0.7007575757575758,
+    "gameRecord": "203-109-1",
+    "gameWinPercentage": 0.6485623003194888,
     "trophies": 11,
     "belts": 1
   },
   "leagueStats": [
+    {
+      "leagueName": "Q3 2026",
+      "events": 1,
+      "points": 6,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameRecord": "5-4-0",
+      "gameWinPercentage": 0.5555555555555556
+    },
     {
       "leagueName": "Q2 2026",
       "events": 7,
@@ -249,6 +258,20 @@
       "gameDraws": 0,
       "gameWinPercentage": 0.875,
       "trophies": 1
+    },
+    {
+      "deckName": "RG Ponza Oath",
+      "events": 1,
+      "matchWins": 2,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 4,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5,
+      "trophies": 0
     },
     {
       "deckName": "Cradle Control",
@@ -648,6 +671,71 @@
       ]
     },
     {
+      "opponentUsername": "RichBucey",
+      "opponentDisplayName": "RichBucey",
+      "matchesPlayed": 5,
+      "matchWins": 4,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.8,
+      "gameWins": 9,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.8181818181818182,
+      "matches": [
+        {
+          "tournamentId": "436159",
+          "dateDisplay": "July 2, 2026",
+          "result": "L",
+          "playerDeck": "RG Ponza Oath",
+          "opponentDeck": "Burn",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "406432",
+          "dateDisplay": "February 19, 2026",
+          "result": "W",
+          "playerDeck": "Dreadnought",
+          "opponentDeck": "Oath Ponza",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "388334",
+          "dateDisplay": "December 4, 2025",
+          "result": "W",
+          "playerDeck": "The Rock",
+          "opponentDeck": "Burn",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "367531",
+          "dateDisplay": "September 25, 2025",
+          "result": "W",
+          "playerDeck": "Dreadnought",
+          "opponentDeck": "Oath Ponza",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "343959",
+          "dateDisplay": "July 24, 2025",
+          "result": "W",
+          "playerDeck": "Burn",
+          "opponentDeck": "Stasis",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "Gaunology",
       "opponentDisplayName": "Gaunology",
       "matchesPlayed": 5,
@@ -953,61 +1041,6 @@
       ]
     },
     {
-      "opponentUsername": "RichBucey",
-      "opponentDisplayName": "RichBucey",
-      "matchesPlayed": 4,
-      "matchWins": 4,
-      "matchLosses": 0,
-      "matchDraws": 0,
-      "matchWinPercentage": 1,
-      "gameWins": 8,
-      "gameLosses": 0,
-      "gameDraws": 0,
-      "gameWinPercentage": 1,
-      "matches": [
-        {
-          "tournamentId": "406432",
-          "dateDisplay": "February 19, 2026",
-          "result": "W",
-          "playerDeck": "Dreadnought",
-          "opponentDeck": "Oath Ponza",
-          "playerGameWins": 2,
-          "opponentGameWins": 0,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "388334",
-          "dateDisplay": "December 4, 2025",
-          "result": "W",
-          "playerDeck": "The Rock",
-          "opponentDeck": "Burn",
-          "playerGameWins": 2,
-          "opponentGameWins": 0,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "367531",
-          "dateDisplay": "September 25, 2025",
-          "result": "W",
-          "playerDeck": "Dreadnought",
-          "opponentDeck": "Oath Ponza",
-          "playerGameWins": 2,
-          "opponentGameWins": 0,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "343959",
-          "dateDisplay": "July 24, 2025",
-          "result": "W",
-          "playerDeck": "Burn",
-          "opponentDeck": "Stasis",
-          "playerGameWins": 2,
-          "opponentGameWins": 0,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
       "opponentUsername": "BryanGulotta",
       "opponentDisplayName": "BryanGulotta",
       "matchesPlayed": 4,
@@ -1111,6 +1144,51 @@
           "result": "W",
           "playerDeck": "Burn",
           "opponentDeck": "_",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "PCavalcanti",
+      "opponentDisplayName": "PCavalcanti",
+      "matchesPlayed": 3,
+      "matchWins": 3,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 6,
+      "gameLosses": 3,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6666666666666666,
+      "matches": [
+        {
+          "tournamentId": "436159",
+          "dateDisplay": "July 2, 2026",
+          "result": "W",
+          "playerDeck": "RG Ponza Oath",
+          "opponentDeck": "Mono-Black",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "436157",
+          "dateDisplay": "June 18, 2026",
+          "result": "W",
+          "playerDeck": "The Rock",
+          "opponentDeck": "RG Madness Burn",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "410832",
+          "dateDisplay": "March 5, 2026",
+          "result": "W",
+          "playerDeck": "Gamekeeper Rock",
+          "opponentDeck": "Medvedev Burn",
           "playerGameWins": 2,
           "opponentGameWins": 1,
           "gameDraws": 0
@@ -1293,41 +1371,6 @@
           "opponentDeck": "_",
           "playerGameWins": 2,
           "opponentGameWins": 0,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "PCavalcanti",
-      "opponentDisplayName": "PCavalcanti",
-      "matchesPlayed": 2,
-      "matchWins": 2,
-      "matchLosses": 0,
-      "matchDraws": 0,
-      "matchWinPercentage": 1,
-      "gameWins": 4,
-      "gameLosses": 2,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.6666666666666666,
-      "matches": [
-        {
-          "tournamentId": "436157",
-          "dateDisplay": "June 18, 2026",
-          "result": "W",
-          "playerDeck": "The Rock",
-          "opponentDeck": "RG Madness Burn",
-          "playerGameWins": 2,
-          "opponentGameWins": 1,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "410832",
-          "dateDisplay": "March 5, 2026",
-          "result": "W",
-          "playerDeck": "Gamekeeper Rock",
-          "opponentDeck": "Medvedev Burn",
-          "playerGameWins": 2,
-          "opponentGameWins": 1,
           "gameDraws": 0
         }
       ]
@@ -1643,6 +1686,31 @@
           "opponentDeck": "Burn",
           "playerGameWins": 1,
           "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "AlfredG",
+      "opponentDisplayName": "AlfredG",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6666666666666666,
+      "matches": [
+        {
+          "tournamentId": "436159",
+          "dateDisplay": "July 2, 2026",
+          "result": "W",
+          "playerDeck": "RG Ponza Oath",
+          "opponentDeck": "RG Aggro",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
           "gameDraws": 0
         }
       ]
@@ -2411,6 +2479,19 @@
       "matchWinPercentage": 0.6666666666666666,
       "gameWinPercentage": 0.625,
       "deck": "Dreadnought"
+    },
+    {
+      "tournamentId": "436159",
+      "dateDisplay": "July 2, 2026",
+      "playerCount": 19,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 5,
+      "points": 6,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWinPercentage": 0.5555556,
+      "deck": "RG Ponza Oath"
     },
     {
       "tournamentId": "436157",

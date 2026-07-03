@@ -2,17 +2,26 @@
   "username": "weidnent",
   "displayName": "Nicholas Weidner",
   "overallStats": {
-    "totalTournaments": 11,
-    "totalPoints": 25,
-    "totalMatches": 33,
-    "matchRecord": "8-24-1",
-    "matchWinPercentage": 0.25757575757575757,
-    "gameRecord": "26-53-0",
-    "gameWinPercentage": 0.3291139240506329,
+    "totalTournaments": 12,
+    "totalPoints": 31,
+    "totalMatches": 36,
+    "matchRecord": "10-25-1",
+    "matchWinPercentage": 0.2916666666666667,
+    "gameRecord": "31-57-0",
+    "gameWinPercentage": 0.3522727272727273,
     "trophies": 0,
     "belts": 0
   },
   "leagueStats": [
+    {
+      "leagueName": "Q3 2026",
+      "events": 1,
+      "points": 6,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameRecord": "5-4-0",
+      "gameWinPercentage": 0.5555555555555556
+    },
     {
       "leagueName": "Q2 2026",
       "events": 8,
@@ -57,6 +66,20 @@
       "matchWinPercentage": 0.3333333333333333,
       "gameWins": 8,
       "gameLosses": 8,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5,
+      "trophies": 0
+    },
+    {
+      "deckName": "Dragon Reanimator",
+      "events": 1,
+      "matchWins": 2,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 4,
+      "gameLosses": 4,
       "gameDraws": 0,
       "gameWinPercentage": 0.5,
       "trophies": 0
@@ -147,6 +170,96 @@
     }
   ],
   "headToHead": [
+    {
+      "opponentUsername": "Gaunology",
+      "opponentDisplayName": "Gaunology",
+      "matchesPlayed": 3,
+      "matchWins": 1,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 3,
+      "gameLosses": 5,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.375,
+      "matches": [
+        {
+          "tournamentId": "436159",
+          "dateDisplay": "July 2, 2026",
+          "result": "W",
+          "playerDeck": "Dragon Reanimator",
+          "opponentDeck": "_",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "424009",
+          "dateDisplay": "April 23, 2026",
+          "result": "L",
+          "playerDeck": "Mono Blue Storm",
+          "opponentDeck": "Bant Oath Control",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "422555",
+          "dateDisplay": "April 16, 2026",
+          "result": "L",
+          "playerDeck": "GW Madness",
+          "opponentDeck": "Naya Enchantress",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "WillReddy",
+      "opponentDisplayName": "WillReddy",
+      "matchesPlayed": 3,
+      "matchWins": 3,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 6,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.75,
+      "matches": [
+        {
+          "tournamentId": "436159",
+          "dateDisplay": "July 2, 2026",
+          "result": "W",
+          "playerDeck": "Dragon Reanimator",
+          "opponentDeck": "GW Ponza Oath",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "434267",
+          "dateDisplay": "June 4, 2026",
+          "result": "W",
+          "playerDeck": "Balancing Tings",
+          "opponentDeck": "_",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "422555",
+          "dateDisplay": "April 16, 2026",
+          "result": "W",
+          "playerDeck": "GW Madness",
+          "opponentDeck": "Sligh",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
     {
       "opponentUsername": "BryanGulotta",
       "opponentDisplayName": "BryanGulotta",
@@ -273,41 +386,6 @@
       ]
     },
     {
-      "opponentUsername": "WillReddy",
-      "opponentDisplayName": "WillReddy",
-      "matchesPlayed": 2,
-      "matchWins": 2,
-      "matchLosses": 0,
-      "matchDraws": 0,
-      "matchWinPercentage": 1,
-      "gameWins": 4,
-      "gameLosses": 1,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.8,
-      "matches": [
-        {
-          "tournamentId": "434267",
-          "dateDisplay": "June 4, 2026",
-          "result": "W",
-          "playerDeck": "Balancing Tings",
-          "opponentDeck": "_",
-          "playerGameWins": 2,
-          "opponentGameWins": 1,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "422555",
-          "dateDisplay": "April 16, 2026",
-          "result": "W",
-          "playerDeck": "GW Madness",
-          "opponentDeck": "Sligh",
-          "playerGameWins": 2,
-          "opponentGameWins": 0,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
       "opponentUsername": "RichBucey",
       "opponentDisplayName": "RichBucey",
       "matchesPlayed": 2,
@@ -378,41 +456,6 @@
       ]
     },
     {
-      "opponentUsername": "Gaunology",
-      "opponentDisplayName": "Gaunology",
-      "matchesPlayed": 2,
-      "matchWins": 0,
-      "matchLosses": 2,
-      "matchDraws": 0,
-      "matchWinPercentage": 0,
-      "gameWins": 1,
-      "gameLosses": 4,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.2,
-      "matches": [
-        {
-          "tournamentId": "424009",
-          "dateDisplay": "April 23, 2026",
-          "result": "L",
-          "playerDeck": "Mono Blue Storm",
-          "opponentDeck": "Bant Oath Control",
-          "playerGameWins": 0,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "422555",
-          "dateDisplay": "April 16, 2026",
-          "result": "L",
-          "playerDeck": "GW Madness",
-          "opponentDeck": "Naya Enchantress",
-          "playerGameWins": 1,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
       "opponentUsername": "Mattmelach",
       "opponentDisplayName": "Matthew Melachrinos",
       "matchesPlayed": 2,
@@ -441,6 +484,31 @@
           "result": "L",
           "playerDeck": "Reanimator",
           "opponentDeck": "Contamination",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "mattmanw2",
+      "opponentDisplayName": "mattmanw2",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "matches": [
+        {
+          "tournamentId": "436159",
+          "dateDisplay": "July 2, 2026",
+          "result": "L",
+          "playerDeck": "Dragon Reanimator",
+          "opponentDeck": "Moneyball Black",
           "playerGameWins": 1,
           "opponentGameWins": 2,
           "gameDraws": 0
@@ -824,6 +892,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "436159",
+      "dateDisplay": "July 2, 2026",
+      "playerCount": 19,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 11,
+      "points": 6,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWinPercentage": 0.5555556,
+      "deck": "Dragon Reanimator"
+    },
     {
       "tournamentId": "436157",
       "dateDisplay": "June 18, 2026",

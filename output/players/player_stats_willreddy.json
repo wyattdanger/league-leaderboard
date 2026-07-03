@@ -2,17 +2,26 @@
   "username": "WillReddy",
   "displayName": "WillReddy",
   "overallStats": {
-    "totalTournaments": 12,
-    "totalPoints": 54,
-    "totalMatches": 36,
-    "matchRecord": "18-18-0",
-    "matchWinPercentage": 0.5,
-    "gameRecord": "45-44-1",
+    "totalTournaments": 13,
+    "totalPoints": 57,
+    "totalMatches": 39,
+    "matchRecord": "19-20-0",
+    "matchWinPercentage": 0.48717948717948717,
+    "gameRecord": "49-48-1",
     "gameWinPercentage": 0.5,
     "trophies": 0,
     "belts": 0
   },
   "leagueStats": [
+    {
+      "leagueName": "Q3 2026",
+      "events": 1,
+      "points": 3,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameRecord": "4-4-0",
+      "gameWinPercentage": 0.5
+    },
     {
       "leagueName": "Q2 2026",
       "events": 7,
@@ -122,6 +131,20 @@
       "trophies": 0
     },
     {
+      "deckName": "GW Ponza Oath",
+      "events": 1,
+      "matchWins": 1,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 4,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5,
+      "trophies": 0
+    },
+    {
       "deckName": "UG Tradewind Survival",
       "events": 1,
       "matchWins": 1,
@@ -151,6 +174,51 @@
     }
   ],
   "headToHead": [
+    {
+      "opponentUsername": "weidnent",
+      "opponentDisplayName": "Nicholas Weidner",
+      "matchesPlayed": 3,
+      "matchWins": 0,
+      "matchLosses": 3,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 2,
+      "gameLosses": 6,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.25,
+      "matches": [
+        {
+          "tournamentId": "436159",
+          "dateDisplay": "July 2, 2026",
+          "result": "L",
+          "playerDeck": "GW Ponza Oath",
+          "opponentDeck": "Dragon Reanimator",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "434267",
+          "dateDisplay": "June 4, 2026",
+          "result": "L",
+          "playerDeck": "_",
+          "opponentDeck": "Balancing Tings",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "422555",
+          "dateDisplay": "April 16, 2026",
+          "result": "L",
+          "playerDeck": "Sligh",
+          "opponentDeck": "GW Madness",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
     {
       "opponentUsername": "Matt_W",
       "opponentDisplayName": "Matt_W",
@@ -287,41 +355,6 @@
       ]
     },
     {
-      "opponentUsername": "weidnent",
-      "opponentDisplayName": "Nicholas Weidner",
-      "matchesPlayed": 2,
-      "matchWins": 0,
-      "matchLosses": 2,
-      "matchDraws": 0,
-      "matchWinPercentage": 0,
-      "gameWins": 1,
-      "gameLosses": 4,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.2,
-      "matches": [
-        {
-          "tournamentId": "434267",
-          "dateDisplay": "June 4, 2026",
-          "result": "L",
-          "playerDeck": "_",
-          "opponentDeck": "Balancing Tings",
-          "playerGameWins": 1,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "422555",
-          "dateDisplay": "April 16, 2026",
-          "result": "L",
-          "playerDeck": "Sligh",
-          "opponentDeck": "GW Madness",
-          "playerGameWins": 0,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
       "opponentUsername": "madmanpoet",
       "opponentDisplayName": "Michael Flores",
       "matchesPlayed": 2,
@@ -386,6 +419,56 @@
           "playerDeck": "_",
           "opponentDeck": "UG Madness",
           "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "Fascinating83",
+      "opponentDisplayName": "Rich Arevalo",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "matches": [
+        {
+          "tournamentId": "436159",
+          "dateDisplay": "July 2, 2026",
+          "result": "W",
+          "playerDeck": "GW Ponza Oath",
+          "opponentDeck": "Burn",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "tintintintin",
+      "opponentDisplayName": "tintintintin",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "matches": [
+        {
+          "tournamentId": "436159",
+          "dateDisplay": "July 2, 2026",
+          "result": "L",
+          "playerDeck": "GW Ponza Oath",
+          "opponentDeck": "_",
+          "playerGameWins": 1,
           "opponentGameWins": 2,
           "gameDraws": 0
         }
@@ -843,6 +926,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "436159",
+      "dateDisplay": "July 2, 2026",
+      "playerCount": 19,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 12,
+      "points": 3,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWinPercentage": 0.5,
+      "deck": "GW Ponza Oath"
+    },
     {
       "tournamentId": "436157",
       "dateDisplay": "June 18, 2026",
