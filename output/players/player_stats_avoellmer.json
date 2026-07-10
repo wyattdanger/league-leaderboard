@@ -2,17 +2,26 @@
   "username": "avoellmer",
   "displayName": "avoellmer",
   "overallStats": {
-    "totalTournaments": 5,
-    "totalPoints": 21,
-    "totalMatches": 15,
-    "matchRecord": "7-8-0",
-    "matchWinPercentage": 0.4666666666666667,
-    "gameRecord": "19-16-0",
-    "gameWinPercentage": 0.5428571428571428,
+    "totalTournaments": 6,
+    "totalPoints": 24,
+    "totalMatches": 18,
+    "matchRecord": "8-10-0",
+    "matchWinPercentage": 0.4444444444444444,
+    "gameRecord": "23-20-0",
+    "gameWinPercentage": 0.5348837209302325,
     "trophies": 1,
     "belts": 0
   },
   "leagueStats": [
+    {
+      "leagueName": "Q3 2026",
+      "events": 1,
+      "points": 3,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameRecord": "4-4-0",
+      "gameWinPercentage": 0.5
+    },
     {
       "leagueName": "Q4 2025",
       "events": 1,
@@ -60,6 +69,20 @@
       "gameDraws": 0,
       "gameWinPercentage": 1,
       "trophies": 1
+    },
+    {
+      "deckName": "RG Goblins",
+      "events": 1,
+      "matchWins": 1,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 4,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5,
+      "trophies": 0
     },
     {
       "deckName": "Aluren",
@@ -178,6 +201,81 @@
           "opponentDeck": "_",
           "playerGameWins": 0,
           "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "weidnent",
+      "opponentDisplayName": "Nicholas Weidner",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "matches": [
+        {
+          "tournamentId": "436160",
+          "dateDisplay": "July 9, 2026",
+          "result": "L",
+          "playerDeck": "RG Goblins",
+          "opponentDeck": "Reanimator",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "LuisNeiman",
+      "opponentDisplayName": "LuisNeiman",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "matches": [
+        {
+          "tournamentId": "436160",
+          "dateDisplay": "July 9, 2026",
+          "result": "L",
+          "playerDeck": "RG Goblins",
+          "opponentDeck": "GWr Oath Ponza",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "phil",
+      "opponentDisplayName": "Phil Quinn",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "matches": [
+        {
+          "tournamentId": "436160",
+          "dateDisplay": "July 9, 2026",
+          "result": "W",
+          "playerDeck": "RG Goblins",
+          "opponentDeck": "_",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
           "gameDraws": 0
         }
       ]
@@ -409,6 +507,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "436160",
+      "dateDisplay": "July 9, 2026",
+      "playerCount": 25,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 19,
+      "points": 3,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWinPercentage": 0.5,
+      "deck": "RG Goblins"
+    },
     {
       "tournamentId": "390154",
       "dateDisplay": "December 11, 2025",

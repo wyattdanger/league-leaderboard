@@ -2,17 +2,26 @@
   "username": "DaveKaplan",
   "displayName": "Dave Kaplan",
   "overallStats": {
-    "totalTournaments": 5,
-    "totalPoints": 31,
-    "totalMatches": 15,
-    "matchRecord": "10-4-1",
-    "matchWinPercentage": 0.7,
-    "gameRecord": "24-13-0",
-    "gameWinPercentage": 0.6486486486486487,
+    "totalTournaments": 6,
+    "totalPoints": 37,
+    "totalMatches": 18,
+    "matchRecord": "12-5-1",
+    "matchWinPercentage": 0.6944444444444444,
+    "gameRecord": "29-15-0",
+    "gameWinPercentage": 0.6590909090909091,
     "trophies": 1,
     "belts": 0
   },
   "leagueStats": [
+    {
+      "leagueName": "Q3 2026",
+      "events": 1,
+      "points": 6,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameRecord": "5-2-0",
+      "gameWinPercentage": 0.7142857142857143
+    },
     {
       "leagueName": "Q2 2026",
       "events": 3,
@@ -46,6 +55,20 @@
       "gameDraws": 0,
       "gameWinPercentage": 0.65625,
       "trophies": 1
+    },
+    {
+      "deckName": "Stiflenought",
+      "events": 1,
+      "matchWins": 2,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 6,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.75,
+      "trophies": 0
     },
     {
       "deckName": "Angry Hermit",
@@ -94,6 +117,56 @@
           "opponentDeck": "Zombies",
           "playerGameWins": 1,
           "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "AlldoAurelis",
+      "opponentDisplayName": "AlldoAurelis",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "matches": [
+        {
+          "tournamentId": "436160",
+          "dateDisplay": "July 9, 2026",
+          "result": "L",
+          "playerDeck": "Stiflenought",
+          "opponentDeck": "Moneyball Black",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "LuisNeiman",
+      "opponentDisplayName": "LuisNeiman",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "matches": [
+        {
+          "tournamentId": "436160",
+          "dateDisplay": "July 9, 2026",
+          "result": "W",
+          "playerDeck": "Stiflenought",
+          "opponentDeck": "GWr Oath Ponza",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
           "gameDraws": 0
         }
       ]
@@ -425,6 +498,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "436160",
+      "dateDisplay": "July 9, 2026",
+      "playerCount": 25,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 6,
+      "points": 6,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWinPercentage": 0.7142857,
+      "deck": "Stiflenought"
+    },
     {
       "tournamentId": "424009",
       "dateDisplay": "April 23, 2026",

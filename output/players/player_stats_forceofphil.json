@@ -2,17 +2,26 @@
   "username": "ForceofPhil",
   "displayName": "ForceofPhil",
   "overallStats": {
-    "totalTournaments": 6,
-    "totalPoints": 10,
-    "totalMatches": 18,
-    "matchRecord": "3-14-1",
-    "matchWinPercentage": 0.19444444444444445,
-    "gameRecord": "11-31-0",
-    "gameWinPercentage": 0.2619047619047619,
+    "totalTournaments": 7,
+    "totalPoints": 13,
+    "totalMatches": 21,
+    "matchRecord": "4-16-1",
+    "matchWinPercentage": 0.21428571428571427,
+    "gameRecord": "14-35-0",
+    "gameWinPercentage": 0.2857142857142857,
     "trophies": 0,
     "belts": 0
   },
   "leagueStats": [
+    {
+      "leagueName": "Q3 2026",
+      "events": 1,
+      "points": 3,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameRecord": "3-4-0",
+      "gameWinPercentage": 0.42857142857142855
+    },
     {
       "leagueName": "Q4 2025",
       "events": 3,
@@ -45,6 +54,20 @@
       "gameLosses": 28,
       "gameDraws": 0,
       "gameWinPercentage": 0.3,
+      "trophies": 0
+    },
+    {
+      "deckName": "RB Goblins",
+      "events": 1,
+      "matchWins": 1,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 3,
+      "gameLosses": 5,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.375,
       "trophies": 0
     },
     {
@@ -197,6 +220,81 @@
           "result": "L",
           "playerDeck": "_",
           "opponentDeck": "Broccoi Soup",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "AlfredG",
+      "opponentDisplayName": "AlfredG",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "matches": [
+        {
+          "tournamentId": "436160",
+          "dateDisplay": "July 9, 2026",
+          "result": "W",
+          "playerDeck": "RB Goblins",
+          "opponentDeck": "_",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "weidnent",
+      "opponentDisplayName": "Nicholas Weidner",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "matches": [
+        {
+          "tournamentId": "436160",
+          "dateDisplay": "July 9, 2026",
+          "result": "L",
+          "playerDeck": "RB Goblins",
+          "opponentDeck": "Reanimator",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "supremeXsupreme",
+      "opponentDisplayName": "Jeff Jao",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "matches": [
+        {
+          "tournamentId": "436160",
+          "dateDisplay": "July 9, 2026",
+          "result": "L",
+          "playerDeck": "RB Goblins",
+          "opponentDeck": "_",
           "playerGameWins": 0,
           "opponentGameWins": 2,
           "gameDraws": 0
@@ -430,6 +528,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "436160",
+      "dateDisplay": "July 9, 2026",
+      "playerCount": 25,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 16,
+      "points": 3,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWinPercentage": 0.4285714,
+      "deck": "RB Goblins"
+    },
     {
       "tournamentId": "377629",
       "dateDisplay": "October 30, 2025",

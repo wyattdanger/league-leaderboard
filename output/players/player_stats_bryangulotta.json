@@ -2,17 +2,26 @@
   "username": "BryanGulotta",
   "displayName": "BryanGulotta",
   "overallStats": {
-    "totalTournaments": 30,
+    "totalTournaments": 31,
     "totalPoints": 151,
-    "totalMatches": 89,
-    "matchRecord": "48-34-7",
-    "matchWinPercentage": 0.5786516853932584,
-    "gameRecord": "119-98-4",
-    "gameWinPercentage": 0.5384615384615384,
+    "totalMatches": 92,
+    "matchRecord": "48-37-7",
+    "matchWinPercentage": 0.5597826086956522,
+    "gameRecord": "121-104-4",
+    "gameWinPercentage": 0.5283842794759825,
     "trophies": 1,
     "belts": 0
   },
   "leagueStats": [
+    {
+      "leagueName": "Q3 2026",
+      "events": 1,
+      "points": 0,
+      "matchRecord": "0-3-0",
+      "matchWinPercentage": 0,
+      "gameRecord": "2-6-0",
+      "gameWinPercentage": 0.25
+    },
     {
       "leagueName": "Q2 2026",
       "events": 4,
@@ -202,6 +211,20 @@
       "gameLosses": 4,
       "gameDraws": 0,
       "gameWinPercentage": 0.5,
+      "trophies": 0
+    },
+    {
+      "deckName": "Esper Tog",
+      "events": 1,
+      "matchWins": 0,
+      "matchLosses": 3,
+      "matchDraws": 0,
+      "matchRecord": "0-3-0",
+      "matchWinPercentage": 0,
+      "gameWins": 3,
+      "gameLosses": 5,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.375,
       "trophies": 0
     }
   ],
@@ -637,6 +660,61 @@
       ]
     },
     {
+      "opponentUsername": "swbmtg",
+      "opponentDisplayName": "swb",
+      "matchesPlayed": 4,
+      "matchWins": 0,
+      "matchLosses": 3,
+      "matchDraws": 1,
+      "matchWinPercentage": 0.125,
+      "gameWins": 2,
+      "gameLosses": 7,
+      "gameDraws": 1,
+      "gameWinPercentage": 0.25,
+      "matches": [
+        {
+          "tournamentId": "436160",
+          "dateDisplay": "July 9, 2026",
+          "result": "L",
+          "playerDeck": "Esper Tog",
+          "opponentDeck": "Stasis",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "375338",
+          "dateDisplay": "October 23, 2025",
+          "result": "D",
+          "playerDeck": "Tide",
+          "opponentDeck": "Oath Parfait",
+          "playerGameWins": 1,
+          "opponentGameWins": 1,
+          "gameDraws": 1
+        },
+        {
+          "tournamentId": "367531",
+          "dateDisplay": "September 25, 2025",
+          "result": "L",
+          "playerDeck": "Dreadnought",
+          "opponentDeck": "Oath Parfait",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "335531",
+          "dateDisplay": "July 3, 2025",
+          "result": "L",
+          "playerDeck": "_",
+          "opponentDeck": "Enchantress",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "RolandMTG",
       "opponentDisplayName": "Roland Chang",
       "matchesPlayed": 4,
@@ -787,51 +865,6 @@
           "opponentDeck": "Goblins",
           "playerGameWins": 2,
           "opponentGameWins": 0,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "swbmtg",
-      "opponentDisplayName": "swb",
-      "matchesPlayed": 3,
-      "matchWins": 0,
-      "matchLosses": 2,
-      "matchDraws": 1,
-      "matchWinPercentage": 0.16666666666666666,
-      "gameWins": 2,
-      "gameLosses": 5,
-      "gameDraws": 1,
-      "gameWinPercentage": 0.3125,
-      "matches": [
-        {
-          "tournamentId": "375338",
-          "dateDisplay": "October 23, 2025",
-          "result": "D",
-          "playerDeck": "Tide",
-          "opponentDeck": "Oath Parfait",
-          "playerGameWins": 1,
-          "opponentGameWins": 1,
-          "gameDraws": 1
-        },
-        {
-          "tournamentId": "367531",
-          "dateDisplay": "September 25, 2025",
-          "result": "L",
-          "playerDeck": "Dreadnought",
-          "opponentDeck": "Oath Parfait",
-          "playerGameWins": 1,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "335531",
-          "dateDisplay": "July 3, 2025",
-          "result": "L",
-          "playerDeck": "_",
-          "opponentDeck": "Enchantress",
-          "playerGameWins": 0,
-          "opponentGameWins": 2,
           "gameDraws": 0
         }
       ]
@@ -1050,6 +1083,56 @@
           "result": "L",
           "playerDeck": "UB Tide",
           "opponentDeck": "Terrageddon",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "tintintintin",
+      "opponentDisplayName": "tintintintin",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "matches": [
+        {
+          "tournamentId": "436160",
+          "dateDisplay": "July 9, 2026",
+          "result": "L",
+          "playerDeck": "Esper Tog",
+          "opponentDeck": "Rifter",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "dynou",
+      "opponentDisplayName": "dynou",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "matches": [
+        {
+          "tournamentId": "436160",
+          "dateDisplay": "July 9, 2026",
+          "result": "L",
+          "playerDeck": "Esper Tog",
+          "opponentDeck": "Solution",
           "playerGameWins": 1,
           "opponentGameWins": 2,
           "gameDraws": 0
@@ -1683,6 +1766,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "436160",
+      "dateDisplay": "July 9, 2026",
+      "playerCount": 25,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 23,
+      "points": 0,
+      "matchRecord": "0-3-0",
+      "matchWinPercentage": 0,
+      "gameWinPercentage": 0.3333333,
+      "deck": "Esper Tog"
+    },
     {
       "tournamentId": "434267",
       "dateDisplay": "June 4, 2026",

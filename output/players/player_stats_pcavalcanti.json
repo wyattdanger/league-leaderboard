@@ -2,25 +2,25 @@
   "username": "PCavalcanti",
   "displayName": "PCavalcanti",
   "overallStats": {
-    "totalTournaments": 15,
-    "totalPoints": 70,
-    "totalMatches": 45,
-    "matchRecord": "23-21-1",
-    "matchWinPercentage": 0.5222222222222223,
-    "gameRecord": "60-54-0",
-    "gameWinPercentage": 0.5263157894736842,
+    "totalTournaments": 16,
+    "totalPoints": 76,
+    "totalMatches": 48,
+    "matchRecord": "25-22-1",
+    "matchWinPercentage": 0.53125,
+    "gameRecord": "65-58-0",
+    "gameWinPercentage": 0.5284552845528455,
     "trophies": 1,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q3 2026",
-      "events": 1,
-      "points": 3,
-      "matchRecord": "1-2-0",
-      "matchWinPercentage": 0.3333333333333333,
-      "gameRecord": "3-4-0",
-      "gameWinPercentage": 0.42857142857142855
+      "events": 2,
+      "points": 9,
+      "matchRecord": "3-3-0",
+      "matchWinPercentage": 0.5,
+      "gameRecord": "8-8-0",
+      "gameWinPercentage": 0.5
     },
     {
       "leagueName": "Q2 2026",
@@ -103,6 +103,20 @@
       "matchWinPercentage": 0.5,
       "gameWins": 8,
       "gameLosses": 8,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5,
+      "trophies": 0
+    },
+    {
+      "deckName": "UGR Survival Madness",
+      "events": 1,
+      "matchWins": 2,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 4,
+      "gameLosses": 4,
       "gameDraws": 0,
       "gameWinPercentage": 0.5,
       "trophies": 0
@@ -422,6 +436,41 @@
       ]
     },
     {
+      "opponentUsername": "AlldoAurelis",
+      "opponentDisplayName": "AlldoAurelis",
+      "matchesPlayed": 2,
+      "matchWins": 1,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.5,
+      "gameWins": 3,
+      "gameLosses": 3,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5,
+      "matches": [
+        {
+          "tournamentId": "436160",
+          "dateDisplay": "July 9, 2026",
+          "result": "L",
+          "playerDeck": "UGR Survival Madness",
+          "opponentDeck": "Moneyball Black",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "436157",
+          "dateDisplay": "June 18, 2026",
+          "result": "W",
+          "playerDeck": "RG Madness Burn",
+          "opponentDeck": "Mad Dogs",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "remixmtg",
       "opponentDisplayName": "Jeremy Siegel",
       "matchesPlayed": 2,
@@ -597,6 +646,56 @@
       ]
     },
     {
+      "opponentUsername": "dynou",
+      "opponentDisplayName": "dynou",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6666666666666666,
+      "matches": [
+        {
+          "tournamentId": "436160",
+          "dateDisplay": "July 9, 2026",
+          "result": "W",
+          "playerDeck": "UGR Survival Madness",
+          "opponentDeck": "Solution",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "supremeXsupreme",
+      "opponentDisplayName": "Jeff Jao",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6666666666666666,
+      "matches": [
+        {
+          "tournamentId": "436160",
+          "dateDisplay": "July 9, 2026",
+          "result": "W",
+          "playerDeck": "UGR Survival Madness",
+          "opponentDeck": "_",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "YetiFoot",
       "opponentDisplayName": "YetiFoot",
       "matchesPlayed": 1,
@@ -617,31 +716,6 @@
           "opponentDeck": "_",
           "playerGameWins": 2,
           "opponentGameWins": 0,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "AlldoAurelis",
-      "opponentDisplayName": "AlldoAurelis",
-      "matchesPlayed": 1,
-      "matchWins": 1,
-      "matchLosses": 0,
-      "matchDraws": 0,
-      "matchWinPercentage": 1,
-      "gameWins": 2,
-      "gameLosses": 1,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.6666666666666666,
-      "matches": [
-        {
-          "tournamentId": "436157",
-          "dateDisplay": "June 18, 2026",
-          "result": "W",
-          "playerDeck": "RG Madness Burn",
-          "opponentDeck": "Mad Dogs",
-          "playerGameWins": 2,
-          "opponentGameWins": 1,
           "gameDraws": 0
         }
       ]
@@ -1035,6 +1109,19 @@
       "matchWinPercentage": 0.3333333333333333,
       "gameWinPercentage": 0.375,
       "deck": "RG Goblins"
+    },
+    {
+      "tournamentId": "436160",
+      "dateDisplay": "July 9, 2026",
+      "playerCount": 25,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 8,
+      "points": 6,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWinPercentage": 0.5555556,
+      "deck": "UGR Survival Madness"
     },
     {
       "tournamentId": "436159",
