@@ -2,44 +2,119 @@
   "username": "Fascinating83",
   "displayName": "Rich Arevalo",
   "overallStats": {
-    "totalTournaments": 1,
-    "totalPoints": 3,
-    "totalMatches": 3,
-    "matchRecord": "1-2-0",
+    "totalTournaments": 2,
+    "totalPoints": 6,
+    "totalMatches": 6,
+    "matchRecord": "2-4-0",
     "matchWinPercentage": 0.3333333333333333,
-    "gameRecord": "3-5-0",
-    "gameWinPercentage": 0.375,
+    "gameRecord": "5-9-0",
+    "gameWinPercentage": 0.35714285714285715,
     "trophies": 0,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q3 2026",
-      "events": 1,
-      "points": 3,
-      "matchRecord": "1-2-0",
+      "events": 2,
+      "points": 6,
+      "matchRecord": "2-4-0",
       "matchWinPercentage": 0.3333333333333333,
-      "gameRecord": "3-5-0",
-      "gameWinPercentage": 0.375
+      "gameRecord": "5-9-0",
+      "gameWinPercentage": 0.35714285714285715
     }
   ],
   "deckStats": [
     {
       "deckName": "Burn",
-      "events": 1,
-      "matchWins": 1,
-      "matchLosses": 2,
+      "events": 2,
+      "matchWins": 2,
+      "matchLosses": 4,
       "matchDraws": 0,
-      "matchRecord": "1-2-0",
+      "matchRecord": "2-4-0",
       "matchWinPercentage": 0.3333333333333333,
-      "gameWins": 3,
-      "gameLosses": 5,
+      "gameWins": 6,
+      "gameLosses": 10,
       "gameDraws": 0,
       "gameWinPercentage": 0.375,
       "trophies": 0
     }
   ],
   "headToHead": [
+    {
+      "opponentUsername": "weidnent",
+      "opponentDisplayName": "Nicholas Weidner",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "matches": [
+        {
+          "tournamentId": "445673",
+          "dateDisplay": "July 16, 2026",
+          "result": "L",
+          "playerDeck": "Burn",
+          "opponentDeck": "Reanimator",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "KYamada97",
+      "opponentDisplayName": "KYamada97",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "matches": [
+        {
+          "tournamentId": "445673",
+          "dateDisplay": "July 16, 2026",
+          "result": "L",
+          "playerDeck": "Burn",
+          "opponentDeck": "Solution",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "Zoinx212",
+      "opponentDisplayName": "Zoinx212",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "matches": [
+        {
+          "tournamentId": "445673",
+          "dateDisplay": "July 16, 2026",
+          "result": "W",
+          "playerDeck": "Burn",
+          "opponentDeck": "Dreadnought",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
     {
       "opponentUsername": "WillReddy",
       "opponentDisplayName": "WillReddy",
@@ -117,6 +192,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "445673",
+      "dateDisplay": "July 16, 2026",
+      "playerCount": 24,
+      "trophyCount": 3,
+      "roundCount": 3,
+      "rank": 18,
+      "points": 3,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWinPercentage": 0.3333333,
+      "deck": "Burn"
+    },
     {
       "tournamentId": "436159",
       "dateDisplay": "July 2, 2026",

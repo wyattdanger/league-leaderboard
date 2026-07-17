@@ -2,25 +2,25 @@
   "username": "AlldoAurelis",
   "displayName": "AlldoAurelis",
   "overallStats": {
-    "totalTournaments": 8,
-    "totalPoints": 28,
-    "totalMatches": 24,
-    "matchRecord": "9-14-1",
-    "matchWinPercentage": 0.3958333333333333,
-    "gameRecord": "24-36-0",
-    "gameWinPercentage": 0.4,
+    "totalTournaments": 9,
+    "totalPoints": 31,
+    "totalMatches": 27,
+    "matchRecord": "10-16-1",
+    "matchWinPercentage": 0.3888888888888889,
+    "gameRecord": "27-41-0",
+    "gameWinPercentage": 0.39705882352941174,
     "trophies": 2,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q3 2026",
-      "events": 2,
-      "points": 18,
-      "matchRecord": "6-0-0",
-      "matchWinPercentage": 1,
-      "gameRecord": "12-5-0",
-      "gameWinPercentage": 0.7058823529411765
+      "events": 3,
+      "points": 21,
+      "matchRecord": "7-2-0",
+      "matchWinPercentage": 0.7777777777777778,
+      "gameRecord": "15-10-0",
+      "gameWinPercentage": 0.6
     },
     {
       "leagueName": "Q2 2026",
@@ -42,6 +42,20 @@
     }
   ],
   "deckStats": [
+    {
+      "deckName": "Moneyball Black",
+      "events": 2,
+      "matchWins": 4,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchRecord": "4-2-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 8,
+      "gameLosses": 8,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5,
+      "trophies": 1
+    },
     {
       "deckName": "Mad Dogs",
       "events": 2,
@@ -69,20 +83,6 @@
       "gameDraws": 0,
       "gameWinPercentage": 0.375,
       "trophies": 0
-    },
-    {
-      "deckName": "Moneyball Black",
-      "events": 1,
-      "matchWins": 3,
-      "matchLosses": 0,
-      "matchDraws": 0,
-      "matchRecord": "3-0-0",
-      "matchWinPercentage": 1,
-      "gameWins": 5,
-      "gameLosses": 3,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.625,
-      "trophies": 1
     },
     {
       "deckName": "Burn",
@@ -128,6 +128,76 @@
     }
   ],
   "headToHead": [
+    {
+      "opponentUsername": "Mookyspulder",
+      "opponentDisplayName": "Dan S",
+      "matchesPlayed": 2,
+      "matchWins": 0,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.2,
+      "matches": [
+        {
+          "tournamentId": "445673",
+          "dateDisplay": "July 16, 2026",
+          "result": "L",
+          "playerDeck": "Moneyball Black",
+          "opponentDeck": "Mono Black Clerics",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "424009",
+          "dateDisplay": "April 23, 2026",
+          "result": "L",
+          "playerDeck": "GW Madness",
+          "opponentDeck": "Goblins",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "Taylorhol",
+      "opponentDisplayName": "Taylorhol",
+      "matchesPlayed": 2,
+      "matchWins": 2,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 4,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6666666666666666,
+      "matches": [
+        {
+          "tournamentId": "445673",
+          "dateDisplay": "July 16, 2026",
+          "result": "W",
+          "playerDeck": "Moneyball Black",
+          "opponentDeck": "Dreadnought",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "436159",
+          "dateDisplay": "July 2, 2026",
+          "result": "W",
+          "playerDeck": "Burn",
+          "opponentDeck": "_",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
     {
       "opponentUsername": "PCavalcanti",
       "opponentDisplayName": "PCavalcanti",
@@ -199,6 +269,31 @@
       ]
     },
     {
+      "opponentUsername": "ByerBeware",
+      "opponentDisplayName": "ByerBeware",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "matches": [
+        {
+          "tournamentId": "445673",
+          "dateDisplay": "July 16, 2026",
+          "result": "L",
+          "playerDeck": "Moneyball Black",
+          "opponentDeck": "Replenish (PandeBurst)",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "DaveKaplan",
       "opponentDisplayName": "Dave Kaplan",
       "matchesPlayed": 1,
@@ -241,31 +336,6 @@
           "dateDisplay": "July 9, 2026",
           "result": "W",
           "playerDeck": "Moneyball Black",
-          "opponentDeck": "_",
-          "playerGameWins": 2,
-          "opponentGameWins": 1,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "Taylorhol",
-      "opponentDisplayName": "Taylorhol",
-      "matchesPlayed": 1,
-      "matchWins": 1,
-      "matchLosses": 0,
-      "matchDraws": 0,
-      "matchWinPercentage": 1,
-      "gameWins": 2,
-      "gameLosses": 1,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.6666666666666666,
-      "matches": [
-        {
-          "tournamentId": "436159",
-          "dateDisplay": "July 2, 2026",
-          "result": "W",
-          "playerDeck": "Burn",
           "opponentDeck": "_",
           "playerGameWins": 2,
           "opponentGameWins": 1,
@@ -574,31 +644,6 @@
       ]
     },
     {
-      "opponentUsername": "Mookyspulder",
-      "opponentDisplayName": "Dan S",
-      "matchesPlayed": 1,
-      "matchWins": 0,
-      "matchLosses": 1,
-      "matchDraws": 0,
-      "matchWinPercentage": 0,
-      "gameWins": 0,
-      "gameLosses": 2,
-      "gameDraws": 0,
-      "gameWinPercentage": 0,
-      "matches": [
-        {
-          "tournamentId": "424009",
-          "dateDisplay": "April 23, 2026",
-          "result": "L",
-          "playerDeck": "GW Madness",
-          "opponentDeck": "Goblins",
-          "playerGameWins": 0,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
       "opponentUsername": "MaltBeverage",
       "opponentDisplayName": "Ryan Alexander",
       "matchesPlayed": 1,
@@ -650,6 +695,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "445673",
+      "dateDisplay": "July 16, 2026",
+      "playerCount": 24,
+      "trophyCount": 3,
+      "roundCount": 3,
+      "rank": 17,
+      "points": 3,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWinPercentage": 0.375,
+      "deck": "Moneyball Black"
+    },
     {
       "tournamentId": "436160",
       "dateDisplay": "July 9, 2026",

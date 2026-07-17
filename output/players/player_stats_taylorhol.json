@@ -2,25 +2,25 @@
   "username": "Taylorhol",
   "displayName": "Taylorhol",
   "overallStats": {
-    "totalTournaments": 34,
+    "totalTournaments": 35,
     "totalPoints": 150,
-    "totalMatches": 101,
-    "matchRecord": "49-49-3",
-    "matchWinPercentage": 0.5,
-    "gameRecord": "121-120-3",
-    "gameWinPercentage": 0.4959016393442623,
+    "totalMatches": 104,
+    "matchRecord": "49-52-3",
+    "matchWinPercentage": 0.4855769230769231,
+    "gameRecord": "122-126-3",
+    "gameWinPercentage": 0.4860557768924303,
     "trophies": 3,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q3 2026",
-      "events": 2,
+      "events": 3,
       "points": 9,
-      "matchRecord": "3-3-0",
-      "matchWinPercentage": 0.5,
-      "gameRecord": "9-7-0",
-      "gameWinPercentage": 0.5625
+      "matchRecord": "3-6-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameRecord": "10-13-0",
+      "gameWinPercentage": 0.43478260869565216
     },
     {
       "leagueName": "Q2 2026",
@@ -305,6 +305,20 @@
       "matchDraws": 0,
       "matchRecord": "1-2-0",
       "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 3,
+      "gameLosses": 5,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.375,
+      "trophies": 0
+    },
+    {
+      "deckName": "Dreadnought",
+      "events": 1,
+      "matchWins": 0,
+      "matchLosses": 3,
+      "matchDraws": 0,
+      "matchRecord": "0-3-0",
+      "matchWinPercentage": 0,
       "gameWins": 3,
       "gameLosses": 5,
       "gameDraws": 0,
@@ -1014,6 +1028,41 @@
       ]
     },
     {
+      "opponentUsername": "AlldoAurelis",
+      "opponentDisplayName": "AlldoAurelis",
+      "matchesPlayed": 2,
+      "matchWins": 0,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 2,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "matches": [
+        {
+          "tournamentId": "445673",
+          "dateDisplay": "July 16, 2026",
+          "result": "L",
+          "playerDeck": "Dreadnought",
+          "opponentDeck": "Moneyball Black",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "436159",
+          "dateDisplay": "July 2, 2026",
+          "result": "L",
+          "playerDeck": "_",
+          "opponentDeck": "Burn",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "LuisNeiman",
       "opponentDisplayName": "LuisNeiman",
       "matchesPlayed": 2,
@@ -1364,6 +1413,56 @@
       ]
     },
     {
+      "opponentUsername": "SamFeldman",
+      "opponentDisplayName": "Samuel Feldman",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "matches": [
+        {
+          "tournamentId": "445673",
+          "dateDisplay": "July 16, 2026",
+          "result": "L",
+          "playerDeck": "Dreadnought",
+          "opponentDeck": "Burn",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "PetS22",
+      "opponentDisplayName": "PetS22",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "matches": [
+        {
+          "tournamentId": "445673",
+          "dateDisplay": "July 16, 2026",
+          "result": "L",
+          "playerDeck": "Dreadnought",
+          "opponentDeck": "Moneyball Black",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "CalebR",
       "opponentDisplayName": "CalebR",
       "matchesPlayed": 1,
@@ -1382,31 +1481,6 @@
           "result": "L",
           "playerDeck": "RG Goblins",
           "opponentDeck": "UG Survival Opposition",
-          "playerGameWins": 1,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "AlldoAurelis",
-      "opponentDisplayName": "AlldoAurelis",
-      "matchesPlayed": 1,
-      "matchWins": 0,
-      "matchLosses": 1,
-      "matchDraws": 0,
-      "matchWinPercentage": 0,
-      "gameWins": 1,
-      "gameLosses": 2,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.3333333333333333,
-      "matches": [
-        {
-          "tournamentId": "436159",
-          "dateDisplay": "July 2, 2026",
-          "result": "L",
-          "playerDeck": "_",
-          "opponentDeck": "Burn",
           "playerGameWins": 1,
           "opponentGameWins": 2,
           "gameDraws": 0
@@ -1940,6 +2014,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "445673",
+      "dateDisplay": "July 16, 2026",
+      "playerCount": 24,
+      "trophyCount": 3,
+      "roundCount": 3,
+      "rank": 23,
+      "points": 0,
+      "matchRecord": "0-3-0",
+      "matchWinPercentage": 0,
+      "gameWinPercentage": 0.3333333,
+      "deck": "Dreadnought"
+    },
     {
       "tournamentId": "439325",
       "dateDisplay": "June 25, 2026",

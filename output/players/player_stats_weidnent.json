@@ -2,25 +2,25 @@
   "username": "weidnent",
   "displayName": "Nicholas Weidner",
   "overallStats": {
-    "totalTournaments": 13,
-    "totalPoints": 38,
-    "totalMatches": 39,
-    "matchRecord": "12-25-2",
-    "matchWinPercentage": 0.3333333333333333,
-    "gameRecord": "36-60-0",
-    "gameWinPercentage": 0.375,
+    "totalTournaments": 14,
+    "totalPoints": 44,
+    "totalMatches": 42,
+    "matchRecord": "14-26-2",
+    "matchWinPercentage": 0.35714285714285715,
+    "gameRecord": "40-62-0",
+    "gameWinPercentage": 0.39215686274509803,
     "trophies": 0,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q3 2026",
-      "events": 2,
-      "points": 13,
-      "matchRecord": "4-1-1",
-      "matchWinPercentage": 0.75,
-      "gameRecord": "10-7-0",
-      "gameWinPercentage": 0.5882352941176471
+      "events": 3,
+      "points": 19,
+      "matchRecord": "6-2-1",
+      "matchWinPercentage": 0.7222222222222222,
+      "gameRecord": "14-9-0",
+      "gameWinPercentage": 0.6086956521739131
     },
     {
       "leagueName": "Q2 2026",
@@ -44,16 +44,16 @@
   "deckStats": [
     {
       "deckName": "Reanimator",
-      "events": 4,
-      "matchWins": 4,
-      "matchLosses": 7,
+      "events": 5,
+      "matchWins": 6,
+      "matchLosses": 8,
       "matchDraws": 1,
-      "matchRecord": "4-7-1",
-      "matchWinPercentage": 0.375,
-      "gameWins": 15,
-      "gameLosses": 17,
+      "matchRecord": "6-8-1",
+      "matchWinPercentage": 0.43333333333333335,
+      "gameWins": 20,
+      "gameLosses": 20,
       "gameDraws": 0,
-      "gameWinPercentage": 0.46875,
+      "gameWinPercentage": 0.5,
       "trophies": 0
     },
     {
@@ -361,6 +361,41 @@
       ]
     },
     {
+      "opponentUsername": "avoellmer",
+      "opponentDisplayName": "avoellmer",
+      "matchesPlayed": 2,
+      "matchWins": 2,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 4,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.8,
+      "matches": [
+        {
+          "tournamentId": "445673",
+          "dateDisplay": "July 16, 2026",
+          "result": "W",
+          "playerDeck": "Reanimator",
+          "opponentDeck": "RG Goblins",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "436160",
+          "dateDisplay": "July 9, 2026",
+          "result": "W",
+          "playerDeck": "Reanimator",
+          "opponentDeck": "RG Goblins",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "remixmtg",
       "opponentDisplayName": "Jeremy Siegel",
       "matchesPlayed": 2,
@@ -501,26 +536,51 @@
       ]
     },
     {
-      "opponentUsername": "avoellmer",
-      "opponentDisplayName": "avoellmer",
+      "opponentUsername": "Fascinating83",
+      "opponentDisplayName": "Rich Arevalo",
       "matchesPlayed": 1,
       "matchWins": 1,
       "matchLosses": 0,
       "matchDraws": 0,
       "matchWinPercentage": 1,
       "gameWins": 2,
-      "gameLosses": 1,
+      "gameLosses": 0,
       "gameDraws": 0,
-      "gameWinPercentage": 0.6666666666666666,
+      "gameWinPercentage": 1,
       "matches": [
         {
-          "tournamentId": "436160",
-          "dateDisplay": "July 9, 2026",
+          "tournamentId": "445673",
+          "dateDisplay": "July 16, 2026",
           "result": "W",
           "playerDeck": "Reanimator",
-          "opponentDeck": "RG Goblins",
+          "opponentDeck": "Burn",
           "playerGameWins": 2,
-          "opponentGameWins": 1,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "madmanpoet",
+      "opponentDisplayName": "Michael Flores",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "matches": [
+        {
+          "tournamentId": "445673",
+          "dateDisplay": "July 16, 2026",
+          "result": "L",
+          "playerDeck": "Reanimator",
+          "opponentDeck": "Dreadnought",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
           "gameDraws": 0
         }
       ]
@@ -952,6 +1012,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "445673",
+      "dateDisplay": "July 16, 2026",
+      "playerCount": 24,
+      "trophyCount": 3,
+      "roundCount": 3,
+      "rank": 7,
+      "points": 6,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWinPercentage": 0.6666667,
+      "deck": "Reanimator"
+    },
     {
       "tournamentId": "436160",
       "dateDisplay": "July 9, 2026",
