@@ -35,8 +35,8 @@ const metagameData = JSON.parse(fs.readFileSync(metagameDataPath, 'utf8'));
           <input type="number" id="min-decks" value="1" min="1" max="50" />
         </label>
         <label>
-          <input type="checkbox" id="show-percentages" checked />
-          Show percentages
+          <input type="checkbox" id="trophies-only" />
+          Trophies only
         </label>
       </div>
     </div>
@@ -45,16 +45,15 @@ const metagameData = JSON.parse(fs.readFileSync(metagameDataPath, 'utf8'));
       <!-- Summary stats will be rendered here -->
     </div>
 
-    <div class="metagame-chart">
-      <h3>Top Decks</h3>
-      <canvas id="bar-chart"></canvas>
-    </div>
-
     <div class="data-table-section">
-      <h3>Complete Metagame Breakdown</h3>
       <div class="metagame-table" id="table-container">
         <!-- Table will be rendered here -->
       </div>
+    </div>
+
+    <div class="metagame-chart">
+      <h3>Top Decks</h3>
+      <canvas id="bar-chart"></canvas>
     </div>
   </div>
 
@@ -83,8 +82,10 @@ const metagameData = JSON.parse(fs.readFileSync(metagameDataPath, 'utf8'));
         selectedLeagues = new Set(metagameData.leagues.map(l => l.leagueName));
       }
 
-      let minDecks = 1;
-      let showPercentages = true;
+      let minDecks = parseInt(urlParams.get('minDecks')) || 1;
+      let trophiesOnly = urlParams.get('trophiesOnly') === 'true';
+      let sortColumn = urlParams.get('sort') || 'count';  // Default sort by count
+      let sortDirection = urlParams.get('dir') || 'desc';
 
     // Deck archetype normalization - group similar decks
     const archetypeAliases = {
@@ -261,13 +262,15 @@ const metagameData = JSON.parse(fs.readFileSync(metagameDataPath, 'utf8'));
       return deckName;
     }
 
-    // Aggregate deck counts across selected leagues
+    // Aggregate deck counts and trophies across selected leagues
     function getAggregatedData() {
       const deckCounts = {};
+      const deckTrophies = {};
       const variantCounts = {}; // Track variants within each normalized deck
       let totalDecks = 0;
+      let totalTrophies = 0;
 
-      // Sum counts across selected leagues
+      // Sum counts and trophies across selected leagues
       for (const league of metagameData.leagues) {
         if (!selectedLeagues.has(league.leagueName)) continue;
 
@@ -282,6 +285,13 @@ const metagameData = JSON.parse(fs.readFileSync(metagameDataPath, 'utf8'));
           }
           variantCounts[normalizedDeck][deck] = (variantCounts[normalizedDeck][deck] || 0) + count;
         }
+
+        // Sum trophies
+        for (const [deck, trophyCount] of Object.entries(league.deckTrophies || {})) {
+          const normalizedDeck = normalizeDeckName(deck);
+          deckTrophies[normalizedDeck] = (deckTrophies[normalizedDeck] || 0) + trophyCount;
+          totalTrophies += trophyCount;
+        }
       }
 
       // Convert to array and calculate percentages
@@ -289,12 +299,13 @@ const metagameData = JSON.parse(fs.readFileSync(metagameDataPath, 'utf8'));
         .map(([deck, count]) => ({
           deck,
           count,
+          trophies: deckTrophies[deck] || 0,
           percentage: totalDecks > 0 ? (count / totalDecks) * 100 : 0,
           variants: variantCounts[deck] // Include variant breakdown
         }))
         .sort((a, b) => b.count - a.count);
 
-      return { metagame, totalDecks };
+      return { metagame, totalDecks, totalTrophies };
     }
 
     // Intentional color mapping for common archetypes
@@ -402,8 +413,12 @@ const metagameData = JSON.parse(fs.readFileSync(metagameDataPath, 'utf8'));
         return;
       }
 
-      // Filter by min decks
-      const filteredData = metagame.filter(entry => entry.count >= minDecks);
+      // Filter by min decks and trophies
+      let filteredData = metagame.filter(entry => entry.count >= minDecks);
+
+      if (trophiesOnly) {
+        filteredData = filteredData.filter(entry => entry.trophies > 0);
+      }
 
       if (filteredData.length === 0) {
         if (barChartInstance) {
@@ -422,10 +437,12 @@ const metagameData = JSON.parse(fs.readFileSync(metagameDataPath, 'utf8'));
       // Add "Other" if there are remaining decks
       if (remainingDecks.length > 0) {
         const otherCount = remainingDecks.reduce((sum, entry) => sum + entry.count, 0);
+        const otherTrophies = remainingDecks.reduce((sum, entry) => sum + entry.trophies, 0);
         const otherPercentage = (otherCount / totalDecks) * 100;
         dataToShow.push({
           deck: 'Other',
           count: otherCount,
+          trophies: otherTrophies,
           percentage: otherPercentage,
           variants: remainingDecks.reduce((acc, entry) => {
             acc[entry.deck] = entry.count;
@@ -434,7 +451,7 @@ const metagameData = JSON.parse(fs.readFileSync(metagameDataPath, 'utf8'));
         });
       }
 
-      // Prepare data for Chart.js (keep descending order, don't reverse)
+      // Prepare data for Chart.js - just deck names
       const labels = dataToShow.map(entry => entry.deck);
       const data = dataToShow.map(entry => entry.count);
       const backgroundColors = dataToShow.map((entry, index) =>
@@ -556,30 +573,83 @@ const metagameData = JSON.parse(fs.readFileSync(metagameDataPath, 'utf8'));
         return;
       }
 
-      const filteredData = metagame.filter(entry => entry.count >= minDecks);
+      let filteredData = metagame.filter(entry => entry.count >= minDecks);
+
+      if (trophiesOnly) {
+        filteredData = filteredData.filter(entry => entry.trophies > 0);
+      }
 
       if (filteredData.length === 0) {
         tableContainer.innerHTML = '';
         return;
       }
 
-      const rows = filteredData.map((entry, index) => `
+      // Calculate trophy rate for sorting
+      filteredData = filteredData.map(entry => ({
+        ...entry,
+        trophyRate: entry.count > 0 ? (entry.trophies / entry.count) * 100 : 0
+      }));
+
+      // Sort data
+      filteredData.sort((a, b) => {
+        let aVal, bVal;
+
+        switch(sortColumn) {
+          case 'deck':
+            return sortDirection === 'asc'
+              ? a.deck.localeCompare(b.deck)
+              : b.deck.localeCompare(a.deck);
+          case 'count':
+            aVal = a.count;
+            bVal = b.count;
+            break;
+          case 'percentage':
+            aVal = a.percentage;
+            bVal = b.percentage;
+            break;
+          case 'trophies':
+            aVal = a.trophies;
+            bVal = b.trophies;
+            break;
+          case 'trophyRate':
+            aVal = a.trophyRate;
+            bVal = b.trophyRate;
+            break;
+          default:
+            return 0;
+        }
+
+        return sortDirection === 'asc' ? aVal - bVal : bVal - aVal;
+      });
+
+      const rows = filteredData.map((entry, index) => {
+        return `
         <tr>
           <td><span class="rank-number">${index + 1}</span></td>
           <td><span class="deck-name">${entry.deck}</span></td>
           <td><span class="count">${entry.count}</span></td>
           <td><span class="percentage">${entry.percentage.toFixed(1)}%</span></td>
+          <td><span class="trophy-count">${entry.trophies > 0 ? '🏆 ' + entry.trophies : '-'}</span></td>
+          <td><span class="trophy-rate">${entry.trophies > 0 ? entry.trophyRate.toFixed(1) + '%' : '-'}</span></td>
         </tr>
-      `).join('');
+      `;
+      }).join('');
+
+      const getSortIndicator = (column) => {
+        if (sortColumn !== column) return '';
+        return sortDirection === 'asc' ? ' ↑' : ' ↓';
+      };
 
       tableContainer.innerHTML = `
         <table>
           <thead>
             <tr>
               <th>Rank</th>
-              <th>Deck Archetype</th>
-              <th>Count</th>
-              <th>Share</th>
+              <th class="sortable" data-column="deck">Deck Archetype${getSortIndicator('deck')}</th>
+              <th class="sortable" data-column="count">Count${getSortIndicator('count')}</th>
+              <th class="sortable" data-column="percentage">Share${getSortIndicator('percentage')}</th>
+              <th class="sortable" data-column="trophies">Trophies${getSortIndicator('trophies')}</th>
+              <th class="sortable" data-column="trophyRate">Trophy Rate${getSortIndicator('trophyRate')}</th>
             </tr>
           </thead>
           <tbody>
@@ -587,6 +657,20 @@ const metagameData = JSON.parse(fs.readFileSync(metagameDataPath, 'utf8'));
           </tbody>
         </table>
       `;
+
+      // Add click handlers to sortable headers
+      tableContainer.querySelectorAll('th.sortable').forEach(th => {
+        th.addEventListener('click', () => {
+          const column = th.dataset.column;
+          if (sortColumn === column) {
+            sortDirection = sortDirection === 'asc' ? 'desc' : 'asc';
+          } else {
+            sortColumn = column;
+            sortDirection = 'desc';
+          }
+          renderTable();
+        });
+      });
     }
 
     // Render summary stats
@@ -625,19 +709,42 @@ const metagameData = JSON.parse(fs.readFileSync(metagameDataPath, 'utf8'));
       `;
     }
 
-    // Update URL with selected leagues
+    // Update URL with all filter/sort state
     function updateURL() {
       const url = new URL(window.location);
+
+      // Leagues
       if (selectedLeagues.size === metagameData.leagues.length) {
-        // All leagues selected - remove param for cleaner URL
         url.searchParams.delete('leagues');
       } else if (selectedLeagues.size > 0) {
-        // Some leagues selected - encode them
         url.searchParams.set('leagues', Array.from(selectedLeagues).join(','));
       } else {
-        // No leagues selected - keep empty param
         url.searchParams.set('leagues', '');
       }
+
+      // Min decks (only if not default)
+      if (minDecks !== 1) {
+        url.searchParams.set('minDecks', minDecks);
+      } else {
+        url.searchParams.delete('minDecks');
+      }
+
+      // Trophies only
+      if (trophiesOnly) {
+        url.searchParams.set('trophiesOnly', 'true');
+      } else {
+        url.searchParams.delete('trophiesOnly');
+      }
+
+      // Sort (only if not default)
+      if (sortColumn !== 'count' || sortDirection !== 'desc') {
+        url.searchParams.set('sort', sortColumn);
+        url.searchParams.set('dir', sortDirection);
+      } else {
+        url.searchParams.delete('sort');
+        url.searchParams.delete('dir');
+      }
+
       window.history.replaceState({}, '', url);
     }
 
@@ -653,12 +760,14 @@ const metagameData = JSON.parse(fs.readFileSync(metagameDataPath, 'utf8'));
     const selectAllCheckbox = document.getElementById('select-all');
     const leagueCheckboxes = document.querySelectorAll('.league-filter');
 
-    // Sync checkbox states with URL on load
+    // Sync UI controls with URL state on load
     leagueCheckboxes.forEach(checkbox => {
       const leagueName = checkbox.dataset.league;
       checkbox.checked = selectedLeagues.has(leagueName);
     });
     selectAllCheckbox.checked = selectedLeagues.size === metagameData.leagues.length;
+    document.getElementById('min-decks').value = minDecks;
+    document.getElementById('trophies-only').checked = trophiesOnly;
 
     // Handle individual league checkbox changes
     leagueCheckboxes.forEach(checkbox => {
@@ -702,8 +811,8 @@ const metagameData = JSON.parse(fs.readFileSync(metagameDataPath, 'utf8'));
       render();
     });
 
-    document.getElementById('show-percentages').addEventListener('change', (e) => {
-      showPercentages = e.target.checked;
+    document.getElementById('trophies-only').addEventListener('change', (e) => {
+      trophiesOnly = e.target.checked;
       render();
     });
 
@@ -992,6 +1101,16 @@ const metagameData = JSON.parse(fs.readFileSync(metagameDataPath, 'utf8'));
     text-align: left;
   }
 
+  .metagame-table th.sortable {
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.2s ease;
+  }
+
+  .metagame-table th.sortable:hover {
+    background: #f3f4f6;
+  }
+
   .metagame-table tbody {
     background: white;
   }
@@ -1035,6 +1154,18 @@ const metagameData = JSON.parse(fs.readFileSync(metagameDataPath, 'utf8'));
 
   .metagame-table .percentage {
     color: #6b7280;
+    font-size: 0.875rem;
+  }
+
+  .metagame-table .trophy-count {
+    color: #b8860b;
+    font-weight: 600;
+    font-size: 0.95rem;
+  }
+
+  .metagame-table .trophy-rate {
+    color: #6b7280;
+    font-weight: 500;
     font-size: 0.875rem;
   }
 
