@@ -13,9 +13,28 @@ const allLeagues = config.leagues;
 // Load metagame data
 const metagameDataPath = path.join(process.cwd(), 'output', 'metagame_data.json');
 const metagameData = JSON.parse(fs.readFileSync(metagameDataPath, 'utf8'));
+
+// Calculate summary stats for metadata
+const totalDecks = metagameData.leagues.reduce((sum: number, league: any) => {
+  return sum + Object.values(league.deckCounts).reduce((s: number, c) => s + (c as number), 0);
+}, 0);
+
+// Count total events (tournaments across all leagues)
+const totalEvents = metagameData.leagues.reduce((sum: number, league: any) => {
+  return sum + (league.tournaments?.length || 0);
+}, 0);
+
+const pageTitle = 'Metagame Explorer - NYC Premodern League';
+const pageDescription = `Explore deck archetype statistics from ${totalDecks} decks played across ${totalEvents} NYC Premodern events.`;
 ---
 
-<PageLayout>
+<PageLayout
+  title={pageTitle}
+  description={pageDescription}
+  ogTitle={pageTitle}
+  ogDescription={pageDescription}
+  ogUrl="https://nyc-premodern.com/metagame"
+>
   <LeagueHeader />
   <LeagueNav currentLeague={null} allLeagues={allLeagues} isOverall={false} isMetagame={true} />
   <div class="card">
