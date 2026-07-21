@@ -95,14 +95,12 @@ const metagameData = JSON.parse(fs.readFileSync(metagameDataPath, 'utf8'));
       'R/g Goblins': 'Goblins',
       'Goblin Sligh': 'Goblins',
 
-      // Dreadnought variants
+      // Dreadnought variants (includes Stiflenought)
       'Dreadnought': 'Dreadnought',
       'UW Dreadnought': 'Dreadnought',
-
-      // Stiflenought variants
-      'Stiflenought': 'Stiflenought',
-      'UW Stiflenought': 'Stiflenought',
-      'WUG Threshnought': 'Stiflenought',
+      'Stiflenought': 'Dreadnought',
+      'UW Stiflenought': 'Dreadnought',
+      'WUG Threshnought': 'Dreadnought',
 
       // Landstill variants
       'Landstill': 'Landstill',
@@ -302,9 +300,7 @@ const metagameData = JSON.parse(fs.readFileSync(metagameDataPath, 'utf8'));
     // Intentional color mapping for common archetypes
     const deckColorMap = {
       // Blue decks - various blue shades
-      'Dreadnought': '#2E5EAA',         // Deep navy blue
-      'Stiflenought': '#5B8BD0',        // Medium blue
-      'UW Stiflenought': '#7BA3D8',     // Light blue
+      'Dreadnought': '#2E5EAA',         // Deep navy blue (includes Stiflenought)
       'Landstill': '#4A90B8',           // Cyan blue
       'UW Landstill': '#6BA8CC',        // Sky blue
       'UB ZI': '#445B7C',               // Dark slate blue
