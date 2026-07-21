@@ -77,6 +77,32 @@ const pageDescription = `Explore deck archetype statistics from ${totalDecks} de
         <!-- Table will be rendered here -->
       </div>
     </div>
+
+    <div class="controls controls-bottom">
+      <div class="league-selection">
+        <label class="league-checkbox">
+          <input type="checkbox" id="select-all-bottom" checked />
+          <span>All Leagues</span>
+        </label>
+        {metagameData.leagues.map((league: any) => (
+          <label class="league-checkbox">
+            <input type="checkbox" class="league-filter-bottom" data-league={league.leagueName} checked />
+            <span>{league.leagueName}</span>
+          </label>
+        ))}
+      </div>
+
+      <div class="view-controls">
+        <label class="min-decks-control">
+          <span>Min appearances:</span>
+          <input type="number" id="min-decks-bottom" value="1" min="1" max="50" />
+        </label>
+        <label class="trophy-checkbox">
+          <input type="checkbox" id="trophies-only-bottom" />
+          <span>🏆 decks only</span>
+        </label>
+      </div>
+    </div>
   </div>
 
   <!-- Embed metagame data as JSON -->
@@ -705,64 +731,65 @@ const pageDescription = `Explore deck archetype statistics from ${totalDecks} de
       updateURL();
     }
 
-    // Event listeners
-    const selectAllCheckbox = document.getElementById('select-all');
-    const leagueCheckboxes = document.querySelectorAll('.league-filter');
+    // Get all control elements
+    const allSelectAllCheckboxes = document.querySelectorAll('#select-all, #select-all-bottom');
+    const allLeagueCheckboxes = document.querySelectorAll('.league-filter, .league-filter-bottom');
+    const allMinDecksInputs = document.querySelectorAll('#min-decks, #min-decks-bottom');
+    const allTrophiesCheckboxes = document.querySelectorAll('#trophies-only, #trophies-only-bottom');
 
-    // Sync UI controls with URL state on load
-    leagueCheckboxes.forEach(checkbox => {
-      const leagueName = checkbox.dataset.league;
-      checkbox.checked = selectedLeagues.has(leagueName);
-    });
-    selectAllCheckbox.checked = selectedLeagues.size === metagameData.leagues.length;
-    document.getElementById('min-decks').value = minDecks;
-    document.getElementById('trophies-only').checked = trophiesOnly;
+    // Function to sync all controls to current state
+    function syncControls() {
+      const allChecked = selectedLeagues.size === metagameData.leagues.length;
 
-    // Handle individual league checkbox changes
-    leagueCheckboxes.forEach(checkbox => {
+      allSelectAllCheckboxes.forEach(cb => cb.checked = allChecked);
+      allLeagueCheckboxes.forEach(cb => cb.checked = selectedLeagues.has(cb.dataset.league));
+      allMinDecksInputs.forEach(input => input.value = minDecks);
+      allTrophiesCheckboxes.forEach(cb => cb.checked = trophiesOnly);
+    }
+
+    // Initialize controls from URL state
+    syncControls();
+
+    // Set up event listeners
+    allLeagueCheckboxes.forEach(checkbox => {
       checkbox.addEventListener('change', () => {
         const leagueName = checkbox.dataset.league;
-
         if (checkbox.checked) {
           selectedLeagues.add(leagueName);
         } else {
           selectedLeagues.delete(leagueName);
         }
-
-        // Update "All" checkbox state
-        const allChecked = Array.from(leagueCheckboxes).every(cb => cb.checked);
-        selectAllCheckbox.checked = allChecked;
-
+        syncControls();
         render();
       });
     });
 
-    // Handle "All" checkbox
-    selectAllCheckbox.addEventListener('change', () => {
-      const shouldSelectAll = selectAllCheckbox.checked;
-
-      leagueCheckboxes.forEach(checkbox => {
-        checkbox.checked = shouldSelectAll;
-        const leagueName = checkbox.dataset.league;
-
-        if (shouldSelectAll) {
-          selectedLeagues.add(leagueName);
+    allSelectAllCheckboxes.forEach(checkbox => {
+      checkbox.addEventListener('change', () => {
+        if (checkbox.checked) {
+          metagameData.leagues.forEach(league => selectedLeagues.add(league.leagueName));
         } else {
-          selectedLeagues.delete(leagueName);
+          selectedLeagues.clear();
         }
+        syncControls();
+        render();
       });
-
-      render();
     });
 
-    document.getElementById('min-decks').addEventListener('input', (e) => {
-      minDecks = parseInt(e.target.value) || 1;
-      render();
+    allMinDecksInputs.forEach(input => {
+      input.addEventListener('input', (e) => {
+        minDecks = parseInt(e.target.value) || 1;
+        syncControls();
+        render();
+      });
     });
 
-    document.getElementById('trophies-only').addEventListener('change', (e) => {
-      trophiesOnly = e.target.checked;
-      render();
+    allTrophiesCheckboxes.forEach(checkbox => {
+      checkbox.addEventListener('change', (e) => {
+        trophiesOnly = e.target.checked;
+        syncControls();
+        render();
+      });
     });
 
     // Initial render
@@ -774,6 +801,7 @@ const pageDescription = `Explore deck archetype statistics from ${totalDecks} de
 <style is:global>
   .card {
     padding: 0;
+    padding-bottom: 2rem;
   }
 
   .metagame-header {
@@ -792,8 +820,8 @@ const pageDescription = `Explore deck archetype statistics from ${totalDecks} de
   }
 
   .controls {
-    margin: 2rem;
-    margin-bottom: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
     border: 2px solid #e9ecef;
     border-radius: 12px;
     padding: 1.5rem;
@@ -1021,7 +1049,7 @@ const pageDescription = `Explore deck archetype statistics from ${totalDecks} de
   }
 
   .data-table-section {
-    margin: 0 2rem 2rem 2rem;
+    margin: 2rem 2rem 2rem 2rem;
   }
 
   .data-table-section > h3 {
