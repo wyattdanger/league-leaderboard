@@ -58,18 +58,10 @@ const metagameData = JSON.parse(fs.readFileSync(metagameDataPath, 'utf8'));
         <!-- Table will be rendered here -->
       </div>
     </div>
-
-    <div class="metagame-chart">
-      <h3>Top Decks</h3>
-      <canvas id="bar-chart"></canvas>
-    </div>
   </div>
 
   <!-- Embed metagame data as JSON -->
   <script id="metagame-data" type="application/json" set:html={JSON.stringify(metagameData)}></script>
-
-  <!-- Chart.js library -->
-  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
 
   <script>
     // Wait for Chart.js to load
@@ -192,10 +184,10 @@ const metagameData = JSON.parse(fs.readFileSync(metagameDataPath, 'utf8'));
 
       // Control variants
       'UW Control': 'UW Control',
-      'Mono Blue Control': 'UW Control',
-      'Mono U Control': 'UW Control',
-      'U Control': 'UW Control',
-      'Bant Control': 'UW Control',
+      'Mono Blue Control': 'Mono Blue Control',
+      'Mono U Control': 'Mono Blue Control',
+      'U Control': 'Mono Blue Control',
+      'Bant Control': 'Bant Control',
 
       // Welder variants
       'Welder': 'Welder',
@@ -338,261 +330,6 @@ const metagameData = JSON.parse(fs.readFileSync(metagameDataPath, 'utf8'));
       return { metagame, totalDecks, totalTrophies };
     }
 
-    // Intentional color mapping for common archetypes
-    const deckColorMap = {
-      // Blue decks - various blue shades
-      'Dreadnought': '#2E5EAA',         // Deep navy blue (includes Stiflenought)
-      'Landstill': '#4A90B8',           // Cyan blue
-      'UW Landstill': '#6BA8CC',        // Sky blue
-      'UB ZI': '#445B7C',               // Dark slate blue
-
-      // Red/Burn decks - reds and oranges
-      'Burn': '#E74C3C',                // Bright red
-      'Sligh': '#D35400',               // Dark orange
-      'Red Deck Wins': '#E67E22',       // Orange
-
-      // Green/Aggro - greens
-      'Oath Ponza': '#27AE60',          // Forest green
-      'GWr Oath Ponza': '#52B788',      // Medium green
-      'Stompy': '#229954',              // Dark green
-      'Elves': '#82C46C',               // Light green
-      'GR Aggro': '#9BB068',            // Olive green
-
-      // Goblins - red/orange variants
-      'Goblins': '#C0392B',             // Dark red
-      'RG Goblins': '#A04000',          // Brown-red
-      'RB Goblins': '#8B4513',          // Saddle brown
-
-      // Black/Moneyball - dark purples and blacks
-      'Moneyball Black': '#2C003E',     // Deep purple-black
-      'The Rock': '#3E5641',            // Dark green-black (GB deck)
-      'Pox': '#36213E',                 // Dark purple
-
-      // Combo decks - purples and pinks
-      'Replenish': '#9B59B6',           // Purple
-      'Replenish (PandeBurst)': '#8E44AD', // Dark purple
-      'Enchantress': '#D291BC',         // Pink-purple
-      'Stasis': '#3A7CA5',              // Blue (blue deck)
-      'Donate': '#B565D8',              // Light purple
-
-      // Multi-color/Control - mixed colors
-      'Domain': '#F39C12',              // Gold/yellow
-      'Solution': '#16A085',            // Teal
-      'Psychatog': '#5D4E6D',          // Purple-gray
-      'Esper Tog': '#6C5B7B',          // Mauve
-
-      // Graveyard/Reanimator - dark greens and grays
-      'Reanimator': '#34495E',          // Dark slate
-      'Survival': '#7D8471',            // Sage green
-      'UG Survival Opposition': '#4A7C59', // Dark green
-      'UGR Survival Madness': '#6B8E23', // Olive drab
-
-      // Storm/Spell-based - electric colors
-      'Frantic Storm': '#AA00FF',       // Electric purple
-      'Predict Medallion': '#00CED1',   // Dark turquoise
-
-      // White/Clerics - light colors
-      'Mono Black Clerics': '#5D4E6D',  // Purple-gray
-      'WW': '#E8E8E8',                  // Light gray
-
-      // Artifact/Colorless - grays and silvers
-      'Affinity': '#B0BEC5',            // Silver
-      'Tron': '#78909C',                // Blue-gray
-
-      // Multi-color utility decks
-      'Devourer': '#9B2C2C',            // Red-blue (purple-red)
-      'Terrageddon': '#7CB342',         // Light green (GW deck)
-    };
-
-    // Fallback colors for unmapped decks
-    const fallbackColors = [
-      '#0066cc', '#ff6b6b', '#4ecdc4', '#45b7d1', '#96ceb4',
-      '#ffeaa7', '#74b9ff', '#a29bfe', '#fd79a8', '#fdcb6e',
-      '#e17055', '#00b894', '#00cec9', '#6c5ce7', '#fab1a0',
-      '#ff7675', '#55efc4', '#81ecec', '#dfe6e9', '#00aaff'
-    ];
-
-    // Get color for a deck, with fallback
-    function getColorForDeck(deckName, fallbackIndex) {
-      return deckColorMap[deckName] || fallbackColors[fallbackIndex % fallbackColors.length];
-    }
-
-    // Helper to adjust color brightness
-    function adjustBrightness(hex, percent) {
-      const num = parseInt(hex.replace('#', ''), 16);
-      const amt = Math.round(2.55 * percent);
-      const R = Math.min(255, (num >> 16) + amt);
-      const G = Math.min(255, (num >> 8 & 0x00FF) + amt);
-      const B = Math.min(255, (num & 0x0000FF) + amt);
-      return `#${(0x1000000 + R * 0x10000 + G * 0x100 + B).toString(16).slice(1)}`;
-    }
-
-    // Chart.js instance
-    let barChartInstance = null;
-
-    // Render bar chart with Chart.js
-    function renderChart() {
-      const { metagame, totalDecks } = getAggregatedData();
-      const canvas = document.getElementById('bar-chart');
-
-      if (selectedLeagues.size === 0 || metagame.length === 0) {
-        if (barChartInstance) {
-          barChartInstance.destroy();
-          barChartInstance = null;
-        }
-        return;
-      }
-
-      // Filter by min decks and trophies
-      let filteredData = metagame.filter(entry => entry.count >= minDecks);
-
-      if (trophiesOnly) {
-        filteredData = filteredData.filter(entry => entry.trophies > 0);
-      }
-
-      if (filteredData.length === 0) {
-        if (barChartInstance) {
-          barChartInstance.destroy();
-          barChartInstance = null;
-        }
-        return;
-      }
-
-      // Show top 25 decks, then "Other" for the rest
-      const topDecks = filteredData.slice(0, 25);
-      const remainingDecks = filteredData.slice(25);
-
-      let dataToShow = [...topDecks];
-
-      // Add "Other" if there are remaining decks
-      if (remainingDecks.length > 0) {
-        const otherCount = remainingDecks.reduce((sum, entry) => sum + entry.count, 0);
-        const otherTrophies = remainingDecks.reduce((sum, entry) => sum + entry.trophies, 0);
-        const otherPercentage = (otherCount / totalDecks) * 100;
-        dataToShow.push({
-          deck: 'Other',
-          count: otherCount,
-          trophies: otherTrophies,
-          percentage: otherPercentage,
-          variants: remainingDecks.reduce((acc, entry) => {
-            acc[entry.deck] = entry.count;
-            return acc;
-          }, {})
-        });
-      }
-
-      // Prepare data for Chart.js - just deck names
-      const labels = dataToShow.map(entry => entry.deck);
-      const data = dataToShow.map(entry => entry.count);
-      const backgroundColors = dataToShow.map((entry, index) =>
-        entry.deck === 'Other' ? '#95a5a6' : getColorForDeck(entry.deck, index)
-      );
-
-      // Destroy existing chart
-      if (barChartInstance) {
-        barChartInstance.destroy();
-      }
-
-      // Create new horizontal bar chart
-      barChartInstance = new Chart(canvas, {
-        type: 'bar',
-        data: {
-          labels: labels,
-          datasets: [{
-            data: data,
-            backgroundColor: backgroundColors,
-            borderColor: backgroundColors.map(color => adjustBrightness(color, -10)),
-            borderWidth: 1,
-            borderRadius: 6,
-            barThickness: 24
-          }]
-        },
-        options: {
-          indexAxis: 'y',
-          responsive: true,
-          maintainAspectRatio: false,
-          layout: {
-            padding: {
-              left: 10
-            }
-          },
-          plugins: {
-            legend: {
-              display: false
-            },
-            tooltip: {
-              backgroundColor: 'rgba(0, 0, 0, 0.8)',
-              padding: 12,
-              titleFont: { size: 14, weight: 'bold' },
-              bodyFont: { size: 12 },
-              callbacks: {
-                label: function(context) {
-                  const value = context.parsed.x;
-                  const percentage = ((value / totalDecks) * 100).toFixed(1);
-                  return `${value} decks (${percentage}%)`;
-                },
-                afterLabel: function(context) {
-                  const deckName = context.label;
-                  const deckEntry = dataToShow.find(entry => entry.deck === deckName);
-                  if (!deckEntry || !deckEntry.variants) return null;
-
-                  const variants = Object.entries(deckEntry.variants);
-                  // Only show breakdown if there are multiple variants
-                  if (variants.length <= 1) return null;
-
-                  const variantLines = variants
-                    .sort((a, b) => b[1] - a[1])
-                    .map(([variant, count]) => `  • ${variant}: ${count}`)
-                    .join('\n');
-
-                  return '\nVariants:\n' + variantLines;
-                }
-              }
-            }
-          },
-          scales: {
-            x: {
-              beginAtZero: true,
-              grid: {
-                color: 'rgba(0, 0, 0, 0.05)'
-              },
-              ticks: {
-                font: { size: 11 }
-              }
-            },
-            y: {
-              grid: {
-                display: false
-              },
-              ticks: {
-                font: { size: 12, weight: '600' },
-                color: '#212529',
-                autoSkip: false,
-                callback: function(value, index, ticks) {
-                  const label = this.getLabelForValue(value);
-                  // Truncate long labels to prevent layout warping
-                  if (label.length > 20) {
-                    return label.substring(0, 18) + '...';
-                  }
-                  return label;
-                }
-              }
-            }
-          },
-          layout: {
-            padding: {
-              left: 0,
-              right: 10
-            }
-          },
-          animation: {
-            duration: 750,
-            easing: 'easeOutQuart'
-          }
-        }
-      });
-    }
-
     // Render table
     function renderTable() {
       const { metagame } = getAggregatedData();
@@ -657,10 +394,30 @@ const metagameData = JSON.parse(fs.readFileSync(metagameDataPath, 'utf8'));
       });
 
       const rows = filteredData.map((entry, index) => {
+        // Build tooltip text showing variant breakdown
+        const variants = entry.variants || {};
+        const variantEntries = Object.entries(variants)
+          .sort((a, b) => b[1] - a[1]); // Sort by count descending
+
+        let tooltipText = '';
+        if (variantEntries.length > 1) {
+          // Multiple variants - show breakdown
+          tooltipText = variantEntries
+            .map(([variant, count]) => `${variant}: ${count}`)
+            .join('\n');
+        } else if (variantEntries.length === 1 && variantEntries[0][0] !== entry.deck) {
+          // Single variant with different name
+          tooltipText = `Includes: ${variantEntries[0][0]}`;
+        }
+
+        const deckNameHtml = tooltipText
+          ? `<span class="deck-name with-tooltip" data-tooltip="${tooltipText.replace(/\n/g, '|')}">${entry.deck}</span>`
+          : `<span class="deck-name">${entry.deck}</span>`;
+
         return `
         <tr>
           <td><span class="rank-number">${index + 1}</span></td>
-          <td><span class="deck-name">${entry.deck}</span></td>
+          <td>${deckNameHtml}</td>
           <td><span class="count">${entry.count}</span></td>
           <td><span class="percentage">${entry.percentage.toFixed(1)}%</span></td>
           <td><span class="trophy-count">${entry.trophies > 0 ? '🏆 ' + entry.trophies : '-'}</span></td>
@@ -705,6 +462,102 @@ const metagameData = JSON.parse(fs.readFileSync(metagameDataPath, 'utf8'));
             sortDirection = 'desc';
           }
           renderTable();
+        });
+      });
+
+      // Add tooltip handlers
+      setupTooltips();
+    }
+
+    // Setup custom tooltips
+    function setupTooltips() {
+      const tooltipElements = document.querySelectorAll('.with-tooltip');
+      let tooltip = document.getElementById('custom-tooltip');
+      let activeElement = null;
+      let scrollListener = null;
+
+      // Create tooltip element if it doesn't exist
+      if (!tooltip) {
+        tooltip = document.createElement('div');
+        tooltip.id = 'custom-tooltip';
+        tooltip.className = 'custom-tooltip';
+        document.body.appendChild(tooltip);
+      }
+
+      function positionTooltip(element) {
+        const rect = element.getBoundingClientRect();
+        const tooltipRect = tooltip.getBoundingClientRect();
+        const viewportHeight = window.innerHeight;
+        const viewportWidth = window.innerWidth;
+
+        // Determine if tooltip should appear above or below
+        const spaceBelow = viewportHeight - rect.bottom;
+        const spaceAbove = rect.top;
+        const tooltipHeight = tooltipRect.height || 100; // estimate if not yet rendered
+
+        let top, left;
+
+        // Position vertically (above or below)
+        if (spaceBelow >= tooltipHeight + 16 || spaceBelow > spaceAbove) {
+          // Show below
+          top = rect.bottom + 8;
+          tooltip.classList.remove('tooltip-above');
+        } else {
+          // Show above
+          top = rect.top - tooltipHeight - 8;
+          tooltip.classList.add('tooltip-above');
+        }
+
+        // Position horizontally (centered, but keep within viewport)
+        left = rect.left + (rect.width / 2) - (tooltipRect.width / 2);
+
+        // Ensure tooltip stays within viewport horizontally
+        if (left < 8) {
+          left = 8;
+        } else if (left + tooltipRect.width > viewportWidth - 8) {
+          left = viewportWidth - tooltipRect.width - 8;
+        }
+
+        tooltip.style.left = left + 'px';
+        tooltip.style.top = top + 'px';
+      }
+
+      tooltipElements.forEach(element => {
+        element.addEventListener('mouseenter', (e) => {
+          const tooltipText = element.dataset.tooltip;
+          if (!tooltipText) return;
+
+          activeElement = element;
+
+          // Replace | with line breaks for display
+          const formattedText = tooltipText.split('|').join('<br>');
+          tooltip.innerHTML = formattedText;
+          tooltip.style.display = 'block';
+
+          // Position tooltip
+          positionTooltip(element);
+
+          // Add scroll listener to reposition tooltip
+          if (scrollListener) {
+            window.removeEventListener('scroll', scrollListener, true);
+          }
+          scrollListener = () => {
+            if (activeElement) {
+              positionTooltip(activeElement);
+            }
+          };
+          window.addEventListener('scroll', scrollListener, true);
+        });
+
+        element.addEventListener('mouseleave', () => {
+          tooltip.style.display = 'none';
+          activeElement = null;
+
+          // Remove scroll listener
+          if (scrollListener) {
+            window.removeEventListener('scroll', scrollListener, true);
+            scrollListener = null;
+          }
         });
       });
     }
@@ -787,7 +640,6 @@ const metagameData = JSON.parse(fs.readFileSync(metagameDataPath, 'utf8'));
     // Render all
     function render() {
       renderSummary();
-      renderChart();
       renderTable();
       updateURL();
     }
@@ -970,8 +822,8 @@ const metagameData = JSON.parse(fs.readFileSync(metagameDataPath, 'utf8'));
   }
 
   .stat-card.highlight {
-    background: linear-gradient(135deg, #0066cc 0%, #0088ff 100%);
-    border-color: #0066cc;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-color: rgba(118, 75, 162, 0.3);
     color: white;
   }
 
@@ -1013,8 +865,7 @@ const metagameData = JSON.parse(fs.readFileSync(metagameDataPath, 'utf8'));
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   }
 
-  .pie-chart-container h3,
-  .metagame-chart h3 {
+  .pie-chart-container h3 {
     margin: 0 0 1.5rem 0;
     font-size: 1.2rem;
     font-weight: 700;
@@ -1066,26 +917,13 @@ const metagameData = JSON.parse(fs.readFileSync(metagameDataPath, 'utf8'));
   .legend-value {
     font-size: 0.9rem;
     font-weight: 700;
-    color: #0066cc;
+    color: #764ba2;
   }
 
   .empty-message {
     text-align: center;
     color: #6c757d;
     font-style: italic;
-  }
-
-  .metagame-chart {
-    padding: 1.5rem;
-    margin: 0 2rem 2rem 2rem;
-    background: white;
-    border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-  }
-
-  #bar-chart {
-    height: 850px;
-    max-height: 850px;
   }
 
   .data-table-section {
@@ -1174,6 +1012,32 @@ const metagameData = JSON.parse(fs.readFileSync(metagameDataPath, 'utf8'));
     color: #667eea;
     font-weight: 600;
     font-size: 0.95rem;
+  }
+
+  .metagame-table .deck-name.with-tooltip {
+    cursor: help;
+    border-bottom: 1px dotted #667eea;
+  }
+
+  .metagame-table .deck-name.with-tooltip:hover {
+    color: #764ba2;
+    border-bottom-color: #764ba2;
+  }
+
+  .custom-tooltip {
+    position: fixed;
+    display: none;
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    font-size: 0.875rem;
+    line-height: 1.6;
+    z-index: 10000;
+    pointer-events: none;
+    max-width: 300px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   }
 
   .metagame-table .count {
