@@ -1,7 +1,14 @@
 ---
 import PageLayout from '../components/PageLayout.astro';
+import LeagueHeader from '../components/LeagueHeader.astro';
+import LeagueNav from '../components/LeagueNav.astro';
+import { loadLeaguesConfig } from '../utils/data';
 import fs from 'fs';
 import path from 'path';
+
+// Load leagues for navigation
+const config = loadLeaguesConfig();
+const allLeagues = config.leagues;
 
 // Load metagame data
 const metagameDataPath = path.join(process.cwd(), 'output', 'metagame_data.json');
@@ -9,11 +16,12 @@ const metagameData = JSON.parse(fs.readFileSync(metagameDataPath, 'utf8'));
 ---
 
 <PageLayout>
+  <LeagueHeader />
+  <LeagueNav currentLeague={null} allLeagues={allLeagues} isOverall={false} isMetagame={true} />
   <div class="card">
-    <header class="page-header">
+    <div class="metagame-header">
       <h1>Metagame Explorer</h1>
-      <p class="subtitle">Deck archetype distribution across leagues</p>
-    </header>
+    </div>
 
     <div class="controls">
       <div class="league-selection">
@@ -852,33 +860,26 @@ const metagameData = JSON.parse(fs.readFileSync(metagameDataPath, 'utf8'));
 
 <style is:global>
   .card {
-    padding: 1.5rem;
+    padding: 0;
   }
 
-  .page-header {
-    text-align: center;
-    margin-bottom: 2rem;
-    padding-bottom: 1rem;
-    border-bottom: 3px solid #e9ecef;
+  .metagame-header {
+    padding: 1.5rem 2rem;
+    background: var(--gradient-primary);
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    text-align: left;
   }
 
-  .page-header h1 {
-    font-size: 2rem;
-    margin-bottom: 0.5rem;
-    background: linear-gradient(135deg, #0066cc 0%, #0088ff 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+  .metagame-header h1 {
+    color: white;
+    font-size: 2.5rem;
     font-weight: 700;
-  }
-
-  .subtitle {
-    font-size: 1.1rem;
-    color: #6c757d;
-    font-weight: 500;
+    margin: 0;
   }
 
   .controls {
+    margin: 2rem;
     margin-bottom: 2rem;
     border: 2px solid #e9ecef;
     border-radius: 12px;
@@ -950,7 +951,7 @@ const metagameData = JSON.parse(fs.readFileSync(metagameDataPath, 'utf8'));
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1rem;
-    margin-bottom: 2rem;
+    margin: 0 2rem 2rem 2rem;
   }
 
   .stat-card {
@@ -1076,6 +1077,7 @@ const metagameData = JSON.parse(fs.readFileSync(metagameDataPath, 'utf8'));
 
   .metagame-chart {
     padding: 1.5rem;
+    margin: 0 2rem 2rem 2rem;
     background: white;
     border-radius: 12px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
@@ -1087,7 +1089,7 @@ const metagameData = JSON.parse(fs.readFileSync(metagameDataPath, 'utf8'));
   }
 
   .data-table-section {
-    margin-top: 2rem;
+    margin: 0 2rem 2rem 2rem;
   }
 
   .data-table-section > h3 {

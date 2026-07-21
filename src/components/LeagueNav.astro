@@ -6,9 +6,10 @@ interface Props {
   currentLeague: League | null;
   allLeagues: League[];
   isOverall: boolean;
+  isMetagame?: boolean;
 }
 
-const { currentLeague, allLeagues, isOverall } = Astro.props;
+const { currentLeague, allLeagues, isOverall, isMetagame = false } = Astro.props;
 ---
 
 <nav class="league-nav">
@@ -23,8 +24,11 @@ const { currentLeague, allLeagues, isOverall } = Astro.props;
       );
     })
   }
-  <a href="/league/overall" class={isOverall ? 'active overall-link' : 'overall-link'} title="Overall Rankings">
+  <a href="/metagame" class={isMetagame ? 'active metagame-link' : 'metagame-link'} title="Metagame Explorer">
     📊
+  </a>
+  <a href="/league/overall" class={isOverall ? 'active overall-link' : 'overall-link'} title="Overall Rankings">
+    👑
   </a>
 </nav>
 
@@ -52,7 +56,8 @@ const { currentLeague, allLeagues, isOverall } = Astro.props;
     font-weight: 700;
   }
 
-  .league-nav a.overall-link {
+  .league-nav a.overall-link,
+  .league-nav a.metagame-link {
     font-size: 1.4rem;
     margin-left: 0.5rem;
     vertical-align: middle;
@@ -64,7 +69,8 @@ const { currentLeague, allLeagues, isOverall } = Astro.props;
       margin: 0 0.5rem;
     }
 
-    .league-nav a.overall-link {
+    .league-nav a.overall-link,
+    .league-nav a.metagame-link {
       font-size: 1.2rem;
       margin-left: 0.25rem;
     }
