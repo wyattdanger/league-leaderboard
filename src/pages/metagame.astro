@@ -36,7 +36,7 @@ const metagameData = JSON.parse(fs.readFileSync(metagameDataPath, 'utf8'));
         </label>
         <label>
           <input type="checkbox" id="trophies-only" />
-          Trophies only
+          Decks with 🏆 only
         </label>
       </div>
     </div>
@@ -262,15 +262,16 @@ const metagameData = JSON.parse(fs.readFileSync(metagameDataPath, 'utf8'));
       return deckName;
     }
 
-    // Aggregate deck counts and trophies across selected leagues
+    // Aggregate deck counts, trophies, and match stats across selected leagues
     function getAggregatedData() {
       const deckCounts = {};
       const deckTrophies = {};
+      const deckMatchStats = {};
       const variantCounts = {}; // Track variants within each normalized deck
       let totalDecks = 0;
       let totalTrophies = 0;
 
-      // Sum counts and trophies across selected leagues
+      // Sum counts, trophies, and match stats across selected leagues
       for (const league of metagameData.leagues) {
         if (!selectedLeagues.has(league.leagueName)) continue;
 
@@ -292,17 +293,38 @@ const metagameData = JSON.parse(fs.readFileSync(metagameDataPath, 'utf8'));
           deckTrophies[normalizedDeck] = (deckTrophies[normalizedDeck] || 0) + trophyCount;
           totalTrophies += trophyCount;
         }
+
+        // Sum match stats
+        for (const [deck, stats] of Object.entries(league.deckMatchStats || {})) {
+          const normalizedDeck = normalizeDeckName(deck);
+          if (!deckMatchStats[normalizedDeck]) {
+            deckMatchStats[normalizedDeck] = { wins: 0, losses: 0, draws: 0 };
+          }
+          deckMatchStats[normalizedDeck].wins += stats.wins;
+          deckMatchStats[normalizedDeck].losses += stats.losses;
+          deckMatchStats[normalizedDeck].draws += stats.draws;
+        }
       }
 
       // Convert to array and calculate percentages
       const metagame = Object.entries(deckCounts)
-        .map(([deck, count]) => ({
-          deck,
-          count,
-          trophies: deckTrophies[deck] || 0,
-          percentage: totalDecks > 0 ? (count / totalDecks) * 100 : 0,
-          variants: variantCounts[deck] // Include variant breakdown
-        }))
+        .map(([deck, count]) => {
+          const stats = deckMatchStats[deck] || { wins: 0, losses: 0, draws: 0 };
+          const totalMatches = stats.wins + stats.losses + stats.draws;
+          const matchWinRate = totalMatches > 0
+            ? ((stats.wins + 0.5 * stats.draws) / totalMatches) * 100
+            : 0;
+
+          return {
+            deck,
+            count,
+            trophies: deckTrophies[deck] || 0,
+            percentage: totalDecks > 0 ? (count / totalDecks) * 100 : 0,
+            matchWinRate,
+            matchStats: stats,
+            variants: variantCounts[deck] // Include variant breakdown
+          };
+        })
         .sort((a, b) => b.count - a.count);
 
       return { metagame, totalDecks, totalTrophies };
@@ -615,6 +637,10 @@ const metagameData = JSON.parse(fs.readFileSync(metagameDataPath, 'utf8'));
             aVal = a.trophyRate;
             bVal = b.trophyRate;
             break;
+          case 'matchWinRate':
+            aVal = a.matchWinRate;
+            bVal = b.matchWinRate;
+            break;
           default:
             return 0;
         }
@@ -631,6 +657,7 @@ const metagameData = JSON.parse(fs.readFileSync(metagameDataPath, 'utf8'));
           <td><span class="percentage">${entry.percentage.toFixed(1)}%</span></td>
           <td><span class="trophy-count">${entry.trophies > 0 ? '🏆 ' + entry.trophies : '-'}</span></td>
           <td><span class="trophy-rate">${entry.trophies > 0 ? entry.trophyRate.toFixed(1) + '%' : '-'}</span></td>
+          <td><span class="match-win-rate">${entry.matchWinRate.toFixed(1)}%</span></td>
         </tr>
       `;
       }).join('');
@@ -650,6 +677,7 @@ const metagameData = JSON.parse(fs.readFileSync(metagameDataPath, 'utf8'));
               <th class="sortable" data-column="percentage">Share${getSortIndicator('percentage')}</th>
               <th class="sortable" data-column="trophies">Trophies${getSortIndicator('trophies')}</th>
               <th class="sortable" data-column="trophyRate">Trophy Rate${getSortIndicator('trophyRate')}</th>
+              <th class="sortable" data-column="matchWinRate">MWR${getSortIndicator('matchWinRate')}</th>
             </tr>
           </thead>
           <tbody>
@@ -1164,6 +1192,12 @@ const metagameData = JSON.parse(fs.readFileSync(metagameDataPath, 'utf8'));
   }
 
   .metagame-table .trophy-rate {
+    color: #6b7280;
+    font-weight: 500;
+    font-size: 0.875rem;
+  }
+
+  .metagame-table .match-win-rate {
     color: #6b7280;
     font-weight: 500;
     font-size: 0.875rem;

@@ -26,11 +26,20 @@ interface DeckTrophies {
   [deckName: string]: number;
 }
 
+interface DeckMatchStats {
+  [deckName: string]: {
+    wins: number;
+    losses: number;
+    draws: number;
+  };
+}
+
 interface LeagueMetagame {
   leagueName: string;
   tournaments: number[];
   deckCounts: DeckCount;
   deckTrophies: DeckTrophies;
+  deckMatchStats: DeckMatchStats;
 }
 
 interface MetagameData {
@@ -58,6 +67,7 @@ function generateMetagameData(): void {
 
     const deckCounts: DeckCount = {};
     const deckTrophies: DeckTrophies = {};
+    const deckMatchStats: DeckMatchStats = {};
     let totalDecks = 0;
     let totalTrophies = 0;
 
@@ -67,7 +77,7 @@ function generateMetagameData(): void {
       allTournaments.push(league.top8Tournament);
     }
 
-    // Count decks and trophies across all tournaments
+    // Count decks, trophies, and match stats across all tournaments
     for (const tournamentId of allTournaments) {
       const tournamentDecks = deckData[tournamentId.toString()];
       if (!tournamentDecks) {
@@ -75,7 +85,7 @@ function generateMetagameData(): void {
         continue;
       }
 
-      // Load final standings to check for 3-0 finishes
+      // Load final standings to check for 3-0 finishes and match stats
       const standingsPath = path.join(
         process.cwd(),
         'output',
@@ -97,19 +107,29 @@ function generateMetagameData(): void {
         totalDecks++;
         deckCounts[deck] = (deckCounts[deck] || 0) + 1;
 
-        // Check if this player went 3-0 (trophy)
+        // Find player standing for match stats
         const playerStanding = standings.find(
           (s: any) => s.Team.Players[0].Username === username
         );
 
-        if (
-          playerStanding &&
-          playerStanding.MatchWins === 3 &&
-          playerStanding.MatchLosses === 0 &&
-          playerStanding.MatchDraws === 0
-        ) {
-          deckTrophies[deck] = (deckTrophies[deck] || 0) + 1;
-          totalTrophies++;
+        if (playerStanding) {
+          // Track match wins/losses/draws
+          if (!deckMatchStats[deck]) {
+            deckMatchStats[deck] = { wins: 0, losses: 0, draws: 0 };
+          }
+          deckMatchStats[deck].wins += playerStanding.MatchWins || 0;
+          deckMatchStats[deck].losses += playerStanding.MatchLosses || 0;
+          deckMatchStats[deck].draws += playerStanding.MatchDraws || 0;
+
+          // Check if this player went 3-0 (trophy)
+          if (
+            playerStanding.MatchWins === 3 &&
+            playerStanding.MatchLosses === 0 &&
+            playerStanding.MatchDraws === 0
+          ) {
+            deckTrophies[deck] = (deckTrophies[deck] || 0) + 1;
+            totalTrophies++;
+          }
         }
       }
     }
@@ -121,6 +141,7 @@ function generateMetagameData(): void {
       tournaments: allTournaments,
       deckCounts,
       deckTrophies,
+      deckMatchStats,
     });
 
     console.log(`  ✓ ${totalDecks} decks, ${uniqueArchetypes} unique archetypes, ${totalTrophies} trophies`);
