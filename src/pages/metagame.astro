@@ -42,6 +42,10 @@ const pageDescription = `Explore deck archetype statistics from ${totalDecks} de
       <h1>Metagame Explorer</h1>
     </div>
 
+    <div class="summary-stats" id="summary-stats">
+      <!-- Summary stats will be rendered here -->
+    </div>
+
     <div class="controls">
       <div class="league-selection">
         <label class="league-checkbox">
@@ -57,19 +61,15 @@ const pageDescription = `Explore deck archetype statistics from ${totalDecks} de
       </div>
 
       <div class="view-controls">
-        <label>
-          Min decks:
+        <label class="min-decks-control">
+          <span>Min appearances:</span>
           <input type="number" id="min-decks" value="1" min="1" max="50" />
         </label>
-        <label>
+        <label class="trophy-checkbox">
           <input type="checkbox" id="trophies-only" />
-          Decks with 🏆 only
+          <span>🏆 decks only</span>
         </label>
       </div>
-    </div>
-
-    <div class="summary-stats" id="summary-stats">
-      <!-- Summary stats will be rendered here -->
     </div>
 
     <div class="data-table-section">
@@ -817,18 +817,51 @@ const pageDescription = `Explore deck archetype statistics from ${totalDecks} de
     font-size: 0.9rem;
   }
 
-  .view-controls input[type="number"] {
+  .min-decks-control {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+  }
+
+  .min-decks-control input[type="number"] {
     width: 60px;
-    padding: 0.25rem;
+    padding: 0.375rem 0.5rem;
     border: 1px solid #dee2e6;
     border-radius: 4px;
+    font-size: 0.9rem;
+  }
+
+  .trophy-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+    user-select: none;
+  }
+
+  .trophy-checkbox input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    accent-color: #0066cc;
+  }
+
+  .trophy-checkbox:hover {
+    color: #0066cc;
+  }
+
+  .trophy-checkbox:hover input[type="checkbox"] {
+    transform: scale(1.1);
+    transition: transform 0.15s ease;
   }
 
   .summary-stats {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1rem;
-    margin: 0 2rem 2rem 2rem;
+    margin: 2rem 2rem 2rem 2rem;
   }
 
   .stat-card {
