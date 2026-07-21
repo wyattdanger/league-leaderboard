@@ -70,8 +70,19 @@ const metagameData = JSON.parse(fs.readFileSync(metagameDataPath, 'utf8'));
       // Load metagame data from embedded JSON
       const metagameData = JSON.parse(document.getElementById('metagame-data').textContent);
 
-      // State
-      let selectedLeagues = new Set(metagameData.leagues.map(l => l.leagueName));
+      // Initialize state from URL or defaults
+      const urlParams = new URLSearchParams(window.location.search);
+      const leaguesParam = urlParams.get('leagues');
+
+      let selectedLeagues;
+      if (leaguesParam) {
+        // Parse leagues from URL
+        selectedLeagues = new Set(leaguesParam.split(',').filter(l => l));
+      } else {
+        // Default to all leagues
+        selectedLeagues = new Set(metagameData.leagues.map(l => l.leagueName));
+      }
+
       let minDecks = 1;
       let showPercentages = true;
 
@@ -618,16 +629,40 @@ const metagameData = JSON.parse(fs.readFileSync(metagameDataPath, 'utf8'));
       `;
     }
 
+    // Update URL with selected leagues
+    function updateURL() {
+      const url = new URL(window.location);
+      if (selectedLeagues.size === metagameData.leagues.length) {
+        // All leagues selected - remove param for cleaner URL
+        url.searchParams.delete('leagues');
+      } else if (selectedLeagues.size > 0) {
+        // Some leagues selected - encode them
+        url.searchParams.set('leagues', Array.from(selectedLeagues).join(','));
+      } else {
+        // No leagues selected - keep empty param
+        url.searchParams.set('leagues', '');
+      }
+      window.history.replaceState({}, '', url);
+    }
+
     // Render all
     function render() {
       renderSummary();
       renderChart();
       renderTable();
+      updateURL();
     }
 
     // Event listeners
     const selectAllCheckbox = document.getElementById('select-all');
     const leagueCheckboxes = document.querySelectorAll('.league-filter');
+
+    // Sync checkbox states with URL on load
+    leagueCheckboxes.forEach(checkbox => {
+      const leagueName = checkbox.dataset.league;
+      checkbox.checked = selectedLeagues.has(leagueName);
+    });
+    selectAllCheckbox.checked = selectedLeagues.size === metagameData.leagues.length;
 
     // Handle individual league checkbox changes
     leagueCheckboxes.forEach(checkbox => {
