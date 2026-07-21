@@ -14,6 +14,7 @@
     "generate-deck-template": "tsx src/generate-deck-template.ts",
     "generate-metadata": "tsx src/generate-page-metadata.ts",
     "generate-all-metadata": "tsx src/generate-all-metadata.ts",
+    "generate-metagame": "tsx src/generate-metagame-data.ts",
     "process-tournament": "tsx src/process-tournament.ts",
     "decks-to-csv": "tsx src/decks-to-csv.ts",
     "csv-to-decks": "tsx src/csv-to-decks.ts",

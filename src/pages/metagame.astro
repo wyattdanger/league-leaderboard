@@ -1,0 +1,421 @@
+---
+import PageLayout from '../components/PageLayout.astro';
+import fs from 'fs';
+import path from 'path';
+
+// Load metagame data
+const metagameDataPath = path.join(process.cwd(), 'output', 'metagame_data.json');
+const metagameData = JSON.parse(fs.readFileSync(metagameDataPath, 'utf8'));
+---
+
+<PageLayout>
+  <div class="card">
+    <header class="page-header">
+      <h1>Metagame Explorer</h1>
+      <p class="subtitle">Deck archetype distribution across leagues</p>
+    </header>
+
+    <div class="controls">
+      <div class="league-selection">
+        <label class="league-checkbox">
+          <input type="checkbox" id="select-all" checked />
+          <span>All Leagues</span>
+        </label>
+        {metagameData.leagues.map((league: any) => (
+          <label class="league-checkbox">
+            <input type="checkbox" class="league-filter" data-league={league.leagueName} checked />
+            <span>{league.leagueName}</span>
+          </label>
+        ))}
+      </div>
+
+      <div class="view-controls">
+        <label>
+          Min decks:
+          <input type="number" id="min-decks" value="1" min="1" max="50" />
+        </label>
+        <label>
+          <input type="checkbox" id="show-percentages" checked />
+          Show percentages
+        </label>
+      </div>
+    </div>
+
+    <div class="metagame-chart" id="chart-container">
+      <!-- Chart will be rendered here -->
+    </div>
+
+    <div class="metagame-table" id="table-container">
+      <!-- Table will be rendered here -->
+    </div>
+  </div>
+
+  <!-- Embed metagame data as JSON -->
+  <script id="metagame-data" type="application/json" set:html={JSON.stringify(metagameData)}></script>
+
+  <script>
+    // Load metagame data from embedded JSON
+    const metagameData = JSON.parse(document.getElementById('metagame-data').textContent);
+
+    // State
+    let selectedLeagues = new Set(metagameData.leagues.map(l => l.leagueName));
+    let minDecks = 1;
+    let showPercentages = true;
+
+    // Aggregate deck counts across selected leagues
+    function getAggregatedData() {
+      const deckCounts = {};
+      let totalDecks = 0;
+
+      // Sum counts across selected leagues
+      for (const league of metagameData.leagues) {
+        if (!selectedLeagues.has(league.leagueName)) continue;
+
+        for (const [deck, count] of Object.entries(league.deckCounts)) {
+          deckCounts[deck] = (deckCounts[deck] || 0) + count;
+          totalDecks += count;
+        }
+      }
+
+      // Convert to array and calculate percentages
+      const metagame = Object.entries(deckCounts)
+        .map(([deck, count]) => ({
+          deck,
+          count,
+          percentage: totalDecks > 0 ? (count / totalDecks) * 100 : 0,
+        }))
+        .sort((a, b) => b.count - a.count);
+
+      return { metagame, totalDecks };
+    }
+
+    // Render bar chart
+    function renderChart() {
+      const { metagame, totalDecks } = getAggregatedData();
+      const chartContainer = document.getElementById('chart-container');
+
+      if (selectedLeagues.size === 0) {
+        chartContainer.innerHTML = '<p>No leagues selected</p>';
+        return;
+      }
+
+      const filteredData = metagame.filter(entry => entry.count >= minDecks);
+
+      if (filteredData.length === 0) {
+        chartContainer.innerHTML = '<p>No decks match the current filter</p>';
+        return;
+      }
+
+      const maxCount = Math.max(...filteredData.map(entry => entry.count));
+
+      const bars = filteredData.map(entry => {
+        const widthPercent = (entry.count / maxCount) * 100;
+        const displayValue = showPercentages
+          ? `${entry.percentage.toFixed(1)}%`
+          : `${entry.count}`;
+
+        return `
+          <div class="bar-row">
+            <div class="bar-label">${entry.deck}</div>
+            <div class="bar-container">
+              <div class="bar" style="width: ${widthPercent}%">
+                <span class="bar-value">${displayValue} (${entry.count})</span>
+              </div>
+            </div>
+          </div>
+        `;
+      }).join('');
+
+      chartContainer.innerHTML = bars;
+    }
+
+    // Render table
+    function renderTable() {
+      const { metagame } = getAggregatedData();
+      const tableContainer = document.getElementById('table-container');
+
+      if (selectedLeagues.size === 0) {
+        tableContainer.innerHTML = '';
+        return;
+      }
+
+      const filteredData = metagame.filter(entry => entry.count >= minDecks);
+
+      if (filteredData.length === 0) {
+        tableContainer.innerHTML = '';
+        return;
+      }
+
+      const rows = filteredData.map((entry, index) => `
+        <tr>
+          <td class="rank">${index + 1}</td>
+          <td class="deck-name">${entry.deck}</td>
+          <td class="count">${entry.count}</td>
+          <td class="percentage">${entry.percentage.toFixed(2)}%</td>
+        </tr>
+      `).join('');
+
+      tableContainer.innerHTML = `
+        <table>
+          <thead>
+            <tr>
+              <th class="rank">#</th>
+              <th class="deck-name">Deck</th>
+              <th class="count">Count</th>
+              <th class="percentage">Percentage</th>
+            </tr>
+          </thead>
+          <tbody>
+            ${rows}
+          </tbody>
+        </table>
+      `;
+    }
+
+    // Render all
+    function render() {
+      renderChart();
+      renderTable();
+    }
+
+    // Event listeners
+    const selectAllCheckbox = document.getElementById('select-all');
+    const leagueCheckboxes = document.querySelectorAll('.league-filter');
+
+    // Handle individual league checkbox changes
+    leagueCheckboxes.forEach(checkbox => {
+      checkbox.addEventListener('change', () => {
+        const leagueName = checkbox.dataset.league;
+
+        if (checkbox.checked) {
+          selectedLeagues.add(leagueName);
+        } else {
+          selectedLeagues.delete(leagueName);
+        }
+
+        // Update "All" checkbox state
+        const allChecked = Array.from(leagueCheckboxes).every(cb => cb.checked);
+        selectAllCheckbox.checked = allChecked;
+
+        render();
+      });
+    });
+
+    // Handle "All" checkbox
+    selectAllCheckbox.addEventListener('change', () => {
+      const shouldSelectAll = selectAllCheckbox.checked;
+
+      leagueCheckboxes.forEach(checkbox => {
+        checkbox.checked = shouldSelectAll;
+        const leagueName = checkbox.dataset.league;
+
+        if (shouldSelectAll) {
+          selectedLeagues.add(leagueName);
+        } else {
+          selectedLeagues.delete(leagueName);
+        }
+      });
+
+      render();
+    });
+
+    document.getElementById('min-decks').addEventListener('input', (e) => {
+      minDecks = parseInt(e.target.value) || 1;
+      render();
+    });
+
+    document.getElementById('show-percentages').addEventListener('change', (e) => {
+      showPercentages = e.target.checked;
+      render();
+    });
+
+    // Initial render
+    render();
+  </script>
+</PageLayout>
+
+<style>
+  .card {
+    padding: 1.5rem;
+  }
+
+  .page-header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .page-header h1 {
+    font-size: 1.8rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+    color: #666;
+  }
+
+  .controls {
+    margin-bottom: 2rem;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    padding: 1rem;
+    background: #f8f9fa;
+  }
+
+  .league-selection {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+  }
+
+  .league-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+    user-select: none;
+  }
+
+  .league-checkbox input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+  }
+
+  .league-checkbox:hover {
+    color: #0066cc;
+  }
+
+  #select-all + span {
+    font-weight: 600;
+  }
+
+  .view-controls {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    padding-top: 1rem;
+    border-top: 1px solid #dee2e6;
+  }
+
+  .view-controls label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+  }
+
+  .view-controls input[type="number"] {
+    width: 60px;
+    padding: 0.25rem;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+  }
+
+  .metagame-chart {
+    margin-bottom: 2rem;
+  }
+
+  .bar-row {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+    align-items: center;
+  }
+
+  .bar-label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-align: right;
+    padding-right: 1rem;
+  }
+
+  .bar-container {
+    position: relative;
+    height: 28px;
+    background: #f8f9fa;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+
+  .bar {
+    height: 100%;
+    background: linear-gradient(90deg, #0066cc, #0088ff);
+    display: flex;
+    align-items: center;
+    padding: 0 0.5rem;
+    min-width: fit-content;
+    transition: width 0.3s ease;
+  }
+
+  .bar-value {
+    font-size: 0.85rem;
+    color: white;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+
+  .metagame-table table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+  }
+
+  .metagame-table th {
+    background: #f8f9fa;
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 2px solid #dee2e6;
+    font-weight: 700;
+  }
+
+  .metagame-table td {
+    padding: 0.75rem;
+    border-bottom: 1px solid #dee2e6;
+  }
+
+  .metagame-table tr:hover {
+    background: #f8f9fa;
+  }
+
+  .rank {
+    width: 50px;
+    text-align: center;
+    color: #666;
+  }
+
+  .deck-name {
+    font-weight: 600;
+  }
+
+  .count {
+    width: 100px;
+    text-align: right;
+  }
+
+  .percentage {
+    width: 120px;
+    text-align: right;
+    color: #666;
+  }
+
+  @media (max-width: 768px) {
+    .bar-row {
+      grid-template-columns: 1fr;
+      gap: 0.25rem;
+    }
+
+    .bar-label {
+      text-align: left;
+      padding-right: 0;
+      padding-bottom: 0.25rem;
+    }
+
+    .metagame-table {
+      overflow-x: auto;
+    }
+  }
+</style>
