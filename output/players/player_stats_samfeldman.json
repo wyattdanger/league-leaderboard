@@ -2,25 +2,25 @@
   "username": "SamFeldman",
   "displayName": "Samuel Feldman",
   "overallStats": {
-    "totalTournaments": 3,
-    "totalPoints": 12,
-    "totalMatches": 9,
-    "matchRecord": "4-5-0",
-    "matchWinPercentage": 0.4444444444444444,
-    "gameRecord": "11-11-0",
-    "gameWinPercentage": 0.5,
+    "totalTournaments": 4,
+    "totalPoints": 18,
+    "totalMatches": 12,
+    "matchRecord": "6-6-0",
+    "matchWinPercentage": 0.5,
+    "gameRecord": "16-13-0",
+    "gameWinPercentage": 0.5517241379310345,
     "trophies": 1,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q3 2026",
-      "events": 1,
-      "points": 9,
-      "matchRecord": "3-0-0",
-      "matchWinPercentage": 1,
-      "gameRecord": "6-1-0",
-      "gameWinPercentage": 0.8571428571428571
+      "events": 2,
+      "points": 15,
+      "matchRecord": "5-1-0",
+      "matchWinPercentage": 0.8333333333333334,
+      "gameRecord": "11-3-0",
+      "gameWinPercentage": 0.7857142857142857
     },
     {
       "leagueName": "Q2 2026",
@@ -60,9 +60,73 @@
       "gameDraws": 0,
       "gameWinPercentage": 0.875,
       "trophies": 1
+    },
+    {
+      "deckName": "Sligh",
+      "events": 1,
+      "matchWins": 2,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 6,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.75,
+      "trophies": 0
     }
   ],
   "headToHead": [
+    {
+      "opponentUsername": "Mookyspulder",
+      "opponentDisplayName": "Dan S",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "matches": [
+        {
+          "tournamentId": "445675",
+          "dateDisplay": "July 23, 2026",
+          "result": "L",
+          "playerDeck": "Sligh",
+          "opponentDeck": "Clerics",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "ByerBeware",
+      "opponentDisplayName": "ByerBeware",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "matches": [
+        {
+          "tournamentId": "445675",
+          "dateDisplay": "July 23, 2026",
+          "result": "W",
+          "playerDeck": "Sligh",
+          "opponentDeck": "Replenish",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
     {
       "opponentUsername": "Taylorhol",
       "opponentDisplayName": "Taylorhol",
@@ -131,7 +195,7 @@
           "dateDisplay": "July 16, 2026",
           "result": "W",
           "playerDeck": "Burn",
-          "opponentDeck": "_",
+          "opponentDeck": "Landstill",
           "playerGameWins": 2,
           "opponentGameWins": 1,
           "gameDraws": 0
@@ -290,6 +354,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "445675",
+      "dateDisplay": "July 23, 2026",
+      "playerCount": 26,
+      "trophyCount": 3,
+      "roundCount": 3,
+      "rank": 10,
+      "points": 6,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWinPercentage": 0.7142857,
+      "deck": "Sligh"
+    },
     {
       "tournamentId": "445673",
       "dateDisplay": "July 16, 2026",

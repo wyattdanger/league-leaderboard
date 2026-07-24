@@ -46,8 +46,9 @@ async function processTournament(tournamentId: string) {
   console.log('  2. Generate deck template (if needed)');
   console.log('  3. Sync league standings');
   console.log('  4. Regenerate player stats');
-  console.log('  5. Generate page metadata');
-  console.log('  6. Build the site\n');
+  console.log('  5. Regenerate metagame data');
+  console.log('  6. Generate page metadata');
+  console.log('  7. Build the site\n');
 
   try {
     // Step 1: Scrape tournament
@@ -84,12 +85,16 @@ async function processTournament(tournamentId: string) {
     console.log('\n👤 Step 4: Regenerating player stats...');
     await runCommand('npm', ['run', 'player-stats']);
 
-    // Step 5: Generate page metadata
-    console.log('\n📝 Step 5: Generating page metadata...');
+    // Step 5: Regenerate metagame data
+    console.log('\n📊 Step 5: Regenerating metagame data...');
+    await runCommand('npm', ['run', 'generate-metagame']);
+
+    // Step 6: Generate page metadata
+    console.log('\n📝 Step 6: Generating page metadata...');
     await runCommand('npm', ['run', 'generate-metadata', '--', tournamentId]);
 
-    // Step 6: Build site
-    console.log('\n🏗️  Step 6: Building site...');
+    // Step 7: Build site
+    console.log('\n🏗️  Step 7: Building site...');
     await runCommand('npm', ['run', 'build']);
 
     console.log('\n✅ Tournament processing complete!\n');

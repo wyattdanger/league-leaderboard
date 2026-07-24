@@ -2,17 +2,26 @@
   "username": "AndrewLevine",
   "displayName": "AndrewLevine",
   "overallStats": {
-    "totalTournaments": 24,
-    "totalPoints": 116,
-    "totalMatches": 72,
-    "matchRecord": "37-30-5",
-    "matchWinPercentage": 0.5486111111111112,
-    "gameRecord": "95-76-1",
-    "gameWinPercentage": 0.5523255813953488,
-    "trophies": 3,
+    "totalTournaments": 25,
+    "totalPoints": 125,
+    "totalMatches": 75,
+    "matchRecord": "40-30-5",
+    "matchWinPercentage": 0.5666666666666667,
+    "gameRecord": "101-77-1",
+    "gameWinPercentage": 0.5642458100558659,
+    "trophies": 4,
     "belts": 0
   },
   "leagueStats": [
+    {
+      "leagueName": "Q3 2026",
+      "events": 1,
+      "points": 9,
+      "matchRecord": "3-0-0",
+      "matchWinPercentage": 1,
+      "gameRecord": "6-1-0",
+      "gameWinPercentage": 0.8571428571428571
+    },
     {
       "leagueName": "Q2 2026",
       "events": 4,
@@ -115,6 +124,20 @@
       "gameDraws": 0,
       "gameWinPercentage": 0.5625,
       "trophies": 0
+    },
+    {
+      "deckName": "UW Control",
+      "events": 1,
+      "matchWins": 3,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchRecord": "3-0-0",
+      "matchWinPercentage": 1,
+      "gameWins": 7,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.875,
+      "trophies": 1
     },
     {
       "deckName": "Moneyball Black",
@@ -921,6 +944,81 @@
       ]
     },
     {
+      "opponentUsername": "RyanMCrites",
+      "opponentDisplayName": "RyanMCrites",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6666666666666666,
+      "matches": [
+        {
+          "tournamentId": "445675",
+          "dateDisplay": "July 23, 2026",
+          "result": "W",
+          "playerDeck": "UW Control",
+          "opponentDeck": "Cradle Control",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "CalebR",
+      "opponentDisplayName": "CalebR",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "matches": [
+        {
+          "tournamentId": "445675",
+          "dateDisplay": "July 23, 2026",
+          "result": "W",
+          "playerDeck": "UW Control",
+          "opponentDeck": "4c Oath Ponza",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "jaantonaglia",
+      "opponentDisplayName": "jaantonaglia",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "matches": [
+        {
+          "tournamentId": "445675",
+          "dateDisplay": "July 23, 2026",
+          "result": "W",
+          "playerDeck": "UW Control",
+          "opponentDeck": "Landstill",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "Paul_Scott",
       "opponentDisplayName": "Paul_Scott",
       "matchesPlayed": 1,
@@ -1522,6 +1620,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "445675",
+      "dateDisplay": "July 23, 2026",
+      "playerCount": 26,
+      "trophyCount": 3,
+      "roundCount": 3,
+      "rank": 3,
+      "points": 9,
+      "matchRecord": "3-0-0",
+      "matchWinPercentage": 1,
+      "gameWinPercentage": 0.8571429,
+      "deck": "UW Control"
+    },
     {
       "tournamentId": "432258",
       "dateDisplay": "May 28, 2026",

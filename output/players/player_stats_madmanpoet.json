@@ -2,25 +2,25 @@
   "username": "madmanpoet",
   "displayName": "Michael Flores",
   "overallStats": {
-    "totalTournaments": 46,
-    "totalPoints": 288,
-    "totalMatches": 138,
-    "matchRecord": "95-40-3",
-    "matchWinPercentage": 0.6992753623188406,
-    "gameRecord": "213-116-1",
-    "gameWinPercentage": 0.6454545454545455,
+    "totalTournaments": 47,
+    "totalPoints": 294,
+    "totalMatches": 141,
+    "matchRecord": "97-41-3",
+    "matchWinPercentage": 0.6985815602836879,
+    "gameRecord": "218-119-1",
+    "gameWinPercentage": 0.6449704142011834,
     "trophies": 12,
     "belts": 1
   },
   "leagueStats": [
     {
       "leagueName": "Q3 2026",
-      "events": 3,
-      "points": 18,
-      "matchRecord": "6-3-0",
+      "events": 4,
+      "points": 24,
+      "matchRecord": "8-4-0",
       "matchWinPercentage": 0.6666666666666666,
-      "gameRecord": "15-11-0",
-      "gameWinPercentage": 0.5769230769230769
+      "gameRecord": "20-14-0",
+      "gameWinPercentage": 0.5882352941176471
     },
     {
       "leagueName": "Q2 2026",
@@ -106,6 +106,20 @@
   ],
   "deckStats": [
     {
+      "deckName": "Dreadnought",
+      "events": 9,
+      "matchWins": 20,
+      "matchLosses": 7,
+      "matchDraws": 0,
+      "matchRecord": "20-7-0",
+      "matchWinPercentage": 0.7407407407407407,
+      "gameWins": 53,
+      "gameLosses": 19,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.7361111111111112,
+      "trophies": 4
+    },
+    {
       "deckName": "Burn",
       "events": 9,
       "matchWins": 19,
@@ -118,20 +132,6 @@
       "gameDraws": 0,
       "gameWinPercentage": 0.6388888888888888,
       "trophies": 3
-    },
-    {
-      "deckName": "Dreadnought",
-      "events": 8,
-      "matchWins": 18,
-      "matchLosses": 6,
-      "matchDraws": 0,
-      "matchRecord": "18-6-0",
-      "matchWinPercentage": 0.75,
-      "gameWins": 48,
-      "gameLosses": 16,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.75,
-      "trophies": 4
     },
     {
       "deckName": "The Rock",
@@ -600,6 +600,91 @@
       ]
     },
     {
+      "opponentUsername": "Gaunology",
+      "opponentDisplayName": "Gaunology",
+      "matchesPlayed": 7,
+      "matchWins": 2,
+      "matchLosses": 3,
+      "matchDraws": 2,
+      "matchWinPercentage": 0.42857142857142855,
+      "gameWins": 9,
+      "gameLosses": 9,
+      "gameDraws": 1,
+      "gameWinPercentage": 0.5,
+      "matches": [
+        {
+          "tournamentId": "445675",
+          "dateDisplay": "July 23, 2026",
+          "result": "L",
+          "playerDeck": "Dreadnought",
+          "opponentDeck": "5c Oath Ponza",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "436160",
+          "dateDisplay": "July 9, 2026",
+          "result": "L",
+          "playerDeck": "Oath Ponza",
+          "opponentDeck": "Terrageddon",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "436155",
+          "dateDisplay": "June 11, 2026",
+          "result": "W",
+          "playerDeck": "Dreadnought",
+          "opponentDeck": "4C Terrageddon",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "422555",
+          "dateDisplay": "April 16, 2026",
+          "result": "D",
+          "playerDeck": "Terrageddon",
+          "opponentDeck": "Naya Enchantress",
+          "playerGameWins": 1,
+          "opponentGameWins": 1,
+          "gameDraws": 1
+        },
+        {
+          "tournamentId": "404622",
+          "dateDisplay": "February 12, 2026",
+          "result": "L",
+          "playerDeck": "Burn",
+          "opponentDeck": "Terra Oath",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "398837",
+          "dateDisplay": "January 22, 2026",
+          "result": "W",
+          "playerDeck": "Terrageddon",
+          "opponentDeck": "Domain",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "388334",
+          "dateDisplay": "December 4, 2025",
+          "result": "D",
+          "playerDeck": "The Rock",
+          "opponentDeck": "Domain",
+          "playerGameWins": 1,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "itsCama",
       "opponentDisplayName": "Yosef Harari",
       "matchesPlayed": 7,
@@ -685,93 +770,28 @@
       ]
     },
     {
-      "opponentUsername": "Gaunology",
-      "opponentDisplayName": "Gaunology",
+      "opponentUsername": "RichBucey",
+      "opponentDisplayName": "RichBucey",
       "matchesPlayed": 6,
-      "matchWins": 2,
-      "matchLosses": 2,
-      "matchDraws": 2,
-      "matchWinPercentage": 0.5,
-      "gameWins": 8,
-      "gameLosses": 7,
-      "gameDraws": 1,
-      "gameWinPercentage": 0.53125,
+      "matchWins": 5,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.8333333333333334,
+      "gameWins": 11,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.8461538461538461,
       "matches": [
         {
-          "tournamentId": "436160",
-          "dateDisplay": "July 9, 2026",
-          "result": "L",
-          "playerDeck": "Oath Ponza",
-          "opponentDeck": "Terrageddon",
-          "playerGameWins": 1,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "436155",
-          "dateDisplay": "June 11, 2026",
+          "tournamentId": "445675",
+          "dateDisplay": "July 23, 2026",
           "result": "W",
           "playerDeck": "Dreadnought",
-          "opponentDeck": "4C Terrageddon",
-          "playerGameWins": 2,
-          "opponentGameWins": 1,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "422555",
-          "dateDisplay": "April 16, 2026",
-          "result": "D",
-          "playerDeck": "Terrageddon",
-          "opponentDeck": "Naya Enchantress",
-          "playerGameWins": 1,
-          "opponentGameWins": 1,
-          "gameDraws": 1
-        },
-        {
-          "tournamentId": "404622",
-          "dateDisplay": "February 12, 2026",
-          "result": "L",
-          "playerDeck": "Burn",
-          "opponentDeck": "Terra Oath",
-          "playerGameWins": 1,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "398837",
-          "dateDisplay": "January 22, 2026",
-          "result": "W",
-          "playerDeck": "Terrageddon",
-          "opponentDeck": "Domain",
+          "opponentDeck": "Burn",
           "playerGameWins": 2,
           "opponentGameWins": 0,
           "gameDraws": 0
         },
-        {
-          "tournamentId": "388334",
-          "dateDisplay": "December 4, 2025",
-          "result": "D",
-          "playerDeck": "The Rock",
-          "opponentDeck": "Domain",
-          "playerGameWins": 1,
-          "opponentGameWins": 1,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "RichBucey",
-      "opponentDisplayName": "RichBucey",
-      "matchesPlayed": 5,
-      "matchWins": 4,
-      "matchLosses": 1,
-      "matchDraws": 0,
-      "matchWinPercentage": 0.8,
-      "gameWins": 9,
-      "gameLosses": 2,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.8181818181818182,
-      "matches": [
         {
           "tournamentId": "436159",
           "dateDisplay": "July 2, 2026",
@@ -1785,6 +1805,31 @@
       ]
     },
     {
+      "opponentUsername": "edwardsockol",
+      "opponentDisplayName": "edwardsockol",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6666666666666666,
+      "matches": [
+        {
+          "tournamentId": "445675",
+          "dateDisplay": "July 23, 2026",
+          "result": "W",
+          "playerDeck": "Dreadnought",
+          "opponentDeck": "Dimir Infiltrator Moneyball",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "Shyft",
       "opponentDisplayName": "Shyft",
       "matchesPlayed": 1,
@@ -1802,7 +1847,7 @@
           "dateDisplay": "July 16, 2026",
           "result": "W",
           "playerDeck": "Dreadnought",
-          "opponentDeck": "_",
+          "opponentDeck": "Burn",
           "playerGameWins": 2,
           "opponentGameWins": 1,
           "gameDraws": 0
@@ -2586,6 +2631,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "445675",
+      "dateDisplay": "July 23, 2026",
+      "playerCount": 26,
+      "trophyCount": 3,
+      "roundCount": 3,
+      "rank": 8,
+      "points": 6,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWinPercentage": 0.625,
+      "deck": "Dreadnought"
+    },
     {
       "tournamentId": "445673",
       "dateDisplay": "July 16, 2026",

@@ -2,30 +2,44 @@
   "username": "Shyft",
   "displayName": "Shyft",
   "overallStats": {
-    "totalTournaments": 1,
-    "totalPoints": 3,
-    "totalMatches": 3,
-    "matchRecord": "1-2-0",
+    "totalTournaments": 2,
+    "totalPoints": 6,
+    "totalMatches": 6,
+    "matchRecord": "2-4-0",
     "matchWinPercentage": 0.3333333333333333,
-    "gameRecord": "3-5-0",
-    "gameWinPercentage": 0.375,
+    "gameRecord": "6-9-0",
+    "gameWinPercentage": 0.4,
     "trophies": 0,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q3 2026",
-      "events": 1,
-      "points": 3,
-      "matchRecord": "1-2-0",
+      "events": 2,
+      "points": 6,
+      "matchRecord": "2-4-0",
       "matchWinPercentage": 0.3333333333333333,
-      "gameRecord": "3-5-0",
-      "gameWinPercentage": 0.375
+      "gameRecord": "6-9-0",
+      "gameWinPercentage": 0.4
     }
   ],
   "deckStats": [
     {
-      "deckName": "Unknown",
+      "deckName": "Merfolk",
+      "events": 1,
+      "matchWins": 1,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 3,
+      "gameLosses": 5,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.375,
+      "trophies": 0
+    },
+    {
+      "deckName": "Burn",
       "events": 1,
       "matchWins": 1,
       "matchLosses": 2,
@@ -40,6 +54,56 @@
     }
   ],
   "headToHead": [
+    {
+      "opponentUsername": "Gaunology",
+      "opponentDisplayName": "Gaunology",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "matches": [
+        {
+          "tournamentId": "445675",
+          "dateDisplay": "July 23, 2026",
+          "result": "L",
+          "playerDeck": "Merfolk",
+          "opponentDeck": "5c Oath Ponza",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "edwardsockol",
+      "opponentDisplayName": "edwardsockol",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "matches": [
+        {
+          "tournamentId": "445675",
+          "dateDisplay": "July 23, 2026",
+          "result": "L",
+          "playerDeck": "Merfolk",
+          "opponentDeck": "Dimir Infiltrator Moneyball",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
     {
       "opponentUsername": "madmanpoet",
       "opponentDisplayName": "Michael Flores",
@@ -57,7 +121,7 @@
           "tournamentId": "445673",
           "dateDisplay": "July 16, 2026",
           "result": "L",
-          "playerDeck": "_",
+          "playerDeck": "Burn",
           "opponentDeck": "Dreadnought",
           "playerGameWins": 1,
           "opponentGameWins": 2,
@@ -82,7 +146,7 @@
           "tournamentId": "445673",
           "dateDisplay": "July 16, 2026",
           "result": "L",
-          "playerDeck": "_",
+          "playerDeck": "Burn",
           "opponentDeck": "Burn",
           "playerGameWins": 0,
           "opponentGameWins": 2,
@@ -107,7 +171,7 @@
           "tournamentId": "445673",
           "dateDisplay": "July 16, 2026",
           "result": "W",
-          "playerDeck": "_",
+          "playerDeck": "Burn",
           "opponentDeck": "Terrageddon",
           "playerGameWins": 2,
           "opponentGameWins": 1,
@@ -117,6 +181,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "445675",
+      "dateDisplay": "July 23, 2026",
+      "playerCount": 26,
+      "trophyCount": 3,
+      "roundCount": 3,
+      "rank": 17,
+      "points": 3,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWinPercentage": 0.4285714,
+      "deck": "Merfolk"
+    },
     {
       "tournamentId": "445673",
       "dateDisplay": "July 16, 2026",
@@ -128,7 +205,7 @@
       "matchRecord": "1-2-0",
       "matchWinPercentage": 0.3333333333333333,
       "gameWinPercentage": 0.375,
-      "deck": "_"
+      "deck": "Burn"
     }
   ]
 }

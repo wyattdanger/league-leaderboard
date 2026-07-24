@@ -2,25 +2,25 @@
   "username": "Taylorhol",
   "displayName": "Taylorhol",
   "overallStats": {
-    "totalTournaments": 35,
-    "totalPoints": 150,
-    "totalMatches": 104,
-    "matchRecord": "49-52-3",
-    "matchWinPercentage": 0.4855769230769231,
-    "gameRecord": "122-126-3",
-    "gameWinPercentage": 0.4860557768924303,
-    "trophies": 3,
+    "totalTournaments": 36,
+    "totalPoints": 159,
+    "totalMatches": 107,
+    "matchRecord": "52-52-3",
+    "matchWinPercentage": 0.5,
+    "gameRecord": "128-128-3",
+    "gameWinPercentage": 0.4942084942084942,
+    "trophies": 4,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q3 2026",
-      "events": 3,
-      "points": 9,
-      "matchRecord": "3-6-0",
-      "matchWinPercentage": 0.3333333333333333,
-      "gameRecord": "10-13-0",
-      "gameWinPercentage": 0.43478260869565216
+      "events": 4,
+      "points": 18,
+      "matchRecord": "6-6-0",
+      "matchWinPercentage": 0.5,
+      "gameRecord": "16-15-0",
+      "gameWinPercentage": 0.5161290322580645
     },
     {
       "leagueName": "Q2 2026",
@@ -89,17 +89,17 @@
   "deckStats": [
     {
       "deckName": "HFEB",
-      "events": 7,
-      "matchWins": 10,
+      "events": 8,
+      "matchWins": 13,
       "matchLosses": 11,
       "matchDraws": 0,
-      "matchRecord": "10-11-0",
-      "matchWinPercentage": 0.47619047619047616,
-      "gameWins": 27,
-      "gameLosses": 29,
+      "matchRecord": "13-11-0",
+      "matchWinPercentage": 0.5416666666666666,
+      "gameWins": 33,
+      "gameLosses": 31,
       "gameDraws": 0,
-      "gameWinPercentage": 0.48214285714285715,
-      "trophies": 0
+      "gameWinPercentage": 0.515625,
+      "trophies": 1
     },
     {
       "deckName": "Oath Ponza",
@@ -328,6 +328,101 @@
   ],
   "headToHead": [
     {
+      "opponentUsername": "swbmtg",
+      "opponentDisplayName": "Stephen Bush",
+      "matchesPlayed": 8,
+      "matchWins": 2,
+      "matchLosses": 6,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.25,
+      "gameWins": 6,
+      "gameLosses": 14,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3,
+      "matches": [
+        {
+          "tournamentId": "445675",
+          "dateDisplay": "July 23, 2026",
+          "result": "W",
+          "playerDeck": "HFEB",
+          "opponentDeck": "Gush Tithe",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "422555",
+          "dateDisplay": "April 16, 2026",
+          "result": "L",
+          "playerDeck": "Iggy Pop",
+          "opponentDeck": "Dreadnought",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "417122",
+          "dateDisplay": "March 26, 2026",
+          "result": "L",
+          "playerDeck": "HFEB",
+          "opponentDeck": "Cradle Control",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "413370",
+          "dateDisplay": "March 12, 2026",
+          "result": "L",
+          "playerDeck": "Aluren",
+          "opponentDeck": "Angry Hermit",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "419238",
+          "dateDisplay": "April 2, 2026",
+          "result": "L",
+          "playerDeck": "Oath Ponza",
+          "opponentDeck": "Burn",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "391734",
+          "dateDisplay": "December 18, 2025",
+          "result": "W",
+          "playerDeck": "Snap Cradle Pop",
+          "opponentDeck": "Cradle Control",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "390154",
+          "dateDisplay": "December 11, 2025",
+          "result": "L",
+          "playerDeck": "Gush Tithe",
+          "opponentDeck": "Goblins",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "388334",
+          "dateDisplay": "December 4, 2025",
+          "result": "L",
+          "playerDeck": "Gush Tithe",
+          "opponentDeck": "Oath Parfait",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "itsCama",
       "opponentDisplayName": "Yosef Harari",
       "matchesPlayed": 7,
@@ -407,91 +502,6 @@
           "playerDeck": "Elves",
           "opponentDeck": "_",
           "playerGameWins": 0,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "swbmtg",
-      "opponentDisplayName": "swb",
-      "matchesPlayed": 7,
-      "matchWins": 1,
-      "matchLosses": 6,
-      "matchDraws": 0,
-      "matchWinPercentage": 0.14285714285714285,
-      "gameWins": 4,
-      "gameLosses": 13,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.23529411764705882,
-      "matches": [
-        {
-          "tournamentId": "422555",
-          "dateDisplay": "April 16, 2026",
-          "result": "L",
-          "playerDeck": "Iggy Pop",
-          "opponentDeck": "Dreadnought",
-          "playerGameWins": 0,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "417122",
-          "dateDisplay": "March 26, 2026",
-          "result": "L",
-          "playerDeck": "HFEB",
-          "opponentDeck": "Cradle Control",
-          "playerGameWins": 1,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "413370",
-          "dateDisplay": "March 12, 2026",
-          "result": "L",
-          "playerDeck": "Aluren",
-          "opponentDeck": "Angry Hermit",
-          "playerGameWins": 0,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "419238",
-          "dateDisplay": "April 2, 2026",
-          "result": "L",
-          "playerDeck": "Oath Ponza",
-          "opponentDeck": "Burn",
-          "playerGameWins": 0,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "391734",
-          "dateDisplay": "December 18, 2025",
-          "result": "W",
-          "playerDeck": "Snap Cradle Pop",
-          "opponentDeck": "Cradle Control",
-          "playerGameWins": 2,
-          "opponentGameWins": 1,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "390154",
-          "dateDisplay": "December 11, 2025",
-          "result": "L",
-          "playerDeck": "Gush Tithe",
-          "opponentDeck": "Goblins",
-          "playerGameWins": 0,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "388334",
-          "dateDisplay": "December 4, 2025",
-          "result": "L",
-          "playerDeck": "Gush Tithe",
-          "opponentDeck": "Oath Parfait",
-          "playerGameWins": 1,
           "opponentGameWins": 2,
           "gameDraws": 0
         }
@@ -1413,6 +1423,56 @@
       ]
     },
     {
+      "opponentUsername": "Trout5882",
+      "opponentDisplayName": "Trout5882",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "matches": [
+        {
+          "tournamentId": "445675",
+          "dateDisplay": "July 23, 2026",
+          "result": "W",
+          "playerDeck": "HFEB",
+          "opponentDeck": "jank",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "Mookyspulder",
+      "opponentDisplayName": "Dan S",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6666666666666666,
+      "matches": [
+        {
+          "tournamentId": "445675",
+          "dateDisplay": "July 23, 2026",
+          "result": "W",
+          "playerDeck": "HFEB",
+          "opponentDeck": "Clerics",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "SamFeldman",
       "opponentDisplayName": "Samuel Feldman",
       "matchesPlayed": 1,
@@ -2014,6 +2074,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "445675",
+      "dateDisplay": "July 23, 2026",
+      "playerCount": 26,
+      "trophyCount": 3,
+      "roundCount": 3,
+      "rank": 1,
+      "points": 9,
+      "matchRecord": "3-0-0",
+      "matchWinPercentage": 1,
+      "gameWinPercentage": 0.75,
+      "deck": "HFEB"
+    },
     {
       "tournamentId": "445673",
       "dateDisplay": "July 16, 2026",

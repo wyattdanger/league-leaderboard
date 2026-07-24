@@ -2,25 +2,25 @@
   "username": "AlldoAurelis",
   "displayName": "AlldoAurelis",
   "overallStats": {
-    "totalTournaments": 9,
-    "totalPoints": 31,
-    "totalMatches": 27,
-    "matchRecord": "10-16-1",
-    "matchWinPercentage": 0.3888888888888889,
-    "gameRecord": "27-41-0",
-    "gameWinPercentage": 0.39705882352941174,
+    "totalTournaments": 10,
+    "totalPoints": 37,
+    "totalMatches": 30,
+    "matchRecord": "12-17-1",
+    "matchWinPercentage": 0.4166666666666667,
+    "gameRecord": "31-44-0",
+    "gameWinPercentage": 0.41333333333333333,
     "trophies": 2,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q3 2026",
-      "events": 3,
-      "points": 21,
-      "matchRecord": "7-2-0",
-      "matchWinPercentage": 0.7777777777777778,
-      "gameRecord": "15-10-0",
-      "gameWinPercentage": 0.6
+      "events": 4,
+      "points": 27,
+      "matchRecord": "9-3-0",
+      "matchWinPercentage": 0.75,
+      "gameRecord": "19-13-0",
+      "gameWinPercentage": 0.59375
     },
     {
       "leagueName": "Q2 2026",
@@ -99,6 +99,20 @@
       "trophies": 1
     },
     {
+      "deckName": "Moneyball",
+      "events": 1,
+      "matchWins": 2,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 5,
+      "gameLosses": 3,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.625,
+      "trophies": 0
+    },
+    {
       "deckName": "UG Madness",
       "events": 1,
       "matchWins": 1,
@@ -128,6 +142,51 @@
     }
   ],
   "headToHead": [
+    {
+      "opponentUsername": "PCavalcanti",
+      "opponentDisplayName": "PCavalcanti",
+      "matchesPlayed": 3,
+      "matchWins": 2,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 5,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5555555555555556,
+      "matches": [
+        {
+          "tournamentId": "445675",
+          "dateDisplay": "July 23, 2026",
+          "result": "W",
+          "playerDeck": "Moneyball",
+          "opponentDeck": "Burn",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "436160",
+          "dateDisplay": "July 9, 2026",
+          "result": "W",
+          "playerDeck": "Moneyball Black",
+          "opponentDeck": "UGR Survival Madness",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "436157",
+          "dateDisplay": "June 18, 2026",
+          "result": "L",
+          "playerDeck": "Mad Dogs",
+          "opponentDeck": "RG Madness Burn",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
     {
       "opponentUsername": "Mookyspulder",
       "opponentDisplayName": "Dan S",
@@ -199,41 +258,6 @@
       ]
     },
     {
-      "opponentUsername": "PCavalcanti",
-      "opponentDisplayName": "PCavalcanti",
-      "matchesPlayed": 2,
-      "matchWins": 1,
-      "matchLosses": 1,
-      "matchDraws": 0,
-      "matchWinPercentage": 0.5,
-      "gameWins": 3,
-      "gameLosses": 3,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.5,
-      "matches": [
-        {
-          "tournamentId": "436160",
-          "dateDisplay": "July 9, 2026",
-          "result": "W",
-          "playerDeck": "Moneyball Black",
-          "opponentDeck": "UGR Survival Madness",
-          "playerGameWins": 2,
-          "opponentGameWins": 1,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "436157",
-          "dateDisplay": "June 18, 2026",
-          "result": "L",
-          "playerDeck": "Mad Dogs",
-          "opponentDeck": "RG Madness Burn",
-          "playerGameWins": 1,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
       "opponentUsername": "itsCama",
       "opponentDisplayName": "Yosef Harari",
       "matchesPlayed": 2,
@@ -264,6 +288,56 @@
           "opponentDeck": "Tinker Prison",
           "playerGameWins": 0,
           "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "CalebR",
+      "opponentDisplayName": "CalebR",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "matches": [
+        {
+          "tournamentId": "445675",
+          "dateDisplay": "July 23, 2026",
+          "result": "L",
+          "playerDeck": "Moneyball",
+          "opponentDeck": "4c Oath Ponza",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "Trout5882",
+      "opponentDisplayName": "Trout5882",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "matches": [
+        {
+          "tournamentId": "445675",
+          "dateDisplay": "July 23, 2026",
+          "result": "W",
+          "playerDeck": "Moneyball",
+          "opponentDeck": "jank",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
           "gameDraws": 0
         }
       ]
@@ -695,6 +769,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "445675",
+      "dateDisplay": "July 23, 2026",
+      "playerCount": 26,
+      "trophyCount": 3,
+      "roundCount": 3,
+      "rank": 12,
+      "points": 6,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWinPercentage": 0.5714286,
+      "deck": "Moneyball"
+    },
     {
       "tournamentId": "445673",
       "dateDisplay": "July 16, 2026",

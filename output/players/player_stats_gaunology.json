@@ -2,25 +2,25 @@
   "username": "Gaunology",
   "displayName": "Gaunology",
   "overallStats": {
-    "totalTournaments": 19,
-    "totalPoints": 69,
-    "totalMatches": 57,
-    "matchRecord": "19-26-12",
-    "matchWinPercentage": 0.43859649122807015,
-    "gameRecord": "55-69-5",
-    "gameWinPercentage": 0.4263565891472868,
+    "totalTournaments": 20,
+    "totalPoints": 75,
+    "totalMatches": 60,
+    "matchRecord": "21-27-12",
+    "matchWinPercentage": 0.45,
+    "gameRecord": "59-72-5",
+    "gameWinPercentage": 0.4338235294117647,
     "trophies": 1,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q3 2026",
-      "events": 2,
-      "points": 10,
-      "matchRecord": "3-2-1",
-      "matchWinPercentage": 0.5833333333333334,
-      "gameRecord": "7-7-1",
-      "gameWinPercentage": 0.5
+      "events": 3,
+      "points": 16,
+      "matchRecord": "5-3-1",
+      "matchWinPercentage": 0.6111111111111112,
+      "gameRecord": "11-10-1",
+      "gameWinPercentage": 0.5227272727272727
     },
     {
       "leagueName": "Q2 2026",
@@ -115,6 +115,20 @@
       "matchDraws": 1,
       "matchRecord": "2-0-1",
       "matchWinPercentage": 0.8333333333333334,
+      "gameWins": 5,
+      "gameLosses": 3,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.625,
+      "trophies": 0
+    },
+    {
+      "deckName": "5c Oath Ponza",
+      "events": 1,
+      "matchWins": 2,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
       "gameWins": 5,
       "gameLosses": 3,
       "gameDraws": 0,
@@ -252,16 +266,26 @@
     {
       "opponentUsername": "madmanpoet",
       "opponentDisplayName": "Michael Flores",
-      "matchesPlayed": 6,
-      "matchWins": 2,
+      "matchesPlayed": 7,
+      "matchWins": 3,
       "matchLosses": 2,
       "matchDraws": 2,
-      "matchWinPercentage": 0.5,
-      "gameWins": 7,
-      "gameLosses": 8,
+      "matchWinPercentage": 0.5714285714285714,
+      "gameWins": 9,
+      "gameLosses": 9,
       "gameDraws": 1,
-      "gameWinPercentage": 0.46875,
+      "gameWinPercentage": 0.5,
       "matches": [
+        {
+          "tournamentId": "445675",
+          "dateDisplay": "July 23, 2026",
+          "result": "W",
+          "playerDeck": "5c Oath Ponza",
+          "opponentDeck": "Dreadnought",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
         {
           "tournamentId": "436160",
           "dateDisplay": "July 9, 2026",
@@ -703,6 +727,56 @@
           "result": "L",
           "playerDeck": "Terra Oath",
           "opponentDeck": "Pit Rack",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "Shyft",
+      "opponentDisplayName": "Shyft",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "matches": [
+        {
+          "tournamentId": "445675",
+          "dateDisplay": "July 23, 2026",
+          "result": "W",
+          "playerDeck": "5c Oath Ponza",
+          "opponentDeck": "Merfolk",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "DaveKaplan",
+      "opponentDisplayName": "Dave Kaplan",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "matches": [
+        {
+          "tournamentId": "445675",
+          "dateDisplay": "July 23, 2026",
+          "result": "L",
+          "playerDeck": "5c Oath Ponza",
+          "opponentDeck": "Dreadnought",
           "playerGameWins": 0,
           "opponentGameWins": 2,
           "gameDraws": 0
@@ -1311,6 +1385,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "445675",
+      "dateDisplay": "July 23, 2026",
+      "playerCount": 26,
+      "trophyCount": 3,
+      "roundCount": 3,
+      "rank": 6,
+      "points": 6,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWinPercentage": 0.5714286,
+      "deck": "5c Oath Ponza"
+    },
     {
       "tournamentId": "436160",
       "dateDisplay": "July 9, 2026",

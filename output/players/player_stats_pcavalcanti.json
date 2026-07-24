@@ -2,25 +2,25 @@
   "username": "PCavalcanti",
   "displayName": "PCavalcanti",
   "overallStats": {
-    "totalTournaments": 17,
-    "totalPoints": 83,
-    "totalMatches": 51,
-    "matchRecord": "27-22-2",
-    "matchWinPercentage": 0.5490196078431373,
-    "gameRecord": "70-59-0",
-    "gameWinPercentage": 0.5426356589147286,
+    "totalTournaments": 18,
+    "totalPoints": 87,
+    "totalMatches": 54,
+    "matchRecord": "28-23-3",
+    "matchWinPercentage": 0.5462962962962963,
+    "gameRecord": "74-62-0",
+    "gameWinPercentage": 0.5441176470588235,
     "trophies": 1,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q3 2026",
-      "events": 3,
-      "points": 16,
-      "matchRecord": "5-3-1",
-      "matchWinPercentage": 0.6111111111111112,
-      "gameRecord": "13-9-0",
-      "gameWinPercentage": 0.5909090909090909
+      "events": 4,
+      "points": 20,
+      "matchRecord": "6-4-2",
+      "matchWinPercentage": 0.5833333333333334,
+      "gameRecord": "17-12-0",
+      "gameWinPercentage": 0.5862068965517241
     },
     {
       "leagueName": "Q2 2026",
@@ -53,16 +53,16 @@
   "deckStats": [
     {
       "deckName": "Burn",
-      "events": 7,
-      "matchWins": 10,
-      "matchLosses": 9,
-      "matchDraws": 2,
-      "matchRecord": "10-9-2",
-      "matchWinPercentage": 0.5238095238095238,
-      "gameWins": 33,
-      "gameLosses": 23,
+      "events": 8,
+      "matchWins": 11,
+      "matchLosses": 10,
+      "matchDraws": 3,
+      "matchRecord": "11-10-3",
+      "matchWinPercentage": 0.5208333333333334,
+      "gameWins": 38,
+      "gameLosses": 26,
       "gameDraws": 0,
-      "gameWinPercentage": 0.5892857142857143,
+      "gameWinPercentage": 0.59375,
       "trophies": 0
     },
     {
@@ -165,6 +165,51 @@
     }
   ],
   "headToHead": [
+    {
+      "opponentUsername": "AlldoAurelis",
+      "opponentDisplayName": "AlldoAurelis",
+      "matchesPlayed": 3,
+      "matchWins": 1,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 4,
+      "gameLosses": 5,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.4444444444444444,
+      "matches": [
+        {
+          "tournamentId": "445675",
+          "dateDisplay": "July 23, 2026",
+          "result": "L",
+          "playerDeck": "Burn",
+          "opponentDeck": "Moneyball",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "436160",
+          "dateDisplay": "July 9, 2026",
+          "result": "L",
+          "playerDeck": "UGR Survival Madness",
+          "opponentDeck": "Moneyball Black",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "436157",
+          "dateDisplay": "June 18, 2026",
+          "result": "W",
+          "playerDeck": "RG Madness Burn",
+          "opponentDeck": "Mad Dogs",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
     {
       "opponentUsername": "Taylorhol",
       "opponentDisplayName": "Taylorhol",
@@ -453,7 +498,7 @@
           "dateDisplay": "July 16, 2026",
           "result": "D",
           "playerDeck": "Burn",
-          "opponentDeck": "_",
+          "opponentDeck": "Landstill",
           "playerGameWins": 1,
           "opponentGameWins": 1,
           "gameDraws": 0
@@ -464,41 +509,6 @@
           "result": "W",
           "playerDeck": "UGR Survival Madness",
           "opponentDeck": "_",
-          "playerGameWins": 2,
-          "opponentGameWins": 1,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "AlldoAurelis",
-      "opponentDisplayName": "AlldoAurelis",
-      "matchesPlayed": 2,
-      "matchWins": 1,
-      "matchLosses": 1,
-      "matchDraws": 0,
-      "matchWinPercentage": 0.5,
-      "gameWins": 3,
-      "gameLosses": 3,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.5,
-      "matches": [
-        {
-          "tournamentId": "436160",
-          "dateDisplay": "July 9, 2026",
-          "result": "L",
-          "playerDeck": "UGR Survival Madness",
-          "opponentDeck": "Moneyball Black",
-          "playerGameWins": 1,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "436157",
-          "dateDisplay": "June 18, 2026",
-          "result": "W",
-          "playerDeck": "RG Madness Burn",
-          "opponentDeck": "Mad Dogs",
           "playerGameWins": 2,
           "opponentGameWins": 1,
           "gameDraws": 0
@@ -681,6 +691,56 @@
       ]
     },
     {
+      "opponentUsername": "WillReddy",
+      "opponentDisplayName": "WillReddy",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 0,
+      "matchDraws": 1,
+      "matchWinPercentage": 0.5,
+      "gameWins": 1,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5,
+      "matches": [
+        {
+          "tournamentId": "445675",
+          "dateDisplay": "July 23, 2026",
+          "result": "D",
+          "playerDeck": "Burn",
+          "opponentDeck": "Mono red ponza",
+          "playerGameWins": 1,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "RyanMCrites",
+      "opponentDisplayName": "RyanMCrites",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "matches": [
+        {
+          "tournamentId": "445675",
+          "dateDisplay": "July 23, 2026",
+          "result": "W",
+          "playerDeck": "Burn",
+          "opponentDeck": "Cradle Control",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "Shyft",
       "opponentDisplayName": "Shyft",
       "matchesPlayed": 1,
@@ -698,7 +758,7 @@
           "dateDisplay": "July 16, 2026",
           "result": "W",
           "playerDeck": "Burn",
-          "opponentDeck": "_",
+          "opponentDeck": "Burn",
           "playerGameWins": 2,
           "opponentGameWins": 0,
           "gameDraws": 0
@@ -1157,6 +1217,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "445675",
+      "dateDisplay": "July 23, 2026",
+      "playerCount": 26,
+      "trophyCount": 3,
+      "roundCount": 3,
+      "rank": 13,
+      "points": 4,
+      "matchRecord": "1-1-1",
+      "matchWinPercentage": 0.5,
+      "gameWinPercentage": 0.5714286,
+      "deck": "Burn"
+    },
     {
       "tournamentId": "445673",
       "dateDisplay": "July 16, 2026",

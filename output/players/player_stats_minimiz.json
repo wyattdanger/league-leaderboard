@@ -2,17 +2,26 @@
   "username": "minimiz",
   "displayName": "Eli Mizock",
   "overallStats": {
-    "totalTournaments": 14,
-    "totalPoints": 72,
-    "totalMatches": 40,
-    "matchRecord": "24-16-0",
-    "matchWinPercentage": 0.6,
-    "gameRecord": "58-46-0",
-    "gameWinPercentage": 0.5576923076923077,
+    "totalTournaments": 15,
+    "totalPoints": 73,
+    "totalMatches": 43,
+    "matchRecord": "24-18-1",
+    "matchWinPercentage": 0.5697674418604651,
+    "gameRecord": "59-50-1",
+    "gameWinPercentage": 0.5363636363636364,
     "trophies": 3,
     "belts": 0
   },
   "leagueStats": [
+    {
+      "leagueName": "Q3 2026",
+      "events": 1,
+      "points": 1,
+      "matchRecord": "0-2-1",
+      "matchWinPercentage": 0.16666666666666666,
+      "gameRecord": "1-4-1",
+      "gameWinPercentage": 0.25
+    },
     {
       "leagueName": "Q2 2026",
       "events": 5,
@@ -71,6 +80,20 @@
       "trophies": 0
     },
     {
+      "deckName": "Unknown",
+      "events": 2,
+      "matchWins": 1,
+      "matchLosses": 4,
+      "matchDraws": 1,
+      "matchRecord": "1-4-1",
+      "matchWinPercentage": 0.25,
+      "gameWins": 6,
+      "gameLosses": 10,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.375,
+      "trophies": 0
+    },
+    {
       "deckName": "RG Goblins",
       "events": 1,
       "matchWins": 3,
@@ -83,23 +106,64 @@
       "gameDraws": 0,
       "gameWinPercentage": 0.625,
       "trophies": 1
-    },
-    {
-      "deckName": "Unknown",
-      "events": 1,
-      "matchWins": 1,
-      "matchLosses": 2,
-      "matchDraws": 0,
-      "matchRecord": "1-2-0",
-      "matchWinPercentage": 0.3333333333333333,
-      "gameWins": 3,
-      "gameLosses": 5,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.375,
-      "trophies": 0
     }
   ],
   "headToHead": [
+    {
+      "opponentUsername": "RichBucey",
+      "opponentDisplayName": "RichBucey",
+      "matchesPlayed": 4,
+      "matchWins": 2,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.5,
+      "gameWins": 5,
+      "gameLosses": 6,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.45454545454545453,
+      "matches": [
+        {
+          "tournamentId": "445675",
+          "dateDisplay": "July 23, 2026",
+          "result": "L",
+          "playerDeck": "_",
+          "opponentDeck": "Burn",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "417122",
+          "dateDisplay": "March 26, 2026",
+          "result": "W",
+          "playerDeck": "Goblins",
+          "opponentDeck": "Burn",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "402789",
+          "dateDisplay": "February 5, 2026",
+          "result": "W",
+          "playerDeck": "Goblins",
+          "opponentDeck": "_",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "419238",
+          "dateDisplay": "April 2, 2026",
+          "result": "L",
+          "playerDeck": "Goblins",
+          "opponentDeck": "Enchantress",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
     {
       "opponentUsername": "remixmtg",
       "opponentDisplayName": "Jeremy Siegel",
@@ -246,51 +310,6 @@
       ]
     },
     {
-      "opponentUsername": "RichBucey",
-      "opponentDisplayName": "RichBucey",
-      "matchesPlayed": 3,
-      "matchWins": 2,
-      "matchLosses": 1,
-      "matchDraws": 0,
-      "matchWinPercentage": 0.6666666666666666,
-      "gameWins": 5,
-      "gameLosses": 4,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.5555555555555556,
-      "matches": [
-        {
-          "tournamentId": "417122",
-          "dateDisplay": "March 26, 2026",
-          "result": "W",
-          "playerDeck": "Goblins",
-          "opponentDeck": "Burn",
-          "playerGameWins": 2,
-          "opponentGameWins": 1,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "402789",
-          "dateDisplay": "February 5, 2026",
-          "result": "W",
-          "playerDeck": "Goblins",
-          "opponentDeck": "_",
-          "playerGameWins": 2,
-          "opponentGameWins": 1,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "419238",
-          "dateDisplay": "April 2, 2026",
-          "result": "L",
-          "playerDeck": "Goblins",
-          "opponentDeck": "Enchantress",
-          "playerGameWins": 1,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
       "opponentUsername": "mattmanw2",
       "opponentDisplayName": "mattmanw2",
       "matchesPlayed": 3,
@@ -331,6 +350,41 @@
           "opponentDeck": "Mono Black Aggro",
           "playerGameWins": 2,
           "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "ByerBeware",
+      "opponentDisplayName": "ByerBeware",
+      "matchesPlayed": 2,
+      "matchWins": 0,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.2,
+      "matches": [
+        {
+          "tournamentId": "445675",
+          "dateDisplay": "July 23, 2026",
+          "result": "L",
+          "playerDeck": "_",
+          "opponentDeck": "Replenish",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "432258",
+          "dateDisplay": "May 28, 2026",
+          "result": "L",
+          "playerDeck": "Esper Tog",
+          "opponentDeck": "Angry Hermit",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
           "gameDraws": 0
         }
       ]
@@ -476,6 +530,31 @@
       ]
     },
     {
+      "opponentUsername": "RyanMCrites",
+      "opponentDisplayName": "RyanMCrites",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 0,
+      "matchDraws": 1,
+      "matchWinPercentage": 0.5,
+      "gameWins": 0,
+      "gameLosses": 0,
+      "gameDraws": 1,
+      "gameWinPercentage": 0.5,
+      "matches": [
+        {
+          "tournamentId": "445675",
+          "dateDisplay": "July 23, 2026",
+          "result": "D",
+          "playerDeck": "_",
+          "opponentDeck": "Cradle Control",
+          "playerGameWins": 0,
+          "opponentGameWins": 0,
+          "gameDraws": 1
+        }
+      ]
+    },
+    {
       "opponentUsername": "tintintintin",
       "opponentDisplayName": "tintintintin",
       "matchesPlayed": 1,
@@ -596,31 +675,6 @@
           "opponentDeck": "R/g Goblins",
           "playerGameWins": 2,
           "opponentGameWins": 1,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "ByerBeware",
-      "opponentDisplayName": "ByerBeware",
-      "matchesPlayed": 1,
-      "matchWins": 0,
-      "matchLosses": 1,
-      "matchDraws": 0,
-      "matchWinPercentage": 0,
-      "gameWins": 0,
-      "gameLosses": 2,
-      "gameDraws": 0,
-      "gameWinPercentage": 0,
-      "matches": [
-        {
-          "tournamentId": "432258",
-          "dateDisplay": "May 28, 2026",
-          "result": "L",
-          "playerDeck": "Esper Tog",
-          "opponentDeck": "Angry Hermit",
-          "playerGameWins": 0,
-          "opponentGameWins": 2,
           "gameDraws": 0
         }
       ]
@@ -877,6 +931,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "445675",
+      "dateDisplay": "July 23, 2026",
+      "playerCount": 26,
+      "trophyCount": 3,
+      "roundCount": 3,
+      "rank": 24,
+      "points": 1,
+      "matchRecord": "0-2-1",
+      "matchWinPercentage": 0.16666666666666666,
+      "gameWinPercentage": 0.3333333,
+      "deck": "_"
+    },
     {
       "tournamentId": "436155",
       "dateDisplay": "June 11, 2026",

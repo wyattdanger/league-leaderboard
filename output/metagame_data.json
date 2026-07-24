@@ -3,22 +3,38 @@
     {
       "leagueName": "Q3 2026",
       "tournaments": [
+        445675,
         445673,
         436160,
         436159
       ],
       "deckCounts": {
+        "Moneyball": 1,
+        "UW Control": 1,
+        "Terrageddon": 3,
+        "Replenish": 1,
+        "4c Oath Ponza": 1,
+        "Dreadnought": 6,
+        "5c Oath Ponza": 1,
+        "Clerics": 1,
+        "Burn": 12,
+        "Cradle Control": 2,
+        "Sligh": 3,
+        "Merfolk": 1,
+        "HFEB": 1,
+        "jank": 1,
+        "Mono red ponza": 1,
+        "Goblins": 1,
+        "Dimir Infiltrator Moneyball": 1,
+        "Landstill": 2,
+        "Gush Tithe": 1,
         "Moneyball Black": 5,
         "Replenish (PandeBurst)": 1,
         "UG Survival Opposition": 3,
-        "Burn": 10,
         "Solution": 2,
         "Mono Black Clerics": 1,
-        "Dreadnought": 4,
         "RG Goblins": 3,
         "UB ZI": 1,
-        "Terrageddon": 2,
-        "Landstill": 1,
         "Predict Medallion": 1,
         "GR Aggro": 1,
         "Reanimator": 2,
@@ -30,7 +46,6 @@
         "UW Landstill": 1,
         "Mono-Black Zombies": 1,
         "UGR Survival Madness": 1,
-        "Sligh": 2,
         "Oath Ponza": 1,
         "Stasis": 2,
         "Rifter": 1,
@@ -43,12 +58,109 @@
         "Dragon Reanimator": 1
       },
       "deckTrophies": {
+        "UW Control": 1,
+        "Dreadnought": 2,
+        "HFEB": 1,
         "Burn": 4,
-        "Dreadnought": 1,
         "Moneyball Black": 1,
         "UG Survival Opposition": 1
       },
       "deckMatchStats": {
+        "Moneyball": {
+          "wins": 2,
+          "losses": 1,
+          "draws": 0
+        },
+        "UW Control": {
+          "wins": 3,
+          "losses": 0,
+          "draws": 0
+        },
+        "Terrageddon": {
+          "wins": 3,
+          "losses": 4,
+          "draws": 2
+        },
+        "Replenish": {
+          "wins": 1,
+          "losses": 2,
+          "draws": 0
+        },
+        "4c Oath Ponza": {
+          "wins": 1,
+          "losses": 2,
+          "draws": 0
+        },
+        "Dreadnought": {
+          "wins": 10,
+          "losses": 8,
+          "draws": 0
+        },
+        "5c Oath Ponza": {
+          "wins": 2,
+          "losses": 1,
+          "draws": 0
+        },
+        "Clerics": {
+          "wins": 2,
+          "losses": 1,
+          "draws": 0
+        },
+        "Burn": {
+          "wins": 22,
+          "losses": 12,
+          "draws": 2
+        },
+        "Cradle Control": {
+          "wins": 0,
+          "losses": 3,
+          "draws": 1
+        },
+        "Sligh": {
+          "wins": 4,
+          "losses": 5,
+          "draws": 0
+        },
+        "Merfolk": {
+          "wins": 1,
+          "losses": 2,
+          "draws": 0
+        },
+        "HFEB": {
+          "wins": 3,
+          "losses": 0,
+          "draws": 0
+        },
+        "jank": {
+          "wins": 0,
+          "losses": 3,
+          "draws": 0
+        },
+        "Mono red ponza": {
+          "wins": 2,
+          "losses": 0,
+          "draws": 1
+        },
+        "Goblins": {
+          "wins": 1,
+          "losses": 2,
+          "draws": 0
+        },
+        "Dimir Infiltrator Moneyball": {
+          "wins": 2,
+          "losses": 1,
+          "draws": 0
+        },
+        "Landstill": {
+          "wins": 3,
+          "losses": 2,
+          "draws": 1
+        },
+        "Gush Tithe": {
+          "wins": 2,
+          "losses": 1,
+          "draws": 0
+        },
         "Moneyball Black": {
           "wins": 7,
           "losses": 8,
@@ -64,11 +176,6 @@
           "losses": 3,
           "draws": 0
         },
-        "Burn": {
-          "wins": 20,
-          "losses": 9,
-          "draws": 1
-        },
         "Solution": {
           "wins": 3,
           "losses": 3,
@@ -77,11 +184,6 @@
         "Mono Black Clerics": {
           "wins": 2,
           "losses": 1,
-          "draws": 0
-        },
-        "Dreadnought": {
-          "wins": 5,
-          "losses": 7,
           "draws": 0
         },
         "RG Goblins": {
@@ -93,16 +195,6 @@
           "wins": 1,
           "losses": 2,
           "draws": 0
-        },
-        "Terrageddon": {
-          "wins": 2,
-          "losses": 3,
-          "draws": 1
-        },
-        "Landstill": {
-          "wins": 1,
-          "losses": 1,
-          "draws": 1
         },
         "Predict Medallion": {
           "wins": 1,
@@ -157,11 +249,6 @@
         "UGR Survival Madness": {
           "wins": 2,
           "losses": 1,
-          "draws": 0
-        },
-        "Sligh": {
-          "wins": 2,
-          "losses": 4,
           "draws": 0
         },
         "Oath Ponza": {

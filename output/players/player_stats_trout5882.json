@@ -2,17 +2,26 @@
   "username": "Trout5882",
   "displayName": "Trout5882",
   "overallStats": {
-    "totalTournaments": 1,
+    "totalTournaments": 2,
     "totalPoints": 0,
-    "totalMatches": 1,
-    "matchRecord": "0-1-0",
+    "totalMatches": 4,
+    "matchRecord": "0-4-0",
     "matchWinPercentage": 0,
-    "gameRecord": "1-2-0",
-    "gameWinPercentage": 0.3333333333333333,
+    "gameRecord": "1-8-0",
+    "gameWinPercentage": 0.1111111111111111,
     "trophies": 0,
     "belts": 0
   },
   "leagueStats": [
+    {
+      "leagueName": "Q3 2026",
+      "events": 1,
+      "points": 0,
+      "matchRecord": "0-3-0",
+      "matchWinPercentage": 0,
+      "gameRecord": "0-6-0",
+      "gameWinPercentage": 0
+    },
     {
       "leagueName": "Q2 2026",
       "events": 1,
@@ -24,6 +33,20 @@
     }
   ],
   "deckStats": [
+    {
+      "deckName": "jank",
+      "events": 1,
+      "matchWins": 0,
+      "matchLosses": 3,
+      "matchDraws": 0,
+      "matchRecord": "0-3-0",
+      "matchWinPercentage": 0,
+      "gameWins": 3,
+      "gameLosses": 5,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.375,
+      "trophies": 0
+    },
     {
       "deckName": "Sligh",
       "events": 1,
@@ -40,6 +63,81 @@
     }
   ],
   "headToHead": [
+    {
+      "opponentUsername": "Taylorhol",
+      "opponentDisplayName": "Taylorhol",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "matches": [
+        {
+          "tournamentId": "445675",
+          "dateDisplay": "July 23, 2026",
+          "result": "L",
+          "playerDeck": "jank",
+          "opponentDeck": "HFEB",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "AlldoAurelis",
+      "opponentDisplayName": "AlldoAurelis",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "matches": [
+        {
+          "tournamentId": "445675",
+          "dateDisplay": "July 23, 2026",
+          "result": "L",
+          "playerDeck": "jank",
+          "opponentDeck": "Moneyball",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "BrentMack",
+      "opponentDisplayName": "BrentMack",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "matches": [
+        {
+          "tournamentId": "445675",
+          "dateDisplay": "July 23, 2026",
+          "result": "L",
+          "playerDeck": "jank",
+          "opponentDeck": "Terrageddon",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
     {
       "opponentUsername": "remixmtg",
       "opponentDisplayName": "Jeremy Siegel",
@@ -67,6 +165,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "445675",
+      "dateDisplay": "July 23, 2026",
+      "playerCount": 26,
+      "trophyCount": 3,
+      "roundCount": 3,
+      "rank": 25,
+      "points": 0,
+      "matchRecord": "0-3-0",
+      "matchWinPercentage": 0,
+      "gameWinPercentage": 0.3333333,
+      "deck": "jank"
+    },
     {
       "tournamentId": "430556",
       "dateDisplay": "May 21, 2026",

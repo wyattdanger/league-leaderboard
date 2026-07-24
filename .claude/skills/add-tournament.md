@@ -19,12 +19,19 @@ When the user provides a tournament ID (from Melee.gg), follow these steps in or
    - Add the new tournament ID to the appropriate league's `tournaments` array
    - Place it at the top of the list (newest first)
 
-3. **Generate deck template**:
-   ```bash
-   npm run generate-deck-template
-   ```
-   - This prefills all player usernames with `_` placeholders in `decks.yml`
-   - Creates entries under the tournament ID key
+3. **Prepare deck template in decks.yml**:
+   - Read `output/tournament_<id>/Round_3_Standings.json`
+   - Extract all player usernames from the standings
+   - Add tournament entry to top of `decks.yml` with format:
+     ```yaml
+     # Tournament <id> - <date>
+     '<id>':
+       username1: _
+       username2: _
+       ...
+     ```
+   - Sort usernames alphabetically
+   - **DO THIS IMMEDIATELY** - don't wait for user to ask
 
 4. **PAUSE HERE** - Wait for user to provide deck data
    - User will give you deck names for each player
@@ -38,24 +45,31 @@ When the user provides a tournament ID (from Melee.gg), follow these steps in or
    npm run sync-league  # Syncs current (first) league
    ```
 
-6. **Generate page metadata** (for Open Graph social previews):
-   ```bash
-   npm run generate-metadata -- <tournament_id>
-   ```
-
-7. **Regenerate player stats**:
+6. **Regenerate player stats**:
    ```bash
    npm run player-stats
    ```
    - This reads deck data from `decks.yml`
    - Must be done AFTER deck data is filled in
 
-8. **Build the site**:
+7. **Regenerate metagame data**:
+   ```bash
+   npm run generate-metagame
+   ```
+   - This aggregates deck data across all leagues
+   - Must be done AFTER player stats
+
+8. **Generate page metadata** (for Open Graph social previews):
+   ```bash
+   npm run generate-metadata -- <tournament_id>
+   ```
+
+9. **Build the site**:
    ```bash
    npm run build
    ```
 
-9. **Commit and push**:
+10. **Commit and push**:
    ```bash
    git add leagues.yml decks.yml output/
    git commit -m "Add tournament <tournament_id> to Q* 20**
@@ -99,8 +113,9 @@ This will:
 3. Pause for you to fill in deck data
 4. Sync league standings
 5. Regenerate player stats
-6. Generate page metadata
-7. Build the site
+6. Regenerate metagame data
+7. Generate page metadata
+8. Build the site
 
 You'll still need to commit and push manually after this.
 
@@ -124,7 +139,7 @@ You'll still need to commit and push manually after this.
 
 **User says**: "updated decks from ppl" or "ok i updated decks again"
 - Follow the "Handling Deck Data Updates" workflow
-- Always regenerate player stats → metadata → build → commit → push
+- Always regenerate player stats → metagame data → metadata → build → commit → push
 
 ## Data Structure References
 

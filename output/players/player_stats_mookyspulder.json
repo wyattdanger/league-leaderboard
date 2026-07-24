@@ -2,25 +2,25 @@
   "username": "Mookyspulder",
   "displayName": "Dan S",
   "overallStats": {
-    "totalTournaments": 16,
-    "totalPoints": 89,
-    "totalMatches": 48,
-    "matchRecord": "29-17-2",
-    "matchWinPercentage": 0.625,
-    "gameRecord": "67-48-1",
-    "gameWinPercentage": 0.5775862068965517,
+    "totalTournaments": 17,
+    "totalPoints": 95,
+    "totalMatches": 51,
+    "matchRecord": "31-18-2",
+    "matchWinPercentage": 0.6274509803921569,
+    "gameRecord": "72-51-1",
+    "gameWinPercentage": 0.5806451612903226,
     "trophies": 3,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q3 2026",
-      "events": 2,
-      "points": 9,
-      "matchRecord": "3-3-0",
-      "matchWinPercentage": 0.5,
-      "gameRecord": "7-8-1",
-      "gameWinPercentage": 0.46875
+      "events": 3,
+      "points": 15,
+      "matchRecord": "5-4-0",
+      "matchWinPercentage": 0.5555555555555556,
+      "gameRecord": "12-11-1",
+      "gameWinPercentage": 0.5208333333333334
     },
     {
       "leagueName": "Q2 2026",
@@ -67,14 +67,14 @@
     },
     {
       "deckName": "Clerics",
-      "events": 2,
-      "matchWins": 3,
-      "matchLosses": 2,
+      "events": 3,
+      "matchWins": 5,
+      "matchLosses": 3,
       "matchDraws": 1,
-      "matchRecord": "3-2-1",
-      "matchWinPercentage": 0.5833333333333334,
-      "gameWins": 10,
-      "gameLosses": 6,
+      "matchRecord": "5-3-1",
+      "matchWinPercentage": 0.6111111111111112,
+      "gameWins": 15,
+      "gameLosses": 9,
       "gameDraws": 0,
       "gameWinPercentage": 0.625,
       "trophies": 1
@@ -318,6 +318,51 @@
       ]
     },
     {
+      "opponentUsername": "AlfredG",
+      "opponentDisplayName": "AlfredG",
+      "matchesPlayed": 3,
+      "matchWins": 2,
+      "matchLosses": 0,
+      "matchDraws": 1,
+      "matchWinPercentage": 0.8333333333333334,
+      "gameWins": 5,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.7142857142857143,
+      "matches": [
+        {
+          "tournamentId": "445675",
+          "dateDisplay": "July 23, 2026",
+          "result": "W",
+          "playerDeck": "Clerics",
+          "opponentDeck": "_",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "436157",
+          "dateDisplay": "June 18, 2026",
+          "result": "D",
+          "playerDeck": "Psychatog",
+          "opponentDeck": "BW Control",
+          "playerGameWins": 1,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "436155",
+          "dateDisplay": "June 11, 2026",
+          "result": "W",
+          "playerDeck": "Life Clerics",
+          "opponentDeck": "BW Control",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "swbmtg",
       "opponentDisplayName": "Stephen Bush",
       "matchesPlayed": 3,
@@ -548,41 +593,6 @@
       ]
     },
     {
-      "opponentUsername": "AlfredG",
-      "opponentDisplayName": "AlfredG",
-      "matchesPlayed": 2,
-      "matchWins": 1,
-      "matchLosses": 0,
-      "matchDraws": 1,
-      "matchWinPercentage": 0.75,
-      "gameWins": 3,
-      "gameLosses": 2,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.6,
-      "matches": [
-        {
-          "tournamentId": "436157",
-          "dateDisplay": "June 18, 2026",
-          "result": "D",
-          "playerDeck": "Psychatog",
-          "opponentDeck": "BW Control",
-          "playerGameWins": 1,
-          "opponentGameWins": 1,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "436155",
-          "dateDisplay": "June 11, 2026",
-          "result": "W",
-          "playerDeck": "Life Clerics",
-          "opponentDeck": "BW Control",
-          "playerGameWins": 2,
-          "opponentGameWins": 1,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
       "opponentUsername": "PCavalcanti",
       "opponentDisplayName": "PCavalcanti",
       "matchesPlayed": 2,
@@ -717,6 +727,56 @@
           "playerDeck": "Moneyball Black",
           "opponentDeck": "Pattern Rector",
           "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "SamFeldman",
+      "opponentDisplayName": "Samuel Feldman",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6666666666666666,
+      "matches": [
+        {
+          "tournamentId": "445675",
+          "dateDisplay": "July 23, 2026",
+          "result": "W",
+          "playerDeck": "Clerics",
+          "opponentDeck": "Sligh",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "Taylorhol",
+      "opponentDisplayName": "Taylorhol",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "matches": [
+        {
+          "tournamentId": "445675",
+          "dateDisplay": "July 23, 2026",
+          "result": "L",
+          "playerDeck": "Clerics",
+          "opponentDeck": "HFEB",
+          "playerGameWins": 1,
           "opponentGameWins": 2,
           "gameDraws": 0
         }
@@ -1124,6 +1184,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "445675",
+      "dateDisplay": "July 23, 2026",
+      "playerCount": 26,
+      "trophyCount": 3,
+      "roundCount": 3,
+      "rank": 5,
+      "points": 6,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWinPercentage": 0.625,
+      "deck": "Clerics"
+    },
     {
       "tournamentId": "445673",
       "dateDisplay": "July 16, 2026",
