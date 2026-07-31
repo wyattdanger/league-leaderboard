@@ -2,25 +2,25 @@
   "username": "swbmtg",
   "displayName": "Stephen Bush",
   "overallStats": {
-    "totalTournaments": 51,
-    "totalPoints": 326,
-    "totalMatches": 153,
-    "matchRecord": "106-39-8",
-    "matchWinPercentage": 0.7189542483660131,
-    "gameRecord": "237-127-4",
-    "gameWinPercentage": 0.6440217391304348,
+    "totalTournaments": 52,
+    "totalPoints": 329,
+    "totalMatches": 156,
+    "matchRecord": "107-41-8",
+    "matchWinPercentage": 0.7115384615384616,
+    "gameRecord": "240-131-4",
+    "gameWinPercentage": 0.64,
     "trophies": 14,
     "belts": 1
   },
   "leagueStats": [
     {
       "leagueName": "Q3 2026",
-      "events": 4,
-      "points": 21,
-      "matchRecord": "7-5-0",
-      "matchWinPercentage": 0.5833333333333334,
-      "gameRecord": "15-12-1",
-      "gameWinPercentage": 0.5535714285714286
+      "events": 5,
+      "points": 24,
+      "matchRecord": "8-7-0",
+      "matchWinPercentage": 0.5333333333333333,
+      "gameRecord": "18-16-1",
+      "gameWinPercentage": 0.5285714285714286
     },
     {
       "leagueName": "Q2 2026",
@@ -420,6 +420,20 @@
       "gameLosses": 4,
       "gameDraws": 0,
       "gameWinPercentage": 0.5,
+      "trophies": 0
+    },
+    {
+      "deckName": "GR Bad Cards",
+      "events": 1,
+      "matchWins": 1,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 3,
+      "gameLosses": 5,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.375,
       "trophies": 0
     },
     {
@@ -1760,6 +1774,41 @@
       ]
     },
     {
+      "opponentUsername": "WillReddy",
+      "opponentDisplayName": "WillReddy",
+      "matchesPlayed": 2,
+      "matchWins": 1,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.5,
+      "gameWins": 3,
+      "gameLosses": 3,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5,
+      "matches": [
+        {
+          "tournamentId": "445676",
+          "dateDisplay": "July 30, 2026",
+          "result": "L",
+          "playerDeck": "GR Bad Cards",
+          "opponentDeck": "Mono Red Ponza",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "432258",
+          "dateDisplay": "May 28, 2026",
+          "result": "W",
+          "playerDeck": "Oath Ponza",
+          "opponentDeck": "Goblins",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "Gaunology",
       "opponentDisplayName": "Gaunology",
       "matchesPlayed": 2,
@@ -2110,6 +2159,31 @@
       ]
     },
     {
+      "opponentUsername": "weidnent",
+      "opponentDisplayName": "Nicholas Weidner",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "matches": [
+        {
+          "tournamentId": "445676",
+          "dateDisplay": "July 30, 2026",
+          "result": "L",
+          "playerDeck": "GR Bad Cards",
+          "opponentDeck": "Balancing Act",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "BrentMack",
       "opponentDisplayName": "BrentMack",
       "matchesPlayed": 1,
@@ -2255,31 +2329,6 @@
           "opponentDeck": "Mad Dogs",
           "playerGameWins": 2,
           "opponentGameWins": 0,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "WillReddy",
-      "opponentDisplayName": "WillReddy",
-      "matchesPlayed": 1,
-      "matchWins": 1,
-      "matchLosses": 0,
-      "matchDraws": 0,
-      "matchWinPercentage": 1,
-      "gameWins": 2,
-      "gameLosses": 1,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.6666666666666666,
-      "matches": [
-        {
-          "tournamentId": "432258",
-          "dateDisplay": "May 28, 2026",
-          "result": "W",
-          "playerDeck": "Oath Ponza",
-          "opponentDeck": "Goblins",
-          "playerGameWins": 2,
-          "opponentGameWins": 1,
           "gameDraws": 0
         }
       ]
@@ -2786,6 +2835,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "445676",
+      "dateDisplay": "July 30, 2026",
+      "playerCount": 15,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 9,
+      "points": 3,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWinPercentage": 0.4285714,
+      "deck": "GR Bad Cards"
+    },
     {
       "tournamentId": "445675",
       "dateDisplay": "July 23, 2026",

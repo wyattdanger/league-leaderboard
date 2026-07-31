@@ -2,25 +2,25 @@
   "username": "weidnent",
   "displayName": "Nicholas Weidner",
   "overallStats": {
-    "totalTournaments": 14,
-    "totalPoints": 44,
-    "totalMatches": 42,
-    "matchRecord": "14-26-2",
-    "matchWinPercentage": 0.35714285714285715,
-    "gameRecord": "40-62-0",
-    "gameWinPercentage": 0.39215686274509803,
+    "totalTournaments": 15,
+    "totalPoints": 50,
+    "totalMatches": 45,
+    "matchRecord": "16-27-2",
+    "matchWinPercentage": 0.37777777777777777,
+    "gameRecord": "44-64-0",
+    "gameWinPercentage": 0.4074074074074074,
     "trophies": 0,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q3 2026",
-      "events": 3,
-      "points": 19,
-      "matchRecord": "6-2-1",
-      "matchWinPercentage": 0.7222222222222222,
-      "gameRecord": "14-9-0",
-      "gameWinPercentage": 0.6086956521739131
+      "events": 4,
+      "points": 25,
+      "matchRecord": "8-3-1",
+      "matchWinPercentage": 0.7083333333333334,
+      "gameRecord": "18-11-0",
+      "gameWinPercentage": 0.6206896551724138
     },
     {
       "leagueName": "Q2 2026",
@@ -68,6 +68,20 @@
       "gameLosses": 8,
       "gameDraws": 0,
       "gameWinPercentage": 0.5,
+      "trophies": 0
+    },
+    {
+      "deckName": "Balancing Act",
+      "events": 1,
+      "matchWins": 2,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 5,
+      "gameLosses": 3,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.625,
       "trophies": 0
     },
     {
@@ -361,6 +375,41 @@
       ]
     },
     {
+      "opponentUsername": "ByerBeware",
+      "opponentDisplayName": "ByerBeware",
+      "matchesPlayed": 2,
+      "matchWins": 1,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.5,
+      "gameWins": 2,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5,
+      "matches": [
+        {
+          "tournamentId": "445676",
+          "dateDisplay": "July 30, 2026",
+          "result": "L",
+          "playerDeck": "Balancing Act",
+          "opponentDeck": "Dreadnought",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "413370",
+          "dateDisplay": "March 12, 2026",
+          "result": "W",
+          "playerDeck": "Reanimator",
+          "opponentDeck": "PandeBurst",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "avoellmer",
       "opponentDisplayName": "avoellmer",
       "matchesPlayed": 2,
@@ -531,6 +580,56 @@
           "opponentDeck": "Contamination",
           "playerGameWins": 1,
           "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "swbmtg",
+      "opponentDisplayName": "Stephen Bush",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "matches": [
+        {
+          "tournamentId": "445676",
+          "dateDisplay": "July 30, 2026",
+          "result": "W",
+          "playerDeck": "Balancing Act",
+          "opponentDeck": "GR Bad Cards",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "PCavalcanti",
+      "opponentDisplayName": "PCavalcanti",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "matches": [
+        {
+          "tournamentId": "445676",
+          "dateDisplay": "July 30, 2026",
+          "result": "W",
+          "playerDeck": "Balancing Act",
+          "opponentDeck": "UGr Madness",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
           "gameDraws": 0
         }
       ]
@@ -984,34 +1083,22 @@
           "gameDraws": 0
         }
       ]
-    },
-    {
-      "opponentUsername": "ByerBeware",
-      "opponentDisplayName": "ByerBeware",
-      "matchesPlayed": 1,
-      "matchWins": 1,
-      "matchLosses": 0,
-      "matchDraws": 0,
-      "matchWinPercentage": 1,
-      "gameWins": 2,
-      "gameLosses": 0,
-      "gameDraws": 0,
-      "gameWinPercentage": 1,
-      "matches": [
-        {
-          "tournamentId": "413370",
-          "dateDisplay": "March 12, 2026",
-          "result": "W",
-          "playerDeck": "Reanimator",
-          "opponentDeck": "PandeBurst",
-          "playerGameWins": 2,
-          "opponentGameWins": 0,
-          "gameDraws": 0
-        }
-      ]
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "445676",
+      "dateDisplay": "July 30, 2026",
+      "playerCount": 15,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 4,
+      "points": 6,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWinPercentage": 0.6666667,
+      "deck": "Balancing Act"
+    },
     {
       "tournamentId": "445673",
       "dateDisplay": "July 16, 2026",

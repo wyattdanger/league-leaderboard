@@ -2,28 +2,42 @@
   "username": "Shyft",
   "displayName": "Shyft",
   "overallStats": {
-    "totalTournaments": 2,
-    "totalPoints": 6,
-    "totalMatches": 6,
-    "matchRecord": "2-4-0",
+    "totalTournaments": 3,
+    "totalPoints": 9,
+    "totalMatches": 9,
+    "matchRecord": "3-6-0",
     "matchWinPercentage": 0.3333333333333333,
-    "gameRecord": "6-9-0",
-    "gameWinPercentage": 0.4,
+    "gameRecord": "8-13-0",
+    "gameWinPercentage": 0.38095238095238093,
     "trophies": 0,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q3 2026",
-      "events": 2,
-      "points": 6,
-      "matchRecord": "2-4-0",
+      "events": 3,
+      "points": 9,
+      "matchRecord": "3-6-0",
       "matchWinPercentage": 0.3333333333333333,
-      "gameRecord": "6-9-0",
-      "gameWinPercentage": 0.4
+      "gameRecord": "8-13-0",
+      "gameWinPercentage": 0.38095238095238093
     }
   ],
   "deckStats": [
+    {
+      "deckName": "Sligh",
+      "events": 1,
+      "matchWins": 1,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 3,
+      "gameLosses": 5,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.375,
+      "trophies": 0
+    },
     {
       "deckName": "Merfolk",
       "events": 1,
@@ -54,6 +68,56 @@
     }
   ],
   "headToHead": [
+    {
+      "opponentUsername": "Mookyspulder",
+      "opponentDisplayName": "Dan S",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "matches": [
+        {
+          "tournamentId": "445676",
+          "dateDisplay": "July 30, 2026",
+          "result": "L",
+          "playerDeck": "Sligh",
+          "opponentDeck": "Life",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "WillReddy",
+      "opponentDisplayName": "WillReddy",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "matches": [
+        {
+          "tournamentId": "445676",
+          "dateDisplay": "July 30, 2026",
+          "result": "L",
+          "playerDeck": "Sligh",
+          "opponentDeck": "Mono Red Ponza",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
     {
       "opponentUsername": "Gaunology",
       "opponentDisplayName": "Gaunology",
@@ -181,6 +245,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "445676",
+      "dateDisplay": "July 30, 2026",
+      "playerCount": 15,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 11,
+      "points": 3,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWinPercentage": 0.3333333,
+      "deck": "Sligh"
+    },
     {
       "tournamentId": "445675",
       "dateDisplay": "July 23, 2026",

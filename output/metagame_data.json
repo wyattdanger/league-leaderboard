@@ -3,23 +3,34 @@
     {
       "leagueName": "Q3 2026",
       "tournaments": [
+        445676,
         445675,
         445673,
         436160,
         436159
       ],
       "deckCounts": {
+        "Deadguy Ale": 1,
+        "Dreadnought": 7,
+        "Turbo Lands": 1,
+        "Burn": 13,
+        "EsperTog": 1,
+        "Terrageddon": 4,
+        "U/G Survival Opposition": 1,
+        "Life": 1,
+        "UGr Madness": 1,
+        "Sligh": 5,
+        "Mono Red Ponza": 1,
+        "Enchantress": 1,
+        "GR Bad Cards": 1,
+        "Balancing Act": 1,
         "Moneyball": 1,
         "UW Control": 1,
-        "Terrageddon": 3,
         "Replenish": 1,
         "4c Oath Ponza": 1,
-        "Dreadnought": 6,
         "5c Oath Ponza": 1,
         "Clerics": 1,
-        "Burn": 12,
         "Cradle Control": 2,
-        "Sligh": 3,
         "Merfolk": 1,
         "HFEB": 1,
         "Jank": 1,
@@ -58,14 +69,85 @@
         "Dragon Reanimator": 1
       },
       "deckTrophies": {
+        "Dreadnought": 3,
+        "Terrageddon": 1,
         "UW Control": 1,
-        "Dreadnought": 2,
         "HFEB": 1,
         "Burn": 4,
         "Moneyball Black": 1,
         "UG Survival Opposition": 1
       },
       "deckMatchStats": {
+        "Deadguy Ale": {
+          "wins": 1,
+          "losses": 2,
+          "draws": 0
+        },
+        "Dreadnought": {
+          "wins": 13,
+          "losses": 8,
+          "draws": 0
+        },
+        "Turbo Lands": {
+          "wins": 2,
+          "losses": 1,
+          "draws": 0
+        },
+        "Burn": {
+          "wins": 24,
+          "losses": 13,
+          "draws": 2
+        },
+        "EsperTog": {
+          "wins": 0,
+          "losses": 3,
+          "draws": 0
+        },
+        "Terrageddon": {
+          "wins": 6,
+          "losses": 4,
+          "draws": 2
+        },
+        "U/G Survival Opposition": {
+          "wins": 1,
+          "losses": 2,
+          "draws": 0
+        },
+        "Life": {
+          "wins": 2,
+          "losses": 1,
+          "draws": 0
+        },
+        "UGr Madness": {
+          "wins": 2,
+          "losses": 1,
+          "draws": 0
+        },
+        "Sligh": {
+          "wins": 6,
+          "losses": 9,
+          "draws": 0
+        },
+        "Mono Red Ponza": {
+          "wins": 2,
+          "losses": 1,
+          "draws": 0
+        },
+        "Enchantress": {
+          "wins": 1,
+          "losses": 2,
+          "draws": 0
+        },
+        "GR Bad Cards": {
+          "wins": 1,
+          "losses": 2,
+          "draws": 0
+        },
+        "Balancing Act": {
+          "wins": 2,
+          "losses": 1,
+          "draws": 0
+        },
         "Moneyball": {
           "wins": 2,
           "losses": 1,
@@ -76,11 +158,6 @@
           "losses": 0,
           "draws": 0
         },
-        "Terrageddon": {
-          "wins": 3,
-          "losses": 4,
-          "draws": 2
-        },
         "Replenish": {
           "wins": 1,
           "losses": 2,
@@ -89,11 +166,6 @@
         "4c Oath Ponza": {
           "wins": 1,
           "losses": 2,
-          "draws": 0
-        },
-        "Dreadnought": {
-          "wins": 10,
-          "losses": 8,
           "draws": 0
         },
         "5c Oath Ponza": {
@@ -106,20 +178,10 @@
           "losses": 1,
           "draws": 0
         },
-        "Burn": {
-          "wins": 22,
-          "losses": 12,
-          "draws": 2
-        },
         "Cradle Control": {
           "wins": 0,
           "losses": 3,
           "draws": 1
-        },
-        "Sligh": {
-          "wins": 4,
-          "losses": 5,
-          "draws": 0
         },
         "Merfolk": {
           "wins": 1,

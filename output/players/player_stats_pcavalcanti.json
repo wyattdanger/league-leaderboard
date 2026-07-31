@@ -2,25 +2,25 @@
   "username": "PCavalcanti",
   "displayName": "PCavalcanti",
   "overallStats": {
-    "totalTournaments": 18,
-    "totalPoints": 87,
-    "totalMatches": 54,
-    "matchRecord": "28-23-3",
-    "matchWinPercentage": 0.5462962962962963,
-    "gameRecord": "74-62-0",
-    "gameWinPercentage": 0.5441176470588235,
+    "totalTournaments": 19,
+    "totalPoints": 93,
+    "totalMatches": 57,
+    "matchRecord": "30-24-3",
+    "matchWinPercentage": 0.5526315789473685,
+    "gameRecord": "78-65-0",
+    "gameWinPercentage": 0.5454545454545454,
     "trophies": 1,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q3 2026",
-      "events": 4,
-      "points": 20,
-      "matchRecord": "6-4-2",
-      "matchWinPercentage": 0.5833333333333334,
-      "gameRecord": "17-12-0",
-      "gameWinPercentage": 0.5862068965517241
+      "events": 5,
+      "points": 26,
+      "matchRecord": "8-5-2",
+      "matchWinPercentage": 0.6,
+      "gameRecord": "21-15-0",
+      "gameWinPercentage": 0.5833333333333334
     },
     {
       "leagueName": "Q2 2026",
@@ -108,6 +108,20 @@
       "trophies": 0
     },
     {
+      "deckName": "UGr Madness",
+      "events": 1,
+      "matchWins": 2,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 5,
+      "gameLosses": 3,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.625,
+      "trophies": 0
+    },
+    {
       "deckName": "UGR Survival Madness",
       "events": 1,
       "matchWins": 2,
@@ -165,6 +179,61 @@
     }
   ],
   "headToHead": [
+    {
+      "opponentUsername": "madmanpoet",
+      "opponentDisplayName": "Michael Flores",
+      "matchesPlayed": 4,
+      "matchWins": 1,
+      "matchLosses": 3,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.25,
+      "gameWins": 5,
+      "gameLosses": 6,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.45454545454545453,
+      "matches": [
+        {
+          "tournamentId": "445676",
+          "dateDisplay": "July 30, 2026",
+          "result": "W",
+          "playerDeck": "UGr Madness",
+          "opponentDeck": "Sligh",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "436159",
+          "dateDisplay": "July 2, 2026",
+          "result": "L",
+          "playerDeck": "Mono-Black",
+          "opponentDeck": "RG Ponza Oath",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "436157",
+          "dateDisplay": "June 18, 2026",
+          "result": "L",
+          "playerDeck": "RG Madness Burn",
+          "opponentDeck": "The Rock",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "410832",
+          "dateDisplay": "March 5, 2026",
+          "result": "L",
+          "playerDeck": "Medvedev Burn",
+          "opponentDeck": "Gamekeeper Rock",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
     {
       "opponentUsername": "AlldoAurelis",
       "opponentDisplayName": "AlldoAurelis",
@@ -249,51 +318,6 @@
           "result": "L",
           "playerDeck": "Burn",
           "opponentDeck": "HFEB",
-          "playerGameWins": 1,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "madmanpoet",
-      "opponentDisplayName": "Michael Flores",
-      "matchesPlayed": 3,
-      "matchWins": 0,
-      "matchLosses": 3,
-      "matchDraws": 0,
-      "matchWinPercentage": 0,
-      "gameWins": 3,
-      "gameLosses": 6,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.3333333333333333,
-      "matches": [
-        {
-          "tournamentId": "436159",
-          "dateDisplay": "July 2, 2026",
-          "result": "L",
-          "playerDeck": "Mono-Black",
-          "opponentDeck": "RG Ponza Oath",
-          "playerGameWins": 1,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "436157",
-          "dateDisplay": "June 18, 2026",
-          "result": "L",
-          "playerDeck": "RG Madness Burn",
-          "opponentDeck": "The Rock",
-          "playerGameWins": 1,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "410832",
-          "dateDisplay": "March 5, 2026",
-          "result": "L",
-          "playerDeck": "Medvedev Burn",
-          "opponentDeck": "Gamekeeper Rock",
           "playerGameWins": 1,
           "opponentGameWins": 2,
           "gameDraws": 0
@@ -476,6 +500,41 @@
           "opponentDeck": "Dreadnought",
           "playerGameWins": 0,
           "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "AlfredG",
+      "opponentDisplayName": "AlfredG",
+      "matchesPlayed": 2,
+      "matchWins": 2,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 4,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6666666666666666,
+      "matches": [
+        {
+          "tournamentId": "445676",
+          "dateDisplay": "July 30, 2026",
+          "result": "W",
+          "playerDeck": "UGr Madness",
+          "opponentDeck": "Deadguy Ale",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "436157",
+          "dateDisplay": "June 18, 2026",
+          "result": "W",
+          "playerDeck": "RG Madness Burn",
+          "opponentDeck": "BW Control",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
           "gameDraws": 0
         }
       ]
@@ -691,6 +750,31 @@
       ]
     },
     {
+      "opponentUsername": "weidnent",
+      "opponentDisplayName": "Nicholas Weidner",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "matches": [
+        {
+          "tournamentId": "445676",
+          "dateDisplay": "July 30, 2026",
+          "result": "L",
+          "playerDeck": "UGr Madness",
+          "opponentDeck": "Balancing Act",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "WillReddy",
       "opponentDisplayName": "WillReddy",
       "matchesPlayed": 1,
@@ -836,31 +920,6 @@
           "opponentDeck": "_",
           "playerGameWins": 2,
           "opponentGameWins": 0,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "AlfredG",
-      "opponentDisplayName": "AlfredG",
-      "matchesPlayed": 1,
-      "matchWins": 1,
-      "matchLosses": 0,
-      "matchDraws": 0,
-      "matchWinPercentage": 1,
-      "gameWins": 2,
-      "gameLosses": 1,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.6666666666666666,
-      "matches": [
-        {
-          "tournamentId": "436157",
-          "dateDisplay": "June 18, 2026",
-          "result": "W",
-          "playerDeck": "RG Madness Burn",
-          "opponentDeck": "BW Control",
-          "playerGameWins": 2,
-          "opponentGameWins": 1,
           "gameDraws": 0
         }
       ]
@@ -1217,6 +1276,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "445676",
+      "dateDisplay": "July 30, 2026",
+      "playerCount": 15,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 7,
+      "points": 6,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWinPercentage": 0.5714286,
+      "deck": "UGr Madness"
+    },
     {
       "tournamentId": "445675",
       "dateDisplay": "July 23, 2026",

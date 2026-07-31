@@ -2,25 +2,25 @@
   "username": "KYamada97",
   "displayName": "KYamada97",
   "overallStats": {
-    "totalTournaments": 1,
+    "totalTournaments": 2,
     "totalPoints": 6,
-    "totalMatches": 3,
-    "matchRecord": "2-1-0",
-    "matchWinPercentage": 0.6666666666666666,
-    "gameRecord": "4-2-0",
-    "gameWinPercentage": 0.6666666666666666,
+    "totalMatches": 6,
+    "matchRecord": "2-4-0",
+    "matchWinPercentage": 0.3333333333333333,
+    "gameRecord": "4-8-0",
+    "gameWinPercentage": 0.3333333333333333,
     "trophies": 0,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q3 2026",
-      "events": 1,
+      "events": 2,
       "points": 6,
-      "matchRecord": "2-1-0",
-      "matchWinPercentage": 0.6666666666666666,
-      "gameRecord": "4-2-0",
-      "gameWinPercentage": 0.6666666666666666
+      "matchRecord": "2-4-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameRecord": "4-8-0",
+      "gameWinPercentage": 0.3333333333333333
     }
   ],
   "deckStats": [
@@ -37,9 +37,98 @@
       "gameDraws": 0,
       "gameWinPercentage": 0.625,
       "trophies": 0
+    },
+    {
+      "deckName": "EsperTog",
+      "events": 1,
+      "matchWins": 0,
+      "matchLosses": 3,
+      "matchDraws": 0,
+      "matchRecord": "0-3-0",
+      "matchWinPercentage": 0,
+      "gameWins": 3,
+      "gameLosses": 5,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.375,
+      "trophies": 0
     }
   ],
   "headToHead": [
+    {
+      "opponentUsername": "LuisNeiman",
+      "opponentDisplayName": "LuisNeiman",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "matches": [
+        {
+          "tournamentId": "445676",
+          "dateDisplay": "July 30, 2026",
+          "result": "L",
+          "playerDeck": "EsperTog",
+          "opponentDeck": "Terrageddon",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "DaveKaplan",
+      "opponentDisplayName": "Dave Kaplan",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "matches": [
+        {
+          "tournamentId": "445676",
+          "dateDisplay": "July 30, 2026",
+          "result": "L",
+          "playerDeck": "EsperTog",
+          "opponentDeck": "Burn",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "AlfredG",
+      "opponentDisplayName": "AlfredG",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "matches": [
+        {
+          "tournamentId": "445676",
+          "dateDisplay": "July 30, 2026",
+          "result": "L",
+          "playerDeck": "EsperTog",
+          "opponentDeck": "Deadguy Ale",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
     {
       "opponentUsername": "sylvanisator",
       "opponentDisplayName": "sylvanisator",
@@ -117,6 +206,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "445676",
+      "dateDisplay": "July 30, 2026",
+      "playerCount": 15,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 15,
+      "points": 0,
+      "matchRecord": "0-3-0",
+      "matchWinPercentage": 0,
+      "gameWinPercentage": 0.3333333,
+      "deck": "EsperTog"
+    },
     {
       "tournamentId": "445673",
       "dateDisplay": "July 16, 2026",
