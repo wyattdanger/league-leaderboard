@@ -55,26 +55,26 @@ async function processTournament(tournamentId: string) {
     console.log('\n📡 Step 1: Scraping tournament data...');
     await runCommand('npm', ['run', 'scrape', '--', tournamentId]);
 
-    // Step 2: Generate deck template (if tournament doesn't have deck data)
+    // Step 2: Check if tournament needs to be added to decks.yml
     console.log('\n📋 Step 2: Checking deck data...');
     const decksPath = path.join(process.cwd(), 'decks.yml');
-    let needsDeckTemplate = true;
+    let isNewTournament = true;
 
     if (fs.existsSync(decksPath)) {
       const decksYaml = fs.readFileSync(decksPath, 'utf-8');
       const allDecks = yaml.load(decksYaml) as Record<string, Record<string, string>>;
-      needsDeckTemplate = !allDecks[tournamentId];
+      isNewTournament = !allDecks[tournamentId];
     }
 
-    if (needsDeckTemplate) {
-      console.log('  No deck data found, generating template...');
-      await runCommand('npm', ['run', 'generate-deck-template']);
+    if (isNewTournament) {
+      console.log('  Tournament not in decks.yml, adding...');
+      await runCommand('npm', ['run', 'add-tournament-to-decks', tournamentId]);
       console.log('\n⚠️  IMPORTANT: Fill in deck data in decks.yml before continuing!');
       console.log('  After filling in decks, run:');
       console.log(`    npm run process-tournament -- ${tournamentId} --skip-scrape\n`);
       return; // Exit here so user can fill in decks
     } else {
-      console.log('  ✓ Deck data already exists');
+      console.log('  ✓ Tournament already in decks.yml');
     }
 
     // Step 3: Sync league standings

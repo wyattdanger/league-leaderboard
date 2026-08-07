@@ -380,47 +380,38 @@ When adding a new tournament, follow this EXACT sequence to ensure deck data is 
 
 **Phase 1: Scraping and Preparation (BEFORE filling deck data)**
 
-1. Scrape tournament data:
+1. Use the automated workflow (recommended):
    ```bash
-   npm run scrape -- <tournament_id>
+   npm run process-tournament -- <tournament_id>
    ```
 
-2. Add tournament to `leagues.yml` under appropriate league
+   This will:
+   - Scrape tournament data from Melee.gg
+   - Automatically add the tournament to the TOP of `decks.yml` with all player usernames
+   - Stop and wait for you to fill in deck data
 
-3. Generate deck template (prefills player usernames):
-   ```bash
-   npm run generate-deck-template
-   ```
-
-4. **PAUSE HERE** - Fill in deck data in `decks.yml` for the new tournament
+2. **PAUSE HERE** - Fill in deck data in `decks.yml` for the new tournament
    - All player usernames will be prefilled with `_` placeholders
    - Replace `_` with actual deck names
    - DO NOT proceed until ALL deck data is filled in
 
+3. Add tournament to `leagues.yml` under appropriate league (if not already there)
+
 **Phase 2: Generation (AFTER deck data is complete)**
 
-5. Sync league standings:
+4. Continue the automated workflow:
    ```bash
-   npm run sync-league                      # Sync current league
-   npm run sync-league -- --league "Q4 2025"  # Sync specific league
+   npm run process-tournament -- <tournament_id> --skip-scrape
    ```
 
-6. Regenerate player stats (this reads deck data from decks.yml):
-   ```bash
-   npm run player-stats
-   ```
+   This will:
+   - Sync league standings
+   - Regenerate player stats (reads deck data from decks.yml)
+   - Regenerate metagame data
+   - Generate page metadata for Open Graph previews
+   - Build the site
 
-7. Generate page metadata for Open Graph previews:
-   ```bash
-   npm run generate-metadata -- <tournament_id>
-   ```
-
-8. Build the site:
-   ```bash
-   npm run build
-   ```
-
-9. **IMPORTANT: Restart the dev server if it's running:**
+5. **IMPORTANT: Restart the dev server if it's running:**
    ```bash
    # Kill the old dev server (if running)
    lsof -ti:4321 | xargs kill -9 2>/dev/null
@@ -436,38 +427,10 @@ When adding a new tournament, follow this EXACT sequence to ensure deck data is 
    - Any changes to JSON data files
 
 **Why this order matters:**
+- The tournament is automatically added to the TOP of `decks.yml` (newest first)
 - Player stats generation reads deck data from `decks.yml` at runtime
 - If you generate player stats BEFORE filling in decks, player profiles will show `_` instead of deck names
-- You'll have to regenerate player stats again after filling in decks
 - Page metadata also uses deck data for event descriptions
-
-**Quick Method (Automated):**
-
-```bash
-# Complete workflow - scrapes, generates templates, and rebuilds everything
-npm run process-tournament -- <tournament_id>
-
-# This will:
-# 1. Scrape tournament data from Melee.gg
-# 2. Generate deck template in decks.yml (if needed)
-# 3. Pause for you to fill in deck data (if template was generated)
-# 4. Sync league standings
-# 5. Regenerate player stats
-# 6. Generate page metadata for Open Graph previews
-# 7. Build the site
-```
-
-7. Rebuild site:
-
-   ```bash
-   npm run build
-   ```
-
-**Important Notes:**
-
-- Page metadata for Open Graph tags is generated BEFORE the build, not during it
-- Metadata files are stored in `output/tournament_{id}/page_metadata.json`
-- Always regenerate metadata after updating deck data to get updated descriptions
 
 ### Managing Deck Data
 
