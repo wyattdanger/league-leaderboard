@@ -2,25 +2,25 @@
   "username": "Taylorhol",
   "displayName": "Taylorhol",
   "overallStats": {
-    "totalTournaments": 36,
-    "totalPoints": 159,
-    "totalMatches": 107,
-    "matchRecord": "52-52-3",
-    "matchWinPercentage": 0.5,
-    "gameRecord": "128-128-3",
-    "gameWinPercentage": 0.4942084942084942,
+    "totalTournaments": 37,
+    "totalPoints": 165,
+    "totalMatches": 110,
+    "matchRecord": "54-53-3",
+    "matchWinPercentage": 0.5045454545454545,
+    "gameRecord": "133-130-3",
+    "gameWinPercentage": 0.5,
     "trophies": 4,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q3 2026",
-      "events": 4,
-      "points": 18,
-      "matchRecord": "6-6-0",
-      "matchWinPercentage": 0.5,
-      "gameRecord": "16-15-0",
-      "gameWinPercentage": 0.5161290322580645
+      "events": 5,
+      "points": 24,
+      "matchRecord": "8-7-0",
+      "matchWinPercentage": 0.5333333333333333,
+      "gameRecord": "21-17-0",
+      "gameWinPercentage": 0.5526315789473685
     },
     {
       "leagueName": "Q2 2026",
@@ -89,16 +89,16 @@
   "deckStats": [
     {
       "deckName": "HFEB",
-      "events": 8,
-      "matchWins": 13,
-      "matchLosses": 11,
+      "events": 9,
+      "matchWins": 15,
+      "matchLosses": 12,
       "matchDraws": 0,
-      "matchRecord": "13-11-0",
-      "matchWinPercentage": 0.5416666666666666,
-      "gameWins": 33,
-      "gameLosses": 31,
+      "matchRecord": "15-12-0",
+      "matchWinPercentage": 0.5555555555555556,
+      "gameWins": 39,
+      "gameLosses": 33,
       "gameDraws": 0,
-      "gameWinPercentage": 0.515625,
+      "gameWinPercentage": 0.5416666666666666,
       "trophies": 1
     },
     {
@@ -813,6 +813,51 @@
       ]
     },
     {
+      "opponentUsername": "ByerBeware",
+      "opponentDisplayName": "ByerBeware",
+      "matchesPlayed": 3,
+      "matchWins": 0,
+      "matchLosses": 3,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 2,
+      "gameLosses": 6,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.25,
+      "matches": [
+        {
+          "tournamentId": "445677",
+          "dateDisplay": "August 6, 2026",
+          "result": "L",
+          "playerDeck": "HFEB",
+          "opponentDeck": "Dreadnought",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "436160",
+          "dateDisplay": "July 9, 2026",
+          "result": "L",
+          "playerDeck": "RG Goblins",
+          "opponentDeck": "UW Stiflenought",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "436157",
+          "dateDisplay": "June 18, 2026",
+          "result": "L",
+          "playerDeck": "Burn",
+          "opponentDeck": "5C Tog",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "PCavalcanti",
       "opponentDisplayName": "PCavalcanti",
       "matchesPlayed": 3,
@@ -1038,6 +1083,41 @@
       ]
     },
     {
+      "opponentUsername": "Mookyspulder",
+      "opponentDisplayName": "Dan S",
+      "matchesPlayed": 2,
+      "matchWins": 2,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 4,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.8,
+      "matches": [
+        {
+          "tournamentId": "445677",
+          "dateDisplay": "August 6, 2026",
+          "result": "W",
+          "playerDeck": "HFEB",
+          "opponentDeck": "B/G Contamination",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "445675",
+          "dateDisplay": "July 23, 2026",
+          "result": "W",
+          "playerDeck": "HFEB",
+          "opponentDeck": "Clerics",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "AlldoAurelis",
       "opponentDisplayName": "AlldoAurelis",
       "matchesPlayed": 2,
@@ -1103,41 +1183,6 @@
           "opponentDeck": "Oath Spec",
           "playerGameWins": 2,
           "opponentGameWins": 0,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "ByerBeware",
-      "opponentDisplayName": "ByerBeware",
-      "matchesPlayed": 2,
-      "matchWins": 0,
-      "matchLosses": 2,
-      "matchDraws": 0,
-      "matchWinPercentage": 0,
-      "gameWins": 1,
-      "gameLosses": 4,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.2,
-      "matches": [
-        {
-          "tournamentId": "436160",
-          "dateDisplay": "July 9, 2026",
-          "result": "L",
-          "playerDeck": "RG Goblins",
-          "opponentDeck": "UW Stiflenought",
-          "playerGameWins": 1,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "436157",
-          "dateDisplay": "June 18, 2026",
-          "result": "L",
-          "playerDeck": "Burn",
-          "opponentDeck": "5C Tog",
-          "playerGameWins": 0,
-          "opponentGameWins": 2,
           "gameDraws": 0
         }
       ]
@@ -1443,31 +1488,6 @@
           "opponentDeck": "Jank",
           "playerGameWins": 2,
           "opponentGameWins": 0,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "Mookyspulder",
-      "opponentDisplayName": "Dan S",
-      "matchesPlayed": 1,
-      "matchWins": 1,
-      "matchLosses": 0,
-      "matchDraws": 0,
-      "matchWinPercentage": 1,
-      "gameWins": 2,
-      "gameLosses": 1,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.6666666666666666,
-      "matches": [
-        {
-          "tournamentId": "445675",
-          "dateDisplay": "July 23, 2026",
-          "result": "W",
-          "playerDeck": "HFEB",
-          "opponentDeck": "Clerics",
-          "playerGameWins": 2,
-          "opponentGameWins": 1,
           "gameDraws": 0
         }
       ]
@@ -2074,6 +2094,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "445677",
+      "dateDisplay": "August 6, 2026",
+      "playerCount": 19,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 4,
+      "points": 6,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWinPercentage": 0.7142857,
+      "deck": "HFEB"
+    },
     {
       "tournamentId": "445675",
       "dateDisplay": "July 23, 2026",

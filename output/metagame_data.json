@@ -3,6 +3,7 @@
     {
       "leagueName": "Q3 2026",
       "tournaments": [
+        445677,
         445676,
         445675,
         445673,
@@ -10,13 +11,23 @@
         436159
       ],
       "deckCounts": {
+        "Magnivore Oath": 1,
+        "Moneyball Black": 8,
+        "Dreadnought": 9,
+        "WWu": 1,
+        "U/G Survival Opposition": 2,
+        "B/G Contamination": 1,
+        "HFEB": 2,
+        "Gro": 2,
+        "Elves": 1,
+        "White Control": 1,
+        "Chromatic Control": 1,
+        "GW Mad Dogs": 1,
         "Deadguy Ale": 1,
-        "Dreadnought": 7,
         "Turbo Lands": 1,
         "Burn": 13,
         "EsperTog": 1,
         "Terrageddon": 4,
-        "U/G Survival Opposition": 1,
         "Life": 1,
         "UGr Madness": 1,
         "Sligh": 5,
@@ -32,14 +43,12 @@
         "Clerics": 1,
         "Cradle Control": 2,
         "Merfolk": 1,
-        "HFEB": 1,
         "Jank": 1,
         "Mono red ponza": 1,
         "Goblins": 1,
         "Moneyball Blue": 1,
         "Landstill": 2,
         "Gush Tithe": 1,
-        "Moneyball Black": 5,
         "Replenish (PandeBurst)": 1,
         "UG Survival Opposition": 3,
         "Solution": 2,
@@ -69,7 +78,8 @@
         "Dragon Reanimator": 1
       },
       "deckTrophies": {
-        "Dreadnought": 3,
+        "Dreadnought": 4,
+        "White Control": 1,
         "Terrageddon": 1,
         "UW Control": 1,
         "HFEB": 1,
@@ -78,14 +88,69 @@
         "UG Survival Opposition": 1
       },
       "deckMatchStats": {
-        "Deadguy Ale": {
+        "Magnivore Oath": {
           "wins": 1,
           "losses": 2,
           "draws": 0
         },
+        "Moneyball Black": {
+          "wins": 11,
+          "losses": 13,
+          "draws": 0
+        },
         "Dreadnought": {
-          "wins": 13,
+          "wins": 18,
           "losses": 8,
+          "draws": 1
+        },
+        "WWu": {
+          "wins": 2,
+          "losses": 1,
+          "draws": 0
+        },
+        "U/G Survival Opposition": {
+          "wins": 3,
+          "losses": 3,
+          "draws": 0
+        },
+        "B/G Contamination": {
+          "wins": 1,
+          "losses": 1,
+          "draws": 1
+        },
+        "HFEB": {
+          "wins": 5,
+          "losses": 1,
+          "draws": 0
+        },
+        "Gro": {
+          "wins": 3,
+          "losses": 3,
+          "draws": 0
+        },
+        "Elves": {
+          "wins": 1,
+          "losses": 2,
+          "draws": 0
+        },
+        "White Control": {
+          "wins": 3,
+          "losses": 0,
+          "draws": 0
+        },
+        "Chromatic Control": {
+          "wins": 1,
+          "losses": 2,
+          "draws": 0
+        },
+        "GW Mad Dogs": {
+          "wins": 1,
+          "losses": 2,
+          "draws": 0
+        },
+        "Deadguy Ale": {
+          "wins": 1,
+          "losses": 2,
           "draws": 0
         },
         "Turbo Lands": {
@@ -107,11 +172,6 @@
           "wins": 6,
           "losses": 4,
           "draws": 2
-        },
-        "U/G Survival Opposition": {
-          "wins": 1,
-          "losses": 2,
-          "draws": 0
         },
         "Life": {
           "wins": 2,
@@ -188,11 +248,6 @@
           "losses": 2,
           "draws": 0
         },
-        "HFEB": {
-          "wins": 3,
-          "losses": 0,
-          "draws": 0
-        },
         "Jank": {
           "wins": 0,
           "losses": 3,
@@ -221,11 +276,6 @@
         "Gush Tithe": {
           "wins": 2,
           "losses": 1,
-          "draws": 0
-        },
-        "Moneyball Black": {
-          "wins": 7,
-          "losses": 8,
           "draws": 0
         },
         "Replenish (PandeBurst)": {

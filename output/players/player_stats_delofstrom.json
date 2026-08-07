@@ -2,25 +2,25 @@
   "username": "delofstrom",
   "displayName": "DEL .",
   "overallStats": {
-    "totalTournaments": 19,
-    "totalPoints": 51,
-    "totalMatches": 55,
-    "matchRecord": "15-34-6",
-    "matchWinPercentage": 0.32727272727272727,
-    "gameRecord": "51-81-2",
-    "gameWinPercentage": 0.3805970149253731,
+    "totalTournaments": 20,
+    "totalPoints": 54,
+    "totalMatches": 58,
+    "matchRecord": "16-36-6",
+    "matchWinPercentage": 0.3275862068965517,
+    "gameRecord": "55-85-2",
+    "gameWinPercentage": 0.3873239436619718,
     "trophies": 0,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q3 2026",
-      "events": 1,
-      "points": 0,
-      "matchRecord": "0-1-0",
-      "matchWinPercentage": 0,
-      "gameRecord": "1-2-0",
-      "gameWinPercentage": 0.3333333333333333
+      "events": 2,
+      "points": 3,
+      "matchRecord": "1-3-0",
+      "matchWinPercentage": 0.25,
+      "gameRecord": "5-6-0",
+      "gameWinPercentage": 0.45454545454545453
     },
     {
       "leagueName": "Q2 2026",
@@ -93,6 +93,20 @@
       "matchWinPercentage": 0.4444444444444444,
       "gameWins": 24,
       "gameLosses": 24,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5,
+      "trophies": 0
+    },
+    {
+      "deckName": "Elves",
+      "events": 1,
+      "matchWins": 1,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 4,
+      "gameLosses": 4,
       "gameDraws": 0,
       "gameWinPercentage": 0.5,
       "trophies": 0
@@ -358,6 +372,51 @@
       ]
     },
     {
+      "opponentUsername": "Mattmelach",
+      "opponentDisplayName": "Matthew Melachrinos",
+      "matchesPlayed": 3,
+      "matchWins": 1,
+      "matchLosses": 1,
+      "matchDraws": 1,
+      "matchWinPercentage": 0.5,
+      "gameWins": 4,
+      "gameLosses": 3,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5714285714285714,
+      "matches": [
+        {
+          "tournamentId": "445677",
+          "dateDisplay": "August 6, 2026",
+          "result": "L",
+          "playerDeck": "Elves",
+          "opponentDeck": "Dreadnought",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "410832",
+          "dateDisplay": "March 5, 2026",
+          "result": "W",
+          "playerDeck": "Survival Welder",
+          "opponentDeck": "Survival Infestation",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "350003",
+          "dateDisplay": "August 7, 2025",
+          "result": "D",
+          "playerDeck": "_",
+          "opponentDeck": "_",
+          "playerGameWins": 1,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "Tencteri",
       "opponentDisplayName": "Tencteri",
       "matchesPlayed": 3,
@@ -518,41 +577,6 @@
       ]
     },
     {
-      "opponentUsername": "Mattmelach",
-      "opponentDisplayName": "Matthew Melachrinos",
-      "matchesPlayed": 2,
-      "matchWins": 1,
-      "matchLosses": 0,
-      "matchDraws": 1,
-      "matchWinPercentage": 0.75,
-      "gameWins": 3,
-      "gameLosses": 1,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.75,
-      "matches": [
-        {
-          "tournamentId": "410832",
-          "dateDisplay": "March 5, 2026",
-          "result": "W",
-          "playerDeck": "Survival Welder",
-          "opponentDeck": "Survival Infestation",
-          "playerGameWins": 2,
-          "opponentGameWins": 0,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "350003",
-          "dateDisplay": "August 7, 2025",
-          "result": "D",
-          "playerDeck": "_",
-          "opponentDeck": "_",
-          "playerGameWins": 1,
-          "opponentGameWins": 1,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
       "opponentUsername": "madmanpoet",
       "opponentDisplayName": "Michael Flores",
       "matchesPlayed": 2,
@@ -652,6 +676,56 @@
           "playerDeck": "_",
           "opponentDeck": "_",
           "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "PetS22",
+      "opponentDisplayName": "PetS22",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "matches": [
+        {
+          "tournamentId": "445677",
+          "dateDisplay": "August 6, 2026",
+          "result": "W",
+          "playerDeck": "Elves",
+          "opponentDeck": "_",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "PCavalcanti",
+      "opponentDisplayName": "PCavalcanti",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "matches": [
+        {
+          "tournamentId": "445677",
+          "dateDisplay": "August 6, 2026",
+          "result": "L",
+          "playerDeck": "Elves",
+          "opponentDeck": "Moneyball Black",
+          "playerGameWins": 1,
           "opponentGameWins": 2,
           "gameDraws": 0
         }
@@ -1134,6 +1208,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "445677",
+      "dateDisplay": "August 6, 2026",
+      "playerCount": 19,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 14,
+      "points": 3,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWinPercentage": 0.5,
+      "deck": "Elves"
+    },
     {
       "tournamentId": "445675",
       "dateDisplay": "July 23, 2026",

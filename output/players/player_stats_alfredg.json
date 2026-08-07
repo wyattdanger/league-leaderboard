@@ -2,12 +2,12 @@
   "username": "AlfredG",
   "displayName": "AlfredG",
   "overallStats": {
-    "totalTournaments": 7,
-    "totalPoints": 21,
-    "totalMatches": 20,
-    "matchRecord": "6-11-3",
-    "matchWinPercentage": 0.375,
-    "gameRecord": "21-27-1",
+    "totalTournaments": 8,
+    "totalPoints": 24,
+    "totalMatches": 23,
+    "matchRecord": "7-13-3",
+    "matchWinPercentage": 0.3695652173913043,
+    "gameRecord": "24-31-1",
     "gameWinPercentage": 0.42857142857142855,
     "trophies": 0,
     "belts": 0
@@ -15,12 +15,12 @@
   "leagueStats": [
     {
       "leagueName": "Q3 2026",
-      "events": 4,
-      "points": 15,
-      "matchRecord": "5-6-0",
-      "matchWinPercentage": 0.45454545454545453,
-      "gameRecord": "13-14-0",
-      "gameWinPercentage": 0.48148148148148145
+      "events": 5,
+      "points": 18,
+      "matchRecord": "6-8-0",
+      "matchWinPercentage": 0.42857142857142855,
+      "gameRecord": "16-18-0",
+      "gameWinPercentage": 0.47058823529411764
     },
     {
       "leagueName": "Q2 2026",
@@ -76,6 +76,20 @@
       "trophies": 0
     },
     {
+      "deckName": "Magnivore Oath",
+      "events": 1,
+      "matchWins": 1,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 3,
+      "gameLosses": 5,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.375,
+      "trophies": 0
+    },
+    {
       "deckName": "Deadguy Ale",
       "events": 1,
       "matchWins": 1,
@@ -94,16 +108,26 @@
     {
       "opponentUsername": "Mookyspulder",
       "opponentDisplayName": "Dan S",
-      "matchesPlayed": 3,
+      "matchesPlayed": 4,
       "matchWins": 0,
-      "matchLosses": 2,
+      "matchLosses": 3,
       "matchDraws": 1,
-      "matchWinPercentage": 0.16666666666666666,
+      "matchWinPercentage": 0.125,
       "gameWins": 2,
-      "gameLosses": 5,
+      "gameLosses": 7,
       "gameDraws": 0,
-      "gameWinPercentage": 0.2857142857142857,
+      "gameWinPercentage": 0.2222222222222222,
       "matches": [
+        {
+          "tournamentId": "445677",
+          "dateDisplay": "August 6, 2026",
+          "result": "L",
+          "playerDeck": "Magnivore Oath",
+          "opponentDeck": "B/G Contamination",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
         {
           "tournamentId": "445675",
           "dateDisplay": "July 23, 2026",
@@ -132,6 +156,41 @@
           "opponentDeck": "Life Clerics",
           "playerGameWins": 1,
           "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "KYamada97",
+      "opponentDisplayName": "KYamada97",
+      "matchesPlayed": 2,
+      "matchWins": 2,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 4,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "matches": [
+        {
+          "tournamentId": "445677",
+          "dateDisplay": "August 6, 2026",
+          "result": "W",
+          "playerDeck": "Magnivore Oath",
+          "opponentDeck": "_",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "445676",
+          "dateDisplay": "July 30, 2026",
+          "result": "W",
+          "playerDeck": "Deadguy Ale",
+          "opponentDeck": "EsperTog",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
           "gameDraws": 0
         }
       ]
@@ -172,6 +231,31 @@
       ]
     },
     {
+      "opponentUsername": "minimiz",
+      "opponentDisplayName": "Eli Mizock",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "matches": [
+        {
+          "tournamentId": "445677",
+          "dateDisplay": "August 6, 2026",
+          "result": "L",
+          "playerDeck": "Magnivore Oath",
+          "opponentDeck": "Gro",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "Matt_W",
       "opponentDisplayName": "Matt_W",
       "matchesPlayed": 1,
@@ -192,31 +276,6 @@
           "opponentDeck": "U/G Survival Opposition",
           "playerGameWins": 1,
           "opponentGameWins": 2,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "KYamada97",
-      "opponentDisplayName": "KYamada97",
-      "matchesPlayed": 1,
-      "matchWins": 1,
-      "matchLosses": 0,
-      "matchDraws": 0,
-      "matchWinPercentage": 1,
-      "gameWins": 2,
-      "gameLosses": 0,
-      "gameDraws": 0,
-      "gameWinPercentage": 1,
-      "matches": [
-        {
-          "tournamentId": "445676",
-          "dateDisplay": "July 30, 2026",
-          "result": "W",
-          "playerDeck": "Deadguy Ale",
-          "opponentDeck": "EsperTog",
-          "playerGameWins": 2,
-          "opponentGameWins": 0,
           "gameDraws": 0
         }
       ]
@@ -498,6 +557,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "445677",
+      "dateDisplay": "August 6, 2026",
+      "playerCount": 19,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 17,
+      "points": 3,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWinPercentage": 0.4285714,
+      "deck": "Magnivore Oath"
+    },
     {
       "tournamentId": "445676",
       "dateDisplay": "July 30, 2026",

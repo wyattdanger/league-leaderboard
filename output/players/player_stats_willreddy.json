@@ -2,25 +2,25 @@
   "username": "WillReddy",
   "displayName": "WillReddy",
   "overallStats": {
-    "totalTournaments": 17,
-    "totalPoints": 76,
-    "totalMatches": 51,
-    "matchRecord": "25-25-1",
-    "matchWinPercentage": 0.5,
-    "gameRecord": "65-61-1",
-    "gameWinPercentage": 0.5118110236220472,
+    "totalTournaments": 18,
+    "totalPoints": 79,
+    "totalMatches": 54,
+    "matchRecord": "26-27-1",
+    "matchWinPercentage": 0.49074074074074076,
+    "gameRecord": "68-66-1",
+    "gameWinPercentage": 0.5037037037037037,
     "trophies": 0,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q3 2026",
-      "events": 5,
-      "points": 22,
-      "matchRecord": "7-7-1",
-      "matchWinPercentage": 0.5,
-      "gameRecord": "20-17-0",
-      "gameWinPercentage": 0.5405405405405406
+      "events": 6,
+      "points": 25,
+      "matchRecord": "8-9-1",
+      "matchWinPercentage": 0.4722222222222222,
+      "gameRecord": "23-22-0",
+      "gameWinPercentage": 0.5111111111111111
     },
     {
       "leagueName": "Q2 2026",
@@ -145,6 +145,20 @@
       "trophies": 0
     },
     {
+      "deckName": "Gro",
+      "events": 1,
+      "matchWins": 1,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 3,
+      "gameLosses": 5,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.375,
+      "trophies": 0
+    },
+    {
       "deckName": "GW Ponza Oath",
       "events": 1,
       "matchWins": 1,
@@ -188,6 +202,51 @@
     }
   ],
   "headToHead": [
+    {
+      "opponentUsername": "madmanpoet",
+      "opponentDisplayName": "Michael Flores",
+      "matchesPlayed": 3,
+      "matchWins": 0,
+      "matchLosses": 3,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 3,
+      "gameLosses": 6,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "matches": [
+        {
+          "tournamentId": "445677",
+          "dateDisplay": "August 6, 2026",
+          "result": "L",
+          "playerDeck": "Gro",
+          "opponentDeck": "White Control",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "434267",
+          "dateDisplay": "June 4, 2026",
+          "result": "L",
+          "playerDeck": "_",
+          "opponentDeck": "Terrageddon",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "429084",
+          "dateDisplay": "May 14, 2026",
+          "result": "L",
+          "playerDeck": "UG Tradewind Survival",
+          "opponentDeck": "Cradle Control",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
     {
       "opponentUsername": "weidnent",
       "opponentDisplayName": "Nicholas Weidner",
@@ -369,6 +428,41 @@
       ]
     },
     {
+      "opponentUsername": "KYamada97",
+      "opponentDisplayName": "KYamada97",
+      "matchesPlayed": 2,
+      "matchWins": 1,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.5,
+      "gameWins": 2,
+      "gameLosses": 3,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.4,
+      "matches": [
+        {
+          "tournamentId": "445677",
+          "dateDisplay": "August 6, 2026",
+          "result": "W",
+          "playerDeck": "Gro",
+          "opponentDeck": "_",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "445673",
+          "dateDisplay": "July 16, 2026",
+          "result": "L",
+          "playerDeck": "_",
+          "opponentDeck": "Solution",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "Zoinx212",
       "opponentDisplayName": "Zoinx212",
       "matchesPlayed": 2,
@@ -509,41 +603,6 @@
       ]
     },
     {
-      "opponentUsername": "madmanpoet",
-      "opponentDisplayName": "Michael Flores",
-      "matchesPlayed": 2,
-      "matchWins": 0,
-      "matchLosses": 2,
-      "matchDraws": 0,
-      "matchWinPercentage": 0,
-      "gameWins": 2,
-      "gameLosses": 4,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.3333333333333333,
-      "matches": [
-        {
-          "tournamentId": "434267",
-          "dateDisplay": "June 4, 2026",
-          "result": "L",
-          "playerDeck": "_",
-          "opponentDeck": "Terrageddon",
-          "playerGameWins": 1,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "429084",
-          "dateDisplay": "May 14, 2026",
-          "result": "L",
-          "playerDeck": "UG Tradewind Survival",
-          "opponentDeck": "Cradle Control",
-          "playerGameWins": 1,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
       "opponentUsername": "aprofaci",
       "opponentDisplayName": "Alex Profaci",
       "matchesPlayed": 2,
@@ -572,6 +631,31 @@
           "result": "L",
           "playerDeck": "_",
           "opponentDeck": "UG Madness",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "avonbergen",
+      "opponentDisplayName": "avonbergen",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "matches": [
+        {
+          "tournamentId": "445677",
+          "dateDisplay": "August 6, 2026",
+          "result": "L",
+          "playerDeck": "Gro",
+          "opponentDeck": "Moneyball Black",
           "playerGameWins": 0,
           "opponentGameWins": 2,
           "gameDraws": 0
@@ -673,31 +757,6 @@
           "playerDeck": "_",
           "opponentDeck": "UG Survival Opposition",
           "playerGameWins": 1,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "KYamada97",
-      "opponentDisplayName": "KYamada97",
-      "matchesPlayed": 1,
-      "matchWins": 0,
-      "matchLosses": 1,
-      "matchDraws": 0,
-      "matchWinPercentage": 0,
-      "gameWins": 0,
-      "gameLosses": 2,
-      "gameDraws": 0,
-      "gameWinPercentage": 0,
-      "matches": [
-        {
-          "tournamentId": "445673",
-          "dateDisplay": "July 16, 2026",
-          "result": "L",
-          "playerDeck": "_",
-          "opponentDeck": "Solution",
-          "playerGameWins": 0,
           "opponentGameWins": 2,
           "gameDraws": 0
         }
@@ -1155,6 +1214,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "445677",
+      "dateDisplay": "August 6, 2026",
+      "playerCount": 19,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 13,
+      "points": 3,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWinPercentage": 0.375,
+      "deck": "Gro"
+    },
     {
       "tournamentId": "445676",
       "dateDisplay": "July 30, 2026",

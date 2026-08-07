@@ -2,25 +2,25 @@
   "username": "PCavalcanti",
   "displayName": "PCavalcanti",
   "overallStats": {
-    "totalTournaments": 19,
-    "totalPoints": 93,
-    "totalMatches": 57,
-    "matchRecord": "30-24-3",
-    "matchWinPercentage": 0.5526315789473685,
-    "gameRecord": "78-65-0",
-    "gameWinPercentage": 0.5454545454545454,
+    "totalTournaments": 20,
+    "totalPoints": 99,
+    "totalMatches": 60,
+    "matchRecord": "32-25-3",
+    "matchWinPercentage": 0.5583333333333333,
+    "gameRecord": "82-69-0",
+    "gameWinPercentage": 0.543046357615894,
     "trophies": 1,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q3 2026",
-      "events": 5,
-      "points": 26,
-      "matchRecord": "8-5-2",
-      "matchWinPercentage": 0.6,
-      "gameRecord": "21-15-0",
-      "gameWinPercentage": 0.5833333333333334
+      "events": 6,
+      "points": 32,
+      "matchRecord": "10-6-2",
+      "matchWinPercentage": 0.6111111111111112,
+      "gameRecord": "25-19-0",
+      "gameWinPercentage": 0.5681818181818182
     },
     {
       "leagueName": "Q2 2026",
@@ -103,6 +103,20 @@
       "matchWinPercentage": 0.5,
       "gameWins": 8,
       "gameLosses": 8,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5,
+      "trophies": 0
+    },
+    {
+      "deckName": "Moneyball Black",
+      "events": 1,
+      "matchWins": 2,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 4,
+      "gameLosses": 4,
       "gameDraws": 0,
       "gameWinPercentage": 0.5,
       "trophies": 0
@@ -505,6 +519,41 @@
       ]
     },
     {
+      "opponentUsername": "weidnent",
+      "opponentDisplayName": "Nicholas Weidner",
+      "matchesPlayed": 2,
+      "matchWins": 0,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "matches": [
+        {
+          "tournamentId": "445677",
+          "dateDisplay": "August 6, 2026",
+          "result": "L",
+          "playerDeck": "Moneyball Black",
+          "opponentDeck": "GW Mad Dogs",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "445676",
+          "dateDisplay": "July 30, 2026",
+          "result": "L",
+          "playerDeck": "UGr Madness",
+          "opponentDeck": "Balancing Act",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "AlfredG",
       "opponentDisplayName": "AlfredG",
       "matchesPlayed": 2,
@@ -750,26 +799,51 @@
       ]
     },
     {
-      "opponentUsername": "weidnent",
-      "opponentDisplayName": "Nicholas Weidner",
+      "opponentUsername": "KYamada97",
+      "opponentDisplayName": "KYamada97",
       "matchesPlayed": 1,
-      "matchWins": 0,
-      "matchLosses": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
       "matchDraws": 0,
-      "matchWinPercentage": 0,
-      "gameWins": 0,
-      "gameLosses": 2,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 1,
       "gameDraws": 0,
-      "gameWinPercentage": 0,
+      "gameWinPercentage": 0.6666666666666666,
       "matches": [
         {
-          "tournamentId": "445676",
-          "dateDisplay": "July 30, 2026",
-          "result": "L",
-          "playerDeck": "UGr Madness",
-          "opponentDeck": "Balancing Act",
-          "playerGameWins": 0,
-          "opponentGameWins": 2,
+          "tournamentId": "445677",
+          "dateDisplay": "August 6, 2026",
+          "result": "W",
+          "playerDeck": "Moneyball Black",
+          "opponentDeck": "_",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "delofstrom",
+      "opponentDisplayName": "DEL .",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6666666666666666,
+      "matches": [
+        {
+          "tournamentId": "445677",
+          "dateDisplay": "August 6, 2026",
+          "result": "W",
+          "playerDeck": "Moneyball Black",
+          "opponentDeck": "Elves",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
           "gameDraws": 0
         }
       ]
@@ -1276,6 +1350,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "445677",
+      "dateDisplay": "August 6, 2026",
+      "playerCount": 19,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 10,
+      "points": 6,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWinPercentage": 0.5,
+      "deck": "Moneyball Black"
+    },
     {
       "tournamentId": "445676",
       "dateDisplay": "July 30, 2026",

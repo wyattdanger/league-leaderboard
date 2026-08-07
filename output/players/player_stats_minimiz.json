@@ -2,25 +2,25 @@
   "username": "minimiz",
   "displayName": "Eli Mizock",
   "overallStats": {
-    "totalTournaments": 15,
-    "totalPoints": 73,
-    "totalMatches": 43,
-    "matchRecord": "24-18-1",
-    "matchWinPercentage": 0.5697674418604651,
-    "gameRecord": "59-50-1",
-    "gameWinPercentage": 0.5363636363636364,
+    "totalTournaments": 16,
+    "totalPoints": 79,
+    "totalMatches": 46,
+    "matchRecord": "26-19-1",
+    "matchWinPercentage": 0.5760869565217391,
+    "gameRecord": "64-53-1",
+    "gameWinPercentage": 0.5423728813559322,
     "trophies": 3,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q3 2026",
-      "events": 1,
-      "points": 1,
-      "matchRecord": "0-2-1",
-      "matchWinPercentage": 0.16666666666666666,
-      "gameRecord": "1-4-1",
-      "gameWinPercentage": 0.25
+      "events": 2,
+      "points": 7,
+      "matchRecord": "2-3-1",
+      "matchWinPercentage": 0.4166666666666667,
+      "gameRecord": "6-7-1",
+      "gameWinPercentage": 0.4642857142857143
     },
     {
       "leagueName": "Q2 2026",
@@ -106,6 +106,20 @@
       "gameDraws": 0,
       "gameWinPercentage": 0.625,
       "trophies": 1
+    },
+    {
+      "deckName": "Gro",
+      "events": 1,
+      "matchWins": 2,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 5,
+      "gameLosses": 3,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.625,
+      "trophies": 0
     }
   ],
   "headToHead": [
@@ -530,6 +544,81 @@
       ]
     },
     {
+      "opponentUsername": "AlfredG",
+      "opponentDisplayName": "AlfredG",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6666666666666666,
+      "matches": [
+        {
+          "tournamentId": "445677",
+          "dateDisplay": "August 6, 2026",
+          "result": "W",
+          "playerDeck": "Gro",
+          "opponentDeck": "Magnivore Oath",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "DaveKaplan",
+      "opponentDisplayName": "Dave Kaplan",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "matches": [
+        {
+          "tournamentId": "445677",
+          "dateDisplay": "August 6, 2026",
+          "result": "L",
+          "playerDeck": "Gro",
+          "opponentDeck": "WWu",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "swbmtg",
+      "opponentDisplayName": "Stephen Bush",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "matches": [
+        {
+          "tournamentId": "445677",
+          "dateDisplay": "August 6, 2026",
+          "result": "W",
+          "playerDeck": "Gro",
+          "opponentDeck": "Chromatic Control",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "RyanMCrites",
       "opponentDisplayName": "RyanMCrites",
       "matchesPlayed": 1,
@@ -931,6 +1020,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "445677",
+      "dateDisplay": "August 6, 2026",
+      "playerCount": 19,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 9,
+      "points": 6,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWinPercentage": 0.625,
+      "deck": "Gro"
+    },
     {
       "tournamentId": "445675",
       "dateDisplay": "July 23, 2026",
