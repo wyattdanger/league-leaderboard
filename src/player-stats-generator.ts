@@ -201,148 +201,7 @@ async function generatePlayerStats(): Promise<void> {
     // Calculate head-to-head records (across all tournaments)
     const headToHead = calculateHeadToHeadRecords(username, matchesPerRound, tournamentMetadataMap, deckDataMap);
 
-    // Calculate overall stats and per-league stats
-    let totalMatchWins = 0;
-    let totalMatchLosses = 0;
-    let totalMatchDraws = 0;
-    let totalGameWins = 0;
-    let totalGameLosses = 0;
-    let totalGameDraws = 0;
-
-    // Group tournaments by league for this player
-    const leagueStatsMap = new Map<
-      string,
-      {
-        matchWins: number;
-        matchLosses: number;
-        matchDraws: number;
-        gameWins: number;
-        gameLosses: number;
-        gameDraws: number;
-        points: number;
-        events: number;
-      }
-    >();
-
-    // Sum up stats from all tournaments
-    for (const tournamentId of playerTournaments.get(username) || []) {
-      // Find matches for this tournament only
-      const tournamentMatchesPerRound: Match[][] = [];
-      for (const matches of matchesPerRound) {
-        const tournamentMatches = matches.filter((m) => m.TournamentId.toString() === tournamentId);
-        if (tournamentMatches.length > 0) {
-          tournamentMatchesPerRound.push(tournamentMatches);
-        }
-      }
-
-      const stats = calculatePlayerStats(username, tournamentMatchesPerRound, tournamentId);
-      if (stats) {
-        // Add to overall totals
-        totalMatchWins += stats.matchWins;
-        totalMatchLosses += stats.matchLosses;
-        totalMatchDraws += stats.matchDraws;
-        totalGameWins += stats.gameWins;
-        totalGameLosses += stats.gameLosses;
-        totalGameDraws += stats.gameDraws;
-
-        // Add to league-specific stats
-        const leagueName = tournamentToLeague[tournamentId];
-        if (leagueName) {
-          if (!leagueStatsMap.has(leagueName)) {
-            leagueStatsMap.set(leagueName, {
-              matchWins: 0,
-              matchLosses: 0,
-              matchDraws: 0,
-              gameWins: 0,
-              gameLosses: 0,
-              gameDraws: 0,
-              points: 0,
-              events: 0,
-            });
-          }
-
-          const leagueData = leagueStatsMap.get(leagueName)!;
-          leagueData.matchWins += stats.matchWins;
-          leagueData.matchLosses += stats.matchLosses;
-          leagueData.matchDraws += stats.matchDraws;
-          leagueData.gameWins += stats.gameWins;
-          leagueData.gameLosses += stats.gameLosses;
-          leagueData.gameDraws += stats.gameDraws;
-          leagueData.events += 1;
-        }
-      }
-    }
-
-    // Load standings to get points per league
-    for (const tournamentId of playerTournaments.get(username) || []) {
-      const leagueName = tournamentToLeague[tournamentId];
-      if (!leagueName) continue;
-
-      const tournamentDir = path.join(process.cwd(), 'output', `tournament_${tournamentId}`);
-      const standingsFiles = fs
-        .readdirSync(tournamentDir)
-        .filter((f) => f.endsWith('_Standings.json'))
-        .sort()
-        .reverse();
-
-      if (standingsFiles.length > 0) {
-        const standingsPath = path.join(tournamentDir, standingsFiles[0]);
-        const standings = JSON.parse(fs.readFileSync(standingsPath, 'utf-8'));
-
-        for (const standing of standings) {
-          const standingUsername = standing.Team.Players[0]?.Username || '';
-          if (standingUsername === username) {
-            const leagueData = leagueStatsMap.get(leagueName)!;
-            leagueData.points += standing.Points || 0;
-            break;
-          }
-        }
-      }
-    }
-
-    // Convert league stats map to array
-    const leagueStats: PlayerLeagueStats[] = Array.from(leagueStatsMap.entries()).map(
-      ([leagueName, data]) => {
-        return {
-          leagueName,
-          events: data.events,
-          points: data.points,
-          matchRecord: `${data.matchWins}-${data.matchLosses}-${data.matchDraws}`,
-          matchWinPercentage: calculateMatchWinPercentage(
-            data.matchWins,
-            data.matchLosses,
-            data.matchDraws
-          ),
-          gameRecord: `${data.gameWins}-${data.gameLosses}-${data.gameDraws}`,
-          gameWinPercentage: calculateGameWinPercentage(
-            data.gameWins,
-            data.gameLosses,
-            data.gameDraws
-          ),
-        };
-      }
-    );
-
-    const totalMatches = totalMatchWins + totalMatchLosses + totalMatchDraws;
-    const totalGames = totalGameWins + totalGameLosses + totalGameDraws;
-
-    const overallStats: PlayerOverallStats = {
-      totalTournaments: playerTournaments.get(username)?.size || 0,
-      totalPoints: playerPoints.get(username) || 0,
-      totalMatches,
-      matchRecord: `${totalMatchWins}-${totalMatchLosses}-${totalMatchDraws}`,
-      matchWinPercentage: calculateMatchWinPercentage(
-        totalMatchWins,
-        totalMatchLosses,
-        totalMatchDraws
-      ),
-      gameRecord: `${totalGameWins}-${totalGameLosses}-${totalGameDraws}`,
-      gameWinPercentage: totalGames > 0 ? totalGameWins / totalGames : 0,
-      trophies: playerTrophies.get(username) || 0,
-      belts: playerBelts.get(username) || 0,
-    };
-
-    // Collect tournament performances
+    // Collect tournament performances FIRST (from standings data)
     const tournamentPerformances: PlayerTournamentPerformance[] = [];
     for (const tournamentId of playerTournaments.get(username) || []) {
       const tournamentDir = path.join(process.cwd(), 'output', `tournament_${tournamentId}`);
@@ -393,6 +252,112 @@ async function generatePlayerStats(): Promise<void> {
 
     // Sort using centralized sorting utility
     const sortedPerformances = sortTournamentPerformancesByIdDesc(tournamentPerformances);
+
+    // Calculate overall stats and per-league stats from tournament performances (standings data)
+    let totalMatchWins = 0;
+    let totalMatchLosses = 0;
+    let totalMatchDraws = 0;
+    let totalGameWins = 0;
+    let totalGameLosses = 0;
+    let totalGameDraws = 0;
+
+    // Group tournaments by league for this player
+    const leagueStatsMap = new Map<
+      string,
+      {
+        matchWins: number;
+        matchLosses: number;
+        matchDraws: number;
+        gameWins: number;
+        gameLosses: number;
+        gameDraws: number;
+        points: number;
+        events: number;
+      }
+    >();
+
+    // Aggregate from tournament performances (which come from standings)
+    for (const perf of tournamentPerformances) {
+      // Parse match record
+      const [wins, losses, draws] = perf.matchRecord.split('-').map(Number);
+
+      // Add to overall totals
+      totalMatchWins += wins;
+      totalMatchLosses += losses;
+      totalMatchDraws += draws;
+      totalGameWins += perf.gameWins;
+      totalGameLosses += perf.gameLosses;
+      totalGameDraws += perf.gameDraws;
+
+      // Add to league-specific stats
+      const leagueName = tournamentToLeague[perf.tournamentId];
+      if (leagueName) {
+        if (!leagueStatsMap.has(leagueName)) {
+          leagueStatsMap.set(leagueName, {
+            matchWins: 0,
+            matchLosses: 0,
+            matchDraws: 0,
+            gameWins: 0,
+            gameLosses: 0,
+            gameDraws: 0,
+            points: 0,
+            events: 0,
+          });
+        }
+
+        const leagueData = leagueStatsMap.get(leagueName)!;
+        leagueData.matchWins += wins;
+        leagueData.matchLosses += losses;
+        leagueData.matchDraws += draws;
+        leagueData.gameWins += perf.gameWins;
+        leagueData.gameLosses += perf.gameLosses;
+        leagueData.gameDraws += perf.gameDraws;
+        leagueData.points += perf.points;
+        leagueData.events += 1;
+      }
+    }
+
+    // Convert league stats map to array
+    const leagueStats: PlayerLeagueStats[] = Array.from(leagueStatsMap.entries()).map(
+      ([leagueName, data]) => {
+        return {
+          leagueName,
+          events: data.events,
+          points: data.points,
+          matchRecord: `${data.matchWins}-${data.matchLosses}-${data.matchDraws}`,
+          matchWinPercentage: calculateMatchWinPercentage(
+            data.matchWins,
+            data.matchLosses,
+            data.matchDraws
+          ),
+          gameRecord: `${data.gameWins}-${data.gameLosses}-${data.gameDraws}`,
+          gameWinPercentage: calculateGameWinPercentage(
+            data.gameWins,
+            data.gameLosses,
+            data.gameDraws
+          ),
+        };
+      }
+    );
+
+    const totalMatches = totalMatchWins + totalMatchLosses + totalMatchDraws;
+    const totalGames = totalGameWins + totalGameLosses + totalGameDraws;
+
+    const overallStats: PlayerOverallStats = {
+      totalTournaments: playerTournaments.get(username)?.size || 0,
+      totalPoints: playerPoints.get(username) || 0,
+      totalMatches,
+      matchRecord: `${totalMatchWins}-${totalMatchLosses}-${totalMatchDraws}`,
+      matchWinPercentage: calculateMatchWinPercentage(
+        totalMatchWins,
+        totalMatchLosses,
+        totalMatchDraws
+      ),
+      gameRecord: `${totalGameWins}-${totalGameLosses}-${totalGameDraws}`,
+      gameWinPercentage: totalGames > 0 ? totalGameWins / totalGames : 0,
+      trophies: playerTrophies.get(username) || 0,
+      belts: playerBelts.get(username) || 0,
+    };
 
     // Aggregate stats by deck
     const deckStatsMap = new Map<string, {
