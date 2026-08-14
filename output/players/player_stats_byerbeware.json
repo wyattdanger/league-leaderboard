@@ -2,25 +2,25 @@
   "username": "ByerBeware",
   "displayName": "ByerBeware",
   "overallStats": {
-    "totalTournaments": 12,
-    "totalPoints": 75,
-    "totalMatches": 36,
-    "matchRecord": "25-11-0",
-    "matchWinPercentage": 0.6944444444444444,
-    "gameRecord": "57-32-0",
-    "gameWinPercentage": 0.6404494382022472,
+    "totalTournaments": 13,
+    "totalPoints": 78,
+    "totalMatches": 39,
+    "matchRecord": "26-13-0",
+    "matchWinPercentage": 0.6666666666666666,
+    "gameRecord": "60-37-0",
+    "gameWinPercentage": 0.6185567010309279,
     "trophies": 3,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q3 2026",
-      "events": 5,
-      "points": 33,
-      "matchRecord": "11-4-0",
-      "matchWinPercentage": 0.7333333333333333,
-      "gameRecord": "25-13-0",
-      "gameWinPercentage": 0.6578947368421053
+      "events": 6,
+      "points": 36,
+      "matchRecord": "12-6-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameRecord": "28-18-0",
+      "gameWinPercentage": 0.6086956521739131
     },
     {
       "leagueName": "Q2 2026",
@@ -141,6 +141,20 @@
       "trophies": 0
     },
     {
+      "deckName": "Enchantress",
+      "events": 1,
+      "matchWins": 1,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 3,
+      "gameLosses": 5,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.375,
+      "trophies": 0
+    },
+    {
       "deckName": "Replenish",
       "events": 1,
       "matchWins": 1,
@@ -156,6 +170,61 @@
     }
   ],
   "headToHead": [
+    {
+      "opponentUsername": "Taylorhol",
+      "opponentDisplayName": "Taylorhol",
+      "matchesPlayed": 4,
+      "matchWins": 3,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.75,
+      "gameWins": 7,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6363636363636364,
+      "matches": [
+        {
+          "tournamentId": "445678",
+          "dateDisplay": "August 13, 2026",
+          "result": "L",
+          "playerDeck": "Enchantress",
+          "opponentDeck": "4-Color Terrageddon",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "445677",
+          "dateDisplay": "August 6, 2026",
+          "result": "W",
+          "playerDeck": "Dreadnought",
+          "opponentDeck": "HFEB",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "436160",
+          "dateDisplay": "July 9, 2026",
+          "result": "W",
+          "playerDeck": "UW Stiflenought",
+          "opponentDeck": "RG Goblins",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "436157",
+          "dateDisplay": "June 18, 2026",
+          "result": "W",
+          "playerDeck": "5C Tog",
+          "opponentDeck": "Burn",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
     {
       "opponentUsername": "madmanpoet",
       "opponentDisplayName": "Michael Flores",
@@ -212,46 +281,46 @@
       ]
     },
     {
-      "opponentUsername": "Taylorhol",
-      "opponentDisplayName": "Taylorhol",
+      "opponentUsername": "DaveKaplan",
+      "opponentDisplayName": "Dave Kaplan",
       "matchesPlayed": 3,
-      "matchWins": 3,
-      "matchLosses": 0,
+      "matchWins": 2,
+      "matchLosses": 1,
       "matchDraws": 0,
-      "matchWinPercentage": 1,
-      "gameWins": 6,
-      "gameLosses": 2,
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 4,
+      "gameLosses": 3,
       "gameDraws": 0,
-      "gameWinPercentage": 0.75,
+      "gameWinPercentage": 0.5714285714285714,
       "matches": [
+        {
+          "tournamentId": "445678",
+          "dateDisplay": "August 13, 2026",
+          "result": "L",
+          "playerDeck": "Enchantress",
+          "opponentDeck": "UB Dreadnought",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
         {
           "tournamentId": "445677",
           "dateDisplay": "August 6, 2026",
           "result": "W",
           "playerDeck": "Dreadnought",
-          "opponentDeck": "HFEB",
-          "playerGameWins": 2,
-          "opponentGameWins": 1,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "436160",
-          "dateDisplay": "July 9, 2026",
-          "result": "W",
-          "playerDeck": "UW Stiflenought",
-          "opponentDeck": "RG Goblins",
-          "playerGameWins": 2,
-          "opponentGameWins": 1,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "436157",
-          "dateDisplay": "June 18, 2026",
-          "result": "W",
-          "playerDeck": "5C Tog",
-          "opponentDeck": "Burn",
+          "opponentDeck": "WWu",
           "playerGameWins": 2,
           "opponentGameWins": 0,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "445676",
+          "dateDisplay": "July 30, 2026",
+          "result": "W",
+          "playerDeck": "Dreadnought",
+          "opponentDeck": "Burn",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
           "gameDraws": 0
         }
       ]
@@ -297,41 +366,6 @@
           "opponentDeck": "Reanimator",
           "playerGameWins": 0,
           "opponentGameWins": 2,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "DaveKaplan",
-      "opponentDisplayName": "Dave Kaplan",
-      "matchesPlayed": 2,
-      "matchWins": 2,
-      "matchLosses": 0,
-      "matchDraws": 0,
-      "matchWinPercentage": 1,
-      "gameWins": 4,
-      "gameLosses": 1,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.8,
-      "matches": [
-        {
-          "tournamentId": "445677",
-          "dateDisplay": "August 6, 2026",
-          "result": "W",
-          "playerDeck": "Dreadnought",
-          "opponentDeck": "WWu",
-          "playerGameWins": 2,
-          "opponentGameWins": 0,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "445676",
-          "dateDisplay": "July 30, 2026",
-          "result": "W",
-          "playerDeck": "Dreadnought",
-          "opponentDeck": "Burn",
-          "playerGameWins": 2,
-          "opponentGameWins": 1,
           "gameDraws": 0
         }
       ]
@@ -472,6 +506,31 @@
           "opponentDeck": "Survival-less Elves",
           "playerGameWins": 1,
           "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "leyawn",
+      "opponentDisplayName": "Leon Chang",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6666666666666666,
+      "matches": [
+        {
+          "tournamentId": "445678",
+          "dateDisplay": "August 13, 2026",
+          "result": "W",
+          "playerDeck": "Enchantress",
+          "opponentDeck": "HFEB",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
           "gameDraws": 0
         }
       ]
@@ -878,6 +937,19 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "445678",
+      "dateDisplay": "August 13, 2026",
+      "playerCount": 24,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 16,
+      "points": 3,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWinPercentage": 0.375,
+      "deck": "Enchantress"
+    },
     {
       "tournamentId": "445677",
       "dateDisplay": "August 6, 2026",

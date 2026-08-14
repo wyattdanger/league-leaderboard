@@ -1,0 +1,109 @@
+{
+  "username": "tjndj",
+  "displayName": "tjndj",
+  "overallStats": {
+    "totalTournaments": 1,
+    "totalPoints": 4,
+    "totalMatches": 2,
+    "matchRecord": "1-0-1",
+    "matchWinPercentage": 0.75,
+    "gameRecord": "2-1-1",
+    "gameWinPercentage": 0.5,
+    "trophies": 0,
+    "belts": 0
+  },
+  "leagueStats": [
+    {
+      "leagueName": "Q3 2026",
+      "events": 1,
+      "points": 4,
+      "matchRecord": "1-0-1",
+      "matchWinPercentage": 0.75,
+      "gameRecord": "2-1-1",
+      "gameWinPercentage": 0.625
+    }
+  ],
+  "deckStats": [
+    {
+      "deckName": "Moneyball",
+      "events": 1,
+      "matchWins": 1,
+      "matchLosses": 1,
+      "matchDraws": 1,
+      "matchRecord": "1-1-1",
+      "matchWinPercentage": 0.5,
+      "gameWins": 5,
+      "gameLosses": 3,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.625,
+      "trophies": 0
+    }
+  ],
+  "headToHead": [
+    {
+      "opponentUsername": "delofstrom",
+      "opponentDisplayName": "DEL .",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6666666666666666,
+      "matches": [
+        {
+          "tournamentId": "445678",
+          "dateDisplay": "August 13, 2026",
+          "result": "W",
+          "playerDeck": "Moneyball",
+          "opponentDeck": "GR Survival",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "KYamada97",
+      "opponentDisplayName": "KYamada97",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 0,
+      "matchDraws": 1,
+      "matchWinPercentage": 0.5,
+      "gameWins": 0,
+      "gameLosses": 0,
+      "gameDraws": 1,
+      "gameWinPercentage": 0.5,
+      "matches": [
+        {
+          "tournamentId": "445678",
+          "dateDisplay": "August 13, 2026",
+          "result": "D",
+          "playerDeck": "Moneyball",
+          "opponentDeck": "Oath Ponza",
+          "playerGameWins": 0,
+          "opponentGameWins": 0,
+          "gameDraws": 1
+        }
+      ]
+    }
+  ],
+  "tournamentPerformances": [
+    {
+      "tournamentId": "445678",
+      "dateDisplay": "August 13, 2026",
+      "playerCount": 24,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 13,
+      "points": 4,
+      "matchRecord": "1-1-1",
+      "matchWinPercentage": 0.5,
+      "gameWinPercentage": 0.5833333,
+      "deck": "Moneyball"
+    }
+  ]
+}
