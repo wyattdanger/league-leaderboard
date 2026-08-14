@@ -378,6 +378,9 @@ async function generatePlayerStats(): Promise<void> {
                 points: standing.Points || 0,
                 matchRecord: standing.MatchRecord,
                 matchWinPercentage: mwp,
+                gameWins: standing.GameWins || 0,
+                gameLosses: standing.GameLosses || 0,
+                gameDraws: standing.GameDraws || 0,
                 gameWinPercentage: gwp,
                 deck,
               });
@@ -430,14 +433,10 @@ async function generatePlayerStats(): Promise<void> {
       stats.matchLosses += losses;
       stats.matchDraws += draws;
 
-      // Calculate game stats from win percentages and match counts
-      const totalMatches = wins + losses + draws;
-      const totalGames = Math.round(totalMatches * 2.5); // Rough estimate
-      const gameWins = Math.round(totalGames * perf.gameWinPercentage);
-      const gameLosses = totalGames - gameWins;
-
-      stats.gameWins += gameWins;
-      stats.gameLosses += gameLosses;
+      // Use actual game data from tournament performance
+      stats.gameWins += perf.gameWins;
+      stats.gameLosses += perf.gameLosses;
+      stats.gameDraws += perf.gameDraws;
 
       // Count trophies (3-0 finishes)
       if (wins === 3 && losses === 0 && draws === 0) {

@@ -41,10 +41,10 @@
       "matchDraws": 1,
       "matchRecord": "7-4-1",
       "matchWinPercentage": 0.625,
-      "gameWins": 19,
-      "gameLosses": 13,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.59375,
+      "gameWins": 17,
+      "gameLosses": 11,
+      "gameDraws": 1,
+      "gameWinPercentage": 0.603448275862069,
       "trophies": 1
     },
     {
@@ -69,10 +69,10 @@
       "matchDraws": 1,
       "matchRecord": "1-1-1",
       "matchWinPercentage": 0.5,
-      "gameWins": 5,
+      "gameWins": 4,
       "gameLosses": 3,
       "gameDraws": 0,
-      "gameWinPercentage": 0.625,
+      "gameWinPercentage": 0.5714285714285714,
       "trophies": 0
     },
     {
@@ -83,10 +83,10 @@
       "matchDraws": 0,
       "matchRecord": "1-2-0",
       "matchWinPercentage": 0.3333333333333333,
-      "gameWins": 3,
-      "gameLosses": 5,
+      "gameWins": 2,
+      "gameLosses": 4,
       "gameDraws": 0,
-      "gameWinPercentage": 0.375,
+      "gameWinPercentage": 0.3333333333333333,
       "trophies": 0
     }
   ],
@@ -538,6 +538,9 @@
       "points": 3,
       "matchRecord": "1-2-0",
       "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 3,
+      "gameLosses": 4,
+      "gameDraws": 0,
       "gameWinPercentage": 0.4285714,
       "deck": "Moneyball Black"
     },
@@ -551,6 +554,9 @@
       "points": 6,
       "matchRecord": "2-1-0",
       "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 5,
+      "gameLosses": 2,
+      "gameDraws": 0,
       "gameWinPercentage": 0.7142857,
       "deck": "Moneyball Black"
     },
@@ -564,6 +570,9 @@
       "points": 9,
       "matchRecord": "3-0-0",
       "matchWinPercentage": 1,
+      "gameWins": 6,
+      "gameLosses": 1,
+      "gameDraws": 0,
       "gameWinPercentage": 0.8571429,
       "deck": "Moneyball Black"
     },
@@ -577,6 +586,9 @@
       "points": 4,
       "matchRecord": "1-1-1",
       "matchWinPercentage": 0.5,
+      "gameWins": 3,
+      "gameLosses": 4,
+      "gameDraws": 1,
       "gameWinPercentage": 0.4166667,
       "deck": "Moneyball Black"
     },
@@ -590,6 +602,9 @@
       "points": 3,
       "matchRecord": "1-2-0",
       "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 2,
+      "gameLosses": 4,
+      "gameDraws": 0,
       "gameWinPercentage": 0.3333333,
       "deck": "Elves"
     },
@@ -603,6 +618,9 @@
       "points": 9,
       "matchRecord": "3-0-0",
       "matchWinPercentage": 1,
+      "gameWins": 6,
+      "gameLosses": 2,
+      "gameDraws": 0,
       "gameWinPercentage": 0.75,
       "deck": "Survival-less Elves"
     },
@@ -616,6 +634,9 @@
       "points": 4,
       "matchRecord": "1-1-1",
       "matchWinPercentage": 0.5,
+      "gameWins": 4,
+      "gameLosses": 3,
+      "gameDraws": 0,
       "gameWinPercentage": 0.5714286,
       "deck": "The Rock"
     }

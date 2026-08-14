@@ -95,10 +95,10 @@
       "matchDraws": 4,
       "matchRecord": "20-18-4",
       "matchWinPercentage": 0.5238095238095238,
-      "gameWins": 55,
-      "gameLosses": 57,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.49107142857142855,
+      "gameWins": 50,
+      "gameLosses": 50,
+      "gameDraws": 1,
+      "gameWinPercentage": 0.5,
       "trophies": 0
     },
     {
@@ -109,10 +109,10 @@
       "matchDraws": 1,
       "matchRecord": "9-2-1",
       "matchWinPercentage": 0.7916666666666666,
-      "gameWins": 22,
-      "gameLosses": 10,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.6875,
+      "gameWins": 20,
+      "gameLosses": 9,
+      "gameDraws": 1,
+      "gameWinPercentage": 0.6833333333333333,
       "trophies": 1
     },
     {
@@ -123,10 +123,10 @@
       "matchDraws": 0,
       "matchRecord": "4-5-0",
       "matchWinPercentage": 0.4444444444444444,
-      "gameWins": 13,
-      "gameLosses": 11,
+      "gameWins": 9,
+      "gameLosses": 12,
       "gameDraws": 0,
-      "gameWinPercentage": 0.5416666666666666,
+      "gameWinPercentage": 0.42857142857142855,
       "trophies": 0
     },
     {
@@ -139,8 +139,8 @@
       "matchWinPercentage": 0.75,
       "gameWins": 10,
       "gameLosses": 6,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.625,
+      "gameDraws": 1,
+      "gameWinPercentage": 0.6176470588235294,
       "trophies": 0
     },
     {
@@ -151,9 +151,9 @@
       "matchDraws": 1,
       "matchRecord": "4-1-1",
       "matchWinPercentage": 0.75,
-      "gameWins": 12,
-      "gameLosses": 4,
-      "gameDraws": 0,
+      "gameWins": 10,
+      "gameLosses": 3,
+      "gameDraws": 1,
       "gameWinPercentage": 0.75,
       "trophies": 0
     },
@@ -165,8 +165,8 @@
       "matchDraws": 0,
       "matchRecord": "3-3-0",
       "matchWinPercentage": 0.5,
-      "gameWins": 8,
-      "gameLosses": 8,
+      "gameWins": 7,
+      "gameLosses": 7,
       "gameDraws": 0,
       "gameWinPercentage": 0.5,
       "trophies": 0
@@ -221,10 +221,10 @@
       "matchDraws": 0,
       "matchRecord": "0-3-0",
       "matchWinPercentage": 0,
-      "gameWins": 3,
-      "gameLosses": 5,
+      "gameWins": 2,
+      "gameLosses": 6,
       "gameDraws": 0,
-      "gameWinPercentage": 0.375,
+      "gameWinPercentage": 0.25,
       "trophies": 0
     }
   ],
@@ -1776,6 +1776,9 @@
       "points": 0,
       "matchRecord": "0-3-0",
       "matchWinPercentage": 0,
+      "gameWins": 2,
+      "gameLosses": 6,
+      "gameDraws": 0,
       "gameWinPercentage": 0.3333333,
       "deck": "Esper Tog"
     },
@@ -1789,6 +1792,9 @@
       "points": 7,
       "matchRecord": "2-0-1",
       "matchWinPercentage": 0.8333333333333334,
+      "gameWins": 5,
+      "gameLosses": 3,
+      "gameDraws": 1,
       "gameWinPercentage": 0.5925926,
       "deck": "WUG Threshnought"
     },
@@ -1802,6 +1808,9 @@
       "points": 6,
       "matchRecord": "2-1-0",
       "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 5,
+      "gameLosses": 3,
+      "gameDraws": 0,
       "gameWinPercentage": 0.625,
       "deck": "WUG Threshnought"
     },
@@ -1815,6 +1824,9 @@
       "points": 9,
       "matchRecord": "3-0-0",
       "matchWinPercentage": 1,
+      "gameWins": 6,
+      "gameLosses": 0,
+      "gameDraws": 0,
       "gameWinPercentage": 1,
       "deck": "Replenish"
     },
@@ -1828,6 +1840,9 @@
       "points": 7,
       "matchRecord": "2-0-1",
       "matchWinPercentage": 0.8333333333333334,
+      "gameWins": 5,
+      "gameLosses": 3,
+      "gameDraws": 1,
       "gameWinPercentage": 0.5925926,
       "deck": "Replenish"
     },
@@ -1841,6 +1856,9 @@
       "points": 6,
       "matchRecord": "2-1-0",
       "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 4,
+      "gameLosses": 2,
+      "gameDraws": 0,
       "gameWinPercentage": 0.6666667,
       "deck": "Replenish"
     },
@@ -1854,6 +1872,9 @@
       "points": 3,
       "matchRecord": "1-2-0",
       "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 4,
+      "gameLosses": 4,
+      "gameDraws": 0,
       "gameWinPercentage": 0.5,
       "deck": "Turbolands"
     },
@@ -1867,6 +1888,9 @@
       "points": 0,
       "matchRecord": "0-3-0",
       "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 6,
+      "gameDraws": 0,
       "gameWinPercentage": 0.3333333,
       "deck": "Psychatog"
     },
@@ -1880,6 +1904,9 @@
       "points": 6,
       "matchRecord": "2-1-0",
       "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 5,
+      "gameLosses": 3,
+      "gameDraws": 0,
       "gameWinPercentage": 0.625,
       "deck": "Angry Ghoul"
     },
@@ -1893,6 +1920,9 @@
       "points": 6,
       "matchRecord": "2-1-0",
       "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 5,
+      "gameLosses": 4,
+      "gameDraws": 0,
       "gameWinPercentage": 0.5555556,
       "deck": "Replenish"
     },
@@ -1906,6 +1936,9 @@
       "points": 6,
       "matchRecord": "2-1-0",
       "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 4,
+      "gameLosses": 3,
+      "gameDraws": 0,
       "gameWinPercentage": 0.5714286,
       "deck": "Psychatog"
     },
@@ -1919,6 +1952,9 @@
       "points": 6,
       "matchRecord": "2-1-0",
       "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 4,
+      "gameLosses": 3,
+      "gameDraws": 0,
       "gameWinPercentage": 0.5714286,
       "deck": "Psychatog"
     },
@@ -1932,6 +1968,9 @@
       "points": 3,
       "matchRecord": "1-2-0",
       "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 2,
+      "gameLosses": 4,
+      "gameDraws": 0,
       "gameWinPercentage": 0.33333333,
       "deck": "UB Tide"
     },
@@ -1945,6 +1984,9 @@
       "points": 6,
       "matchRecord": "2-1-0",
       "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 5,
+      "gameLosses": 3,
+      "gameDraws": 0,
       "gameWinPercentage": 0.625,
       "deck": "UB Tide"
     },
@@ -1958,6 +2000,9 @@
       "points": 7,
       "matchRecord": "2-0-1",
       "matchWinPercentage": 0.8333333333333334,
+      "gameWins": 5,
+      "gameLosses": 2,
+      "gameDraws": 1,
       "gameWinPercentage": 0.66666667,
       "deck": "_"
     },
@@ -1971,6 +2016,9 @@
       "points": 7,
       "matchRecord": "2-0-1",
       "matchWinPercentage": 0.8333333333333334,
+      "gameWins": 5,
+      "gameLosses": 1,
+      "gameDraws": 1,
       "gameWinPercentage": 0.76190476,
       "deck": "Tide"
     },
@@ -1984,6 +2032,9 @@
       "points": 6,
       "matchRecord": "2-1-0",
       "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 4,
+      "gameLosses": 3,
+      "gameDraws": 0,
       "gameWinPercentage": 0.57142857,
       "deck": "_"
     },
@@ -1997,6 +2048,9 @@
       "points": 3,
       "matchRecord": "1-2-0",
       "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 3,
+      "gameLosses": 5,
+      "gameDraws": 0,
       "gameWinPercentage": 0.375,
       "deck": "_"
     },
@@ -2010,6 +2064,9 @@
       "points": 6,
       "matchRecord": "2-1-0",
       "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 5,
+      "gameLosses": 2,
+      "gameDraws": 0,
       "gameWinPercentage": 0.71428571,
       "deck": "Tide"
     },
@@ -2023,6 +2080,9 @@
       "points": 3,
       "matchRecord": "1-2-0",
       "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 4,
+      "gameLosses": 4,
+      "gameDraws": 0,
       "gameWinPercentage": 0.5,
       "deck": "Dreadnought"
     },
@@ -2036,6 +2096,9 @@
       "points": 4,
       "matchRecord": "1-1-1",
       "matchWinPercentage": 0.5,
+      "gameWins": 3,
+      "gameLosses": 4,
+      "gameDraws": 0,
       "gameWinPercentage": 0.42857143,
       "deck": "_"
     },
@@ -2049,6 +2112,9 @@
       "points": 5,
       "matchRecord": "1-0-2",
       "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 4,
+      "gameLosses": 3,
+      "gameDraws": 0,
       "gameWinPercentage": 0.57142857,
       "deck": "_"
     },
@@ -2062,6 +2128,9 @@
       "points": 3,
       "matchRecord": "1-2-0",
       "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 2,
+      "gameLosses": 2,
+      "gameDraws": 0,
       "gameWinPercentage": 0.5,
       "deck": "_"
     },
@@ -2075,6 +2144,9 @@
       "points": 3,
       "matchRecord": "1-2-0",
       "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 2,
+      "gameLosses": 5,
+      "gameDraws": 0,
       "gameWinPercentage": 0.28571429,
       "deck": "_"
     },
@@ -2088,6 +2160,9 @@
       "points": 6,
       "matchRecord": "2-1-0",
       "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 5,
+      "gameLosses": 3,
+      "gameDraws": 0,
       "gameWinPercentage": 0.625,
       "deck": "_"
     },
@@ -2101,6 +2176,9 @@
       "points": 6,
       "matchRecord": "2-1-0",
       "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 5,
+      "gameLosses": 3,
+      "gameDraws": 0,
       "gameWinPercentage": 0.625,
       "deck": "_"
     },
@@ -2114,6 +2192,9 @@
       "points": 3,
       "matchRecord": "1-2-0",
       "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 3,
+      "gameLosses": 4,
+      "gameDraws": 0,
       "gameWinPercentage": 0.42857143,
       "deck": "_"
     },
@@ -2127,6 +2208,9 @@
       "points": 6,
       "matchRecord": "2-1-0",
       "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 4,
+      "gameLosses": 4,
+      "gameDraws": 0,
       "gameWinPercentage": 0.5,
       "deck": "_"
     },
@@ -2140,6 +2224,9 @@
       "points": 6,
       "matchRecord": "2-1-0",
       "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 4,
+      "gameLosses": 3,
+      "gameDraws": 0,
       "gameWinPercentage": 0.57142857,
       "deck": "_"
     },
@@ -2153,6 +2240,9 @@
       "points": 3,
       "matchRecord": "1-2-0",
       "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 2,
+      "gameLosses": 5,
+      "gameDraws": 0,
       "gameWinPercentage": 0.28571429,
       "deck": "_"
     },
@@ -2166,6 +2256,9 @@
       "points": 3,
       "matchRecord": "1-2-0",
       "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 4,
+      "gameLosses": 4,
+      "gameDraws": 0,
       "gameWinPercentage": 0.5,
       "deck": "_"
     }

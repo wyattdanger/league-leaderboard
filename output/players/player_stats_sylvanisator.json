@@ -68,10 +68,10 @@
       "matchDraws": 2,
       "matchRecord": "12-16-2",
       "matchWinPercentage": 0.43333333333333335,
-      "gameWins": 33,
-      "gameLosses": 47,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.4125,
+      "gameWins": 28,
+      "gameLosses": 37,
+      "gameDraws": 2,
+      "gameWinPercentage": 0.43283582089552236,
       "trophies": 0
     },
     {
@@ -82,10 +82,10 @@
       "matchDraws": 0,
       "matchRecord": "1-5-0",
       "matchWinPercentage": 0.16666666666666666,
-      "gameWins": 7,
-      "gameLosses": 9,
+      "gameWins": 4,
+      "gameLosses": 10,
       "gameDraws": 0,
-      "gameWinPercentage": 0.4375,
+      "gameWinPercentage": 0.2857142857142857,
       "trophies": 0
     },
     {
@@ -96,10 +96,10 @@
       "matchDraws": 0,
       "matchRecord": "2-1-0",
       "matchWinPercentage": 0.6666666666666666,
-      "gameWins": 6,
+      "gameWins": 5,
       "gameLosses": 2,
       "gameDraws": 0,
-      "gameWinPercentage": 0.75,
+      "gameWinPercentage": 0.7142857142857143,
       "trophies": 0
     },
     {
@@ -110,10 +110,10 @@
       "matchDraws": 0,
       "matchRecord": "2-1-0",
       "matchWinPercentage": 0.6666666666666666,
-      "gameWins": 5,
-      "gameLosses": 3,
+      "gameWins": 4,
+      "gameLosses": 2,
       "gameDraws": 0,
-      "gameWinPercentage": 0.625,
+      "gameWinPercentage": 0.6666666666666666,
       "trophies": 0
     },
     {
@@ -124,10 +124,10 @@
       "matchDraws": 0,
       "matchRecord": "2-1-0",
       "matchWinPercentage": 0.6666666666666666,
-      "gameWins": 5,
+      "gameWins": 4,
       "gameLosses": 3,
       "gameDraws": 0,
-      "gameWinPercentage": 0.625,
+      "gameWinPercentage": 0.5714285714285714,
       "trophies": 0
     },
     {
@@ -139,9 +139,9 @@
       "matchRecord": "1-2-0",
       "matchWinPercentage": 0.3333333333333333,
       "gameWins": 3,
-      "gameLosses": 5,
+      "gameLosses": 4,
       "gameDraws": 0,
-      "gameWinPercentage": 0.375,
+      "gameWinPercentage": 0.42857142857142855,
       "trophies": 0
     },
     {
@@ -152,10 +152,10 @@
       "matchDraws": 0,
       "matchRecord": "1-2-0",
       "matchWinPercentage": 0.3333333333333333,
-      "gameWins": 3,
-      "gameLosses": 5,
+      "gameWins": 2,
+      "gameLosses": 3,
       "gameDraws": 0,
-      "gameWinPercentage": 0.375,
+      "gameWinPercentage": 0.4,
       "trophies": 0
     },
     {
@@ -166,10 +166,10 @@
       "matchDraws": 0,
       "matchRecord": "0-3-0",
       "matchWinPercentage": 0,
-      "gameWins": 3,
-      "gameLosses": 5,
+      "gameWins": 1,
+      "gameLosses": 6,
       "gameDraws": 0,
-      "gameWinPercentage": 0.375,
+      "gameWinPercentage": 0.14285714285714285,
       "trophies": 0
     }
   ],
@@ -1196,6 +1196,9 @@
       "points": 6,
       "matchRecord": "2-1-0",
       "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 5,
+      "gameLosses": 2,
+      "gameDraws": 0,
       "gameWinPercentage": 0.7142857,
       "deck": "GR Aggro"
     },
@@ -1209,6 +1212,9 @@
       "points": 0,
       "matchRecord": "0-3-0",
       "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 6,
+      "gameDraws": 0,
       "gameWinPercentage": 0.3333333,
       "deck": "RG Zoo"
     },
@@ -1222,6 +1228,9 @@
       "points": 6,
       "matchRecord": "2-1-0",
       "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 4,
+      "gameLosses": 2,
+      "gameDraws": 0,
       "gameWinPercentage": 0.6666667,
       "deck": "Zoo"
     },
@@ -1235,6 +1244,9 @@
       "points": 0,
       "matchRecord": "0-3-0",
       "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 6,
+      "gameDraws": 0,
       "gameWinPercentage": 0.3333333,
       "deck": "Dreadnought"
     },
@@ -1248,6 +1260,9 @@
       "points": 3,
       "matchRecord": "1-2-0",
       "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 3,
+      "gameLosses": 4,
+      "gameDraws": 0,
       "gameWinPercentage": 0.4285714,
       "deck": "UW Dreadnought"
     },
@@ -1261,6 +1276,9 @@
       "points": 3,
       "matchRecord": "1-2-0",
       "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 2,
+      "gameLosses": 3,
+      "gameDraws": 0,
       "gameWinPercentage": 0.4,
       "deck": "UW Stiflenought"
     },
@@ -1274,6 +1292,9 @@
       "points": 3,
       "matchRecord": "1-2-0",
       "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 4,
+      "gameLosses": 4,
+      "gameDraws": 0,
       "gameWinPercentage": 0.5,
       "deck": "Dreadnought"
     },
@@ -1287,6 +1308,9 @@
       "points": 3,
       "matchRecord": "1-2-0",
       "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 2,
+      "gameLosses": 4,
+      "gameDraws": 0,
       "gameWinPercentage": 0.33333333,
       "deck": "_"
     },
@@ -1300,6 +1324,9 @@
       "points": 3,
       "matchRecord": "1-2-0",
       "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 2,
+      "gameLosses": 4,
+      "gameDraws": 0,
       "gameWinPercentage": 0.33333333,
       "deck": "_"
     },
@@ -1313,6 +1340,9 @@
       "points": 3,
       "matchRecord": "1-2-0",
       "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 3,
+      "gameLosses": 4,
+      "gameDraws": 0,
       "gameWinPercentage": 0.42857143,
       "deck": "_"
     },
@@ -1326,6 +1356,9 @@
       "points": 6,
       "matchRecord": "2-1-0",
       "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 4,
+      "gameLosses": 3,
+      "gameDraws": 0,
       "gameWinPercentage": 0.57142857,
       "deck": "Broccoi Soup"
     },
@@ -1339,6 +1372,9 @@
       "points": 7,
       "matchRecord": "2-0-1",
       "matchWinPercentage": 0.8333333333333334,
+      "gameWins": 5,
+      "gameLosses": 2,
+      "gameDraws": 1,
       "gameWinPercentage": 0.66666667,
       "deck": "_"
     },
@@ -1352,6 +1388,9 @@
       "points": 6,
       "matchRecord": "2-1-0",
       "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 5,
+      "gameLosses": 3,
+      "gameDraws": 0,
       "gameWinPercentage": 0.625,
       "deck": "_"
     },
@@ -1365,6 +1404,9 @@
       "points": 3,
       "matchRecord": "1-2-0",
       "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 2,
+      "gameLosses": 5,
+      "gameDraws": 0,
       "gameWinPercentage": 0.28571429,
       "deck": "_"
     },
@@ -1378,6 +1420,9 @@
       "points": 1,
       "matchRecord": "0-2-1",
       "matchWinPercentage": 0.16666666666666666,
+      "gameWins": 1,
+      "gameLosses": 5,
+      "gameDraws": 1,
       "gameWinPercentage": 0.19047619,
       "deck": "_"
     },
@@ -1391,6 +1436,9 @@
       "points": 3,
       "matchRecord": "1-2-0",
       "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 2,
+      "gameLosses": 3,
+      "gameDraws": 0,
       "gameWinPercentage": 0.4,
       "deck": "_"
     },
@@ -1404,6 +1452,9 @@
       "points": 6,
       "matchRecord": "2-1-0",
       "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 4,
+      "gameLosses": 2,
+      "gameDraws": 0,
       "gameWinPercentage": 0.66666667,
       "deck": "_"
     },
@@ -1417,6 +1468,9 @@
       "points": 3,
       "matchRecord": "1-2-0",
       "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 2,
+      "gameLosses": 5,
+      "gameDraws": 0,
       "gameWinPercentage": 0.28571429,
       "deck": "_"
     }

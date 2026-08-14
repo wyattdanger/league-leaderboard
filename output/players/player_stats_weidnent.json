@@ -50,10 +50,10 @@
       "matchDraws": 1,
       "matchRecord": "6-8-1",
       "matchWinPercentage": 0.43333333333333335,
-      "gameWins": 20,
+      "gameWins": 19,
       "gameLosses": 20,
       "gameDraws": 0,
-      "gameWinPercentage": 0.5,
+      "gameWinPercentage": 0.48717948717948717,
       "trophies": 0
     },
     {
@@ -64,10 +64,10 @@
       "matchDraws": 0,
       "matchRecord": "2-4-0",
       "matchWinPercentage": 0.3333333333333333,
-      "gameWins": 8,
-      "gameLosses": 8,
+      "gameWins": 5,
+      "gameLosses": 9,
       "gameDraws": 0,
-      "gameWinPercentage": 0.5,
+      "gameWinPercentage": 0.35714285714285715,
       "trophies": 0
     },
     {
@@ -78,10 +78,10 @@
       "matchDraws": 1,
       "matchRecord": "1-4-1",
       "matchWinPercentage": 0.25,
-      "gameWins": 6,
-      "gameLosses": 10,
+      "gameWins": 5,
+      "gameLosses": 9,
       "gameDraws": 0,
-      "gameWinPercentage": 0.375,
+      "gameWinPercentage": 0.35714285714285715,
       "trophies": 0
     },
     {
@@ -92,10 +92,10 @@
       "matchDraws": 0,
       "matchRecord": "1-5-0",
       "matchWinPercentage": 0.16666666666666666,
-      "gameWins": 6,
+      "gameWins": 3,
       "gameLosses": 10,
       "gameDraws": 0,
-      "gameWinPercentage": 0.375,
+      "gameWinPercentage": 0.23076923076923078,
       "trophies": 0
     },
     {
@@ -106,10 +106,10 @@
       "matchDraws": 0,
       "matchRecord": "2-1-0",
       "matchWinPercentage": 0.6666666666666666,
-      "gameWins": 5,
-      "gameLosses": 3,
+      "gameWins": 4,
+      "gameLosses": 2,
       "gameDraws": 0,
-      "gameWinPercentage": 0.625,
+      "gameWinPercentage": 0.6666666666666666,
       "trophies": 0
     },
     {
@@ -120,10 +120,10 @@
       "matchDraws": 0,
       "matchRecord": "2-1-0",
       "matchWinPercentage": 0.6666666666666666,
-      "gameWins": 4,
+      "gameWins": 5,
       "gameLosses": 4,
       "gameDraws": 0,
-      "gameWinPercentage": 0.5,
+      "gameWinPercentage": 0.5555555555555556,
       "trophies": 0
     },
     {
@@ -149,9 +149,9 @@
       "matchRecord": "1-2-0",
       "matchWinPercentage": 0.3333333333333333,
       "gameWins": 3,
-      "gameLosses": 5,
+      "gameLosses": 4,
       "gameDraws": 0,
-      "gameWinPercentage": 0.375,
+      "gameWinPercentage": 0.42857142857142855,
       "trophies": 0
     },
     {
@@ -162,10 +162,10 @@
       "matchDraws": 0,
       "matchRecord": "1-2-0",
       "matchWinPercentage": 0.3333333333333333,
-      "gameWins": 3,
-      "gameLosses": 5,
+      "gameWins": 2,
+      "gameLosses": 4,
       "gameDraws": 0,
-      "gameWinPercentage": 0.375,
+      "gameWinPercentage": 0.3333333333333333,
       "trophies": 0
     },
     {
@@ -176,10 +176,10 @@
       "matchDraws": 0,
       "matchRecord": "0-3-0",
       "matchWinPercentage": 0,
-      "gameWins": 3,
-      "gameLosses": 5,
+      "gameWins": 0,
+      "gameLosses": 6,
       "gameDraws": 0,
-      "gameWinPercentage": 0.375,
+      "gameWinPercentage": 0,
       "trophies": 0
     }
   ],
@@ -1171,6 +1171,9 @@
       "points": 3,
       "matchRecord": "1-2-0",
       "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 3,
+      "gameLosses": 4,
+      "gameDraws": 0,
       "gameWinPercentage": 0.4285714,
       "deck": "_"
     },
@@ -1184,6 +1187,9 @@
       "points": 3,
       "matchRecord": "1-2-0",
       "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 3,
+      "gameLosses": 4,
+      "gameDraws": 0,
       "gameWinPercentage": 0.4285714,
       "deck": "GW Mad Dogs"
     },
@@ -1197,6 +1203,9 @@
       "points": 6,
       "matchRecord": "2-1-0",
       "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 4,
+      "gameLosses": 2,
+      "gameDraws": 0,
       "gameWinPercentage": 0.6666667,
       "deck": "Balancing Act"
     },
@@ -1210,6 +1219,9 @@
       "points": 6,
       "matchRecord": "2-1-0",
       "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 4,
+      "gameLosses": 2,
+      "gameDraws": 0,
       "gameWinPercentage": 0.6666667,
       "deck": "Reanimator"
     },
@@ -1223,6 +1235,9 @@
       "points": 7,
       "matchRecord": "2-0-1",
       "matchWinPercentage": 0.8333333333333334,
+      "gameWins": 5,
+      "gameLosses": 3,
+      "gameDraws": 0,
       "gameWinPercentage": 0.625,
       "deck": "Reanimator"
     },
@@ -1236,6 +1251,9 @@
       "points": 6,
       "matchRecord": "2-1-0",
       "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 5,
+      "gameLosses": 4,
+      "gameDraws": 0,
       "gameWinPercentage": 0.5555556,
       "deck": "Dragon Reanimator"
     },
@@ -1249,6 +1267,9 @@
       "points": 1,
       "matchRecord": "0-2-1",
       "matchWinPercentage": 0.16666666666666666,
+      "gameWins": 2,
+      "gameLosses": 5,
+      "gameDraws": 0,
       "gameWinPercentage": 0.3333333,
       "deck": "_"
     },
@@ -1262,6 +1283,9 @@
       "points": 6,
       "matchRecord": "2-1-0",
       "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 4,
+      "gameLosses": 4,
+      "gameDraws": 0,
       "gameWinPercentage": 0.5,
       "deck": "Balancing Tings"
     },
@@ -1275,6 +1299,9 @@
       "points": 0,
       "matchRecord": "0-3-0",
       "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 6,
+      "gameDraws": 0,
       "gameWinPercentage": 0.3333333,
       "deck": "Dragonstorm"
     },
@@ -1288,6 +1315,9 @@
       "points": 6,
       "matchRecord": "2-1-0",
       "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 5,
+      "gameLosses": 3,
+      "gameDraws": 0,
       "gameWinPercentage": 0.625,
       "deck": "Dragonstorm"
     },
@@ -1301,6 +1331,9 @@
       "points": 3,
       "matchRecord": "1-2-0",
       "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 3,
+      "gameLosses": 5,
+      "gameDraws": 0,
       "gameWinPercentage": 0.375,
       "deck": "Reanimator"
     },
@@ -1314,6 +1347,9 @@
       "points": 0,
       "matchRecord": "0-3-0",
       "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 6,
+      "gameDraws": 0,
       "gameWinPercentage": 0.3333333,
       "deck": "Mono Blue Storm"
     },
@@ -1327,6 +1363,9 @@
       "points": 3,
       "matchRecord": "1-2-0",
       "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 3,
+      "gameLosses": 4,
+      "gameDraws": 0,
       "gameWinPercentage": 0.4285714,
       "deck": "GW Madness"
     },
@@ -1340,6 +1379,9 @@
       "points": 0,
       "matchRecord": "0-3-0",
       "matchWinPercentage": 0,
+      "gameWins": 3,
+      "gameLosses": 6,
+      "gameDraws": 0,
       "gameWinPercentage": 0.3333333,
       "deck": "Reanimator"
     },
@@ -1353,6 +1395,9 @@
       "points": 3,
       "matchRecord": "1-2-0",
       "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 2,
+      "gameLosses": 4,
+      "gameDraws": 0,
       "gameWinPercentage": 0.3333333,
       "deck": "Goblins"
     },
@@ -1366,6 +1411,9 @@
       "points": 0,
       "matchRecord": "0-3-0",
       "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 6,
+      "gameDraws": 0,
       "gameWinPercentage": 0.3333333,
       "deck": "GW Mad Dogs"
     },
@@ -1379,6 +1427,9 @@
       "points": 3,
       "matchRecord": "1-2-0",
       "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 4,
+      "gameLosses": 4,
+      "gameDraws": 0,
       "gameWinPercentage": 0.5,
       "deck": "Reanimator"
     }
