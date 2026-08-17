@@ -123,8 +123,13 @@ const pageDescription = `Explore deck archetype statistics from ${totalDecks} de
         // Parse leagues from URL
         selectedLeagues = new Set(leaguesParam.split(',').filter(l => l));
       } else {
-        // Default to all leagues
-        selectedLeagues = new Set(metagameData.leagues.map(l => l.leagueName));
+        // Default to current league (first league in the list)
+        selectedLeagues = new Set(metagameData.leagues.length > 0 ? [metagameData.leagues[0].leagueName] : []);
+      }
+
+      // If no leagues selected (e.g., invalid URL param), default to current league
+      if (selectedLeagues.size === 0 && metagameData.leagues.length > 0) {
+        selectedLeagues = new Set([metagameData.leagues[0].leagueName]);
       }
 
       let minDecks = parseInt(urlParams.get('minDecks')) || 1;
@@ -788,6 +793,10 @@ const pageDescription = `Explore deck archetype statistics from ${totalDecks} de
           metagameData.leagues.forEach(league => selectedLeagues.add(league.leagueName));
         } else {
           selectedLeagues.clear();
+          // Prevent empty state - default to current league
+          if (metagameData.leagues.length > 0) {
+            selectedLeagues.add(metagameData.leagues[0].leagueName);
+          }
         }
         syncControls();
         render();
