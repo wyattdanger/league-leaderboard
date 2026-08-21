@@ -217,6 +217,7 @@ const formatVariantStats = (variantStats: any[]) => {
     max-width: 35px;
     padding: 0.75rem 0.125rem 0.75rem 0.75rem !important;
     text-align: center;
+    vertical-align: middle;
   }
 
   .decks-table td {
@@ -268,6 +269,8 @@ const formatVariantStats = (variantStats: any[]) => {
     color: #667eea;
     transition: transform 0.2s ease;
     vertical-align: middle;
+    height: 20px;
+    width: 20px;
   }
 
   .variant-toggle:hover {
@@ -376,13 +379,62 @@ const formatVariantStats = (variantStats: any[]) => {
       display: table-cell;
     }
 
+    /* Reduce padding on mobile */
     .decks-table th,
     .decks-table td {
-      padding: 1rem 1.5rem;
+      padding: 0.5rem 0.25rem;
+      font-size: 0.8rem;
     }
 
+    /* Make toggle column narrower on mobile */
+    .toggle-col {
+      width: 40px;
+      min-width: 40px;
+      max-width: 40px;
+      padding: 0.5rem 0.25rem 0.5rem 0.25rem !important;
+    }
+
+    .toggle-cell {
+      width: 40px;
+      min-width: 40px;
+      max-width: 40px;
+      padding: 0.5rem 0.25rem 0.5rem 0.25rem !important;
+    }
+
+    /* Smaller toggle button on mobile */
+    .variant-toggle {
+      width: 28px;
+      height: 28px;
+      padding: 0.35rem;
+    }
+
+    .variant-toggle .caret {
+      width: 14px;
+      height: 14px;
+    }
+
+    /* Deck names */
     .deck-name {
-      font-size: 0.95rem;
+      font-size: 0.85rem;
+    }
+
+    .variant-name {
+      font-size: 0.85rem;
+    }
+
+    /* Events column */
+    .deck-events {
+      font-size: 0.8rem;
+    }
+
+    /* MWP column on mobile */
+    .deck-mwp {
+      font-size: 0.75rem;
+    }
+
+    /* Trophies column */
+    .deck-trophies {
+      font-size: 0.8rem;
     }
   }
 </style>
