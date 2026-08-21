@@ -223,7 +223,14 @@ if (fs.existsSync(metadataFile)) {
         <>
           {/* Regular Weekly - Show Standings and Rounds */}
           <div class="standings-section">
-            <div class="standings-header">Final Standings</div>
+            <div class="standings-header">
+              <div class="standings-header-title">Final Standings</div>
+              <button class="expand-all-button" id="expand-all-toggle" aria-label="Expand all matches">
+                <svg width="16" height="16" viewBox="0 0 16 16" class="expand-all-icon">
+                  <path d="M8 4v8M4 8h8" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" />
+                </svg>
+              </button>
+            </div>
             <div class="standings-table">
               <table>
                 <thead>
@@ -232,31 +239,124 @@ if (fs.existsSync(metadataFile)) {
                     <th class="player-col">Player</th>
                     {showDeckData && <th class="deck-col">Deck</th>}
                     <th class="record-col">Record</th>
+                    <th class="toggle-col"></th>
                   </tr>
                 </thead>
                 <tbody>
                   {
-                    tournament.finalStandings.map((standing: Standing) => {
+                    tournament.finalStandings.map((standing: Standing, standingIndex: number) => {
                       const deck = showDeckData && deckData ? deckData[standing.player.username] : null;
 
+                      // Find this player's matches across all rounds
+                      const playerMatches = tournament.rounds.map((round) => {
+                        return round.matches.find((match: Match) => {
+                          return (
+                            match.player1?.matches(standing.player.username) ||
+                            match.player2?.matches(standing.player.username)
+                          );
+                        });
+                      });
+
                       return (
-                        <tr
-                          class="clickable-row"
-                          onclick={`window.location.href='${standing.player.profileUrl}'`}
-                        >
-                          <td class="rank-col">
-                            <div class="rank-number">{standing.rank}</div>
-                          </td>
-                          <td class="player-col">
-                            <div class="player-display-name">{standing.player.displayName}</div>
-                          </td>
-                          {showDeckData && (
-                            <td class="deck-col">
-                              <div class="deck-name">{deck || '—'}</div>
+                        <>
+                          <tr
+                            class="standing-row"
+                            data-standing-index={standingIndex}
+                          >
+                            <td class="rank-col">
+                              <div class="rank-number">{standing.rank}</div>
                             </td>
-                          )}
-                          <td class="record-col">{standing.matchRecord}</td>
-                        </tr>
+                            <td class="player-col">
+                              <a href={standing.player.profileUrl} class="player-display-name">{standing.player.displayName}</a>
+                            </td>
+                            {showDeckData && (
+                              <td class="deck-col">
+                                <div class="deck-name">{deck || '—'}</div>
+                              </td>
+                            )}
+                            <td class="record-col">{standing.matchRecord}</td>
+                            <td class="toggle-cell">
+                              <button
+                                class="matches-toggle"
+                                data-standing-index={standingIndex}
+                                aria-label="Toggle match history"
+                                aria-expanded="false"
+                              >
+                                <svg width="16" height="16" viewBox="0 0 16 16" class="toggle-icon">
+                                  <path d="M8 4v8M4 8h8" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" />
+                                </svg>
+                              </button>
+                            </td>
+                          </tr>
+                          <tr class="matches-row" data-standing-index={standingIndex} style="display: none;">
+                            <td colspan={showDeckData ? "5" : "4"} class="matches-cell">
+                              <table class="match-history-table">
+                                <thead>
+                                  <tr>
+                                    <th>Round</th>
+                                    <th>Opponent</th>
+                                    {showDeckData && <th>Deck</th>}
+                                    <th>Result</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  {playerMatches.map((match, roundIndex) => {
+                                    if (!match) return null;
+
+                                    const isPlayer1 = match.player1?.matches(standing.player.username);
+                                    const opponent = isPlayer1 ? match.player2 : match.player1;
+                                    const opponentDeck = showDeckData && deckData && opponent ? deckData[opponent.username] : null;
+
+                                    let result = '';
+                                    if (match.isBye) {
+                                      result = 'BYE';
+                                    } else if (isPlayer1) {
+                                      result = `${match.player1Games}-${match.player2Games}`;
+                                      if (match.gameDraws > 0) result += `-${match.gameDraws}`;
+                                    } else {
+                                      result = `${match.player2Games}-${match.player1Games}`;
+                                      if (match.gameDraws > 0) result += `-${match.gameDraws}`;
+                                    }
+
+                                    // Determine if this player won, lost, or drew
+                                    const winner = match.winner;
+                                    const isWin = winner && (
+                                      (isPlayer1 && winner.matches(match.player1.username)) ||
+                                      (!isPlayer1 && winner.matches(match.player2.username))
+                                    );
+                                    const isDraw = match.isDraw;
+                                    const resultClass = match.isBye ? 'result-bye' : isWin ? 'result-win' : isDraw ? 'result-draw' : 'result-loss';
+
+                                    return (
+                                      <tr class="match-history-row">
+                                        <td class="round-cell">R{roundIndex + 1}</td>
+                                        <td class="opponent-cell">
+                                          {match.isBye ? (
+                                            <span class="bye-text">Bye</span>
+                                          ) : opponent ? (
+                                            <a href={opponent.profileUrl} class="opponent-link">
+                                              {opponent.displayName}
+                                            </a>
+                                          ) : (
+                                            <span class="unknown-opponent">Unknown</span>
+                                          )}
+                                        </td>
+                                        {showDeckData && (
+                                          <td class="deck-cell">
+                                            {opponentDeck || '—'}
+                                          </td>
+                                        )}
+                                        <td class="result-cell">
+                                          <span class={`match-result ${resultClass}`}>{result}</span>
+                                        </td>
+                                      </tr>
+                                    );
+                                  })}
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                        </>
                       );
                     })
                   }
@@ -264,68 +364,6 @@ if (fs.existsSync(metadataFile)) {
               </table>
             </div>
           </div>
-
-          {tournament.rounds.map((round) => (
-            <div class="round-card" key={round.number}>
-              <div class="round-header">{round.displayLabel}</div>
-              <div class="round-matches-grid">
-                {round.matches.map((match: Match) => {
-                      const left = match.leftPlayer;
-                      const right = match.rightPlayer;
-                      const leftDeck =
-                        showDeckData && deckData && left.player ? deckData[left.player.username] : null;
-                  const rightDeck =
-                    showDeckData && deckData && right.player
-                      ? deckData[right.player.username]
-                      : null;
-
-                  // Format result string for display
-                  let displayResult = match.resultString;
-                  if (!match.isBye && match.isComplete) {
-                    // For regular matches, show result from left player's perspective
-                    displayResult = `${left.games}-${right.games}`;
-                    if (match.gameDraws > 0) {
-                      displayResult += `-${match.gameDraws}`;
-                    }
-                  }
-
-                  return (
-                    <div class={`match-row ${match.isDraw ? 'draw-row' : ''}`}>
-                      <div class="player-col player-left">
-                        {left.player && (
-                          <>
-                            <a href={left.player.profileUrl} class="player-link">
-                              {left.player.displayName}
-                            </a>
-                            {showDeckData && (
-                              <div class="deck-name">{leftDeck || '\u00A0'}</div>
-                            )}
-                          </>
-                        )}
-                      </div>
-                      <div class="result-col">
-                        <span class="result-badge">{displayResult}</span>
-                      </div>
-                      <div class="player-col player-right">
-                        {right.player ? (
-                          <>
-                            <a href={right.player.profileUrl} class="player-link">
-                              {right.player.displayName}
-                            </a>
-                            {showDeckData && (
-                              <div class="deck-name">{rightDeck || '\u00A0'}</div>
-                            )}
-                          </>
-                        ) : (
-                          <span class="bye-text">Bye</span>
-                        )}
-                      </div>
-                    </div>
-                  );
-                })}
-              </div>
-            </div>
-          ))}
         </>
       )}
 
@@ -432,119 +470,44 @@ if (fs.existsSync(metadataFile)) {
     overflow: hidden;
   }
 
-  .round-card {
-    margin-bottom: 2rem;
-    border-radius: 12px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-  }
-
   .standings-header {
     padding: 1rem 1.5rem;
     background: var(--gradient-primary);
     color: white;
     font-weight: 600;
     font-size: 1rem;
-  }
-
-  .round-header {
-    background: var(--gradient-primary);
-    color: white;
-    padding: 1rem 1.5rem;
-    font-weight: 600;
-    font-size: 0.9rem;
-  }
-
-  .round-matches-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 0;
-    background: white;
-  }
-
-  .match-row {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    min-height: 4rem;
-    padding: 0.75rem 1rem;
-    border-bottom: 1px solid #e5e7eb;
-    transition: background 0.2s ease;
   }
 
-  .match-row:last-child {
-    border-bottom: none;
-  }
-
-  .match-row:nth-last-child(2):nth-child(odd) {
-    border-bottom: none;
-  }
-
-  .match-row:hover {
-    background: #f9fafb;
-  }
-
-  .match-row .player-col {
+  .standings-header-title {
     flex: 1;
-    min-width: 0;
   }
 
-  .match-row .player-left {
-    text-align: right;
-    padding-right: 1rem;
-  }
-
-  .match-row .player-right {
-    text-align: left;
-    padding-left: 1rem;
-  }
-
-  .match-row .result-col {
-    text-align: center;
-    width: clamp(90px, 15%, 120px);
-    flex-shrink: 0;
-  }
-
-  .match-row .player-link {
-    color: #1f2937;
-    font-weight: 600;
-    font-size: 1.05rem;
-    text-decoration: none;
+  .expand-all-button {
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    padding: 0.5rem;
+    border-radius: 6px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
     transition: all 0.2s ease;
-    display: block;
   }
 
-  .match-row .player-link:hover {
-    color: #667eea;
-    transform: translateX(2px);
+  .expand-all-button:hover {
+    background: rgba(255, 255, 255, 0.3);
   }
 
-  .match-row .player-right .player-link:hover {
-    transform: translateX(-2px);
-  }
-
-  .match-row .deck-name {
-    color: #667eea;
-    font-weight: 600;
-    font-size: 0.85rem;
-    margin-top: 0.25rem;
-    display: block;
-    min-height: 1.2em;
-  }
-
-  .match-row .result-badge {
-    display: inline-block;
-    padding: 0.375rem 0.875rem;
-    background: #f3f4f6;
-    border-radius: 8px;
-    font-weight: 700;
-    font-size: 0.95rem;
-    color: #374151;
-  }
-
-  .match-row .bye-text {
-    color: #9ca3af;
-    font-style: italic;
-    font-weight: 500;
+  .expand-all-icon {
+    width: 16px;
+    height: 16px;
+    transition: transform 0.2s ease;
   }
 
   .standings-table {
@@ -570,7 +533,206 @@ if (fs.existsSync(metadataFile)) {
   }
 
   th:first-child {
+    text-align: center;
+  }
+
+  .toggle-col {
+    width: 60px;
+    min-width: 60px;
+    max-width: 60px;
+    padding: 0.75rem !important;
+    text-align: center;
+  }
+
+  .toggle-cell {
+    width: 60px;
+    min-width: 60px;
+    max-width: 60px;
+    padding: 0.75rem !important;
+    text-align: center;
+  }
+
+  .matches-toggle {
+    background: #f3f4f6;
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+    padding: 0.5rem;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #667eea;
+    width: 32px;
+    height: 32px;
+    transition: all 0.2s ease;
+  }
+
+  .matches-toggle:hover {
+    background: #e5e7eb;
+    color: #5a67d8;
+  }
+
+  .matches-toggle .toggle-icon {
+    transition: transform 0.2s ease;
+    width: 16px;
+    height: 16px;
+  }
+
+  .matches-toggle[aria-expanded="true"] .toggle-icon {
+    transform: rotate(45deg);
+  }
+
+  .standing-row {
+    border-bottom: 1px solid #e0e0e0;
+  }
+
+  .standing-row:hover {
+    background: #f8f9fa;
+  }
+
+  .standing-row.expanded {
+    border-bottom: none;
+  }
+
+  .matches-row {
+    background-color: white;
+  }
+
+  .matches-row td {
+    border-bottom: 1px solid #e0e0e0;
+  }
+
+  .matches-cell {
+    padding: 0.5rem 1.5rem 1rem 1.5rem !important;
+    background: white;
+  }
+
+  .match-history-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background: white;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+    margin-top: 0.5rem;
+  }
+
+  .match-history-table thead {
+    background: #f3f4f6;
+  }
+
+  .match-history-table th {
+    padding: 0.75rem 1rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #6b7280;
     text-align: left;
+    border-bottom: 1px solid #e5e7eb;
+  }
+
+  .match-history-table th:first-child {
+    text-align: center;
+    border-top-left-radius: 7px;
+  }
+
+  .match-history-table th:last-child {
+    text-align: center;
+    border-top-right-radius: 7px;
+  }
+
+  .match-history-row td {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid #e5e7eb;
+  }
+
+  .match-history-row:last-child td {
+    border-bottom: none;
+  }
+
+  .match-history-row:last-child td:first-child {
+    border-bottom-left-radius: 7px;
+  }
+
+  .match-history-row:last-child td:last-child {
+    border-bottom-right-radius: 7px;
+  }
+
+  .round-cell {
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: #667eea;
+    text-align: center;
+    width: 60px;
+  }
+
+  .opponent-cell {
+    font-weight: 600;
+    font-size: 1rem;
+  }
+
+  .opponent-link {
+    color: #1f2937;
+    font-weight: 600;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+
+  .opponent-link:hover {
+    color: #667eea;
+  }
+
+  .deck-cell {
+    color: #667eea;
+    font-weight: 600;
+    font-size: 0.9rem;
+    min-width: 150px;
+  }
+
+  .bye-text {
+    color: #9ca3af;
+    font-style: italic;
+    font-weight: 500;
+  }
+
+  .unknown-opponent {
+    color: #9ca3af;
+    font-weight: 500;
+  }
+
+  .result-cell {
+    text-align: center;
+    width: 80px;
+  }
+
+  .match-result {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 0.9rem;
+    padding: 0.4rem 0.6rem;
+    border-radius: 6px;
+    text-align: center;
+    min-width: 50px;
+  }
+
+  .result-win {
+    background: #d1fae5;
+    color: #065f46;
+  }
+
+  .result-loss {
+    background: #fee2e2;
+    color: #991b1b;
+  }
+
+  .result-draw {
+    background: #fef3c7;
+    color: #92400e;
+  }
+
+  .result-bye {
+    background: #f3f4f6;
+    color: #6b7280;
   }
 
   tbody {
@@ -587,12 +749,8 @@ if (fs.existsSync(metadataFile)) {
     border-bottom: none;
   }
 
-  tbody tr.clickable-row {
-    cursor: pointer;
-  }
-
-  tbody tr.clickable-row:hover {
-    background: #f8f9fa;
+  .standing-row.expanded td {
+    border-bottom: none;
   }
 
   .rank-col {
@@ -615,6 +773,12 @@ if (fs.existsSync(metadataFile)) {
     color: #1f2937;
     font-weight: 600;
     font-size: 1.05rem;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+
+  .player-display-name:hover {
+    color: #667eea;
   }
 
   .deck-col {
@@ -743,32 +907,6 @@ if (fs.existsSync(metadataFile)) {
     font-weight: 500;
   }
 
-  @media (min-width: 900px) {
-    .round-matches-grid {
-      grid-template-columns: repeat(2, 1fr);
-      gap: 0;
-      position: relative;
-    }
-
-    .round-matches-grid::before {
-      content: '';
-      position: absolute;
-      left: 50%;
-      top: 0;
-      bottom: 0;
-      width: 1px;
-      background: #e5e7eb;
-    }
-
-    .match-row:nth-child(odd) {
-      padding-right: 2rem;
-    }
-
-    .match-row:nth-child(even) {
-      padding-left: 2rem;
-    }
-  }
-
   @media (max-width: 640px) {
     .event-profile-header {
       flex-direction: column;
@@ -809,15 +947,6 @@ if (fs.existsSync(metadataFile)) {
       min-width: 150px;
     }
 
-    .round-header {
-      padding: 1rem;
-      font-size: 0.85rem;
-    }
-
-    .match-row {
-      padding: 0.75rem 0.5rem;
-    }
-
     .trophy-content {
       padding: 1.5rem;
     }
@@ -842,6 +971,73 @@ if (fs.existsSync(metadataFile)) {
 
 <script>
   document.addEventListener('DOMContentLoaded', () => {
+    // Setup match history toggles
+    const toggleButtons = document.querySelectorAll('.matches-toggle');
+    toggleButtons.forEach((button) => {
+      button.addEventListener('click', (e) => {
+        e.stopPropagation(); // Prevent row click
+        const standingIndex = button.getAttribute('data-standing-index');
+        const matchesRow = document.querySelector(`.matches-row[data-standing-index="${standingIndex}"]`);
+        const standingRow = document.querySelector(`.standing-row[data-standing-index="${standingIndex}"]`);
+        const isExpanded = button.getAttribute('aria-expanded') === 'true';
+
+        // Toggle visibility
+        if (matchesRow) {
+          matchesRow.style.display = isExpanded ? 'none' : 'table-row';
+        }
+
+        // Toggle expanded class on standing row
+        if (standingRow) {
+          if (isExpanded) {
+            standingRow.classList.remove('expanded');
+          } else {
+            standingRow.classList.add('expanded');
+          }
+        }
+
+        // Toggle aria-expanded
+        button.setAttribute('aria-expanded', String(!isExpanded));
+      });
+    });
+
+    // Setup expand-all toggle
+    const expandAllButton = document.getElementById('expand-all-toggle');
+    if (expandAllButton) {
+      let allExpanded = false;
+
+      expandAllButton.addEventListener('click', () => {
+        allExpanded = !allExpanded;
+
+        // Update all match rows
+        const allMatchesRows = document.querySelectorAll('.matches-row');
+        const allToggleButtons = document.querySelectorAll('.matches-toggle');
+        const allStandingRows = document.querySelectorAll('.standing-row');
+
+        allMatchesRows.forEach((row) => {
+          row.style.display = allExpanded ? 'table-row' : 'none';
+        });
+
+        allStandingRows.forEach((row) => {
+          if (allExpanded) {
+            row.classList.add('expanded');
+          } else {
+            row.classList.remove('expanded');
+          }
+        });
+
+        allToggleButtons.forEach((btn) => {
+          btn.setAttribute('aria-expanded', String(allExpanded));
+        });
+
+        // Update button aria-label and icon rotation
+        expandAllButton.setAttribute('aria-label', allExpanded ? 'Collapse all matches' : 'Expand all matches');
+        const buttonIcon = expandAllButton.querySelector('.expand-all-icon');
+        if (buttonIcon) {
+          buttonIcon.style.transform = allExpanded ? 'rotate(45deg)' : 'rotate(0deg)';
+        }
+      });
+    }
+
     const trophyCelebration = document.getElementById('trophy-celebration');
     const canvas = document.getElementById('confetti-canvas');
 
