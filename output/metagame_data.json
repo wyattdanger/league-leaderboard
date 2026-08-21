@@ -15,16 +15,16 @@
       "deckCounts": {
         "Mono Red Ponza": 3,
         "Moneyball Black": 9,
-        "Dreadnought": 13,
+        "Dreadnought": 12,
         "Oath Parfait": 2,
         "Burn": 15,
+        "The Rock": 3,
         "Food Chain Elves": 1,
         "Goblins": 2,
         "Enchantress": 4,
-        "Mono Blue Control": 1,
+        "Mono Blue Control": 2,
         "Stasis": 3,
         "Merfolk": 3,
-        "The Rock": 2,
         "Naya Terrageddon": 2,
         "Oath Ponza": 5,
         "Machinehead": 1,
@@ -116,8 +116,8 @@
           "draws": 0
         },
         "Dreadnought": {
-          "wins": 23,
-          "losses": 14,
+          "wins": 21,
+          "losses": 13,
           "draws": 2
         },
         "Oath Parfait": {
@@ -129,6 +129,11 @@
           "wins": 25,
           "losses": 18,
           "draws": 2
+        },
+        "The Rock": {
+          "wins": 4,
+          "losses": 5,
+          "draws": 0
         },
         "Food Chain Elves": {
           "wins": 1,
@@ -146,8 +151,8 @@
           "draws": 0
         },
         "Mono Blue Control": {
-          "wins": 2,
-          "losses": 1,
+          "wins": 4,
+          "losses": 2,
           "draws": 0
         },
         "Stasis": {
@@ -159,11 +164,6 @@
           "wins": 3,
           "losses": 5,
           "draws": 1
-        },
-        "The Rock": {
-          "wins": 3,
-          "losses": 3,
-          "draws": 0
         },
         "Naya Terrageddon": {
           "wins": 6,
