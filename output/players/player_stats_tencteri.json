@@ -2,25 +2,25 @@
   "username": "Tencteri",
   "displayName": "Tencteri",
   "overallStats": {
-    "totalTournaments": 37,
-    "totalPoints": 145,
-    "totalMatches": 108,
-    "matchRecord": "47-57-4",
-    "matchWinPercentage": 0.4537037037037037,
-    "gameRecord": "125-136-1",
-    "gameWinPercentage": 0.4770992366412214,
+    "totalTournaments": 38,
+    "totalPoints": 149,
+    "totalMatches": 111,
+    "matchRecord": "48-58-5",
+    "matchWinPercentage": 0.45495495495495497,
+    "gameRecord": "127-139-4",
+    "gameWinPercentage": 0.4703703703703704,
     "trophies": 1,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q3 2026",
-      "events": 1,
-      "points": 3,
-      "matchRecord": "1-2-0",
-      "matchWinPercentage": 0.3333333333333333,
-      "gameRecord": "3-5-0",
-      "gameWinPercentage": 0.375
+      "events": 2,
+      "points": 7,
+      "matchRecord": "2-3-1",
+      "matchWinPercentage": 0.4166666666666667,
+      "gameRecord": "5-8-3",
+      "gameWinPercentage": 0.40625
     },
     {
       "leagueName": "Q2 2026",
@@ -153,6 +153,20 @@
       "trophies": 0
     },
     {
+      "deckName": "Merfolk",
+      "events": 2,
+      "matchWins": 2,
+      "matchLosses": 3,
+      "matchDraws": 1,
+      "matchRecord": "2-3-1",
+      "matchWinPercentage": 0.4166666666666667,
+      "gameWins": 5,
+      "gameLosses": 8,
+      "gameDraws": 3,
+      "gameWinPercentage": 0.40625,
+      "trophies": 0
+    },
+    {
       "deckName": "Esper Pile",
       "events": 1,
       "matchWins": 2,
@@ -178,20 +192,6 @@
       "gameLosses": 4,
       "gameDraws": 0,
       "gameWinPercentage": 0.5555555555555556,
-      "trophies": 0
-    },
-    {
-      "deckName": "Merfolk",
-      "events": 1,
-      "matchWins": 1,
-      "matchLosses": 2,
-      "matchDraws": 0,
-      "matchRecord": "1-2-0",
-      "matchWinPercentage": 0.3333333333333333,
-      "gameWins": 3,
-      "gameLosses": 5,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.375,
       "trophies": 0
     },
     {
@@ -1038,6 +1038,76 @@
       ]
     },
     {
+      "opponentUsername": "weidnent",
+      "opponentDisplayName": "Nicholas Weidner",
+      "matchesPlayed": 2,
+      "matchWins": 2,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 4,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.8,
+      "matches": [
+        {
+          "tournamentId": "445679",
+          "dateDisplay": "August 20, 2026",
+          "result": "W",
+          "playerDeck": "Merfolk",
+          "opponentDeck": "Oath Ponza",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "417122",
+          "dateDisplay": "March 26, 2026",
+          "result": "W",
+          "playerDeck": "White Weenie",
+          "opponentDeck": "Goblins",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "PetS22",
+      "opponentDisplayName": "PetS22",
+      "matchesPlayed": 2,
+      "matchWins": 1,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.5,
+      "gameWins": 2,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5,
+      "matches": [
+        {
+          "tournamentId": "445679",
+          "dateDisplay": "August 20, 2026",
+          "result": "L",
+          "playerDeck": "Merfolk",
+          "opponentDeck": "Mono Blue Control",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "417122",
+          "dateDisplay": "March 26, 2026",
+          "result": "W",
+          "playerDeck": "White Weenie",
+          "opponentDeck": "Mono Black",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "ByerBeware",
       "opponentDisplayName": "ByerBeware",
       "matchesPlayed": 2,
@@ -1458,6 +1528,31 @@
       ]
     },
     {
+      "opponentUsername": "CalebR",
+      "opponentDisplayName": "CalebR",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 0,
+      "matchDraws": 1,
+      "matchWinPercentage": 0.5,
+      "gameWins": 0,
+      "gameLosses": 0,
+      "gameDraws": 3,
+      "gameWinPercentage": 0.5,
+      "matches": [
+        {
+          "tournamentId": "445679",
+          "dateDisplay": "August 20, 2026",
+          "result": "D",
+          "playerDeck": "Merfolk",
+          "opponentDeck": "Oath Parfait",
+          "playerGameWins": 0,
+          "opponentGameWins": 0,
+          "gameDraws": 3
+        }
+      ]
+    },
+    {
       "opponentUsername": "AlldoAurelis",
       "opponentDisplayName": "AlldoAurelis",
       "matchesPlayed": 1,
@@ -1528,56 +1623,6 @@
           "opponentDeck": "Naya Enchantress",
           "playerGameWins": 1,
           "opponentGameWins": 1,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "PetS22",
-      "opponentDisplayName": "PetS22",
-      "matchesPlayed": 1,
-      "matchWins": 1,
-      "matchLosses": 0,
-      "matchDraws": 0,
-      "matchWinPercentage": 1,
-      "gameWins": 2,
-      "gameLosses": 0,
-      "gameDraws": 0,
-      "gameWinPercentage": 1,
-      "matches": [
-        {
-          "tournamentId": "417122",
-          "dateDisplay": "March 26, 2026",
-          "result": "W",
-          "playerDeck": "White Weenie",
-          "opponentDeck": "Mono Black",
-          "playerGameWins": 2,
-          "opponentGameWins": 0,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "weidnent",
-      "opponentDisplayName": "weidnent",
-      "matchesPlayed": 1,
-      "matchWins": 1,
-      "matchLosses": 0,
-      "matchDraws": 0,
-      "matchWinPercentage": 1,
-      "gameWins": 2,
-      "gameLosses": 0,
-      "gameDraws": 0,
-      "gameWinPercentage": 1,
-      "matches": [
-        {
-          "tournamentId": "417122",
-          "dateDisplay": "March 26, 2026",
-          "result": "W",
-          "playerDeck": "White Weenie",
-          "opponentDeck": "Goblins",
-          "playerGameWins": 2,
-          "opponentGameWins": 0,
           "gameDraws": 0
         }
       ]
@@ -2159,6 +2204,22 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "445679",
+      "dateDisplay": "August 20, 2026",
+      "playerCount": 20,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 10,
+      "points": 4,
+      "matchRecord": "1-1-1",
+      "matchWinPercentage": 0.5,
+      "gameWins": 2,
+      "gameLosses": 3,
+      "gameDraws": 3,
+      "gameWinPercentage": 0.375,
+      "deck": "Merfolk"
+    },
     {
       "tournamentId": "445678",
       "dateDisplay": "August 13, 2026",

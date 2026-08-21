@@ -1,6 +1,8 @@
 ---
 import type { PlayerDeckStats } from '../types';
 import SectionHeader from './SectionHeader.astro';
+import Tooltip from './Tooltip.astro';
+import { collapseDeckStats } from '../utils/deckStatsCollapse';
 
 interface Props {
   deckStats: PlayerDeckStats[];
@@ -8,9 +10,22 @@ interface Props {
 
 const { deckStats } = Astro.props;
 
+// Collapse deck stats by archetype
+const collapsedStats = collapseDeckStats(deckStats);
+
 // Display Unknown or _ as "Unknown"
 const displayDeckName = (name: string) => {
   return (name === '_' || name === 'Unknown') ? 'Unknown' : name;
+};
+
+// Check if a deck has multiple variants
+const hasMultipleVariants = (variantStats: any[]) => variantStats.length > 1;
+
+// Format variant stats for tooltip (similar to metagame page)
+const formatVariantStats = (variantStats: any[]) => {
+  return variantStats.map(v =>
+    `${v.variantName}: ${v.events} events, ${v.matchRecord} matches, ${v.gameRecord} games`
+  ).join('\n');
 };
 ---
 
@@ -23,6 +38,7 @@ const displayDeckName = (name: string) => {
           <table class="decks-table">
             <thead>
               <tr>
+                <th class="toggle-col"></th>
                 <th>Deck</th>
                 <th>Events</th>
                 <th class="hide-tablet">Match Record</th>
@@ -32,7 +48,7 @@ const displayDeckName = (name: string) => {
               </tr>
             </thead>
             <tbody>
-              {deckStats.map((deck) => {
+              {collapsedStats.map((deck, deckIndex) => {
                 const mwpClass =
                   deck.matchWinPercentage > 0.59
                     ? 'wp-high'
@@ -47,29 +63,92 @@ const displayDeckName = (name: string) => {
                       ? 'wp-medium'
                       : 'wp-low';
 
+                const deckNameDisplay = displayDeckName(deck.deckName);
+                const hasVariants = hasMultipleVariants(deck.variantStats);
+
                 return (
-                  <tr>
-                    <td class="deck-name">{displayDeckName(deck.deckName)}</td>
-                    <td class="deck-events">{deck.events}</td>
-                    <td class="hide-tablet deck-match-record">
-                      <span class="record">{deck.matchWins}-{deck.matchLosses}-{deck.matchDraws}</span>
-                      <span class={`percent ${mwpClass}`}>
-                        ({(deck.matchWinPercentage * 100).toFixed(1)}%)
-                      </span>
-                    </td>
-                    <td class="hide-tablet deck-game-record">
-                      <span class="record">{deck.gameWins}-{deck.gameLosses}-{deck.gameDraws}</span>
-                      <span class={`percent ${gwpClass}`}>
-                        ({(deck.gameWinPercentage * 100).toFixed(1)}%)
-                      </span>
-                    </td>
-                    <td class={`show-tablet deck-mwp ${mwpClass}`}>
-                      {(deck.matchWinPercentage * 100).toFixed(1)}%
-                    </td>
-                    <td class={`deck-trophies ${deck.trophies === 0 ? 'trophy-zero' : ''}`}>
-                      {deck.trophies > 0 ? deck.trophies : '—'}
-                    </td>
-                  </tr>
+                  <>
+                    <tr class="deck-row" data-deck-index={deckIndex}>
+                      <td class="toggle-cell">
+                        {hasVariants && (
+                          <button
+                            class="variant-toggle"
+                            data-deck-index={deckIndex}
+                            aria-label="Toggle variant details"
+                            aria-expanded="false"
+                          >
+                            <svg width="12" height="12" viewBox="0 0 12 12" class="caret">
+                              <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" />
+                            </svg>
+                          </button>
+                        )}
+                      </td>
+                      <td class="deck-name">
+                        <span class={hasVariants ? 'deck-name-expandable' : ''}>
+                          {deckNameDisplay}
+                        </span>
+                      </td>
+                      <td class="deck-events">{deck.events}</td>
+                      <td class="hide-tablet deck-match-record">
+                        <span class="record">{deck.matchWins}-{deck.matchLosses}-{deck.matchDraws}</span>
+                        <span class={`percent ${mwpClass}`}>
+                          ({(deck.matchWinPercentage * 100).toFixed(1)}%)
+                        </span>
+                      </td>
+                      <td class="hide-tablet deck-game-record">
+                        <span class="record">{deck.gameWins}-{deck.gameLosses}-{deck.gameDraws}</span>
+                        <span class={`percent ${gwpClass}`}>
+                          ({(deck.gameWinPercentage * 100).toFixed(1)}%)
+                        </span>
+                      </td>
+                      <td class={`show-tablet deck-mwp ${mwpClass}`}>
+                        {(deck.matchWinPercentage * 100).toFixed(1)}%
+                      </td>
+                      <td class={`deck-trophies ${deck.trophies === 0 ? 'trophy-zero' : ''}`}>
+                        {deck.trophies > 0 ? deck.trophies : '—'}
+                      </td>
+                    </tr>
+                    {hasVariants && deck.variantStats.map((variant, variantIndex) => {
+                      // Calculate win percentages for variant
+                      const [vWins, vLosses, vDraws] = variant.matchRecord.split('-').map(Number);
+                      const [gWins, gLosses, gDraws] = variant.gameRecord.split('-').map(Number);
+
+                      const totalMatches = vWins + vLosses + vDraws;
+                      const totalGames = gWins + gLosses + gDraws;
+
+                      const vMatchWinPct = totalMatches > 0 ? (vWins + vDraws * 0.5) / totalMatches : 0;
+                      const vGameWinPct = totalGames > 0 ? (gWins + gDraws * 0.5) / totalGames : 0;
+
+                      const vMwpClass = vMatchWinPct > 0.59 ? 'wp-high' : vMatchWinPct > 0.39 ? 'wp-medium' : 'wp-low';
+                      const vGwpClass = vGameWinPct > 0.59 ? 'wp-high' : vGameWinPct > 0.39 ? 'wp-medium' : 'wp-low';
+
+                      return (
+                        <tr class="variant-row" data-deck-index={deckIndex} style="display: none;">
+                          <td class="toggle-cell"></td>
+                          <td class="deck-name variant-name">
+                            {variant.variantName}
+                          </td>
+                          <td class="deck-events">{variant.events}</td>
+                          <td class="hide-tablet deck-match-record">
+                            <span class="record">{variant.matchRecord}</span>
+                            <span class={`percent ${vMwpClass}`}>
+                              ({(vMatchWinPct * 100).toFixed(1)}%)
+                            </span>
+                          </td>
+                          <td class="hide-tablet deck-game-record">
+                            <span class="record">{variant.gameRecord}</span>
+                            <span class={`percent ${vGwpClass}`}>
+                              ({(vGameWinPct * 100).toFixed(1)}%)
+                            </span>
+                          </td>
+                          <td class={`show-tablet deck-mwp ${vMwpClass}`}>
+                            {(vMatchWinPct * 100).toFixed(1)}%
+                          </td>
+                          <td class="deck-trophies">—</td>
+                        </tr>
+                      );
+                    })}
+                  </>
                 );
               })}
             </tbody>
@@ -117,7 +196,27 @@ const displayDeckName = (name: string) => {
   }
 
   .decks-table th:first-child {
+    text-align: center;
+  }
+
+  .decks-table th:nth-child(2) {
     text-align: left;
+  }
+
+  .toggle-col {
+    width: 35px;
+    min-width: 35px;
+    max-width: 35px;
+    padding: 0.75rem 0.125rem 0.75rem 0.75rem !important;
+    text-align: center;
+  }
+
+  .toggle-cell {
+    width: 35px;
+    min-width: 35px;
+    max-width: 35px;
+    padding: 0.75rem 0.125rem 0.75rem 0.75rem !important;
+    text-align: center;
   }
 
   .decks-table td {
@@ -127,6 +226,10 @@ const displayDeckName = (name: string) => {
   }
 
   .decks-table td:first-child {
+    text-align: center;
+  }
+
+  .decks-table td:nth-child(2) {
     text-align: left;
   }
 
@@ -139,6 +242,67 @@ const displayDeckName = (name: string) => {
     font-weight: 600;
     color: #667eea;
     white-space: nowrap;
+  }
+
+  .deck-name-with-tooltip {
+    cursor: help;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+  }
+
+  .variant-indicator {
+    color: #9ca3af;
+    font-size: 0.875rem;
+    font-weight: 400;
+  }
+
+  .variant-toggle {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #667eea;
+    transition: transform 0.2s ease;
+    vertical-align: middle;
+  }
+
+  .variant-toggle:hover {
+    color: #5a67d8;
+  }
+
+  .variant-toggle .caret {
+    transition: transform 0.2s ease;
+  }
+
+  .variant-toggle[aria-expanded="true"] .caret {
+    transform: rotate(180deg);
+  }
+
+  .variant-row {
+    background-color: #f3f4f6;
+  }
+
+  .variant-row:hover {
+    background-color: #e5e7eb;
+  }
+
+  .variant-name {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #6b7280;
+  }
+
+  .variant-indent {
+    display: inline-block;
+    padding-left: 1.5rem;
+  }
+
+  .deck-name-expandable {
+    cursor: pointer;
   }
 
   .deck-events {
@@ -222,3 +386,17 @@ const displayDeckName = (name: string) => {
     }
   }
 </style>
+
+<script>
+  import { setupVariantToggles } from '../utils/variantToggle';
+
+  // Handle variant row expansion/collapse
+  document.addEventListener('DOMContentLoaded', () => {
+    setupVariantToggles({
+      toggleButtonSelector: '.variant-toggle',
+      variantRowSelector: '.variant-row',
+      deckRowSelector: '.deck-row',
+      expandableDeckNameSelector: '.deck-name-expandable',
+    });
+  });
+</script>

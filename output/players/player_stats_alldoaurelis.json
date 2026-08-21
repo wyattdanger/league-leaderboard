@@ -2,25 +2,25 @@
   "username": "AlldoAurelis",
   "displayName": "AlldoAurelis",
   "overallStats": {
-    "totalTournaments": 12,
-    "totalPoints": 43,
-    "totalMatches": 36,
-    "matchRecord": "14-21-1",
-    "matchWinPercentage": 0.4027777777777778,
-    "gameRecord": "36-51-0",
-    "gameWinPercentage": 0.41379310344827586,
+    "totalTournaments": 13,
+    "totalPoints": 49,
+    "totalMatches": 39,
+    "matchRecord": "16-22-1",
+    "matchWinPercentage": 0.4230769230769231,
+    "gameRecord": "40-54-0",
+    "gameWinPercentage": 0.425531914893617,
     "trophies": 2,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q3 2026",
-      "events": 6,
-      "points": 33,
-      "matchRecord": "11-7-0",
-      "matchWinPercentage": 0.6111111111111112,
-      "gameRecord": "24-20-0",
-      "gameWinPercentage": 0.5454545454545454
+      "events": 7,
+      "points": 39,
+      "matchRecord": "13-8-0",
+      "matchWinPercentage": 0.6190476190476191,
+      "gameRecord": "28-23-0",
+      "gameWinPercentage": 0.5490196078431373
     },
     {
       "leagueName": "Q2 2026",
@@ -44,16 +44,16 @@
   "deckStats": [
     {
       "deckName": "Moneyball Black",
-      "events": 3,
-      "matchWins": 4,
-      "matchLosses": 5,
+      "events": 4,
+      "matchWins": 6,
+      "matchLosses": 6,
       "matchDraws": 0,
-      "matchRecord": "4-5-0",
-      "matchWinPercentage": 0.4444444444444444,
-      "gameWins": 10,
-      "gameLosses": 13,
+      "matchRecord": "6-6-0",
+      "matchWinPercentage": 0.5,
+      "gameWins": 14,
+      "gameLosses": 16,
       "gameDraws": 0,
-      "gameWinPercentage": 0.43478260869565216,
+      "gameWinPercentage": 0.4666666666666667,
       "trophies": 1
     },
     {
@@ -196,6 +196,41 @@
           "playerDeck": "Mad Dogs",
           "opponentDeck": "RG Madness Burn",
           "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "CalebR",
+      "opponentDisplayName": "CalebR",
+      "matchesPlayed": 2,
+      "matchWins": 1,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.5,
+      "gameWins": 2,
+      "gameLosses": 3,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.4,
+      "matches": [
+        {
+          "tournamentId": "445679",
+          "dateDisplay": "August 20, 2026",
+          "result": "W",
+          "playerDeck": "Moneyball Black",
+          "opponentDeck": "Oath Parfait",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "445675",
+          "dateDisplay": "July 23, 2026",
+          "result": "L",
+          "playerDeck": "Moneyball",
+          "opponentDeck": "4c Oath Ponza",
+          "playerGameWins": 0,
           "opponentGameWins": 2,
           "gameDraws": 0
         }
@@ -377,6 +412,56 @@
       ]
     },
     {
+      "opponentUsername": "PetS22",
+      "opponentDisplayName": "PetS22",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "matches": [
+        {
+          "tournamentId": "445679",
+          "dateDisplay": "August 20, 2026",
+          "result": "L",
+          "playerDeck": "Moneyball Black",
+          "opponentDeck": "Mono Blue Control",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "Maew",
+      "opponentDisplayName": "Maew",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "matches": [
+        {
+          "tournamentId": "445679",
+          "dateDisplay": "August 20, 2026",
+          "result": "W",
+          "playerDeck": "Moneyball Black",
+          "opponentDeck": "_",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "Tencteri",
       "opponentDisplayName": "Tencteri",
       "matchesPlayed": 1,
@@ -470,31 +555,6 @@
           "result": "L",
           "playerDeck": "Moneyball Black",
           "opponentDeck": "_",
-          "playerGameWins": 0,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "CalebR",
-      "opponentDisplayName": "CalebR",
-      "matchesPlayed": 1,
-      "matchWins": 0,
-      "matchLosses": 1,
-      "matchDraws": 0,
-      "matchWinPercentage": 0,
-      "gameWins": 0,
-      "gameLosses": 2,
-      "gameDraws": 0,
-      "gameWinPercentage": 0,
-      "matches": [
-        {
-          "tournamentId": "445675",
-          "dateDisplay": "July 23, 2026",
-          "result": "L",
-          "playerDeck": "Moneyball",
-          "opponentDeck": "4c Oath Ponza",
           "playerGameWins": 0,
           "opponentGameWins": 2,
           "gameDraws": 0
@@ -903,6 +963,22 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "445679",
+      "dateDisplay": "August 20, 2026",
+      "playerCount": 20,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 7,
+      "points": 6,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 4,
+      "gameLosses": 3,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5714286,
+      "deck": "Moneyball Black"
+    },
     {
       "tournamentId": "445678",
       "dateDisplay": "August 13, 2026",

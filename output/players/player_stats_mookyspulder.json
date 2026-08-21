@@ -2,25 +2,25 @@
   "username": "Mookyspulder",
   "displayName": "Dan S",
   "overallStats": {
-    "totalTournaments": 20,
-    "totalPoints": 111,
-    "totalMatches": 60,
-    "matchRecord": "36-21-3",
-    "matchWinPercentage": 0.625,
-    "gameRecord": "84-60-1",
-    "gameWinPercentage": 0.5793103448275863,
+    "totalTournaments": 21,
+    "totalPoints": 117,
+    "totalMatches": 63,
+    "matchRecord": "38-22-3",
+    "matchWinPercentage": 0.626984126984127,
+    "gameRecord": "89-63-1",
+    "gameWinPercentage": 0.5816993464052288,
     "trophies": 3,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q3 2026",
-      "events": 6,
-      "points": 31,
-      "matchRecord": "10-7-1",
-      "matchWinPercentage": 0.5833333333333334,
-      "gameRecord": "24-20-1",
-      "gameWinPercentage": 0.5444444444444444
+      "events": 7,
+      "points": 37,
+      "matchRecord": "12-8-1",
+      "matchWinPercentage": 0.5952380952380952,
+      "gameRecord": "29-23-1",
+      "gameWinPercentage": 0.5566037735849056
     },
     {
       "leagueName": "Q2 2026",
@@ -94,6 +94,20 @@
       "trophies": 0
     },
     {
+      "deckName": "Goblins",
+      "events": 2,
+      "matchWins": 4,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchRecord": "4-2-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 9,
+      "gameLosses": 6,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6,
+      "trophies": 0
+    },
+    {
       "deckName": "B/G Contamination",
       "events": 2,
       "matchWins": 3,
@@ -161,20 +175,6 @@
       "gameLosses": 2,
       "gameDraws": 0,
       "gameWinPercentage": 0.6666666666666666,
-      "trophies": 0
-    },
-    {
-      "deckName": "Goblins",
-      "events": 1,
-      "matchWins": 2,
-      "matchLosses": 1,
-      "matchDraws": 0,
-      "matchRecord": "2-1-0",
-      "matchWinPercentage": 0.6666666666666666,
-      "gameWins": 4,
-      "gameLosses": 3,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.5714285714285714,
       "trophies": 0
     },
     {
@@ -832,6 +832,81 @@
       ]
     },
     {
+      "opponentUsername": "DaveKaplan",
+      "opponentDisplayName": "Dave Kaplan",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6666666666666666,
+      "matches": [
+        {
+          "tournamentId": "445679",
+          "dateDisplay": "August 20, 2026",
+          "result": "W",
+          "playerDeck": "Goblins",
+          "opponentDeck": "Burn",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "OsyL",
+      "opponentDisplayName": "OsyL",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "matches": [
+        {
+          "tournamentId": "445679",
+          "dateDisplay": "August 20, 2026",
+          "result": "W",
+          "playerDeck": "Goblins",
+          "opponentDeck": "Enchantress",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "tjndj",
+      "opponentDisplayName": "tjndj",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "matches": [
+        {
+          "tournamentId": "445679",
+          "dateDisplay": "August 20, 2026",
+          "result": "L",
+          "playerDeck": "Goblins",
+          "opponentDeck": "Oath Ponza",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "_jonH",
       "opponentDisplayName": "_jonH",
       "matchesPlayed": 1,
@@ -1333,6 +1408,22 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "445679",
+      "dateDisplay": "August 20, 2026",
+      "playerCount": 20,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 3,
+      "points": 6,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 5,
+      "gameLosses": 3,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.625,
+      "deck": "Goblins"
+    },
     {
       "tournamentId": "445678",
       "dateDisplay": "August 13, 2026",

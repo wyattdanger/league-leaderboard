@@ -2,28 +2,42 @@
   "username": "tjndj",
   "displayName": "tjndj",
   "overallStats": {
-    "totalTournaments": 1,
-    "totalPoints": 4,
-    "totalMatches": 3,
-    "matchRecord": "1-1-1",
-    "matchWinPercentage": 0.5,
-    "gameRecord": "2-1-1",
-    "gameWinPercentage": 0.5,
-    "trophies": 0,
+    "totalTournaments": 2,
+    "totalPoints": 13,
+    "totalMatches": 6,
+    "matchRecord": "4-1-1",
+    "matchWinPercentage": 0.75,
+    "gameRecord": "8-2-1",
+    "gameWinPercentage": 0.7272727272727273,
+    "trophies": 1,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q3 2026",
-      "events": 1,
-      "points": 4,
-      "matchRecord": "1-1-1",
-      "matchWinPercentage": 0.5,
-      "gameRecord": "2-1-1",
-      "gameWinPercentage": 0.625
+      "events": 2,
+      "points": 13,
+      "matchRecord": "4-1-1",
+      "matchWinPercentage": 0.75,
+      "gameRecord": "8-2-1",
+      "gameWinPercentage": 0.7727272727272727
     }
   ],
   "deckStats": [
+    {
+      "deckName": "Oath Ponza",
+      "events": 1,
+      "matchWins": 3,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchRecord": "3-0-0",
+      "matchWinPercentage": 1,
+      "gameWins": 6,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.8571428571428571,
+      "trophies": 1
+    },
     {
       "deckName": "Moneyball",
       "events": 1,
@@ -40,6 +54,81 @@
     }
   ],
   "headToHead": [
+    {
+      "opponentUsername": "Maew",
+      "opponentDisplayName": "Maew",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "matches": [
+        {
+          "tournamentId": "445679",
+          "dateDisplay": "August 20, 2026",
+          "result": "W",
+          "playerDeck": "Oath Ponza",
+          "opponentDeck": "_",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "madmanpoet",
+      "opponentDisplayName": "Michael Flores",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "matches": [
+        {
+          "tournamentId": "445679",
+          "dateDisplay": "August 20, 2026",
+          "result": "W",
+          "playerDeck": "Oath Ponza",
+          "opponentDeck": "Dreadnought",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "Mookyspulder",
+      "opponentDisplayName": "Dan S",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6666666666666666,
+      "matches": [
+        {
+          "tournamentId": "445679",
+          "dateDisplay": "August 20, 2026",
+          "result": "W",
+          "playerDeck": "Oath Ponza",
+          "opponentDeck": "Goblins",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
     {
       "opponentUsername": "delofstrom",
       "opponentDisplayName": "DEL .",
@@ -92,6 +181,22 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "445679",
+      "dateDisplay": "August 20, 2026",
+      "playerCount": 20,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 1,
+      "points": 9,
+      "matchRecord": "3-0-0",
+      "matchWinPercentage": 1,
+      "gameWins": 6,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.8571429,
+      "deck": "Oath Ponza"
+    },
     {
       "tournamentId": "445678",
       "dateDisplay": "August 13, 2026",
