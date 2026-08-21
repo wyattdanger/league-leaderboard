@@ -930,21 +930,138 @@ if (fs.existsSync(metadataFile)) {
     }
 
     .event-content {
-      padding: 1.5rem;
+      padding: 1rem;
     }
 
+    .standings-header {
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+
+    .expand-all-button {
+      width: 32px;
+      height: 32px;
+      padding: 0.4rem;
+    }
+
+    .expand-all-icon {
+      width: 14px;
+      height: 14px;
+    }
+
+    /* Make main standings table not scroll horizontally */
+    .standings-table {
+      overflow-x: visible;
+    }
+
+    /* Reduce padding on all table cells */
     th,
     td {
-      padding: 0.75rem 0.5rem;
+      padding: 0.5rem 0.25rem;
+      font-size: 0.8rem;
+    }
+
+    /* Make rank column narrower */
+    .rank-col {
+      width: 40px;
+      min-width: 40px;
+    }
+
+    .rank-number {
+      font-size: 1rem;
+    }
+
+    /* Player names should still be readable */
+    .player-col {
+      min-width: 100px;
+    }
+
+    .player-display-name {
+      font-size: 0.9rem;
+    }
+
+    /* Deck column on mobile */
+    .deck-col {
+      min-width: 100px;
+    }
+
+    .deck-name {
+      font-size: 0.8rem;
+    }
+
+    /* Record column */
+    .record-col {
+      width: 80px;
+      font-size: 0.75rem;
+    }
+
+    /* Toggle button smaller on mobile */
+    .toggle-col {
+      width: 40px;
+      min-width: 40px;
+      max-width: 40px;
+      padding: 0.5rem 0.25rem !important;
+    }
+
+    .toggle-cell {
+      width: 40px;
+      min-width: 40px;
+      max-width: 40px;
+      padding: 0.5rem 0.25rem !important;
+    }
+
+    .matches-toggle {
+      width: 28px;
+      height: 28px;
+      padding: 0.35rem;
+    }
+
+    .matches-toggle .toggle-icon {
+      width: 14px;
+      height: 14px;
+    }
+
+    /* Match history table improvements for mobile */
+    .matches-cell {
+      padding: 0.5rem 0.5rem 0.75rem 0.5rem !important;
+    }
+
+    .match-history-table {
+      font-size: 0.75rem;
+      margin-top: 0.5rem;
+    }
+
+    .match-history-table th,
+    .match-history-table td {
+      padding: 0.5rem 0.4rem;
+    }
+
+    .round-cell {
+      width: 35px;
+      font-size: 0.75rem;
+    }
+
+    .opponent-cell {
       font-size: 0.85rem;
     }
 
-    .rank-col {
-      width: 50px;
+    .opponent-link {
+      font-size: 0.85rem;
     }
 
-    .player-col {
-      min-width: 150px;
+    .deck-cell {
+      font-size: 0.75rem;
+      min-width: 80px;
+    }
+
+    .result-cell {
+      width: 60px;
+    }
+
+    .match-result {
+      font-size: 0.75rem;
+      padding: 0.3rem 0.4rem;
+      min-width: 45px;
     }
 
     .trophy-content {
