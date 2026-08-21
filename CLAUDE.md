@@ -290,20 +290,27 @@ import { foo } from './utils/bar';
 
 **Why:** Jest doesn't understand `.js` extensions when importing `.ts` files.
 
-### 2. Player Stats Must Be Regenerated
+### 2. Player Stats and Metagame Must Be Regenerated
 
-**When to regenerate player stats:**
+**When to regenerate player stats and metagame:**
 
 - After adding new tournament data
+- After updating deck data in `decks.yml`
 - After fixing calculation bugs
 - After changing leagues.yml
 
-**How to regenerate:**
+**CRITICAL: When deck data changes, ALWAYS regenerate BOTH player stats AND metagame data before building:**
 
 ```bash
-npm run player-stats  # Regenerates all player JSON files
-npm run build         # Rebuilds the website
+npm run player-stats      # Regenerates all player JSON files (reads deck data)
+npm run generate-metagame # Regenerates metagame data (reads deck data)
+npm run build             # Rebuilds the website
 ```
+
+**Why both are needed:**
+- `player-stats` reads `decks.yml` to populate deck information in player profiles
+- `generate-metagame` reads `decks.yml` to calculate archetype statistics and trophy counts
+- Both depend on deck data being complete and accurate
 
 ### 3. Astro Static Path Generation
 
@@ -476,6 +483,18 @@ When adding a new tournament, follow this EXACT sequence to ensure deck data is 
 - Event pages use `hasCompleteDeckData()` to check if all players have deck info
 - Deck columns and metagame breakdown only display when data is complete
 - Prevents showing partial/misleading deck information
+
+**After Updating Deck Data:**
+
+When you update deck information in `decks.yml`, you MUST regenerate both player stats and metagame data:
+
+```bash
+npm run player-stats      # Updates player profiles with deck info
+npm run generate-metagame # Updates metagame statistics
+npm run build             # Rebuilds the website
+```
+
+This is a complete workflow - all three steps are required. Do not skip any steps.
 
 ### Fixing a Calculation Bug
 
