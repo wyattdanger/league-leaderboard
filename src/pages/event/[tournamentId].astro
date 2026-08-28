@@ -1154,28 +1154,6 @@ if (fs.existsSync(metadataFile)) {
       });
     }
 
-    // Auto-expand trophy winners (3-0 records) on page load
-    const trophyRows = document.querySelectorAll('.standing-row');
-    trophyRows.forEach((row) => {
-      const recordCell = row.querySelector('.record-col');
-      if (recordCell) {
-        const recordText = recordCell.textContent.trim();
-        // Check if record is 3-0-0 (trophy)
-        if (recordText === '3-0-0') {
-          const standingIndex = row.getAttribute('data-standing-index');
-          const toggleButton = row.querySelector('.matches-toggle');
-          const matchesRow = document.querySelector(`.matches-row[data-standing-index="${standingIndex}"]`);
-
-          if (toggleButton && matchesRow) {
-            // Expand the row
-            matchesRow.style.display = 'table-row';
-            row.classList.add('expanded');
-            toggleButton.setAttribute('aria-expanded', 'true');
-          }
-        }
-      }
-    });
-
     const trophyCelebration = document.getElementById('trophy-celebration');
     const canvas = document.getElementById('confetti-canvas');
 

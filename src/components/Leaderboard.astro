@@ -246,25 +246,42 @@ const { standings } = Astro.props;
   }
 
   @media (max-width: 640px) {
+    .leaderboard-container {
+      overflow-x: visible;
+    }
+
     .leaderboard-header,
     .leaderboard-row {
-      grid-template-columns: 50px 1fr 80px 90px;
-      gap: 0.75rem;
-      padding: 1rem;
+      grid-template-columns: 40px 1fr 60px 70px;
+      gap: 0.5rem;
+      padding: 0.75rem 0.5rem;
+      font-size: 0.85rem;
     }
 
     .rank {
-      font-size: 1.2rem;
+      font-size: 1rem;
     }
 
     .rank-1 {
-      font-size: 1.5rem;
+      font-size: 1.3rem;
     }
     .rank-2 {
-      font-size: 1.4rem;
+      font-size: 1.2rem;
     }
     .rank-3 {
-      font-size: 1.3rem;
+      font-size: 1.1rem;
+    }
+
+    .player-name {
+      font-size: 0.9rem;
+    }
+
+    .points {
+      font-size: 1.1rem;
+    }
+
+    .trophies {
+      font-size: 0.9rem;
     }
   }
 </style>
