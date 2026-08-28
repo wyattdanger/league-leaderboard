@@ -2,25 +2,25 @@
   "username": "Tencteri",
   "displayName": "Tencteri",
   "overallStats": {
-    "totalTournaments": 38,
+    "totalTournaments": 39,
     "totalPoints": 149,
-    "totalMatches": 111,
-    "matchRecord": "48-58-5",
-    "matchWinPercentage": 0.45495495495495497,
-    "gameRecord": "127-139-4",
-    "gameWinPercentage": 0.4703703703703704,
+    "totalMatches": 114,
+    "matchRecord": "48-61-5",
+    "matchWinPercentage": 0.44298245614035087,
+    "gameRecord": "129-145-4",
+    "gameWinPercentage": 0.46402877697841727,
     "trophies": 1,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q3 2026",
-      "events": 2,
+      "events": 3,
       "points": 7,
-      "matchRecord": "2-3-1",
-      "matchWinPercentage": 0.4166666666666667,
-      "gameRecord": "5-8-3",
-      "gameWinPercentage": 0.40625
+      "matchRecord": "2-6-1",
+      "matchWinPercentage": 0.2777777777777778,
+      "gameRecord": "7-14-3",
+      "gameWinPercentage": 0.3541666666666667
     },
     {
       "leagueName": "Q2 2026",
@@ -139,6 +139,20 @@
       "trophies": 0
     },
     {
+      "deckName": "Merfolk",
+      "events": 3,
+      "matchWins": 2,
+      "matchLosses": 6,
+      "matchDraws": 1,
+      "matchRecord": "2-6-1",
+      "matchWinPercentage": 0.2777777777777778,
+      "gameWins": 7,
+      "gameLosses": 14,
+      "gameDraws": 3,
+      "gameWinPercentage": 0.3541666666666667,
+      "trophies": 0
+    },
+    {
       "deckName": "White weenie",
       "events": 2,
       "matchWins": 2,
@@ -150,20 +164,6 @@
       "gameLosses": 7,
       "gameDraws": 0,
       "gameWinPercentage": 0.46153846153846156,
-      "trophies": 0
-    },
-    {
-      "deckName": "Merfolk",
-      "events": 2,
-      "matchWins": 2,
-      "matchLosses": 3,
-      "matchDraws": 1,
-      "matchRecord": "2-3-1",
-      "matchWinPercentage": 0.4166666666666667,
-      "gameWins": 5,
-      "gameLosses": 8,
-      "gameDraws": 3,
-      "gameWinPercentage": 0.40625,
       "trophies": 0
     },
     {
@@ -723,6 +723,51 @@
       ]
     },
     {
+      "opponentUsername": "swbmtg",
+      "opponentDisplayName": "Stephen Bush",
+      "matchesPlayed": 3,
+      "matchWins": 2,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 4,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5,
+      "matches": [
+        {
+          "tournamentId": "458540",
+          "dateDisplay": "August 27, 2026",
+          "result": "L",
+          "playerDeck": "Merfolk",
+          "opponentDeck": "Naya Terrageddon",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "400729",
+          "dateDisplay": "January 29, 2026",
+          "result": "W",
+          "playerDeck": "Zombies",
+          "opponentDeck": "Trix",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "384681",
+          "dateDisplay": "November 20, 2025",
+          "result": "W",
+          "playerDeck": "Deadguy Ale",
+          "opponentDeck": "Enchantress",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "minimiz",
       "opponentDisplayName": "Eli Mizock",
       "matchesPlayed": 3,
@@ -1038,6 +1083,41 @@
       ]
     },
     {
+      "opponentUsername": "AlldoAurelis",
+      "opponentDisplayName": "AlldoAurelis",
+      "matchesPlayed": 2,
+      "matchWins": 0,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.2,
+      "matches": [
+        {
+          "tournamentId": "458540",
+          "dateDisplay": "August 27, 2026",
+          "result": "L",
+          "playerDeck": "Merfolk",
+          "opponentDeck": "Moneyball Red",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "445678",
+          "dateDisplay": "August 13, 2026",
+          "result": "L",
+          "playerDeck": "Merfolk",
+          "opponentDeck": "Moneyball Red",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "weidnent",
       "opponentDisplayName": "Nicholas Weidner",
       "matchesPlayed": 2,
@@ -1283,41 +1363,6 @@
       ]
     },
     {
-      "opponentUsername": "swbmtg",
-      "opponentDisplayName": "swb",
-      "matchesPlayed": 2,
-      "matchWins": 2,
-      "matchLosses": 0,
-      "matchDraws": 0,
-      "matchWinPercentage": 1,
-      "gameWins": 4,
-      "gameLosses": 2,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.6666666666666666,
-      "matches": [
-        {
-          "tournamentId": "400729",
-          "dateDisplay": "January 29, 2026",
-          "result": "W",
-          "playerDeck": "Zombies",
-          "opponentDeck": "Trix",
-          "playerGameWins": 2,
-          "opponentGameWins": 1,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "384681",
-          "dateDisplay": "November 20, 2025",
-          "result": "W",
-          "playerDeck": "Deadguy Ale",
-          "opponentDeck": "Enchantress",
-          "playerGameWins": 2,
-          "opponentGameWins": 1,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
       "opponentUsername": "SeaF9",
       "opponentDisplayName": "Sean Fitzpatrick",
       "matchesPlayed": 2,
@@ -1528,6 +1573,31 @@
       ]
     },
     {
+      "opponentUsername": "justintomczyk",
+      "opponentDisplayName": "justintomczyk",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "matches": [
+        {
+          "tournamentId": "458540",
+          "dateDisplay": "August 27, 2026",
+          "result": "L",
+          "playerDeck": "Merfolk",
+          "opponentDeck": "_",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "CalebR",
       "opponentDisplayName": "CalebR",
       "matchesPlayed": 1,
@@ -1549,31 +1619,6 @@
           "playerGameWins": 0,
           "opponentGameWins": 0,
           "gameDraws": 3
-        }
-      ]
-    },
-    {
-      "opponentUsername": "AlldoAurelis",
-      "opponentDisplayName": "AlldoAurelis",
-      "matchesPlayed": 1,
-      "matchWins": 0,
-      "matchLosses": 1,
-      "matchDraws": 0,
-      "matchWinPercentage": 0,
-      "gameWins": 0,
-      "gameLosses": 2,
-      "gameDraws": 0,
-      "gameWinPercentage": 0,
-      "matches": [
-        {
-          "tournamentId": "445678",
-          "dateDisplay": "August 13, 2026",
-          "result": "L",
-          "playerDeck": "Merfolk",
-          "opponentDeck": "Moneyball Red",
-          "playerGameWins": 0,
-          "opponentGameWins": 2,
-          "gameDraws": 0
         }
       ]
     },
@@ -2204,6 +2249,22 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "458540",
+      "dateDisplay": "August 27, 2026",
+      "playerCount": 20,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 20,
+      "points": 0,
+      "matchRecord": "0-3-0",
+      "matchWinPercentage": 0,
+      "gameWins": 2,
+      "gameLosses": 6,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333,
+      "deck": "Merfolk"
+    },
     {
       "tournamentId": "445679",
       "dateDisplay": "August 20, 2026",

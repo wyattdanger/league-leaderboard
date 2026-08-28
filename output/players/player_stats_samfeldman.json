@@ -2,25 +2,25 @@
   "username": "SamFeldman",
   "displayName": "Samuel Feldman",
   "overallStats": {
-    "totalTournaments": 4,
-    "totalPoints": 18,
-    "totalMatches": 12,
-    "matchRecord": "6-6-0",
-    "matchWinPercentage": 0.5,
-    "gameRecord": "16-13-0",
-    "gameWinPercentage": 0.5517241379310345,
+    "totalTournaments": 5,
+    "totalPoints": 25,
+    "totalMatches": 15,
+    "matchRecord": "8-6-1",
+    "matchWinPercentage": 0.5666666666666667,
+    "gameRecord": "21-14-0",
+    "gameWinPercentage": 0.6,
     "trophies": 1,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q3 2026",
-      "events": 2,
-      "points": 15,
-      "matchRecord": "5-1-0",
+      "events": 3,
+      "points": 22,
+      "matchRecord": "7-1-1",
       "matchWinPercentage": 0.8333333333333334,
-      "gameRecord": "11-3-0",
-      "gameWinPercentage": 0.7857142857142857
+      "gameRecord": "16-4-0",
+      "gameWinPercentage": 0.8
     },
     {
       "leagueName": "Q2 2026",
@@ -35,16 +35,16 @@
   "deckStats": [
     {
       "deckName": "Unknown",
-      "events": 2,
-      "matchWins": 1,
+      "events": 3,
+      "matchWins": 3,
       "matchLosses": 5,
-      "matchDraws": 0,
-      "matchRecord": "1-5-0",
-      "matchWinPercentage": 0.16666666666666666,
-      "gameWins": 5,
-      "gameLosses": 10,
+      "matchDraws": 1,
+      "matchRecord": "3-5-1",
+      "matchWinPercentage": 0.3888888888888889,
+      "gameWins": 10,
+      "gameLosses": 11,
       "gameDraws": 0,
-      "gameWinPercentage": 0.3333333333333333,
+      "gameWinPercentage": 0.47619047619047616,
       "trophies": 0
     },
     {
@@ -77,6 +77,81 @@
     }
   ],
   "headToHead": [
+    {
+      "opponentUsername": "Maew",
+      "opponentDisplayName": "Maew",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 0,
+      "matchDraws": 1,
+      "matchWinPercentage": 0.5,
+      "gameWins": 1,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5,
+      "matches": [
+        {
+          "tournamentId": "458540",
+          "dateDisplay": "August 27, 2026",
+          "result": "D",
+          "playerDeck": "_",
+          "opponentDeck": "_",
+          "playerGameWins": 1,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "weidnent",
+      "opponentDisplayName": "Nicholas Weidner",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "matches": [
+        {
+          "tournamentId": "458540",
+          "dateDisplay": "August 27, 2026",
+          "result": "W",
+          "playerDeck": "_",
+          "opponentDeck": "Oath Ponza",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "tjndj",
+      "opponentDisplayName": "tjndj",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "matches": [
+        {
+          "tournamentId": "458540",
+          "dateDisplay": "August 27, 2026",
+          "result": "W",
+          "playerDeck": "_",
+          "opponentDeck": "Naya Terrageddon",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
     {
       "opponentUsername": "Mookyspulder",
       "opponentDisplayName": "Dan S",
@@ -354,6 +429,22 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "458540",
+      "dateDisplay": "August 27, 2026",
+      "playerCount": 20,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 3,
+      "points": 7,
+      "matchRecord": "2-0-1",
+      "matchWinPercentage": 0.8333333333333334,
+      "gameWins": 5,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.8333333,
+      "deck": "_"
+    },
     {
       "tournamentId": "445675",
       "dateDisplay": "July 23, 2026",

@@ -2,25 +2,25 @@
   "username": "tjndj",
   "displayName": "tjndj",
   "overallStats": {
-    "totalTournaments": 2,
-    "totalPoints": 13,
-    "totalMatches": 6,
-    "matchRecord": "4-1-1",
-    "matchWinPercentage": 0.75,
-    "gameRecord": "8-2-1",
-    "gameWinPercentage": 0.7272727272727273,
+    "totalTournaments": 3,
+    "totalPoints": 16,
+    "totalMatches": 9,
+    "matchRecord": "5-3-1",
+    "matchWinPercentage": 0.6111111111111112,
+    "gameRecord": "10-7-1",
+    "gameWinPercentage": 0.5555555555555556,
     "trophies": 1,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q3 2026",
-      "events": 2,
-      "points": 13,
-      "matchRecord": "4-1-1",
-      "matchWinPercentage": 0.75,
-      "gameRecord": "8-2-1",
-      "gameWinPercentage": 0.7727272727272727
+      "events": 3,
+      "points": 16,
+      "matchRecord": "5-3-1",
+      "matchWinPercentage": 0.6111111111111112,
+      "gameRecord": "10-7-1",
+      "gameWinPercentage": 0.5833333333333334
     }
   ],
   "deckStats": [
@@ -51,9 +51,98 @@
       "gameDraws": 1,
       "gameWinPercentage": 0.625,
       "trophies": 0
+    },
+    {
+      "deckName": "Naya Terrageddon",
+      "events": 1,
+      "matchWins": 1,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 2,
+      "gameLosses": 5,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.2857142857142857,
+      "trophies": 0
     }
   ],
   "headToHead": [
+    {
+      "opponentUsername": "LuisNeiman",
+      "opponentDisplayName": "LuisNeiman",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6666666666666666,
+      "matches": [
+        {
+          "tournamentId": "458540",
+          "dateDisplay": "August 27, 2026",
+          "result": "W",
+          "playerDeck": "Naya Terrageddon",
+          "opponentDeck": "4c Terrageddon",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "CalebR",
+      "opponentDisplayName": "CalebR",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "matches": [
+        {
+          "tournamentId": "458540",
+          "dateDisplay": "August 27, 2026",
+          "result": "L",
+          "playerDeck": "Naya Terrageddon",
+          "opponentDeck": "Welder Prison",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "SamFeldman",
+      "opponentDisplayName": "Samuel Feldman",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "matches": [
+        {
+          "tournamentId": "458540",
+          "dateDisplay": "August 27, 2026",
+          "result": "L",
+          "playerDeck": "Naya Terrageddon",
+          "opponentDeck": "_",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
     {
       "opponentUsername": "Maew",
       "opponentDisplayName": "Maew",
@@ -181,6 +270,22 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "458540",
+      "dateDisplay": "August 27, 2026",
+      "playerCount": 20,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 11,
+      "points": 3,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 2,
+      "gameLosses": 5,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333,
+      "deck": "Naya Terrageddon"
+    },
     {
       "tournamentId": "445679",
       "dateDisplay": "August 20, 2026",

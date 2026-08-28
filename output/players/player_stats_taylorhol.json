@@ -2,25 +2,25 @@
   "username": "Taylorhol",
   "displayName": "Taylorhol",
   "overallStats": {
-    "totalTournaments": 39,
-    "totalPoints": 175,
-    "totalMatches": 116,
-    "matchRecord": "57-55-4",
-    "matchWinPercentage": 0.5086206896551724,
-    "gameRecord": "141-136-4",
-    "gameWinPercentage": 0.501779359430605,
+    "totalTournaments": 40,
+    "totalPoints": 181,
+    "totalMatches": 119,
+    "matchRecord": "59-56-4",
+    "matchWinPercentage": 0.5126050420168067,
+    "gameRecord": "145-138-4",
+    "gameWinPercentage": 0.5052264808362369,
     "trophies": 4,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q3 2026",
-      "events": 7,
-      "points": 34,
-      "matchRecord": "11-9-1",
-      "matchWinPercentage": 0.5476190476190477,
-      "gameRecord": "29-23-1",
-      "gameWinPercentage": 0.5566037735849056
+      "events": 8,
+      "points": 40,
+      "matchRecord": "13-10-1",
+      "matchWinPercentage": 0.5625,
+      "gameRecord": "33-25-1",
+      "gameWinPercentage": 0.5677966101694916
     },
     {
       "leagueName": "Q2 2026",
@@ -228,6 +228,20 @@
       "trophies": 1
     },
     {
+      "deckName": "Naya Terrageddon",
+      "events": 1,
+      "matchWins": 2,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 4,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6666666666666666,
+      "trophies": 0
+    },
+    {
       "deckName": "4-Color Terrageddon",
       "events": 1,
       "matchWins": 2,
@@ -358,16 +372,26 @@
     {
       "opponentUsername": "swbmtg",
       "opponentDisplayName": "Stephen Bush",
-      "matchesPlayed": 8,
+      "matchesPlayed": 9,
       "matchWins": 2,
-      "matchLosses": 6,
+      "matchLosses": 7,
       "matchDraws": 0,
-      "matchWinPercentage": 0.25,
-      "gameWins": 6,
-      "gameLosses": 14,
+      "matchWinPercentage": 0.2222222222222222,
+      "gameWins": 7,
+      "gameLosses": 16,
       "gameDraws": 0,
-      "gameWinPercentage": 0.3,
+      "gameWinPercentage": 0.30434782608695654,
       "matches": [
+        {
+          "tournamentId": "458540",
+          "dateDisplay": "August 27, 2026",
+          "result": "L",
+          "playerDeck": "Naya Terrageddon",
+          "opponentDeck": "Naya Terrageddon",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
         {
           "tournamentId": "445675",
           "dateDisplay": "July 23, 2026",
@@ -916,6 +940,51 @@
       ]
     },
     {
+      "opponentUsername": "AlldoAurelis",
+      "opponentDisplayName": "AlldoAurelis",
+      "matchesPlayed": 3,
+      "matchWins": 1,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 3,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.42857142857142855,
+      "matches": [
+        {
+          "tournamentId": "458540",
+          "dateDisplay": "August 27, 2026",
+          "result": "W",
+          "playerDeck": "Naya Terrageddon",
+          "opponentDeck": "Moneyball Red",
+          "playerGameWins": 1,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "445673",
+          "dateDisplay": "July 16, 2026",
+          "result": "L",
+          "playerDeck": "Dreadnought",
+          "opponentDeck": "Moneyball Black",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "436159",
+          "dateDisplay": "July 2, 2026",
+          "result": "L",
+          "playerDeck": "_",
+          "opponentDeck": "Burn",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "Mookyspulder",
       "opponentDisplayName": "Dan S",
       "matchesPlayed": 3,
@@ -1231,41 +1300,6 @@
       ]
     },
     {
-      "opponentUsername": "AlldoAurelis",
-      "opponentDisplayName": "AlldoAurelis",
-      "matchesPlayed": 2,
-      "matchWins": 0,
-      "matchLosses": 2,
-      "matchDraws": 0,
-      "matchWinPercentage": 0,
-      "gameWins": 2,
-      "gameLosses": 4,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.3333333333333333,
-      "matches": [
-        {
-          "tournamentId": "445673",
-          "dateDisplay": "July 16, 2026",
-          "result": "L",
-          "playerDeck": "Dreadnought",
-          "opponentDeck": "Moneyball Black",
-          "playerGameWins": 1,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "436159",
-          "dateDisplay": "July 2, 2026",
-          "result": "L",
-          "playerDeck": "_",
-          "opponentDeck": "Burn",
-          "playerGameWins": 1,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
       "opponentUsername": "truthcult",
       "opponentDisplayName": "klint",
       "matchesPlayed": 2,
@@ -1541,6 +1575,31 @@
           "opponentDeck": "Oath Parfait",
           "playerGameWins": 0,
           "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "KYamada97",
+      "opponentDisplayName": "KYamada97",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "matches": [
+        {
+          "tournamentId": "458540",
+          "dateDisplay": "August 27, 2026",
+          "result": "W",
+          "playerDeck": "Naya Terrageddon",
+          "opponentDeck": "_",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
           "gameDraws": 0
         }
       ]
@@ -2197,6 +2256,22 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "458540",
+      "dateDisplay": "August 27, 2026",
+      "playerCount": 20,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 7,
+      "points": 6,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 4,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6666667,
+      "deck": "Naya Terrageddon"
+    },
     {
       "tournamentId": "445679",
       "dateDisplay": "August 20, 2026",

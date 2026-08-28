@@ -3,6 +3,7 @@
     {
       "leagueName": "Q3 2026",
       "tournaments": [
+        458540,
         445679,
         445678,
         445677,
@@ -13,9 +14,20 @@
         436159
       ],
       "deckCounts": {
+        "Moneyball Red": 2,
+        "4c Terrageddon": 2,
+        "Anarchist Replenish Oath": 1,
+        "Welder Prison": 2,
+        "Dreadnought": 13,
+        "RG Goblins": 4,
+        "Stiflenaught": 1,
+        "Naya Terrageddon": 5,
+        "Merfolk": 4,
+        "HFEB": 4,
+        "RG Zoo": 1,
+        "Oath Ponza": 6,
         "Mono Red Ponza": 3,
         "Moneyball Black": 9,
-        "Dreadnought": 12,
         "Oath Parfait": 2,
         "Burn": 15,
         "The Rock": 3,
@@ -24,18 +36,13 @@
         "Enchantress": 4,
         "Mono Blue Control": 2,
         "Stasis": 3,
-        "Merfolk": 3,
-        "Naya Terrageddon": 2,
-        "Oath Ponza": 5,
         "Machinehead": 1,
-        "Moneyball Red": 1,
         "UB Dreadnought": 2,
         "4-Color Terrageddon": 2,
         "Aluren": 1,
         "Replenish": 2,
         "B/G Contamination": 2,
         "GR Survival": 1,
-        "HFEB": 3,
         "Moneyball": 2,
         "Dogpile (Mono G Survival)": 1,
         "Sligh": 6,
@@ -69,7 +76,6 @@
         "UG Survival Opposition": 3,
         "Solution": 2,
         "Mono Black Clerics": 1,
-        "RG Goblins": 3,
         "UB ZI": 1,
         "Predict Medallion": 1,
         "GR Aggro": 1,
@@ -83,7 +89,6 @@
         "Mono-Black Zombies": 1,
         "UGR Survival Madness": 1,
         "Rifter": 1,
-        "Welder Prison": 1,
         "RG Aggro": 1,
         "GAT": 1,
         "Mono-Black": 1,
@@ -92,6 +97,8 @@
         "Dragon Reanimator": 1
       },
       "deckTrophies": {
+        "4c Terrageddon": 1,
+        "Welder Prison": 1,
         "Naya Terrageddon": 2,
         "Oath Ponza": 1,
         "4-Color Terrageddon": 1,
@@ -105,6 +112,66 @@
         "UG Survival Opposition": 1
       },
       "deckMatchStats": {
+        "Moneyball Red": {
+          "wins": 3,
+          "losses": 3,
+          "draws": 0
+        },
+        "4c Terrageddon": {
+          "wins": 5,
+          "losses": 1,
+          "draws": 0
+        },
+        "Anarchist Replenish Oath": {
+          "wins": 1,
+          "losses": 2,
+          "draws": 0
+        },
+        "Welder Prison": {
+          "wins": 5,
+          "losses": 0,
+          "draws": 1
+        },
+        "Dreadnought": {
+          "wins": 23,
+          "losses": 14,
+          "draws": 2
+        },
+        "RG Goblins": {
+          "wins": 5,
+          "losses": 7,
+          "draws": 0
+        },
+        "Stiflenaught": {
+          "wins": 2,
+          "losses": 1,
+          "draws": 0
+        },
+        "Naya Terrageddon": {
+          "wins": 11,
+          "losses": 4,
+          "draws": 0
+        },
+        "Merfolk": {
+          "wins": 3,
+          "losses": 8,
+          "draws": 1
+        },
+        "HFEB": {
+          "wins": 6,
+          "losses": 6,
+          "draws": 0
+        },
+        "RG Zoo": {
+          "wins": 1,
+          "losses": 2,
+          "draws": 0
+        },
+        "Oath Ponza": {
+          "wins": 9,
+          "losses": 8,
+          "draws": 1
+        },
         "Mono Red Ponza": {
           "wins": 4,
           "losses": 4,
@@ -114,11 +181,6 @@
           "wins": 13,
           "losses": 14,
           "draws": 0
-        },
-        "Dreadnought": {
-          "wins": 21,
-          "losses": 13,
-          "draws": 2
         },
         "Oath Parfait": {
           "wins": 3,
@@ -160,29 +222,9 @@
           "losses": 3,
           "draws": 1
         },
-        "Merfolk": {
-          "wins": 3,
-          "losses": 5,
-          "draws": 1
-        },
-        "Naya Terrageddon": {
-          "wins": 6,
-          "losses": 0,
-          "draws": 0
-        },
-        "Oath Ponza": {
-          "wins": 8,
-          "losses": 6,
-          "draws": 1
-        },
         "Machinehead": {
           "wins": 1,
           "losses": 2,
-          "draws": 0
-        },
-        "Moneyball Red": {
-          "wins": 2,
-          "losses": 1,
           "draws": 0
         },
         "UB Dreadnought": {
@@ -213,11 +255,6 @@
         "GR Survival": {
           "wins": 0,
           "losses": 3,
-          "draws": 0
-        },
-        "HFEB": {
-          "wins": 5,
-          "losses": 4,
           "draws": 0
         },
         "Moneyball": {
@@ -385,11 +422,6 @@
           "losses": 1,
           "draws": 0
         },
-        "RG Goblins": {
-          "wins": 3,
-          "losses": 6,
-          "draws": 0
-        },
         "UB ZI": {
           "wins": 1,
           "losses": 2,
@@ -454,11 +486,6 @@
           "wins": 2,
           "losses": 1,
           "draws": 0
-        },
-        "Welder Prison": {
-          "wins": 2,
-          "losses": 0,
-          "draws": 1
         },
         "RG Aggro": {
           "wins": 2,
