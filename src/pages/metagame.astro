@@ -1423,7 +1423,33 @@ const pageDescription = `Explore deck archetype statistics from ${totalDecks} de
     }
 
     .metagame-table {
-      overflow-x: auto;
+      overflow-x: visible;
+    }
+
+    .metagame-table th,
+    .metagame-table td {
+      padding: 0.5rem 0.25rem;
+      font-size: 0.8rem;
+    }
+
+    .toggle-col,
+    .toggle-cell {
+      width: 30px;
+      min-width: 30px;
+      max-width: 30px;
+      padding: 0.5rem 0.25rem !important;
+    }
+
+    .rank-number {
+      font-size: 0.9rem;
+    }
+
+    .deck-name {
+      font-size: 0.85rem;
+    }
+
+    .trophy-pills {
+      font-size: 0.75rem;
     }
   }
 </style>

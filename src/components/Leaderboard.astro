@@ -7,9 +7,13 @@ import Tooltip from './Tooltip.astro';
 
 interface Props {
   standings: LeagueStanding[] | null;
+  isOverall?: boolean;
 }
 
-const { standings } = Astro.props;
+const { standings, isOverall = false } = Astro.props;
+
+// Check if any player has belts
+const hasBelts = isOverall && standings?.some(s => (s.Belts || 0) > 0);
 ---
 
 <style>
@@ -26,6 +30,10 @@ const { standings } = Astro.props;
     border-top-right-radius: 16px;
   }
 
+  .leaderboard-header.has-belts {
+    grid-template-columns: 80px 1fr 120px 100px 100px;
+  }
+
   .leaderboard-header > div {
     text-align: left;
   }
@@ -38,6 +46,10 @@ const { standings } = Astro.props;
     align-items: center;
     border-bottom: 1px solid #e0e0e0;
     transition: background-color 0.2s ease;
+  }
+
+  .leaderboard-row.has-belts {
+    grid-template-columns: 80px 1fr 120px 100px 100px;
   }
 
   .leaderboard-row:hover {
@@ -258,6 +270,11 @@ const { standings } = Astro.props;
       font-size: 0.85rem;
     }
 
+    .leaderboard-header.has-belts,
+    .leaderboard-row.has-belts {
+      grid-template-columns: 40px 1fr 60px 60px 60px;
+    }
+
     .rank {
       font-size: 1rem;
     }
@@ -291,13 +308,18 @@ const { standings } = Astro.props;
     standings ? (
       <Fragment>
         <div class="leaderboard-container">
-          <div class="leaderboard-header">
+          <div class={`leaderboard-header ${hasBelts ? 'has-belts' : ''}`}>
             <div>Rank</div>
             <div>Player</div>
             <div>Points</div>
             <div>
               <Tooltip content="3-0 finishes">Trophies</Tooltip>
             </div>
+            {hasBelts && (
+              <div>
+                <Tooltip content="3-0 finishes in Top 8">Belts</Tooltip>
+              </div>
+            )}
           </div>
 
           {standings.map((standing, index) => {
@@ -311,7 +333,7 @@ const { standings } = Astro.props;
 
             return (
               <div
-                class={`leaderboard-row ${isHidden ? 'hidden' : ''}`}
+                class={`leaderboard-row ${hasBelts ? 'has-belts' : ''} ${isHidden ? 'hidden' : ''}`}
                 onclick={`window.location.href='${playerUrl}'`}
                 style="cursor: pointer;"
               >
@@ -324,23 +346,21 @@ const { standings } = Astro.props;
                   <div class="points">{standing.Points}</div>
                 </div>
                 <div class="stat">
-                  <div
-                    class={`stat-value trophy-pills ${(standing.Trophies || 0) === 0 && (standing.Belts || 0) === 0 ? 'stat-zero' : ''}`}
-                  >
-                    {(standing.Trophies || 0) === 0 && (standing.Belts || 0) === 0 ? (
-                      '-'
-                    ) : (
-                      <>
-                        {(standing.Trophies || 0) > 0 && (
-                          <span class="trophy-pill">🏆 {standing.Trophies}</span>
-                        )}
-                        {(standing.Belts || 0) > 0 && (
-                          <span class="belt-pill">👑 {standing.Belts}</span>
-                        )}
-                      </>
+                  <div class={`stat-value ${(standing.Trophies || 0) === 0 ? 'stat-zero' : ''}`}>
+                    {(standing.Trophies || 0) === 0 ? '-' : (
+                      <span class="trophy-pill">🏆 {standing.Trophies}</span>
                     )}
                   </div>
                 </div>
+                {hasBelts && (
+                  <div class="stat">
+                    <div class={`stat-value ${(standing.Belts || 0) === 0 ? 'stat-zero' : ''}`}>
+                      {(standing.Belts || 0) === 0 ? '-' : (
+                        <span class="belt-pill">👑 {standing.Belts}</span>
+                      )}
+                    </div>
+                  </div>
+                )}
               </div>
             );
           })}

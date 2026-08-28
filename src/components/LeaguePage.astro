@@ -43,6 +43,6 @@ const latestTournament = showLatestEvent && tournaments.length > 0 ? tournaments
     )
   }
   {isOverall && <OverallInfo />}
-  <Leaderboard standings={standings} />
+  <Leaderboard standings={standings} isOverall={isOverall} />
   <EventList tournaments={tournaments} />
 </PageLayout>
