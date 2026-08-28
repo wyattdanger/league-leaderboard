@@ -291,14 +291,6 @@ if (fs.existsSync(metadataFile)) {
                           <tr class="matches-row" data-standing-index={standingIndex} style="display: none;">
                             <td colspan={showDeckData ? "5" : "4"} class="matches-cell">
                               <table class="match-history-table">
-                                <thead>
-                                  <tr>
-                                    <th>Round</th>
-                                    <th>Opponent</th>
-                                    {showDeckData && <th>Deck</th>}
-                                    <th>Result</th>
-                                  </tr>
-                                </thead>
                                 <tbody>
                                   {playerMatches.map((match, roundIndex) => {
                                     if (!match) return null;
@@ -574,8 +566,8 @@ if (fs.existsSync(metadataFile)) {
 
   .matches-toggle .toggle-icon {
     transition: transform 0.2s ease;
-    width: 16px;
-    height: 16px;
+    width: 24px;
+    height: 24px;
   }
 
   .matches-toggle[aria-expanded="true"] .toggle-icon {
@@ -584,6 +576,7 @@ if (fs.existsSync(metadataFile)) {
 
   .standing-row {
     border-bottom: 1px solid #e0e0e0;
+    transition: background-color 0.2s ease;
   }
 
   .standing-row:hover {
@@ -592,6 +585,7 @@ if (fs.existsSync(metadataFile)) {
 
   .standing-row.expanded {
     border-bottom: none;
+    background: white;
   }
 
   .matches-row {
@@ -603,48 +597,33 @@ if (fs.existsSync(metadataFile)) {
   }
 
   .matches-cell {
-    padding: 0.5rem 1.5rem 1rem 1.5rem !important;
+    padding: 0.75rem !important;
     background: white;
   }
 
   .match-history-table {
-    width: calc(100% - 0px);
+    width: 100%;
     border-collapse: separate;
     border-spacing: 0;
-    background: white;
-    border-radius: 8px;
-    border: 1px solid #e5e7eb;
-    margin: 0.5rem 0 0 0;
     display: table;
   }
 
-  .match-history-table thead {
-    background: #f3f4f6;
-  }
-
-  .match-history-table th {
-    padding: 0.75rem 1rem;
-    font-size: 0.85rem;
-    font-weight: 600;
-    color: #6b7280;
-    text-align: left;
-    border-bottom: 1px solid #e5e7eb;
-  }
-
-  .match-history-table th:first-child {
-    text-align: center;
-    border-top-left-radius: 7px;
-  }
-
-  .match-history-table th:last-child {
-    text-align: center;
-    border-top-right-radius: 7px;
+  .match-history-table tbody {
+    background: #f0f4ff;
   }
 
   .match-history-row td {
     padding: 0.75rem 1rem;
     border-bottom: 1px solid #e5e7eb;
     text-align: left;
+  }
+
+  .match-history-row:first-child td:first-child {
+    border-top-left-radius: 7px;
+  }
+
+  .match-history-row:first-child td:last-child {
+    border-top-right-radius: 7px;
   }
 
   .match-history-row:last-child td {
@@ -663,7 +642,7 @@ if (fs.existsSync(metadataFile)) {
     font-weight: 700;
     font-size: 0.9rem;
     color: #667eea;
-    text-align: center;
+    text-align: center !important;
     width: 60px;
   }
 
@@ -1052,7 +1031,6 @@ if (fs.existsSync(metadataFile)) {
       margin-top: 0.5rem;
     }
 
-    .match-history-table th,
     .match-history-table td {
       padding: 0.5rem 0.4rem;
     }
@@ -1175,6 +1153,28 @@ if (fs.existsSync(metadataFile)) {
         }
       });
     }
+
+    // Auto-expand trophy winners (3-0 records) on page load
+    const trophyRows = document.querySelectorAll('.standing-row');
+    trophyRows.forEach((row) => {
+      const recordCell = row.querySelector('.record-col');
+      if (recordCell) {
+        const recordText = recordCell.textContent.trim();
+        // Check if record is 3-0-0 (trophy)
+        if (recordText === '3-0-0') {
+          const standingIndex = row.getAttribute('data-standing-index');
+          const toggleButton = row.querySelector('.matches-toggle');
+          const matchesRow = document.querySelector(`.matches-row[data-standing-index="${standingIndex}"]`);
+
+          if (toggleButton && matchesRow) {
+            // Expand the row
+            matchesRow.style.display = 'table-row';
+            row.classList.add('expanded');
+            toggleButton.setAttribute('aria-expanded', 'true');
+          }
+        }
+      }
+    });
 
     const trophyCelebration = document.getElementById('trophy-celebration');
     const canvas = document.getElementById('confetti-canvas');
