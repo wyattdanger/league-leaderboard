@@ -268,6 +268,9 @@ if (fs.existsSync(metadataFile)) {
                             </td>
                             <td class="player-col">
                               <a href={standing.player.profileUrl} class="player-display-name">{standing.player.displayName}</a>
+                              {showDeckData && (
+                                <div class="deck-name-mobile">{deck || '—'}</div>
+                              )}
                             </td>
                             {showDeckData && (
                               <td class="deck-col">
@@ -792,6 +795,29 @@ if (fs.existsSync(metadataFile)) {
     font-size: 0.95rem;
   }
 
+  .deck-name-mobile {
+    display: none;
+  }
+
+  /* Hide desktop deck column - we'll show deck under player name */
+  .deck-col {
+    display: none;
+  }
+
+  /* Show deck name stacked under player name */
+  .player-col {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+  }
+
+  .deck-name-mobile {
+    display: block;
+    color: #667eea;
+    font-weight: 600;
+    font-size: 0.85rem;
+  }
+
   .record-col {
     width: 140px;
     text-align: left;
@@ -974,25 +1000,22 @@ if (fs.existsSync(metadataFile)) {
     /* Player names should still be readable */
     .player-col {
       min-width: 100px;
+      gap: 0.25rem;
     }
 
     .player-display-name {
       font-size: 0.9rem;
     }
 
-    /* Deck column on mobile */
-    .deck-col {
-      min-width: 100px;
-    }
-
-    .deck-name {
-      font-size: 0.8rem;
-    }
-
-    /* Record column */
-    .record-col {
-      width: 80px;
+    .deck-name-mobile {
       font-size: 0.75rem;
+    }
+
+    /* Record column - more space now that deck column is hidden */
+    .record-col {
+      width: 100px;
+      min-width: 100px;
+      font-size: 0.8rem;
     }
 
     /* Toggle button smaller on mobile */

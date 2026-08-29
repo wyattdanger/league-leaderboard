@@ -38,6 +38,10 @@ const hasBelts = isOverall && standings?.some(s => (s.Belts || 0) > 0);
     text-align: left;
   }
 
+  .leaderboard-header > div:first-child {
+    text-align: center;
+  }
+
   .leaderboard-row {
     padding: 1.5rem 2rem;
     display: grid;
@@ -104,23 +108,23 @@ const hasBelts = isOverall && standings?.some(s => (s.Belts || 0) > 0);
   }
 
   .rank {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 700;
     color: #667eea;
-    text-align: left;
+    text-align: center;
   }
 
   .rank-1 {
     color: #ffd700;
-    font-size: 2rem;
+    font-size: 1.4rem;
   }
   .rank-2 {
     color: #c0c0c0;
-    font-size: 1.8rem;
+    font-size: 1.3rem;
   }
   .rank-3 {
     color: #cd7f32;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
   }
 
   .player-link {
@@ -280,13 +284,13 @@ const hasBelts = isOverall && standings?.some(s => (s.Belts || 0) > 0);
     }
 
     .rank-1 {
-      font-size: 1.3rem;
+      font-size: 1.1rem;
     }
     .rank-2 {
-      font-size: 1.2rem;
+      font-size: 1.05rem;
     }
     .rank-3 {
-      font-size: 1.1rem;
+      font-size: 1rem;
     }
 
     .player-name {

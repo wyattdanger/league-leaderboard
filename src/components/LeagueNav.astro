@@ -10,69 +10,213 @@ interface Props {
 }
 
 const { currentLeague, allLeagues, isOverall, isMetagame = false } = Astro.props;
+
+// Determine display text for league selector
+const leagueSelectorText = isOverall ? 'Overall' : currentLeague?.name || 'Select League';
 ---
 
 <nav class="league-nav">
-  {
-    allLeagues.map((league) => {
-      const slug = leagueNameToSlug(league.name);
-      const isActive = currentLeague && league.name === currentLeague.name;
-      return (
-        <a href={`/league/${slug}`} class={isActive ? 'active' : ''}>
-          {league.name}
-        </a>
-      );
-    })
-  }
-  <a href="/metagame" class={isMetagame ? 'active metagame-link' : 'metagame-link'} title="Metagame Explorer">
-    📊
-  </a>
-  <a href="/league/overall" class={isOverall ? 'active overall-link' : 'overall-link'} title="Overall Rankings">
-    👑
+  <div class="league-selector">
+    <button class="league-selector-btn" id="league-selector-btn">
+      {leagueSelectorText}
+      <span class="dropdown-arrow">▼</span>
+    </button>
+    <div class="league-dropdown" id="league-dropdown">
+      {
+        allLeagues.map((league) => {
+          const slug = leagueNameToSlug(league.name);
+          const isActive = currentLeague && league.name === currentLeague.name;
+          return (
+            <a href={`/league/${slug}`} class={isActive ? 'active' : ''}>
+              {league.name}
+            </a>
+          );
+        })
+      }
+      <a href="/league/overall" class={isOverall ? 'active' : ''}>
+        Overall
+      </a>
+    </div>
+  </div>
+
+  <a href="/metagame" class={isMetagame ? 'active metagame-link' : 'metagame-link'}>
+    Metagame
   </a>
 </nav>
 
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const selectorBtn = document.getElementById('league-selector-btn');
+    const dropdown = document.getElementById('league-dropdown');
+
+    if (selectorBtn && dropdown) {
+      // Toggle dropdown on button click
+      selectorBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        dropdown.classList.toggle('show');
+      });
+
+      // Close dropdown when clicking outside
+      document.addEventListener('click', () => {
+        dropdown.classList.remove('show');
+      });
+
+      // Prevent closing when clicking inside dropdown
+      dropdown.addEventListener('click', (e) => {
+        e.stopPropagation();
+      });
+    }
+  });
+</script>
+
 <style>
   .league-nav {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
     margin-top: 1.5rem;
     margin-bottom: 2rem;
   }
 
-  .league-nav a {
-    color: rgba(255, 255, 255, 0.6);
+  .league-selector {
+    position: relative;
+  }
+
+  .league-selector-btn {
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    transition: all 0.2s ease;
+    min-width: 180px;
+    justify-content: space-between;
+  }
+
+  .league-selector-btn:hover {
+    background: rgba(255, 255, 255, 0.25);
+    border-color: rgba(255, 255, 255, 0.5);
+  }
+
+  .dropdown-arrow {
+    font-size: 0.8rem;
+    transition: transform 0.2s ease;
+  }
+
+  .league-selector-btn:hover .dropdown-arrow {
+    transform: translateY(2px);
+  }
+
+  .league-dropdown {
+    position: absolute;
+    top: calc(100% + 0.5rem);
+    left: 0;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+    min-width: 180px;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.2s ease;
+  }
+
+  .league-dropdown.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  .league-dropdown a {
+    display: block;
+    padding: 0.75rem 1.25rem;
+    color: #333;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.2s ease;
+    border-bottom: 1px solid #f0f0f0;
+  }
+
+  .league-dropdown a:first-child {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+
+  .league-dropdown a:last-child {
+    border-bottom: none;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+
+  .league-dropdown a:hover {
+    background-color: #f5f5f5;
+  }
+
+  .league-dropdown a.active {
+    background-color: #667eea;
+    color: white;
+    font-weight: 600;
+  }
+
+  .league-dropdown a.active:hover {
+    background-color: #5568d3;
+  }
+
+  .metagame-link {
+    color: white;
     text-decoration: none;
     font-size: 1.1rem;
-    margin: 0 1rem;
-    transition: color 0.2s ease;
+    font-weight: 600;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.3);
   }
 
-  .league-nav a:hover {
-    color: rgba(255, 255, 255, 0.9);
+  .metagame-link:hover {
+    background: rgba(255, 255, 255, 0.25);
+    border-color: rgba(255, 255, 255, 0.5);
   }
 
-  .league-nav a.active {
-    color: white;
+  .metagame-link.active {
+    background: white;
+    color: #667eea;
+    border-color: white;
     font-weight: 700;
   }
 
-  .league-nav a.overall-link,
-  .league-nav a.metagame-link {
-    font-size: 1.4rem;
-    margin-left: 0.5rem;
-    vertical-align: middle;
-  }
-
   @media (max-width: 640px) {
-    .league-nav a {
-      font-size: 0.9rem;
-      margin: 0 0.5rem;
+    .league-nav {
+      gap: 1rem;
     }
 
-    .league-nav a.overall-link,
-    .league-nav a.metagame-link {
-      font-size: 1.2rem;
-      margin-left: 0.25rem;
+    .league-selector-btn {
+      padding: 0.5rem 1rem;
+      font-size: 0.95rem;
+      min-width: 140px;
+    }
+
+    .league-dropdown {
+      min-width: 140px;
+    }
+
+    .league-dropdown a {
+      padding: 0.6rem 1rem;
+      font-size: 0.9rem;
+    }
+
+    .metagame-link {
+      padding: 0.5rem 1rem;
+      font-size: 0.95rem;
     }
   }
 </style>
