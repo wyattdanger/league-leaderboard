@@ -2,25 +2,25 @@
   "username": "Taylorhol",
   "displayName": "Taylorhol",
   "overallStats": {
-    "totalTournaments": 40,
-    "totalPoints": 181,
-    "totalMatches": 119,
-    "matchRecord": "59-56-4",
-    "matchWinPercentage": 0.5126050420168067,
-    "gameRecord": "145-138-4",
-    "gameWinPercentage": 0.5052264808362369,
+    "totalTournaments": 41,
+    "totalPoints": 184,
+    "totalMatches": 122,
+    "matchRecord": "60-58-4",
+    "matchWinPercentage": 0.5081967213114754,
+    "gameRecord": "149-142-4",
+    "gameWinPercentage": 0.5050847457627119,
     "trophies": 4,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q3 2026",
-      "events": 8,
-      "points": 40,
-      "matchRecord": "13-10-1",
-      "matchWinPercentage": 0.5625,
-      "gameRecord": "33-25-1",
-      "gameWinPercentage": 0.5677966101694916
+      "events": 9,
+      "points": 43,
+      "matchRecord": "14-12-1",
+      "matchWinPercentage": 0.5370370370370371,
+      "gameRecord": "37-29-1",
+      "gameWinPercentage": 0.5597014925373134
     },
     {
       "leagueName": "Q2 2026",
@@ -172,6 +172,20 @@
       "trophies": 1
     },
     {
+      "deckName": "Stasis",
+      "events": 2,
+      "matchWins": 2,
+      "matchLosses": 3,
+      "matchDraws": 1,
+      "matchRecord": "2-3-1",
+      "matchWinPercentage": 0.4166666666666667,
+      "gameWins": 7,
+      "gameLosses": 7,
+      "gameDraws": 1,
+      "gameWinPercentage": 0.5,
+      "trophies": 0
+    },
+    {
       "deckName": "Burn",
       "events": 2,
       "matchWins": 2,
@@ -281,20 +295,6 @@
       "gameLosses": 3,
       "gameDraws": 0,
       "gameWinPercentage": 0.625,
-      "trophies": 0
-    },
-    {
-      "deckName": "Stasis",
-      "events": 1,
-      "matchWins": 1,
-      "matchLosses": 1,
-      "matchDraws": 1,
-      "matchRecord": "1-1-1",
-      "matchWinPercentage": 0.5,
-      "gameWins": 3,
-      "gameLosses": 3,
-      "gameDraws": 1,
-      "gameWinPercentage": 0.5,
       "trophies": 0
     },
     {
@@ -830,6 +830,61 @@
       ]
     },
     {
+      "opponentUsername": "LuisNeiman",
+      "opponentDisplayName": "LuisNeiman",
+      "matchesPlayed": 4,
+      "matchWins": 2,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.5,
+      "gameWins": 6,
+      "gameLosses": 5,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5454545454545454,
+      "matches": [
+        {
+          "tournamentId": "445681",
+          "dateDisplay": "September 3, 2026",
+          "result": "L",
+          "playerDeck": "Stasis",
+          "opponentDeck": "4c Terrageddon",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "445678",
+          "dateDisplay": "August 13, 2026",
+          "result": "L",
+          "playerDeck": "4-Color Terrageddon",
+          "opponentDeck": "4-Color Terrageddon",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "436160",
+          "dateDisplay": "July 9, 2026",
+          "result": "W",
+          "playerDeck": "RG Goblins",
+          "opponentDeck": "GWr Oath Ponza",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "406432",
+          "dateDisplay": "February 19, 2026",
+          "result": "W",
+          "playerDeck": "HFEB",
+          "opponentDeck": "Oath Spec",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "RichBucey",
       "opponentDisplayName": "RichBucey",
       "matchesPlayed": 4,
@@ -1025,51 +1080,6 @@
           "opponentDeck": "Clerics",
           "playerGameWins": 2,
           "opponentGameWins": 1,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "LuisNeiman",
-      "opponentDisplayName": "LuisNeiman",
-      "matchesPlayed": 3,
-      "matchWins": 2,
-      "matchLosses": 1,
-      "matchDraws": 0,
-      "matchWinPercentage": 0.6666666666666666,
-      "gameWins": 5,
-      "gameLosses": 3,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.625,
-      "matches": [
-        {
-          "tournamentId": "445678",
-          "dateDisplay": "August 13, 2026",
-          "result": "L",
-          "playerDeck": "4-Color Terrageddon",
-          "opponentDeck": "4-Color Terrageddon",
-          "playerGameWins": 1,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "436160",
-          "dateDisplay": "July 9, 2026",
-          "result": "W",
-          "playerDeck": "RG Goblins",
-          "opponentDeck": "GWr Oath Ponza",
-          "playerGameWins": 2,
-          "opponentGameWins": 1,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "406432",
-          "dateDisplay": "February 19, 2026",
-          "result": "W",
-          "playerDeck": "HFEB",
-          "opponentDeck": "Oath Spec",
-          "playerGameWins": 2,
-          "opponentGameWins": 0,
           "gameDraws": 0
         }
       ]
@@ -1296,6 +1306,76 @@
           "playerGameWins": 2,
           "opponentGameWins": 1,
           "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "PetS22",
+      "opponentDisplayName": "PetS22",
+      "matchesPlayed": 2,
+      "matchWins": 1,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.5,
+      "gameWins": 2,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5,
+      "matches": [
+        {
+          "tournamentId": "445681",
+          "dateDisplay": "September 3, 2026",
+          "result": "W",
+          "playerDeck": "Stasis",
+          "opponentDeck": "_",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "445673",
+          "dateDisplay": "July 16, 2026",
+          "result": "L",
+          "playerDeck": "Dreadnought",
+          "opponentDeck": "Moneyball Black",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "AlfredG",
+      "opponentDisplayName": "AlfredG",
+      "matchesPlayed": 2,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 1,
+      "matchWinPercentage": 0.25,
+      "gameWins": 2,
+      "gameLosses": 3,
+      "gameDraws": 1,
+      "gameWinPercentage": 0.4166666666666667,
+      "matches": [
+        {
+          "tournamentId": "445681",
+          "dateDisplay": "September 3, 2026",
+          "result": "L",
+          "playerDeck": "Stasis",
+          "opponentDeck": "GR Aggro",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "445679",
+          "dateDisplay": "August 20, 2026",
+          "result": "D",
+          "playerDeck": "Stasis",
+          "opponentDeck": "Mono Red Ponza",
+          "playerGameWins": 1,
+          "opponentGameWins": 1,
+          "gameDraws": 1
         }
       ]
     },
@@ -1597,35 +1677,10 @@
           "dateDisplay": "August 27, 2026",
           "result": "W",
           "playerDeck": "Naya Terrageddon",
-          "opponentDeck": "_",
+          "opponentDeck": "Stasis",
           "playerGameWins": 2,
           "opponentGameWins": 0,
           "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "AlfredG",
-      "opponentDisplayName": "AlfredG",
-      "matchesPlayed": 1,
-      "matchWins": 0,
-      "matchLosses": 0,
-      "matchDraws": 1,
-      "matchWinPercentage": 0.5,
-      "gameWins": 1,
-      "gameLosses": 1,
-      "gameDraws": 1,
-      "gameWinPercentage": 0.5,
-      "matches": [
-        {
-          "tournamentId": "445679",
-          "dateDisplay": "August 20, 2026",
-          "result": "D",
-          "playerDeck": "Stasis",
-          "opponentDeck": "Mono Red Ponza",
-          "playerGameWins": 1,
-          "opponentGameWins": 1,
-          "gameDraws": 1
         }
       ]
     },
@@ -1673,31 +1728,6 @@
           "result": "L",
           "playerDeck": "Dreadnought",
           "opponentDeck": "Burn",
-          "playerGameWins": 0,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "PetS22",
-      "opponentDisplayName": "PetS22",
-      "matchesPlayed": 1,
-      "matchWins": 0,
-      "matchLosses": 1,
-      "matchDraws": 0,
-      "matchWinPercentage": 0,
-      "gameWins": 0,
-      "gameLosses": 2,
-      "gameDraws": 0,
-      "gameWinPercentage": 0,
-      "matches": [
-        {
-          "tournamentId": "445673",
-          "dateDisplay": "July 16, 2026",
-          "result": "L",
-          "playerDeck": "Dreadnought",
-          "opponentDeck": "Moneyball Black",
           "playerGameWins": 0,
           "opponentGameWins": 2,
           "gameDraws": 0
@@ -2271,6 +2301,22 @@
       "gameDraws": 0,
       "gameWinPercentage": 0.6666667,
       "deck": "Naya Terrageddon"
+    },
+    {
+      "tournamentId": "445681",
+      "dateDisplay": "September 3, 2026",
+      "playerCount": 20,
+      "trophyCount": 3,
+      "roundCount": 3,
+      "rank": 15,
+      "points": 3,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 4,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5,
+      "deck": "Stasis"
     },
     {
       "tournamentId": "445679",

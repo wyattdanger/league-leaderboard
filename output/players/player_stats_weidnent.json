@@ -2,25 +2,25 @@
   "username": "weidnent",
   "displayName": "Nicholas Weidner",
   "overallStats": {
-    "totalTournaments": 19,
-    "totalPoints": 65,
-    "totalMatches": 57,
-    "matchRecord": "21-34-2",
-    "matchWinPercentage": 0.38596491228070173,
-    "gameRecord": "58-80-0",
-    "gameWinPercentage": 0.42028985507246375,
+    "totalTournaments": 20,
+    "totalPoints": 71,
+    "totalMatches": 60,
+    "matchRecord": "23-35-2",
+    "matchWinPercentage": 0.4,
+    "gameRecord": "62-83-0",
+    "gameWinPercentage": 0.42758620689655175,
     "trophies": 0,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q3 2026",
-      "events": 8,
-      "points": 40,
-      "matchRecord": "13-10-1",
-      "matchWinPercentage": 0.5625,
-      "gameRecord": "32-27-0",
-      "gameWinPercentage": 0.5423728813559322
+      "events": 9,
+      "points": 46,
+      "matchRecord": "15-11-1",
+      "matchWinPercentage": 0.5740740740740741,
+      "gameRecord": "36-30-0",
+      "gameWinPercentage": 0.5454545454545454
     },
     {
       "leagueName": "Q2 2026",
@@ -54,6 +54,20 @@
       "gameLosses": 20,
       "gameDraws": 0,
       "gameWinPercentage": 0.48717948717948717,
+      "trophies": 0
+    },
+    {
+      "deckName": "Balancing Tings",
+      "events": 2,
+      "matchWins": 4,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchRecord": "4-2-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 8,
+      "gameLosses": 7,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5333333333333333,
       "trophies": 0
     },
     {
@@ -124,20 +138,6 @@
       "gameLosses": 4,
       "gameDraws": 0,
       "gameWinPercentage": 0.5555555555555556,
-      "trophies": 0
-    },
-    {
-      "deckName": "Balancing Tings",
-      "events": 1,
-      "matchWins": 2,
-      "matchLosses": 1,
-      "matchDraws": 0,
-      "matchRecord": "2-1-0",
-      "matchWinPercentage": 0.6666666666666666,
-      "gameWins": 4,
-      "gameLosses": 4,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.5,
       "trophies": 0
     },
     {
@@ -378,6 +378,51 @@
       ]
     },
     {
+      "opponentUsername": "Tencteri",
+      "opponentDisplayName": "Tencteri",
+      "matchesPlayed": 3,
+      "matchWins": 1,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 3,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.42857142857142855,
+      "matches": [
+        {
+          "tournamentId": "445681",
+          "dateDisplay": "September 3, 2026",
+          "result": "W",
+          "playerDeck": "Balancing Tings",
+          "opponentDeck": "Reanimator",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "445679",
+          "dateDisplay": "August 20, 2026",
+          "result": "L",
+          "playerDeck": "Oath Ponza",
+          "opponentDeck": "Merfolk",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "417122",
+          "dateDisplay": "March 26, 2026",
+          "result": "L",
+          "playerDeck": "Goblins",
+          "opponentDeck": "White Weenie",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "ByerBeware",
       "opponentDisplayName": "ByerBeware",
       "matchesPlayed": 3,
@@ -558,8 +603,43 @@
       ]
     },
     {
-      "opponentUsername": "Tencteri",
-      "opponentDisplayName": "Tencteri",
+      "opponentUsername": "AlldoAurelis",
+      "opponentDisplayName": "AlldoAurelis",
+      "matchesPlayed": 2,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 1,
+      "matchWinPercentage": 0.75,
+      "gameWins": 3,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6,
+      "matches": [
+        {
+          "tournamentId": "445681",
+          "dateDisplay": "September 3, 2026",
+          "result": "W",
+          "playerDeck": "Balancing Tings",
+          "opponentDeck": "_",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "436157",
+          "dateDisplay": "June 18, 2026",
+          "result": "D",
+          "playerDeck": "_",
+          "opponentDeck": "Mad Dogs",
+          "playerGameWins": 1,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "DaveKaplan",
+      "opponentDisplayName": "Dave Kaplan",
       "matchesPlayed": 2,
       "matchWins": 0,
       "matchLosses": 2,
@@ -571,22 +651,22 @@
       "gameWinPercentage": 0.2,
       "matches": [
         {
-          "tournamentId": "445679",
-          "dateDisplay": "August 20, 2026",
+          "tournamentId": "445681",
+          "dateDisplay": "September 3, 2026",
           "result": "L",
-          "playerDeck": "Oath Ponza",
-          "opponentDeck": "Merfolk",
-          "playerGameWins": 1,
+          "playerDeck": "Balancing Tings",
+          "opponentDeck": "Dreadnought",
+          "playerGameWins": 0,
           "opponentGameWins": 2,
           "gameDraws": 0
         },
         {
-          "tournamentId": "417122",
-          "dateDisplay": "March 26, 2026",
+          "tournamentId": "420854",
+          "dateDisplay": "April 9, 2026",
           "result": "L",
-          "playerDeck": "Goblins",
-          "opponentDeck": "White Weenie",
-          "playerGameWins": 0,
+          "playerDeck": "Reanimator",
+          "opponentDeck": "Dreadnought",
+          "playerGameWins": 1,
           "opponentGameWins": 2,
           "gameDraws": 0
         }
@@ -1018,31 +1098,6 @@
       ]
     },
     {
-      "opponentUsername": "AlldoAurelis",
-      "opponentDisplayName": "AlldoAurelis",
-      "matchesPlayed": 1,
-      "matchWins": 0,
-      "matchLosses": 0,
-      "matchDraws": 1,
-      "matchWinPercentage": 0.5,
-      "gameWins": 1,
-      "gameLosses": 1,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.5,
-      "matches": [
-        {
-          "tournamentId": "436157",
-          "dateDisplay": "June 18, 2026",
-          "result": "D",
-          "playerDeck": "_",
-          "opponentDeck": "Mad Dogs",
-          "playerGameWins": 1,
-          "opponentGameWins": 1,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
       "opponentUsername": "cpogx",
       "opponentDisplayName": "cpogx",
       "matchesPlayed": 1,
@@ -1218,31 +1273,6 @@
       ]
     },
     {
-      "opponentUsername": "DaveKaplan",
-      "opponentDisplayName": "Dave Kaplan",
-      "matchesPlayed": 1,
-      "matchWins": 0,
-      "matchLosses": 1,
-      "matchDraws": 0,
-      "matchWinPercentage": 0,
-      "gameWins": 1,
-      "gameLosses": 2,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.3333333333333333,
-      "matches": [
-        {
-          "tournamentId": "420854",
-          "dateDisplay": "April 9, 2026",
-          "result": "L",
-          "playerDeck": "Reanimator",
-          "opponentDeck": "Dreadnought",
-          "playerGameWins": 1,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
       "opponentUsername": "jhealy",
       "opponentDisplayName": "jhealy",
       "matchesPlayed": 1,
@@ -1309,6 +1339,22 @@
       "gameDraws": 0,
       "gameWinPercentage": 0.375,
       "deck": "Oath Ponza"
+    },
+    {
+      "tournamentId": "445681",
+      "dateDisplay": "September 3, 2026",
+      "playerCount": 20,
+      "trophyCount": 3,
+      "roundCount": 3,
+      "rank": 7,
+      "points": 6,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 4,
+      "gameLosses": 3,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5714286,
+      "deck": "Balancing Tings"
     },
     {
       "tournamentId": "445679",

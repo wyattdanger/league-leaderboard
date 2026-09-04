@@ -3,6 +3,7 @@
     {
       "leagueName": "Q3 2026",
       "tournaments": [
+        445681,
         458540,
         445679,
         445678,
@@ -14,14 +15,24 @@
         436159
       ],
       "deckCounts": {
+        "GR Aggro": 2,
+        "Mono U Disk": 1,
+        "Dreadnought": 14,
+        "Terrageddon": 5,
+        "4c Terrageddon": 3,
+        "Enchantress": 5,
+        "Stasis": 5,
+        "Reanimator": 3,
+        "Naya Good Stuff": 1,
+        "White Control": 2,
+        "Moneyball": 3,
+        "Naya Terrageddon": 6,
+        "Balancing Tings": 1,
         "Moneyball Red": 2,
-        "4c Terrageddon": 2,
         "Anarchist Replenish Oath": 1,
         "Welder Prison": 2,
-        "Dreadnought": 13,
         "RG Goblins": 4,
         "Stiflenaught": 1,
-        "Naya Terrageddon": 5,
         "Merfolk": 4,
         "HFEB": 4,
         "RG Zoo": 1,
@@ -33,9 +44,7 @@
         "The Rock": 3,
         "Food Chain Elves": 1,
         "Goblins": 2,
-        "Enchantress": 4,
         "Mono Blue Control": 2,
-        "Stasis": 3,
         "Machinehead": 1,
         "UB Dreadnought": 2,
         "4-Color Terrageddon": 2,
@@ -43,7 +52,6 @@
         "Replenish": 2,
         "B/G Contamination": 2,
         "GR Survival": 1,
-        "Moneyball": 2,
         "Dogpile (Mono G Survival)": 1,
         "Sligh": 6,
         "Magnivore Oath": 1,
@@ -51,13 +59,11 @@
         "U/G Survival Opposition": 2,
         "Gro": 2,
         "Elves": 1,
-        "White Control": 1,
         "Chromatic Control": 1,
         "GW Mad Dogs": 1,
         "Deadguy Ale": 1,
         "Turbo Lands": 1,
         "EsperTog": 1,
-        "Terrageddon": 4,
         "Life": 1,
         "UGr Madness": 1,
         "GR Bad Cards": 1,
@@ -78,8 +84,6 @@
         "Mono Black Clerics": 1,
         "UB ZI": 1,
         "Predict Medallion": 1,
-        "GR Aggro": 1,
-        "Reanimator": 2,
         "Esper Tog": 1,
         "UW Stiflenought": 1,
         "Stiflenought": 1,
@@ -97,13 +101,14 @@
         "Dragon Reanimator": 1
       },
       "deckTrophies": {
+        "Dreadnought": 5,
+        "Enchantress": 1,
+        "White Control": 2,
         "4c Terrageddon": 1,
         "Welder Prison": 1,
         "Naya Terrageddon": 2,
         "Oath Ponza": 1,
         "4-Color Terrageddon": 1,
-        "Dreadnought": 4,
-        "White Control": 1,
         "Terrageddon": 1,
         "UW Control": 1,
         "HFEB": 1,
@@ -112,14 +117,74 @@
         "UG Survival Opposition": 1
       },
       "deckMatchStats": {
+        "GR Aggro": {
+          "wins": 4,
+          "losses": 2,
+          "draws": 0
+        },
+        "Mono U Disk": {
+          "wins": 1,
+          "losses": 2,
+          "draws": 0
+        },
+        "Dreadnought": {
+          "wins": 26,
+          "losses": 14,
+          "draws": 2
+        },
+        "Terrageddon": {
+          "wins": 7,
+          "losses": 6,
+          "draws": 2
+        },
+        "4c Terrageddon": {
+          "wins": 7,
+          "losses": 2,
+          "draws": 0
+        },
+        "Enchantress": {
+          "wins": 7,
+          "losses": 8,
+          "draws": 0
+        },
+        "Stasis": {
+          "wins": 6,
+          "losses": 8,
+          "draws": 1
+        },
+        "Reanimator": {
+          "wins": 4,
+          "losses": 3,
+          "draws": 1
+        },
+        "Naya Good Stuff": {
+          "wins": 1,
+          "losses": 2,
+          "draws": 0
+        },
+        "White Control": {
+          "wins": 6,
+          "losses": 0,
+          "draws": 0
+        },
+        "Moneyball": {
+          "wins": 4,
+          "losses": 4,
+          "draws": 1
+        },
+        "Naya Terrageddon": {
+          "wins": 13,
+          "losses": 5,
+          "draws": 0
+        },
+        "Balancing Tings": {
+          "wins": 2,
+          "losses": 1,
+          "draws": 0
+        },
         "Moneyball Red": {
           "wins": 3,
           "losses": 3,
-          "draws": 0
-        },
-        "4c Terrageddon": {
-          "wins": 5,
-          "losses": 1,
           "draws": 0
         },
         "Anarchist Replenish Oath": {
@@ -132,11 +197,6 @@
           "losses": 0,
           "draws": 1
         },
-        "Dreadnought": {
-          "wins": 23,
-          "losses": 14,
-          "draws": 2
-        },
         "RG Goblins": {
           "wins": 5,
           "losses": 7,
@@ -145,11 +205,6 @@
         "Stiflenaught": {
           "wins": 2,
           "losses": 1,
-          "draws": 0
-        },
-        "Naya Terrageddon": {
-          "wins": 11,
-          "losses": 4,
           "draws": 0
         },
         "Merfolk": {
@@ -207,20 +262,10 @@
           "losses": 3,
           "draws": 0
         },
-        "Enchantress": {
-          "wins": 4,
-          "losses": 8,
-          "draws": 0
-        },
         "Mono Blue Control": {
           "wins": 4,
           "losses": 2,
           "draws": 0
-        },
-        "Stasis": {
-          "wins": 5,
-          "losses": 3,
-          "draws": 1
         },
         "Machinehead": {
           "wins": 1,
@@ -257,11 +302,6 @@
           "losses": 3,
           "draws": 0
         },
-        "Moneyball": {
-          "wins": 3,
-          "losses": 2,
-          "draws": 1
-        },
         "Dogpile (Mono G Survival)": {
           "wins": 2,
           "losses": 0,
@@ -297,11 +337,6 @@
           "losses": 2,
           "draws": 0
         },
-        "White Control": {
-          "wins": 3,
-          "losses": 0,
-          "draws": 0
-        },
         "Chromatic Control": {
           "wins": 1,
           "losses": 2,
@@ -326,11 +361,6 @@
           "wins": 0,
           "losses": 3,
           "draws": 0
-        },
-        "Terrageddon": {
-          "wins": 6,
-          "losses": 4,
-          "draws": 2
         },
         "Life": {
           "wins": 2,
@@ -431,16 +461,6 @@
           "wins": 1,
           "losses": 2,
           "draws": 0
-        },
-        "GR Aggro": {
-          "wins": 2,
-          "losses": 1,
-          "draws": 0
-        },
-        "Reanimator": {
-          "wins": 4,
-          "losses": 1,
-          "draws": 1
         },
         "Esper Tog": {
           "wins": 0,

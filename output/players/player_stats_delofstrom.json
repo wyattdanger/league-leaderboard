@@ -2,25 +2,25 @@
   "username": "delofstrom",
   "displayName": "DEL .",
   "overallStats": {
-    "totalTournaments": 21,
-    "totalPoints": 54,
-    "totalMatches": 61,
-    "matchRecord": "16-39-6",
-    "matchWinPercentage": 0.3114754098360656,
-    "gameRecord": "57-91-2",
-    "gameWinPercentage": 0.38,
+    "totalTournaments": 22,
+    "totalPoints": 57,
+    "totalMatches": 64,
+    "matchRecord": "17-41-6",
+    "matchWinPercentage": 0.3125,
+    "gameRecord": "59-95-2",
+    "gameWinPercentage": 0.3782051282051282,
     "trophies": 0,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q3 2026",
-      "events": 3,
-      "points": 3,
-      "matchRecord": "1-6-0",
-      "matchWinPercentage": 0.14285714285714285,
-      "gameRecord": "7-12-0",
-      "gameWinPercentage": 0.3684210526315789
+      "events": 4,
+      "points": 6,
+      "matchRecord": "2-8-0",
+      "matchWinPercentage": 0.2,
+      "gameRecord": "9-16-0",
+      "gameWinPercentage": 0.36
     },
     {
       "leagueName": "Q2 2026",
@@ -98,6 +98,20 @@
       "trophies": 0
     },
     {
+      "deckName": "Naya Good Stuff",
+      "events": 1,
+      "matchWins": 1,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 2,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "trophies": 0
+    },
+    {
       "deckName": "Elves",
       "events": 1,
       "matchWins": 1,
@@ -157,17 +171,27 @@
   "headToHead": [
     {
       "opponentUsername": "swbmtg",
-      "opponentDisplayName": "swb",
-      "matchesPlayed": 5,
+      "opponentDisplayName": "Stephen Bush",
+      "matchesPlayed": 6,
       "matchWins": 0,
-      "matchLosses": 4,
+      "matchLosses": 5,
       "matchDraws": 1,
-      "matchWinPercentage": 0.1,
+      "matchWinPercentage": 0.08333333333333333,
       "gameWins": 3,
-      "gameLosses": 9,
+      "gameLosses": 11,
       "gameDraws": 0,
-      "gameWinPercentage": 0.25,
+      "gameWinPercentage": 0.21428571428571427,
       "matches": [
+        {
+          "tournamentId": "445681",
+          "dateDisplay": "September 3, 2026",
+          "result": "L",
+          "playerDeck": "Naya Good Stuff",
+          "opponentDeck": "Naya Terrageddon",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
         {
           "tournamentId": "410832",
           "dateDisplay": "March 5, 2026",
@@ -766,6 +790,56 @@
       ]
     },
     {
+      "opponentUsername": "KYamada97",
+      "opponentDisplayName": "KYamada97",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "matches": [
+        {
+          "tournamentId": "445681",
+          "dateDisplay": "September 3, 2026",
+          "result": "W",
+          "playerDeck": "Naya Good Stuff",
+          "opponentDeck": "_",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "DaveKaplan",
+      "opponentDisplayName": "Dave Kaplan",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "matches": [
+        {
+          "tournamentId": "445681",
+          "dateDisplay": "September 3, 2026",
+          "result": "L",
+          "playerDeck": "Naya Good Stuff",
+          "opponentDeck": "Dreadnought",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "tjndj",
       "opponentDisplayName": "tjndj",
       "matchesPlayed": 1,
@@ -1267,6 +1341,22 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "445681",
+      "dateDisplay": "September 3, 2026",
+      "playerCount": 20,
+      "trophyCount": 3,
+      "roundCount": 3,
+      "rank": 13,
+      "points": 3,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 2,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333,
+      "deck": "Naya Good Stuff"
+    },
     {
       "tournamentId": "445678",
       "dateDisplay": "August 13, 2026",

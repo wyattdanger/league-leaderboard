@@ -2,25 +2,25 @@
   "username": "RichBucey",
   "displayName": "RichBucey",
   "overallStats": {
-    "totalTournaments": 39,
-    "totalPoints": 199,
-    "totalMatches": 117,
-    "matchRecord": "66-50-1",
-    "matchWinPercentage": 0.5683760683760684,
-    "gameRecord": "156-126-1",
-    "gameWinPercentage": 0.5512367491166078,
-    "trophies": 6,
+    "totalTournaments": 40,
+    "totalPoints": 208,
+    "totalMatches": 120,
+    "matchRecord": "69-50-1",
+    "matchWinPercentage": 0.5791666666666667,
+    "gameRecord": "162-129-1",
+    "gameWinPercentage": 0.5547945205479452,
+    "trophies": 7,
     "belts": 1
   },
   "leagueStats": [
     {
       "leagueName": "Q3 2026",
-      "events": 5,
-      "points": 27,
-      "matchRecord": "9-6-0",
-      "matchWinPercentage": 0.6,
-      "gameRecord": "20-16-0",
-      "gameWinPercentage": 0.5555555555555556
+      "events": 6,
+      "points": 36,
+      "matchRecord": "12-6-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameRecord": "26-19-0",
+      "gameWinPercentage": 0.5777777777777777
     },
     {
       "leagueName": "Q2 2026",
@@ -140,17 +140,17 @@
     },
     {
       "deckName": "Enchantress",
-      "events": 4,
-      "matchWins": 6,
+      "events": 5,
+      "matchWins": 9,
       "matchLosses": 5,
       "matchDraws": 1,
-      "matchRecord": "6-5-1",
-      "matchWinPercentage": 0.5416666666666666,
-      "gameWins": 14,
-      "gameLosses": 15,
+      "matchRecord": "9-5-1",
+      "matchWinPercentage": 0.6333333333333333,
+      "gameWins": 20,
+      "gameLosses": 18,
       "gameDraws": 1,
-      "gameWinPercentage": 0.48333333333333334,
-      "trophies": 1
+      "gameWinPercentage": 0.5256410256410257,
+      "trophies": 2
     },
     {
       "deckName": "Dreadnought",
@@ -652,6 +652,61 @@
       ]
     },
     {
+      "opponentUsername": "AndrewLevine",
+      "opponentDisplayName": "AndrewLevine",
+      "matchesPlayed": 4,
+      "matchWins": 2,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.5,
+      "gameWins": 6,
+      "gameLosses": 5,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5454545454545454,
+      "matches": [
+        {
+          "tournamentId": "445681",
+          "dateDisplay": "September 3, 2026",
+          "result": "W",
+          "playerDeck": "Enchantress",
+          "opponentDeck": "Mono U Disk",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "430556",
+          "dateDisplay": "May 21, 2026",
+          "result": "L",
+          "playerDeck": "Pit Rack",
+          "opponentDeck": "Sam Veteran Explorer",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "415118",
+          "dateDisplay": "March 19, 2026",
+          "result": "L",
+          "playerDeck": "UG Aluren",
+          "opponentDeck": "GW Mad Dogs",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "404622",
+          "dateDisplay": "February 12, 2026",
+          "result": "W",
+          "playerDeck": "Oath Ponza",
+          "opponentDeck": "Gush Tithe",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "Mattmelach",
       "opponentDisplayName": "Matthew Melachrinos",
       "matchesPlayed": 4,
@@ -872,6 +927,51 @@
       ]
     },
     {
+      "opponentUsername": "CalebR",
+      "opponentDisplayName": "CalebR",
+      "matchesPlayed": 3,
+      "matchWins": 2,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 4,
+      "gameLosses": 3,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5714285714285714,
+      "matches": [
+        {
+          "tournamentId": "445681",
+          "dateDisplay": "September 3, 2026",
+          "result": "W",
+          "playerDeck": "Enchantress",
+          "opponentDeck": "_",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "445673",
+          "dateDisplay": "July 16, 2026",
+          "result": "W",
+          "playerDeck": "Burn",
+          "opponentDeck": "UG Survival Opposition",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "436160",
+          "dateDisplay": "July 9, 2026",
+          "result": "L",
+          "playerDeck": "Sligh",
+          "opponentDeck": "UG Survival Opposition",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "LuisNeiman",
       "opponentDisplayName": "LuisNeiman",
       "matchesPlayed": 3,
@@ -917,26 +1017,26 @@
       ]
     },
     {
-      "opponentUsername": "AndrewLevine",
-      "opponentDisplayName": "AndrewLevine",
-      "matchesPlayed": 3,
+      "opponentUsername": "mattmanw2",
+      "opponentDisplayName": "mattmanw2",
+      "matchesPlayed": 2,
       "matchWins": 1,
-      "matchLosses": 2,
+      "matchLosses": 1,
       "matchDraws": 0,
-      "matchWinPercentage": 0.3333333333333333,
-      "gameWins": 4,
-      "gameLosses": 4,
+      "matchWinPercentage": 0.5,
+      "gameWins": 2,
+      "gameLosses": 3,
       "gameDraws": 0,
-      "gameWinPercentage": 0.5,
+      "gameWinPercentage": 0.4,
       "matches": [
         {
-          "tournamentId": "430556",
-          "dateDisplay": "May 21, 2026",
-          "result": "L",
-          "playerDeck": "Pit Rack",
-          "opponentDeck": "Sam Veteran Explorer",
-          "playerGameWins": 1,
-          "opponentGameWins": 2,
+          "tournamentId": "445681",
+          "dateDisplay": "September 3, 2026",
+          "result": "W",
+          "playerDeck": "Enchantress",
+          "opponentDeck": "Moneyball",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
           "gameDraws": 0
         },
         {
@@ -944,52 +1044,7 @@
           "dateDisplay": "March 19, 2026",
           "result": "L",
           "playerDeck": "UG Aluren",
-          "opponentDeck": "GW Mad Dogs",
-          "playerGameWins": 1,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "404622",
-          "dateDisplay": "February 12, 2026",
-          "result": "W",
-          "playerDeck": "Oath Ponza",
-          "opponentDeck": "Gush Tithe",
-          "playerGameWins": 2,
-          "opponentGameWins": 0,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "CalebR",
-      "opponentDisplayName": "CalebR",
-      "matchesPlayed": 2,
-      "matchWins": 1,
-      "matchLosses": 1,
-      "matchDraws": 0,
-      "matchWinPercentage": 0.5,
-      "gameWins": 2,
-      "gameLosses": 2,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.5,
-      "matches": [
-        {
-          "tournamentId": "445673",
-          "dateDisplay": "July 16, 2026",
-          "result": "W",
-          "playerDeck": "Burn",
-          "opponentDeck": "UG Survival Opposition",
-          "playerGameWins": 2,
-          "opponentGameWins": 0,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "436160",
-          "dateDisplay": "July 9, 2026",
-          "result": "L",
-          "playerDeck": "Sligh",
-          "opponentDeck": "UG Survival Opposition",
+          "opponentDeck": "Moneyball Black",
           "playerGameWins": 0,
           "opponentGameWins": 2,
           "gameDraws": 0
@@ -1561,31 +1616,6 @@
           "playerDeck": "Pit Rack",
           "opponentDeck": "hFEB",
           "playerGameWins": 1,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "mattmanw2",
-      "opponentDisplayName": "mattmanw2",
-      "matchesPlayed": 1,
-      "matchWins": 0,
-      "matchLosses": 1,
-      "matchDraws": 0,
-      "matchWinPercentage": 0,
-      "gameWins": 0,
-      "gameLosses": 2,
-      "gameDraws": 0,
-      "gameWinPercentage": 0,
-      "matches": [
-        {
-          "tournamentId": "415118",
-          "dateDisplay": "March 19, 2026",
-          "result": "L",
-          "playerDeck": "UG Aluren",
-          "opponentDeck": "Moneyball Black",
-          "playerGameWins": 0,
           "opponentGameWins": 2,
           "gameDraws": 0
         }
@@ -2243,6 +2273,22 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "445681",
+      "dateDisplay": "September 3, 2026",
+      "playerCount": 20,
+      "trophyCount": 3,
+      "roundCount": 3,
+      "rank": 3,
+      "points": 9,
+      "matchRecord": "3-0-0",
+      "matchWinPercentage": 1,
+      "gameWins": 6,
+      "gameLosses": 3,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6666667,
+      "deck": "Enchantress"
+    },
     {
       "tournamentId": "445678",
       "dateDisplay": "August 13, 2026",
