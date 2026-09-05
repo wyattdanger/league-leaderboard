@@ -25,8 +25,10 @@
         "Landstill": 3,
         "4c Terrageddon": 3,
         "Enchantress": 5,
+        "GR Oath Ponza": 1,
         "Stasis": 5,
         "Reanimator": 3,
+        "GW Oath Ponza": 1,
         "Naya Good Stuff": 1,
         "White Control": 2,
         "Moneyball": 3,
@@ -169,6 +171,11 @@
           "losses": 8,
           "draws": 0
         },
+        "GR Oath Ponza": {
+          "wins": 2,
+          "losses": 1,
+          "draws": 0
+        },
         "Stasis": {
           "wins": 6,
           "losses": 8,
@@ -177,6 +184,11 @@
         "Reanimator": {
           "wins": 4,
           "losses": 3,
+          "draws": 1
+        },
+        "GW Oath Ponza": {
+          "wins": 0,
+          "losses": 2,
           "draws": 1
         },
         "Naya Good Stuff": {
