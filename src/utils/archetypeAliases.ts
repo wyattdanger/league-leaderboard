@@ -10,6 +10,7 @@ export const archetypeAliases: Record<string, string> = {
   'Magnivore Oath': 'Oath Ponza',
   'Junk Oath': 'Oath',
   'Domain Oath': 'Oath',
+  'UG Cognivore Oath': 'Oath',
 
   // Parfait variants
   'Parfait': 'Parfait',

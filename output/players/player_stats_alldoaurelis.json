@@ -58,16 +58,16 @@
     },
     {
       "deckName": "Moneyball Red",
-      "events": 2,
-      "matchWins": 3,
-      "matchLosses": 3,
+      "events": 3,
+      "matchWins": 4,
+      "matchLosses": 5,
       "matchDraws": 0,
-      "matchRecord": "3-3-0",
-      "matchWinPercentage": 0.5,
-      "gameWins": 7,
-      "gameLosses": 6,
+      "matchRecord": "4-5-0",
+      "matchWinPercentage": 0.4444444444444444,
+      "gameWins": 10,
+      "gameLosses": 10,
       "gameDraws": 0,
-      "gameWinPercentage": 0.5384615384615384,
+      "gameWinPercentage": 0.5,
       "trophies": 0
     },
     {
@@ -127,20 +127,6 @@
       "trophies": 0
     },
     {
-      "deckName": "Unknown",
-      "events": 1,
-      "matchWins": 1,
-      "matchLosses": 2,
-      "matchDraws": 0,
-      "matchRecord": "1-2-0",
-      "matchWinPercentage": 0.3333333333333333,
-      "gameWins": 3,
-      "gameLosses": 4,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.42857142857142855,
-      "trophies": 0
-    },
-    {
       "deckName": "UG Madness",
       "events": 1,
       "matchWins": 1,
@@ -187,8 +173,8 @@
           "tournamentId": "445681",
           "dateDisplay": "September 3, 2026",
           "result": "L",
-          "playerDeck": "_",
-          "opponentDeck": "_",
+          "playerDeck": "Moneyball Red",
+          "opponentDeck": "GR Survival Terravore",
           "playerGameWins": 0,
           "opponentGameWins": 2,
           "gameDraws": 0
@@ -322,7 +308,7 @@
           "tournamentId": "445681",
           "dateDisplay": "September 3, 2026",
           "result": "L",
-          "playerDeck": "_",
+          "playerDeck": "Moneyball Red",
           "opponentDeck": "Balancing Tings",
           "playerGameWins": 1,
           "opponentGameWins": 2,
@@ -532,8 +518,8 @@
           "tournamentId": "445681",
           "dateDisplay": "September 3, 2026",
           "result": "W",
-          "playerDeck": "_",
-          "opponentDeck": "_",
+          "playerDeck": "Moneyball Red",
+          "opponentDeck": "UG Cognivore Oath",
           "playerGameWins": 2,
           "opponentGameWins": 0,
           "gameDraws": 0
@@ -1097,7 +1083,7 @@
       "gameLosses": 4,
       "gameDraws": 0,
       "gameWinPercentage": 0.4285714,
-      "deck": "_"
+      "deck": "Moneyball Red"
     },
     {
       "tournamentId": "445679",

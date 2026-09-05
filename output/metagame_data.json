@@ -16,9 +16,13 @@
       ],
       "deckCounts": {
         "GR Aggro": 2,
+        "Moneyball Red": 3,
         "Mono U Disk": 1,
+        "GR Survival Terravore": 1,
         "Dreadnought": 14,
         "Terrageddon": 5,
+        "UG Cognivore Oath": 1,
+        "Landstill": 3,
         "4c Terrageddon": 3,
         "Enchantress": 5,
         "Stasis": 5,
@@ -28,7 +32,6 @@
         "Moneyball": 3,
         "Naya Terrageddon": 6,
         "Balancing Tings": 1,
-        "Moneyball Red": 2,
         "Anarchist Replenish Oath": 1,
         "Welder Prison": 2,
         "RG Goblins": 4,
@@ -76,7 +79,6 @@
         "Jank": 1,
         "Mono red ponza": 1,
         "Moneyball Blue": 1,
-        "Landstill": 2,
         "Gush Tithe": 1,
         "Replenish (PandeBurst)": 1,
         "UG Survival Opposition": 3,
@@ -122,9 +124,19 @@
           "losses": 2,
           "draws": 0
         },
+        "Moneyball Red": {
+          "wins": 4,
+          "losses": 5,
+          "draws": 0
+        },
         "Mono U Disk": {
           "wins": 1,
           "losses": 2,
+          "draws": 0
+        },
+        "GR Survival Terravore": {
+          "wins": 2,
+          "losses": 1,
           "draws": 0
         },
         "Dreadnought": {
@@ -135,6 +147,16 @@
         "Terrageddon": {
           "wins": 7,
           "losses": 6,
+          "draws": 2
+        },
+        "UG Cognivore Oath": {
+          "wins": 0,
+          "losses": 2,
+          "draws": 1
+        },
+        "Landstill": {
+          "wins": 3,
+          "losses": 4,
           "draws": 2
         },
         "4c Terrageddon": {
@@ -180,11 +202,6 @@
         "Balancing Tings": {
           "wins": 2,
           "losses": 1,
-          "draws": 0
-        },
-        "Moneyball Red": {
-          "wins": 3,
-          "losses": 3,
           "draws": 0
         },
         "Anarchist Replenish Oath": {
@@ -421,11 +438,6 @@
           "wins": 2,
           "losses": 1,
           "draws": 0
-        },
-        "Landstill": {
-          "wins": 3,
-          "losses": 2,
-          "draws": 1
         },
         "Gush Tithe": {
           "wins": 2,
