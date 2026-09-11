@@ -2,25 +2,25 @@
   "username": "delofstrom",
   "displayName": "DEL .",
   "overallStats": {
-    "totalTournaments": 22,
-    "totalPoints": 57,
-    "totalMatches": 64,
-    "matchRecord": "17-41-6",
-    "matchWinPercentage": 0.3125,
-    "gameRecord": "59-95-2",
-    "gameWinPercentage": 0.3782051282051282,
+    "totalTournaments": 23,
+    "totalPoints": 60,
+    "totalMatches": 67,
+    "matchRecord": "18-43-6",
+    "matchWinPercentage": 0.31343283582089554,
+    "gameRecord": "61-100-2",
+    "gameWinPercentage": 0.37423312883435583,
     "trophies": 0,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q3 2026",
-      "events": 4,
-      "points": 6,
-      "matchRecord": "2-8-0",
-      "matchWinPercentage": 0.2,
-      "gameRecord": "9-16-0",
-      "gameWinPercentage": 0.36
+      "events": 5,
+      "points": 9,
+      "matchRecord": "3-10-0",
+      "matchWinPercentage": 0.23076923076923078,
+      "gameRecord": "11-21-0",
+      "gameWinPercentage": 0.34375
     },
     {
       "leagueName": "Q2 2026",
@@ -71,16 +71,16 @@
   "deckStats": [
     {
       "deckName": "Unknown",
-      "events": 11,
-      "matchWins": 8,
-      "matchLosses": 21,
+      "events": 12,
+      "matchWins": 9,
+      "matchLosses": 23,
       "matchDraws": 4,
-      "matchRecord": "8-21-4",
-      "matchWinPercentage": 0.30303030303030304,
-      "gameWins": 29,
-      "gameLosses": 49,
+      "matchRecord": "9-23-4",
+      "matchWinPercentage": 0.3055555555555556,
+      "gameWins": 31,
+      "gameLosses": 54,
       "gameDraws": 2,
-      "gameWinPercentage": 0.375,
+      "gameWinPercentage": 0.367816091954023,
       "trophies": 0
     },
     {
@@ -545,6 +545,41 @@
       ]
     },
     {
+      "opponentUsername": "PCavalcanti",
+      "opponentDisplayName": "PCavalcanti",
+      "matchesPlayed": 2,
+      "matchWins": 0,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.2,
+      "matches": [
+        {
+          "tournamentId": "465043",
+          "dateDisplay": "September 10, 2026",
+          "result": "L",
+          "playerDeck": "_",
+          "opponentDeck": "Burn",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "445677",
+          "dateDisplay": "August 6, 2026",
+          "result": "L",
+          "playerDeck": "Elves",
+          "opponentDeck": "Moneyball Black",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "LuisNeiman",
       "opponentDisplayName": "LuisNeiman",
       "matchesPlayed": 2,
@@ -790,6 +825,56 @@
       ]
     },
     {
+      "opponentUsername": "weidnent",
+      "opponentDisplayName": "Nicholas Weidner",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6666666666666666,
+      "matches": [
+        {
+          "tournamentId": "465043",
+          "dateDisplay": "September 10, 2026",
+          "result": "W",
+          "playerDeck": "_",
+          "opponentDeck": "GW Slide",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "SamFeldman",
+      "opponentDisplayName": "Samuel Feldman",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "matches": [
+        {
+          "tournamentId": "465043",
+          "dateDisplay": "September 10, 2026",
+          "result": "L",
+          "playerDeck": "_",
+          "opponentDeck": "Oath Ponza",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "KYamada97",
       "opponentDisplayName": "KYamada97",
       "matchesPlayed": 1,
@@ -885,31 +970,6 @@
           "opponentDeck": "_",
           "playerGameWins": 2,
           "opponentGameWins": 0,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "PCavalcanti",
-      "opponentDisplayName": "PCavalcanti",
-      "matchesPlayed": 1,
-      "matchWins": 0,
-      "matchLosses": 1,
-      "matchDraws": 0,
-      "matchWinPercentage": 0,
-      "gameWins": 1,
-      "gameLosses": 2,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.3333333333333333,
-      "matches": [
-        {
-          "tournamentId": "445677",
-          "dateDisplay": "August 6, 2026",
-          "result": "L",
-          "playerDeck": "Elves",
-          "opponentDeck": "Moneyball Black",
-          "playerGameWins": 1,
-          "opponentGameWins": 2,
           "gameDraws": 0
         }
       ]
@@ -1341,6 +1401,22 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "465043",
+      "dateDisplay": "September 10, 2026",
+      "playerCount": 19,
+      "trophyCount": 3,
+      "roundCount": 3,
+      "rank": 15,
+      "points": 3,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 2,
+      "gameLosses": 5,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333,
+      "deck": "_"
+    },
     {
       "tournamentId": "445681",
       "dateDisplay": "September 3, 2026",

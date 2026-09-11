@@ -2,25 +2,25 @@
   "username": "swbmtg",
   "displayName": "Stephen Bush",
   "overallStats": {
-    "totalTournaments": 57,
-    "totalPoints": 362,
-    "totalMatches": 171,
-    "matchRecord": "118-45-8",
-    "matchWinPercentage": 0.7134502923976608,
-    "gameRecord": "264-145-4",
-    "gameWinPercentage": 0.639225181598063,
+    "totalTournaments": 58,
+    "totalPoints": 368,
+    "totalMatches": 174,
+    "matchRecord": "120-46-8",
+    "matchWinPercentage": 0.7126436781609196,
+    "gameRecord": "269-148-4",
+    "gameWinPercentage": 0.6389548693586699,
     "trophies": 16,
     "belts": 1
   },
   "leagueStats": [
     {
       "leagueName": "Q3 2026",
-      "events": 10,
-      "points": 57,
-      "matchRecord": "19-11-0",
-      "matchWinPercentage": 0.6333333333333333,
-      "gameRecord": "42-30-1",
-      "gameWinPercentage": 0.5821917808219178
+      "events": 11,
+      "points": 63,
+      "matchRecord": "21-12-0",
+      "matchWinPercentage": 0.6363636363636364,
+      "gameRecord": "47-33-1",
+      "gameWinPercentage": 0.5864197530864198
     },
     {
       "leagueName": "Q2 2026",
@@ -213,6 +213,20 @@
       "trophies": 0
     },
     {
+      "deckName": "Goblins",
+      "events": 2,
+      "matchWins": 5,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchRecord": "5-1-0",
+      "matchWinPercentage": 0.8333333333333334,
+      "gameWins": 11,
+      "gameLosses": 5,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6875,
+      "trophies": 1
+    },
+    {
       "deckName": "The Rock",
       "events": 2,
       "matchWins": 4,
@@ -294,20 +308,6 @@
       "gameLosses": 1,
       "gameDraws": 0,
       "gameWinPercentage": 0.8571428571428571,
-      "trophies": 1
-    },
-    {
-      "deckName": "Goblins",
-      "events": 1,
-      "matchWins": 3,
-      "matchLosses": 0,
-      "matchDraws": 0,
-      "matchRecord": "3-0-0",
-      "matchWinPercentage": 1,
-      "gameWins": 6,
-      "gameLosses": 2,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.75,
       "trophies": 1
     },
     {
@@ -1807,6 +1807,51 @@
       ]
     },
     {
+      "opponentUsername": "StevenRiseNYC",
+      "opponentDisplayName": "StevenRiseNYC",
+      "matchesPlayed": 3,
+      "matchWins": 2,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 5,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.7142857142857143,
+      "matches": [
+        {
+          "tournamentId": "465043",
+          "dateDisplay": "September 10, 2026",
+          "result": "W",
+          "playerDeck": "Goblins",
+          "opponentDeck": "Pit Rack",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "417122",
+          "dateDisplay": "March 26, 2026",
+          "result": "W",
+          "playerDeck": "Cradle Control",
+          "opponentDeck": "Moneyball Black",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "415118",
+          "dateDisplay": "March 19, 2026",
+          "result": "L",
+          "playerDeck": "Cradle Control",
+          "opponentDeck": "Moneyball Black",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "Mookyspulder",
       "opponentDisplayName": "Dan S",
       "matchesPlayed": 3,
@@ -1892,6 +1937,41 @@
           "opponentDeck": "Terrageddon",
           "playerGameWins": 2,
           "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "DaveKaplan",
+      "opponentDisplayName": "Dave Kaplan",
+      "matchesPlayed": 2,
+      "matchWins": 1,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.5,
+      "gameWins": 3,
+      "gameLosses": 3,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5,
+      "matches": [
+        {
+          "tournamentId": "465043",
+          "dateDisplay": "September 10, 2026",
+          "result": "W",
+          "playerDeck": "Goblins",
+          "opponentDeck": "Dreadnought",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "445677",
+          "dateDisplay": "August 6, 2026",
+          "result": "L",
+          "playerDeck": "Chromatic Control",
+          "opponentDeck": "WWu",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
           "gameDraws": 0
         }
       ]
@@ -2247,41 +2327,6 @@
       ]
     },
     {
-      "opponentUsername": "StevenRiseNYC",
-      "opponentDisplayName": "StevenRiseNYC",
-      "matchesPlayed": 2,
-      "matchWins": 1,
-      "matchLosses": 1,
-      "matchDraws": 0,
-      "matchWinPercentage": 0.5,
-      "gameWins": 3,
-      "gameLosses": 2,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.6,
-      "matches": [
-        {
-          "tournamentId": "417122",
-          "dateDisplay": "March 26, 2026",
-          "result": "W",
-          "playerDeck": "Cradle Control",
-          "opponentDeck": "Moneyball Black",
-          "playerGameWins": 2,
-          "opponentGameWins": 0,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "415118",
-          "dateDisplay": "March 19, 2026",
-          "result": "L",
-          "playerDeck": "Cradle Control",
-          "opponentDeck": "Moneyball Black",
-          "playerGameWins": 1,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
       "opponentUsername": "LuisNeiman",
       "opponentDisplayName": "LuisNeiman",
       "matchesPlayed": 2,
@@ -2387,6 +2432,31 @@
       ]
     },
     {
+      "opponentUsername": "SamFeldman",
+      "opponentDisplayName": "Samuel Feldman",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "matches": [
+        {
+          "tournamentId": "465043",
+          "dateDisplay": "September 10, 2026",
+          "result": "L",
+          "playerDeck": "Goblins",
+          "opponentDeck": "Oath Ponza",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "ByerBeware",
       "opponentDisplayName": "ByerBeware",
       "matchesPlayed": 1,
@@ -2432,31 +2502,6 @@
           "opponentDeck": "The Rock",
           "playerGameWins": 2,
           "opponentGameWins": 0,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "DaveKaplan",
-      "opponentDisplayName": "Dave Kaplan",
-      "matchesPlayed": 1,
-      "matchWins": 0,
-      "matchLosses": 1,
-      "matchDraws": 0,
-      "matchWinPercentage": 0,
-      "gameWins": 1,
-      "gameLosses": 2,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.3333333333333333,
-      "matches": [
-        {
-          "tournamentId": "445677",
-          "dateDisplay": "August 6, 2026",
-          "result": "L",
-          "playerDeck": "Chromatic Control",
-          "opponentDeck": "WWu",
-          "playerGameWins": 1,
-          "opponentGameWins": 2,
           "gameDraws": 0
         }
       ]
@@ -3088,6 +3133,22 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "465043",
+      "dateDisplay": "September 10, 2026",
+      "playerCount": 19,
+      "trophyCount": 3,
+      "roundCount": 3,
+      "rank": 7,
+      "points": 6,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 5,
+      "gameLosses": 3,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.625,
+      "deck": "Goblins"
+    },
     {
       "tournamentId": "458540",
       "dateDisplay": "August 27, 2026",

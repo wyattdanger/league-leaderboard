@@ -2,25 +2,25 @@
   "username": "mattmanw2",
   "displayName": "mattmanw2",
   "overallStats": {
-    "totalTournaments": 12,
-    "totalPoints": 57,
-    "totalMatches": 36,
-    "matchRecord": "19-17-0",
-    "matchWinPercentage": 0.5277777777777778,
-    "gameRecord": "44-42-0",
-    "gameWinPercentage": 0.5116279069767442,
-    "trophies": 0,
+    "totalTournaments": 13,
+    "totalPoints": 66,
+    "totalMatches": 39,
+    "matchRecord": "22-17-0",
+    "matchWinPercentage": 0.5641025641025641,
+    "gameRecord": "50-42-0",
+    "gameWinPercentage": 0.5434782608695652,
+    "trophies": 1,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q3 2026",
-      "events": 2,
-      "points": 9,
-      "matchRecord": "3-3-0",
-      "matchWinPercentage": 0.5,
-      "gameRecord": "8-7-0",
-      "gameWinPercentage": 0.5333333333333333
+      "events": 3,
+      "points": 18,
+      "matchRecord": "6-3-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameRecord": "14-7-0",
+      "gameWinPercentage": 0.6666666666666666
     },
     {
       "leagueName": "Q2 2026",
@@ -58,17 +58,17 @@
     },
     {
       "deckName": "Moneyball",
-      "events": 3,
-      "matchWins": 5,
+      "events": 4,
+      "matchWins": 8,
       "matchLosses": 4,
       "matchDraws": 0,
-      "matchRecord": "5-4-0",
-      "matchWinPercentage": 0.5555555555555556,
-      "gameWins": 11,
+      "matchRecord": "8-4-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 17,
       "gameLosses": 10,
       "gameDraws": 0,
-      "gameWinPercentage": 0.5238095238095238,
-      "trophies": 0
+      "gameWinPercentage": 0.6296296296296297,
+      "trophies": 1
     },
     {
       "deckName": "Black Rack",
@@ -114,6 +114,51 @@
     }
   ],
   "headToHead": [
+    {
+      "opponentUsername": "Mattmelach",
+      "opponentDisplayName": "Matthew Melachrinos",
+      "matchesPlayed": 3,
+      "matchWins": 2,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 4,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6666666666666666,
+      "matches": [
+        {
+          "tournamentId": "465043",
+          "dateDisplay": "September 10, 2026",
+          "result": "W",
+          "playerDeck": "Moneyball",
+          "opponentDeck": "Dreadnought",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "424009",
+          "dateDisplay": "April 23, 2026",
+          "result": "L",
+          "playerDeck": "Black Rack",
+          "opponentDeck": "UR Stasis",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "408436",
+          "dateDisplay": "February 26, 2026",
+          "result": "W",
+          "playerDeck": "Moneyball Black",
+          "opponentDeck": "White Lightning",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
     {
       "opponentUsername": "minimiz",
       "opponentDisplayName": "Eli Mizock",
@@ -335,41 +380,6 @@
       ]
     },
     {
-      "opponentUsername": "Mattmelach",
-      "opponentDisplayName": "Matthew Melachrinos",
-      "matchesPlayed": 2,
-      "matchWins": 1,
-      "matchLosses": 1,
-      "matchDraws": 0,
-      "matchWinPercentage": 0.5,
-      "gameWins": 2,
-      "gameLosses": 2,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.5,
-      "matches": [
-        {
-          "tournamentId": "424009",
-          "dateDisplay": "April 23, 2026",
-          "result": "L",
-          "playerDeck": "Black Rack",
-          "opponentDeck": "UR Stasis",
-          "playerGameWins": 0,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "408436",
-          "dateDisplay": "February 26, 2026",
-          "result": "W",
-          "playerDeck": "Moneyball Black",
-          "opponentDeck": "White Lightning",
-          "playerGameWins": 2,
-          "opponentGameWins": 0,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
       "opponentUsername": "swbmtg",
       "opponentDisplayName": "swb",
       "matchesPlayed": 2,
@@ -400,6 +410,56 @@
           "opponentDeck": "Angry Hermit",
           "playerGameWins": 2,
           "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "justintomczyk",
+      "opponentDisplayName": "justintomczyk",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "matches": [
+        {
+          "tournamentId": "465043",
+          "dateDisplay": "September 10, 2026",
+          "result": "W",
+          "playerDeck": "Moneyball",
+          "opponentDeck": "_",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "Frodobaggins",
+      "opponentDisplayName": "Frodobaggins",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "matches": [
+        {
+          "tournamentId": "465043",
+          "dateDisplay": "September 10, 2026",
+          "result": "W",
+          "playerDeck": "Moneyball",
+          "opponentDeck": "Reanimator",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
           "gameDraws": 0
         }
       ]
@@ -806,6 +866,22 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "465043",
+      "dateDisplay": "September 10, 2026",
+      "playerCount": 19,
+      "trophyCount": 3,
+      "roundCount": 3,
+      "rank": 1,
+      "points": 9,
+      "matchRecord": "3-0-0",
+      "matchWinPercentage": 1,
+      "gameWins": 6,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "deck": "Moneyball"
+    },
     {
       "tournamentId": "445681",
       "dateDisplay": "September 3, 2026",

@@ -2,25 +2,25 @@
   "username": "weidnent",
   "displayName": "Nicholas Weidner",
   "overallStats": {
-    "totalTournaments": 20,
+    "totalTournaments": 21,
     "totalPoints": 71,
-    "totalMatches": 60,
-    "matchRecord": "23-35-2",
-    "matchWinPercentage": 0.4,
-    "gameRecord": "62-83-0",
-    "gameWinPercentage": 0.42758620689655175,
+    "totalMatches": 63,
+    "matchRecord": "23-38-2",
+    "matchWinPercentage": 0.38095238095238093,
+    "gameRecord": "63-89-0",
+    "gameWinPercentage": 0.4144736842105263,
     "trophies": 0,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q3 2026",
-      "events": 9,
+      "events": 10,
       "points": 46,
-      "matchRecord": "15-11-1",
-      "matchWinPercentage": 0.5740740740740741,
-      "gameRecord": "36-30-0",
-      "gameWinPercentage": 0.5454545454545454
+      "matchRecord": "15-14-1",
+      "matchWinPercentage": 0.5166666666666667,
+      "gameRecord": "37-36-0",
+      "gameWinPercentage": 0.5068493150684932
     },
     {
       "leagueName": "Q2 2026",
@@ -197,6 +197,20 @@
       "trophies": 0
     },
     {
+      "deckName": "GW Slide",
+      "events": 1,
+      "matchWins": 0,
+      "matchLosses": 3,
+      "matchDraws": 0,
+      "matchRecord": "0-3-0",
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 6,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.14285714285714285,
+      "trophies": 0
+    },
+    {
       "deckName": "Mono Blue Storm",
       "events": 1,
       "matchWins": 0,
@@ -215,16 +229,26 @@
     {
       "opponentUsername": "PCavalcanti",
       "opponentDisplayName": "PCavalcanti",
-      "matchesPlayed": 4,
+      "matchesPlayed": 5,
       "matchWins": 2,
-      "matchLosses": 2,
+      "matchLosses": 3,
       "matchDraws": 0,
-      "matchWinPercentage": 0.5,
+      "matchWinPercentage": 0.4,
       "gameWins": 6,
-      "gameLosses": 4,
+      "gameLosses": 6,
       "gameDraws": 0,
-      "gameWinPercentage": 0.6,
+      "gameWinPercentage": 0.5,
       "matches": [
+        {
+          "tournamentId": "465043",
+          "dateDisplay": "September 10, 2026",
+          "result": "L",
+          "playerDeck": "GW Slide",
+          "opponentDeck": "Burn",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
         {
           "tournamentId": "458540",
           "dateDisplay": "August 27, 2026",
@@ -848,6 +872,56 @@
       ]
     },
     {
+      "opponentUsername": "delofstrom",
+      "opponentDisplayName": "DEL .",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "matches": [
+        {
+          "tournamentId": "465043",
+          "dateDisplay": "September 10, 2026",
+          "result": "L",
+          "playerDeck": "GW Slide",
+          "opponentDeck": "_",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "justintomczyk",
+      "opponentDisplayName": "justintomczyk",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "matches": [
+        {
+          "tournamentId": "465043",
+          "dateDisplay": "September 10, 2026",
+          "result": "L",
+          "playerDeck": "GW Slide",
+          "opponentDeck": "_",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "minimiz",
       "opponentDisplayName": "Eli Mizock",
       "matchesPlayed": 1,
@@ -1324,6 +1398,22 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "465043",
+      "dateDisplay": "September 10, 2026",
+      "playerCount": 19,
+      "trophyCount": 3,
+      "roundCount": 3,
+      "rank": 18,
+      "points": 0,
+      "matchRecord": "0-3-0",
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 6,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333,
+      "deck": "GW Slide"
+    },
     {
       "tournamentId": "458540",
       "dateDisplay": "August 27, 2026",

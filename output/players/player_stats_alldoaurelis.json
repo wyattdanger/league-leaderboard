@@ -2,25 +2,25 @@
   "username": "AlldoAurelis",
   "displayName": "AlldoAurelis",
   "overallStats": {
-    "totalTournaments": 15,
-    "totalPoints": 55,
-    "totalMatches": 45,
-    "matchRecord": "18-26-1",
-    "matchWinPercentage": 0.4111111111111111,
-    "gameRecord": "46-62-0",
-    "gameWinPercentage": 0.42592592592592593,
+    "totalTournaments": 16,
+    "totalPoints": 61,
+    "totalMatches": 48,
+    "matchRecord": "20-27-1",
+    "matchWinPercentage": 0.4270833333333333,
+    "gameRecord": "51-65-0",
+    "gameWinPercentage": 0.4396551724137931,
     "trophies": 2,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q3 2026",
-      "events": 9,
-      "points": 45,
-      "matchRecord": "15-12-0",
-      "matchWinPercentage": 0.5555555555555556,
-      "gameRecord": "34-31-0",
-      "gameWinPercentage": 0.5230769230769231
+      "events": 10,
+      "points": 51,
+      "matchRecord": "17-13-0",
+      "matchWinPercentage": 0.5666666666666667,
+      "gameRecord": "39-34-0",
+      "gameWinPercentage": 0.5342465753424658
     },
     {
       "leagueName": "Q2 2026",
@@ -43,6 +43,20 @@
   ],
   "deckStats": [
     {
+      "deckName": "Moneyball Red",
+      "events": 4,
+      "matchWins": 6,
+      "matchLosses": 6,
+      "matchDraws": 0,
+      "matchRecord": "6-6-0",
+      "matchWinPercentage": 0.5,
+      "gameWins": 15,
+      "gameLosses": 13,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5357142857142857,
+      "trophies": 0
+    },
+    {
       "deckName": "Moneyball Black",
       "events": 4,
       "matchWins": 6,
@@ -55,20 +69,6 @@
       "gameDraws": 0,
       "gameWinPercentage": 0.4666666666666667,
       "trophies": 1
-    },
-    {
-      "deckName": "Moneyball Red",
-      "events": 3,
-      "matchWins": 4,
-      "matchLosses": 5,
-      "matchDraws": 0,
-      "matchRecord": "4-5-0",
-      "matchWinPercentage": 0.4444444444444444,
-      "gameWins": 10,
-      "gameLosses": 10,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.5,
-      "trophies": 0
     },
     {
       "deckName": "Mad Dogs",
@@ -156,6 +156,51 @@
     }
   ],
   "headToHead": [
+    {
+      "opponentUsername": "Tencteri",
+      "opponentDisplayName": "Tencteri",
+      "matchesPlayed": 3,
+      "matchWins": 3,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 6,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.8571428571428571,
+      "matches": [
+        {
+          "tournamentId": "465043",
+          "dateDisplay": "September 10, 2026",
+          "result": "W",
+          "playerDeck": "Moneyball Red",
+          "opponentDeck": "Esper Tog",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "458540",
+          "dateDisplay": "August 27, 2026",
+          "result": "W",
+          "playerDeck": "Moneyball Red",
+          "opponentDeck": "Merfolk",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "445678",
+          "dateDisplay": "August 13, 2026",
+          "result": "W",
+          "playerDeck": "Moneyball Red",
+          "opponentDeck": "Merfolk",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
     {
       "opponentUsername": "CalebR",
       "opponentDisplayName": "CalebR",
@@ -292,6 +337,41 @@
       ]
     },
     {
+      "opponentUsername": "DaveKaplan",
+      "opponentDisplayName": "Dave Kaplan",
+      "matchesPlayed": 2,
+      "matchWins": 2,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 4,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6666666666666666,
+      "matches": [
+        {
+          "tournamentId": "465043",
+          "dateDisplay": "September 10, 2026",
+          "result": "W",
+          "playerDeck": "Moneyball Red",
+          "opponentDeck": "Dreadnought",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "436160",
+          "dateDisplay": "July 9, 2026",
+          "result": "W",
+          "playerDeck": "Moneyball Black",
+          "opponentDeck": "Stiflenought",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "weidnent",
       "opponentDisplayName": "Nicholas Weidner",
       "matchesPlayed": 2,
@@ -322,41 +402,6 @@
           "opponentDeck": "_",
           "playerGameWins": 1,
           "opponentGameWins": 1,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "Tencteri",
-      "opponentDisplayName": "Tencteri",
-      "matchesPlayed": 2,
-      "matchWins": 2,
-      "matchLosses": 0,
-      "matchDraws": 0,
-      "matchWinPercentage": 1,
-      "gameWins": 4,
-      "gameLosses": 1,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.8,
-      "matches": [
-        {
-          "tournamentId": "458540",
-          "dateDisplay": "August 27, 2026",
-          "result": "W",
-          "playerDeck": "Moneyball Red",
-          "opponentDeck": "Merfolk",
-          "playerGameWins": 2,
-          "opponentGameWins": 1,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "445678",
-          "dateDisplay": "August 13, 2026",
-          "result": "W",
-          "playerDeck": "Moneyball Red",
-          "opponentDeck": "Merfolk",
-          "playerGameWins": 2,
-          "opponentGameWins": 0,
           "gameDraws": 0
         }
       ]
@@ -496,6 +541,31 @@
           "playerDeck": "GW Madness",
           "opponentDeck": "Tinker Prison",
           "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "truthcult",
+      "opponentDisplayName": "klint",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "matches": [
+        {
+          "tournamentId": "465043",
+          "dateDisplay": "September 10, 2026",
+          "result": "L",
+          "playerDeck": "Moneyball Red",
+          "opponentDeck": "Welder Prison",
+          "playerGameWins": 1,
           "opponentGameWins": 2,
           "gameDraws": 0
         }
@@ -722,31 +792,6 @@
           "opponentDeck": "Replenish (PandeBurst)",
           "playerGameWins": 0,
           "opponentGameWins": 2,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "DaveKaplan",
-      "opponentDisplayName": "Dave Kaplan",
-      "matchesPlayed": 1,
-      "matchWins": 1,
-      "matchLosses": 0,
-      "matchDraws": 0,
-      "matchWinPercentage": 1,
-      "gameWins": 2,
-      "gameLosses": 1,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.6666666666666666,
-      "matches": [
-        {
-          "tournamentId": "436160",
-          "dateDisplay": "July 9, 2026",
-          "result": "W",
-          "playerDeck": "Moneyball Black",
-          "opponentDeck": "Stiflenought",
-          "playerGameWins": 2,
-          "opponentGameWins": 1,
           "gameDraws": 0
         }
       ]
@@ -1053,6 +1098,22 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "465043",
+      "dateDisplay": "September 10, 2026",
+      "playerCount": 19,
+      "trophyCount": 3,
+      "roundCount": 3,
+      "rank": 8,
+      "points": 6,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 5,
+      "gameLosses": 3,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.625,
+      "deck": "Moneyball Red"
+    },
     {
       "tournamentId": "458540",
       "dateDisplay": "August 27, 2026",

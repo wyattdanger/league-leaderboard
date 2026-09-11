@@ -2,17 +2,26 @@
   "username": "StevenRiseNYC",
   "displayName": "StevenRiseNYC",
   "overallStats": {
-    "totalTournaments": 2,
-    "totalPoints": 12,
-    "totalMatches": 6,
-    "matchRecord": "4-2-0",
-    "matchWinPercentage": 0.6666666666666666,
-    "gameRecord": "8-7-0",
-    "gameWinPercentage": 0.5333333333333333,
+    "totalTournaments": 3,
+    "totalPoints": 15,
+    "totalMatches": 9,
+    "matchRecord": "5-4-0",
+    "matchWinPercentage": 0.5555555555555556,
+    "gameRecord": "10-12-0",
+    "gameWinPercentage": 0.45454545454545453,
     "trophies": 1,
     "belts": 0
   },
   "leagueStats": [
+    {
+      "leagueName": "Q3 2026",
+      "events": 1,
+      "points": 3,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameRecord": "2-5-0",
+      "gameWinPercentage": 0.2857142857142857
+    },
     {
       "leagueName": "Q1 2026",
       "events": 2,
@@ -37,22 +46,46 @@
       "gameDraws": 0,
       "gameWinPercentage": 0.5333333333333333,
       "trophies": 1
+    },
+    {
+      "deckName": "Pit Rack",
+      "events": 1,
+      "matchWins": 1,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 2,
+      "gameLosses": 5,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.2857142857142857,
+      "trophies": 0
     }
   ],
   "headToHead": [
     {
       "opponentUsername": "swbmtg",
-      "opponentDisplayName": "swb",
-      "matchesPlayed": 2,
+      "opponentDisplayName": "Stephen Bush",
+      "matchesPlayed": 3,
       "matchWins": 1,
-      "matchLosses": 1,
+      "matchLosses": 2,
       "matchDraws": 0,
-      "matchWinPercentage": 0.5,
+      "matchWinPercentage": 0.3333333333333333,
       "gameWins": 2,
-      "gameLosses": 3,
+      "gameLosses": 5,
       "gameDraws": 0,
-      "gameWinPercentage": 0.4,
+      "gameWinPercentage": 0.2857142857142857,
       "matches": [
+        {
+          "tournamentId": "465043",
+          "dateDisplay": "September 10, 2026",
+          "result": "L",
+          "playerDeck": "Pit Rack",
+          "opponentDeck": "Goblins",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
         {
           "tournamentId": "417122",
           "dateDisplay": "March 26, 2026",
@@ -78,6 +111,41 @@
     {
       "opponentUsername": "AndrewLevine",
       "opponentDisplayName": "AndrewLevine",
+      "matchesPlayed": 2,
+      "matchWins": 1,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.5,
+      "gameWins": 2,
+      "gameLosses": 3,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.4,
+      "matches": [
+        {
+          "tournamentId": "465043",
+          "dateDisplay": "September 10, 2026",
+          "result": "L",
+          "playerDeck": "Pit Rack",
+          "opponentDeck": "Blue Disk",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "417122",
+          "dateDisplay": "March 26, 2026",
+          "result": "W",
+          "playerDeck": "Moneyball Black",
+          "opponentDeck": "Cephalid Breakfast",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "PCavalcanti",
+      "opponentDisplayName": "PCavalcanti",
       "matchesPlayed": 1,
       "matchWins": 1,
       "matchLosses": 0,
@@ -89,11 +157,11 @@
       "gameWinPercentage": 0.6666666666666666,
       "matches": [
         {
-          "tournamentId": "417122",
-          "dateDisplay": "March 26, 2026",
+          "tournamentId": "465043",
+          "dateDisplay": "September 10, 2026",
           "result": "W",
-          "playerDeck": "Moneyball Black",
-          "opponentDeck": "Cephalid Breakfast",
+          "playerDeck": "Pit Rack",
+          "opponentDeck": "Burn",
           "playerGameWins": 2,
           "opponentGameWins": 1,
           "gameDraws": 0
@@ -177,6 +245,22 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "465043",
+      "dateDisplay": "September 10, 2026",
+      "playerCount": 19,
+      "trophyCount": 3,
+      "roundCount": 3,
+      "rank": 13,
+      "points": 3,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 2,
+      "gameLosses": 5,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333,
+      "deck": "Pit Rack"
+    },
     {
       "tournamentId": "417122",
       "dateDisplay": "March 26, 2026",
