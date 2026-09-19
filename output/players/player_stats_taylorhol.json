@@ -2,25 +2,25 @@
   "username": "Taylorhol",
   "displayName": "Taylorhol",
   "overallStats": {
-    "totalTournaments": 41,
-    "totalPoints": 184,
-    "totalMatches": 122,
-    "matchRecord": "60-58-4",
-    "matchWinPercentage": 0.5081967213114754,
-    "gameRecord": "149-142-4",
-    "gameWinPercentage": 0.5050847457627119,
+    "totalTournaments": 42,
+    "totalPoints": 190,
+    "totalMatches": 125,
+    "matchRecord": "62-59-4",
+    "matchWinPercentage": 0.512,
+    "gameRecord": "153-145-4",
+    "gameWinPercentage": 0.5066225165562914,
     "trophies": 4,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q3 2026",
-      "events": 9,
-      "points": 43,
-      "matchRecord": "14-12-1",
-      "matchWinPercentage": 0.5370370370370371,
-      "gameRecord": "37-29-1",
-      "gameWinPercentage": 0.5597014925373134
+      "events": 10,
+      "points": 49,
+      "matchRecord": "16-13-1",
+      "matchWinPercentage": 0.55,
+      "gameRecord": "41-32-1",
+      "gameWinPercentage": 0.5608108108108109
     },
     {
       "leagueName": "Q2 2026",
@@ -240,6 +240,20 @@
       "gameDraws": 0,
       "gameWinPercentage": 1,
       "trophies": 1
+    },
+    {
+      "deckName": "Pattern Rector",
+      "events": 1,
+      "matchWins": 2,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 4,
+      "gameLosses": 3,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5714285714285714,
+      "trophies": 0
     },
     {
       "deckName": "Naya Terrageddon",
@@ -830,6 +844,61 @@
       ]
     },
     {
+      "opponentUsername": "AlldoAurelis",
+      "opponentDisplayName": "AlldoAurelis",
+      "matchesPlayed": 4,
+      "matchWins": 2,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.5,
+      "gameWins": 5,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5555555555555556,
+      "matches": [
+        {
+          "tournamentId": "445683",
+          "dateDisplay": "September 17, 2026",
+          "result": "W",
+          "playerDeck": "Pattern Rector",
+          "opponentDeck": "Moneyball Black",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "458540",
+          "dateDisplay": "August 27, 2026",
+          "result": "W",
+          "playerDeck": "Naya Terrageddon",
+          "opponentDeck": "Moneyball Red",
+          "playerGameWins": 1,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "445673",
+          "dateDisplay": "July 16, 2026",
+          "result": "L",
+          "playerDeck": "Dreadnought",
+          "opponentDeck": "Moneyball Black",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "436159",
+          "dateDisplay": "July 2, 2026",
+          "result": "L",
+          "playerDeck": "_",
+          "opponentDeck": "Burn",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "LuisNeiman",
       "opponentDisplayName": "LuisNeiman",
       "matchesPlayed": 4,
@@ -990,51 +1059,6 @@
           "opponentDeck": "Rogue",
           "playerGameWins": 2,
           "opponentGameWins": 1,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "AlldoAurelis",
-      "opponentDisplayName": "AlldoAurelis",
-      "matchesPlayed": 3,
-      "matchWins": 1,
-      "matchLosses": 2,
-      "matchDraws": 0,
-      "matchWinPercentage": 0.3333333333333333,
-      "gameWins": 3,
-      "gameLosses": 4,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.42857142857142855,
-      "matches": [
-        {
-          "tournamentId": "458540",
-          "dateDisplay": "August 27, 2026",
-          "result": "W",
-          "playerDeck": "Naya Terrageddon",
-          "opponentDeck": "Moneyball Red",
-          "playerGameWins": 1,
-          "opponentGameWins": 0,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "445673",
-          "dateDisplay": "July 16, 2026",
-          "result": "L",
-          "playerDeck": "Dreadnought",
-          "opponentDeck": "Moneyball Black",
-          "playerGameWins": 1,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "436159",
-          "dateDisplay": "July 2, 2026",
-          "result": "L",
-          "playerDeck": "_",
-          "opponentDeck": "Burn",
-          "playerGameWins": 1,
-          "opponentGameWins": 2,
           "gameDraws": 0
         }
       ]
@@ -1305,6 +1329,41 @@
           "opponentDeck": "Tron",
           "playerGameWins": 2,
           "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "DaveKaplan",
+      "opponentDisplayName": "Dave Kaplan",
+      "matchesPlayed": 2,
+      "matchWins": 0,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "matches": [
+        {
+          "tournamentId": "445683",
+          "dateDisplay": "September 17, 2026",
+          "result": "L",
+          "playerDeck": "Pattern Rector",
+          "opponentDeck": "Burn",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "408436",
+          "dateDisplay": "February 26, 2026",
+          "result": "L",
+          "playerDeck": "HFEB",
+          "opponentDeck": "Angry Hermit",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
           "gameDraws": 0
         }
       ]
@@ -1660,6 +1719,31 @@
       ]
     },
     {
+      "opponentUsername": "Leftlegcemetary",
+      "opponentDisplayName": "Sean Fitzpatrick",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6666666666666666,
+      "matches": [
+        {
+          "tournamentId": "445683",
+          "dateDisplay": "September 17, 2026",
+          "result": "W",
+          "playerDeck": "Pattern Rector",
+          "opponentDeck": "_",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "KYamada97",
       "opponentDisplayName": "KYamada97",
       "matchesPlayed": 1,
@@ -1930,31 +2014,6 @@
           "opponentDeck": "RG Goblins",
           "playerGameWins": 2,
           "opponentGameWins": 0,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "DaveKaplan",
-      "opponentDisplayName": "Dave Kaplan",
-      "matchesPlayed": 1,
-      "matchWins": 0,
-      "matchLosses": 1,
-      "matchDraws": 0,
-      "matchWinPercentage": 0,
-      "gameWins": 0,
-      "gameLosses": 2,
-      "gameDraws": 0,
-      "gameWinPercentage": 0,
-      "matches": [
-        {
-          "tournamentId": "408436",
-          "dateDisplay": "February 26, 2026",
-          "result": "L",
-          "playerDeck": "HFEB",
-          "opponentDeck": "Angry Hermit",
-          "playerGameWins": 0,
-          "opponentGameWins": 2,
           "gameDraws": 0
         }
       ]
@@ -2301,6 +2360,22 @@
       "gameDraws": 0,
       "gameWinPercentage": 0.6666667,
       "deck": "Naya Terrageddon"
+    },
+    {
+      "tournamentId": "445683",
+      "dateDisplay": "September 17, 2026",
+      "playerCount": 15,
+      "trophyCount": 1,
+      "roundCount": 3,
+      "rank": 4,
+      "points": 6,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 4,
+      "gameLosses": 3,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5714286,
+      "deck": "Pattern Rector"
     },
     {
       "tournamentId": "445681",

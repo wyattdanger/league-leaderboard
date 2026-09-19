@@ -2,25 +2,25 @@
   "username": "weidnent",
   "displayName": "Nicholas Weidner",
   "overallStats": {
-    "totalTournaments": 21,
-    "totalPoints": 71,
-    "totalMatches": 63,
-    "matchRecord": "23-38-2",
-    "matchWinPercentage": 0.38095238095238093,
-    "gameRecord": "63-89-0",
-    "gameWinPercentage": 0.4144736842105263,
+    "totalTournaments": 22,
+    "totalPoints": 77,
+    "totalMatches": 66,
+    "matchRecord": "25-39-2",
+    "matchWinPercentage": 0.3939393939393939,
+    "gameRecord": "67-93-0",
+    "gameWinPercentage": 0.41875,
     "trophies": 0,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q3 2026",
-      "events": 10,
-      "points": 46,
-      "matchRecord": "15-14-1",
-      "matchWinPercentage": 0.5166666666666667,
-      "gameRecord": "37-36-0",
-      "gameWinPercentage": 0.5068493150684932
+      "events": 11,
+      "points": 52,
+      "matchRecord": "17-15-1",
+      "matchWinPercentage": 0.5303030303030303,
+      "gameRecord": "41-40-0",
+      "gameWinPercentage": 0.5061728395061729
     },
     {
       "leagueName": "Q2 2026",
@@ -44,16 +44,16 @@
   "deckStats": [
     {
       "deckName": "Reanimator",
-      "events": 5,
-      "matchWins": 6,
-      "matchLosses": 8,
+      "events": 6,
+      "matchWins": 8,
+      "matchLosses": 9,
       "matchDraws": 1,
-      "matchRecord": "6-8-1",
-      "matchWinPercentage": 0.43333333333333335,
-      "gameWins": 19,
-      "gameLosses": 20,
+      "matchRecord": "8-9-1",
+      "matchWinPercentage": 0.4722222222222222,
+      "gameWins": 23,
+      "gameLosses": 24,
       "gameDraws": 0,
-      "gameWinPercentage": 0.48717948717948717,
+      "gameWinPercentage": 0.48936170212765956,
       "trophies": 0
     },
     {
@@ -397,6 +397,51 @@
           "opponentDeck": "Naya Enchantress",
           "playerGameWins": 1,
           "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "PetS22",
+      "opponentDisplayName": "PetS22",
+      "matchesPlayed": 3,
+      "matchWins": 3,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 6,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.75,
+      "matches": [
+        {
+          "tournamentId": "445683",
+          "dateDisplay": "September 17, 2026",
+          "result": "W",
+          "playerDeck": "Reanimator",
+          "opponentDeck": "Mono Blue Disk",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "429084",
+          "dateDisplay": "May 14, 2026",
+          "result": "W",
+          "playerDeck": "Dragonstorm",
+          "opponentDeck": "Moneyball Black",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "425821",
+          "dateDisplay": "April 30, 2026",
+          "result": "W",
+          "playerDeck": "Reanimator",
+          "opponentDeck": "Mono U Control",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
           "gameDraws": 0
         }
       ]
@@ -837,34 +882,49 @@
       ]
     },
     {
-      "opponentUsername": "PetS22",
-      "opponentDisplayName": "PetS22",
-      "matchesPlayed": 2,
-      "matchWins": 2,
+      "opponentUsername": "AlfredG",
+      "opponentDisplayName": "AlfredG",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "matches": [
+        {
+          "tournamentId": "445683",
+          "dateDisplay": "September 17, 2026",
+          "result": "L",
+          "playerDeck": "Reanimator",
+          "opponentDeck": "Ubw Zombie Infestation",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "sylvanisator",
+      "opponentDisplayName": "sylvanisator",
+      "matchesPlayed": 1,
+      "matchWins": 1,
       "matchLosses": 0,
       "matchDraws": 0,
       "matchWinPercentage": 1,
-      "gameWins": 4,
+      "gameWins": 2,
       "gameLosses": 1,
       "gameDraws": 0,
-      "gameWinPercentage": 0.8,
+      "gameWinPercentage": 0.6666666666666666,
       "matches": [
         {
-          "tournamentId": "429084",
-          "dateDisplay": "May 14, 2026",
-          "result": "W",
-          "playerDeck": "Dragonstorm",
-          "opponentDeck": "Moneyball Black",
-          "playerGameWins": 2,
-          "opponentGameWins": 0,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "425821",
-          "dateDisplay": "April 30, 2026",
+          "tournamentId": "445683",
+          "dateDisplay": "September 17, 2026",
           "result": "W",
           "playerDeck": "Reanimator",
-          "opponentDeck": "Mono U Control",
+          "opponentDeck": "RG zoo",
           "playerGameWins": 2,
           "opponentGameWins": 1,
           "gameDraws": 0
@@ -1429,6 +1489,22 @@
       "gameDraws": 0,
       "gameWinPercentage": 0.375,
       "deck": "Oath Ponza"
+    },
+    {
+      "tournamentId": "445683",
+      "dateDisplay": "September 17, 2026",
+      "playerCount": 15,
+      "trophyCount": 1,
+      "roundCount": 3,
+      "rank": 7,
+      "points": 6,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 4,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5,
+      "deck": "Reanimator"
     },
     {
       "tournamentId": "445681",

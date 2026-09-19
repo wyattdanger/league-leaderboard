@@ -2,25 +2,25 @@
   "username": "AlfredG",
   "displayName": "AlfredG",
   "overallStats": {
-    "totalTournaments": 11,
-    "totalPoints": 37,
-    "totalMatches": 32,
-    "matchRecord": "11-17-4",
-    "matchWinPercentage": 0.40625,
-    "gameRecord": "35-42-2",
-    "gameWinPercentage": 0.4430379746835443,
+    "totalTournaments": 12,
+    "totalPoints": 44,
+    "totalMatches": 35,
+    "matchRecord": "13-17-5",
+    "matchWinPercentage": 0.44285714285714284,
+    "gameRecord": "40-43-3",
+    "gameWinPercentage": 0.46511627906976744,
     "trophies": 0,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q3 2026",
-      "events": 8,
-      "points": 31,
-      "matchRecord": "10-12-1",
-      "matchWinPercentage": 0.45652173913043476,
-      "gameRecord": "27-29-1",
-      "gameWinPercentage": 0.4824561403508772
+      "events": 9,
+      "points": 38,
+      "matchRecord": "12-12-2",
+      "matchWinPercentage": 0.5,
+      "gameRecord": "32-30-2",
+      "gameWinPercentage": 0.515625
     },
     {
       "leagueName": "Q2 2026",
@@ -59,6 +59,20 @@
       "gameLosses": 7,
       "gameDraws": 0,
       "gameWinPercentage": 0.36363636363636365,
+      "trophies": 0
+    },
+    {
+      "deckName": "Ubw Zombie Infestation",
+      "events": 1,
+      "matchWins": 2,
+      "matchLosses": 0,
+      "matchDraws": 1,
+      "matchRecord": "2-0-1",
+      "matchWinPercentage": 0.8333333333333334,
+      "gameWins": 5,
+      "gameLosses": 1,
+      "gameDraws": 1,
+      "gameWinPercentage": 0.7857142857142857,
       "trophies": 0
     },
     {
@@ -198,6 +212,41 @@
           "opponentDeck": "Life Clerics",
           "playerGameWins": 1,
           "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "Maew",
+      "opponentDisplayName": "Maew",
+      "matchesPlayed": 2,
+      "matchWins": 2,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 4,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "matches": [
+        {
+          "tournamentId": "445683",
+          "dateDisplay": "September 17, 2026",
+          "result": "W",
+          "playerDeck": "Ubw Zombie Infestation",
+          "opponentDeck": "Aluren",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "445678",
+          "dateDisplay": "August 13, 2026",
+          "result": "W",
+          "playerDeck": "Machinehead",
+          "opponentDeck": "Aluren",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
           "gameDraws": 0
         }
       ]
@@ -413,6 +462,56 @@
       ]
     },
     {
+      "opponentUsername": "weidnent",
+      "opponentDisplayName": "Nicholas Weidner",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "matches": [
+        {
+          "tournamentId": "445683",
+          "dateDisplay": "September 17, 2026",
+          "result": "W",
+          "playerDeck": "Ubw Zombie Infestation",
+          "opponentDeck": "Reanimator",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "Tencteri",
+      "opponentDisplayName": "Tencteri",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 0,
+      "matchDraws": 1,
+      "matchWinPercentage": 0.5,
+      "gameWins": 1,
+      "gameLosses": 1,
+      "gameDraws": 1,
+      "gameWinPercentage": 0.5,
+      "matches": [
+        {
+          "tournamentId": "445683",
+          "dateDisplay": "September 17, 2026",
+          "result": "D",
+          "playerDeck": "Ubw Zombie Infestation",
+          "opponentDeck": "White Weenie",
+          "playerGameWins": 1,
+          "opponentGameWins": 1,
+          "gameDraws": 1
+        }
+      ]
+    },
+    {
       "opponentUsername": "CalebR",
       "opponentDisplayName": "CalebR",
       "matchesPlayed": 1,
@@ -456,31 +555,6 @@
           "result": "W",
           "playerDeck": "Mono Red Ponza",
           "opponentDeck": "Burn",
-          "playerGameWins": 2,
-          "opponentGameWins": 0,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "Maew",
-      "opponentDisplayName": "Maew",
-      "matchesPlayed": 1,
-      "matchWins": 1,
-      "matchLosses": 0,
-      "matchDraws": 0,
-      "matchWinPercentage": 1,
-      "gameWins": 2,
-      "gameLosses": 0,
-      "gameDraws": 0,
-      "gameWinPercentage": 1,
-      "matches": [
-        {
-          "tournamentId": "445678",
-          "dateDisplay": "August 13, 2026",
-          "result": "W",
-          "playerDeck": "Machinehead",
-          "opponentDeck": "Aluren",
           "playerGameWins": 2,
           "opponentGameWins": 0,
           "gameDraws": 0
@@ -764,6 +838,22 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "445683",
+      "dateDisplay": "September 17, 2026",
+      "playerCount": 15,
+      "trophyCount": 1,
+      "roundCount": 3,
+      "rank": 2,
+      "points": 7,
+      "matchRecord": "2-0-1",
+      "matchWinPercentage": 0.8333333333333334,
+      "gameWins": 5,
+      "gameLosses": 1,
+      "gameDraws": 1,
+      "gameWinPercentage": 0.7619048,
+      "deck": "Ubw Zombie Infestation"
+    },
     {
       "tournamentId": "445681",
       "dateDisplay": "September 3, 2026",
