@@ -21,7 +21,7 @@ This is a **Premodern Magic: The Gathering league statistics website** that scra
 │   Melee.gg API  │ (External tournament platform)
 └────────┬────────┘
          │
-         ├─ Scraping Layer (src/index.ts)
+         ├─ Scraping Layer (src/scraper.ts)
          ↓
 ┌─────────────────┐
 │  output/        │ Raw tournament data (JSON)
@@ -143,19 +143,21 @@ npm run scrape -- <tournament_id>
 
 **What it does:**
 
-1. Fetches tournament data from Melee.gg API
+1. Fetches the Melee.gg tournament page (parsed with cheerio) to find round IDs, then each round's match and standings JSON
 2. Saves raw JSON to `output/tournament_{id}/`
 3. Files created:
    - `Round_{N}_Matches.json` (one per round)
    - `Round_{N}_Standings.json` (one per round)
-   - `metadata.json` (tournament info)
+   - (`page_metadata.json` is written later by `generate-metadata`, not the scraper)
 
 **Important:** Melee.gg rate limits apply. Wait between requests.
 
 ### Pattern 2: Calculating League Standings
 
 ```bash
-npm run league <tournament_id_1> <tournament_id_2> ...
+npm run sync-league                         # Current (first) league in leagues.yml
+npm run sync-league -- --league "Q2 2026"   # Specific league by name
+npm run league                              # Aggregate only (no scraping of missing data)
 ```
 
 **What it does:**
@@ -167,8 +169,8 @@ npm run league <tournament_id_1> <tournament_id_2> ...
 
 **Key files:**
 
-- `src/league-calculator.ts` - Aggregation logic
-- `src/sync-league.ts` - Sync based on `leagues.yml` config
+- `src/league-aggregator.ts` - Aggregation logic (`npm run league`)
+- `src/sync-league.ts` - Scrapes any missing tournaments from `leagues.yml`, then aggregates
 
 ### Pattern 3: Generating Player Stats
 
@@ -240,15 +242,16 @@ Defines league structure and which tournaments belong to each league:
 
 ```yaml
 leagues:
-  - name: Q4 2025
+  - name: Q3 2026          # FIRST league = "current" league (shown on /league)
     tournaments:
-      - 388334
-      - 384681
+      - 445684             # Newest first
+      - 445683
 
-  - name: Q3 2025
+  - name: Q2 2026
     tournaments:
-      - 382756
-      - 380585
+      - 436157
+      - 436155
+    top8Tournament: 439325 # Optional: season-ending Top 8 (3-0 there = Belt)
 ```
 
 **When to update:**
@@ -377,6 +380,20 @@ if (standing.MatchWins === 3 && standing.MatchLosses === 0 && standing.MatchDraw
 }
 ```
 
+### 7. Models Layer Is Mid-Migration
+
+`src/models/` wraps raw Melee data (see `MODEL_MIGRATION_PLAN.md`). Only the model
+factories (`fromMeleeMatch`, etc.) should read Melee field names. `Match.isComplete`
+trusts Melee's `HasResult` flag (byes are always complete) - don't reintroduce
+game-count heuristics, they misclassify concessions.
+
+### 8. `.claude/` Is Globally Gitignored
+
+The maintainer's `~/.gitignore` ignores `.claude`, but the project skill at
+`.claude/skills/add-tournament/SKILL.md` is tracked. Stage changes to it with
+`git add -f`. Skills must live at `.claude/skills/<name>/SKILL.md` with
+`name`/`description` frontmatter or Claude Code won't discover them.
+
 ## Common Tasks
 
 ### Adding a New Tournament
@@ -397,6 +414,8 @@ When adding a new tournament, follow this EXACT sequence to ensure deck data is 
    - Automatically add the tournament to the TOP of `decks.yml` with all player usernames
    - Stop and wait for you to fill in deck data
 
+   It does NOT touch `leagues.yml` - see step 3.
+
 2. **PAUSE HERE** - Fill in deck data in `decks.yml` for the new tournament
    - All player usernames will be prefilled with `_` placeholders
    - Replace `_` with actual deck names
@@ -411,7 +430,7 @@ When adding a new tournament, follow this EXACT sequence to ensure deck data is 
    npm run process-tournament -- <tournament_id> --skip-scrape
    ```
 
-   This will:
+   This will (`--skip-scrape` skips re-fetching from Melee; errors if the data was never scraped):
    - Sync league standings
    - Regenerate player stats (reads deck data from decks.yml)
    - Regenerate metagame data
@@ -580,25 +599,34 @@ scraping-project/
 │   │   ├── tournamentData.ts  # Tournament metadata
 │   │   └── helpers.ts         # Misc helpers (slugs, etc)
 │   │
+│   ├── models/         # Platform-agnostic models (Player, Match, Round, Standing, Tournament)
+│   ├── types/melee.ts  # Raw Melee.gg response types
 │   ├── types.ts        # Shared TypeScript interfaces
 │   │
-│   ├── index.ts        # Scraper (fetch from Melee.gg)
-│   ├── standings-calculator.ts   # Tournament standings
-│   ├── league-calculator.ts      # League standings
+│   ├── scraper.ts               # Scraper (fetch from Melee.gg)
+│   ├── process-tournament.ts    # End-to-end new-event workflow
+│   ├── add-tournament-to-decks.ts # Prepend deck template to decks.yml
+│   ├── standings-calculator.ts  # Tournament standings
+│   ├── league-aggregator.ts     # League standings
 │   ├── player-stats-generator.ts # Player profiles
-│   └── sync-league.ts            # Sync league from config
+│   ├── generate-metagame-data.ts # Archetype stats
+│   └── sync-league.ts           # Sync league from config
 │
-├── output/             # Generated data (gitignored)
+├── output/             # Generated data (committed)
 │   ├── tournament_*/   # Raw tournament data
 │   ├── league/         # League standings
 │   └── players/        # Player stats
 │
 ├── tests/              # Jest tests
+│   ├── fixtures/                  # Real Melee match JSON
+│   ├── Match/Player/Round/Standing/Tournament.test.ts  # Model tests
 │   ├── winPercentage.test.ts
 │   ├── player-data.test.ts
 │   └── standings-calculator.test.ts
 │
 ├── leagues.yml         # League configuration
+├── decks.yml           # Per-tournament deck assignments
+├── .claude/skills/add-tournament/SKILL.md  # New-event workflow skill
 └── package.json        # npm scripts
 ```
 
@@ -740,4 +768,4 @@ Potential areas for improvement:
 
 ---
 
-Last updated: December 2024
+Last updated: September 2026
