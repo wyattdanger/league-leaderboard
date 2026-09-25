@@ -13,6 +13,7 @@ export class Match {
   readonly player2Games: number;
   readonly gameDraws: number;
   private readonly _isBye: boolean;
+  private readonly _hasResult: boolean;
   private readonly _tableNumber: number | null;
 
   private constructor(data: {
@@ -23,6 +24,7 @@ export class Match {
     player2Games: number;
     gameDraws: number;
     isBye: boolean;
+    hasResult: boolean;
     tableNumber: number | null;
   }) {
     this.round = data.round;
@@ -32,6 +34,7 @@ export class Match {
     this.player2Games = data.player2Games;
     this.gameDraws = data.gameDraws;
     this._isBye = data.isBye;
+    this._hasResult = data.hasResult;
     this._tableNumber = data.tableNumber;
   }
 
@@ -82,6 +85,7 @@ export class Match {
       player2Games: isBye ? 0 : player2Games,
       gameDraws: meleeMatch.GameDraws || 0,
       isBye,
+      hasResult: meleeMatch.HasResult !== false,
       tableNumber: meleeMatch.TableNumber,
     });
   }
@@ -136,10 +140,10 @@ export class Match {
 
   /**
    * Check if the match is complete (has a result)
-   * Always returns true since we only scrape completed tournaments
+   * Byes are always complete; otherwise trust Melee's HasResult flag
    */
   get isComplete(): boolean {
-    return true;
+    return this.isBye || this._hasResult;
   }
 
   /**

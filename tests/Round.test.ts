@@ -112,6 +112,7 @@ describe('Round Model', () => {
     it('should identify incomplete round', () => {
       const incompleteMatch = {
         ...mockRegularMatch,
+        HasResult: false,
         Competitors: [
           { ...mockRegularMatch.Competitors[0], GameWins: 0 },
           { ...mockRegularMatch.Competitors[1], GameWins: 0 },

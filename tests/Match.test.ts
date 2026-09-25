@@ -164,6 +164,16 @@ describe('Match Model', () => {
       const match = Match.fromMeleeMatch(mockDrawMatch);
       expect(match.isComplete).toBe(true);
     });
+
+    it('should identify match without a reported result as incomplete', () => {
+      const match = Match.fromMeleeMatch({ ...mockRegularMatch, HasResult: false });
+      expect(match.isComplete).toBe(false);
+    });
+
+    it('should identify bye as complete even without a reported result', () => {
+      const match = Match.fromMeleeMatch({ ...mockByeMatch, HasResult: false });
+      expect(match.isComplete).toBe(true);
+    });
   });
 
   describe('Result string formatting', () => {
