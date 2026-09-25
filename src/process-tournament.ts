@@ -10,7 +10,7 @@
  * 5. Generate page metadata for the tournament
  * 6. Build the site
  *
- * Usage: npm run process-tournament <tournament-id>
+ * Usage: npm run process-tournament <tournament-id> [--skip-scrape]
  * Example: npm run process-tournament 390154
  */
 
@@ -39,7 +39,7 @@ function runCommand(command: string, args: string[]): Promise<void> {
   });
 }
 
-async function processTournament(tournamentId: string) {
+async function processTournament(tournamentId: string, skipScrape: boolean) {
   console.log(`\n🏆 Processing tournament ${tournamentId}\n`);
   console.log('This will:');
   console.log('  1. Scrape tournament data from Melee.gg');
@@ -52,8 +52,16 @@ async function processTournament(tournamentId: string) {
 
   try {
     // Step 1: Scrape tournament
-    console.log('\n📡 Step 1: Scraping tournament data...');
-    await runCommand('npm', ['run', 'scrape', '--', tournamentId]);
+    if (skipScrape) {
+      console.log('\n📡 Step 1: Skipping scrape (--skip-scrape)');
+      const tournamentDir = path.join(process.cwd(), 'output', `tournament_${tournamentId}`);
+      if (!fs.existsSync(tournamentDir)) {
+        throw new Error(`No scraped data at ${tournamentDir}; run without --skip-scrape first`);
+      }
+    } else {
+      console.log('\n📡 Step 1: Scraping tournament data...');
+      await runCommand('npm', ['run', 'scrape', '--', tournamentId]);
+    }
 
     // Step 2: Check if tournament needs to be added to decks.yml
     console.log('\n📋 Step 2: Checking deck data...');
@@ -112,6 +120,7 @@ async function processTournament(tournamentId: string) {
 // Main execution
 const args = process.argv.slice(2);
 const tournamentId = args.find((arg) => !arg.startsWith('--'));
+const skipScrape = args.includes('--skip-scrape');
 
 if (!tournamentId) {
   console.error('Usage: npm run process-tournament <tournament-id>');
@@ -119,7 +128,7 @@ if (!tournamentId) {
   process.exit(1);
 }
 
-processTournament(tournamentId).catch((error) => {
+processTournament(tournamentId, skipScrape).catch((error) => {
   console.error('Fatal error:', error);
   process.exit(1);
 });
