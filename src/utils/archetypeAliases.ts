@@ -6,55 +6,92 @@
 export const archetypeAliases: Record<string, string> = {
   // Oath variants
   'Oath': 'Oath',
-  'Oath Ponza': 'Oath Ponza',
-  'Magnivore Oath': 'Oath Ponza',
   'Junk Oath': 'Oath',
   'Domain Oath': 'Oath',
   'UG Cognivore Oath': 'Oath',
+  'Terra Oath': 'Oath',
+  '4C Terra Oath': 'Oath',
+  'GW terraoath': 'Oath',
+  'Lan D Hoath': 'Oath',
+
+  // Oath Ponza variants (any name containing "Oath" and "Ponza" also matches via fuzzy rule)
+  'Oath Ponza': 'Oath Ponza',
+  'Magnivore Oath': 'Oath Ponza',
+  'RG Ponza': 'Oath Ponza',
+  'RG Oath': 'Oath Ponza',
+  'GW Tusker Oath': 'Oath Ponza',
+  'Spec Oath': 'Oath Ponza',
+  'Oath Spec': 'Oath Ponza',
+
+  // Ponza (non-Oath) variants
+  'Ponza': 'Ponza',
+  'Mono Red Ponza': 'Ponza',
+  'Mono red ponza': 'Ponza',
+  'Black Ponza': 'Ponza',
 
   // Parfait variants
   'Parfait': 'Parfait',
   'Oath Parfait': 'Parfait',
 
-  // Dreadnought variants
+  // Terrageddon variants (never anything with "Oath" in the name - those go to Oath)
+  'Terrageddon': 'Terrageddon',
+  '4-Color Terrageddon': 'Terrageddon',
+  '4C Terrageddon': 'Terrageddon',
+  'Naya Terrageddon': 'Terrageddon',
+  'Terraclysm': 'Terrageddon',
+
+  // Dreadnought variants (includes Stiflenought)
   'Dreadnought': 'Dreadnought',
   'UB Dreadnought': 'Dreadnought',
+  'UW Dreadnought': 'Dreadnought',
   'U Dreadnought': 'Dreadnought',
-  'Stiflenought': 'Stiflenought',
+  'Stiflenought': 'Dreadnought',
+  'UW Stiflenought': 'Dreadnought',
+
+  // Threshnought variants
+  'Threshnought': 'Threshnought',
+  'UG Threshnought': 'Threshnought',
+  'WUG Threshnought': 'Threshnought',
 
   // Enchantress variants
   'Enchantress': 'Enchantress',
   'GW Enchantress': 'Enchantress',
   'Enchantress Prison': 'Enchantress',
+  'Sam Black Enchantress': 'Enchantress',
 
-  // Terrageddon variants
-  '4-Color Terrageddon': 'Terrageddon',
-  'Naya Terrageddon': 'Terrageddon',
-  'Terrageddon': 'Terrageddon',
-
-  // Survival variants
+  // Survival variants (any name containing "Survival" also matches via fuzzy rule)
   'Survival': 'Survival',
-  'GR Survival': 'Survival',
   'GB Survival': 'Survival',
+  'BG Survival': 'Survival',
+  'GR Survival': 'Survival',
   'Food Chain Elves': 'Survival',
-  'Madness Survival': 'Survival',
+  'Dogpile (Mono G Survival)': 'Survival',
 
   // Dogpile / Sneak Attack variants
   'Dogpile': 'Dogpile',
   'Sneak Attack': 'Dogpile',
 
-  // Moneyball variants
-  'Moneyball Black': 'Moneyball Black',
-  'Moneyball Red': 'Moneyball Black',
-  'Dimir Infiltrator Moneyball': 'Moneyball Black',
+  // Moneyball variants (any name containing "Moneyball" also matches via fuzzy rule)
+  'Moneyball': 'Moneyball',
+  'Moneyball Black': 'Moneyball',
+  'Moneyball black': 'Moneyball',
+  'Moneyball Red': 'Moneyball',
+  'Moneyball Blue': 'Moneyball',
+  'Dimir Infiltrator Moneyball': 'Moneyball',
 
-  // Psychatog variants
+  // Psychatog: hard control that wins with Psychatog alone
   'Psychatog': 'Psychatog',
   'UB Psychatog': 'Psychatog',
   'Esper Tog': 'Psychatog',
+  'EsperTog': 'Psychatog',
   '5C Tog': 'Psychatog',
   '5c Psychatog': 'Psychatog',
-  'Gro-a-Tog': 'Psychatog',
+
+  // Gro: any deck running Quirion Dryad (may also play Psychatog)
+  'Gro': 'Gro',
+  'GAT': 'Gro',
+  'GAT w/Angel': 'Gro',
+  'Gro-a-Tog': 'Gro',
 
   // White Weenie variants
   'White Weenie': 'White Weenie',
@@ -80,11 +117,21 @@ export const archetypeAliases: Record<string, string> = {
   'Bant Medallion': 'Bant Control',
   'Predict Medallion': 'Bant Control',
 
+  // Chromatic Control variants
+  'Chromatic Control': 'Chromatic Control',
+  'Chromatic Predict': 'Chromatic Control',
+  '4C Chromatic Control': 'Chromatic Control',
+
+  // Landstill variants
+  'Landstill': 'Landstill',
+  'UW Landstill': 'Landstill',
+  'Tidestill': 'Landstill',
+
   // Welder variants
   'Welder': 'Welder',
   'Tinker Welder': 'Welder',
   'TinkUR Welder': 'Welder',
-  'U/R Welder': 'Welder',
+  'UR Welder': 'Welder',
   'Mono R Welder': 'Welder',
   'Welder Prison': 'Welder',
 
@@ -99,10 +146,6 @@ export const archetypeAliases: Record<string, string> = {
   'HFEB': 'FEB',
   'hFEB': 'FEB',
 
-  // Ponza variants
-  'RG Ponza': 'Oath Ponza',
-  'Mono Red Ponza': 'Ponza',
-
   // Elves variants
   'Elves': 'Elves',
   'Survival-less Elves': 'Elves',
@@ -116,9 +159,9 @@ export const archetypeAliases: Record<string, string> = {
   'GW Mad Dogs': 'Mad Dogs',
   'GW Little Kid': 'Mad Dogs',
 
-  // GAT variants
-  'GAT': 'GAT',
-  'GAT w/Angel': 'GAT',
+  // Goblins variants (any name containing "Goblins" also matches via fuzzy rule)
+  'Goblins': 'Goblins',
+  'Goblin Sligh': 'Goblins',
 
   // Zoo variants
   'Zoo': 'Zoo',
@@ -157,6 +200,29 @@ export const archetypeAliases: Record<string, string> = {
   'Stasis': 'Stasis',
   'UR Stasis': 'Stasis',
   'Stasis Oath': 'Stasis',
+
+  // Storm variants
+  'Storm': 'Storm',
+  'Frantic Storm': 'Storm',
+
+  // Tron variants
+  'Tron': 'Tron',
+  'RG Tron': 'Tron',
+
+  // Life variants
+  'Life': 'Life',
+  'Life Clerics': 'Life',
+  'WB Life': 'Life',
+
+  // Clerics variants (any name containing "Clerics" also matches via fuzzy rule)
+  'Clerics': 'Clerics',
+  'Mono Black Clerics': 'Clerics',
+  'Mono black clerics': 'Clerics',
+  'Mono-B Clerics': 'Clerics',
+
+  // Aluren variants
+  'Aluren': 'Aluren',
+  'Samaluren': 'Aluren',
 };
 
 /**
@@ -169,9 +235,12 @@ export function normalizeDeckName(deckName: string): string {
   }
 
   // Fuzzy matching for common patterns
+  const lower = deckName.toLowerCase();
+  if (lower.includes('oath') && lower.includes('ponza')) return 'Oath Ponza';
+  if (lower.includes('moneyball')) return 'Moneyball';
+  if (lower.includes('threshnought')) return 'Threshnought';
   if (deckName.includes('Goblins')) return 'Goblins';
-  if (deckName.includes('Dreadnought') && !deckName.includes('Stifle')) return 'Dreadnought';
-  if (deckName.includes('Stiflenought')) return 'Stiflenought';
+  if (deckName.includes('Dreadnought') || deckName.includes('Stiflenought')) return 'Dreadnought';
   if (deckName.includes('Landstill')) return 'Landstill';
   if (deckName.includes('Replenish') || deckName.includes('PandeBurst')) return 'Replenish';
   if (deckName.includes('Survival')) return 'Survival';

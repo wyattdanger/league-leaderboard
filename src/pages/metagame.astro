@@ -3,6 +3,7 @@ import PageLayout from '../components/PageLayout.astro';
 import LeagueHeader from '../components/LeagueHeader.astro';
 import LeagueNav from '../components/LeagueNav.astro';
 import { loadLeaguesConfig } from '../utils/data';
+import { normalizeDeckName } from '../utils/archetypeAliases';
 import fs from 'fs';
 import path from 'path';
 
@@ -13,6 +14,17 @@ const allLeagues = config.leagues;
 // Load metagame data
 const metagameDataPath = path.join(process.cwd(), 'output', 'metagame_data.json');
 const metagameData = JSON.parse(fs.readFileSync(metagameDataPath, 'utf8'));
+
+// Resolve every deck name to its archetype at build time so the client script
+// shares the single alias map in src/utils/archetypeAliases.ts
+const deckArchetypes: Record<string, string> = {};
+for (const league of metagameData.leagues) {
+  for (const field of ['deckCounts', 'deckTrophies', 'deckMatchStats']) {
+    for (const deck of Object.keys(league[field] || {})) {
+      deckArchetypes[deck] = normalizeDeckName(deck);
+    }
+  }
+}
 
 // Calculate summary stats for metadata
 const totalDecks = metagameData.leagues.reduce((sum: number, league: any) => {
@@ -107,6 +119,7 @@ const pageDescription = `Explore deck archetype statistics from ${totalDecks} de
 
   <!-- Embed metagame data as JSON -->
   <script id="metagame-data" type="application/json" set:html={JSON.stringify(metagameData)}></script>
+  <script id="deck-archetypes" type="application/json" set:html={JSON.stringify(deckArchetypes)}></script>
 
   <script>
     // Wait for Chart.js to load
@@ -137,239 +150,10 @@ const pageDescription = `Explore deck archetype statistics from ${totalDecks} de
       let sortColumn = urlParams.get('sort') || 'count';  // Default sort by count
       let sortDirection = urlParams.get('dir') || 'desc';
 
-    // Deck archetype normalization - group similar decks
-    const archetypeAliases = {
-      // Goblins variants
-      'Goblins': 'Goblins',
-      'RG Goblins': 'Goblins',
-      'RB Goblins': 'Goblins',
-      'R/g Goblins': 'Goblins',
-      'Goblin Sligh': 'Goblins',
-
-      // Dreadnought variants (includes Stiflenought)
-      'Dreadnought': 'Dreadnought',
-      'UW Dreadnought': 'Dreadnought',
-      'Stiflenought': 'Dreadnought',
-      'UW Stiflenought': 'Dreadnought',
-      'WUG Threshnought': 'Dreadnought',
-
-      // Landstill variants
-      'Landstill': 'Landstill',
-      'UW Landstill': 'Landstill',
-      'Tidestill': 'Landstill',
-
-      // Replenish variants
-      'Replenish': 'Replenish',
-      'Replenish (PandeBurst)': 'Replenish',
-      'PandeBurst': 'Replenish',
-
-      // Oath Ponza variants
-      'Oath Ponza': 'Oath Ponza',
-      'GWr Oath Ponza': 'Oath Ponza',
-      'GW Oath Ponza': 'Oath Ponza',
-      'GW Ponza Oath': 'Oath Ponza',
-      'RG Ponza Oath': 'Oath Ponza',
-      'RG Oath': 'Oath Ponza',
-      '4C Oath Ponza': 'Oath Ponza',
-      '4c oath ponza': 'Oath Ponza',
-      '4c Oath Ponza': 'Oath Ponza',
-      '5c Oath Ponza': 'Oath Ponza',
-      'GW Tusker Oath': 'Oath Ponza',
-      'Spec Oath': 'Oath Ponza',
-      'Oath Spec': 'Oath Ponza',
-      'Magnivore Oath': 'Oath Ponza',
-
-      // Parfait variants
-      'Parfait': 'Parfait',
-      'Oath Parfait': 'Parfait',
-
-      // Terrageddon/Terra Oath variants
-      'Terrageddon': 'Terrageddon',
-      '4C Terrageddon': 'Terrageddon',
-      '4-Color Terrageddon': 'Terrageddon',
-      'Naya Terrageddon': 'Terrageddon',
-      'Terra Oath': 'Terrageddon',
-      'GW terraoath': 'Terrageddon',
-      '4C Terra Oath': 'Terrageddon',
-      'Lan D Hoath': 'Terrageddon',
-      'Terraclysm': 'Terrageddon',
-
-      // Survival variants
-      'Survival Opposition': 'Survival',
-      'UG Survival Opposition': 'Survival',
-      'Survival Squirrel Oppo': 'Survival',
-      'UGR Survival Madness': 'Survival',
-      'Survival Madness': 'Survival',
-      'UG Tradewind Survival': 'Survival',
-      'Survival Infestation': 'Survival',
-      'Survival Welder': 'Survival',
-      'GR Survival': 'Survival',
-      'Dogpile (Mono G Survival)': 'Survival',
-
-      // Storm variants
-      'Storm': 'Storm',
-      'Frantic Storm': 'Storm',
-
-      // Tron variants
-      'Tron': 'Tron',
-      'RG Tron': 'Tron',
-
-      // Enchantress variants
-      'Enchantress': 'Enchantress',
-      'Sam Black Enchantress': 'Enchantress',
-
-      // Clerics variants
-      'Clerics': 'Clerics',
-      'Mono Black Clerics': 'Clerics',
-      'Mono black clerics': 'Clerics',
-      'Mono-B Clerics': 'Clerics',
-
-      // Life variants
-      'Life': 'Life',
-      'WB Life': 'Life',
-      'Life Clerics': 'Life',
-
-      // Zombies variants
-      'Zombies': 'Zombies',
-      'Mono-Black Zombies': 'Zombies',
-
-      // Moneyball/Mono Black variants
-      'Moneyball Black': 'Moneyball Black',
-      'Moneyball black': 'Moneyball Black',
-      'Moneyball': 'Moneyball Black',
-      'Moneyball Red': 'Moneyball Black',
-      'Dimir Infiltrator Moneyball': 'Moneyball Black',
-
-      // Psychatog variants
-      'Psychatog': 'Psychatog',
-      'UB Psychatog': 'Psychatog',
-      'Esper Tog': 'Psychatog',
-      '5C Tog': 'Psychatog',
-      '5c Psychatog': 'Psychatog',
-      'Gro-a-Tog': 'Psychatog',
-
-      // White Weenie variants
-      'White Weenie': 'White Weenie',
-      'White weenie': 'White Weenie',
-      'WW': 'White Weenie',
-      'WWu': 'White Weenie',
-      'White Stompy': 'White Weenie',
-
-      // Madness variants
-      'Madness': 'Madness',
-      'UG Madness': 'Madness',
-      'UG madness': 'Madness',
-      'WG Madness': 'Madness',
-      'GW Madness': 'Madness',
-
-      // Control variants
-      'UW Control': 'UW Control',
-      'Mono Blue Control': 'Mono Blue Control',
-      'Mono U Control': 'Mono Blue Control',
-      'U Control': 'Mono Blue Control',
-      'Bant Control': 'Bant Control',
-      'Bant Oath Control': 'Bant Control',
-      'Bant Medallion': 'Bant Control',
-      'Predict Medallion': 'Bant Control',
-
-      // Welder variants
-      'Welder': 'Welder',
-      'Tinker Welder': 'Welder',
-      'TinkUR Welder': 'Welder',
-      'U/R Welder': 'Welder',
-      'Mono R Welder': 'Welder',
-      'Welder Prison': 'Welder',
-
-      // Rifter / Lightning Rift variants
-      'Rifter': 'Rifter',
-      'RW Rifter': 'Rifter',
-      'RW Rift': 'Rifter',
-      'Boros Lightning Rift': 'Rifter',
-
-      // FEB variants
-      'FEB': 'FEB',
-      'HFEB': 'FEB',
-      'hFEB': 'FEB',
-
-      // Ponza variants
-      'RG Ponza': 'Oath Ponza',
-      'Mono Red Ponza': 'Ponza',
-
-      // Elves variants
-      'Elves': 'Elves',
-      'Survival-less Elves': 'Elves',
-
-      // Stompy variants
-      'Stompy': 'Stompy',
-      '10 Land Stompy': 'Stompy',
-
-      // Mad Dogs variants
-      'Mad Dogs': 'Mad Dogs',
-      'GW Mad Dogs': 'Mad Dogs',
-      'GW Little Kid': 'Mad Dogs',
-
-      // GAT variants
-      'GAT': 'GAT',
-      'GAT w/Angel': 'GAT',
-
-      // Zoo variants
-      'Zoo': 'Zoo',
-      'RG Zoo': 'Zoo',
-
-      // RG Aggro variants
-      'RG Aggro': 'RG Aggro',
-      'GR Aggro': 'RG Aggro',
-
-      // BW Control variants
-      'BW Control': 'BW Control',
-      'BW Contorl': 'BW Control',
-
-      // Pox/Rack variants
-      'Pox': 'Pox',
-      'Rack': 'Pox',
-      'Pit Rack': 'Pox',
-      'Pox Pit Rack': 'Pox',
-      'Black Rack': 'Pox',
-
-      // The Rock variants
-      'The Rock': 'The Rock',
-      'Gamekeeper Rock': 'The Rock',
-
-      // Tide variants
-      'Tide': 'Tide',
-      'UB Tide': 'Tide',
-      'UW Tide Control': 'Tide',
-
-      // Burn variants
-      'Burn': 'Burn',
-      'Medvedev Burn': 'Burn',
-      'Sligh': 'Burn',
-
-      // Stasis variants
-      'Stasis': 'Stasis',
-      'UR Stasis': 'Stasis',
-      'Stasis Oath': 'Stasis',
-    };
-
-    // Normalize deck name using aliases, or apply fuzzy matching
+    // Deck name -> archetype, resolved at build time from src/utils/archetypeAliases.ts
+    const deckArchetypes = JSON.parse(document.getElementById('deck-archetypes').textContent);
     function normalizeDeckName(deckName) {
-      // First check exact alias match
-      if (archetypeAliases[deckName]) {
-        return archetypeAliases[deckName];
-      }
-
-      // Fuzzy matching for common patterns
-      if (deckName.includes('Goblins')) return 'Goblins';
-      if (deckName.includes('Dreadnought') && !deckName.includes('Stifle')) return 'Dreadnought';
-      if (deckName.includes('Stiflenought')) return 'Stiflenought';
-      if (deckName.includes('Landstill')) return 'Landstill';
-      if (deckName.includes('Replenish') || deckName.includes('PandeBurst')) return 'Replenish';
-      if (deckName.includes('Survival')) return 'Survival';
-      if (deckName.includes('Clerics')) return 'Clerics';
-      if (deckName.includes('Zombies')) return 'Zombies';
-
-      // Return original if no match
-      return deckName;
+      return deckArchetypes[deckName] || deckName;
     }
 
     // Aggregate deck counts, trophies, and match stats across selected leagues
