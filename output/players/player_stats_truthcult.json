@@ -2,25 +2,25 @@
   "username": "truthcult",
   "displayName": "klint",
   "overallStats": {
-    "totalTournaments": 8,
-    "totalPoints": 39,
-    "totalMatches": 24,
-    "matchRecord": "12-9-3",
-    "matchWinPercentage": 0.5625,
-    "gameRecord": "32-27-0",
-    "gameWinPercentage": 0.5423728813559322,
+    "totalTournaments": 9,
+    "totalPoints": 43,
+    "totalMatches": 27,
+    "matchRecord": "13-10-4",
+    "matchWinPercentage": 0.5555555555555556,
+    "gameRecord": "35-30-1",
+    "gameWinPercentage": 0.5303030303030303,
     "trophies": 1,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q3 2026",
-      "events": 3,
-      "points": 23,
-      "matchRecord": "7-0-2",
-      "matchWinPercentage": 0.8888888888888888,
-      "gameRecord": "16-7-0",
-      "gameWinPercentage": 0.6956521739130435
+      "events": 4,
+      "points": 27,
+      "matchRecord": "8-1-3",
+      "matchWinPercentage": 0.7916666666666666,
+      "gameRecord": "19-10-1",
+      "gameWinPercentage": 0.65
     },
     {
       "leagueName": "Q2 2026",
@@ -35,16 +35,16 @@
   "deckStats": [
     {
       "deckName": "Welder Prison",
-      "events": 4,
-      "matchWins": 8,
-      "matchLosses": 2,
-      "matchDraws": 2,
-      "matchRecord": "8-2-2",
-      "matchWinPercentage": 0.75,
-      "gameWins": 19,
-      "gameLosses": 12,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.6129032258064516,
+      "events": 5,
+      "matchWins": 9,
+      "matchLosses": 3,
+      "matchDraws": 3,
+      "matchRecord": "9-3-3",
+      "matchWinPercentage": 0.7,
+      "gameWins": 22,
+      "gameLosses": 15,
+      "gameDraws": 1,
+      "gameWinPercentage": 0.5921052631578947,
       "trophies": 1
     },
     {
@@ -63,6 +63,51 @@
     }
   ],
   "headToHead": [
+    {
+      "opponentUsername": "Mookyspulder",
+      "opponentDisplayName": "Dan S",
+      "matchesPlayed": 3,
+      "matchWins": 2,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 4,
+      "gameLosses": 3,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5714285714285714,
+      "matches": [
+        {
+          "tournamentId": "445684",
+          "dateDisplay": "September 24, 2026",
+          "result": "L",
+          "playerDeck": "Welder Prison",
+          "opponentDeck": "GW Threshold",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "436160",
+          "dateDisplay": "July 9, 2026",
+          "result": "W",
+          "playerDeck": "Welder Prison",
+          "opponentDeck": "Mono-Black Zombies",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "436157",
+          "dateDisplay": "June 18, 2026",
+          "result": "W",
+          "playerDeck": "Tinker Welder",
+          "opponentDeck": "Psychatog",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
     {
       "opponentUsername": "AlldoAurelis",
       "opponentDisplayName": "AlldoAurelis",
@@ -129,41 +174,6 @@
           "opponentDeck": "Oath Ponza",
           "playerGameWins": 2,
           "opponentGameWins": 1,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "Mookyspulder",
-      "opponentDisplayName": "Dan S",
-      "matchesPlayed": 2,
-      "matchWins": 2,
-      "matchLosses": 0,
-      "matchDraws": 0,
-      "matchWinPercentage": 1,
-      "gameWins": 4,
-      "gameLosses": 1,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.8,
-      "matches": [
-        {
-          "tournamentId": "436160",
-          "dateDisplay": "July 9, 2026",
-          "result": "W",
-          "playerDeck": "Welder Prison",
-          "opponentDeck": "Mono-Black Zombies",
-          "playerGameWins": 2,
-          "opponentGameWins": 1,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "436157",
-          "dateDisplay": "June 18, 2026",
-          "result": "W",
-          "playerDeck": "Tinker Welder",
-          "opponentDeck": "Psychatog",
-          "playerGameWins": 2,
-          "opponentGameWins": 0,
           "gameDraws": 0
         }
       ]
@@ -269,6 +279,56 @@
           "opponentDeck": "Oath Ponza",
           "playerGameWins": 2,
           "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "AlfredG",
+      "opponentDisplayName": "AlfredG",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 0,
+      "matchDraws": 1,
+      "matchWinPercentage": 0.5,
+      "gameWins": 1,
+      "gameLosses": 1,
+      "gameDraws": 1,
+      "gameWinPercentage": 0.5,
+      "matches": [
+        {
+          "tournamentId": "445684",
+          "dateDisplay": "September 24, 2026",
+          "result": "D",
+          "playerDeck": "Welder Prison",
+          "opponentDeck": "The Rock",
+          "playerGameWins": 1,
+          "opponentGameWins": 1,
+          "gameDraws": 1
+        }
+      ]
+    },
+    {
+      "opponentUsername": "AndrewLevine",
+      "opponentDisplayName": "AndrewLevine",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "matches": [
+        {
+          "tournamentId": "445684",
+          "dateDisplay": "September 24, 2026",
+          "result": "W",
+          "playerDeck": "Welder Prison",
+          "opponentDeck": "Chromatic Predict",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
           "gameDraws": 0
         }
       ]
@@ -589,6 +649,22 @@
       "gameLosses": 2,
       "gameDraws": 0,
       "gameWinPercentage": 0.75,
+      "deck": "Welder Prison"
+    },
+    {
+      "tournamentId": "445684",
+      "dateDisplay": "September 24, 2026",
+      "playerCount": 19,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 11,
+      "points": 4,
+      "matchRecord": "1-1-1",
+      "matchWinPercentage": 0.5,
+      "gameWins": 3,
+      "gameLosses": 3,
+      "gameDraws": 1,
+      "gameWinPercentage": 0.4761905,
       "deck": "Welder Prison"
     },
     {

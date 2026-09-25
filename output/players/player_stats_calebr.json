@@ -2,25 +2,25 @@
   "username": "CalebR",
   "displayName": "CalebR",
   "overallStats": {
-    "totalTournaments": 12,
-    "totalPoints": 62,
-    "totalMatches": 36,
-    "matchRecord": "20-14-2",
-    "matchWinPercentage": 0.5833333333333334,
-    "gameRecord": "50-38-4",
-    "gameWinPercentage": 0.5434782608695652,
-    "trophies": 2,
+    "totalTournaments": 13,
+    "totalPoints": 71,
+    "totalMatches": 39,
+    "matchRecord": "23-14-2",
+    "matchWinPercentage": 0.6153846153846154,
+    "gameRecord": "56-40-4",
+    "gameWinPercentage": 0.56,
+    "trophies": 3,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q3 2026",
-      "events": 8,
-      "points": 46,
-      "matchRecord": "15-8-1",
-      "matchWinPercentage": 0.6458333333333334,
-      "gameRecord": "34-22-3",
-      "gameWinPercentage": 0.6016949152542372
+      "events": 9,
+      "points": 55,
+      "matchRecord": "18-8-1",
+      "matchWinPercentage": 0.6851851851851852,
+      "gameRecord": "40-24-3",
+      "gameWinPercentage": 0.6194029850746269
     },
     {
       "leagueName": "Q2 2026",
@@ -69,6 +69,20 @@
       "gameDraws": 3,
       "gameWinPercentage": 0.59375,
       "trophies": 0
+    },
+    {
+      "deckName": "Cradle Control",
+      "events": 1,
+      "matchWins": 3,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchRecord": "3-0-0",
+      "matchWinPercentage": 1,
+      "gameWins": 6,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.75,
+      "trophies": 1
     },
     {
       "deckName": "Welder Prison",
@@ -271,6 +285,76 @@
           "playerGameWins": 2,
           "opponentGameWins": 0,
           "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "BryanGulotta",
+      "opponentDisplayName": "bryan gulotta",
+      "matchesPlayed": 2,
+      "matchWins": 1,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.5,
+      "gameWins": 3,
+      "gameLosses": 3,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5,
+      "matches": [
+        {
+          "tournamentId": "445684",
+          "dateDisplay": "September 24, 2026",
+          "result": "W",
+          "playerDeck": "Cradle Control",
+          "opponentDeck": "UG Threshnought",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "422555",
+          "dateDisplay": "April 16, 2026",
+          "result": "L",
+          "playerDeck": "Survival Squirrel Oppo",
+          "opponentDeck": "Replenish",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "Tencteri",
+      "opponentDisplayName": "Tencteri",
+      "matchesPlayed": 2,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 1,
+      "matchWinPercentage": 0.75,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 3,
+      "gameWinPercentage": 0.7,
+      "matches": [
+        {
+          "tournamentId": "445684",
+          "dateDisplay": "September 24, 2026",
+          "result": "W",
+          "playerDeck": "Cradle Control",
+          "opponentDeck": "White Weenie",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "445679",
+          "dateDisplay": "August 20, 2026",
+          "result": "D",
+          "playerDeck": "Oath Parfait",
+          "opponentDeck": "Merfolk",
+          "playerGameWins": 0,
+          "opponentGameWins": 0,
+          "gameDraws": 3
         }
       ]
     },
@@ -485,6 +569,31 @@
       ]
     },
     {
+      "opponentUsername": "Mookyspulder",
+      "opponentDisplayName": "Dan S",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6666666666666666,
+      "matches": [
+        {
+          "tournamentId": "445684",
+          "dateDisplay": "September 24, 2026",
+          "result": "W",
+          "playerDeck": "Cradle Control",
+          "opponentDeck": "GW Threshold",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "SamFeldman",
       "opponentDisplayName": "Samuel Feldman",
       "matchesPlayed": 1,
@@ -581,31 +690,6 @@
           "playerGameWins": 2,
           "opponentGameWins": 1,
           "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "Tencteri",
-      "opponentDisplayName": "Tencteri",
-      "matchesPlayed": 1,
-      "matchWins": 0,
-      "matchLosses": 0,
-      "matchDraws": 1,
-      "matchWinPercentage": 0.5,
-      "gameWins": 0,
-      "gameLosses": 0,
-      "gameDraws": 3,
-      "gameWinPercentage": 0.5,
-      "matches": [
-        {
-          "tournamentId": "445679",
-          "dateDisplay": "August 20, 2026",
-          "result": "D",
-          "playerDeck": "Oath Parfait",
-          "opponentDeck": "Merfolk",
-          "playerGameWins": 0,
-          "opponentGameWins": 0,
-          "gameDraws": 3
         }
       ]
     },
@@ -810,31 +894,6 @@
       ]
     },
     {
-      "opponentUsername": "BryanGulotta",
-      "opponentDisplayName": "BryanGulotta",
-      "matchesPlayed": 1,
-      "matchWins": 0,
-      "matchLosses": 1,
-      "matchDraws": 0,
-      "matchWinPercentage": 0,
-      "gameWins": 1,
-      "gameLosses": 2,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.3333333333333333,
-      "matches": [
-        {
-          "tournamentId": "422555",
-          "dateDisplay": "April 16, 2026",
-          "result": "L",
-          "playerDeck": "Survival Squirrel Oppo",
-          "opponentDeck": "Replenish",
-          "playerGameWins": 1,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
       "opponentUsername": "Gaunology",
       "opponentDisplayName": "Gaunology",
       "matchesPlayed": 1,
@@ -926,6 +985,22 @@
       "gameDraws": 0,
       "gameWinPercentage": 0.75,
       "deck": "Welder Prison"
+    },
+    {
+      "tournamentId": "445684",
+      "dateDisplay": "September 24, 2026",
+      "playerCount": 19,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 1,
+      "points": 9,
+      "matchRecord": "3-0-0",
+      "matchWinPercentage": 1,
+      "gameWins": 6,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.75,
+      "deck": "Cradle Control"
     },
     {
       "tournamentId": "445681",

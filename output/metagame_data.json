@@ -3,6 +3,7 @@
     {
       "leagueName": "Q3 2026",
       "tournaments": [
+        445684,
         445683,
         465043,
         445681,
@@ -17,17 +18,31 @@
         436159
       ],
       "deckCounts": {
+        "The Rock": 4,
+        "Moneyball Black": 12,
+        "Chromatic Predict": 1,
+        "UG Threshnought": 1,
+        "Cradle Control": 3,
+        "Burn": 19,
+        "GW Control": 1,
+        "Replenish": 3,
+        "BG Survival": 1,
+        "Samaluren": 1,
+        "GW Threshold": 1,
+        "Survival Madness": 1,
+        "Moneyball": 5,
+        "Pattern Rector": 2,
+        "White Weenie": 2,
+        "Goblins": 4,
+        "GW Oath Ponza": 2,
+        "4C Chromatic Control": 1,
+        "Welder Prison": 5,
         "Ubw Zombie Infestation": 1,
-        "Moneyball Black": 11,
-        "Burn": 18,
         "Black Ponza": 1,
         "GB Survival Contamination": 1,
         "Aluren": 2,
         "Mono Blue Disk": 1,
-        "Pattern Rector": 1,
-        "White Weenie": 1,
         "RG zoo": 1,
-        "Welder Prison": 4,
         "Reanimator": 5,
         "Moneyball Red": 4,
         "Blue Disk": 1,
@@ -38,8 +53,6 @@
         "Pit Rack": 1,
         "Esper Tog": 2,
         "Psychatog": 1,
-        "Moneyball": 4,
-        "Goblins": 3,
         "GW Slide": 1,
         "GR Aggro": 2,
         "Mono U Disk": 1,
@@ -51,7 +64,6 @@
         "Enchantress": 5,
         "GR Oath Ponza": 1,
         "Stasis": 5,
-        "GW Oath Ponza": 1,
         "Naya Good Stuff": 1,
         "White Control": 2,
         "Naya Terrageddon": 6,
@@ -64,20 +76,18 @@
         "RG Zoo": 1,
         "Mono Red Ponza": 3,
         "Oath Parfait": 2,
-        "The Rock": 3,
         "Food Chain Elves": 1,
         "Mono Blue Control": 2,
         "Machinehead": 1,
         "UB Dreadnought": 2,
         "4-Color Terrageddon": 2,
-        "Replenish": 2,
-        "B/G Contamination": 2,
+        "BG Contamination": 2,
         "GR Survival": 1,
         "Dogpile (Mono G Survival)": 1,
         "Sligh": 6,
         "Magnivore Oath": 1,
         "WWu": 1,
-        "U/G Survival Opposition": 2,
+        "UG Survival Opposition": 5,
         "Gro": 2,
         "Elves": 1,
         "Chromatic Control": 1,
@@ -93,13 +103,11 @@
         "4c Oath Ponza": 1,
         "5c Oath Ponza": 1,
         "Clerics": 1,
-        "Cradle Control": 2,
         "Jank": 1,
         "Mono red ponza": 1,
         "Moneyball Blue": 1,
         "Gush Tithe": 1,
         "Replenish (PandeBurst)": 1,
-        "UG Survival Opposition": 3,
         "Solution": 2,
         "Mono Black Clerics": 1,
         "UB ZI": 1,
@@ -120,7 +128,8 @@
         "Dragon Reanimator": 1
       },
       "deckTrophies": {
-        "Burn": 5,
+        "Cradle Control": 1,
+        "Burn": 6,
         "Oath Ponza": 2,
         "Moneyball": 1,
         "Welder Prison": 2,
@@ -137,20 +146,105 @@
         "UG Survival Opposition": 1
       },
       "deckMatchStats": {
+        "The Rock": {
+          "wins": 5,
+          "losses": 6,
+          "draws": 1
+        },
+        "Moneyball Black": {
+          "wins": 17,
+          "losses": 19,
+          "draws": 0
+        },
+        "Chromatic Predict": {
+          "wins": 0,
+          "losses": 3,
+          "draws": 0
+        },
+        "UG Threshnought": {
+          "wins": 2,
+          "losses": 1,
+          "draws": 0
+        },
+        "Cradle Control": {
+          "wins": 3,
+          "losses": 3,
+          "draws": 1
+        },
+        "Burn": {
+          "wins": 34,
+          "losses": 21,
+          "draws": 2
+        },
+        "GW Control": {
+          "wins": 1,
+          "losses": 1,
+          "draws": 1
+        },
+        "Replenish": {
+          "wins": 3,
+          "losses": 5,
+          "draws": 1
+        },
+        "BG Survival": {
+          "wins": 0,
+          "losses": 3,
+          "draws": 0
+        },
+        "Samaluren": {
+          "wins": 2,
+          "losses": 1,
+          "draws": 0
+        },
+        "GW Threshold": {
+          "wins": 2,
+          "losses": 1,
+          "draws": 0
+        },
+        "Survival Madness": {
+          "wins": 1,
+          "losses": 2,
+          "draws": 0
+        },
+        "Moneyball": {
+          "wins": 8,
+          "losses": 6,
+          "draws": 1
+        },
+        "Pattern Rector": {
+          "wins": 4,
+          "losses": 2,
+          "draws": 0
+        },
+        "White Weenie": {
+          "wins": 2,
+          "losses": 1,
+          "draws": 3
+        },
+        "Goblins": {
+          "wins": 7,
+          "losses": 4,
+          "draws": 1
+        },
+        "GW Oath Ponza": {
+          "wins": 1,
+          "losses": 4,
+          "draws": 1
+        },
+        "4C Chromatic Control": {
+          "wins": 1,
+          "losses": 0,
+          "draws": 2
+        },
+        "Welder Prison": {
+          "wins": 11,
+          "losses": 1,
+          "draws": 3
+        },
         "Ubw Zombie Infestation": {
           "wins": 2,
           "losses": 0,
           "draws": 1
-        },
-        "Moneyball Black": {
-          "wins": 16,
-          "losses": 17,
-          "draws": 0
-        },
-        "Burn": {
-          "wins": 31,
-          "losses": 21,
-          "draws": 2
         },
         "Black Ponza": {
           "wins": 1,
@@ -172,25 +266,10 @@
           "losses": 2,
           "draws": 1
         },
-        "Pattern Rector": {
-          "wins": 2,
-          "losses": 1,
-          "draws": 0
-        },
-        "White Weenie": {
-          "wins": 1,
-          "losses": 0,
-          "draws": 2
-        },
         "RG zoo": {
           "wins": 1,
           "losses": 2,
           "draws": 0
-        },
-        "Welder Prison": {
-          "wins": 10,
-          "losses": 0,
-          "draws": 2
         },
         "Reanimator": {
           "wins": 7,
@@ -240,16 +319,6 @@
         "Psychatog": {
           "wins": 2,
           "losses": 1,
-          "draws": 0
-        },
-        "Moneyball": {
-          "wins": 7,
-          "losses": 4,
-          "draws": 1
-        },
-        "Goblins": {
-          "wins": 5,
-          "losses": 4,
           "draws": 0
         },
         "GW Slide": {
@@ -305,11 +374,6 @@
         "Stasis": {
           "wins": 6,
           "losses": 8,
-          "draws": 1
-        },
-        "GW Oath Ponza": {
-          "wins": 0,
-          "losses": 2,
           "draws": 1
         },
         "Naya Good Stuff": {
@@ -372,11 +436,6 @@
           "losses": 2,
           "draws": 1
         },
-        "The Rock": {
-          "wins": 4,
-          "losses": 5,
-          "draws": 0
-        },
         "Food Chain Elves": {
           "wins": 1,
           "losses": 2,
@@ -402,12 +461,7 @@
           "losses": 1,
           "draws": 0
         },
-        "Replenish": {
-          "wins": 2,
-          "losses": 4,
-          "draws": 0
-        },
-        "B/G Contamination": {
+        "BG Contamination": {
           "wins": 3,
           "losses": 2,
           "draws": 1
@@ -437,9 +491,9 @@
           "losses": 1,
           "draws": 0
         },
-        "U/G Survival Opposition": {
-          "wins": 3,
-          "losses": 3,
+        "UG Survival Opposition": {
+          "wins": 9,
+          "losses": 6,
           "draws": 0
         },
         "Gro": {
@@ -517,11 +571,6 @@
           "losses": 1,
           "draws": 0
         },
-        "Cradle Control": {
-          "wins": 0,
-          "losses": 3,
-          "draws": 1
-        },
         "Jank": {
           "wins": 0,
           "losses": 3,
@@ -545,11 +594,6 @@
         "Replenish (PandeBurst)": {
           "wins": 2,
           "losses": 1,
-          "draws": 0
-        },
-        "UG Survival Opposition": {
-          "wins": 6,
-          "losses": 3,
           "draws": 0
         },
         "Solution": {
@@ -704,10 +748,10 @@
         "GW Tusker Oath": 3,
         "Survival Madness": 2,
         "RB Goblins": 3,
-        "R/g Goblins": 1,
+        "Rg Goblins": 1,
         "Replenish": 3,
         "4C Oath Ponza": 2,
-        "GAT w/angel": 1,
+        "GAT w/Angel": 1,
         "Pit Rack": 1,
         "4c oath ponza": 1,
         "WW": 1,
@@ -732,7 +776,7 @@
         "Mono black clerics": 1,
         "Mono U Control": 1,
         "Mono R Welder": 1,
-        "U/R Welder": 1,
+        "UR Welder": 1,
         "Tinker Prison": 2,
         "Reanimator": 2,
         "PandeBurst": 2,
@@ -997,7 +1041,7 @@
           "losses": 3,
           "draws": 0
         },
-        "R/g Goblins": {
+        "Rg Goblins": {
           "wins": 2,
           "losses": 1,
           "draws": 0
@@ -1012,7 +1056,7 @@
           "losses": 2,
           "draws": 0
         },
-        "GAT w/angel": {
+        "GAT w/Angel": {
           "wins": 2,
           "losses": 0,
           "draws": 1
@@ -1137,7 +1181,7 @@
           "losses": 2,
           "draws": 0
         },
-        "U/R Welder": {
+        "UR Welder": {
           "wins": 2,
           "losses": 1,
           "draws": 0

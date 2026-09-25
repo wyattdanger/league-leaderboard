@@ -2,25 +2,25 @@
   "username": "Gaunology",
   "displayName": "Gaunology",
   "overallStats": {
-    "totalTournaments": 23,
-    "totalPoints": 79,
-    "totalMatches": 69,
-    "matchRecord": "22-34-13",
-    "matchWinPercentage": 0.41304347826086957,
-    "gameRecord": "66-87-5",
-    "gameWinPercentage": 0.4177215189873418,
+    "totalTournaments": 24,
+    "totalPoints": 83,
+    "totalMatches": 72,
+    "matchRecord": "23-35-14",
+    "matchWinPercentage": 0.4166666666666667,
+    "gameRecord": "69-90-6",
+    "gameWinPercentage": 0.41818181818181815,
     "trophies": 1,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q3 2026",
-      "events": 6,
-      "points": 20,
-      "matchRecord": "6-10-2",
-      "matchWinPercentage": 0.3888888888888889,
-      "gameRecord": "18-25-1",
-      "gameWinPercentage": 0.42045454545454547
+      "events": 7,
+      "points": 24,
+      "matchRecord": "7-11-3",
+      "matchWinPercentage": 0.40476190476190477,
+      "gameRecord": "21-28-2",
+      "gameWinPercentage": 0.43137254901960786
     },
     {
       "leagueName": "Q2 2026",
@@ -133,6 +133,20 @@
       "gameLosses": 3,
       "gameDraws": 0,
       "gameWinPercentage": 0.5714285714285714,
+      "trophies": 0
+    },
+    {
+      "deckName": "GW Control",
+      "events": 1,
+      "matchWins": 1,
+      "matchLosses": 1,
+      "matchDraws": 1,
+      "matchRecord": "1-1-1",
+      "matchWinPercentage": 0.5,
+      "gameWins": 3,
+      "gameLosses": 3,
+      "gameDraws": 1,
+      "gameWinPercentage": 0.5,
       "trophies": 0
     },
     {
@@ -308,16 +322,26 @@
     {
       "opponentUsername": "madmanpoet",
       "opponentDisplayName": "Michael Flores",
-      "matchesPlayed": 7,
+      "matchesPlayed": 8,
       "matchWins": 3,
-      "matchLosses": 2,
+      "matchLosses": 3,
       "matchDraws": 2,
-      "matchWinPercentage": 0.5714285714285714,
+      "matchWinPercentage": 0.5,
       "gameWins": 9,
-      "gameLosses": 9,
+      "gameLosses": 11,
       "gameDraws": 1,
-      "gameWinPercentage": 0.5,
+      "gameWinPercentage": 0.4523809523809524,
       "matches": [
+        {
+          "tournamentId": "445684",
+          "dateDisplay": "September 24, 2026",
+          "result": "L",
+          "playerDeck": "GW Control",
+          "opponentDeck": "4C Chromatic Control",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
         {
           "tournamentId": "445675",
           "dateDisplay": "July 23, 2026",
@@ -646,6 +670,41 @@
       ]
     },
     {
+      "opponentUsername": "KYamada97",
+      "opponentDisplayName": "KYamada97",
+      "matchesPlayed": 2,
+      "matchWins": 0,
+      "matchLosses": 0,
+      "matchDraws": 2,
+      "matchWinPercentage": 0.5,
+      "gameWins": 2,
+      "gameLosses": 2,
+      "gameDraws": 1,
+      "gameWinPercentage": 0.5,
+      "matches": [
+        {
+          "tournamentId": "445684",
+          "dateDisplay": "September 24, 2026",
+          "result": "D",
+          "playerDeck": "GW Control",
+          "opponentDeck": "Replenish",
+          "playerGameWins": 1,
+          "opponentGameWins": 1,
+          "gameDraws": 1
+        },
+        {
+          "tournamentId": "445681",
+          "dateDisplay": "September 3, 2026",
+          "result": "D",
+          "playerDeck": "UG Cognivore Oath",
+          "opponentDeck": "Landstill",
+          "playerGameWins": 1,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "Mattmelach",
       "opponentDisplayName": "Matthew Melachrinos",
       "matchesPlayed": 2,
@@ -856,6 +915,31 @@
       ]
     },
     {
+      "opponentUsername": "_jonH",
+      "opponentDisplayName": "_jonH",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "matches": [
+        {
+          "tournamentId": "445684",
+          "dateDisplay": "September 24, 2026",
+          "result": "W",
+          "playerDeck": "GW Control",
+          "opponentDeck": "GW Oath Ponza",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "sylvanisator",
       "opponentDisplayName": "sylvanisator",
       "matchesPlayed": 1,
@@ -976,31 +1060,6 @@
           "opponentDeck": "Moneyball Red",
           "playerGameWins": 0,
           "opponentGameWins": 2,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "KYamada97",
-      "opponentDisplayName": "KYamada97",
-      "matchesPlayed": 1,
-      "matchWins": 0,
-      "matchLosses": 0,
-      "matchDraws": 1,
-      "matchWinPercentage": 0.5,
-      "gameWins": 1,
-      "gameLosses": 1,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.5,
-      "matches": [
-        {
-          "tournamentId": "445681",
-          "dateDisplay": "September 3, 2026",
-          "result": "D",
-          "playerDeck": "UG Cognivore Oath",
-          "opponentDeck": "Landstill",
-          "playerGameWins": 1,
-          "opponentGameWins": 1,
           "gameDraws": 0
         }
       ]
@@ -1622,6 +1681,22 @@
       "gameDraws": 0,
       "gameWinPercentage": 0.3333333,
       "deck": "Cognivore Oath"
+    },
+    {
+      "tournamentId": "445684",
+      "dateDisplay": "September 24, 2026",
+      "playerCount": 19,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 12,
+      "points": 4,
+      "matchRecord": "1-1-1",
+      "matchWinPercentage": 0.5,
+      "gameWins": 3,
+      "gameLosses": 3,
+      "gameDraws": 1,
+      "gameWinPercentage": 0.4761905,
+      "deck": "GW Control"
     },
     {
       "tournamentId": "445683",

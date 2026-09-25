@@ -2,25 +2,25 @@
   "username": "DaveKaplan",
   "displayName": "Dave Kaplan",
   "overallStats": {
-    "totalTournaments": 15,
-    "totalPoints": 94,
-    "totalMatches": 45,
-    "matchRecord": "31-13-1",
-    "matchWinPercentage": 0.7,
-    "gameRecord": "73-33-0",
-    "gameWinPercentage": 0.6886792452830188,
-    "trophies": 4,
+    "totalTournaments": 16,
+    "totalPoints": 103,
+    "totalMatches": 48,
+    "matchRecord": "34-13-1",
+    "matchWinPercentage": 0.71875,
+    "gameRecord": "79-34-0",
+    "gameWinPercentage": 0.6991150442477876,
+    "trophies": 5,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q3 2026",
-      "events": 10,
-      "points": 63,
-      "matchRecord": "21-9-0",
-      "matchWinPercentage": 0.7,
-      "gameRecord": "49-20-0",
-      "gameWinPercentage": 0.7101449275362319
+      "events": 11,
+      "points": 72,
+      "matchRecord": "24-9-0",
+      "matchWinPercentage": 0.7272727272727273,
+      "gameRecord": "55-21-0",
+      "gameWinPercentage": 0.7236842105263158
     },
     {
       "leagueName": "Q2 2026",
@@ -58,17 +58,17 @@
     },
     {
       "deckName": "Burn",
-      "events": 3,
-      "matchWins": 6,
+      "events": 4,
+      "matchWins": 9,
       "matchLosses": 3,
       "matchDraws": 0,
-      "matchRecord": "6-3-0",
-      "matchWinPercentage": 0.6666666666666666,
-      "gameWins": 14,
-      "gameLosses": 6,
+      "matchRecord": "9-3-0",
+      "matchWinPercentage": 0.75,
+      "gameWins": 20,
+      "gameLosses": 7,
       "gameDraws": 0,
-      "gameWinPercentage": 0.7,
-      "trophies": 1
+      "gameWinPercentage": 0.7407407407407407,
+      "trophies": 2
     },
     {
       "deckName": "UB Dreadnought",
@@ -129,6 +129,51 @@
   ],
   "headToHead": [
     {
+      "opponentUsername": "Taylorhol",
+      "opponentDisplayName": "Taylorhol",
+      "matchesPlayed": 3,
+      "matchWins": 3,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 6,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "matches": [
+        {
+          "tournamentId": "445684",
+          "dateDisplay": "September 24, 2026",
+          "result": "W",
+          "playerDeck": "Burn",
+          "opponentDeck": "Pattern Rector",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "445683",
+          "dateDisplay": "September 17, 2026",
+          "result": "W",
+          "playerDeck": "Burn",
+          "opponentDeck": "Pattern Rector",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "408436",
+          "dateDisplay": "February 26, 2026",
+          "result": "W",
+          "playerDeck": "Angry Hermit",
+          "opponentDeck": "HFEB",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "Matt_W",
       "opponentDisplayName": "Matt_W",
       "matchesPlayed": 3,
@@ -156,7 +201,7 @@
           "dateDisplay": "July 30, 2026",
           "result": "W",
           "playerDeck": "Burn",
-          "opponentDeck": "U/G Survival Opposition",
+          "opponentDeck": "UG Survival Opposition",
           "playerGameWins": 2,
           "opponentGameWins": 0,
           "gameDraws": 0
@@ -219,8 +264,8 @@
       ]
     },
     {
-      "opponentUsername": "Taylorhol",
-      "opponentDisplayName": "Taylorhol",
+      "opponentUsername": "KYamada97",
+      "opponentDisplayName": "KYamada97",
       "matchesPlayed": 2,
       "matchWins": 2,
       "matchLosses": 0,
@@ -232,23 +277,58 @@
       "gameWinPercentage": 1,
       "matches": [
         {
-          "tournamentId": "445683",
-          "dateDisplay": "September 17, 2026",
+          "tournamentId": "445684",
+          "dateDisplay": "September 24, 2026",
           "result": "W",
           "playerDeck": "Burn",
-          "opponentDeck": "Pattern Rector",
+          "opponentDeck": "Replenish",
           "playerGameWins": 2,
           "opponentGameWins": 0,
           "gameDraws": 0
         },
         {
-          "tournamentId": "408436",
-          "dateDisplay": "February 26, 2026",
+          "tournamentId": "445676",
+          "dateDisplay": "July 30, 2026",
           "result": "W",
-          "playerDeck": "Angry Hermit",
-          "opponentDeck": "HFEB",
+          "playerDeck": "Burn",
+          "opponentDeck": "EsperTog",
           "playerGameWins": 2,
           "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "PCavalcanti",
+      "opponentDisplayName": "PCavalcanti",
+      "matchesPlayed": 2,
+      "matchWins": 2,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 4,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6666666666666666,
+      "matches": [
+        {
+          "tournamentId": "445684",
+          "dateDisplay": "September 24, 2026",
+          "result": "W",
+          "playerDeck": "Burn",
+          "opponentDeck": "Survival Madness",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "424009",
+          "dateDisplay": "April 23, 2026",
+          "result": "W",
+          "playerDeck": "Dreadnought",
+          "opponentDeck": "Goblins",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
           "gameDraws": 0
         }
       ]
@@ -689,31 +769,6 @@
       ]
     },
     {
-      "opponentUsername": "KYamada97",
-      "opponentDisplayName": "KYamada97",
-      "matchesPlayed": 1,
-      "matchWins": 1,
-      "matchLosses": 0,
-      "matchDraws": 0,
-      "matchWinPercentage": 1,
-      "gameWins": 2,
-      "gameLosses": 0,
-      "gameDraws": 0,
-      "gameWinPercentage": 1,
-      "matches": [
-        {
-          "tournamentId": "445676",
-          "dateDisplay": "July 30, 2026",
-          "result": "W",
-          "playerDeck": "Burn",
-          "opponentDeck": "EsperTog",
-          "playerGameWins": 2,
-          "opponentGameWins": 0,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
       "opponentUsername": "MaltBeverage",
       "opponentDisplayName": "Ryan Alexander",
       "matchesPlayed": 1,
@@ -807,31 +862,6 @@
           "result": "W",
           "playerDeck": "Dreadnought",
           "opponentDeck": "Dreadnought",
-          "playerGameWins": 2,
-          "opponentGameWins": 1,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "PCavalcanti",
-      "opponentDisplayName": "PCavalcanti",
-      "matchesPlayed": 1,
-      "matchWins": 1,
-      "matchLosses": 0,
-      "matchDraws": 0,
-      "matchWinPercentage": 1,
-      "gameWins": 2,
-      "gameLosses": 1,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.6666666666666666,
-      "matches": [
-        {
-          "tournamentId": "424009",
-          "dateDisplay": "April 23, 2026",
-          "result": "W",
-          "playerDeck": "Dreadnought",
-          "opponentDeck": "Goblins",
           "playerGameWins": 2,
           "opponentGameWins": 1,
           "gameDraws": 0
@@ -1046,6 +1076,22 @@
       "gameDraws": 0,
       "gameWinPercentage": 0.7142857,
       "deck": "Dreadnought"
+    },
+    {
+      "tournamentId": "445684",
+      "dateDisplay": "September 24, 2026",
+      "playerCount": 19,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 2,
+      "points": 9,
+      "matchRecord": "3-0-0",
+      "matchWinPercentage": 1,
+      "gameWins": 6,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.8571429,
+      "deck": "Burn"
     },
     {
       "tournamentId": "445683",

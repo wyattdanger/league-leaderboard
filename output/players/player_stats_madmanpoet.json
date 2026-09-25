@@ -2,25 +2,25 @@
   "username": "madmanpoet",
   "displayName": "Michael Flores",
   "overallStats": {
-    "totalTournaments": 52,
-    "totalPoints": 327,
-    "totalMatches": 156,
-    "matchRecord": "108-45-3",
-    "matchWinPercentage": 0.7019230769230769,
-    "gameRecord": "241-132-1",
-    "gameWinPercentage": 0.6443850267379679,
+    "totalTournaments": 53,
+    "totalPoints": 332,
+    "totalMatches": 159,
+    "matchRecord": "109-45-5",
+    "matchWinPercentage": 0.7012578616352201,
+    "gameRecord": "245-134-2",
+    "gameWinPercentage": 0.6430446194225722,
     "trophies": 14,
     "belts": 1
   },
   "leagueStats": [
     {
       "leagueName": "Q3 2026",
-      "events": 9,
-      "points": 57,
-      "matchRecord": "19-8-0",
-      "matchWinPercentage": 0.7037037037037037,
-      "gameRecord": "43-27-0",
-      "gameWinPercentage": 0.6142857142857143
+      "events": 10,
+      "points": 62,
+      "matchRecord": "20-8-2",
+      "matchWinPercentage": 0.7,
+      "gameRecord": "47-29-1",
+      "gameWinPercentage": 0.6168831168831169
     },
     {
       "leagueName": "Q2 2026",
@@ -288,6 +288,20 @@
       "trophies": 1
     },
     {
+      "deckName": "4C Chromatic Control",
+      "events": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 2,
+      "matchRecord": "1-0-2",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 4,
+      "gameLosses": 2,
+      "gameDraws": 1,
+      "gameWinPercentage": 0.6428571428571429,
+      "trophies": 0
+    },
+    {
       "deckName": "Mono Blue Control",
       "events": 1,
       "matchWins": 2,
@@ -547,6 +561,101 @@
       ]
     },
     {
+      "opponentUsername": "Gaunology",
+      "opponentDisplayName": "Gaunology",
+      "matchesPlayed": 8,
+      "matchWins": 3,
+      "matchLosses": 3,
+      "matchDraws": 2,
+      "matchWinPercentage": 0.5,
+      "gameWins": 11,
+      "gameLosses": 9,
+      "gameDraws": 1,
+      "gameWinPercentage": 0.5476190476190477,
+      "matches": [
+        {
+          "tournamentId": "445684",
+          "dateDisplay": "September 24, 2026",
+          "result": "W",
+          "playerDeck": "4C Chromatic Control",
+          "opponentDeck": "GW Control",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "445675",
+          "dateDisplay": "July 23, 2026",
+          "result": "L",
+          "playerDeck": "Dreadnought",
+          "opponentDeck": "5c Oath Ponza",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "436160",
+          "dateDisplay": "July 9, 2026",
+          "result": "L",
+          "playerDeck": "Oath Ponza",
+          "opponentDeck": "Terrageddon",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "436155",
+          "dateDisplay": "June 11, 2026",
+          "result": "W",
+          "playerDeck": "Dreadnought",
+          "opponentDeck": "4C Terrageddon",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "422555",
+          "dateDisplay": "April 16, 2026",
+          "result": "D",
+          "playerDeck": "Terrageddon",
+          "opponentDeck": "Naya Enchantress",
+          "playerGameWins": 1,
+          "opponentGameWins": 1,
+          "gameDraws": 1
+        },
+        {
+          "tournamentId": "404622",
+          "dateDisplay": "February 12, 2026",
+          "result": "L",
+          "playerDeck": "Burn",
+          "opponentDeck": "Terra Oath",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "398837",
+          "dateDisplay": "January 22, 2026",
+          "result": "W",
+          "playerDeck": "Terrageddon",
+          "opponentDeck": "Domain",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "388334",
+          "dateDisplay": "December 4, 2025",
+          "result": "D",
+          "playerDeck": "The Rock",
+          "opponentDeck": "Domain",
+          "playerGameWins": 1,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "JUDDERMANG",
       "opponentDisplayName": "Chris Cruz",
       "matchesPlayed": 8,
@@ -642,86 +751,86 @@
       ]
     },
     {
-      "opponentUsername": "Gaunology",
-      "opponentDisplayName": "Gaunology",
+      "opponentUsername": "Tencteri",
+      "opponentDisplayName": "Tencteri",
       "matchesPlayed": 7,
-      "matchWins": 2,
+      "matchWins": 3,
       "matchLosses": 3,
-      "matchDraws": 2,
-      "matchWinPercentage": 0.42857142857142855,
+      "matchDraws": 1,
+      "matchWinPercentage": 0.5,
       "gameWins": 9,
-      "gameLosses": 9,
+      "gameLosses": 7,
       "gameDraws": 1,
-      "gameWinPercentage": 0.5,
+      "gameWinPercentage": 0.5588235294117647,
       "matches": [
         {
-          "tournamentId": "445675",
-          "dateDisplay": "July 23, 2026",
-          "result": "L",
-          "playerDeck": "Dreadnought",
-          "opponentDeck": "5c Oath Ponza",
-          "playerGameWins": 1,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "436160",
-          "dateDisplay": "July 9, 2026",
-          "result": "L",
-          "playerDeck": "Oath Ponza",
-          "opponentDeck": "Terrageddon",
-          "playerGameWins": 1,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "436155",
-          "dateDisplay": "June 11, 2026",
-          "result": "W",
-          "playerDeck": "Dreadnought",
-          "opponentDeck": "4C Terrageddon",
-          "playerGameWins": 2,
-          "opponentGameWins": 1,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "422555",
-          "dateDisplay": "April 16, 2026",
+          "tournamentId": "445684",
+          "dateDisplay": "September 24, 2026",
           "result": "D",
-          "playerDeck": "Terrageddon",
-          "opponentDeck": "Naya Enchantress",
+          "playerDeck": "4C Chromatic Control",
+          "opponentDeck": "White Weenie",
           "playerGameWins": 1,
           "opponentGameWins": 1,
           "gameDraws": 1
         },
         {
-          "tournamentId": "404622",
-          "dateDisplay": "February 12, 2026",
-          "result": "L",
-          "playerDeck": "Burn",
-          "opponentDeck": "Terra Oath",
-          "playerGameWins": 1,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "398837",
-          "dateDisplay": "January 22, 2026",
+          "tournamentId": "465043",
+          "dateDisplay": "September 10, 2026",
           "result": "W",
-          "playerDeck": "Terrageddon",
-          "opponentDeck": "Domain",
+          "playerDeck": "Psychatog",
+          "opponentDeck": "Esper Tog",
           "playerGameWins": 2,
           "opponentGameWins": 0,
           "gameDraws": 0
         },
         {
-          "tournamentId": "388334",
-          "dateDisplay": "December 4, 2025",
-          "result": "D",
-          "playerDeck": "The Rock",
-          "opponentDeck": "Domain",
+          "tournamentId": "395699",
+          "dateDisplay": "January 8, 2026",
+          "result": "L",
+          "playerDeck": "Dreadnought",
+          "opponentDeck": "White Weenie",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "375338",
+          "dateDisplay": "October 23, 2025",
+          "result": "L",
+          "playerDeck": "Enchantress",
+          "opponentDeck": "Deadguy Ale",
           "playerGameWins": 1,
-          "opponentGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "397227",
+          "dateDisplay": "January 15, 2026",
+          "result": "W",
+          "playerDeck": "Elves",
+          "opponentDeck": "Tinker",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "305152",
+          "dateDisplay": "May 8, 2025",
+          "result": "L",
+          "playerDeck": "Goblins",
+          "opponentDeck": "_",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "341527",
+          "dateDisplay": "July 17, 2025",
+          "result": "W",
+          "playerDeck": "Burn",
+          "opponentDeck": "Burn",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
           "gameDraws": 0
         }
       ]
@@ -807,81 +916,6 @@
           "opponentDeck": "Devourer",
           "playerGameWins": 2,
           "opponentGameWins": 1,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "Tencteri",
-      "opponentDisplayName": "Tencteri",
-      "matchesPlayed": 6,
-      "matchWins": 3,
-      "matchLosses": 3,
-      "matchDraws": 0,
-      "matchWinPercentage": 0.5,
-      "gameWins": 8,
-      "gameLosses": 6,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.5714285714285714,
-      "matches": [
-        {
-          "tournamentId": "465043",
-          "dateDisplay": "September 10, 2026",
-          "result": "W",
-          "playerDeck": "Psychatog",
-          "opponentDeck": "Esper Tog",
-          "playerGameWins": 2,
-          "opponentGameWins": 0,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "395699",
-          "dateDisplay": "January 8, 2026",
-          "result": "L",
-          "playerDeck": "Dreadnought",
-          "opponentDeck": "White Weenie",
-          "playerGameWins": 0,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "375338",
-          "dateDisplay": "October 23, 2025",
-          "result": "L",
-          "playerDeck": "Enchantress",
-          "opponentDeck": "Deadguy Ale",
-          "playerGameWins": 1,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "397227",
-          "dateDisplay": "January 15, 2026",
-          "result": "W",
-          "playerDeck": "Elves",
-          "opponentDeck": "Tinker",
-          "playerGameWins": 2,
-          "opponentGameWins": 0,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "305152",
-          "dateDisplay": "May 8, 2025",
-          "result": "L",
-          "playerDeck": "Goblins",
-          "opponentDeck": "_",
-          "playerGameWins": 1,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "341527",
-          "dateDisplay": "July 17, 2025",
-          "result": "W",
-          "playerDeck": "Burn",
-          "opponentDeck": "Burn",
-          "playerGameWins": 2,
-          "opponentGameWins": 0,
           "gameDraws": 0
         }
       ]
@@ -1174,7 +1208,7 @@
           "dateDisplay": "August 6, 2026",
           "result": "W",
           "playerDeck": "White Control",
-          "opponentDeck": "U/G Survival Opposition",
+          "opponentDeck": "UG Survival Opposition",
           "playerGameWins": 2,
           "opponentGameWins": 1,
           "gameDraws": 0
@@ -1184,7 +1218,7 @@
           "dateDisplay": "July 30, 2026",
           "result": "W",
           "playerDeck": "Sligh",
-          "opponentDeck": "U/G Survival Opposition",
+          "opponentDeck": "UG Survival Opposition",
           "playerGameWins": 2,
           "opponentGameWins": 0,
           "gameDraws": 0
@@ -2077,6 +2111,31 @@
       ]
     },
     {
+      "opponentUsername": "Zoinx212",
+      "opponentDisplayName": "Zoinx212",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 0,
+      "matchDraws": 1,
+      "matchWinPercentage": 0.5,
+      "gameWins": 1,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5,
+      "matches": [
+        {
+          "tournamentId": "445684",
+          "dateDisplay": "September 24, 2026",
+          "result": "D",
+          "playerDeck": "4C Chromatic Control",
+          "opponentDeck": "Goblins",
+          "playerGameWins": 1,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "tjndj",
       "opponentDisplayName": "tjndj",
       "matchesPlayed": 1,
@@ -2868,6 +2927,22 @@
       "gameDraws": 0,
       "gameWinPercentage": 0.6666667,
       "deck": "Psychatog"
+    },
+    {
+      "tournamentId": "445684",
+      "dateDisplay": "September 24, 2026",
+      "playerCount": 19,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 8,
+      "points": 5,
+      "matchRecord": "1-0-2",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 4,
+      "gameLosses": 2,
+      "gameDraws": 1,
+      "gameWinPercentage": 0.6190476,
+      "deck": "4C Chromatic Control"
     },
     {
       "tournamentId": "445681",

@@ -2,25 +2,25 @@
   "username": "StevenRiseNYC",
   "displayName": "StevenRiseNYC",
   "overallStats": {
-    "totalTournaments": 3,
-    "totalPoints": 15,
-    "totalMatches": 9,
-    "matchRecord": "5-4-0",
-    "matchWinPercentage": 0.5555555555555556,
-    "gameRecord": "10-12-0",
-    "gameWinPercentage": 0.45454545454545453,
+    "totalTournaments": 4,
+    "totalPoints": 18,
+    "totalMatches": 12,
+    "matchRecord": "6-6-0",
+    "matchWinPercentage": 0.5,
+    "gameRecord": "12-16-0",
+    "gameWinPercentage": 0.42857142857142855,
     "trophies": 1,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q3 2026",
-      "events": 1,
-      "points": 3,
-      "matchRecord": "1-2-0",
+      "events": 2,
+      "points": 6,
+      "matchRecord": "2-4-0",
       "matchWinPercentage": 0.3333333333333333,
-      "gameRecord": "2-5-0",
-      "gameWinPercentage": 0.2857142857142857
+      "gameRecord": "4-9-0",
+      "gameWinPercentage": 0.3076923076923077
     },
     {
       "leagueName": "Q1 2026",
@@ -46,6 +46,20 @@
       "gameDraws": 0,
       "gameWinPercentage": 0.5333333333333333,
       "trophies": 1
+    },
+    {
+      "deckName": "Moneyball",
+      "events": 1,
+      "matchWins": 1,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 2,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "trophies": 0
     },
     {
       "deckName": "Pit Rack",
@@ -139,6 +153,56 @@
           "opponentDeck": "Cephalid Breakfast",
           "playerGameWins": 2,
           "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "Mookyspulder",
+      "opponentDisplayName": "Dan S",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "matches": [
+        {
+          "tournamentId": "445684",
+          "dateDisplay": "September 24, 2026",
+          "result": "L",
+          "playerDeck": "Moneyball",
+          "opponentDeck": "GW Threshold",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "Maew",
+      "opponentDisplayName": "Maew",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "matches": [
+        {
+          "tournamentId": "445684",
+          "dateDisplay": "September 24, 2026",
+          "result": "L",
+          "playerDeck": "Moneyball",
+          "opponentDeck": "Samaluren",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
           "gameDraws": 0
         }
       ]
@@ -260,6 +324,22 @@
       "gameDraws": 0,
       "gameWinPercentage": 0.3333333,
       "deck": "Pit Rack"
+    },
+    {
+      "tournamentId": "445684",
+      "dateDisplay": "September 24, 2026",
+      "playerCount": 19,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 15,
+      "points": 3,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 2,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333,
+      "deck": "Moneyball"
     },
     {
       "tournamentId": "417122",

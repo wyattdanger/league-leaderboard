@@ -2,25 +2,25 @@
   "username": "AlfredG",
   "displayName": "AlfredG",
   "overallStats": {
-    "totalTournaments": 12,
-    "totalPoints": 44,
-    "totalMatches": 35,
-    "matchRecord": "13-17-5",
-    "matchWinPercentage": 0.44285714285714284,
-    "gameRecord": "40-43-3",
-    "gameWinPercentage": 0.46511627906976744,
+    "totalTournaments": 13,
+    "totalPoints": 48,
+    "totalMatches": 38,
+    "matchRecord": "14-18-6",
+    "matchWinPercentage": 0.4473684210526316,
+    "gameRecord": "43-46-4",
+    "gameWinPercentage": 0.46236559139784944,
     "trophies": 0,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q3 2026",
-      "events": 9,
-      "points": 38,
-      "matchRecord": "12-12-2",
+      "events": 10,
+      "points": 42,
+      "matchRecord": "13-13-3",
       "matchWinPercentage": 0.5,
-      "gameRecord": "32-30-2",
-      "gameWinPercentage": 0.515625
+      "gameRecord": "35-33-3",
+      "gameWinPercentage": 0.5140845070422535
     },
     {
       "leagueName": "Q2 2026",
@@ -104,6 +104,20 @@
       "trophies": 0
     },
     {
+      "deckName": "The Rock",
+      "events": 1,
+      "matchWins": 1,
+      "matchLosses": 1,
+      "matchDraws": 1,
+      "matchRecord": "1-1-1",
+      "matchWinPercentage": 0.5,
+      "gameWins": 3,
+      "gameLosses": 3,
+      "gameDraws": 1,
+      "gameWinPercentage": 0.5,
+      "trophies": 0
+    },
+    {
       "deckName": "Mono Red Ponza",
       "events": 1,
       "matchWins": 1,
@@ -179,7 +193,7 @@
           "dateDisplay": "August 6, 2026",
           "result": "L",
           "playerDeck": "Magnivore Oath",
-          "opponentDeck": "B/G Contamination",
+          "opponentDeck": "BG Contamination",
           "playerGameWins": 0,
           "opponentGameWins": 2,
           "gameDraws": 0
@@ -212,6 +226,51 @@
           "opponentDeck": "Life Clerics",
           "playerGameWins": 1,
           "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "KYamada97",
+      "opponentDisplayName": "KYamada97",
+      "matchesPlayed": 3,
+      "matchWins": 2,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 4,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6666666666666666,
+      "matches": [
+        {
+          "tournamentId": "445684",
+          "dateDisplay": "September 24, 2026",
+          "result": "L",
+          "playerDeck": "The Rock",
+          "opponentDeck": "Replenish",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "445677",
+          "dateDisplay": "August 6, 2026",
+          "result": "W",
+          "playerDeck": "Magnivore Oath",
+          "opponentDeck": "_",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "445676",
+          "dateDisplay": "July 30, 2026",
+          "result": "W",
+          "playerDeck": "Deadguy Ale",
+          "opponentDeck": "EsperTog",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
           "gameDraws": 0
         }
       ]
@@ -392,41 +451,6 @@
       ]
     },
     {
-      "opponentUsername": "KYamada97",
-      "opponentDisplayName": "KYamada97",
-      "matchesPlayed": 2,
-      "matchWins": 2,
-      "matchLosses": 0,
-      "matchDraws": 0,
-      "matchWinPercentage": 1,
-      "gameWins": 4,
-      "gameLosses": 0,
-      "gameDraws": 0,
-      "gameWinPercentage": 1,
-      "matches": [
-        {
-          "tournamentId": "445677",
-          "dateDisplay": "August 6, 2026",
-          "result": "W",
-          "playerDeck": "Magnivore Oath",
-          "opponentDeck": "_",
-          "playerGameWins": 2,
-          "opponentGameWins": 0,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "445676",
-          "dateDisplay": "July 30, 2026",
-          "result": "W",
-          "playerDeck": "Deadguy Ale",
-          "opponentDeck": "EsperTog",
-          "playerGameWins": 2,
-          "opponentGameWins": 0,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
       "opponentUsername": "PCavalcanti",
       "opponentDisplayName": "PCavalcanti",
       "matchesPlayed": 2,
@@ -457,6 +481,56 @@
           "opponentDeck": "RG Madness Burn",
           "playerGameWins": 1,
           "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "truthcult",
+      "opponentDisplayName": "klint",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 0,
+      "matchDraws": 1,
+      "matchWinPercentage": 0.5,
+      "gameWins": 1,
+      "gameLosses": 1,
+      "gameDraws": 1,
+      "gameWinPercentage": 0.5,
+      "matches": [
+        {
+          "tournamentId": "445684",
+          "dateDisplay": "September 24, 2026",
+          "result": "D",
+          "playerDeck": "The Rock",
+          "opponentDeck": "Welder Prison",
+          "playerGameWins": 1,
+          "opponentGameWins": 1,
+          "gameDraws": 1
+        }
+      ]
+    },
+    {
+      "opponentUsername": "LMDB",
+      "opponentDisplayName": "LMDB",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "matches": [
+        {
+          "tournamentId": "445684",
+          "dateDisplay": "September 24, 2026",
+          "result": "W",
+          "playerDeck": "The Rock",
+          "opponentDeck": "BG Survival",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
           "gameDraws": 0
         }
       ]
@@ -604,7 +678,7 @@
           "dateDisplay": "July 30, 2026",
           "result": "L",
           "playerDeck": "Deadguy Ale",
-          "opponentDeck": "U/G Survival Opposition",
+          "opponentDeck": "UG Survival Opposition",
           "playerGameWins": 1,
           "opponentGameWins": 2,
           "gameDraws": 0
@@ -838,6 +912,22 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "445684",
+      "dateDisplay": "September 24, 2026",
+      "playerCount": 19,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 13,
+      "points": 4,
+      "matchRecord": "1-1-1",
+      "matchWinPercentage": 0.5,
+      "gameWins": 3,
+      "gameLosses": 3,
+      "gameDraws": 1,
+      "gameWinPercentage": 0.4761905,
+      "deck": "The Rock"
+    },
     {
       "tournamentId": "445683",
       "dateDisplay": "September 17, 2026",
