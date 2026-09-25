@@ -37,6 +37,12 @@ When the user provides a tournament ID (from Melee.gg), follow these steps in or
    - User will give you deck names for each player
    - Replace `_` placeholders with actual deck names in `decks.yml`
    - It's OK if some players have `_` (unknown deck data)
+   - Normalize names before writing them:
+     - Strip slashes between colors, keeping order/case: `B/G Survival` → `BG Survival`, `R/g Goblins` → `Rg Goblins`
+     - Match capitalization of names already in `decks.yml` (`GW Oath ponza` → `GW Oath Ponza`)
+   - Check each name against `src/utils/archetypeAliases.ts` (`normalizeDeckName`). Names that map
+     to no existing archetype become a NEW archetype in the metagame - confirm with the user whether
+     to add an alias (keep the variant name in `decks.yml`, group it via the alias map)
 
 ### Phase 2: Generation and Build
 
