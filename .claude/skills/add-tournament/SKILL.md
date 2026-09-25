@@ -1,3 +1,8 @@
+---
+name: add-tournament
+description: Use when adding a new Melee.gg tournament/event to the league (e.g. "new event 445684", "scrape this event"), or when the user sends updated deck data for an event - covers scrape, leagues.yml, decks.yml, regeneration, build and commit.
+---
+
 # Add Tournament Skill
 
 This skill handles the complete workflow for adding a new tournament to the league leaderboard system.
@@ -20,17 +25,12 @@ When the user provides a tournament ID (from Melee.gg), follow these steps in or
    - Place it at the top of the list (newest first)
 
 3. **Prepare deck template in decks.yml**:
-   - Read `output/tournament_<id>/Round_3_Standings.json`
-   - Extract all player usernames from the standings
-   - Add tournament entry to top of `decks.yml` with format:
-     ```yaml
-     # Tournament <id> - <date>
-     '<id>':
-       username1: _
-       username2: _
-       ...
-     ```
-   - Sort usernames alphabetically
+   ```bash
+   npm run add-tournament-to-decks <tournament_id>
+   ```
+   - Collects every username from the round match files, sorts them, and prepends
+     a `# Tournament <id> - <date>` block to `decks.yml` with `_` placeholders
+   - No-op if the tournament is already in `decks.yml`
    - **DO THIS IMMEDIATELY** - don't wait for user to ask
 
 4. **PAUSE HERE** - Wait for user to provide deck data
@@ -74,9 +74,7 @@ When the user provides a tournament ID (from Melee.gg), follow these steps in or
    git add leagues.yml decks.yml output/
    git commit -m "Add tournament <tournament_id> to Q* 20**
 
-   🤖 Generated with [Claude Code](https://claude.com/claude-code)
-
-   Co-Authored-By: Claude <noreply@anthropic.com>"
+   <Co-Authored-By trailer from the current session's attribution guidance>"
    git push
    ```
 
@@ -86,16 +84,15 @@ If the user provides updated deck data after the initial commit:
 
 1. Update `decks.yml` with the new deck names
 2. Regenerate player stats: `npm run player-stats`
-3. Regenerate metadata: `npm run generate-metadata -- <tournament_id>` (or `npm run generate-all-metadata`)
-4. Rebuild site: `npm run build`
-5. Commit and push:
+3. Regenerate metagame data: `npm run generate-metagame`
+4. Regenerate metadata: `npm run generate-metadata -- <tournament_id>` (or `npm run generate-all-metadata`)
+5. Rebuild site: `npm run build`
+6. Commit and push:
    ```bash
    git add decks.yml output/
    git commit -m "Update deck data for tournament <tournament_id>
 
-   🤖 Generated with [Claude Code](https://claude.com/claude-code)
-
-   Co-Authored-By: Claude <noreply@anthropic.com>"
+   <Co-Authored-By trailer from the current session's attribution guidance>"
    git push
    ```
 
@@ -104,19 +101,21 @@ If the user provides updated deck data after the initial commit:
 There's also an automated script that combines many steps:
 
 ```bash
-npm run process-tournament -- <tournament_id>
+npm run process-tournament -- <tournament_id>                # phase 1
+npm run process-tournament -- <tournament_id> --skip-scrape  # phase 2, after decks are filled
 ```
 
 This will:
-1. Scrape tournament data
+1. Scrape tournament data (skipped with `--skip-scrape`)
 2. Generate deck template
-3. Pause for you to fill in deck data
+3. Pause for you to fill in deck data (exits after adding the template)
 4. Sync league standings
 5. Regenerate player stats
 6. Regenerate metagame data
 7. Generate page metadata
 8. Build the site
 
+It does NOT edit `leagues.yml` - add the tournament there by hand before phase 2.
 You'll still need to commit and push manually after this.
 
 ## Important Notes
