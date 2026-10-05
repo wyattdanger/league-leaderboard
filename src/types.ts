@@ -84,6 +84,7 @@ export interface PlayerLeagueStats {
 
 export interface PlayerTournamentPerformance {
   tournamentId: string;
+  date?: string; // ISO timestamp of the event, used for sorting
   dateDisplay: string;
   playerCount: number;
   trophyCount: number;

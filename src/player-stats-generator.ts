@@ -13,7 +13,7 @@ import { calculateMatchWinPercentage, calculateGameWinPercentage } from './utils
 import { calculatePlayerStats, calculateHeadToHeadRecords } from './utils/playerData';
 import { getTournamentMetadata } from './utils/tournamentData';
 import { loadDeckData } from './utils/deckData';
-import { sortTournamentPerformancesByIdDesc } from './utils/tournamentSorting';
+import { sortTournamentPerformancesByDateDesc } from './utils/tournamentSorting';
 import { Player } from './models/Player';
 
 interface League {
@@ -229,6 +229,7 @@ async function generatePlayerStats(): Promise<void> {
 
               tournamentPerformances.push({
                 tournamentId: tournamentId,
+                date: metadata.date,
                 dateDisplay: metadata.dateDisplay,
                 playerCount: metadata.playerCount,
                 trophyCount: metadata.trophyCount,
@@ -251,7 +252,7 @@ async function generatePlayerStats(): Promise<void> {
     }
 
     // Sort using centralized sorting utility
-    const sortedPerformances = sortTournamentPerformancesByIdDesc(tournamentPerformances);
+    const sortedPerformances = sortTournamentPerformancesByDateDesc(tournamentPerformances);
 
     // Calculate overall stats and per-league stats from tournament performances (standings data)
     let totalMatchWins = 0;

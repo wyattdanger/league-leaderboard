@@ -1,54 +1,27 @@
 import type { TournamentMetadata, PlayerTournamentPerformance } from '../types';
 
 /**
- * Sorts tournaments by ID in reverse alphabetical order (newest first)
- * This works because tournament IDs are formatted to be chronologically ordered:
- * - Regular IDs: YYMMDD format (e.g., "388334" for Dec 4, 2024)
- * - Special IDs: Alphabetical suffix (e.g., "380585b" for Brooklyn variant)
+ * Sort newest first by event date (ISO timestamp), falling back to tournament ID.
+ * Don't sort by ID alone: Melee assigns IDs when an event is created on Melee,
+ * not when it's played (e.g. 465043 on Sept 10 2026 vs 445684 on Sept 24 2026).
  */
-export function sortTournamentsByIdDesc(tournaments: TournamentMetadata[]): TournamentMetadata[] {
-  return [...tournaments].sort((a, b) => {
-    const aId = String(a.tournamentId);
-    const bId = String(b.tournamentId);
-    return bId.localeCompare(aId);
-  });
+function compareByDateDesc(
+  a: { tournamentId: string; date?: string },
+  b: { tournamentId: string; date?: string }
+): number {
+  if (a.date && b.date) {
+    const diff = new Date(b.date).getTime() - new Date(a.date).getTime();
+    if (diff !== 0) return diff;
+  }
+  return String(b.tournamentId).localeCompare(String(a.tournamentId));
 }
 
-/**
- * Sorts tournament performances by tournament ID in reverse alphabetical order (newest first)
- */
-export function sortTournamentPerformancesByIdDesc(
+export function sortTournamentsByDateDesc(tournaments: TournamentMetadata[]): TournamentMetadata[] {
+  return [...tournaments].sort(compareByDateDesc);
+}
+
+export function sortTournamentPerformancesByDateDesc(
   performances: PlayerTournamentPerformance[]
 ): PlayerTournamentPerformance[] {
-  return [...performances].sort((a, b) => {
-    const aId = String(a.tournamentId);
-    const bId = String(b.tournamentId);
-    return bId.localeCompare(aId);
-  });
-}
-
-/**
- * Sorts tournament IDs (as strings) in reverse alphabetical order (newest first)
- */
-export function sortTournamentIdsDesc(ids: string[]): string[] {
-  return [...ids].sort((a, b) => b.localeCompare(a));
-}
-
-/**
- * Sorts tournaments by date (if available) or falls back to ID sorting
- * This provides a more robust sorting when date metadata might be missing
- */
-export function sortTournamentsByDateDesc(tournaments: TournamentMetadata[]): TournamentMetadata[] {
-  return [...tournaments].sort((a, b) => {
-    // If both have dates, use date comparison
-    if (a.date && b.date) {
-      const dateA = new Date(a.date).getTime();
-      const dateB = new Date(b.date).getTime();
-      if (dateA !== dateB) {
-        return dateB - dateA; // Newer dates first
-      }
-    }
-    // Fall back to ID comparison (which is alphabetical and chronological)
-    return b.tournamentId.localeCompare(a.tournamentId);
-  });
+  return [...performances].sort(compareByDateDesc);
 }
