@@ -300,23 +300,8 @@
   ],
   "tournamentPerformances": [
     {
-      "tournamentId": "465043",
-      "dateDisplay": "September 10, 2026",
-      "playerCount": 19,
-      "trophyCount": 3,
-      "roundCount": 3,
-      "rank": 16,
-      "points": 3,
-      "matchRecord": "1-2-0",
-      "matchWinPercentage": 0.3333333333333333,
-      "gameWins": 2,
-      "gameLosses": 5,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.3333333,
-      "deck": "Bg Contamination"
-    },
-    {
       "tournamentId": "445685",
+      "date": "2026-10-01T23:44:27Z",
       "dateDisplay": "October 1, 2026",
       "playerCount": 17,
       "trophyCount": 2,
@@ -333,6 +318,7 @@
     },
     {
       "tournamentId": "445684",
+      "date": "2026-09-24T23:05:16Z",
       "dateDisplay": "September 24, 2026",
       "playerCount": 19,
       "trophyCount": 2,
@@ -349,6 +335,7 @@
     },
     {
       "tournamentId": "445683",
+      "date": "2026-09-17T23:08:14Z",
       "dateDisplay": "September 17, 2026",
       "playerCount": 15,
       "trophyCount": 1,
@@ -362,6 +349,23 @@
       "gameDraws": 0,
       "gameWinPercentage": 0.3333333,
       "deck": "GB Survival Contamination"
+    },
+    {
+      "tournamentId": "465043",
+      "date": "2026-09-10T23:05:15Z",
+      "dateDisplay": "September 10, 2026",
+      "playerCount": 19,
+      "trophyCount": 3,
+      "roundCount": 3,
+      "rank": 16,
+      "points": 3,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 2,
+      "gameLosses": 5,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333,
+      "deck": "Bg Contamination"
     }
   ]
 }

@@ -1046,39 +1046,8 @@
   ],
   "tournamentPerformances": [
     {
-      "tournamentId": "465043",
-      "dateDisplay": "September 10, 2026",
-      "playerCount": 19,
-      "trophyCount": 3,
-      "roundCount": 3,
-      "rank": 12,
-      "points": 3,
-      "matchRecord": "1-2-0",
-      "matchWinPercentage": 0.3333333333333333,
-      "gameWins": 4,
-      "gameLosses": 4,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.5,
-      "deck": "Dreadnought"
-    },
-    {
-      "tournamentId": "458540",
-      "dateDisplay": "August 27, 2026",
-      "playerCount": 20,
-      "trophyCount": 2,
-      "roundCount": 3,
-      "rank": 4,
-      "points": 6,
-      "matchRecord": "2-1-0",
-      "matchWinPercentage": 0.6666666666666666,
-      "gameWins": 5,
-      "gameLosses": 2,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.7142857,
-      "deck": "Dreadnought"
-    },
-    {
       "tournamentId": "445684",
+      "date": "2026-09-24T23:05:16Z",
       "dateDisplay": "September 24, 2026",
       "playerCount": 19,
       "trophyCount": 2,
@@ -1095,6 +1064,7 @@
     },
     {
       "tournamentId": "445683",
+      "date": "2026-09-17T23:08:14Z",
       "dateDisplay": "September 17, 2026",
       "playerCount": 15,
       "trophyCount": 1,
@@ -1110,7 +1080,25 @@
       "deck": "Burn"
     },
     {
+      "tournamentId": "465043",
+      "date": "2026-09-10T23:05:15Z",
+      "dateDisplay": "September 10, 2026",
+      "playerCount": 19,
+      "trophyCount": 3,
+      "roundCount": 3,
+      "rank": 12,
+      "points": 3,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 4,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5,
+      "deck": "Dreadnought"
+    },
+    {
       "tournamentId": "445681",
+      "date": "2026-09-03T23:36:10Z",
       "dateDisplay": "September 3, 2026",
       "playerCount": 20,
       "trophyCount": 3,
@@ -1126,7 +1114,25 @@
       "deck": "Dreadnought"
     },
     {
+      "tournamentId": "458540",
+      "date": "2026-08-27T23:31:32Z",
+      "dateDisplay": "August 27, 2026",
+      "playerCount": 20,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 4,
+      "points": 6,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 5,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.7142857,
+      "deck": "Dreadnought"
+    },
+    {
       "tournamentId": "445679",
+      "date": "2026-08-20T23:42:10Z",
       "dateDisplay": "August 20, 2026",
       "playerCount": 20,
       "trophyCount": 2,
@@ -1143,6 +1149,7 @@
     },
     {
       "tournamentId": "445678",
+      "date": "2026-08-13T23:27:03Z",
       "dateDisplay": "August 13, 2026",
       "playerCount": 24,
       "trophyCount": 2,
@@ -1159,6 +1166,7 @@
     },
     {
       "tournamentId": "445677",
+      "date": "2026-08-06T23:02:57Z",
       "dateDisplay": "August 6, 2026",
       "playerCount": 19,
       "trophyCount": 2,
@@ -1175,6 +1183,7 @@
     },
     {
       "tournamentId": "445676",
+      "date": "2026-07-30T23:12:31Z",
       "dateDisplay": "July 30, 2026",
       "playerCount": 15,
       "trophyCount": 2,
@@ -1191,6 +1200,7 @@
     },
     {
       "tournamentId": "445675",
+      "date": "2026-07-23T23:35:11Z",
       "dateDisplay": "July 23, 2026",
       "playerCount": 26,
       "trophyCount": 3,
@@ -1207,6 +1217,7 @@
     },
     {
       "tournamentId": "436160",
+      "date": "2026-07-09T23:02:03Z",
       "dateDisplay": "July 9, 2026",
       "playerCount": 25,
       "trophyCount": 2,
@@ -1223,6 +1234,7 @@
     },
     {
       "tournamentId": "424009",
+      "date": "2026-04-23T23:02:28Z",
       "dateDisplay": "April 23, 2026",
       "playerCount": 31,
       "trophyCount": 4,
@@ -1239,6 +1251,7 @@
     },
     {
       "tournamentId": "422555",
+      "date": "2026-04-16T23:04:40Z",
       "dateDisplay": "April 16, 2026",
       "playerCount": 29,
       "trophyCount": 3,
@@ -1255,6 +1268,7 @@
     },
     {
       "tournamentId": "420854",
+      "date": "2026-04-09T23:28:12Z",
       "dateDisplay": "April 9, 2026",
       "playerCount": 28,
       "trophyCount": 2,
@@ -1271,6 +1285,7 @@
     },
     {
       "tournamentId": "408436",
+      "date": "2026-02-27T00:02:30Z",
       "dateDisplay": "February 26, 2026",
       "playerCount": 19,
       "trophyCount": 2,
@@ -1287,6 +1302,7 @@
     },
     {
       "tournamentId": "400729",
+      "date": "2026-01-30T00:04:39Z",
       "dateDisplay": "January 29, 2026",
       "playerCount": 17,
       "trophyCount": 2,

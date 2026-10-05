@@ -1747,39 +1747,8 @@
   ],
   "tournamentPerformances": [
     {
-      "tournamentId": "465043",
-      "dateDisplay": "September 10, 2026",
-      "playerCount": 19,
-      "trophyCount": 3,
-      "roundCount": 3,
-      "rank": 10,
-      "points": 6,
-      "matchRecord": "2-1-0",
-      "matchWinPercentage": 0.6666666666666666,
-      "gameWins": 5,
-      "gameLosses": 2,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.7142857,
-      "deck": "Burn"
-    },
-    {
-      "tournamentId": "458540",
-      "dateDisplay": "August 27, 2026",
-      "playerCount": 20,
-      "trophyCount": 2,
-      "roundCount": 3,
-      "rank": 6,
-      "points": 6,
-      "matchRecord": "2-1-0",
-      "matchWinPercentage": 0.6666666666666666,
-      "gameWins": 5,
-      "gameLosses": 3,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.625,
-      "deck": "RG Goblins"
-    },
-    {
       "tournamentId": "445685",
+      "date": "2026-10-01T23:44:27Z",
       "dateDisplay": "October 1, 2026",
       "playerCount": 17,
       "trophyCount": 2,
@@ -1796,6 +1765,7 @@
     },
     {
       "tournamentId": "445684",
+      "date": "2026-09-24T23:05:16Z",
       "dateDisplay": "September 24, 2026",
       "playerCount": 19,
       "trophyCount": 2,
@@ -1812,6 +1782,7 @@
     },
     {
       "tournamentId": "445683",
+      "date": "2026-09-17T23:08:14Z",
       "dateDisplay": "September 17, 2026",
       "playerCount": 15,
       "trophyCount": 1,
@@ -1827,7 +1798,42 @@
       "deck": "Burn"
     },
     {
+      "tournamentId": "465043",
+      "date": "2026-09-10T23:05:15Z",
+      "dateDisplay": "September 10, 2026",
+      "playerCount": 19,
+      "trophyCount": 3,
+      "roundCount": 3,
+      "rank": 10,
+      "points": 6,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 5,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.7142857,
+      "deck": "Burn"
+    },
+    {
+      "tournamentId": "458540",
+      "date": "2026-08-27T23:31:32Z",
+      "dateDisplay": "August 27, 2026",
+      "playerCount": 20,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 6,
+      "points": 6,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 5,
+      "gameLosses": 3,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.625,
+      "deck": "RG Goblins"
+    },
+    {
       "tournamentId": "445679",
+      "date": "2026-08-20T23:42:10Z",
       "dateDisplay": "August 20, 2026",
       "playerCount": 20,
       "trophyCount": 2,
@@ -1844,6 +1850,7 @@
     },
     {
       "tournamentId": "445678",
+      "date": "2026-08-13T23:27:03Z",
       "dateDisplay": "August 13, 2026",
       "playerCount": 24,
       "trophyCount": 2,
@@ -1860,6 +1867,7 @@
     },
     {
       "tournamentId": "445677",
+      "date": "2026-08-06T23:02:57Z",
       "dateDisplay": "August 6, 2026",
       "playerCount": 19,
       "trophyCount": 2,
@@ -1876,6 +1884,7 @@
     },
     {
       "tournamentId": "445676",
+      "date": "2026-07-30T23:12:31Z",
       "dateDisplay": "July 30, 2026",
       "playerCount": 15,
       "trophyCount": 2,
@@ -1892,6 +1901,7 @@
     },
     {
       "tournamentId": "445675",
+      "date": "2026-07-23T23:35:11Z",
       "dateDisplay": "July 23, 2026",
       "playerCount": 26,
       "trophyCount": 3,
@@ -1908,6 +1918,7 @@
     },
     {
       "tournamentId": "445673",
+      "date": "2026-07-16T23:31:40Z",
       "dateDisplay": "July 16, 2026",
       "playerCount": 24,
       "trophyCount": 3,
@@ -1923,23 +1934,8 @@
       "deck": "Burn"
     },
     {
-      "tournamentId": "439325",
-      "dateDisplay": "June 25, 2026",
-      "playerCount": 8,
-      "trophyCount": 1,
-      "roundCount": 3,
-      "rank": 7,
-      "points": 3,
-      "matchRecord": "1-2-0",
-      "matchWinPercentage": 0.3333333333333333,
-      "gameWins": 3,
-      "gameLosses": 5,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.375,
-      "deck": "RG Goblins"
-    },
-    {
       "tournamentId": "436160",
+      "date": "2026-07-09T23:02:03Z",
       "dateDisplay": "July 9, 2026",
       "playerCount": 25,
       "trophyCount": 2,
@@ -1956,6 +1952,7 @@
     },
     {
       "tournamentId": "436159",
+      "date": "2026-07-02T23:07:15Z",
       "dateDisplay": "July 2, 2026",
       "playerCount": 19,
       "trophyCount": 2,
@@ -1971,7 +1968,25 @@
       "deck": "Mono-Black"
     },
     {
+      "tournamentId": "439325",
+      "date": "2026-06-25T23:31:53Z",
+      "dateDisplay": "June 25, 2026",
+      "playerCount": 8,
+      "trophyCount": 1,
+      "roundCount": 3,
+      "rank": 7,
+      "points": 3,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 3,
+      "gameLosses": 5,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.375,
+      "deck": "RG Goblins"
+    },
+    {
       "tournamentId": "436157",
+      "date": "2026-06-18T23:04:49Z",
       "dateDisplay": "June 18, 2026",
       "playerCount": 17,
       "trophyCount": 2,
@@ -1988,6 +2003,7 @@
     },
     {
       "tournamentId": "436155",
+      "date": "2026-06-11T23:05:25Z",
       "dateDisplay": "June 11, 2026",
       "playerCount": 23,
       "trophyCount": 3,
@@ -2004,6 +2020,7 @@
     },
     {
       "tournamentId": "434267",
+      "date": "2026-06-04T23:33:11Z",
       "dateDisplay": "June 4, 2026",
       "playerCount": 28,
       "trophyCount": 3,
@@ -2020,6 +2037,7 @@
     },
     {
       "tournamentId": "432258",
+      "date": "2026-05-28T23:34:46Z",
       "dateDisplay": "May 28, 2026",
       "playerCount": 24,
       "trophyCount": 2,
@@ -2036,6 +2054,7 @@
     },
     {
       "tournamentId": "430556",
+      "date": "2026-05-21T23:07:45Z",
       "dateDisplay": "May 21, 2026",
       "playerCount": 25,
       "trophyCount": 2,
@@ -2052,6 +2071,7 @@
     },
     {
       "tournamentId": "429084",
+      "date": "2026-05-14T23:35:55Z",
       "dateDisplay": "May 14, 2026",
       "playerCount": 24,
       "trophyCount": 3,
@@ -2068,6 +2088,7 @@
     },
     {
       "tournamentId": "424009",
+      "date": "2026-04-23T23:02:28Z",
       "dateDisplay": "April 23, 2026",
       "playerCount": 31,
       "trophyCount": 4,
@@ -2084,6 +2105,7 @@
     },
     {
       "tournamentId": "420854",
+      "date": "2026-04-09T23:28:12Z",
       "dateDisplay": "April 9, 2026",
       "playerCount": 28,
       "trophyCount": 2,
@@ -2100,6 +2122,7 @@
     },
     {
       "tournamentId": "417122",
+      "date": "2026-03-26T23:18:28Z",
       "dateDisplay": "March 26, 2026",
       "playerCount": 29,
       "trophyCount": 4,
@@ -2116,6 +2139,7 @@
     },
     {
       "tournamentId": "415118",
+      "date": "2026-03-19T23:28:06Z",
       "dateDisplay": "March 19, 2026",
       "playerCount": 18,
       "trophyCount": 2,
@@ -2132,6 +2156,7 @@
     },
     {
       "tournamentId": "410832",
+      "date": "2026-03-06T00:03:21Z",
       "dateDisplay": "March 5, 2026",
       "playerCount": 21,
       "trophyCount": 2,
@@ -2148,6 +2173,7 @@
     },
     {
       "tournamentId": "404622",
+      "date": "2026-02-13T00:25:49Z",
       "dateDisplay": "February 12, 2026",
       "playerCount": 18,
       "trophyCount": 3,
@@ -2164,6 +2190,7 @@
     },
     {
       "tournamentId": "402789",
+      "date": "2026-02-06T00:21:54Z",
       "dateDisplay": "February 5, 2026",
       "playerCount": 25,
       "trophyCount": 3,

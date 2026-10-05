@@ -1351,23 +1351,8 @@
   ],
   "tournamentPerformances": [
     {
-      "tournamentId": "458540",
-      "dateDisplay": "August 27, 2026",
-      "playerCount": 20,
-      "trophyCount": 2,
-      "roundCount": 3,
-      "rank": 16,
-      "points": 3,
-      "matchRecord": "1-2-0",
-      "matchWinPercentage": 0.3333333333333333,
-      "gameWins": 2,
-      "gameLosses": 4,
-      "gameDraws": 1,
-      "gameWinPercentage": 0.3333333,
-      "deck": "RG Zoo"
-    },
-    {
       "tournamentId": "445683",
+      "date": "2026-09-17T23:08:14Z",
       "dateDisplay": "September 17, 2026",
       "playerCount": 15,
       "trophyCount": 1,
@@ -1383,7 +1368,25 @@
       "deck": "RG zoo"
     },
     {
+      "tournamentId": "458540",
+      "date": "2026-08-27T23:31:32Z",
+      "dateDisplay": "August 27, 2026",
+      "playerCount": 20,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 16,
+      "points": 3,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 2,
+      "gameLosses": 4,
+      "gameDraws": 1,
+      "gameWinPercentage": 0.3333333,
+      "deck": "RG Zoo"
+    },
+    {
       "tournamentId": "445673",
+      "date": "2026-07-16T23:31:40Z",
       "dateDisplay": "July 16, 2026",
       "playerCount": 24,
       "trophyCount": 3,
@@ -1400,6 +1403,7 @@
     },
     {
       "tournamentId": "430556",
+      "date": "2026-05-21T23:07:45Z",
       "dateDisplay": "May 21, 2026",
       "playerCount": 25,
       "trophyCount": 2,
@@ -1416,6 +1420,7 @@
     },
     {
       "tournamentId": "429084",
+      "date": "2026-05-14T23:35:55Z",
       "dateDisplay": "May 14, 2026",
       "playerCount": 24,
       "trophyCount": 3,
@@ -1432,6 +1437,7 @@
     },
     {
       "tournamentId": "424009",
+      "date": "2026-04-23T23:02:28Z",
       "dateDisplay": "April 23, 2026",
       "playerCount": 31,
       "trophyCount": 4,
@@ -1448,6 +1454,7 @@
     },
     {
       "tournamentId": "422555",
+      "date": "2026-04-16T23:04:40Z",
       "dateDisplay": "April 16, 2026",
       "playerCount": 29,
       "trophyCount": 3,
@@ -1464,6 +1471,7 @@
     },
     {
       "tournamentId": "420854",
+      "date": "2026-04-09T23:28:12Z",
       "dateDisplay": "April 9, 2026",
       "playerCount": 28,
       "trophyCount": 2,
@@ -1480,6 +1488,7 @@
     },
     {
       "tournamentId": "369726",
+      "date": "2025-10-03T00:11:20Z",
       "dateDisplay": "October 2, 2025",
       "playerCount": 9,
       "trophyCount": 1,
@@ -1496,6 +1505,7 @@
     },
     {
       "tournamentId": "367531",
+      "date": "2025-09-25T23:02:26Z",
       "dateDisplay": "September 25, 2025",
       "playerCount": 13,
       "trophyCount": 1,
@@ -1512,6 +1522,7 @@
     },
     {
       "tournamentId": "365765",
+      "date": "2025-09-18T23:06:01Z",
       "dateDisplay": "September 18, 2025",
       "playerCount": 19,
       "trophyCount": 3,
@@ -1528,6 +1539,7 @@
     },
     {
       "tournamentId": "363663",
+      "date": "2025-09-11T23:05:50Z",
       "dateDisplay": "September 11, 2025",
       "playerCount": 9,
       "trophyCount": 1,
@@ -1544,6 +1556,7 @@
     },
     {
       "tournamentId": "361066",
+      "date": "2025-09-04T23:11:56Z",
       "dateDisplay": "September 4, 2025",
       "playerCount": 13,
       "trophyCount": 2,
@@ -1560,6 +1573,7 @@
     },
     {
       "tournamentId": "357267",
+      "date": "2025-08-28T23:43:38Z",
       "dateDisplay": "August 28, 2025",
       "playerCount": 14,
       "trophyCount": 1,
@@ -1576,6 +1590,7 @@
     },
     {
       "tournamentId": "354702",
+      "date": "2025-08-21T23:56:02Z",
       "dateDisplay": "August 21, 2025",
       "playerCount": 4,
       "trophyCount": 1,
@@ -1592,6 +1607,7 @@
     },
     {
       "tournamentId": "343959",
+      "date": "2025-07-24T23:23:25Z",
       "dateDisplay": "July 24, 2025",
       "playerCount": 12,
       "trophyCount": 2,
@@ -1608,6 +1624,7 @@
     },
     {
       "tournamentId": "328861",
+      "date": "2025-06-19T23:06:11Z",
       "dateDisplay": "June 19, 2025",
       "playerCount": 11,
       "trophyCount": 2,
@@ -1624,6 +1641,7 @@
     },
     {
       "tournamentId": "321687",
+      "date": "2025-06-05T23:02:57Z",
       "dateDisplay": "June 5, 2025",
       "playerCount": 23,
       "trophyCount": 3,
@@ -1640,6 +1658,7 @@
     },
     {
       "tournamentId": "308700",
+      "date": "2025-05-15T23:09:54Z",
       "dateDisplay": "May 15, 2025",
       "playerCount": 13,
       "trophyCount": 2,
@@ -1656,6 +1675,7 @@
     },
     {
       "tournamentId": "305152",
+      "date": "2025-05-08T23:39:03Z",
       "dateDisplay": "May 8, 2025",
       "playerCount": 12,
       "trophyCount": 1,
