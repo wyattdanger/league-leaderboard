@@ -41,6 +41,9 @@ describe('normalizeDeckName', () => {
     ['BG Survival', 'Survival'],
     ['Survival Madness', 'Survival'],
     ['Welder Prison', 'Welder'],
+    ['UW Wizards', 'Wizards'],
+    ['GR Survival Madness Ponza', 'Survival'],
+    ['RG Oath', 'Oath Ponza'],
   ])('maps %s to %s', (deck, archetype) => {
     expect(normalizeDeckName(deck)).toBe(archetype);
   });

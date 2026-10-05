@@ -220,6 +220,10 @@ export const archetypeAliases: Record<string, string> = {
   'Mono black clerics': 'Clerics',
   'Mono-B Clerics': 'Clerics',
 
+  // Wizards variants (any name containing "Wizards" also matches via fuzzy rule)
+  'Wizards': 'Wizards',
+  'UW Wizards': 'Wizards',
+
   // Aluren variants
   'Aluren': 'Aluren',
   'Samaluren': 'Aluren',
@@ -246,6 +250,7 @@ export function normalizeDeckName(deckName: string): string {
   if (deckName.includes('Survival')) return 'Survival';
   if (deckName.includes('Clerics')) return 'Clerics';
   if (deckName.includes('Zombies')) return 'Zombies';
+  if (deckName.includes('Wizards')) return 'Wizards';
 
   // Return original if no match
   return deckName;
