@@ -1,7 +1,5 @@
 ---
 import PageLayout from './PageLayout.astro';
-import LeagueHeader from './LeagueHeader.astro';
-import LeagueNav from './LeagueNav.astro';
 import LatestEvent from './LatestEvent.astro';
 import Top8Callout from './Top8Callout.astro';
 import OverallInfo from './OverallInfo.astro';
@@ -11,7 +9,6 @@ import type { League, LeagueStanding, TournamentMetadata } from '../types';
 
 interface Props {
   currentLeague: League | null;
-  allLeagues: League[];
   isOverall: boolean;
   standings: LeagueStanding[] | null;
   tournaments: TournamentMetadata[];
@@ -21,7 +18,6 @@ interface Props {
 
 const {
   currentLeague,
-  allLeagues,
   isOverall,
   standings,
   tournaments,
@@ -33,9 +29,7 @@ const {
 const latestTournament = showLatestEvent && tournaments.length > 0 ? tournaments[0] : null;
 ---
 
-<PageLayout>
-  <LeagueHeader />
-  <LeagueNav currentLeague={currentLeague} allLeagues={allLeagues} isOverall={isOverall} />
+<PageLayout currentLeague={currentLeague} isOverall={isOverall}>
   {latestTournament && <LatestEvent tournament={latestTournament} />}
   {
     top8Tournament && currentLeague && (

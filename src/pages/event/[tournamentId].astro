@@ -1,7 +1,5 @@
 ---
 import PageLayout from '../../components/PageLayout.astro';
-import LeagueHeader from '../../components/LeagueHeader.astro';
-import LeagueNav from '../../components/LeagueNav.astro';
 import Tooltip from '../../components/Tooltip.astro';
 import PlayoffBracket from '../../components/PlayoffBracket.astro';
 import { getTournamentMetadata } from '../../utils/tournamentData';
@@ -169,9 +167,8 @@ if (fs.existsSync(metadataFile)) {
   ogTitle={pageTitle}
   ogDescription={pageDescription}
   ogUrl={`/event/${tournamentId}/`}
+  currentLeague={currentLeague}
 >
-  <LeagueHeader />
-  <LeagueNav currentLeague={currentLeague} allLeagues={allLeagues} isOverall={false} />
 
   <div class="card">
     <div class="event-profile-header">

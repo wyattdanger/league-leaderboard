@@ -1,7 +1,5 @@
 ---
 import PageLayout from '../components/PageLayout.astro';
-import LeagueHeader from '../components/LeagueHeader.astro';
-import LeagueNav from '../components/LeagueNav.astro';
 import ProjectedBracket from '../components/ProjectedBracket.astro';
 import { loadLeaguesConfig, loadLeagueStandings } from '../utils/data';
 
@@ -12,9 +10,7 @@ const allLeagues = loadLeaguesConfig().leagues;
 const league = allLeagues.find((l) => l.name === leagueName) || null;
 ---
 
-<PageLayout title={`${leagueName} League Championship - Top 8`}>
-  <LeagueHeader />
-  <LeagueNav currentLeague={league} allLeagues={allLeagues} isOverall={false} />
+<PageLayout title={`${leagueName} League Championship - Top 8`} currentLeague={league}>
   <div class="card">
     <header class="page-header">
       <h1>{leagueName} League Championship</h1>

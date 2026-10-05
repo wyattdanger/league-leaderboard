@@ -1,15 +1,16 @@
 ---
 import type { League } from '../types';
 import { leagueNameToSlug } from '../utils/helpers';
+import { loadLeaguesConfig } from '../utils/data';
 
 interface Props {
-  currentLeague: League | null;
-  allLeagues: League[];
-  isOverall: boolean;
+  currentLeague?: League | null;
+  isOverall?: boolean;
   isMetagame?: boolean;
 }
 
-const { currentLeague, allLeagues, isOverall, isMetagame = false } = Astro.props;
+const { currentLeague = null, isOverall = false, isMetagame = false } = Astro.props;
+const allLeagues = loadLeaguesConfig().leagues;
 
 // Determine display text for league selector
 const leagueSelectorText = isOverall ? 'Overall' : currentLeague?.name || 'Select League';

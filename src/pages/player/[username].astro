@@ -1,13 +1,10 @@
 ---
 import PageLayout from '../../components/PageLayout.astro';
-import LeagueHeader from '../../components/LeagueHeader.astro';
-import LeagueNav from '../../components/LeagueNav.astro';
 import PlayerLeagueStats from '../../components/PlayerLeagueStats.astro';
 import PlayerDecks from '../../components/PlayerDecks.astro';
 import HeadToHead from '../../components/HeadToHead.astro';
 import PlayerEventList from '../../components/PlayerEventList.astro';
 import Tooltip from '../../components/Tooltip.astro';
-import { loadLeaguesConfig } from '../../utils/data';
 import { usernameToSlug } from '../../utils/helpers';
 import type { PlayerDetailData } from '../../types';
 import * as fs from 'fs';
@@ -38,8 +35,6 @@ export async function getStaticPaths() {
 }
 
 const { playerData } = Astro.props;
-const config = loadLeaguesConfig();
-const allLeagues = config.leagues;
 
 const mwpPercent = (playerData.overallStats.matchWinPercentage * 100).toFixed(1);
 const gwpPercent = (playerData.overallStats.gameWinPercentage * 100).toFixed(1);
@@ -57,8 +52,6 @@ const gwpClass = isHighGWP ? 'stat-high' : isMediumGWP ? 'stat-medium' : 'stat-l
 ---
 
 <PageLayout>
-  <LeagueHeader />
-  <LeagueNav currentLeague={null} allLeagues={allLeagues} isOverall={false} />
 
   <div class="card player-profile-container">
     <div class="player-profile-header">

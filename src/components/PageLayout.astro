@@ -1,6 +1,9 @@
 ---
 // Common page layout wrapper with HTML structure and global styles
 import Analytics from '@vercel/analytics/astro';
+import LeagueHeader from './LeagueHeader.astro';
+import LeagueNav from './LeagueNav.astro';
+import type { League } from '../types';
 
 interface Props {
   title?: string;
@@ -9,6 +12,10 @@ interface Props {
   ogDescription?: string;
   ogImage?: string;
   ogUrl?: string;
+  // Which nav item is highlighted
+  currentLeague?: League | null;
+  isOverall?: boolean;
+  isMetagame?: boolean;
 }
 
 const {
@@ -18,6 +25,9 @@ const {
   ogDescription,
   ogImage,
   ogUrl,
+  currentLeague = null,
+  isOverall = false,
+  isMetagame = false,
 } = Astro.props;
 ---
 
@@ -108,6 +118,8 @@ const {
   </head>
   <body>
     <div class="container">
+      <LeagueHeader />
+      <LeagueNav currentLeague={currentLeague} isOverall={isOverall} isMetagame={isMetagame} />
       <slot />
       <footer>
         <!-- Footer content will go here -->

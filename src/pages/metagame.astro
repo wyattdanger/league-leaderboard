@@ -1,15 +1,8 @@
 ---
 import PageLayout from '../components/PageLayout.astro';
-import LeagueHeader from '../components/LeagueHeader.astro';
-import LeagueNav from '../components/LeagueNav.astro';
-import { loadLeaguesConfig } from '../utils/data';
 import { normalizeDeckName } from '../utils/archetypeAliases';
 import fs from 'fs';
 import path from 'path';
-
-// Load leagues for navigation
-const config = loadLeaguesConfig();
-const allLeagues = config.leagues;
 
 // Load metagame data
 const metagameDataPath = path.join(process.cwd(), 'output', 'metagame_data.json');
@@ -46,9 +39,8 @@ const pageDescription = `Explore deck archetype statistics from ${totalDecks} de
   ogTitle={pageTitle}
   ogDescription={pageDescription}
   ogUrl="https://nyc-premodern.com/metagame"
+  isMetagame
 >
-  <LeagueHeader />
-  <LeagueNav currentLeague={null} allLeagues={allLeagues} isOverall={false} isMetagame={true} />
   <div class="card">
     <div class="metagame-header">
       <h1>Metagame Explorer</h1>
