@@ -242,7 +242,7 @@ Defines league structure and which tournaments belong to each league:
 
 ```yaml
 leagues:
-  - name: Q3 2026          # FIRST league = "current" league (shown on /league)
+  - name: Q3 2026          # FIRST league = "current" league (shown on the home page)
     tournaments:
       - 445684             # Newest first
       - 445683
@@ -590,7 +590,6 @@ scraping-project/
 ├── src/
 │   ├── pages/           # Astro pages (routes)
 │   │   ├── index.astro           # Homepage
-│   │   ├── league.astro          # League standings
 │   │   ├── league/[slug].astro   # Dynamic league pages
 │   │   ├── player/[username].astro
 │   │   └── event/[tournamentId].astro
