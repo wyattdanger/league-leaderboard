@@ -1,6 +1,5 @@
 ---
-import { Player } from '../models/Player';
-import { usernameToSlug } from '../utils/helpers';
+import { projectedSeeds, quarterfinalPairs } from '../utils/projectedBracket';
 import type { LeagueStanding } from '../types';
 
 interface Props {
@@ -10,27 +9,9 @@ interface Props {
 
 const { standings, alternates = 2 } = Astro.props;
 
-const ranked = [...standings].sort((a, b) => a.Rank - b.Rank);
-const toSeed = (standing: LeagueStanding, seed: number) => {
-  const player = Player.fromStanding(standing as any);
-  return {
-    seed,
-    name: player.displayName,
-    slug: usernameToSlug(player.username),
-    points: standing.Points,
-    trophies: (standing as any).Trophies || 0,
-  };
-};
-const seeds = ranked.slice(0, 8).map((s, i) => toSeed(s, i + 1));
-const alternateSeeds = ranked.slice(8, 8 + alternates).map((s, i) => toSeed(s, i + 9));
-
-// Standard bracket: 1v8 and 4v5 meet in one semifinal, 2v7 and 3v6 in the other
-const quarterfinals = [
-  [1, 8],
-  [4, 5],
-  [3, 6],
-  [2, 7],
-].map(([a, b]) => [seeds[a - 1], seeds[b - 1]]);
+const ranked = projectedSeeds(standings, 8 + alternates);
+const quarterfinals = quarterfinalPairs(ranked.slice(0, 8));
+const alternateSeeds = ranked.slice(8);
 ---
 
 <div class="bracket">
