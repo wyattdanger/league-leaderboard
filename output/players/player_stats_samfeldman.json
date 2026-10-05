@@ -2,17 +2,26 @@
   "username": "SamFeldman",
   "displayName": "Samuel Feldman",
   "overallStats": {
-    "totalTournaments": 7,
-    "totalPoints": 40,
-    "totalMatches": 21,
-    "matchRecord": "13-7-1",
-    "matchWinPercentage": 0.6428571428571429,
-    "gameRecord": "31-18-0",
-    "gameWinPercentage": 0.6326530612244898,
+    "totalTournaments": 8,
+    "totalPoints": 46,
+    "totalMatches": 24,
+    "matchRecord": "15-8-1",
+    "matchWinPercentage": 0.6458333333333334,
+    "gameRecord": "34-20-0",
+    "gameWinPercentage": 0.6296296296296297,
     "trophies": 2,
     "belts": 0
   },
   "leagueStats": [
+    {
+      "leagueName": "Q4 2026",
+      "events": 1,
+      "points": 6,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameRecord": "3-2-0",
+      "gameWinPercentage": 0.6
+    },
     {
       "leagueName": "Q3 2026",
       "events": 5,
@@ -76,6 +85,20 @@
       "trophies": 1
     },
     {
+      "deckName": "RG Oath",
+      "events": 1,
+      "matchWins": 2,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 3,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6,
+      "trophies": 0
+    },
+    {
       "deckName": "GR Oath Ponza",
       "events": 1,
       "matchWins": 2,
@@ -105,6 +128,81 @@
     }
   ],
   "headToHead": [
+    {
+      "opponentUsername": "PCavalcanti",
+      "opponentDisplayName": "PCavalcanti",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 1,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "matches": [
+        {
+          "tournamentId": "445685",
+          "dateDisplay": "October 1, 2026",
+          "result": "W",
+          "playerDeck": "RG Oath",
+          "opponentDeck": "GW Survival",
+          "playerGameWins": 1,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "Gaunology",
+      "opponentDisplayName": "Gaunology",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "matches": [
+        {
+          "tournamentId": "445685",
+          "dateDisplay": "October 1, 2026",
+          "result": "L",
+          "playerDeck": "RG Oath",
+          "opponentDeck": "GW Control",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "KYamada97",
+      "opponentDisplayName": "KYamada97",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "matches": [
+        {
+          "tournamentId": "445685",
+          "dateDisplay": "October 1, 2026",
+          "result": "W",
+          "playerDeck": "RG Oath",
+          "opponentDeck": "RG Oath",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
     {
       "opponentUsername": "delofstrom",
       "opponentDisplayName": "DEL .",
@@ -613,6 +711,22 @@
       "gameDraws": 0,
       "gameWinPercentage": 0.8333333,
       "deck": "_"
+    },
+    {
+      "tournamentId": "445685",
+      "dateDisplay": "October 1, 2026",
+      "playerCount": 17,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 4,
+      "points": 6,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 3,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6,
+      "deck": "RG Oath"
     },
     {
       "tournamentId": "445681",

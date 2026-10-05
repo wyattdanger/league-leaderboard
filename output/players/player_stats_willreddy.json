@@ -2,17 +2,26 @@
   "username": "WillReddy",
   "displayName": "WillReddy",
   "overallStats": {
-    "totalTournaments": 19,
-    "totalPoints": 82,
-    "totalMatches": 57,
-    "matchRecord": "27-29-1",
-    "matchWinPercentage": 0.4824561403508772,
-    "gameRecord": "70-70-1",
-    "gameWinPercentage": 0.49645390070921985,
+    "totalTournaments": 20,
+    "totalPoints": 88,
+    "totalMatches": 60,
+    "matchRecord": "29-30-1",
+    "matchWinPercentage": 0.49166666666666664,
+    "gameRecord": "75-73-1",
+    "gameWinPercentage": 0.5033557046979866,
     "trophies": 0,
     "belts": 0
   },
   "leagueStats": [
+    {
+      "leagueName": "Q4 2026",
+      "events": 1,
+      "points": 6,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameRecord": "5-3-0",
+      "gameWinPercentage": 0.625
+    },
     {
       "leagueName": "Q3 2026",
       "events": 7,
@@ -75,6 +84,20 @@
       "trophies": 0
     },
     {
+      "deckName": "Goblins",
+      "events": 3,
+      "matchWins": 5,
+      "matchLosses": 4,
+      "matchDraws": 0,
+      "matchRecord": "5-4-0",
+      "matchWinPercentage": 0.5555555555555556,
+      "gameWins": 12,
+      "gameLosses": 9,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5714285714285714,
+      "trophies": 0
+    },
+    {
       "deckName": "Mono Red Ponza",
       "events": 2,
       "matchWins": 4,
@@ -86,20 +109,6 @@
       "gameLosses": 7,
       "gameDraws": 0,
       "gameWinPercentage": 0.5882352941176471,
-      "trophies": 0
-    },
-    {
-      "deckName": "Goblins",
-      "events": 2,
-      "matchWins": 3,
-      "matchLosses": 3,
-      "matchDraws": 0,
-      "matchRecord": "3-3-0",
-      "matchWinPercentage": 0.5,
-      "gameWins": 7,
-      "gameLosses": 6,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.5384615384615384,
       "trophies": 0
     },
     {
@@ -442,6 +451,41 @@
       ]
     },
     {
+      "opponentUsername": "Taylorhol",
+      "opponentDisplayName": "Taylorhol",
+      "matchesPlayed": 2,
+      "matchWins": 2,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 4,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.8,
+      "matches": [
+        {
+          "tournamentId": "445685",
+          "dateDisplay": "October 1, 2026",
+          "result": "W",
+          "playerDeck": "Goblins",
+          "opponentDeck": "Pattern Rector",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "422555",
+          "dateDisplay": "April 16, 2026",
+          "result": "W",
+          "playerDeck": "Sligh",
+          "opponentDeck": "Iggy Pop",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "AlldoAurelis",
       "opponentDisplayName": "AlldoAurelis",
       "matchesPlayed": 2,
@@ -716,6 +760,56 @@
           "playerDeck": "_",
           "opponentDeck": "UG Madness",
           "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "zingbangziddy",
+      "opponentDisplayName": "zingbangziddy",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6666666666666666,
+      "matches": [
+        {
+          "tournamentId": "445685",
+          "dateDisplay": "October 1, 2026",
+          "result": "W",
+          "playerDeck": "Goblins",
+          "opponentDeck": "_",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "Gaunology",
+      "opponentDisplayName": "Gaunology",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "matches": [
+        {
+          "tournamentId": "445685",
+          "dateDisplay": "October 1, 2026",
+          "result": "L",
+          "playerDeck": "Goblins",
+          "opponentDeck": "GW Control",
+          "playerGameWins": 1,
           "opponentGameWins": 2,
           "gameDraws": 0
         }
@@ -1072,31 +1166,6 @@
       ]
     },
     {
-      "opponentUsername": "Taylorhol",
-      "opponentDisplayName": "Taylorhol",
-      "matchesPlayed": 1,
-      "matchWins": 1,
-      "matchLosses": 0,
-      "matchDraws": 0,
-      "matchWinPercentage": 1,
-      "gameWins": 2,
-      "gameLosses": 1,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.6666666666666666,
-      "matches": [
-        {
-          "tournamentId": "422555",
-          "dateDisplay": "April 16, 2026",
-          "result": "W",
-          "playerDeck": "Sligh",
-          "opponentDeck": "Iggy Pop",
-          "playerGameWins": 2,
-          "opponentGameWins": 1,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
       "opponentUsername": "PetS22",
       "opponentDisplayName": "PetS22",
       "matchesPlayed": 1,
@@ -1273,6 +1342,22 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "445685",
+      "dateDisplay": "October 1, 2026",
+      "playerCount": 17,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 3,
+      "points": 6,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 5,
+      "gameLosses": 3,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.625,
+      "deck": "Goblins"
+    },
     {
       "tournamentId": "445678",
       "dateDisplay": "August 13, 2026",

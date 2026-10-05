@@ -1,6 +1,98 @@
 {
   "leagues": [
     {
+      "leagueName": "Q4 2026",
+      "tournaments": [
+        445685
+      ],
+      "deckCounts": {
+        "GR Survival Madness Ponza": 1,
+        "GW Control": 1,
+        "RG Oath": 2,
+        "BG Survival": 1,
+        "U Dreadnought": 1,
+        "GW Threshold": 1,
+        "GW Survival": 1,
+        "Moneyball": 1,
+        "Pattern Rector": 1,
+        "Merfolk": 1,
+        "Goblins": 2,
+        "UW Wizards": 1,
+        "Welder Prison": 1
+      },
+      "deckTrophies": {
+        "GW Control": 1,
+        "Moneyball": 1
+      },
+      "deckMatchStats": {
+        "GR Survival Madness Ponza": {
+          "wins": 2,
+          "losses": 1,
+          "draws": 0
+        },
+        "GW Control": {
+          "wins": 3,
+          "losses": 0,
+          "draws": 0
+        },
+        "RG Oath": {
+          "wins": 3,
+          "losses": 3,
+          "draws": 0
+        },
+        "BG Survival": {
+          "wins": 1,
+          "losses": 2,
+          "draws": 0
+        },
+        "U Dreadnought": {
+          "wins": 0,
+          "losses": 3,
+          "draws": 0
+        },
+        "GW Threshold": {
+          "wins": 2,
+          "losses": 1,
+          "draws": 0
+        },
+        "GW Survival": {
+          "wins": 2,
+          "losses": 1,
+          "draws": 0
+        },
+        "Moneyball": {
+          "wins": 3,
+          "losses": 0,
+          "draws": 0
+        },
+        "Pattern Rector": {
+          "wins": 2,
+          "losses": 1,
+          "draws": 0
+        },
+        "Merfolk": {
+          "wins": 2,
+          "losses": 1,
+          "draws": 0
+        },
+        "Goblins": {
+          "wins": 3,
+          "losses": 3,
+          "draws": 0
+        },
+        "UW Wizards": {
+          "wins": 0,
+          "losses": 3,
+          "draws": 0
+        },
+        "Welder Prison": {
+          "wins": 1,
+          "losses": 2,
+          "draws": 0
+        }
+      }
+    },
+    {
       "leagueName": "Q3 2026",
       "tournaments": [
         445684,

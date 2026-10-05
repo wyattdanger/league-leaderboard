@@ -2,17 +2,26 @@
   "username": "Tencteri",
   "displayName": "Tencteri",
   "overallStats": {
-    "totalTournaments": 43,
-    "totalPoints": 161,
-    "totalMatches": 125,
-    "matchRecord": "51-66-8",
-    "matchWinPercentage": 0.44,
-    "gameRecord": "139-159-6",
-    "gameWinPercentage": 0.45723684210526316,
+    "totalTournaments": 44,
+    "totalPoints": 167,
+    "totalMatches": 128,
+    "matchRecord": "53-67-8",
+    "matchWinPercentage": 0.4453125,
+    "gameRecord": "143-162-6",
+    "gameWinPercentage": 0.45980707395498394,
     "trophies": 1,
     "belts": 0
   },
   "leagueStats": [
+    {
+      "leagueName": "Q4 2026",
+      "events": 1,
+      "points": 6,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameRecord": "4-3-0",
+      "gameWinPercentage": 0.5714285714285714
+    },
     {
       "leagueName": "Q3 2026",
       "events": 7,
@@ -140,16 +149,16 @@
     },
     {
       "deckName": "Merfolk",
-      "events": 3,
-      "matchWins": 2,
-      "matchLosses": 6,
+      "events": 4,
+      "matchWins": 4,
+      "matchLosses": 7,
       "matchDraws": 1,
-      "matchRecord": "2-6-1",
-      "matchWinPercentage": 0.2777777777777778,
-      "gameWins": 7,
-      "gameLosses": 14,
+      "matchRecord": "4-7-1",
+      "matchWinPercentage": 0.375,
+      "gameWins": 11,
+      "gameLosses": 17,
       "gameDraws": 3,
-      "gameWinPercentage": 0.3541666666666667,
+      "gameWinPercentage": 0.4032258064516129,
       "trophies": 0
     },
     {
@@ -936,6 +945,51 @@
       ]
     },
     {
+      "opponentUsername": "CalebR",
+      "opponentDisplayName": "CalebR",
+      "matchesPlayed": 3,
+      "matchWins": 1,
+      "matchLosses": 1,
+      "matchDraws": 1,
+      "matchWinPercentage": 0.5,
+      "gameWins": 2,
+      "gameLosses": 2,
+      "gameDraws": 3,
+      "gameWinPercentage": 0.5,
+      "matches": [
+        {
+          "tournamentId": "445685",
+          "dateDisplay": "October 1, 2026",
+          "result": "W",
+          "playerDeck": "Merfolk",
+          "opponentDeck": "GR Survival Madness Ponza",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "445684",
+          "dateDisplay": "September 24, 2026",
+          "result": "L",
+          "playerDeck": "White Weenie",
+          "opponentDeck": "Cradle Control",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "445679",
+          "dateDisplay": "August 20, 2026",
+          "result": "D",
+          "playerDeck": "Merfolk",
+          "opponentDeck": "Oath Parfait",
+          "playerGameWins": 0,
+          "opponentGameWins": 0,
+          "gameDraws": 3
+        }
+      ]
+    },
+    {
       "opponentUsername": "weidnent",
       "opponentDisplayName": "Nicholas Weidner",
       "matchesPlayed": 3,
@@ -1247,41 +1301,6 @@
           "playerGameWins": 2,
           "opponentGameWins": 1,
           "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "CalebR",
-      "opponentDisplayName": "CalebR",
-      "matchesPlayed": 2,
-      "matchWins": 0,
-      "matchLosses": 1,
-      "matchDraws": 1,
-      "matchWinPercentage": 0.25,
-      "gameWins": 0,
-      "gameLosses": 2,
-      "gameDraws": 3,
-      "gameWinPercentage": 0.3,
-      "matches": [
-        {
-          "tournamentId": "445684",
-          "dateDisplay": "September 24, 2026",
-          "result": "L",
-          "playerDeck": "White Weenie",
-          "opponentDeck": "Cradle Control",
-          "playerGameWins": 0,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "445679",
-          "dateDisplay": "August 20, 2026",
-          "result": "D",
-          "playerDeck": "Merfolk",
-          "opponentDeck": "Oath Parfait",
-          "playerGameWins": 0,
-          "opponentGameWins": 0,
-          "gameDraws": 3
         }
       ]
     },
@@ -1701,6 +1720,56 @@
           "opponentDeck": "_",
           "playerGameWins": 1,
           "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "StevenRiseNYC",
+      "opponentDisplayName": "StevenRiseNYC",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "matches": [
+        {
+          "tournamentId": "445685",
+          "dateDisplay": "October 1, 2026",
+          "result": "L",
+          "playerDeck": "Merfolk",
+          "opponentDeck": "Moneyball",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "zingbangziddy",
+      "opponentDisplayName": "zingbangziddy",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6666666666666666,
+      "matches": [
+        {
+          "tournamentId": "445685",
+          "dateDisplay": "October 1, 2026",
+          "result": "W",
+          "playerDeck": "Merfolk",
+          "opponentDeck": "_",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
           "gameDraws": 0
         }
       ]
@@ -2437,6 +2506,22 @@
       "gameLosses": 6,
       "gameDraws": 0,
       "gameWinPercentage": 0.3333333,
+      "deck": "Merfolk"
+    },
+    {
+      "tournamentId": "445685",
+      "dateDisplay": "October 1, 2026",
+      "playerCount": 17,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 5,
+      "points": 6,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 4,
+      "gameLosses": 3,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5714286,
       "deck": "Merfolk"
     },
     {

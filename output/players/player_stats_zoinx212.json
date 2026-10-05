@@ -2,17 +2,26 @@
   "username": "Zoinx212",
   "displayName": "Zoinx212",
   "overallStats": {
-    "totalTournaments": 4,
-    "totalPoints": 10,
-    "totalMatches": 12,
-    "matchRecord": "3-8-1",
-    "matchWinPercentage": 0.2916666666666667,
-    "gameRecord": "9-18-0",
+    "totalTournaments": 5,
+    "totalPoints": 13,
+    "totalMatches": 15,
+    "matchRecord": "4-10-1",
+    "matchWinPercentage": 0.3,
+    "gameRecord": "11-22-0",
     "gameWinPercentage": 0.3333333333333333,
     "trophies": 0,
     "belts": 0
   },
   "leagueStats": [
+    {
+      "leagueName": "Q4 2026",
+      "events": 1,
+      "points": 3,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameRecord": "2-4-0",
+      "gameWinPercentage": 0.3333333333333333
+    },
     {
       "leagueName": "Q3 2026",
       "events": 4,
@@ -25,6 +34,20 @@
   ],
   "deckStats": [
     {
+      "deckName": "Goblins",
+      "events": 2,
+      "matchWins": 3,
+      "matchLosses": 2,
+      "matchDraws": 1,
+      "matchRecord": "3-2-1",
+      "matchWinPercentage": 0.5833333333333334,
+      "gameWins": 7,
+      "gameLosses": 6,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5384615384615384,
+      "trophies": 0
+    },
+    {
       "deckName": "Enchantress",
       "events": 2,
       "matchWins": 1,
@@ -36,20 +59,6 @@
       "gameLosses": 11,
       "gameDraws": 0,
       "gameWinPercentage": 0.26666666666666666,
-      "trophies": 0
-    },
-    {
-      "deckName": "Goblins",
-      "events": 1,
-      "matchWins": 2,
-      "matchLosses": 0,
-      "matchDraws": 1,
-      "matchRecord": "2-0-1",
-      "matchWinPercentage": 0.8333333333333334,
-      "gameWins": 5,
-      "gameLosses": 2,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.7142857142857143,
       "trophies": 0
     },
     {
@@ -68,6 +77,41 @@
     }
   ],
   "headToHead": [
+    {
+      "opponentUsername": "PCavalcanti",
+      "opponentDisplayName": "PCavalcanti",
+      "matchesPlayed": 2,
+      "matchWins": 1,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.5,
+      "gameWins": 2,
+      "gameLosses": 3,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.4,
+      "matches": [
+        {
+          "tournamentId": "445685",
+          "dateDisplay": "October 1, 2026",
+          "result": "L",
+          "playerDeck": "Goblins",
+          "opponentDeck": "GW Survival",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "445684",
+          "dateDisplay": "September 24, 2026",
+          "result": "W",
+          "playerDeck": "Goblins",
+          "opponentDeck": "Survival Madness",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
     {
       "opponentUsername": "WillReddy",
       "opponentDisplayName": "WillReddy",
@@ -104,6 +148,31 @@
       ]
     },
     {
+      "opponentUsername": "StevenRiseNYC",
+      "opponentDisplayName": "StevenRiseNYC",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "matches": [
+        {
+          "tournamentId": "445685",
+          "dateDisplay": "October 1, 2026",
+          "result": "L",
+          "playerDeck": "Goblins",
+          "opponentDeck": "Moneyball",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "madmanpoet",
       "opponentDisplayName": "Michael Flores",
       "matchesPlayed": 1,
@@ -123,31 +192,6 @@
           "playerDeck": "Goblins",
           "opponentDeck": "4C Chromatic Control",
           "playerGameWins": 1,
-          "opponentGameWins": 1,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "PCavalcanti",
-      "opponentDisplayName": "PCavalcanti",
-      "matchesPlayed": 1,
-      "matchWins": 1,
-      "matchLosses": 0,
-      "matchDraws": 0,
-      "matchWinPercentage": 1,
-      "gameWins": 2,
-      "gameLosses": 1,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.6666666666666666,
-      "matches": [
-        {
-          "tournamentId": "445684",
-          "dateDisplay": "September 24, 2026",
-          "result": "W",
-          "playerDeck": "Goblins",
-          "opponentDeck": "Survival Madness",
-          "playerGameWins": 2,
           "opponentGameWins": 1,
           "gameDraws": 0
         }
@@ -330,6 +374,22 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "445685",
+      "dateDisplay": "October 1, 2026",
+      "playerCount": 17,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 10,
+      "points": 3,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 2,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.33333329999999994,
+      "deck": "Goblins"
+    },
     {
       "tournamentId": "445684",
       "dateDisplay": "September 24, 2026",

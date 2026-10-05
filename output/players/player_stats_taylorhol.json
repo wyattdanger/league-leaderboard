@@ -2,17 +2,26 @@
   "username": "Taylorhol",
   "displayName": "Taylorhol",
   "overallStats": {
-    "totalTournaments": 43,
-    "totalPoints": 196,
-    "totalMatches": 128,
-    "matchRecord": "64-60-4",
-    "matchWinPercentage": 0.515625,
-    "gameRecord": "157-148-4",
-    "gameWinPercentage": 0.5080906148867314,
+    "totalTournaments": 44,
+    "totalPoints": 202,
+    "totalMatches": 131,
+    "matchRecord": "66-61-4",
+    "matchWinPercentage": 0.5190839694656488,
+    "gameRecord": "161-152-4",
+    "gameWinPercentage": 0.5078864353312302,
     "trophies": 4,
     "belts": 0
   },
   "leagueStats": [
+    {
+      "leagueName": "Q4 2026",
+      "events": 1,
+      "points": 6,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameRecord": "4-4-0",
+      "gameWinPercentage": 0.5
+    },
     {
       "leagueName": "Q3 2026",
       "events": 11,
@@ -102,6 +111,20 @@
       "trophies": 1
     },
     {
+      "deckName": "Pattern Rector",
+      "events": 3,
+      "matchWins": 6,
+      "matchLosses": 3,
+      "matchDraws": 0,
+      "matchRecord": "6-3-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 12,
+      "gameLosses": 10,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5454545454545454,
+      "trophies": 0
+    },
+    {
       "deckName": "Oath Ponza",
       "events": 3,
       "matchWins": 5,
@@ -170,20 +193,6 @@
       "gameDraws": 0,
       "gameWinPercentage": 0.7142857142857143,
       "trophies": 1
-    },
-    {
-      "deckName": "Pattern Rector",
-      "events": 2,
-      "matchWins": 4,
-      "matchLosses": 2,
-      "matchDraws": 0,
-      "matchRecord": "4-2-0",
-      "matchWinPercentage": 0.6666666666666666,
-      "gameWins": 8,
-      "gameLosses": 6,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.5714285714285714,
-      "trophies": 0
     },
     {
       "deckName": "Stasis",
@@ -844,6 +853,61 @@
       ]
     },
     {
+      "opponentUsername": "Mattmelach",
+      "opponentDisplayName": "Matthew Melachrinos",
+      "matchesPlayed": 4,
+      "matchWins": 4,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 8,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.8,
+      "matches": [
+        {
+          "tournamentId": "445685",
+          "dateDisplay": "October 1, 2026",
+          "result": "W",
+          "playerDeck": "Pattern Rector",
+          "opponentDeck": "U Dreadnought",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "436157",
+          "dateDisplay": "June 18, 2026",
+          "result": "W",
+          "playerDeck": "Burn",
+          "opponentDeck": "Gro",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "382756",
+          "dateDisplay": "November 13, 2025",
+          "result": "W",
+          "playerDeck": "Terrageddon",
+          "opponentDeck": "_",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "367531",
+          "dateDisplay": "September 25, 2025",
+          "result": "W",
+          "playerDeck": "Tinker Prison",
+          "opponentDeck": "_",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "AlldoAurelis",
       "opponentDisplayName": "AlldoAurelis",
       "matchesPlayed": 4,
@@ -1199,51 +1263,6 @@
       ]
     },
     {
-      "opponentUsername": "Mattmelach",
-      "opponentDisplayName": "Matthew Melachrinos",
-      "matchesPlayed": 3,
-      "matchWins": 3,
-      "matchLosses": 0,
-      "matchDraws": 0,
-      "matchWinPercentage": 1,
-      "gameWins": 6,
-      "gameLosses": 1,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.8571428571428571,
-      "matches": [
-        {
-          "tournamentId": "436157",
-          "dateDisplay": "June 18, 2026",
-          "result": "W",
-          "playerDeck": "Burn",
-          "opponentDeck": "Gro",
-          "playerGameWins": 2,
-          "opponentGameWins": 0,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "382756",
-          "dateDisplay": "November 13, 2025",
-          "result": "W",
-          "playerDeck": "Terrageddon",
-          "opponentDeck": "_",
-          "playerGameWins": 2,
-          "opponentGameWins": 0,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "367531",
-          "dateDisplay": "September 25, 2025",
-          "result": "W",
-          "playerDeck": "Tinker Prison",
-          "opponentDeck": "_",
-          "playerGameWins": 2,
-          "opponentGameWins": 1,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
       "opponentUsername": "remixmtg",
       "opponentDisplayName": "Jeremy Siegel",
       "matchesPlayed": 3,
@@ -1374,6 +1393,76 @@
           "opponentDeck": "Tron",
           "playerGameWins": 2,
           "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "LMDB",
+      "opponentDisplayName": "LMDB",
+      "matchesPlayed": 2,
+      "matchWins": 2,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 4,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.8,
+      "matches": [
+        {
+          "tournamentId": "445685",
+          "dateDisplay": "October 1, 2026",
+          "result": "W",
+          "playerDeck": "Pattern Rector",
+          "opponentDeck": "BG Survival",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "445684",
+          "dateDisplay": "September 24, 2026",
+          "result": "W",
+          "playerDeck": "Pattern Rector",
+          "opponentDeck": "BG Survival",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "WillReddy",
+      "opponentDisplayName": "WillReddy",
+      "matchesPlayed": 2,
+      "matchWins": 0,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.2,
+      "matches": [
+        {
+          "tournamentId": "445685",
+          "dateDisplay": "October 1, 2026",
+          "result": "L",
+          "playerDeck": "Pattern Rector",
+          "opponentDeck": "Goblins",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "422555",
+          "dateDisplay": "April 16, 2026",
+          "result": "L",
+          "playerDeck": "Iggy Pop",
+          "opponentDeck": "Sligh",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
           "gameDraws": 0
         }
       ]
@@ -1729,31 +1818,6 @@
       ]
     },
     {
-      "opponentUsername": "LMDB",
-      "opponentDisplayName": "LMDB",
-      "matchesPlayed": 1,
-      "matchWins": 1,
-      "matchLosses": 0,
-      "matchDraws": 0,
-      "matchWinPercentage": 1,
-      "gameWins": 2,
-      "gameLosses": 0,
-      "gameDraws": 0,
-      "gameWinPercentage": 1,
-      "matches": [
-        {
-          "tournamentId": "445684",
-          "dateDisplay": "September 24, 2026",
-          "result": "W",
-          "playerDeck": "Pattern Rector",
-          "opponentDeck": "BG Survival",
-          "playerGameWins": 2,
-          "opponentGameWins": 0,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
       "opponentUsername": "Maew",
       "opponentDisplayName": "Maew",
       "matchesPlayed": 1,
@@ -2023,31 +2087,6 @@
           "playerDeck": "Oath Ponza",
           "opponentDeck": "Black Rack",
           "playerGameWins": 0,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "WillReddy",
-      "opponentDisplayName": "WillReddy",
-      "matchesPlayed": 1,
-      "matchWins": 0,
-      "matchLosses": 1,
-      "matchDraws": 0,
-      "matchWinPercentage": 0,
-      "gameWins": 1,
-      "gameLosses": 2,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.3333333333333333,
-      "matches": [
-        {
-          "tournamentId": "422555",
-          "dateDisplay": "April 16, 2026",
-          "result": "L",
-          "playerDeck": "Iggy Pop",
-          "opponentDeck": "Sligh",
-          "playerGameWins": 1,
           "opponentGameWins": 2,
           "gameDraws": 0
         }
@@ -2420,6 +2459,22 @@
       "gameDraws": 0,
       "gameWinPercentage": 0.6666667,
       "deck": "Naya Terrageddon"
+    },
+    {
+      "tournamentId": "445685",
+      "dateDisplay": "October 1, 2026",
+      "playerCount": 17,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 9,
+      "points": 6,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 4,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5,
+      "deck": "Pattern Rector"
     },
     {
       "tournamentId": "445684",

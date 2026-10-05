@@ -2,17 +2,26 @@
   "username": "Gaunology",
   "displayName": "Gaunology",
   "overallStats": {
-    "totalTournaments": 24,
-    "totalPoints": 83,
-    "totalMatches": 72,
-    "matchRecord": "23-35-14",
-    "matchWinPercentage": 0.4166666666666667,
-    "gameRecord": "69-90-6",
-    "gameWinPercentage": 0.41818181818181815,
-    "trophies": 1,
+    "totalTournaments": 25,
+    "totalPoints": 92,
+    "totalMatches": 75,
+    "matchRecord": "26-35-14",
+    "matchWinPercentage": 0.44,
+    "gameRecord": "74-91-7",
+    "gameWinPercentage": 0.43023255813953487,
+    "trophies": 2,
     "belts": 0
   },
   "leagueStats": [
+    {
+      "leagueName": "Q4 2026",
+      "events": 1,
+      "points": 9,
+      "matchRecord": "3-0-0",
+      "matchWinPercentage": 1,
+      "gameRecord": "5-1-1",
+      "gameWinPercentage": 0.7857142857142857
+    },
     {
       "leagueName": "Q3 2026",
       "events": 7,
@@ -64,6 +73,20 @@
       "gameDraws": 1,
       "gameWinPercentage": 0.425,
       "trophies": 0
+    },
+    {
+      "deckName": "GW Control",
+      "events": 2,
+      "matchWins": 4,
+      "matchLosses": 1,
+      "matchDraws": 1,
+      "matchRecord": "4-1-1",
+      "matchWinPercentage": 0.75,
+      "gameWins": 8,
+      "gameLosses": 4,
+      "gameDraws": 2,
+      "gameWinPercentage": 0.6428571428571429,
+      "trophies": 1
     },
     {
       "deckName": "Domain",
@@ -133,20 +156,6 @@
       "gameLosses": 3,
       "gameDraws": 0,
       "gameWinPercentage": 0.5714285714285714,
-      "trophies": 0
-    },
-    {
-      "deckName": "GW Control",
-      "events": 1,
-      "matchWins": 1,
-      "matchLosses": 1,
-      "matchDraws": 1,
-      "matchRecord": "1-1-1",
-      "matchWinPercentage": 0.5,
-      "gameWins": 3,
-      "gameLosses": 3,
-      "gameDraws": 1,
-      "gameWinPercentage": 0.5,
       "trophies": 0
     },
     {
@@ -910,6 +919,81 @@
           "opponentDeck": "Cephalid Breakfast",
           "playerGameWins": 0,
           "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "aprofaci",
+      "opponentDisplayName": "Alex Profaci",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 1,
+      "gameLosses": 0,
+      "gameDraws": 1,
+      "gameWinPercentage": 0.75,
+      "matches": [
+        {
+          "tournamentId": "445685",
+          "dateDisplay": "October 1, 2026",
+          "result": "W",
+          "playerDeck": "GW Control",
+          "opponentDeck": "UW Wizards",
+          "playerGameWins": 1,
+          "opponentGameWins": 0,
+          "gameDraws": 1
+        }
+      ]
+    },
+    {
+      "opponentUsername": "SamFeldman",
+      "opponentDisplayName": "Samuel Feldman",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "matches": [
+        {
+          "tournamentId": "445685",
+          "dateDisplay": "October 1, 2026",
+          "result": "W",
+          "playerDeck": "GW Control",
+          "opponentDeck": "RG Oath",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "WillReddy",
+      "opponentDisplayName": "WillReddy",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6666666666666666,
+      "matches": [
+        {
+          "tournamentId": "445685",
+          "dateDisplay": "October 1, 2026",
+          "result": "W",
+          "playerDeck": "GW Control",
+          "opponentDeck": "Goblins",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
           "gameDraws": 0
         }
       ]
@@ -1681,6 +1765,22 @@
       "gameDraws": 0,
       "gameWinPercentage": 0.3333333,
       "deck": "Cognivore Oath"
+    },
+    {
+      "tournamentId": "445685",
+      "dateDisplay": "October 1, 2026",
+      "playerCount": 17,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 2,
+      "points": 9,
+      "matchRecord": "3-0-0",
+      "matchWinPercentage": 1,
+      "gameWins": 5,
+      "gameLosses": 1,
+      "gameDraws": 1,
+      "gameWinPercentage": 0.7619047999999999,
+      "deck": "GW Control"
     },
     {
       "tournamentId": "445684",

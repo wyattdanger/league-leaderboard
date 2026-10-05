@@ -2,17 +2,26 @@
   "username": "aprofaci",
   "displayName": "Alex Profaci",
   "overallStats": {
-    "totalTournaments": 8,
+    "totalTournaments": 9,
     "totalPoints": 42,
-    "totalMatches": 24,
-    "matchRecord": "14-10-0",
-    "matchWinPercentage": 0.5833333333333334,
-    "gameRecord": "32-26-0",
-    "gameWinPercentage": 0.5517241379310345,
+    "totalMatches": 27,
+    "matchRecord": "14-13-0",
+    "matchWinPercentage": 0.5185185185185185,
+    "gameRecord": "33-31-1",
+    "gameWinPercentage": 0.5076923076923077,
     "trophies": 1,
     "belts": 0
   },
   "leagueStats": [
+    {
+      "leagueName": "Q4 2026",
+      "events": 1,
+      "points": 0,
+      "matchRecord": "0-3-0",
+      "matchWinPercentage": 0,
+      "gameRecord": "1-5-1",
+      "gameWinPercentage": 0.21428571428571427
+    },
     {
       "leagueName": "Q2 2026",
       "events": 2,
@@ -87,6 +96,20 @@
       "gameLosses": 4,
       "gameDraws": 0,
       "gameWinPercentage": 0.3333333333333333,
+      "trophies": 0
+    },
+    {
+      "deckName": "UW Wizards",
+      "events": 1,
+      "matchWins": 0,
+      "matchLosses": 3,
+      "matchDraws": 0,
+      "matchRecord": "0-3-0",
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 5,
+      "gameDraws": 1,
+      "gameWinPercentage": 0.21428571428571427,
       "trophies": 0
     }
   ],
@@ -227,6 +250,81 @@
           "opponentDeck": "Deadguy Ale",
           "playerGameWins": 2,
           "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "Gaunology",
+      "opponentDisplayName": "Gaunology",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 1,
+      "gameDraws": 1,
+      "gameWinPercentage": 0.25,
+      "matches": [
+        {
+          "tournamentId": "445685",
+          "dateDisplay": "October 1, 2026",
+          "result": "L",
+          "playerDeck": "UW Wizards",
+          "opponentDeck": "GW Control",
+          "playerGameWins": 0,
+          "opponentGameWins": 1,
+          "gameDraws": 1
+        }
+      ]
+    },
+    {
+      "opponentUsername": "PCavalcanti",
+      "opponentDisplayName": "PCavalcanti",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "matches": [
+        {
+          "tournamentId": "445685",
+          "dateDisplay": "October 1, 2026",
+          "result": "L",
+          "playerDeck": "UW Wizards",
+          "opponentDeck": "GW Survival",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "RichBucey",
+      "opponentDisplayName": "RichBucey",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "matches": [
+        {
+          "tournamentId": "445685",
+          "dateDisplay": "October 1, 2026",
+          "result": "L",
+          "playerDeck": "UW Wizards",
+          "opponentDeck": "_",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
           "gameDraws": 0
         }
       ]
@@ -583,6 +681,22 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "445685",
+      "dateDisplay": "October 1, 2026",
+      "playerCount": 17,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 16,
+      "points": 0,
+      "matchRecord": "0-3-0",
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 5,
+      "gameDraws": 1,
+      "gameWinPercentage": 0.33333329999999994,
+      "deck": "UW Wizards"
+    },
     {
       "tournamentId": "434267",
       "dateDisplay": "June 4, 2026",

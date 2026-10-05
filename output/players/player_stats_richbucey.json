@@ -2,17 +2,26 @@
   "username": "RichBucey",
   "displayName": "RichBucey",
   "overallStats": {
-    "totalTournaments": 40,
-    "totalPoints": 208,
-    "totalMatches": 120,
-    "matchRecord": "69-50-1",
-    "matchWinPercentage": 0.5791666666666667,
-    "gameRecord": "162-129-1",
-    "gameWinPercentage": 0.5547945205479452,
+    "totalTournaments": 41,
+    "totalPoints": 211,
+    "totalMatches": 122,
+    "matchRecord": "70-51-1",
+    "matchWinPercentage": 0.5778688524590164,
+    "gameRecord": "165-131-1",
+    "gameWinPercentage": 0.5555555555555556,
     "trophies": 7,
     "belts": 1
   },
   "leagueStats": [
+    {
+      "leagueName": "Q4 2026",
+      "events": 1,
+      "points": 3,
+      "matchRecord": "1-1-0",
+      "matchWinPercentage": 0.5,
+      "gameRecord": "3-2-0",
+      "gameWinPercentage": 0.6
+    },
     {
       "leagueName": "Q3 2026",
       "events": 6,
@@ -112,16 +121,16 @@
     },
     {
       "deckName": "Unknown",
-      "events": 7,
-      "matchWins": 11,
-      "matchLosses": 10,
+      "events": 8,
+      "matchWins": 12,
+      "matchLosses": 11,
       "matchDraws": 0,
-      "matchRecord": "11-10-0",
-      "matchWinPercentage": 0.5238095238095238,
-      "gameWins": 28,
-      "gameLosses": 24,
+      "matchRecord": "12-11-0",
+      "matchWinPercentage": 0.5217391304347826,
+      "gameWins": 31,
+      "gameLosses": 26,
       "gameDraws": 0,
-      "gameWinPercentage": 0.5384615384615384,
+      "gameWinPercentage": 0.543859649122807,
       "trophies": 1
     },
     {
@@ -652,6 +661,61 @@
       ]
     },
     {
+      "opponentUsername": "CalebR",
+      "opponentDisplayName": "CalebR",
+      "matchesPlayed": 4,
+      "matchWins": 2,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.5,
+      "gameWins": 5,
+      "gameLosses": 5,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5,
+      "matches": [
+        {
+          "tournamentId": "445685",
+          "dateDisplay": "October 1, 2026",
+          "result": "L",
+          "playerDeck": "_",
+          "opponentDeck": "GR Survival Madness Ponza",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "445681",
+          "dateDisplay": "September 3, 2026",
+          "result": "W",
+          "playerDeck": "Enchantress",
+          "opponentDeck": "GR Survival Terravore",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "445673",
+          "dateDisplay": "July 16, 2026",
+          "result": "W",
+          "playerDeck": "Burn",
+          "opponentDeck": "UG Survival Opposition",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "436160",
+          "dateDisplay": "July 9, 2026",
+          "result": "L",
+          "playerDeck": "Sligh",
+          "opponentDeck": "UG Survival Opposition",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "AndrewLevine",
       "opponentDisplayName": "AndrewLevine",
       "matchesPlayed": 4,
@@ -920,51 +984,6 @@
           "result": "L",
           "playerDeck": "Moneyball Black",
           "opponentDeck": "Terrageddon",
-          "playerGameWins": 0,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "CalebR",
-      "opponentDisplayName": "CalebR",
-      "matchesPlayed": 3,
-      "matchWins": 2,
-      "matchLosses": 1,
-      "matchDraws": 0,
-      "matchWinPercentage": 0.6666666666666666,
-      "gameWins": 4,
-      "gameLosses": 3,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.5714285714285714,
-      "matches": [
-        {
-          "tournamentId": "445681",
-          "dateDisplay": "September 3, 2026",
-          "result": "W",
-          "playerDeck": "Enchantress",
-          "opponentDeck": "GR Survival Terravore",
-          "playerGameWins": 2,
-          "opponentGameWins": 1,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "445673",
-          "dateDisplay": "July 16, 2026",
-          "result": "W",
-          "playerDeck": "Burn",
-          "opponentDeck": "UG Survival Opposition",
-          "playerGameWins": 2,
-          "opponentGameWins": 0,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "436160",
-          "dateDisplay": "July 9, 2026",
-          "result": "L",
-          "playerDeck": "Sligh",
-          "opponentDeck": "UG Survival Opposition",
           "playerGameWins": 0,
           "opponentGameWins": 2,
           "gameDraws": 0
@@ -1467,6 +1486,31 @@
           "opponentDeck": "_",
           "playerGameWins": 1,
           "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "aprofaci",
+      "opponentDisplayName": "Alex Profaci",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "matches": [
+        {
+          "tournamentId": "445685",
+          "dateDisplay": "October 1, 2026",
+          "result": "W",
+          "playerDeck": "_",
+          "opponentDeck": "UW Wizards",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
           "gameDraws": 0
         }
       ]
@@ -2273,6 +2317,22 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "445685",
+      "dateDisplay": "October 1, 2026",
+      "playerCount": 17,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 14,
+      "points": 3,
+      "matchRecord": "1-1-0",
+      "matchWinPercentage": 0.5,
+      "gameWins": 3,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6,
+      "deck": "_"
+    },
     {
       "tournamentId": "445681",
       "dateDisplay": "September 3, 2026",
