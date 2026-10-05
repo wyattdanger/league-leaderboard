@@ -85,6 +85,20 @@ async function processTournament(tournamentId: string, skipScrape: boolean) {
       console.log('  ✓ Tournament already in decks.yml');
     }
 
+    // Downstream steps read the newest *_Standings.json, so a missing final round
+    // would silently score the event as if it ended a round early
+    const tournamentDir = path.join(process.cwd(), 'output', `tournament_${tournamentId}`);
+    const roundCount = fs
+      .readdirSync(tournamentDir)
+      .filter((f) => /^Round_\d+_Matches\.json$/.test(f)).length;
+    const finalStandings = path.join(tournamentDir, `Round_${roundCount}_Standings.json`);
+    if (!fs.existsSync(finalStandings)) {
+      throw new Error(
+        `Missing ${path.basename(finalStandings)}: Melee has not published final standings. ` +
+          'Ask the organizer to publish them, then re-scrape.'
+      );
+    }
+
     // Step 3: Sync league standings
     console.log('\n📊 Step 3: Syncing league standings...');
     await runCommand('npm', ['run', 'sync-league']);
