@@ -18,11 +18,31 @@ When the user provides a tournament ID (from Melee.gg), follow these steps in or
    npm run scrape -- <tournament_id>
    ```
 
+   **Check the final round's standings were scraped.** If the scraper prints
+   `No standings found for Round N` for the last round, Melee hasn't published final
+   standings (the organizer completed the round but didn't publish/close it). Every
+   downstream step reads the newest `*_Standings.json`, so without it the event is
+   silently scored as if it ended a round early. `process-tournament` phase 2 refuses
+   to run in this state. Options, in order of preference:
+   - Ask the organizer to publish final standings, then re-scrape
+   - If the user can share Melee's final standings (e.g. a screenshot), build
+     `Round_N_Standings.json` by hand: copy each player's `Round_{N-1}` entry, take
+     records/points from the match files (verify they equal the screenshot), take
+     Rank/OMW/TGW/OGW from the screenshot, and add a `_source` field noting it was
+     hand-built. A later successful scrape overwrites it.
+   - Don't use `calculateStandings` for ranks: records match Melee but its
+     tiebreakers/rank differ from Melee's in most past events
+
 2. **Add tournament to leagues.yml**:
    - Tournaments are ordered from newest to oldest
    - The first league in the file is the "current" league
    - Add the new tournament ID to the appropriate league's `tournaments` array
    - Place it at the top of the list (newest first)
+   - **First event of a new league/quarter?** Add a new league block at the TOP of
+     `leagues.yml` (e.g. `- name: Q4 2026` with `tournaments: [<id>]`). That's all -
+     home page, league nav, `/league/<slug>` pages and metagame default all read it.
+     The previous league's `top8Tournament` (and any hand-made `q*-top-8.astro`
+     bracket page) is separate and added when that playoff happens
 
 3. **Prepare deck template in decks.yml**:
    ```bash
