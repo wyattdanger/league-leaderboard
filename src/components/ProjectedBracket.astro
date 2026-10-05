@@ -8,7 +8,7 @@ interface Props {
   alternates?: number; // How many players past the cut to list
 }
 
-const { standings, alternates = 4 } = Astro.props;
+const { standings, alternates = 2 } = Astro.props;
 
 const ranked = [...standings].sort((a, b) => a.Rank - b.Rank);
 const toSeed = (standing: LeagueStanding, seed: number) => {
