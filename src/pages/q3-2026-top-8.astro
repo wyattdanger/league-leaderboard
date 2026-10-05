@@ -1,0 +1,41 @@
+---
+import PageLayout from '../components/PageLayout.astro';
+import ProjectedBracket from '../components/ProjectedBracket.astro';
+import { loadLeagueStandings } from '../utils/data';
+
+// Seeds come straight from the final Q3 2026 league standings
+const leagueName = 'Q3 2026';
+const standings = loadLeagueStandings(leagueName) || [];
+---
+
+<PageLayout title={`${leagueName} League Championship - Top 8`}>
+  <div class="card">
+    <header class="page-header">
+      <h1>{leagueName} League Championship</h1>
+      <p class="subtitle">Projected Top 8 Bracket · seeded by final league points</p>
+    </header>
+
+    <ProjectedBracket standings={standings} />
+  </div>
+</PageLayout>
+
+<style>
+  .card {
+    padding: 2rem;
+  }
+
+  .page-header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .page-header h1 {
+    font-size: 1.8rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+    color: #666;
+  }
+</style>

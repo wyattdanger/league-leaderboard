@@ -1,0 +1,205 @@
+---
+import { Player } from '../models/Player';
+import { usernameToSlug } from '../utils/helpers';
+import type { LeagueStanding } from '../types';
+
+interface Props {
+  standings: LeagueStanding[];
+  alternates?: number; // How many players past the cut to list
+}
+
+const { standings, alternates = 4 } = Astro.props;
+
+const ranked = [...standings].sort((a, b) => a.Rank - b.Rank);
+const toSeed = (standing: LeagueStanding, seed: number) => {
+  const player = Player.fromStanding(standing as any);
+  return {
+    seed,
+    name: player.displayName,
+    slug: usernameToSlug(player.username),
+    points: standing.Points,
+    trophies: (standing as any).Trophies || 0,
+  };
+};
+const seeds = ranked.slice(0, 8).map((s, i) => toSeed(s, i + 1));
+const alternateSeeds = ranked.slice(8, 8 + alternates).map((s, i) => toSeed(s, i + 9));
+
+// Standard bracket: 1v8 and 4v5 meet in one semifinal, 2v7 and 3v6 in the other
+const quarterfinals = [
+  [1, 8],
+  [4, 5],
+  [3, 6],
+  [2, 7],
+].map(([a, b]) => [seeds[a - 1], seeds[b - 1]]);
+---
+
+<div class="bracket">
+  <div class="round">
+    <div class="round-title">Quarterfinals</div>
+    <div class="round-matches">
+      {
+        quarterfinals.map((match) => (
+          <div class="match">
+            {match.map((p) => (
+              <a class="player" href={`/player/${p.slug}`}>
+                <span class="seed">#{p.seed}</span>
+                <span class="name">{p.name}</span>
+                <span class="points">{p.points} pts</span>
+              </a>
+            ))}
+          </div>
+        ))
+      }
+    </div>
+  </div>
+
+  <div class="round">
+    <div class="round-title">Semifinals</div>
+    <div class="round-matches">
+      {
+        [0, 1].map(() => (
+          <div class="match">
+            <div class="player tbd">TBD</div>
+            <div class="player tbd">TBD</div>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+
+  <div class="round">
+    <div class="round-title">Final</div>
+    <div class="round-matches">
+      <div class="match">
+        <div class="player tbd">TBD</div>
+        <div class="player tbd">TBD</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{
+  alternateSeeds.length > 0 && (
+    <div class="alternates">
+      <span class="alternates-label">Next in line:</span>
+      {alternateSeeds.map((p) => (
+        <a href={`/player/${p.slug}`} class="alternate">
+          {p.name} <span class="points">({p.points})</span>
+        </a>
+      ))}
+    </div>
+  )
+}
+
+<style>
+  .bracket {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.5rem;
+  }
+
+  .round {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .round-title {
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    text-align: center;
+    color: #764ba2;
+    margin-bottom: 0.75rem;
+  }
+
+  .round-matches {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 1rem;
+  }
+
+  .match {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    border-left: 3px solid #667eea;
+    border-radius: 4px;
+  }
+
+  .player {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 0.65rem;
+    background: white;
+    border: 1px solid #dee2e6;
+    border-radius: 3px;
+    font-size: 0.9rem;
+    color: #222;
+    text-decoration: none;
+  }
+
+  a.player:hover {
+    background: #f3f0ff;
+  }
+
+  .player.tbd {
+    color: #adb5bd;
+    font-style: italic;
+    justify-content: center;
+  }
+
+  .seed {
+    font-weight: 700;
+    color: #6c757d;
+    min-width: 26px;
+    font-size: 0.8rem;
+  }
+
+  .name {
+    flex: 1;
+    font-weight: 600;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .points {
+    font-size: 0.75rem;
+    color: #6c757d;
+    white-space: nowrap;
+  }
+
+  .alternates {
+    margin-top: 1.5rem;
+    font-size: 0.85rem;
+    color: #555;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.35rem 0.9rem;
+  }
+
+  .alternates-label {
+    font-weight: 700;
+  }
+
+  .alternate {
+    color: #333;
+    text-decoration: none;
+  }
+
+  .alternate:hover {
+    text-decoration: underline;
+  }
+
+  @media (max-width: 720px) {
+    .bracket {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
