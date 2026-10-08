@@ -45,6 +45,7 @@ describe('normalizeDeckName', () => {
     ['GR Survival Madness Ponza', 'Survival'],
     ['RG Oath', 'Oath Ponza'],
     ['Cradle Control', 'Elves'],
+    ['Food Chain Elves', 'Elves'],
     ['Terraclysm', 'Oath'],
     ['Oath Spec', 'Oath'],
     ['Oath Ponza', 'Oath Ponza'],

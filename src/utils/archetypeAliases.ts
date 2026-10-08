@@ -63,7 +63,6 @@ export const archetypeAliases: Record<string, string> = {
   'GB Survival': 'Survival',
   'BG Survival': 'Survival',
   'GR Survival': 'Survival',
-  'Food Chain Elves': 'Survival',
   'Dogpile (Mono G Survival)': 'Survival',
 
   // Dogpile / Sneak Attack variants
@@ -149,6 +148,7 @@ export const archetypeAliases: Record<string, string> = {
   'Elves': 'Elves',
   'Survival-less Elves': 'Elves',
   'Cradle Control': 'Elves',
+  'Food Chain Elves': 'Elves',
 
   // Stompy variants
   'Stompy': 'Stompy',
