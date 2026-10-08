@@ -393,7 +393,8 @@ game-count heuristics, they misclassify concessions.
 are grouped into archetypes. Player profiles use it via `deckStatsCollapse.ts`, and
 `metagame.astro` resolves every deck name through it at build time. Don't add a second
 map. `decks.yml` keeps the variant name (shown as a sub-archetype); group it by adding
-an alias. `tests/archetypeAliases.test.ts` pins the agreed groupings.
+an alias. Lookups ignore case, so one alias covers every capitalization.
+`tests/archetypeAliases.test.ts` pins the agreed groupings.
 
 ### 9. `.claude/` Is Globally Gitignored
 

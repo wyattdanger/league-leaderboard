@@ -26,7 +26,6 @@ export const archetypeAliases: Record<string, string> = {
   // Ponza (non-Oath) variants
   'Ponza': 'Ponza',
   'Mono Red Ponza': 'Ponza',
-  'Mono red ponza': 'Ponza',
   'Black Ponza': 'Ponza',
 
   // Parfait variants
@@ -72,7 +71,6 @@ export const archetypeAliases: Record<string, string> = {
   // Moneyball variants (any name containing "Moneyball" also matches via fuzzy rule)
   'Moneyball': 'Moneyball',
   'Moneyball Black': 'Moneyball',
-  'Moneyball black': 'Moneyball',
   'Moneyball Red': 'Moneyball',
   'Moneyball Blue': 'Moneyball',
   'Dimir Infiltrator Moneyball': 'Moneyball',
@@ -93,7 +91,6 @@ export const archetypeAliases: Record<string, string> = {
 
   // White Weenie variants
   'White Weenie': 'White Weenie',
-  'White weenie': 'White Weenie',
   'WW': 'White Weenie',
   'WWu': 'White Weenie',
   'White Stompy': 'White Weenie',
@@ -101,7 +98,6 @@ export const archetypeAliases: Record<string, string> = {
   // Madness variants
   'Madness': 'Madness',
   'UG Madness': 'Madness',
-  'UG madness': 'Madness',
   'WG Madness': 'Madness',
   'GW Madness': 'Madness',
 
@@ -142,7 +138,6 @@ export const archetypeAliases: Record<string, string> = {
   // FEB variants
   'FEB': 'FEB',
   'HFEB': 'FEB',
-  'hFEB': 'FEB',
 
   // Elves variants
   'Elves': 'Elves',
@@ -217,7 +212,6 @@ export const archetypeAliases: Record<string, string> = {
   // Clerics variants (any name containing "Clerics" also matches via fuzzy rule)
   'Clerics': 'Clerics',
   'Mono Black Clerics': 'Clerics',
-  'Mono black clerics': 'Clerics',
   'Mono-B Clerics': 'Clerics',
 
   // Wizards variants (any name containing "Wizards" also matches via fuzzy rule)
@@ -232,25 +226,31 @@ export const archetypeAliases: Record<string, string> = {
 /**
  * Normalize a deck name using aliases and fuzzy matching
  */
+// Alias lookup ignores case, so "4c Terrageddon" matches '4C Terrageddon'
+const aliasesByLowerName = new Map(
+  Object.entries(archetypeAliases).map(([name, archetype]) => [name.toLowerCase(), archetype])
+);
+
 export function normalizeDeckName(deckName: string): string {
-  // First check exact alias match
-  if (archetypeAliases[deckName]) {
-    return archetypeAliases[deckName];
+  // First check alias match (case-insensitive)
+  const lower = deckName.toLowerCase();
+  const alias = aliasesByLowerName.get(lower);
+  if (alias) {
+    return alias;
   }
 
   // Fuzzy matching for common patterns
-  const lower = deckName.toLowerCase();
   if (lower.includes('oath') && lower.includes('ponza')) return 'Oath Ponza';
   if (lower.includes('moneyball')) return 'Moneyball';
   if (lower.includes('threshnought')) return 'Threshnought';
-  if (deckName.includes('Goblins')) return 'Goblins';
-  if (deckName.includes('Dreadnought') || deckName.includes('Stiflenought')) return 'Dreadnought';
-  if (deckName.includes('Landstill')) return 'Landstill';
-  if (deckName.includes('Replenish') || deckName.includes('PandeBurst')) return 'Replenish';
-  if (deckName.includes('Survival')) return 'Survival';
-  if (deckName.includes('Clerics')) return 'Clerics';
-  if (deckName.includes('Zombies')) return 'Zombies';
-  if (deckName.includes('Wizards')) return 'Wizards';
+  if (lower.includes('goblins')) return 'Goblins';
+  if (lower.includes('dreadnought') || lower.includes('stiflenought')) return 'Dreadnought';
+  if (lower.includes('landstill')) return 'Landstill';
+  if (lower.includes('replenish') || lower.includes('pandeburst')) return 'Replenish';
+  if (lower.includes('survival')) return 'Survival';
+  if (lower.includes('clerics')) return 'Clerics';
+  if (lower.includes('zombies')) return 'Zombies';
+  if (lower.includes('wizards')) return 'Wizards';
 
   // Return original if no match
   return deckName;
