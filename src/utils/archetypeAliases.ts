@@ -13,6 +13,7 @@ export const archetypeAliases: Record<string, string> = {
   '4C Terra Oath': 'Oath',
   'GW terraoath': 'Oath',
   'Lan D Hoath': 'Oath',
+  'Terraclysm': 'Oath',
 
   // Oath Ponza variants (any name containing "Oath" and "Ponza" also matches via fuzzy rule)
   'Oath Ponza': 'Oath Ponza',
@@ -38,7 +39,6 @@ export const archetypeAliases: Record<string, string> = {
   '4-Color Terrageddon': 'Terrageddon',
   '4C Terrageddon': 'Terrageddon',
   'Naya Terrageddon': 'Terrageddon',
-  'Terraclysm': 'Terrageddon',
 
   // Dreadnought variants (includes Stiflenought)
   'Dreadnought': 'Dreadnought',
@@ -149,6 +149,7 @@ export const archetypeAliases: Record<string, string> = {
   // Elves variants
   'Elves': 'Elves',
   'Survival-less Elves': 'Elves',
+  'Cradle Control': 'Elves',
 
   // Stompy variants
   'Stompy': 'Stompy',
