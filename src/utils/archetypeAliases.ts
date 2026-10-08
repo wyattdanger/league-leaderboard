@@ -14,6 +14,8 @@ export const archetypeAliases: Record<string, string> = {
   'GW terraoath': 'Oath',
   'Lan D Hoath': 'Oath',
   'Terraclysm': 'Oath',
+  'Oath Spec': 'Oath',
+  'Spec Oath': 'Oath',
 
   // Oath Ponza variants (any name containing "Oath" and "Ponza" also matches via fuzzy rule)
   'Oath Ponza': 'Oath Ponza',
@@ -21,8 +23,6 @@ export const archetypeAliases: Record<string, string> = {
   'RG Ponza': 'Oath Ponza',
   'RG Oath': 'Oath Ponza',
   'GW Tusker Oath': 'Oath Ponza',
-  'Spec Oath': 'Oath Ponza',
-  'Oath Spec': 'Oath Ponza',
 
   // Ponza (non-Oath) variants
   'Ponza': 'Ponza',
