@@ -15,7 +15,6 @@ export const archetypeAliases: Record<string, string> = {
   'Lan D Hoath': 'Oath',
   'Terraclysm': 'Oath',
   'Oath Spec': 'Oath',
-  'Spec Oath': 'Oath',
 
   // Oath Ponza variants (any name containing "Oath" and "Ponza" also matches via fuzzy rule)
   'Oath Ponza': 'Oath Ponza',

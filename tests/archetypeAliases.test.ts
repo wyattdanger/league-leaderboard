@@ -47,7 +47,6 @@ describe('normalizeDeckName', () => {
     ['Cradle Control', 'Elves'],
     ['Terraclysm', 'Oath'],
     ['Oath Spec', 'Oath'],
-    ['Spec Oath', 'Oath'],
     ['Oath Ponza', 'Oath Ponza'],
   ])('maps %s to %s', (deck, archetype) => {
     expect(normalizeDeckName(deck)).toBe(archetype);
