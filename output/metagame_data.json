@@ -116,7 +116,7 @@
         "Chromatic Predict": 1,
         "UG Threshnought": 1,
         "Cradle Control": 3,
-        "Burn": 20,
+        "Burn": 19,
         "GW Control": 1,
         "Replenish": 3,
         "BG Survival": 1,
@@ -219,6 +219,7 @@
         "GW Ponza Oath": 1,
         "RG Ponza Oath": 1,
         "Dragon Reanimator": 1,
+        "RG Burn": 1,
         "Survival": 1
       },
       "deckTrophies": {
@@ -267,7 +268,7 @@
         },
         "Burn": {
           "wins": 34,
-          "losses": 22,
+          "losses": 21,
           "draws": 2
         },
         "GW Control": {
@@ -777,6 +778,11 @@
         },
         "Dragon Reanimator": {
           "wins": 2,
+          "losses": 1,
+          "draws": 0
+        },
+        "RG Burn": {
+          "wins": 0,
           "losses": 1,
           "draws": 0
         },
