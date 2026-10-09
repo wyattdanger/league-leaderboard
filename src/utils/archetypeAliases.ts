@@ -189,6 +189,7 @@ export const archetypeAliases: Record<string, string> = {
   // Burn variants
   'Burn': 'Burn',
   'Medvedev Burn': 'Burn',
+  'RG Burn': 'Burn',
   'Sligh': 'Burn',
 
   // Stasis variants
