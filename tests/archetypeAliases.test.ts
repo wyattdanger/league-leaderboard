@@ -47,6 +47,7 @@ describe('normalizeDeckName', () => {
     ['Cradle Control', 'Elves'],
     ['Food Chain Elves', 'Elves'],
     ['RG Burn', 'Burn'],
+    ['RG Madness Burn', 'Burn'],
     // Alias lookup ignores case
     ['4c Terrageddon', 'Terrageddon'],
     ['RG zoo', 'Zoo'],
