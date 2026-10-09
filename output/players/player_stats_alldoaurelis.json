@@ -2,13 +2,13 @@
   "username": "AlldoAurelis",
   "displayName": "AlldoAurelis",
   "overallStats": {
-    "totalTournaments": 18,
+    "totalTournaments": 19,
     "totalPoints": 67,
-    "totalMatches": 54,
-    "matchRecord": "22-31-1",
-    "matchWinPercentage": 0.4166666666666667,
-    "gameRecord": "57-73-0",
-    "gameWinPercentage": 0.43846153846153846,
+    "totalMatches": 55,
+    "matchRecord": "22-32-1",
+    "matchWinPercentage": 0.4090909090909091,
+    "gameRecord": "57-75-0",
+    "gameWinPercentage": 0.4318181818181818,
     "trophies": 2,
     "belts": 0
   },
@@ -21,6 +21,15 @@
       "matchWinPercentage": 0.5277777777777778,
       "gameRecord": "45-42-0",
       "gameWinPercentage": 0.5172413793103449
+    },
+    {
+      "leagueName": "Q3 2026 Top 8",
+      "events": 1,
+      "points": 0,
+      "matchRecord": "0-1-0",
+      "matchWinPercentage": 0,
+      "gameRecord": "0-2-0",
+      "gameWinPercentage": 0
     },
     {
       "leagueName": "Q2 2026",
@@ -58,16 +67,16 @@
     },
     {
       "deckName": "Moneyball Red",
-      "events": 4,
+      "events": 5,
       "matchWins": 6,
-      "matchLosses": 6,
+      "matchLosses": 7,
       "matchDraws": 0,
-      "matchRecord": "6-6-0",
-      "matchWinPercentage": 0.5,
+      "matchRecord": "6-7-0",
+      "matchWinPercentage": 0.46153846153846156,
       "gameWins": 15,
-      "gameLosses": 13,
+      "gameLosses": 15,
       "gameDraws": 0,
-      "gameWinPercentage": 0.5357142857142857,
+      "gameWinPercentage": 0.5,
       "trophies": 0
     },
     {
@@ -157,6 +166,71 @@
   ],
   "headToHead": [
     {
+      "opponentUsername": "Taylorhol",
+      "opponentDisplayName": "Taylorhol",
+      "matchesPlayed": 5,
+      "matchWins": 2,
+      "matchLosses": 3,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.4,
+      "gameWins": 4,
+      "gameLosses": 7,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.36363636363636365,
+      "matches": [
+        {
+          "tournamentId": "445683",
+          "dateDisplay": "September 17, 2026",
+          "result": "L",
+          "playerDeck": "Moneyball Black",
+          "opponentDeck": "Pattern Rector",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "458540",
+          "dateDisplay": "August 27, 2026",
+          "result": "L",
+          "playerDeck": "Moneyball Red",
+          "opponentDeck": "Naya Terrageddon",
+          "playerGameWins": 0,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "445673",
+          "dateDisplay": "July 16, 2026",
+          "result": "W",
+          "playerDeck": "Moneyball Black",
+          "opponentDeck": "Dreadnought",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "436159",
+          "dateDisplay": "July 2, 2026",
+          "result": "W",
+          "playerDeck": "Burn",
+          "opponentDeck": "_",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "481802",
+          "dateDisplay": "October 8, 2026",
+          "result": "L",
+          "playerDeck": "Moneyball Red",
+          "opponentDeck": "Terrageddon",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "Tencteri",
       "opponentDisplayName": "Tencteri",
       "matchesPlayed": 4,
@@ -207,61 +281,6 @@
           "opponentDeck": "Merfolk",
           "playerGameWins": 2,
           "opponentGameWins": 0,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "Taylorhol",
-      "opponentDisplayName": "Taylorhol",
-      "matchesPlayed": 4,
-      "matchWins": 2,
-      "matchLosses": 2,
-      "matchDraws": 0,
-      "matchWinPercentage": 0.5,
-      "gameWins": 4,
-      "gameLosses": 5,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.4444444444444444,
-      "matches": [
-        {
-          "tournamentId": "445683",
-          "dateDisplay": "September 17, 2026",
-          "result": "L",
-          "playerDeck": "Moneyball Black",
-          "opponentDeck": "Pattern Rector",
-          "playerGameWins": 0,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "458540",
-          "dateDisplay": "August 27, 2026",
-          "result": "L",
-          "playerDeck": "Moneyball Red",
-          "opponentDeck": "Naya Terrageddon",
-          "playerGameWins": 0,
-          "opponentGameWins": 1,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "445673",
-          "dateDisplay": "July 16, 2026",
-          "result": "W",
-          "playerDeck": "Moneyball Black",
-          "opponentDeck": "Dreadnought",
-          "playerGameWins": 2,
-          "opponentGameWins": 1,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "436159",
-          "dateDisplay": "July 2, 2026",
-          "result": "W",
-          "playerDeck": "Burn",
-          "opponentDeck": "_",
-          "playerGameWins": 2,
-          "opponentGameWins": 1,
           "gameDraws": 0
         }
       ]
@@ -1173,6 +1192,23 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "481802",
+      "date": "2026-10-08T23:48:56Z",
+      "dateDisplay": "October 8, 2026",
+      "playerCount": 8,
+      "trophyCount": 1,
+      "roundCount": 3,
+      "rank": 6,
+      "points": 0,
+      "matchRecord": "0-1-0",
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333,
+      "deck": "Moneyball Red"
+    },
     {
       "tournamentId": "445684",
       "date": "2026-09-24T23:05:16Z",

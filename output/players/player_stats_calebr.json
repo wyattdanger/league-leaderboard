@@ -2,13 +2,13 @@
   "username": "CalebR",
   "displayName": "CalebR",
   "overallStats": {
-    "totalTournaments": 14,
+    "totalTournaments": 15,
     "totalPoints": 77,
-    "totalMatches": 42,
-    "matchRecord": "25-15-2",
-    "matchWinPercentage": 0.6190476190476191,
-    "gameRecord": "60-43-4",
-    "gameWinPercentage": 0.5607476635514018,
+    "totalMatches": 43,
+    "matchRecord": "25-16-2",
+    "matchWinPercentage": 0.6046511627906976,
+    "gameRecord": "61-45-4",
+    "gameWinPercentage": 0.5545454545454546,
     "trophies": 3,
     "belts": 0
   },
@@ -30,6 +30,15 @@
       "matchWinPercentage": 0.6851851851851852,
       "gameRecord": "40-24-3",
       "gameWinPercentage": 0.6194029850746269
+    },
+    {
+      "leagueName": "Q3 2026 Top 8",
+      "events": 1,
+      "points": 0,
+      "matchRecord": "0-1-0",
+      "matchWinPercentage": 0,
+      "gameRecord": "1-2-0",
+      "gameWinPercentage": 0.3333333333333333
     },
     {
       "leagueName": "Q2 2026",
@@ -203,6 +212,20 @@
       "gameLosses": 4,
       "gameDraws": 0,
       "gameWinPercentage": 0.5,
+      "trophies": 0
+    },
+    {
+      "deckName": "Survival",
+      "events": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchRecord": "0-1-0",
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
       "trophies": 0
     },
     {
@@ -887,6 +910,31 @@
       ]
     },
     {
+      "opponentUsername": "madmanpoet",
+      "opponentDisplayName": "Michael Flores",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "matches": [
+        {
+          "tournamentId": "481802",
+          "dateDisplay": "October 8, 2026",
+          "result": "L",
+          "playerDeck": "Survival",
+          "opponentDeck": "White Control",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "mkbgnr",
       "opponentDisplayName": "Mike Bognar",
       "matchesPlayed": 1,
@@ -1038,6 +1086,23 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "481802",
+      "date": "2026-10-08T23:48:56Z",
+      "dateDisplay": "October 8, 2026",
+      "playerCount": 8,
+      "trophyCount": 1,
+      "roundCount": 3,
+      "rank": 5,
+      "points": 0,
+      "matchRecord": "0-1-0",
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333,
+      "deck": "Survival"
+    },
     {
       "tournamentId": "445685",
       "date": "2026-10-01T23:44:27Z",

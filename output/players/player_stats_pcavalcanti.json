@@ -2,13 +2,13 @@
   "username": "PCavalcanti",
   "displayName": "PCavalcanti",
   "overallStats": {
-    "totalTournaments": 27,
-    "totalPoints": 126,
-    "totalMatches": 81,
-    "matchRecord": "41-37-3",
-    "matchWinPercentage": 0.5246913580246914,
-    "gameRecord": "109-96-0",
-    "gameWinPercentage": 0.5317073170731708,
+    "totalTournaments": 28,
+    "totalPoints": 129,
+    "totalMatches": 83,
+    "matchRecord": "42-38-3",
+    "matchWinPercentage": 0.5240963855421686,
+    "gameRecord": "112-99-0",
+    "gameWinPercentage": 0.5308056872037915,
     "trophies": 1,
     "belts": 0
   },
@@ -30,6 +30,15 @@
       "matchWinPercentage": 0.5,
       "gameRecord": "48-44-0",
       "gameWinPercentage": 0.5217391304347826
+    },
+    {
+      "leagueName": "Q3 2026 Top 8",
+      "events": 1,
+      "points": 3,
+      "matchRecord": "1-1-0",
+      "matchWinPercentage": 0.5,
+      "gameRecord": "3-3-0",
+      "gameWinPercentage": 0.5
     },
     {
       "leagueName": "Q2 2026",
@@ -201,6 +210,20 @@
       "trophies": 0
     },
     {
+      "deckName": "Moneyball",
+      "events": 1,
+      "matchWins": 1,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchRecord": "1-1-0",
+      "matchWinPercentage": 0.5,
+      "gameWins": 3,
+      "gameLosses": 3,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5,
+      "trophies": 0
+    },
+    {
       "deckName": "Survival Madness",
       "events": 1,
       "matchWins": 1,
@@ -244,6 +267,81 @@
     }
   ],
   "headToHead": [
+    {
+      "opponentUsername": "madmanpoet",
+      "opponentDisplayName": "Michael Flores",
+      "matchesPlayed": 6,
+      "matchWins": 1,
+      "matchLosses": 5,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.16666666666666666,
+      "gameWins": 7,
+      "gameLosses": 10,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.4117647058823529,
+      "matches": [
+        {
+          "tournamentId": "445679",
+          "dateDisplay": "August 20, 2026",
+          "result": "L",
+          "playerDeck": "Burn",
+          "opponentDeck": "Mono Blue Control",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "445676",
+          "dateDisplay": "July 30, 2026",
+          "result": "W",
+          "playerDeck": "UGr Madness",
+          "opponentDeck": "Sligh",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "436159",
+          "dateDisplay": "July 2, 2026",
+          "result": "L",
+          "playerDeck": "Mono-Black",
+          "opponentDeck": "RG Ponza Oath",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "481802",
+          "dateDisplay": "October 8, 2026",
+          "result": "L",
+          "playerDeck": "Moneyball",
+          "opponentDeck": "White Control",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "436157",
+          "dateDisplay": "June 18, 2026",
+          "result": "L",
+          "playerDeck": "RG Madness Burn",
+          "opponentDeck": "The Rock",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "410832",
+          "dateDisplay": "March 5, 2026",
+          "result": "L",
+          "playerDeck": "Medvedev Burn",
+          "opponentDeck": "Gamekeeper Rock",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
     {
       "opponentUsername": "weidnent",
       "opponentDisplayName": "Nicholas Weidner",
@@ -304,71 +402,6 @@
           "playerDeck": "UGr Madness",
           "opponentDeck": "Balancing Act",
           "playerGameWins": 0,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "madmanpoet",
-      "opponentDisplayName": "Michael Flores",
-      "matchesPlayed": 5,
-      "matchWins": 1,
-      "matchLosses": 4,
-      "matchDraws": 0,
-      "matchWinPercentage": 0.2,
-      "gameWins": 6,
-      "gameLosses": 8,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.42857142857142855,
-      "matches": [
-        {
-          "tournamentId": "445679",
-          "dateDisplay": "August 20, 2026",
-          "result": "L",
-          "playerDeck": "Burn",
-          "opponentDeck": "Mono Blue Control",
-          "playerGameWins": 1,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "445676",
-          "dateDisplay": "July 30, 2026",
-          "result": "W",
-          "playerDeck": "UGr Madness",
-          "opponentDeck": "Sligh",
-          "playerGameWins": 2,
-          "opponentGameWins": 0,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "436159",
-          "dateDisplay": "July 2, 2026",
-          "result": "L",
-          "playerDeck": "Mono-Black",
-          "opponentDeck": "RG Ponza Oath",
-          "playerGameWins": 1,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "436157",
-          "dateDisplay": "June 18, 2026",
-          "result": "L",
-          "playerDeck": "RG Madness Burn",
-          "opponentDeck": "The Rock",
-          "playerGameWins": 1,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "410832",
-          "dateDisplay": "March 5, 2026",
-          "result": "L",
-          "playerDeck": "Medvedev Burn",
-          "opponentDeck": "Gamekeeper Rock",
-          "playerGameWins": 1,
           "opponentGameWins": 2,
           "gameDraws": 0
         }
@@ -613,6 +646,51 @@
           "result": "L",
           "playerDeck": "Burn",
           "opponentDeck": "HFEB",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "swbmtg",
+      "opponentDisplayName": "Stephen Bush",
+      "matchesPlayed": 3,
+      "matchWins": 2,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 5,
+      "gameLosses": 3,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.625,
+      "matches": [
+        {
+          "tournamentId": "481802",
+          "dateDisplay": "October 8, 2026",
+          "result": "W",
+          "playerDeck": "Moneyball",
+          "opponentDeck": "Goblins",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "420854",
+          "dateDisplay": "April 9, 2026",
+          "result": "W",
+          "playerDeck": "Burn",
+          "opponentDeck": "Gro",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "404622",
+          "dateDisplay": "February 12, 2026",
+          "result": "L",
+          "playerDeck": "Burn",
+          "opponentDeck": "Terrageddon",
           "playerGameWins": 1,
           "opponentGameWins": 2,
           "gameDraws": 0
@@ -1020,41 +1098,6 @@
           "opponentDeck": "Moneyball Black",
           "playerGameWins": 2,
           "opponentGameWins": 1,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "swbmtg",
-      "opponentDisplayName": "swb",
-      "matchesPlayed": 2,
-      "matchWins": 1,
-      "matchLosses": 1,
-      "matchDraws": 0,
-      "matchWinPercentage": 0.5,
-      "gameWins": 3,
-      "gameLosses": 2,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.6,
-      "matches": [
-        {
-          "tournamentId": "420854",
-          "dateDisplay": "April 9, 2026",
-          "result": "W",
-          "playerDeck": "Burn",
-          "opponentDeck": "Gro",
-          "playerGameWins": 2,
-          "opponentGameWins": 0,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "404622",
-          "dateDisplay": "February 12, 2026",
-          "result": "L",
-          "playerDeck": "Burn",
-          "opponentDeck": "Terrageddon",
-          "playerGameWins": 1,
-          "opponentGameWins": 2,
           "gameDraws": 0
         }
       ]
@@ -1746,6 +1789,23 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "481802",
+      "date": "2026-10-08T23:48:56Z",
+      "dateDisplay": "October 8, 2026",
+      "playerCount": 8,
+      "trophyCount": 1,
+      "roundCount": 3,
+      "rank": 3,
+      "points": 3,
+      "matchRecord": "1-1-0",
+      "matchWinPercentage": 0.5,
+      "gameWins": 3,
+      "gameLosses": 3,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5,
+      "deck": "Moneyball"
+    },
     {
       "tournamentId": "445685",
       "date": "2026-10-01T23:44:27Z",

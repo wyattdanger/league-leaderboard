@@ -2,13 +2,13 @@
   "username": "swbmtg",
   "displayName": "Stephen Bush",
   "overallStats": {
-    "totalTournaments": 58,
+    "totalTournaments": 59,
     "totalPoints": 368,
-    "totalMatches": 174,
-    "matchRecord": "120-46-8",
-    "matchWinPercentage": 0.7126436781609196,
-    "gameRecord": "269-148-4",
-    "gameWinPercentage": 0.6389548693586699,
+    "totalMatches": 175,
+    "matchRecord": "120-47-8",
+    "matchWinPercentage": 0.7085714285714285,
+    "gameRecord": "270-150-4",
+    "gameWinPercentage": 0.6367924528301887,
     "trophies": 16,
     "belts": 1
   },
@@ -21,6 +21,15 @@
       "matchWinPercentage": 0.6363636363636364,
       "gameRecord": "47-33-1",
       "gameWinPercentage": 0.5864197530864198
+    },
+    {
+      "leagueName": "Q3 2026 Top 8",
+      "events": 1,
+      "points": 0,
+      "matchRecord": "0-1-0",
+      "matchWinPercentage": 0,
+      "gameRecord": "1-2-0",
+      "gameWinPercentage": 0.3333333333333333
     },
     {
       "leagueName": "Q2 2026",
@@ -199,6 +208,20 @@
       "trophies": 1
     },
     {
+      "deckName": "Goblins",
+      "events": 3,
+      "matchWins": 5,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchRecord": "5-2-0",
+      "matchWinPercentage": 0.7142857142857143,
+      "gameWins": 12,
+      "gameLosses": 7,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.631578947368421,
+      "trophies": 1
+    },
+    {
       "deckName": "Enchantress",
       "events": 3,
       "matchWins": 6,
@@ -211,20 +234,6 @@
       "gameDraws": 0,
       "gameWinPercentage": 0.7,
       "trophies": 0
-    },
-    {
-      "deckName": "Goblins",
-      "events": 2,
-      "matchWins": 5,
-      "matchLosses": 1,
-      "matchDraws": 0,
-      "matchRecord": "5-1-0",
-      "matchWinPercentage": 0.8333333333333334,
-      "gameWins": 11,
-      "gameLosses": 5,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.6875,
-      "trophies": 1
     },
     {
       "deckName": "The Rock",
@@ -1897,6 +1906,51 @@
       ]
     },
     {
+      "opponentUsername": "PCavalcanti",
+      "opponentDisplayName": "PCavalcanti",
+      "matchesPlayed": 3,
+      "matchWins": 1,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 3,
+      "gameLosses": 5,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.375,
+      "matches": [
+        {
+          "tournamentId": "481802",
+          "dateDisplay": "October 8, 2026",
+          "result": "L",
+          "playerDeck": "Goblins",
+          "opponentDeck": "Moneyball",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "420854",
+          "dateDisplay": "April 9, 2026",
+          "result": "L",
+          "playerDeck": "Gro",
+          "opponentDeck": "Burn",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "404622",
+          "dateDisplay": "February 12, 2026",
+          "result": "W",
+          "playerDeck": "Terrageddon",
+          "opponentDeck": "Burn",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "sjpenzer",
       "opponentDisplayName": "sjpenzer",
       "matchesPlayed": 3,
@@ -2285,41 +2339,6 @@
           "result": "W",
           "playerDeck": "The Rock",
           "opponentDeck": "Dreadnought",
-          "playerGameWins": 2,
-          "opponentGameWins": 1,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "PCavalcanti",
-      "opponentDisplayName": "PCavalcanti",
-      "matchesPlayed": 2,
-      "matchWins": 1,
-      "matchLosses": 1,
-      "matchDraws": 0,
-      "matchWinPercentage": 0.5,
-      "gameWins": 2,
-      "gameLosses": 3,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.4,
-      "matches": [
-        {
-          "tournamentId": "420854",
-          "dateDisplay": "April 9, 2026",
-          "result": "L",
-          "playerDeck": "Gro",
-          "opponentDeck": "Burn",
-          "playerGameWins": 0,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "404622",
-          "dateDisplay": "February 12, 2026",
-          "result": "W",
-          "playerDeck": "Terrageddon",
-          "opponentDeck": "Burn",
           "playerGameWins": 2,
           "opponentGameWins": 1,
           "gameDraws": 0
@@ -3133,6 +3152,23 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "481802",
+      "date": "2026-10-08T23:48:56Z",
+      "dateDisplay": "October 8, 2026",
+      "playerCount": 8,
+      "trophyCount": 1,
+      "roundCount": 3,
+      "rank": 7,
+      "points": 0,
+      "matchRecord": "0-1-0",
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333,
+      "deck": "Goblins"
+    },
     {
       "tournamentId": "465043",
       "date": "2026-09-10T23:05:15Z",

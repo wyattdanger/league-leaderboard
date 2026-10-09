@@ -2,13 +2,13 @@
   "username": "weidnent",
   "displayName": "Nicholas Weidner",
   "overallStats": {
-    "totalTournaments": 22,
+    "totalTournaments": 23,
     "totalPoints": 77,
-    "totalMatches": 66,
-    "matchRecord": "25-39-2",
-    "matchWinPercentage": 0.3939393939393939,
-    "gameRecord": "67-93-0",
-    "gameWinPercentage": 0.41875,
+    "totalMatches": 67,
+    "matchRecord": "25-40-2",
+    "matchWinPercentage": 0.3880597014925373,
+    "gameRecord": "67-95-0",
+    "gameWinPercentage": 0.41358024691358025,
     "trophies": 0,
     "belts": 0
   },
@@ -21,6 +21,15 @@
       "matchWinPercentage": 0.5303030303030303,
       "gameRecord": "41-40-0",
       "gameWinPercentage": 0.5061728395061729
+    },
+    {
+      "leagueName": "Q3 2026 Top 8",
+      "events": 1,
+      "points": 0,
+      "matchRecord": "0-1-0",
+      "matchWinPercentage": 0,
+      "gameRecord": "0-2-0",
+      "gameWinPercentage": 0
     },
     {
       "leagueName": "Q2 2026",
@@ -44,16 +53,16 @@
   "deckStats": [
     {
       "deckName": "Reanimator",
-      "events": 6,
+      "events": 7,
       "matchWins": 8,
-      "matchLosses": 9,
+      "matchLosses": 10,
       "matchDraws": 1,
-      "matchRecord": "8-9-1",
-      "matchWinPercentage": 0.4722222222222222,
+      "matchRecord": "8-10-1",
+      "matchWinPercentage": 0.4473684210526316,
       "gameWins": 23,
-      "gameLosses": 24,
+      "gameLosses": 26,
       "gameDraws": 0,
-      "gameWinPercentage": 0.48936170212765956,
+      "gameWinPercentage": 0.46938775510204084,
       "trophies": 0
     },
     {
@@ -492,6 +501,51 @@
       ]
     },
     {
+      "opponentUsername": "DaveKaplan",
+      "opponentDisplayName": "Dave Kaplan",
+      "matchesPlayed": 3,
+      "matchWins": 0,
+      "matchLosses": 3,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 6,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.14285714285714285,
+      "matches": [
+        {
+          "tournamentId": "445681",
+          "dateDisplay": "September 3, 2026",
+          "result": "L",
+          "playerDeck": "Balancing Tings",
+          "opponentDeck": "Dreadnought",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "481802",
+          "dateDisplay": "October 8, 2026",
+          "result": "L",
+          "playerDeck": "Reanimator",
+          "opponentDeck": "Dreadnought",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "420854",
+          "dateDisplay": "April 9, 2026",
+          "result": "L",
+          "playerDeck": "Reanimator",
+          "opponentDeck": "Dreadnought",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "ByerBeware",
       "opponentDisplayName": "ByerBeware",
       "matchesPlayed": 3,
@@ -702,41 +756,6 @@
           "opponentDeck": "Mad Dogs",
           "playerGameWins": 1,
           "opponentGameWins": 1,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "DaveKaplan",
-      "opponentDisplayName": "Dave Kaplan",
-      "matchesPlayed": 2,
-      "matchWins": 0,
-      "matchLosses": 2,
-      "matchDraws": 0,
-      "matchWinPercentage": 0,
-      "gameWins": 1,
-      "gameLosses": 4,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.2,
-      "matches": [
-        {
-          "tournamentId": "445681",
-          "dateDisplay": "September 3, 2026",
-          "result": "L",
-          "playerDeck": "Balancing Tings",
-          "opponentDeck": "Dreadnought",
-          "playerGameWins": 0,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "420854",
-          "dateDisplay": "April 9, 2026",
-          "result": "L",
-          "playerDeck": "Reanimator",
-          "opponentDeck": "Dreadnought",
-          "playerGameWins": 1,
-          "opponentGameWins": 2,
           "gameDraws": 0
         }
       ]
@@ -1458,6 +1477,23 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "481802",
+      "date": "2026-10-08T23:48:56Z",
+      "dateDisplay": "October 8, 2026",
+      "playerCount": 8,
+      "trophyCount": 1,
+      "roundCount": 3,
+      "rank": 8,
+      "points": 0,
+      "matchRecord": "0-1-0",
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333,
+      "deck": "Reanimator"
+    },
     {
       "tournamentId": "445683",
       "date": "2026-09-17T23:08:14Z",
