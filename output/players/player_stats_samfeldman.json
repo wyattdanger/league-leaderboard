@@ -44,16 +44,16 @@
   "deckStats": [
     {
       "deckName": "Unknown",
-      "events": 4,
-      "matchWins": 4,
-      "matchLosses": 6,
-      "matchDraws": 2,
-      "matchRecord": "4-6-2",
-      "matchWinPercentage": 0.4166666666666667,
-      "gameWins": 14,
-      "gameLosses": 15,
-      "gameDraws": 1,
-      "gameWinPercentage": 0.48333333333333334,
+      "events": 3,
+      "matchWins": 3,
+      "matchLosses": 5,
+      "matchDraws": 1,
+      "matchRecord": "3-5-1",
+      "matchWinPercentage": 0.3888888888888889,
+      "gameWins": 10,
+      "gameLosses": 11,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.47619047619047616,
       "trophies": 0
     },
     {
@@ -125,6 +125,20 @@
       "gameDraws": 0,
       "gameWinPercentage": 0.7142857142857143,
       "trophies": 0
+    },
+    {
+      "deckName": "RG Oath Ponza",
+      "events": 1,
+      "matchWins": 1,
+      "matchLosses": 1,
+      "matchDraws": 1,
+      "matchRecord": "1-1-1",
+      "matchWinPercentage": 0.5,
+      "gameWins": 4,
+      "gameLosses": 4,
+      "gameDraws": 1,
+      "gameWinPercentage": 0.5,
+      "trophies": 0
     }
   ],
   "headToHead": [
@@ -145,7 +159,7 @@
           "tournamentId": "485761",
           "dateDisplay": "October 15, 2026",
           "result": "W",
-          "playerDeck": "_",
+          "playerDeck": "RG Oath Ponza",
           "opponentDeck": "Landstill",
           "playerGameWins": 2,
           "opponentGameWins": 1,
@@ -180,8 +194,8 @@
           "tournamentId": "485761",
           "dateDisplay": "October 15, 2026",
           "result": "D",
-          "playerDeck": "_",
-          "opponentDeck": "Oath Ponza",
+          "playerDeck": "RG Oath Ponza",
+          "opponentDeck": "GW Oath Ponza",
           "playerGameWins": 1,
           "opponentGameWins": 1,
           "gameDraws": 1
@@ -215,7 +229,7 @@
           "tournamentId": "485761",
           "dateDisplay": "October 15, 2026",
           "result": "L",
-          "playerDeck": "_",
+          "playerDeck": "RG Oath Ponza",
           "opponentDeck": "White Weenie",
           "playerGameWins": 1,
           "opponentGameWins": 2,
@@ -740,7 +754,7 @@
       "gameLosses": 4,
       "gameDraws": 1,
       "gameWinPercentage": 0.4814815,
-      "deck": "_"
+      "deck": "RG Oath Ponza"
     },
     {
       "tournamentId": "445685",

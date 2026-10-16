@@ -35,16 +35,16 @@
   "deckStats": [
     {
       "deckName": "GW Oath Ponza",
-      "events": 2,
-      "matchWins": 1,
-      "matchLosses": 4,
-      "matchDraws": 1,
-      "matchRecord": "1-4-1",
-      "matchWinPercentage": 0.25,
-      "gameWins": 4,
-      "gameLosses": 9,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.3076923076923077,
+      "events": 3,
+      "matchWins": 2,
+      "matchLosses": 5,
+      "matchDraws": 2,
+      "matchRecord": "2-5-2",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 7,
+      "gameLosses": 13,
+      "gameDraws": 1,
+      "gameWinPercentage": 0.35714285714285715,
       "trophies": 0
     },
     {
@@ -59,20 +59,6 @@
       "gameLosses": 4,
       "gameDraws": 0,
       "gameWinPercentage": 0.5555555555555556,
-      "trophies": 0
-    },
-    {
-      "deckName": "Oath Ponza",
-      "events": 1,
-      "matchWins": 1,
-      "matchLosses": 1,
-      "matchDraws": 1,
-      "matchRecord": "1-1-1",
-      "matchWinPercentage": 0.5,
-      "gameWins": 3,
-      "gameLosses": 4,
-      "gameDraws": 1,
-      "gameWinPercentage": 0.4375,
       "trophies": 0
     }
   ],
@@ -94,8 +80,8 @@
           "tournamentId": "485761",
           "dateDisplay": "October 15, 2026",
           "result": "D",
-          "playerDeck": "Oath Ponza",
-          "opponentDeck": "_",
+          "playerDeck": "GW Oath Ponza",
+          "opponentDeck": "RG Oath Ponza",
           "playerGameWins": 1,
           "opponentGameWins": 1,
           "gameDraws": 1
@@ -164,7 +150,7 @@
           "tournamentId": "485761",
           "dateDisplay": "October 15, 2026",
           "result": "L",
-          "playerDeck": "Oath Ponza",
+          "playerDeck": "GW Oath Ponza",
           "opponentDeck": "GR Survival Terravore",
           "playerGameWins": 0,
           "opponentGameWins": 2,
@@ -189,7 +175,7 @@
           "tournamentId": "485761",
           "dateDisplay": "October 15, 2026",
           "result": "W",
-          "playerDeck": "Oath Ponza",
+          "playerDeck": "GW Oath Ponza",
           "opponentDeck": "Moneyball",
           "playerGameWins": 2,
           "opponentGameWins": 1,
@@ -339,7 +325,7 @@
       "gameLosses": 4,
       "gameDraws": 1,
       "gameWinPercentage": 0.4166667,
-      "deck": "Oath Ponza"
+      "deck": "GW Oath Ponza"
     },
     {
       "tournamentId": "445684",
