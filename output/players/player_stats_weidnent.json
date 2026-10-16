@@ -2,17 +2,26 @@
   "username": "weidnent",
   "displayName": "Nicholas Weidner",
   "overallStats": {
-    "totalTournaments": 23,
-    "totalPoints": 77,
-    "totalMatches": 67,
-    "matchRecord": "25-40-2",
-    "matchWinPercentage": 0.3880597014925373,
-    "gameRecord": "67-95-0",
-    "gameWinPercentage": 0.41358024691358025,
+    "totalTournaments": 24,
+    "totalPoints": 83,
+    "totalMatches": 70,
+    "matchRecord": "27-41-2",
+    "matchWinPercentage": 0.4,
+    "gameRecord": "71-99-0",
+    "gameWinPercentage": 0.4176470588235294,
     "trophies": 0,
     "belts": 0
   },
   "leagueStats": [
+    {
+      "leagueName": "Q4 2026",
+      "events": 1,
+      "points": 6,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameRecord": "4-4-0",
+      "gameWinPercentage": 0.5
+    },
     {
       "leagueName": "Q3 2026",
       "events": 11,
@@ -119,6 +128,20 @@
       "gameLosses": 10,
       "gameDraws": 0,
       "gameWinPercentage": 0.23076923076923078,
+      "trophies": 0
+    },
+    {
+      "deckName": "UB Ghoul",
+      "events": 1,
+      "matchWins": 2,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 4,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5,
       "trophies": 0
     },
     {
@@ -235,6 +258,71 @@
     }
   ],
   "headToHead": [
+    {
+      "opponentUsername": "Gaunology",
+      "opponentDisplayName": "Gaunology",
+      "matchesPlayed": 5,
+      "matchWins": 2,
+      "matchLosses": 2,
+      "matchDraws": 1,
+      "matchWinPercentage": 0.5,
+      "gameWins": 6,
+      "gameLosses": 7,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.46153846153846156,
+      "matches": [
+        {
+          "tournamentId": "485761",
+          "dateDisplay": "October 15, 2026",
+          "result": "W",
+          "playerDeck": "UB Ghoul",
+          "opponentDeck": "_",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "436160",
+          "dateDisplay": "July 9, 2026",
+          "result": "D",
+          "playerDeck": "Reanimator",
+          "opponentDeck": "Terrageddon",
+          "playerGameWins": 1,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "436159",
+          "dateDisplay": "July 2, 2026",
+          "result": "W",
+          "playerDeck": "Dragon Reanimator",
+          "opponentDeck": "_",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "424009",
+          "dateDisplay": "April 23, 2026",
+          "result": "L",
+          "playerDeck": "Mono Blue Storm",
+          "opponentDeck": "Bant Oath Control",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "422555",
+          "dateDisplay": "April 16, 2026",
+          "result": "L",
+          "playerDeck": "GW Madness",
+          "opponentDeck": "Naya Enchantress",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
     {
       "opponentUsername": "PCavalcanti",
       "opponentDisplayName": "PCavalcanti",
@@ -356,56 +444,46 @@
       ]
     },
     {
-      "opponentUsername": "Gaunology",
-      "opponentDisplayName": "Gaunology",
-      "matchesPlayed": 4,
+      "opponentUsername": "AlldoAurelis",
+      "opponentDisplayName": "AlldoAurelis",
+      "matchesPlayed": 3,
       "matchWins": 1,
-      "matchLosses": 2,
+      "matchLosses": 1,
       "matchDraws": 1,
-      "matchWinPercentage": 0.375,
-      "gameWins": 4,
-      "gameLosses": 6,
+      "matchWinPercentage": 0.5,
+      "gameWins": 3,
+      "gameLosses": 4,
       "gameDraws": 0,
-      "gameWinPercentage": 0.4,
+      "gameWinPercentage": 0.42857142857142855,
       "matches": [
         {
-          "tournamentId": "436160",
-          "dateDisplay": "July 9, 2026",
-          "result": "D",
-          "playerDeck": "Reanimator",
-          "opponentDeck": "Terrageddon",
-          "playerGameWins": 1,
-          "opponentGameWins": 1,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "436159",
-          "dateDisplay": "July 2, 2026",
-          "result": "W",
-          "playerDeck": "Dragon Reanimator",
-          "opponentDeck": "_",
-          "playerGameWins": 2,
-          "opponentGameWins": 1,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "424009",
-          "dateDisplay": "April 23, 2026",
+          "tournamentId": "485761",
+          "dateDisplay": "October 15, 2026",
           "result": "L",
-          "playerDeck": "Mono Blue Storm",
-          "opponentDeck": "Bant Oath Control",
+          "playerDeck": "UB Ghoul",
+          "opponentDeck": "Burn",
           "playerGameWins": 0,
           "opponentGameWins": 2,
           "gameDraws": 0
         },
         {
-          "tournamentId": "422555",
-          "dateDisplay": "April 16, 2026",
-          "result": "L",
-          "playerDeck": "GW Madness",
-          "opponentDeck": "Naya Enchantress",
+          "tournamentId": "445681",
+          "dateDisplay": "September 3, 2026",
+          "result": "W",
+          "playerDeck": "Balancing Tings",
+          "opponentDeck": "Moneyball Red",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "436157",
+          "dateDisplay": "June 18, 2026",
+          "result": "D",
+          "playerDeck": "_",
+          "opponentDeck": "Mad Dogs",
           "playerGameWins": 1,
-          "opponentGameWins": 2,
+          "opponentGameWins": 1,
           "gameDraws": 0
         }
       ]
@@ -726,41 +804,6 @@
       ]
     },
     {
-      "opponentUsername": "AlldoAurelis",
-      "opponentDisplayName": "AlldoAurelis",
-      "matchesPlayed": 2,
-      "matchWins": 1,
-      "matchLosses": 0,
-      "matchDraws": 1,
-      "matchWinPercentage": 0.75,
-      "gameWins": 3,
-      "gameLosses": 2,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.6,
-      "matches": [
-        {
-          "tournamentId": "445681",
-          "dateDisplay": "September 3, 2026",
-          "result": "W",
-          "playerDeck": "Balancing Tings",
-          "opponentDeck": "Moneyball Red",
-          "playerGameWins": 2,
-          "opponentGameWins": 1,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "436157",
-          "dateDisplay": "June 18, 2026",
-          "result": "D",
-          "playerDeck": "_",
-          "opponentDeck": "Mad Dogs",
-          "playerGameWins": 1,
-          "opponentGameWins": 1,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
       "opponentUsername": "CalebR",
       "opponentDisplayName": "CalebR",
       "matchesPlayed": 2,
@@ -896,6 +939,31 @@
           "opponentDeck": "UG Aluren",
           "playerGameWins": 0,
           "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "LuisNeiman",
+      "opponentDisplayName": "LuisNeiman",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6666666666666666,
+      "matches": [
+        {
+          "tournamentId": "485761",
+          "dateDisplay": "October 15, 2026",
+          "result": "W",
+          "playerDeck": "UB Ghoul",
+          "opponentDeck": "UG Survival Opposition",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
           "gameDraws": 0
         }
       ]
@@ -1477,6 +1545,23 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "485761",
+      "date": "2026-10-15T23:40:17Z",
+      "dateDisplay": "October 15, 2026",
+      "playerCount": 20,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 9,
+      "points": 6,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 4,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5,
+      "deck": "UB Ghoul"
+    },
     {
       "tournamentId": "481802",
       "date": "2026-10-08T23:48:56Z",

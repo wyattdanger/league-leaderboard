@@ -2,25 +2,25 @@
   "username": "CalebR",
   "displayName": "CalebR",
   "overallStats": {
-    "totalTournaments": 15,
-    "totalPoints": 77,
-    "totalMatches": 43,
-    "matchRecord": "25-16-2",
-    "matchWinPercentage": 0.6046511627906976,
-    "gameRecord": "61-45-4",
-    "gameWinPercentage": 0.5545454545454546,
-    "trophies": 3,
+    "totalTournaments": 16,
+    "totalPoints": 86,
+    "totalMatches": 46,
+    "matchRecord": "28-16-2",
+    "matchWinPercentage": 0.6304347826086957,
+    "gameRecord": "67-46-4",
+    "gameWinPercentage": 0.5726495726495726,
+    "trophies": 4,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q4 2026",
-      "events": 1,
-      "points": 6,
-      "matchRecord": "2-1-0",
-      "matchWinPercentage": 0.6666666666666666,
-      "gameRecord": "4-3-0",
-      "gameWinPercentage": 0.5714285714285714
+      "events": 2,
+      "points": 15,
+      "matchRecord": "5-1-0",
+      "matchWinPercentage": 0.8333333333333334,
+      "gameRecord": "10-4-0",
+      "gameWinPercentage": 0.7142857142857143
     },
     {
       "leagueName": "Q3 2026",
@@ -60,6 +60,20 @@
     }
   ],
   "deckStats": [
+    {
+      "deckName": "GR Survival Terravore",
+      "events": 2,
+      "matchWins": 5,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchRecord": "5-1-0",
+      "matchWinPercentage": 0.8333333333333334,
+      "gameWins": 11,
+      "gameLosses": 3,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.7857142857142857,
+      "trophies": 1
+    },
     {
       "deckName": "UG Survival Opposition",
       "events": 2,
@@ -142,20 +156,6 @@
       "gameLosses": 3,
       "gameDraws": 0,
       "gameWinPercentage": 0.5714285714285714,
-      "trophies": 0
-    },
-    {
-      "deckName": "GR Survival Terravore",
-      "events": 1,
-      "matchWins": 2,
-      "matchLosses": 1,
-      "matchDraws": 0,
-      "matchRecord": "2-1-0",
-      "matchWinPercentage": 0.6666666666666666,
-      "gameWins": 5,
-      "gameLosses": 2,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.7142857142857143,
       "trophies": 0
     },
     {
@@ -244,6 +244,61 @@
     }
   ],
   "headToHead": [
+    {
+      "opponentUsername": "AlldoAurelis",
+      "opponentDisplayName": "AlldoAurelis",
+      "matchesPlayed": 4,
+      "matchWins": 3,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.75,
+      "gameWins": 7,
+      "gameLosses": 3,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.7,
+      "matches": [
+        {
+          "tournamentId": "485761",
+          "dateDisplay": "October 15, 2026",
+          "result": "W",
+          "playerDeck": "GR Survival Terravore",
+          "opponentDeck": "Burn",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "445681",
+          "dateDisplay": "September 3, 2026",
+          "result": "W",
+          "playerDeck": "GR Survival Terravore",
+          "opponentDeck": "Moneyball Red",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "445679",
+          "dateDisplay": "August 20, 2026",
+          "result": "L",
+          "playerDeck": "Oath Parfait",
+          "opponentDeck": "Moneyball Black",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "445675",
+          "dateDisplay": "July 23, 2026",
+          "result": "W",
+          "playerDeck": "4c Oath Ponza",
+          "opponentDeck": "Moneyball",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
     {
       "opponentUsername": "RichBucey",
       "opponentDisplayName": "RichBucey",
@@ -345,24 +400,24 @@
       ]
     },
     {
-      "opponentUsername": "AlldoAurelis",
-      "opponentDisplayName": "AlldoAurelis",
-      "matchesPlayed": 3,
+      "opponentUsername": "AlfredG",
+      "opponentDisplayName": "AlfredG",
+      "matchesPlayed": 2,
       "matchWins": 2,
-      "matchLosses": 1,
+      "matchLosses": 0,
       "matchDraws": 0,
-      "matchWinPercentage": 0.6666666666666666,
-      "gameWins": 5,
-      "gameLosses": 2,
+      "matchWinPercentage": 1,
+      "gameWins": 4,
+      "gameLosses": 1,
       "gameDraws": 0,
-      "gameWinPercentage": 0.7142857142857143,
+      "gameWinPercentage": 0.8,
       "matches": [
         {
-          "tournamentId": "445681",
-          "dateDisplay": "September 3, 2026",
+          "tournamentId": "485761",
+          "dateDisplay": "October 15, 2026",
           "result": "W",
           "playerDeck": "GR Survival Terravore",
-          "opponentDeck": "Moneyball Red",
+          "opponentDeck": "Mono Red Ponza",
           "playerGameWins": 2,
           "opponentGameWins": 0,
           "gameDraws": 0
@@ -370,21 +425,11 @@
         {
           "tournamentId": "445679",
           "dateDisplay": "August 20, 2026",
-          "result": "L",
-          "playerDeck": "Oath Parfait",
-          "opponentDeck": "Moneyball Black",
-          "playerGameWins": 1,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "445675",
-          "dateDisplay": "July 23, 2026",
           "result": "W",
-          "playerDeck": "4c Oath Ponza",
-          "opponentDeck": "Moneyball",
+          "playerDeck": "Oath Parfait",
+          "opponentDeck": "Mono Red Ponza",
           "playerGameWins": 2,
-          "opponentGameWins": 0,
+          "opponentGameWins": 1,
           "gameDraws": 0
         }
       ]
@@ -635,6 +680,31 @@
       ]
     },
     {
+      "opponentUsername": "_jonH",
+      "opponentDisplayName": "_jonH",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "matches": [
+        {
+          "tournamentId": "485761",
+          "dateDisplay": "October 15, 2026",
+          "result": "W",
+          "playerDeck": "GR Survival Terravore",
+          "opponentDeck": "Oath Ponza",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "truthcult",
       "opponentDisplayName": "klint",
       "matchesPlayed": 1,
@@ -753,31 +823,6 @@
           "result": "W",
           "playerDeck": "Welder Prison",
           "opponentDeck": "Dreadnought",
-          "playerGameWins": 2,
-          "opponentGameWins": 1,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "AlfredG",
-      "opponentDisplayName": "AlfredG",
-      "matchesPlayed": 1,
-      "matchWins": 1,
-      "matchLosses": 0,
-      "matchDraws": 0,
-      "matchWinPercentage": 1,
-      "gameWins": 2,
-      "gameLosses": 1,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.6666666666666666,
-      "matches": [
-        {
-          "tournamentId": "445679",
-          "dateDisplay": "August 20, 2026",
-          "result": "W",
-          "playerDeck": "Oath Parfait",
-          "opponentDeck": "Mono Red Ponza",
           "playerGameWins": 2,
           "opponentGameWins": 1,
           "gameDraws": 0
@@ -1086,6 +1131,23 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "485761",
+      "date": "2026-10-15T23:40:17Z",
+      "dateDisplay": "October 15, 2026",
+      "playerCount": 20,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 2,
+      "points": 9,
+      "matchRecord": "3-0-0",
+      "matchWinPercentage": 1,
+      "gameWins": 6,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.8571429,
+      "deck": "GR Survival Terravore"
+    },
     {
       "tournamentId": "481802",
       "date": "2026-10-08T23:48:56Z",

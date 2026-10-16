@@ -2,17 +2,26 @@
   "username": "mattmanw2",
   "displayName": "mattmanw2",
   "overallStats": {
-    "totalTournaments": 14,
-    "totalPoints": 72,
-    "totalMatches": 42,
-    "matchRecord": "24-18-0",
-    "matchWinPercentage": 0.5714285714285714,
-    "gameRecord": "54-46-0",
-    "gameWinPercentage": 0.54,
+    "totalTournaments": 15,
+    "totalPoints": 78,
+    "totalMatches": 45,
+    "matchRecord": "26-19-0",
+    "matchWinPercentage": 0.5777777777777777,
+    "gameRecord": "58-50-0",
+    "gameWinPercentage": 0.5370370370370371,
     "trophies": 1,
     "belts": 0
   },
   "leagueStats": [
+    {
+      "leagueName": "Q4 2026",
+      "events": 1,
+      "points": 6,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameRecord": "4-4-0",
+      "gameWinPercentage": 0.5
+    },
     {
       "leagueName": "Q3 2026",
       "events": 4,
@@ -44,16 +53,16 @@
   "deckStats": [
     {
       "deckName": "Moneyball Black",
-      "events": 7,
-      "matchWins": 12,
-      "matchLosses": 9,
+      "events": 8,
+      "matchWins": 14,
+      "matchLosses": 10,
       "matchDraws": 0,
-      "matchRecord": "12-9-0",
-      "matchWinPercentage": 0.5714285714285714,
-      "gameWins": 27,
-      "gameLosses": 24,
+      "matchRecord": "14-10-0",
+      "matchWinPercentage": 0.5833333333333334,
+      "gameWins": 31,
+      "gameLosses": 28,
       "gameDraws": 0,
-      "gameWinPercentage": 0.5294117647058824,
+      "gameWinPercentage": 0.5254237288135594,
       "trophies": 0
     },
     {
@@ -114,6 +123,51 @@
     }
   ],
   "headToHead": [
+    {
+      "opponentUsername": "swbmtg",
+      "opponentDisplayName": "Stephen Bush",
+      "matchesPlayed": 3,
+      "matchWins": 2,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 4,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5,
+      "matches": [
+        {
+          "tournamentId": "485761",
+          "dateDisplay": "October 15, 2026",
+          "result": "W",
+          "playerDeck": "Moneyball Black",
+          "opponentDeck": "Elves",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "415118",
+          "dateDisplay": "March 19, 2026",
+          "result": "L",
+          "playerDeck": "Moneyball Black",
+          "opponentDeck": "Cradle Control",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "413370",
+          "dateDisplay": "March 12, 2026",
+          "result": "W",
+          "playerDeck": "Moneyball Black",
+          "opponentDeck": "Angry Hermit",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
     {
       "opponentUsername": "Gaunology",
       "opponentDisplayName": "Gaunology",
@@ -244,6 +298,41 @@
           "playerDeck": "Mono Black Aggro",
           "opponentDeck": "Goblins",
           "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "AlldoAurelis",
+      "opponentDisplayName": "AlldoAurelis",
+      "matchesPlayed": 2,
+      "matchWins": 1,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.5,
+      "gameWins": 3,
+      "gameLosses": 3,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5,
+      "matches": [
+        {
+          "tournamentId": "485761",
+          "dateDisplay": "October 15, 2026",
+          "result": "W",
+          "playerDeck": "Moneyball Black",
+          "opponentDeck": "Burn",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "436159",
+          "dateDisplay": "July 2, 2026",
+          "result": "L",
+          "playerDeck": "Moneyball Black",
+          "opponentDeck": "Burn",
+          "playerGameWins": 1,
           "opponentGameWins": 2,
           "gameDraws": 0
         }
@@ -390,36 +479,26 @@
       ]
     },
     {
-      "opponentUsername": "swbmtg",
-      "opponentDisplayName": "swb",
-      "matchesPlayed": 2,
-      "matchWins": 1,
+      "opponentUsername": "LuisNeiman",
+      "opponentDisplayName": "LuisNeiman",
+      "matchesPlayed": 1,
+      "matchWins": 0,
       "matchLosses": 1,
       "matchDraws": 0,
-      "matchWinPercentage": 0.5,
-      "gameWins": 2,
-      "gameLosses": 3,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
       "gameDraws": 0,
-      "gameWinPercentage": 0.4,
+      "gameWinPercentage": 0,
       "matches": [
         {
-          "tournamentId": "415118",
-          "dateDisplay": "March 19, 2026",
+          "tournamentId": "485761",
+          "dateDisplay": "October 15, 2026",
           "result": "L",
           "playerDeck": "Moneyball Black",
-          "opponentDeck": "Cradle Control",
+          "opponentDeck": "UG Survival Opposition",
           "playerGameWins": 0,
           "opponentGameWins": 2,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "413370",
-          "dateDisplay": "March 12, 2026",
-          "result": "W",
-          "playerDeck": "Moneyball Black",
-          "opponentDeck": "Angry Hermit",
-          "playerGameWins": 2,
-          "opponentGameWins": 1,
           "gameDraws": 0
         }
       ]
@@ -570,31 +649,6 @@
           "opponentDeck": "Dragon Reanimator",
           "playerGameWins": 2,
           "opponentGameWins": 1,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "AlldoAurelis",
-      "opponentDisplayName": "AlldoAurelis",
-      "matchesPlayed": 1,
-      "matchWins": 0,
-      "matchLosses": 1,
-      "matchDraws": 0,
-      "matchWinPercentage": 0,
-      "gameWins": 1,
-      "gameLosses": 2,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.3333333333333333,
-      "matches": [
-        {
-          "tournamentId": "436159",
-          "dateDisplay": "July 2, 2026",
-          "result": "L",
-          "playerDeck": "Moneyball Black",
-          "opponentDeck": "Burn",
-          "playerGameWins": 1,
-          "opponentGameWins": 2,
           "gameDraws": 0
         }
       ]
@@ -926,6 +980,23 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "485761",
+      "date": "2026-10-15T23:40:17Z",
+      "dateDisplay": "October 15, 2026",
+      "playerCount": 20,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 6,
+      "points": 6,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 4,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5,
+      "deck": "Moneyball Black"
+    },
     {
       "tournamentId": "445683",
       "date": "2026-09-17T23:08:14Z",

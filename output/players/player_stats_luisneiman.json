@@ -2,17 +2,26 @@
   "username": "LuisNeiman",
   "displayName": "LuisNeiman",
   "overallStats": {
-    "totalTournaments": 18,
-    "totalPoints": 105,
-    "totalMatches": 54,
-    "matchRecord": "35-19-0",
-    "matchWinPercentage": 0.6481481481481481,
-    "gameRecord": "80-53-2",
-    "gameWinPercentage": 0.5925925925925926,
+    "totalTournaments": 19,
+    "totalPoints": 111,
+    "totalMatches": 57,
+    "matchRecord": "37-20-0",
+    "matchWinPercentage": 0.6491228070175439,
+    "gameRecord": "85-55-2",
+    "gameWinPercentage": 0.5985915492957746,
     "trophies": 5,
     "belts": 0
   },
   "leagueStats": [
+    {
+      "leagueName": "Q4 2026",
+      "events": 1,
+      "points": 6,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameRecord": "5-2-0",
+      "gameWinPercentage": 0.7142857142857143
+    },
     {
       "leagueName": "Q3 2026",
       "events": 6,
@@ -166,6 +175,20 @@
       "gameDraws": 0,
       "gameWinPercentage": 0.8571428571428571,
       "trophies": 1
+    },
+    {
+      "deckName": "UG Survival Opposition",
+      "events": 1,
+      "matchWins": 2,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 5,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.7142857142857143,
+      "trophies": 0
     },
     {
       "deckName": "Goblins",
@@ -793,6 +816,81 @@
       ]
     },
     {
+      "opponentUsername": "StevenRiseNYC",
+      "opponentDisplayName": "StevenRiseNYC",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "matches": [
+        {
+          "tournamentId": "485761",
+          "dateDisplay": "October 15, 2026",
+          "result": "W",
+          "playerDeck": "UG Survival Opposition",
+          "opponentDeck": "Moneyball",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "mattmanw2",
+      "opponentDisplayName": "mattmanw2",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "matches": [
+        {
+          "tournamentId": "485761",
+          "dateDisplay": "October 15, 2026",
+          "result": "W",
+          "playerDeck": "UG Survival Opposition",
+          "opponentDeck": "Moneyball Black",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "weidnent",
+      "opponentDisplayName": "Nicholas Weidner",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "matches": [
+        {
+          "tournamentId": "485761",
+          "dateDisplay": "October 15, 2026",
+          "result": "L",
+          "playerDeck": "UG Survival Opposition",
+          "opponentDeck": "UB Ghoul",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "AndrewLevine",
       "opponentDisplayName": "AndrewLevine",
       "matchesPlayed": 1,
@@ -1294,6 +1392,23 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "485761",
+      "date": "2026-10-15T23:40:17Z",
+      "dateDisplay": "October 15, 2026",
+      "playerCount": 20,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 5,
+      "points": 6,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 5,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.7142857,
+      "deck": "UG Survival Opposition"
+    },
     {
       "tournamentId": "445681",
       "date": "2026-09-03T23:36:10Z",

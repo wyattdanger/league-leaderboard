@@ -3,17 +3,31 @@
     {
       "leagueName": "Q4 2026",
       "tournaments": [
+        485761,
         445685
       ],
       "deckCounts": {
+        "Mono Red Ponza": 1,
+        "Burn": 1,
+        "GR Survival Terravore": 1,
+        "BG Survival": 2,
+        "UG Survival Opposition": 1,
+        "Mono B Clerics": 1,
+        "U Disk": 1,
+        "Landstill": 2,
+        "Moneyball": 2,
+        "White Weenie": 1,
+        "GAT": 1,
+        "Oath Ponza": 1,
+        "Moneyball Black": 1,
+        "Elves": 1,
+        "UB Ghoul": 1,
         "GR Survival Madness Ponza": 1,
         "GW Control": 1,
         "RG Oath": 2,
-        "BG Survival": 1,
         "U Dreadnought": 1,
         "GW Threshold": 1,
         "GW Survival": 1,
-        "Moneyball": 1,
         "Pattern Rector": 1,
         "Merfolk": 1,
         "Goblins": 2,
@@ -21,10 +35,86 @@
         "Welder Prison": 1
       },
       "deckTrophies": {
+        "GR Survival Terravore": 1,
         "GW Control": 1,
         "Moneyball": 1
       },
       "deckMatchStats": {
+        "Mono Red Ponza": {
+          "wins": 2,
+          "losses": 1,
+          "draws": 0
+        },
+        "Burn": {
+          "wins": 1,
+          "losses": 2,
+          "draws": 0
+        },
+        "GR Survival Terravore": {
+          "wins": 3,
+          "losses": 0,
+          "draws": 0
+        },
+        "BG Survival": {
+          "wins": 1,
+          "losses": 5,
+          "draws": 0
+        },
+        "UG Survival Opposition": {
+          "wins": 2,
+          "losses": 1,
+          "draws": 0
+        },
+        "Mono B Clerics": {
+          "wins": 2,
+          "losses": 1,
+          "draws": 0
+        },
+        "U Disk": {
+          "wins": 1,
+          "losses": 2,
+          "draws": 0
+        },
+        "Landstill": {
+          "wins": 2,
+          "losses": 3,
+          "draws": 1
+        },
+        "Moneyball": {
+          "wins": 4,
+          "losses": 2,
+          "draws": 0
+        },
+        "White Weenie": {
+          "wins": 2,
+          "losses": 1,
+          "draws": 0
+        },
+        "GAT": {
+          "wins": 0,
+          "losses": 3,
+          "draws": 0
+        },
+        "Oath Ponza": {
+          "wins": 1,
+          "losses": 1,
+          "draws": 1
+        },
+        "Moneyball Black": {
+          "wins": 2,
+          "losses": 1,
+          "draws": 0
+        },
+        "Elves": {
+          "wins": 2,
+          "losses": 1,
+          "draws": 0
+        },
+        "UB Ghoul": {
+          "wins": 2,
+          "losses": 1,
+          "draws": 0
+        },
         "GR Survival Madness Ponza": {
           "wins": 2,
           "losses": 1,
@@ -40,11 +130,6 @@
           "losses": 3,
           "draws": 0
         },
-        "BG Survival": {
-          "wins": 1,
-          "losses": 2,
-          "draws": 0
-        },
         "U Dreadnought": {
           "wins": 0,
           "losses": 3,
@@ -58,11 +143,6 @@
         "GW Survival": {
           "wins": 2,
           "losses": 1,
-          "draws": 0
-        },
-        "Moneyball": {
-          "wins": 3,
-          "losses": 0,
           "draws": 0
         },
         "Pattern Rector": {

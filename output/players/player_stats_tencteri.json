@@ -2,24 +2,24 @@
   "username": "Tencteri",
   "displayName": "Tencteri",
   "overallStats": {
-    "totalTournaments": 44,
-    "totalPoints": 167,
-    "totalMatches": 128,
-    "matchRecord": "53-67-8",
-    "matchWinPercentage": 0.4453125,
-    "gameRecord": "143-162-6",
-    "gameWinPercentage": 0.45980707395498394,
+    "totalTournaments": 45,
+    "totalPoints": 173,
+    "totalMatches": 131,
+    "matchRecord": "55-68-8",
+    "matchWinPercentage": 0.45038167938931295,
+    "gameRecord": "147-165-6",
+    "gameWinPercentage": 0.46226415094339623,
     "trophies": 1,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q4 2026",
-      "events": 1,
-      "points": 6,
-      "matchRecord": "2-1-0",
+      "events": 2,
+      "points": 12,
+      "matchRecord": "4-2-0",
       "matchWinPercentage": 0.6666666666666666,
-      "gameRecord": "4-3-0",
+      "gameRecord": "8-6-0",
       "gameWinPercentage": 0.5714285714285714
     },
     {
@@ -106,6 +106,20 @@
   ],
   "deckStats": [
     {
+      "deckName": "White Weenie",
+      "events": 11,
+      "matchWins": 16,
+      "matchLosses": 12,
+      "matchDraws": 3,
+      "matchRecord": "16-12-3",
+      "matchWinPercentage": 0.5645161290322581,
+      "gameWins": 41,
+      "gameLosses": 31,
+      "gameDraws": 2,
+      "gameWinPercentage": 0.5675675675675675,
+      "trophies": 1
+    },
+    {
       "deckName": "Unknown",
       "events": 11,
       "matchWins": 14,
@@ -118,20 +132,6 @@
       "gameDraws": 1,
       "gameWinPercentage": 0.47333333333333333,
       "trophies": 0
-    },
-    {
-      "deckName": "White Weenie",
-      "events": 10,
-      "matchWins": 14,
-      "matchLosses": 11,
-      "matchDraws": 3,
-      "matchRecord": "14-11-3",
-      "matchWinPercentage": 0.5535714285714286,
-      "gameWins": 37,
-      "gameLosses": 28,
-      "gameDraws": 2,
-      "gameWinPercentage": 0.5671641791044776,
-      "trophies": 1
     },
     {
       "deckName": "Deadguy Ale",
@@ -1305,6 +1305,41 @@
       ]
     },
     {
+      "opponentUsername": "WillReddy",
+      "opponentDisplayName": "WillReddy",
+      "matchesPlayed": 2,
+      "matchWins": 1,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.5,
+      "gameWins": 3,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6,
+      "matches": [
+        {
+          "tournamentId": "485761",
+          "dateDisplay": "October 15, 2026",
+          "result": "W",
+          "playerDeck": "White Weenie",
+          "opponentDeck": "GAT",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "436157",
+          "dateDisplay": "June 18, 2026",
+          "result": "L",
+          "playerDeck": "_",
+          "opponentDeck": "_",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "PetS22",
       "opponentDisplayName": "PetS22",
       "matchesPlayed": 2,
@@ -1725,6 +1760,56 @@
       ]
     },
     {
+      "opponentUsername": "SamFeldman",
+      "opponentDisplayName": "Samuel Feldman",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6666666666666666,
+      "matches": [
+        {
+          "tournamentId": "485761",
+          "dateDisplay": "October 15, 2026",
+          "result": "W",
+          "playerDeck": "White Weenie",
+          "opponentDeck": "_",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "cg123",
+      "opponentDisplayName": "Christopher Garcia",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "matches": [
+        {
+          "tournamentId": "485761",
+          "dateDisplay": "October 15, 2026",
+          "result": "L",
+          "playerDeck": "White Weenie",
+          "opponentDeck": "_",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "StevenRiseNYC",
       "opponentDisplayName": "StevenRiseNYC",
       "matchesPlayed": 1,
@@ -1842,31 +1927,6 @@
           "dateDisplay": "August 27, 2026",
           "result": "L",
           "playerDeck": "Merfolk",
-          "opponentDeck": "_",
-          "playerGameWins": 1,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "WillReddy",
-      "opponentDisplayName": "WillReddy",
-      "matchesPlayed": 1,
-      "matchWins": 0,
-      "matchLosses": 1,
-      "matchDraws": 0,
-      "matchWinPercentage": 0,
-      "gameWins": 1,
-      "gameLosses": 2,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.3333333333333333,
-      "matches": [
-        {
-          "tournamentId": "436157",
-          "dateDisplay": "June 18, 2026",
-          "result": "L",
-          "playerDeck": "_",
           "opponentDeck": "_",
           "playerGameWins": 1,
           "opponentGameWins": 2,
@@ -2476,6 +2536,23 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "485761",
+      "date": "2026-10-15T23:40:17Z",
+      "dateDisplay": "October 15, 2026",
+      "playerCount": 20,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 4,
+      "points": 6,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 4,
+      "gameLosses": 3,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5714286,
+      "deck": "White Weenie"
+    },
     {
       "tournamentId": "445685",
       "date": "2026-10-01T23:44:27Z",

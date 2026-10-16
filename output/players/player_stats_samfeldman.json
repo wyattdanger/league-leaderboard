@@ -2,25 +2,25 @@
   "username": "SamFeldman",
   "displayName": "Samuel Feldman",
   "overallStats": {
-    "totalTournaments": 8,
-    "totalPoints": 46,
-    "totalMatches": 24,
-    "matchRecord": "15-8-1",
-    "matchWinPercentage": 0.6458333333333334,
-    "gameRecord": "34-20-0",
-    "gameWinPercentage": 0.6296296296296297,
+    "totalTournaments": 9,
+    "totalPoints": 50,
+    "totalMatches": 27,
+    "matchRecord": "16-9-2",
+    "matchWinPercentage": 0.6296296296296297,
+    "gameRecord": "38-24-1",
+    "gameWinPercentage": 0.6031746031746031,
     "trophies": 2,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q4 2026",
-      "events": 1,
-      "points": 6,
-      "matchRecord": "2-1-0",
-      "matchWinPercentage": 0.6666666666666666,
-      "gameRecord": "3-2-0",
-      "gameWinPercentage": 0.6
+      "events": 2,
+      "points": 10,
+      "matchRecord": "3-2-1",
+      "matchWinPercentage": 0.5833333333333334,
+      "gameRecord": "7-6-1",
+      "gameWinPercentage": 0.5357142857142857
     },
     {
       "leagueName": "Q3 2026",
@@ -44,16 +44,16 @@
   "deckStats": [
     {
       "deckName": "Unknown",
-      "events": 3,
-      "matchWins": 3,
-      "matchLosses": 5,
-      "matchDraws": 1,
-      "matchRecord": "3-5-1",
-      "matchWinPercentage": 0.3888888888888889,
-      "gameWins": 10,
-      "gameLosses": 11,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.47619047619047616,
+      "events": 4,
+      "matchWins": 4,
+      "matchLosses": 6,
+      "matchDraws": 2,
+      "matchRecord": "4-6-2",
+      "matchWinPercentage": 0.4166666666666667,
+      "gameWins": 14,
+      "gameLosses": 15,
+      "gameDraws": 1,
+      "gameWinPercentage": 0.48333333333333334,
       "trophies": 0
     },
     {
@@ -128,6 +128,101 @@
     }
   ],
   "headToHead": [
+    {
+      "opponentUsername": "supremeXsupreme",
+      "opponentDisplayName": "Jeff Jao",
+      "matchesPlayed": 2,
+      "matchWins": 2,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 4,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6666666666666666,
+      "matches": [
+        {
+          "tournamentId": "485761",
+          "dateDisplay": "October 15, 2026",
+          "result": "W",
+          "playerDeck": "_",
+          "opponentDeck": "Landstill",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "445673",
+          "dateDisplay": "July 16, 2026",
+          "result": "W",
+          "playerDeck": "Burn",
+          "opponentDeck": "Landstill",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "_jonH",
+      "opponentDisplayName": "_jonH",
+      "matchesPlayed": 2,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 1,
+      "matchWinPercentage": 0.75,
+      "gameWins": 3,
+      "gameLosses": 2,
+      "gameDraws": 1,
+      "gameWinPercentage": 0.5833333333333334,
+      "matches": [
+        {
+          "tournamentId": "485761",
+          "dateDisplay": "October 15, 2026",
+          "result": "D",
+          "playerDeck": "_",
+          "opponentDeck": "Oath Ponza",
+          "playerGameWins": 1,
+          "opponentGameWins": 1,
+          "gameDraws": 1
+        },
+        {
+          "tournamentId": "445681",
+          "dateDisplay": "September 3, 2026",
+          "result": "W",
+          "playerDeck": "GR Oath Ponza",
+          "opponentDeck": "GW Oath Ponza",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "Tencteri",
+      "opponentDisplayName": "Tencteri",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "matches": [
+        {
+          "tournamentId": "485761",
+          "dateDisplay": "October 15, 2026",
+          "result": "L",
+          "playerDeck": "_",
+          "opponentDeck": "White Weenie",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
     {
       "opponentUsername": "PCavalcanti",
       "opponentDisplayName": "PCavalcanti",
@@ -299,31 +394,6 @@
           "opponentDeck": "Terrageddon",
           "playerGameWins": 2,
           "opponentGameWins": 0,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "_jonH",
-      "opponentDisplayName": "_jonH",
-      "matchesPlayed": 1,
-      "matchWins": 1,
-      "matchLosses": 0,
-      "matchDraws": 0,
-      "matchWinPercentage": 1,
-      "gameWins": 2,
-      "gameLosses": 1,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.6666666666666666,
-      "matches": [
-        {
-          "tournamentId": "445681",
-          "dateDisplay": "September 3, 2026",
-          "result": "W",
-          "playerDeck": "GR Oath Ponza",
-          "opponentDeck": "GW Oath Ponza",
-          "playerGameWins": 2,
-          "opponentGameWins": 1,
           "gameDraws": 0
         }
       ]
@@ -504,31 +574,6 @@
       ]
     },
     {
-      "opponentUsername": "supremeXsupreme",
-      "opponentDisplayName": "Jeff Jao",
-      "matchesPlayed": 1,
-      "matchWins": 1,
-      "matchLosses": 0,
-      "matchDraws": 0,
-      "matchWinPercentage": 1,
-      "gameWins": 2,
-      "gameLosses": 1,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.6666666666666666,
-      "matches": [
-        {
-          "tournamentId": "445673",
-          "dateDisplay": "July 16, 2026",
-          "result": "W",
-          "playerDeck": "Burn",
-          "opponentDeck": "Landstill",
-          "playerGameWins": 2,
-          "opponentGameWins": 1,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
       "opponentUsername": "MaltBeverage",
       "opponentDisplayName": "Ryan Alexander",
       "matchesPlayed": 1,
@@ -680,6 +725,23 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "485761",
+      "date": "2026-10-15T23:40:17Z",
+      "dateDisplay": "October 15, 2026",
+      "playerCount": 20,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 13,
+      "points": 4,
+      "matchRecord": "1-1-1",
+      "matchWinPercentage": 0.5,
+      "gameWins": 4,
+      "gameLosses": 4,
+      "gameDraws": 1,
+      "gameWinPercentage": 0.4814815,
+      "deck": "_"
+    },
     {
       "tournamentId": "445685",
       "date": "2026-10-01T23:44:27Z",
