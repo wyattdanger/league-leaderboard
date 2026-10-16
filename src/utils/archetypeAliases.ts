@@ -215,6 +215,14 @@ export const archetypeAliases: Record<string, string> = {
   'Clerics': 'Clerics',
   'Mono Black Clerics': 'Clerics',
   'Mono-B Clerics': 'Clerics',
+  'Mono B Clerics': 'Clerics',
+
+  // Disk variants
+  'Disk': 'Disk',
+  'U Disk': 'Disk',
+  'Blue Disk': 'Disk',
+  'Mono Blue Disk': 'Disk',
+  'Mono U Disk': 'Disk',
 
   // Wizards variants (any name containing "Wizards" also matches via fuzzy rule)
   'Wizards': 'Wizards',
