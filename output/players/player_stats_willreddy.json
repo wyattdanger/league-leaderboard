@@ -2,25 +2,25 @@
   "username": "WillReddy",
   "displayName": "WillReddy",
   "overallStats": {
-    "totalTournaments": 21,
-    "totalPoints": 88,
-    "totalMatches": 63,
-    "matchRecord": "29-33-1",
-    "matchWinPercentage": 0.46825396825396826,
-    "gameRecord": "77-79-1",
-    "gameWinPercentage": 0.49044585987261147,
+    "totalTournaments": 22,
+    "totalPoints": 94,
+    "totalMatches": 66,
+    "matchRecord": "31-34-1",
+    "matchWinPercentage": 0.4772727272727273,
+    "gameRecord": "82-81-1",
+    "gameWinPercentage": 0.5,
     "trophies": 0,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q4 2026",
-      "events": 2,
-      "points": 6,
-      "matchRecord": "2-4-0",
-      "matchWinPercentage": 0.3333333333333333,
-      "gameRecord": "7-9-0",
-      "gameWinPercentage": 0.4375
+      "events": 3,
+      "points": 12,
+      "matchRecord": "4-5-0",
+      "matchWinPercentage": 0.4444444444444444,
+      "gameRecord": "12-11-0",
+      "gameWinPercentage": 0.5217391304347826
     },
     {
       "leagueName": "Q3 2026",
@@ -119,6 +119,20 @@
       "matchDraws": 1,
       "matchRecord": "2-0-1",
       "matchWinPercentage": 0.8333333333333334,
+      "gameWins": 5,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.7142857142857143,
+      "trophies": 0
+    },
+    {
+      "deckName": "Burn",
+      "events": 1,
+      "matchWins": 2,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
       "gameWins": 5,
       "gameLosses": 2,
       "gameDraws": 0,
@@ -239,6 +253,51 @@
     }
   ],
   "headToHead": [
+    {
+      "opponentUsername": "AlldoAurelis",
+      "opponentDisplayName": "AlldoAurelis",
+      "matchesPlayed": 3,
+      "matchWins": 0,
+      "matchLosses": 3,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 2,
+      "gameLosses": 6,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.25,
+      "matches": [
+        {
+          "tournamentId": "489140",
+          "dateDisplay": "October 22, 2026",
+          "result": "L",
+          "playerDeck": "Burn",
+          "opponentDeck": "Burn",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "445678",
+          "dateDisplay": "August 13, 2026",
+          "result": "L",
+          "playerDeck": "Oath Ponza",
+          "opponentDeck": "Moneyball Red",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "436160",
+          "dateDisplay": "July 9, 2026",
+          "result": "L",
+          "playerDeck": "_",
+          "opponentDeck": "Moneyball Black",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
     {
       "opponentUsername": "madmanpoet",
       "opponentDisplayName": "Michael Flores",
@@ -535,41 +594,6 @@
       ]
     },
     {
-      "opponentUsername": "AlldoAurelis",
-      "opponentDisplayName": "AlldoAurelis",
-      "matchesPlayed": 2,
-      "matchWins": 0,
-      "matchLosses": 2,
-      "matchDraws": 0,
-      "matchWinPercentage": 0,
-      "gameWins": 1,
-      "gameLosses": 4,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.2,
-      "matches": [
-        {
-          "tournamentId": "445678",
-          "dateDisplay": "August 13, 2026",
-          "result": "L",
-          "playerDeck": "Oath Ponza",
-          "opponentDeck": "Moneyball Red",
-          "playerGameWins": 0,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "436160",
-          "dateDisplay": "July 9, 2026",
-          "result": "L",
-          "playerDeck": "_",
-          "opponentDeck": "Moneyball Black",
-          "playerGameWins": 1,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
       "opponentUsername": "delofstrom",
       "opponentDisplayName": "DEL .",
       "matchesPlayed": 2,
@@ -810,6 +834,56 @@
           "opponentDeck": "UG Madness",
           "playerGameWins": 0,
           "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "AlfredG",
+      "opponentDisplayName": "AlfredG",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "matches": [
+        {
+          "tournamentId": "489140",
+          "dateDisplay": "October 22, 2026",
+          "result": "W",
+          "playerDeck": "Burn",
+          "opponentDeck": "UB Zombie Infestation",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "Maew",
+      "opponentDisplayName": "Maew",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "matches": [
+        {
+          "tournamentId": "489140",
+          "dateDisplay": "October 22, 2026",
+          "result": "W",
+          "playerDeck": "Burn",
+          "opponentDeck": "Terrageddon",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
           "gameDraws": 0
         }
       ]
@@ -1416,6 +1490,23 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "489140",
+      "date": "2026-10-22T23:39:07Z",
+      "dateDisplay": "October 22, 2026",
+      "playerCount": 18,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 7,
+      "points": 6,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 5,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.7142857,
+      "deck": "Burn"
+    },
     {
       "tournamentId": "485761",
       "date": "2026-10-15T23:40:17Z",

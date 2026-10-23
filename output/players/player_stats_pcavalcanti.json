@@ -2,25 +2,25 @@
   "username": "PCavalcanti",
   "displayName": "PCavalcanti",
   "overallStats": {
-    "totalTournaments": 29,
-    "totalPoints": 133,
-    "totalMatches": 86,
-    "matchRecord": "43-39-4",
-    "matchWinPercentage": 0.5232558139534884,
-    "gameRecord": "115-102-0",
-    "gameWinPercentage": 0.5299539170506913,
-    "trophies": 1,
+    "totalTournaments": 30,
+    "totalPoints": 142,
+    "totalMatches": 89,
+    "matchRecord": "46-39-4",
+    "matchWinPercentage": 0.5393258426966292,
+    "gameRecord": "121-103-0",
+    "gameWinPercentage": 0.5401785714285714,
+    "trophies": 2,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q4 2026",
-      "events": 2,
-      "points": 10,
-      "matchRecord": "3-2-1",
-      "matchWinPercentage": 0.5833333333333334,
-      "gameRecord": "7-5-0",
-      "gameWinPercentage": 0.5833333333333334
+      "events": 3,
+      "points": 19,
+      "matchRecord": "6-2-1",
+      "matchWinPercentage": 0.7222222222222222,
+      "gameRecord": "13-6-0",
+      "gameWinPercentage": 0.6842105263157895
     },
     {
       "leagueName": "Q3 2026",
@@ -138,6 +138,20 @@
       "gameDraws": 0,
       "gameWinPercentage": 0.5333333333333333,
       "trophies": 0
+    },
+    {
+      "deckName": "Sligh splash G",
+      "events": 1,
+      "matchWins": 3,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchRecord": "3-0-0",
+      "matchWinPercentage": 1,
+      "gameWins": 6,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.8571428571428571,
+      "trophies": 1
     },
     {
       "deckName": "GW Survival",
@@ -357,6 +371,136 @@
       ]
     },
     {
+      "opponentUsername": "PetS22",
+      "opponentDisplayName": "PetS22",
+      "matchesPlayed": 5,
+      "matchWins": 5,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 10,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.8333333333333334,
+      "matches": [
+        {
+          "tournamentId": "489140",
+          "dateDisplay": "October 22, 2026",
+          "result": "W",
+          "playerDeck": "Sligh splash G",
+          "opponentDeck": "Mono Blue Control",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "445683",
+          "dateDisplay": "September 17, 2026",
+          "result": "W",
+          "playerDeck": "Burn",
+          "opponentDeck": "Mono Blue Disk",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "434267",
+          "dateDisplay": "June 4, 2026",
+          "result": "W",
+          "playerDeck": "Burn",
+          "opponentDeck": "_",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "417122",
+          "dateDisplay": "March 26, 2026",
+          "result": "W",
+          "playerDeck": "Burn",
+          "opponentDeck": "Mono Black",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "415118",
+          "dateDisplay": "March 19, 2026",
+          "result": "W",
+          "playerDeck": "Burn",
+          "opponentDeck": "Mono Black Aggro",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "Tencteri",
+      "opponentDisplayName": "Tencteri",
+      "matchesPlayed": 5,
+      "matchWins": 3,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.6,
+      "gameWins": 8,
+      "gameLosses": 7,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5333333333333333,
+      "matches": [
+        {
+          "tournamentId": "489140",
+          "dateDisplay": "October 22, 2026",
+          "result": "W",
+          "playerDeck": "Sligh splash G",
+          "opponentDeck": "White Weenie",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "445683",
+          "dateDisplay": "September 17, 2026",
+          "result": "L",
+          "playerDeck": "Burn",
+          "opponentDeck": "White Weenie",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "430556",
+          "dateDisplay": "May 21, 2026",
+          "result": "W",
+          "playerDeck": "_",
+          "opponentDeck": "WW",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "420854",
+          "dateDisplay": "April 9, 2026",
+          "result": "L",
+          "playerDeck": "Burn",
+          "opponentDeck": "White weenie",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "402789",
+          "dateDisplay": "February 5, 2026",
+          "result": "W",
+          "playerDeck": "_",
+          "opponentDeck": "RG Tron",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "weidnent",
       "opponentDisplayName": "Nicholas Weidner",
       "matchesPlayed": 5,
@@ -417,116 +561,6 @@
           "opponentDeck": "Balancing Act",
           "playerGameWins": 0,
           "opponentGameWins": 2,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "Tencteri",
-      "opponentDisplayName": "Tencteri",
-      "matchesPlayed": 4,
-      "matchWins": 2,
-      "matchLosses": 2,
-      "matchDraws": 0,
-      "matchWinPercentage": 0.5,
-      "gameWins": 6,
-      "gameLosses": 6,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.5,
-      "matches": [
-        {
-          "tournamentId": "445683",
-          "dateDisplay": "September 17, 2026",
-          "result": "L",
-          "playerDeck": "Burn",
-          "opponentDeck": "White Weenie",
-          "playerGameWins": 1,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "430556",
-          "dateDisplay": "May 21, 2026",
-          "result": "W",
-          "playerDeck": "_",
-          "opponentDeck": "WW",
-          "playerGameWins": 2,
-          "opponentGameWins": 1,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "420854",
-          "dateDisplay": "April 9, 2026",
-          "result": "L",
-          "playerDeck": "Burn",
-          "opponentDeck": "White weenie",
-          "playerGameWins": 1,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "402789",
-          "dateDisplay": "February 5, 2026",
-          "result": "W",
-          "playerDeck": "_",
-          "opponentDeck": "RG Tron",
-          "playerGameWins": 2,
-          "opponentGameWins": 1,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "PetS22",
-      "opponentDisplayName": "PetS22",
-      "matchesPlayed": 4,
-      "matchWins": 4,
-      "matchLosses": 0,
-      "matchDraws": 0,
-      "matchWinPercentage": 1,
-      "gameWins": 8,
-      "gameLosses": 2,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.8,
-      "matches": [
-        {
-          "tournamentId": "445683",
-          "dateDisplay": "September 17, 2026",
-          "result": "W",
-          "playerDeck": "Burn",
-          "opponentDeck": "Mono Blue Disk",
-          "playerGameWins": 2,
-          "opponentGameWins": 1,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "434267",
-          "dateDisplay": "June 4, 2026",
-          "result": "W",
-          "playerDeck": "Burn",
-          "opponentDeck": "_",
-          "playerGameWins": 2,
-          "opponentGameWins": 1,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "417122",
-          "dateDisplay": "March 26, 2026",
-          "result": "W",
-          "playerDeck": "Burn",
-          "opponentDeck": "Mono Black",
-          "playerGameWins": 2,
-          "opponentGameWins": 0,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "415118",
-          "dateDisplay": "March 19, 2026",
-          "result": "W",
-          "playerDeck": "Burn",
-          "opponentDeck": "Mono Black Aggro",
-          "playerGameWins": 2,
-          "opponentGameWins": 0,
           "gameDraws": 0
         }
       ]
@@ -795,6 +829,41 @@
           "result": "L",
           "playerDeck": "_",
           "opponentDeck": "Dreadnought",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "cg123",
+      "opponentDisplayName": "Christopher Garcia",
+      "matchesPlayed": 2,
+      "matchWins": 1,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.5,
+      "gameWins": 2,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5,
+      "matches": [
+        {
+          "tournamentId": "489140",
+          "dateDisplay": "October 22, 2026",
+          "result": "W",
+          "playerDeck": "Sligh splash G",
+          "opponentDeck": "The Rock",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "485761",
+          "dateDisplay": "October 15, 2026",
+          "result": "L",
+          "playerDeck": "GW Survival Armageddon",
+          "opponentDeck": "UW Replenish",
           "playerGameWins": 0,
           "opponentGameWins": 2,
           "gameDraws": 0
@@ -1172,31 +1241,6 @@
           "opponentDeck": "Landstill",
           "playerGameWins": 1,
           "opponentGameWins": 1,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "cg123",
-      "opponentDisplayName": "Christopher Garcia",
-      "matchesPlayed": 1,
-      "matchWins": 0,
-      "matchLosses": 1,
-      "matchDraws": 0,
-      "matchWinPercentage": 0,
-      "gameWins": 0,
-      "gameLosses": 2,
-      "gameDraws": 0,
-      "gameWinPercentage": 0,
-      "matches": [
-        {
-          "tournamentId": "485761",
-          "dateDisplay": "October 15, 2026",
-          "result": "L",
-          "playerDeck": "GW Survival Armageddon",
-          "opponentDeck": "UW Replenish",
-          "playerGameWins": 0,
-          "opponentGameWins": 2,
           "gameDraws": 0
         }
       ]
@@ -1878,6 +1922,23 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "489140",
+      "date": "2026-10-22T23:39:07Z",
+      "dateDisplay": "October 22, 2026",
+      "playerCount": 18,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 1,
+      "points": 9,
+      "matchRecord": "3-0-0",
+      "matchWinPercentage": 1,
+      "gameWins": 6,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.8571429,
+      "deck": "Sligh splash G"
+    },
     {
       "tournamentId": "485761",
       "date": "2026-10-15T23:40:17Z",

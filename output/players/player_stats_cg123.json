@@ -2,25 +2,25 @@
   "username": "cg123",
   "displayName": "Christopher Garcia",
   "overallStats": {
-    "totalTournaments": 1,
-    "totalPoints": 9,
-    "totalMatches": 3,
-    "matchRecord": "3-0-0",
-    "matchWinPercentage": 1,
-    "gameRecord": "6-0-0",
-    "gameWinPercentage": 1,
+    "totalTournaments": 2,
+    "totalPoints": 12,
+    "totalMatches": 5,
+    "matchRecord": "4-1-0",
+    "matchWinPercentage": 0.8,
+    "gameRecord": "8-3-0",
+    "gameWinPercentage": 0.7272727272727273,
     "trophies": 1,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q4 2026",
-      "events": 1,
-      "points": 9,
-      "matchRecord": "3-0-0",
-      "matchWinPercentage": 1,
-      "gameRecord": "6-0-0",
-      "gameWinPercentage": 1
+      "events": 2,
+      "points": 12,
+      "matchRecord": "4-1-0",
+      "matchWinPercentage": 0.8,
+      "gameRecord": "8-3-0",
+      "gameWinPercentage": 0.7272727272727273
     }
   ],
   "deckStats": [
@@ -37,9 +37,83 @@
       "gameDraws": 0,
       "gameWinPercentage": 1,
       "trophies": 1
+    },
+    {
+      "deckName": "The Rock",
+      "events": 1,
+      "matchWins": 1,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchRecord": "1-1-0",
+      "matchWinPercentage": 0.5,
+      "gameWins": 2,
+      "gameLosses": 3,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.4,
+      "trophies": 0
     }
   ],
   "headToHead": [
+    {
+      "opponentUsername": "PCavalcanti",
+      "opponentDisplayName": "PCavalcanti",
+      "matchesPlayed": 2,
+      "matchWins": 1,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.5,
+      "gameWins": 2,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5,
+      "matches": [
+        {
+          "tournamentId": "489140",
+          "dateDisplay": "October 22, 2026",
+          "result": "L",
+          "playerDeck": "The Rock",
+          "opponentDeck": "Sligh splash G",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "485761",
+          "dateDisplay": "October 15, 2026",
+          "result": "W",
+          "playerDeck": "UW Replenish",
+          "opponentDeck": "GW Survival Armageddon",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "LMDB",
+      "opponentDisplayName": "LMDB",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6666666666666666,
+      "matches": [
+        {
+          "tournamentId": "489140",
+          "dateDisplay": "October 22, 2026",
+          "result": "W",
+          "playerDeck": "The Rock",
+          "opponentDeck": "BG Survival",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
     {
       "opponentUsername": "Gaunology",
       "opponentDisplayName": "Gaunology",
@@ -59,31 +133,6 @@
           "result": "W",
           "playerDeck": "UW Replenish",
           "opponentDeck": "GW Control",
-          "playerGameWins": 2,
-          "opponentGameWins": 0,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "PCavalcanti",
-      "opponentDisplayName": "PCavalcanti",
-      "matchesPlayed": 1,
-      "matchWins": 1,
-      "matchLosses": 0,
-      "matchDraws": 0,
-      "matchWinPercentage": 1,
-      "gameWins": 2,
-      "gameLosses": 0,
-      "gameDraws": 0,
-      "gameWinPercentage": 1,
-      "matches": [
-        {
-          "tournamentId": "485761",
-          "dateDisplay": "October 15, 2026",
-          "result": "W",
-          "playerDeck": "UW Replenish",
-          "opponentDeck": "GW Survival Armageddon",
           "playerGameWins": 2,
           "opponentGameWins": 0,
           "gameDraws": 0
@@ -117,6 +166,23 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "489140",
+      "date": "2026-10-22T23:39:07Z",
+      "dateDisplay": "October 22, 2026",
+      "playerCount": 18,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 13,
+      "points": 3,
+      "matchRecord": "1-1-0",
+      "matchWinPercentage": 0.5,
+      "gameWins": 2,
+      "gameLosses": 3,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.4,
+      "deck": "The Rock"
+    },
     {
       "tournamentId": "485761",
       "date": "2026-10-15T23:40:17Z",

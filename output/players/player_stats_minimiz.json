@@ -2,17 +2,26 @@
   "username": "minimiz",
   "displayName": "Eli Mizock",
   "overallStats": {
-    "totalTournaments": 17,
-    "totalPoints": 82,
-    "totalMatches": 49,
-    "matchRecord": "27-21-1",
-    "matchWinPercentage": 0.5612244897959183,
-    "gameRecord": "67-57-2",
-    "gameWinPercentage": 0.5317460317460317,
+    "totalTournaments": 18,
+    "totalPoints": 88,
+    "totalMatches": 52,
+    "matchRecord": "29-22-1",
+    "matchWinPercentage": 0.5673076923076923,
+    "gameRecord": "71-59-2",
+    "gameWinPercentage": 0.5378787878787878,
     "trophies": 3,
     "belts": 0
   },
   "leagueStats": [
+    {
+      "leagueName": "Q4 2026",
+      "events": 1,
+      "points": 6,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameRecord": "4-2-0",
+      "gameWinPercentage": 0.6666666666666666
+    },
     {
       "leagueName": "Q3 2026",
       "events": 3,
@@ -53,16 +62,16 @@
   "deckStats": [
     {
       "deckName": "Goblins",
-      "events": 10,
-      "matchWins": 17,
-      "matchLosses": 11,
+      "events": 11,
+      "matchWins": 19,
+      "matchLosses": 12,
       "matchDraws": 0,
-      "matchRecord": "17-11-0",
-      "matchWinPercentage": 0.6071428571428571,
-      "gameWins": 43,
-      "gameLosses": 31,
+      "matchRecord": "19-12-0",
+      "matchWinPercentage": 0.6129032258064516,
+      "gameWins": 47,
+      "gameLosses": 33,
       "gameDraws": 0,
-      "gameWinPercentage": 0.581081081081081,
+      "gameWinPercentage": 0.5875,
       "trophies": 2
     },
     {
@@ -123,6 +132,61 @@
     }
   ],
   "headToHead": [
+    {
+      "opponentUsername": "Tencteri",
+      "opponentDisplayName": "Tencteri",
+      "matchesPlayed": 4,
+      "matchWins": 2,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.5,
+      "gameWins": 4,
+      "gameLosses": 6,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.4,
+      "matches": [
+        {
+          "tournamentId": "489140",
+          "dateDisplay": "October 22, 2026",
+          "result": "L",
+          "playerDeck": "Goblins",
+          "opponentDeck": "White Weenie",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "436155",
+          "dateDisplay": "June 11, 2026",
+          "result": "W",
+          "playerDeck": "RG Goblins",
+          "opponentDeck": "10 Land Stompy",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "425821",
+          "dateDisplay": "April 30, 2026",
+          "result": "W",
+          "playerDeck": "Esper Tog",
+          "opponentDeck": "Mono R Welder",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "406432",
+          "dateDisplay": "February 19, 2026",
+          "result": "L",
+          "playerDeck": "Goblins",
+          "opponentDeck": "White Weenie",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
     {
       "opponentUsername": "RichBucey",
       "opponentDisplayName": "RichBucey",
@@ -234,51 +298,6 @@
       ]
     },
     {
-      "opponentUsername": "Tencteri",
-      "opponentDisplayName": "Tencteri",
-      "matchesPlayed": 3,
-      "matchWins": 2,
-      "matchLosses": 1,
-      "matchDraws": 0,
-      "matchWinPercentage": 0.6666666666666666,
-      "gameWins": 4,
-      "gameLosses": 4,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.5,
-      "matches": [
-        {
-          "tournamentId": "436155",
-          "dateDisplay": "June 11, 2026",
-          "result": "W",
-          "playerDeck": "RG Goblins",
-          "opponentDeck": "10 Land Stompy",
-          "playerGameWins": 2,
-          "opponentGameWins": 1,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "425821",
-          "dateDisplay": "April 30, 2026",
-          "result": "W",
-          "playerDeck": "Esper Tog",
-          "opponentDeck": "Mono R Welder",
-          "playerGameWins": 2,
-          "opponentGameWins": 1,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "406432",
-          "dateDisplay": "February 19, 2026",
-          "result": "L",
-          "playerDeck": "Goblins",
-          "opponentDeck": "White Weenie",
-          "playerGameWins": 0,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
       "opponentUsername": "Taylorhol",
       "opponentDisplayName": "Taylorhol",
       "matchesPlayed": 3,
@@ -364,6 +383,41 @@
           "opponentDeck": "Mono Black Aggro",
           "playerGameWins": 2,
           "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "weidnent",
+      "opponentDisplayName": "Nicholas Weidner",
+      "matchesPlayed": 2,
+      "matchWins": 1,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.5,
+      "gameWins": 3,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6,
+      "matches": [
+        {
+          "tournamentId": "489140",
+          "dateDisplay": "October 22, 2026",
+          "result": "W",
+          "playerDeck": "Goblins",
+          "opponentDeck": "Dragonstorm",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "458540",
+          "dateDisplay": "August 27, 2026",
+          "result": "L",
+          "playerDeck": "_",
+          "opponentDeck": "Oath Ponza",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
           "gameDraws": 0
         }
       ]
@@ -544,26 +598,26 @@
       ]
     },
     {
-      "opponentUsername": "weidnent",
-      "opponentDisplayName": "Nicholas Weidner",
+      "opponentUsername": "Pjd",
+      "opponentDisplayName": "Pjd",
       "matchesPlayed": 1,
-      "matchWins": 0,
-      "matchLosses": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
       "matchDraws": 0,
-      "matchWinPercentage": 0,
-      "gameWins": 1,
-      "gameLosses": 2,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
       "gameDraws": 0,
-      "gameWinPercentage": 0.3333333333333333,
+      "gameWinPercentage": 1,
       "matches": [
         {
-          "tournamentId": "458540",
-          "dateDisplay": "August 27, 2026",
-          "result": "L",
-          "playerDeck": "_",
-          "opponentDeck": "Oath Ponza",
-          "playerGameWins": 1,
-          "opponentGameWins": 2,
+          "tournamentId": "489140",
+          "dateDisplay": "October 22, 2026",
+          "result": "W",
+          "playerDeck": "Goblins",
+          "opponentDeck": "Landstill",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
           "gameDraws": 0
         }
       ]
@@ -1095,6 +1149,23 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "489140",
+      "date": "2026-10-22T23:39:07Z",
+      "dateDisplay": "October 22, 2026",
+      "playerCount": 18,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 5,
+      "points": 6,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 4,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6666667,
+      "deck": "Goblins"
+    },
     {
       "tournamentId": "458540",
       "date": "2026-08-27T23:31:32Z",

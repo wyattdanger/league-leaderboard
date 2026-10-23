@@ -2,17 +2,26 @@
   "username": "Ltassi1987",
   "displayName": "Luiz Tassi",
   "overallStats": {
-    "totalTournaments": 5,
-    "totalPoints": 13,
-    "totalMatches": 12,
-    "matchRecord": "4-7-1",
-    "matchWinPercentage": 0.375,
-    "gameRecord": "11-16-0",
-    "gameWinPercentage": 0.4074074074074074,
+    "totalTournaments": 6,
+    "totalPoints": 19,
+    "totalMatches": 15,
+    "matchRecord": "6-8-1",
+    "matchWinPercentage": 0.43333333333333335,
+    "gameRecord": "16-19-0",
+    "gameWinPercentage": 0.45714285714285713,
     "trophies": 0,
     "belts": 0
   },
   "leagueStats": [
+    {
+      "leagueName": "Q4 2026",
+      "events": 1,
+      "points": 6,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameRecord": "5-3-0",
+      "gameWinPercentage": 0.625
+    },
     {
       "leagueName": "Q3 2026",
       "events": 1,
@@ -35,16 +44,16 @@
   "deckStats": [
     {
       "deckName": "Unknown",
-      "events": 4,
-      "matchWins": 2,
-      "matchLosses": 7,
+      "events": 5,
+      "matchWins": 4,
+      "matchLosses": 8,
       "matchDraws": 0,
-      "matchRecord": "2-7-0",
-      "matchWinPercentage": 0.2222222222222222,
-      "gameWins": 6,
-      "gameLosses": 15,
+      "matchRecord": "4-8-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 11,
+      "gameLosses": 18,
       "gameDraws": 0,
-      "gameWinPercentage": 0.2857142857142857,
+      "gameWinPercentage": 0.3793103448275862,
       "trophies": 0
     },
     {
@@ -63,6 +72,81 @@
     }
   ],
   "headToHead": [
+    {
+      "opponentUsername": "LMDB",
+      "opponentDisplayName": "LMDB",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "matches": [
+        {
+          "tournamentId": "489140",
+          "dateDisplay": "October 22, 2026",
+          "result": "W",
+          "playerDeck": "_",
+          "opponentDeck": "BG Survival",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "AlldoAurelis",
+      "opponentDisplayName": "AlldoAurelis",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6666666666666666,
+      "matches": [
+        {
+          "tournamentId": "489140",
+          "dateDisplay": "October 22, 2026",
+          "result": "W",
+          "playerDeck": "_",
+          "opponentDeck": "Burn",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "mattmanw2",
+      "opponentDisplayName": "mattmanw2",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "matches": [
+        {
+          "tournamentId": "489140",
+          "dateDisplay": "October 22, 2026",
+          "result": "L",
+          "playerDeck": "_",
+          "opponentDeck": "Moneyball",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
     {
       "opponentUsername": "tintintintin",
       "opponentDisplayName": "tintintintin",
@@ -365,6 +449,23 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "489140",
+      "date": "2026-10-22T23:39:07Z",
+      "dateDisplay": "October 22, 2026",
+      "playerCount": 18,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 4,
+      "points": 6,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 5,
+      "gameLosses": 3,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.625,
+      "deck": "_"
+    },
     {
       "tournamentId": "436159",
       "date": "2026-07-02T23:07:15Z",

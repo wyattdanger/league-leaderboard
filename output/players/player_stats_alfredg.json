@@ -2,25 +2,25 @@
   "username": "AlfredG",
   "displayName": "AlfredG",
   "overallStats": {
-    "totalTournaments": 14,
+    "totalTournaments": 15,
     "totalPoints": 54,
-    "totalMatches": 41,
-    "matchRecord": "16-19-6",
-    "matchWinPercentage": 0.4634146341463415,
-    "gameRecord": "47-49-4",
-    "gameWinPercentage": 0.47,
+    "totalMatches": 44,
+    "matchRecord": "16-22-6",
+    "matchWinPercentage": 0.4318181818181818,
+    "gameRecord": "47-55-4",
+    "gameWinPercentage": 0.44339622641509435,
     "trophies": 0,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q4 2026",
-      "events": 1,
+      "events": 2,
       "points": 6,
-      "matchRecord": "2-1-0",
-      "matchWinPercentage": 0.6666666666666666,
-      "gameRecord": "4-3-0",
-      "gameWinPercentage": 0.5714285714285714
+      "matchRecord": "2-4-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameRecord": "4-9-0",
+      "gameWinPercentage": 0.3076923076923077
     },
     {
       "leagueName": "Q3 2026",
@@ -181,6 +181,20 @@
       "gameDraws": 0,
       "gameWinPercentage": 0.5,
       "trophies": 0
+    },
+    {
+      "deckName": "UB Zombie Infestation",
+      "events": 1,
+      "matchWins": 0,
+      "matchLosses": 3,
+      "matchDraws": 0,
+      "matchRecord": "0-3-0",
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 6,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "trophies": 0
     }
   ],
   "headToHead": [
@@ -291,6 +305,41 @@
           "playerGameWins": 2,
           "opponentGameWins": 0,
           "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "Tencteri",
+      "opponentDisplayName": "Tencteri",
+      "matchesPlayed": 2,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 1,
+      "matchWinPercentage": 0.25,
+      "gameWins": 1,
+      "gameLosses": 3,
+      "gameDraws": 1,
+      "gameWinPercentage": 0.3,
+      "matches": [
+        {
+          "tournamentId": "489140",
+          "dateDisplay": "October 22, 2026",
+          "result": "L",
+          "playerDeck": "UB Zombie Infestation",
+          "opponentDeck": "White Weenie",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "445683",
+          "dateDisplay": "September 17, 2026",
+          "result": "D",
+          "playerDeck": "Ubw Zombie Infestation",
+          "opponentDeck": "White Weenie",
+          "playerGameWins": 1,
+          "opponentGameWins": 1,
+          "gameDraws": 1
         }
       ]
     },
@@ -575,6 +624,56 @@
       ]
     },
     {
+      "opponentUsername": "WillReddy",
+      "opponentDisplayName": "WillReddy",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "matches": [
+        {
+          "tournamentId": "489140",
+          "dateDisplay": "October 22, 2026",
+          "result": "L",
+          "playerDeck": "UB Zombie Infestation",
+          "opponentDeck": "Burn",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "Pjd",
+      "opponentDisplayName": "Pjd",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "matches": [
+        {
+          "tournamentId": "489140",
+          "dateDisplay": "October 22, 2026",
+          "result": "L",
+          "playerDeck": "UB Zombie Infestation",
+          "opponentDeck": "Landstill",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "truthcult",
       "opponentDisplayName": "klint",
       "matchesPlayed": 1,
@@ -646,31 +745,6 @@
           "playerGameWins": 2,
           "opponentGameWins": 0,
           "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "Tencteri",
-      "opponentDisplayName": "Tencteri",
-      "matchesPlayed": 1,
-      "matchWins": 0,
-      "matchLosses": 0,
-      "matchDraws": 1,
-      "matchWinPercentage": 0.5,
-      "gameWins": 1,
-      "gameLosses": 1,
-      "gameDraws": 1,
-      "gameWinPercentage": 0.5,
-      "matches": [
-        {
-          "tournamentId": "445683",
-          "dateDisplay": "September 17, 2026",
-          "result": "D",
-          "playerDeck": "Ubw Zombie Infestation",
-          "opponentDeck": "White Weenie",
-          "playerGameWins": 1,
-          "opponentGameWins": 1,
-          "gameDraws": 1
         }
       ]
     },
@@ -951,6 +1025,23 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "489140",
+      "date": "2026-10-22T23:39:07Z",
+      "dateDisplay": "October 22, 2026",
+      "playerCount": 18,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 18,
+      "points": 0,
+      "matchRecord": "0-3-0",
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 6,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333,
+      "deck": "UB Zombie Infestation"
+    },
     {
       "tournamentId": "485761",
       "date": "2026-10-15T23:40:17Z",
