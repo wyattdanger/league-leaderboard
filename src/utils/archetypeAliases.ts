@@ -111,6 +111,19 @@ export const archetypeAliases: Record<string, string> = {
   'Bant Medallion': 'Bant Control',
   'Predict Medallion': 'Bant Control',
 
+  // White Control variants
+  'White Control': 'White Control',
+  'Mono White Control': 'White Control',
+
+  // Pattern Rector variants
+  'Pattern Rector': 'Pattern Rector',
+  '4C Rector Control': 'Pattern Rector',
+
+  // Zombie Infestation variants
+  'Zombie Infestation': 'Zombie Infestation',
+  'UB Zombie Infestation': 'Zombie Infestation',
+  'Ubw Zombie Infestation': 'Zombie Infestation',
+
   // Chromatic Control variants
   'Chromatic Control': 'Chromatic Control',
   'Chromatic Predict': 'Chromatic Control',
@@ -192,6 +205,7 @@ export const archetypeAliases: Record<string, string> = {
   'RG Burn': 'Burn',
   'RG Madness Burn': 'Burn',
   'Sligh': 'Burn',
+  'Sligh splash G': 'Burn',
 
   // Stasis variants
   'Stasis': 'Stasis',

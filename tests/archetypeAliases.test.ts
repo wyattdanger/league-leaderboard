@@ -16,6 +16,11 @@ const allDeckNames = [
 describe('normalizeDeckName', () => {
   it.each([
     ['Gro', 'Gro'],
+    ['Sligh splash G', 'Burn'],
+    ['Mono White Control', 'White Control'],
+    ['4C Rector Control', 'Pattern Rector'],
+    ['UB Zombie Infestation', 'Zombie Infestation'],
+    ['Ubw Zombie Infestation', 'Zombie Infestation'],
     ['GAT', 'Gro'],
     ['GAT w/Angel', 'Gro'],
     ['Gro-a-Tog', 'Gro'],
