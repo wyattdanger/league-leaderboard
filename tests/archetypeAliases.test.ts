@@ -18,7 +18,7 @@ describe('normalizeDeckName', () => {
     ['Gro', 'Gro'],
     ['Sligh splash G', 'Burn'],
     ['Mono White Control', 'White Control'],
-    ['4C Rector Control', 'Pattern Rector'],
+    ['4C Rector Control', 'Rector Control'],
     ['UB Zombie Infestation', 'Zombie Infestation'],
     ['Ubw Zombie Infestation', 'Zombie Infestation'],
     ['GAT', 'Gro'],

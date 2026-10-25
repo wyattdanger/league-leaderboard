@@ -115,9 +115,9 @@ export const archetypeAliases: Record<string, string> = {
   'White Control': 'White Control',
   'Mono White Control': 'White Control',
 
-  // Pattern Rector variants
-  'Pattern Rector': 'Pattern Rector',
-  '4C Rector Control': 'Pattern Rector',
+  // Rector Control variants (distinct from Pattern Rector)
+  'Rector Control': 'Rector Control',
+  '4C Rector Control': 'Rector Control',
 
   // Zombie Infestation variants
   'Zombie Infestation': 'Zombie Infestation',
