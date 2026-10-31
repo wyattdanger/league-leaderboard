@@ -2,25 +2,25 @@
   "username": "WillReddy",
   "displayName": "WillReddy",
   "overallStats": {
-    "totalTournaments": 22,
-    "totalPoints": 94,
-    "totalMatches": 66,
-    "matchRecord": "31-34-1",
-    "matchWinPercentage": 0.4772727272727273,
-    "gameRecord": "82-81-1",
-    "gameWinPercentage": 0.5,
+    "totalTournaments": 23,
+    "totalPoints": 97,
+    "totalMatches": 69,
+    "matchRecord": "32-36-1",
+    "matchWinPercentage": 0.47101449275362317,
+    "gameRecord": "85-85-1",
+    "gameWinPercentage": 0.49707602339181284,
     "trophies": 0,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q4 2026",
-      "events": 3,
-      "points": 12,
-      "matchRecord": "4-5-0",
-      "matchWinPercentage": 0.4444444444444444,
-      "gameRecord": "12-11-0",
-      "gameWinPercentage": 0.5217391304347826
+      "events": 4,
+      "points": 15,
+      "matchRecord": "5-7-0",
+      "matchWinPercentage": 0.4166666666666667,
+      "gameRecord": "15-15-0",
+      "gameWinPercentage": 0.5
     },
     {
       "leagueName": "Q3 2026",
@@ -168,6 +168,20 @@
       "trophies": 0
     },
     {
+      "deckName": "Beefcake",
+      "events": 1,
+      "matchWins": 1,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 3,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.42857142857142855,
+      "trophies": 0
+    },
+    {
       "deckName": "Oath Ponza",
       "events": 1,
       "matchWins": 1,
@@ -256,16 +270,26 @@
     {
       "opponentUsername": "AlldoAurelis",
       "opponentDisplayName": "AlldoAurelis",
-      "matchesPlayed": 3,
-      "matchWins": 0,
+      "matchesPlayed": 4,
+      "matchWins": 1,
       "matchLosses": 3,
       "matchDraws": 0,
-      "matchWinPercentage": 0,
-      "gameWins": 2,
+      "matchWinPercentage": 0.25,
+      "gameWins": 4,
       "gameLosses": 6,
       "gameDraws": 0,
-      "gameWinPercentage": 0.25,
+      "gameWinPercentage": 0.4,
       "matches": [
+        {
+          "tournamentId": "493621",
+          "dateDisplay": "October 29, 2026",
+          "result": "W",
+          "playerDeck": "Beefcake",
+          "opponentDeck": "Burn",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        },
         {
           "tournamentId": "489140",
           "dateDisplay": "October 22, 2026",
@@ -519,6 +543,41 @@
           "opponentDeck": "_",
           "playerGameWins": 2,
           "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "StevenRiseNYC",
+      "opponentDisplayName": "StevenRiseNYC",
+      "matchesPlayed": 2,
+      "matchWins": 0,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.2,
+      "matches": [
+        {
+          "tournamentId": "493621",
+          "dateDisplay": "October 29, 2026",
+          "result": "L",
+          "playerDeck": "Beefcake",
+          "opponentDeck": "Moneyball",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "485761",
+          "dateDisplay": "October 15, 2026",
+          "result": "L",
+          "playerDeck": "GAT",
+          "opponentDeck": "Moneyball",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
           "gameDraws": 0
         }
       ]
@@ -839,6 +898,31 @@
       ]
     },
     {
+      "opponentUsername": "jsmits90",
+      "opponentDisplayName": "jsmits90",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "matches": [
+        {
+          "tournamentId": "493621",
+          "dateDisplay": "October 29, 2026",
+          "result": "L",
+          "playerDeck": "Beefcake",
+          "opponentDeck": "Sligh",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "AlfredG",
       "opponentDisplayName": "AlfredG",
       "matchesPlayed": 1,
@@ -907,31 +991,6 @@
           "result": "L",
           "playerDeck": "GAT",
           "opponentDeck": "Landstill",
-          "playerGameWins": 1,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "StevenRiseNYC",
-      "opponentDisplayName": "StevenRiseNYC",
-      "matchesPlayed": 1,
-      "matchWins": 0,
-      "matchLosses": 1,
-      "matchDraws": 0,
-      "matchWinPercentage": 0,
-      "gameWins": 1,
-      "gameLosses": 2,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.3333333333333333,
-      "matches": [
-        {
-          "tournamentId": "485761",
-          "dateDisplay": "October 15, 2026",
-          "result": "L",
-          "playerDeck": "GAT",
-          "opponentDeck": "Moneyball",
           "playerGameWins": 1,
           "opponentGameWins": 2,
           "gameDraws": 0
@@ -1490,6 +1549,23 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "493621",
+      "date": "2026-10-29T23:04:16Z",
+      "dateDisplay": "October 29, 2026",
+      "playerCount": 22,
+      "trophyCount": 3,
+      "roundCount": 3,
+      "rank": 15,
+      "points": 3,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 3,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.4285714,
+      "deck": "Beefcake"
+    },
     {
       "tournamentId": "489140",
       "date": "2026-10-22T23:39:07Z",

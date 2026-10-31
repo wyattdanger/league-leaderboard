@@ -2,25 +2,25 @@
   "username": "Mookyspulder",
   "displayName": "Dan S",
   "overallStats": {
-    "totalTournaments": 25,
-    "totalPoints": 138,
-    "totalMatches": 75,
-    "matchRecord": "45-27-3",
-    "matchWinPercentage": 0.62,
-    "gameRecord": "106-75-1",
-    "gameWinPercentage": 0.5824175824175825,
-    "trophies": 3,
+    "totalTournaments": 26,
+    "totalPoints": 147,
+    "totalMatches": 78,
+    "matchRecord": "48-27-3",
+    "matchWinPercentage": 0.6346153846153846,
+    "gameRecord": "112-78-1",
+    "gameWinPercentage": 0.5863874345549738,
+    "trophies": 4,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q4 2026",
-      "events": 2,
-      "points": 12,
-      "matchRecord": "4-2-0",
-      "matchWinPercentage": 0.6666666666666666,
-      "gameRecord": "9-6-0",
-      "gameWinPercentage": 0.6
+      "events": 3,
+      "points": 21,
+      "matchRecord": "7-2-0",
+      "matchWinPercentage": 0.7777777777777778,
+      "gameRecord": "15-9-0",
+      "gameWinPercentage": 0.625
     },
     {
       "leagueName": "Q3 2026",
@@ -61,6 +61,20 @@
   ],
   "deckStats": [
     {
+      "deckName": "Clerics",
+      "events": 4,
+      "matchWins": 8,
+      "matchLosses": 3,
+      "matchDraws": 1,
+      "matchRecord": "8-3-1",
+      "matchWinPercentage": 0.7083333333333334,
+      "gameWins": 19,
+      "gameLosses": 12,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6129032258064516,
+      "trophies": 2
+    },
+    {
       "deckName": "Moneyball Black",
       "events": 4,
       "matchWins": 8,
@@ -72,20 +86,6 @@
       "gameLosses": 12,
       "gameDraws": 0,
       "gameWinPercentage": 0.5714285714285714,
-      "trophies": 1
-    },
-    {
-      "deckName": "Clerics",
-      "events": 3,
-      "matchWins": 5,
-      "matchLosses": 3,
-      "matchDraws": 1,
-      "matchRecord": "5-3-1",
-      "matchWinPercentage": 0.6111111111111112,
-      "gameWins": 13,
-      "gameLosses": 9,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.5909090909090909,
       "trophies": 1
     },
     {
@@ -523,6 +523,51 @@
       ]
     },
     {
+      "opponentUsername": "PCavalcanti",
+      "opponentDisplayName": "PCavalcanti",
+      "matchesPlayed": 3,
+      "matchWins": 2,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 4,
+      "gameLosses": 3,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5714285714285714,
+      "matches": [
+        {
+          "tournamentId": "493621",
+          "dateDisplay": "October 29, 2026",
+          "result": "W",
+          "playerDeck": "Clerics",
+          "opponentDeck": "Sligh splash G",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "432258",
+          "dateDisplay": "May 28, 2026",
+          "result": "L",
+          "playerDeck": "_",
+          "opponentDeck": "Burn",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "439325",
+          "dateDisplay": "June 25, 2026",
+          "result": "W",
+          "playerDeck": "RB Goblins",
+          "opponentDeck": "RG Goblins",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "AndrewLevine",
       "opponentDisplayName": "AndrewLevine",
       "matchesPlayed": 3,
@@ -748,6 +793,41 @@
       ]
     },
     {
+      "opponentUsername": "mattmanw2",
+      "opponentDisplayName": "mattmanw2",
+      "matchesPlayed": 2,
+      "matchWins": 1,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.5,
+      "gameWins": 3,
+      "gameLosses": 3,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5,
+      "matches": [
+        {
+          "tournamentId": "493621",
+          "dateDisplay": "October 29, 2026",
+          "result": "W",
+          "playerDeck": "Clerics",
+          "opponentDeck": "Moneyball",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "402789",
+          "dateDisplay": "February 5, 2026",
+          "result": "L",
+          "playerDeck": "Moneyball Black",
+          "opponentDeck": "Mono Black Aggro",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "LMDB",
       "opponentDisplayName": "LMDB",
       "matchesPlayed": 2,
@@ -923,41 +1003,6 @@
       ]
     },
     {
-      "opponentUsername": "PCavalcanti",
-      "opponentDisplayName": "PCavalcanti",
-      "matchesPlayed": 2,
-      "matchWins": 1,
-      "matchLosses": 1,
-      "matchDraws": 0,
-      "matchWinPercentage": 0.5,
-      "gameWins": 2,
-      "gameLosses": 2,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.5,
-      "matches": [
-        {
-          "tournamentId": "432258",
-          "dateDisplay": "May 28, 2026",
-          "result": "L",
-          "playerDeck": "_",
-          "opponentDeck": "Burn",
-          "playerGameWins": 0,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "439325",
-          "dateDisplay": "June 25, 2026",
-          "result": "W",
-          "playerDeck": "RB Goblins",
-          "opponentDeck": "RG Goblins",
-          "playerGameWins": 2,
-          "opponentGameWins": 0,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
       "opponentUsername": "delofstrom",
       "opponentDisplayName": "DEL .",
       "matchesPlayed": 2,
@@ -1023,6 +1068,31 @@
           "opponentDeck": "Terrageddon",
           "playerGameWins": 1,
           "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "cg123",
+      "opponentDisplayName": "Christopher Garcia",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6666666666666666,
+      "matches": [
+        {
+          "tournamentId": "493621",
+          "dateDisplay": "October 29, 2026",
+          "result": "W",
+          "playerDeck": "Clerics",
+          "opponentDeck": "BW Control",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
           "gameDraws": 0
         }
       ]
@@ -1626,34 +1696,26 @@
           "gameDraws": 0
         }
       ]
-    },
-    {
-      "opponentUsername": "mattmanw2",
-      "opponentDisplayName": "mattmanw2",
-      "matchesPlayed": 1,
-      "matchWins": 0,
-      "matchLosses": 1,
-      "matchDraws": 0,
-      "matchWinPercentage": 0,
-      "gameWins": 1,
-      "gameLosses": 2,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.3333333333333333,
-      "matches": [
-        {
-          "tournamentId": "402789",
-          "dateDisplay": "February 5, 2026",
-          "result": "L",
-          "playerDeck": "Moneyball Black",
-          "opponentDeck": "Mono Black Aggro",
-          "playerGameWins": 1,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        }
-      ]
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "493621",
+      "date": "2026-10-29T23:04:16Z",
+      "dateDisplay": "October 29, 2026",
+      "playerCount": 22,
+      "trophyCount": 3,
+      "roundCount": 3,
+      "rank": 2,
+      "points": 9,
+      "matchRecord": "3-0-0",
+      "matchWinPercentage": 1,
+      "gameWins": 6,
+      "gameLosses": 3,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6666667,
+      "deck": "Clerics"
+    },
     {
       "tournamentId": "485761",
       "date": "2026-10-15T23:40:17Z",

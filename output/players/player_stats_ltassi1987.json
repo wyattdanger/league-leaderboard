@@ -2,25 +2,25 @@
   "username": "Ltassi1987",
   "displayName": "Luiz Tassi",
   "overallStats": {
-    "totalTournaments": 6,
-    "totalPoints": 19,
-    "totalMatches": 15,
-    "matchRecord": "6-8-1",
-    "matchWinPercentage": 0.43333333333333335,
-    "gameRecord": "16-19-0",
-    "gameWinPercentage": 0.45714285714285713,
-    "trophies": 0,
+    "totalTournaments": 7,
+    "totalPoints": 28,
+    "totalMatches": 18,
+    "matchRecord": "9-8-1",
+    "matchWinPercentage": 0.5277777777777778,
+    "gameRecord": "22-21-0",
+    "gameWinPercentage": 0.5116279069767442,
+    "trophies": 1,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q4 2026",
-      "events": 1,
-      "points": 6,
-      "matchRecord": "2-1-0",
-      "matchWinPercentage": 0.6666666666666666,
-      "gameRecord": "5-3-0",
-      "gameWinPercentage": 0.625
+      "events": 2,
+      "points": 15,
+      "matchRecord": "5-1-0",
+      "matchWinPercentage": 0.8333333333333334,
+      "gameRecord": "11-5-0",
+      "gameWinPercentage": 0.6875
     },
     {
       "leagueName": "Q3 2026",
@@ -57,6 +57,20 @@
       "trophies": 0
     },
     {
+      "deckName": "UB Tog",
+      "events": 1,
+      "matchWins": 3,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchRecord": "3-0-0",
+      "matchWinPercentage": 1,
+      "gameWins": 6,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.75,
+      "trophies": 1
+    },
+    {
       "deckName": "GAT w/Angel",
       "events": 1,
       "matchWins": 2,
@@ -72,6 +86,91 @@
     }
   ],
   "headToHead": [
+    {
+      "opponentUsername": "AlldoAurelis",
+      "opponentDisplayName": "AlldoAurelis",
+      "matchesPlayed": 2,
+      "matchWins": 2,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 4,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.8,
+      "matches": [
+        {
+          "tournamentId": "493621",
+          "dateDisplay": "October 29, 2026",
+          "result": "W",
+          "playerDeck": "UB Tog",
+          "opponentDeck": "Burn",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "489140",
+          "dateDisplay": "October 22, 2026",
+          "result": "W",
+          "playerDeck": "_",
+          "opponentDeck": "Burn",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "weidnent",
+      "opponentDisplayName": "Nicholas Weidner",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6666666666666666,
+      "matches": [
+        {
+          "tournamentId": "493621",
+          "dateDisplay": "October 29, 2026",
+          "result": "W",
+          "playerDeck": "UB Tog",
+          "opponentDeck": "Shallow Grave",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "cg123",
+      "opponentDisplayName": "Christopher Garcia",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6666666666666666,
+      "matches": [
+        {
+          "tournamentId": "493621",
+          "dateDisplay": "October 29, 2026",
+          "result": "W",
+          "playerDeck": "UB Tog",
+          "opponentDeck": "BW Control",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
     {
       "opponentUsername": "LMDB",
       "opponentDisplayName": "LMDB",
@@ -93,31 +192,6 @@
           "opponentDeck": "BG Survival",
           "playerGameWins": 2,
           "opponentGameWins": 0,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "AlldoAurelis",
-      "opponentDisplayName": "AlldoAurelis",
-      "matchesPlayed": 1,
-      "matchWins": 1,
-      "matchLosses": 0,
-      "matchDraws": 0,
-      "matchWinPercentage": 1,
-      "gameWins": 2,
-      "gameLosses": 1,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.6666666666666666,
-      "matches": [
-        {
-          "tournamentId": "489140",
-          "dateDisplay": "October 22, 2026",
-          "result": "W",
-          "playerDeck": "_",
-          "opponentDeck": "Burn",
-          "playerGameWins": 2,
-          "opponentGameWins": 1,
           "gameDraws": 0
         }
       ]
@@ -449,6 +523,23 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "493621",
+      "date": "2026-10-29T23:04:16Z",
+      "dateDisplay": "October 29, 2026",
+      "playerCount": 22,
+      "trophyCount": 3,
+      "roundCount": 3,
+      "rank": 3,
+      "points": 9,
+      "matchRecord": "3-0-0",
+      "matchWinPercentage": 1,
+      "gameWins": 6,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.75,
+      "deck": "UB Tog"
+    },
     {
       "tournamentId": "489140",
       "date": "2026-10-22T23:39:07Z",

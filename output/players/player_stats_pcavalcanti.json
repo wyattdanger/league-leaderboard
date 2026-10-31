@@ -2,25 +2,25 @@
   "username": "PCavalcanti",
   "displayName": "PCavalcanti",
   "overallStats": {
-    "totalTournaments": 30,
-    "totalPoints": 142,
-    "totalMatches": 89,
-    "matchRecord": "46-39-4",
-    "matchWinPercentage": 0.5393258426966292,
-    "gameRecord": "121-103-0",
-    "gameWinPercentage": 0.5401785714285714,
+    "totalTournaments": 31,
+    "totalPoints": 148,
+    "totalMatches": 92,
+    "matchRecord": "48-40-4",
+    "matchWinPercentage": 0.5434782608695652,
+    "gameRecord": "126-106-0",
+    "gameWinPercentage": 0.5431034482758621,
     "trophies": 2,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q4 2026",
-      "events": 3,
-      "points": 19,
-      "matchRecord": "6-2-1",
-      "matchWinPercentage": 0.7222222222222222,
-      "gameRecord": "13-6-0",
-      "gameWinPercentage": 0.6842105263157895
+      "events": 4,
+      "points": 25,
+      "matchRecord": "8-3-1",
+      "matchWinPercentage": 0.7083333333333334,
+      "gameRecord": "18-9-0",
+      "gameWinPercentage": 0.6666666666666666
     },
     {
       "leagueName": "Q3 2026",
@@ -84,6 +84,20 @@
       "trophies": 0
     },
     {
+      "deckName": "Sligh splash G",
+      "events": 2,
+      "matchWins": 5,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchRecord": "5-1-0",
+      "matchWinPercentage": 0.8333333333333334,
+      "gameWins": 11,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.7333333333333333,
+      "trophies": 1
+    },
+    {
       "deckName": "Unknown",
       "events": 2,
       "matchWins": 5,
@@ -138,20 +152,6 @@
       "gameDraws": 0,
       "gameWinPercentage": 0.5333333333333333,
       "trophies": 0
-    },
-    {
-      "deckName": "Sligh splash G",
-      "events": 1,
-      "matchWins": 3,
-      "matchLosses": 0,
-      "matchDraws": 0,
-      "matchRecord": "3-0-0",
-      "matchWinPercentage": 1,
-      "gameWins": 6,
-      "gameLosses": 1,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.8571428571428571,
-      "trophies": 1
     },
     {
       "deckName": "GW Survival",
@@ -296,6 +296,81 @@
   ],
   "headToHead": [
     {
+      "opponentUsername": "PetS22",
+      "opponentDisplayName": "PetS22",
+      "matchesPlayed": 6,
+      "matchWins": 6,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 12,
+      "gameLosses": 3,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.8,
+      "matches": [
+        {
+          "tournamentId": "493621",
+          "dateDisplay": "October 29, 2026",
+          "result": "W",
+          "playerDeck": "Sligh splash G",
+          "opponentDeck": "Blue Disk",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "489140",
+          "dateDisplay": "October 22, 2026",
+          "result": "W",
+          "playerDeck": "Sligh splash G",
+          "opponentDeck": "Mono Blue Control",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "445683",
+          "dateDisplay": "September 17, 2026",
+          "result": "W",
+          "playerDeck": "Burn",
+          "opponentDeck": "Mono Blue Disk",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "434267",
+          "dateDisplay": "June 4, 2026",
+          "result": "W",
+          "playerDeck": "Burn",
+          "opponentDeck": "_",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "417122",
+          "dateDisplay": "March 26, 2026",
+          "result": "W",
+          "playerDeck": "Burn",
+          "opponentDeck": "Mono Black",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "415118",
+          "dateDisplay": "March 19, 2026",
+          "result": "W",
+          "playerDeck": "Burn",
+          "opponentDeck": "Mono Black Aggro",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "madmanpoet",
       "opponentDisplayName": "Michael Flores",
       "matchesPlayed": 6,
@@ -366,71 +441,6 @@
           "opponentDeck": "Gamekeeper Rock",
           "playerGameWins": 1,
           "opponentGameWins": 2,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "PetS22",
-      "opponentDisplayName": "PetS22",
-      "matchesPlayed": 5,
-      "matchWins": 5,
-      "matchLosses": 0,
-      "matchDraws": 0,
-      "matchWinPercentage": 1,
-      "gameWins": 10,
-      "gameLosses": 2,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.8333333333333334,
-      "matches": [
-        {
-          "tournamentId": "489140",
-          "dateDisplay": "October 22, 2026",
-          "result": "W",
-          "playerDeck": "Sligh splash G",
-          "opponentDeck": "Mono Blue Control",
-          "playerGameWins": 2,
-          "opponentGameWins": 0,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "445683",
-          "dateDisplay": "September 17, 2026",
-          "result": "W",
-          "playerDeck": "Burn",
-          "opponentDeck": "Mono Blue Disk",
-          "playerGameWins": 2,
-          "opponentGameWins": 1,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "434267",
-          "dateDisplay": "June 4, 2026",
-          "result": "W",
-          "playerDeck": "Burn",
-          "opponentDeck": "_",
-          "playerGameWins": 2,
-          "opponentGameWins": 1,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "417122",
-          "dateDisplay": "March 26, 2026",
-          "result": "W",
-          "playerDeck": "Burn",
-          "opponentDeck": "Mono Black",
-          "playerGameWins": 2,
-          "opponentGameWins": 0,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "415118",
-          "dateDisplay": "March 19, 2026",
-          "result": "W",
-          "playerDeck": "Burn",
-          "opponentDeck": "Mono Black Aggro",
-          "playerGameWins": 2,
-          "opponentGameWins": 0,
           "gameDraws": 0
         }
       ]
@@ -559,6 +569,51 @@
           "result": "L",
           "playerDeck": "UGr Madness",
           "opponentDeck": "Balancing Act",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "Mookyspulder",
+      "opponentDisplayName": "Dan S",
+      "matchesPlayed": 3,
+      "matchWins": 1,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 3,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.42857142857142855,
+      "matches": [
+        {
+          "tournamentId": "493621",
+          "dateDisplay": "October 29, 2026",
+          "result": "L",
+          "playerDeck": "Sligh splash G",
+          "opponentDeck": "Clerics",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "432258",
+          "dateDisplay": "May 28, 2026",
+          "result": "W",
+          "playerDeck": "Burn",
+          "opponentDeck": "_",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "439325",
+          "dateDisplay": "June 25, 2026",
+          "result": "L",
+          "playerDeck": "RG Goblins",
+          "opponentDeck": "RB Goblins",
           "playerGameWins": 0,
           "opponentGameWins": 2,
           "gameDraws": 0
@@ -831,6 +886,41 @@
           "opponentDeck": "Dreadnought",
           "playerGameWins": 0,
           "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "RichBucey",
+      "opponentDisplayName": "RichBucey",
+      "matchesPlayed": 2,
+      "matchWins": 2,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 4,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.8,
+      "matches": [
+        {
+          "tournamentId": "493621",
+          "dateDisplay": "October 29, 2026",
+          "result": "W",
+          "playerDeck": "Sligh splash G",
+          "opponentDeck": "Enchantress",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "410832",
+          "dateDisplay": "March 5, 2026",
+          "result": "W",
+          "playerDeck": "Medvedev Burn",
+          "opponentDeck": "Oath Ponza",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
           "gameDraws": 0
         }
       ]
@@ -1111,41 +1201,6 @@
           "opponentDeck": "Didgeridoo",
           "playerGameWins": 2,
           "opponentGameWins": 0,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "Mookyspulder",
-      "opponentDisplayName": "Dan S",
-      "matchesPlayed": 2,
-      "matchWins": 1,
-      "matchLosses": 1,
-      "matchDraws": 0,
-      "matchWinPercentage": 0.5,
-      "gameWins": 2,
-      "gameLosses": 2,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.5,
-      "matches": [
-        {
-          "tournamentId": "432258",
-          "dateDisplay": "May 28, 2026",
-          "result": "W",
-          "playerDeck": "Burn",
-          "opponentDeck": "_",
-          "playerGameWins": 2,
-          "opponentGameWins": 0,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "439325",
-          "dateDisplay": "June 25, 2026",
-          "result": "L",
-          "playerDeck": "RG Goblins",
-          "opponentDeck": "RB Goblins",
-          "playerGameWins": 0,
-          "opponentGameWins": 2,
           "gameDraws": 0
         }
       ]
@@ -1871,31 +1926,6 @@
       ]
     },
     {
-      "opponentUsername": "RichBucey",
-      "opponentDisplayName": "RichBucey",
-      "matchesPlayed": 1,
-      "matchWins": 1,
-      "matchLosses": 0,
-      "matchDraws": 0,
-      "matchWinPercentage": 1,
-      "gameWins": 2,
-      "gameLosses": 1,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.6666666666666666,
-      "matches": [
-        {
-          "tournamentId": "410832",
-          "dateDisplay": "March 5, 2026",
-          "result": "W",
-          "playerDeck": "Medvedev Burn",
-          "opponentDeck": "Oath Ponza",
-          "playerGameWins": 2,
-          "opponentGameWins": 1,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
       "opponentUsername": "LuisNeiman",
       "opponentDisplayName": "LuisNeiman",
       "matchesPlayed": 1,
@@ -1922,6 +1952,23 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "493621",
+      "date": "2026-10-29T23:04:16Z",
+      "dateDisplay": "October 29, 2026",
+      "playerCount": 22,
+      "trophyCount": 3,
+      "roundCount": 3,
+      "rank": 7,
+      "points": 6,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 5,
+      "gameLosses": 3,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.625,
+      "deck": "Sligh splash G"
+    },
     {
       "tournamentId": "489140",
       "date": "2026-10-22T23:39:07Z",

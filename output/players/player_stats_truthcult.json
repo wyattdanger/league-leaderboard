@@ -2,25 +2,25 @@
   "username": "truthcult",
   "displayName": "klint",
   "overallStats": {
-    "totalTournaments": 10,
-    "totalPoints": 46,
-    "totalMatches": 30,
-    "matchRecord": "14-12-4",
-    "matchWinPercentage": 0.5333333333333333,
-    "gameRecord": "38-35-1",
-    "gameWinPercentage": 0.5135135135135135,
+    "totalTournaments": 11,
+    "totalPoints": 52,
+    "totalMatches": 33,
+    "matchRecord": "16-13-4",
+    "matchWinPercentage": 0.5454545454545454,
+    "gameRecord": "43-37-1",
+    "gameWinPercentage": 0.5308641975308642,
     "trophies": 1,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q4 2026",
-      "events": 1,
-      "points": 3,
-      "matchRecord": "1-2-0",
-      "matchWinPercentage": 0.3333333333333333,
-      "gameRecord": "3-5-0",
-      "gameWinPercentage": 0.375
+      "events": 2,
+      "points": 9,
+      "matchRecord": "3-3-0",
+      "matchWinPercentage": 0.5,
+      "gameRecord": "8-7-0",
+      "gameWinPercentage": 0.5333333333333333
     },
     {
       "leagueName": "Q3 2026",
@@ -44,16 +44,16 @@
   "deckStats": [
     {
       "deckName": "Welder Prison",
-      "events": 6,
-      "matchWins": 10,
-      "matchLosses": 5,
+      "events": 7,
+      "matchWins": 12,
+      "matchLosses": 6,
       "matchDraws": 3,
-      "matchRecord": "10-5-3",
-      "matchWinPercentage": 0.6388888888888888,
-      "gameWins": 25,
-      "gameLosses": 20,
+      "matchRecord": "12-6-3",
+      "matchWinPercentage": 0.6428571428571429,
+      "gameWins": 30,
+      "gameLosses": 22,
       "gameDraws": 1,
-      "gameWinPercentage": 0.5543478260869565,
+      "gameWinPercentage": 0.5754716981132075,
       "trophies": 1
     },
     {
@@ -123,6 +123,41 @@
           "opponentDeck": "Psychatog",
           "playerGameWins": 2,
           "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "CalebR",
+      "opponentDisplayName": "CalebR",
+      "matchesPlayed": 2,
+      "matchWins": 1,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.5,
+      "gameWins": 2,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5,
+      "matches": [
+        {
+          "tournamentId": "493621",
+          "dateDisplay": "October 29, 2026",
+          "result": "W",
+          "playerDeck": "Welder Prison",
+          "opponentDeck": "GR Survival Sneak Attack",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "445685",
+          "dateDisplay": "October 1, 2026",
+          "result": "L",
+          "playerDeck": "Welder Prison",
+          "opponentDeck": "GR Survival Madness Ponza",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
           "gameDraws": 0
         }
       ]
@@ -338,26 +373,51 @@
       ]
     },
     {
-      "opponentUsername": "CalebR",
-      "opponentDisplayName": "CalebR",
+      "opponentUsername": "cg123",
+      "opponentDisplayName": "Christopher Garcia",
       "matchesPlayed": 1,
       "matchWins": 0,
       "matchLosses": 1,
       "matchDraws": 0,
       "matchWinPercentage": 0,
-      "gameWins": 0,
+      "gameWins": 1,
       "gameLosses": 2,
       "gameDraws": 0,
-      "gameWinPercentage": 0,
+      "gameWinPercentage": 0.3333333333333333,
       "matches": [
         {
-          "tournamentId": "445685",
-          "dateDisplay": "October 1, 2026",
+          "tournamentId": "493621",
+          "dateDisplay": "October 29, 2026",
           "result": "L",
           "playerDeck": "Welder Prison",
-          "opponentDeck": "GR Survival Madness Ponza",
-          "playerGameWins": 0,
+          "opponentDeck": "BW Control",
+          "playerGameWins": 1,
           "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "LMDB",
+      "opponentDisplayName": "LMDB",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "matches": [
+        {
+          "tournamentId": "493621",
+          "dateDisplay": "October 29, 2026",
+          "result": "W",
+          "playerDeck": "Welder Prison",
+          "opponentDeck": "GB Rec Sur",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
           "gameDraws": 0
         }
       ]
@@ -689,6 +749,23 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "493621",
+      "date": "2026-10-29T23:04:16Z",
+      "dateDisplay": "October 29, 2026",
+      "playerCount": 22,
+      "trophyCount": 3,
+      "roundCount": 3,
+      "rank": 9,
+      "points": 6,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 5,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.7142857,
+      "deck": "Welder Prison"
+    },
     {
       "tournamentId": "445685",
       "date": "2026-10-01T23:44:27Z",

@@ -3,25 +3,40 @@
     {
       "leagueName": "Q4 2026",
       "tournaments": [
+        493621,
         489140,
         485761,
         445685
       ],
       "deckCounts": {
+        "Burn": 5,
+        "GR Survival Sneak Attack": 1,
+        "GB Rec Sur": 1,
+        "UB Tog": 1,
+        "Sligh splash G": 3,
+        "Clerics": 1,
+        "Blue Disk": 1,
+        "Landstill": 4,
+        "Enchantress": 1,
+        "Moneyball": 5,
+        "Beefcake": 1,
+        "BW Control": 1,
+        "Sligh": 1,
+        "Elves": 2,
+        "Goblins": 4,
+        "TerraDreams": 1,
+        "Welder Prison": 2,
+        "Quiet Dreadnought": 1,
+        "Shallow Grave": 1,
         "UB Zombie Infestation": 1,
-        "Burn": 3,
         "GR Welder Survival": 1,
         "BG Survival": 3,
         "GAT": 2,
         "Terrageddon": 1,
         "4C Rector Control": 1,
-        "Sligh splash G": 1,
         "Mono Blue Control": 1,
-        "Landstill": 3,
         "White Weenie": 2,
         "The Rock": 1,
-        "Moneyball": 3,
-        "Goblins": 3,
         "Mono White Control": 1,
         "Dragonstorm": 1,
         "Mono Red Ponza": 1,
@@ -35,7 +50,6 @@
         "GW Oath Ponza": 1,
         "UW Replenish": 1,
         "Moneyball Black": 1,
-        "Elves": 1,
         "UB Ghoul": 1,
         "GR Survival Madness Ponza": 1,
         "RG Oath": 2,
@@ -44,10 +58,12 @@
         "GW Survival": 1,
         "Pattern Rector": 1,
         "Merfolk": 1,
-        "UW Wizards": 1,
-        "Welder Prison": 1
+        "UW Wizards": 1
       },
       "deckTrophies": {
+        "UB Tog": 1,
+        "Clerics": 1,
+        "Quiet Dreadnought": 1,
         "Sligh splash G": 1,
         "Moneyball": 2,
         "GR Survival Terravore": 1,
@@ -55,14 +71,104 @@
         "GW Control": 1
       },
       "deckMatchStats": {
-        "UB Zombie Infestation": {
-          "wins": 0,
+        "Burn": {
+          "wins": 6,
+          "losses": 9,
+          "draws": 0
+        },
+        "GR Survival Sneak Attack": {
+          "wins": 1,
+          "losses": 2,
+          "draws": 0
+        },
+        "GB Rec Sur": {
+          "wins": 1,
+          "losses": 2,
+          "draws": 0
+        },
+        "UB Tog": {
+          "wins": 3,
+          "losses": 0,
+          "draws": 0
+        },
+        "Sligh splash G": {
+          "wins": 6,
           "losses": 3,
           "draws": 0
         },
-        "Burn": {
+        "Clerics": {
+          "wins": 3,
+          "losses": 0,
+          "draws": 0
+        },
+        "Blue Disk": {
+          "wins": 1,
+          "losses": 2,
+          "draws": 0
+        },
+        "Landstill": {
           "wins": 4,
+          "losses": 6,
+          "draws": 2
+        },
+        "Enchantress": {
+          "wins": 0,
+          "losses": 2,
+          "draws": 0
+        },
+        "Moneyball": {
+          "wins": 11,
+          "losses": 4,
+          "draws": 0
+        },
+        "Beefcake": {
+          "wins": 1,
+          "losses": 2,
+          "draws": 0
+        },
+        "BW Control": {
+          "wins": 1,
+          "losses": 2,
+          "draws": 0
+        },
+        "Sligh": {
+          "wins": 2,
+          "losses": 1,
+          "draws": 0
+        },
+        "Elves": {
+          "wins": 2,
+          "losses": 4,
+          "draws": 0
+        },
+        "Goblins": {
+          "wins": 7,
           "losses": 5,
+          "draws": 0
+        },
+        "TerraDreams": {
+          "wins": 2,
+          "losses": 1,
+          "draws": 0
+        },
+        "Welder Prison": {
+          "wins": 3,
+          "losses": 3,
+          "draws": 0
+        },
+        "Quiet Dreadnought": {
+          "wins": 3,
+          "losses": 0,
+          "draws": 0
+        },
+        "Shallow Grave": {
+          "wins": 1,
+          "losses": 2,
+          "draws": 0
+        },
+        "UB Zombie Infestation": {
+          "wins": 0,
+          "losses": 3,
           "draws": 0
         },
         "GR Welder Survival": {
@@ -90,20 +196,10 @@
           "losses": 1,
           "draws": 1
         },
-        "Sligh splash G": {
-          "wins": 3,
-          "losses": 0,
-          "draws": 0
-        },
         "Mono Blue Control": {
           "wins": 1,
           "losses": 1,
           "draws": 1
-        },
-        "Landstill": {
-          "wins": 3,
-          "losses": 4,
-          "draws": 2
         },
         "White Weenie": {
           "wins": 4,
@@ -113,16 +209,6 @@
         "The Rock": {
           "wins": 1,
           "losses": 1,
-          "draws": 0
-        },
-        "Moneyball": {
-          "wins": 7,
-          "losses": 2,
-          "draws": 0
-        },
-        "Goblins": {
-          "wins": 5,
-          "losses": 4,
           "draws": 0
         },
         "Mono White Control": {
@@ -190,11 +276,6 @@
           "losses": 1,
           "draws": 0
         },
-        "Elves": {
-          "wins": 2,
-          "losses": 1,
-          "draws": 0
-        },
         "UB Ghoul": {
           "wins": 2,
           "losses": 1,
@@ -238,11 +319,6 @@
         "UW Wizards": {
           "wins": 0,
           "losses": 3,
-          "draws": 0
-        },
-        "Welder Prison": {
-          "wins": 1,
-          "losses": 2,
           "draws": 0
         }
       }

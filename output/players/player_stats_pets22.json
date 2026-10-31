@@ -2,25 +2,25 @@
   "username": "PetS22",
   "displayName": "PetS22",
   "overallStats": {
-    "totalTournaments": 16,
-    "totalPoints": 42,
-    "totalMatches": 48,
-    "matchRecord": "13-32-3",
-    "matchWinPercentage": 0.3020833333333333,
-    "gameRecord": "35-65-3",
-    "gameWinPercentage": 0.33980582524271846,
+    "totalTournaments": 17,
+    "totalPoints": 45,
+    "totalMatches": 51,
+    "matchRecord": "14-34-3",
+    "matchWinPercentage": 0.30392156862745096,
+    "gameRecord": "38-69-3",
+    "gameWinPercentage": 0.34545454545454546,
     "trophies": 0,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q4 2026",
-      "events": 2,
-      "points": 7,
-      "matchRecord": "2-3-1",
-      "matchWinPercentage": 0.4166666666666667,
-      "gameRecord": "5-8-2",
-      "gameWinPercentage": 0.4
+      "events": 3,
+      "points": 10,
+      "matchRecord": "3-5-1",
+      "matchWinPercentage": 0.3888888888888889,
+      "gameRecord": "8-12-2",
+      "gameWinPercentage": 0.4090909090909091
     },
     {
       "leagueName": "Q3 2026",
@@ -117,6 +117,20 @@
       "trophies": 0
     },
     {
+      "deckName": "Blue Disk",
+      "events": 1,
+      "matchWins": 1,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 3,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.42857142857142855,
+      "trophies": 0
+    },
+    {
       "deckName": "U Disk",
       "events": 1,
       "matchWins": 1,
@@ -191,16 +205,26 @@
     {
       "opponentUsername": "PCavalcanti",
       "opponentDisplayName": "PCavalcanti",
-      "matchesPlayed": 5,
+      "matchesPlayed": 6,
       "matchWins": 0,
-      "matchLosses": 5,
+      "matchLosses": 6,
       "matchDraws": 0,
       "matchWinPercentage": 0,
-      "gameWins": 2,
-      "gameLosses": 10,
+      "gameWins": 3,
+      "gameLosses": 12,
       "gameDraws": 0,
-      "gameWinPercentage": 0.16666666666666666,
+      "gameWinPercentage": 0.2,
       "matches": [
+        {
+          "tournamentId": "493621",
+          "dateDisplay": "October 29, 2026",
+          "result": "L",
+          "playerDeck": "Blue Disk",
+          "opponentDeck": "Sligh splash G",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
         {
           "tournamentId": "489140",
           "dateDisplay": "October 22, 2026",
@@ -339,6 +363,41 @@
           "opponentDeck": "Reanimator",
           "playerGameWins": 1,
           "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "AlldoAurelis",
+      "opponentDisplayName": "AlldoAurelis",
+      "matchesPlayed": 2,
+      "matchWins": 1,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.5,
+      "gameWins": 2,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5,
+      "matches": [
+        {
+          "tournamentId": "493621",
+          "dateDisplay": "October 29, 2026",
+          "result": "L",
+          "playerDeck": "Blue Disk",
+          "opponentDeck": "Burn",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "445679",
+          "dateDisplay": "August 20, 2026",
+          "result": "W",
+          "playerDeck": "Mono Blue Control",
+          "opponentDeck": "Moneyball Black",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
           "gameDraws": 0
         }
       ]
@@ -519,6 +578,31 @@
       ]
     },
     {
+      "opponentUsername": "Trout5882",
+      "opponentDisplayName": "Trout5882",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "matches": [
+        {
+          "tournamentId": "493621",
+          "dateDisplay": "October 29, 2026",
+          "result": "W",
+          "playerDeck": "Blue Disk",
+          "opponentDeck": "Burn",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "LMDB",
       "opponentDisplayName": "LMDB",
       "matchesPlayed": 1,
@@ -612,31 +696,6 @@
           "result": "W",
           "playerDeck": "_",
           "opponentDeck": "Landstill",
-          "playerGameWins": 2,
-          "opponentGameWins": 0,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "AlldoAurelis",
-      "opponentDisplayName": "AlldoAurelis",
-      "matchesPlayed": 1,
-      "matchWins": 1,
-      "matchLosses": 0,
-      "matchDraws": 0,
-      "matchWinPercentage": 1,
-      "gameWins": 2,
-      "gameLosses": 0,
-      "gameDraws": 0,
-      "gameWinPercentage": 1,
-      "matches": [
-        {
-          "tournamentId": "445679",
-          "dateDisplay": "August 20, 2026",
-          "result": "W",
-          "playerDeck": "Mono Blue Control",
-          "opponentDeck": "Moneyball Black",
           "playerGameWins": 2,
           "opponentGameWins": 0,
           "gameDraws": 0
@@ -1170,6 +1229,23 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "493621",
+      "date": "2026-10-29T23:04:16Z",
+      "dateDisplay": "October 29, 2026",
+      "playerCount": 22,
+      "trophyCount": 3,
+      "roundCount": 3,
+      "rank": 18,
+      "points": 3,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 3,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.4285714,
+      "deck": "Blue Disk"
+    },
     {
       "tournamentId": "489140",
       "date": "2026-10-22T23:39:07Z",

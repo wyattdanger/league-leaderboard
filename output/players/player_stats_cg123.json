@@ -2,25 +2,25 @@
   "username": "cg123",
   "displayName": "Christopher Garcia",
   "overallStats": {
-    "totalTournaments": 2,
-    "totalPoints": 12,
-    "totalMatches": 5,
-    "matchRecord": "4-1-0",
-    "matchWinPercentage": 0.8,
-    "gameRecord": "8-3-0",
-    "gameWinPercentage": 0.7272727272727273,
+    "totalTournaments": 3,
+    "totalPoints": 15,
+    "totalMatches": 8,
+    "matchRecord": "5-3-0",
+    "matchWinPercentage": 0.625,
+    "gameRecord": "12-8-0",
+    "gameWinPercentage": 0.6,
     "trophies": 1,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q4 2026",
-      "events": 2,
-      "points": 12,
-      "matchRecord": "4-1-0",
-      "matchWinPercentage": 0.8,
-      "gameRecord": "8-3-0",
-      "gameWinPercentage": 0.7272727272727273
+      "events": 3,
+      "points": 15,
+      "matchRecord": "5-3-0",
+      "matchWinPercentage": 0.625,
+      "gameRecord": "12-8-0",
+      "gameWinPercentage": 0.6
     }
   ],
   "deckStats": [
@@ -50,6 +50,20 @@
       "gameLosses": 3,
       "gameDraws": 0,
       "gameWinPercentage": 0.4,
+      "trophies": 0
+    },
+    {
+      "deckName": "BW Control",
+      "events": 1,
+      "matchWins": 1,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 4,
+      "gameLosses": 5,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.4444444444444444,
       "trophies": 0
     }
   ],
@@ -85,6 +99,81 @@
           "opponentDeck": "GW Survival Armageddon",
           "playerGameWins": 2,
           "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "truthcult",
+      "opponentDisplayName": "klint",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6666666666666666,
+      "matches": [
+        {
+          "tournamentId": "493621",
+          "dateDisplay": "October 29, 2026",
+          "result": "W",
+          "playerDeck": "BW Control",
+          "opponentDeck": "Welder Prison",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "Mookyspulder",
+      "opponentDisplayName": "Dan S",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "matches": [
+        {
+          "tournamentId": "493621",
+          "dateDisplay": "October 29, 2026",
+          "result": "L",
+          "playerDeck": "BW Control",
+          "opponentDeck": "Clerics",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "Ltassi1987",
+      "opponentDisplayName": "Luiz Tassi",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "matches": [
+        {
+          "tournamentId": "493621",
+          "dateDisplay": "October 29, 2026",
+          "result": "L",
+          "playerDeck": "BW Control",
+          "opponentDeck": "UB Tog",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
           "gameDraws": 0
         }
       ]
@@ -166,6 +255,23 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "493621",
+      "date": "2026-10-29T23:04:16Z",
+      "dateDisplay": "October 29, 2026",
+      "playerCount": 22,
+      "trophyCount": 3,
+      "roundCount": 3,
+      "rank": 11,
+      "points": 3,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 4,
+      "gameLosses": 5,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.4444444,
+      "deck": "BW Control"
+    },
     {
       "tournamentId": "489140",
       "date": "2026-10-22T23:39:07Z",

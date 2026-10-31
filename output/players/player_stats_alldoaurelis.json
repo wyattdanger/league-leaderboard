@@ -2,25 +2,25 @@
   "username": "AlldoAurelis",
   "displayName": "AlldoAurelis",
   "overallStats": {
-    "totalTournaments": 21,
-    "totalPoints": 73,
-    "totalMatches": 61,
-    "matchRecord": "24-36-1",
-    "matchWinPercentage": 0.4016393442622951,
-    "gameRecord": "64-84-0",
-    "gameWinPercentage": 0.43243243243243246,
+    "totalTournaments": 22,
+    "totalPoints": 76,
+    "totalMatches": 64,
+    "matchRecord": "25-38-1",
+    "matchWinPercentage": 0.3984375,
+    "gameRecord": "66-88-0",
+    "gameWinPercentage": 0.42857142857142855,
     "trophies": 2,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q4 2026",
-      "events": 2,
-      "points": 6,
-      "matchRecord": "2-4-0",
+      "events": 3,
+      "points": 9,
+      "matchRecord": "3-6-0",
       "matchWinPercentage": 0.3333333333333333,
-      "gameRecord": "7-9-0",
-      "gameWinPercentage": 0.4375
+      "gameRecord": "9-13-0",
+      "gameWinPercentage": 0.4090909090909091
     },
     {
       "leagueName": "Q3 2026",
@@ -75,6 +75,20 @@
       "trophies": 1
     },
     {
+      "deckName": "Burn",
+      "events": 4,
+      "matchWins": 6,
+      "matchLosses": 6,
+      "matchDraws": 0,
+      "matchRecord": "6-6-0",
+      "matchWinPercentage": 0.5,
+      "gameWins": 15,
+      "gameLosses": 15,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5,
+      "trophies": 1
+    },
+    {
       "deckName": "Moneyball Red",
       "events": 4,
       "matchWins": 6,
@@ -87,20 +101,6 @@
       "gameDraws": 0,
       "gameWinPercentage": 0.5357142857142857,
       "trophies": 0
-    },
-    {
-      "deckName": "Burn",
-      "events": 3,
-      "matchWins": 5,
-      "matchLosses": 4,
-      "matchDraws": 0,
-      "matchRecord": "5-4-0",
-      "matchWinPercentage": 0.5555555555555556,
-      "gameWins": 13,
-      "gameLosses": 11,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.5416666666666666,
-      "trophies": 1
     },
     {
       "deckName": "Mad Dogs",
@@ -319,6 +319,61 @@
       ]
     },
     {
+      "opponentUsername": "WillReddy",
+      "opponentDisplayName": "WillReddy",
+      "matchesPlayed": 4,
+      "matchWins": 3,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.75,
+      "gameWins": 6,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6,
+      "matches": [
+        {
+          "tournamentId": "493621",
+          "dateDisplay": "October 29, 2026",
+          "result": "L",
+          "playerDeck": "Burn",
+          "opponentDeck": "Beefcake",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "489140",
+          "dateDisplay": "October 22, 2026",
+          "result": "W",
+          "playerDeck": "Burn",
+          "opponentDeck": "Burn",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "445678",
+          "dateDisplay": "August 13, 2026",
+          "result": "W",
+          "playerDeck": "Moneyball Red",
+          "opponentDeck": "Oath Ponza",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "436160",
+          "dateDisplay": "July 9, 2026",
+          "result": "W",
+          "playerDeck": "Moneyball Black",
+          "opponentDeck": "_",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "Tencteri",
       "opponentDisplayName": "Tencteri",
       "matchesPlayed": 4,
@@ -369,51 +424,6 @@
           "opponentDeck": "Merfolk",
           "playerGameWins": 2,
           "opponentGameWins": 0,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "WillReddy",
-      "opponentDisplayName": "WillReddy",
-      "matchesPlayed": 3,
-      "matchWins": 3,
-      "matchLosses": 0,
-      "matchDraws": 0,
-      "matchWinPercentage": 1,
-      "gameWins": 6,
-      "gameLosses": 2,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.75,
-      "matches": [
-        {
-          "tournamentId": "489140",
-          "dateDisplay": "October 22, 2026",
-          "result": "W",
-          "playerDeck": "Burn",
-          "opponentDeck": "Burn",
-          "playerGameWins": 2,
-          "opponentGameWins": 1,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "445678",
-          "dateDisplay": "August 13, 2026",
-          "result": "W",
-          "playerDeck": "Moneyball Red",
-          "opponentDeck": "Oath Ponza",
-          "playerGameWins": 2,
-          "opponentGameWins": 0,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "436160",
-          "dateDisplay": "July 9, 2026",
-          "result": "W",
-          "playerDeck": "Moneyball Black",
-          "opponentDeck": "_",
-          "playerGameWins": 2,
-          "opponentGameWins": 1,
           "gameDraws": 0
         }
       ]
@@ -503,6 +513,76 @@
           "playerDeck": "Mad Dogs",
           "opponentDeck": "RG Madness Burn",
           "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "Ltassi1987",
+      "opponentDisplayName": "Luiz Tassi",
+      "matchesPlayed": 2,
+      "matchWins": 0,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.2,
+      "matches": [
+        {
+          "tournamentId": "493621",
+          "dateDisplay": "October 29, 2026",
+          "result": "L",
+          "playerDeck": "Burn",
+          "opponentDeck": "UB Tog",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "489140",
+          "dateDisplay": "October 22, 2026",
+          "result": "L",
+          "playerDeck": "Burn",
+          "opponentDeck": "_",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "PetS22",
+      "opponentDisplayName": "PetS22",
+      "matchesPlayed": 2,
+      "matchWins": 1,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.5,
+      "gameWins": 2,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5,
+      "matches": [
+        {
+          "tournamentId": "493621",
+          "dateDisplay": "October 29, 2026",
+          "result": "W",
+          "playerDeck": "Burn",
+          "opponentDeck": "Blue Disk",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "445679",
+          "dateDisplay": "August 20, 2026",
+          "result": "L",
+          "playerDeck": "Moneyball Black",
+          "opponentDeck": "Mono Blue Control",
+          "playerGameWins": 0,
           "opponentGameWins": 2,
           "gameDraws": 0
         }
@@ -789,31 +869,6 @@
       ]
     },
     {
-      "opponentUsername": "Ltassi1987",
-      "opponentDisplayName": "Luiz Tassi",
-      "matchesPlayed": 1,
-      "matchWins": 0,
-      "matchLosses": 1,
-      "matchDraws": 0,
-      "matchWinPercentage": 0,
-      "gameWins": 1,
-      "gameLosses": 2,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.3333333333333333,
-      "matches": [
-        {
-          "tournamentId": "489140",
-          "dateDisplay": "October 22, 2026",
-          "result": "L",
-          "playerDeck": "Burn",
-          "opponentDeck": "_",
-          "playerGameWins": 1,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
       "opponentUsername": "Gaunology",
       "opponentDisplayName": "Gaunology",
       "matchesPlayed": 1,
@@ -834,31 +889,6 @@
           "opponentDeck": "UG Cognivore Oath",
           "playerGameWins": 2,
           "opponentGameWins": 0,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "PetS22",
-      "opponentDisplayName": "PetS22",
-      "matchesPlayed": 1,
-      "matchWins": 0,
-      "matchLosses": 1,
-      "matchDraws": 0,
-      "matchWinPercentage": 0,
-      "gameWins": 0,
-      "gameLosses": 2,
-      "gameDraws": 0,
-      "gameWinPercentage": 0,
-      "matches": [
-        {
-          "tournamentId": "445679",
-          "dateDisplay": "August 20, 2026",
-          "result": "L",
-          "playerDeck": "Moneyball Black",
-          "opponentDeck": "Mono Blue Control",
-          "playerGameWins": 0,
-          "opponentGameWins": 2,
           "gameDraws": 0
         }
       ]
@@ -1290,6 +1320,23 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "493621",
+      "date": "2026-10-29T23:04:16Z",
+      "dateDisplay": "October 29, 2026",
+      "playerCount": 22,
+      "trophyCount": 3,
+      "roundCount": 3,
+      "rank": 16,
+      "points": 3,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 2,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333,
+      "deck": "Burn"
+    },
     {
       "tournamentId": "489140",
       "date": "2026-10-22T23:39:07Z",

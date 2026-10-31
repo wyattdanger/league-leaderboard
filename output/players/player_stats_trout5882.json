@@ -2,17 +2,26 @@
   "username": "Trout5882",
   "displayName": "Trout5882",
   "overallStats": {
-    "totalTournaments": 2,
-    "totalPoints": 0,
-    "totalMatches": 4,
-    "matchRecord": "0-4-0",
-    "matchWinPercentage": 0,
-    "gameRecord": "1-8-0",
-    "gameWinPercentage": 0.1111111111111111,
+    "totalTournaments": 3,
+    "totalPoints": 3,
+    "totalMatches": 7,
+    "matchRecord": "1-6-0",
+    "matchWinPercentage": 0.14285714285714285,
+    "gameRecord": "4-13-0",
+    "gameWinPercentage": 0.23529411764705882,
     "trophies": 0,
     "belts": 0
   },
   "leagueStats": [
+    {
+      "leagueName": "Q4 2026",
+      "events": 1,
+      "points": 3,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameRecord": "3-5-0",
+      "gameWinPercentage": 0.375
+    },
     {
       "leagueName": "Q3 2026",
       "events": 1,
@@ -33,6 +42,20 @@
     }
   ],
   "deckStats": [
+    {
+      "deckName": "Burn",
+      "events": 1,
+      "matchWins": 1,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 3,
+      "gameLosses": 5,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.375,
+      "trophies": 0
+    },
     {
       "deckName": "Jank",
       "events": 1,
@@ -63,6 +86,81 @@
     }
   ],
   "headToHead": [
+    {
+      "opponentUsername": "PetS22",
+      "opponentDisplayName": "PetS22",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "matches": [
+        {
+          "tournamentId": "493621",
+          "dateDisplay": "October 29, 2026",
+          "result": "L",
+          "playerDeck": "Burn",
+          "opponentDeck": "Blue Disk",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "LMDB",
+      "opponentDisplayName": "LMDB",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "matches": [
+        {
+          "tournamentId": "493621",
+          "dateDisplay": "October 29, 2026",
+          "result": "L",
+          "playerDeck": "Burn",
+          "opponentDeck": "GB Rec Sur",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "mhaydenb",
+      "opponentDisplayName": "Hayden Bedsole",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6666666666666666,
+      "matches": [
+        {
+          "tournamentId": "493621",
+          "dateDisplay": "October 29, 2026",
+          "result": "W",
+          "playerDeck": "Burn",
+          "opponentDeck": "Elves",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
     {
       "opponentUsername": "Taylorhol",
       "opponentDisplayName": "Taylorhol",
@@ -165,6 +263,23 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "493621",
+      "date": "2026-10-29T23:04:16Z",
+      "dateDisplay": "October 29, 2026",
+      "playerCount": 22,
+      "trophyCount": 3,
+      "roundCount": 3,
+      "rank": 20,
+      "points": 3,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 3,
+      "gameLosses": 5,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.375,
+      "deck": "Burn"
+    },
     {
       "tournamentId": "445675",
       "date": "2026-07-23T23:35:11Z",
