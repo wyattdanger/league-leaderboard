@@ -25,6 +25,7 @@ describe('normalizeDeckName', () => {
     ['GAT w/Angel', 'Gro'],
     ['Gro-a-Tog', 'Gro'],
     ['Psychatog', 'Psychatog'],
+    ['UB Tog', 'Psychatog'],
     ['Esper Tog', 'Psychatog'],
     ['EsperTog', 'Psychatog'],
     ['Samaluren', 'Aluren'],
@@ -63,6 +64,10 @@ describe('normalizeDeckName', () => {
     ['Oath Ponza', 'Oath Ponza'],
   ])('maps %s to %s', (deck, archetype) => {
     expect(normalizeDeckName(deck)).toBe(archetype);
+  });
+
+  it('keeps TerraDreams separate from Terrageddon', () => {
+    expect(normalizeDeckName('TerraDreams')).toBe('TerraDreams');
   });
 
   it('returns unknown deck names unchanged', () => {

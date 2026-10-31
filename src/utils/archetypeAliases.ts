@@ -78,6 +78,7 @@ export const archetypeAliases: Record<string, string> = {
   // Psychatog: hard control that wins with Psychatog alone
   'Psychatog': 'Psychatog',
   'UB Psychatog': 'Psychatog',
+  'UB Tog': 'Psychatog',
   'Esper Tog': 'Psychatog',
   'EsperTog': 'Psychatog',
   '5C Tog': 'Psychatog',
