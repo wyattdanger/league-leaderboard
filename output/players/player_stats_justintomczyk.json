@@ -2,17 +2,26 @@
   "username": "justintomczyk",
   "displayName": "justintomczyk",
   "overallStats": {
-    "totalTournaments": 7,
-    "totalPoints": 32,
-    "totalMatches": 21,
-    "matchRecord": "10-9-2",
-    "matchWinPercentage": 0.5238095238095238,
-    "gameRecord": "23-21-0",
-    "gameWinPercentage": 0.5227272727272727,
+    "totalTournaments": 8,
+    "totalPoints": 33,
+    "totalMatches": 24,
+    "matchRecord": "10-11-3",
+    "matchWinPercentage": 0.4791666666666667,
+    "gameRecord": "23-25-3",
+    "gameWinPercentage": 0.45098039215686275,
     "trophies": 0,
     "belts": 0
   },
   "leagueStats": [
+    {
+      "leagueName": "Q4 2026",
+      "events": 1,
+      "points": 1,
+      "matchRecord": "0-2-1",
+      "matchWinPercentage": 0.16666666666666666,
+      "gameRecord": "0-4-3",
+      "gameWinPercentage": 0.21428571428571427
+    },
     {
       "leagueName": "Q3 2026",
       "events": 2,
@@ -53,16 +62,16 @@
   "deckStats": [
     {
       "deckName": "BW Control",
-      "events": 3,
+      "events": 4,
       "matchWins": 4,
-      "matchLosses": 4,
-      "matchDraws": 1,
-      "matchRecord": "4-4-1",
-      "matchWinPercentage": 0.5,
+      "matchLosses": 6,
+      "matchDraws": 2,
+      "matchRecord": "4-6-2",
+      "matchWinPercentage": 0.4166666666666667,
       "gameWins": 9,
-      "gameLosses": 9,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.5,
+      "gameLosses": 13,
+      "gameDraws": 3,
+      "gameWinPercentage": 0.42,
       "trophies": 0
     },
     {
@@ -109,6 +118,41 @@
     }
   ],
   "headToHead": [
+    {
+      "opponentUsername": "PCavalcanti",
+      "opponentDisplayName": "PCavalcanti",
+      "matchesPlayed": 2,
+      "matchWins": 0,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "matches": [
+        {
+          "tournamentId": "499545",
+          "dateDisplay": "November 5, 2026",
+          "result": "L",
+          "playerDeck": "BW Control",
+          "opponentDeck": "_",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "458540",
+          "dateDisplay": "August 27, 2026",
+          "result": "L",
+          "playerDeck": "_",
+          "opponentDeck": "RG Goblins",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
     {
       "opponentUsername": "madmanpoet",
       "opponentDisplayName": "Michael Flores",
@@ -215,6 +259,56 @@
       ]
     },
     {
+      "opponentUsername": "cg123",
+      "opponentDisplayName": "Christopher Garcia",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "matches": [
+        {
+          "tournamentId": "499545",
+          "dateDisplay": "November 5, 2026",
+          "result": "L",
+          "playerDeck": "BW Control",
+          "opponentDeck": "UR Tinker Fling",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "Mattmelach",
+      "opponentDisplayName": "Matthew Melachrinos",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 0,
+      "matchDraws": 1,
+      "matchWinPercentage": 0.5,
+      "gameWins": 0,
+      "gameLosses": 0,
+      "gameDraws": 3,
+      "gameWinPercentage": 0.5,
+      "matches": [
+        {
+          "tournamentId": "499545",
+          "dateDisplay": "November 5, 2026",
+          "result": "D",
+          "playerDeck": "BW Control",
+          "opponentDeck": "4C Rector Control",
+          "playerGameWins": 0,
+          "opponentGameWins": 0,
+          "gameDraws": 3
+        }
+      ]
+    },
+    {
       "opponentUsername": "LMDB",
       "opponentDisplayName": "LMDB",
       "matchesPlayed": 1,
@@ -285,31 +379,6 @@
           "opponentDeck": "GW Slide",
           "playerGameWins": 2,
           "opponentGameWins": 0,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "PCavalcanti",
-      "opponentDisplayName": "PCavalcanti",
-      "matchesPlayed": 1,
-      "matchWins": 0,
-      "matchLosses": 1,
-      "matchDraws": 0,
-      "matchWinPercentage": 0,
-      "gameWins": 0,
-      "gameLosses": 2,
-      "gameDraws": 0,
-      "gameWinPercentage": 0,
-      "matches": [
-        {
-          "tournamentId": "458540",
-          "dateDisplay": "August 27, 2026",
-          "result": "L",
-          "playerDeck": "_",
-          "opponentDeck": "RG Goblins",
-          "playerGameWins": 0,
-          "opponentGameWins": 2,
           "gameDraws": 0
         }
       ]
@@ -541,6 +610,23 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "499545",
+      "date": "2026-11-06T00:05:05Z",
+      "dateDisplay": "November 5, 2026",
+      "playerCount": 29,
+      "trophyCount": 3,
+      "roundCount": 3,
+      "rank": 25,
+      "points": 1,
+      "matchRecord": "0-2-1",
+      "matchWinPercentage": 0.16666666666666666,
+      "gameWins": 0,
+      "gameLosses": 4,
+      "gameDraws": 3,
+      "gameWinPercentage": 0.3333333,
+      "deck": "BW Control"
+    },
     {
       "tournamentId": "465043",
       "date": "2026-09-10T23:05:15Z",

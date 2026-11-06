@@ -2,25 +2,25 @@
   "username": "PCavalcanti",
   "displayName": "PCavalcanti",
   "overallStats": {
-    "totalTournaments": 31,
-    "totalPoints": 148,
-    "totalMatches": 92,
-    "matchRecord": "48-40-4",
-    "matchWinPercentage": 0.5434782608695652,
-    "gameRecord": "126-106-0",
-    "gameWinPercentage": 0.5431034482758621,
+    "totalTournaments": 32,
+    "totalPoints": 151,
+    "totalMatches": 95,
+    "matchRecord": "49-42-4",
+    "matchWinPercentage": 0.5368421052631579,
+    "gameRecord": "128-110-0",
+    "gameWinPercentage": 0.5378151260504201,
     "trophies": 2,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q4 2026",
-      "events": 4,
-      "points": 25,
-      "matchRecord": "8-3-1",
-      "matchWinPercentage": 0.7083333333333334,
-      "gameRecord": "18-9-0",
-      "gameWinPercentage": 0.6666666666666666
+      "events": 5,
+      "points": 28,
+      "matchRecord": "9-5-1",
+      "matchWinPercentage": 0.6333333333333333,
+      "gameRecord": "20-13-0",
+      "gameWinPercentage": 0.6060606060606061
     },
     {
       "leagueName": "Q3 2026",
@@ -84,6 +84,20 @@
       "trophies": 0
     },
     {
+      "deckName": "Unknown",
+      "events": 3,
+      "matchWins": 6,
+      "matchLosses": 3,
+      "matchDraws": 0,
+      "matchRecord": "6-3-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 12,
+      "gameLosses": 9,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5714285714285714,
+      "trophies": 1
+    },
+    {
       "deckName": "Sligh splash G",
       "events": 2,
       "matchWins": 5,
@@ -95,20 +109,6 @@
       "gameLosses": 4,
       "gameDraws": 0,
       "gameWinPercentage": 0.7333333333333333,
-      "trophies": 1
-    },
-    {
-      "deckName": "Unknown",
-      "events": 2,
-      "matchWins": 5,
-      "matchLosses": 1,
-      "matchDraws": 0,
-      "matchRecord": "5-1-0",
-      "matchWinPercentage": 0.8333333333333334,
-      "gameWins": 10,
-      "gameLosses": 5,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.6666666666666666,
       "trophies": 1
     },
     {
@@ -891,6 +891,41 @@
       ]
     },
     {
+      "opponentUsername": "justintomczyk",
+      "opponentDisplayName": "justintomczyk",
+      "matchesPlayed": 2,
+      "matchWins": 2,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 4,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "matches": [
+        {
+          "tournamentId": "499545",
+          "dateDisplay": "November 5, 2026",
+          "result": "W",
+          "playerDeck": "_",
+          "opponentDeck": "BW Control",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "458540",
+          "dateDisplay": "August 27, 2026",
+          "result": "W",
+          "playerDeck": "RG Goblins",
+          "opponentDeck": "_",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "RichBucey",
       "opponentDisplayName": "RichBucey",
       "matchesPlayed": 2,
@@ -1276,6 +1311,56 @@
       ]
     },
     {
+      "opponentUsername": "zoidberg1003",
+      "opponentDisplayName": "Zoahr Bhagat",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "matches": [
+        {
+          "tournamentId": "499545",
+          "dateDisplay": "November 5, 2026",
+          "result": "L",
+          "playerDeck": "_",
+          "opponentDeck": "_",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "minimiz",
+      "opponentDisplayName": "Eli Mizock",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "matches": [
+        {
+          "tournamentId": "499545",
+          "dateDisplay": "November 5, 2026",
+          "result": "L",
+          "playerDeck": "_",
+          "opponentDeck": "Goblins",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "Pjd",
       "opponentDisplayName": "Pjd",
       "matchesPlayed": 1,
@@ -1421,31 +1506,6 @@
           "opponentDeck": "Pit Rack",
           "playerGameWins": 1,
           "opponentGameWins": 2,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "justintomczyk",
-      "opponentDisplayName": "justintomczyk",
-      "matchesPlayed": 1,
-      "matchWins": 1,
-      "matchLosses": 0,
-      "matchDraws": 0,
-      "matchWinPercentage": 1,
-      "gameWins": 2,
-      "gameLosses": 0,
-      "gameDraws": 0,
-      "gameWinPercentage": 1,
-      "matches": [
-        {
-          "tournamentId": "458540",
-          "dateDisplay": "August 27, 2026",
-          "result": "W",
-          "playerDeck": "RG Goblins",
-          "opponentDeck": "_",
-          "playerGameWins": 2,
-          "opponentGameWins": 0,
           "gameDraws": 0
         }
       ]
@@ -1952,6 +2012,23 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "499545",
+      "date": "2026-11-06T00:05:05Z",
+      "dateDisplay": "November 5, 2026",
+      "playerCount": 29,
+      "trophyCount": 3,
+      "roundCount": 3,
+      "rank": 21,
+      "points": 3,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 2,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333,
+      "deck": "_"
+    },
     {
       "tournamentId": "493621",
       "date": "2026-10-29T23:04:16Z",

@@ -2,17 +2,26 @@
   "username": "zoidberg1003",
   "displayName": "Zoahr Bhagat",
   "overallStats": {
-    "totalTournaments": 6,
-    "totalPoints": 29,
-    "totalMatches": 18,
-    "matchRecord": "9-7-2",
-    "matchWinPercentage": 0.5555555555555556,
-    "gameRecord": "24-19-1",
-    "gameWinPercentage": 0.5454545454545454,
+    "totalTournaments": 7,
+    "totalPoints": 35,
+    "totalMatches": 21,
+    "matchRecord": "11-8-2",
+    "matchWinPercentage": 0.5714285714285714,
+    "gameRecord": "28-21-1",
+    "gameWinPercentage": 0.56,
     "trophies": 1,
     "belts": 0
   },
   "leagueStats": [
+    {
+      "leagueName": "Q4 2026",
+      "events": 1,
+      "points": 6,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameRecord": "4-2-0",
+      "gameWinPercentage": 0.6666666666666666
+    },
     {
       "leagueName": "Q4 2025",
       "events": 3,
@@ -35,16 +44,16 @@
   "deckStats": [
     {
       "deckName": "Unknown",
-      "events": 4,
-      "matchWins": 4,
-      "matchLosses": 7,
+      "events": 5,
+      "matchWins": 6,
+      "matchLosses": 8,
       "matchDraws": 1,
-      "matchRecord": "4-7-1",
-      "matchWinPercentage": 0.375,
-      "gameWins": 13,
-      "gameLosses": 17,
+      "matchRecord": "6-8-1",
+      "matchWinPercentage": 0.43333333333333335,
+      "gameWins": 17,
+      "gameLosses": 19,
       "gameDraws": 0,
-      "gameWinPercentage": 0.43333333333333335,
+      "gameWinPercentage": 0.4722222222222222,
       "trophies": 0
     },
     {
@@ -77,6 +86,41 @@
     }
   ],
   "headToHead": [
+    {
+      "opponentUsername": "Apa",
+      "opponentDisplayName": "Apa",
+      "matchesPlayed": 2,
+      "matchWins": 2,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 4,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.8,
+      "matches": [
+        {
+          "tournamentId": "499545",
+          "dateDisplay": "November 5, 2026",
+          "result": "W",
+          "playerDeck": "_",
+          "opponentDeck": "_",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "377629",
+          "dateDisplay": "October 30, 2025",
+          "result": "W",
+          "playerDeck": "_",
+          "opponentDeck": "_",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
     {
       "opponentUsername": "BryanGulotta",
       "opponentDisplayName": "BryanGulotta",
@@ -253,6 +297,56 @@
       ]
     },
     {
+      "opponentUsername": "PCavalcanti",
+      "opponentDisplayName": "PCavalcanti",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "matches": [
+        {
+          "tournamentId": "499545",
+          "dateDisplay": "November 5, 2026",
+          "result": "W",
+          "playerDeck": "_",
+          "opponentDeck": "_",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "RichBucey",
+      "opponentDisplayName": "RichBucey",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "matches": [
+        {
+          "tournamentId": "499545",
+          "dateDisplay": "November 5, 2026",
+          "result": "L",
+          "playerDeck": "_",
+          "opponentDeck": "Enchantress",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "PetS22",
       "opponentDisplayName": "PetS22",
       "matchesPlayed": 1,
@@ -321,31 +415,6 @@
           "result": "W",
           "playerDeck": "Frantic Storm",
           "opponentDeck": "Deadguy Ale",
-          "playerGameWins": 2,
-          "opponentGameWins": 1,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "Apa",
-      "opponentDisplayName": "Apa",
-      "matchesPlayed": 1,
-      "matchWins": 1,
-      "matchLosses": 0,
-      "matchDraws": 0,
-      "matchWinPercentage": 1,
-      "gameWins": 2,
-      "gameLosses": 1,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.6666666666666666,
-      "matches": [
-        {
-          "tournamentId": "377629",
-          "dateDisplay": "October 30, 2025",
-          "result": "W",
-          "playerDeck": "_",
-          "opponentDeck": "_",
           "playerGameWins": 2,
           "opponentGameWins": 1,
           "gameDraws": 0
@@ -454,6 +523,23 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "499545",
+      "date": "2026-11-06T00:05:05Z",
+      "dateDisplay": "November 5, 2026",
+      "playerCount": 29,
+      "trophyCount": 3,
+      "roundCount": 3,
+      "rank": 8,
+      "points": 6,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 4,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6666667,
+      "deck": "_"
+    },
     {
       "tournamentId": "390154",
       "date": "2025-12-12T00:45:44Z",

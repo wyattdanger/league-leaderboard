@@ -2,25 +2,25 @@
   "username": "RichBucey",
   "displayName": "RichBucey",
   "overallStats": {
-    "totalTournaments": 42,
-    "totalPoints": 211,
-    "totalMatches": 124,
-    "matchRecord": "70-53-1",
-    "matchWinPercentage": 0.5685483870967742,
-    "gameRecord": "165-135-1",
-    "gameWinPercentage": 0.5481727574750831,
-    "trophies": 7,
+    "totalTournaments": 43,
+    "totalPoints": 220,
+    "totalMatches": 127,
+    "matchRecord": "73-53-1",
+    "matchWinPercentage": 0.5787401574803149,
+    "gameRecord": "171-137-1",
+    "gameWinPercentage": 0.5533980582524272,
+    "trophies": 8,
     "belts": 1
   },
   "leagueStats": [
     {
       "leagueName": "Q4 2026",
-      "events": 2,
-      "points": 3,
-      "matchRecord": "1-3-0",
-      "matchWinPercentage": 0.25,
-      "gameRecord": "3-6-0",
-      "gameWinPercentage": 0.3333333333333333
+      "events": 3,
+      "points": 12,
+      "matchRecord": "4-3-0",
+      "matchWinPercentage": 0.5714285714285714,
+      "gameRecord": "9-8-0",
+      "gameWinPercentage": 0.5294117647058824
     },
     {
       "leagueName": "Q3 2026",
@@ -135,17 +135,17 @@
     },
     {
       "deckName": "Enchantress",
-      "events": 6,
-      "matchWins": 9,
+      "events": 7,
+      "matchWins": 12,
       "matchLosses": 7,
       "matchDraws": 1,
-      "matchRecord": "9-7-1",
-      "matchWinPercentage": 0.5588235294117647,
-      "gameWins": 20,
-      "gameLosses": 22,
+      "matchRecord": "12-7-1",
+      "matchWinPercentage": 0.625,
+      "gameWins": 26,
+      "gameLosses": 24,
       "gameDraws": 1,
-      "gameWinPercentage": 0.47674418604651164,
-      "trophies": 2
+      "gameWinPercentage": 0.5196078431372549,
+      "trophies": 3
     },
     {
       "deckName": "Oath Ponza",
@@ -1536,6 +1536,81 @@
       ]
     },
     {
+      "opponentUsername": "murrayhewitt",
+      "opponentDisplayName": "murrayhewitt",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6666666666666666,
+      "matches": [
+        {
+          "tournamentId": "499545",
+          "dateDisplay": "November 5, 2026",
+          "result": "W",
+          "playerDeck": "Enchantress",
+          "opponentDeck": "_",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "Pjd",
+      "opponentDisplayName": "Pjd",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6666666666666666,
+      "matches": [
+        {
+          "tournamentId": "499545",
+          "dateDisplay": "November 5, 2026",
+          "result": "W",
+          "playerDeck": "Enchantress",
+          "opponentDeck": "Sligh",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "zoidberg1003",
+      "opponentDisplayName": "Zoahr Bhagat",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "matches": [
+        {
+          "tournamentId": "499545",
+          "dateDisplay": "November 5, 2026",
+          "result": "W",
+          "playerDeck": "Enchantress",
+          "opponentDeck": "_",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "aprofaci",
       "opponentDisplayName": "Alex Profaci",
       "matchesPlayed": 1,
@@ -2337,6 +2412,23 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "499545",
+      "date": "2026-11-06T00:05:05Z",
+      "dateDisplay": "November 5, 2026",
+      "playerCount": 29,
+      "trophyCount": 3,
+      "roundCount": 3,
+      "rank": 3,
+      "points": 9,
+      "matchRecord": "3-0-0",
+      "matchWinPercentage": 1,
+      "gameWins": 6,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.75,
+      "deck": "Enchantress"
+    },
     {
       "tournamentId": "493621",
       "date": "2026-10-29T23:04:16Z",

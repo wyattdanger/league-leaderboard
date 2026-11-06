@@ -2,28 +2,42 @@
   "username": "cg123",
   "displayName": "Christopher Garcia",
   "overallStats": {
-    "totalTournaments": 3,
-    "totalPoints": 15,
-    "totalMatches": 8,
-    "matchRecord": "5-3-0",
-    "matchWinPercentage": 0.625,
-    "gameRecord": "12-8-0",
-    "gameWinPercentage": 0.6,
-    "trophies": 1,
+    "totalTournaments": 4,
+    "totalPoints": 24,
+    "totalMatches": 11,
+    "matchRecord": "8-3-0",
+    "matchWinPercentage": 0.7272727272727273,
+    "gameRecord": "18-10-0",
+    "gameWinPercentage": 0.6428571428571429,
+    "trophies": 2,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q4 2026",
-      "events": 3,
-      "points": 15,
-      "matchRecord": "5-3-0",
-      "matchWinPercentage": 0.625,
-      "gameRecord": "12-8-0",
-      "gameWinPercentage": 0.6
+      "events": 4,
+      "points": 24,
+      "matchRecord": "8-3-0",
+      "matchWinPercentage": 0.7272727272727273,
+      "gameRecord": "18-10-0",
+      "gameWinPercentage": 0.6428571428571429
     }
   ],
   "deckStats": [
+    {
+      "deckName": "UR Tinker Fling",
+      "events": 1,
+      "matchWins": 3,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchRecord": "3-0-0",
+      "matchWinPercentage": 1,
+      "gameWins": 6,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.75,
+      "trophies": 1
+    },
     {
       "deckName": "UW Replenish",
       "events": 1,
@@ -99,6 +113,81 @@
           "opponentDeck": "GW Survival Armageddon",
           "playerGameWins": 2,
           "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "justintomczyk",
+      "opponentDisplayName": "justintomczyk",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "matches": [
+        {
+          "tournamentId": "499545",
+          "dateDisplay": "November 5, 2026",
+          "result": "W",
+          "playerDeck": "UR Tinker Fling",
+          "opponentDeck": "BW Control",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "nivax",
+      "opponentDisplayName": "nivax",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6666666666666666,
+      "matches": [
+        {
+          "tournamentId": "499545",
+          "dateDisplay": "November 5, 2026",
+          "result": "W",
+          "playerDeck": "UR Tinker Fling",
+          "opponentDeck": "_",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "LuisNeiman",
+      "opponentDisplayName": "LuisNeiman",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6666666666666666,
+      "matches": [
+        {
+          "tournamentId": "499545",
+          "dateDisplay": "November 5, 2026",
+          "result": "W",
+          "playerDeck": "UR Tinker Fling",
+          "opponentDeck": "Gamekeeper Oath",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
           "gameDraws": 0
         }
       ]
@@ -255,6 +344,23 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "499545",
+      "date": "2026-11-06T00:05:05Z",
+      "dateDisplay": "November 5, 2026",
+      "playerCount": 29,
+      "trophyCount": 3,
+      "roundCount": 3,
+      "rank": 2,
+      "points": 9,
+      "matchRecord": "3-0-0",
+      "matchWinPercentage": 1,
+      "gameWins": 6,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.75,
+      "deck": "UR Tinker Fling"
+    },
     {
       "tournamentId": "493621",
       "date": "2026-10-29T23:04:16Z",

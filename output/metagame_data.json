@@ -3,12 +3,36 @@
     {
       "leagueName": "Q4 2026",
       "tournaments": [
+        499545,
         493621,
         489140,
         485761,
         445685
       ],
       "deckCounts": {
+        "Moneyball Black": 2,
+        "Gamekeeper Rock": 1,
+        "GW Survival Terrageddon": 1,
+        "UG Survival Madness": 1,
+        "Gamekeeper Oath": 1,
+        "4C Rector Control": 2,
+        "Mad Dogs": 1,
+        "Sligh": 2,
+        "Enchantress": 2,
+        "Zombies": 1,
+        "Moneyball": 6,
+        "White Weenie": 3,
+        "Beefcake": 2,
+        "UR Tinker Fling": 1,
+        "Survival Welder": 1,
+        "BW Control": 2,
+        "Mono U Disk": 1,
+        "Mono Red Ponza": 2,
+        "Elves": 3,
+        "Goblins": 5,
+        "Stasis": 1,
+        "Welder Prison": 3,
+        "Sands of Time / Equipoise": 1,
         "Burn": 5,
         "GR Survival Sneak Attack": 1,
         "GB Rec Sur": 1,
@@ -17,15 +41,7 @@
         "Clerics": 1,
         "Blue Disk": 1,
         "Landstill": 4,
-        "Enchantress": 1,
-        "Moneyball": 5,
-        "Beefcake": 1,
-        "BW Control": 1,
-        "Sligh": 1,
-        "Elves": 2,
-        "Goblins": 4,
         "TerraDreams": 1,
-        "Welder Prison": 2,
         "Quiet Dreadnought": 1,
         "Shallow Grave": 1,
         "UB Zombie Infestation": 1,
@@ -33,13 +49,10 @@
         "BG Survival": 3,
         "GAT": 2,
         "Terrageddon": 1,
-        "4C Rector Control": 1,
         "Mono Blue Control": 1,
-        "White Weenie": 2,
         "The Rock": 1,
         "Mono White Control": 1,
         "Dragonstorm": 1,
-        "Mono Red Ponza": 1,
         "GR Survival Terravore": 1,
         "GW Control": 2,
         "UG Survival Opposition": 1,
@@ -49,7 +62,6 @@
         "RG Oath Ponza": 1,
         "GW Oath Ponza": 1,
         "UW Replenish": 1,
-        "Moneyball Black": 1,
         "UB Ghoul": 1,
         "GR Survival Madness Ponza": 1,
         "RG Oath": 2,
@@ -61,6 +73,9 @@
         "UW Wizards": 1
       },
       "deckTrophies": {
+        "Enchantress": 1,
+        "White Weenie": 1,
+        "UR Tinker Fling": 1,
         "UB Tog": 1,
         "Clerics": 1,
         "Quiet Dreadnought": 1,
@@ -71,6 +86,121 @@
         "GW Control": 1
       },
       "deckMatchStats": {
+        "Moneyball Black": {
+          "wins": 2,
+          "losses": 4,
+          "draws": 0
+        },
+        "Gamekeeper Rock": {
+          "wins": 2,
+          "losses": 0,
+          "draws": 1
+        },
+        "GW Survival Terrageddon": {
+          "wins": 2,
+          "losses": 1,
+          "draws": 0
+        },
+        "UG Survival Madness": {
+          "wins": 1,
+          "losses": 2,
+          "draws": 0
+        },
+        "Gamekeeper Oath": {
+          "wins": 2,
+          "losses": 1,
+          "draws": 0
+        },
+        "4C Rector Control": {
+          "wins": 1,
+          "losses": 3,
+          "draws": 2
+        },
+        "Mad Dogs": {
+          "wins": 2,
+          "losses": 1,
+          "draws": 0
+        },
+        "Sligh": {
+          "wins": 3,
+          "losses": 3,
+          "draws": 0
+        },
+        "Enchantress": {
+          "wins": 3,
+          "losses": 2,
+          "draws": 0
+        },
+        "Zombies": {
+          "wins": 2,
+          "losses": 1,
+          "draws": 0
+        },
+        "Moneyball": {
+          "wins": 12,
+          "losses": 5,
+          "draws": 0
+        },
+        "White Weenie": {
+          "wins": 7,
+          "losses": 2,
+          "draws": 0
+        },
+        "Beefcake": {
+          "wins": 3,
+          "losses": 3,
+          "draws": 0
+        },
+        "UR Tinker Fling": {
+          "wins": 3,
+          "losses": 0,
+          "draws": 0
+        },
+        "Survival Welder": {
+          "wins": 0,
+          "losses": 2,
+          "draws": 1
+        },
+        "BW Control": {
+          "wins": 1,
+          "losses": 4,
+          "draws": 1
+        },
+        "Mono U Disk": {
+          "wins": 1,
+          "losses": 2,
+          "draws": 0
+        },
+        "Mono Red Ponza": {
+          "wins": 2,
+          "losses": 3,
+          "draws": 1
+        },
+        "Elves": {
+          "wins": 4,
+          "losses": 5,
+          "draws": 0
+        },
+        "Goblins": {
+          "wins": 9,
+          "losses": 6,
+          "draws": 0
+        },
+        "Stasis": {
+          "wins": 1,
+          "losses": 1,
+          "draws": 1
+        },
+        "Welder Prison": {
+          "wins": 5,
+          "losses": 4,
+          "draws": 0
+        },
+        "Sands of Time / Equipoise": {
+          "wins": 0,
+          "losses": 3,
+          "draws": 0
+        },
         "Burn": {
           "wins": 6,
           "losses": 9,
@@ -111,49 +241,9 @@
           "losses": 6,
           "draws": 2
         },
-        "Enchantress": {
-          "wins": 0,
-          "losses": 2,
-          "draws": 0
-        },
-        "Moneyball": {
-          "wins": 11,
-          "losses": 4,
-          "draws": 0
-        },
-        "Beefcake": {
-          "wins": 1,
-          "losses": 2,
-          "draws": 0
-        },
-        "BW Control": {
-          "wins": 1,
-          "losses": 2,
-          "draws": 0
-        },
-        "Sligh": {
-          "wins": 2,
-          "losses": 1,
-          "draws": 0
-        },
-        "Elves": {
-          "wins": 2,
-          "losses": 4,
-          "draws": 0
-        },
-        "Goblins": {
-          "wins": 7,
-          "losses": 5,
-          "draws": 0
-        },
         "TerraDreams": {
           "wins": 2,
           "losses": 1,
-          "draws": 0
-        },
-        "Welder Prison": {
-          "wins": 3,
-          "losses": 3,
           "draws": 0
         },
         "Quiet Dreadnought": {
@@ -191,20 +281,10 @@
           "losses": 2,
           "draws": 0
         },
-        "4C Rector Control": {
-          "wins": 1,
-          "losses": 1,
-          "draws": 1
-        },
         "Mono Blue Control": {
           "wins": 1,
           "losses": 1,
           "draws": 1
-        },
-        "White Weenie": {
-          "wins": 4,
-          "losses": 2,
-          "draws": 0
         },
         "The Rock": {
           "wins": 1,
@@ -219,11 +299,6 @@
         "Dragonstorm": {
           "wins": 1,
           "losses": 2,
-          "draws": 0
-        },
-        "Mono Red Ponza": {
-          "wins": 2,
-          "losses": 1,
           "draws": 0
         },
         "GR Survival Terravore": {
@@ -269,11 +344,6 @@
         "UW Replenish": {
           "wins": 3,
           "losses": 0,
-          "draws": 0
-        },
-        "Moneyball Black": {
-          "wins": 2,
-          "losses": 1,
           "draws": 0
         },
         "UB Ghoul": {

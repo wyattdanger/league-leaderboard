@@ -2,25 +2,25 @@
   "username": "Pjd",
   "displayName": "Pjd",
   "overallStats": {
-    "totalTournaments": 3,
-    "totalPoints": 11,
-    "totalMatches": 9,
-    "matchRecord": "3-4-2",
-    "matchWinPercentage": 0.4444444444444444,
-    "gameRecord": "10-10-0",
-    "gameWinPercentage": 0.5,
+    "totalTournaments": 4,
+    "totalPoints": 14,
+    "totalMatches": 12,
+    "matchRecord": "4-6-2",
+    "matchWinPercentage": 0.4166666666666667,
+    "gameRecord": "13-15-0",
+    "gameWinPercentage": 0.4642857142857143,
     "trophies": 0,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q4 2026",
-      "events": 3,
-      "points": 11,
-      "matchRecord": "3-4-2",
-      "matchWinPercentage": 0.4444444444444444,
-      "gameRecord": "10-10-0",
-      "gameWinPercentage": 0.5
+      "events": 4,
+      "points": 14,
+      "matchRecord": "4-6-2",
+      "matchWinPercentage": 0.4166666666666667,
+      "gameRecord": "13-15-0",
+      "gameWinPercentage": 0.4642857142857143
     }
   ],
   "deckStats": [
@@ -37,9 +37,98 @@
       "gameDraws": 0,
       "gameWinPercentage": 0.5,
       "trophies": 0
+    },
+    {
+      "deckName": "Sligh",
+      "events": 1,
+      "matchWins": 1,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 3,
+      "gameLosses": 5,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.375,
+      "trophies": 0
     }
   ],
   "headToHead": [
+    {
+      "opponentUsername": "delofstrom",
+      "opponentDisplayName": "DEL .",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6666666666666666,
+      "matches": [
+        {
+          "tournamentId": "499545",
+          "dateDisplay": "November 5, 2026",
+          "result": "W",
+          "playerDeck": "Sligh",
+          "opponentDeck": "Survival Welder",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "RichBucey",
+      "opponentDisplayName": "RichBucey",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "matches": [
+        {
+          "tournamentId": "499545",
+          "dateDisplay": "November 5, 2026",
+          "result": "L",
+          "playerDeck": "Sligh",
+          "opponentDeck": "Enchantress",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "Mookyspulder",
+      "opponentDisplayName": "Dan S",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "matches": [
+        {
+          "tournamentId": "499545",
+          "dateDisplay": "November 5, 2026",
+          "result": "L",
+          "playerDeck": "Sligh",
+          "opponentDeck": "Mad Dogs",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
     {
       "opponentUsername": "CalebR",
       "opponentDisplayName": "CalebR",
@@ -267,6 +356,23 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "499545",
+      "date": "2026-11-06T00:05:05Z",
+      "dateDisplay": "November 5, 2026",
+      "playerCount": 29,
+      "trophyCount": 3,
+      "roundCount": 3,
+      "rank": 19,
+      "points": 3,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 3,
+      "gameLosses": 5,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.375,
+      "deck": "Sligh"
+    },
     {
       "tournamentId": "493621",
       "date": "2026-10-29T23:04:16Z",

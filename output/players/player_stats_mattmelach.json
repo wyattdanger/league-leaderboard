@@ -2,25 +2,25 @@
   "username": "Mattmelach",
   "displayName": "Matthew Melachrinos",
   "overallStats": {
-    "totalTournaments": 40,
-    "totalPoints": 117,
-    "totalMatches": 120,
-    "matchRecord": "36-75-9",
-    "matchWinPercentage": 0.3375,
-    "gameRecord": "109-171-4",
-    "gameWinPercentage": 0.38380281690140844,
+    "totalTournaments": 41,
+    "totalPoints": 118,
+    "totalMatches": 123,
+    "matchRecord": "36-77-10",
+    "matchWinPercentage": 0.3333333333333333,
+    "gameRecord": "109-175-7",
+    "gameWinPercentage": 0.3745704467353952,
     "trophies": 0,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q4 2026",
-      "events": 2,
-      "points": 4,
-      "matchRecord": "1-4-1",
-      "matchWinPercentage": 0.25,
-      "gameRecord": "5-9-0",
-      "gameWinPercentage": 0.35714285714285715
+      "events": 3,
+      "points": 5,
+      "matchRecord": "1-6-2",
+      "matchWinPercentage": 0.2222222222222222,
+      "gameRecord": "5-13-3",
+      "gameWinPercentage": 0.30952380952380953
     },
     {
       "leagueName": "Q3 2026",
@@ -144,6 +144,20 @@
       "trophies": 0
     },
     {
+      "deckName": "4C Rector Control",
+      "events": 2,
+      "matchWins": 1,
+      "matchLosses": 3,
+      "matchDraws": 2,
+      "matchRecord": "1-3-2",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 3,
+      "gameLosses": 7,
+      "gameDraws": 3,
+      "gameWinPercentage": 0.34615384615384615,
+      "trophies": 0
+    },
+    {
       "deckName": "Stasis",
       "events": 2,
       "matchWins": 2,
@@ -183,20 +197,6 @@
       "gameLosses": 11,
       "gameDraws": 1,
       "gameWinPercentage": 0.17857142857142858,
-      "trophies": 0
-    },
-    {
-      "deckName": "4C Rector Control",
-      "events": 1,
-      "matchWins": 1,
-      "matchLosses": 1,
-      "matchDraws": 1,
-      "matchRecord": "1-1-1",
-      "matchWinPercentage": 0.5,
-      "gameWins": 3,
-      "gameLosses": 3,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.5,
       "trophies": 0
     },
     {
@@ -1675,6 +1675,81 @@
       ]
     },
     {
+      "opponentUsername": "CalebR",
+      "opponentDisplayName": "CalebR",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "matches": [
+        {
+          "tournamentId": "499545",
+          "dateDisplay": "November 5, 2026",
+          "result": "L",
+          "playerDeck": "4C Rector Control",
+          "opponentDeck": "GW Survival Terrageddon",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "SamFeldman",
+      "opponentDisplayName": "Samuel Feldman",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "matches": [
+        {
+          "tournamentId": "499545",
+          "dateDisplay": "November 5, 2026",
+          "result": "L",
+          "playerDeck": "4C Rector Control",
+          "opponentDeck": "Zombies",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "justintomczyk",
+      "opponentDisplayName": "justintomczyk",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 0,
+      "matchDraws": 1,
+      "matchWinPercentage": 0.5,
+      "gameWins": 0,
+      "gameLosses": 0,
+      "gameDraws": 3,
+      "gameWinPercentage": 0.5,
+      "matches": [
+        {
+          "tournamentId": "499545",
+          "dateDisplay": "November 5, 2026",
+          "result": "D",
+          "playerDeck": "4C Rector Control",
+          "opponentDeck": "BW Control",
+          "playerGameWins": 0,
+          "opponentGameWins": 0,
+          "gameDraws": 3
+        }
+      ]
+    },
+    {
       "opponentUsername": "Maew",
       "opponentDisplayName": "Maew",
       "matchesPlayed": 1,
@@ -2326,6 +2401,23 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "499545",
+      "date": "2026-11-06T00:05:05Z",
+      "dateDisplay": "November 5, 2026",
+      "playerCount": 29,
+      "trophyCount": 3,
+      "roundCount": 3,
+      "rank": 24,
+      "points": 1,
+      "matchRecord": "0-2-1",
+      "matchWinPercentage": 0.16666666666666666,
+      "gameWins": 0,
+      "gameLosses": 4,
+      "gameDraws": 3,
+      "gameWinPercentage": 0.3333333,
+      "deck": "4C Rector Control"
+    },
     {
       "tournamentId": "489140",
       "date": "2026-10-22T23:39:07Z",

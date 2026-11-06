@@ -2,17 +2,26 @@
   "username": "madmanpoet",
   "displayName": "Michael Flores",
   "overallStats": {
-    "totalTournaments": 54,
-    "totalPoints": 341,
-    "totalMatches": 162,
-    "matchRecord": "112-45-5",
-    "matchWinPercentage": 0.7067901234567902,
-    "gameRecord": "251-136-2",
-    "gameWinPercentage": 0.6452442159383034,
+    "totalTournaments": 55,
+    "totalPoints": 344,
+    "totalMatches": 165,
+    "matchRecord": "113-47-5",
+    "matchWinPercentage": 0.7,
+    "gameRecord": "253-140-2",
+    "gameWinPercentage": 0.640506329113924,
     "trophies": 14,
     "belts": 2
   },
   "leagueStats": [
+    {
+      "leagueName": "Q4 2026",
+      "events": 1,
+      "points": 3,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameRecord": "2-4-0",
+      "gameWinPercentage": 0.3333333333333333
+    },
     {
       "leagueName": "Q3 2026",
       "events": 10,
@@ -392,6 +401,20 @@
       "gameLosses": 3,
       "gameDraws": 0,
       "gameWinPercentage": 0.5714285714285714,
+      "trophies": 0
+    },
+    {
+      "deckName": "Mono U Disk",
+      "events": 1,
+      "matchWins": 1,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 2,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
       "trophies": 0
     },
     {
@@ -1350,6 +1373,61 @@
       ]
     },
     {
+      "opponentUsername": "WillReddy",
+      "opponentDisplayName": "WillReddy",
+      "matchesPlayed": 4,
+      "matchWins": 3,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.75,
+      "gameWins": 6,
+      "gameLosses": 5,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5454545454545454,
+      "matches": [
+        {
+          "tournamentId": "499545",
+          "dateDisplay": "November 5, 2026",
+          "result": "L",
+          "playerDeck": "Mono U Disk",
+          "opponentDeck": "Beefcake",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "445677",
+          "dateDisplay": "August 6, 2026",
+          "result": "W",
+          "playerDeck": "White Control",
+          "opponentDeck": "Gro",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "434267",
+          "dateDisplay": "June 4, 2026",
+          "result": "W",
+          "playerDeck": "Terrageddon",
+          "opponentDeck": "_",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "429084",
+          "dateDisplay": "May 14, 2026",
+          "result": "W",
+          "playerDeck": "Cradle Control",
+          "opponentDeck": "UG Tradewind Survival",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "ByerBeware",
       "opponentDisplayName": "ByerBeware",
       "matchesPlayed": 4,
@@ -1515,44 +1593,44 @@
       ]
     },
     {
-      "opponentUsername": "WillReddy",
-      "opponentDisplayName": "WillReddy",
+      "opponentUsername": "minimiz",
+      "opponentDisplayName": "Eli Mizock",
       "matchesPlayed": 3,
-      "matchWins": 3,
-      "matchLosses": 0,
+      "matchWins": 2,
+      "matchLosses": 1,
       "matchDraws": 0,
-      "matchWinPercentage": 1,
-      "gameWins": 6,
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 4,
       "gameLosses": 3,
       "gameDraws": 0,
-      "gameWinPercentage": 0.6666666666666666,
+      "gameWinPercentage": 0.5714285714285714,
       "matches": [
         {
-          "tournamentId": "445677",
-          "dateDisplay": "August 6, 2026",
-          "result": "W",
-          "playerDeck": "White Control",
-          "opponentDeck": "Gro",
-          "playerGameWins": 2,
-          "opponentGameWins": 1,
+          "tournamentId": "499545",
+          "dateDisplay": "November 5, 2026",
+          "result": "L",
+          "playerDeck": "Mono U Disk",
+          "opponentDeck": "Goblins",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
           "gameDraws": 0
         },
         {
-          "tournamentId": "434267",
-          "dateDisplay": "June 4, 2026",
+          "tournamentId": "420854",
+          "dateDisplay": "April 9, 2026",
           "result": "W",
-          "playerDeck": "Terrageddon",
-          "opponentDeck": "_",
+          "playerDeck": "Goblins",
+          "opponentDeck": "Goblins",
           "playerGameWins": 2,
-          "opponentGameWins": 1,
+          "opponentGameWins": 0,
           "gameDraws": 0
         },
         {
-          "tournamentId": "429084",
-          "dateDisplay": "May 14, 2026",
+          "tournamentId": "402789",
+          "dateDisplay": "February 5, 2026",
           "result": "W",
-          "playerDeck": "Cradle Control",
-          "opponentDeck": "UG Tradewind Survival",
+          "playerDeck": "Enchantress",
+          "opponentDeck": "Goblins",
           "playerGameWins": 2,
           "opponentGameWins": 1,
           "gameDraws": 0
@@ -1965,41 +2043,6 @@
       ]
     },
     {
-      "opponentUsername": "minimiz",
-      "opponentDisplayName": "Eli Mizock",
-      "matchesPlayed": 2,
-      "matchWins": 2,
-      "matchLosses": 0,
-      "matchDraws": 0,
-      "matchWinPercentage": 1,
-      "gameWins": 4,
-      "gameLosses": 1,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.8,
-      "matches": [
-        {
-          "tournamentId": "420854",
-          "dateDisplay": "April 9, 2026",
-          "result": "W",
-          "playerDeck": "Goblins",
-          "opponentDeck": "Goblins",
-          "playerGameWins": 2,
-          "opponentGameWins": 0,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "402789",
-          "dateDisplay": "February 5, 2026",
-          "result": "W",
-          "playerDeck": "Enchantress",
-          "opponentDeck": "Goblins",
-          "playerGameWins": 2,
-          "opponentGameWins": 1,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
       "opponentUsername": "justintomczyk",
       "opponentDisplayName": "justintomczyk",
       "matchesPlayed": 2,
@@ -2135,6 +2178,31 @@
           "opponentDeck": "Burn",
           "playerGameWins": 1,
           "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "mflore4d",
+      "opponentDisplayName": "Marc Fkore",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "matches": [
+        {
+          "tournamentId": "499545",
+          "dateDisplay": "November 5, 2026",
+          "result": "W",
+          "playerDeck": "Mono U Disk",
+          "opponentDeck": "Mono Red Ponza",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
           "gameDraws": 0
         }
       ]
@@ -2966,6 +3034,23 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "499545",
+      "date": "2026-11-06T00:05:05Z",
+      "dateDisplay": "November 5, 2026",
+      "playerCount": 29,
+      "trophyCount": 3,
+      "roundCount": 3,
+      "rank": 22,
+      "points": 3,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 2,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333,
+      "deck": "Mono U Disk"
+    },
     {
       "tournamentId": "481802",
       "date": "2026-10-08T23:48:56Z",

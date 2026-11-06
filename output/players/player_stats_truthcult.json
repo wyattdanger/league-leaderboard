@@ -2,25 +2,25 @@
   "username": "truthcult",
   "displayName": "klint",
   "overallStats": {
-    "totalTournaments": 11,
-    "totalPoints": 52,
-    "totalMatches": 33,
-    "matchRecord": "16-13-4",
-    "matchWinPercentage": 0.5454545454545454,
-    "gameRecord": "43-37-1",
-    "gameWinPercentage": 0.5308641975308642,
+    "totalTournaments": 12,
+    "totalPoints": 58,
+    "totalMatches": 36,
+    "matchRecord": "18-14-4",
+    "matchWinPercentage": 0.5555555555555556,
+    "gameRecord": "48-39-1",
+    "gameWinPercentage": 0.5454545454545454,
     "trophies": 1,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q4 2026",
-      "events": 2,
-      "points": 9,
-      "matchRecord": "3-3-0",
-      "matchWinPercentage": 0.5,
-      "gameRecord": "8-7-0",
-      "gameWinPercentage": 0.5333333333333333
+      "events": 3,
+      "points": 15,
+      "matchRecord": "5-4-0",
+      "matchWinPercentage": 0.5555555555555556,
+      "gameRecord": "13-9-0",
+      "gameWinPercentage": 0.5909090909090909
     },
     {
       "leagueName": "Q3 2026",
@@ -44,16 +44,16 @@
   "deckStats": [
     {
       "deckName": "Welder Prison",
-      "events": 7,
-      "matchWins": 12,
-      "matchLosses": 6,
+      "events": 8,
+      "matchWins": 14,
+      "matchLosses": 7,
       "matchDraws": 3,
-      "matchRecord": "12-6-3",
-      "matchWinPercentage": 0.6428571428571429,
-      "gameWins": 30,
-      "gameLosses": 22,
+      "matchRecord": "14-7-3",
+      "matchWinPercentage": 0.6458333333333334,
+      "gameWins": 35,
+      "gameLosses": 24,
       "gameDraws": 1,
-      "gameWinPercentage": 0.5754716981132075,
+      "gameWinPercentage": 0.5916666666666667,
       "trophies": 1
     },
     {
@@ -121,6 +121,41 @@
           "result": "W",
           "playerDeck": "Tinker Welder",
           "opponentDeck": "Psychatog",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "AndrewLevine",
+      "opponentDisplayName": "AndrewLevine",
+      "matchesPlayed": 2,
+      "matchWins": 1,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.5,
+      "gameWins": 3,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6,
+      "matches": [
+        {
+          "tournamentId": "499545",
+          "dateDisplay": "November 5, 2026",
+          "result": "L",
+          "playerDeck": "Welder Prison",
+          "opponentDeck": "Gamekeeper Rock",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "445684",
+          "dateDisplay": "September 24, 2026",
+          "result": "W",
+          "playerDeck": "Welder Prison",
+          "opponentDeck": "Chromatic Predict",
           "playerGameWins": 2,
           "opponentGameWins": 0,
           "gameDraws": 0
@@ -373,6 +408,56 @@
       ]
     },
     {
+      "opponentUsername": "delofstrom",
+      "opponentDisplayName": "DEL .",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "matches": [
+        {
+          "tournamentId": "499545",
+          "dateDisplay": "November 5, 2026",
+          "result": "W",
+          "playerDeck": "Welder Prison",
+          "opponentDeck": "Survival Welder",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "Apa",
+      "opponentDisplayName": "Apa",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "matches": [
+        {
+          "tournamentId": "499545",
+          "dateDisplay": "November 5, 2026",
+          "result": "W",
+          "playerDeck": "Welder Prison",
+          "opponentDeck": "_",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "cg123",
       "opponentDisplayName": "Christopher Garcia",
       "matchesPlayed": 1,
@@ -444,31 +529,6 @@
           "playerGameWins": 1,
           "opponentGameWins": 1,
           "gameDraws": 1
-        }
-      ]
-    },
-    {
-      "opponentUsername": "AndrewLevine",
-      "opponentDisplayName": "AndrewLevine",
-      "matchesPlayed": 1,
-      "matchWins": 1,
-      "matchLosses": 0,
-      "matchDraws": 0,
-      "matchWinPercentage": 1,
-      "gameWins": 2,
-      "gameLosses": 0,
-      "gameDraws": 0,
-      "gameWinPercentage": 1,
-      "matches": [
-        {
-          "tournamentId": "445684",
-          "dateDisplay": "September 24, 2026",
-          "result": "W",
-          "playerDeck": "Welder Prison",
-          "opponentDeck": "Chromatic Predict",
-          "playerGameWins": 2,
-          "opponentGameWins": 0,
-          "gameDraws": 0
         }
       ]
     },
@@ -749,6 +809,23 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "499545",
+      "date": "2026-11-06T00:05:05Z",
+      "dateDisplay": "November 5, 2026",
+      "playerCount": 29,
+      "trophyCount": 3,
+      "roundCount": 3,
+      "rank": 9,
+      "points": 6,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 5,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.7142857,
+      "deck": "Welder Prison"
+    },
     {
       "tournamentId": "493621",
       "date": "2026-10-29T23:04:16Z",

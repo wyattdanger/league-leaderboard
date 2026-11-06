@@ -2,25 +2,25 @@
   "username": "AlldoAurelis",
   "displayName": "AlldoAurelis",
   "overallStats": {
-    "totalTournaments": 22,
+    "totalTournaments": 23,
     "totalPoints": 76,
-    "totalMatches": 64,
-    "matchRecord": "25-38-1",
-    "matchWinPercentage": 0.3984375,
-    "gameRecord": "66-88-0",
-    "gameWinPercentage": 0.42857142857142855,
+    "totalMatches": 67,
+    "matchRecord": "25-41-1",
+    "matchWinPercentage": 0.3805970149253731,
+    "gameRecord": "68-94-0",
+    "gameWinPercentage": 0.41975308641975306,
     "trophies": 2,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q4 2026",
-      "events": 3,
+      "events": 4,
       "points": 9,
-      "matchRecord": "3-6-0",
-      "matchWinPercentage": 0.3333333333333333,
-      "gameRecord": "9-13-0",
-      "gameWinPercentage": 0.4090909090909091
+      "matchRecord": "3-9-0",
+      "matchWinPercentage": 0.25,
+      "gameRecord": "11-19-0",
+      "gameWinPercentage": 0.36666666666666664
     },
     {
       "leagueName": "Q3 2026",
@@ -62,16 +62,16 @@
   "deckStats": [
     {
       "deckName": "Moneyball Black",
-      "events": 6,
+      "events": 7,
       "matchWins": 8,
-      "matchLosses": 10,
+      "matchLosses": 13,
       "matchDraws": 0,
-      "matchRecord": "8-10-0",
-      "matchWinPercentage": 0.4444444444444444,
-      "gameWins": 20,
-      "gameLosses": 24,
+      "matchRecord": "8-13-0",
+      "matchWinPercentage": 0.38095238095238093,
+      "gameWins": 22,
+      "gameLosses": 30,
       "gameDraws": 0,
-      "gameWinPercentage": 0.45454545454545453,
+      "gameWinPercentage": 0.4230769230769231,
       "trophies": 1
     },
     {
@@ -188,6 +188,71 @@
     }
   ],
   "headToHead": [
+    {
+      "opponentUsername": "Tencteri",
+      "opponentDisplayName": "Tencteri",
+      "matchesPlayed": 5,
+      "matchWins": 3,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.6,
+      "gameWins": 7,
+      "gameLosses": 5,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5833333333333334,
+      "matches": [
+        {
+          "tournamentId": "499545",
+          "dateDisplay": "November 5, 2026",
+          "result": "L",
+          "playerDeck": "Moneyball Black",
+          "opponentDeck": "White Weenie",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "445684",
+          "dateDisplay": "September 24, 2026",
+          "result": "L",
+          "playerDeck": "Moneyball Black",
+          "opponentDeck": "White Weenie",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "465043",
+          "dateDisplay": "September 10, 2026",
+          "result": "W",
+          "playerDeck": "Moneyball Red",
+          "opponentDeck": "Esper Tog",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "458540",
+          "dateDisplay": "August 27, 2026",
+          "result": "W",
+          "playerDeck": "Moneyball Red",
+          "opponentDeck": "Merfolk",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "445678",
+          "dateDisplay": "August 13, 2026",
+          "result": "W",
+          "playerDeck": "Moneyball Red",
+          "opponentDeck": "Merfolk",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
     {
       "opponentUsername": "CalebR",
       "opponentDisplayName": "CalebR",
@@ -369,61 +434,6 @@
           "opponentDeck": "_",
           "playerGameWins": 2,
           "opponentGameWins": 1,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "Tencteri",
-      "opponentDisplayName": "Tencteri",
-      "matchesPlayed": 4,
-      "matchWins": 3,
-      "matchLosses": 1,
-      "matchDraws": 0,
-      "matchWinPercentage": 0.75,
-      "gameWins": 6,
-      "gameLosses": 3,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.6666666666666666,
-      "matches": [
-        {
-          "tournamentId": "445684",
-          "dateDisplay": "September 24, 2026",
-          "result": "L",
-          "playerDeck": "Moneyball Black",
-          "opponentDeck": "White Weenie",
-          "playerGameWins": 0,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "465043",
-          "dateDisplay": "September 10, 2026",
-          "result": "W",
-          "playerDeck": "Moneyball Red",
-          "opponentDeck": "Esper Tog",
-          "playerGameWins": 2,
-          "opponentGameWins": 0,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "458540",
-          "dateDisplay": "August 27, 2026",
-          "result": "W",
-          "playerDeck": "Moneyball Red",
-          "opponentDeck": "Merfolk",
-          "playerGameWins": 2,
-          "opponentGameWins": 1,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "445678",
-          "dateDisplay": "August 13, 2026",
-          "result": "W",
-          "playerDeck": "Moneyball Red",
-          "opponentDeck": "Merfolk",
-          "playerGameWins": 2,
-          "opponentGameWins": 0,
           "gameDraws": 0
         }
       ]
@@ -862,6 +872,56 @@
           "result": "L",
           "playerDeck": "GW Madness",
           "opponentDeck": "Tinker Prison",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "michaelatkin31",
+      "opponentDisplayName": "michaelatkin31",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "matches": [
+        {
+          "tournamentId": "499545",
+          "dateDisplay": "November 5, 2026",
+          "result": "L",
+          "playerDeck": "Moneyball Black",
+          "opponentDeck": "Elves",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "mjzba",
+      "opponentDisplayName": "mjzba",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "matches": [
+        {
+          "tournamentId": "499545",
+          "dateDisplay": "November 5, 2026",
+          "result": "L",
+          "playerDeck": "Moneyball Black",
+          "opponentDeck": "_",
           "playerGameWins": 0,
           "opponentGameWins": 2,
           "gameDraws": 0
@@ -1320,6 +1380,23 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "499545",
+      "date": "2026-11-06T00:05:05Z",
+      "dateDisplay": "November 5, 2026",
+      "playerCount": 29,
+      "trophyCount": 3,
+      "roundCount": 3,
+      "rank": 28,
+      "points": 0,
+      "matchRecord": "0-3-0",
+      "matchWinPercentage": 0,
+      "gameWins": 2,
+      "gameLosses": 6,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333,
+      "deck": "Moneyball Black"
+    },
     {
       "tournamentId": "493621",
       "date": "2026-10-29T23:04:16Z",

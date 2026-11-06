@@ -2,25 +2,25 @@
   "username": "weidnent",
   "displayName": "Nicholas Weidner",
   "overallStats": {
-    "totalTournaments": 26,
+    "totalTournaments": 27,
     "totalPoints": 89,
-    "totalMatches": 76,
-    "matchRecord": "29-45-2",
-    "matchWinPercentage": 0.39473684210526316,
-    "gameRecord": "76-108-0",
-    "gameWinPercentage": 0.41304347826086957,
+    "totalMatches": 79,
+    "matchRecord": "29-48-2",
+    "matchWinPercentage": 0.379746835443038,
+    "gameRecord": "78-114-0",
+    "gameWinPercentage": 0.40625,
     "trophies": 0,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q4 2026",
-      "events": 3,
+      "events": 4,
       "points": 12,
-      "matchRecord": "4-5-0",
-      "matchWinPercentage": 0.4444444444444444,
-      "gameRecord": "9-13-0",
-      "gameWinPercentage": 0.4090909090909091
+      "matchRecord": "4-8-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameRecord": "11-19-0",
+      "gameWinPercentage": 0.36666666666666664
     },
     {
       "leagueName": "Q3 2026",
@@ -240,6 +240,20 @@
       "gameLosses": 5,
       "gameDraws": 0,
       "gameWinPercentage": 0.2857142857142857,
+      "trophies": 0
+    },
+    {
+      "deckName": "Sands of Time / Equipoise",
+      "events": 1,
+      "matchWins": 0,
+      "matchLosses": 3,
+      "matchDraws": 0,
+      "matchRecord": "0-3-0",
+      "matchWinPercentage": 0,
+      "gameWins": 2,
+      "gameLosses": 6,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.25,
       "trophies": 0
     },
     {
@@ -908,6 +922,76 @@
       ]
     },
     {
+      "opponentUsername": "Mookyspulder",
+      "opponentDisplayName": "Dan S",
+      "matchesPlayed": 2,
+      "matchWins": 0,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "matches": [
+        {
+          "tournamentId": "499545",
+          "dateDisplay": "November 5, 2026",
+          "result": "L",
+          "playerDeck": "Sands of Time / Equipoise",
+          "opponentDeck": "Mad Dogs",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "425821",
+          "dateDisplay": "April 30, 2026",
+          "result": "L",
+          "playerDeck": "Reanimator",
+          "opponentDeck": "Mono black clerics",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "SamFeldman",
+      "opponentDisplayName": "Samuel Feldman",
+      "matchesPlayed": 2,
+      "matchWins": 0,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.2,
+      "matches": [
+        {
+          "tournamentId": "499545",
+          "dateDisplay": "November 5, 2026",
+          "result": "L",
+          "playerDeck": "Sands of Time / Equipoise",
+          "opponentDeck": "Zombies",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "458540",
+          "dateDisplay": "August 27, 2026",
+          "result": "L",
+          "playerDeck": "Oath Ponza",
+          "opponentDeck": "_",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "minimiz",
       "opponentDisplayName": "Eli Mizock",
       "matchesPlayed": 2,
@@ -1042,6 +1126,31 @@
           "playerDeck": "GW Mad Dogs",
           "opponentDeck": "UG Aluren",
           "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "murrayhewitt",
+      "opponentDisplayName": "murrayhewitt",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "matches": [
+        {
+          "tournamentId": "499545",
+          "dateDisplay": "November 5, 2026",
+          "result": "L",
+          "playerDeck": "Sands of Time / Equipoise",
+          "opponentDeck": "_",
+          "playerGameWins": 1,
           "opponentGameWins": 2,
           "gameDraws": 0
         }
@@ -1215,31 +1324,6 @@
           "dateDisplay": "September 10, 2026",
           "result": "L",
           "playerDeck": "GW Slide",
-          "opponentDeck": "_",
-          "playerGameWins": 0,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "SamFeldman",
-      "opponentDisplayName": "Samuel Feldman",
-      "matchesPlayed": 1,
-      "matchWins": 0,
-      "matchLosses": 1,
-      "matchDraws": 0,
-      "matchWinPercentage": 0,
-      "gameWins": 0,
-      "gameLosses": 2,
-      "gameDraws": 0,
-      "gameWinPercentage": 0,
-      "matches": [
-        {
-          "tournamentId": "458540",
-          "dateDisplay": "August 27, 2026",
-          "result": "L",
-          "playerDeck": "Oath Ponza",
           "opponentDeck": "_",
           "playerGameWins": 0,
           "opponentGameWins": 2,
@@ -1523,31 +1607,6 @@
       ]
     },
     {
-      "opponentUsername": "Mookyspulder",
-      "opponentDisplayName": "Dan S",
-      "matchesPlayed": 1,
-      "matchWins": 0,
-      "matchLosses": 1,
-      "matchDraws": 0,
-      "matchWinPercentage": 0,
-      "gameWins": 0,
-      "gameLosses": 2,
-      "gameDraws": 0,
-      "gameWinPercentage": 0,
-      "matches": [
-        {
-          "tournamentId": "425821",
-          "dateDisplay": "April 30, 2026",
-          "result": "L",
-          "playerDeck": "Reanimator",
-          "opponentDeck": "Mono black clerics",
-          "playerGameWins": 0,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
       "opponentUsername": "itsCama",
       "opponentDisplayName": "Yosef Harari",
       "matchesPlayed": 1,
@@ -1649,6 +1708,23 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "499545",
+      "date": "2026-11-06T00:05:05Z",
+      "dateDisplay": "November 5, 2026",
+      "playerCount": 29,
+      "trophyCount": 3,
+      "roundCount": 3,
+      "rank": 29,
+      "points": 0,
+      "matchRecord": "0-3-0",
+      "matchWinPercentage": 0,
+      "gameWins": 2,
+      "gameLosses": 6,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333,
+      "deck": "Sands of Time / Equipoise"
+    },
     {
       "tournamentId": "493621",
       "date": "2026-10-29T23:04:16Z",

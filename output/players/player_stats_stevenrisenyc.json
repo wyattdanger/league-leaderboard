@@ -2,25 +2,25 @@
   "username": "StevenRiseNYC",
   "displayName": "StevenRiseNYC",
   "overallStats": {
-    "totalTournaments": 7,
-    "totalPoints": 36,
-    "totalMatches": 21,
-    "matchRecord": "12-9-0",
-    "matchWinPercentage": 0.5714285714285714,
-    "gameRecord": "26-25-0",
-    "gameWinPercentage": 0.5098039215686274,
+    "totalTournaments": 8,
+    "totalPoints": 39,
+    "totalMatches": 23,
+    "matchRecord": "13-10-0",
+    "matchWinPercentage": 0.5652173913043478,
+    "gameRecord": "28-27-0",
+    "gameWinPercentage": 0.509090909090909,
     "trophies": 2,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q4 2026",
-      "events": 3,
-      "points": 18,
-      "matchRecord": "6-3-0",
-      "matchWinPercentage": 0.6666666666666666,
-      "gameRecord": "14-9-0",
-      "gameWinPercentage": 0.6086956521739131
+      "events": 4,
+      "points": 21,
+      "matchRecord": "7-4-0",
+      "matchWinPercentage": 0.6363636363636364,
+      "gameRecord": "16-11-0",
+      "gameWinPercentage": 0.5925925925925926
     },
     {
       "leagueName": "Q3 2026",
@@ -44,16 +44,16 @@
   "deckStats": [
     {
       "deckName": "Moneyball",
-      "events": 4,
-      "matchWins": 7,
-      "matchLosses": 5,
+      "events": 5,
+      "matchWins": 8,
+      "matchLosses": 6,
       "matchDraws": 0,
-      "matchRecord": "7-5-0",
-      "matchWinPercentage": 0.5833333333333334,
-      "gameWins": 16,
-      "gameLosses": 13,
+      "matchRecord": "8-6-0",
+      "matchWinPercentage": 0.5714285714285714,
+      "gameWins": 18,
+      "gameLosses": 15,
       "gameDraws": 0,
-      "gameWinPercentage": 0.5517241379310345,
+      "gameWinPercentage": 0.5454545454545454,
       "trophies": 1
     },
     {
@@ -86,6 +86,51 @@
     }
   ],
   "headToHead": [
+    {
+      "opponentUsername": "WillReddy",
+      "opponentDisplayName": "WillReddy",
+      "matchesPlayed": 3,
+      "matchWins": 3,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 6,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.8571428571428571,
+      "matches": [
+        {
+          "tournamentId": "499545",
+          "dateDisplay": "November 5, 2026",
+          "result": "W",
+          "playerDeck": "Moneyball",
+          "opponentDeck": "Beefcake",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "493621",
+          "dateDisplay": "October 29, 2026",
+          "result": "W",
+          "playerDeck": "Moneyball",
+          "opponentDeck": "Beefcake",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "485761",
+          "dateDisplay": "October 15, 2026",
+          "result": "W",
+          "playerDeck": "Moneyball",
+          "opponentDeck": "GAT",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
     {
       "opponentUsername": "swbmtg",
       "opponentDisplayName": "Stephen Bush",
@@ -125,41 +170,6 @@
           "result": "W",
           "playerDeck": "Moneyball Black",
           "opponentDeck": "Cradle Control",
-          "playerGameWins": 2,
-          "opponentGameWins": 1,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "WillReddy",
-      "opponentDisplayName": "WillReddy",
-      "matchesPlayed": 2,
-      "matchWins": 2,
-      "matchLosses": 0,
-      "matchDraws": 0,
-      "matchWinPercentage": 1,
-      "gameWins": 4,
-      "gameLosses": 1,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.8,
-      "matches": [
-        {
-          "tournamentId": "493621",
-          "dateDisplay": "October 29, 2026",
-          "result": "W",
-          "playerDeck": "Moneyball",
-          "opponentDeck": "Beefcake",
-          "playerGameWins": 2,
-          "opponentGameWins": 0,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "485761",
-          "dateDisplay": "October 15, 2026",
-          "result": "W",
-          "playerDeck": "Moneyball",
-          "opponentDeck": "GAT",
           "playerGameWins": 2,
           "opponentGameWins": 1,
           "gameDraws": 0
@@ -232,6 +242,31 @@
           "opponentDeck": "Cephalid Breakfast",
           "playerGameWins": 2,
           "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "CalebR",
+      "opponentDisplayName": "CalebR",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "matches": [
+        {
+          "tournamentId": "499545",
+          "dateDisplay": "November 5, 2026",
+          "result": "L",
+          "playerDeck": "Moneyball",
+          "opponentDeck": "GW Survival Terrageddon",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
           "gameDraws": 0
         }
       ]
@@ -513,6 +548,23 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "499545",
+      "date": "2026-11-06T00:05:05Z",
+      "dateDisplay": "November 5, 2026",
+      "playerCount": 29,
+      "trophyCount": 3,
+      "roundCount": 3,
+      "rank": 18,
+      "points": 3,
+      "matchRecord": "1-1-0",
+      "matchWinPercentage": 0.5,
+      "gameWins": 2,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5,
+      "deck": "Moneyball"
+    },
     {
       "tournamentId": "493621",
       "date": "2026-10-29T23:04:16Z",
