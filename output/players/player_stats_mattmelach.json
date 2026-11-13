@@ -2,25 +2,25 @@
   "username": "Mattmelach",
   "displayName": "Matthew Melachrinos",
   "overallStats": {
-    "totalTournaments": 41,
-    "totalPoints": 118,
-    "totalMatches": 123,
-    "matchRecord": "36-77-10",
-    "matchWinPercentage": 0.3333333333333333,
-    "gameRecord": "109-175-7",
-    "gameWinPercentage": 0.3745704467353952,
-    "trophies": 0,
+    "totalTournaments": 42,
+    "totalPoints": 127,
+    "totalMatches": 126,
+    "matchRecord": "39-77-10",
+    "matchWinPercentage": 0.3492063492063492,
+    "gameRecord": "115-176-7",
+    "gameWinPercentage": 0.3859060402684564,
+    "trophies": 1,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q4 2026",
-      "events": 3,
-      "points": 5,
-      "matchRecord": "1-6-2",
-      "matchWinPercentage": 0.2222222222222222,
-      "gameRecord": "5-13-3",
-      "gameWinPercentage": 0.30952380952380953
+      "events": 4,
+      "points": 14,
+      "matchRecord": "4-6-2",
+      "matchWinPercentage": 0.4166666666666667,
+      "gameRecord": "11-14-3",
+      "gameWinPercentage": 0.44642857142857145
     },
     {
       "leagueName": "Q3 2026",
@@ -116,6 +116,20 @@
       "trophies": 0
     },
     {
+      "deckName": "Stasis",
+      "events": 3,
+      "matchWins": 5,
+      "matchLosses": 4,
+      "matchDraws": 0,
+      "matchRecord": "5-4-0",
+      "matchWinPercentage": 0.5555555555555556,
+      "gameWins": 11,
+      "gameLosses": 9,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.55,
+      "trophies": 1
+    },
+    {
       "deckName": "Goblins",
       "events": 3,
       "matchWins": 4,
@@ -155,20 +169,6 @@
       "gameLosses": 7,
       "gameDraws": 3,
       "gameWinPercentage": 0.34615384615384615,
-      "trophies": 0
-    },
-    {
-      "deckName": "Stasis",
-      "events": 2,
-      "matchWins": 2,
-      "matchLosses": 4,
-      "matchDraws": 0,
-      "matchRecord": "2-4-0",
-      "matchWinPercentage": 0.3333333333333333,
-      "gameWins": 5,
-      "gameLosses": 8,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.38461538461538464,
       "trophies": 0
     },
     {
@@ -372,16 +372,26 @@
     {
       "opponentUsername": "swbmtg",
       "opponentDisplayName": "Stephen Bush",
-      "matchesPlayed": 7,
-      "matchWins": 1,
+      "matchesPlayed": 8,
+      "matchWins": 2,
       "matchLosses": 6,
       "matchDraws": 0,
-      "matchWinPercentage": 0.14285714285714285,
-      "gameWins": 3,
+      "matchWinPercentage": 0.25,
+      "gameWins": 5,
       "gameLosses": 12,
       "gameDraws": 0,
-      "gameWinPercentage": 0.2,
+      "gameWinPercentage": 0.29411764705882354,
       "matches": [
+        {
+          "tournamentId": "505497",
+          "dateDisplay": "November 12, 2026",
+          "result": "W",
+          "playerDeck": "Stasis",
+          "opponentDeck": "Gush Tithe",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        },
         {
           "tournamentId": "445679",
           "dateDisplay": "August 20, 2026",
@@ -449,6 +459,81 @@
           "playerDeck": "_",
           "opponentDeck": "Tribe",
           "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "Mookyspulder",
+      "opponentDisplayName": "Dan S",
+      "matchesPlayed": 6,
+      "matchWins": 1,
+      "matchLosses": 4,
+      "matchDraws": 1,
+      "matchWinPercentage": 0.25,
+      "gameWins": 5,
+      "gameLosses": 10,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "matches": [
+        {
+          "tournamentId": "505497",
+          "dateDisplay": "November 12, 2026",
+          "result": "W",
+          "playerDeck": "Stasis",
+          "opponentDeck": "BR Goblins",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "445677",
+          "dateDisplay": "August 6, 2026",
+          "result": "D",
+          "playerDeck": "Dreadnought",
+          "opponentDeck": "BG Contamination",
+          "playerGameWins": 1,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "436157",
+          "dateDisplay": "June 18, 2026",
+          "result": "L",
+          "playerDeck": "Gro",
+          "opponentDeck": "Psychatog",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "429084",
+          "dateDisplay": "May 14, 2026",
+          "result": "L",
+          "playerDeck": "Greater Good",
+          "opponentDeck": "Moneyball Black",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "424009",
+          "dateDisplay": "April 23, 2026",
+          "result": "L",
+          "playerDeck": "UR Stasis",
+          "opponentDeck": "Goblins",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "413370",
+          "dateDisplay": "March 12, 2026",
+          "result": "L",
+          "playerDeck": "Contamination",
+          "opponentDeck": "Clerics",
+          "playerGameWins": 0,
           "opponentGameWins": 2,
           "gameDraws": 0
         }
@@ -525,71 +610,6 @@
           "opponentDeck": "FEB",
           "playerGameWins": 2,
           "opponentGameWins": 0,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "Mookyspulder",
-      "opponentDisplayName": "Dan S",
-      "matchesPlayed": 5,
-      "matchWins": 0,
-      "matchLosses": 4,
-      "matchDraws": 1,
-      "matchWinPercentage": 0.1,
-      "gameWins": 3,
-      "gameLosses": 9,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.25,
-      "matches": [
-        {
-          "tournamentId": "445677",
-          "dateDisplay": "August 6, 2026",
-          "result": "D",
-          "playerDeck": "Dreadnought",
-          "opponentDeck": "BG Contamination",
-          "playerGameWins": 1,
-          "opponentGameWins": 1,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "436157",
-          "dateDisplay": "June 18, 2026",
-          "result": "L",
-          "playerDeck": "Gro",
-          "opponentDeck": "Psychatog",
-          "playerGameWins": 1,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "429084",
-          "dateDisplay": "May 14, 2026",
-          "result": "L",
-          "playerDeck": "Greater Good",
-          "opponentDeck": "Moneyball Black",
-          "playerGameWins": 0,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "424009",
-          "dateDisplay": "April 23, 2026",
-          "result": "L",
-          "playerDeck": "UR Stasis",
-          "opponentDeck": "Goblins",
-          "playerGameWins": 1,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "413370",
-          "dateDisplay": "March 12, 2026",
-          "result": "L",
-          "playerDeck": "Contamination",
-          "opponentDeck": "Clerics",
-          "playerGameWins": 0,
-          "opponentGameWins": 2,
           "gameDraws": 0
         }
       ]
@@ -1675,6 +1695,31 @@
       ]
     },
     {
+      "opponentUsername": "RideTheIguana",
+      "opponentDisplayName": "Ben Katz",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "matches": [
+        {
+          "tournamentId": "505497",
+          "dateDisplay": "November 12, 2026",
+          "result": "W",
+          "playerDeck": "Stasis",
+          "opponentDeck": "U Dreadnought",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "CalebR",
       "opponentDisplayName": "CalebR",
       "matchesPlayed": 1,
@@ -2401,6 +2446,23 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "505497",
+      "date": "2026-11-13T00:19:11Z",
+      "dateDisplay": "November 12, 2026",
+      "playerCount": 19,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 1,
+      "points": 9,
+      "matchRecord": "3-0-0",
+      "matchWinPercentage": 1,
+      "gameWins": 6,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.8571428571428571,
+      "deck": "Stasis"
+    },
     {
       "tournamentId": "499545",
       "date": "2026-11-06T00:05:05Z",

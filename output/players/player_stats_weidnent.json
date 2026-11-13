@@ -2,25 +2,25 @@
   "username": "weidnent",
   "displayName": "Nicholas Weidner",
   "overallStats": {
-    "totalTournaments": 27,
-    "totalPoints": 89,
-    "totalMatches": 79,
-    "matchRecord": "29-48-2",
-    "matchWinPercentage": 0.379746835443038,
-    "gameRecord": "78-114-0",
-    "gameWinPercentage": 0.40625,
+    "totalTournaments": 28,
+    "totalPoints": 92,
+    "totalMatches": 82,
+    "matchRecord": "30-50-2",
+    "matchWinPercentage": 0.3780487804878049,
+    "gameRecord": "81-118-0",
+    "gameWinPercentage": 0.40703517587939697,
     "trophies": 0,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q4 2026",
-      "events": 4,
-      "points": 12,
-      "matchRecord": "4-8-0",
+      "events": 5,
+      "points": 15,
+      "matchRecord": "5-10-0",
       "matchWinPercentage": 0.3333333333333333,
-      "gameRecord": "11-19-0",
-      "gameWinPercentage": 0.36666666666666664
+      "gameRecord": "14-23-0",
+      "gameWinPercentage": 0.3783783783783784
     },
     {
       "leagueName": "Q3 2026",
@@ -170,6 +170,20 @@
       "gameLosses": 4,
       "gameDraws": 0,
       "gameWinPercentage": 0.5555555555555556,
+      "trophies": 0
+    },
+    {
+      "deckName": "Doomsday Storm",
+      "events": 1,
+      "matchWins": 1,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 3,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.42857142857142855,
       "trophies": 0
     },
     {
@@ -417,6 +431,61 @@
       ]
     },
     {
+      "opponentUsername": "Tencteri",
+      "opponentDisplayName": "Tencteri",
+      "matchesPlayed": 4,
+      "matchWins": 1,
+      "matchLosses": 3,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.25,
+      "gameWins": 3,
+      "gameLosses": 6,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "matches": [
+        {
+          "tournamentId": "505497",
+          "dateDisplay": "November 12, 2026",
+          "result": "L",
+          "playerDeck": "Doomsday Storm",
+          "opponentDeck": "White Weenie",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "445681",
+          "dateDisplay": "September 3, 2026",
+          "result": "W",
+          "playerDeck": "Balancing Tings",
+          "opponentDeck": "Reanimator",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "445679",
+          "dateDisplay": "August 20, 2026",
+          "result": "L",
+          "playerDeck": "Oath Ponza",
+          "opponentDeck": "Merfolk",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "417122",
+          "dateDisplay": "March 26, 2026",
+          "result": "L",
+          "playerDeck": "Goblins",
+          "opponentDeck": "White Weenie",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "Mattmelach",
       "opponentDisplayName": "Matthew Melachrinos",
       "matchesPlayed": 4,
@@ -647,51 +716,6 @@
           "opponentDeck": "Mono U Control",
           "playerGameWins": 2,
           "opponentGameWins": 1,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "Tencteri",
-      "opponentDisplayName": "Tencteri",
-      "matchesPlayed": 3,
-      "matchWins": 1,
-      "matchLosses": 2,
-      "matchDraws": 0,
-      "matchWinPercentage": 0.3333333333333333,
-      "gameWins": 3,
-      "gameLosses": 4,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.42857142857142855,
-      "matches": [
-        {
-          "tournamentId": "445681",
-          "dateDisplay": "September 3, 2026",
-          "result": "W",
-          "playerDeck": "Balancing Tings",
-          "opponentDeck": "Reanimator",
-          "playerGameWins": 2,
-          "opponentGameWins": 0,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "445679",
-          "dateDisplay": "August 20, 2026",
-          "result": "L",
-          "playerDeck": "Oath Ponza",
-          "opponentDeck": "Merfolk",
-          "playerGameWins": 1,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "417122",
-          "dateDisplay": "March 26, 2026",
-          "result": "L",
-          "playerDeck": "Goblins",
-          "opponentDeck": "White Weenie",
-          "playerGameWins": 0,
-          "opponentGameWins": 2,
           "gameDraws": 0
         }
       ]
@@ -1127,6 +1151,56 @@
           "opponentDeck": "UG Aluren",
           "playerGameWins": 0,
           "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "jaruro1",
+      "opponentDisplayName": "jaruro1",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "matches": [
+        {
+          "tournamentId": "505497",
+          "dateDisplay": "November 12, 2026",
+          "result": "L",
+          "playerDeck": "Doomsday Storm",
+          "opponentDeck": "Burn",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "JusT10",
+      "opponentDisplayName": "JusT10",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "matches": [
+        {
+          "tournamentId": "505497",
+          "dateDisplay": "November 12, 2026",
+          "result": "W",
+          "playerDeck": "Doomsday Storm",
+          "opponentDeck": "Replenish",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
           "gameDraws": 0
         }
       ]
@@ -1708,6 +1782,23 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "505497",
+      "date": "2026-11-13T00:19:11Z",
+      "dateDisplay": "November 12, 2026",
+      "playerCount": 19,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 14,
+      "points": 3,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 3,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.42857142857142855,
+      "deck": "Doomsday Storm"
+    },
     {
       "tournamentId": "499545",
       "date": "2026-11-06T00:05:05Z",

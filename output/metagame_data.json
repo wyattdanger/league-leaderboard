@@ -3,6 +3,7 @@
     {
       "leagueName": "Q4 2026",
       "tournaments": [
+        505497,
         499545,
         493621,
         489140,
@@ -10,6 +11,22 @@
         445685
       ],
       "deckCounts": {
+        "GAT": 3,
+        "Replenish": 1,
+        "The Rock": 2,
+        "Survival Opposition": 1,
+        "Stasis": 2,
+        "BR Goblins": 1,
+        "Elves": 4,
+        "U Dreadnought": 2,
+        "White Weenie": 4,
+        "Reanimator": 1,
+        "BW Control": 4,
+        "Burn": 6,
+        "Moneyball": 7,
+        "Gush Tithe": 1,
+        "Welder Prison": 4,
+        "Doomsday Storm": 1,
         "Moneyball Black": 2,
         "Gamekeeper Rock": 1,
         "GW Survival Terrageddon": 1,
@@ -20,20 +37,13 @@
         "Sligh": 2,
         "Enchantress": 2,
         "Zombies": 1,
-        "Moneyball": 6,
-        "White Weenie": 3,
         "Beefcake": 2,
         "UR Tinker Fling": 1,
         "Survival Welder": 1,
-        "BW Control": 2,
         "Mono U Disk": 1,
         "Mono Red Ponza": 2,
-        "Elves": 3,
         "Goblins": 5,
-        "Stasis": 1,
-        "Welder Prison": 3,
         "Equipoise": 1,
-        "Burn": 5,
         "GR Survival Sneak Attack": 1,
         "GB Rec Sur": 1,
         "UB Tog": 1,
@@ -47,10 +57,8 @@
         "UB Zombie Infestation": 1,
         "GR Welder Survival": 1,
         "BG Survival": 3,
-        "GAT": 2,
         "Terrageddon": 1,
         "Mono Blue Control": 1,
-        "The Rock": 1,
         "Mono White Control": 1,
         "Dragonstorm": 1,
         "GR Survival Terravore": 1,
@@ -65,7 +73,6 @@
         "UB Ghoul": 1,
         "GR Survival Madness Ponza": 1,
         "RG Oath": 2,
-        "U Dreadnought": 1,
         "GW Threshold": 1,
         "GW Survival": 1,
         "Pattern Rector": 1,
@@ -73,6 +80,8 @@
         "UW Wizards": 1
       },
       "deckTrophies": {
+        "Stasis": 1,
+        "Burn": 1,
         "Enchantress": 1,
         "White Weenie": 1,
         "UR Tinker Fling": 1,
@@ -86,6 +95,86 @@
         "GW Control": 1
       },
       "deckMatchStats": {
+        "GAT": {
+          "wins": 1,
+          "losses": 8,
+          "draws": 0
+        },
+        "Replenish": {
+          "wins": 1,
+          "losses": 2,
+          "draws": 0
+        },
+        "The Rock": {
+          "wins": 2,
+          "losses": 3,
+          "draws": 0
+        },
+        "Survival Opposition": {
+          "wins": 1,
+          "losses": 1,
+          "draws": 1
+        },
+        "Stasis": {
+          "wins": 4,
+          "losses": 1,
+          "draws": 1
+        },
+        "BR Goblins": {
+          "wins": 2,
+          "losses": 1,
+          "draws": 0
+        },
+        "Elves": {
+          "wins": 6,
+          "losses": 5,
+          "draws": 1
+        },
+        "U Dreadnought": {
+          "wins": 2,
+          "losses": 4,
+          "draws": 0
+        },
+        "White Weenie": {
+          "wins": 8,
+          "losses": 4,
+          "draws": 0
+        },
+        "Reanimator": {
+          "wins": 1,
+          "losses": 1,
+          "draws": 1
+        },
+        "BW Control": {
+          "wins": 3,
+          "losses": 8,
+          "draws": 1
+        },
+        "Burn": {
+          "wins": 9,
+          "losses": 9,
+          "draws": 0
+        },
+        "Moneyball": {
+          "wins": 14,
+          "losses": 6,
+          "draws": 0
+        },
+        "Gush Tithe": {
+          "wins": 2,
+          "losses": 1,
+          "draws": 0
+        },
+        "Welder Prison": {
+          "wins": 7,
+          "losses": 5,
+          "draws": 0
+        },
+        "Doomsday Storm": {
+          "wins": 1,
+          "losses": 2,
+          "draws": 0
+        },
         "Moneyball Black": {
           "wins": 2,
           "losses": 4,
@@ -136,16 +225,6 @@
           "losses": 1,
           "draws": 0
         },
-        "Moneyball": {
-          "wins": 12,
-          "losses": 5,
-          "draws": 0
-        },
-        "White Weenie": {
-          "wins": 7,
-          "losses": 2,
-          "draws": 0
-        },
         "Beefcake": {
           "wins": 3,
           "losses": 3,
@@ -161,11 +240,6 @@
           "losses": 2,
           "draws": 1
         },
-        "BW Control": {
-          "wins": 1,
-          "losses": 4,
-          "draws": 1
-        },
         "Mono U Disk": {
           "wins": 1,
           "losses": 2,
@@ -176,34 +250,14 @@
           "losses": 3,
           "draws": 1
         },
-        "Elves": {
-          "wins": 4,
-          "losses": 5,
-          "draws": 0
-        },
         "Goblins": {
           "wins": 9,
           "losses": 6,
           "draws": 0
         },
-        "Stasis": {
-          "wins": 1,
-          "losses": 1,
-          "draws": 1
-        },
-        "Welder Prison": {
-          "wins": 5,
-          "losses": 4,
-          "draws": 0
-        },
         "Equipoise": {
           "wins": 0,
           "losses": 3,
-          "draws": 0
-        },
-        "Burn": {
-          "wins": 6,
-          "losses": 9,
           "draws": 0
         },
         "GR Survival Sneak Attack": {
@@ -271,11 +325,6 @@
           "losses": 7,
           "draws": 0
         },
-        "GAT": {
-          "wins": 0,
-          "losses": 6,
-          "draws": 0
-        },
         "Terrageddon": {
           "wins": 1,
           "losses": 2,
@@ -285,11 +334,6 @@
           "wins": 1,
           "losses": 1,
           "draws": 1
-        },
-        "The Rock": {
-          "wins": 1,
-          "losses": 1,
-          "draws": 0
         },
         "Mono White Control": {
           "wins": 1,
@@ -358,11 +402,6 @@
         },
         "RG Oath": {
           "wins": 3,
-          "losses": 3,
-          "draws": 0
-        },
-        "U Dreadnought": {
-          "wins": 0,
           "losses": 3,
           "draws": 0
         },

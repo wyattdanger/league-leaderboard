@@ -2,24 +2,24 @@
   "username": "mattmanw2",
   "displayName": "mattmanw2",
   "overallStats": {
-    "totalTournaments": 17,
-    "totalPoints": 93,
-    "totalMatches": 51,
-    "matchRecord": "31-20-0",
-    "matchWinPercentage": 0.6078431372549019,
-    "gameRecord": "69-55-0",
-    "gameWinPercentage": 0.5564516129032258,
+    "totalTournaments": 18,
+    "totalPoints": 99,
+    "totalMatches": 54,
+    "matchRecord": "33-21-0",
+    "matchWinPercentage": 0.6111111111111112,
+    "gameRecord": "74-58-0",
+    "gameWinPercentage": 0.5606060606060606,
     "trophies": 2,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q4 2026",
-      "events": 3,
-      "points": 21,
-      "matchRecord": "7-2-0",
-      "matchWinPercentage": 0.7777777777777778,
-      "gameRecord": "15-9-0",
+      "events": 4,
+      "points": 27,
+      "matchRecord": "9-3-0",
+      "matchWinPercentage": 0.75,
+      "gameRecord": "20-12-0",
       "gameWinPercentage": 0.625
     },
     {
@@ -67,16 +67,16 @@
     },
     {
       "deckName": "Moneyball",
-      "events": 6,
-      "matchWins": 13,
-      "matchLosses": 5,
+      "events": 7,
+      "matchWins": 15,
+      "matchLosses": 6,
       "matchDraws": 0,
-      "matchRecord": "13-5-0",
-      "matchWinPercentage": 0.7222222222222222,
-      "gameWins": 28,
-      "gameLosses": 15,
+      "matchRecord": "15-6-0",
+      "matchWinPercentage": 0.7142857142857143,
+      "gameWins": 33,
+      "gameLosses": 18,
       "gameDraws": 0,
-      "gameWinPercentage": 0.6511627906976745,
+      "gameWinPercentage": 0.6470588235294118,
       "trophies": 2
     },
     {
@@ -297,6 +297,41 @@
           "result": "L",
           "playerDeck": "Mono Black Aggro",
           "opponentDeck": "Goblins",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "truthcult",
+      "opponentDisplayName": "klint",
+      "matchesPlayed": 2,
+      "matchWins": 0,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.2,
+      "matches": [
+        {
+          "tournamentId": "505497",
+          "dateDisplay": "November 12, 2026",
+          "result": "L",
+          "playerDeck": "Moneyball",
+          "opponentDeck": "Welder Prison",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "445683",
+          "dateDisplay": "September 17, 2026",
+          "result": "L",
+          "playerDeck": "Moneyball Black",
+          "opponentDeck": "Welder Prison",
           "playerGameWins": 0,
           "opponentGameWins": 2,
           "gameDraws": 0
@@ -584,6 +619,56 @@
       ]
     },
     {
+      "opponentUsername": "mjzba",
+      "opponentDisplayName": "mjzba",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "matches": [
+        {
+          "tournamentId": "505497",
+          "dateDisplay": "November 12, 2026",
+          "result": "W",
+          "playerDeck": "Moneyball",
+          "opponentDeck": "_",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "gbpeel",
+      "opponentDisplayName": "gbpeel",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6666666666666666,
+      "matches": [
+        {
+          "tournamentId": "505497",
+          "dateDisplay": "November 12, 2026",
+          "result": "W",
+          "playerDeck": "Moneyball",
+          "opponentDeck": "BW Control",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "Pjd",
       "opponentDisplayName": "Pjd",
       "matchesPlayed": 1,
@@ -654,31 +739,6 @@
           "opponentDeck": "_",
           "playerGameWins": 2,
           "opponentGameWins": 1,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "truthcult",
-      "opponentDisplayName": "klint",
-      "matchesPlayed": 1,
-      "matchWins": 0,
-      "matchLosses": 1,
-      "matchDraws": 0,
-      "matchWinPercentage": 0,
-      "gameWins": 0,
-      "gameLosses": 2,
-      "gameDraws": 0,
-      "gameWinPercentage": 0,
-      "matches": [
-        {
-          "tournamentId": "445683",
-          "dateDisplay": "September 17, 2026",
-          "result": "L",
-          "playerDeck": "Moneyball Black",
-          "opponentDeck": "Welder Prison",
-          "playerGameWins": 0,
-          "opponentGameWins": 2,
           "gameDraws": 0
         }
       ]
@@ -1085,6 +1145,23 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "505497",
+      "date": "2026-11-13T00:19:11Z",
+      "dateDisplay": "November 12, 2026",
+      "playerCount": 19,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 8,
+      "points": 6,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 5,
+      "gameLosses": 3,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.625,
+      "deck": "Moneyball"
+    },
     {
       "tournamentId": "493621",
       "date": "2026-10-29T23:04:16Z",

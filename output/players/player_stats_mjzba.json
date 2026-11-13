@@ -2,44 +2,119 @@
   "username": "mjzba",
   "displayName": "mjzba",
   "overallStats": {
-    "totalTournaments": 1,
+    "totalTournaments": 2,
     "totalPoints": 3,
-    "totalMatches": 3,
-    "matchRecord": "1-2-0",
-    "matchWinPercentage": 0.3333333333333333,
-    "gameRecord": "4-4-0",
-    "gameWinPercentage": 0.5,
+    "totalMatches": 6,
+    "matchRecord": "1-5-0",
+    "matchWinPercentage": 0.16666666666666666,
+    "gameRecord": "4-10-0",
+    "gameWinPercentage": 0.2857142857142857,
     "trophies": 0,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q4 2026",
-      "events": 1,
+      "events": 2,
       "points": 3,
-      "matchRecord": "1-2-0",
-      "matchWinPercentage": 0.3333333333333333,
-      "gameRecord": "4-4-0",
-      "gameWinPercentage": 0.5
+      "matchRecord": "1-5-0",
+      "matchWinPercentage": 0.16666666666666666,
+      "gameRecord": "4-10-0",
+      "gameWinPercentage": 0.2857142857142857
     }
   ],
   "deckStats": [
     {
       "deckName": "Unknown",
-      "events": 1,
+      "events": 2,
       "matchWins": 1,
-      "matchLosses": 2,
+      "matchLosses": 5,
       "matchDraws": 0,
-      "matchRecord": "1-2-0",
-      "matchWinPercentage": 0.3333333333333333,
+      "matchRecord": "1-5-0",
+      "matchWinPercentage": 0.16666666666666666,
       "gameWins": 4,
-      "gameLosses": 4,
+      "gameLosses": 10,
       "gameDraws": 0,
-      "gameWinPercentage": 0.5,
+      "gameWinPercentage": 0.2857142857142857,
       "trophies": 0
     }
   ],
   "headToHead": [
+    {
+      "opponentUsername": "m0ldavite",
+      "opponentDisplayName": "m0ldavite",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "matches": [
+        {
+          "tournamentId": "505497",
+          "dateDisplay": "November 12, 2026",
+          "result": "L",
+          "playerDeck": "_",
+          "opponentDeck": "_",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "mattmanw2",
+      "opponentDisplayName": "mattmanw2",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "matches": [
+        {
+          "tournamentId": "505497",
+          "dateDisplay": "November 12, 2026",
+          "result": "L",
+          "playerDeck": "_",
+          "opponentDeck": "Moneyball",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "JusT10",
+      "opponentDisplayName": "JusT10",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "matches": [
+        {
+          "tournamentId": "505497",
+          "dateDisplay": "November 12, 2026",
+          "result": "L",
+          "playerDeck": "_",
+          "opponentDeck": "Replenish",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
     {
       "opponentUsername": "Apa",
       "opponentDisplayName": "Apa",
@@ -117,6 +192,23 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "505497",
+      "date": "2026-11-13T00:19:11Z",
+      "dateDisplay": "November 12, 2026",
+      "playerCount": 19,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 19,
+      "points": 0,
+      "matchRecord": "0-3-0",
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 6,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "deck": "_"
+    },
     {
       "tournamentId": "499545",
       "date": "2026-11-06T00:05:05Z",

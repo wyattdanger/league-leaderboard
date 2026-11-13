@@ -2,25 +2,25 @@
   "username": "cg123",
   "displayName": "Christopher Garcia",
   "overallStats": {
-    "totalTournaments": 4,
-    "totalPoints": 24,
-    "totalMatches": 11,
-    "matchRecord": "8-3-0",
-    "matchWinPercentage": 0.7272727272727273,
-    "gameRecord": "18-10-0",
-    "gameWinPercentage": 0.6428571428571429,
+    "totalTournaments": 5,
+    "totalPoints": 28,
+    "totalMatches": 14,
+    "matchRecord": "9-4-1",
+    "matchWinPercentage": 0.6785714285714286,
+    "gameRecord": "21-14-1",
+    "gameWinPercentage": 0.5833333333333334,
     "trophies": 2,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q4 2026",
-      "events": 4,
-      "points": 24,
-      "matchRecord": "8-3-0",
-      "matchWinPercentage": 0.7272727272727273,
-      "gameRecord": "18-10-0",
-      "gameWinPercentage": 0.6428571428571429
+      "events": 5,
+      "points": 28,
+      "matchRecord": "9-4-1",
+      "matchWinPercentage": 0.6785714285714286,
+      "gameRecord": "21-14-1",
+      "gameWinPercentage": 0.5972222222222222
     }
   ],
   "deckStats": [
@@ -51,6 +51,20 @@
       "gameDraws": 0,
       "gameWinPercentage": 1,
       "trophies": 1
+    },
+    {
+      "deckName": "Reanimator",
+      "events": 1,
+      "matchWins": 1,
+      "matchLosses": 1,
+      "matchDraws": 1,
+      "matchRecord": "1-1-1",
+      "matchWinPercentage": 0.5,
+      "gameWins": 3,
+      "gameLosses": 4,
+      "gameDraws": 1,
+      "gameWinPercentage": 0.4375,
+      "trophies": 0
     },
     {
       "deckName": "The Rock",
@@ -85,16 +99,26 @@
     {
       "opponentUsername": "PCavalcanti",
       "opponentDisplayName": "PCavalcanti",
-      "matchesPlayed": 2,
+      "matchesPlayed": 3,
       "matchWins": 1,
       "matchLosses": 1,
-      "matchDraws": 0,
+      "matchDraws": 1,
       "matchWinPercentage": 0.5,
-      "gameWins": 2,
-      "gameLosses": 2,
-      "gameDraws": 0,
+      "gameWins": 3,
+      "gameLosses": 3,
+      "gameDraws": 1,
       "gameWinPercentage": 0.5,
       "matches": [
+        {
+          "tournamentId": "505497",
+          "dateDisplay": "November 12, 2026",
+          "result": "D",
+          "playerDeck": "Reanimator",
+          "opponentDeck": "Elves",
+          "playerGameWins": 1,
+          "opponentGameWins": 1,
+          "gameDraws": 1
+        },
         {
           "tournamentId": "489140",
           "dateDisplay": "October 22, 2026",
@@ -120,16 +144,26 @@
     {
       "opponentUsername": "justintomczyk",
       "opponentDisplayName": "justintomczyk",
-      "matchesPlayed": 1,
-      "matchWins": 1,
+      "matchesPlayed": 2,
+      "matchWins": 2,
       "matchLosses": 0,
       "matchDraws": 0,
       "matchWinPercentage": 1,
-      "gameWins": 2,
-      "gameLosses": 0,
+      "gameWins": 4,
+      "gameLosses": 1,
       "gameDraws": 0,
-      "gameWinPercentage": 1,
+      "gameWinPercentage": 0.8,
       "matches": [
+        {
+          "tournamentId": "505497",
+          "dateDisplay": "November 12, 2026",
+          "result": "W",
+          "playerDeck": "Reanimator",
+          "opponentDeck": "BW Control",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
         {
           "tournamentId": "499545",
           "dateDisplay": "November 5, 2026",
@@ -138,6 +172,31 @@
           "opponentDeck": "BW Control",
           "playerGameWins": 2,
           "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "jaruro1",
+      "opponentDisplayName": "jaruro1",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "matches": [
+        {
+          "tournamentId": "505497",
+          "dateDisplay": "November 12, 2026",
+          "result": "L",
+          "playerDeck": "Reanimator",
+          "opponentDeck": "Burn",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
           "gameDraws": 0
         }
       ]
@@ -344,6 +403,23 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "505497",
+      "date": "2026-11-13T00:19:11Z",
+      "dateDisplay": "November 12, 2026",
+      "playerCount": 19,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 9,
+      "points": 4,
+      "matchRecord": "1-1-1",
+      "matchWinPercentage": 0.5,
+      "gameWins": 3,
+      "gameLosses": 4,
+      "gameDraws": 1,
+      "gameWinPercentage": 0.4375,
+      "deck": "Reanimator"
+    },
     {
       "tournamentId": "499545",
       "date": "2026-11-06T00:05:05Z",

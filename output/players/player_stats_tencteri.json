@@ -2,25 +2,25 @@
   "username": "Tencteri",
   "displayName": "Tencteri",
   "overallStats": {
-    "totalTournaments": 47,
-    "totalPoints": 188,
-    "totalMatches": 137,
-    "matchRecord": "60-69-8",
-    "matchWinPercentage": 0.46715328467153283,
-    "gameRecord": "158-168-6",
-    "gameWinPercentage": 0.4759036144578313,
+    "totalTournaments": 48,
+    "totalPoints": 191,
+    "totalMatches": 140,
+    "matchRecord": "61-71-8",
+    "matchWinPercentage": 0.4642857142857143,
+    "gameRecord": "160-171-7",
+    "gameWinPercentage": 0.47337278106508873,
     "trophies": 2,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q4 2026",
-      "events": 4,
-      "points": 27,
-      "matchRecord": "9-3-0",
-      "matchWinPercentage": 0.75,
-      "gameRecord": "19-9-0",
-      "gameWinPercentage": 0.6785714285714286
+      "events": 5,
+      "points": 30,
+      "matchRecord": "10-5-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameRecord": "21-12-1",
+      "gameWinPercentage": 0.6323529411764706
     },
     {
       "leagueName": "Q3 2026",
@@ -107,16 +107,16 @@
   "deckStats": [
     {
       "deckName": "White Weenie",
-      "events": 13,
-      "matchWins": 21,
-      "matchLosses": 13,
+      "events": 14,
+      "matchWins": 22,
+      "matchLosses": 15,
       "matchDraws": 3,
-      "matchRecord": "21-13-3",
-      "matchWinPercentage": 0.6081081081081081,
-      "gameWins": 52,
-      "gameLosses": 34,
-      "gameDraws": 2,
-      "gameWinPercentage": 0.6022727272727273,
+      "matchRecord": "22-15-3",
+      "matchWinPercentage": 0.5875,
+      "gameWins": 54,
+      "gameLosses": 37,
+      "gameDraws": 3,
+      "gameWinPercentage": 0.5904255319148937,
       "trophies": 2
     },
     {
@@ -595,6 +595,136 @@
       ]
     },
     {
+      "opponentUsername": "Matt_W",
+      "opponentDisplayName": "Matt_W",
+      "matchesPlayed": 5,
+      "matchWins": 1,
+      "matchLosses": 4,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.2,
+      "gameWins": 3,
+      "gameLosses": 8,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.2727272727272727,
+      "matches": [
+        {
+          "tournamentId": "505497",
+          "dateDisplay": "November 12, 2026",
+          "result": "L",
+          "playerDeck": "White Weenie",
+          "opponentDeck": "Survival Opposition",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "417122",
+          "dateDisplay": "March 26, 2026",
+          "result": "L",
+          "playerDeck": "White Weenie",
+          "opponentDeck": "Tinker Oath Fling",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "410832",
+          "dateDisplay": "March 5, 2026",
+          "result": "L",
+          "playerDeck": "Esper Midrange",
+          "opponentDeck": "Cephalid Breakfast",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "408436",
+          "dateDisplay": "February 26, 2026",
+          "result": "W",
+          "playerDeck": "Esper Pile",
+          "opponentDeck": "Devourer",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "382756",
+          "dateDisplay": "November 13, 2025",
+          "result": "L",
+          "playerDeck": "_",
+          "opponentDeck": "Devourer",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "swbmtg",
+      "opponentDisplayName": "Stephen Bush",
+      "matchesPlayed": 5,
+      "matchWins": 2,
+      "matchLosses": 3,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.4,
+      "gameWins": 5,
+      "gameLosses": 7,
+      "gameDraws": 1,
+      "gameWinPercentage": 0.4230769230769231,
+      "matches": [
+        {
+          "tournamentId": "505497",
+          "dateDisplay": "November 12, 2026",
+          "result": "L",
+          "playerDeck": "White Weenie",
+          "opponentDeck": "Gush Tithe",
+          "playerGameWins": 0,
+          "opponentGameWins": 1,
+          "gameDraws": 1
+        },
+        {
+          "tournamentId": "445681",
+          "dateDisplay": "September 3, 2026",
+          "result": "L",
+          "playerDeck": "Reanimator",
+          "opponentDeck": "Naya Terrageddon",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "458540",
+          "dateDisplay": "August 27, 2026",
+          "result": "L",
+          "playerDeck": "Merfolk",
+          "opponentDeck": "Naya Terrageddon",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "400729",
+          "dateDisplay": "January 29, 2026",
+          "result": "W",
+          "playerDeck": "Zombies",
+          "opponentDeck": "Trix",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "384681",
+          "dateDisplay": "November 20, 2025",
+          "result": "W",
+          "playerDeck": "Deadguy Ale",
+          "opponentDeck": "Enchantress",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "AlldoAurelis",
       "opponentDisplayName": "AlldoAurelis",
       "matchesPlayed": 5,
@@ -920,6 +1050,61 @@
       ]
     },
     {
+      "opponentUsername": "weidnent",
+      "opponentDisplayName": "Nicholas Weidner",
+      "matchesPlayed": 4,
+      "matchWins": 3,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.75,
+      "gameWins": 6,
+      "gameLosses": 3,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6666666666666666,
+      "matches": [
+        {
+          "tournamentId": "505497",
+          "dateDisplay": "November 12, 2026",
+          "result": "W",
+          "playerDeck": "White Weenie",
+          "opponentDeck": "Doomsday Storm",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "445681",
+          "dateDisplay": "September 3, 2026",
+          "result": "L",
+          "playerDeck": "Reanimator",
+          "opponentDeck": "Balancing Tings",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "445679",
+          "dateDisplay": "August 20, 2026",
+          "result": "W",
+          "playerDeck": "Merfolk",
+          "opponentDeck": "Oath Ponza",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "417122",
+          "dateDisplay": "March 26, 2026",
+          "result": "W",
+          "playerDeck": "White Weenie",
+          "opponentDeck": "Goblins",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "CalebR",
       "opponentDisplayName": "CalebR",
       "matchesPlayed": 4,
@@ -971,161 +1156,6 @@
           "playerGameWins": 0,
           "opponentGameWins": 0,
           "gameDraws": 3
-        }
-      ]
-    },
-    {
-      "opponentUsername": "swbmtg",
-      "opponentDisplayName": "Stephen Bush",
-      "matchesPlayed": 4,
-      "matchWins": 2,
-      "matchLosses": 2,
-      "matchDraws": 0,
-      "matchWinPercentage": 0.5,
-      "gameWins": 5,
-      "gameLosses": 6,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.45454545454545453,
-      "matches": [
-        {
-          "tournamentId": "445681",
-          "dateDisplay": "September 3, 2026",
-          "result": "L",
-          "playerDeck": "Reanimator",
-          "opponentDeck": "Naya Terrageddon",
-          "playerGameWins": 1,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "458540",
-          "dateDisplay": "August 27, 2026",
-          "result": "L",
-          "playerDeck": "Merfolk",
-          "opponentDeck": "Naya Terrageddon",
-          "playerGameWins": 0,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "400729",
-          "dateDisplay": "January 29, 2026",
-          "result": "W",
-          "playerDeck": "Zombies",
-          "opponentDeck": "Trix",
-          "playerGameWins": 2,
-          "opponentGameWins": 1,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "384681",
-          "dateDisplay": "November 20, 2025",
-          "result": "W",
-          "playerDeck": "Deadguy Ale",
-          "opponentDeck": "Enchantress",
-          "playerGameWins": 2,
-          "opponentGameWins": 1,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "Matt_W",
-      "opponentDisplayName": "Matt_W",
-      "matchesPlayed": 4,
-      "matchWins": 1,
-      "matchLosses": 3,
-      "matchDraws": 0,
-      "matchWinPercentage": 0.25,
-      "gameWins": 3,
-      "gameLosses": 6,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.3333333333333333,
-      "matches": [
-        {
-          "tournamentId": "417122",
-          "dateDisplay": "March 26, 2026",
-          "result": "L",
-          "playerDeck": "White Weenie",
-          "opponentDeck": "Tinker Oath Fling",
-          "playerGameWins": 0,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "410832",
-          "dateDisplay": "March 5, 2026",
-          "result": "L",
-          "playerDeck": "Esper Midrange",
-          "opponentDeck": "Cephalid Breakfast",
-          "playerGameWins": 1,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "408436",
-          "dateDisplay": "February 26, 2026",
-          "result": "W",
-          "playerDeck": "Esper Pile",
-          "opponentDeck": "Devourer",
-          "playerGameWins": 2,
-          "opponentGameWins": 0,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "382756",
-          "dateDisplay": "November 13, 2025",
-          "result": "L",
-          "playerDeck": "_",
-          "opponentDeck": "Devourer",
-          "playerGameWins": 0,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "weidnent",
-      "opponentDisplayName": "Nicholas Weidner",
-      "matchesPlayed": 3,
-      "matchWins": 2,
-      "matchLosses": 1,
-      "matchDraws": 0,
-      "matchWinPercentage": 0.6666666666666666,
-      "gameWins": 4,
-      "gameLosses": 3,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.5714285714285714,
-      "matches": [
-        {
-          "tournamentId": "445681",
-          "dateDisplay": "September 3, 2026",
-          "result": "L",
-          "playerDeck": "Reanimator",
-          "opponentDeck": "Balancing Tings",
-          "playerGameWins": 0,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "445679",
-          "dateDisplay": "August 20, 2026",
-          "result": "W",
-          "playerDeck": "Merfolk",
-          "opponentDeck": "Oath Ponza",
-          "playerGameWins": 2,
-          "opponentGameWins": 1,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "417122",
-          "dateDisplay": "March 26, 2026",
-          "result": "W",
-          "playerDeck": "White Weenie",
-          "opponentDeck": "Goblins",
-          "playerGameWins": 2,
-          "opponentGameWins": 0,
-          "gameDraws": 0
         }
       ]
     },
@@ -2596,6 +2626,23 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "505497",
+      "date": "2026-11-13T00:19:11Z",
+      "dateDisplay": "November 12, 2026",
+      "playerCount": 19,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 16,
+      "points": 3,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 2,
+      "gameLosses": 3,
+      "gameDraws": 1,
+      "gameWinPercentage": 0.4166666666666667,
+      "deck": "White Weenie"
+    },
     {
       "tournamentId": "499545",
       "date": "2026-11-06T00:05:05Z",

@@ -2,25 +2,25 @@
   "username": "Mookyspulder",
   "displayName": "Dan S",
   "overallStats": {
-    "totalTournaments": 27,
-    "totalPoints": 153,
-    "totalMatches": 81,
-    "matchRecord": "50-28-3",
-    "matchWinPercentage": 0.6358024691358025,
-    "gameRecord": "116-80-1",
-    "gameWinPercentage": 0.5888324873096447,
+    "totalTournaments": 28,
+    "totalPoints": 159,
+    "totalMatches": 84,
+    "matchRecord": "52-29-3",
+    "matchWinPercentage": 0.6369047619047619,
+    "gameRecord": "121-83-1",
+    "gameWinPercentage": 0.5902439024390244,
     "trophies": 4,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q4 2026",
-      "events": 4,
-      "points": 27,
-      "matchRecord": "9-3-0",
-      "matchWinPercentage": 0.75,
-      "gameRecord": "19-11-0",
-      "gameWinPercentage": 0.6333333333333333
+      "events": 5,
+      "points": 33,
+      "matchRecord": "11-4-0",
+      "matchWinPercentage": 0.7333333333333333,
+      "gameRecord": "24-14-0",
+      "gameWinPercentage": 0.631578947368421
     },
     {
       "leagueName": "Q3 2026",
@@ -159,6 +159,20 @@
       "trophies": 1
     },
     {
+      "deckName": "BR Goblins",
+      "events": 1,
+      "matchWins": 2,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 5,
+      "gameLosses": 3,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.625,
+      "trophies": 0
+    },
+    {
       "deckName": "Mad Dogs",
       "events": 1,
       "matchWins": 2,
@@ -286,6 +300,81 @@
     }
   ],
   "headToHead": [
+    {
+      "opponentUsername": "Mattmelach",
+      "opponentDisplayName": "Matthew Melachrinos",
+      "matchesPlayed": 6,
+      "matchWins": 4,
+      "matchLosses": 1,
+      "matchDraws": 1,
+      "matchWinPercentage": 0.75,
+      "gameWins": 10,
+      "gameLosses": 5,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6666666666666666,
+      "matches": [
+        {
+          "tournamentId": "505497",
+          "dateDisplay": "November 12, 2026",
+          "result": "L",
+          "playerDeck": "BR Goblins",
+          "opponentDeck": "Stasis",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "445677",
+          "dateDisplay": "August 6, 2026",
+          "result": "D",
+          "playerDeck": "BG Contamination",
+          "opponentDeck": "Dreadnought",
+          "playerGameWins": 1,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "436157",
+          "dateDisplay": "June 18, 2026",
+          "result": "W",
+          "playerDeck": "Psychatog",
+          "opponentDeck": "Gro",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "429084",
+          "dateDisplay": "May 14, 2026",
+          "result": "W",
+          "playerDeck": "Moneyball Black",
+          "opponentDeck": "Greater Good",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "424009",
+          "dateDisplay": "April 23, 2026",
+          "result": "W",
+          "playerDeck": "Goblins",
+          "opponentDeck": "UR Stasis",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "413370",
+          "dateDisplay": "March 12, 2026",
+          "result": "W",
+          "playerDeck": "Clerics",
+          "opponentDeck": "Contamination",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
     {
       "opponentUsername": "AlfredG",
       "opponentDisplayName": "AlfredG",
@@ -417,71 +506,6 @@
       ]
     },
     {
-      "opponentUsername": "Mattmelach",
-      "opponentDisplayName": "Matthew Melachrinos",
-      "matchesPlayed": 5,
-      "matchWins": 4,
-      "matchLosses": 0,
-      "matchDraws": 1,
-      "matchWinPercentage": 0.9,
-      "gameWins": 9,
-      "gameLosses": 3,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.75,
-      "matches": [
-        {
-          "tournamentId": "445677",
-          "dateDisplay": "August 6, 2026",
-          "result": "D",
-          "playerDeck": "BG Contamination",
-          "opponentDeck": "Dreadnought",
-          "playerGameWins": 1,
-          "opponentGameWins": 1,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "436157",
-          "dateDisplay": "June 18, 2026",
-          "result": "W",
-          "playerDeck": "Psychatog",
-          "opponentDeck": "Gro",
-          "playerGameWins": 2,
-          "opponentGameWins": 1,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "429084",
-          "dateDisplay": "May 14, 2026",
-          "result": "W",
-          "playerDeck": "Moneyball Black",
-          "opponentDeck": "Greater Good",
-          "playerGameWins": 2,
-          "opponentGameWins": 0,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "424009",
-          "dateDisplay": "April 23, 2026",
-          "result": "W",
-          "playerDeck": "Goblins",
-          "opponentDeck": "UR Stasis",
-          "playerGameWins": 2,
-          "opponentGameWins": 1,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "413370",
-          "dateDisplay": "March 12, 2026",
-          "result": "W",
-          "playerDeck": "Clerics",
-          "opponentDeck": "Contamination",
-          "playerGameWins": 2,
-          "opponentGameWins": 0,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
       "opponentUsername": "LuisNeiman",
       "opponentDisplayName": "LuisNeiman",
       "matchesPlayed": 4,
@@ -586,6 +610,51 @@
           "playerDeck": "Psychatog",
           "opponentDeck": "Tinker Welder",
           "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "LMDB",
+      "opponentDisplayName": "LMDB",
+      "matchesPlayed": 3,
+      "matchWins": 2,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 5,
+      "gameLosses": 3,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.625,
+      "matches": [
+        {
+          "tournamentId": "505497",
+          "dateDisplay": "November 12, 2026",
+          "result": "W",
+          "playerDeck": "BR Goblins",
+          "opponentDeck": "The Rock",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "485761",
+          "dateDisplay": "October 15, 2026",
+          "result": "W",
+          "playerDeck": "Mono B Clerics",
+          "opponentDeck": "BG Survival",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "465043",
+          "dateDisplay": "September 10, 2026",
+          "result": "L",
+          "playerDeck": "Bg Contamination",
+          "opponentDeck": "Bg Contamination",
+          "playerGameWins": 1,
           "opponentGameWins": 2,
           "gameDraws": 0
         }
@@ -887,41 +956,6 @@
       ]
     },
     {
-      "opponentUsername": "LMDB",
-      "opponentDisplayName": "LMDB",
-      "matchesPlayed": 2,
-      "matchWins": 1,
-      "matchLosses": 1,
-      "matchDraws": 0,
-      "matchWinPercentage": 0.5,
-      "gameWins": 3,
-      "gameLosses": 2,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.6,
-      "matches": [
-        {
-          "tournamentId": "485761",
-          "dateDisplay": "October 15, 2026",
-          "result": "W",
-          "playerDeck": "Mono B Clerics",
-          "opponentDeck": "BG Survival",
-          "playerGameWins": 2,
-          "opponentGameWins": 0,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "465043",
-          "dateDisplay": "September 10, 2026",
-          "result": "L",
-          "playerDeck": "Bg Contamination",
-          "opponentDeck": "Bg Contamination",
-          "playerGameWins": 1,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
       "opponentUsername": "PetS22",
       "opponentDisplayName": "PetS22",
       "matchesPlayed": 2,
@@ -1127,6 +1161,31 @@
           "opponentDeck": "Terrageddon",
           "playerGameWins": 1,
           "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "gbpeel",
+      "opponentDisplayName": "gbpeel",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "matches": [
+        {
+          "tournamentId": "505497",
+          "dateDisplay": "November 12, 2026",
+          "result": "W",
+          "playerDeck": "BR Goblins",
+          "opponentDeck": "BW Control",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
           "gameDraws": 0
         }
       ]
@@ -1758,6 +1817,23 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "505497",
+      "date": "2026-11-13T00:19:11Z",
+      "dateDisplay": "November 12, 2026",
+      "playerCount": 19,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 6,
+      "points": 6,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 5,
+      "gameLosses": 3,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.625,
+      "deck": "BR Goblins"
+    },
     {
       "tournamentId": "499545",
       "date": "2026-11-06T00:05:05Z",
