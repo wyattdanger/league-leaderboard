@@ -25,13 +25,20 @@ When the user provides a tournament ID (from Melee.gg), follow these steps in or
    silently scored as if it ended a round early. `process-tournament` phase 2 refuses
    to run in this state. Options, in order of preference:
    - Ask the organizer to publish final standings, then re-scrape
+   - Don't block on it: generate them from the match files (fallback, does not need Melee):
+     ```bash
+     npm run generate-final-standings -- <tournament_id>
+     ```
+     Writes `Round_N_Standings.json` with `_source` set. Ranks by Points, OMW%, GW%, OGW%
+     (33% floor per opponent) via `calculateStandings`. Records match Melee, but the
+     order of players level on points can differ. Re-scrape later (`npm run scrape -- <id>`);
+     a published Melee file overwrites the generated one, then re-run phase 2 to refresh
+     stats. The script refuses to overwrite a Melee-published file without `--force`.
    - If the user can share Melee's final standings (e.g. a screenshot), build
-     `Round_N_Standings.json` by hand: copy each player's `Round_{N-1}` entry, take
+     `Round_N_Standings.json` by hand instead: copy each player's `Round_{N-1}` entry, take
      records/points from the match files (verify they equal the screenshot), take
      Rank/OMW/TGW/OGW from the screenshot, and add a `_source` field noting it was
-     hand-built. A later successful scrape overwrites it.
-   - Don't use `calculateStandings` for ranks: records match Melee but its
-     tiebreakers/rank differ from Melee's in most past events
+     hand-built.
 
 2. **Add tournament to leagues.yml**:
    - Tournaments are ordered from newest to oldest

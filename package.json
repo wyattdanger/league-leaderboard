@@ -13,6 +13,7 @@
     "sync-league": "tsx src/sync-league.ts",
     "generate-deck-template": "tsx src/generate-deck-template.ts",
     "add-tournament-to-decks": "tsx src/add-tournament-to-decks.ts",
+    "generate-final-standings": "tsx src/generate-final-standings.ts",
     "generate-metadata": "tsx src/generate-page-metadata.ts",
     "generate-all-metadata": "tsx src/generate-all-metadata.ts",
     "generate-metagame": "tsx src/generate-metagame-data.ts",

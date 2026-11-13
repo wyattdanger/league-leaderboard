@@ -194,6 +194,18 @@ npm run player-stats
 - `src/utils/playerData.ts` - Helper functions for stats calculation
 - `src/utils/winPercentage.ts` - Win % calculations
 
+### Pattern 3b: Final Standings Missing From Melee
+
+If the scraper prints `No standings found for Round N` for the last round:
+
+```bash
+npm run generate-final-standings -- <tournament_id>   # builds Round_N_Standings.json from matches
+```
+
+Uses `calculateStandings` (Points, OMW%, GW%, OGW%). Output carries a `_source` field;
+a later successful scrape overwrites it (the script won't overwrite Melee's file without `--force`).
+Tiebreak order among players level on points may differ from Melee's.
+
 ### Pattern 4: Generating Page Metadata
 
 ```bash
