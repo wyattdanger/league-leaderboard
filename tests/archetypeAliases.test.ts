@@ -47,6 +47,7 @@ describe('normalizeDeckName', () => {
     ['BG Survival', 'Survival'],
     ['Survival Madness', 'Survival'],
     ['Welder Prison', 'Welder'],
+    ['Mono White Tokens', 'Tokens'],
     ['UW Wizards', 'Wizards'],
     ['GR Survival Madness Ponza', 'Survival'],
     ['RG Oath', 'Oath Ponza'],

@@ -28,6 +28,10 @@ export const archetypeAliases: Record<string, string> = {
   'Mono Red Ponza': 'Ponza',
   'Black Ponza': 'Ponza',
 
+  // Tokens variants
+  'Tokens': 'Tokens',
+  'Mono White Tokens': 'Tokens',
+
   // Parfait variants
   'Parfait': 'Parfait',
   'Oath Parfait': 'Parfait',
