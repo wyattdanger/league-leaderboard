@@ -2,25 +2,25 @@
   "username": "PCavalcanti",
   "displayName": "PCavalcanti",
   "overallStats": {
-    "totalTournaments": 33,
-    "totalPoints": 158,
-    "totalMatches": 98,
-    "matchRecord": "51-42-5",
-    "matchWinPercentage": 0.5459183673469388,
-    "gameRecord": "133-112-1",
-    "gameWinPercentage": 0.540650406504065,
+    "totalTournaments": 34,
+    "totalPoints": 164,
+    "totalMatches": 101,
+    "matchRecord": "53-43-5",
+    "matchWinPercentage": 0.5495049504950495,
+    "gameRecord": "138-115-1",
+    "gameWinPercentage": 0.5433070866141733,
     "trophies": 2,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q4 2026",
-      "events": 6,
-      "points": 35,
-      "matchRecord": "11-5-2",
+      "events": 7,
+      "points": 41,
+      "matchRecord": "13-6-2",
       "matchWinPercentage": 0.6666666666666666,
-      "gameRecord": "25-15-1",
-      "gameWinPercentage": 0.6219512195121951
+      "gameRecord": "30-18-1",
+      "gameWinPercentage": 0.6224489795918368
     },
     {
       "leagueName": "Q3 2026",
@@ -112,6 +112,20 @@
       "trophies": 1
     },
     {
+      "deckName": "Elves",
+      "events": 2,
+      "matchWins": 4,
+      "matchLosses": 1,
+      "matchDraws": 1,
+      "matchRecord": "4-1-1",
+      "matchWinPercentage": 0.75,
+      "gameWins": 10,
+      "gameLosses": 5,
+      "gameDraws": 1,
+      "gameWinPercentage": 0.65625,
+      "trophies": 0
+    },
+    {
       "deckName": "RG Goblins",
       "events": 2,
       "matchWins": 3,
@@ -151,20 +165,6 @@
       "gameLosses": 7,
       "gameDraws": 0,
       "gameWinPercentage": 0.5333333333333333,
-      "trophies": 0
-    },
-    {
-      "deckName": "Elves",
-      "events": 1,
-      "matchWins": 2,
-      "matchLosses": 0,
-      "matchDraws": 1,
-      "matchRecord": "2-0-1",
-      "matchWinPercentage": 0.8333333333333334,
-      "gameWins": 5,
-      "gameLosses": 2,
-      "gameDraws": 1,
-      "gameWinPercentage": 0.6875,
       "trophies": 0
     },
     {
@@ -460,6 +460,71 @@
       ]
     },
     {
+      "opponentUsername": "AlldoAurelis",
+      "opponentDisplayName": "AlldoAurelis",
+      "matchesPlayed": 5,
+      "matchWins": 3,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.6,
+      "gameWins": 8,
+      "gameLosses": 7,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5333333333333333,
+      "matches": [
+        {
+          "tournamentId": "510507",
+          "dateDisplay": "November 19, 2026",
+          "result": "W",
+          "playerDeck": "Elves",
+          "opponentDeck": "GAT",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "505497",
+          "dateDisplay": "November 12, 2026",
+          "result": "W",
+          "playerDeck": "Elves",
+          "opponentDeck": "GAT",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "445675",
+          "dateDisplay": "July 23, 2026",
+          "result": "L",
+          "playerDeck": "Burn",
+          "opponentDeck": "Moneyball",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "436160",
+          "dateDisplay": "July 9, 2026",
+          "result": "L",
+          "playerDeck": "UGR Survival Madness",
+          "opponentDeck": "Moneyball Black",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "436157",
+          "dateDisplay": "June 18, 2026",
+          "result": "W",
+          "playerDeck": "RG Madness Burn",
+          "opponentDeck": "Mad Dogs",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "Tencteri",
       "opponentDisplayName": "Tencteri",
       "matchesPlayed": 5,
@@ -585,61 +650,6 @@
           "opponentDeck": "Balancing Act",
           "playerGameWins": 0,
           "opponentGameWins": 2,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "AlldoAurelis",
-      "opponentDisplayName": "AlldoAurelis",
-      "matchesPlayed": 4,
-      "matchWins": 2,
-      "matchLosses": 2,
-      "matchDraws": 0,
-      "matchWinPercentage": 0.5,
-      "gameWins": 6,
-      "gameLosses": 6,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.5,
-      "matches": [
-        {
-          "tournamentId": "505497",
-          "dateDisplay": "November 12, 2026",
-          "result": "W",
-          "playerDeck": "Elves",
-          "opponentDeck": "GAT",
-          "playerGameWins": 2,
-          "opponentGameWins": 1,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "445675",
-          "dateDisplay": "July 23, 2026",
-          "result": "L",
-          "playerDeck": "Burn",
-          "opponentDeck": "Moneyball",
-          "playerGameWins": 1,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "436160",
-          "dateDisplay": "July 9, 2026",
-          "result": "L",
-          "playerDeck": "UGR Survival Madness",
-          "opponentDeck": "Moneyball Black",
-          "playerGameWins": 1,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "436157",
-          "dateDisplay": "June 18, 2026",
-          "result": "W",
-          "playerDeck": "RG Madness Burn",
-          "opponentDeck": "Mad Dogs",
-          "playerGameWins": 2,
-          "opponentGameWins": 1,
           "gameDraws": 0
         }
       ]
@@ -955,6 +965,41 @@
           "opponentDeck": "Dreadnought",
           "playerGameWins": 0,
           "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "Pjd",
+      "opponentDisplayName": "Pjd",
+      "matchesPlayed": 2,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 1,
+      "matchWinPercentage": 0.25,
+      "gameWins": 2,
+      "gameLosses": 3,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.4,
+      "matches": [
+        {
+          "tournamentId": "510507",
+          "dateDisplay": "November 19, 2026",
+          "result": "L",
+          "playerDeck": "Elves",
+          "opponentDeck": "Stiflenought",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "485761",
+          "dateDisplay": "October 15, 2026",
+          "result": "D",
+          "playerDeck": "GW Survival Armageddon",
+          "opponentDeck": "Landstill",
+          "playerGameWins": 1,
+          "opponentGameWins": 1,
           "gameDraws": 0
         }
       ]
@@ -1345,6 +1390,31 @@
       ]
     },
     {
+      "opponentUsername": "Apollo_the_Bison",
+      "opponentDisplayName": "Ian Gray",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "matches": [
+        {
+          "tournamentId": "510507",
+          "dateDisplay": "November 19, 2026",
+          "result": "W",
+          "playerDeck": "Elves",
+          "opponentDeck": "_",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "m0ldavite",
       "opponentDisplayName": "m0ldavite",
       "matchesPlayed": 1,
@@ -1415,31 +1485,6 @@
           "opponentDeck": "Goblins",
           "playerGameWins": 0,
           "opponentGameWins": 2,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "Pjd",
-      "opponentDisplayName": "Pjd",
-      "matchesPlayed": 1,
-      "matchWins": 0,
-      "matchLosses": 0,
-      "matchDraws": 1,
-      "matchWinPercentage": 0.5,
-      "gameWins": 1,
-      "gameLosses": 1,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.5,
-      "matches": [
-        {
-          "tournamentId": "485761",
-          "dateDisplay": "October 15, 2026",
-          "result": "D",
-          "playerDeck": "GW Survival Armageddon",
-          "opponentDeck": "Landstill",
-          "playerGameWins": 1,
-          "opponentGameWins": 1,
           "gameDraws": 0
         }
       ]
@@ -2071,6 +2116,23 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "510507",
+      "date": "2026-11-20T00:39:52Z",
+      "dateDisplay": "November 19, 2026",
+      "playerCount": 18,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 9,
+      "points": 6,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 5,
+      "gameLosses": 3,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.625,
+      "deck": "Elves"
+    },
     {
       "tournamentId": "505497",
       "date": "2026-11-13T00:19:11Z",

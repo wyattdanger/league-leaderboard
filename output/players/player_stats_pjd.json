@@ -2,25 +2,25 @@
   "username": "Pjd",
   "displayName": "Pjd",
   "overallStats": {
-    "totalTournaments": 4,
-    "totalPoints": 14,
-    "totalMatches": 12,
-    "matchRecord": "4-6-2",
-    "matchWinPercentage": 0.4166666666666667,
-    "gameRecord": "13-15-0",
-    "gameWinPercentage": 0.4642857142857143,
+    "totalTournaments": 5,
+    "totalPoints": 20,
+    "totalMatches": 15,
+    "matchRecord": "6-7-2",
+    "matchWinPercentage": 0.4666666666666667,
+    "gameRecord": "18-19-0",
+    "gameWinPercentage": 0.4864864864864865,
     "trophies": 0,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q4 2026",
-      "events": 4,
-      "points": 14,
-      "matchRecord": "4-6-2",
-      "matchWinPercentage": 0.4166666666666667,
-      "gameRecord": "13-15-0",
-      "gameWinPercentage": 0.4642857142857143
+      "events": 5,
+      "points": 20,
+      "matchRecord": "6-7-2",
+      "matchWinPercentage": 0.4666666666666667,
+      "gameRecord": "18-19-0",
+      "gameWinPercentage": 0.4864864864864865
     }
   ],
   "deckStats": [
@@ -39,6 +39,20 @@
       "trophies": 0
     },
     {
+      "deckName": "Stiflenought",
+      "events": 1,
+      "matchWins": 2,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 5,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5555555555555556,
+      "trophies": 0
+    },
+    {
       "deckName": "Sligh",
       "events": 1,
       "matchWins": 1,
@@ -54,6 +68,91 @@
     }
   ],
   "headToHead": [
+    {
+      "opponentUsername": "PCavalcanti",
+      "opponentDisplayName": "PCavalcanti",
+      "matchesPlayed": 2,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 1,
+      "matchWinPercentage": 0.75,
+      "gameWins": 3,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6,
+      "matches": [
+        {
+          "tournamentId": "510507",
+          "dateDisplay": "November 19, 2026",
+          "result": "W",
+          "playerDeck": "Stiflenought",
+          "opponentDeck": "Elves",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "485761",
+          "dateDisplay": "October 15, 2026",
+          "result": "D",
+          "playerDeck": "Landstill",
+          "opponentDeck": "GW Survival Armageddon",
+          "playerGameWins": 1,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "Matt_W",
+      "opponentDisplayName": "Matt_W",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "matches": [
+        {
+          "tournamentId": "510507",
+          "dateDisplay": "November 19, 2026",
+          "result": "L",
+          "playerDeck": "Stiflenought",
+          "opponentDeck": "Survival Opposition",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "WillReddy",
+      "opponentDisplayName": "WillReddy",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6666666666666666,
+      "matches": [
+        {
+          "tournamentId": "510507",
+          "dateDisplay": "November 19, 2026",
+          "result": "W",
+          "playerDeck": "Stiflenought",
+          "opponentDeck": "Mono Red Ponza",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
     {
       "opponentUsername": "delofstrom",
       "opponentDisplayName": "DEL .",
@@ -280,31 +379,6 @@
       ]
     },
     {
-      "opponentUsername": "PCavalcanti",
-      "opponentDisplayName": "PCavalcanti",
-      "matchesPlayed": 1,
-      "matchWins": 0,
-      "matchLosses": 0,
-      "matchDraws": 1,
-      "matchWinPercentage": 0.5,
-      "gameWins": 1,
-      "gameLosses": 1,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.5,
-      "matches": [
-        {
-          "tournamentId": "485761",
-          "dateDisplay": "October 15, 2026",
-          "result": "D",
-          "playerDeck": "Landstill",
-          "opponentDeck": "GW Survival Armageddon",
-          "playerGameWins": 1,
-          "opponentGameWins": 1,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
       "opponentUsername": "swbmtg",
       "opponentDisplayName": "Stephen Bush",
       "matchesPlayed": 1,
@@ -356,6 +430,23 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "510507",
+      "date": "2026-11-20T00:39:52Z",
+      "dateDisplay": "November 19, 2026",
+      "playerCount": 18,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 4,
+      "points": 6,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 5,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5555556,
+      "deck": "Stiflenought"
+    },
     {
       "tournamentId": "499545",
       "date": "2026-11-06T00:05:05Z",

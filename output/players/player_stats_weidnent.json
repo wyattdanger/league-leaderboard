@@ -2,25 +2,25 @@
   "username": "weidnent",
   "displayName": "Nicholas Weidner",
   "overallStats": {
-    "totalTournaments": 28,
-    "totalPoints": 92,
-    "totalMatches": 82,
-    "matchRecord": "30-50-2",
-    "matchWinPercentage": 0.3780487804878049,
-    "gameRecord": "81-118-0",
-    "gameWinPercentage": 0.40703517587939697,
+    "totalTournaments": 29,
+    "totalPoints": 95,
+    "totalMatches": 85,
+    "matchRecord": "31-52-2",
+    "matchWinPercentage": 0.3764705882352941,
+    "gameRecord": "85-122-0",
+    "gameWinPercentage": 0.4106280193236715,
     "trophies": 0,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q4 2026",
-      "events": 5,
-      "points": 15,
-      "matchRecord": "5-10-0",
+      "events": 6,
+      "points": 18,
+      "matchRecord": "6-12-0",
       "matchWinPercentage": 0.3333333333333333,
-      "gameRecord": "14-23-0",
-      "gameWinPercentage": 0.3783783783783784
+      "gameRecord": "18-27-0",
+      "gameWinPercentage": 0.4
     },
     {
       "leagueName": "Q3 2026",
@@ -117,6 +117,20 @@
       "trophies": 0
     },
     {
+      "deckName": "Doomsday Storm",
+      "events": 2,
+      "matchWins": 2,
+      "matchLosses": 4,
+      "matchDraws": 0,
+      "matchRecord": "2-4-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 7,
+      "gameLosses": 8,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.4666666666666667,
+      "trophies": 0
+    },
+    {
       "deckName": "GW Mad Dogs",
       "events": 2,
       "matchWins": 1,
@@ -170,20 +184,6 @@
       "gameLosses": 4,
       "gameDraws": 0,
       "gameWinPercentage": 0.5555555555555556,
-      "trophies": 0
-    },
-    {
-      "deckName": "Doomsday Storm",
-      "events": 1,
-      "matchWins": 1,
-      "matchLosses": 2,
-      "matchDraws": 0,
-      "matchRecord": "1-2-0",
-      "matchWinPercentage": 0.3333333333333333,
-      "gameWins": 3,
-      "gameLosses": 4,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.42857142857142855,
       "trophies": 0
     },
     {
@@ -424,6 +424,61 @@
           "result": "W",
           "playerDeck": "Balancing Act",
           "opponentDeck": "UGr Madness",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "WillReddy",
+      "opponentDisplayName": "WillReddy",
+      "matchesPlayed": 4,
+      "matchWins": 3,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.75,
+      "gameWins": 7,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6363636363636364,
+      "matches": [
+        {
+          "tournamentId": "510507",
+          "dateDisplay": "November 19, 2026",
+          "result": "L",
+          "playerDeck": "Doomsday Storm",
+          "opponentDeck": "Mono Red Ponza",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "436159",
+          "dateDisplay": "July 2, 2026",
+          "result": "W",
+          "playerDeck": "Dragon Reanimator",
+          "opponentDeck": "GW Ponza Oath",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "434267",
+          "dateDisplay": "June 4, 2026",
+          "result": "W",
+          "playerDeck": "Balancing Tings",
+          "opponentDeck": "_",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "422555",
+          "dateDisplay": "April 16, 2026",
+          "result": "W",
+          "playerDeck": "GW Madness",
+          "opponentDeck": "Sligh",
           "playerGameWins": 2,
           "opponentGameWins": 0,
           "gameDraws": 0
@@ -811,51 +866,6 @@
       ]
     },
     {
-      "opponentUsername": "WillReddy",
-      "opponentDisplayName": "WillReddy",
-      "matchesPlayed": 3,
-      "matchWins": 3,
-      "matchLosses": 0,
-      "matchDraws": 0,
-      "matchWinPercentage": 1,
-      "gameWins": 6,
-      "gameLosses": 2,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.75,
-      "matches": [
-        {
-          "tournamentId": "436159",
-          "dateDisplay": "July 2, 2026",
-          "result": "W",
-          "playerDeck": "Dragon Reanimator",
-          "opponentDeck": "GW Ponza Oath",
-          "playerGameWins": 2,
-          "opponentGameWins": 1,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "434267",
-          "dateDisplay": "June 4, 2026",
-          "result": "W",
-          "playerDeck": "Balancing Tings",
-          "opponentDeck": "_",
-          "playerGameWins": 2,
-          "opponentGameWins": 1,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "422555",
-          "dateDisplay": "April 16, 2026",
-          "result": "W",
-          "playerDeck": "GW Madness",
-          "opponentDeck": "Sligh",
-          "playerGameWins": 2,
-          "opponentGameWins": 0,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
       "opponentUsername": "BryanGulotta",
       "opponentDisplayName": "BryanGulotta",
       "matchesPlayed": 3,
@@ -939,6 +949,41 @@
           "result": "L",
           "playerDeck": "Reanimator",
           "opponentDeck": "Dreadnought",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "Matt_W",
+      "opponentDisplayName": "Matt_W",
+      "matchesPlayed": 2,
+      "matchWins": 0,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 2,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "matches": [
+        {
+          "tournamentId": "510507",
+          "dateDisplay": "November 19, 2026",
+          "result": "L",
+          "playerDeck": "Doomsday Storm",
+          "opponentDeck": "Survival Opposition",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "436157",
+          "dateDisplay": "June 18, 2026",
+          "result": "L",
+          "playerDeck": "_",
+          "opponentDeck": "Survival Opposition",
           "playerGameWins": 1,
           "opponentGameWins": 2,
           "gameDraws": 0
@@ -1556,31 +1601,6 @@
       ]
     },
     {
-      "opponentUsername": "Matt_W",
-      "opponentDisplayName": "Matt_W",
-      "matchesPlayed": 1,
-      "matchWins": 0,
-      "matchLosses": 1,
-      "matchDraws": 0,
-      "matchWinPercentage": 0,
-      "gameWins": 1,
-      "gameLosses": 2,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.3333333333333333,
-      "matches": [
-        {
-          "tournamentId": "436157",
-          "dateDisplay": "June 18, 2026",
-          "result": "L",
-          "playerDeck": "_",
-          "opponentDeck": "Survival Opposition",
-          "playerGameWins": 1,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
       "opponentUsername": "cpogx",
       "opponentDisplayName": "cpogx",
       "matchesPlayed": 1,
@@ -1782,6 +1802,23 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "510507",
+      "date": "2026-11-20T00:39:52Z",
+      "dateDisplay": "November 19, 2026",
+      "playerCount": 18,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 12,
+      "points": 3,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 4,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5,
+      "deck": "Doomsday Storm"
+    },
     {
       "tournamentId": "505497",
       "date": "2026-11-13T00:19:11Z",

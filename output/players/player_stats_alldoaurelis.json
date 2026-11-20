@@ -2,25 +2,25 @@
   "username": "AlldoAurelis",
   "displayName": "AlldoAurelis",
   "overallStats": {
-    "totalTournaments": 24,
+    "totalTournaments": 25,
     "totalPoints": 79,
-    "totalMatches": 70,
-    "matchRecord": "26-43-1",
-    "matchWinPercentage": 0.37857142857142856,
-    "gameRecord": "72-98-0",
-    "gameWinPercentage": 0.4235294117647059,
+    "totalMatches": 73,
+    "matchRecord": "26-46-1",
+    "matchWinPercentage": 0.363013698630137,
+    "gameRecord": "73-104-0",
+    "gameWinPercentage": 0.4124293785310734,
     "trophies": 2,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q4 2026",
-      "events": 5,
+      "events": 6,
       "points": 12,
-      "matchRecord": "4-11-0",
-      "matchWinPercentage": 0.26666666666666666,
-      "gameRecord": "15-23-0",
-      "gameWinPercentage": 0.39473684210526316
+      "matchRecord": "4-14-0",
+      "matchWinPercentage": 0.2222222222222222,
+      "gameRecord": "16-29-0",
+      "gameWinPercentage": 0.35555555555555557
     },
     {
       "leagueName": "Q3 2026",
@@ -117,6 +117,20 @@
       "trophies": 0
     },
     {
+      "deckName": "GAT",
+      "events": 2,
+      "matchWins": 1,
+      "matchLosses": 5,
+      "matchDraws": 0,
+      "matchRecord": "1-5-0",
+      "matchWinPercentage": 0.16666666666666666,
+      "gameWins": 5,
+      "gameLosses": 10,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "trophies": 0
+    },
+    {
       "deckName": "GW Madness",
       "events": 2,
       "matchWins": 1,
@@ -142,20 +156,6 @@
       "gameLosses": 3,
       "gameDraws": 0,
       "gameWinPercentage": 0.5714285714285714,
-      "trophies": 0
-    },
-    {
-      "deckName": "GAT",
-      "events": 1,
-      "matchWins": 1,
-      "matchLosses": 2,
-      "matchDraws": 0,
-      "matchRecord": "1-2-0",
-      "matchWinPercentage": 0.3333333333333333,
-      "gameWins": 4,
-      "gameLosses": 4,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.5,
       "trophies": 0
     },
     {
@@ -205,16 +205,26 @@
     {
       "opponentUsername": "Tencteri",
       "opponentDisplayName": "Tencteri",
-      "matchesPlayed": 5,
+      "matchesPlayed": 6,
       "matchWins": 3,
-      "matchLosses": 2,
+      "matchLosses": 3,
       "matchDraws": 0,
-      "matchWinPercentage": 0.6,
+      "matchWinPercentage": 0.5,
       "gameWins": 7,
-      "gameLosses": 5,
+      "gameLosses": 7,
       "gameDraws": 0,
-      "gameWinPercentage": 0.5833333333333334,
+      "gameWinPercentage": 0.5,
       "matches": [
+        {
+          "tournamentId": "510507",
+          "dateDisplay": "November 19, 2026",
+          "result": "L",
+          "playerDeck": "GAT",
+          "opponentDeck": "White Weenie",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
         {
           "tournamentId": "499545",
           "dateDisplay": "November 5, 2026",
@@ -263,6 +273,71 @@
           "opponentDeck": "Merfolk",
           "playerGameWins": 2,
           "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "PCavalcanti",
+      "opponentDisplayName": "PCavalcanti",
+      "matchesPlayed": 5,
+      "matchWins": 2,
+      "matchLosses": 3,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.4,
+      "gameWins": 7,
+      "gameLosses": 8,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.4666666666666667,
+      "matches": [
+        {
+          "tournamentId": "510507",
+          "dateDisplay": "November 19, 2026",
+          "result": "L",
+          "playerDeck": "GAT",
+          "opponentDeck": "Elves",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "505497",
+          "dateDisplay": "November 12, 2026",
+          "result": "L",
+          "playerDeck": "GAT",
+          "opponentDeck": "Elves",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "445675",
+          "dateDisplay": "July 23, 2026",
+          "result": "W",
+          "playerDeck": "Moneyball",
+          "opponentDeck": "Burn",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "436160",
+          "dateDisplay": "July 9, 2026",
+          "result": "W",
+          "playerDeck": "Moneyball Black",
+          "opponentDeck": "UGR Survival Madness",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "436157",
+          "dateDisplay": "June 18, 2026",
+          "result": "L",
+          "playerDeck": "Mad Dogs",
+          "opponentDeck": "RG Madness Burn",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
           "gameDraws": 0
         }
       ]
@@ -392,61 +467,6 @@
           "playerDeck": "RG Burn",
           "opponentDeck": "Terrageddon",
           "playerGameWins": 0,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "PCavalcanti",
-      "opponentDisplayName": "PCavalcanti",
-      "matchesPlayed": 4,
-      "matchWins": 2,
-      "matchLosses": 2,
-      "matchDraws": 0,
-      "matchWinPercentage": 0.5,
-      "gameWins": 6,
-      "gameLosses": 6,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.5,
-      "matches": [
-        {
-          "tournamentId": "505497",
-          "dateDisplay": "November 12, 2026",
-          "result": "L",
-          "playerDeck": "GAT",
-          "opponentDeck": "Elves",
-          "playerGameWins": 1,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "445675",
-          "dateDisplay": "July 23, 2026",
-          "result": "W",
-          "playerDeck": "Moneyball",
-          "opponentDeck": "Burn",
-          "playerGameWins": 2,
-          "opponentGameWins": 1,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "436160",
-          "dateDisplay": "July 9, 2026",
-          "result": "W",
-          "playerDeck": "Moneyball Black",
-          "opponentDeck": "UGR Survival Madness",
-          "playerGameWins": 2,
-          "opponentGameWins": 1,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "436157",
-          "dateDisplay": "June 18, 2026",
-          "result": "L",
-          "playerDeck": "Mad Dogs",
-          "opponentDeck": "RG Madness Burn",
-          "playerGameWins": 1,
           "opponentGameWins": 2,
           "gameDraws": 0
         }
@@ -593,6 +613,41 @@
           "opponentDeck": "_",
           "playerGameWins": 1,
           "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "Mattmelach",
+      "opponentDisplayName": "Matthew Melachrinos",
+      "matchesPlayed": 2,
+      "matchWins": 0,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.2,
+      "matches": [
+        {
+          "tournamentId": "510507",
+          "dateDisplay": "November 19, 2026",
+          "result": "L",
+          "playerDeck": "GAT",
+          "opponentDeck": "Stasis",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "429084",
+          "dateDisplay": "May 14, 2026",
+          "result": "L",
+          "playerDeck": "GW Madness",
+          "opponentDeck": "Greater Good",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
           "gameDraws": 0
         }
       ]
@@ -1288,31 +1343,6 @@
       ]
     },
     {
-      "opponentUsername": "Mattmelach",
-      "opponentDisplayName": "Matthew Melachrinos",
-      "matchesPlayed": 1,
-      "matchWins": 0,
-      "matchLosses": 1,
-      "matchDraws": 0,
-      "matchWinPercentage": 0,
-      "gameWins": 1,
-      "gameLosses": 2,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.3333333333333333,
-      "matches": [
-        {
-          "tournamentId": "429084",
-          "dateDisplay": "May 14, 2026",
-          "result": "L",
-          "playerDeck": "GW Madness",
-          "opponentDeck": "Greater Good",
-          "playerGameWins": 1,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
       "opponentUsername": "JUDDERMANG",
       "opponentDisplayName": "Chris Cruz",
       "matchesPlayed": 1,
@@ -1414,6 +1444,23 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "510507",
+      "date": "2026-11-20T00:39:52Z",
+      "dateDisplay": "November 19, 2026",
+      "playerCount": 18,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 16,
+      "points": 0,
+      "matchRecord": "0-3-0",
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 6,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333,
+      "deck": "GAT"
+    },
     {
       "tournamentId": "505497",
       "date": "2026-11-13T00:19:11Z",

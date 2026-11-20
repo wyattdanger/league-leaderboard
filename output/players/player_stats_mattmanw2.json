@@ -2,24 +2,24 @@
   "username": "mattmanw2",
   "displayName": "mattmanw2",
   "overallStats": {
-    "totalTournaments": 18,
-    "totalPoints": 99,
-    "totalMatches": 54,
-    "matchRecord": "33-21-0",
-    "matchWinPercentage": 0.6111111111111112,
-    "gameRecord": "74-58-0",
-    "gameWinPercentage": 0.5606060606060606,
+    "totalTournaments": 19,
+    "totalPoints": 105,
+    "totalMatches": 57,
+    "matchRecord": "35-22-0",
+    "matchWinPercentage": 0.6140350877192983,
+    "gameRecord": "79-61-0",
+    "gameWinPercentage": 0.5642857142857143,
     "trophies": 2,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q4 2026",
-      "events": 4,
-      "points": 27,
-      "matchRecord": "9-3-0",
-      "matchWinPercentage": 0.75,
-      "gameRecord": "20-12-0",
+      "events": 5,
+      "points": 33,
+      "matchRecord": "11-4-0",
+      "matchWinPercentage": 0.7333333333333333,
+      "gameRecord": "25-15-0",
       "gameWinPercentage": 0.625
     },
     {
@@ -52,6 +52,20 @@
   ],
   "deckStats": [
     {
+      "deckName": "Moneyball",
+      "events": 8,
+      "matchWins": 17,
+      "matchLosses": 7,
+      "matchDraws": 0,
+      "matchRecord": "17-7-0",
+      "matchWinPercentage": 0.7083333333333334,
+      "gameWins": 38,
+      "gameLosses": 21,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6440677966101694,
+      "trophies": 2
+    },
+    {
       "deckName": "Moneyball Black",
       "events": 8,
       "matchWins": 14,
@@ -64,20 +78,6 @@
       "gameDraws": 0,
       "gameWinPercentage": 0.5254237288135594,
       "trophies": 0
-    },
-    {
-      "deckName": "Moneyball",
-      "events": 7,
-      "matchWins": 15,
-      "matchLosses": 6,
-      "matchDraws": 0,
-      "matchRecord": "15-6-0",
-      "matchWinPercentage": 0.7142857142857143,
-      "gameWins": 33,
-      "gameLosses": 18,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.6470588235294118,
-      "trophies": 2
     },
     {
       "deckName": "Black Rack",
@@ -123,6 +123,61 @@
     }
   ],
   "headToHead": [
+    {
+      "opponentUsername": "Mattmelach",
+      "opponentDisplayName": "Matthew Melachrinos",
+      "matchesPlayed": 4,
+      "matchWins": 3,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.75,
+      "gameWins": 6,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.75,
+      "matches": [
+        {
+          "tournamentId": "510507",
+          "dateDisplay": "November 19, 2026",
+          "result": "W",
+          "playerDeck": "Moneyball",
+          "opponentDeck": "Stasis",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "465043",
+          "dateDisplay": "September 10, 2026",
+          "result": "W",
+          "playerDeck": "Moneyball",
+          "opponentDeck": "Dreadnought",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "424009",
+          "dateDisplay": "April 23, 2026",
+          "result": "L",
+          "playerDeck": "Black Rack",
+          "opponentDeck": "UR Stasis",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "408436",
+          "dateDisplay": "February 26, 2026",
+          "result": "W",
+          "playerDeck": "Moneyball Black",
+          "opponentDeck": "White Lightning",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
     {
       "opponentUsername": "swbmtg",
       "opponentDisplayName": "Stephen Bush",
@@ -207,51 +262,6 @@
           "result": "W",
           "playerDeck": "Pit Rack",
           "opponentDeck": "Terra Oath",
-          "playerGameWins": 2,
-          "opponentGameWins": 0,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "Mattmelach",
-      "opponentDisplayName": "Matthew Melachrinos",
-      "matchesPlayed": 3,
-      "matchWins": 2,
-      "matchLosses": 1,
-      "matchDraws": 0,
-      "matchWinPercentage": 0.6666666666666666,
-      "gameWins": 4,
-      "gameLosses": 2,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.6666666666666666,
-      "matches": [
-        {
-          "tournamentId": "465043",
-          "dateDisplay": "September 10, 2026",
-          "result": "W",
-          "playerDeck": "Moneyball",
-          "opponentDeck": "Dreadnought",
-          "playerGameWins": 2,
-          "opponentGameWins": 0,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "424009",
-          "dateDisplay": "April 23, 2026",
-          "result": "L",
-          "playerDeck": "Black Rack",
-          "opponentDeck": "UR Stasis",
-          "playerGameWins": 0,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "408436",
-          "dateDisplay": "February 26, 2026",
-          "result": "W",
-          "playerDeck": "Moneyball Black",
-          "opponentDeck": "White Lightning",
           "playerGameWins": 2,
           "opponentGameWins": 0,
           "gameDraws": 0
@@ -612,6 +622,56 @@
           "result": "L",
           "playerDeck": "Moneyball Black",
           "opponentDeck": "Terrageddon",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "Apollo_the_Bison",
+      "opponentDisplayName": "Ian Gray",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6666666666666666,
+      "matches": [
+        {
+          "tournamentId": "510507",
+          "dateDisplay": "November 19, 2026",
+          "result": "W",
+          "playerDeck": "Moneyball",
+          "opponentDeck": "_",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "cg123",
+      "opponentDisplayName": "Christopher Garcia",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "matches": [
+        {
+          "tournamentId": "510507",
+          "dateDisplay": "November 19, 2026",
+          "result": "L",
+          "playerDeck": "Moneyball",
+          "opponentDeck": "GR Oath Ponza",
           "playerGameWins": 1,
           "opponentGameWins": 2,
           "gameDraws": 0
@@ -1145,6 +1205,23 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "510507",
+      "date": "2026-11-20T00:39:52Z",
+      "dateDisplay": "November 19, 2026",
+      "playerCount": 18,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 8,
+      "points": 6,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 5,
+      "gameLosses": 3,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.625,
+      "deck": "Moneyball"
+    },
     {
       "tournamentId": "505497",
       "date": "2026-11-13T00:19:11Z",

@@ -2,25 +2,25 @@
   "username": "WillReddy",
   "displayName": "WillReddy",
   "overallStats": {
-    "totalTournaments": 24,
-    "totalPoints": 103,
-    "totalMatches": 72,
-    "matchRecord": "34-37-1",
-    "matchWinPercentage": 0.4791666666666667,
-    "gameRecord": "89-88-1",
-    "gameWinPercentage": 0.5,
+    "totalTournaments": 25,
+    "totalPoints": 106,
+    "totalMatches": 75,
+    "matchRecord": "35-39-1",
+    "matchWinPercentage": 0.47333333333333333,
+    "gameRecord": "93-93-1",
+    "gameWinPercentage": 0.49732620320855614,
     "trophies": 0,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q4 2026",
-      "events": 5,
-      "points": 21,
-      "matchRecord": "7-8-0",
-      "matchWinPercentage": 0.4666666666666667,
-      "gameRecord": "19-18-0",
-      "gameWinPercentage": 0.5135135135135135
+      "events": 6,
+      "points": 24,
+      "matchRecord": "8-10-0",
+      "matchWinPercentage": 0.4444444444444444,
+      "gameRecord": "23-23-0",
+      "gameWinPercentage": 0.5
     },
     {
       "leagueName": "Q3 2026",
@@ -84,6 +84,20 @@
       "trophies": 0
     },
     {
+      "deckName": "Mono Red Ponza",
+      "events": 3,
+      "matchWins": 5,
+      "matchLosses": 4,
+      "matchDraws": 0,
+      "matchRecord": "5-4-0",
+      "matchWinPercentage": 0.5555555555555556,
+      "gameWins": 14,
+      "gameLosses": 12,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5384615384615384,
+      "trophies": 0
+    },
+    {
       "deckName": "Goblins",
       "events": 3,
       "matchWins": 5,
@@ -95,20 +109,6 @@
       "gameLosses": 9,
       "gameDraws": 0,
       "gameWinPercentage": 0.5714285714285714,
-      "trophies": 0
-    },
-    {
-      "deckName": "Mono Red Ponza",
-      "events": 2,
-      "matchWins": 4,
-      "matchLosses": 2,
-      "matchDraws": 0,
-      "matchRecord": "4-2-0",
-      "matchWinPercentage": 0.6666666666666666,
-      "gameWins": 10,
-      "gameLosses": 7,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.5882352941176471,
       "trophies": 0
     },
     {
@@ -268,6 +268,61 @@
   ],
   "headToHead": [
     {
+      "opponentUsername": "weidnent",
+      "opponentDisplayName": "Nicholas Weidner",
+      "matchesPlayed": 4,
+      "matchWins": 1,
+      "matchLosses": 3,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.25,
+      "gameWins": 4,
+      "gameLosses": 7,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.36363636363636365,
+      "matches": [
+        {
+          "tournamentId": "510507",
+          "dateDisplay": "November 19, 2026",
+          "result": "W",
+          "playerDeck": "Mono Red Ponza",
+          "opponentDeck": "Doomsday Storm",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "436159",
+          "dateDisplay": "July 2, 2026",
+          "result": "L",
+          "playerDeck": "GW Ponza Oath",
+          "opponentDeck": "Dragon Reanimator",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "434267",
+          "dateDisplay": "June 4, 2026",
+          "result": "L",
+          "playerDeck": "_",
+          "opponentDeck": "Balancing Tings",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "422555",
+          "dateDisplay": "April 16, 2026",
+          "result": "L",
+          "playerDeck": "Sligh",
+          "opponentDeck": "GW Madness",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "madmanpoet",
       "opponentDisplayName": "Michael Flores",
       "matchesPlayed": 4,
@@ -378,6 +433,51 @@
       ]
     },
     {
+      "opponentUsername": "Tencteri",
+      "opponentDisplayName": "Tencteri",
+      "matchesPlayed": 3,
+      "matchWins": 1,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 3,
+      "gameLosses": 5,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.375,
+      "matches": [
+        {
+          "tournamentId": "510507",
+          "dateDisplay": "November 19, 2026",
+          "result": "L",
+          "playerDeck": "Mono Red Ponza",
+          "opponentDeck": "White Weenie",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "485761",
+          "dateDisplay": "October 15, 2026",
+          "result": "L",
+          "playerDeck": "GAT",
+          "opponentDeck": "White Weenie",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "436157",
+          "dateDisplay": "June 18, 2026",
+          "result": "W",
+          "playerDeck": "_",
+          "opponentDeck": "_",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "StevenRiseNYC",
       "opponentDisplayName": "StevenRiseNYC",
       "matchesPlayed": 3,
@@ -417,51 +517,6 @@
           "playerDeck": "GAT",
           "opponentDeck": "Moneyball",
           "playerGameWins": 1,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "weidnent",
-      "opponentDisplayName": "Nicholas Weidner",
-      "matchesPlayed": 3,
-      "matchWins": 0,
-      "matchLosses": 3,
-      "matchDraws": 0,
-      "matchWinPercentage": 0,
-      "gameWins": 2,
-      "gameLosses": 6,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.25,
-      "matches": [
-        {
-          "tournamentId": "436159",
-          "dateDisplay": "July 2, 2026",
-          "result": "L",
-          "playerDeck": "GW Ponza Oath",
-          "opponentDeck": "Dragon Reanimator",
-          "playerGameWins": 1,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "434267",
-          "dateDisplay": "June 4, 2026",
-          "result": "L",
-          "playerDeck": "_",
-          "opponentDeck": "Balancing Tings",
-          "playerGameWins": 1,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "422555",
-          "dateDisplay": "April 16, 2026",
-          "result": "L",
-          "playerDeck": "Sligh",
-          "opponentDeck": "GW Madness",
-          "playerGameWins": 0,
           "opponentGameWins": 2,
           "gameDraws": 0
         }
@@ -598,41 +653,6 @@
           "opponentDeck": "_",
           "playerGameWins": 2,
           "opponentGameWins": 0,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "Tencteri",
-      "opponentDisplayName": "Tencteri",
-      "matchesPlayed": 2,
-      "matchWins": 1,
-      "matchLosses": 1,
-      "matchDraws": 0,
-      "matchWinPercentage": 0.5,
-      "gameWins": 2,
-      "gameLosses": 3,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.4,
-      "matches": [
-        {
-          "tournamentId": "485761",
-          "dateDisplay": "October 15, 2026",
-          "result": "L",
-          "playerDeck": "GAT",
-          "opponentDeck": "White Weenie",
-          "playerGameWins": 0,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "436157",
-          "dateDisplay": "June 18, 2026",
-          "result": "W",
-          "playerDeck": "_",
-          "opponentDeck": "_",
-          "playerGameWins": 2,
-          "opponentGameWins": 1,
           "gameDraws": 0
         }
       ]
@@ -912,6 +932,31 @@
           "playerDeck": "_",
           "opponentDeck": "UG Madness",
           "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "Pjd",
+      "opponentDisplayName": "Pjd",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "matches": [
+        {
+          "tournamentId": "510507",
+          "dateDisplay": "November 19, 2026",
+          "result": "L",
+          "playerDeck": "Mono Red Ponza",
+          "opponentDeck": "Stiflenought",
+          "playerGameWins": 1,
           "opponentGameWins": 2,
           "gameDraws": 0
         }
@@ -1594,6 +1639,23 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "510507",
+      "date": "2026-11-20T00:39:52Z",
+      "dateDisplay": "November 19, 2026",
+      "playerCount": 18,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 13,
+      "points": 3,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 4,
+      "gameLosses": 5,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.4444444,
+      "deck": "Mono Red Ponza"
+    },
     {
       "tournamentId": "499545",
       "date": "2026-11-06T00:05:05Z",

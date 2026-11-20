@@ -2,25 +2,25 @@
   "username": "CalebR",
   "displayName": "CalebR",
   "overallStats": {
-    "totalTournaments": 19,
-    "totalPoints": 101,
-    "totalMatches": 55,
-    "matchRecord": "33-20-2",
-    "matchWinPercentage": 0.6181818181818182,
-    "gameRecord": "78-54-4",
-    "gameWinPercentage": 0.5735294117647058,
+    "totalTournaments": 20,
+    "totalPoints": 107,
+    "totalMatches": 58,
+    "matchRecord": "35-21-2",
+    "matchWinPercentage": 0.6206896551724138,
+    "gameRecord": "82-57-4",
+    "gameWinPercentage": 0.5734265734265734,
     "trophies": 4,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q4 2026",
-      "events": 5,
-      "points": 30,
-      "matchRecord": "10-5-0",
+      "events": 6,
+      "points": 36,
+      "matchRecord": "12-6-0",
       "matchWinPercentage": 0.6666666666666666,
-      "gameRecord": "21-12-0",
-      "gameWinPercentage": 0.6363636363636364
+      "gameRecord": "25-15-0",
+      "gameWinPercentage": 0.625
     },
     {
       "leagueName": "Q3 2026",
@@ -60,6 +60,20 @@
     }
   ],
   "deckStats": [
+    {
+      "deckName": "Welder Prison",
+      "events": 2,
+      "matchWins": 5,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchRecord": "5-1-0",
+      "matchWinPercentage": 0.8333333333333334,
+      "gameWins": 10,
+      "gameLosses": 5,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6666666666666666,
+      "trophies": 1
+    },
     {
       "deckName": "GR Survival Terravore",
       "events": 2,
@@ -104,20 +118,6 @@
     },
     {
       "deckName": "Cradle Control",
-      "events": 1,
-      "matchWins": 3,
-      "matchLosses": 0,
-      "matchDraws": 0,
-      "matchRecord": "3-0-0",
-      "matchWinPercentage": 1,
-      "gameWins": 6,
-      "gameLosses": 2,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.75,
-      "trophies": 1
-    },
-    {
-      "deckName": "Welder Prison",
       "events": 1,
       "matchWins": 3,
       "matchLosses": 0,
@@ -287,6 +287,71 @@
   ],
   "headToHead": [
     {
+      "opponentUsername": "RichBucey",
+      "opponentDisplayName": "RichBucey",
+      "matchesPlayed": 5,
+      "matchWins": 3,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchWinPercentage": 0.6,
+      "gameWins": 7,
+      "gameLosses": 6,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5384615384615384,
+      "matches": [
+        {
+          "tournamentId": "510507",
+          "dateDisplay": "November 19, 2026",
+          "result": "W",
+          "playerDeck": "Welder Prison",
+          "opponentDeck": "Enchantress",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "445685",
+          "dateDisplay": "October 1, 2026",
+          "result": "W",
+          "playerDeck": "GR Survival Madness Ponza",
+          "opponentDeck": "_",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "445681",
+          "dateDisplay": "September 3, 2026",
+          "result": "L",
+          "playerDeck": "GR Survival Terravore",
+          "opponentDeck": "Enchantress",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "445673",
+          "dateDisplay": "July 16, 2026",
+          "result": "L",
+          "playerDeck": "UG Survival Opposition",
+          "opponentDeck": "Burn",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "436160",
+          "dateDisplay": "July 9, 2026",
+          "result": "W",
+          "playerDeck": "UG Survival Opposition",
+          "opponentDeck": "Sligh",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "AlldoAurelis",
       "opponentDisplayName": "AlldoAurelis",
       "matchesPlayed": 5,
@@ -403,61 +468,6 @@
           "playerGameWins": 0,
           "opponentGameWins": 0,
           "gameDraws": 3
-        }
-      ]
-    },
-    {
-      "opponentUsername": "RichBucey",
-      "opponentDisplayName": "RichBucey",
-      "matchesPlayed": 4,
-      "matchWins": 2,
-      "matchLosses": 2,
-      "matchDraws": 0,
-      "matchWinPercentage": 0.5,
-      "gameWins": 5,
-      "gameLosses": 5,
-      "gameDraws": 0,
-      "gameWinPercentage": 0.5,
-      "matches": [
-        {
-          "tournamentId": "445685",
-          "dateDisplay": "October 1, 2026",
-          "result": "W",
-          "playerDeck": "GR Survival Madness Ponza",
-          "opponentDeck": "_",
-          "playerGameWins": 2,
-          "opponentGameWins": 1,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "445681",
-          "dateDisplay": "September 3, 2026",
-          "result": "L",
-          "playerDeck": "GR Survival Terravore",
-          "opponentDeck": "Enchantress",
-          "playerGameWins": 1,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "445673",
-          "dateDisplay": "July 16, 2026",
-          "result": "L",
-          "playerDeck": "UG Survival Opposition",
-          "opponentDeck": "Burn",
-          "playerGameWins": 0,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        },
-        {
-          "tournamentId": "436160",
-          "dateDisplay": "July 9, 2026",
-          "result": "W",
-          "playerDeck": "UG Survival Opposition",
-          "opponentDeck": "Sligh",
-          "playerGameWins": 2,
-          "opponentGameWins": 0,
-          "gameDraws": 0
         }
       ]
     },
@@ -816,6 +826,56 @@
           "playerDeck": "Enchantress",
           "opponentDeck": "Dreadnought",
           "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "minimiz",
+      "opponentDisplayName": "Eli Mizock",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "matches": [
+        {
+          "tournamentId": "510507",
+          "dateDisplay": "November 19, 2026",
+          "result": "L",
+          "playerDeck": "Welder Prison",
+          "opponentDeck": "Burn",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "Trout5882",
+      "opponentDisplayName": "Trout5882",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 1,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "matches": [
+        {
+          "tournamentId": "510507",
+          "dateDisplay": "November 19, 2026",
+          "result": "W",
+          "playerDeck": "Welder Prison",
+          "opponentDeck": "Mono White Tokens",
+          "playerGameWins": 1,
           "opponentGameWins": 0,
           "gameDraws": 0
         }
@@ -1298,6 +1358,23 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "510507",
+      "date": "2026-11-20T00:39:52Z",
+      "dateDisplay": "November 19, 2026",
+      "playerCount": 18,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 5,
+      "points": 6,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 4,
+      "gameLosses": 3,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.5714286,
+      "deck": "Welder Prison"
+    },
     {
       "tournamentId": "499545",
       "date": "2026-11-06T00:05:05Z",

@@ -2,25 +2,25 @@
   "username": "cg123",
   "displayName": "Christopher Garcia",
   "overallStats": {
-    "totalTournaments": 5,
-    "totalPoints": 28,
-    "totalMatches": 14,
-    "matchRecord": "9-4-1",
-    "matchWinPercentage": 0.6785714285714286,
-    "gameRecord": "21-14-1",
-    "gameWinPercentage": 0.5833333333333334,
+    "totalTournaments": 6,
+    "totalPoints": 34,
+    "totalMatches": 17,
+    "matchRecord": "11-5-1",
+    "matchWinPercentage": 0.6764705882352942,
+    "gameRecord": "26-17-1",
+    "gameWinPercentage": 0.5909090909090909,
     "trophies": 2,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q4 2026",
-      "events": 5,
-      "points": 28,
-      "matchRecord": "9-4-1",
-      "matchWinPercentage": 0.6785714285714286,
-      "gameRecord": "21-14-1",
-      "gameWinPercentage": 0.5972222222222222
+      "events": 6,
+      "points": 34,
+      "matchRecord": "11-5-1",
+      "matchWinPercentage": 0.6764705882352942,
+      "gameRecord": "26-17-1",
+      "gameWinPercentage": 0.6022727272727273
     }
   ],
   "deckStats": [
@@ -51,6 +51,20 @@
       "gameDraws": 0,
       "gameWinPercentage": 1,
       "trophies": 1
+    },
+    {
+      "deckName": "GR Oath Ponza",
+      "events": 1,
+      "matchWins": 2,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 5,
+      "gameLosses": 3,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.625,
+      "trophies": 0
     },
     {
       "deckName": "Reanimator",
@@ -172,6 +186,81 @@
           "opponentDeck": "BW Control",
           "playerGameWins": 2,
           "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "Trout5882",
+      "opponentDisplayName": "Trout5882",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "matches": [
+        {
+          "tournamentId": "510507",
+          "dateDisplay": "November 19, 2026",
+          "result": "W",
+          "playerDeck": "GR Oath Ponza",
+          "opponentDeck": "Mono White Tokens",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "mattmanw2",
+      "opponentDisplayName": "mattmanw2",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6666666666666666,
+      "matches": [
+        {
+          "tournamentId": "510507",
+          "dateDisplay": "November 19, 2026",
+          "result": "W",
+          "playerDeck": "GR Oath Ponza",
+          "opponentDeck": "Moneyball",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "Matt_W",
+      "opponentDisplayName": "Matt_W",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "matches": [
+        {
+          "tournamentId": "510507",
+          "dateDisplay": "November 19, 2026",
+          "result": "L",
+          "playerDeck": "GR Oath Ponza",
+          "opponentDeck": "Survival Opposition",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
           "gameDraws": 0
         }
       ]
@@ -403,6 +492,23 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "510507",
+      "date": "2026-11-20T00:39:52Z",
+      "dateDisplay": "November 19, 2026",
+      "playerCount": 18,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 3,
+      "points": 6,
+      "matchRecord": "2-1-0",
+      "matchWinPercentage": 0.6666666666666666,
+      "gameWins": 5,
+      "gameLosses": 3,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.625,
+      "deck": "GR Oath Ponza"
+    },
     {
       "tournamentId": "505497",
       "date": "2026-11-13T00:19:11Z",

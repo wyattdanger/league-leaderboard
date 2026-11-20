@@ -2,25 +2,25 @@
   "username": "delofstrom",
   "displayName": "DEL .",
   "overallStats": {
-    "totalTournaments": 24,
+    "totalTournaments": 25,
     "totalPoints": 61,
-    "totalMatches": 70,
-    "matchRecord": "18-45-7",
-    "matchWinPercentage": 0.30714285714285716,
-    "gameRecord": "62-104-5",
-    "gameWinPercentage": 0.36257309941520466,
+    "totalMatches": 72,
+    "matchRecord": "18-47-7",
+    "matchWinPercentage": 0.2986111111111111,
+    "gameRecord": "62-108-5",
+    "gameWinPercentage": 0.35428571428571426,
     "trophies": 0,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q4 2026",
-      "events": 1,
+      "events": 2,
       "points": 1,
-      "matchRecord": "0-2-1",
-      "matchWinPercentage": 0.16666666666666666,
-      "gameRecord": "1-4-3",
-      "gameWinPercentage": 0.3125
+      "matchRecord": "0-4-1",
+      "matchWinPercentage": 0.1,
+      "gameRecord": "1-8-3",
+      "gameWinPercentage": 0.20833333333333334
     },
     {
       "leagueName": "Q3 2026",
@@ -94,16 +94,16 @@
     },
     {
       "deckName": "Survival Welder",
-      "events": 7,
+      "events": 8,
       "matchWins": 7,
-      "matchLosses": 11,
+      "matchLosses": 13,
       "matchDraws": 3,
-      "matchRecord": "7-11-3",
-      "matchWinPercentage": 0.40476190476190477,
+      "matchRecord": "7-13-3",
+      "matchWinPercentage": 0.3695652173913043,
       "gameWins": 20,
-      "gameLosses": 28,
+      "gameLosses": 32,
       "gameDraws": 3,
-      "gameWinPercentage": 0.4215686274509804,
+      "gameWinPercentage": 0.39090909090909093,
       "trophies": 0
     },
     {
@@ -554,6 +554,41 @@
       ]
     },
     {
+      "opponentUsername": "truthcult",
+      "opponentDisplayName": "klint",
+      "matchesPlayed": 2,
+      "matchWins": 0,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "matches": [
+        {
+          "tournamentId": "510507",
+          "dateDisplay": "November 19, 2026",
+          "result": "L",
+          "playerDeck": "Survival Welder",
+          "opponentDeck": "Welder Prison",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        },
+        {
+          "tournamentId": "499545",
+          "dateDisplay": "November 5, 2026",
+          "result": "L",
+          "playerDeck": "Survival Welder",
+          "opponentDeck": "Welder Prison",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "PCavalcanti",
       "opponentDisplayName": "PCavalcanti",
       "matchesPlayed": 2,
@@ -834,6 +869,31 @@
       ]
     },
     {
+      "opponentUsername": "Apollo_the_Bison",
+      "opponentDisplayName": "Ian Gray",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "matches": [
+        {
+          "tournamentId": "510507",
+          "dateDisplay": "November 19, 2026",
+          "result": "L",
+          "playerDeck": "Survival Welder",
+          "opponentDeck": "_",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
       "opponentUsername": "Pjd",
       "opponentDisplayName": "Pjd",
       "matchesPlayed": 1,
@@ -853,31 +913,6 @@
           "playerDeck": "Survival Welder",
           "opponentDeck": "Sligh",
           "playerGameWins": 1,
-          "opponentGameWins": 2,
-          "gameDraws": 0
-        }
-      ]
-    },
-    {
-      "opponentUsername": "truthcult",
-      "opponentDisplayName": "klint",
-      "matchesPlayed": 1,
-      "matchWins": 0,
-      "matchLosses": 1,
-      "matchDraws": 0,
-      "matchWinPercentage": 0,
-      "gameWins": 0,
-      "gameLosses": 2,
-      "gameDraws": 0,
-      "gameWinPercentage": 0,
-      "matches": [
-        {
-          "tournamentId": "499545",
-          "dateDisplay": "November 5, 2026",
-          "result": "L",
-          "playerDeck": "Survival Welder",
-          "opponentDeck": "Welder Prison",
-          "playerGameWins": 0,
           "opponentGameWins": 2,
           "gameDraws": 0
         }
@@ -1485,6 +1520,23 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "510507",
+      "date": "2026-11-20T00:39:52Z",
+      "dateDisplay": "November 19, 2026",
+      "playerCount": 18,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 18,
+      "points": 0,
+      "matchRecord": "0-2-0",
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333,
+      "deck": "Survival Welder"
+    },
     {
       "tournamentId": "499545",
       "date": "2026-11-06T00:05:05Z",

@@ -1,18 +1,27 @@
 {
   "username": "Apollo_the_Bison",
-  "displayName": "Apollo_the_Bison",
+  "displayName": "Ian Gray",
   "overallStats": {
-    "totalTournaments": 1,
-    "totalPoints": 9,
-    "totalMatches": 3,
-    "matchRecord": "3-0-0",
-    "matchWinPercentage": 1,
-    "gameRecord": "6-2-0",
-    "gameWinPercentage": 0.75,
+    "totalTournaments": 2,
+    "totalPoints": 12,
+    "totalMatches": 6,
+    "matchRecord": "4-2-0",
+    "matchWinPercentage": 0.6666666666666666,
+    "gameRecord": "9-6-0",
+    "gameWinPercentage": 0.6,
     "trophies": 1,
     "belts": 0
   },
   "leagueStats": [
+    {
+      "leagueName": "Q4 2026",
+      "events": 1,
+      "points": 3,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameRecord": "3-4-0",
+      "gameWinPercentage": 0.42857142857142855
+    },
     {
       "leagueName": "Q1 2026",
       "events": 1,
@@ -37,9 +46,98 @@
       "gameDraws": 0,
       "gameWinPercentage": 0.75,
       "trophies": 1
+    },
+    {
+      "deckName": "Unknown",
+      "events": 1,
+      "matchWins": 1,
+      "matchLosses": 2,
+      "matchDraws": 0,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 3,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.42857142857142855,
+      "trophies": 0
     }
   ],
   "headToHead": [
+    {
+      "opponentUsername": "mattmanw2",
+      "opponentDisplayName": "mattmanw2",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 1,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.3333333333333333,
+      "matches": [
+        {
+          "tournamentId": "510507",
+          "dateDisplay": "November 19, 2026",
+          "result": "L",
+          "playerDeck": "_",
+          "opponentDeck": "Moneyball",
+          "playerGameWins": 1,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "delofstrom",
+      "opponentDisplayName": "DEL .",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 0,
+      "gameDraws": 0,
+      "gameWinPercentage": 1,
+      "matches": [
+        {
+          "tournamentId": "510507",
+          "dateDisplay": "November 19, 2026",
+          "result": "W",
+          "playerDeck": "_",
+          "opponentDeck": "Survival Welder",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "PCavalcanti",
+      "opponentDisplayName": "PCavalcanti",
+      "matchesPlayed": 1,
+      "matchWins": 0,
+      "matchLosses": 1,
+      "matchDraws": 0,
+      "matchWinPercentage": 0,
+      "gameWins": 0,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0,
+      "matches": [
+        {
+          "tournamentId": "510507",
+          "dateDisplay": "November 19, 2026",
+          "result": "L",
+          "playerDeck": "_",
+          "opponentDeck": "Elves",
+          "playerGameWins": 0,
+          "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
     {
       "opponentUsername": "WillReddy",
       "opponentDisplayName": "WillReddy",
@@ -92,6 +190,23 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "510507",
+      "date": "2026-11-20T00:39:52Z",
+      "dateDisplay": "November 19, 2026",
+      "playerCount": 18,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 14,
+      "points": 3,
+      "matchRecord": "1-2-0",
+      "matchWinPercentage": 0.3333333333333333,
+      "gameWins": 3,
+      "gameLosses": 4,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.4285714,
+      "deck": "_"
+    },
     {
       "tournamentId": "417122",
       "date": "2026-03-26T23:18:28Z",

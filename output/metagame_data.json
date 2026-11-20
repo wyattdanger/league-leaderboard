@@ -3,6 +3,7 @@
     {
       "leagueName": "Q4 2026",
       "tournaments": [
+        510507,
         505497,
         499545,
         493621,
@@ -11,22 +12,29 @@
         445685
       ],
       "deckCounts": {
-        "GAT": 3,
+        "GAT": 4,
+        "Welder Prison": 6,
+        "Survival Opposition": 2,
+        "Stasis": 3,
+        "Elves": 5,
+        "Stiflenought": 1,
+        "Enchantress": 3,
+        "White Weenie": 5,
+        "Mono White Tokens": 1,
+        "Mono Red Ponza": 3,
+        "GR Oath Ponza": 1,
+        "Survival Welder": 2,
+        "Moneyball": 8,
+        "Burn": 7,
+        "Trix": 1,
+        "Doomsday Storm": 2,
         "Replenish": 1,
         "The Rock": 2,
-        "Survival Opposition": 1,
-        "Stasis": 2,
         "BR Goblins": 1,
-        "Elves": 4,
         "U Dreadnought": 2,
-        "White Weenie": 4,
         "Reanimator": 1,
         "BW Control": 4,
-        "Burn": 6,
-        "Moneyball": 7,
         "Gush Tithe": 1,
-        "Welder Prison": 4,
-        "Doomsday Storm": 1,
         "Moneyball Black": 2,
         "Gamekeeper Rock": 1,
         "GW Survival Terrageddon": 1,
@@ -35,13 +43,10 @@
         "4C Rector Control": 2,
         "Mad Dogs": 1,
         "Sligh": 2,
-        "Enchantress": 2,
         "Zombies": 1,
         "Beefcake": 2,
         "UR Tinker Fling": 1,
-        "Survival Welder": 1,
         "Mono U Disk": 1,
-        "Mono Red Ponza": 2,
         "Goblins": 5,
         "Equipoise": 1,
         "GR Survival Sneak Attack": 1,
@@ -80,8 +85,9 @@
         "UW Wizards": 1
       },
       "deckTrophies": {
+        "Survival Opposition": 1,
+        "Burn": 2,
         "Stasis": 1,
-        "Burn": 1,
         "Enchantress": 1,
         "White Weenie": 1,
         "UR Tinker Fling": 1,
@@ -97,7 +103,82 @@
       "deckMatchStats": {
         "GAT": {
           "wins": 1,
-          "losses": 8,
+          "losses": 11,
+          "draws": 0
+        },
+        "Welder Prison": {
+          "wins": 11,
+          "losses": 7,
+          "draws": 0
+        },
+        "Survival Opposition": {
+          "wins": 4,
+          "losses": 1,
+          "draws": 1
+        },
+        "Stasis": {
+          "wins": 5,
+          "losses": 2,
+          "draws": 2
+        },
+        "Elves": {
+          "wins": 8,
+          "losses": 6,
+          "draws": 1
+        },
+        "Stiflenought": {
+          "wins": 2,
+          "losses": 1,
+          "draws": 0
+        },
+        "Enchantress": {
+          "wins": 4,
+          "losses": 3,
+          "draws": 1
+        },
+        "White Weenie": {
+          "wins": 10,
+          "losses": 5,
+          "draws": 0
+        },
+        "Mono White Tokens": {
+          "wins": 0,
+          "losses": 3,
+          "draws": 0
+        },
+        "Mono Red Ponza": {
+          "wins": 3,
+          "losses": 5,
+          "draws": 1
+        },
+        "GR Oath Ponza": {
+          "wins": 2,
+          "losses": 1,
+          "draws": 0
+        },
+        "Survival Welder": {
+          "wins": 0,
+          "losses": 4,
+          "draws": 1
+        },
+        "Moneyball": {
+          "wins": 16,
+          "losses": 7,
+          "draws": 0
+        },
+        "Burn": {
+          "wins": 12,
+          "losses": 9,
+          "draws": 0
+        },
+        "Trix": {
+          "wins": 1,
+          "losses": 2,
+          "draws": 0
+        },
+        "Doomsday Storm": {
+          "wins": 2,
+          "losses": 4,
           "draws": 0
         },
         "Replenish": {
@@ -110,33 +191,13 @@
           "losses": 3,
           "draws": 0
         },
-        "Survival Opposition": {
-          "wins": 1,
-          "losses": 1,
-          "draws": 1
-        },
-        "Stasis": {
-          "wins": 4,
-          "losses": 1,
-          "draws": 1
-        },
         "BR Goblins": {
           "wins": 2,
           "losses": 1,
           "draws": 0
         },
-        "Elves": {
-          "wins": 6,
-          "losses": 5,
-          "draws": 1
-        },
         "U Dreadnought": {
           "wins": 2,
-          "losses": 4,
-          "draws": 0
-        },
-        "White Weenie": {
-          "wins": 8,
           "losses": 4,
           "draws": 0
         },
@@ -150,29 +211,9 @@
           "losses": 8,
           "draws": 1
         },
-        "Burn": {
-          "wins": 9,
-          "losses": 9,
-          "draws": 0
-        },
-        "Moneyball": {
-          "wins": 14,
-          "losses": 6,
-          "draws": 0
-        },
         "Gush Tithe": {
           "wins": 2,
           "losses": 1,
-          "draws": 0
-        },
-        "Welder Prison": {
-          "wins": 7,
-          "losses": 5,
-          "draws": 0
-        },
-        "Doomsday Storm": {
-          "wins": 1,
-          "losses": 2,
           "draws": 0
         },
         "Moneyball Black": {
@@ -215,11 +256,6 @@
           "losses": 3,
           "draws": 0
         },
-        "Enchantress": {
-          "wins": 3,
-          "losses": 2,
-          "draws": 0
-        },
         "Zombies": {
           "wins": 2,
           "losses": 1,
@@ -235,20 +271,10 @@
           "losses": 0,
           "draws": 0
         },
-        "Survival Welder": {
-          "wins": 0,
-          "losses": 2,
-          "draws": 1
-        },
         "Mono U Disk": {
           "wins": 1,
           "losses": 2,
           "draws": 0
-        },
-        "Mono Red Ponza": {
-          "wins": 2,
-          "losses": 3,
-          "draws": 1
         },
         "Goblins": {
           "wins": 9,

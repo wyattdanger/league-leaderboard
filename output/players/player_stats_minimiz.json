@@ -2,25 +2,25 @@
   "username": "minimiz",
   "displayName": "Eli Mizock",
   "overallStats": {
-    "totalTournaments": 20,
-    "totalPoints": 100,
-    "totalMatches": 58,
-    "matchRecord": "33-24-1",
-    "matchWinPercentage": 0.5775862068965517,
-    "gameRecord": "79-63-2",
-    "gameWinPercentage": 0.5486111111111112,
-    "trophies": 3,
+    "totalTournaments": 21,
+    "totalPoints": 109,
+    "totalMatches": 61,
+    "matchRecord": "36-24-1",
+    "matchWinPercentage": 0.5983606557377049,
+    "gameRecord": "85-65-2",
+    "gameWinPercentage": 0.5592105263157895,
+    "trophies": 4,
     "belts": 0
   },
   "leagueStats": [
     {
       "leagueName": "Q4 2026",
-      "events": 3,
-      "points": 18,
-      "matchRecord": "6-3-0",
-      "matchWinPercentage": 0.6666666666666666,
-      "gameRecord": "12-6-0",
-      "gameWinPercentage": 0.6666666666666666
+      "events": 4,
+      "points": 27,
+      "matchRecord": "9-3-0",
+      "matchWinPercentage": 0.75,
+      "gameRecord": "18-8-0",
+      "gameWinPercentage": 0.6923076923076923
     },
     {
       "leagueName": "Q3 2026",
@@ -103,6 +103,20 @@
       "trophies": 0
     },
     {
+      "deckName": "Burn",
+      "events": 1,
+      "matchWins": 3,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchRecord": "3-0-0",
+      "matchWinPercentage": 1,
+      "gameWins": 6,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.75,
+      "trophies": 1
+    },
+    {
       "deckName": "RG Goblins",
       "events": 1,
       "matchWins": 3,
@@ -135,16 +149,26 @@
     {
       "opponentUsername": "Tencteri",
       "opponentDisplayName": "Tencteri",
-      "matchesPlayed": 5,
-      "matchWins": 2,
+      "matchesPlayed": 6,
+      "matchWins": 3,
       "matchLosses": 3,
       "matchDraws": 0,
-      "matchWinPercentage": 0.4,
-      "gameWins": 4,
+      "matchWinPercentage": 0.5,
+      "gameWins": 6,
       "gameLosses": 8,
       "gameDraws": 0,
-      "gameWinPercentage": 0.3333333333333333,
+      "gameWinPercentage": 0.42857142857142855,
       "matches": [
+        {
+          "tournamentId": "510507",
+          "dateDisplay": "November 19, 2026",
+          "result": "W",
+          "playerDeck": "Burn",
+          "opponentDeck": "White Weenie",
+          "playerGameWins": 2,
+          "opponentGameWins": 0,
+          "gameDraws": 0
+        },
         {
           "tournamentId": "499545",
           "dateDisplay": "November 5, 2026",
@@ -623,6 +647,56 @@
           "opponentDeck": "Burn",
           "playerGameWins": 1,
           "opponentGameWins": 2,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "CalebR",
+      "opponentDisplayName": "CalebR",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6666666666666666,
+      "matches": [
+        {
+          "tournamentId": "510507",
+          "dateDisplay": "November 19, 2026",
+          "result": "W",
+          "playerDeck": "Burn",
+          "opponentDeck": "Welder Prison",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
+          "gameDraws": 0
+        }
+      ]
+    },
+    {
+      "opponentUsername": "truthcult",
+      "opponentDisplayName": "klint",
+      "matchesPlayed": 1,
+      "matchWins": 1,
+      "matchLosses": 0,
+      "matchDraws": 0,
+      "matchWinPercentage": 1,
+      "gameWins": 2,
+      "gameLosses": 1,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.6666666666666666,
+      "matches": [
+        {
+          "tournamentId": "510507",
+          "dateDisplay": "November 19, 2026",
+          "result": "W",
+          "playerDeck": "Burn",
+          "opponentDeck": "Welder Prison",
+          "playerGameWins": 2,
+          "opponentGameWins": 1,
           "gameDraws": 0
         }
       ]
@@ -1254,6 +1328,23 @@
     }
   ],
   "tournamentPerformances": [
+    {
+      "tournamentId": "510507",
+      "date": "2026-11-20T00:39:52Z",
+      "dateDisplay": "November 19, 2026",
+      "playerCount": 18,
+      "trophyCount": 2,
+      "roundCount": 3,
+      "rank": 1,
+      "points": 9,
+      "matchRecord": "3-0-0",
+      "matchWinPercentage": 1,
+      "gameWins": 6,
+      "gameLosses": 2,
+      "gameDraws": 0,
+      "gameWinPercentage": 0.75,
+      "deck": "Burn"
+    },
     {
       "tournamentId": "499545",
       "date": "2026-11-06T00:05:05Z",
